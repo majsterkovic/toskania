@@ -9,134 +9,236 @@
   "drive_h": "8–8,5 h",
   "base_id": "base1",
   "depart": "7:00 rano z Neustadt an der Donau",
-  "route": "A9/A8 → Rosenheim → A93 Inntal → Innsbruck → Brenner Pass A22 → Bolzano → Trento → Werona bypass → A1/A11 → Lukka → SS12/SS445 north → Barga",
+  "route": "A9/A8 → Rosenheim → A93 Inntal → A12 → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe (obwodnica Werony, bez centrum) → Campogalliano → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
   "attractions": [],
   "nature": null,
   "food": {
-    "place": "Rovereto lub Werona (postój przy zjeździe z A22)",
-    "address": null,
-    "dishes": [],
-    "note": "Krótki postój obiadowy — szukaj 'bar trattoria' przy zjeździe, nie przy samej bramce autostradowej",
+    "place": "Rovereto Sud (A22) — pierwszy wybór; Werona tylko awaryjnie",
+    "address": "Ristorante Tre Pini: Via Stazione 14, 38068 Rovereto TN",
+    "dishes": ["pizza", "menu del giorno", "pesce"],
+    "note": "Zjazd A22 Rovereto Sud/Lago di Garda Sud — 300 m w kierunku Mori, nie na bramkę. Tre Pini: duży parking, szybka obsługa (~€10–15). Alternatywa: Moja Ristorante, Borgo Sacco (~10 min od zjazdu, zamknięte pon). Area Nogaredo Est na A22 = tylko przekąska 24/7. Werona centro = ZTL + korki — zostań na A22.",
     "price": "~€10–15",
-    "gps_hint": "Zjazd A22 Rovereto Sud lub Verona Sud — parking przy stacji"
+    "gps_hint": "Naviguj: Ristorante Tre Pini Rovereto lub A22 uscita Rovereto Sud",
+    "options": [
+      {
+        "name": "Ristorante Pizzeria Tre Pini",
+        "type": "trattoria",
+        "address": "Via Stazione 14, 38068 Rovereto TN",
+        "phone": "+39 0464 435122",
+        "note": "~300 m od zjazdu A22 Rovereto Sud; parking dla autobusów; pizza + menu",
+        "price": "€10–15"
+      },
+      {
+        "name": "Moja Ristorante",
+        "type": "ristorante",
+        "address": "Borgo Sacco, Rovereto",
+        "note": "8 000 m² zieleni, parking; 10 min od zjazdu A22; zamknięte poniedziałki",
+        "price": "€12–18"
+      },
+      {
+        "name": "Area di servizio Nogaredo Est",
+        "type": "autostrada",
+        "address": "A22 km tra Rovereto Sud e Rovereto Nord",
+        "note": "24/7 — tylko awaryjnie (autogrill, nie prawdziwy obiad)",
+        "price": "€8–12"
+      }
+    ]
   },
   "accommodation": {
-    "place": "BAZA 1 — Barga / Garfagnana",
-    "note": "Przyjazd ok. 16:00–17:00. Check-in, kolacja na miejscu w agriturismo.",
+    "place": "BAZA 1 — Agriturismo Mologno / Barga (Garfagnana)",
+    "note": "Przyjazd ok. 17:00–17:30 (niedziela + SR445). Mologno = frazione Barga, ~5 km od centro, cisza, las kasztanowy. Check-in typowo 14:00–19:00 — zadzwoń z ETA po minięciu Castelnuovo (ostatnie 30 km SR445). Kolacja na miejscu w agriturismo.",
     "price": "€60–90/noc",
-    "booking_tip": "Zadzwoń do agriturismo z ETA — ostatnie 50 km to kręta SS445",
-    "gps_hint": "Naviguj: Barga LU — parking poza murami (Porta Reale)"
+    "booking_tip": "Szukaj: agriturismo Mologno Barga — Il Musaccio, PURO, Chioi. Stacja Barga-Gallicano na SR445 (11 min autobusem do centrum). Rezerwuj z wyprzedzeniem — wrzesień w Garfagnanie popularny.",
+    "gps_hint": "Naviguj: Mologno LU lub Via Pian di Gragno 15, Barga — NIE Barga Vecchia (ZTL)",
+    "options": [
+      {
+        "name": "Agriturismo Il Musaccio",
+        "type": "agriturismo",
+        "address": "Via Pian di Gragno 15, 55051 Barga LU",
+        "price": "€60–90/noc",
+        "check_in": "15:30–18:00",
+        "parking": "bezpłatny na terenie",
+        "url": "https://www.booking.com/hotel/it/agriturismo-franca.it.html",
+        "note": "Basen z widokiem, śniadanie, rowery; płatność przelewem przed przyjazdem"
+      },
+      {
+        "name": "Agriturismo PURO",
+        "type": "agriturismo",
+        "address": "Mologno, 55051 Barga LU",
+        "price": "€70–100/noc",
+        "check_in": "14:00–19:00",
+        "parking": "bezpłatny prywatny",
+        "note": "4 sypialnie, taras, kominek; ~5 km od Barga centro"
+      },
+      {
+        "name": "Agriturismo Chioi (Casa Chioi)",
+        "type": "agriturismo",
+        "address": "Mologno, Barga LU",
+        "price": "€60–90/noc",
+        "check_in": "15:00–18:00",
+        "parking": "na terenie farmy",
+        "note": "Kasztanowy las, cisza; idealny na 4 noce bazy"
+      }
+    ]
   },
   "tips": [
-    "Streckenmaut Brenner A13: €12,50 — kup online na shop.asfinag.at",
-    "A22 Włochy: bilet przy wjeździe, płatność kartą przy wyjeździe (~€15–22 Brenner–Werona)",
-    "Ostatnie 50 km SS445 — kręta górska droga, zadzwoń do agriturismo z ETA",
-    "Barga ZTL: parkuj Parcheggio Porta Reale, centrum pieszo 5 min"
+    "Niedziela 13.09 = spodziewany ruch powrotny z Alp na Brennerze — wyjedź o 7:00, sprawdź asfinag.at/a13",
+    "Streckenmaut A13 Brenner: €12,50 (2026) — kup digital na shop.asfinag.at; winieta AT obowiązkowa na A12 Inntal",
+    "A22 Włochy: bilet przy wjeździe Brennero, płatność kartą w pasie Carte (~€22 Brenner–Campogalliano + A1/A11 do Lucca)",
+    "Lunch: zjazd Rovereto Sud → Tre Pini (nie centrum Werony, nie bramka autostradowa)",
+    "Ostatnie ~50 km SR445 (ex SS445): +45–60 min do ETA — zadzwoń do agriturismo z Castelnuovo",
+    "Barga ZTL: parkuj Porta Reale (Via Bellavista) lub przy agriturismo Mologno — NIGDY przez Porta Reale do murów"
   ],
   "route_segments": [
     {
       "segment": "Neustadt → Norymberga → Rosenheim",
       "road": "A9 → A8",
       "km": "~200",
-      "note": "Winieta AT aktywna od dziś"
+      "duration": "~2 h",
+      "note": "Winieta AT aktywna (kupiona dzień 1, start 13.09)"
     },
     {
       "segment": "Rosenheim → Innsbruck",
       "road": "A93 Inntal → A12",
       "km": "~100",
-      "note": "A12 wymaga winiety AT"
+      "duration": "~1 h",
+      "note": "A12 wymaga winiety AT (€12,80/10 dni 2026)"
     },
     {
-      "segment": "Innsbruck → Brenner",
+      "segment": "Innsbruck → Brenner (granica AT/IT)",
       "road": "A13 Sondermaut",
       "km": "~35",
-      "note": "Streckenmaut €12,50 — bez winiety na A13, ale A12 wymaga"
+      "duration": "30–60 min",
+      "note": "Streckenmaut €12,50 cały odcinek. Most Lueg: 1 pas/kierunek od 01.2025 — korki w niedziele. Zielone pasy DIGITAL jeśli kupione online."
     },
     {
-      "segment": "Brenner → Bolzano → Werona",
+      "segment": "Brenner → Bolzano → Trento → Rovereto",
       "road": "A22",
-      "km": "~250",
-      "note": "Bramki włoskie: bilet przy wjeździe, płatność przy wyjeździe"
+      "km": "~120",
+      "duration": "~1,5 h",
+      "note": "Pedaggio: bilet Brennero, dwujęzyczne Südtirol. Postój lunch: Rovereto Sud (~13:00)"
     },
     {
-      "segment": "Werona → Lukka → Barga",
-      "road": "A1/A11 → SS12/SS445",
-      "km": "~250",
-      "note": "Ostatnie 50 km SS445 — kręta, wolno"
+      "segment": "Rovereto → Werona (obwodnica) → Modena",
+      "road": "A22",
+      "km": "~130",
+      "duration": "~1,5 h",
+      "note": "Bez zjazdu do centro Verona (ZTL). A22 kontynuacja południe przez Mantovę do Campogalliano"
+    },
+    {
+      "segment": "Modena → Firenze → Lucca",
+      "road": "A1 Variante di Valico → A11 Firenze-Mare",
+      "km": "~150",
+      "duration": "~2 h",
+      "note": "A1 przez Apeniny (galerie, 3 pasy). A11: Lucca Est wyjście (~€6,40 cała A11 od Firenze)"
+    },
+    {
+      "segment": "Lucca → Barga (ostatnie ~50 km)",
+      "road": "SS12 → SR445 (ex SS445) → SP7",
+      "km": "~50",
+      "duration": "45–60 min",
+      "note": "Lucca → Borgo a Mozzano (SS12) → SP20 → SR445 przez dolinę Serchio: Ponte all'Ania, Fornaci di Barga, Loppia → SP7 → Barga Vecchia. Wąskie odcinki, zatoki wyprzedzania, traktory. Miejscowi jadą szybko — nie daj się poganiać."
     }
   ],
   "web_research": [
     {
-      "topic": "Streckenmaut A13 Brenner (AT)",
-      "summary": "€12,50 za cały odcinek Innsbruck–granica (2026). A13 bez winiety, ale A12 Inntal wymaga winiety. Kup digital section toll na shop.asfinag.at — zielone pasy bez zatrzymania.",
+      "topic": "Streckenmaut A13 Brenner (AT) 2026",
+      "summary": "€12,50 za cały odcinek Innsbruck–Brennersee (od 01.01.2026, było €12). A13 nie wymaga winiety sama w sobie, ale A12 Inntal wymaga. Kup digital section toll na shop.asfinag.at — zielone pasy DIGITAL bez zatrzymania.",
       "source": "https://www.asfinag.at/en/toll/section-toll/",
       "checked": "2026-07"
     },
     {
-      "topic": "Autostrada A22 Włochy (Brenner)",
-      "summary": "Brak winiety — system bramkowy: bilet przy wjeździe, płatność przy wyjeździe. Gotówka, karta, Apple/Google Pay. Brenner–Campogalliano ~€22,30 (kat. A, maj 2025).",
-      "source": "https://hogs.live/blog/brenner-pass-tolls",
+      "topic": "Most Lueg A13 — korki Brenner 2025–2030",
+      "summary": "Od 01.01.2025 jeden pas/kierunek na starym moście Lueg (remont nowego do ~2030). ASFINAG otwiera 2. pas ~180 dni/rok w sezonie (czerwiec–wrzesień prawie codziennie). Kalendarz: asfinag.at/a13. Niedziela = szczyt ruchu powrotnego z Włoch/Alp.",
+      "source": "https://www.asfinag.at/en/construction-maintenance/construction-projects/a-13-brenner-motorway-lueg-bridge/",
       "checked": "2026-07"
     },
     {
-      "topic": "Parking i ZTL Barga",
-      "summary": "Barga Vecchia = ZTL. Parcheggio Porta Reale (Via Bellavista / Via del Sasso) — przy murach, średniej wielkości. Piazzale Matteotti — płatny, dolna część miasta. Viale Cesare Biondi 44 — darmowy, 900 m od centrum.",
+      "topic": "Autostrada A22 Włochy — pedaggio",
+      "summary": "Brak winiety — system zamknięty: bilet przy wjeździe (Brennero), płatność przy wyjeździe. Gotówka, karta, Apple/Google Pay. Brenner–Campogalliano ~€22,30 (kat. A). Łącznie A22+A1+A11 do Lucca ~€35–45.",
+      "source": "https://www.autobrennero.it/en/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Postój obiadowy Rovereto Sud (A22)",
+      "summary": "Zjazd Rovereto Sud/Lago di Garda Sud → Tre Pini (Via Stazione 14, 300 m od zjazdu, parking, pizza €10–15). Moja Ristorante Borgo Sacco (10 min, zamk. pon). Area Nogaredo Est na A22 = 24/7 autogrill między Rovereto Sud a Nord — tylko awaryjnie.",
+      "source": "https://www.ristorante3pini.it/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Werona — obwodnica tranzytowa",
+      "summary": "Na trasie Neustadt→Barga: zostań na A22 południe — nie wjeżdżaj do centro storico (ZTL, korki). Werona Nord = węzeł A22; kontynuacja do Mantovy/Campogalliano. Lunch lepiej w Rovereto (wcześniej na trasie).",
+      "source": "https://www.autobrennero.it/en/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "SR445 (ex SS445) Garfagnana — ostatnie 50 km",
+      "summary": "Oficjalnie SR 445 della Garfagnana (ex SS445, region Toscana od 2001). Trasa Lucca→Barga: SS12 → Borgo a Mozzano → SP20 → SR445 (Ponte all'Ania, Fornaci, Loppia) → SP7 → Barga. ~38–50 km, 45–60 min. Kręte odcinki, zatoki, traktory, rowerzyści, dziki. Stacja Barga-Gallicano w Mologno na SR445.",
+      "source": "https://www.informagiovani-italia.com/how-to-get-to-barga.htm",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "ZTL i parking Barga",
+      "summary": "Barga Vecchia = ZTL z kamerami przy Porta Reale — dostęp tylko dla uprawnionych. Parkowanie: Parcheggio Porta Reale (Via Bellavista / Via del Sasso, przy murach, 5 min pieszo do Duomo). Piazzale Matteotti (płatny, dolna Barga). Viale Cesare Biondi 44 (gratis, 900 m). Camper: Via Hayange.",
       "source": "https://www.informagiovani-italia.com/where-to-park-in-barga.htm",
       "checked": "2026-07"
     },
     {
-      "topic": "Droga SS445 Garfagnana",
-      "summary": "Kręta droga górska — miejscowi jadą szybko, nie daj się poganiać. Zatoki wyprzedzania co kilkaset metrów. Traktory, rowerzyści, dzik na drodze. Przyjazd Barga ok. 16:00–17:00 realistyczny.",
-      "source": "https://opera.techfgame.com/discovering-tuscany-valle-del-serchio.html",
-      "checked": "2026-07"
-    },
-    {
-      "topic": "Postój obiadowy A22",
-      "summary": "Rovereto Sud lub Verona Sud — zjazd z autostrady, 'bar trattoria' przy stacji, nie przy samej bramce. Unikaj centrum Werony (ZTL, korki).",
-      "source": "https://loveyouritaly.com/italian-toll-roads/",
+      "topic": "Agriturismo Mologno — BAZA 1",
+      "summary": "Mologno = frazione Barga, 5 km od centro, cisza, kasztanowy las. Polecane: Il Musaccio (Via Pian di Gragno 15, check-in 15:30–18:00, basen), PURO (Mologno, 4 sypialnie), Chioi (farmhouse). Stacja kolejowa Barga-Gallicano na SR445. €60–90/noc ze śniadaniem.",
+      "source": "https://www.booking.com/hotel/it/agriturismo-franca.it.html",
       "checked": "2026-07"
     }
   ],
   "practical_tips": [
-    "Kup Streckenmaut A13 Brenner online (€12,50) — oszczędza kolejkę na Mautstelle Schönberg",
-    "Włochy A22: weź bilet przy wjeździe, płać kartą w pasie Carte (niebieski) — szybciej niż gotówka",
-    "Zatankuj w Austrii lub na A22 przed Lukką — paliwo w IT tańsze niż po dotarciu do Garfagnany, ale droższe niż DE",
-    "SS445: ostatnie 50 km — nie śpiesz się, ETA agriturismo zawoń z 30 min wyprzedzeniem",
-    "Barga ZTL: NIGDY nie wjeżdżaj do murów — kamera przy Porta Reale, mandaty automatyczne"
+    "Kup Streckenmaut A13 Brenner online (€12,50) — oszczędza kolejkę na Mautstelle Schönberg im Stubaital",
+    "Sprawdź kalendarz Luegbrücke na asfinag.at/a13 przed wyjazdem — niedziela 13.09 = bufor +30 min na Brenner",
+    "Włochy A22: weź bilet przy wjeździe Brennero, płać kartą w pasie Carte (niebieski) — szybciej niż gotówka",
+    "Lunch ~13:00 przy Rovereto Sud (Tre Pini) — 45 min, nie trać czasu na Weronę",
+    "Zatankuj w Austrii lub przy zjeździe Rovereto — ostatnia stacja Q8/Eni Castelnuovo na SR445 przed podjazdem do Barga",
+    "SR445: po minięciu Castelnuovo zadzwoń do agriturismo (+30 min ETA) — check-in do 19:00",
+    "Barga ZTL: naviguj Mologno LU (agriturismo) lub parking Porta Reale — NIGDY „Barga centro”"
   ],
   "parking": {
-    "destination": "Barga — check-in BAZA 1",
+    "destination": "Barga — check-in BAZA 1 (Mologno lub centro)",
     "options": [
+      {
+        "name": "Parking agriturismo Mologno",
+        "type": "hotel",
+        "price": "gratis dla gości",
+        "gps_hint": "Via Pian di Gragno 15 lub Mologno LU",
+        "note": "Preferowany przy noclegu w Mologno — bez ZTL, cisza, las"
+      },
       {
         "name": "Parcheggio Porta Reale",
         "type": "public",
         "price": "bezpłatny / niski",
         "gps_hint": "Via Bellavista, incrocio Via del Sasso — przy murach",
-        "note": "Najbliżej centrum, 5 min pieszo do Duomo"
+        "note": "Najbliżej centro; 5 min pieszo do Duomo. Przed murami — nie wjeżdżaj dalej (ZTL)"
       },
       {
         "name": "Piazzale Matteotti",
         "type": "public",
         "price": "płatny",
         "gps_hint": "Via Piero Gobetti, dolna Barga",
-        "note": "Większy parking, 10 min pieszo w górę"
+        "note": "Większy parking, 10 min pieszo w górę do centro"
       },
       {
         "name": "Viale Cesare Biondi 44",
         "type": "public",
         "price": "gratis",
         "gps_hint": "55051 Barga",
-        "note": "900 m od centrum, przy szkole — backup gdy Porta Reale pełny"
+        "note": "900 m od centro, przy szkole — backup gdy Porta Reale pełny"
       },
       {
-        "name": "Parking agriturismo (Mologno/Loppia)",
-        "type": "hotel",
-        "price": "gratis dla gości",
-        "gps_hint": "Naviguj Mologno LU / Loppia LU",
-        "note": "Jeśli nocleg poza centrum — parkuj przy agriturismo"
+        "name": "Parcheggio San Cristoforo (camper)",
+        "type": "public",
+        "price": "~€10/dzień",
+        "gps_hint": "Via Hayange, 55051 Barga",
+        "note": "Płaski, szeroki — 5 min pieszo do centro w górę"
       }
     ],
-    "tip": "Przyjazd ok. 16–17: Porta Reale zwykle ma miejsca we wrześniu (poza weekendem)"
+    "tip": "Przy noclegu Mologno: parkuj przy agriturismo. Wieczorny spacer do Barga Vecchia: auto zostaje w Mologno lub Porta Reale"
   },
   "fuel_stops": [
     {
@@ -151,25 +253,36 @@
       "location": "A12/A93, Innsbruck",
       "road": "A12",
       "hours": "6–22",
-      "note": "Uzupełnienie przed Brennerem"
+      "note": "Uzupełnienie przed A13 Brennerem"
     },
     {
       "name": "IP/Eni przy zjeździe A22 Rovereto Sud",
       "location": "SS240, Rovereto",
       "road": "A22 exit",
       "hours": "7–20",
-      "note": "Postój obiadowy + tankowanie — poza bramką autostradową"
+      "note": "Postój obiadowy Tre Pini + tankowanie — poza bramką autostradową"
     },
     {
       "name": "Q8/Eni Castelnuovo di Garfagnana",
-      "location": "SS445, Castelnuovo",
-      "road": "SS445",
+      "location": "SR445, Castelnuovo",
+      "road": "SR445",
       "hours": "7–20",
-      "note": "Ostatnie tankowanie przed Barga — stacja w dolinie"
+      "note": "Ostatnie tankowanie w dolinie przed podjazdem do Barga/Mologno"
     }
   ],
   "opening_hours": {
-    "agriturismo_checkin": "14:00–19:00 typowo — zadzwoń z ETA",
-    "a22_toll_booths": "24/7 (automaty)"
-  }
+    "agriturismo_checkin": "14:00–19:00 (Il Musaccio 15:30–18:00) — zadzwoń z ETA",
+    "a22_toll_booths": "24/7 (automaty + Carte)",
+    "tre_pini_lunch": "12:00–15:00 typowo (sprawdź w niedzielę)"
+  },
+  "eta_timeline": [
+    { "time": "07:00", "event": "Wyjazd Neustadt an der Donau" },
+    { "time": "09:30", "event": "Rosenheim → A93 Inntal" },
+    { "time": "11:00", "event": "A13 Brenner (możliwy korek Lueg)" },
+    { "time": "12:30", "event": "Granica AT/IT → A22 Bolzano" },
+    { "time": "13:00", "event": "Lunch Rovereto Sud (Tre Pini)" },
+    { "time": "15:00", "event": "A22 → A1 → A11, kier. Lucca" },
+    { "time": "16:30", "event": "Zjazd Lucca Est → SS12/SR445" },
+    { "time": "17:30", "event": "Przyjazd Mologno / Barga — check-in" }
+  ]
 }

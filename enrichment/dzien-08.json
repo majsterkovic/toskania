@@ -8,12 +8,12 @@
   "base_label": "BAZA 2 — Chianti Senese",
   "drive_limit_min": 25,
   "popular": true,
-  "crowd_tip": "Wyjazd o 7:00 rano — parking Piazza San Domenico lub Santa Caterina. O 7:30 jesteś na Piazza del Campo praktycznie sam. Tłumy zaczynają się po 10:00. Powrót do bazy przed 14:00. Unikaj sobotniego wieczoru w centrum.",
+  "crowd_tip": "SOBOTA 19.09 — najgorszy dzień tygodnia w Sienie. Wyjazd 7:00, parking Santa Caterina lub Stadio-Fortezza (lato stadio). Campo o 7:30 prawie sam. Tłumy od 10:00, szczyt 11:00–15:00. Powrót do bazy przed 14:00. Unikaj wieczoru w centrum.",
   "attractions": [
     {
       "name": "Piazza del Campo — o świcie",
       "drive_min": 25,
-      "description": "7:30–9:30. Piazza del Campo bez turystów. Palazzo Pubblico, Torre del Mangia (otwarta od 9:00). Najlepsze zdjęcia w porannym świetle.",
+      "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Torre del Mangia widoczna (wstęp od 10:00). Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
       "type": "popular",
       "image_key": "siena",
       "gps_hint": "Piazza del Campo, 53100 Siena SI",
@@ -22,7 +22,7 @@
     {
       "name": "Duomo di Siena + Libreria Piccolomini",
       "drive_min": 25,
-      "description": "9:30–11:00. Katedra i Libreria Piccolomini (mozaiki podłogowe odkryte we wrześniu!). Muzeum dell'Opera tuż po otwarciu.",
+      "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki. Wejdź tuż po otwarciu (najciszej).",
       "type": "popular",
       "image_key": "siena",
       "gps_hint": "Piazza del Duomo, Siena SI — parking Santa Caterina lub San Domenico",
@@ -31,10 +31,10 @@
     {
       "name": "Spacer przez kontrade",
       "drive_min": 25,
-      "description": "11:00–12:30. Kontrade Oca (Gęś) — Via dei Termini; Drago (Smok) — Via dei Fusari. Autentyczne życie zamiast turystycznych tras.",
+      "description": "11:00–12:00. Oca (Gęś, biało-zielona): Via dei Termini → Fontebranda → Santuario Santa Caterina. Drago (Smok, czerwono-zielona): Piazza Matteotti 18 → Via del Paradiso → Via della Sapienza. Autentyczne dzielnice zamiast turystycznych tras.",
       "type": "cultural",
       "image_key": "siena",
-      "gps_hint": "Via dei Termini (Contrada dell'Oca) lub Via dei Fusari (Drago)",
+      "gps_hint": "Start: Via dei Termini (Oca) lub Piazza Matteotti 18 (Drago)",
       "image": "siena"
     }
   ],
@@ -48,88 +48,95 @@
       "pappardelle al cinghiale",
       "vino sfuso (z beczki)"
     ],
-    "note": "Kultowa trattoria za Palazzo Pubblico — sienyjska urzędnicy i studenci. Taras z widokiem na Torre del Mangia latem. Rezerwacja tel. od 10:00.",
+    "note": "Kultowa trattoria za Palazzo Pubblico — sienyjsi urzędnicy i studenci. Taras latem z widokiem na Torre del Mangia. Rezerwacja tel. od 10:00 (sobota lunch!). Bez angielskiego menu — pici, ribollita, vino sfuso.",
     "price": "~€15–22/os",
     "gps_hint": "Piazza del Mercato 6 — wejście od tyłu Palazzo Pubblico",
     "phone": "+39 0577 280894",
     "opening_hours": "Codziennie 12:00–15:00 i 19:00–22:30 (sobota lunch OK)"
   },
   "tips": [
-    "Wyjazd o 7:00 — parking Parcheggio Santa Caterina lub San Domenico (płatny, ale blisko)",
-    "Bilety Duomo + Libreria Piccolomini online: opapisa.it — unikniesz kolejki",
-    "Powrót do bazy przed 14:00 — unikaj sobotniego popołudnia w Sienie",
-    "Wyjazd 7:00 — parking Santa Caterina, windy do centrum",
-    "Duomo otwiera 10:00 (nie 9:00!) — wcześniej Campo i kontrade",
-    "Podłoga mozaikowa odkryta do 15.11 — kup OPA SI PASS online: opasipass.com",
-    "Papei: rezerwacja lunch 0577 280894 od 10:00",
-    "Powrót do bazy przed 14:00 — sobota popołudnie = tłumy"
+    "Wyjazd 7:00 z bazy — parking Santa Caterina (schody ruchome) lub Stadio-Fortezza lato stadio (zona San Domenico)",
+    "Campo o 7:30 prawie pusty — tłumy od 10:00, sobota = najgorszy dzień tygodnia",
+    "Duomo otwiera 10:00 (sobota) — wcześniej Campo i kontrade, nie stój w kolejce od 9:00",
+    "OPA SI PASS online: operaduomo.siena.it lub opasipass.com — €16 (podłoga odkryta), skip kolejki",
+    "Podłoga mozaikowa odkryta do 15.11.2026 — główny powód wizyty we wrześniu",
+    "Papei lunch: rezerwacja 0577 280894 od 10:00, Piazza del Mercato 6 (za Palazzo Pubblico)",
+    "Kontrade: Oca Via dei Termini/Fontebranda; Drago Piazza Matteotti/Via del Paradiso",
+    "Powrót do bazy przed 14:00 — sobota popołudnie = korki, autokary z Florencji"
   ],
   "image": "siena",
   "web_research": [
     {
-      "topic": "Parking Santa Caterina Siena",
-      "summary": "473 posti, coperto, 24h. €2/h, €35/giorno. Scale mobili gratuite verso centro. Max altezza 2,0 m.",
+      "topic": "Siena o 7:30 — bez tłumów",
+      "summary": "Piazza del Campo o świcie: pusty plac, fotografowie i lokalni. Kawiarnie od ~7:00. Tłumy (wycieczki z Florencji) od 10:00. Sobota = najbardziej zatłoczony dzień.",
+      "source": "https://www.chasinghippoz.com/travel-photo-blog/siena-italy",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Parking Santa Caterina",
+      "summary": "Via Esterna di Fontebranda. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome gratis do centrum. Max wys. 2,0 m. Blisko Duomo i San Domenico.",
       "source": "https://sigericospa.it/parcheggio-santa-caterina/",
       "checked": "2026-07"
     },
     {
-      "topic": "Duomo Siena — orari settembre 2026",
-      "summary": "1.04–31.10: 10–19 lun–sab. Festivi: 9:30–18 (con pavimento scoperto 18.08–15.11). Ultimo ingresso 30 min prima.",
-      "source": "https://operaduomo.siena.it/en/the-cathedral/",
+      "topic": "Parking Stadio-Fortezza (zona San Domenico)",
+      "summary": "Area Fortezza Medicea, wyjście lato stadio = zona San Domenico, przed bazyliką. €2/h (7–20), €26/dzień, gratis 20:00–7:00. 709 miejsc, ~15 min pieszo do Campo.",
+      "source": "https://sipark.siena.it/tariffe/",
       "checked": "2026-07"
     },
     {
-      "topic": "Pavimento mosaico — scopertura 2026",
-      "summary": "Pavimento scoperto 27.06–31.07 e 18.08–15.11.2026. Biglietto OPA SI: €16 (vs €14 standard).",
-      "source": "https://operaduomo.siena.it/en/visiting/",
+      "topic": "OPA SI PASS — skip-line + podłoga 2026",
+      "summary": "Sobota 19.09: kompleks 10:00–19:00 (Muzeum 9:30–19:30). Podłoga odkryta 18.08–15.11, bilet €16. Kup online = bez kolejki do kasy. Ważny 3 dni, audioguide w cenie.",
+      "source": "https://www.opasipass.com/en/opening-hours/",
       "checked": "2026-07"
     },
     {
-      "topic": "Antica Trattoria Papei — orari",
-      "summary": "Cucina 12:00–22:30. Sabato: pranzo 12–15, cena 19–22:30. Prenotazioni: 0577 280894 (10–19). Piazza del Mercato 6.",
+      "topic": "Antica Trattoria Papei",
+      "summary": "Piazza del Mercato 6. Cucina 12:00–22:30. Pranzo 12–15, cena 19–22:30. Rezerwacje: 0577 280894 (10:00–19:00). Taras latem, >100 miejsc na zewnątrz.",
       "source": "https://anticatrattoriapapei.com/reservations/",
       "checked": "2026-07"
     },
     {
-      "topic": "Siena senza turisti — strategia",
-      "summary": "7:00 wyjazd → 7:30 Campo vuoto. Folla da 10:00. Sabato = giorno più affollato — via prima delle 14:00.",
-      "source": "https://www.terredisiena.it/en/siena-en/where-to-park-in-siena/",
+      "topic": "Spacer kontrade Oca i Drago",
+      "summary": "Oca (Terzo Camollìa): Via dei Termini, Fontebranda, Santuario Santa Caterina, siedziba Vicolo del Tiratoio 13. Drago: Piazza Matteotti 18, Via del Paradiso, Via della Sapienza. Wieczorny spacer: Via del Costone.",
+      "source": "https://www.thepalio.eu/siena-tourist-guide/",
       "checked": "2026-07"
     }
   ],
   "practical_tips": [
-    "SOBOTA = kluczowy dzień: wyjazd 7:00, Campo o 7:30 prawie pusty. Tłumy od 10:00, szczyt po 11:00",
-    "Bilety Duomo: kup online operaduomo.siena.it — OPA SI Pass (€16 con pavimento). Unikniesz kolejki o 9:30",
-    "Podłoga mozaikowa: odkryta do 15.11.2026 — główny powód wizyty we wrześniu!",
-    "Parking Santa Caterina: €2/h = ~€8 za 4h poranną wizytę. W dni festiwali parkingi gratis",
-    "Trattoria Papei: za Palazzo Pubblico, niewidoczna z Campo — rezerwuj lunch na 12:00",
-    "Powrót do bazy przed 14:00 — sobota popołudnie w Sienie = korki i tłumy"
+    "SOBOTA = kluczowy dzień: wyjazd 7:00, Campo o 7:30 prawie pusty. Tłumy od 10:00, szczyt 11:00–15:00",
+    "Parking: Santa Caterina (schody ruchome, bliżej Duomo) LUB Stadio-Fortezza wyjście lato stadio (zona San Domenico) — oba €2/h",
+    "ZTL: centrum zamknięte dla samochodów — zostaw auto na parkingu, idź pieszo 5–15 min",
+    "OPA SI PASS kup online wieczorem wcześniej — €16 z podłogą, skip kolejki, wejdź tuż po 10:00",
+    "Podłoga mozaikowa (56 paneli, XIV–XVI w.) odkryta do 15.11.2026 — nie przegap!",
+    "Torre del Mangia: 10:00–19:00 — przy strategii wyjazdu 14:00 nie zdążysz wejść (kolejka + 45 min)",
+    "Papei: rezerwuj lunch na 12:00 (tel. od 10:00) — ukryta za Palazzo Pubblico, niewidoczna z Campo",
+    "Trasa kontrade: Campo → Via di Città → Via dei Termini (Oca) → Piazza Matteotti (Drago) → Papei na Piazza del Mercato",
+    "Powrót do bazy przed 14:00 — sobota popołudnie = autokary z Florencji i korki na dojazdach"
   ],
   "parking": {
-    "santa_caterina": "Parcheggio Santa Caterina — Via Esterna di Fontebranda 13. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome do centrum (gratis). Max wysokość 2,0 m.",
-    "san_domenico": "Parcheggio San Domenico — alternatywa, podobne ceny. Blisko Basilica San Domenico.",
-    "ztl": "Centrum Siena = ZTL. Samochód zostaw na parkingu — do Campo i Duomo pieszo 5–15 min.",
-    "hotel_rate": "Niektóre hotele dają QR na €25/dzień (warunki) — agriturismo zwykle nie.",
-    "stadio_fortezza": "Parcheggio Stadio-Fortezza — €2/h (7:00–20:00), €26/dzień. 15 min pieszo do Campo. Tańszy na krótki postój.",
-    "tip": "Sobota 19.09: wyjazd 7:00 z bazy → parking Santa Caterina 7:25 → Campo 7:35 pieszo. Wyjazd przed 14:00."
+    "recommended": "Santa Caterina (najwygodniejszy) lub Stadio-Fortezza lato stadio (zona San Domenico)",
+    "santa_caterina": "Parcheggio Santa Caterina — Via Esterna di Fontebranda. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome do centrum (gratis). Max wysokość 2,0 m. ~10 min pieszo do Campo.",
+    "stadio_fortezza_san_domenico": "Parcheggio Stadio-Fortezza — wyjście LATO STADIO (zona San Domenico), przed bazyliką San Domenico. 709 miejsc. €2/h (7:00–20:00), €26/dzień, gratis 20:00–7:00. ~15 min pieszo do Campo.",
+    "san_domenico_note": "Nie ma osobnego parkingu „San Domenico” — chodzi o wyjście Stadio-Fortezza od strony stadionu lub parking Santa Caterina (schody przy San Domenico).",
+    "ztl": "Centrum Siena = ZTL z kamerami. Mandaty €80–150. Samochód zostaw na parkingu.",
+    "saturday_tip": "Sobota 7:00 wyjazd → parking 7:20 → Campo 7:30 pieszo. Wyjazd z parkingu przed 14:00.",
+    "cost_estimate": "~€8–10 za 4h poranną wizytę (€2/h × 4h)"
   },
   "opening_hours": {
-    "piazza_campo": "Dostęp 24h. Torre del Mangia: 10:00–19:00 (mar–ott), ostatnie wejście 18:30.",
-    "torre_mangia": "Zwykle 10:00–19:00 (sezon), ostatnie wejście 45 min przed zamknięciem. Sprawdź comune.siena.it.",
-    "duomo_complex": "19.09 (sobota, sezon 1.04–31.10): Complesso 10:00–19:00 (Museo do 19:30). Sobota = pełny dostęp od rana (nie jak niedziela).",
-    "duomo_floor": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — wyższa cena OPA SI PASS. Warto!",
-    "antica_trattoria_papei": "12:00–15:00 i 19:00–22:30 codziennie",
-    "duomo_siena": "18.09 sobota: 10:00–19:00 (sezon). Niedziela: 9:30–18:00 (podłoga odkryta). Ostatnie wejście 30 min przed zamknięciem.",
-    "pavimento_mosaico": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — wyższy bilet OPA SI (€16 vs €14). Warto!",
-    "libreria_piccolomini": "W kompleksie Duomo — ten sam bilet OPA SI Pass.",
-    "trattoria_papei": "Sob 19.09: pranzo 12:00–15:00, cena 19:00–22:30. Cucina 12:00–22:30. Tel. 0577 280894 (prenotazioni 10:00–19:00).",
-    "opera_duomo_ticket_office": "Piazza Duomo 7 + Visitor Center Via di Città 48 — 9:30–19:00"
+    "piazza_campo": "Dostęp 24h. Najlepsze światło i brak tłumów: 7:00–8:30.",
+    "torre_mangia": "10:00–19:00 (1.04–31.10). Ostatnie wejście ~45 min przed zamknięciem. Bilet osobny (nie w OPA SI PASS).",
+    "duomo_complex": "19.09 (sobota, sezon): 10:00–19:00. Muzeum dell'Opera: 9:30–19:30. Ostatnie wejście 30 min przed zamknięciem.",
+    "duomo_floor": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — OPA SI PASS €16 (vs €14 standard).",
+    "opera_duomo_ticket_office": "Piazza Duomo 7 + Visitor Center Via di Città 48 (obok Campo). Online = skip kolejki do kasy.",
+    "libreria_piccolomini": "W kompleksie Duomo — ten sam bilet OPA SI PASS.",
+    "antica_trattoria_papei": "Cucina 12:00–22:30. Pranzo 12:00–15:00, cena 19:00–22:30. Tel. 0577 280894 (rezerwacje 10:00–19:00)."
   },
   "fuel_stops": [
     {
-      "name": "IP Castelnuovo Berardenga",
-      "location": "baza Chianti",
-      "note": "Tankuj rano przed wyjazdem do Sieny — paliwo na powrót."
+      "name": "IP / Q8 Castelnuovo Berardenga",
+      "location": "BAZA 2 — Chianti Senese",
+      "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót, stacja przy SP408."
     }
   ]
 }

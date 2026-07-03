@@ -12,26 +12,26 @@ Wzbogacaj `plan.json` (tylko `day_num=11`) o aktualne, zweryfikowane dane z inte
 ## Workflow
 
 1. **Web search** — zawsze zacznij od wyszukiwania aktualnych informacji:
-   - Fortezza Orsini Sorano — godziny (sezon wrzesień), bilety cumulativo €10, wizyty podziemne
-   - Cascate del Mulino Saturnia — parking €2,50/h (8:00–20:00), wstęp bezpłatny 24/7
-   - Via Cava di San Rocco — dostęp, parking przy Fortezza
+   - **Cascate del Mulino Saturnia** — godziny (24/7 bezpłatnie), tłumy we wtorek we wrześniu, strategia: przed 9:00 lub po 15:00–17:00; parking €2,50/h (8:00–20:00)
+   - **Fortezza Orsini Sorano** — sezon wrzesień 10:00–13:00 i 15:00–19:00, pn zamknięte (wtorek 22.09 OTWARTE), bilet cumulativo €10, visite sotterranee 12:00 / 15:00 / 18:00, tel. 0564/633767
+   - **Via Cava / Vitozza** — rozróżnij: Via Cava di San Rocco (krótki spacer od fortecy, ~45 min); Vitozza (San Quirico, ~200 jaskiń, trekking 2,5 h, wstęp wolny pn–pt, €2 sb/nd) — pełny szlak Vitozza→Sorano (~5 km) = osobny dzień
+   - **Osteria La Botte Piena** — weryfikacja: to restauracja w **Montefollonico** (SI, ~80 km), NIE w Sorano/Pitigliano. Lokalna alternatywa o podobnej nazwie: **Albergo Ristorante La Botte**, Montorio di Sorano (SP Pitiglianese km 19, tel. 0564 638633)
    - Restauracje Sorano: Cantina Ottava Rima, Ristorante Fidalma, Hosteria del Borgo
-   - Strategia wtorku: Sorano rano, Saturnia po 15:00 (mniej tłumów)
 
 2. **Wzbogacanie plan.json** — dodaj/aktualizuj pola:
    - `web_research[]` — tablica obiektów `{ topic, summary, source, checked }`
    - `practical_tips[]` — konkretne, actionable tipy
    - `parking` — Sorano (Piazza Cairoli / San Marco), Saturnia (płatny parking SP10)
-   - `opening_hours` — forteca, termy, restauracje
+   - `opening_hours` — forteca, termy, restauracje, Vitozza
    - `attractions[].opening_hours` / `ticket_price` — tam gdzie sensowne
 
 3. **Zasady**
    - Edytuj **TYLKO** dzień `day_num=11` w `plan.json`
    - **Nie edytuj** `src/`
    - **Nie commituj** bez wyraźnej prośby użytkownika
-   - Reguła `drive ≤25 min` — dotyczy tego dnia (BAZA 3)
+   - Reguła `drive ≤30 min` — dotyczy tego dnia (BAZA 3 — Pitigliano)
    - Zachowaj istniejące pola — rozbuduj, nie usuwaj sensownej treści
-   - Popraw błędne dane (np. nieistniejąca „Osteria La Botte Piena” w Sorano)
+   - Popraw błędne dane (np. „Osteria La Botte Piena” w Sorano — nie istnieje)
 
 4. **Backup** — po każdej edycji zapisz pełny obiekt dnia 11 do `enrichment/dzien-11.json`
 
@@ -39,11 +39,12 @@ Wzbogacaj `plan.json` (tylko `day_num=11`) o aktualne, zweryfikowane dane z inte
 
 | Temat | Co sprawdzić |
 |-------|-------------|
-| Fortezza Orsini | 10–13 i 15–19 wrz, zamknięte poniedziałki; bilet cumulativo €10 |
-| Saturnia | Parking 450 m od kaskad, EasyPark, ręcznik+klapki |
-| Sorano food | Cantina Ottava Rima (Via del Borgo 25), Fidalma (Piazza Busatti 6) |
-| Las dębowy | Via Cava San Rocco od fortecy |
-| Tłumy | Wtorek po 15:00 w Saturnia = optymalne |
+| Cascate Mulino | 24/7 gratis; wtorek = dzień powszedni (lepiej niż weekend); wrzesień nadal tłoczno 10:00–15:00; po 15:00 lub przed 9:00 optymalnie |
+| Fortezza Orsini | 10–13 i 15–19 wrz, pn zamknięte; cumulativo €10; sotterranei 12/15/18; prenotazione tel. 0564/633767 |
+| Via Cava San Rocco | Start od fortecy, necropoli etruska, ~45 min–1 h w dolinie Lente |
+| Vitozza | San Quirico, cittadeltufo.com — 1,5 km pieszo do foresterii, anello 2,5 h; szlak do Sorano ~5 km (za długi na ten dzień z Saturnią) |
+| La Botte Piena | Montefollonico SI — poza zasięgiem 30 min; w Sorano: La Botte (Montorio) lub Cantina Ottava Rima |
+| Harmonogram | Sorano rano (forteca 10:00 + San Rocco), lunch, Saturnia po 15:00 |
 
 ## Odpowiedź
 

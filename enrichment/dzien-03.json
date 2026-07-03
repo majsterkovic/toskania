@@ -7,96 +7,111 @@
   "image": "barga",
   "base_id": "base1",
   "base_label": "BAZA 1 — Barga",
-  "drive_limit_min": 25,
+  "drive_limit_min": 30,
   "attractions": [
     {
       "name": "Barga — stare miasto i Duomo",
       "drive_min": 0,
-      "description": "Jedno z najpiękniejszych niedocenionych borghi Toskanii. Romański Duomo di San Cristoforo (XI w.) z widokiem na Alpy Apuańskie. Wejście na wieżę — Lukka i morze widoczne w pogodny dzień.",
+      "description": "Jedno z najpiękniejszych niedocenionych borghi Toskanii. Romański Duomo di San Cristoforo (XI w.) z pulpitem marmurowym Guido Bigarelli (~1240) i widokiem na Alpy Apuańskie. Moneta €2 na oświetlenie wnętrza.",
       "type": "medieval",
       "image": "barga",
       "image_key": "barga",
-      "gps_hint": "Duomo di San Cristoforo, 55051 Barga LU — parking Parcheggio Porta Reale"
+      "gps_hint": "Duomo di San Cristoforo, Via del Duomo 1, 55051 Barga LU — parking Parcheggio Porta Reale"
     },
     {
-      "name": "Anello di Barga — szlak CAI n. 108",
-      "drive_min": 0,
-      "description": "Start przy Porta Reale. Pętla 2–3 h przez gaje kasztanów i dębów bezszypułkowych (Quercus petraea) z widokami na dolinę. Teren nieformalny, brak turystów.",
+      "name": "Treppignana via il Ciocco — las dębowo-kasztanowy",
+      "drive_min": 15,
+      "description": "Szlak 3,2 km (1–1,5 h) przez gęste lasy dębów bezszypułkowych (Quercus petraea) i kasztanów w Tenuta Il Ciocco. Widoki na dolinę Serchio i Barga Vecchia. Start: Treppignana (~15 min od centrum).",
       "type": "nature",
       "image": "barga",
       "image_key": "barga",
-      "gps_hint": "Start: Porta Reale, Barga — szlak oznaczony tablicą CAI 108"
+      "gps_hint": "Treppignana, 55051 Barga LU — parking przy borgo, szlak do Tenuta Il Ciocco"
     },
     {
       "name": "Grotta del Vento — Fornovolasco",
       "drive_min": 20,
-      "description": "Wioska pod Alpami Apuańskimi, jedna z największych jaskiń Toskanii. Po południu spacer przez bukowe i dębowe lasy na zboczach Pania della Croce.",
+      "description": "4570 m zbadanych jaskiń krasowych w Alpach Apuańskich. 3 itinerari (1–3 h). Po wizycie spacer przez bukowe i dębowe lasy na zboczach Pania della Croce.",
       "type": "nature",
       "image_key": "grotta-vento",
-      "gps_hint": "Grotta del Vento, Località Fornovolasco, 55020 Vergemoli LU"
+      "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Località Fornovolasco, 55020 Vergemoli LU"
     }
   ],
   "oak_forest": {
-    "spot": "Szlak Anello di Barga",
-    "species": "Quercus petraea (dąb bezszypułkowy), Q. cerris (dąb burgundzki)",
-    "note": "Starodrzew kasztanowo-dębowy na ekspozycjach południowych wokół Barga",
-    "gps_hint": "Pętla od Porta Reale — las na południowych stokach nad miastem"
+    "spot": "Treppignana — Tenuta Il Ciocco",
+    "species": "Quercus petraea (dąb bezszypułkowy), Castanea sativa (kasztan jadalny)",
+    "note": "Gęsty las mieszany dębowo-kasztanowy na stokach nad doliną Serchio — typowy krajobraz Garfagnany. Alternatywa dłuższa: CAI B1 (14 km, 4 h, od Giardino).",
+    "gps_hint": "Treppignana LU — szlak via il Ciocco, 3,2 km, ~15 min jazdy od Barga"
   },
   "food": {
-    "place": "Osteria dei Vecchi Sapori — Barga",
-    "address": "Borgo Giardino, Barga",
+    "place": "Osteria Il Borgo dei Sapori — Barga",
+    "address": "Via Borgo 1, 55051 Barga LU",
     "dishes": [
       "pappardelle al cinghiale (z dzikim)",
-      "necci con ricotta (naleśniki kasztanowe — danie garfagnańskie)",
+      "maltagliati al ragù di carne",
+      "necci con ricotta (naleśniki kasztanowe — sezon jesienny)",
       "castagnaccio (ciasto kasztanowe)"
     ],
-    "note": "Rodzinnie prowadzona osteria, menu po włosku, tablica dzienna. Autentyczne, bez angielskich tłumaczeń.",
-    "price": "~€15–20/os z winem",
-    "gps_hint": "Via Borgo Giardino, 55051 Barga LU"
+    "note": "Toskańska kuchnia z lokalnymi składnikami Garfagnany. Menu sezonowe (~32 pozycje). „Osteria dei Vecchi Sapori” to inna restauracja w Mediolanie — nie mylić!",
+    "price": "~€9–15/piatto, ~€25–35/os z winem",
+    "gps_hint": "Via Borgo 1, 55051 Barga LU — tel. 0583 724121"
   },
   "tips": [
     "Rano (8:00–10:00) najlepsze światło na Duomo i widok na Alpy Apuańskie",
     "Parking poza ZTL: Parcheggio Porta Reale — centrum pieszo 5 min",
-    "Grotta del Vento: bilety online grottadelvento.com, ostatnie wejście ~16:00"
+    "Grotta del Vento: rezerwacja online grottadelvento.com — It.2 o 15:00 idealny po lunchu",
+    "Duomo: moneta €2 na oświetlenie — ciemno w środku bez niej"
   ],
   "web_research": [
     {
-      "topic": "Grotta del Vento — bilety i godziny",
-      "summary": "Otwarte cały rok (25 grudnia zamknięte). Itinerario 1: €10/1h, Itinerario 2: €18/2h. Rezerwacja online grottadelvento.com obowiązkowa w weekendy/wrześniu. Itinerario 3 tylko 2×/dziennie (10:00, 14:00). Tel. 0583 722024 (10–19).",
-      "source": "https://grottadelvento.com/opening-times-and-prices/",
+      "topic": "Duomo di San Cristoforo — godziny i atrakcje",
+      "summary": "Codziennie 08:00–18:00 (Via del Duomo 1). Romański kościół z pulpitem marmurowym Guido Bigarelli (~1240), lwami i scenami biblijnych. Moneta €2 włącza oświetlenie wnętrza. Taras z widokiem na Apuan Alps. Tel. 0583 723031.",
+      "source": "https://www.visittuscany.com/it/attrazioni/il-duomo-di-san-cristoforo-a-barga/",
       "checked": "2026-07"
     },
     {
-      "topic": "Temperatura jaskini",
-      "summary": "Stała ~10°C przez cały rok — weź kurtkę nawet gdy na zewnątrz 24°C. Wejście zabronione z plecakami, parasolami, kijkami.",
-      "source": "https://grottadelvento.com/book-now/",
+      "topic": "Grotta del Vento — orario estivo wrzesień",
+      "summary": "Otwarte cały rok (25.12 wył.). Lato (1.04–2.11): It.1 €10 co godz. 10–18; It.2 €18 o 11/15/17; It.3 €25 o 10/14 (rezerwacja!). Ridotto: CAI, dzieci 4–10. Check-in w biglietterii. Tel. 0583 722024 (10–19).",
+      "source": "https://grottadelvento.com/it/orari-biglietteria/",
       "checked": "2026-07"
     },
     {
-      "topic": "Szlak Anello di Barga (CAI 108)",
-      "summary": "Pętla 2–3 h od Porta Reale przez lasy kasztanowo-dębowe. Bezpłatny, oznaczony tablicą CAI. Wrzesień = idealna pogoda (16–24°C), mgła poranna na widok Apuan.",
-      "source": "https://www.informagiovani-italia.com/dove-parcheggiare-barga.htm",
+      "topic": "Temperatura i regulamin jaskini",
+      "summary": "Stała ~10°C — kurtka obowiązkowa. Zakaz: plecaki, parasole, kijki, zwierzęta. Zdjęcia tylko w postojach w drodze tam, nie w drodze powrotnej.",
+      "source": "https://grottadelvento.com/it/orari-biglietteria/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Korekta szlaku — CAI 108 vs lokalne trasy",
+      "summary": "CAI 108 (Apuan) = Foce delle Porchette → Le Scalette (catene!) → Palagnana — anello Monte Croce ~8 h, start Cardoso (~25 min od Barga). „Anello di Barga od Porta Reale” nie istnieje. Lokalnie: Treppignana–Ciocco (3,2 km, 1–1,5 h, dęby) lub CAI B1 (14 km, 4 h, Giardino).",
+      "source": "https://www.caicarrara.it/commissioni/commissioni-territorio/commissione-sentieri/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Lasy dębowe Garfagnana",
+      "summary": "Garfagnana = lasy dębowe i kasztanowe między Apuanami a Apeninami. Treppignana–Ciocco: gęsty las Quercus petraea + castagni, scoiattoli, picchio verde. Wrzesień idealny (16–24°C).",
+      "source": "https://www.alltrails.com/it-it/italy/tuscany/barga/forest",
       "checked": "2026-07"
     },
     {
       "topic": "Parking Barga centrum",
-      "summary": "ZTL w Barga Vecchia — kamery. Parcheggio Porta Reale przy murach (Via Bellavista). Rano 8–10 najlepsze światło i wolne miejsca.",
+      "summary": "ZTL w Barga Vecchia — kamery, mandaty automatyczne. Parcheggio Porta Reale (Via Bellavista) gratis, 5 min pieszo. Backup: Piazzale Matteotti (płatny), Viale Cesare Biondi 44 (gratis, 900 m).",
       "source": "https://www.informagiovani-italia.com/where-to-park-in-barga.htm",
       "checked": "2026-07"
     },
     {
-      "topic": "Restauracja — weryfikacja nazwy",
-      "summary": "Plan wskazuje 'Osteria dei Vecchi Sapori' w Barga — ta nazwa to restauracja w Mediolanie. W Barga szukaj: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121) lub Trattoria L'Altana. Dania garfagnana: necci, pappardelle al cinghiale.",
-      "source": "https://www.informagiovani-italia.com/cosa-mangiare-barga.htm",
+      "topic": "Restauracja — korekta nazwy",
+      "summary": "„Osteria dei Vecchi Sapori” = Mediolan (Via Carmagnola 3). W Barga: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121, ~€9/piatto, pranzo 12–15) lub L'Osteria (Piazza Angelio 13, €20–30, rezerwacja).",
+      "source": "https://www.osteriavecchisapori.com/",
       "checked": "2026-07"
     }
   ],
   "practical_tips": [
-    "Rano 8:00: Duomo + Anello di Barga (2–3 h) — popołudnie Grotta del Vento",
-    "Grotta del Vento: zarezerwuj online Itinerario 2 (2h, €18) — kurtka obowiązkowa (~10°C w jaskini)",
-    "Parking Porta Reale rano prawie zawsze wolny we wrześniu — centrum pieszo 5 min",
-    "Osteria: zweryfikuj nazwę — 'Vecchi Sapori' to Mediolan; w Barga → Il Borgo dei Sapori (Via Borgo 1)",
-    "Grotta: check-in w biglietterii przed wejściem — drukowanie biletu nie wymagane"
+    "Rano 8:00: Duomo (1 h) → Treppignana–Ciocco (1–1,5 h) — popołudnie Grotta del Vento",
+    "Grotta: zarezerwuj Itinerario 2 (2 h, €18) na 15:00 — kurtka obowiązkowa (~10°C)",
+    "Parking Porta Reale rano wolny we wrześniu — zostaw auto, wróć po Grotta (~20 min jazdy)",
+    "Restauracja: Il Borgo dei Sapori (Via Borgo 1), NIE „Vecchi Sapori” (Mediolan)",
+    "Duomo: weź monety €2 — bez nich ciemno, pulpito niewidoczny",
+    "CAI B1 (14 km) alternatywa dla całodziennego trekkingu — wrzesień 2025 ponownie otwarty po franie"
   ],
   "parking": {
     "destination": "Barga — dzień wypadowy z bazy",
@@ -106,14 +121,21 @@
         "type": "public",
         "price": "bezpłatny",
         "gps_hint": "Via Bellavista / Via del Sasso, 55051 Barga",
-        "note": "Start szlaku CAI 108 i wejście do centrum — zostaw auto tu na cały dzień"
+        "note": "Wejście do Barga Vecchia i start dnia — zostaw auto tu na cały dzień"
+      },
+      {
+        "name": "Treppignana — parking",
+        "type": "public",
+        "price": "bezpłatny (sprawdź przy borgo)",
+        "gps_hint": "Treppignana, 55051 Barga LU",
+        "note": "Start szlaku dębowego via il Ciocco — ~15 min jazdy od Porta Reale"
       },
       {
         "name": "Grotta del Vento — parking",
         "type": "attraction",
         "price": "gratis",
-        "gps_hint": "Località Fornovolasco, 55020 Vergemoli LU",
-        "note": "Parking przy ticket office, ~20 min jazdy od Barga"
+        "gps_hint": "via Grotta del Vento 1, Fornovolasco, 55020 Vergemoli LU",
+        "note": "Parking przy biglietteria, ~20 min jazdy od Barga"
       },
       {
         "name": "Piazzale Matteotti",
@@ -123,7 +145,7 @@
         "note": "Backup gdy Porta Reale pełny (weekend)"
       }
     ],
-    "tip": "Jeden parking na cały dzień: Porta Reale — rano Barga, popołudniu 20 min do Grotta"
+    "tip": "Porta Reale na poranek (Duomo + lunch) → popołudniu 20 min do Grotta del Vento"
   },
   "fuel_stops": [
     {
@@ -131,13 +153,14 @@
       "location": "Via Roma / SS445",
       "road": "SS445",
       "hours": "7–20",
-      "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym, ale do weryfikacji poziomu paliwa"
+      "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym"
     }
   ],
   "opening_hours": {
-    "grotta_del_vento": "Cały rok (25.12 zamknięte) — sprawdź godziny tourów online",
-    "duomo_barga": "Zwykle 8:00–12:00, 15:00–18:00 (msze w niedziele)",
-    "osteria_barga": "Pranzo 12:00–14:30, cena 19:00–22:00 typowo"
+    "duomo_barga": "Codziennie 08:00–18:00 (Via del Duomo 1). Msze nd. ~11:15.",
+    "grotta_del_vento": "Cały rok (25.12 wył.). Lato: It.1 co godz. 10–18; It.2 11/15/17; It.3 10/14.",
+    "osteria_borgo_sapori": "Pranzo 12:00–15:00, cena 19:00–23:00 (sprawdź dzień zamknięcia)",
+    "l_osteria_barga": "11:30–15:30, 18:30–22:30 — Piazza Angelio 13, rezerwacja zalecana"
   },
-  "food_note": "Plan wymienia „Osteria dei Vecchi Sapori” — w Barga istnieją: Osteria Il Borgo dei Sapori (Via Borgo 1) i L'Osteria (Piazza Angelio 13). Zweryfikuj przy rezerwacji."
+  "food_note": "„Osteria dei Vecchi Sapori” to restauracja w Mediolanie. W Barga: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121) lub L'Osteria (Piazza Angelio 13)."
 }

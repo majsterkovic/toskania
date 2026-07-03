@@ -17,20 +17,20 @@
     {
       "name": "Ponte della Maddalena / Ponte del Diavolo",
       "drive_min": 22,
-      "description": "Gotycki most z XIII w. przy Borgo a Mozzano o asymetrycznych łukach, legenda o diable. Mgliste Apeniny odbite w rzece Serchio — piękne rano.",
+      "description": "Średniowieczny most łukowy na Serchio przy Borgo a Mozzano (ok. 21 km na północ od Lucca). Zlecony przez Matyldę Toskańską ok. 1080–1100, przebudowany przez Castruccio Castracani ok. 1300. Asymetryczne łuki — centralny 37,8 m — legenda o diabłie i świni. Ważny punkt Via Francigena. Dostęp pieszy 24h bezpłatnie.",
       "type": "medieval",
       "image": "ponte-diavolo",
       "image_key": "ponte-diavolo",
-      "gps_hint": "Ponte del Diavolo, Borgo a Mozzano LU — parking przy SP2"
+      "gps_hint": "Strada dell'Abetone e del Brennero 9, Borgo a Mozzano LU — parking przy SS12"
     },
     {
       "name": "Bagni di Lucca",
       "drive_min": 20,
-      "description": "Miasteczko z epoki romantyzmu: kasyno (najstarsze we Włoszech!), neogotycki English Church, most łańcuchowy. Termy czynne — możliwość kąpieli.",
+      "description": "Historyczne uzdrowisko (źródła 54°C, siarczanowo-wodorowęglanowo-wapniowe). Terme Bagno Bernabò (wanny marmurowe XIX w., grota parowa), Ponte delle Catene (Nottolini), English Church, Casinò (najstarsze we Włoszech — dziś muzeum). „Szwajcaria Toskanii” — modne w XIX w.",
       "type": "cultural",
       "image": "bagni-lucca",
       "image_key": "bagni-lucca",
-      "gps_hint": "Bagni di Lucca LU — parking przy Ponte delle Catene"
+      "gps_hint": "Bagni di Lucca LU — parking przy Ponte delle Catene lub Via Bagni Caldi 36 (Bernabò)"
     }
   ],
   "oak_forest": null,
@@ -43,7 +43,7 @@
       "castagnaccio",
       "risotto alle nettarine (sezonowe)"
     ],
-    "note": "Rodzinna trattoria w Bagni di Lucca (NIE mylić z Trattoria da Giulio — ta jest w centrum Lucca, Via delle Conce 45). Czwartek otwarte 7:00–20:00. Wczesny lunch przed przejazdem do BAZY 2.",
+    "note": "Rodzinna trattoria w Bagni di Lucca (NIE mylić z Trattoria da Giulio — ta jest w centrum LUCCA, Via delle Conce 45/47, off-route). Czwartek 17.09 otwarte 7:00–20:00. Wczesny lunch przed przejazdem do BAZY 2.",
     "price": "~€12–18/os",
     "gps_hint": "Viale Umberto I 85, Bagni di Lucca LU",
     "phone": "+39 0583 805919",
@@ -51,68 +51,100 @@
   },
   "accommodation": {
     "place": "BAZA 2 — k. Castelnuovo Berardenga",
-    "note": "Przyjazd ok. 16:00–17:30 (transfer ~2h15 po lunchu). Check-in w agriturismo — typowo 15:00–19:00, poza sezonem do 18:00. Zadzwoń z ETA.",
+    "note": "Przyjazd ok. 16:00–17:30 (transfer ~2h15 po lunchu). Check-in w agriturismo — typowo 15:00–19:00, poza sezonem do 18:00. Zadzwoń z ETA z A11.",
     "price": "€70–100/noc",
-    "booking_tip": "Vagliagli lub Monti in Chianti — poza ZTL. Direct booking u właściciela często taniej niż Booking.",
+    "booking_tip": "Vagliagli lub Monti in Chianti — poza ZTL. Direct booking u właściciela często taniej niż Booking. Naviguj do agriturismo, nie centrum Castelnuovo Berardenga.",
     "gps_hint": "Naviguj: Vagliagli SI lub Monti in Chianti SI — nie centrum Castelnuovo (ZTL)",
     "options": [
       {
-        "name": "Agriturismo Podere Santa Maria",
+        "name": "Agriturismo Amina, Winery & Hiking",
+        "area": "Vagliagli (Località Corsignano)",
+        "address": "SP 102 di Vagliagli, 53019 Vagliagli SI",
+        "note": "Winnica, basen, śniadanie, 5 min od centrum Vagliagli, 15 min od Sieny. Booking ~9.5/10."
+      },
+      {
+        "name": "Agriturismo Le Macie",
         "area": "Vagliagli",
-        "note": "Typowy chianti agriturismo z własnym winem"
+        "address": "Strada Provinciale 9 n. 54, 53019 Vagliagli SI",
+        "note": "Apartamenty z kuchnią, basen sezonowy, restauracja. 25 min pieszo od Chianti Sculpture Park."
+      },
+      {
+        "name": "Fattoria di Corsignano",
+        "area": "k. Vagliagli",
+        "note": "Ekologiczny agriturismo, basen, restauracja, degustacje wina w winnicach."
       },
       {
         "name": "Agriturismo Monti in Chianti",
         "area": "Monti in Chianti",
-        "note": "Cisza, winnice, 20 min od Sieny"
+        "note": "Alternatywa poza Vagliagli — cisza, winnice, ~20 min od Sieny."
       }
     ]
   },
   "tips": [
     "Ponte del Diavolo najlepiej rano (8:00–10:00) — mniej autokarów, mgła nad Serchio",
-    "Osteria del Diavolo przy moście zamknięta w czwartek — lunch w Trattoria Borghesi w Bagni",
+    "Osteria del Diavolo przy moście ZAMKNIĘTA w czwartek (17.09) — lunch w Trattoria Borghesi w Bagni",
+    "Trattoria da Giulio (Via delle Conce 45, LUCCA) jest off-route — wymaga detouru przez ZTL Lucca",
     "Wyjazd do BAZY 2 po lunchu (~13:30) — bagaż w aucie, ~2h 15 min jazdy",
     "Ostatni przystanek Garfagnany — tankowanie przed A11",
-    "Trattoria da Giulio (Via delle Conce 45) jest w LUCCA, nie w Bagni di Lucca — poprawka!"
+    "Zadzwoń do agriturismo z A11 z ETA — drogi do Vagliagli kręte, check-in 15:00–19:00"
   ],
   "web_research": [
     {
-      "topic": "Ponte del Diavolo — parking i dostęp",
-      "summary": "Parking gratuito 24h przy SS12, obie strony. Most pedonale — 5 min. Tre osterie accanto al ponte.",
-      "source": "https://www.viaggieritratti.it/ponte-del-diavolo-di-borgo-a-mozzano/",
+      "topic": "Ponte della Maddalena — historia i dostęp",
+      "summary": "Most z ok. 1080–1100 (Matylda Toskańska), przebudowa Castruccio Castracani ok. 1300. Największy łuk 37,8 m. Nazwa od oratorium św. Magdaleny (ok. 1500). Legenda: diabeł zbudował most, brygadzista oszukał go świnią. Modyfikacja 1898 (kolej Garfagnana). Dostęp pieszy 24h bezpłatnie. Parking przy SS12. Stacja Borgo a Mozzano ~2 km.",
+      "source": "https://en.wikipedia.org/wiki/Ponte_della_Maddalena",
       "checked": "2026-07"
     },
     {
-      "topic": "Bagno Bernabò Bagni di Lucca",
-      "summary": "Terme storiche (Elisa Bonaparte 1810). Aperto 9–18 tutti i giorni. Bagno romano in marmo. Tel. 331 171 9014.",
-      "source": "https://bellabagnidilucca.com/2025/09/23/a-roman-bath-at-bernabo-spa/",
+      "topic": "Ponte del Diavolo — parking i ruch turystyczny",
+      "summary": "Parking gratuito 24h przy SS12, obie strony rzeki. Most pedonale — 5–15 min spacer. Autobusy E10/E71 zatrzymują się przy moście. Rano (8–10) mniej autokarów z Lucca.",
+      "source": "https://www.cestee.com/destination/italy/tuscany/ponte-del-diavolo",
       "checked": "2026-07"
     },
     {
-      "topic": "Trasa Barga → Chianti",
-      "summary": "SS445→SS12→A11→Siena Sud→SP408. ~195 km, 2h15 bez postojów. Pedaggio A11 ~€8–10.",
-      "source": "https://www.toscana.info/en/lucca/lucca-province/barga/",
+      "topic": "Terme Bagno Bernabò Bagni di Lucca",
+      "summary": "Założenie z 1810 (Eliza Baciocchi, siostra Napoleona), odnowione 2006. Wanny marmurowe XIX w., basen ośmiokątny, grota parowa, fangoterapia. Wody siarczanowo-wodorowęglanowo-wapniowe (54°C). Via Bagni Caldi, Ponte a Serraglio. Rezerwacja zalecana.",
+      "source": "https://termebagnobernabo.it/en/",
       "checked": "2026-07"
     },
     {
-      "topic": "Terme Bagni di Lucca — stato 2026",
-      "summary": "Hotel Terme Bagni di Lucca: piscina aperta, stabilimento termale principale chiuso. Bernabò (Ponte a Serraglio) operativo.",
-      "source": "https://www.terme-bagnidilucca.it/",
+      "topic": "Bagni di Lucca — kontekst historyczny",
+      "summary": "Źródła znane od czasów rzymskich, rozkwit w XIX w. („Szwajcaria Toskanii”). Byron, Shelley, Browningowie, Paganini odwiedzali kurort. Ponte delle Catene (Nottolini) — jeden z najstarszych mostów żelaznych. Casinò = najstarsze kasyno Włoch (dziś muzeum).",
+      "source": "https://www.visittuscany.com/en/towns-and-villages/bagni-di-lucca/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Trattoria da Giulio — KOREKTA: Lucca, nie Bagni",
+      "summary": "Via delle Conce 45/47, 55100 Lucca (Pelleria). Od 1945, kuchnia lucchese: farro, tordelli, cioncia, baccalà. Pn–Sb 12:00–14:30 / 19:00–22:30, nd zamknięte. We wrześniu otwarte w niedziele na lunch. Tel. +39 0583 55948. OFF-ROUTE — wymaga detouru przez ZTL Lucca.",
+      "source": "https://www.trattoriadagiulio.it/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Trasa Barga → Castelnuovo Berardenga",
+      "summary": "SS445/SS12 → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 (Firenze-Mare) → Raccordo Siena → wyjazd Castelnuovo Berardenga (SS73/SP408). ~142–195 km, 1h 48 min – 2h 45 min. Pedaggio A11 ~€8–10. Unikaj ZTL centrum Lucca.",
+      "source": "https://fromto.travel/en/italy/to-barga/to-castellina-in-chianti",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Agriturismo Vagliagli — opcje noclegu BAZA 2",
+      "summary": "Vagliagli: XIII-w. borgo („dolina czosnku”), południowy Chianti. Agriturismo Amina (SP 102 Corsignano, winnica, basen, 5 min od centrum). Le Macie (SP9 n. 54, apartamenty). Fattoria di Corsignano (degustacje). Chianti Sculpture Park w okolicy. 15 min od Sieny.",
+      "source": "https://www.to-tuscany.com/travel-guide/towns-villages/vagliagli/",
       "checked": "2026-07"
     }
   ],
   "practical_tips": [
     "Ponte del Diavolo: przyjedź przed 10:00 — po 11:00 autokary turystyczne z Lucca",
-    "Bagni di Lucca: 1–1,5h — Ponte delle Catene, English Church, opcjonalnie kąpiel termalna Bernabò",
-    "Wyjazd do BAZY 2 po lunchu ~13:30 — 195 km, realnie 2h15–2h45 z postojem",
+    "Bagni di Lucca: 1–1,5h — Ponte delle Catene, English Church, opcjonalnie kąpiel Bernabò (rezerwacja!)",
+    "Lunch: Trattoria Borghesi (czwartek OK) — NIE Da Giulio (Lucca, off-route, ZTL)",
+    "Wyjazd do BAZY 2 po lunchu ~13:30 — 195 km, realnie 2h15–2h45 z postojem na A11",
     "Tankowanie obowiązkowe przed A11 — stacji mało w Chianti poza Gaiole/Castelnuovo Berardenga",
-    "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 16:00–17:00, droga do Vagliagli kręta"
+    "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 16:00–17:00, droga do Vagliagli kręta (SP102/SP9)"
   ],
   "parking": {
-    "ponte_diavolo": "Parcheggio al Ponte del Diavolo — bezpłatny, 24h, przy SS12 tuż przy moście (strona wschodnia). Most pieszy — 15 min spacer.",
+    "ponte_diavolo": "Parcheggio al Ponte del Diavolo — bezpłatny, 24h, przy SS12 tuż przy moście (strona wschodnia). Most pieszy — 5–15 min spacer. Stacja FS Borgo a Mozzano ~2 km.",
     "bagni_lucca": "Parking przy Ponte delle Catene lub centrum — strefy płatne. Terme Bernabò: Via Bagni Caldi 36 — kilka miejsc parkingowych.",
-    "transfer_fuel": "Zatankuj w Castelnuovo di Garfagnana lub przy zjeździe na A11 — ostatnia okazja przed płatną autostradą.",
-    "base2_agriturismo": "Parkuj na terenie agriturismo — nie w centrum Castelnuovo Berardenga (ZTL aktywna).",
+    "transfer_fuel": "Zatankuj w Castelnuovo di Garfagnana lub przy zjeździe na A11 (Capannori/Fornaci) — ostatnia okazja przed płatną autostradą.",
+    "base2_agriturismo": "Parkuj na terenie agriturismo — nie w centrum Castelnuovo Berardenga (ZTL aktywna). Naviguj: Vagliagli SI, nie Castelnuovo centro.",
     "transfer_tip": "Bagaż w aucie cały dzień — zaparkuj przy moście, zwiedzaj pieszo, wróć po lunchu na transfer"
   },
   "fuel_stops": [
@@ -139,12 +171,11 @@
   "opening_hours": {
     "ponte_del_diavolo": "Dostęp 24h (obiekt na zewnątrz). Najlepsze światło: 8:00–10:00 rano — mgła nad Serchio.",
     "casino_bagni_lucca": "Regio Casinò (Ponte a Serraglio) — muzeum, nie aktywne kasyno. Wizyty: sprawdź infopoint +39 0583 805745.",
-    "trattoria_borghesi": "Wt–Sb 7:00–20:00 (czwartek OK). Nd i Pn zamknięte.",
-    "osteria_del_diavolo": "10:30–17:30, ZAMKNIĘTE w czwartek — nie planuj na dzień 6!",
+    "trattoria_borghesi": "Wt–Sb 7:00–20:00 (czwartek 17.09 OK). Nd i Pn zamknięte.",
+    "osteria_del_diavolo": "10:30–17:30, ZAMKNIĘTE w czwartek — nie planuj na dzień 6 (17.09)!",
     "agriturismo_checkin": "Typowo 15:00–19:00 — zadzwoń jeśli przyjazd po 18:00",
     "bagni_bernabo_spa": "Bagno Bernabò: Pn–Nd 9:00–18:00. Tel. +39 331 171 9014. Rezerwacja zalecana.",
-    "casino_bagni": "Casinò di Bagni di Lucca — muzeum (najstarsze kasyno Włoch, nieaktywne) — 10:00–18:00 sezon.",
-    "trattoria_da_giulio": "UWAGA: Trattoria da Giulio (Via Casalini 1) — sprawdź godziny; typowo 12:00–14:30. Rezerwacja na lunch przed przejazdem.",
+    "trattoria_da_giulio": "Via delle Conce 45/47, LUCCA (NIE Bagni). Pn–Sb 12:00–14:30 / 19:00–22:30, nd zamknięte. We wrześniu otwarte w niedziele na lunch. Tel. +39 0583 55948. OFF-ROUTE — nie na trasie transferu.",
     "agriturismo_baza2_checkin": "15:00–19:00 — zadzwoń z A11 z ETA"
   },
   "route_segments": [
@@ -158,25 +189,25 @@
       "segment": "Borgo a Mozzano → Bagni di Lucca",
       "road": "SS12",
       "km": "~12",
-      "note": "W dół doliny — Bagni di Lucca po prawej (Via Lodovica/SP20)."
+      "note": "W dół doliny — Bagni di Lucca po prawej (Via Lodovica/SP20). Kolej Garfagnana (1898) przy moście."
     },
     {
       "segment": "Bagni di Lucca → Lucca → A11",
       "road": "SS12/A11",
       "km": "~35",
-      "note": "Tankowanie przed wjazdem na A11. Unikaj ZTL centrum Lucca."
+      "note": "Tankowanie przed wjazdem na A11. Unikaj ZTL centrum Lucca — nie wjeżdżaj do murów."
     },
     {
       "segment": "A11 → Siena",
-      "road": "A11/E70/Siena Sud",
+      "road": "A11/E70/Raccordo Siena",
       "km": "~110",
-      "note": "Superstrada Siena-Bettolle. Raccordo do Castelnuovo Berardenga."
+      "note": "Superstrada Siena-Bettolle (RA3). Pedaggio ~€8–10. Postój: Area servizio Lucca Est."
     },
     {
-      "segment": "Siena Sud → BAZA 2",
-      "road": "SP408/SS326",
+      "segment": "Siena Sud → BAZA 2 (Vagliagli)",
+      "road": "SP408/SS326/SP102",
       "km": "~25",
-      "note": "Wjazd w Chianti — kręte drogi do agriturismo. ETA 16:00–17:00."
+      "note": "Wjazd w Chianti — wyjazd Castelnuovo Berardenga (SS73). Kręte drogi do Vagliagli. ETA 16:00–17:00."
     }
   ]
 }

@@ -6,41 +6,41 @@
   "title": "Zamki i wino Chianti",
   "base_id": "base2",
   "base_label": "BAZA 2 — Chianti Senese",
-  "drive_limit_min": 25,
+  "drive_limit_min": 30,
   "attractions": [
     {
       "name": "Castello di Brolio",
-      "drive_min": 12,
-      "description": "Zamek rodziny Ricasoli, gdzie wynaleziono Chianti Classico. Tarasy, ogrody, kaplica, muzeum. Nieturystyczny jak na tej rangi zabytek.",
+      "drive_min": 20,
+      "description": "Zamek rodziny Ricasoli od 1141 — tu ustalono recepturę Chianti Classico. Bastioni, giardini, cappella, Collezione Ricasoli. 1200 ha własności (240 ha winnic). Nieturystyczny jak na rangę zabytku.",
       "type": "medieval",
       "image_key": "brolio",
-      "gps_hint": "Castello di Brolio, 53013 Gaiole in Chianti SI",
+      "gps_hint": "Località Madonna a Brolio, 53013 Gaiole in Chianti SI",
       "image": "brolio"
     },
     {
       "name": "Radda in Chianti",
       "drive_min": 22,
-      "description": "Autentyczne borgo z XIV-wiecznym Palazzo del Podestà, lokalne sklepy z winami i serem Pecorino. Mniejsze tłumy niż Greve czy Panzano.",
+      "description": "Średniowieczne borgo (530 m n.p.m.), dawna stolica Ligi Chianti (1384). Piazza Ferrucci z Palazzo del Podestà (XIV w.), Propositura di San Niccolò, porte Valdarnese i Fiorentina. Casa del Chianti Classico w dawnych klasztorze.",
       "type": "medieval",
       "image_key": "radda",
-      "gps_hint": "Radda in Chianti SI — parking przy Piazzale del Castello",
+      "gps_hint": "Radda in Chianti SI — parking Piazzale del Castello",
       "image": "radda"
     },
     {
-      "name": "Bosco di Brolio — Sentiero delle Querce",
-      "drive_min": 12,
-      "description": "Las otaczający zamek Brolio: Quercus pubescens (dąb omszony) i Q. cerris. Nieformalna ścieżka wokół murów zamku (2–3 km).",
+      "name": "Bosco di Brolio — querceti",
+      "drive_min": 20,
+      "description": "Querceti (roverella Quercus pubescens, cerro Q. cerris) otaczające zamek — jeden z najlepiej zachowanych w Chianti. Bosco Inglese (park XIX w. Bettino Ricasoli). Nieformalna pętla 2–3 km wokół murów zamku.",
       "type": "nature",
       "image_key": "brolio",
-      "gps_hint": "Parking zamku Brolio — ścieżka wokół murów, start przy bramie",
+      "gps_hint": "Parking zamku Brolio — pętla od bramy zamku, 2–3 km",
       "image": "brolio"
     }
   ],
   "oak_forest": {
-    "spot": "Bosco di Brolio",
-    "species": "Quercus pubescens, Q. cerris",
-    "note": "Las dębowy otaczający zamek Brolio — jeden z najlepiej zachowanych w Chianti",
-    "gps_hint": "Sentiero delle Querce — pętla od parkingu zamku, 2–3 km"
+    "spot": "Bosco di Brolio — querceti",
+    "species": "Quercus pubescens (roverella), Q. cerris (cerro)",
+    "note": "Querceti coltivati a ceduo wokół zamku Brolio — mieszane z cyprysem i pinem. We wrześniu możliwe grzyby (porcini). Dłuższy wariant: anello 17 km Brolio–Cacchiano–Monti–San Felice.",
+    "gps_hint": "Start: parking Castello di Brolio — pętla 2–3 km wokół murów"
   },
   "food": {
     "place": "Osteria di Passignano — Badia a Passignano",
@@ -48,88 +48,98 @@
     "dishes": [
       "pici al ragù di cinghiale",
       "ribollita",
-      "Chianti Classico Antinori",
-      "menu sezonowe z ogrodu klasztornego"
+      "Chianti Classico Antinori Gran Selezione",
+      "menu sezonowe z Orto di Badia (ogrodek klasztorny)"
     ],
-    "note": "Michelin ⭐ od 2007. Przy opactwie benedyktyńskim XI w. Rezerwacja OBOWIĄZKOWA — 4–6 tygodni wcześniej na piątek. Lunch 12:15–14:15 lepszy niż kolacja (widok na klasztor w świetle dziennym). Zamknięte niedziela.",
-    "price": "~€80–120/os z winem (Michelin)",
+    "note": "Michelin ⭐ nieprzerwanie od 2007. Przy opactwie benedyktyńskim XI w. (Marchesi Antinori). Rezerwacja OBOWIĄZKOWA — 4–6 tygodni wcześniej na piątek. Lunch 12:15–14:15 lepszy niż kolacja (widok na klasztor w świetle dziennym). Zamknięte niedziela.",
+    "price": "~€80–120/os z winem (Michelin €€€€)",
     "gps_hint": "Via Passignano 33, Badia a Passignano FI",
     "phone": "+39 055 8071278",
     "reservation_url": "https://www.osteriadipassignano.com/en/reservation/"
   },
   "tips": [
-    "Brolio: wstęp do zamku i degustacja ~€15 — sprawdź godziny na baronericasoli.com",
-    "Bosco di Brolio: wejście bezpłatne od parkingu zamku",
-    "Radda: lokalne winiarnie otwarte 10:00–13:00 i 15:00–19:00",
-    "Brolio: bilet giardini €7,50 (nie €15) — degustacja 1 wina w cenie, visit.ricasoli.com",
-    "Brolio: przyjedź na 10:00 otwarcie — 1h na giardini, potem Radda",
-    "Osteria di Passignano: rezerwuj tygodnie wcześniej! Tel. 055 8071278",
-    "Bosco di Brolio: wejście bezpłatne od parkingu zamku, pętla 2–3 km",
-    "Radda: mniej turystów niż Greve — lokalne pecorino i Chianti Classico"
+    "Brolio: bilet giardini €7,50 (nie €15!) — degustacja 1 wina w cenie, bez rezerwacji, visit.ricasoli.com",
+    "Brolio: przyjedź na 10:00 otwarcie — 1–1,5h na giardini i bastioni, potem Bosco",
+    "Bosco di Brolio: wejście bezpłatne od parkingu zamku, pętla 2–3 km przez querceti",
+    "Radda: Palazzo del Podestà + Casa del Chianti Classico — enoteche 10:00–13:00 i 15:00–19:00",
+    "Radda: mniej turystów niż Greve — lokalne pecorino i Chianti Classico",
+    "Osteria di Passignano: rezerwuj 4–6 tyg. wcześniej! Tel. 055 8071278. Nd chiuso.",
+    "Dojazd z bazy (Castelnuovo Berardenga): Brolio ~20 min (SP484), Radda ~22 min — wszystko ≤30 min",
+    "Wrzesień = vendemmia — winiarnie mogą mieć skrócone godziny, sprawdź przed wyjazdem"
   ],
   "image": "brolio",
   "web_research": [
     {
       "topic": "Castello di Brolio — orari 2026",
-      "summary": "20.03–12.10: 10–19 tutti i giorni (biglietteria fino 18). 13–31.10: 10–18. Ingresso giardini con degustazione.",
+      "summary": "20.03–12.10: codziennie 10–19 (biglietteria do 18). 13–31.10: 10–18. 18.09 = piątek: otwarte. Zimą (koniec XII–połowa III) zamknięte.",
       "source": "https://www.ricasoli.com/castello/",
       "checked": "2026-07"
     },
     {
-      "topic": "Castello di Brolio — prezzi",
-      "summary": "Visita libera giardini+bastioni+cappella+degustazione: ~€15. Classic Tour con cantina: ~€28, prenotazione obbligatoria.",
-      "source": "https://toscanashopping.it/blog/luoghi-da-scoprire/castello-di-brolio-prezzi-orari-e-come-arrivare/",
+      "topic": "Castello di Brolio — prezzi i wstęp",
+      "summary": "Visita libera giardini+bastioni+cappella+1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji — biglietti all'ingresso. Classic Tour (cantina, 3 vini): €55, 2h30, prenotazione visit.ricasoli.com. Gran Cru €170, Tramonto €90.",
+      "source": "https://visit.ricasoli.com/",
       "checked": "2026-07"
     },
     {
-      "topic": "Osteria di Passignano — orari",
-      "summary": "Mar–Sab 12:15–14:15, 19:30–21:30. Domenica chiuso. Prenotazione: +39 055 8071278. Michelin star dal 2007.",
-      "source": "https://www.osteriadipassignano.com/en/contact-us/",
+      "topic": "Bosco delle Querce — querceti Brolio",
+      "summary": "Okolice zamku: querceti a ceduo (cerro + roverella) z cyprysem i pinem. Bosco Inglese — park historyczny XIX w. Nieformalna pętla 2–3 km wokół murów. Anello 17 km (Brolio–Cacchiano–Monti–San Felice) dla aktywnych.",
+      "source": "https://eco.museisenesi.org/archivio/110/il-bosco/",
       "checked": "2026-07"
     },
     {
-      "topic": "Radda in Chianti — enoteche",
-      "summary": "Borgo medievale, Palazzo del Podestà XIV sec. Enoteche aperte 10–13 e 15–19. Meno affollata di Greve.",
-      "source": "https://www.ricasoli.com/castello/",
+      "topic": "Radda in Chianti — borgo",
+      "summary": "Capitale Lega del Chianti (1384). Piazza Ferrucci: Palazzo del Podestà (XIV w., stemmi), Propositura di San Niccolò (neogotyk Coppedè 1926). Porte Valdarnese/Fiorentina. Casa del Chianti Classico (ex-convento Santa Maria al Prato). Ghiacciaia Granducale poza borgo.",
+      "source": "https://www.visittuscany.com/it/citta-e-borghi/radda-in-chianti/",
       "checked": "2026-07"
     },
     {
-      "topic": "Bosco di Brolio — sentiero",
-      "summary": "Sentiero delle Querce: 2–3 km loop od parkingu zamku. Quercus pubescens i Q. cerris.",
-      "source": "https://www.ricasoli.com/castello/",
+      "topic": "Osteria di Passignano — orari i rezerwacja",
+      "summary": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. Michelin ⭐ od 2007. Chef Matteo Lorenzini. Tel. +39 055 8071278, info@osteriadipassignano.com. Prenotazione obbligatoria.",
+      "source": "https://www.osteriadipassignano.com/en/home-en/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Dojazd z Castelnuovo Berardenga",
+      "summary": "Brolio: ~13 km, ~20–25 min (SP7 → SP484). Radda: ~22 min. Badia a Passignano: ~25 min. Wszystkie punkty dnia ≤30 min od Bazy 2.",
+      "source": "https://www.ricasoli.com/wp-content/uploads/2018/04/RICASOLI_INDICAZIONI_STRADALI_ENG.pdf",
       "checked": "2026-07"
     }
   ],
   "practical_tips": [
-    "Brolio: przyjedź na 10:00 (otwarcie) — 1,5h na zamek, ogrody i degustację Chianti Classico",
-    "Bosco di Brolio: pętla Sentiero delle Querce 2–3 km — dąb omszony i burgundzki, bezpłatnie od parkingu",
-    "Radda: mniej turystyczna niż Greve — lokalne enoteche z degustacją €5–10",
-    "Osteria di Passignano: Michelin — rezerwuj telefonicznie min. 2 tyg. wcześniej. Piątek lunch = OK",
-    "Winiarnie w settembre: vendemmia (zbiór winogron) — możliwe krótsze godziny, sprawdź przed wyjazdem"
+    "Brolio: przyjedź na 10:00 (otwarcie) — 1–1,5h na giardini, bastioni i degustację Chianti Classico",
+    "Bosco delle Querce: pętla 2–3 km bezpłatnie od parkingu — dąb omszony i cerrowy, wrzesień = sezon grzybów",
+    "Radda: 2–3h na borgo — Piazza Ferrucci, Casa del Chianti Classico, enoteca z degustacją €5–10",
+    "Osteria di Passignano: Michelin — rezerwuj min. 4 tyg. wcześniej. Piątek lunch = OK, nd zamknięte",
+    "Vendemmia (wrzesień): winiarnie mogą mieć krótsze godziny — sprawdź przed wyjazdem"
   ],
   "parking": {
-    "castello_brolio": "Parking u podnóża zamku — bezpłatny, duży. Via Madonna a Brolio, Gaiole in Chianti. Wejście pieszo 5 min pod górę.",
-    "radda": "Parcheggio Piazzale del Castello — płatny, krótki spacer do centrum. Alternatywa: parking przy Via Roma.",
-    "badia_passignano": "Parking przy opactwie — ograniczona liczba miejsc, przyjedź 10 min przed rezerwacją.",
-    "radda_chianti": "Piazzale del Castello — parking przy murach miasteczka. ZTL w centrum — parkuj na piazzale.",
-    "bosco_brolio": "Ten sam parking co zamek — ścieżka Sentiero delle Querce od bramy zamku.",
-    "tip": "Brolio rano (10:00 otwarcie) → Bosco → Radda na lunch/wino"
+    "castello_brolio": "Parking u podnóża zamku — bezpłatny, duży. Via Madonna a Brolio, Gaiole in Chianti. Wejście pieszo ~5 min pod górę.",
+    "radda": "Parcheggio Piazzale del Castello — płatny, krótki spacer do centrum. ZTL w centro storico — parkuj na piazzale.",
+    "badia_passignano": "Parking przy opactwie Badia a Passignano — ograniczona liczba miejsc, przyjedź 10 min przed rezerwacją.",
+    "bosco_brolio": "Ten sam parking co zamek — pętla querceti od bramy zamku.",
+    "tip": "Brolio rano (10:00) → Bosco → Radda → lunch Passignano (rezerwacja!)"
   },
   "opening_hours": {
-    "castello_brolio": "20.03–12.10.2026: codziennie 10:00–19:00 (biglietteria do 18:00). 18.09 = pt: otwarte. Biglietto giardini+bastioni+degustazione ~€15.",
-    "castello_brolio_ticket": "Giardini + bastioni + cappella + 1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji.",
-    "brolio_classic_tour": "Tour Classico (cantine + degustacja): €28, 2h, prenotazione visit.ricasoli.com",
-    "osteria_passignano": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. 18.09 = piątek OK na lunch. Tel. +39 055 8071278 — prenotazione obbligatoria.",
+    "castello_brolio": "20.03–12.10.2026: codziennie 10:00–19:00 (biglietteria do 18:00). 18.09 = piątek: otwarte.",
+    "castello_brolio_ticket": "Giardini + bastioni + cappella + 1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji — all'ingresso.",
+    "brolio_classic_tour": "Tour Classico (cantina + 3 vini): €55, 2h30, start 10:30, prenotazione visit.ricasoli.com",
+    "brolio_gran_cru": "Tour Gran Cru (cantina + 4 vini + pranzo): €170, prenotazione obbligatoria",
+    "osteria_passignano": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. 18.09 = piątek OK na lunch. Tel. +39 055 8071278.",
     "radda_enoteche": "Sklepy z winem: typowo 10:00–13:00 i 15:00–19:00",
-    "brolio_tours": "Visita libera: no prenotazione. Tour guidati (Classic €28): prenotazione su visit.ricasoli.com.",
-    "radda_shops": "Winiarnie i enoteche: 10:00–13:00, 15:00–19:00. Sobota = więcej otwartych punktów.",
-    "bosco_brolio": "Szlak wokół murów: dostęp 24h, bezpłatny — najlepszy rano"
+    "casa_chianti_classico": "Casa del Chianti Classico, Radda — sprawdź godziny na chianticlassico.com (wystawy + degustacje)",
+    "bosco_brolio": "Szlak wokół murów: dostęp 24h, bezpłatny — najlepszy rano po wizycie zamku"
   },
   "fuel_stops": [
     {
       "name": "IP Gaiole in Chianti",
-      "location": "SP408, centrum",
+      "location": "SP408, centrum Gaiole",
       "note": "Stacja w centrum Chianti — tankuj rano przed objazdem winnic."
+    },
+    {
+      "name": "IP / Q8 Castelnuovo Berardenga",
+      "location": "Via Chiantigiana / SS408, Castelnuovo Berardenga",
+      "note": "Stacja przy bazie — tankuj wieczorem po powrocie z dnia."
     }
   ]
 }

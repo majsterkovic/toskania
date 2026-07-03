@@ -1,24 +1,41 @@
-import plan from '../plan.json';
-import { renderApp, initDayNav, initGallery } from './render.js';
+import plan3 from '../plan.json';
+import plan2 from '../plan_2bazy.json';
+import { renderApp, renderVariantsSection, initDayNav, initGallery } from './render.js';
 import { initAllMaps } from './maps.js';
 import './style.css';
 
-const app = document.getElementById('app');
-app.innerHTML = renderApp(plan);
-initDayNav();
-initGallery();
+let currentPlan = plan3;
 
-// Leaflet maps — po wyrenderowaniu HTML, z małym opóźnieniem
-// żeby DOM był w pełni gotowy (szczególnie przy lazy-load sekcji)
-if (typeof window !== 'undefined') {
-  const initMaps = () => {
-    if (window.L) {
-      initAllMaps(plan);
-    } else {
-      // Leaflet jeszcze się ładuje z CDN
-      setTimeout(initMaps, 100);
-    }
-  };
-  // Użyj requestAnimationFrame żeby odczekać na pełny render
-  requestAnimationFrame(() => setTimeout(initMaps, 50));
+function mount(plan) {
+  const app = document.getElementById('app');
+  app.innerHTML = renderApp(plan);
+  initDayNav();
+  initGallery();
+  initVariantsToggle();
+  if (typeof window !== 'undefined') {
+    const initMaps = () => {
+      if (window.L) {
+        initAllMaps(plan);
+      } else {
+        setTimeout(initMaps, 100);
+      }
+    };
+    requestAnimationFrame(() => setTimeout(initMaps, 50));
+  }
 }
+
+function initVariantsToggle() {
+  document.querySelectorAll('[data-plan-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.planToggle;
+      currentPlan = target === '2bazy' ? plan2 : plan3;
+      mount(currentPlan);
+      requestAnimationFrame(() => {
+        const variantsSection = document.getElementById('warianty');
+        if (variantsSection) variantsSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  });
+}
+
+mount(currentPlan);

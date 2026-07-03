@@ -6,8 +6,9 @@
 const OSM_TILE = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const OSM_ATTR = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-const STADIA_TILE = 'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png';
-const STADIA_ATTR = '© <a href="https://stadiamaps.com/">Stadia Maps</a>, © <a href="https://openmaptiles.org/">OpenMapTiles</a>, ' + OSM_ATTR;
+// CartoDB Positron — darmowe, bez klucza API, pastelowe tło idealne dla toskańskiej palety
+const CARTO_TILE = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+const CARTO_ATTR = '© <a href="https://carto.com/attributions">CARTO</a>, ' + OSM_ATTR;
 
 const ICON_COLORS = {
   home: '#5c6b45',
@@ -46,12 +47,12 @@ function makeIcon(type) {
   });
 }
 
-function tileLayer(container) {
-  try {
-    return window.L.tileLayer(STADIA_TILE, { attribution: STADIA_ATTR, maxZoom: 18 });
-  } catch {
-    return window.L.tileLayer(OSM_TILE, { attribution: OSM_ATTR, maxZoom: 19 });
-  }
+function tileLayer() {
+  return window.L.tileLayer(CARTO_TILE, {
+    attribution: CARTO_ATTR,
+    maxZoom: 19,
+    subdomains: 'abcd',
+  });
 }
 
 /**

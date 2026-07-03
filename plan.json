@@ -67,35 +67,35 @@
           "alt": "Bagni di Lucca",
           "credit": "Wikimedia Commons · Keith Ruffles"
         },
-        "chianti": {
-          "src": "images/chianti.jpg",
-          "alt": "Colline del Chianti",
-          "credit": "Wikimedia Commons · Anna.Massini"
+        "castiglione-orcia": {
+          "src": "images/castiglione-orcia.jpg",
+          "alt": "Castiglione d'Orcia — Rocca Aldobrandesca",
+          "credit": "Wikimedia Commons · Frieda"
         },
-        "brolio": {
-          "src": "images/castello-brolio.jpg",
-          "alt": "Castello di Brolio i winnice",
-          "credit": "Wikimedia Commons · Eric Kilby"
+        "bagno-vignoni": {
+          "src": "images/bagno-vignoni.jpg",
+          "alt": "Piazza delle Sorgenti, Bagno Vignoni",
+          "credit": "Wikimedia Commons · Paolo Steffan"
         },
-        "radda": {
-          "src": "images/radda-chianti.jpg",
-          "alt": "Radda in Chianti",
-          "credit": "Wikimedia Commons · Anna.Massini"
+        "pienza": {
+          "src": "images/pienza.jpg",
+          "alt": "Piazza Pio II, Pienza",
+          "credit": "Wikimedia Commons · Tango7174"
         },
-        "siena": {
-          "src": "images/siena-campo.jpg",
-          "alt": "Piazza del Campo, Siena",
-          "credit": "Wikimedia Commons · Perituss"
+        "montalcino": {
+          "src": "images/montalcino.jpg",
+          "alt": "Fortezza di Montalcino",
+          "credit": "Wikimedia Commons · Frieda"
         },
-        "monte-oliveto": {
-          "src": "images/monte-oliveto-maggiore.jpg",
-          "alt": "Abbazia Monte Oliveto Maggiore",
-          "credit": "Wikimedia Commons · Holger Uwe Schmitt"
+        "san-quirico": {
+          "src": "images/san-quirico.jpg",
+          "alt": "San Quirico d'Orcia — Collegiata",
+          "credit": "Wikimedia Commons · Matthias Süßen"
         },
-        "asciano": {
-          "src": "images/asciano-crete.jpg",
-          "alt": "Crete Senesi, Asciano",
-          "credit": "Wikimedia Commons · Anna.Massini"
+        "monticchiello": {
+          "src": "images/monticchiello.jpg",
+          "alt": "Monticchiello — wieża i mury obronne",
+          "credit": "Wikimedia Commons · Heidas"
         },
         "pitigliano": {
           "src": "images/pitigliano.jpg",
@@ -187,10 +187,10 @@
           "type": "base"
         },
         {
-          "label": "Castelnuovo Berardenga — BAZA 2",
+          "label": "Castiglione d'Orcia — BAZA 2",
           "coords": [
-            43.365,
-            11.513
+            43.0,
+            11.617
           ],
           "type": "base"
         },
@@ -278,35 +278,43 @@
           "type": "attraction"
         },
         {
-          "label": "Castelnuovo B. (BAZA 2)",
+          "label": "Castiglione d'Orcia (BAZA 2)",
           "coords": [
-            43.365,
-            11.513
+            43.0,
+            11.617
           ],
           "type": "base",
           "days": "17–19.09"
         },
         {
-          "label": "Castello di Brolio",
+          "label": "Bagno Vignoni",
           "coords": [
-            43.378,
-            11.424
+            43.027,
+            11.622
           ],
-          "type": "attraction"
+          "type": "nature"
         },
         {
-          "label": "Siena",
+          "label": "Pienza",
           "coords": [
-            43.318,
-            11.33
+            43.077,
+            11.679
           ],
           "type": "popular"
         },
         {
-          "label": "Monte Oliveto M.",
+          "label": "Montalcino",
           "coords": [
-            43.126,
-            11.517
+            43.056,
+            11.488
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "San Quirico d'Orcia",
+          "coords": [
+            43.058,
+            11.604
           ],
           "type": "attraction"
         },
@@ -384,19 +392,19 @@
     },
     {
       "id": "base2",
-      "name": "k. Castelnuovo Berardenga",
-      "image": "chianti",
+      "name": "k. Castiglione d'Orcia",
+      "image": "castiglione-orcia",
       "label": "BAZA 2",
-      "region": "Chianti Senese · Siena",
+      "region": "Val d'Orcia · Siena",
       "nights": "17–19 wrz (3 noce)",
-      "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny",
+      "description": "Serce Val d'Orcia — Bagno Vignoni 5 min, Pienza 20 min, Montalcino 20 min, San Quirico 10 min. Mniej turystów niż Chianti, więcej autentycznej Toskanii.",
       "color": "amber",
-      "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
-      "booking_tip": "Szukaj z własną produkcją wina i oliwek — Vagliagli lub Monti in Chianti",
-      "gps_hint": "Naviguj: Castelnuovo Berardenga SI lub Vagliagli SI — poza ZTL wsi",
+      "accommodation": "Agriturismo lub piccolo hotel w Castiglione d'Orcia lub Rocca d'Orcia. Ceny: €70–100/noc.",
+      "booking_tip": "Szukaj: agriturismo Castiglione d'Orcia lub Monticchiello — z widokiem na dolinę i własnym ogrodem",
+      "gps_hint": "Naviguj: Castiglione d'Orcia SI lub Rocca d'Orcia SI — unikaj wjazdu do Rocca (ZTL)",
       "coords": [
-        43.365,
-        11.513
+        43.0,
+        11.617
       ]
     },
     {
@@ -1460,14 +1468,14 @@
       "day_num": 6,
       "type": "tuscany_transfer",
       "label": "TOSKANIA · DZIEŃ 4 + ZMIANA BAZY",
-      "title": "Ponte del Diavolo → przejazd do Chianti",
+      "title": "Ponte del Diavolo → przejazd do Val d'Orcia",
       "image": "ponte-diavolo",
       "base_id": "base1",
       "next_base_id": "base2",
       "base_label": "BAZA 1 → BAZA 2",
       "transfer_km": 195,
       "transfer_h": "2 h 15 min",
-      "transfer_route": "Barga → SS12 south → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 (Firenze-Mare) → Siena Superstrada → Castelnuovo Berardenga / Vagliagli",
+      "transfer_route": "Barga → SS12 south → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 → A1 south → wyjazd Val di Chiana lub Val d'Arbia → SR2 south → Castiglione d'Orcia",
       "transfer_depart": "ok. 13:00–14:00",
       "drive_limit_min": 25,
       "attractions": [
@@ -1507,7 +1515,7 @@
         "opening_hours": "Wt–Sb 7:00–20:00, Nd i Pn zamknięte"
       },
       "accommodation": {
-        "place": "BAZA 2 — k. Castelnuovo Berardenga",
+        "place": "BAZA 2 — k. Castiglione d'Orcia",
         "note": "Przyjazd ok. 16:00–17:30 (transfer ~2h15 po lunchu). Check-in w agriturismo — typowo 15:00–19:00, poza sezonem do 18:00. Zadzwoń z ETA z A11.",
         "price": "€70–100/noc",
         "booking_tip": "Vagliagli lub Monti in Chianti — poza ZTL. Direct booking u właściciela często taniej niż Booking. Naviguj do agriturismo, nie centrum Castelnuovo Berardenga.",
@@ -3362,5 +3370,63 @@
         "Unikaj Florencji, Pizy i San Gimignano — poza planem celowo"
       ]
     }
+  },
+  "variants": {
+    "base2_options": [
+      {
+        "id": "chianti",
+        "label": "Chianti Senese",
+        "subtitle": "k. Castelnuovo Berardenga",
+        "is_current": true,
+        "distances": [
+          {"place": "Siena", "drive_min": 25, "ok": true},
+          {"place": "Castello di Brolio", "drive_min": 15, "ok": true},
+          {"place": "Radda in Chianti", "drive_min": 25, "ok": true},
+          {"place": "Pienza", "drive_min": 55, "ok": false},
+          {"place": "Montalcino", "drive_min": 50, "ok": false},
+          {"place": "Bagno Vignoni", "drive_min": 50, "ok": false}
+        ],
+        "pros": ["Siena 25 min — wczesny ranek przed tłumami", "Zamki Chianti: Brolio 15 min", "Wino Chianti Classico na miejscu"],
+        "cons": ["Val d'Orcia za daleko (50+ min)", "Pienza, Montalcino poza limitem 30 min"],
+        "best_for": "Priorytet: Siena i klimat Chianti"
+      },
+      {
+        "id": "val_dorcia",
+        "label": "Val d'Orcia",
+        "subtitle": "k. Castiglione d'Orcia",
+        "is_current": false,
+        "distances": [
+          {"place": "Bagno Vignoni", "drive_min": 5, "ok": true},
+          {"place": "San Quirico d'Orcia", "drive_min": 10, "ok": true},
+          {"place": "Monticchiello", "drive_min": 15, "ok": true},
+          {"place": "Pienza", "drive_min": 20, "ok": true},
+          {"place": "Montalcino", "drive_min": 20, "ok": true},
+          {"place": "Siena", "drive_min": 50, "ok": false}
+        ],
+        "pros": ["Bagno Vignoni 5 min", "Pienza 20 min", "Montalcino 20 min", "Krajobraz UNESCO Val d'Orcia"],
+        "cons": ["Siena 50 min (wypad opcjonalny)", "Zamki Chianti za daleko"],
+        "best_for": "Priorytet: średniowieczne borghi i Val d'Orcia"
+      }
+    ],
+    "base_count_options": [
+      {
+        "id": "3bazy",
+        "label": "3 bazy",
+        "is_current": true,
+        "summary": "Garfagnana → Środkowa Toskania → Maremma",
+        "nights_label": "4 + 3 + 3 noce",
+        "pros": ["Pełna Toskania: północ, centrum, południe", "Pitigliano, Sovana, Via Cave", "Saturnia — termalna kaskada", "Selva del Lamone — dębowy las etruski"],
+        "cons": ["2 przeprowadzki w Toskanii", "3 noce w każdej bazie = mniej czasu"]
+      },
+      {
+        "id": "2bazy",
+        "label": "2 bazy",
+        "is_current": false,
+        "summary": "Garfagnana → Środkowa Toskania (bez Maremmy)",
+        "nights_label": "5 + 5 nocy",
+        "pros": ["Tylko 1 przeprowadzka", "5 nocy w każdej bazie — więcej spokoju", "Głębsze poznanie 2 regionów"],
+        "cons": ["Brak Maremmy — Pitigliano, Sovana, Saturnia pominięte", "Mniej zróżnicowany krajobraz"]
+      }
+    ]
   }
 }

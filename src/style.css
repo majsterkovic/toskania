@@ -14,23 +14,33 @@
   --olive-light: #7a8f5e;
   --stone: #e8e0d4;
   --stone-dark: #9a8f82;
-  --cream: #f5f0e8;
-  --cream-deep: #ebe3d6;
+  --cream: #f7f2e8;
+  --cream-deep: #ede5d4;
   --ink: #2a2420;
   --muted: #6b6258;
   --border: #d9cfc0;
-  --card-bg: #fdfbf7;
+  --card-bg: #fefcf8;
+
+  /* Nowe tokeny: włoski akcent */
+  --cipresso: #1c3329;       /* zieleń cyprysu — nav */
+  --cipresso-light: #2e4f3e; /* hover w nav */
+  --oro: #a8883c;            /* złoto antyczne — linia kartograficzna */
+  --oro-light: #c9a84c;      /* złoto jaśniejsze */
+
   --base1: var(--olive);
   --base2: var(--terracotta);
   --base3: var(--terracotta-deep);
   --transit: var(--stone-dark);
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;  /* tytuły — renesans */
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-sans: 'DM Sans', system-ui, sans-serif;
+
   --nav-h: 3rem;
   --day-nav-h: 3.25rem;
   --page-pad: 1.25rem;
-  --radius: 10px;
-  --shadow: 0 2px 12px rgba(42, 36, 32, 0.06);
+  --radius: 4px;   /* architektonicznie, nie "app" */
+  --shadow: 0 1px 8px rgba(42, 36, 32, 0.07);
 }
 
 html {
@@ -49,13 +59,10 @@ body {
   line-height: 1.65;
   color: var(--ink);
   background: var(--cream);
-  background-image:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(184, 92, 56, 0.08), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(92, 107, 69, 0.06), transparent);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Site navigation */
+/* ── Nawigacja — cipresso (ryzyko estetyczne) ── */
 
 .site-nav {
   position: sticky;
@@ -66,19 +73,17 @@ body {
   justify-content: space-between;
   height: var(--nav-h);
   padding: 0 var(--page-pad);
-  background: rgba(245, 240, 232, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  background: var(--cipresso);
+  border-bottom: 1px solid var(--oro);
 }
 
 .site-nav__brand {
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--terracotta-deep);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--oro-light);
   text-decoration: none;
 }
 
@@ -98,9 +103,9 @@ body {
   font-family: var(--font-sans);
   font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: rgba(247, 242, 232, 0.6);
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.15s;
@@ -108,7 +113,7 @@ body {
 
 .site-nav__links a:hover,
 .site-nav__links a:focus-visible {
-  color: var(--terracotta);
+  color: var(--cream);
   outline: none;
 }
 
@@ -141,6 +146,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: sepia(18%) saturate(105%) brightness(0.96);
 }
 
 .hero__figure::after {
@@ -170,19 +176,21 @@ body {
 
 .hero__eyebrow {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--olive);
-  margin-bottom: 0.5rem;
+  color: var(--oro);
+  margin-bottom: 0.75rem;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-family: var(--font-display);
+  font-size: 2.4rem;
   font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
   color: var(--ink);
 }
 
@@ -212,7 +220,7 @@ body {
   gap: 0.75rem;
   margin-top: 1.5rem;
   padding-top: 1.25rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--oro);
 }
 
 .route-stat {
@@ -253,15 +261,31 @@ body {
 }
 
 .section-title {
-  font-size: 1.35rem;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-style: italic;
   font-weight: 600;
   color: var(--ink);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.85rem;
+  position: relative;
+}
+
+/* Złota linia kartograficzna nad tytułami sekcji */
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 1px;
+  background: var(--oro);
 }
 
 .section-lead {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--muted);
+  font-style: italic;
   margin-bottom: 1.25rem;
   max-width: 52ch;
 }
@@ -327,7 +351,9 @@ body {
 }
 
 .base-card h3 {
-  font-size: 1.2rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-style: italic;
   font-weight: 600;
   margin-bottom: 0.2rem;
 }
@@ -373,10 +399,10 @@ body {
   overflow-x: auto;
   padding: 0.6rem 0;
   margin-bottom: 1.25rem;
-  background: rgba(245, 240, 232, 0.94);
+  background: rgba(247, 242, 232, 0.95);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--oro);
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
@@ -494,19 +520,21 @@ body {
 }
 
 .day-label {
-  font-family: var(--font-sans);
-  font-size: 0.65rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   color: var(--day-accent);
   text-align: right;
 }
 
 .day-title {
-  font-size: 1.2rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-style: italic;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.25;
   margin-bottom: 1rem;
   color: var(--ink);
 }
@@ -553,10 +581,13 @@ body {
 }
 
 .day-block--food {
-  background: linear-gradient(135deg, rgba(92, 107, 69, 0.06), rgba(184, 92, 56, 0.04));
-  border-radius: 8px;
-  padding: 0.85rem;
-  border: 1px solid rgba(92, 107, 69, 0.12);
+  padding: 0.85rem 0.85rem 0.85rem 1.1rem;
+  border-left: 2px solid var(--oro);
+  background: rgba(168, 136, 60, 0.04);
+}
+
+.day-block--food .block-label {
+  color: var(--oro);
 }
 
 .day-block--practical {
@@ -594,12 +625,13 @@ body {
 }
 
 .dish-list li::before {
-  content: '◆';
+  content: '·';
   position: absolute;
   left: 0;
-  color: var(--olive-light);
-  font-size: 0.5rem;
-  top: 0.45em;
+  color: var(--oro);
+  font-size: 1.2rem;
+  top: -0.1em;
+  line-height: 1;
 }
 
 .tips-list li::before {
@@ -1099,10 +1131,12 @@ body.lightbox-open {
 .footer {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid var(--border);
+  padding-bottom: 1.5rem;
+  border-top: 1px solid var(--oro);
   color: var(--stone-dark);
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
 }
 
 /* ── Tablet: 768px ── */
@@ -1127,7 +1161,7 @@ body.lightbox-open {
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .route-stats {
@@ -1168,7 +1202,7 @@ body.lightbox-open {
   }
 
   .day-title {
-    font-size: 1.35rem;
+    font-size: 1.55rem;
   }
 
   .practical-grid {
@@ -1272,7 +1306,8 @@ body.lightbox-open {
   }
 
   .site-nav__links a {
-    font-size: 0.82rem;
+    font-size: 0.75rem;
+    gap: 1.25rem;
   }
 }
 
@@ -1348,6 +1383,189 @@ body.lightbox-open {
 
 .footer__credit a {
   color: var(--muted);
+}
+
+/* ── Variants section ── */
+
+.section--variants {
+  background: var(--cream-deep);
+  border-radius: 12px;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.variants-block {
+  margin-top: 2rem;
+}
+
+.variants-block__title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.variants-block__note {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.variants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.variant-card {
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.variant-card--current {
+  border-color: var(--olive);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--olive) 15%, transparent);
+}
+
+.variant-badge {
+  display: inline-block;
+  background: var(--cipresso);
+  color: var(--oro-light);
+  font-size: 0.65rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  align-self: flex-start;
+}
+
+.variant-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.variant-card__sub {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: -0.5rem;
+}
+
+.variant-card__summary {
+  font-size: 0.875rem;
+  color: var(--ink);
+  font-style: italic;
+}
+
+.variant-dists {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.variant-dist {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.variant-dist__place {
+  flex: 1;
+  color: var(--ink);
+}
+
+.variant-dist__time {
+  font-weight: 600;
+  min-width: 3.5rem;
+  text-align: right;
+}
+
+.variant-dist.ok .variant-dist__time { color: var(--olive); }
+.variant-dist.over .variant-dist__time { color: var(--terracotta); }
+
+.variant-dist__icon {
+  width: 1.2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.variant-dist.ok .variant-dist__icon { color: var(--olive); }
+.variant-dist.over .variant-dist__icon { color: var(--terracotta); }
+
+.variant-pros,
+.variant-cons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.variant-pros li {
+  font-size: 0.85rem;
+  color: var(--olive);
+  padding-left: 1.1rem;
+  position: relative;
+}
+.variant-pros li::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.variant-cons li {
+  font-size: 0.85rem;
+  color: var(--terracotta);
+  padding-left: 1.1rem;
+  position: relative;
+}
+.variant-cons li::before {
+  content: '−';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.variant-best {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+  margin-top: auto;
+}
+
+.variant-switch-btn {
+  margin-top: auto;
+  padding: 0.6rem 1rem;
+  background: var(--terracotta);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.variant-switch-btn:hover {
+  background: var(--terracotta-deep);
+}
+
+.variant-switch-btn--active {
+  background: var(--olive);
+  cursor: default;
 }
 
 /* ── Print styles ── */

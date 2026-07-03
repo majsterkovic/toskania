@@ -1,0 +1,536 @@
+{
+  "meta": {
+    "title": "Toskania 2026",
+    "subtitle": "Podróż samochodowa Poznań → Toskania → Poznań",
+    "dates": "12–25 września 2026",
+    "participants_note": "Plan prywatny"
+  },
+  "bases": [
+    {
+      "id": "base1",
+      "name": "Barga (Garfagnana)",
+      "label": "BAZA 1",
+      "region": "Garfagnana · Lucca",
+      "nights": "13–16 Sep (4 noce)",
+      "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa",
+      "color": "emerald",
+      "accommodation": "Agriturismo lub B&B w Barga lub okolicach (Mologno, Loppia, Albiano). Ceny: €60–90/noc z śniadaniem.",
+      "booking_tip": "Szukaj: agriturismo barga garfagnana — wioska Mologno 5 km od centrum, cisza, las"
+    },
+    {
+      "id": "base2",
+      "name": "k. Castelnuovo Berardenga",
+      "label": "BAZA 2",
+      "region": "Chianti Senese · Siena",
+      "nights": "17–19 Sep (3 noce)",
+      "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny",
+      "color": "amber",
+      "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
+      "booking_tip": "Szukaj z własną produkcją wina i oliwek — Vagliagli lub Monti in Chianti"
+    },
+    {
+      "id": "base3",
+      "name": "okolice Pitigliano",
+      "label": "BAZA 3",
+      "region": "Maremma Toscana · Grosseto",
+      "nights": "20–22 Sep (3 noce)",
+      "description": "Tuf wulkaniczny, cywilizacja etruska, dąb ostrolistny (leccio), termalna Saturnia",
+      "color": "rose",
+      "accommodation": "Agriturismo Sassotondo (Sovana, biodynamiczne wino) — €80–110/noc. Alternatywa: agriturismo w dolinie Fiora.",
+      "booking_tip": "Sassotondo to realne, nagrodzone winiarski agriturismo — rezerwuj z wyprzedzeniem"
+    }
+  ],
+  "days": [
+    {
+      "date": "12.09 (sob)",
+      "day_num": 1,
+      "type": "transit",
+      "label": "TRANZYT → NIEMCY",
+      "title": "Poznań → Ingolstadt",
+      "drive_km": 745,
+      "drive_h": "7–7,5 h",
+      "base_id": null,
+      "depart": "6:00–7:00 rano z Poznania",
+      "route": "A2 west (Świecko) → Frankfurt an der Oder → obwodnica Berlin A10 → A9 south → Norymberga → Ingolstadt",
+      "attractions": [],
+      "nature": null,
+      "food": {
+        "place": "Autobahn Raststätte",
+        "note": "Dzień tranzytowy — Niemcy. Lunch na stacji.",
+        "price": null
+      },
+      "accommodation": {
+        "place": "Ingolstadt / Neustadt an der Donau",
+        "note": "Mniejsze i tańsze niż Monachium. Szukaj: Gasthof, Pension. Alternatywa: Kelheim (malownicze miasto na Dunaju, 20 km od Ingolstadt).",
+        "price": "€45–65/noc"
+      },
+      "tips": ["Granicę PL/DE przekrocz przez Świecko (A2) — lepsza autostrada przez całe Niemcy", "E-winieta austriacka: kup online na asfinag.at (~€9.90/10 dni) jeszcze w Polsce"]
+    },
+    {
+      "date": "13.09 (nd)",
+      "day_num": 2,
+      "type": "transit",
+      "label": "TRANZYT → TOSKANIA",
+      "title": "Ingolstadt → Barga (Garfagnana)",
+      "drive_km": 790,
+      "drive_h": "8–8,5 h",
+      "base_id": "base1",
+      "depart": "7:00 rano z Ingolstadt",
+      "route": "A9/A8 → Rosenheim → A93 Inntal → Innsbruck → Brenner Pass A22 → Bolzano → Trento → Werona bypass → A1/A11 → Lukka → SS12/SS445 north → Barga",
+      "attractions": [],
+      "nature": null,
+      "food": {
+        "place": "Rovereto lub Werona (postój)",
+        "note": "Krótki postój obiadowy — szukaj 'bar trattoria' przy zjeździe z autostrady, nie przy samej bramce",
+        "price": "~€10–15"
+      },
+      "accommodation": {
+        "place": "BAZA 1 — Barga / Garfagnana",
+        "note": "Przyjazd ok. 16:00–17:00. Check-in, kolacja na miejscu.",
+        "price": "€60–90/noc"
+      },
+      "tips": ["Ostatnie 50 km to kręta górska droga — nie śpiesz się", "Winieta włoska: płatne bramki gotówką lub kartą bezpośrednio", "Wejazd do Barga: centrum ZTL — parkuj poza murami i idź pieszo"]
+    },
+    {
+      "date": "14.09 (pn)",
+      "day_num": 3,
+      "type": "tuscany",
+      "label": "DZIEŃ 1",
+      "title": "Kamienny balkon nad Garfagnaną",
+      "base_id": "base1",
+      "drive_limit_min": 25,
+      "attractions": [
+        {
+          "name": "Barga — stare miasto i Duomo",
+          "drive_min": 0,
+          "description": "Jedno z najpiękniejszych niedocenionych borghi Toskanii. Romański Duomo di San Cristoforo (XI w.) z widokiem na Alpy Apuańskie. Wejście na wieżę — Lukka i morze widoczne w pogodny dzień.",
+          "type": "medieval"
+        },
+        {
+          "name": "Anello di Barga — szlak CAI n. 108",
+          "drive_min": 0,
+          "description": "Start przy Porta Reale. Pętla 2–3 h przez gaje kasztanów i dębów bezszypułkowych (Quercus petraea) z widokami na dolinę. Teren nieformalny, brak turystów.",
+          "type": "nature"
+        },
+        {
+          "name": "Grotta del Vento — Fornovolasco",
+          "drive_min": 20,
+          "description": "Wioska pod Alpami Apuańskimi, jedna z największych jaskiń Toskanii. Po południu spacer przez bukowe i dębowe lasy na zboczach Pania della Croce.",
+          "type": "nature"
+        }
+      ],
+      "oak_forest": {
+        "spot": "Szlak Anello di Barga",
+        "species": "Quercus petraea (dąb bezszypułkowy), Q. cerris (dąb burgundzki)",
+        "note": "Starodrzew kasztanowo-dębowy na ekspozycjach południowych wokół Barga"
+      },
+      "food": {
+        "place": "Osteria dei Vecchi Sapori — Barga",
+        "address": "ul. Borgo Giardino, Barga",
+        "dishes": ["pappardelle al cinghiale (z dzikim)", "necci con ricotta (naleśniki kasztanowe — danie garfagnańskie)", "castagnaccio (ciasto kasztanowe)"],
+        "note": "Rodzinnie prowadzona osteria, menu po włosku, tablica dzienna. Autentyczne, bez angielskich tłumaczeń.",
+        "price": "~€15–20/os z winem"
+      }
+    },
+    {
+      "date": "15.09 (wt)",
+      "day_num": 4,
+      "type": "tuscany",
+      "label": "DZIEŃ 2",
+      "title": "Średniowieczne mury i puszcza Orecchiella",
+      "base_id": "base1",
+      "drive_limit_min": 30,
+      "attractions": [
+        {
+          "name": "Castiglione di Garfagnana",
+          "drive_min": 20,
+          "description": "Kompletnie zachowane mury miejskie z XIII w., brama San Michele, niezmieniony układ borghi. Turystów praktycznie brak.",
+          "type": "medieval"
+        },
+        {
+          "name": "Riserva Naturale Orecchiella — Sentiero CAI n. 587",
+          "drive_min": 28,
+          "description": "Park Orecchiella, szlak ~4 km (2 h) przez łąki alpejskie i las z dębem burgundzkim w strefie niższej. Możliwość spotkania jeleni i muflonów we wrześniu (ruja).",
+          "type": "nature"
+        },
+        {
+          "name": "Castelnuovo di Garfagnana",
+          "drive_min": 25,
+          "description": "Stolica doliny, zachowane fortyfikacje Ludovica Ariosta (który tu rządził!). Targ środowy z lokalnymi produktami: farro della Garfagnana IGP (orkisz).",
+          "type": "medieval"
+        }
+      ],
+      "oak_forest": {
+        "spot": "Riserva Naturale Orecchiella",
+        "species": "Quercus cerris (dąb burgundzki)",
+        "note": "Granica między buczyną (>1200 m) a dębowo-kasztanowym lasem mieszanym (750–1100 m) — klasyczny toskański las apeniński"
+      },
+      "food": {
+        "place": "Trattoria da Carlino — Castelnuovo di Garfagnana",
+        "address": "Via Vittorio Emanuele, Castelnuovo di Garfagnana",
+        "dishes": ["minestra di farro (zupa z orkiszem)", "lardo di Colonnata na bruschetta", "biroldo (garfagnański salami z głowizny)"],
+        "note": "Kultowe miejsce wśród lokalnych robotników i rolników. Menu po włosku.",
+        "price": "~€12–16/os"
+      }
+    },
+    {
+      "date": "16.09 (śr)",
+      "day_num": 5,
+      "type": "tuscany",
+      "label": "DZIEŃ 3",
+      "title": "Jezioro, forteca i ukryte wioski",
+      "base_id": "base1",
+      "drive_limit_min": 25,
+      "attractions": [
+        {
+          "name": "Fortezza delle Verrucole",
+          "drive_min": 18,
+          "description": "Imponująca twierdza na stromym wzgórzu (XII–XIV w.), panorama 360° doliny. Minimalna turystyka, wstęp symboliczny.",
+          "type": "medieval"
+        },
+        {
+          "name": "Lago di Vagli",
+          "drive_min": 25,
+          "description": "Sztuczne jezioro z zatopionym w 1953 r. miasteczkiem Fabbriche di Careggine. Spacer po tamie i okolicznych wzgórzach. Sprawdź poziom wody przed przyjazdem — przy obniżeniu pojawiają się ruiny.",
+          "type": "nature"
+        },
+        {
+          "name": "Gorfigliano",
+          "drive_min": 20,
+          "description": "Mikrowioska z romańskim kościołem, kilkadziesiąt mieszkańców. Przykład autentycznego borgo bez renowacji turystycznej.",
+          "type": "medieval"
+        }
+      ],
+      "oak_forest": null,
+      "food": {
+        "place": "Agriturismo w okolicach Careggine / Vagli Sotto",
+        "address": "Zapytaj w bazie noclegowej o polecane agriturismo",
+        "dishes": ["fagioli di Sorana IGP (delikatna fasola)", "formaggi freschi di pecora (świeże owcze sery)", "wino z doliny Serchio"],
+        "note": "Zadzwoń dzień wcześniej i zarezerwuj 'pranzo tipico' — stała cena, wszystko z własnego gospodarstwa.",
+        "price": "~€18–22/os z winem"
+      }
+    },
+    {
+      "date": "17.09 (czw)",
+      "day_num": 6,
+      "type": "tuscany_transfer",
+      "label": "DZIEŃ 4 + ZMIANA BAZY",
+      "title": "Ponte del Diavolo → przejazd do Chianti",
+      "base_id": "base1",
+      "next_base_id": "base2",
+      "transfer_km": 195,
+      "transfer_h": "2 h 15 min",
+      "transfer_route": "Barga → Lukka (A11 south) → Siena Superstrada → okolice Castelnuovo Berardenga",
+      "transfer_depart": "ok. 13:00–14:00",
+      "drive_limit_min": 25,
+      "attractions": [
+        {
+          "name": "Ponte della Maddalena / Ponte del Diavolo",
+          "drive_min": 22,
+          "description": "Gotycki most z XIII w. przy Borgo a Mozzano o asymetrycznych łukach, legenda o diable. Mgliste Apeniny odbite w rzece Serchio — piękne rano.",
+          "type": "medieval"
+        },
+        {
+          "name": "Bagni di Lucca",
+          "drive_min": 20,
+          "description": "Miasteczko z epoki romantyzmu: kasyno (najstarsze we Włoszech!), neogotycki English Church, most łańcuchowy. Termy czynne — możliwość kąpieli.",
+          "type": "cultural"
+        }
+      ],
+      "oak_forest": null,
+      "food": {
+        "place": "Bar / Trattoria w Bagni di Lucca",
+        "address": "Piazza Jean Varraud, Bagni di Lucca",
+        "dishes": ["pranzo przed trasą — pasta al pomodoro, secondo"],
+        "note": "Wczesny obiad przed przejazdem do BAZY 2.",
+        "price": "~€12–18/os"
+      }
+    },
+    {
+      "date": "18.09 (pt)",
+      "day_num": 7,
+      "type": "tuscany",
+      "label": "DZIEŃ 5",
+      "title": "Zamki i wino Chianti",
+      "base_id": "base2",
+      "drive_limit_min": 25,
+      "attractions": [
+        {
+          "name": "Castello di Brolio",
+          "drive_min": 12,
+          "description": "Zamek rodziny Ricasoli, gdzie wynaleziono Chianti Classico. Tarasy, ogrody, kaplica, muzeum. Nieturystyczny jak na tej rangi zabytek.",
+          "type": "medieval"
+        },
+        {
+          "name": "Radda in Chianti",
+          "drive_min": 22,
+          "description": "Autentyczne borgo z XIV-wiecznym Palazzo del Podestà, lokalne sklepy z winami i serem Pecorino. Mniejsze tłumy niż Greve czy Panzano.",
+          "type": "medieval"
+        },
+        {
+          "name": "Bosco di Brolio — Sentiero delle Querce",
+          "drive_min": 12,
+          "description": "Las otaczający zamek Brolio: Quercus pubescens (dąb omszony) i Q. cerris. Nieformalna ścieżka wokół murów zamku (2–3 km).",
+          "type": "nature"
+        }
+      ],
+      "oak_forest": {
+        "spot": "Bosco di Brolio",
+        "species": "Quercus pubescens, Q. cerris",
+        "note": "Las dębowy otaczający zamek Brolio — jeden z najlepiej zachowanych w Chianti"
+      },
+      "food": {
+        "place": "Badia a Coltibuono — Gaiole in Chianti",
+        "address": "Loc. Badia a Coltibuono, Gaiole in Chianti (~20 min od bazy)",
+        "dishes": ["pici al ragù di cinghiale", "bistecca di Cinta Senese", "Chianti Classico z własnych winnic"],
+        "note": "Klasztorne opactwo z XI w., estate winiarski ze świetną restauracją. Rezerwacja z wyprzedzeniem przez telefon.",
+        "price": "~€30–40/os z winem"
+      }
+    },
+    {
+      "date": "19.09 (sob)",
+      "day_num": 8,
+      "type": "tuscany_popular",
+      "label": "DZIEŃ 6 ★ POPULARNY",
+      "title": "Siena — o świcie przed tłumami",
+      "base_id": "base2",
+      "drive_limit_min": 25,
+      "popular": true,
+      "crowd_tip": "Wyjazd o 7:00 rano — parking Piazza San Domenico lub Santa Caterina. O 7:30 jesteś na Piazza del Campo praktycznie sam. Tłumy zaczynają się po 10:00. Powrót do bazy przed 14:00.",
+      "attractions": [
+        {
+          "name": "Piazza del Campo — o świcie",
+          "drive_min": 25,
+          "description": "7:30–9:30. Piazza del Campo bez turystów. Palazzo Pubblico, Torre del Mangia (otwarta od 9:00). Najlepsze zdjęcia w porannym świetle.",
+          "type": "popular"
+        },
+        {
+          "name": "Duomo di Siena + Libreria Piccolomini",
+          "drive_min": 25,
+          "description": "9:30–11:00. Katedra i Libreria Piccolomini (mozaiki podłogowe odkryte we wrześniu!). Muzeum dell'Opera tuż po otwarciu.",
+          "type": "popular"
+        },
+        {
+          "name": "Spacer przez kontrade",
+          "drive_min": 25,
+          "description": "11:00–12:30. Kontrade Oca (Gęś) — Via dei Termini; Drago (Smok) — Via dei Fusari. Autentyczne życie zamiast turystycznych tras.",
+          "type": "cultural"
+        }
+      ],
+      "oak_forest": null,
+      "food": {
+        "place": "Trattoria Papei — Siena",
+        "address": "Piazza del Mercato 6, Siena (za Palazzo Pubblico, niewidoczna dla turystów)",
+        "dishes": ["pici cacio e pepe", "ribollita", "wino sfuso (z beczki)"],
+        "note": "Kultowe miejsce sienyjskich urzędników i studentów. Bez angielskiego menu. Ukryta przed turystami za Palazzo.",
+        "price": "~€15–20/os"
+      }
+    },
+    {
+      "date": "20.09 (nd)",
+      "day_num": 9,
+      "type": "tuscany_transfer",
+      "label": "DZIEŃ 7 + ZMIANA BAZY",
+      "title": "Crete Senesi → przejazd do Maremmy",
+      "base_id": "base2",
+      "next_base_id": "base3",
+      "transfer_km": 130,
+      "transfer_h": "1 h 40 min",
+      "transfer_route": "Castelnuovo Berardenga → Siena bypass → SS223 → Grosseto → SS74 → okolice Pitigliano",
+      "transfer_depart": "ok. 13:00",
+      "drive_limit_min": 30,
+      "attractions": [
+        {
+          "name": "Monte Oliveto Maggiore",
+          "drive_min": 28,
+          "description": "Benedyktyński klasztor z XIV w. w surowym krajobrazie Crete Senesi. Słynny cykl fresków Il Sodomy (36 scen z życia św. Benedykta). Możliwa msza gregoriańska w niedzielę rano.",
+          "type": "cultural"
+        },
+        {
+          "name": "Asciano — Crete Senesi",
+          "drive_min": 24,
+          "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez pejzaż glinianych wzgórz (biancane — białe wzgórza z marglami). Muzeum Etruskie.",
+          "type": "cultural"
+        }
+      ],
+      "oak_forest": null,
+      "food": {
+        "place": "Bar/Caffè w Asciano",
+        "address": "Centrum Asciano",
+        "dishes": ["pranzo domenicale — niedziela to ważny dzień jedzenia dla Włochów", "arrosto misto, ribollita"],
+        "note": "W niedzielę wiele trattorie w Asciano serwuje tradycyjne niedzialne menu. Wejdź gdzie widzisz Włochów z rodzinami.",
+        "price": "~€15–22/os"
+      }
+    },
+    {
+      "date": "21.09 (pn)",
+      "day_num": 10,
+      "type": "tuscany",
+      "label": "DZIEŃ 8",
+      "title": "Mała Jerozolima i etruskie drogi",
+      "base_id": "base3",
+      "drive_limit_min": 15,
+      "attractions": [
+        {
+          "name": "Pitigliano — stare miasto",
+          "drive_min": 5,
+          "description": "Jedno z najbardziej dramatycznych miast Toskanii: zbudowane na kolumnie z tufu wulkanicznego. Twierdza Orsini (XIV w.), synagoga (XVI w., 'Piccola Gerusalemme'), wąskie vicoli. We wrześniu tłumy minimalne.",
+          "type": "medieval"
+        },
+        {
+          "name": "Via Cava di San Giuseppe + Via Cava di Poggio Prisca",
+          "drive_min": 5,
+          "description": "Etruskie 'wydrążone drogi' wykute w tufie, do 20 m głębokości. Szlak ~3 km z powrotem. Ciemne, atmosferyczne, po obu stronach gęsty las wiecznie zielonego dębu ostrolistnego (Quercus ilex).",
+          "type": "nature"
+        }
+      ],
+      "oak_forest": {
+        "spot": "Via Cave — okolice Pitigliano",
+        "species": "Quercus ilex (dąb ostrolistny / leccio)",
+        "note": "Charakterystyczny dla Maremmy wiecznie zielony las dębowy po obu stronach głęboko wkopanych etruskich dróg"
+      },
+      "food": {
+        "place": "Trattoria Il Tufo Allegro — Pitigliano",
+        "address": "Via della Costituzione 5, Pitigliano",
+        "dishes": ["acquacotta maremma (starożytna zupa z ziół, jajka i chleba)", "buglione d'agnello (duszony jagnięcy gulasz z dzikim rozmarynem)", "Pitigliano DOC Bianco (trebbiano)"],
+        "note": "Wnętrze wydrążone w tufie. Kuchnia pitygliańska. Rezerwacja przez telefon (po włosku lub gest).",
+        "price": "~€20–28/os"
+      }
+    },
+    {
+      "date": "22.09 (wt)",
+      "day_num": 11,
+      "type": "tuscany",
+      "label": "DZIEŃ 9",
+      "title": "Sorano i termalna kaskada Saturnia",
+      "base_id": "base3",
+      "drive_limit_min": 25,
+      "attractions": [
+        {
+          "name": "Sorano — Fortezza Orsini",
+          "drive_min": 10,
+          "description": "Bliźniaczy do Pitigliano tuf-town, mniej odwiedzany. Fortezza Orsini (XV w.), wiszące ogrody na krawędzi urwiska. Spacer wąwozem rzeki Lente (via cava Vitozza — niemal nieznana).",
+          "type": "medieval"
+        },
+        {
+          "name": "Cascate del Mulino — Saturnia",
+          "drive_min": 25,
+          "description": "Naturalne wodospady termalne (37°C), wolny wstęp, czynne 24/7. We wtorek po 15:00 tłumy mocno maleją. Siarczane wody, piękny pejzaż.",
+          "type": "nature"
+        }
+      ],
+      "oak_forest": {
+        "spot": "Dolina Lente koło Sorano",
+        "species": "Quercus ilex, Q. pubescens",
+        "note": "Jedna z nienaruszonych enklaw maremmiańskiej puszczy dębowej"
+      },
+      "food": {
+        "place": "Osteria La Botte Piena — Sorano",
+        "address": "Via dell'Archetto, Sorano",
+        "dishes": ["pappardelle al sugo di lepre (z zająca)", "salumi di Cinta Senese produkowane lokalnie", "pecorino maremma w różnych fazach dojrzewania", "vin della casa z beczki: 3€/kieliszek"],
+        "note": "Dosłownie 5 stolików, menu na tablicy. Bardzo lokalne i tanie.",
+        "price": "~€14–18/os"
+      }
+    },
+    {
+      "date": "23.09 (śr)",
+      "day_num": 12,
+      "type": "tuscany",
+      "label": "DZIEŃ 10 (OSTATNI)",
+      "title": "Sovana i zapomniany las Lamone",
+      "base_id": "base3",
+      "drive_limit_min": 25,
+      "attractions": [
+        {
+          "name": "Sovana — Necropoli Etrusca",
+          "drive_min": 10,
+          "description": "Historycznie ważniejsza niż Pitigliano (papież Grzegorz VII). Dziś micromiasteczko: etruskie grobowce w lesie, romański kościół Santa Maria, katedra San Pietro (XI w.). Zwiedzanie 3–4 h w spokoju.",
+          "type": "medieval"
+        },
+        {
+          "name": "Selva del Lamone — Sentiero delle Querce",
+          "drive_min": 18,
+          "description": "Jeden z najlepiej zachowanych mezofitycznych lasów dębowych południowej Toskanii. Szlak n. 3 (~6 km). Całkowity brak ruchu turystycznego.",
+          "type": "nature"
+        },
+        {
+          "name": "Semproniano",
+          "drive_min": 22,
+          "description": "Borgo dosłownie na skale, 300 mieszkańców, brak turystów. Zamek Aldobrandeschi z XII w., panorama wzgórz Maremmy.",
+          "type": "medieval"
+        }
+      ],
+      "oak_forest": {
+        "spot": "Selva del Lamone",
+        "species": "Quercus cerris (dominant), Q. pubescens",
+        "note": "NAJLEPSZY las dębowy trasy — stary rezerwat, nienaruszony, żadnych turystów. Wejście bezpłatne."
+      },
+      "food": {
+        "place": "Agriturismo Sassotondo — kolacja pożegnalna",
+        "address": "Loc. Sassotondo, Sovana (jeśli to Twoja baza — wróć na kolację)",
+        "dishes": ["Ciliegiolo di Maremma (lokalny czerwony winogron, unikalny)", "acquacotta po raz ostatni", "cinghiale in umido z ziołami maremmiańskimi"],
+        "note": "Nawet jeśli nie nocujesz w Sassotondo — zadzwoń i zarezerwuj kolację (pranzo ospiti) ~€25/os. Prawdziwe doświadczenie agroturystyczne.",
+        "price": "~€25/os"
+      }
+    },
+    {
+      "date": "24.09 (czw)",
+      "day_num": 13,
+      "type": "transit",
+      "label": "TRANZYT ← BAWARIA",
+      "title": "Pitigliano → Wasserburg am Inn",
+      "drive_km": 770,
+      "drive_h": "7,5–8 h",
+      "base_id": null,
+      "depart": "7:00 rano z Pitigliano",
+      "route": "SS74 (Manciano) → Orvieto → A1 north → Florencja → Bolonia → Modena → Milano bypass → Brenner A22 → Innsbruck → A93 north → Rosenheim → Wasserburg am Inn",
+      "attractions": [],
+      "nature": null,
+      "food": {
+        "place": "Bolonia lub Modena (postój autostradowy)",
+        "note": "Bolonia to stolica włoskiej kuchni — zjedz ostatnie włoskie tortellini w brodo na stacji lub zjedź z autostrady do centrum (Bolonia 20 min od A1).",
+        "price": "~€10–15"
+      },
+      "accommodation": {
+        "place": "Wasserburg am Inn — Bawaria",
+        "note": "Malownicze bawarskie miasto na zakolu Innu, 45 km od Monachium. Tanie pensje i Gasthöfe w starym mieście. Unikaj Monachium (drogie!). Alternatywa: Rosenheim lub Haag in Oberbayern.",
+        "price": "€45–65/noc"
+      },
+      "tips": ["Wasserburg am Inn to piękne miasteczko, warto wieczorem przejść stare miasto", "Zatankuj przed granicą austriacką — paliwo tańsze w Niemczech"]
+    },
+    {
+      "date": "25.09 (pt)",
+      "day_num": 14,
+      "type": "transit",
+      "label": "TRANZYT ← POZNAŃ",
+      "title": "Wasserburg → Poznań (powrót)",
+      "drive_km": 850,
+      "drive_h": "8–8,5 h",
+      "base_id": null,
+      "depart": "6:30–7:00 rano",
+      "route": "A8 west (Monachium-Ost) → A9 north → Norymberga → A9 north → Hof/Plauen → A72/A4 → Drezno → Frankfurt an der Oder → A2 east → Świecko → Poznań",
+      "arrival": "ok. 15:00–16:00 w Poznaniu",
+      "attractions": [],
+      "nature": null,
+      "food": {
+        "place": "Raststätte lub sklep autostradowy",
+        "note": "Dzień powrotny — minimalne postoje. Kanapki z poprzedniego wieczoru.",
+        "price": null
+      },
+      "tips": ["Powrót 25.09 — 2 dni przed deadlinem 27.09", "Przejście graniczne Świecko (A2) — najszybsze dla kierunku Polska", "Sprawdź stan A4 przez Saksonię — roboty drogowe częste w tym rejonie"]
+    }
+  ],
+  "practical_info": {
+    "vignettes": {
+      "austria": "E-winieta online: asfinag.at, ~€9.90/10 dni — kup przed wyjazdem",
+      "italy": "Płatne bramki: gotówka lub karta bezpośrednio"
+    },
+    "climate": {
+      "garfagnana": "16–24°C, możliwe poranki mgielne — idealne do spacerów",
+      "chianti": "18–26°C, złota toskańska jesień, vinobranie w toku",
+      "maremma": "20–28°C, cieplej niż północ, słonecznie"
+    },
+    "vendemmia": "Wrzesień = winobranie w Chianti i Maremma — w agriturismo możliwy udział w zbiorach",
+    "ztl_warning": "Centra większości toskańskich borghi mają ZTL (strefa ruchu ograniczonego) — parkuj poza murami"
+  }
+}

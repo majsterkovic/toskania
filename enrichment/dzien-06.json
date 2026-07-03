@@ -1,0 +1,182 @@
+{
+  "date": "17.09 (czw)",
+  "day_num": 6,
+  "type": "tuscany_transfer",
+  "label": "TOSKANIA · DZIEŃ 4 + ZMIANA BAZY",
+  "title": "Ponte del Diavolo → przejazd do Chianti",
+  "image": "ponte-diavolo",
+  "base_id": "base1",
+  "next_base_id": "base2",
+  "base_label": "BAZA 1 → BAZA 2",
+  "transfer_km": 195,
+  "transfer_h": "2 h 15 min",
+  "transfer_route": "Barga → SS12 south → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 (Firenze-Mare) → Siena Superstrada → Castelnuovo Berardenga / Vagliagli",
+  "transfer_depart": "ok. 13:00–14:00",
+  "drive_limit_min": 25,
+  "attractions": [
+    {
+      "name": "Ponte della Maddalena / Ponte del Diavolo",
+      "drive_min": 22,
+      "description": "Gotycki most z XIII w. przy Borgo a Mozzano o asymetrycznych łukach, legenda o diable. Mgliste Apeniny odbite w rzece Serchio — piękne rano.",
+      "type": "medieval",
+      "image": "ponte-diavolo",
+      "image_key": "ponte-diavolo",
+      "gps_hint": "Ponte del Diavolo, Borgo a Mozzano LU — parking przy SP2"
+    },
+    {
+      "name": "Bagni di Lucca",
+      "drive_min": 20,
+      "description": "Miasteczko z epoki romantyzmu: kasyno (najstarsze we Włoszech!), neogotycki English Church, most łańcuchowy. Termy czynne — możliwość kąpieli.",
+      "type": "cultural",
+      "image": "bagni-lucca",
+      "image_key": "bagni-lucca",
+      "gps_hint": "Bagni di Lucca LU — parking przy Ponte delle Catene"
+    }
+  ],
+  "oak_forest": null,
+  "food": {
+    "place": "Trattoria Borghesi — Bagni di Lucca",
+    "address": "Viale Umberto I 85, 55022 Bagni di Lucca LU",
+    "dishes": [
+      "tordelli lucchesi",
+      "zuppa di farro",
+      "castagnaccio",
+      "risotto alle nettarine (sezonowe)"
+    ],
+    "note": "Rodzinna trattoria w Bagni di Lucca (NIE mylić z Trattoria da Giulio — ta jest w centrum Lucca, Via delle Conce 45). Czwartek otwarte 7:00–20:00. Wczesny lunch przed przejazdem do BAZY 2.",
+    "price": "~€12–18/os",
+    "gps_hint": "Viale Umberto I 85, Bagni di Lucca LU",
+    "phone": "+39 0583 805919",
+    "opening_hours": "Wt–Sb 7:00–20:00, Nd i Pn zamknięte"
+  },
+  "accommodation": {
+    "place": "BAZA 2 — k. Castelnuovo Berardenga",
+    "note": "Przyjazd ok. 16:00–17:30 (transfer ~2h15 po lunchu). Check-in w agriturismo — typowo 15:00–19:00, poza sezonem do 18:00. Zadzwoń z ETA.",
+    "price": "€70–100/noc",
+    "booking_tip": "Vagliagli lub Monti in Chianti — poza ZTL. Direct booking u właściciela często taniej niż Booking.",
+    "gps_hint": "Naviguj: Vagliagli SI lub Monti in Chianti SI — nie centrum Castelnuovo (ZTL)",
+    "options": [
+      {
+        "name": "Agriturismo Podere Santa Maria",
+        "area": "Vagliagli",
+        "note": "Typowy chianti agriturismo z własnym winem"
+      },
+      {
+        "name": "Agriturismo Monti in Chianti",
+        "area": "Monti in Chianti",
+        "note": "Cisza, winnice, 20 min od Sieny"
+      }
+    ]
+  },
+  "tips": [
+    "Ponte del Diavolo najlepiej rano (8:00–10:00) — mniej autokarów, mgła nad Serchio",
+    "Osteria del Diavolo przy moście zamknięta w czwartek — lunch w Trattoria Borghesi w Bagni",
+    "Wyjazd do BAZY 2 po lunchu (~13:30) — bagaż w aucie, ~2h 15 min jazdy",
+    "Ostatni przystanek Garfagnany — tankowanie przed A11",
+    "Trattoria da Giulio (Via delle Conce 45) jest w LUCCA, nie w Bagni di Lucca — poprawka!"
+  ],
+  "web_research": [
+    {
+      "topic": "Ponte del Diavolo — parking i dostęp",
+      "summary": "Parking gratuito 24h przy SS12, obie strony. Most pedonale — 5 min. Tre osterie accanto al ponte.",
+      "source": "https://www.viaggieritratti.it/ponte-del-diavolo-di-borgo-a-mozzano/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Bagno Bernabò Bagni di Lucca",
+      "summary": "Terme storiche (Elisa Bonaparte 1810). Aperto 9–18 tutti i giorni. Bagno romano in marmo. Tel. 331 171 9014.",
+      "source": "https://bellabagnidilucca.com/2025/09/23/a-roman-bath-at-bernabo-spa/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Trasa Barga → Chianti",
+      "summary": "SS445→SS12→A11→Siena Sud→SP408. ~195 km, 2h15 bez postojów. Pedaggio A11 ~€8–10.",
+      "source": "https://www.toscana.info/en/lucca/lucca-province/barga/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Terme Bagni di Lucca — stato 2026",
+      "summary": "Hotel Terme Bagni di Lucca: piscina aperta, stabilimento termale principale chiuso. Bernabò (Ponte a Serraglio) operativo.",
+      "source": "https://www.terme-bagnidilucca.it/",
+      "checked": "2026-07"
+    }
+  ],
+  "practical_tips": [
+    "Ponte del Diavolo: przyjedź przed 10:00 — po 11:00 autokary turystyczne z Lucca",
+    "Bagni di Lucca: 1–1,5h — Ponte delle Catene, English Church, opcjonalnie kąpiel termalna Bernabò",
+    "Wyjazd do BAZY 2 po lunchu ~13:30 — 195 km, realnie 2h15–2h45 z postojem",
+    "Tankowanie obowiązkowe przed A11 — stacji mało w Chianti poza Gaiole/Castelnuovo Berardenga",
+    "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 16:00–17:00, droga do Vagliagli kręta"
+  ],
+  "parking": {
+    "ponte_diavolo": "Parcheggio al Ponte del Diavolo — bezpłatny, 24h, przy SS12 tuż przy moście (strona wschodnia). Most pieszy — 15 min spacer.",
+    "bagni_lucca": "Parking przy Ponte delle Catene lub centrum — strefy płatne. Terme Bernabò: Via Bagni Caldi 36 — kilka miejsc parkingowych.",
+    "transfer_fuel": "Zatankuj w Castelnuovo di Garfagnana lub przy zjeździe na A11 — ostatnia okazja przed płatną autostradą.",
+    "base2_agriturismo": "Parkuj na terenie agriturismo — nie w centrum Castelnuovo Berardenga (ZTL aktywna).",
+    "transfer_tip": "Bagaż w aucie cały dzień — zaparkuj przy moście, zwiedzaj pieszo, wróć po lunchu na transfer"
+  },
+  "fuel_stops": [
+    {
+      "name": "Tankowanie Garfagnana przed A11",
+      "location": "Fornaci di Barga / Capannori",
+      "road": "SS12",
+      "note": "Ostatnie tankowanie przed autostradą — obowiązkowe przed transferem do Chianti."
+    },
+    {
+      "name": "Area servizio Lucca Est / Chiesa",
+      "location": "A11",
+      "road": "A11",
+      "opening_hours": "24/7",
+      "note": "Opcjonalny postój na A11 — kawa przed Sieną."
+    },
+    {
+      "name": "IP Castelnuovo Berardenga",
+      "location": "SP408, Chianti",
+      "km_from_start": "~195",
+      "note": "Zatankuj przy dotarciu do bazy — stacji mało na wiejskich drogach Chianti."
+    }
+  ],
+  "opening_hours": {
+    "ponte_del_diavolo": "Dostęp 24h (obiekt na zewnątrz). Najlepsze światło: 8:00–10:00 rano — mgła nad Serchio.",
+    "casino_bagni_lucca": "Regio Casinò (Ponte a Serraglio) — muzeum, nie aktywne kasyno. Wizyty: sprawdź infopoint +39 0583 805745.",
+    "trattoria_borghesi": "Wt–Sb 7:00–20:00 (czwartek OK). Nd i Pn zamknięte.",
+    "osteria_del_diavolo": "10:30–17:30, ZAMKNIĘTE w czwartek — nie planuj na dzień 6!",
+    "agriturismo_checkin": "Typowo 15:00–19:00 — zadzwoń jeśli przyjazd po 18:00",
+    "bagni_bernabo_spa": "Bagno Bernabò: Pn–Nd 9:00–18:00. Tel. +39 331 171 9014. Rezerwacja zalecana.",
+    "casino_bagni": "Casinò di Bagni di Lucca — muzeum (najstarsze kasyno Włoch, nieaktywne) — 10:00–18:00 sezon.",
+    "trattoria_da_giulio": "UWAGA: Trattoria da Giulio (Via Casalini 1) — sprawdź godziny; typowo 12:00–14:30. Rezerwacja na lunch przed przejazdem.",
+    "agriturismo_baza2_checkin": "15:00–19:00 — zadzwoń z A11 z ETA"
+  },
+  "route_segments": [
+    {
+      "segment": "Barga → Borgo a Mozzano",
+      "road": "SS445/SS12",
+      "km": "~25",
+      "note": "Zjazd z gór do doliny Serchio. Ponte del Diavolo tuż przy SS12."
+    },
+    {
+      "segment": "Borgo a Mozzano → Bagni di Lucca",
+      "road": "SS12",
+      "km": "~12",
+      "note": "W dół doliny — Bagni di Lucca po prawej (Via Lodovica/SP20)."
+    },
+    {
+      "segment": "Bagni di Lucca → Lucca → A11",
+      "road": "SS12/A11",
+      "km": "~35",
+      "note": "Tankowanie przed wjazdem na A11. Unikaj ZTL centrum Lucca."
+    },
+    {
+      "segment": "A11 → Siena",
+      "road": "A11/E70/Siena Sud",
+      "km": "~110",
+      "note": "Superstrada Siena-Bettolle. Raccordo do Castelnuovo Berardenga."
+    },
+    {
+      "segment": "Siena Sud → BAZA 2",
+      "road": "SP408/SS326",
+      "km": "~25",
+      "note": "Wjazd w Chianti — kręte drogi do agriturismo. ETA 16:00–17:00."
+    }
+  ]
+}

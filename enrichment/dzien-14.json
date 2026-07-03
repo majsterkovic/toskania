@@ -1,0 +1,175 @@
+{
+  "date": "25.09 (pt)",
+  "day_num": 14,
+  "type": "transit",
+  "label": "TRANZYT ← FRANKONIA",
+  "title": "Wasserburg am Inn → Hof (Saale)",
+  "image": "hof",
+  "drive_km": 380,
+  "drive_h": "4–4,5 h",
+  "base_id": null,
+  "depart": "8:00 rano z Wasserburg",
+  "route": "Wasserburg am Inn → B304/A94 → A8 west (München-Ost) → A9 north → Nürnberg → A9 north → zjazd Hof-Nord/Hof-West → Hof (Saale)",
+  "attractions": [],
+  "nature": null,
+  "food": {
+    "place": "Gasthof w Norymberdze lub na A9 (Franconia)",
+    "address": null,
+    "dishes": [],
+    "note": "Krótki postój obiadowy — lokalny Gasthof zamiast dużej Raststätte. Franconia słynie z kiełbas i piwa.",
+    "price": "~€10–14",
+    "gps_hint": "Zjazd A9 Nürnberg-Nord lub Raststätte Franconia"
+  },
+  "accommodation": {
+    "place": "Hof (Saale) lub okolice — nocleg tranzytowy",
+    "note": "Krótszy dzień (~4 h jazdy). Szukaj Pension/Gasthof przy zjeździe A9/A72, nie w centrum. Alternatywa: Naila, Rehau (tańsze).",
+    "price": "€40–55/noc",
+    "booking_tip": "Booking: Pension przy zjeździe A9/A72 — taniej niż centrum Hof",
+    "gps_hint": "Naviguj: Hof (Saale) — dzielnice przy A9, nie centrum",
+    "options": [
+      {
+        "name": "Quality Hotel Hof",
+        "type": "Hotel 3*",
+        "address": "Ernst-Reuter-Strasse 137, 95030 Hof",
+        "price": "€55–80/noc",
+        "parking": "duży bezpłatny plac",
+        "url": "https://qualityhof.ohotel.com/"
+      },
+      {
+        "name": "Hotel Central Hof",
+        "type": "Hotel 4*",
+        "address": "Kulmbacher Straße 2, 95030 Hof",
+        "price": "€60–85/noc",
+        "parking": "bezpłatny (Freiheitshalle obok)",
+        "url": "https://www.sorat-hotels.com/en/hotel/central-hof.html"
+      },
+      {
+        "name": "Pension przy A9 (Rehau/Naila)",
+        "type": "Pension",
+        "address": "okolice zjazdu A9 Naila/Selbitz",
+        "price": "€40–55/noc",
+        "parking": "zwykle bezpłatny",
+        "note": "Tańsza alternatywa, 10–15 km od centrum Hof"
+      },
+      {
+        "name": "Fichtelgebirgshof",
+        "type": "Landgasthof",
+        "address": "przy A9 (Himmelkron)",
+        "price": "€50–70/noc",
+        "parking": "150 miejsc gratis",
+        "note": "Bezpośrednio przy A9, 36 pokoi"
+      },
+      {
+        "name": "Hotel Strauss",
+        "type": "Gasthof",
+        "address": "Bismarckstr. 31, 95028 Hof",
+        "price": "€55–75/noc",
+        "parking": "bezpłatny przy hotelu",
+        "note": "3★, restauracja regionalna, pn zamknięte"
+      }
+    ]
+  },
+  "tips": [
+    "Krótszy dzień jazdy — czas na odpoczynek przed finałowym etapem",
+    "Sprawdź stan A9 między Norymbergą a Hof — ewentualne roboty drogowe",
+    "Zjazd Hof-Nord (A9) lub Hof-West (B15) — oba dobre dla noclegu tranzytowego",
+    "Sprawdź A9 baustellen przed wyjazdem na autobahn.de"
+  ],
+  "opening_hours": {
+    "quality_hotel_hof": "Recepcja 24h, sauna od 14:00",
+    "hotel_central_hof": "Check-in od 15:00, parking gratis (Freiheitshalle obok jeśli pełny)"
+  },
+  "parking": {
+    "hof_hotels": "Quality Hotel Hof i Hotel Central Hof — bezpłatny parking na miejscu (duży plac).",
+    "pension_tip": "Szukaj Pension przy zjeździe A9/A72 — tańsze niż centrum Hof.",
+    "alternatives": "Rehau, Naila — mniejsze miasteczka 10–15 km od Hof, €40–50/noc.",
+    "hof": "Pension przy zjeździe A9 (Hof-Nord/West) — parking gratis. Centrum Hof: płatny."
+  },
+  "practical_tips": [
+    "Krótszy dzień (~4 h) — wyjazd 8:00, przyjazd Hof ok. 12:00–13:00.",
+    "Sprawdź A9 na verkehr.de — roboty drogowe Nürnberg–Hof możliwe.",
+    "Lunch: Gasthof przy zjeździe Nürnberg-Nord zamiast dużej Raststätte — lepsze jedzenie.",
+    "Hof: Quality Hotel (Ernst-Reuter-Str. 137, parking gratis) lub Hotel Central (Kulmbacher Str. 2).",
+    "Alternatywa tańsza: Pension w Rehau lub Naila — 10 km od A9.",
+    "Jutro finał do Poznania — wcześnie spać, wyjazd 7:00.",
+    "Krótszy dzień — dotarcie Hof ~12:00–13:00. Czas na odpoczynek przed finałem.",
+    "A9 Nürnberg–Hof: sprawdź baustellen na autobahn.de — roboty częste.",
+    "Frankonia: lokalny Gasthof zamiast Raststätte — kiełbasy, Dunkelbier.",
+    "Nocleg przy zjeździe A9 — nie w centrum Hof (tańsze, łatwiejszy wyjazd rano)."
+  ],
+  "web_research": [
+    {
+      "topic": "Trasa Wasserburg → Hof",
+      "summary": "A8/A9 przez Nürnberg: ~380 km, 4–4,5 h. Wasserburg → Monachium ~50 min, potem A9 north do Hof.",
+      "source": "https://maps.adac.de/routenplaner/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Noclegi Hof (Saale)",
+      "summary": "Quality Hotel Hof (111 pokoi, parking gratis, sauna, przy A9). Hotel Central Hof (Kulmbacher Str. 2, parking gratis przy Freiheitshalle). SOIBELMANNS od €46.",
+      "source": "https://www.sorat-hotels.com/en/hotel/central-hof.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Pension Rehau/Naila alternatywa",
+      "summary": "Mniejsze miasta przy A9/A72 — Pension €40–55/noc, łatwy dojazd do trasy jutrzejszej na wschód (A72).",
+      "source": "https://qualityhof.ohotel.com/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Hotel Central Hof — parking A9",
+      "summary": "Kulmbacher Str. 2. Bezpłatny parking. Przy A9/A72/A93. Zjazd Hof-Nord lub Hof-West.",
+      "source": "https://www.sorat-hotels.com/en/hotel/central-hof/directions/car.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Fichtelgebirgshof przy A9",
+      "summary": "Bezpośrednio przy A9 Himmelkron. 150 darmowych miejsc. Od €50/noc.",
+      "source": "https://www.hrs.de/de/hotel/62065",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "A9 Nürnberg–Hof",
+      "summary": "~120 km, ~1h 10 min bez trafficu. Raststätte Feucht na lunch.",
+      "source": "https://de.wikivoyage.org/wiki/Bundesautobahn_9",
+      "checked": "2026-07"
+    }
+  ],
+  "route_segments": [
+    {
+      "segment": "Wasserburg → Monachium",
+      "road": "B304 → A94 → A8",
+      "km": "~55",
+      "note": "~50 min. Unikaj centrum Monachium."
+    },
+    {
+      "segment": "Monachium → Nürnberg",
+      "road": "A8 → A9 north",
+      "km": "~170",
+      "note": "Główny odcinek — 2 h jazdy. Raststätte Franconia możliwa."
+    },
+    {
+      "segment": "Nürnberg → Hof",
+      "road": "A9 north",
+      "km": "~120",
+      "note": "Zjazd Hof-West (B15) lub Naila/Selbitz — bliżej pensionów."
+    }
+  ],
+  "fuel_stops": [
+    {
+      "name": "Postój Nürnberg",
+      "location": "A9 Raststätte Franconia lub Nürnberg-Nord",
+      "note": "Lunch — kiełbasy frankońskie, piwo. ~30 min."
+    },
+    {
+      "name": "Raststätte Irschenberg / Holzkirchen",
+      "location": "A8 km ~90",
+      "note": "Postój przed Monachium — mniej ruchu niż w mieście."
+    },
+    {
+      "name": "Raststätte Nürnberg-Feucht",
+      "location": "A9 km ~410",
+      "note": "Lunch w Frankenii — kiełbasy, piwo. 24h."
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "date": "26.09 (sob)",
+  "day_num": 15,
+  "type": "transit",
+  "label": "TRANZYT ← POZNAŃ",
+  "title": "Hof (Saale) → Poznań (dotarcie do domu)",
+  "drive_km": 470,
+  "drive_h": "5–5,5 h",
+  "base_id": null,
+  "depart": "7:00–7:30 rano z Hof",
+  "route": "Hof (Saale) → A72 north → Kreuz Chemnitz (A4) → A4 west → Drezno obwodnica → B97/Cottbus → A15 → Frankfurt (Oder) → A2 east → Świecko → Poznań",
+  "arrival": "ok. 13:30–15:00 w Poznaniu (zależnie od A4 Baustelle i ruchu przy Świecku)",
+  "attractions": [],
+  "nature": null,
+  "food": {
+    "place": "Raststätte Sachsen lub kanapki z poprzedniego wieczoru",
+    "address": null,
+    "dishes": [],
+    "note": "Krótszy finałowy etap — lunch na trasie lub po dotarciu do Poznania.",
+    "price": null,
+    "gps_hint": null
+  },
+  "tips": [
+    "Dotarcie do Poznania 26.09 — 1 dzień przed deadline 27.09",
+    "Przejście graniczne Świecko (A2) — najszybsze dla kierunku Polska",
+    "Sprawdź stan A4 przez Saksonię — roboty drogowe częste w tym rejonie",
+    "Deadline 27.09 — przy planowym harmonogramie w domu 26.09 po południu",
+    "Tankuj przed Świecko w DE lub tuż po granicy w PL"
+  ],
+  "opening_hours": {
+    "raststaette_sachsen": "24/7",
+    "border_swiecko": "A2 Świecko: 24h. Videotolling PL od Konin."
+  },
+  "practical_tips": [
+    "Wyjazd 7:00–7:30 z Hof — dotarcie Poznań ok. 13:30–15:00 (z uwzględnieniem A4 Baustelle).",
+    "A4 Ohorn–Salzenforst: do października 2026 jeden pas kier. Drezno — sprawdź autobahn.de rano.",
+    "Drezno: jedź obwodnicą (A4/A17), nie przez centrum.",
+    "Granica Świecko (A2) — najszybsza dla Poznania. A12 w DE → A2 w PL.",
+    "A2 PL: przygotuj ~138 zł na videotolling (karta). Odcinek Świecko–Konin płatny.",
+    "Dotarcie 26.09 = 1 dzień marginesu przed deadline 27.09. Bufory wykorzystane!",
+    "Sobota rano: mniejszy ruch na A4/A2 niż popołudnie — kolejny powód na wczesny wyjazd.",
+    "Finałowy etap ~5–5,5 h. Dotarcie Poznań 26.09 ok. 13:00–14:30 — 1 dzień przed deadline 27.09.",
+    "A4 Saksonia: częste roboty drogowe — sprawdź baustellen autobahn.de rano.",
+    "Granica Świecko (A2): najszybsza dla kierunku Poznań. Opłata A2 PL ~138 zł.",
+    "Lunch: Raststätte Sachsen lub kanapki — krótki postój, cel dom."
+  ],
+  "web_research": [
+    {
+      "topic": "Trasa Hof → Poznań",
+      "summary": "A72 → A4 (Drezno) → A13 (Cottbus) → A15 → granica → A2 Świecko → Poznań. ~470 km, 5–5,5 h bez utrudnień; z A4 Baustelle 6–7 h.",
+      "source": "https://fromto.travel/en/germany/poland/ba-hof/wiecie",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "A4 Baustelle Ohorn–Salzenforst 2026",
+      "summary": "23.04–30.10.2026: remont 9,2 km A4 kier. Drezno. 3 pasy kier. Görlitz, 1 pas kier. Drezno. Sperry zjazdów Uhyst i Burkau w różnych terminach. +30–45 min.",
+      "source": "https://www.autobahn.de/betrieb-verkehr/verkehrsmeldung/a4-fahrbahnerneuerung-zwischen-den-anschlussstellen-ohorn-und-salzenforst-richtungsfahrbahn-dresden-aachen",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Opłaty A2 Polska 2026",
+      "summary": "Odcinek Świecko–Konin Modła: ~138 zł dla auta osobowego. Videotolling bez zatrzymania. A2 kontynuacja niemieckiej A12.",
+      "source": "https://conadrogach.pl/haslo-drogowe/a2-swiecko-nowy-tomysl-konin/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "A72 Hof–Chemnitz",
+      "summary": "A72 łączy Hof (od A9) z Chemnitz i A4. Odcinek do Lipska w budowie — dla trasy na wschód wystarczy do Kreuz Chemnitz/A4.",
+      "source": "https://conadrogach.pl/mapa-samochodowa/niemcy/autostrada-a72/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Trasa Hof → Poznań A72/A4/A2",
+      "summary": "Hof → A72 → Chemnitz → A4 → Drezno → Frankfurt/Oder → A2 → Świecko → Poznań. ~470 km, 5–5,5 h.",
+      "source": "https://conadrogach.pl/mapa-samochodowa/niemcy/autostrada-a72/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "A4 Baustellen Saksonia",
+      "summary": "Roboty drogowe częste na A4 Drezno–Frankfurt. Sprawdź rano na autobahn.de.",
+      "source": "https://www.autobahn.de/",
+      "checked": "2026-07"
+    }
+  ],
+  "route_segments": [
+    {
+      "segment": "Hof → Chemnitz",
+      "road": "A72",
+      "km": "~90",
+      "note": "A72 łączy Hof z A4 przy Dreznie. Bezpłatna autostrada DE."
+    },
+    {
+      "segment": "Drezno → Cottbus",
+      "road": "A4 → A13",
+      "km": "~130",
+      "note": "UWAGA: roboty A4 Ohorn–Salzenforst (IV–X 2026) — 1 pas kier. Drezno. Zaplanuj +30–45 min."
+    },
+    {
+      "segment": "Cottbus → granica PL",
+      "road": "A15 → A2",
+      "km": "~80",
+      "note": "Przejście graniczne przy Frankfurt/Oder lub Słubice/Świecko."
+    },
+    {
+      "segment": "Świecko → Poznań",
+      "road": "A2 (płatny AW)",
+      "km": "~170",
+      "note": "Opłata AW ~138 zł (Świecko–Konin Modła, 2026). Videotolling."
+    },
+    {
+      "segment": "Chemnitz → Drezno",
+      "road": "A4 west",
+      "km": "~80",
+      "note": "Obwodnica Drezna — nie centrum. Uwaga na baustellen Saksonia."
+    },
+    {
+      "segment": "Drezno → Frankfurt (Oder)",
+      "road": "A4 → A13 → A15",
+      "km": "~145",
+      "note": "Przejście graniczne A15 → A2."
+    },
+    {
+      "segment": "Frankfurt (Oder) → Poznań",
+      "road": "A2 east",
+      "km": "~150",
+      "note": "Świecko — granica PL/DE. Opłata AW ~138 zł (Świecko–Konin). Dotarcie ~13:00–14:30."
+    }
+  ],
+  "fuel_stops": [
+    {
+      "name": "Tankowanie przed wyjazdem Hof",
+      "location": "Hof / A72 wjazd",
+      "note": "Pełny bak przed długim odcinkiem A4."
+    },
+    {
+      "name": "Postój A4/A13",
+      "location": "Raststätte Sachsen lub Cottbus",
+      "note": "Krótki postój — kanapki lub Raststätte. ~20 min."
+    },
+    {
+      "name": "Tankowanie przed granicą PL",
+      "location": "A2 przed Świeckiem lub tuż po",
+      "note": "Ostatnie tankowanie w DE często tańsze."
+    },
+    {
+      "name": "Raststätte Sachsen / Hermsdorf",
+      "location": "A4/A9 kier. Drezno",
+      "note": "Postój na trasie Saksonia."
+    },
+    {
+      "name": "MOP Lubrza / Rzepin",
+      "location": "A2 przed Świecko",
+      "note": "Ostatnie tankowanie w PL lub taniej w DE przed granicą."
+    }
+  ],
+  "parking": {
+    "arrival": "Dotarcie do domu — brak noclegu. Lunch na trasie lub w Poznaniu."
+  }
+}

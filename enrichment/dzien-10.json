@@ -1,0 +1,144 @@
+{
+  "date": "21.09 (pn)",
+  "day_num": 10,
+  "type": "tuscany",
+  "label": "TOSKANIA · DZIEŃ 8",
+  "title": "Mała Jerozolima i etruskie drogi",
+  "base_id": "base3",
+  "base_label": "BAZA 3 — Pitigliano",
+  "drive_limit_min": 15,
+  "attractions": [
+    {
+      "name": "Pitigliano — stare miasto",
+      "drive_min": 5,
+      "description": "Jedno z najbardziej dramatycznych miast Toskanii: zbudowane na kolumnie z tufu wulkanicznego. Twierdza Orsini (XIV w.), synagoga (XVI w., 'Piccola Gerusalemme'), wąskie vicoli. We wrześniu tłumy minimalne.",
+      "type": "medieval",
+      "image_key": "pitigliano",
+      "gps_hint": "Pitigliano GR — parking Parcheggio del Fosso (poza ZTL)",
+      "image": "pitigliano"
+    },
+    {
+      "name": "Via Cava di San Giuseppe + Via Cava di Poggio Prisca",
+      "drive_min": 5,
+      "description": "Etruskie 'wydrążone drogi' wykute w tufie, do 20 m głębokości. Szlak ~3 km z powrotem. Ciemne, atmosferyczne, po obu stronach gęsty las wiecznie zielonego dębu ostrolistnego (Quercus ilex).",
+      "type": "nature",
+      "image_key": "pitigliano",
+      "gps_hint": "Via Cava di San Giuseppe, Pitigliano GR — start przy cmentarzu",
+      "image": "pitigliano"
+    }
+  ],
+  "oak_forest": {
+    "spot": "Via Cave — okolice Pitigliano",
+    "species": "Quercus ilex (dąb ostrolistny / leccio)",
+    "note": "Charakterystyczny dla Maremmy wiecznie zielony las dębowy po obu stronach głęboko wkopanych etruskich dróg",
+    "gps_hint": "Szlak Via Cava San Giuseppe — las po obu stronach wykopu"
+  },
+  "food": {
+    "place": "Il Tufo Allegro — Pitigliano",
+    "address": "Vicolo della Costituzione 5, 58017 Pitigliano GR",
+    "dishes": [
+      "acquacotta maremma",
+      "buglione d'agnello",
+      "Pitigliano DOC Bianco",
+      "crostini al tufo"
+    ],
+    "note": "Wnętrze wydrążone w tufie. Rezerwacja: tel. 0564 616192 lub 335 1028814. Michelin Bib Gourmand — mało stolików, rezerwuj dzień wcześniej.",
+    "price": "~€25–35/os",
+    "gps_hint": "Vicolo della Costituzione 5, Pitigliano GR",
+    "phone": "+39 0564 616192",
+    "opening_hours": "Pn,Cz–Nd 12:30–14:30 i 19:30–21:30. Wt zamknięte. Śr tylko kolacja."
+  },
+  "tips": [
+    "Pitigliano: parking Parcheggio del Fosso — centrum pieszo, ZTL w murach",
+    "Via Cave: weź latarkę — wykopy bywają ciemne nawet w słońcu",
+    "Il Tufo Allegro: rezerwacja tel. wieczorem — mało stolików",
+    "Poniedziałek: synagoga OTWARTA (sobota zamknięta) — 10:00–13:00, 14:30–18:00",
+    "Via Cave: latarka obowiązkowa, buty trekkingowe, necropoli etruska po drodze",
+    "Il Tufo Allegro: rezerwacja tel. 0564 616192 — poniedziałek OK, wtorek zamknięte",
+    "Parking Parcheggio del Fosso — centrum pieszo, ZTL w murach",
+    "Mężczyźni: kippa w synagodze (dostępna na miejscu)",
+    "Poniedziałek: forteca zamknięta — Via Cave i synagoga to główne atrakcje dnia",
+    "Il Tufo Allegro: zadzwoń rano na wieczorną rezerwację"
+  ],
+  "image": "pitigliano",
+  "web_research": [
+    {
+      "topic": "Sinagoga Pitigliano — orari",
+      "summary": "Sezon IV–X: 10:00–13:00 i 14:30–18:00. Zamknięte sobota i święta żydowskie. Bilet €5–6 (ghetto + sinagoga + museo). Kippa dla mężczyzn.",
+      "source": "https://pitigliano.org/la-piccola-gerusalemme/sinagoga/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Via Cava di San Giuseppe",
+      "summary": "850 m, ~18 min. Parking gratis przy SP42 (Pian della Madonna). Necropoli etruska VII–VI w. p.n.e. Fonte dell'Olmo na końcu. Latarka zalecana.",
+      "source": "https://visitpitigliano.com/vie-cave/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Parking Pitigliano",
+      "summary": "Płatne: Piazza Garibaldi €1,50/h. Santa Chiara €1/h. Bezpłatny: Piazza Dante. Camper: Piazza Nenni €2,50/h. 20 min gratis/dzień/rejestracja.",
+      "source": "http://www.abacosmartcities.it/pitigliano-gr-eng/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Il Tufo Allegro — orari",
+      "summary": "Vicolo della Costituzione 5. 12:30–14:30 i 19:30–21:30. Wt całkowicie zamknięte. Śr tylko kolacja. Michelin. Tel. 0564 616192.",
+      "source": "https://www.maremmaguide.com/il-tufo-allegro.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Sassotondo degustacja",
+      "summary": "Classic Tasting 4 vini: €28–30, 1h. Sloty 10:30 lub 15:30, pn–nd. Prenotazione 24h: +39 351 6986750. Loc. Pian di Conati 52, Sovana.",
+      "source": "http://www.sassotondo.it/it/visite.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Sinagoga Pitigliano — orari i biglietti",
+      "summary": "€6 intero, €5 ridotto. 1 IV–31 X: 10–13, 14:30–18. Zamknięte sobota. Vicolo Manin — „Piccola Gerusalemme\".",
+      "source": "https://www.comune.pitigliano.gr.it/vivere_il_comune/luoghi/luogo_9.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Palazzo Orsini Pitigliano",
+      "summary": "€6 intero (2026). Pn zamknięte. Pt–nd do 18:00. Biglietto integrato z katedrą Sovana €7,50.",
+      "source": "https://palazzo-orsini-pitigliano.it/index.php/it/orari-e-biglietti",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Il Tufo Allegro — rezerwacja",
+      "summary": "Vicolo della Costituzione 5. Tel. 0564 616192 / 335 1028814. Michelin Bib Gourmark — kuchnia w tufie.",
+      "source": "https://guide.michelin.com/us/en/toscana/pitigliano/restaurant/il-tufo-allegro",
+      "checked": "2026-07"
+    }
+  ],
+  "practical_tips": [
+    "Timeline: 9:30 Pitigliano centro (spacer, fortezza) → 10:00 synagoga + ghetto → 11:30 Via Cava San Giuseppe (1h) → 13:00 lunch Tufo Allegro → popołudnie wolne lub Sassotondo 15:30.",
+    "Via Cava: start od SP42 (Pian della Madonna) lub pieszo z centrum (10–15 min). Parking gratis przy SP42.",
+    "Szlak 850 m jednokierunkowo + powrót — łącznie ~1–1,5h z necropoli i Fonte dell'Olmo.",
+    "Zarezerwuj Il Tufo Allegro rano na kolację — wtorek zamknięte!",
+    "Opcja: degustacja Sassotondo o 15:30 (prenotazione +39 351 6986750) — 2.2 km droga sterrata.",
+    "Poniedziałek 21.09: Palazzo Orsini ZAMKNIĘTE — skup się na synagodze, Via Cave i spacerze po borgo.",
+    "Sinagoga „Piccola Gerusalemme\": Vicolo Manin — bagno rytualne, piec na matzę, muzeum w tufie. €6.",
+    "Il Tufo Allegro: rezerwacja tel. 0564 616192 — Michelin, kilka stolików w tufie.",
+    "Via Cave: start przy cmentarzu, ~1,5–2 h z powrotem. Quercus ilex (leccio) po obu stronach."
+  ],
+  "parking": {
+    "parcheggio_fosso": "Parcheggio del Fosso — główny parking dla turystów, poza ZTL. 5–10 min pieszo do centrum.",
+    "piazza_garibaldi": "Piazza Garibaldi / Piazza della Repubblica — płatny €1,50/h (9–13, 15–20). 20 min gratis/dzień.",
+    "piazza_santa_chiara": "Via Santa Chiara — €1/h pierwsza godzina, €6/dzień. 8–20.",
+    "piazza_dante": "Piazza Dante Alighieri — parking bezpłatny (dalszy).",
+    "ztl": "ZTL w murach Pitigliano — kamery. Parkuj TYLKO poza murami (Fosso lub Nenni).",
+    "pitigliano": "Parcheggio del Fosso — płatny, poza ZTL, 5 min pieszo do centrum. Alternatywa: Piazza Nenni (bezpłatny, ~15 min pieszo).",
+    "via_cave": "Via Cava San Giuseppe: parking przy cmentarzu (Cimitero di Pitigliano) — bezpłatny, mały."
+  },
+  "opening_hours": {
+    "sinagoga_museo": "21.09 (pn): 10:00–13:00 i 14:30–18:00 (sezon kwiecień–październik). Sobota ZAMKNIĘTE. Bilet €5–6.",
+    "sinagoga_phone": "Associazione La Piccola Gerusalemme: 0564 614230, 328 1907173",
+    "fortezza_orsini": "Zwykle 10:00–13:00 i 15:00–19:00 (sezon). Sprawdź przy kasie.",
+    "via_cava_san_giuseppe": "Dostęp 24h (szlak outdoor). Najlepiej 9:00–17:00. ~850 m, ~18 min w jedną stronę.",
+    "il_tufo_allegro": "Poniedziałek: 12:30–14:30 i 19:30–21:30. Wtorek (22.09) ZAMKNIĘTE — zaplanuj kolację dziś!",
+    "palazzo_orsini": "Wt–cz 9:00–13:00, 14:00–17:00; pt–nd 9:00–13:00, 14:00–18:00. Poniedziałek ZAMKNIĘTE. Wstęp do 30 min przed zamknięciem.",
+    "sinagoga": "1 IV–31 X: 10:00–13:00, 14:30–18:00. Sobota ZAMKNIĘTA. Poniedziałek 21.09 = OTWARTE.",
+    "via_cave": "Dostęp bezpłatny 24/7 — szlak samodzielny, bez biletu."
+  }
+}

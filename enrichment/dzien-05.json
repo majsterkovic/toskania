@@ -1,0 +1,142 @@
+{
+  "date": "16.09 (śr)",
+  "day_num": 5,
+  "type": "tuscany",
+  "label": "TOSKANIA · DZIEŃ 3",
+  "title": "Jezioro, forteca i ukryte wioski",
+  "image": "verrucole",
+  "base_id": "base1",
+  "base_label": "BAZA 1 — Barga",
+  "drive_limit_min": 25,
+  "attractions": [
+    {
+      "name": "Fortezza delle Verrucole",
+      "drive_min": 18,
+      "description": "Imponująca twierdza na stromym wzgórzu (XII–XIV w.), panorama 360° doliny. Minimalna turystyka, wstęp symboliczny.",
+      "type": "medieval",
+      "image": "verrucole",
+      "image_key": "verrucole",
+      "gps_hint": "Fortezza delle Verrucole, San Romano in Garfagnana LU"
+    },
+    {
+      "name": "Lago di Vagli",
+      "drive_min": 25,
+      "description": "Sztuczne jezioro z zatopionym w 1953 r. miasteczkiem Fabbriche di Careggine. Spacer po tamie i okolicznych wzgórzach. Sprawdź poziom wody przed przyjazdem — przy obniżeniu pojawiają się ruiny.",
+      "type": "nature",
+      "image": "vagli",
+      "image_key": "vagli",
+      "gps_hint": "Diga del Lago di Vagli, 55030 Vagli Sotto LU — parking przy tamie"
+    },
+    {
+      "name": "Gorfigliano",
+      "drive_min": 20,
+      "description": "Mikrowioska z romańskim kościołem, kilkadziesiąt mieszkańców. Przykład autentycznego borgo bez renowacji turystycznej.",
+      "type": "medieval",
+      "image_key": null,
+      "gps_hint": "Gorfigliano, 55038 Minucciano LU"
+    }
+  ],
+  "oak_forest": {
+    "spot": "Wzgórza wokół Lago di Vagli",
+    "species": "Quercus cerris, Q. petraea",
+    "note": "Mieszane lasy dębowo-kasztanowe na zboczach jeziora — spacer bezpłatny, bez oznakowania turystycznego",
+    "gps_hint": "Ścieżki od tamy w kierunku Careggine — las na wschodnim brzegu"
+  },
+  "food": {
+    "place": "Agriturismo Il Corniolo — Vagli Sotto",
+    "address": "Loc. Vagli Sotto, Careggine (~25 min od bazy)",
+    "dishes": [
+      "fagioli di Sorana IGP (delikatna fasola)",
+      "formaggi freschi di pecora (świeże owcze sery)",
+      "wino z doliny Serchio"
+    ],
+    "note": "Zadzwoń dzień wcześniej i zarezerwuj 'pranzo tipico' — stała cena, wszystko z własnego gospodarstwa. Ukryte przed masowym turystą.",
+    "price": "~€18–22/os z winem",
+    "gps_hint": "Loc. Vagli Sotto, 55030 Careggine LU — rezerwacja tel. obowiązkowa"
+  },
+  "tips": [
+    "16.09 = środa: Verrucole ZAMKNIĘTA (wrzesień pt–nd) — spacer zewnętrzny lub zmiana dnia",
+    "Lago di Vagli: ruiny Fabbriche niewidoczne w 2026 — oprożnienie planowane 2027",
+    "Il Corniolo jest w Castiglione, nie Vagli — lunch: Bar Radicchi nad jeziorem",
+    "Parking przy tamie Vagli — przyjedź rano, zapełnia się po południu"
+  ],
+  "web_research": [
+    {
+      "topic": "Fortezza Verrucole — KRYTYCZNE: 16.09 to środa",
+      "summary": "We wrześniu forteca otwarta pt–nd (od 15.09). 16.09.2026 (środa) = ZAMKNIĘTA. Alternatywa: spacer do fortecy z zewnątrz (widok 360° bezpłatny) lub przesuń wizytę na piątek/sobotę. Tel/WhatsApp: 379 2415958.",
+      "source": "https://tuscanyplanet.com/en/verrucole-castle/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Cennik Verrucole 2026",
+      "summary": "Wstęp z przewodnikiem: €8 dorosły, €5 (6–18 lat). Wstęp częściowy (bez muzeum): €4. Rezerwacja via WhatsApp +39 379 2415958 (9–19). Wizyta ~1 h.",
+      "source": "https://www.fortezzaverrucolearcheopark.it/it/informazioni.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Lago di Vagli — poziom wody wrzesień 2026",
+      "summary": "Planowane oprożnienie i odsłonięcie Fabbriche di Careggine: lato 2027 (nie 2026). We wrześniu 2026 jezioro pełne — ruiny niewidoczne. Spacer po tamie i wzgórzach nadal warto.",
+      "source": "https://www.lanazione.it/lucca/cronaca/nel-2027-lo-svaso-del-lago-di-vagli-ma-servono-parcheggi-e-strade-xlieyh3n",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Parking Lago di Vagli",
+      "summary": "Darmowy parking przy Vagli Sotto (przed wsią). Przy tamie (Diga del Lago di Vagli) — parking przy SP, 2 min pieszo. Latem zapełnia się ~12:30 — przyjedź rano lub po 15:00.",
+      "source": "https://evendo.com/locations/italy/lucca/attraction/lago-di-vagli",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Agriturismo Il Corniolo — weryfikacja lokalizacji",
+      "summary": "Il Corniolo (agriturismoilcorniolo.it) leży w Castiglione di Garfagnana (Loc. Le Prade 25), NIE w Vagli Sotto/Careggine. Alternatywa lunch przy Vagli: Ristorante Bar Radicchi (taras nad jeziorem) lub La Ceragetta (Isola Santa, 25 min).",
+      "source": "https://agriturismoilcorniolo.it/it/il-corniolo-si-presenta",
+      "checked": "2026-07"
+    }
+  ],
+  "practical_tips": [
+    "UWAGA: 16.09 = środa — Fortezza Verrucole ZAMKNIĘTA (wrzesień pt–nd). Spacer zewnętrzny OK, wstęp od pt",
+    "Lago di Vagli: ruiny Fabbriche NIE widoczne w 2026 — oprożnienie planowane na lato 2027",
+    "Vagli: parking przy tamie zapełnia się w południe — jedź tam rano (9:00) lub po Verrucole",
+    "Il Corniolo jest w Castiglione (35 km), nie Vagli — na lunch przy jeziorze: Bar Radicchi, Vagli Sotto",
+    "Gorfigliano: mikrowioska, zero turystów — 20 min od Vagli, idealnie na koniec dnia"
+  ],
+  "parking": {
+    "destination": "Verrucole → Lago di Vagli → Gorfigliano",
+    "options": [
+      {
+        "name": "Verrucole — piazza przy kościele",
+        "type": "public",
+        "price": "gratis",
+        "gps_hint": "Frazione Verrucole, San Romano in Garfagnana",
+        "note": "Parkuj w wiosce, 10 min pieszo pod górę do fortecy"
+      },
+      {
+        "name": "Diga del Lago di Vagli",
+        "type": "attraction",
+        "price": "gratis",
+        "gps_hint": "55030 Vagli Sotto LU",
+        "note": "Parking przy tamie — start spaceru wokół jeziora"
+      },
+      {
+        "name": "Vagli Sotto — parking centralny",
+        "type": "public",
+        "price": "gratis",
+        "gps_hint": "Vagli Sotto",
+        "note": "Mały — latem pełny od 12:30, backup: ulica główna"
+      },
+      {
+        "name": "Gorfigliano — przy kościele",
+        "type": "public",
+        "price": "gratis",
+        "gps_hint": "55038 Minucciano LU",
+        "note": "Kilka miejsc przy romańskim kościele"
+      }
+    ],
+    "tip": "Verrucole rano (8:00) → Vagli po lunchu (13:00) → Gorfigliano wieczorem — logiczna pętla zgodna z drive ≤25 min"
+  },
+  "fuel_stops": [],
+  "opening_hours": {
+    "verrucole": "Wrzesień (od 15.09): pt–nd 10:30–18:30. 16.09 (środa) = ZAMKNIĘTE",
+    "lago_vagli": "Tam i parking: całą dobę (bezpłatny)",
+    "bar_radicchi_vagli": "Pranzo 12:00–14:30 typowo — potwierdź telefonicznie"
+  }
+}

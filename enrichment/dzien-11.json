@@ -1,0 +1,132 @@
+{
+  "date": "22.09 (wt)",
+  "day_num": 11,
+  "type": "tuscany",
+  "label": "TOSKANIA · DZIEŃ 9",
+  "title": "Sorano i termalna kaskada Saturnia",
+  "base_id": "base3",
+  "base_label": "BAZA 3 — Pitigliano",
+  "drive_limit_min": 25,
+  "attractions": [
+    {
+      "name": "Sorano — Fortezza Orsini",
+      "drive_min": 10,
+      "description": "Bliźniaczy do Pitigliano tuf-town, mniej odwiedzany. Fortezza Orsini (XV w.), wiszące ogrody na krawędzi urwiska. Spacer wąwozem rzeki Lente (via cava Vitozza — niemal nieznana).",
+      "type": "medieval",
+      "image_key": "sorano",
+      "gps_hint": "Fortezza Orsini, 58010 Sorano GR — parking przy Piazza Cairoli",
+      "image": "sorano",
+      "ticket_price": "€10 cumulativo (4 obiekty) lub wstęp tylko forteca — sprawdź w kasie",
+      "opening_hours": "10:00–13:00, 15:00–19:00 (wrzesień), pon. zamknięte"
+    },
+    {
+      "name": "Cascate del Mulino — Saturnia",
+      "drive_min": 25,
+      "description": "Naturalne wodospady termalne (37°C), wolny wstęp, czynne 24/7. We wtorek po 15:00 tłumy mocno maleją. Siarczane wody, piękny pejzaż.",
+      "type": "nature",
+      "image_key": "saturnia",
+      "gps_hint": "Cascate del Mulino, 58014 Manciano GR — parking przy SP10 (€2,50/h)",
+      "image": "saturnia",
+      "ticket_price": "Bezpłatny wstęp",
+      "opening_hours": "24/7",
+      "parking_price": "€2,50/h (8:00–20:00)"
+    }
+  ],
+  "oak_forest": {
+    "spot": "Dolina Lente koło Sorano",
+    "species": "Quercus ilex, Q. pubescens",
+    "note": "Jedna z nienaruszonych enklaw maremmiańskiej puszczy dębowej — spacer wzdłuż Via Cava di San Rocco",
+    "gps_hint": "Via Cava di San Rocco, Sorano GR — start od Fortezza Orsini"
+  },
+  "food": {
+    "place": "Cantina L'Ottava Rima — Sorano (lunch)",
+    "address": "Via del Borgo 25, 58010 Sorano GR",
+    "dishes": [
+      "taglieri Cinta Senese i formaggi locali",
+      "pappardelle al cinghiale",
+      "vini autoctoni z piwnicy w tufie"
+    ],
+    "note": "Enosteria w wykopanym tufie — Via del Borgo 25. Parking: Piazza del Municipio, zejście przez Via Selvi. Tel. +39 349 8024196. Alternatywa obiad: Ristorante Fidalma, Piazza Pietro Busatti.",
+    "price": "~€18–25/os",
+    "gps_hint": "Via del Borgo 25, Sorano GR — zejście z Piazza del Municipio",
+    "phone": "+39 349 8024196"
+  },
+  "tips": [
+    "Sorano rano, Saturnia po 15:00 — wtorek = mniej tłumów w termach",
+    "Saturnia: weź ręcznik i klapki — kamienie śliskie od siarki",
+    "Parking Saturnia przy SP10 — €2,50/h (8–20h), ~5 min pieszo do kaskad",
+    "Poprawka: „Osteria La Botte Piena\" nie istnieje — Cantina Ottava Rima lub Fidalma",
+    "Saturnia: stary bezpłatny parking przy kaskadach zamknięty — tylko płatny SP10"
+  ],
+  "image": "sorano",
+  "opening_hours": {
+    "fortezza_orsini": "1 IV–30 IX: 10:00–13:00, 15:00–19:00. Wtorek 22.09 OTWARTE. Pn zamknięte (oprócz sierpnia/świąt). Visite sotterranee: 12:00, 15:00, 18:00.",
+    "saturnia_cascate": "24/7, wstęp bezpłatny. Najmniej tłumów: wtorek po 15:00.",
+    "saturnia_parking": "Płatny 8:00–20:00 (€2,50/h); bezpłatny 20:00–8:00. EasyPark lub monety/karta.",
+    "cantina_ottava_rima": "Śr–nd 12:00–14:30, 19:00–22:00. Wtorek OTWARTE. Poniedziałek zamknięte.",
+    "saturnia": "Cascate del Mulino: 24/7, wstęp bezpłatny. Parking 8:00–20:00.",
+    "fidalma": "Tradycyjna kuchnia maremmańska — lunch i dinner, rezerwacja zalecana."
+  },
+  "parking": {
+    "sorano": "Piazza Cairoli lub Parcheggio San Marco — bezpłatny, 2 min do Fortezza Orsini. Via Cava San Rocco: start od fortecy.",
+    "saturnia": "Parking płatny przy SP10, ~450 m od kaskad. €2,50/h (8:00–20:00), EasyPark lub monety/karta. Camper max 2,20 m. Bezpłatnie 20:00–8:00.",
+    "tip": "Sorano rano (9:00–12:00), Saturnia po 15:00 — optymalna kolejność we wtorek.",
+    "saturnia_tip": "NIE parkuj na poboczu SP10 — mandaty. Stary parking przy kaskadach zamknięty."
+  },
+  "practical_tips": [
+    "Fortezza Orsini: bilet cumulativo €10 (forteca + necropoli Sovana + muzea) — opłaca się jeśli jutro idziesz do Sovany.",
+    "Wizyty podziemne fortecy tylko o 12:00, 15:00, 18:00 — zaplanuj Sorano rano na 10:00–13:00.",
+    "Saturnia: weź ręcznik, klapki, strój kąpielowy — kamienie śliskie od siarki. Woda ~37°C.",
+    "Parking Saturnia: zapłać EasyPark lub automatem; po 20:00 bezpłatny — wieczorne kąpiele możliwe.",
+    "Lunch w Sorano: Cantina Ottava Rima (Via del Borgo 25) — tagliere + fonduta, bardzo lokalne.",
+    "Via Cava San Rocco: start od Fortezza Orsini, spacer 1–2 h w dolinie Lente — latarka opcjonalna.",
+    "Wtorek 22.09: Sorano rano (10:00 forteca), Saturnia po 15:00 — optymalna strategia tłumów.",
+    "Saturnia parking: €2,50/h, EasyPark app. 450 m pieszo do kaskad. Nie parkuj na SP10.",
+    "Fortezza Orsini: visite sotterranee o 12:00, 15:00, 18:00 — warto zaplanować 15:00 przed Saturnia.",
+    "Via Cava San Rocco: spacer od fortecy — dębowy las Quercus ilex, ~45 min."
+  ],
+  "web_research": [
+    {
+      "topic": "Fortezza Orsini Sorano — godziny i bilety",
+      "summary": "Sezon kwiecień–wrzesień: codziennie 10–13 i 15–19, poniedziałek zamknięty (sierpień otwarte). Bilet cumulativo €10 (forteca + necropoli Sovana + 3 muzea). Wizyty podziemne o 12:00, 15:00, 18:00.",
+      "source": "https://www.museidimaremma.it/museo/museo-civico-archeologico/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Cascate del Mulino Saturnia — parking 2026",
+      "summary": "Wstęp bezpłatny 24/7. Parking 450 m od kaskad: €2,50/h (8:00–20:00), bezpłatny nocą. Płatność: monety, karta, EasyPark. Zakaz parkowania przy SP10.",
+      "source": "https://northabroad.com/saturnia-hot-springs-guide/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Parking Fortezza Orsini",
+      "summary": "Parking San Marco, Via Ricasoli 9 — bezpłatny, 2 min pieszo do wejścia na Piazza Cairoli 3.",
+      "source": "https://maremma.name/valle-del-fiora/sorano/fortezza-orsini/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Restauracje Sorano — weryfikacja",
+      "summary": "„Osteria La Botte Piena” to restauracja w Montefollonico (SI), nie w Sorano. Lokalne opcje: Cantina Ottava Rima (Via del Borgo 25), Ristorante Fidalma (Piazza Busatti 6, od 1965), Hosteria del Borgo (Via del Borgo 42).",
+      "source": "https://maremma.name/valle-del-fiora/sorano/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Fortezza Orsini Sorano — orari wrzesień",
+      "summary": "1 IV–30 IX: 10–13, 15–19 codziennie (pn zamknięte poza sierpniem). Sotterranei: 12, 15, 18. Cumulativo €10.",
+      "source": "https://www.museidimaremma.it/museo/museo-civico-archeologico/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Saturnia Cascate del Mulino — parking 2026",
+      "summary": "Wstęp bezpłatny 24/7. Parking SP10: €2,50/h (8–20), EasyPark. 450 m pieszo. Camper max 2,20 m.",
+      "source": "https://northabroad.com/saturnia-hot-springs-guide/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Cantina Ottava Rima Sorano",
+      "summary": "Via del Borgo 25. Enosteria w tufie. Śr–nd 12–14:30, 19–22. Tel. +39 349 8024196.",
+      "source": "https://cantinaottavarima.com/it/",
+      "checked": "2026-07"
+    }
+  ]
+}

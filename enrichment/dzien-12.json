@@ -1,0 +1,147 @@
+{
+  "date": "23.09 (śr)",
+  "day_num": 12,
+  "type": "tuscany",
+  "label": "TOSKANIA · DZIEŃ 10 (OSTATNI)",
+  "title": "Sovana i zapomniany las Lamone",
+  "base_id": "base3",
+  "base_label": "BAZA 3 — Pitigliano",
+  "drive_limit_min": 25,
+  "attractions": [
+    {
+      "name": "Sovana — Necropoli Etrusca",
+      "drive_min": 10,
+      "description": "Historycznie ważniejsza niż Pitigliano (papież Grzegorz VII). Dziś micromiasteczko: etruskie grobowce w lesie, romański kościół Santa Maria, katedra San Pietro (XI w.). Zwiedzanie 3–4 h w spokoju.",
+      "type": "medieval",
+      "image_key": "sovana",
+      "gps_hint": "Sovana GR — parking przy Via del Duomo, necropoli 10 min pieszo",
+      "image": "sovana"
+    },
+    {
+      "name": "Selva del Lamone — Sentiero delle Querce",
+      "drive_min": 18,
+      "description": "Jeden z najlepiej zachowanych mezofitycznych lasów dębowych południowej Toskanii. Szlak n. 3 (~6 km). Całkowity brak ruchu turystycznego.",
+      "type": "nature",
+      "image_key": "lamone",
+      "gps_hint": "Selva del Lamone, 58017 Semproniano GR — parking przy SP22",
+      "image": "lamone"
+    },
+    {
+      "name": "Semproniano",
+      "drive_min": 22,
+      "description": "Borgo dosłownie na skale, 300 mieszkańców, brak turystów. Zamek Aldobrandeschi z XII w., panorama wzgórz Maremmy.",
+      "type": "medieval",
+      "image_key": "semproniano",
+      "gps_hint": "Semproniano GR — parking przy Piazza del Popolo",
+      "image": "semproniano"
+    }
+  ],
+  "oak_forest": {
+    "spot": "Selva del Lamone",
+    "species": "Quercus cerris (dominant), Q. pubescens",
+    "note": "NAJLEPSZY las dębowy trasy — stary rezerwat, nienaruszony, żadnych turystów. Wejście bezpłatne.",
+    "gps_hint": "Sentiero n. 3 — start od parkingu SP22, pętla ~6 km"
+  },
+  "food": {
+    "place": "Taverna Etrusca — Sovana (kolacja pożegnalna)",
+    "address": "Piazza del Pretorio 16, 58010 Sovana GR",
+    "dishes": [
+      "cinghiale in umido maremma",
+      "pici al ragù di chianina",
+      "vino locale z Maremmy"
+    ],
+    "note": "Kolacja w historycznym centrum Sovana. Sassotondo = TYLKO degustacja wina (10:30 lub 15:30, od €28–45/os), NIE kolacja. Rezerwuj: +39 0564 1640019 lub WhatsApp +39 349 1245540.",
+    "price": "~€25–35/os",
+    "gps_hint": "Piazza del Pretorio 16, Sovana GR",
+    "phone": "+39 0564 1640019"
+  },
+  "tips": [
+    "Sovana: bilet necropoli €7 (€10 cumulativo) — kup w centrum informacji",
+    "Selva del Lamone: najlepszy las trasy — weź wodę, szlak 6 km",
+    "Sassotondo: degustacja wina 15:30 (€28–45/os) — rezerwuj 24h wcześniej, kolacja w Taverna Etrusca",
+    "Sovana: bilet necropoli ~€5 — kup w centrum informacji",
+    "Sassotondo: kolacja pożegnalna — rezerwuj z wyprzedzeniem, degustacja wina w cenie",
+    "Sassotondo = degustacja wina, NIE kolacja — poprawka do planu",
+    "Bilet necropoli €7 (nie €5) — cumulativo €10 opłaca się przy Sorano"
+  ],
+  "image": "sovana",
+  "opening_hours": {
+    "necropoli_sovana": "1.04–30.09: codziennie 10:00–19:00, ostatni wstęp 18:00.",
+    "selva_del_lamone": "Całorocznie dostępna, wejście bezpłatne. Najlepiej 9:00–17:00 (światło).",
+    "sassotondo_tasting": "Degustacje: pon–nd 10:30 lub 15:30. Rezerwacja 24h wcześniej online lub tel. +39 351 6986750.",
+    "taverna_etrusca": "Kolacja — rezerwacja zalecana. Piazza del Pretorio 16, Sovana.",
+    "necropoli": "1 IV–30 IX: codziennie 10:00–19:00, ultimo ingresso 18:00. Środa 23.09 OTWARTE."
+  },
+  "parking": {
+    "sovana": "Parking Via del Duomo — bezpłatny, centrum i necropoli 10 min pieszo. Bilety w Info Point przy Piazza del Pretorio.",
+    "selva_del_lamone": "Parking przy SP22 Semproniano — start sentiero n.3 (Sentiero dei Lacioni).",
+    "semproniano": "Piazza del Popolo — bezpłatny, zamek Aldobrandeschi 5 min pieszo.",
+    "sassotondo": "Loc. Pian di Conati 52 — 2,2 km po szuterze od SP46 km 2. Parking przy winiarni.",
+    "lamone": "Selva del Lamone: parking przy SP22 (Sovana–San Martino sul Fiora) — bezpłatny, mały. Sentiero n.3 start przy parkingu."
+  },
+  "practical_tips": [
+    "Necropoli Sovana: bilet €7 (€10 cumulativo z Sorano) — kup w centrum info lub online museidimaremma.ticket-cloud.it.",
+    "Tomba Ildebranda i Tomba della Sirena to highlighty — zaplanuj 2–3 h na necropoli.",
+    "Selva del Lamone: Sentiero n.3 (Sentiero dei Lacioni) ~1,5 km, 45 min, trudność niska — najlepszy las dębowy trasy.",
+    "Weź wodę na szlak Lamone — 6 km pętla w planie to sentiero 4 (trudniejszy, 3,5 h) lub krótszy n.3.",
+    "Sassotondo: degustacja wina (od €28–45/os), NIE restauracja — rezerwuj tasting na 15:30 po lesie.",
+    "Kolacja pożegnalna: Taverna Etrusca, Piazza del Pretorio 16 Sovana — acquacotta sovanese, tagliata.",
+    "Jutro wyjazd tranzytowy o 7:00 — spakuj wieczorem, tankowanie w Pitigliano dziś.",
+    "Ostatni pełny dzień Toskanii: Sovana rano (necropoli 3–4 h), Lamone po lunchu, Semproniano wieczorem.",
+    "Sassotondo: degustacja 15:30 (nie kolacja!) — rezerwuj online sassotondo.it, od €28–45/os, 1h–1h15.",
+    "Selva del Lamone sentiero 3: ~3 km, 1h30 — NAJLEPSZY las dębowy trasy, zero turystów.",
+    "Kolacja pożegnalna: Taverna Etrusca Sovana — rezerwuj +39 0564 1640019."
+  ],
+  "web_research": [
+    {
+      "topic": "Necropoli Etrusca Sovana — bilety 2025",
+      "summary": "Bilet pełny €7, reduced €5, cumulativo €10 (necropoli + Fortezza Orsini + muzea). Wrzesień: codziennie 10–19, ostatni wstęp 18:00.",
+      "source": "https://www.museidimaremma.it/museo/necropoli-etrusca-di-sovana/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Selva del Lamone — sentiero 3",
+      "summary": "Sentiero dei Lacioni (n.3): ~1,5 km, 45 min, trudność niska. Rezerwat przyrody — stary las dębowy Quercus cerris. Wejście bezpłatne od parkingu SP22.",
+      "source": "https://www.parks.it/riserva.selva.lamone/iti.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Agriturismo Sassotondo — degustacje",
+      "summary": "Winiarnia organiczna od 1990 — NIE oferuje kolacji, tylko wizyty i degustacje. Classic tasting 4 wina od €28/os, 10:30 lub 15:30, rezerwacja 24h. Tel. +39 351 6986750.",
+      "source": "https://www.sassotondo.it/en/visitus.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Taverna Etrusca Sovana",
+      "summary": "Piazza del Pretorio 16 — kuchnia maremmańska w XIII-wiecznych pomieszczeniach. Acquacotta sovanese, tagliata. Taras latem. Tel. +39 349 124 5540.",
+      "source": "https://www.firenzemadeintuscany.com/en/article/pitigliano-sorano-and-sovana-what-to-see-and-where-to-eat/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Necropoli Sovana — biglietti wrzesień",
+      "summary": "€7 intero, €5 ridotto. 10–19 (ultimo 18:00). Cumulativo €10 z Fortezza Orsini i musei Sovana.",
+      "source": "https://www.museidimaremma.it/museo/necropoli-etrusca-di-sovana/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Selva del Lamone sentiero 3",
+      "summary": "Sentiero dei Lacioni: ~3 km, 1h30, difficoltà E. Parking SP22. Quercus cerris, stagni stagionali (lacioni).",
+      "source": "https://www.parchilazio.it/selvadellamone-ricerca_itinerari",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Sassotondo degustazione",
+      "summary": "Pon–nd 10:30 lub 15:30. Od €28–45/os. Rezerwacja 24h. Tel. +39 351 6986750. NIE serwuje kolacji.",
+      "source": "http://www.sassotondo.it/it/visite.html",
+      "checked": "2026-07"
+    }
+  ],
+  "wine_tasting": {
+    "place": "Agriturismo Sassotondo — degustacja (popołudnie)",
+    "address": "c.s. Pian di Conati 52, 58010 Sorano GR",
+    "time": "15:30 (rezerwacja 24h wcześniej)",
+    "price": "od €28/os (4 wina) do €55/os (5 win premium)",
+    "note": "Winiarnia w tufie — piwnica podziemna, Ciliegiolo, Ombra Blu. 2,2 km szutrem od SP46. Tel. +39 351 6986750 lub online sassotondo.it",
+    "gps_hint": "SP46 km 2 — follow signs sassotondo"
+  }
+}

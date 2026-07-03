@@ -1,0 +1,205 @@
+{
+  "date": "12.09 (sob)",
+  "day_num": 1,
+  "type": "transit",
+  "label": "TRANZYT → NIEMCY",
+  "title": "Poznań → Neustadt an der Donau",
+  "image": "neustadt",
+  "drive_km": 745,
+  "drive_h": "7–7,5 h",
+  "base_id": null,
+  "depart": "6:00–7:00 rano z Poznania",
+  "route": "A2 west (Świecko) → A12/A13 → Berliner Ring A10 (południowy łuk) → A9 south → Nürnberg → Ingolstadt → zjazd Neustadt/Kelheim (B299/B16)",
+  "route_segments": [
+    {
+      "segment": "Poznań → Świecko (granica PL/DE)",
+      "road": "A2",
+      "km": "~280",
+      "note": "Opłata koncesyjna AWSA Świecko–Konin"
+    },
+    {
+      "segment": "Świecko → Berlin (obwodnica)",
+      "road": "A12 → A10 Berliner Ring",
+      "km": "~280",
+      "note": "Unikaj centrum Berlina — A10 pełna obwodnica"
+    },
+    {
+      "segment": "Berlin → Norymberga",
+      "road": "A9 south",
+      "km": "~280",
+      "note": "Raststätte Frankenwald (most) ok. km 254"
+    },
+    {
+      "segment": "Norymberga → Ingolstadt → Neustadt",
+      "road": "A9 → wyjazd Neustadt/Kelheim",
+      "km": "~120",
+      "note": "Kelheim 15 km na wschód — alternatywa noclegowa"
+    }
+  ],
+  "attractions": [],
+  "nature": null,
+  "food": {
+    "place": "Raststätte Frankenwald (most) lub Nürnberg-Feucht (A9)",
+    "address": "A9 km ~244 Rudolphstein (Frankenwald) lub 90537 Feucht (Nürnberg-Feucht West)",
+    "dishes": [],
+    "note": "Dzień tranzytowy — lunch na autostradzie. Frankenwald = ikoniczne Brückenrasthaus nad A9. Alternatywa: Nürnberg-Feucht West (kier. München). Unikaj centrów dużych miast.",
+    "price": "~€8–12",
+    "gps_hint": "Naviguj: Raststätte Frankenwald A9 lub Raststätte Nürnberg-Feucht"
+  },
+  "accommodation": {
+    "place": "Neustadt an der Donau (nocleg tranzytowy)",
+    "note": "Małe bawarskie miasteczko nad Dunajem, ~25 km od Ingolstadt. Polecane: Gasthof Gigl (centrum, parking gratis), Hotel Pflügler (Schwaig, Biergarten), Pension Werle (przy dworcu). Alternatywa Kelheim (~15 km): KEH Hotel od €46, duży parking, check-in kodem od 16:00.",
+    "price": "€40–60/noc",
+    "booking_tip": "Booking lub direct: Gasthof Gigl / Hotel Pflügler — tańsze niż Ingolstadt. Direct booking u Gigl = niższa cena niż portale.",
+    "gps_hint": "Naviguj: Neustadt an der Donau — lub Kelheim jako alternatywa",
+    "options": [
+      {
+        "name": "Gasthof Gigl",
+        "type": "Gasthof",
+        "address": "Herzog-Ludwig-Straße 6, 93333 Neustadt a.d. Donau",
+        "price": "€50–70/noc",
+        "parking": "bezpłatny na dziedziancu",
+        "url": "https://www.gigl.de/"
+      },
+      {
+        "name": "Hotel Pflügler",
+        "type": "Landgasthof",
+        "address": "Hauptstr. 14, 93333 Neustadt (Schwaig)",
+        "price": "€45–65/noc",
+        "parking": "bezpłatny przed hotelem",
+        "url": "https://hotel-pfluegler.de/"
+      },
+      {
+        "name": "Pension Werle",
+        "type": "Pension",
+        "address": "Bahnhofstraße / Julius-Sax-Straße, 93333 Neustadt",
+        "price": "€40–55/noc",
+        "parking": "w pobliżu",
+        "url": "https://pension-werle.de/"
+      },
+      {
+        "name": "Gasthaus Paulus",
+        "type": "Gasthof",
+        "address": "Beilngrieser Str. 10, 93333 Neustadt",
+        "price": "€50–65/noc",
+        "parking": "bezpłatny prywatny",
+        "note": "~3,8 km od centrum, 9 pokoi"
+      },
+      {
+        "name": "KEH Hotel Kelheim (alternatywa)",
+        "type": "Designhotel",
+        "address": "Am Kastlacker 1a, 93309 Kelheim",
+        "price": "od €46/noc",
+        "parking": "duży bezpłatny parking",
+        "url": "https://keh-hotel.de/de",
+        "note": "Malownicze Kelheim nad Dunajem, check-in kodem od 16:00, bez recepcji"
+      }
+    ]
+  },
+  "parking": {
+    "destination": "Neustadt an der Donau — nocleg tranzytowy",
+    "options": [
+      {
+        "name": "Gasthof Gigl — parking wewnętrzny",
+        "type": "hotel",
+        "price": "gratis dla gości",
+        "gps_hint": "Herzog-Ludwig-Straße 6, 93333 Neustadt a.d. Donau",
+        "note": "Check-in 15:00–21:00; przy pełnym parkingu — uliczny przy Altstadt"
+      },
+      {
+        "name": "Hotel Pflügler — parking przed hotelem",
+        "type": "hotel",
+        "price": "gratis",
+        "gps_hint": "Hauptstr. 14, Schwaig, 93333 Neustadt",
+        "note": "5 km od centrum, spokojniejsza lokalizacja"
+      },
+      {
+        "name": "Kelheim P4 Donauvorland (alternatywa)",
+        "type": "public",
+        "price": "€1/2h (kwie–paź 8–18), zimą gratis",
+        "gps_hint": "Schloßweg, 93309 Kelheim",
+        "note": "170 miejsc, 1 min do Altstadt Kelheim"
+      }
+    ],
+    "tip": "Szukaj Gasthof z własnym parkingiem — centrum Neustadt ma ograniczoną liczbę miejsc"
+  },
+  "fuel_stops": [
+    {
+      "name": "Orlen / Shell przy A2 Świecko",
+      "location": "A2 km ~10 PL, przed granicą",
+      "road": "A2",
+      "hours": "24h (stacja przy MOP)",
+      "note": "Ostatnie tanie tankowanie w PL przed DE"
+    },
+    {
+      "name": "Raststätte Frankenwald Ost",
+      "location": "A9 km 254, Berg-Rudolphstein",
+      "road": "A9",
+      "hours": "24/7",
+      "note": "Aral, McDonald's — lunch ~700 km od startu"
+    },
+    {
+      "name": "Raststätte Nürnberg-Feucht Ost",
+      "location": "A9 km 385, Feucht",
+      "road": "A9",
+      "hours": "24/7",
+      "note": "OMV, dobre uzupełnienie przed Ingolstadt"
+    },
+    {
+      "name": "Aral przy wyjeździe Neustadt",
+      "location": "B16/B299, Neustadt a.d. Donau",
+      "road": "lokalna",
+      "hours": "zwykle 6–22",
+      "note": "Tankowanie przed noclegiem — jutro długi etap do Włoch"
+    }
+  ],
+  "opening_hours": {
+    "gasthof_gigl_checkin": "15:00–21:00 (po 21:00 kontakt telefoniczny)",
+    "raststaette_a9": "24/7"
+  },
+  "tips": [
+    "Granicę PL/DE przekrocz przez Świecko (A2) — opłata AWSA ~129 PLN do Konina",
+    "E-winieta AT: €12,80/10 dni na shop.asfinag.at — kup w PL, start 13.09",
+    "Zatankuj w Niemczech przed Austrią — paliwo tańsze niż we Włoszech",
+    "Frankenwald Ost (A9 km 254) — dobry postój lunchowy w połowie trasy"
+  ],
+  "practical_tips": [
+    "Kup e-winietę AT online przed wyjazdem — €12,80, start 13.09 (nie 12.09, bo Austrię dopiero w dniu 2)",
+    "Tankuj w Niemczech przed Austrią — benzyna tańsza niż we Włoszech i Austrii",
+    "Frankenwald Ost (A9 km 254) — jedyna mostowa Raststätte w Niemczech, dobry postój na lunch",
+    "Neustadt: parking przy Gasthof Gigl w podwórzu — przy pełnym obłożeniu zaparkuj przy Altstadt",
+    "Kelheim backup: jeśli brak miejsc w Neustadt, 15 km dalej, tańsze Gasthöfe nad Dunajem"
+  ],
+  "web_research": [
+    {
+      "topic": "E-winieta Austria 10-dniowa",
+      "summary": "€12,80 dla auta do 3,5 t na shop.asfinag.at — natychmiastowa aktywacja. Kup przed wyjazdem z Polski; data startu = 13.09 (dzień 2, pierwszy wjazd na autostradę AT).",
+      "source": "https://shop.asfinag.at/en/toll-products/digital-vignette/10-day-vignette-car/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Opłaty A2 PL (Świecko–Konin)",
+      "summary": "Odcinek koncesyjny AWSA: ~129 PLN za cały Świecko–Konin (kat. 1). Od 11.03.2026 nowe stawki segmentowe Nowy Tomyśl–Konin: 40 PLN/50 km × 3. Konin–Stryków bezpłatny dla aut <3,5 t.",
+      "source": "https://www.autostrada-a2.pl/en/news/change-of-toll-rates-for-a2-motorway-in-nowy-tomysl-konin-section-2/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Noclegi Neustadt an der Donau",
+      "summary": "Gasthof Gigl (Herzog-Ludwig-Str. 6): parking wewnętrzny gratis, check-in 15:00–21:00, rezerwacja poza 21:00 wymaga kontaktu. Hotel Pflügler (Schwaig, Hauptstr. 14): parking gratis, 5 km od centrum.",
+      "source": "https://www.gigl.de/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Kelheim jako alternatywa",
+      "summary": "Malownicze miasto nad Dunajem, 15 km od Neustadt. Parking P4 Donauvorland: płatny kwie–paź (€1/2h), zimą gratis. Altstadt 1 min pieszo od P4.",
+      "source": "https://tourismus.kelheim.de/adressen/parkplatz-p4-donauvorland/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Raststätte A9 (Frankenwald, Feucht, Köschinger Forst)",
+      "summary": "Serways: Frankenwald Ost/West (km 254, most), Nürnberg-Feucht Ost (km 385), Köschinger Forst Ost (km 450) — wszystkie 24/7, stacje Aral/OMV, McDonald's, ładowarki EV.",
+      "source": "https://www.serways.de/standorte/frankenwald-ost/",
+      "checked": "2026-07"
+    }
+  ]
+}

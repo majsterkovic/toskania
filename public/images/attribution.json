@@ -1,0 +1,222 @@
+{
+  "note": "Zdjęcia z Wikimedia Commons — ETAP 1 (tranzyty + BAZA 1 Garfagnana) + ETAP 2 (BAZA 2 Chianti + BAZA 3 Maremma). Użycie zgodne z licencjami CC.",
+  "images": {
+    "neustadt.jpg": {
+      "place": "Neustadt an der Donau",
+      "wikimedia_title": "File:2020 Neustadt adD Rathaus.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2020_Neustadt_adD_Rathaus.jpg",
+      "author": "Stefan Oemisch",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Rathaus in Neustadt an der Donau mit der Sankt-Anna-Kapelle"
+    },
+    "wasserburg.jpg": {
+      "place": "Wasserburg am Inn",
+      "wikimedia_title": "File:20230518 Brucktor Wasserburg am Inn 01.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20230518_Brucktor_Wasserburg_am_Inn_01.jpg",
+      "author": "Flocci Nivis",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "description": "View across the Inn to the Brucktor with the Inn Bridge in Wasserburg am Inn"
+    },
+    "hof.jpg": {
+      "place": "Hof (Saale)",
+      "wikimedia_title": "File:Saalradweg an Hospitalkirche Hof, Hof (Saale) 20200208 04.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saalradweg_an_Hospitalkirche_Hof,_Hof_(Saale)_20200208_04.jpg",
+      "author": "Stefan Oemisch",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Saalradweg an der Hospitalkirche, Hof (Saale)"
+    },
+    "barga.jpg": {
+      "place": "Barga",
+      "wikimedia_title": "File:Barga Cathedral.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Barga_Cathedral.jpg",
+      "author": "Ymblanter",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "The Cathedral (Duomo) of Barga"
+    },
+    "castiglione-garfagnana.jpg": {
+      "place": "Castiglione di Garfagnana",
+      "wikimedia_title": "File:Castiglione di Garfagnana panorama.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Castiglione_di_Garfagnana_panorama.jpg",
+      "author": "Allie Caulfield",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Castiglione di Garfagnana, Fortezza della Verrucole"
+    },
+    "orecchiella.jpg": {
+      "place": "Riserva Naturale Orecchiella",
+      "wikimedia_title": "File:Lago parco Orecchiella (Toscana).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lago_parco_Orecchiella_(Toscana).jpg",
+      "author": "Orangevale",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "Scorcio di passeggiata montana con affaccio sul lago"
+    },
+    "grotta-vento.jpg": {
+      "place": "Grotta del Vento, Fornovolasco",
+      "wikimedia_title": "File:Entrance Grotta del Vento - panoramio.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Entrance_Grotta_del_Vento_-_panoramio.jpg",
+      "author": "qwesy qwesy",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Wejście do Grotta del Vento w Fornovolasco, Alpi Apuane"
+    },
+    "castelnuovo-garfagnana.jpg": {
+      "place": "Castelnuovo di Garfagnana",
+      "wikimedia_title": "File:Castelnuovo di Garfagnana.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Castelnuovo_di_Garfagnana.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Castelnuovo di Garfagnana"
+    },
+    "castelnuovo.jpg": {
+      "place": "Castelnuovo di Garfagnana",
+      "wikimedia_title": "File:Castelnuovo di Garfagnana.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Castelnuovo_di_Garfagnana.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Castelnuovo di Garfagnana"
+    },
+    "verrucole.jpg": {
+      "place": "Fortezza delle Verrucole",
+      "wikimedia_title": "File:Verrucole (San Romano in Garfagnana)-panorama1.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Verrucole_(San_Romano_in_Garfagnana)-panorama1.jpg",
+      "author": "Davide Papalini",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Panorama di Verrucole, San Romano in Garfagnana"
+    },
+    "vagli.jpg": {
+      "place": "Lago di Vagli",
+      "wikimedia_title": "File:Lago di Vagli (Vagli Sotto)-panorama1.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lago_di_Vagli_(Vagli_Sotto)-panorama1.jpg",
+      "author": "Davide Papalini",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Lago di Vagli, Vagli Sotto"
+    },
+    "ponte-diavolo.jpg": {
+      "place": "Ponte del Diavolo (Borgo a Mozzano)",
+      "wikimedia_title": "File:Borgo a Mozzano Ponte della Maddalena.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Borgo_a_Mozzano_Ponte_della_Maddalena.jpg",
+      "author": "Myrabella",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Ponte della Maddalena (Ponte del Diavolo) nad rzeką Serchio"
+    },
+    "bagni-lucca.jpg": {
+      "place": "Bagni di Lucca",
+      "wikimedia_title": "File:Bagni di Lucca - panoramio.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bagni_di_Lucca_-_panoramio.jpg",
+      "author": "Keith Ruffles",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Bagni di Lucca"
+    },
+    "castello-brolio.jpg": {
+      "place": "Castello di Brolio",
+      "wikimedia_title": "File:Castello di Brolio and Vineyards.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Castello_di_Brolio_and_Vineyards.jpg",
+      "author": "Eric Kilby",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Castello di Brolio and Vineyards"
+    },
+    "radda-chianti.jpg": {
+      "place": "Radda in Chianti",
+      "wikimedia_title": "File:Radda in Chianti.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Radda_in_Chianti.jpg",
+      "author": "Anna.Massini",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "description": "Radda in Chianti"
+    },
+    "siena-campo.jpg": {
+      "place": "Piazza del Campo, Siena",
+      "wikimedia_title": "File:Piazza del Campo 2014 01.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Piazza_del_Campo_2014_01.jpg",
+      "author": "Perituss",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "Piazza del Campo, Siena"
+    },
+    "monte-oliveto-maggiore.jpg": {
+      "place": "Monte Oliveto Maggiore",
+      "wikimedia_title": "File:1765 wurde das Kloster Monte Oliveto zur Territorialabtei erhoben. 04.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1765_wurde_das_Kloster_Monte_Oliveto_zur_Territorialabtei_erhoben._04.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Abbazia Monte Oliveto Maggiore"
+    },
+    "asciano-crete.jpg": {
+      "place": "Asciano — Crete Senesi",
+      "wikimedia_title": "File:Crete senesi - Asciano (Siena).jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Crete_senesi_-_Asciano_(Siena).jpg",
+      "author": "Anna.Massini",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Crete senesi — Asciano (Siena)"
+    },
+    "pitigliano.jpg": {
+      "place": "Pitigliano",
+      "wikimedia_title": "File:01665 ITA Tuscany Pitigliano S from viewpoint V-P.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:01665_ITA_Tuscany_Pitigliano_S_from_viewpoint_V-P.jpg",
+      "author": "Virtual-Pano",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Pitigliano z punktu widokowego"
+    },
+    "sorano.jpg": {
+      "place": "Sorano",
+      "wikimedia_title": "File:01844b ITA Tuscany Sorano blue hour 3 to 1 V-P.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:01844b_ITA_Tuscany_Sorano_blue_hour_3_to_1_V-P.jpg",
+      "author": "Virtual-Pano",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Panorama Sorano o blue hour"
+    },
+    "saturnia-cascate.jpg": {
+      "place": "Cascate del Mulino, Saturnia",
+      "wikimedia_title": "File:Terme di Saturnia - Cascate del Mulino-0506.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Terme_di_Saturnia_-_Cascate_del_Mulino-0506.jpg",
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Terme di Saturnia — Cascate del Mulino"
+    },
+    "sovana.jpg": {
+      "place": "Sovana",
+      "wikimedia_title": "File:01546 ITA Tuscany Sovana Market Square V-P.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:01546_ITA_Tuscany_Sovana_Market_Square_V-P.jpg",
+      "author": "Virtual-Pano",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Piazza del Mercato, Sovana"
+    },
+    "selva-del-lamone.jpg": {
+      "place": "Selva del Lamone",
+      "wikimedia_title": "File:Forest mantle.JPG",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Forest_mantle.JPG",
+      "author": "Etrusko25",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Las dębowy (Quercus cerris) — zastępcze; brak dedykowanego zdjęcia rezerwatu na Commons",
+      "note": "Reprezentatywny las dębowy typowy dla Selva del Lamone"
+    },
+    "semproniano.jpg": {
+      "place": "Semproniano",
+      "wikimedia_title": "File:Semproniano - Chiesa di Santa Croce.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Semproniano_-_Chiesa_di_Santa_Croce.jpg",
+      "author": "Roberto Nencini",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Semproniano — Chiesa di Santa Croce i forteca Aldobrandeschi"
+    }
+  }
+}

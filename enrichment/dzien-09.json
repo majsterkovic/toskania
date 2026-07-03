@@ -1,0 +1,198 @@
+{
+  "date": "20.09 (nd)",
+  "day_num": 9,
+  "type": "tuscany_transfer",
+  "label": "TOSKANIA · DZIEŃ 7 + ZMIANA BAZY",
+  "title": "Crete Senesi → przejazd do Maremmy",
+  "base_id": "base2",
+  "next_base_id": "base3",
+  "base_label": "BAZA 2 → BAZA 3",
+  "transfer_km": 130,
+  "transfer_h": "1 h 40 min",
+  "transfer_route": "Castelnuovo Berardenga → Siena bypass → SS223 → Grosseto → SS74 → okolice Pitigliano",
+  "transfer_depart": "ok. 13:00",
+  "drive_limit_min": 30,
+  "attractions": [
+    {
+      "name": "Monte Oliveto Maggiore",
+      "drive_min": 28,
+      "description": "Benedyktyński klasztor z XIV w. w surowym krajobrazie Crete Senesi. Słynny cykl fresków Il Sodomy (36 scen z życia św. Benedykta). Możliwa msza gregoriańska w niedzielę rano.",
+      "type": "cultural",
+      "image_key": "monte-oliveto",
+      "gps_hint": "Abbazia Monte Oliveto Maggiore, 53041 Chiusure SI",
+      "image": "monte-oliveto"
+    },
+    {
+      "name": "Asciano — Crete Senesi",
+      "drive_min": 24,
+      "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez pejzaż glinianych wzgórz (biancane — białe wzgórza z marglami). Muzeum Etruskie.",
+      "type": "cultural",
+      "image_key": "asciano",
+      "gps_hint": "Asciano SI — parking przy Piazza del Grano",
+      "image": "asciano"
+    }
+  ],
+  "oak_forest": {
+    "spot": "Bosco della Ragnaia — Asciano",
+    "species": "Quercus pubescens, Q. ilex",
+    "note": "Niewielki, artystycznie zaaranżowany las dębowy 5 min pieszo od centrum Asciano — cichy, bez tłumów",
+    "gps_hint": "Bosco della Ragnaia, Asciano SI — 5 min pieszo od centrum"
+  },
+  "food": {
+    "place": "Osteria La Tombolina — Asciano",
+    "address": "Via Goffredo Mameli 11, 53041 Asciano SI",
+    "dishes": [
+      "pici alle briciole",
+      "arista di maiale",
+      "ribollita",
+      "vino Orcia DOC"
+    ],
+    "note": "Lokalna osteria w centrum Asciano (korekta: „Trattoria La Lupa” nie istnieje w Asciano — La Lupa jest w Livorno!). Niedziela otwarte 11:00–23:30. Lunch przed przejazdem do Maremmy.",
+    "price": "~€15–22/os",
+    "gps_hint": "Via Goffredo Mameli 11, Asciano SI",
+    "phone": "+39 0577 718056",
+    "opening_hours": "Nd 11:00–23:30, Pn–Sb 11:00–23:30 (wt śr zamknięte wg źródeł — sprawdź tel.)"
+  },
+  "accommodation": {
+    "place": "BAZA 3 — okolice Pitigliano / Sovana",
+    "note": "Przyjazd ok. 16:00–17:00. Sassotondo: ostatnie 2,2 km droga sterrata — zwolnij. Check-in typowo 15:00–18:00, zadzwoń z ETA.",
+    "price": "€80–110/noc",
+    "booking_tip": "Agriturismo w dolinie Fiora lub pod Sovana. Sassotondo: wizyta winnicy osobno (dzień 10 lub 11), prenotazione 24h: +39 351 6986750",
+    "gps_hint": "Naviguj: Pitigliano GR lub Loc. Pian di Conati, Sovana GR (Sassotondo winnica)",
+    "options": [
+      {
+        "name": "Agriturismo Podere il Sasso",
+        "area": "dolina Fiora",
+        "note": "Typowy maremma agriturismo"
+      },
+      {
+        "name": "Sassotondo (winnica)",
+        "area": "Sovana",
+        "note": "Degustacja 4 win €28–30, 1h. Pn–Nd 10:30 lub 15:30. NIE nocleg."
+      },
+      {
+        "name": "Agriturismo Sassotondo",
+        "type": "Agriturismo biodynamiczne",
+        "address": "Loc. Sassotondo, SP46 km 2, Sovana GR",
+        "price": "€80–110/noc",
+        "parking": "bezpłatny na miejscu (sterrata ostatnie 2 km)",
+        "url": "https://www.sassotondo.it/",
+        "note": "Rezerwuj z wyprzedzeniem — winobranie we wrześniu"
+      },
+      {
+        "name": "Agriturismo Valle del Fiora",
+        "type": "Alternatywa",
+        "address": "Dolina Fiora, Pitigliano GR",
+        "price": "€70–95/noc",
+        "parking": "na miejscu",
+        "note": "Cichsza dolina, 10 min od Pitigliano"
+      }
+    ]
+  },
+  "tips": [
+    "Niedziela: Monte Oliveto — msza gregoriańska o 11:00 (nie 9:00!)",
+    "Wizyta klasztoru: 9:30 wejście, 1h przed mszą — cisza i freski Il Sodoma",
+    "La Tombolina (nie La Lupa!) — lunch Via Mameli 11, Asciano",
+    "Sassotondo = winnica, nie hotel — rezerwuj agriturismo osobno",
+    "Wyjazd do BAZY 3 po lunchu (~13:00) — 1h40 przez Grosseto",
+    "Crete Senesi: najlepsze światło po południu, ale dziś jedziesz dalej",
+    "Monte Oliveto: kup bilet online Vivaticket — unikniesz kolejki w niedzielę",
+    "Tankuj w Grosseto lub Manciano — stacje rzadsze na SS74 w górach"
+  ],
+  "image": "monte-oliveto",
+  "web_research": [
+    {
+      "topic": "Monte Oliveto Maggiore — orari",
+      "summary": "Codziennie: 9:30–12:20 i 14:30–17:40 (ora legale) / 16:40 (ora solare). Cisza obowiązkowa. Foto bez flash. Zwierzęta niedozwolone.",
+      "source": "https://www.monteolivetomaggiore.it/abbazia/orario-di-apertura/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Monte Oliveto — msza niedzielna",
+      "summary": "Niedziela: Msza konwentualna z canto gregoriano o 11:00. Sobota wieczór: msza 17:30. Wizyta zawieszona podczas liturgii w kościele.",
+      "source": "https://www.monteolivetomaggiore.it/abbazia/orari-ss-messe-e-liturgia-monastica/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Osteria La Tombolina Asciano (korekta)",
+      "summary": "Via Goffredo Mameli 11, Asciano. Tel. 0577 718056. „Trattoria La Lupa” z planu nie istnieje w Asciano (La Lupa = Livorno). Tombolina: osteria lokalna.",
+      "source": "http://www.askmap.net/location/2184020/italy/osteria-la-tombolina",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Sassotondo — winnica nie nocleg",
+      "summary": "Winnica organiczna między Pitigliano a Sovana. Degustacja 4 win: €28–30/os, 1h. Pn–Nd 10:30 lub 15:30. Prenotazione 24h: +39 351 6986750. SP46 km 2, 2.2 km droga sterrata.",
+      "source": "http://www.sassotondo.it/it/visite.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Trasa Asciano → Pitigliano",
+      "summary": "SS438/SS223 przez Grosseto, potem SS74 do Pitigliano. ~130 km, ~1h40. Niedzielny dojazd bez większych utrudnień.",
+      "source": "https://www.visitcretesenesi.it/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Monte Oliveto Maggiore — orari wrzesień",
+      "summary": "Ora legale: 9:30–12:20 i 14:30–17:40. Nd 20.09 = biglietto unico €7 (Vivaticket €6). Cykl fresków Il Sodoma w chiostro.",
+      "source": "https://www.monteolivetomaggiore.it/abbazia/orario-di-apertura/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Trasa Chianti → Maremma SS223/SS74",
+      "summary": "Castelnuovo → obwodnica Sieny → SS223 (75 km, ~1h15) → Grosseto → SS1 → Albinia → SS74 → Pitigliano (~55 km). Unikaj centrum Sieny (ZTL).",
+      "source": "https://pitigliano.org/en/info/how-to-get-here/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Agriturismo Sassotondo — dojazd",
+      "summary": "SP46 Pitigliano–Sovana, zjazd km 2, 2,2 km sterrata. Tel. +39 351 6986750. Biodynamiczne wino od 1994.",
+      "source": "http://www.sassotondo.it/it/visite.html",
+      "checked": "2026-07"
+    }
+  ],
+  "practical_tips": [
+    "Timeline: 9:30 Monte Oliveto (freski, opcjonalnie msza 11:00) → 12:00 wyjazd → 12:30 Asciano (spacer Crete, Bosco della Ragnaia 30 min) → 13:00 lunch → 13:30 transfer Maremma.",
+    "W niedzielę ruch na SS223/Grosseto umiarkowany — transfer OK.",
+    "Bosco della Ragnaia: artystyczny las dębowy, 5 min pieszo od centrum Asciano — szybki przystanek.",
+    "Zarezerwuj degustację Sassotondo na dzień 10 lub 11 (pn–nd 10:30 lub 15:30, tel. 351 6986750).",
+    "Crete Senesi: białe wzgórza (biancane) — najlepsze światło popołudniowe, ale dziś jedziesz dalej.",
+    "Niedziela 20.09: Monte Oliveto otwarte — biglietto unico €7 (weekend). Wyjazd do BAZY 3 po lunchu ~13:00.",
+    "SS223 Siena–Grosseto: malownicza ale wolniejsza niż A1 — zaplanuj 1 h 15 min do Grosseto.",
+    "SS74 od Albinia: kręte odcinki — nie planuj nocnego dojazdu po 20:00 przy pierwszym razie.",
+    "Sassotondo: naviguj „Loc. Sassotondo\" z SP46 (km 2) — ostatnie 2,2 km szutrowe, jedź powoli."
+  ],
+  "parking": {
+    "monte_oliveto": "Parking przy Abbazia Monte Oliveto Maggiore — bezpłatny, duży plac. Naviguj: Monte Oliveto Maggiore Chiusure.",
+    "asciano": "Parking Piazza del Grano lub Via Mameli — bezpłatny, centrum pieszo.",
+    "pitigliano_arrival": "Przy check-in BAZY 3: parking przy agriturismo (Sassotondo ma własny). Do Pitigliano jutro: Parcheggio del Fosso."
+  },
+  "opening_hours": {
+    "monte_oliveto_abbey": "20.09 (nd): 9:30–12:20 i 14:30–17:40 (ora legale wrzesień). Otwarte codziennie.",
+    "monte_oliveto_mass": "Niedziela: Msza konwentualna z chantem gregoriańskim o 11:00. Wizyta przed mszą (9:30) lub po (12:30+).",
+    "monte_oliveto_ticket": "Bilet na chiostro affrescato + chiesa. Tel. portineria: 0577 707258. Wizyty z przewodnikiem: infovisite@monteolivetomaggiore.it",
+    "asciano_museum": "Museo Archeologico — sprawdź godziny niedzielne (często skrócone).",
+    "osteria_tombolina": "Niedziela 11:00–23:30",
+    "monte_oliveto": "Ora legale (wrzesień): 9:30–12:20 (ostatni wstęp 12:20), 14:30–17:40 (ostatni 17:40). Niedziela 20.09 = biglietto unico €7.",
+    "asciano_museo": "Museo Archeologico Asciano: wt–nd 10:00–13:00, 15:00–19:00 (sprawdź w sezonie)."
+  },
+  "route_segments": [
+    {
+      "segment": "Baza Chianti → Monte Oliveto Maggiore",
+      "road": "Raccordo Siena-Bettolle → SS2",
+      "km": "~35",
+      "note": "Crete Senesi — krajobraz glinianych wzgórz. Dojazd ~28 min."
+    },
+    {
+      "segment": "Monte Oliveto → Asciano",
+      "road": "SP451 / lokalne",
+      "km": "~12",
+      "note": "Krótki przejazd przez Crete Senesi. Parking Piazza del Grano."
+    },
+    {
+      "segment": "Asciano → Pitigliano (transfer)",
+      "road": "SS438 → SS223 → Grosseto → SS74",
+      "km": "~130",
+      "note": "Niedzielny transfer ~1h40. Obiad w Asciano przed 13:00, wyjazd ~13:00."
+    }
+  ]
+}

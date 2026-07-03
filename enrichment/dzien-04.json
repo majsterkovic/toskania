@@ -1,0 +1,136 @@
+{
+  "date": "15.09 (wt)",
+  "day_num": 4,
+  "type": "tuscany",
+  "label": "TOSKANIA · DZIEŃ 2",
+  "title": "Średniowieczne mury i puszcza Orecchiella",
+  "image": "orecchiella",
+  "base_id": "base1",
+  "base_label": "BAZA 1 — Barga",
+  "drive_limit_min": 30,
+  "attractions": [
+    {
+      "name": "Castiglione di Garfagnana",
+      "drive_min": 20,
+      "description": "Kompletnie zachowane mury miejskie z XIII w., brama San Michele, niezmieniony układ borghi. Turystów praktycznie brak.",
+      "type": "medieval",
+      "image": "castiglione",
+      "image_key": "castiglione",
+      "gps_hint": "Castiglione di Garfagnana LU — parking przy Porta San Michele"
+    },
+    {
+      "name": "Riserva Naturale Orecchiella — Sentiero CAI n. 587",
+      "drive_min": 28,
+      "description": "Park Orecchiella, szlak ~4 km (2 h) przez łąki alpejskie i las z dębem burgundzkim w strefie niższej. Możliwość spotkania jeleni i muflonów we wrześniu (ruja).",
+      "type": "nature",
+      "image": "orecchiella",
+      "image_key": "orecchiella",
+      "gps_hint": "Orecchiella Parco Naturale, Campaiano, 55035 Garfagnana LU"
+    },
+    {
+      "name": "Castelnuovo di Garfagnana",
+      "drive_min": 25,
+      "description": "Stolica doliny, zachowane fortyfikacje Ludovica Ariosta (który tu rządził!). Targ wtorkowy z lokalnymi produktami: farro della Garfagnana IGP (orkisz).",
+      "type": "medieval",
+      "image": "castelnuovo",
+      "image_key": "castelnuovo",
+      "gps_hint": "Castelnuovo di Garfagnana LU — parking Piazzale Europa"
+    }
+  ],
+  "oak_forest": {
+    "spot": "Riserva Naturale Orecchiella",
+    "species": "Quercus cerris (dąb burgundzki)",
+    "note": "Granica między buczyną (>1200 m) a dębowo-kasztanowym lasem mieszanym (750–1100 m) — klasyczny toskański las apeniński",
+    "gps_hint": "Visitor center Campaiano — szlak 587 w dół do strefy dębowej"
+  },
+  "food": {
+    "place": "Trattoria da Carlino — Castelnuovo di Garfagnana",
+    "address": "Via Vittorio Emanuele, Castelnuovo di Garfagnana",
+    "dishes": [
+      "minestra di farro (zupa z orkiszem)",
+      "lardo di Colonnata na bruschetta",
+      "biroldo (garfagnański salami z głowizny)"
+    ],
+    "note": "Kultowe miejsce wśród lokalnych robotników i rolników. Menu po włosku.",
+    "price": "~€12–16/os",
+    "gps_hint": "Via Vittorio Emanuele, 55032 Castelnuovo di Garfagnana LU"
+  },
+  "tips": [
+    "KOREKTA: targ Castelnuovo = CZWARTEK (nie wtorek) — farro IGP w sklepie lub targ Piazza al Serchio we wt",
+    "Orecchiella: szlaki zawsze otwarte; centrum/muzea w wrześniu sob–nd",
+    "Castiglione: kompletne mury — obejście obwodu ~30 min",
+    "Da Carlino: Via Garibaldi 15, lunch 12:00–15:00"
+  ],
+  "web_research": [
+    {
+      "topic": "Mercato Castelnuovo — KOREKTA DNIA",
+      "summary": "Targ tygodniowy w Castelnuovo di Garfagnana to CZWARTEK (giovedì), 8:00–13:00, Piazza delle Erbe — NIE wtorek. Plan wymaga korekty: 15.09 (wt) = brak targu w Castelnuovo. Alternatywa wtorkowa: mercato Piazza al Serchio (20 min) lub Fornoli.",
+      "source": "https://www.eventiesagre.it/Mercatini_Filiera+Corta/21184575_Mercato+Settimanale+Di+Castelnuovo+Di+Garfagnana.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Parco Orecchiella — wrzesień",
+      "summary": "Centrum odwiedzających: do 14.09 codziennie 10–18, potem sob–nd 10–18 (wrzesień). Sentieristica i recinti faunistici ZAWSZE dostępne bezpłatnie. Muzea: €2 dorosły. Info: 0583 619098.",
+      "source": "https://orecchiella.com/contatti-prenotazioni/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Parking Castiglione di Garfagnana",
+      "summary": "Parking przy Porta San Michele — przy bramie do średniowiecznych murów. Darmowy, mały — wystarczy na pół dnia zwiedzania.",
+      "source": "https://www.informagiovani-italia.com/where-to-park-in-barga.htm",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Parking Orecchiella / Campaiano",
+      "summary": "Centro Visitatori Orecchiella: darmowy parking przy Laghetti 6, San Romano. Droga SP324 kręta — dojazd od Castelnuovo przez Villa Collemandina/Corfino ~28 min.",
+      "source": "https://orecchiella.com/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Trattoria da Carlino — Castelnuovo",
+      "summary": "Via Garibaldi 15 (nie Via Vittorio Emanuele). Pranzo 12:00–15:00, cena 19:00–22:00. Tel. 0583 644270. Zimą zamknięte w poniedziałki.",
+      "source": "https://www.vetrina.toscana.it/attivita/ristorante-da-carlino/",
+      "checked": "2026-07"
+    }
+  ],
+  "practical_tips": [
+    "KOREKTA: targ w Castelnuovo to CZWARTEK, nie wtorek — w dniu 4 kup farro IGP w sklepie albo pojedź na wtorkowy targ Piazza al Serchio",
+    "Orecchiella: we wrześniu (po 14.09) centrum otwarte tylko sob–nd — ale szlaki CAI 587 ZAWSZE dostępne bezpłatnie",
+    "Castiglione: obejście murów ~30 min — parking Porta San Michele, zero tłumów",
+    "Orecchiella: weź kurtkę — 750–1200 m n.p.m., różnica temperatur 5–8°C",
+    "Da Carlino: rezerwacja nie wymagana na lunch, ale przyjdź przed 13:00 — lokalni robotnicy zapełniają szybko"
+  ],
+  "parking": {
+    "destination": "Trasa Castiglione → Orecchiella → Castelnuovo",
+    "options": [
+      {
+        "name": "Castiglione — Porta San Michele",
+        "type": "public",
+        "price": "gratis",
+        "gps_hint": "Castiglione di Garfagnana LU",
+        "note": "Przy bramie do murów — zostaw na ~1 h"
+      },
+      {
+        "name": "Orecchiella — Centro Visitatori",
+        "type": "attraction",
+        "price": "gratis",
+        "gps_hint": "Località Laghetti 6, 55038 San Romano in Garfagnana",
+        "note": "Start szlaku CAI 587 — parking przy muzeum"
+      },
+      {
+        "name": "Castelnuovo — Piazzale Europa",
+        "type": "public",
+        "price": "gratis / niski",
+        "gps_hint": "Piazzale Europa, Castelnuovo di Garfagnana",
+        "note": "Duży parking, 5 min do centrum i Da Carlino"
+      }
+    ],
+    "tip": "3 parkingi w ciągu dnia — nie musisz wracać do Bazy między punktami (wszystko <30 min jazdy)"
+  },
+  "fuel_stops": [],
+  "opening_hours": {
+    "orecchiella_centro": "Wrzesień do 14.09: codzi. 10–18; po 14.09: sob–nd 10–18. Sentieri: zawsze",
+    "castelnuovo_mercato": "CZWARTEK 8:00–13:00 (Piazza delle Erbe) — nie wtorek!",
+    "da_carlino": "Pranzo 12:00–15:00, cena 19:00–22:00"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "date": "24.09 (czw)",
+  "day_num": 13,
+  "type": "transit",
+  "label": "TRANZYT ← BAWARIA",
+  "title": "Pitigliano → Wasserburg am Inn",
+  "image": "wasserburg",
+  "drive_km": 770,
+  "drive_h": "7,5–8 h",
+  "base_id": null,
+  "depart": "7:00 rano z Pitigliano",
+  "route": "Pitigliano → SS74 → Manciano → Orvieto (A1 zjazd) → A1 north → obwodnica Florencji (Firenze-Incisa/Prato) → Bologna → Modena → A1/A4 → Milano bypass (Tangenziale) → A22 Brenner → Innsbruck → A93/A8 → Rosenheim → Wasserburg am Inn",
+  "attractions": [],
+  "nature": null,
+  "food": {
+    "place": "Bolonia lub Modena (postój autostradowy)",
+    "address": null,
+    "dishes": [],
+    "note": "Bolonia to stolica włoskiej kuchni — ostatnie włoskie tortellini in brodo na stacji lub krótki zjazd do centrum Bolonii (20 min od A1). Unikaj pełnego centrum Florencji — korki i ZTL.",
+    "price": "~€10–15",
+    "gps_hint": "Zjazd A1 Bologna Borgo Panigale lub Modena Nord"
+  },
+  "accommodation": {
+    "place": "Wasserburg am Inn — nocleg tranzytowy (Bawaria)",
+    "note": "Malownicze miasto na zakolu Innu. Wieczorny spacer Altstadt (15 min). Unikaj Monachium (drogo, brak parkingu).",
+    "price": "€45–65/noc",
+    "booking_tip": "Booking: Gasthof w historischen Zentrum — rezerwuj z widokiem na Inn",
+    "gps_hint": "Naviguj: Wasserburg am Inn — parking Altstadt",
+    "options": [
+      {
+        "name": "Gasthof Staudham",
+        "type": "Gasthof",
+        "address": "Münchner Str. 30, 83512 Wasserburg am Inn",
+        "price": "€55–75/noc",
+        "parking": "bezpłatny prywatny",
+        "url": "https://www.bedandbreakfast.eu/en/a/FvjNpfVhYh8d/gasthof-staudham"
+      },
+      {
+        "name": "Hotel & Gasthaus Huberwirt am Kellerberg",
+        "type": "Gasthof",
+        "address": "Salzburgerstr. 25, 83512 Wasserburg am Inn",
+        "price": "od €46/noc",
+        "parking": "bezpłatny",
+        "url": "https://www.preiswert-uebernachten.de/wasserburg/hotel-gasthaus-huberwirt-am-kellerberg/6917"
+      },
+      {
+        "name": "Das Wasserburg Hotel",
+        "type": "Hotel",
+        "address": "Wasserburg am Inn",
+        "price": "€70–90/noc",
+        "parking": "bezpłatny lub garaż €8/dzień",
+        "url": "https://daswasserburghotel.de/",
+        "note": "Self-check-in 24h, otwarty 2025"
+      },
+      {
+        "name": "Gasthof Huberwirt am Kellerberg",
+        "type": "Gasthof",
+        "address": "Salzburger Str. 25, 83512 Wasserburg am Inn",
+        "price": "od €46/noc",
+        "parking": "bezpłatny prywatny",
+        "note": "Widok na Altstadt, śniadanie w cenie"
+      }
+    ]
+  },
+  "tips": [
+    "Wasserburg am Inn — wieczorny spacer po starym mieście nad Innem",
+    "Zatankuj przed granicą austriacką — paliwo tańsze w Niemczech",
+    "Wyjazd o 7:00 = uniknięcie korków przy Bolonii i Mediolanie",
+    "Pedaggio A22: przygotuj ~€25 gotówki lub kartę",
+    "Wasserburg Altstadt: najlepszy wieczorny spacer tranzytu powrotnego"
+  ],
+  "opening_hours": {
+    "gasthof_staudham": "Restaurant na miejscu — sprawdź przy check-in",
+    "huberwirt_checkin": "Recepcja standardowo 14:00–20:00",
+    "das_wasserburg_hotel": "Self-check-in 24h, parking gratis lub garaż €8/dzień",
+    "bologna_lunch": "Autogrill Modena Nord / Bologna Borgo Panigale: 24h na A1.",
+    "wasserburg_altstadt": "Restauracje Altstadt: 11:30–22:00. Wieczorny spacer po murach nad Innem."
+  },
+  "parking": {
+    "wasserburg_altstadt": "Altstadt kompaktowa — parkuj przy hotelu. Większość Gasthöfe ma bezpłatny parking.",
+    "tip": "Wieczorny spacer po starym mieście nad Innem — 10 min od większości noclegów.",
+    "wasserburg": "Altstadt: Parkplatz Innstraße (płatny dzień) lub bezpłatny przy hotelu. Wieczorny spacer nad Innem — 10 min z centrum.",
+    "hotel": "Gasthof Staudham / Huberwirt: bezpłatny parking na miejscu."
+  },
+  "practical_tips": [
+    "Wyjazd 7:00 z Pitigliano = dotarcie do Wasserburg ok. 15:00–16:00 (z 2 postojami).",
+    "A1 pedaggio: gotówka lub karta na bramkach. Rozważ Telepass/unipol dla szybszego przejazdu.",
+    "Unikaj centrum Florencji — Variante di Valico to obwodnica bez ZTL.",
+    "Brenner w czwartek popołudniu: umiarkowany ruch — nie powinien być krytyczny we wrześniu.",
+    "Wasserburg: rezerwuj Gasthof z parkingiem — Staudham (Münchner Str. 30) lub Huberwirt (od €46, Salzburgerstr. 25).",
+    "Wieczorny spacer: malownicze miasto na zakolu Innu — ostatni „urlopowy” wieczór.",
+    "Wyjazd 7:00 z Pitigliano — dotarcie Wasserburg ~17:00–18:00 (z 2×20 min postojami).",
+    "A22 Brenner: ~€22,80 klasa A (cała trasa Modena–Brennero, 2026). Gotówka lub karta.",
+    "Lunch: Bolonia Borgo Panigale (A1) — ostatnie tortellini. NIE zjeżdżaj do centrum Florencji.",
+    "Tankuj w Niemczech po Brenner — tańsze niż we Włoszech i Austrii.",
+    "Wieczór: spacer po Altstadt Wasserburg — malownicze miasto na zakolu Innu."
+  ],
+  "web_research": [
+    {
+      "topic": "A22 pedaggio Brenner–Modena 2026",
+      "summary": "Cała trasa A22 Brenner–Modena: €22,80 klasa A. Odcinki: Modena–Verona €6,20, Verona–Trento €7,20, Trento–Bolzano €4,90, Bolzano–Brenner €5,80. Wzrost 1,46% od 01.2026.",
+      "source": "https://www.telepass.com/it/privati/servizi/telepedaggio/a22-brennero-modena",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Trasa Maremma → Brenner",
+      "summary": "SS74 → A1 north → obwodnica Florencji → Bologna → Modena → A22 przez Brenner → A93 do Wasserburg. ~770 km, 7,5–8 h z postojami.",
+      "source": "https://www.tenutalemandorlaie.it/driving-from-germany-to-tuscany-best-routes-road-trip-tips-directions-to-maremma/",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Noclegi Wasserburg am Inn",
+      "summary": "Gasthof Staudham (Münchner Str. 30, parking gratis), Huberwirt am Kellerberg (od €46, Salzburgerstr. 25, parking gratis), Das Wasserburg Hotel (self-check-in, parking gratis/garaż €8).",
+      "source": "https://www.booking.com/city/de/wasserburg-am-inn.html",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "A22 pedaggio Modena–Brennero 2026",
+      "summary": "€22,80 klasa A (cała tratta). +1,46% od 1 I 2026. Sistema chiuso — biglietto all'ingresso.",
+      "source": "https://www.telepass.com/it/privati/servizi/telepedaggio/a22-brennero-modena",
+      "checked": "2026-07"
+    },
+    {
+      "topic": "Obwodnica Florencji A1",
+      "summary": "Zjazd Firenze-Incisa lub Prato-Campi Bisenzio — unikaj ZTL i korków w centrum. Varco Elettronico = mandaty.",
+      "source": "https://pitigliano.org/en/info/how-to-get-here/",
+      "checked": "2026-07"
+    }
+  ],
+  "route_segments": [
+    {
+      "segment": "Pitigliano → Orvieto",
+      "road": "SS74 / SR2",
+      "km": "~55",
+      "note": "Ostatnie tankowanie we Włoszech — stacje przy SS74/A1."
+    },
+    {
+      "segment": "Orvieto → Florencja bypass",
+      "road": "A1 → Variante di Valico",
+      "km": "~140",
+      "note": "NIE zjeżdżaj do centrum Florencji (ZTL + korki). Obwodnica Variante di Valico."
+    },
+    {
+      "segment": "Florencja → Bologna → Modena",
+      "road": "A1",
+      "km": "~120",
+      "note": "Lunch: zjazd Bologna Borgo Panigale lub Modena Nord (~20 min do centrum Bolonii)."
+    },
+    {
+      "segment": "Modena → Brenner",
+      "road": "A1 → A22",
+      "km": "~280",
+      "note": "A22 pedaggio: Modena–Verona €6,20 + Verona–Trento €7,20 + Trento–Bolzano €4,90 + Bolzano–Brenner €5,80 ≈ €24,10 klasa A."
+    },
+    {
+      "segment": "Brenner → Wasserburg",
+      "road": "A13 AT → A93/A94 DE",
+      "km": "~180",
+      "note": "Austria: e-winieta już aktywna. Niemcy: tankowanie tańsze niż AT."
+    },
+    {
+      "segment": "Florencja → Bolonia",
+      "road": "A1 north",
+      "km": "~105",
+      "note": "Lunch: zjazd Bologna Borgo Panigale (~20 min do centrum) lub Modena Nord."
+    },
+    {
+      "segment": "Bolonia → Modena → Milano",
+      "road": "A1/A14/A4",
+      "km": "~200",
+      "note": "Tangenziale Milano — nie wjeżdżaj w centrum."
+    },
+    {
+      "segment": "Milano → Brenner",
+      "road": "A4 → A22",
+      "km": "~280",
+      "note": "Pedaggio A22 Modena–Brennero: ~€22,80 klasa A (2026, +1,46%)."
+    }
+  ],
+  "fuel_stops": [
+    {
+      "name": "Tankowanie Pitigliano",
+      "location": "Przed wyjazdem 7:00",
+      "note": "Pełny bak — ostatnia szansa na tańsze paliwo przed A1."
+    },
+    {
+      "name": "Lunch Bolonia/Modena",
+      "location": "A1 Bologna Borgo Panigale lub Modena Nord",
+      "note": "Tortellini in brodo — ostatnie włoskie jedzenie. ~30 min postój."
+    },
+    {
+      "name": "Raststätte Brenner / Sterzing",
+      "location": "A22/A13 przed/po granicy",
+      "note": "Postój przed zjazdem do Niemiec. Kawa + tankowanie."
+    },
+    {
+      "name": "Tankowanie Niemcy",
+      "location": "Przed Wasserburg",
+      "note": "Zatankuj w DE — tańsze niż Austria."
+    },
+    {
+      "name": "IP Manciano / Orbetello",
+      "location": "SS1/A12 przed zjazdem na A1",
+      "note": "Ostatnie tanie tankowanie we Włoszech przed A1."
+    },
+    {
+      "name": "Autogrill Modena Nord",
+      "location": "A1 km ~220",
+      "note": "Postój lunch + paliwo. Tortellini in brodo na stacji."
+    }
+  ]
+}

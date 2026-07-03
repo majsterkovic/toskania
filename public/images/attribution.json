@@ -1,5 +1,5 @@
 {
-  "note": "Zdjęcia z Wikimedia Commons — ETAP 1 (tranzyty + BAZA 1 Garfagnana) + ETAP 2 (BAZA 2 Chianti + BAZA 3 Maremma). Użycie zgodne z licencjami CC.",
+  "note": "Zdjęcia z Wikimedia Commons — pełny zestaw (tranzyty, Garfagnana, Chianti, Maremma). Użycie zgodne z licencjami CC.",
   "images": {
     "neustadt.jpg": {
       "place": "Neustadt an der Donau",
@@ -217,6 +217,24 @@
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "description": "Semproniano — Chiesa di Santa Croce i forteca Aldobrandeschi"
+    },
+    "chianti.jpg": {
+      "place": "Colline del Chianti",
+      "wikimedia_title": "File:Colline del Chianti Gaiole in Chianti 3.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Colline_del_Chianti_Gaiole_in_Chianti_3.jpg",
+      "author": "Anna.Massini",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Monti del Chianti (Q55712940)"
+    },
+    "hero-tuscany.jpg": {
+      "place": "Wzgórza Chianti",
+      "wikimedia_title": "File:Colline del chianti Gaiole in Chianti.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Colline_del_chianti_Gaiole_in_Chianti.jpg",
+      "author": "Anna.Massini",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Monti del Chianti (Q55712940)"
     }
   }
 }

@@ -77,6 +77,7 @@ function renderSiteNav() {
     <nav class="site-nav" id="site-nav" aria-label="Nawigacja strony">
       <a class="site-nav__brand" href="#start">Toskania</a>
       <div class="site-nav__links">
+        <a href="#mapy">Mapy</a>
         <a href="#bazy">Bazy</a>
         <a href="#dni">Harmonogram</a>
         <a href="#galeria">Galeria</a>
@@ -495,6 +496,14 @@ function renderDay(day, images, bases) {
   const placeImg = thumbKey ? resolvePlaceImage(images, thumbKey) : null;
   const thumbHtml = placeImg ? renderImg(placeImg, 'day-card__thumb') : '';
 
+  const hasMiniMap = (day.type === 'tuscany' || day.type === 'tuscany_transfer') && day.base_id;
+  const miniMap = hasMiniMap
+    ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini" aria-label="Mini mapa dnia ${day.day_num}"></div>`
+    : '';
+  const warning = day.warning
+    ? `<div class="day-warning">${esc(day.warning)}</div>`
+    : '';
+
   return `
     <article
       class="day-card${popularClass}${typeClass}"
@@ -509,6 +518,8 @@ function renderDay(day, images, bases) {
           <span class="day-label">${esc(day.label)}</span>
         </div>
         <h3 class="day-title">${esc(day.title)}</h3>
+        ${warning}
+        ${miniMap}
         <div class="day-body">${body}</div>
       </div>
     </article>
@@ -600,6 +611,19 @@ export function renderApp(plan) {
     ${renderSiteNav()}
     <div class="page">
       ${renderHeader(plan.meta, images)}
+      <section class="section section--maps" id="mapy">
+        <h2 class="section-title">Mapy trasy</h2>
+        <div class="maps-row">
+          <div class="map-card">
+            <h3 class="map-card__title">Cała trasa</h3>
+            <div id="map-route-overview" class="leaflet-map" aria-label="Mapa trasy Poznań–Toskania–Poznań"></div>
+          </div>
+          <div class="map-card">
+            <h3 class="map-card__title">Toskania — bazy i atrakcje</h3>
+            <div id="map-tuscany-overview" class="leaflet-map" aria-label="Mapa Toskanii z bazami i atrakcjami"></div>
+          </div>
+        </div>
+      </section>
       ${renderBases(plan.bases, images)}
       <div class="schedule-wrap">
         ${renderDayNav(plan.days)}
@@ -609,6 +633,7 @@ export function renderApp(plan) {
       ${renderPractical(plan.practical_info)}
       <footer class="footer">
         <p>Toskania 2026 · ${esc(plan.meta.dates)}</p>
+        <p class="footer__credit">Mapy: <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">© OpenStreetMap</a> · Zdjęcia: Wikimedia Commons</p>
       </footer>
     </div>
   `;

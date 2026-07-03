@@ -19,48 +19,58 @@
       "hero": {
         "src": "images/hero-tuscany.jpg",
         "alt": "Wzgórza Chianti o zachodzie słońca",
-        "credit": "Wikimedia Commons · CC BY-SA"
+        "credit": "Wikimedia Commons · Anna.Massini"
       },
       "places": {
         "barga": {
           "src": "images/barga.jpg",
-          "alt": "Duomo di San Cristoforo, Barga"
+          "alt": "Duomo di San Cristoforo, Barga",
+          "credit": "Wikimedia Commons · Ymblanter"
         },
         "castiglione": {
           "src": "images/castiglione-garfagnana.jpg",
-          "alt": "Castiglione di Garfagnana"
+          "alt": "Castiglione di Garfagnana",
+          "credit": "Wikimedia Commons · Allie Caulfield"
         },
         "castelnuovo": {
           "src": "images/castelnuovo.jpg",
-          "alt": "Castelnuovo di Garfagnana"
+          "alt": "Castelnuovo di Garfagnana",
+          "credit": "Wikimedia Commons · Ingo Mehling"
         },
         "orecchiella": {
           "src": "images/orecchiella.jpg",
-          "alt": "Riserva Naturale Orecchiella"
+          "alt": "Riserva Naturale Orecchiella",
+          "credit": "Wikimedia Commons · Orangevale"
         },
         "grotta-vento": {
           "src": "images/grotta-vento.jpg",
-          "alt": "Grotta del Vento, Fornovolasco"
+          "alt": "Grotta del Vento, Fornovolasco",
+          "credit": "Wikimedia Commons · qwesy qwesy"
         },
         "verrucole": {
           "src": "images/verrucole.jpg",
-          "alt": "Fortezza delle Verrucole"
+          "alt": "Fortezza delle Verrucole",
+          "credit": "Wikimedia Commons · Davide Papalini"
         },
         "vagli": {
           "src": "images/vagli.jpg",
-          "alt": "Lago di Vagli"
+          "alt": "Lago di Vagli",
+          "credit": "Wikimedia Commons · Davide Papalini"
         },
         "ponte-diavolo": {
           "src": "images/ponte-diavolo.jpg",
-          "alt": "Ponte del Diavolo, Borgo a Mozzano"
+          "alt": "Ponte del Diavolo, Borgo a Mozzano",
+          "credit": "Wikimedia Commons · Myrabella"
         },
         "bagni-lucca": {
           "src": "images/bagni-lucca.jpg",
-          "alt": "Bagni di Lucca"
+          "alt": "Bagni di Lucca",
+          "credit": "Wikimedia Commons · Keith Ruffles"
         },
         "chianti": {
           "src": "images/chianti.jpg",
-          "alt": "Colline del Chianti"
+          "alt": "Colline del Chianti",
+          "credit": "Wikimedia Commons · Anna.Massini"
         },
         "brolio": {
           "src": "images/castello-brolio.jpg",
@@ -114,15 +124,18 @@
         },
         "neustadt": {
           "src": "images/neustadt.jpg",
-          "alt": "Neustadt an der Donau"
+          "alt": "Neustadt an der Donau",
+          "credit": "Wikimedia Commons · Stefan Oemisch"
         },
         "wasserburg": {
           "src": "images/wasserburg.jpg",
-          "alt": "Wasserburg am Inn"
+          "alt": "Wasserburg am Inn",
+          "credit": "Wikimedia Commons · Flocci Nivis"
         },
         "hof": {
           "src": "images/hof.jpg",
-          "alt": "Hof (Saale), Frankonia"
+          "alt": "Hof (Saale), Frankonia",
+          "credit": "Wikimedia Commons · Stefan Oemisch"
         },
         "semproniano": {
           "src": "images/semproniano.jpg",
@@ -130,6 +143,36 @@
           "credit": "Wikimedia Commons · Roberto Nencini"
         }
       }
+    },
+    "map_config": {
+      "route_overview": [
+        {"label": "Poznań", "coords": [52.406, 16.925], "type": "home"},
+        {"label": "Świecko (granica)", "coords": [52.352, 14.560], "type": "transit"},
+        {"label": "Neustadt a.d. Donau", "coords": [48.801, 11.778], "type": "transit_night"},
+        {"label": "Innsbruck/Brenner", "coords": [47.006, 11.510], "type": "transit"},
+        {"label": "Barga — BAZA 1", "coords": [44.073, 10.483], "type": "base"},
+        {"label": "Castelnuovo Berardenga — BAZA 2", "coords": [43.365, 11.513], "type": "base"},
+        {"label": "Pitigliano — BAZA 3", "coords": [42.635, 11.672], "type": "base"},
+        {"label": "Wasserburg am Inn", "coords": [47.999, 12.220], "type": "transit_night"},
+        {"label": "Hof (Saale)", "coords": [50.315, 11.920], "type": "transit_night"},
+        {"label": "Poznań (powrót)", "coords": [52.406, 16.925], "type": "home"}
+      ],
+      "tuscany_overview": [
+        {"label": "Barga (BAZA 1)", "coords": [44.073, 10.483], "type": "base", "days": "13–16.09"},
+        {"label": "Castiglione di G.", "coords": [44.155, 10.394], "type": "attraction"},
+        {"label": "Orecchiella", "coords": [44.190, 10.390], "type": "nature"},
+        {"label": "Grotta del Vento", "coords": [44.069, 10.317], "type": "attraction"},
+        {"label": "Lago di Vagli", "coords": [44.134, 10.338], "type": "nature"},
+        {"label": "Ponte del Diavolo", "coords": [43.984, 10.539], "type": "attraction"},
+        {"label": "Castelnuovo B. (BAZA 2)", "coords": [43.365, 11.513], "type": "base", "days": "17–19.09"},
+        {"label": "Castello di Brolio", "coords": [43.378, 11.424], "type": "attraction"},
+        {"label": "Siena", "coords": [43.318, 11.330], "type": "popular"},
+        {"label": "Monte Oliveto M.", "coords": [43.126, 11.517], "type": "attraction"},
+        {"label": "Pitigliano (BAZA 3)", "coords": [42.635, 11.672], "type": "base", "days": "20–22.09"},
+        {"label": "Sorano", "coords": [42.678, 11.712], "type": "attraction"},
+        {"label": "Saturnia", "coords": [42.657, 11.506], "type": "nature"},
+        {"label": "Sovana", "coords": [42.661, 11.634], "type": "attraction"}
+      ]
     },
     "last_enriched": "2026-07-03T16:28:13.081Z",
     "enrichment_days": [
@@ -162,7 +205,8 @@
       "color": "emerald",
       "accommodation": "Agriturismo lub B&B w Barga lub okolicach (Mologno, Loppia, Albiano). Ceny: €60–90/noc z śniadaniem.",
       "booking_tip": "Szukaj: agriturismo barga garfagnana — wioska Mologno 5 km od centrum, cisza, las",
-      "gps_hint": "Naviguj: Barga LU lub Mologno LU — unikaj centrum (ZTL)"
+      "gps_hint": "Naviguj: Barga LU lub Mologno LU — unikaj centrum (ZTL)",
+      "coords": [44.073, 10.483]
     },
     {
       "id": "base2",
@@ -175,7 +219,8 @@
       "color": "amber",
       "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
       "booking_tip": "Szukaj z własną produkcją wina i oliwek — Vagliagli lub Monti in Chianti",
-      "gps_hint": "Naviguj: Castelnuovo Berardenga SI lub Vagliagli SI — poza ZTL wsi"
+      "gps_hint": "Naviguj: Castelnuovo Berardenga SI lub Vagliagli SI — poza ZTL wsi",
+      "coords": [43.365, 11.513]
     },
     {
       "id": "base3",
@@ -188,7 +233,8 @@
       "color": "rose",
       "accommodation": "Agriturismo Sassotondo (Sovana, biodynamiczne wino) — €80–110/noc. Alternatywa: agriturismo w dolinie Fiora.",
       "booking_tip": "Sassotondo to realne, nagrodzone winiarski agriturismo — rezerwuj z wyprzedzeniem",
-      "gps_hint": "Naviguj: Pitigliano GR lub Sovana GR — parking przy agriturismo, nie w centrum tufowym"
+      "gps_hint": "Naviguj: Pitigliano GR lub Sovana GR — parking przy agriturismo, nie w centrum tufowym",
+      "coords": [42.635, 11.672]
     }
   ],
   "transit_stops": {
@@ -881,11 +927,12 @@
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 25,
+      "warning": "⚠️ 16.09 to środa — Fortezza delle Verrucole ZAMKNIĘTA (otwarta pt–nd). Wejście zewnętrzne bezpłatne, panorama 360° dostępna. Tel. do rezerwacji pt: +39 379 2415958.",
       "attractions": [
         {
-          "name": "Fortezza delle Verrucole",
+          "name": "Fortezza delle Verrucole (zewnątrz) ⚠️ środa = zamknięta w środku",
           "drive_min": 18,
-          "description": "Imponująca twierdza na stromym wzgórzu (XII–XIV w.), panorama 360° doliny. Minimalna turystyka, wstęp symboliczny.",
+          "description": "16.09 to środa — forteca zamknięta (otwarta pt–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich. Jeśli chcesz wejść do środka (€8, z przewodnikiem) — przyjdź w piątek 18.09 lub zarezerwuj tel. +39 379 2415958.",
           "type": "medieval",
           "image": "verrucole",
           "image_key": "verrucole",

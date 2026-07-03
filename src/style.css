@@ -1275,3 +1275,124 @@ body.lightbox-open {
     font-size: 0.82rem;
   }
 }
+
+/* ── Leaflet Maps ── */
+
+.section--maps {
+  margin-bottom: 2.5rem;
+}
+
+.maps-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .maps-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.map-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.map-card__title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  padding: 0.6rem 1rem 0;
+}
+
+.leaflet-map {
+  height: 340px;
+  width: 100%;
+  background: var(--stone);
+}
+
+.leaflet-map--mini {
+  height: 200px;
+  border-radius: var(--radius);
+  margin: 0.75rem 0;
+  border: 1px solid var(--border);
+}
+
+/* ── Day warning ── */
+
+.day-warning {
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.6rem 0.85rem;
+  background: #fff3cd;
+  border-left: 3px solid #e6a817;
+  border-radius: 0 6px 6px 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: #7d5a0f;
+  line-height: 1.5;
+}
+
+/* ── Footer ── */
+
+.footer__credit {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.footer__credit a {
+  color: var(--muted);
+}
+
+/* ── Print styles ── */
+
+@media print {
+  .site-nav,
+  .day-nav-wrap,
+  .leaflet-map,
+  .leaflet-map--mini,
+  .section--maps,
+  .lightbox,
+  .gallery-grid,
+  .research-item,
+  .day-block--research {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    font-size: 10pt;
+  }
+
+  .page {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .day-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    box-shadow: none;
+  }
+
+  .section-title {
+    font-size: 14pt;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .hero {
+    page-break-after: always;
+  }
+
+  a[href]::after {
+    content: none;
+  }
+}

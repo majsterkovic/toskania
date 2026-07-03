@@ -146,35 +146,206 @@
     },
     "map_config": {
       "route_overview": [
-        {"label": "Poznań", "coords": [52.406, 16.925], "type": "home"},
-        {"label": "Świecko (granica)", "coords": [52.352, 14.560], "type": "transit"},
-        {"label": "Neustadt a.d. Donau", "coords": [48.801, 11.778], "type": "transit_night"},
-        {"label": "Innsbruck/Brenner", "coords": [47.006, 11.510], "type": "transit"},
-        {"label": "Barga — BAZA 1", "coords": [44.073, 10.483], "type": "base"},
-        {"label": "Castelnuovo Berardenga — BAZA 2", "coords": [43.365, 11.513], "type": "base"},
-        {"label": "Pitigliano — BAZA 3", "coords": [42.635, 11.672], "type": "base"},
-        {"label": "Wasserburg am Inn", "coords": [47.999, 12.220], "type": "transit_night"},
-        {"label": "Hof (Saale)", "coords": [50.315, 11.920], "type": "transit_night"},
-        {"label": "Poznań (powrót)", "coords": [52.406, 16.925], "type": "home"}
+        {
+          "label": "Poznań",
+          "coords": [
+            52.406,
+            16.925
+          ],
+          "type": "home"
+        },
+        {
+          "label": "Świecko (granica)",
+          "coords": [
+            52.352,
+            14.56
+          ],
+          "type": "transit"
+        },
+        {
+          "label": "Neustadt a.d. Donau",
+          "coords": [
+            48.801,
+            11.778
+          ],
+          "type": "transit_night"
+        },
+        {
+          "label": "Innsbruck/Brenner",
+          "coords": [
+            47.006,
+            11.51
+          ],
+          "type": "transit"
+        },
+        {
+          "label": "Barga — BAZA 1",
+          "coords": [
+            44.073,
+            10.483
+          ],
+          "type": "base"
+        },
+        {
+          "label": "Castelnuovo Berardenga — BAZA 2",
+          "coords": [
+            43.365,
+            11.513
+          ],
+          "type": "base"
+        },
+        {
+          "label": "Pitigliano — BAZA 3",
+          "coords": [
+            42.635,
+            11.672
+          ],
+          "type": "base"
+        },
+        {
+          "label": "Wasserburg am Inn",
+          "coords": [
+            47.999,
+            12.22
+          ],
+          "type": "transit_night"
+        },
+        {
+          "label": "Hof (Saale)",
+          "coords": [
+            50.315,
+            11.92
+          ],
+          "type": "transit_night"
+        },
+        {
+          "label": "Poznań (powrót)",
+          "coords": [
+            52.406,
+            16.925
+          ],
+          "type": "home"
+        }
       ],
       "tuscany_overview": [
-        {"label": "Barga (BAZA 1)", "coords": [44.073, 10.483], "type": "base", "days": "13–16.09"},
-        {"label": "Castiglione di G.", "coords": [44.155, 10.394], "type": "attraction"},
-        {"label": "Orecchiella", "coords": [44.190, 10.390], "type": "nature"},
-        {"label": "Grotta del Vento", "coords": [44.069, 10.317], "type": "attraction"},
-        {"label": "Lago di Vagli", "coords": [44.134, 10.338], "type": "nature"},
-        {"label": "Ponte del Diavolo", "coords": [43.984, 10.539], "type": "attraction"},
-        {"label": "Castelnuovo B. (BAZA 2)", "coords": [43.365, 11.513], "type": "base", "days": "17–19.09"},
-        {"label": "Castello di Brolio", "coords": [43.378, 11.424], "type": "attraction"},
-        {"label": "Siena", "coords": [43.318, 11.330], "type": "popular"},
-        {"label": "Monte Oliveto M.", "coords": [43.126, 11.517], "type": "attraction"},
-        {"label": "Pitigliano (BAZA 3)", "coords": [42.635, 11.672], "type": "base", "days": "20–22.09"},
-        {"label": "Sorano", "coords": [42.678, 11.712], "type": "attraction"},
-        {"label": "Saturnia", "coords": [42.657, 11.506], "type": "nature"},
-        {"label": "Sovana", "coords": [42.661, 11.634], "type": "attraction"}
+        {
+          "label": "Barga (BAZA 1)",
+          "coords": [
+            44.073,
+            10.483
+          ],
+          "type": "base",
+          "days": "13–16.09"
+        },
+        {
+          "label": "Castiglione di G.",
+          "coords": [
+            44.155,
+            10.394
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Orecchiella",
+          "coords": [
+            44.19,
+            10.39
+          ],
+          "type": "nature"
+        },
+        {
+          "label": "Grotta del Vento",
+          "coords": [
+            44.069,
+            10.317
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Lago di Vagli",
+          "coords": [
+            44.134,
+            10.338
+          ],
+          "type": "nature"
+        },
+        {
+          "label": "Ponte del Diavolo",
+          "coords": [
+            43.984,
+            10.539
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Castelnuovo B. (BAZA 2)",
+          "coords": [
+            43.365,
+            11.513
+          ],
+          "type": "base",
+          "days": "17–19.09"
+        },
+        {
+          "label": "Castello di Brolio",
+          "coords": [
+            43.378,
+            11.424
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Siena",
+          "coords": [
+            43.318,
+            11.33
+          ],
+          "type": "popular"
+        },
+        {
+          "label": "Monte Oliveto M.",
+          "coords": [
+            43.126,
+            11.517
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Pitigliano (BAZA 3)",
+          "coords": [
+            42.635,
+            11.672
+          ],
+          "type": "base",
+          "days": "20–22.09"
+        },
+        {
+          "label": "Sorano",
+          "coords": [
+            42.678,
+            11.712
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Saturnia",
+          "coords": [
+            42.657,
+            11.506
+          ],
+          "type": "nature"
+        },
+        {
+          "label": "Sovana",
+          "coords": [
+            42.661,
+            11.634
+          ],
+          "type": "attraction"
+        }
       ]
     },
-    "last_enriched": "2026-07-03T16:28:13.081Z",
+    "last_enriched": "2026-07-03T17:45:58.831Z",
     "enrichment_days": [
       1,
       2,
@@ -206,7 +377,10 @@
       "accommodation": "Agriturismo lub B&B w Barga lub okolicach (Mologno, Loppia, Albiano). Ceny: €60–90/noc z śniadaniem.",
       "booking_tip": "Szukaj: agriturismo barga garfagnana — wioska Mologno 5 km od centrum, cisza, las",
       "gps_hint": "Naviguj: Barga LU lub Mologno LU — unikaj centrum (ZTL)",
-      "coords": [44.073, 10.483]
+      "coords": [
+        44.073,
+        10.483
+      ]
     },
     {
       "id": "base2",
@@ -220,7 +394,10 @@
       "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
       "booking_tip": "Szukaj z własną produkcją wina i oliwek — Vagliagli lub Monti in Chianti",
       "gps_hint": "Naviguj: Castelnuovo Berardenga SI lub Vagliagli SI — poza ZTL wsi",
-      "coords": [43.365, 11.513]
+      "coords": [
+        43.365,
+        11.513
+      ]
     },
     {
       "id": "base3",
@@ -234,7 +411,10 @@
       "accommodation": "Agriturismo Sassotondo (Sovana, biodynamiczne wino) — €80–110/noc. Alternatywa: agriturismo w dolinie Fiora.",
       "booking_tip": "Sassotondo to realne, nagrodzone winiarski agriturismo — rezerwuj z wyprzedzeniem",
       "gps_hint": "Naviguj: Pitigliano GR lub Sovana GR — parking przy agriturismo, nie w centrum tufowym",
-      "coords": [42.635, 11.672]
+      "coords": [
+        42.635,
+        11.672
+      ]
     }
   ],
   "transit_stops": {
@@ -468,134 +648,240 @@
       "drive_h": "8–8,5 h",
       "base_id": "base1",
       "depart": "7:00 rano z Neustadt an der Donau",
-      "route": "A9/A8 → Rosenheim → A93 Inntal → Innsbruck → Brenner Pass A22 → Bolzano → Trento → Werona bypass → A1/A11 → Lukka → SS12/SS445 north → Barga",
+      "route": "A9/A8 → Rosenheim → A93 Inntal → A12 → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe (obwodnica Werony, bez centrum) → Campogalliano → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
       "attractions": [],
       "nature": null,
       "food": {
-        "place": "Rovereto lub Werona (postój przy zjeździe z A22)",
-        "address": null,
-        "dishes": [],
-        "note": "Krótki postój obiadowy — szukaj 'bar trattoria' przy zjeździe, nie przy samej bramce autostradowej",
+        "place": "Rovereto Sud (A22) — pierwszy wybór; Werona tylko awaryjnie",
+        "address": "Ristorante Tre Pini: Via Stazione 14, 38068 Rovereto TN",
+        "dishes": [
+          "pizza",
+          "menu del giorno",
+          "pesce"
+        ],
+        "note": "Zjazd A22 Rovereto Sud/Lago di Garda Sud — 300 m w kierunku Mori, nie na bramkę. Tre Pini: duży parking, szybka obsługa (~€10–15). Alternatywa: Moja Ristorante, Borgo Sacco (~10 min od zjazdu, zamknięte pon). Area Nogaredo Est na A22 = tylko przekąska 24/7. Werona centro = ZTL + korki — zostań na A22.",
         "price": "~€10–15",
-        "gps_hint": "Zjazd A22 Rovereto Sud lub Verona Sud — parking przy stacji"
+        "gps_hint": "Naviguj: Ristorante Tre Pini Rovereto lub A22 uscita Rovereto Sud",
+        "options": [
+          {
+            "name": "Ristorante Pizzeria Tre Pini",
+            "type": "trattoria",
+            "address": "Via Stazione 14, 38068 Rovereto TN",
+            "phone": "+39 0464 435122",
+            "note": "~300 m od zjazdu A22 Rovereto Sud; parking dla autobusów; pizza + menu",
+            "price": "€10–15"
+          },
+          {
+            "name": "Moja Ristorante",
+            "type": "ristorante",
+            "address": "Borgo Sacco, Rovereto",
+            "note": "8 000 m² zieleni, parking; 10 min od zjazdu A22; zamknięte poniedziałki",
+            "price": "€12–18"
+          },
+          {
+            "name": "Area di servizio Nogaredo Est",
+            "type": "autostrada",
+            "address": "A22 km tra Rovereto Sud e Rovereto Nord",
+            "note": "24/7 — tylko awaryjnie (autogrill, nie prawdziwy obiad)",
+            "price": "€8–12"
+          }
+        ]
       },
       "accommodation": {
-        "place": "BAZA 1 — Barga / Garfagnana",
-        "note": "Przyjazd ok. 16:00–17:00. Check-in, kolacja na miejscu w agriturismo.",
+        "place": "BAZA 1 — Agriturismo Mologno / Barga (Garfagnana)",
+        "note": "Przyjazd ok. 17:00–17:30 (niedziela + SR445). Mologno = frazione Barga, ~5 km od centro, cisza, las kasztanowy. Check-in typowo 14:00–19:00 — zadzwoń z ETA po minięciu Castelnuovo (ostatnie 30 km SR445). Kolacja na miejscu w agriturismo.",
         "price": "€60–90/noc",
-        "booking_tip": "Zadzwoń do agriturismo z ETA — ostatnie 50 km to kręta SS445",
-        "gps_hint": "Naviguj: Barga LU — parking poza murami (Porta Reale)"
+        "booking_tip": "Szukaj: agriturismo Mologno Barga — Il Musaccio, PURO, Chioi. Stacja Barga-Gallicano na SR445 (11 min autobusem do centrum). Rezerwuj z wyprzedzeniem — wrzesień w Garfagnanie popularny.",
+        "gps_hint": "Naviguj: Mologno LU lub Via Pian di Gragno 15, Barga — NIE Barga Vecchia (ZTL)",
+        "options": [
+          {
+            "name": "Agriturismo Il Musaccio",
+            "type": "agriturismo",
+            "address": "Via Pian di Gragno 15, 55051 Barga LU",
+            "price": "€60–90/noc",
+            "check_in": "15:30–18:00",
+            "parking": "bezpłatny na terenie",
+            "url": "https://www.booking.com/hotel/it/agriturismo-franca.it.html",
+            "note": "Basen z widokiem, śniadanie, rowery; płatność przelewem przed przyjazdem"
+          },
+          {
+            "name": "Agriturismo PURO",
+            "type": "agriturismo",
+            "address": "Mologno, 55051 Barga LU",
+            "price": "€70–100/noc",
+            "check_in": "14:00–19:00",
+            "parking": "bezpłatny prywatny",
+            "note": "4 sypialnie, taras, kominek; ~5 km od Barga centro"
+          },
+          {
+            "name": "Agriturismo Chioi (Casa Chioi)",
+            "type": "agriturismo",
+            "address": "Mologno, Barga LU",
+            "price": "€60–90/noc",
+            "check_in": "15:00–18:00",
+            "parking": "na terenie farmy",
+            "note": "Kasztanowy las, cisza; idealny na 4 noce bazy"
+          }
+        ]
       },
       "tips": [
-        "Streckenmaut Brenner A13: €12,50 — kup online na shop.asfinag.at",
-        "A22 Włochy: bilet przy wjeździe, płatność kartą przy wyjeździe (~€15–22 Brenner–Werona)",
-        "Ostatnie 50 km SS445 — kręta górska droga, zadzwoń do agriturismo z ETA",
-        "Barga ZTL: parkuj Parcheggio Porta Reale, centrum pieszo 5 min"
+        "Niedziela 13.09 = spodziewany ruch powrotny z Alp na Brennerze — wyjedź o 7:00, sprawdź asfinag.at/a13",
+        "Streckenmaut A13 Brenner: €12,50 (2026) — kup digital na shop.asfinag.at; winieta AT obowiązkowa na A12 Inntal",
+        "A22 Włochy: bilet przy wjeździe Brennero, płatność kartą w pasie Carte (~€22 Brenner–Campogalliano + A1/A11 do Lucca)",
+        "Lunch: zjazd Rovereto Sud → Tre Pini (nie centrum Werony, nie bramka autostradowa)",
+        "Ostatnie ~50 km SR445 (ex SS445): +45–60 min do ETA — zadzwoń do agriturismo z Castelnuovo",
+        "Barga ZTL: parkuj Porta Reale (Via Bellavista) lub przy agriturismo Mologno — NIGDY przez Porta Reale do murów"
       ],
       "route_segments": [
         {
           "segment": "Neustadt → Norymberga → Rosenheim",
           "road": "A9 → A8",
           "km": "~200",
-          "note": "Winieta AT aktywna od dziś"
+          "duration": "~2 h",
+          "note": "Winieta AT aktywna (kupiona dzień 1, start 13.09)"
         },
         {
           "segment": "Rosenheim → Innsbruck",
           "road": "A93 Inntal → A12",
           "km": "~100",
-          "note": "A12 wymaga winiety AT"
+          "duration": "~1 h",
+          "note": "A12 wymaga winiety AT (€12,80/10 dni 2026)"
         },
         {
-          "segment": "Innsbruck → Brenner",
+          "segment": "Innsbruck → Brenner (granica AT/IT)",
           "road": "A13 Sondermaut",
           "km": "~35",
-          "note": "Streckenmaut €12,50 — bez winiety na A13, ale A12 wymaga"
+          "duration": "30–60 min",
+          "note": "Streckenmaut €12,50 cały odcinek. Most Lueg: 1 pas/kierunek od 01.2025 — korki w niedziele. Zielone pasy DIGITAL jeśli kupione online."
         },
         {
-          "segment": "Brenner → Bolzano → Werona",
+          "segment": "Brenner → Bolzano → Trento → Rovereto",
           "road": "A22",
-          "km": "~250",
-          "note": "Bramki włoskie: bilet przy wjeździe, płatność przy wyjeździe"
+          "km": "~120",
+          "duration": "~1,5 h",
+          "note": "Pedaggio: bilet Brennero, dwujęzyczne Südtirol. Postój lunch: Rovereto Sud (~13:00)"
         },
         {
-          "segment": "Werona → Lukka → Barga",
-          "road": "A1/A11 → SS12/SS445",
-          "km": "~250",
-          "note": "Ostatnie 50 km SS445 — kręta, wolno"
+          "segment": "Rovereto → Werona (obwodnica) → Modena",
+          "road": "A22",
+          "km": "~130",
+          "duration": "~1,5 h",
+          "note": "Bez zjazdu do centro Verona (ZTL). A22 kontynuacja południe przez Mantovę do Campogalliano"
+        },
+        {
+          "segment": "Modena → Firenze → Lucca",
+          "road": "A1 Variante di Valico → A11 Firenze-Mare",
+          "km": "~150",
+          "duration": "~2 h",
+          "note": "A1 przez Apeniny (galerie, 3 pasy). A11: Lucca Est wyjście (~€6,40 cała A11 od Firenze)"
+        },
+        {
+          "segment": "Lucca → Barga (ostatnie ~50 km)",
+          "road": "SS12 → SR445 (ex SS445) → SP7",
+          "km": "~50",
+          "duration": "45–60 min",
+          "note": "Lucca → Borgo a Mozzano (SS12) → SP20 → SR445 przez dolinę Serchio: Ponte all'Ania, Fornaci di Barga, Loppia → SP7 → Barga Vecchia. Wąskie odcinki, zatoki wyprzedzania, traktory. Miejscowi jadą szybko — nie daj się poganiać."
         }
       ],
       "web_research": [
         {
-          "topic": "Streckenmaut A13 Brenner (AT)",
-          "summary": "€12,50 za cały odcinek Innsbruck–granica (2026). A13 bez winiety, ale A12 Inntal wymaga winiety. Kup digital section toll na shop.asfinag.at — zielone pasy bez zatrzymania.",
+          "topic": "Streckenmaut A13 Brenner (AT) 2026",
+          "summary": "€12,50 za cały odcinek Innsbruck–Brennersee (od 01.01.2026, było €12). A13 nie wymaga winiety sama w sobie, ale A12 Inntal wymaga. Kup digital section toll na shop.asfinag.at — zielone pasy DIGITAL bez zatrzymania.",
           "source": "https://www.asfinag.at/en/toll/section-toll/",
           "checked": "2026-07"
         },
         {
-          "topic": "Autostrada A22 Włochy (Brenner)",
-          "summary": "Brak winiety — system bramkowy: bilet przy wjeździe, płatność przy wyjeździe. Gotówka, karta, Apple/Google Pay. Brenner–Campogalliano ~€22,30 (kat. A, maj 2025).",
-          "source": "https://hogs.live/blog/brenner-pass-tolls",
+          "topic": "Most Lueg A13 — korki Brenner 2025–2030",
+          "summary": "Od 01.01.2025 jeden pas/kierunek na starym moście Lueg (remont nowego do ~2030). ASFINAG otwiera 2. pas ~180 dni/rok w sezonie (czerwiec–wrzesień prawie codziennie). Kalendarz: asfinag.at/a13. Niedziela = szczyt ruchu powrotnego z Włoch/Alp.",
+          "source": "https://www.asfinag.at/en/construction-maintenance/construction-projects/a-13-brenner-motorway-lueg-bridge/",
           "checked": "2026-07"
         },
         {
-          "topic": "Parking i ZTL Barga",
-          "summary": "Barga Vecchia = ZTL. Parcheggio Porta Reale (Via Bellavista / Via del Sasso) — przy murach, średniej wielkości. Piazzale Matteotti — płatny, dolna część miasta. Viale Cesare Biondi 44 — darmowy, 900 m od centrum.",
+          "topic": "Autostrada A22 Włochy — pedaggio",
+          "summary": "Brak winiety — system zamknięty: bilet przy wjeździe (Brennero), płatność przy wyjeździe. Gotówka, karta, Apple/Google Pay. Brenner–Campogalliano ~€22,30 (kat. A). Łącznie A22+A1+A11 do Lucca ~€35–45.",
+          "source": "https://www.autobrennero.it/en/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Postój obiadowy Rovereto Sud (A22)",
+          "summary": "Zjazd Rovereto Sud/Lago di Garda Sud → Tre Pini (Via Stazione 14, 300 m od zjazdu, parking, pizza €10–15). Moja Ristorante Borgo Sacco (10 min, zamk. pon). Area Nogaredo Est na A22 = 24/7 autogrill między Rovereto Sud a Nord — tylko awaryjnie.",
+          "source": "https://www.ristorante3pini.it/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Werona — obwodnica tranzytowa",
+          "summary": "Na trasie Neustadt→Barga: zostań na A22 południe — nie wjeżdżaj do centro storico (ZTL, korki). Werona Nord = węzeł A22; kontynuacja do Mantovy/Campogalliano. Lunch lepiej w Rovereto (wcześniej na trasie).",
+          "source": "https://www.autobrennero.it/en/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "SR445 (ex SS445) Garfagnana — ostatnie 50 km",
+          "summary": "Oficjalnie SR 445 della Garfagnana (ex SS445, region Toscana od 2001). Trasa Lucca→Barga: SS12 → Borgo a Mozzano → SP20 → SR445 (Ponte all'Ania, Fornaci, Loppia) → SP7 → Barga. ~38–50 km, 45–60 min. Kręte odcinki, zatoki, traktory, rowerzyści, dziki. Stacja Barga-Gallicano w Mologno na SR445.",
+          "source": "https://www.informagiovani-italia.com/how-to-get-to-barga.htm",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "ZTL i parking Barga",
+          "summary": "Barga Vecchia = ZTL z kamerami przy Porta Reale — dostęp tylko dla uprawnionych. Parkowanie: Parcheggio Porta Reale (Via Bellavista / Via del Sasso, przy murach, 5 min pieszo do Duomo). Piazzale Matteotti (płatny, dolna Barga). Viale Cesare Biondi 44 (gratis, 900 m). Camper: Via Hayange.",
           "source": "https://www.informagiovani-italia.com/where-to-park-in-barga.htm",
           "checked": "2026-07"
         },
         {
-          "topic": "Droga SS445 Garfagnana",
-          "summary": "Kręta droga górska — miejscowi jadą szybko, nie daj się poganiać. Zatoki wyprzedzania co kilkaset metrów. Traktory, rowerzyści, dzik na drodze. Przyjazd Barga ok. 16:00–17:00 realistyczny.",
-          "source": "https://opera.techfgame.com/discovering-tuscany-valle-del-serchio.html",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Postój obiadowy A22",
-          "summary": "Rovereto Sud lub Verona Sud — zjazd z autostrady, 'bar trattoria' przy stacji, nie przy samej bramce. Unikaj centrum Werony (ZTL, korki).",
-          "source": "https://loveyouritaly.com/italian-toll-roads/",
+          "topic": "Agriturismo Mologno — BAZA 1",
+          "summary": "Mologno = frazione Barga, 5 km od centro, cisza, kasztanowy las. Polecane: Il Musaccio (Via Pian di Gragno 15, check-in 15:30–18:00, basen), PURO (Mologno, 4 sypialnie), Chioi (farmhouse). Stacja kolejowa Barga-Gallicano na SR445. €60–90/noc ze śniadaniem.",
+          "source": "https://www.booking.com/hotel/it/agriturismo-franca.it.html",
           "checked": "2026-07"
         }
       ],
       "practical_tips": [
-        "Kup Streckenmaut A13 Brenner online (€12,50) — oszczędza kolejkę na Mautstelle Schönberg",
-        "Włochy A22: weź bilet przy wjeździe, płać kartą w pasie Carte (niebieski) — szybciej niż gotówka",
-        "Zatankuj w Austrii lub na A22 przed Lukką — paliwo w IT tańsze niż po dotarciu do Garfagnany, ale droższe niż DE",
-        "SS445: ostatnie 50 km — nie śpiesz się, ETA agriturismo zawoń z 30 min wyprzedzeniem",
-        "Barga ZTL: NIGDY nie wjeżdżaj do murów — kamera przy Porta Reale, mandaty automatyczne"
+        "Kup Streckenmaut A13 Brenner online (€12,50) — oszczędza kolejkę na Mautstelle Schönberg im Stubaital",
+        "Sprawdź kalendarz Luegbrücke na asfinag.at/a13 przed wyjazdem — niedziela 13.09 = bufor +30 min na Brenner",
+        "Włochy A22: weź bilet przy wjeździe Brennero, płać kartą w pasie Carte (niebieski) — szybciej niż gotówka",
+        "Lunch ~13:00 przy Rovereto Sud (Tre Pini) — 45 min, nie trać czasu na Weronę",
+        "Zatankuj w Austrii lub przy zjeździe Rovereto — ostatnia stacja Q8/Eni Castelnuovo na SR445 przed podjazdem do Barga",
+        "SR445: po minięciu Castelnuovo zadzwoń do agriturismo (+30 min ETA) — check-in do 19:00",
+        "Barga ZTL: naviguj Mologno LU (agriturismo) lub parking Porta Reale — NIGDY „Barga centro”"
       ],
       "parking": {
-        "destination": "Barga — check-in BAZA 1",
+        "destination": "Barga — check-in BAZA 1 (Mologno lub centro)",
         "options": [
+          {
+            "name": "Parking agriturismo Mologno",
+            "type": "hotel",
+            "price": "gratis dla gości",
+            "gps_hint": "Via Pian di Gragno 15 lub Mologno LU",
+            "note": "Preferowany przy noclegu w Mologno — bez ZTL, cisza, las"
+          },
           {
             "name": "Parcheggio Porta Reale",
             "type": "public",
             "price": "bezpłatny / niski",
             "gps_hint": "Via Bellavista, incrocio Via del Sasso — przy murach",
-            "note": "Najbliżej centrum, 5 min pieszo do Duomo"
+            "note": "Najbliżej centro; 5 min pieszo do Duomo. Przed murami — nie wjeżdżaj dalej (ZTL)"
           },
           {
             "name": "Piazzale Matteotti",
             "type": "public",
             "price": "płatny",
             "gps_hint": "Via Piero Gobetti, dolna Barga",
-            "note": "Większy parking, 10 min pieszo w górę"
+            "note": "Większy parking, 10 min pieszo w górę do centro"
           },
           {
             "name": "Viale Cesare Biondi 44",
             "type": "public",
             "price": "gratis",
             "gps_hint": "55051 Barga",
-            "note": "900 m od centrum, przy szkole — backup gdy Porta Reale pełny"
+            "note": "900 m od centro, przy szkole — backup gdy Porta Reale pełny"
           },
           {
-            "name": "Parking agriturismo (Mologno/Loppia)",
-            "type": "hotel",
-            "price": "gratis dla gości",
-            "gps_hint": "Naviguj Mologno LU / Loppia LU",
-            "note": "Jeśli nocleg poza centrum — parkuj przy agriturismo"
+            "name": "Parcheggio San Cristoforo (camper)",
+            "type": "public",
+            "price": "~€10/dzień",
+            "gps_hint": "Via Hayange, 55051 Barga",
+            "note": "Płaski, szeroki — 5 min pieszo do centro w górę"
           }
         ],
-        "tip": "Przyjazd ok. 16–17: Porta Reale zwykle ma miejsca we wrześniu (poza weekendem)"
+        "tip": "Przy noclegu Mologno: parkuj przy agriturismo. Wieczorny spacer do Barga Vecchia: auto zostaje w Mologno lub Porta Reale"
       },
       "fuel_stops": [
         {
@@ -610,27 +896,62 @@
           "location": "A12/A93, Innsbruck",
           "road": "A12",
           "hours": "6–22",
-          "note": "Uzupełnienie przed Brennerem"
+          "note": "Uzupełnienie przed A13 Brennerem"
         },
         {
           "name": "IP/Eni przy zjeździe A22 Rovereto Sud",
           "location": "SS240, Rovereto",
           "road": "A22 exit",
           "hours": "7–20",
-          "note": "Postój obiadowy + tankowanie — poza bramką autostradową"
+          "note": "Postój obiadowy Tre Pini + tankowanie — poza bramką autostradową"
         },
         {
           "name": "Q8/Eni Castelnuovo di Garfagnana",
-          "location": "SS445, Castelnuovo",
-          "road": "SS445",
+          "location": "SR445, Castelnuovo",
+          "road": "SR445",
           "hours": "7–20",
-          "note": "Ostatnie tankowanie przed Barga — stacja w dolinie"
+          "note": "Ostatnie tankowanie w dolinie przed podjazdem do Barga/Mologno"
         }
       ],
       "opening_hours": {
-        "agriturismo_checkin": "14:00–19:00 typowo — zadzwoń z ETA",
-        "a22_toll_booths": "24/7 (automaty)"
-      }
+        "agriturismo_checkin": "14:00–19:00 (Il Musaccio 15:30–18:00) — zadzwoń z ETA",
+        "a22_toll_booths": "24/7 (automaty + Carte)",
+        "tre_pini_lunch": "12:00–15:00 typowo (sprawdź w niedzielę)"
+      },
+      "eta_timeline": [
+        {
+          "time": "07:00",
+          "event": "Wyjazd Neustadt an der Donau"
+        },
+        {
+          "time": "09:30",
+          "event": "Rosenheim → A93 Inntal"
+        },
+        {
+          "time": "11:00",
+          "event": "A13 Brenner (możliwy korek Lueg)"
+        },
+        {
+          "time": "12:30",
+          "event": "Granica AT/IT → A22 Bolzano"
+        },
+        {
+          "time": "13:00",
+          "event": "Lunch Rovereto Sud (Tre Pini)"
+        },
+        {
+          "time": "15:00",
+          "event": "A22 → A1 → A11, kier. Lucca"
+        },
+        {
+          "time": "16:30",
+          "event": "Zjazd Lucca Est → SS12/SR445"
+        },
+        {
+          "time": "17:30",
+          "event": "Przyjazd Mologno / Barga — check-in"
+        }
+      ]
     },
     {
       "date": "14.09 (pn)",
@@ -641,96 +962,111 @@
       "image": "barga",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 25,
+      "drive_limit_min": 30,
       "attractions": [
         {
           "name": "Barga — stare miasto i Duomo",
           "drive_min": 0,
-          "description": "Jedno z najpiękniejszych niedocenionych borghi Toskanii. Romański Duomo di San Cristoforo (XI w.) z widokiem na Alpy Apuańskie. Wejście na wieżę — Lukka i morze widoczne w pogodny dzień.",
+          "description": "Jedno z najpiękniejszych niedocenionych borghi Toskanii. Romański Duomo di San Cristoforo (XI w.) z pulpitem marmurowym Guido Bigarelli (~1240) i widokiem na Alpy Apuańskie. Moneta €2 na oświetlenie wnętrza.",
           "type": "medieval",
           "image": "barga",
           "image_key": "barga",
-          "gps_hint": "Duomo di San Cristoforo, 55051 Barga LU — parking Parcheggio Porta Reale"
+          "gps_hint": "Duomo di San Cristoforo, Via del Duomo 1, 55051 Barga LU — parking Parcheggio Porta Reale"
         },
         {
-          "name": "Anello di Barga — szlak CAI n. 108",
-          "drive_min": 0,
-          "description": "Start przy Porta Reale. Pętla 2–3 h przez gaje kasztanów i dębów bezszypułkowych (Quercus petraea) z widokami na dolinę. Teren nieformalny, brak turystów.",
+          "name": "Treppignana via il Ciocco — las dębowo-kasztanowy",
+          "drive_min": 15,
+          "description": "Szlak 3,2 km (1–1,5 h) przez gęste lasy dębów bezszypułkowych (Quercus petraea) i kasztanów w Tenuta Il Ciocco. Widoki na dolinę Serchio i Barga Vecchia. Start: Treppignana (~15 min od centrum).",
           "type": "nature",
           "image": "barga",
           "image_key": "barga",
-          "gps_hint": "Start: Porta Reale, Barga — szlak oznaczony tablicą CAI 108"
+          "gps_hint": "Treppignana, 55051 Barga LU — parking przy borgo, szlak do Tenuta Il Ciocco"
         },
         {
           "name": "Grotta del Vento — Fornovolasco",
           "drive_min": 20,
-          "description": "Wioska pod Alpami Apuańskimi, jedna z największych jaskiń Toskanii. Po południu spacer przez bukowe i dębowe lasy na zboczach Pania della Croce.",
+          "description": "4570 m zbadanych jaskiń krasowych w Alpach Apuańskich. 3 itinerari (1–3 h). Po wizycie spacer przez bukowe i dębowe lasy na zboczach Pania della Croce.",
           "type": "nature",
           "image_key": "grotta-vento",
-          "gps_hint": "Grotta del Vento, Località Fornovolasco, 55020 Vergemoli LU"
+          "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Località Fornovolasco, 55020 Vergemoli LU"
         }
       ],
       "oak_forest": {
-        "spot": "Szlak Anello di Barga",
-        "species": "Quercus petraea (dąb bezszypułkowy), Q. cerris (dąb burgundzki)",
-        "note": "Starodrzew kasztanowo-dębowy na ekspozycjach południowych wokół Barga",
-        "gps_hint": "Pętla od Porta Reale — las na południowych stokach nad miastem"
+        "spot": "Treppignana — Tenuta Il Ciocco",
+        "species": "Quercus petraea (dąb bezszypułkowy), Castanea sativa (kasztan jadalny)",
+        "note": "Gęsty las mieszany dębowo-kasztanowy na stokach nad doliną Serchio — typowy krajobraz Garfagnany. Alternatywa dłuższa: CAI B1 (14 km, 4 h, od Giardino).",
+        "gps_hint": "Treppignana LU — szlak via il Ciocco, 3,2 km, ~15 min jazdy od Barga"
       },
       "food": {
-        "place": "Osteria dei Vecchi Sapori — Barga",
-        "address": "Borgo Giardino, Barga",
+        "place": "Osteria Il Borgo dei Sapori — Barga",
+        "address": "Via Borgo 1, 55051 Barga LU",
         "dishes": [
           "pappardelle al cinghiale (z dzikim)",
-          "necci con ricotta (naleśniki kasztanowe — danie garfagnańskie)",
+          "maltagliati al ragù di carne",
+          "necci con ricotta (naleśniki kasztanowe — sezon jesienny)",
           "castagnaccio (ciasto kasztanowe)"
         ],
-        "note": "Rodzinnie prowadzona osteria, menu po włosku, tablica dzienna. Autentyczne, bez angielskich tłumaczeń.",
-        "price": "~€15–20/os z winem",
-        "gps_hint": "Via Borgo Giardino, 55051 Barga LU"
+        "note": "Toskańska kuchnia z lokalnymi składnikami Garfagnany. Menu sezonowe (~32 pozycje). „Osteria dei Vecchi Sapori” to inna restauracja w Mediolanie — nie mylić!",
+        "price": "~€9–15/piatto, ~€25–35/os z winem",
+        "gps_hint": "Via Borgo 1, 55051 Barga LU — tel. 0583 724121"
       },
       "tips": [
         "Rano (8:00–10:00) najlepsze światło na Duomo i widok na Alpy Apuańskie",
         "Parking poza ZTL: Parcheggio Porta Reale — centrum pieszo 5 min",
-        "Grotta del Vento: bilety online grottadelvento.com, ostatnie wejście ~16:00"
+        "Grotta del Vento: rezerwacja online grottadelvento.com — It.2 o 15:00 idealny po lunchu",
+        "Duomo: moneta €2 na oświetlenie — ciemno w środku bez niej"
       ],
       "web_research": [
         {
-          "topic": "Grotta del Vento — bilety i godziny",
-          "summary": "Otwarte cały rok (25 grudnia zamknięte). Itinerario 1: €10/1h, Itinerario 2: €18/2h. Rezerwacja online grottadelvento.com obowiązkowa w weekendy/wrześniu. Itinerario 3 tylko 2×/dziennie (10:00, 14:00). Tel. 0583 722024 (10–19).",
-          "source": "https://grottadelvento.com/opening-times-and-prices/",
+          "topic": "Duomo di San Cristoforo — godziny i atrakcje",
+          "summary": "Codziennie 08:00–18:00 (Via del Duomo 1). Romański kościół z pulpitem marmurowym Guido Bigarelli (~1240), lwami i scenami biblijnych. Moneta €2 włącza oświetlenie wnętrza. Taras z widokiem na Apuan Alps. Tel. 0583 723031.",
+          "source": "https://www.visittuscany.com/it/attrazioni/il-duomo-di-san-cristoforo-a-barga/",
           "checked": "2026-07"
         },
         {
-          "topic": "Temperatura jaskini",
-          "summary": "Stała ~10°C przez cały rok — weź kurtkę nawet gdy na zewnątrz 24°C. Wejście zabronione z plecakami, parasolami, kijkami.",
-          "source": "https://grottadelvento.com/book-now/",
+          "topic": "Grotta del Vento — orario estivo wrzesień",
+          "summary": "Otwarte cały rok (25.12 wył.). Lato (1.04–2.11): It.1 €10 co godz. 10–18; It.2 €18 o 11/15/17; It.3 €25 o 10/14 (rezerwacja!). Ridotto: CAI, dzieci 4–10. Check-in w biglietterii. Tel. 0583 722024 (10–19).",
+          "source": "https://grottadelvento.com/it/orari-biglietteria/",
           "checked": "2026-07"
         },
         {
-          "topic": "Szlak Anello di Barga (CAI 108)",
-          "summary": "Pętla 2–3 h od Porta Reale przez lasy kasztanowo-dębowe. Bezpłatny, oznaczony tablicą CAI. Wrzesień = idealna pogoda (16–24°C), mgła poranna na widok Apuan.",
-          "source": "https://www.informagiovani-italia.com/dove-parcheggiare-barga.htm",
+          "topic": "Temperatura i regulamin jaskini",
+          "summary": "Stała ~10°C — kurtka obowiązkowa. Zakaz: plecaki, parasole, kijki, zwierzęta. Zdjęcia tylko w postojach w drodze tam, nie w drodze powrotnej.",
+          "source": "https://grottadelvento.com/it/orari-biglietteria/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Korekta szlaku — CAI 108 vs lokalne trasy",
+          "summary": "CAI 108 (Apuan) = Foce delle Porchette → Le Scalette (catene!) → Palagnana — anello Monte Croce ~8 h, start Cardoso (~25 min od Barga). „Anello di Barga od Porta Reale” nie istnieje. Lokalnie: Treppignana–Ciocco (3,2 km, 1–1,5 h, dęby) lub CAI B1 (14 km, 4 h, Giardino).",
+          "source": "https://www.caicarrara.it/commissioni/commissioni-territorio/commissione-sentieri/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Lasy dębowe Garfagnana",
+          "summary": "Garfagnana = lasy dębowe i kasztanowe między Apuanami a Apeninami. Treppignana–Ciocco: gęsty las Quercus petraea + castagni, scoiattoli, picchio verde. Wrzesień idealny (16–24°C).",
+          "source": "https://www.alltrails.com/it-it/italy/tuscany/barga/forest",
           "checked": "2026-07"
         },
         {
           "topic": "Parking Barga centrum",
-          "summary": "ZTL w Barga Vecchia — kamery. Parcheggio Porta Reale przy murach (Via Bellavista). Rano 8–10 najlepsze światło i wolne miejsca.",
+          "summary": "ZTL w Barga Vecchia — kamery, mandaty automatyczne. Parcheggio Porta Reale (Via Bellavista) gratis, 5 min pieszo. Backup: Piazzale Matteotti (płatny), Viale Cesare Biondi 44 (gratis, 900 m).",
           "source": "https://www.informagiovani-italia.com/where-to-park-in-barga.htm",
           "checked": "2026-07"
         },
         {
-          "topic": "Restauracja — weryfikacja nazwy",
-          "summary": "Plan wskazuje 'Osteria dei Vecchi Sapori' w Barga — ta nazwa to restauracja w Mediolanie. W Barga szukaj: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121) lub Trattoria L'Altana. Dania garfagnana: necci, pappardelle al cinghiale.",
-          "source": "https://www.informagiovani-italia.com/cosa-mangiare-barga.htm",
+          "topic": "Restauracja — korekta nazwy",
+          "summary": "„Osteria dei Vecchi Sapori” = Mediolan (Via Carmagnola 3). W Barga: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121, ~€9/piatto, pranzo 12–15) lub L'Osteria (Piazza Angelio 13, €20–30, rezerwacja).",
+          "source": "https://www.osteriavecchisapori.com/",
           "checked": "2026-07"
         }
       ],
       "practical_tips": [
-        "Rano 8:00: Duomo + Anello di Barga (2–3 h) — popołudnie Grotta del Vento",
-        "Grotta del Vento: zarezerwuj online Itinerario 2 (2h, €18) — kurtka obowiązkowa (~10°C w jaskini)",
-        "Parking Porta Reale rano prawie zawsze wolny we wrześniu — centrum pieszo 5 min",
-        "Osteria: zweryfikuj nazwę — 'Vecchi Sapori' to Mediolan; w Barga → Il Borgo dei Sapori (Via Borgo 1)",
-        "Grotta: check-in w biglietterii przed wejściem — drukowanie biletu nie wymagane"
+        "Rano 8:00: Duomo (1 h) → Treppignana–Ciocco (1–1,5 h) — popołudnie Grotta del Vento",
+        "Grotta: zarezerwuj Itinerario 2 (2 h, €18) na 15:00 — kurtka obowiązkowa (~10°C)",
+        "Parking Porta Reale rano wolny we wrześniu — zostaw auto, wróć po Grotta (~20 min jazdy)",
+        "Restauracja: Il Borgo dei Sapori (Via Borgo 1), NIE „Vecchi Sapori” (Mediolan)",
+        "Duomo: weź monety €2 — bez nich ciemno, pulpito niewidoczny",
+        "CAI B1 (14 km) alternatywa dla całodziennego trekkingu — wrzesień 2025 ponownie otwarty po franie"
       ],
       "parking": {
         "destination": "Barga — dzień wypadowy z bazy",
@@ -740,14 +1076,21 @@
             "type": "public",
             "price": "bezpłatny",
             "gps_hint": "Via Bellavista / Via del Sasso, 55051 Barga",
-            "note": "Start szlaku CAI 108 i wejście do centrum — zostaw auto tu na cały dzień"
+            "note": "Wejście do Barga Vecchia i start dnia — zostaw auto tu na cały dzień"
+          },
+          {
+            "name": "Treppignana — parking",
+            "type": "public",
+            "price": "bezpłatny (sprawdź przy borgo)",
+            "gps_hint": "Treppignana, 55051 Barga LU",
+            "note": "Start szlaku dębowego via il Ciocco — ~15 min jazdy od Porta Reale"
           },
           {
             "name": "Grotta del Vento — parking",
             "type": "attraction",
             "price": "gratis",
-            "gps_hint": "Località Fornovolasco, 55020 Vergemoli LU",
-            "note": "Parking przy ticket office, ~20 min jazdy od Barga"
+            "gps_hint": "via Grotta del Vento 1, Fornovolasco, 55020 Vergemoli LU",
+            "note": "Parking przy biglietteria, ~20 min jazdy od Barga"
           },
           {
             "name": "Piazzale Matteotti",
@@ -757,7 +1100,7 @@
             "note": "Backup gdy Porta Reale pełny (weekend)"
           }
         ],
-        "tip": "Jeden parking na cały dzień: Porta Reale — rano Barga, popołudniu 20 min do Grotta"
+        "tip": "Porta Reale na poranek (Duomo + lunch) → popołudniu 20 min do Grotta del Vento"
       },
       "fuel_stops": [
         {
@@ -765,15 +1108,16 @@
           "location": "Via Roma / SS445",
           "road": "SS445",
           "hours": "7–20",
-          "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym, ale do weryfikacji poziomu paliwa"
+          "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym"
         }
       ],
       "opening_hours": {
-        "grotta_del_vento": "Cały rok (25.12 zamknięte) — sprawdź godziny tourów online",
-        "duomo_barga": "Zwykle 8:00–12:00, 15:00–18:00 (msze w niedziele)",
-        "osteria_barga": "Pranzo 12:00–14:30, cena 19:00–22:00 typowo"
+        "duomo_barga": "Codziennie 08:00–18:00 (Via del Duomo 1). Msze nd. ~11:15.",
+        "grotta_del_vento": "Cały rok (25.12 wył.). Lato: It.1 co godz. 10–18; It.2 11/15/17; It.3 10/14.",
+        "osteria_borgo_sapori": "Pranzo 12:00–15:00, cena 19:00–23:00 (sprawdź dzień zamknięcia)",
+        "l_osteria_barga": "11:30–15:30, 18:30–22:30 — Piazza Angelio 13, rezerwacja zalecana"
       },
-      "food_note": "Plan wymienia „Osteria dei Vecchi Sapori” — w Barga istnieją: Osteria Il Borgo dei Sapori (Via Borgo 1) i L'Osteria (Piazza Angelio 13). Zweryfikuj przy rezerwacji."
+      "food_note": "„Osteria dei Vecchi Sapori” to restauracja w Mediolanie. W Barga: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121) lub L'Osteria (Piazza Angelio 13)."
     },
     {
       "date": "15.09 (wt)",
@@ -789,25 +1133,25 @@
         {
           "name": "Castiglione di Garfagnana",
           "drive_min": 20,
-          "description": "Kompletnie zachowane mury miejskie z XIII w., brama San Michele, niezmieniony układ borghi. Turystów praktycznie brak.",
+          "description": "Kompletnie zachowane mury miejskie z XIII w. (cerchia 1371, torrioni Orologio/Brunella/San Michele), most Spinetta Malaspina XIII w., Rocca z panoramą na Garfagnanę. Turystów praktycznie brak.",
           "type": "medieval",
           "image": "castiglione",
           "image_key": "castiglione",
-          "gps_hint": "Castiglione di Garfagnana LU — parking przy Porta San Michele"
+          "gps_hint": "Castiglione di Garfagnana LU — parking Porta Inferi (26 miejsc, Via Soccorso)"
         },
         {
-          "name": "Riserva Naturale Orecchiella — Sentiero CAI n. 587",
+          "name": "Riserva Naturale Orecchiella — Sentiero „Intorno al Monte Orecchiella”",
           "drive_min": 28,
-          "description": "Park Orecchiella, szlak ~4 km (2 h) przez łąki alpejskie i las z dębem burgundzkim w strefie niższej. Możliwość spotkania jeleni i muflonów we wrześniu (ruja).",
+          "description": "Park Orecchiella: pętla Sentieri della Domenica ~3 km (1 h, łatwy) przez łąki i las mieszany z dębem burgundzkim (750–1100 m). Recinti faunistici (mufloni, caprioli) i szlaki CAI 62/64/66 — zawsze bezpłatne. We wrześniu możliwość spotkania jeleni (ruja).",
           "type": "nature",
           "image": "orecchiella",
           "image_key": "orecchiella",
-          "gps_hint": "Orecchiella Parco Naturale, Campaiano, 55035 Garfagnana LU"
+          "gps_hint": "Centro Visitatori Orecchiella, Località Laghetti 6, 55038 San Romano in Garfagnana LU"
         },
         {
           "name": "Castelnuovo di Garfagnana",
           "drive_min": 25,
-          "description": "Stolica doliny, zachowane fortyfikacje Ludovica Ariosta (który tu rządził!). Targ wtorkowy z lokalnymi produktami: farro della Garfagnana IGP (orkisz).",
+          "description": "Stolica doliny z Rocca Ariostesca (Ariosto regent 1522–25) i średniowiecznymi murami (rozbudowa Castruccio Castracani 1324). We wtorek brak targu — farro della Garfagnana IGP w sklepach specjalistycznych i u Consorzio (Via Enrico Fermi 25).",
           "type": "medieval",
           "image": "castelnuovo",
           "image_key": "castelnuovo",
@@ -818,91 +1162,111 @@
         "spot": "Riserva Naturale Orecchiella",
         "species": "Quercus cerris (dąb burgundzki)",
         "note": "Granica między buczyną (>1200 m) a dębowo-kasztanowym lasem mieszanym (750–1100 m) — klasyczny toskański las apeniński",
-        "gps_hint": "Visitor center Campaiano — szlak 587 w dół do strefy dębowej"
+        "gps_hint": "Centro Visitatori — sentiero „Intorno al Monte Orecchiella” (3 km) przez strefę dębową"
       },
       "food": {
         "place": "Trattoria da Carlino — Castelnuovo di Garfagnana",
-        "address": "Via Vittorio Emanuele, Castelnuovo di Garfagnana",
+        "address": "Via Garibaldi 15, 55032 Castelnuovo di Garfagnana",
         "dishes": [
-          "minestra di farro (zupa z orkiszem)",
-          "lardo di Colonnata na bruschetta",
-          "biroldo (garfagnański salami z głowizny)"
+          "minestra di farro (zupa z orkiszem IGP)",
+          "trota garfagnina alla griglia",
+          "risotto cacio e pepe w formie serowej"
         ],
-        "note": "Kultowe miejsce wśród lokalnych robotników i rolników. Menu po włosku.",
+        "note": "Albergo-ristorante w centrum historycznym Castelnuovo. Kultowe miejsce wśród lokalnych — terrazza z widokiem na dolinę.",
         "price": "~€12–16/os",
-        "gps_hint": "Via Vittorio Emanuele, 55032 Castelnuovo di Garfagnana LU"
+        "gps_hint": "Via Garibaldi 15, 55032 Castelnuovo di Garfagnana LU — tel. 0583 644270"
       },
       "tips": [
-        "KOREKTA: targ Castelnuovo = CZWARTEK (nie wtorek) — farro IGP w sklepie lub targ Piazza al Serchio we wt",
-        "Orecchiella: szlaki zawsze otwarte; centrum/muzea w wrześniu sob–nd",
-        "Castiglione: kompletne mury — obejście obwodu ~30 min",
-        "Da Carlino: Via Garibaldi 15, lunch 12:00–15:00"
+        "KOREKTA: targ Castelnuovo = CZWARTEK (nie wtorek) — farro IGP w sklepie lub targ wt w Piazza al Serchio (~20 min)",
+        "KOREKTA: szlak to „Intorno al Monte Orecchiella” (Sentieri della Domenica), NIE CAI 587",
+        "Orecchiella 15.09 (wt): centrum/muzea ZAMKNIĘTE (po 14.09 tylko sob–nd), ale szlaki i recinti ZAWSZE otwarte",
+        "Castiglione: parking Porta Inferi (26 miejsc) — obejście murów ~30 min",
+        "Da Carlino: lunch 12:00–15:00, przyjdź przed 13:00"
       ],
       "web_research": [
         {
           "topic": "Mercato Castelnuovo — KOREKTA DNIA",
-          "summary": "Targ tygodniowy w Castelnuovo di Garfagnana to CZWARTEK (giovedì), 8:00–13:00, Piazza delle Erbe — NIE wtorek. Plan wymaga korekty: 15.09 (wt) = brak targu w Castelnuovo. Alternatywa wtorkowa: mercato Piazza al Serchio (20 min) lub Fornoli.",
+          "summary": "Targ tygodniowy w Castelnuovo di Garfagnana to CZWARTEK (giovedì), 8:00–13:00 — Piazza delle Erbe, via Vittorio Emanuele, via Farini, via Garibaldi. 15.09 (wt) = brak targu. Alternatywa wtorkowa: mercato Piazza al Serchio (Piazza Giovanni XXIII, ~20 min od Barga).",
           "source": "https://www.eventiesagre.it/Mercatini_Filiera+Corta/21184575_Mercato+Settimanale+Di+Castelnuovo+Di+Garfagnana.html",
           "checked": "2026-07"
         },
         {
-          "topic": "Parco Orecchiella — wrzesień",
-          "summary": "Centrum odwiedzających: do 14.09 codziennie 10–18, potem sob–nd 10–18 (wrzesień). Sentieristica i recinti faunistici ZAWSZE dostępne bezpłatnie. Muzea: €2 dorosły. Info: 0583 619098.",
+          "topic": "Mercato wtorkowy Piazza al Serchio + farro IGP",
+          "summary": "Mercato settimanale ogni martedì in Piazza Giovanni XXIII, Piazza al Serchio — produkty lokalne Garfagnany. Farro della Garfagnana IGP dostępny też w sklepach Castelnuovo i u Consorzio (Via Enrico Fermi 25).",
+          "source": "https://www.italia-mia.it/toscana/lucca/piazza-al-serchio/mercato.asp",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Parco Orecchiella — orario wrzesień 2026",
+          "summary": "Centro Visitatori: wrzesień codziennie 10–18 do nd 14.09, potem sob–nd 10–18. Sentieristica i recinti faunistici ZAWSZE dostępne bezpłatnie. Muzea: €2 dorosły. Info: 0583 619098.",
           "source": "https://orecchiella.com/contatti-prenotazioni/",
           "checked": "2026-07"
         },
         {
-          "topic": "Parking Castiglione di Garfagnana",
-          "summary": "Parking przy Porta San Michele — przy bramie do średniowiecznych murów. Darmowy, mały — wystarczy na pół dnia zwiedzania.",
-          "source": "https://www.informagiovani-italia.com/where-to-park-in-barga.htm",
+          "topic": "Szlaki Orecchiella — KOREKTA CAI 587",
+          "summary": "Sentiero CAI 587 NIE istnieje w Garfagnanie (to szlak Cinque Terre/Bergamo). W Orecchiella: Sentieri della Domenica (np. „Intorno al Monte Orecchiella” 3 km/1 h, łatwy) oraz CAI 62, 64, 66. Recinti faunistici i szlaki zawsze bezpłatne.",
+          "source": "https://orecchiella.com/sentieri-liberi/sentieri-domenica/intorno-al-monte-orecchiella/",
           "checked": "2026-07"
         },
         {
-          "topic": "Parking Orecchiella / Campaiano",
-          "summary": "Centro Visitatori Orecchiella: darmowy parking przy Laghetti 6, San Romano. Droga SP324 kręta — dojazd od Castelnuovo przez Villa Collemandina/Corfino ~28 min.",
-          "source": "https://orecchiella.com/",
+          "topic": "Castiglione — mury XIII w. i parking Porta Inferi",
+          "summary": "Mury miejskie z XIII w. (cerchia 1371, torrioni), most Spinetta Malaspina XIII w. Parking Porta Inferi: 26 miejsc auto przy murach (Via Soccorso) — inauguracja 2022, darmowy. ~17 km / ~20 min od Barga.",
+          "source": "https://www.lanazione.it/lucca/cronaca/castiglione-inaugura-il-parcheggio-b9ff5c3e",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Castelnuovo — mury XIII w. i Rocca Ariostesca",
+          "summary": "Castrum Novum od VII w.; Lucca przejęła miasto pod koniec XIII w. Mury rozbudowane przez Castruccio Castracani (1324, most na Serchio). Rocca Ariostesca (XII–XIV w.) — dziś ratusz i muzeum archeologiczne. Mury otaczają najstarszą część miasta.",
+          "source": "https://www.mondimedievali.net/castelli/toscana/lucca/castelnuovo.htm",
           "checked": "2026-07"
         },
         {
           "topic": "Trattoria da Carlino — Castelnuovo",
-          "summary": "Via Garibaldi 15 (nie Via Vittorio Emanuele). Pranzo 12:00–15:00, cena 19:00–22:00. Tel. 0583 644270. Zimą zamknięte w poniedziałki.",
+          "summary": "Via Garibaldi 15, Castelnuovo di Garfagnana (NIE Castiglione, NIE Via Vittorio Emanuele). Pranzo 12:00–15:00, cena 19:00–22:00. Tel. 0583 644270. Specjalności: minestra di farro IGP, trota garfagnina, risotto cacio e pepe. Zimą zamknięte w poniedziałki.",
           "source": "https://www.vetrina.toscana.it/attivita/ristorante-da-carlino/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Parking Orecchiella — Centro Visitatori",
+          "summary": "Darmowy parking przy Centro Visitatori, Località Laghetti 6, San Romano. Droga SP przez Villa Collemandina/Corfino — kręta, ~28 min od Barga. Start sentiero „Intorno al Monte Orecchiella”.",
+          "source": "https://orecchiella.com/",
           "checked": "2026-07"
         }
       ],
       "practical_tips": [
-        "KOREKTA: targ w Castelnuovo to CZWARTEK, nie wtorek — w dniu 4 kup farro IGP w sklepie albo pojedź na wtorkowy targ Piazza al Serchio",
-        "Orecchiella: we wrześniu (po 14.09) centrum otwarte tylko sob–nd — ale szlaki CAI 587 ZAWSZE dostępne bezpłatnie",
-        "Castiglione: obejście murów ~30 min — parking Porta San Michele, zero tłumów",
+        "KOREKTA: targ w Castelnuovo to CZWARTEK — we wt 15.09 kup farro IGP w sklepie albo pojedź na targ Piazza al Serchio (wt, ~20 min)",
+        "KOREKTA: szlak w Orecchiella to Sentiero „Intorno al Monte Orecchiella” (3 km, 1 h), nie CAI 587",
+        "Orecchiella 15.09: centrum zamknięte (wt po 14.09), ale szlaki i recinti faunistici ZAWSZE bezpłatne — planuj spacer bez muzeów",
+        "Castiglione: parking Porta Inferi (26 miejsc, Via Soccorso) — obejście murów ~30 min, zero tłumów",
         "Orecchiella: weź kurtkę — 750–1200 m n.p.m., różnica temperatur 5–8°C",
-        "Da Carlino: rezerwacja nie wymagana na lunch, ale przyjdź przed 13:00 — lokalni robotnicy zapełniają szybko"
+        "Da Carlino: rezerwacja nie wymagana na lunch, ale przyjdź przed 13:00 — lokalni zapełniają szybko"
       ],
       "parking": {
         "destination": "Trasa Castiglione → Orecchiella → Castelnuovo",
         "options": [
           {
-            "name": "Castiglione — Porta San Michele",
+            "name": "Castiglione — Porta Inferi",
             "type": "public",
             "price": "gratis",
-            "gps_hint": "Castiglione di Garfagnana LU",
-            "note": "Przy bramie do murów — zostaw na ~1 h"
+            "gps_hint": "Via Soccorso 3, Castiglione di Garfagnana LU",
+            "note": "26 miejsc przy murach — nowy parking 2022, tuż przy centrum historycznym"
           },
           {
             "name": "Orecchiella — Centro Visitatori",
             "type": "attraction",
             "price": "gratis",
             "gps_hint": "Località Laghetti 6, 55038 San Romano in Garfagnana",
-            "note": "Start szlaku CAI 587 — parking przy muzeum"
+            "note": "Start sentiero „Intorno al Monte Orecchiella” — parking przy muzeum"
           },
           {
             "name": "Castelnuovo — Piazzale Europa",
             "type": "public",
             "price": "gratis / niski",
             "gps_hint": "Piazzale Europa, Castelnuovo di Garfagnana",
-            "note": "Duży parking, 5 min do centrum i Da Carlino"
+            "note": "Duży parking, 5 min pieszo do centrum i Da Carlino (Via Garibaldi)"
           }
         ],
-        "tip": "3 parkingi w ciągu dnia — nie musisz wracać do Bazy między punktami (wszystko <30 min jazdy)"
+        "tip": "3 parkingi w ciągu dnia — nie musisz wracać do Bazy między punktami (wszystko ≤30 min jazdy od Barga)"
       },
       "fuel_stops": [
         {
@@ -912,9 +1276,10 @@
         }
       ],
       "opening_hours": {
-        "orecchiella_centro": "Wrzesień do 14.09: codzi. 10–18; po 14.09: sob–nd 10–18. Sentieri: zawsze",
-        "castelnuovo_mercato": "CZWARTEK 8:00–13:00 (Piazza delle Erbe) — nie wtorek!",
-        "da_carlino": "Pranzo 12:00–15:00, cena 19:00–22:00"
+        "orecchiella_centro": "Wrzesień do nd 14.09: codzi. 10–18; od 15.09: sob–nd 10–18. Sentieri i recinti: zawsze",
+        "castelnuovo_mercato": "CZWARTEK 8:00–13:00 (Piazza delle Erbe + via V.Emanuele/Farini/Garibaldi) — nie wtorek!",
+        "piazza_al_serchio_mercato": "WTOREK — Piazza Giovanni XXIII (~20 min od Barga)",
+        "da_carlino": "Pranzo 12:00–15:00, cena 19:00–22:00 (zimą zamknięte pon)"
       }
     },
     {
@@ -963,22 +1328,29 @@
         "gps_hint": "Ścieżki od tamy w kierunku Careggine — las na wschodnim brzegu"
       },
       "food": {
-        "place": "Agriturismo Il Corniolo — Vagli Sotto",
-        "address": "Loc. Vagli Sotto, Careggine (~25 min od bazy)",
+        "place": "Ristorante Bar Radicchi — Vagli Sotto",
+        "address": "Via Pietro Pieroni 2/4, 55030 Vagli Sotto LU (~25 min od Barga)",
         "dishes": [
-          "fagioli di Sorana IGP (delikatna fasola)",
-          "formaggi freschi di pecora (świeże owcze sery)",
-          "wino z doliny Serchio"
+          "cucina casalinga garfagnina (produkty lokalne)",
+          "fagioli di Sorana IGP",
+          "tortelli / minestre z doliny Serchio"
         ],
-        "note": "Zadzwoń dzień wcześniej i zarezerwuj 'pranzo tipico' — stała cena, wszystko z własnego gospodarstwa. Ukryte przed masowym turystą.",
-        "price": "~€18–22/os z winem",
-        "gps_hint": "Loc. Vagli Sotto, 55030 Careggine LU — rezerwacja tel. obowiązkowa"
+        "note": "Taras i ogród z widokiem na jezioro. Bar + sklep spożywczy. Potwierdź pranzo tel. 0583 995237. GPS: „Ristorante Radicchi Vagli”.",
+        "price": "~€15–25/os",
+        "gps_hint": "Via Pietro Pieroni 2, 55030 Vagli Sotto LU",
+        "phone": "+39 0583 995237",
+        "rejected_alternative": "Agriturismo Il Corniolo — to nocleg w Castiglione di Garfagnana (Loc. Le Prade), NIE lunch przy Vagli"
       },
       "tips": [
         "16.09 = środa: Verrucole ZAMKNIĘTA (wrzesień pt–nd) — spacer zewnętrzny lub zmiana dnia",
         "Lago di Vagli: ruiny Fabbriche niewidoczne w 2026 — oprożnienie planowane 2027",
         "Il Corniolo jest w Castiglione, nie Vagli — lunch: Bar Radicchi nad jeziorem",
-        "Parking przy tamie Vagli — przyjedź rano, zapełnia się po południu"
+        "Parking przy tamie Vagli — przyjedź rano, zapełnia się po południu",
+        "16.09 = środa: Verrucole ZAMKNIĘTA (wrzesień pt–nd od 15.09) — spacer zewnętrzny OK",
+        "Lago di Vagli: ruiny Fabbriche niewidoczne w 2026 — oprożnienie oficjalnie planowane lato 2027",
+        "Lunch przy jeziorze: Bar Radicchi (NIE Il Corniolo — ten jest w Castiglione, 35 km dalej)",
+        "Parking przy tamie Vagli — przyjedź rano, zapełnia się ~12:30",
+        "18–20.09: Verrucole tylko dostęp częściowy (bez tour) — uwaga przy planowaniu powrotu"
       ],
       "web_research": [
         {
@@ -1010,6 +1382,18 @@
           "summary": "Il Corniolo (agriturismoilcorniolo.it) leży w Castiglione di Garfagnana (Loc. Le Prade 25), NIE w Vagli Sotto/Careggine. Alternatywa lunch przy Vagli: Ristorante Bar Radicchi (taras nad jeziorem) lub La Ceragetta (Isola Santa, 25 min).",
           "source": "https://agriturismoilcorniolo.it/it/il-corniolo-si-presenta",
           "checked": "2026-07"
+        },
+        {
+          "topic": "Ristorante Bar Radicchi — lunch przy Vagli",
+          "summary": "Via Pietro Pieroni 2/4, Vagli Sotto. Cucina casalinga garfagnina, taras widok na jezioro. Tel. 0583 995237. Środa typowo 10–22 (Sluurpy) — potwierdź pranzo telefonicznie.",
+          "source": "https://www.ristoranteradicchi.com/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Gorfigliano — Chiesa Vecchia i muzeum",
+          "summary": "Chiesa SS. Giusto e Clemente (1706–1720, styl romanico) na ruinach zamku longobardskiego. Odbudowana przez wolontariuszy 1983–2011. Obok: Museo dell'Identità dell'Alta Garfagnana Olimpio Cammelli. Panorama na Lago di Gramolazzo.",
+          "source": "https://fondoambiente.it/luoghi/chiesa-vecchia-di-gorfigliano-e-museo-dell-alta-garfagnana",
+          "checked": "2026-07"
         }
       ],
       "practical_tips": [
@@ -1017,24 +1401,28 @@
         "Lago di Vagli: ruiny Fabbriche NIE widoczne w 2026 — oprożnienie planowane na lato 2027",
         "Vagli: parking przy tamie zapełnia się w południe — jedź tam rano (9:00) lub po Verrucole",
         "Il Corniolo jest w Castiglione (35 km), nie Vagli — na lunch przy jeziorze: Bar Radicchi, Vagli Sotto",
-        "Gorfigliano: mikrowioska, zero turystów — 20 min od Vagli, idealnie na koniec dnia"
+        "Gorfigliano: mikrowioska, zero turystów — 20 min od Vagli, idealnie na koniec dnia",
+        "UWAGA: 16.09 = środa — Fortezza Verrucole ZAMKNIĘTA (wrzesień pt–nd od 15.09). Spacer zewnętrzny OK, wstęp wewnętrzny od pt 18.09",
+        "Lunch: Bar Radicchi nad jeziorem (tel. 0583 995237) — NIE Il Corniolo (Castiglione, tylko noclegi)",
+        "Gorfigliano: Chiesa Vecchia + muzeum, zero turystów — 20 min od Vagli, idealnie na koniec dnia",
+        "Zatankuj rano w Gallicano/Castelnuovo — przy Vagli brak stacji paliw"
       ],
       "parking": {
         "destination": "Verrucole → Lago di Vagli → Gorfigliano",
         "options": [
           {
-            "name": "Verrucole — piazza przy kościele",
+            "name": "Verrucole — parking u podnóża",
             "type": "public",
             "price": "gratis",
-            "gps_hint": "Frazione Verrucole, San Romano in Garfagnana",
-            "note": "Parkuj w wiosce, 10 min pieszo pod górę do fortecy"
+            "gps_hint": "Frazione Verrucole, San Romano in Garfagnana — sterrato, 12 m autobus OK",
+            "note": "Ample parking u podnóża fortecy, 5–10 min pieszo pod górę od kościoła San Lorenzo"
           },
           {
             "name": "Diga del Lago di Vagli",
             "type": "attraction",
             "price": "gratis",
             "gps_hint": "55030 Vagli Sotto LU",
-            "note": "Parking przy tamie — start spaceru wokół jeziora"
+            "note": "Parking przy tamie — start spaceru, widok na jezioro"
           },
           {
             "name": "Vagli Sotto — parking centralny",
@@ -1044,14 +1432,14 @@
             "note": "Mały — latem pełny od 12:30, backup: ulica główna"
           },
           {
-            "name": "Gorfigliano — przy kościele",
+            "name": "Gorfigliano — przy Chiesa Vecchia",
             "type": "public",
             "price": "gratis",
-            "gps_hint": "55038 Minucciano LU",
-            "note": "Kilka miejsc przy romańskim kościele"
+            "gps_hint": "55034 Minucciano LU",
+            "note": "Kilka miejsc na wzgórzu przy kościele — widok panoramiczny"
           }
         ],
-        "tip": "Verrucole rano (8:00) → Vagli po lunchu (13:00) → Gorfigliano wieczorem — logiczna pętla zgodna z drive ≤25 min"
+        "tip": "Verrucole rano (8:30) → Vagli lunch (13:00) → Gorfigliano popołudnie — pętla zgodna z drive ≤30 min"
       },
       "fuel_stops": [
         {
@@ -1061,9 +1449,10 @@
         }
       ],
       "opening_hours": {
-        "verrucole": "Wrzesień (od 15.09): pt–nd 10:30–18:30. 16.09 (środa) = ZAMKNIĘTE",
+        "verrucole": "Wrzesień (od 15.09): pt–nd 10:30–18:30. 16.09 (środa) = ZAMKNIĘTE. Tour co ~1h, ostatnie wejście 1h przed zamknięciem. 18–20.09: dostęp częściowy (bez tour).",
         "lago_vagli": "Tam i parking: całą dobę (bezpłatny)",
-        "bar_radicchi_vagli": "Pranzo 12:00–14:30 typowo — potwierdź telefonicznie"
+        "bar_radicchi_vagli": "Typowo 10–22 (środa otwarty). Pranzo — potwierdź tel. 0583 995237",
+        "gorfigliano_chiesa": "Brak stałych godzin — spontanicznie lub po uzgodnieniu z parafią"
       }
     },
     {
@@ -1111,7 +1500,7 @@
           "castagnaccio",
           "risotto alle nettarine (sezonowe)"
         ],
-        "note": "Rodzinna trattoria w Bagni di Lucca (NIE mylić z Trattoria da Giulio — ta jest w centrum Lucca, Via delle Conce 45). Czwartek otwarte 7:00–20:00. Wczesny lunch przed przejazdem do BAZY 2.",
+        "note": "Rodzinna trattoria w Bagni di Lucca (NIE mylić z Trattoria da Giulio — ta jest w centrum LUCCA, Via delle Conce 45/47, off-route). Czwartek 17.09 otwarte 7:00–20:00. Wczesny lunch przed przejazdem do BAZY 2.",
         "price": "~€12–18/os",
         "gps_hint": "Viale Umberto I 85, Bagni di Lucca LU",
         "phone": "+39 0583 805919",
@@ -1119,9 +1508,9 @@
       },
       "accommodation": {
         "place": "BAZA 2 — k. Castelnuovo Berardenga",
-        "note": "Przyjazd ok. 16:00–17:30 (transfer ~2h15 po lunchu). Check-in w agriturismo — typowo 15:00–19:00, poza sezonem do 18:00. Zadzwoń z ETA.",
+        "note": "Przyjazd ok. 16:00–17:30 (transfer ~2h15 po lunchu). Check-in w agriturismo — typowo 15:00–19:00, poza sezonem do 18:00. Zadzwoń z ETA z A11.",
         "price": "€70–100/noc",
-        "booking_tip": "Vagliagli lub Monti in Chianti — poza ZTL. Direct booking u właściciela często taniej niż Booking.",
+        "booking_tip": "Vagliagli lub Monti in Chianti — poza ZTL. Direct booking u właściciela często taniej niż Booking. Naviguj do agriturismo, nie centrum Castelnuovo Berardenga.",
         "gps_hint": "Naviguj: Vagliagli SI lub Monti in Chianti SI — nie centrum Castelnuovo (ZTL)",
         "options": [
           {
@@ -1133,6 +1522,23 @@
             "name": "Agriturismo Monti in Chianti",
             "area": "Monti in Chianti",
             "note": "Cisza, winnice, 20 min od Sieny"
+          },
+          {
+            "name": "Agriturismo Amina, Winery & Hiking",
+            "area": "Vagliagli (Località Corsignano)",
+            "address": "SP 102 di Vagliagli, 53019 Vagliagli SI",
+            "note": "Winnica, basen, śniadanie, 5 min od centrum Vagliagli, 15 min od Sieny. Booking ~9.5/10."
+          },
+          {
+            "name": "Agriturismo Le Macie",
+            "area": "Vagliagli",
+            "address": "Strada Provinciale 9 n. 54, 53019 Vagliagli SI",
+            "note": "Apartamenty z kuchnią, basen sezonowy, restauracja. 25 min pieszo od Chianti Sculpture Park."
+          },
+          {
+            "name": "Fattoria di Corsignano",
+            "area": "k. Vagliagli",
+            "note": "Ekologiczny agriturismo, basen, restauracja, degustacje wina w winnicach."
           }
         ]
       },
@@ -1141,7 +1547,10 @@
         "Osteria del Diavolo przy moście zamknięta w czwartek — lunch w Trattoria Borghesi w Bagni",
         "Wyjazd do BAZY 2 po lunchu (~13:30) — bagaż w aucie, ~2h 15 min jazdy",
         "Ostatni przystanek Garfagnany — tankowanie przed A11",
-        "Trattoria da Giulio (Via delle Conce 45) jest w LUCCA, nie w Bagni di Lucca — poprawka!"
+        "Trattoria da Giulio (Via delle Conce 45) jest w LUCCA, nie w Bagni di Lucca — poprawka!",
+        "Osteria del Diavolo przy moście ZAMKNIĘTA w czwartek (17.09) — lunch w Trattoria Borghesi w Bagni",
+        "Trattoria da Giulio (Via delle Conce 45, LUCCA) jest off-route — wymaga detouru przez ZTL Lucca",
+        "Zadzwoń do agriturismo z A11 z ETA — drogi do Vagliagli kręte, check-in 15:00–19:00"
       ],
       "web_research": [
         {
@@ -1167,6 +1576,48 @@
           "summary": "Hotel Terme Bagni di Lucca: piscina aperta, stabilimento termale principale chiuso. Bernabò (Ponte a Serraglio) operativo.",
           "source": "https://www.terme-bagnidilucca.it/",
           "checked": "2026-07"
+        },
+        {
+          "topic": "Ponte della Maddalena — historia i dostęp",
+          "summary": "Most z ok. 1080–1100 (Matylda Toskańska), przebudowa Castruccio Castracani ok. 1300. Największy łuk 37,8 m. Nazwa od oratorium św. Magdaleny (ok. 1500). Legenda: diabeł zbudował most, brygadzista oszukał go świnią. Modyfikacja 1898 (kolej Garfagnana). Dostęp pieszy 24h bezpłatnie. Parking przy SS12. Stacja Borgo a Mozzano ~2 km.",
+          "source": "https://en.wikipedia.org/wiki/Ponte_della_Maddalena",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Ponte del Diavolo — parking i ruch turystyczny",
+          "summary": "Parking gratuito 24h przy SS12, obie strony rzeki. Most pedonale — 5–15 min spacer. Autobusy E10/E71 zatrzymują się przy moście. Rano (8–10) mniej autokarów z Lucca.",
+          "source": "https://www.cestee.com/destination/italy/tuscany/ponte-del-diavolo",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Terme Bagno Bernabò Bagni di Lucca",
+          "summary": "Założenie z 1810 (Eliza Baciocchi, siostra Napoleona), odnowione 2006. Wanny marmurowe XIX w., basen ośmiokątny, grota parowa, fangoterapia. Wody siarczanowo-wodorowęglanowo-wapniowe (54°C). Via Bagni Caldi, Ponte a Serraglio. Rezerwacja zalecana.",
+          "source": "https://termebagnobernabo.it/en/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Bagni di Lucca — kontekst historyczny",
+          "summary": "Źródła znane od czasów rzymskich, rozkwit w XIX w. („Szwajcaria Toskanii”). Byron, Shelley, Browningowie, Paganini odwiedzali kurort. Ponte delle Catene (Nottolini) — jeden z najstarszych mostów żelaznych. Casinò = najstarsze kasyno Włoch (dziś muzeum).",
+          "source": "https://www.visittuscany.com/en/towns-and-villages/bagni-di-lucca/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Trattoria da Giulio — KOREKTA: Lucca, nie Bagni",
+          "summary": "Via delle Conce 45/47, 55100 Lucca (Pelleria). Od 1945, kuchnia lucchese: farro, tordelli, cioncia, baccalà. Pn–Sb 12:00–14:30 / 19:00–22:30, nd zamknięte. We wrześniu otwarte w niedziele na lunch. Tel. +39 0583 55948. OFF-ROUTE — wymaga detouru przez ZTL Lucca.",
+          "source": "https://www.trattoriadagiulio.it/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Trasa Barga → Castelnuovo Berardenga",
+          "summary": "SS445/SS12 → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 (Firenze-Mare) → Raccordo Siena → wyjazd Castelnuovo Berardenga (SS73/SP408). ~142–195 km, 1h 48 min – 2h 45 min. Pedaggio A11 ~€8–10. Unikaj ZTL centrum Lucca.",
+          "source": "https://fromto.travel/en/italy/to-barga/to-castellina-in-chianti",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Agriturismo Vagliagli — opcje noclegu BAZA 2",
+          "summary": "Vagliagli: XIII-w. borgo („dolina czosnku”), południowy Chianti. Agriturismo Amina (SP 102 Corsignano, winnica, basen, 5 min od centrum). Le Macie (SP9 n. 54, apartamenty). Fattoria di Corsignano (degustacje). Chianti Sculpture Park w okolicy. 15 min od Sieny.",
+          "source": "https://www.to-tuscany.com/travel-guide/towns-villages/vagliagli/",
+          "checked": "2026-07"
         }
       ],
       "practical_tips": [
@@ -1174,13 +1625,17 @@
         "Bagni di Lucca: 1–1,5h — Ponte delle Catene, English Church, opcjonalnie kąpiel termalna Bernabò",
         "Wyjazd do BAZY 2 po lunchu ~13:30 — 195 km, realnie 2h15–2h45 z postojem",
         "Tankowanie obowiązkowe przed A11 — stacji mało w Chianti poza Gaiole/Castelnuovo Berardenga",
-        "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 16:00–17:00, droga do Vagliagli kręta"
+        "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 16:00–17:00, droga do Vagliagli kręta",
+        "Bagni di Lucca: 1–1,5h — Ponte delle Catene, English Church, opcjonalnie kąpiel Bernabò (rezerwacja!)",
+        "Lunch: Trattoria Borghesi (czwartek OK) — NIE Da Giulio (Lucca, off-route, ZTL)",
+        "Wyjazd do BAZY 2 po lunchu ~13:30 — 195 km, realnie 2h15–2h45 z postojem na A11",
+        "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 16:00–17:00, droga do Vagliagli kręta (SP102/SP9)"
       ],
       "parking": {
-        "ponte_diavolo": "Parcheggio al Ponte del Diavolo — bezpłatny, 24h, przy SS12 tuż przy moście (strona wschodnia). Most pieszy — 15 min spacer.",
+        "ponte_diavolo": "Parcheggio al Ponte del Diavolo — bezpłatny, 24h, przy SS12 tuż przy moście (strona wschodnia). Most pieszy — 5–15 min spacer. Stacja FS Borgo a Mozzano ~2 km.",
         "bagni_lucca": "Parking przy Ponte delle Catene lub centrum — strefy płatne. Terme Bernabò: Via Bagni Caldi 36 — kilka miejsc parkingowych.",
-        "transfer_fuel": "Zatankuj w Castelnuovo di Garfagnana lub przy zjeździe na A11 — ostatnia okazja przed płatną autostradą.",
-        "base2_agriturismo": "Parkuj na terenie agriturismo — nie w centrum Castelnuovo Berardenga (ZTL aktywna).",
+        "transfer_fuel": "Zatankuj w Castelnuovo di Garfagnana lub przy zjeździe na A11 (Capannori/Fornaci) — ostatnia okazja przed płatną autostradą.",
+        "base2_agriturismo": "Parkuj na terenie agriturismo — nie w centrum Castelnuovo Berardenga (ZTL aktywna). Naviguj: Vagliagli SI, nie Castelnuovo centro.",
         "transfer_tip": "Bagaż w aucie cały dzień — zaparkuj przy moście, zwiedzaj pieszo, wróć po lunchu na transfer"
       },
       "fuel_stops": [
@@ -1207,12 +1662,12 @@
       "opening_hours": {
         "ponte_del_diavolo": "Dostęp 24h (obiekt na zewnątrz). Najlepsze światło: 8:00–10:00 rano — mgła nad Serchio.",
         "casino_bagni_lucca": "Regio Casinò (Ponte a Serraglio) — muzeum, nie aktywne kasyno. Wizyty: sprawdź infopoint +39 0583 805745.",
-        "trattoria_borghesi": "Wt–Sb 7:00–20:00 (czwartek OK). Nd i Pn zamknięte.",
-        "osteria_del_diavolo": "10:30–17:30, ZAMKNIĘTE w czwartek — nie planuj na dzień 6!",
+        "trattoria_borghesi": "Wt–Sb 7:00–20:00 (czwartek 17.09 OK). Nd i Pn zamknięte.",
+        "osteria_del_diavolo": "10:30–17:30, ZAMKNIĘTE w czwartek — nie planuj na dzień 6 (17.09)!",
         "agriturismo_checkin": "Typowo 15:00–19:00 — zadzwoń jeśli przyjazd po 18:00",
         "bagni_bernabo_spa": "Bagno Bernabò: Pn–Nd 9:00–18:00. Tel. +39 331 171 9014. Rezerwacja zalecana.",
         "casino_bagni": "Casinò di Bagni di Lucca — muzeum (najstarsze kasyno Włoch, nieaktywne) — 10:00–18:00 sezon.",
-        "trattoria_da_giulio": "UWAGA: Trattoria da Giulio (Via Casalini 1) — sprawdź godziny; typowo 12:00–14:30. Rezerwacja na lunch przed przejazdem.",
+        "trattoria_da_giulio": "Via delle Conce 45/47, LUCCA (NIE Bagni). Pn–Sb 12:00–14:30 / 19:00–22:30, nd zamknięte. We wrześniu otwarte w niedziele na lunch. Tel. +39 0583 55948. OFF-ROUTE — nie na trasie transferu.",
         "agriturismo_baza2_checkin": "15:00–19:00 — zadzwoń z A11 z ETA"
       },
       "route_segments": [
@@ -1245,6 +1700,12 @@
           "road": "SP408/SS326",
           "km": "~25",
           "note": "Wjazd w Chianti — kręte drogi do agriturismo. ETA 16:00–17:00."
+        },
+        {
+          "segment": "Siena Sud → BAZA 2 (Vagliagli)",
+          "road": "SP408/SS326/SP102",
+          "km": "~25",
+          "note": "Wjazd w Chianti — wyjazd Castelnuovo Berardenga (SS73). Kręte drogi do Vagliagli. ETA 16:00–17:00."
         }
       ]
     },
@@ -1256,41 +1717,41 @@
       "title": "Zamki i wino Chianti",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 25,
+      "drive_limit_min": 30,
       "attractions": [
         {
           "name": "Castello di Brolio",
-          "drive_min": 12,
-          "description": "Zamek rodziny Ricasoli, gdzie wynaleziono Chianti Classico. Tarasy, ogrody, kaplica, muzeum. Nieturystyczny jak na tej rangi zabytek.",
+          "drive_min": 20,
+          "description": "Zamek rodziny Ricasoli od 1141 — tu ustalono recepturę Chianti Classico. Bastioni, giardini, cappella, Collezione Ricasoli. 1200 ha własności (240 ha winnic). Nieturystyczny jak na rangę zabytku.",
           "type": "medieval",
           "image_key": "brolio",
-          "gps_hint": "Castello di Brolio, 53013 Gaiole in Chianti SI",
+          "gps_hint": "Località Madonna a Brolio, 53013 Gaiole in Chianti SI",
           "image": "brolio"
         },
         {
           "name": "Radda in Chianti",
           "drive_min": 22,
-          "description": "Autentyczne borgo z XIV-wiecznym Palazzo del Podestà, lokalne sklepy z winami i serem Pecorino. Mniejsze tłumy niż Greve czy Panzano.",
+          "description": "Średniowieczne borgo (530 m n.p.m.), dawna stolica Ligi Chianti (1384). Piazza Ferrucci z Palazzo del Podestà (XIV w.), Propositura di San Niccolò, porte Valdarnese i Fiorentina. Casa del Chianti Classico w dawnych klasztorze.",
           "type": "medieval",
           "image_key": "radda",
-          "gps_hint": "Radda in Chianti SI — parking przy Piazzale del Castello",
+          "gps_hint": "Radda in Chianti SI — parking Piazzale del Castello",
           "image": "radda"
         },
         {
-          "name": "Bosco di Brolio — Sentiero delle Querce",
-          "drive_min": 12,
-          "description": "Las otaczający zamek Brolio: Quercus pubescens (dąb omszony) i Q. cerris. Nieformalna ścieżka wokół murów zamku (2–3 km).",
+          "name": "Bosco di Brolio — querceti",
+          "drive_min": 20,
+          "description": "Querceti (roverella Quercus pubescens, cerro Q. cerris) otaczające zamek — jeden z najlepiej zachowanych w Chianti. Bosco Inglese (park XIX w. Bettino Ricasoli). Nieformalna pętla 2–3 km wokół murów zamku.",
           "type": "nature",
           "image_key": "brolio",
-          "gps_hint": "Parking zamku Brolio — ścieżka wokół murów, start przy bramie",
+          "gps_hint": "Parking zamku Brolio — pętla od bramy zamku, 2–3 km",
           "image": "brolio"
         }
       ],
       "oak_forest": {
-        "spot": "Bosco di Brolio",
-        "species": "Quercus pubescens, Q. cerris",
-        "note": "Las dębowy otaczający zamek Brolio — jeden z najlepiej zachowanych w Chianti",
-        "gps_hint": "Sentiero delle Querce — pętla od parkingu zamku, 2–3 km"
+        "spot": "Bosco di Brolio — querceti",
+        "species": "Quercus pubescens (roverella), Q. cerris (cerro)",
+        "note": "Querceti coltivati a ceduo wokół zamku Brolio — mieszane z cyprysem i pinem. We wrześniu możliwe grzyby (porcini). Dłuższy wariant: anello 17 km Brolio–Cacchiano–Monti–San Felice.",
+        "gps_hint": "Start: parking Castello di Brolio — pętla 2–3 km wokół murów"
       },
       "food": {
         "place": "Osteria di Passignano — Badia a Passignano",
@@ -1298,88 +1759,98 @@
         "dishes": [
           "pici al ragù di cinghiale",
           "ribollita",
-          "Chianti Classico Antinori",
-          "menu sezonowe z ogrodu klasztornego"
+          "Chianti Classico Antinori Gran Selezione",
+          "menu sezonowe z Orto di Badia (ogrodek klasztorny)"
         ],
-        "note": "Michelin ⭐ od 2007. Przy opactwie benedyktyńskim XI w. Rezerwacja OBOWIĄZKOWA — 4–6 tygodni wcześniej na piątek. Lunch 12:15–14:15 lepszy niż kolacja (widok na klasztor w świetle dziennym). Zamknięte niedziela.",
-        "price": "~€80–120/os z winem (Michelin)",
+        "note": "Michelin ⭐ nieprzerwanie od 2007. Przy opactwie benedyktyńskim XI w. (Marchesi Antinori). Rezerwacja OBOWIĄZKOWA — 4–6 tygodni wcześniej na piątek. Lunch 12:15–14:15 lepszy niż kolacja (widok na klasztor w świetle dziennym). Zamknięte niedziela.",
+        "price": "~€80–120/os z winem (Michelin €€€€)",
         "gps_hint": "Via Passignano 33, Badia a Passignano FI",
         "phone": "+39 055 8071278",
         "reservation_url": "https://www.osteriadipassignano.com/en/reservation/"
       },
       "tips": [
-        "Brolio: wstęp do zamku i degustacja ~€15 — sprawdź godziny na baronericasoli.com",
-        "Bosco di Brolio: wejście bezpłatne od parkingu zamku",
-        "Radda: lokalne winiarnie otwarte 10:00–13:00 i 15:00–19:00",
-        "Brolio: bilet giardini €7,50 (nie €15) — degustacja 1 wina w cenie, visit.ricasoli.com",
-        "Brolio: przyjedź na 10:00 otwarcie — 1h na giardini, potem Radda",
-        "Osteria di Passignano: rezerwuj tygodnie wcześniej! Tel. 055 8071278",
-        "Bosco di Brolio: wejście bezpłatne od parkingu zamku, pętla 2–3 km",
-        "Radda: mniej turystów niż Greve — lokalne pecorino i Chianti Classico"
+        "Brolio: bilet giardini €7,50 (nie €15!) — degustacja 1 wina w cenie, bez rezerwacji, visit.ricasoli.com",
+        "Brolio: przyjedź na 10:00 otwarcie — 1–1,5h na giardini i bastioni, potem Bosco",
+        "Bosco di Brolio: wejście bezpłatne od parkingu zamku, pętla 2–3 km przez querceti",
+        "Radda: Palazzo del Podestà + Casa del Chianti Classico — enoteche 10:00–13:00 i 15:00–19:00",
+        "Radda: mniej turystów niż Greve — lokalne pecorino i Chianti Classico",
+        "Osteria di Passignano: rezerwuj 4–6 tyg. wcześniej! Tel. 055 8071278. Nd chiuso.",
+        "Dojazd z bazy (Castelnuovo Berardenga): Brolio ~20 min (SP484), Radda ~22 min — wszystko ≤30 min",
+        "Wrzesień = vendemmia — winiarnie mogą mieć skrócone godziny, sprawdź przed wyjazdem"
       ],
       "image": "brolio",
       "web_research": [
         {
           "topic": "Castello di Brolio — orari 2026",
-          "summary": "20.03–12.10: 10–19 tutti i giorni (biglietteria fino 18). 13–31.10: 10–18. Ingresso giardini con degustazione.",
+          "summary": "20.03–12.10: codziennie 10–19 (biglietteria do 18). 13–31.10: 10–18. 18.09 = piątek: otwarte. Zimą (koniec XII–połowa III) zamknięte.",
           "source": "https://www.ricasoli.com/castello/",
           "checked": "2026-07"
         },
         {
-          "topic": "Castello di Brolio — prezzi",
-          "summary": "Visita libera giardini+bastioni+cappella+degustazione: ~€15. Classic Tour con cantina: ~€28, prenotazione obbligatoria.",
-          "source": "https://toscanashopping.it/blog/luoghi-da-scoprire/castello-di-brolio-prezzi-orari-e-come-arrivare/",
+          "topic": "Castello di Brolio — prezzi i wstęp",
+          "summary": "Visita libera giardini+bastioni+cappella+1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji — biglietti all'ingresso. Classic Tour (cantina, 3 vini): €55, 2h30, prenotazione visit.ricasoli.com. Gran Cru €170, Tramonto €90.",
+          "source": "https://visit.ricasoli.com/",
           "checked": "2026-07"
         },
         {
-          "topic": "Osteria di Passignano — orari",
-          "summary": "Mar–Sab 12:15–14:15, 19:30–21:30. Domenica chiuso. Prenotazione: +39 055 8071278. Michelin star dal 2007.",
-          "source": "https://www.osteriadipassignano.com/en/contact-us/",
+          "topic": "Bosco delle Querce — querceti Brolio",
+          "summary": "Okolice zamku: querceti a ceduo (cerro + roverella) z cyprysem i pinem. Bosco Inglese — park historyczny XIX w. Nieformalna pętla 2–3 km wokół murów. Anello 17 km (Brolio–Cacchiano–Monti–San Felice) dla aktywnych.",
+          "source": "https://eco.museisenesi.org/archivio/110/il-bosco/",
           "checked": "2026-07"
         },
         {
-          "topic": "Radda in Chianti — enoteche",
-          "summary": "Borgo medievale, Palazzo del Podestà XIV sec. Enoteche aperte 10–13 e 15–19. Meno affollata di Greve.",
-          "source": "https://www.ricasoli.com/castello/",
+          "topic": "Radda in Chianti — borgo",
+          "summary": "Capitale Lega del Chianti (1384). Piazza Ferrucci: Palazzo del Podestà (XIV w., stemmi), Propositura di San Niccolò (neogotyk Coppedè 1926). Porte Valdarnese/Fiorentina. Casa del Chianti Classico (ex-convento Santa Maria al Prato). Ghiacciaia Granducale poza borgo.",
+          "source": "https://www.visittuscany.com/it/citta-e-borghi/radda-in-chianti/",
           "checked": "2026-07"
         },
         {
-          "topic": "Bosco di Brolio — sentiero",
-          "summary": "Sentiero delle Querce: 2–3 km loop od parkingu zamku. Quercus pubescens i Q. cerris.",
-          "source": "https://www.ricasoli.com/castello/",
+          "topic": "Osteria di Passignano — orari i rezerwacja",
+          "summary": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. Michelin ⭐ od 2007. Chef Matteo Lorenzini. Tel. +39 055 8071278, info@osteriadipassignano.com. Prenotazione obbligatoria.",
+          "source": "https://www.osteriadipassignano.com/en/home-en/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Dojazd z Castelnuovo Berardenga",
+          "summary": "Brolio: ~13 km, ~20–25 min (SP7 → SP484). Radda: ~22 min. Badia a Passignano: ~25 min. Wszystkie punkty dnia ≤30 min od Bazy 2.",
+          "source": "https://www.ricasoli.com/wp-content/uploads/2018/04/RICASOLI_INDICAZIONI_STRADALI_ENG.pdf",
           "checked": "2026-07"
         }
       ],
       "practical_tips": [
-        "Brolio: przyjedź na 10:00 (otwarcie) — 1,5h na zamek, ogrody i degustację Chianti Classico",
-        "Bosco di Brolio: pętla Sentiero delle Querce 2–3 km — dąb omszony i burgundzki, bezpłatnie od parkingu",
-        "Radda: mniej turystyczna niż Greve — lokalne enoteche z degustacją €5–10",
-        "Osteria di Passignano: Michelin — rezerwuj telefonicznie min. 2 tyg. wcześniej. Piątek lunch = OK",
-        "Winiarnie w settembre: vendemmia (zbiór winogron) — możliwe krótsze godziny, sprawdź przed wyjazdem"
+        "Brolio: przyjedź na 10:00 (otwarcie) — 1–1,5h na giardini, bastioni i degustację Chianti Classico",
+        "Bosco delle Querce: pętla 2–3 km bezpłatnie od parkingu — dąb omszony i cerrowy, wrzesień = sezon grzybów",
+        "Radda: 2–3h na borgo — Piazza Ferrucci, Casa del Chianti Classico, enoteca z degustacją €5–10",
+        "Osteria di Passignano: Michelin — rezerwuj min. 4 tyg. wcześniej. Piątek lunch = OK, nd zamknięte",
+        "Vendemmia (wrzesień): winiarnie mogą mieć krótsze godziny — sprawdź przed wyjazdem"
       ],
       "parking": {
-        "castello_brolio": "Parking u podnóża zamku — bezpłatny, duży. Via Madonna a Brolio, Gaiole in Chianti. Wejście pieszo 5 min pod górę.",
-        "radda": "Parcheggio Piazzale del Castello — płatny, krótki spacer do centrum. Alternatywa: parking przy Via Roma.",
-        "badia_passignano": "Parking przy opactwie — ograniczona liczba miejsc, przyjedź 10 min przed rezerwacją.",
-        "radda_chianti": "Piazzale del Castello — parking przy murach miasteczka. ZTL w centrum — parkuj na piazzale.",
-        "bosco_brolio": "Ten sam parking co zamek — ścieżka Sentiero delle Querce od bramy zamku.",
-        "tip": "Brolio rano (10:00 otwarcie) → Bosco → Radda na lunch/wino"
+        "castello_brolio": "Parking u podnóża zamku — bezpłatny, duży. Via Madonna a Brolio, Gaiole in Chianti. Wejście pieszo ~5 min pod górę.",
+        "radda": "Parcheggio Piazzale del Castello — płatny, krótki spacer do centrum. ZTL w centro storico — parkuj na piazzale.",
+        "badia_passignano": "Parking przy opactwie Badia a Passignano — ograniczona liczba miejsc, przyjedź 10 min przed rezerwacją.",
+        "bosco_brolio": "Ten sam parking co zamek — pętla querceti od bramy zamku.",
+        "tip": "Brolio rano (10:00) → Bosco → Radda → lunch Passignano (rezerwacja!)"
       },
       "opening_hours": {
-        "castello_brolio": "20.03–12.10.2026: codziennie 10:00–19:00 (biglietteria do 18:00). 18.09 = pt: otwarte. Biglietto giardini+bastioni+degustazione ~€15.",
-        "castello_brolio_ticket": "Giardini + bastioni + cappella + 1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji.",
-        "brolio_classic_tour": "Tour Classico (cantine + degustacja): €28, 2h, prenotazione visit.ricasoli.com",
-        "osteria_passignano": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. 18.09 = piątek OK na lunch. Tel. +39 055 8071278 — prenotazione obbligatoria.",
+        "castello_brolio": "20.03–12.10.2026: codziennie 10:00–19:00 (biglietteria do 18:00). 18.09 = piątek: otwarte.",
+        "castello_brolio_ticket": "Giardini + bastioni + cappella + 1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji — all'ingresso.",
+        "brolio_classic_tour": "Tour Classico (cantina + 3 vini): €55, 2h30, start 10:30, prenotazione visit.ricasoli.com",
+        "brolio_gran_cru": "Tour Gran Cru (cantina + 4 vini + pranzo): €170, prenotazione obbligatoria",
+        "osteria_passignano": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. 18.09 = piątek OK na lunch. Tel. +39 055 8071278.",
         "radda_enoteche": "Sklepy z winem: typowo 10:00–13:00 i 15:00–19:00",
-        "brolio_tours": "Visita libera: no prenotazione. Tour guidati (Classic €28): prenotazione su visit.ricasoli.com.",
-        "radda_shops": "Winiarnie i enoteche: 10:00–13:00, 15:00–19:00. Sobota = więcej otwartych punktów.",
-        "bosco_brolio": "Szlak wokół murów: dostęp 24h, bezpłatny — najlepszy rano"
+        "casa_chianti_classico": "Casa del Chianti Classico, Radda — sprawdź godziny na chianticlassico.com (wystawy + degustacje)",
+        "bosco_brolio": "Szlak wokół murów: dostęp 24h, bezpłatny — najlepszy rano po wizycie zamku"
       },
       "fuel_stops": [
         {
           "name": "IP Gaiole in Chianti",
-          "location": "SP408, centrum",
+          "location": "SP408, centrum Gaiole",
           "note": "Stacja w centrum Chianti — tankuj rano przed objazdem winnic."
+        },
+        {
+          "name": "IP / Q8 Castelnuovo Berardenga",
+          "location": "Via Chiantigiana / SS408, Castelnuovo Berardenga",
+          "note": "Stacja przy bazie — tankuj wieczorem po powrocie z dnia."
         }
       ]
     },
@@ -1393,12 +1864,12 @@
       "base_label": "BAZA 2 — Chianti Senese",
       "drive_limit_min": 25,
       "popular": true,
-      "crowd_tip": "Wyjazd o 7:00 rano — parking Piazza San Domenico lub Santa Caterina. O 7:30 jesteś na Piazza del Campo praktycznie sam. Tłumy zaczynają się po 10:00. Powrót do bazy przed 14:00. Unikaj sobotniego wieczoru w centrum.",
+      "crowd_tip": "SOBOTA 19.09 — najgorszy dzień tygodnia w Sienie. Wyjazd 7:00, parking Santa Caterina lub Stadio-Fortezza (lato stadio). Campo o 7:30 prawie sam. Tłumy od 10:00, szczyt 11:00–15:00. Powrót do bazy przed 14:00. Unikaj wieczoru w centrum.",
       "attractions": [
         {
           "name": "Piazza del Campo — o świcie",
           "drive_min": 25,
-          "description": "7:30–9:30. Piazza del Campo bez turystów. Palazzo Pubblico, Torre del Mangia (otwarta od 9:00). Najlepsze zdjęcia w porannym świetle.",
+          "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Torre del Mangia widoczna (wstęp od 10:00). Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
           "type": "popular",
           "image_key": "siena",
           "gps_hint": "Piazza del Campo, 53100 Siena SI",
@@ -1407,7 +1878,7 @@
         {
           "name": "Duomo di Siena + Libreria Piccolomini",
           "drive_min": 25,
-          "description": "9:30–11:00. Katedra i Libreria Piccolomini (mozaiki podłogowe odkryte we wrześniu!). Muzeum dell'Opera tuż po otwarciu.",
+          "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki. Wejdź tuż po otwarciu (najciszej).",
           "type": "popular",
           "image_key": "siena",
           "gps_hint": "Piazza del Duomo, Siena SI — parking Santa Caterina lub San Domenico",
@@ -1416,10 +1887,10 @@
         {
           "name": "Spacer przez kontrade",
           "drive_min": 25,
-          "description": "11:00–12:30. Kontrade Oca (Gęś) — Via dei Termini; Drago (Smok) — Via dei Fusari. Autentyczne życie zamiast turystycznych tras.",
+          "description": "11:00–12:00. Oca (Gęś, biało-zielona): Via dei Termini → Fontebranda → Santuario Santa Caterina. Drago (Smok, czerwono-zielona): Piazza Matteotti 18 → Via del Paradiso → Via della Sapienza. Autentyczne dzielnice zamiast turystycznych tras.",
           "type": "cultural",
           "image_key": "siena",
-          "gps_hint": "Via dei Termini (Contrada dell'Oca) lub Via dei Fusari (Drago)",
+          "gps_hint": "Start: Via dei Termini (Oca) lub Piazza Matteotti 18 (Drago)",
           "image": "siena"
         }
       ],
@@ -1433,88 +1904,95 @@
           "pappardelle al cinghiale",
           "vino sfuso (z beczki)"
         ],
-        "note": "Kultowa trattoria za Palazzo Pubblico — sienyjska urzędnicy i studenci. Taras z widokiem na Torre del Mangia latem. Rezerwacja tel. od 10:00.",
+        "note": "Kultowa trattoria za Palazzo Pubblico — sienyjsi urzędnicy i studenci. Taras latem z widokiem na Torre del Mangia. Rezerwacja tel. od 10:00 (sobota lunch!). Bez angielskiego menu — pici, ribollita, vino sfuso.",
         "price": "~€15–22/os",
         "gps_hint": "Piazza del Mercato 6 — wejście od tyłu Palazzo Pubblico",
         "phone": "+39 0577 280894",
         "opening_hours": "Codziennie 12:00–15:00 i 19:00–22:30 (sobota lunch OK)"
       },
       "tips": [
-        "Wyjazd o 7:00 — parking Parcheggio Santa Caterina lub San Domenico (płatny, ale blisko)",
-        "Bilety Duomo + Libreria Piccolomini online: opapisa.it — unikniesz kolejki",
-        "Powrót do bazy przed 14:00 — unikaj sobotniego popołudnia w Sienie",
-        "Wyjazd 7:00 — parking Santa Caterina, windy do centrum",
-        "Duomo otwiera 10:00 (nie 9:00!) — wcześniej Campo i kontrade",
-        "Podłoga mozaikowa odkryta do 15.11 — kup OPA SI PASS online: opasipass.com",
-        "Papei: rezerwacja lunch 0577 280894 od 10:00",
-        "Powrót do bazy przed 14:00 — sobota popołudnie = tłumy"
+        "Wyjazd 7:00 z bazy — parking Santa Caterina (schody ruchome) lub Stadio-Fortezza lato stadio (zona San Domenico)",
+        "Campo o 7:30 prawie pusty — tłumy od 10:00, sobota = najgorszy dzień tygodnia",
+        "Duomo otwiera 10:00 (sobota) — wcześniej Campo i kontrade, nie stój w kolejce od 9:00",
+        "OPA SI PASS online: operaduomo.siena.it lub opasipass.com — €16 (podłoga odkryta), skip kolejki",
+        "Podłoga mozaikowa odkryta do 15.11.2026 — główny powód wizyty we wrześniu",
+        "Papei lunch: rezerwacja 0577 280894 od 10:00, Piazza del Mercato 6 (za Palazzo Pubblico)",
+        "Kontrade: Oca Via dei Termini/Fontebranda; Drago Piazza Matteotti/Via del Paradiso",
+        "Powrót do bazy przed 14:00 — sobota popołudnie = korki, autokary z Florencji"
       ],
       "image": "siena",
       "web_research": [
         {
-          "topic": "Parking Santa Caterina Siena",
-          "summary": "473 posti, coperto, 24h. €2/h, €35/giorno. Scale mobili gratuite verso centro. Max altezza 2,0 m.",
+          "topic": "Siena o 7:30 — bez tłumów",
+          "summary": "Piazza del Campo o świcie: pusty plac, fotografowie i lokalni. Kawiarnie od ~7:00. Tłumy (wycieczki z Florencji) od 10:00. Sobota = najbardziej zatłoczony dzień.",
+          "source": "https://www.chasinghippoz.com/travel-photo-blog/siena-italy",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Parking Santa Caterina",
+          "summary": "Via Esterna di Fontebranda. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome gratis do centrum. Max wys. 2,0 m. Blisko Duomo i San Domenico.",
           "source": "https://sigericospa.it/parcheggio-santa-caterina/",
           "checked": "2026-07"
         },
         {
-          "topic": "Duomo Siena — orari settembre 2026",
-          "summary": "1.04–31.10: 10–19 lun–sab. Festivi: 9:30–18 (con pavimento scoperto 18.08–15.11). Ultimo ingresso 30 min prima.",
-          "source": "https://operaduomo.siena.it/en/the-cathedral/",
+          "topic": "Parking Stadio-Fortezza (zona San Domenico)",
+          "summary": "Area Fortezza Medicea, wyjście lato stadio = zona San Domenico, przed bazyliką. €2/h (7–20), €26/dzień, gratis 20:00–7:00. 709 miejsc, ~15 min pieszo do Campo.",
+          "source": "https://sipark.siena.it/tariffe/",
           "checked": "2026-07"
         },
         {
-          "topic": "Pavimento mosaico — scopertura 2026",
-          "summary": "Pavimento scoperto 27.06–31.07 e 18.08–15.11.2026. Biglietto OPA SI: €16 (vs €14 standard).",
-          "source": "https://operaduomo.siena.it/en/visiting/",
+          "topic": "OPA SI PASS — skip-line + podłoga 2026",
+          "summary": "Sobota 19.09: kompleks 10:00–19:00 (Muzeum 9:30–19:30). Podłoga odkryta 18.08–15.11, bilet €16. Kup online = bez kolejki do kasy. Ważny 3 dni, audioguide w cenie.",
+          "source": "https://www.opasipass.com/en/opening-hours/",
           "checked": "2026-07"
         },
         {
-          "topic": "Antica Trattoria Papei — orari",
-          "summary": "Cucina 12:00–22:30. Sabato: pranzo 12–15, cena 19–22:30. Prenotazioni: 0577 280894 (10–19). Piazza del Mercato 6.",
+          "topic": "Antica Trattoria Papei",
+          "summary": "Piazza del Mercato 6. Cucina 12:00–22:30. Pranzo 12–15, cena 19–22:30. Rezerwacje: 0577 280894 (10:00–19:00). Taras latem, >100 miejsc na zewnątrz.",
           "source": "https://anticatrattoriapapei.com/reservations/",
           "checked": "2026-07"
         },
         {
-          "topic": "Siena senza turisti — strategia",
-          "summary": "7:00 wyjazd → 7:30 Campo vuoto. Folla da 10:00. Sabato = giorno più affollato — via prima delle 14:00.",
-          "source": "https://www.terredisiena.it/en/siena-en/where-to-park-in-siena/",
+          "topic": "Spacer kontrade Oca i Drago",
+          "summary": "Oca (Terzo Camollìa): Via dei Termini, Fontebranda, Santuario Santa Caterina, siedziba Vicolo del Tiratoio 13. Drago: Piazza Matteotti 18, Via del Paradiso, Via della Sapienza. Wieczorny spacer: Via del Costone.",
+          "source": "https://www.thepalio.eu/siena-tourist-guide/",
           "checked": "2026-07"
         }
       ],
       "practical_tips": [
-        "SOBOTA = kluczowy dzień: wyjazd 7:00, Campo o 7:30 prawie pusty. Tłumy od 10:00, szczyt po 11:00",
-        "Bilety Duomo: kup online operaduomo.siena.it — OPA SI Pass (€16 con pavimento). Unikniesz kolejki o 9:30",
-        "Podłoga mozaikowa: odkryta do 15.11.2026 — główny powód wizyty we wrześniu!",
-        "Parking Santa Caterina: €2/h = ~€8 za 4h poranną wizytę. W dni festiwali parkingi gratis",
-        "Trattoria Papei: za Palazzo Pubblico, niewidoczna z Campo — rezerwuj lunch na 12:00",
-        "Powrót do bazy przed 14:00 — sobota popołudnie w Sienie = korki i tłumy"
+        "SOBOTA = kluczowy dzień: wyjazd 7:00, Campo o 7:30 prawie pusty. Tłumy od 10:00, szczyt 11:00–15:00",
+        "Parking: Santa Caterina (schody ruchome, bliżej Duomo) LUB Stadio-Fortezza wyjście lato stadio (zona San Domenico) — oba €2/h",
+        "ZTL: centrum zamknięte dla samochodów — zostaw auto na parkingu, idź pieszo 5–15 min",
+        "OPA SI PASS kup online wieczorem wcześniej — €16 z podłogą, skip kolejki, wejdź tuż po 10:00",
+        "Podłoga mozaikowa (56 paneli, XIV–XVI w.) odkryta do 15.11.2026 — nie przegap!",
+        "Torre del Mangia: 10:00–19:00 — przy strategii wyjazdu 14:00 nie zdążysz wejść (kolejka + 45 min)",
+        "Papei: rezerwuj lunch na 12:00 (tel. od 10:00) — ukryta za Palazzo Pubblico, niewidoczna z Campo",
+        "Trasa kontrade: Campo → Via di Città → Via dei Termini (Oca) → Piazza Matteotti (Drago) → Papei na Piazza del Mercato",
+        "Powrót do bazy przed 14:00 — sobota popołudnie = autokary z Florencji i korki na dojazdach"
       ],
       "parking": {
-        "santa_caterina": "Parcheggio Santa Caterina — Via Esterna di Fontebranda 13. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome do centrum (gratis). Max wysokość 2,0 m.",
-        "san_domenico": "Parcheggio San Domenico — alternatywa, podobne ceny. Blisko Basilica San Domenico.",
-        "ztl": "Centrum Siena = ZTL. Samochód zostaw na parkingu — do Campo i Duomo pieszo 5–15 min.",
-        "hotel_rate": "Niektóre hotele dają QR na €25/dzień (warunki) — agriturismo zwykle nie.",
-        "stadio_fortezza": "Parcheggio Stadio-Fortezza — €2/h (7:00–20:00), €26/dzień. 15 min pieszo do Campo. Tańszy na krótki postój.",
-        "tip": "Sobota 19.09: wyjazd 7:00 z bazy → parking Santa Caterina 7:25 → Campo 7:35 pieszo. Wyjazd przed 14:00."
+        "recommended": "Santa Caterina (najwygodniejszy) lub Stadio-Fortezza lato stadio (zona San Domenico)",
+        "santa_caterina": "Parcheggio Santa Caterina — Via Esterna di Fontebranda. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome do centrum (gratis). Max wysokość 2,0 m. ~10 min pieszo do Campo.",
+        "stadio_fortezza_san_domenico": "Parcheggio Stadio-Fortezza — wyjście LATO STADIO (zona San Domenico), przed bazyliką San Domenico. 709 miejsc. €2/h (7:00–20:00), €26/dzień, gratis 20:00–7:00. ~15 min pieszo do Campo.",
+        "san_domenico_note": "Nie ma osobnego parkingu „San Domenico” — chodzi o wyjście Stadio-Fortezza od strony stadionu lub parking Santa Caterina (schody przy San Domenico).",
+        "ztl": "Centrum Siena = ZTL z kamerami. Mandaty €80–150. Samochód zostaw na parkingu.",
+        "saturday_tip": "Sobota 7:00 wyjazd → parking 7:20 → Campo 7:30 pieszo. Wyjazd z parkingu przed 14:00.",
+        "cost_estimate": "~€8–10 za 4h poranną wizytę (€2/h × 4h)"
       },
       "opening_hours": {
-        "piazza_campo": "Dostęp 24h. Torre del Mangia: 10:00–19:00 (mar–ott), ostatnie wejście 18:30.",
-        "torre_mangia": "Zwykle 10:00–19:00 (sezon), ostatnie wejście 45 min przed zamknięciem. Sprawdź comune.siena.it.",
-        "duomo_complex": "19.09 (sobota, sezon 1.04–31.10): Complesso 10:00–19:00 (Museo do 19:30). Sobota = pełny dostęp od rana (nie jak niedziela).",
-        "duomo_floor": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — wyższa cena OPA SI PASS. Warto!",
-        "antica_trattoria_papei": "12:00–15:00 i 19:00–22:30 codziennie",
-        "duomo_siena": "18.09 sobota: 10:00–19:00 (sezon). Niedziela: 9:30–18:00 (podłoga odkryta). Ostatnie wejście 30 min przed zamknięciem.",
-        "pavimento_mosaico": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — wyższy bilet OPA SI (€16 vs €14). Warto!",
-        "libreria_piccolomini": "W kompleksie Duomo — ten sam bilet OPA SI Pass.",
-        "trattoria_papei": "Sob 19.09: pranzo 12:00–15:00, cena 19:00–22:30. Cucina 12:00–22:30. Tel. 0577 280894 (prenotazioni 10:00–19:00).",
-        "opera_duomo_ticket_office": "Piazza Duomo 7 + Visitor Center Via di Città 48 — 9:30–19:00"
+        "piazza_campo": "Dostęp 24h. Najlepsze światło i brak tłumów: 7:00–8:30.",
+        "torre_mangia": "10:00–19:00 (1.04–31.10). Ostatnie wejście ~45 min przed zamknięciem. Bilet osobny (nie w OPA SI PASS).",
+        "duomo_complex": "19.09 (sobota, sezon): 10:00–19:00. Muzeum dell'Opera: 9:30–19:30. Ostatnie wejście 30 min przed zamknięciem.",
+        "duomo_floor": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — OPA SI PASS €16 (vs €14 standard).",
+        "opera_duomo_ticket_office": "Piazza Duomo 7 + Visitor Center Via di Città 48 (obok Campo). Online = skip kolejki do kasy.",
+        "libreria_piccolomini": "W kompleksie Duomo — ten sam bilet OPA SI PASS.",
+        "antica_trattoria_papei": "Cucina 12:00–22:30. Pranzo 12:00–15:00, cena 19:00–22:30. Tel. 0577 280894 (rezerwacje 10:00–19:00)."
       },
       "fuel_stops": [
         {
-          "name": "IP Castelnuovo Berardenga",
-          "location": "baza Chianti",
-          "note": "Tankuj rano przed wyjazdem do Sieny — paliwo na powrót."
+          "name": "IP / Q8 Castelnuovo Berardenga",
+          "location": "BAZA 2 — Chianti Senese",
+          "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót, stacja przy SP408."
         }
       ]
     },
@@ -1529,23 +2007,23 @@
       "base_label": "BAZA 2 → BAZA 3",
       "transfer_km": 130,
       "transfer_h": "1 h 40 min",
-      "transfer_route": "Castelnuovo Berardenga → Siena bypass → SS223 → Grosseto → SS74 → okolice Pitigliano",
+      "transfer_route": "Castelnuovo Berardenga → obwodnica Sieny (unikaj ZTL) → SS223 (Siena–Grosseto) → Grosseto → SS1 Aurelia → Albinia → SS74 → okolice Pitigliano/Sovana",
       "transfer_depart": "ok. 13:00",
       "drive_limit_min": 30,
       "attractions": [
         {
           "name": "Monte Oliveto Maggiore",
           "drive_min": 28,
-          "description": "Benedyktyński klasztor z XIV w. w surowym krajobrazie Crete Senesi. Słynny cykl fresków Il Sodomy (36 scen z życia św. Benedykta). Możliwa msza gregoriańska w niedzielę rano.",
+          "description": "Benedyktyńska abbazia z XIV w. w krajobrazie Crete Senesi. Chiostro Grande: 35 lunet z cyklem życia św. Benedykta — Luca Signorelli (8 scen, 1497–1499) i Il Sodoma (26 scen, 1505–1508), plus 1 scena Bartolomeo Neroni (Riccio, 1534). Niedziela: msza gregoriańska o 11:00.",
           "type": "cultural",
           "image_key": "monte-oliveto",
-          "gps_hint": "Abbazia Monte Oliveto Maggiore, 53041 Chiusure SI",
+          "gps_hint": "Abbazia Monte Oliveto Maggiore, Loc. Chiusure, 53041 Asciano SI",
           "image": "monte-oliveto"
         },
         {
           "name": "Asciano — Crete Senesi",
           "drive_min": 24,
-          "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez pejzaż glinianych wzgórz (biancane — białe wzgórza z marglami). Muzeum Etruskie.",
+          "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez biancane (białe gliniane wzgórza). Museo Archeologico (Corso Matteotti 46) — kolekcja etruska z okolic Asciano.",
           "type": "cultural",
           "image_key": "asciano",
           "gps_hint": "Asciano SI — parking przy Piazza del Grano",
@@ -1553,10 +2031,10 @@
         }
       ],
       "oak_forest": {
-        "spot": "Bosco della Ragnaia — Asciano",
-        "species": "Quercus pubescens, Q. ilex",
-        "note": "Niewielki, artystycznie zaaranżowany las dębowy 5 min pieszo od centrum Asciano — cichy, bez tłumów",
-        "gps_hint": "Bosco della Ragnaia, Asciano SI — 5 min pieszo od centrum"
+        "spot": "Bosco della Ragnaia — San Giovanni d'Asso",
+        "species": "Quercus ilex (leccio), Quercus pubescens",
+        "note": "Giardino filosofico Sheppard Craige (od 1996) w dawnym lesie leccio z XVIII w. Altare dello Scetticismo, Centro dell'Universo, Oracolo di Te Stesso. Ingresso libero mar–nov, alba–tramonto. ~15 min od Monte Oliveto (NIE przy Asciano). Opcjonalny przystanek przed lunchem.",
+        "gps_hint": "Podere Bertagn, strada SP60/A, San Giovanni d'Asso SI — info@laragnaia.com"
       },
       "food": {
         "place": "Osteria La Tombolina — Asciano",
@@ -1567,11 +2045,11 @@
           "ribollita",
           "vino Orcia DOC"
         ],
-        "note": "Lokalna osteria w centrum Asciano (korekta: „Trattoria La Lupa” nie istnieje w Asciano — La Lupa jest w Livorno!). Niedziela otwarte 11:00–23:30. Lunch przed przejazdem do Maremmy.",
+        "note": "Lokalna osteria w centrum Asciano. KOREKTA: 'Trattoria La Lupa' z oryginalnego planu nie istnieje w Asciano (La Lupa = Livorno lub Biella). Lunch przed przejazdem do Maremmy.",
         "price": "~€15–22/os",
         "gps_hint": "Via Goffredo Mameli 11, Asciano SI",
         "phone": "+39 0577 718056",
-        "opening_hours": "Nd 11:00–23:30, Pn–Sb 11:00–23:30 (wt śr zamknięte wg źródeł — sprawdź tel.)"
+        "opening_hours": "Nd 11:00–23:30 (sprawdź tel. przed wyjazdem)"
       },
       "accommodation": {
         "place": "BAZA 3 — okolice Pitigliano / Sovana",
@@ -1611,12 +2089,12 @@
       },
       "tips": [
         "Niedziela: Monte Oliveto — msza gregoriańska o 11:00 (nie 9:00!)",
-        "Wizyta klasztoru: 9:30 wejście, 1h przed mszą — cisza i freski Il Sodoma",
+        "Freski: Signorelli (8 scen) + Sodoma (26 scen) w Chiostro Grande — nie tylko Sodoma",
         "La Tombolina (nie La Lupa!) — lunch Via Mameli 11, Asciano",
+        "Bosco della Ragnaia = San Giovanni d'Asso, nie Asciano — opcjonalny detour ~15 min od abbazii",
         "Sassotondo = winnica, nie hotel — rezerwuj agriturismo osobno",
-        "Wyjazd do BAZY 3 po lunchu (~13:00) — 1h40 przez Grosseto",
-        "Crete Senesi: najlepsze światło po południu, ale dziś jedziesz dalej",
-        "Monte Oliveto: kup bilet online Vivaticket — unikniesz kolejki w niedzielę",
+        "Wyjazd do BAZY 3 po lunchu (~13:00) — ~1h40–1h55 przez Grosseto",
+        "Monte Oliveto: kup bilet online Vivaticket — unikniesz kolejki w niedzielę (€6 prevendita)",
         "Tankuj w Grosseto lub Manciano — stacje rzadsze na SS74 w górach"
       ],
       "image": "monte-oliveto",
@@ -1668,51 +2146,113 @@
           "summary": "SP46 Pitigliano–Sovana, zjazd km 2, 2,2 km sterrata. Tel. +39 351 6986750. Biodynamiczne wino od 1994.",
           "source": "http://www.sassotondo.it/it/visite.html",
           "checked": "2026-07"
+        },
+        {
+          "topic": "Monte Oliveto — freski Chiostro Grande",
+          "summary": "35 lunet: cykl życia św. Benedykta. Luca Signorelli — 8 scen (1497–1499), potem Il Sodoma — 26 scen (1505–1508), 1 scena Bartolomeo Neroni/Riccio (1534). Jedno z najważniejszych dzieł malarstwa renesansowego w Toskanii.",
+          "source": "https://it.wikipedia.org/wiki/Storie_di_san_Benedetto_di_Monte_Oliveto_Maggiore",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Monte Oliveto — bilety nd 20.09",
+          "summary": "Pt–nd: biglietto unico €7 (prevendita Vivaticket €6). Audioguida IT/EN €8,50. Pn–cz: biblioteca €4. Grupy 10–25: prenotazione €25 na Vivaticket.",
+          "source": "https://www.operadarte.net/scopri-labbazia-di-monte-oliveto-maggiore/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Bosco della Ragnaia — San Giovanni d'Asso",
+          "summary": "Giardino filosofico Sheppard Craige (od 1996) w dawnym lesie leccio. Altare dello Scetticismo, Centro dell'Universo, Oracolo di Te Stesso. Ingresso libero mar–nov, alba–tramonto. SP60/A. Cisza obowiązkowa, psy na smyczy. NIE w Asciano.",
+          "source": "http://www.laragnaia.com/IT/intro/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Osteria La Tombolina — korekta La Lupa",
+          "summary": "Via Goffredo Mameli 11, Asciano. Tel. 0577 718056. 'Trattoria La Lupa' nie istnieje w Asciano (La Lupa = Livorno/Biella). Tombolina: lokalna osteria toscana.",
+          "source": "http://www.askmap.net/location/2184020/italy/osteria-la-tombolina",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Sassotondo — winnica Ciliegiolo",
+          "summary": "Winnica organiczna/biodynamiczna (od 1994) między Pitigliano a Sovana na tufo wulkanicznym. Cantina 40 m w skale. Ciliegiolo DOC Maremma Toscana. Degustacja: prenotazione +39 351 6986750. SP46 km 2, 2,2 km sterrata. Na trasie Via Cava Pian di Conati.",
+          "source": "http://www.sassotondo.it/it/visite.html",
+          "checked": "2026-07"
         }
       ],
       "practical_tips": [
-        "Timeline: 9:30 Monte Oliveto (freski, opcjonalnie msza 11:00) → 12:00 wyjazd → 12:30 Asciano (spacer Crete, Bosco della Ragnaia 30 min) → 13:00 lunch → 13:30 transfer Maremma.",
+        "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma; opcjonalnie msza 11:00) → 11:30 opcjonalnie Bosco Ragnaia (San Giovanni d'Asso, 30–45 min) → 12:15 Asciano → 12:30 lunch La Tombolina → 13:30 transfer Maremma.",
         "W niedzielę ruch na SS223/Grosseto umiarkowany — transfer OK.",
-        "Bosco della Ragnaia: artystyczny las dębowy, 5 min pieszo od centrum Asciano — szybki przystanek.",
+        "Bosco della Ragnaia: giardino filozofico w San Giovanni d'Asso (~15 min od Monte Oliveto), NIE przy Asciano. Pomiń jeśli zostajesz na mszy 11:00.",
         "Zarezerwuj degustację Sassotondo na dzień 10 lub 11 (pn–nd 10:30 lub 15:30, tel. 351 6986750).",
-        "Crete Senesi: białe wzgórza (biancane) — najlepsze światło popołudniowe, ale dziś jedziesz dalej.",
-        "Niedziela 20.09: Monte Oliveto otwarte — biglietto unico €7 (weekend). Wyjazd do BAZY 3 po lunchu ~13:00.",
-        "SS223 Siena–Grosseto: malownicza ale wolniejsza niż A1 — zaplanuj 1 h 15 min do Grosseto.",
+        "Crete Senesi: biancane — najlepsze światło popołudniowe, ale dziś jedziesz dalej do Maremmy.",
+        "Niedziela 20.09: Monte Oliveto otwarte — biglietto unico €7 (prevendita Vivaticket €6).",
+        "SS223 Siena–Grosseto: malownicza ale wolniejsza niż A1 — zaplanuj 1h15 do Grosseto.",
         "SS74 od Albinia: kręte odcinki — nie planuj nocnego dojazdu po 20:00 przy pierwszym razie.",
-        "Sassotondo: naviguj „Loc. Sassotondo\" z SP46 (km 2) — ostatnie 2,2 km szutrowe, jedź powoli."
+        "Sassotondo: naviguj 'Loc. Sassotondo' z SP46 (km 2) — ostatnie 2,2 km szutrowe, jedź powoli."
       ],
       "parking": {
         "monte_oliveto": "Parking przy Abbazia Monte Oliveto Maggiore — bezpłatny, duży plac. Naviguj: Monte Oliveto Maggiore Chiusure.",
         "asciano": "Parking Piazza del Grano lub Via Mameli — bezpłatny, centrum pieszo.",
-        "pitigliano_arrival": "Przy check-in BAZY 3: parking przy agriturismo (Sassotondo ma własny). Do Pitigliano jutro: Parcheggio del Fosso."
+        "pitigliano_arrival": "Przy check-in BAZY 3: parking przy agriturismo. Do Pitigliano jutro: Parcheggio del Fosso.",
+        "ragnaia": "San Giovanni d'Asso — mały parking przy wejściu na SP60/A (własność prywatna, bezpłatny)."
       },
       "opening_hours": {
         "monte_oliveto_abbey": "20.09 (nd): 9:30–12:20 i 14:30–17:40 (ora legale wrzesień). Otwarte codziennie.",
-        "monte_oliveto_mass": "Niedziela: Msza konwentualna z chantem gregoriańskim o 11:00. Wizyta przed mszą (9:30) lub po (12:30+).",
-        "monte_oliveto_ticket": "Bilet na chiostro affrescato + chiesa. Tel. portineria: 0577 707258. Wizyty z przewodnikiem: infovisite@monteolivetomaggiore.it",
+        "monte_oliveto_mass": "Niedziela: S. Messa conventuale z canto gregoriano o 11:00. Wizyta przed mszą (9:30–10:45) lub po (12:20+).",
+        "monte_oliveto_ticket": "Nd: biglietto unico €7 (Vivaticket €6). Tel. portineria: 0577 707258. Wizyty z przewodnikiem: infovisite@monteolivetomaggiore.it / WhatsApp 342 0538090",
         "asciano_museum": "Museo Archeologico — sprawdź godziny niedzielne (często skrócone).",
-        "osteria_tombolina": "Niedziela 11:00–23:30",
+        "osteria_tombolina": "Niedziela 11:00–23:30 (potwierdź tel. 0577 718056)",
         "monte_oliveto": "Ora legale (wrzesień): 9:30–12:20 (ostatni wstęp 12:20), 14:30–17:40 (ostatni 17:40). Niedziela 20.09 = biglietto unico €7.",
-        "asciano_museo": "Museo Archeologico Asciano: wt–nd 10:00–13:00, 15:00–19:00 (sprawdź w sezonie)."
+        "asciano_museo": "Museo Archeologico Asciano (Corso Matteotti 46): wt–nd 10:00–13:00, 15:00–19:00 (sprawdź w sezonie).",
+        "ragnaia": "Marzo–novembre, alba–tramonto. Ingresso libero. Gruppy: autoryzacja info@laragnaia.com"
       },
       "route_segments": [
         {
-          "segment": "Baza Chianti → Monte Oliveto Maggiore",
-          "road": "Raccordo Siena-Bettolle → SS2",
+          "segment": "BAZA 2 (Chianti) → Monte Oliveto Maggiore",
+          "road": "Raccordo Siena-Bettolle → SS2/SP451",
           "km": "~35",
-          "note": "Crete Senesi — krajobraz glinianych wzgórz. Dojazd ~28 min."
+          "note": "Crete Senesi — krajobraz glinianych wzgórz. Dojazd ~28 min. Ostatni wstęp 12:20."
         },
         {
-          "segment": "Monte Oliveto → Asciano",
-          "road": "SP451 / lokalne",
-          "km": "~12",
+          "segment": "Monte Oliveto → Bosco della Ragnaia (opcja)",
+          "road": "SP60/A",
+          "km": "~8",
+          "note": "San Giovanni d'Asso — giardino filosofico, 30–45 min. Pomiń jeśli msza 11:00."
+        },
+        {
+          "segment": "Monte Oliveto / Ragnaia → Asciano",
+          "road": "SP451 / SP14",
+          "km": "~12–20",
           "note": "Krótki przejazd przez Crete Senesi. Parking Piazza del Grano."
         },
         {
-          "segment": "Asciano → Pitigliano (transfer)",
-          "road": "SS438 → SS223 → Grosseto → SS74",
-          "km": "~130",
-          "note": "Niedzielny transfer ~1h40. Obiad w Asciano przed 13:00, wyjazd ~13:00."
+          "segment": "Asciano → obwodnica Sieny",
+          "road": "SP14 → SS438",
+          "km": "~25",
+          "note": "Objazd centrum Sieny — nie wjeżdżaj w ZTL."
+        },
+        {
+          "segment": "Siena → Grosseto",
+          "road": "SS223",
+          "km": "~75",
+          "note": "Malownicza droga przez Crete Senesi i Maremmę. ~1h15. Tankuj w Grosseto."
+        },
+        {
+          "segment": "Grosseto → Pitigliano (BAZA 3)",
+          "road": "SS1 → Albinia → SS74",
+          "km": "~55",
+          "note": "SS74 przez Manciano — kręte odcinki. Przyjazd ~16:00–17:00."
+        }
+      ],
+      "fuel_stops": [
+        {
+          "place": "Grosseto",
+          "road": "SS223 → centrum Grosseto",
+          "note": "Tankuj przed SS74 — ostatnia duża stacja przed górami tufowymi"
+        },
+        {
+          "place": "Manciano",
+          "road": "SS74",
+          "note": "Alternatywa na trasie do Pitigliano — stacje rzadsze na odcinku górskim SS74"
         }
       ]
     },
@@ -1724,32 +2264,45 @@
       "title": "Mała Jerozolima i etruskie drogi",
       "base_id": "base3",
       "base_label": "BAZA 3 — Pitigliano",
-      "drive_limit_min": 15,
+      "drive_limit_min": 30,
       "attractions": [
         {
           "name": "Pitigliano — stare miasto",
           "drive_min": 5,
-          "description": "Jedno z najbardziej dramatycznych miast Toskanii: zbudowane na kolumnie z tufu wulkanicznego. Twierdza Orsini (XIV w.), synagoga (XVI w., 'Piccola Gerusalemme'), wąskie vicoli. We wrześniu tłumy minimalne.",
+          "description": "Jedno z najbardziej dramatycznych miast Toskanii: zbudowane na kolumnie z tufu wulkanicznego. Twierdza Orsini (XIV w.), wąskie vicoli, widok z Piazza della Repubblica. We wrześniu tłumy minimalne. Poniedziałek: forteca zamknięta.",
           "type": "medieval",
           "image_key": "pitigliano",
           "gps_hint": "Pitigliano GR — parking Parcheggio del Fosso (poza ZTL)",
           "image": "pitigliano"
         },
         {
-          "name": "Via Cava di San Giuseppe + Via Cava di Poggio Prisca",
+          "name": "Sinagoga e Museo Ebraico — Piccola Gerusalemme",
           "drive_min": 5,
-          "description": "Etruskie 'wydrążone drogi' wykute w tufie, do 20 m głębokości. Szlak ~3 km z powrotem. Ciemne, atmosferyczne, po obu stronach gęsty las wiecznie zielonego dębu ostrolistnego (Quercus ilex).",
+          "description": "Tempio Israelitico z 1598 r. w getcie etruskim (Vicolo Marghera). Muzeum w wykopanym tufie: mikveh, piec na matzę (forno delle azzime), rzeźnia koszerna, piwnica na wino koszerne. Pitigliano — „Mała Jerozolima\" — XIX w.: ~25% ludności żydowskiej.",
+          "type": "cultural",
+          "image_key": "pitigliano",
+          "gps_hint": "Vicolo Marghera / Vicolo Manin, Pitigliano GR — przy wejściu do getta",
+          "image": "pitigliano",
+          "ticket_price": "€6 intero, €5 ridotto (sinagoga + ghetto + museo)",
+          "opening_hours": "1 IV–31 X: 10:00–13:00, 14:30–18:00. Sobota ZAMKNIĘTA. Poniedziałek 21.09 = OTWARTE."
+        },
+        {
+          "name": "Via Cava di San Giuseppe",
+          "drive_min": 5,
+          "description": "Najbardziej charakterystyczna z 10 vie cave Pitigliano — etruska droga łącząca Pitigliano z Sovana, wykuta w tufie (ściany do 12–20 m). Necropoli VII–VI w. p.n.e., grobowiec PSG1 (jedyny drum tomb w dolinie Fiora), Fonte dell'Olmo, edicola San Giuseppe. Co 19 III: Torciata di San Giuseppe — procesja z pochodniami.",
           "type": "nature",
           "image_key": "pitigliano",
-          "gps_hint": "Via Cava di San Giuseppe, Pitigliano GR — start przy cmentarzu",
-          "image": "pitigliano"
+          "gps_hint": "Via Cava di San Giuseppe — start SP42 Pian della Madonna lub pieszo z centrum (~10–15 min)",
+          "image": "pitigliano",
+          "ticket_price": "Bezpłatny — szlak outdoor",
+          "opening_hours": "24/7; najlepiej 9:00–17:00. Unikać podczas i tuż po deszczu."
         }
       ],
       "oak_forest": {
-        "spot": "Via Cave — okolice Pitigliano",
-        "species": "Quercus ilex (dąb ostrolistny / leccio)",
-        "note": "Charakterystyczny dla Maremmy wiecznie zielony las dębowy po obu stronach głęboko wkopanych etruskich dróg",
-        "gps_hint": "Szlak Via Cava San Giuseppe — las po obu stronach wykopu"
+        "spot": "Via Cava di San Giuseppe — wąwóz w tufie",
+        "species": "Quercus ilex (leccio / dąb ostrolistny)",
+        "note": "Wiecznie zielony las śródziemnomorski po obu stronach głęboko wkopanych etruskich dróg. Mikroklimat wąwozu (wilgoć, cień, inwersja termiczna) sprzyja gęstej roślinności: leccio tworzy baldachim wraz z corbezzolo, fillirea, ericą, paprociami i mchem na ścianach tufu.",
+        "gps_hint": "Szlak Via Cava San Giuseppe — las po obu stronach wykopu, wzdłuż rzeki Lente"
       },
       "food": {
         "place": "Il Tufo Allegro — Pitigliano",
@@ -1758,106 +2311,94 @@
           "acquacotta maremma",
           "buglione d'agnello",
           "Pitigliano DOC Bianco",
-          "crostini al tufo"
+          "crostini al tufo",
+          "pappardelle al ragù"
         ],
-        "note": "Wnętrze wydrążone w tufie. Rezerwacja: tel. 0564 616192 lub 335 1028814. Michelin Bib Gourmand — mało stolików, rezerwuj dzień wcześniej.",
-        "price": "~€25–35/os",
-        "gps_hint": "Vicolo della Costituzione 5, Pitigliano GR",
+        "note": "Trattoria wydrążona w tufie, tuż przy wejściu do getta i synagogi. Szef Domenico Pichini — kuchnia maremmańska z lokalnych producentów. Michelin Plate, piwnica 500+ etykiet. Rezerwacja: tel. 0564 616192 lub 335 102 8814, email iltufoallegro@gmail.com. Wtorek 22.09 ZAMKNIĘTE — zaplanuj kolację dziś!",
+        "price": "~€50–60/os",
+        "gps_hint": "Vicolo della Costituzione 5, Pitigliano GR — 2 min pieszo od synagogi",
         "phone": "+39 0564 616192",
-        "opening_hours": "Pn,Cz–Nd 12:30–14:30 i 19:30–21:30. Wt zamknięte. Śr tylko kolacja."
+        "opening_hours": "Pn, Cz–Nd: 12:30–14:30 i 19:30–21:30. Wt ZAMKNIĘTE. Śr tylko kolacja (19:30–21:30)."
       },
       "tips": [
-        "Pitigliano: parking Parcheggio del Fosso — centrum pieszo, ZTL w murach",
-        "Via Cave: weź latarkę — wykopy bywają ciemne nawet w słońcu",
-        "Il Tufo Allegro: rezerwacja tel. wieczorem — mało stolików",
-        "Poniedziałek: synagoga OTWARTA (sobota zamknięta) — 10:00–13:00, 14:30–18:00",
-        "Via Cave: latarka obowiązkowa, buty trekkingowe, necropoli etruska po drodze",
+        "Poniedziałek 21.09: synagoga OTWARTA (sobota zamknięta) — 10:00–13:00, 14:30–18:00",
+        "Poniedziałek: Palazzo Orsini ZAMKNIĘTE — Via Cave i synagoga to główne atrakcje dnia",
+        "Via Cave: latarka obowiązkowa, buty trekkingowe, unikać po deszczu",
+        "Mężczyźni: kippa w synagodze (dostępna na miejscu)",
         "Il Tufo Allegro: rezerwacja tel. 0564 616192 — poniedziałek OK, wtorek zamknięte",
         "Parking Parcheggio del Fosso — centrum pieszo, ZTL w murach",
-        "Mężczyźni: kippa w synagodze (dostępna na miejscu)",
-        "Poniedziałek: forteca zamknięta — Via Cave i synagoga to główne atrakcje dnia",
-        "Il Tufo Allegro: zadzwoń rano na wieczorną rezerwację"
+        "Quercus ilex (leccio): obserwuj zimozielony baldachim wzdłuż Via Cava San Giuseppe"
       ],
       "image": "pitigliano",
       "web_research": [
         {
-          "topic": "Sinagoga Pitigliano — orari",
-          "summary": "Sezon IV–X: 10:00–13:00 i 14:30–18:00. Zamknięte sobota i święta żydowskie. Bilet €5–6 (ghetto + sinagoga + museo). Kippa dla mężczyzn.",
+          "topic": "Via Cava di San Giuseppe",
+          "summary": "~850 m, ściany tufu do 12–20 m. Etruska droga Pitigliano–Sovana z necropoli VII–VI w. p.n.e. Start: SP42 Pian della Madonna lub Fonte dell'Olmo. Pętla ~3,7–5,5 km, 1–2 h. Grobowiec PSG1 (jedyny drum tomb w dolinie Fiora). Edicola San Giuseppe z wizerunkiem świętego. Co 19 III: Torciata — procesja z pochodniami do piazza. Bezpłatny szlak; latarka; unikać po deszczu. GPS: 42.634472 N, 11.65827 E.",
+          "source": "https://maremmap.org/ITEM/pitigliano-via-cava-di-san-giuseppe.html",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Synagoga Pitigliano — Tempio Israelitico",
+          "summary": "Zbudowana 1598 (Jeudà figlio di Shebbetai), Vicolo Marghera w getcie. „Piccola Gerusalemme\" — XIX w. ~25% ludności żydowskiej. Muzeum w tufie: mikveh, forno delle azzime, kascher butcher, piwnica. Nie używana do regularnych nabożeństw (brak minjanu), ale święte miejsce. Sezon IV–X: 10–13, 14:30–18. Sobota i święta żydowskie ZAMKNIĘTE. €6/€5. Kippa dla mężczyzn. Tel. 0564 614230.",
           "source": "https://pitigliano.org/la-piccola-gerusalemme/sinagoga/",
           "checked": "2026-07"
         },
         {
-          "topic": "Via Cava di San Giuseppe",
-          "summary": "850 m, ~18 min. Parking gratis przy SP42 (Pian della Madonna). Necropoli etruska VII–VI w. p.n.e. Fonte dell'Olmo na końcu. Latarka zalecana.",
-          "source": "https://visitpitigliano.com/vie-cave/",
+          "topic": "Quercus ilex (leccio) — las przy Via Cave",
+          "summary": "Leccio (dąb ostrolistny) — zimozielona latifoglia Fagaceae, do 20–25 m, typowa dla strefy mezomediterranejskiej. W Maremmie tworzy leccete (lasy czyste) lub macchia z corbezzolo, fillirea, lentisco, ericą. W Via Cave mikroklimat wąwozu (wilgoć, cień) sprzyja gęstej roślinności na ścianach tufu. Charakterystyczny element krajobrazu wzdłuż etruskich dróg Pitigliano–Sovana–Sorano.",
+          "source": "https://maremma.name/en/etruscan-cave-streets/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Trattoria Il Tufo Allegro — Pitigliano",
+          "summary": "Vicolo della Costituzione 5, przy wejściu do getta. Sale w tufie, Michelin Plate. Szef Domenico Pichini — kuchnia toskańska/maremmańska, sezonowe menu, oliwa EVO, mięsa Cinta Senese. Piwnica 500+ etykiet. Pn, Cz–Nd: 12:30–14:30 i 19:30–21:30. Wt ZAMKNIĘTE. Śr tylko kolacja. ~€50–60/os. Tel. 0564 616192 / 335 102 8814. Email: iltufoallegro@gmail.com. Rezerwacja 1–2 dni wcześniej w sezonie.",
+          "source": "https://guide.michelin.com/en/toscana/pitigliano/restaurant/il-tufo-allegro",
           "checked": "2026-07"
         },
         {
           "topic": "Parking Pitigliano",
-          "summary": "Płatne: Piazza Garibaldi €1,50/h. Santa Chiara €1/h. Bezpłatny: Piazza Dante. Camper: Piazza Nenni €2,50/h. 20 min gratis/dzień/rejestracja.",
+          "summary": "Parcheggio del Fosso — główny, poza ZTL, 5–10 min pieszo. Piazza Garibaldi €1,50/h (9–13, 15–20). Santa Chiara €1/h. Bezpłatny: Piazza Dante. Camper: Piazza Nenni €2,50/h. 20 min gratis/dzień/rejestracja Abaco Mobility. ZTL w murach — kamery.",
           "source": "http://www.abacosmartcities.it/pitigliano-gr-eng/",
           "checked": "2026-07"
         },
         {
-          "topic": "Il Tufo Allegro — orari",
-          "summary": "Vicolo della Costituzione 5. 12:30–14:30 i 19:30–21:30. Wt całkowicie zamknięte. Śr tylko kolacja. Michelin. Tel. 0564 616192.",
-          "source": "https://www.maremmaguide.com/il-tufo-allegro.html",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Sassotondo degustacja",
-          "summary": "Classic Tasting 4 vini: €28–30, 1h. Sloty 10:30 lub 15:30, pn–nd. Prenotazione 24h: +39 351 6986750. Loc. Pian di Conati 52, Sovana.",
-          "source": "http://www.sassotondo.it/it/visite.html",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Sinagoga Pitigliano — orari i biglietti",
-          "summary": "€6 intero, €5 ridotto. 1 IV–31 X: 10–13, 14:30–18. Zamknięte sobota. Vicolo Manin — „Piccola Gerusalemme\".",
-          "source": "https://www.comune.pitigliano.gr.it/vivere_il_comune/luoghi/luogo_9.html",
-          "checked": "2026-07"
-        },
-        {
           "topic": "Palazzo Orsini Pitigliano",
-          "summary": "€6 intero (2026). Pn zamknięte. Pt–nd do 18:00. Biglietto integrato z katedrą Sovana €7,50.",
+          "summary": "€6 intero (2026). Poniedziałek ZAMKNIĘTE — 21.09 skup się na synagodze i Via Cave. Wt–cz 9–13, 14–17; pt–nd 9–13, 14–18. Biglietto integrato z katedrą Sovana €7,50.",
           "source": "https://palazzo-orsini-pitigliano.it/index.php/it/orari-e-biglietti",
           "checked": "2026-07"
         },
         {
-          "topic": "Il Tufo Allegro — rezerwacja",
-          "summary": "Vicolo della Costituzione 5. Tel. 0564 616192 / 335 1028814. Michelin Bib Gourmark — kuchnia w tufie.",
-          "source": "https://guide.michelin.com/us/en/toscana/pitigliano/restaurant/il-tufo-allegro",
+          "topic": "Sassotondo degustacja (opcja popołudniowa)",
+          "summary": "Classic Tasting 4 vini: €28–30, 1h. Sloty 10:30 lub 15:30, pn–nd. Prenotazione 24h: +39 351 6986750. Loc. Pian di Conati 52, Sovana (~15 min od Pitigliano).",
+          "source": "http://www.sassotondo.it/it/visite.html",
           "checked": "2026-07"
         }
       ],
       "practical_tips": [
-        "Timeline: 9:30 Pitigliano centro (spacer, fortezza) → 10:00 synagoga + ghetto → 11:30 Via Cava San Giuseppe (1h) → 13:00 lunch Tufo Allegro → popołudnie wolne lub Sassotondo 15:30.",
-        "Via Cava: start od SP42 (Pian della Madonna) lub pieszo z centrum (10–15 min). Parking gratis przy SP42.",
-        "Szlak 850 m jednokierunkowo + powrót — łącznie ~1–1,5h z necropoli i Fonte dell'Olmo.",
-        "Zarezerwuj Il Tufo Allegro rano na kolację — wtorek zamknięte!",
-        "Opcja: degustacja Sassotondo o 15:30 (prenotazione +39 351 6986750) — 2.2 km droga sterrata.",
-        "Poniedziałek 21.09: Palazzo Orsini ZAMKNIĘTE — skup się na synagodze, Via Cave i spacerze po borgo.",
-        "Sinagoga „Piccola Gerusalemme\": Vicolo Manin — bagno rytualne, piec na matzę, muzeum w tufie. €6.",
-        "Il Tufo Allegro: rezerwacja tel. 0564 616192 — Michelin, kilka stolików w tufie.",
-        "Via Cave: start przy cmentarzu, ~1,5–2 h z powrotem. Quercus ilex (leccio) po obu stronach."
+        "Timeline: 9:30 Pitigliano centro (spacer, widoki) → 10:00 synagoga + ghetto (1h) → 11:30 Via Cava San Giuseppe (1–1,5h) → 13:00 lunch Il Tufo Allegro → popołudnie wolne lub Sassotondo 15:30.",
+        "Via Cava: start od SP42 (Pian della Madonna) lub pieszo z centrum (10–15 min). Parking gratis przy SP42. Szlak 850 m + powrót ~1–1,5h z necropoli i Fonte dell'Olmo.",
+        "Via Cava: latarka, buty trekkingowe, woda — wykop ciemny nawet w słońcu. Po deszczu ślisko i niebezpiecznie.",
+        "Synagoga: poniedziałek OTWARTE, sobota ZAMKNIĘTE — idealny dzień na getto. Mężczyźni: kippa (dostępna przy wejściu).",
+        "Il Tufo Allegro: zadzwoń rano na kolację — wtorek 22.09 ZAMKNIĘTE! Restauracja tuż przy synagodze, kilka stolików w tufie.",
+        "Leccio (Quercus ilex): zwróć uwagę na zimozielony baldachim wzdłuż Via Cava — typowy element maremmańskiego krajobrazu.",
+        "Poniedziałek 21.09: Palazzo Orsini ZAMKNIĘTE — nie planuj fortecy; synagoga + Via Cave + kolacja to plan dnia.",
+        "Opcja: degustacja Sassotondo o 15:30 (prenotazione +39 351 6986750) — ~15 min jazdy, w limicie 30 min od bazy."
       ],
       "parking": {
-        "parcheggio_fosso": "Parcheggio del Fosso — główny parking dla turystów, poza ZTL. 5–10 min pieszo do centrum.",
+        "parcheggio_fosso": "Parcheggio del Fosso — główny parking turystyczny, poza ZTL. 5–10 min pieszo do centrum.",
         "piazza_garibaldi": "Piazza Garibaldi / Piazza della Repubblica — płatny €1,50/h (9–13, 15–20). 20 min gratis/dzień.",
         "piazza_santa_chiara": "Via Santa Chiara — €1/h pierwsza godzina, €6/dzień. 8–20.",
         "piazza_dante": "Piazza Dante Alighieri — parking bezpłatny (dalszy).",
         "ztl": "ZTL w murach Pitigliano — kamery. Parkuj TYLKO poza murami (Fosso lub Nenni).",
-        "pitigliano": "Parcheggio del Fosso — płatny, poza ZTL, 5 min pieszo do centrum. Alternatywa: Piazza Nenni (bezpłatny, ~15 min pieszo).",
-        "via_cave": "Via Cava San Giuseppe: parking przy cmentarzu (Cimitero di Pitigliano) — bezpłatny, mały."
+        "via_cave": "Via Cava San Giuseppe: parking przy SP42 (Pian della Madonna) — bezpłatny. Alternatywa: Cimitero di Pitigliano (mały, bezpłatny)."
       },
       "opening_hours": {
         "sinagoga_museo": "21.09 (pn): 10:00–13:00 i 14:30–18:00 (sezon kwiecień–październik). Sobota ZAMKNIĘTE. Bilet €5–6.",
         "sinagoga_phone": "Associazione La Piccola Gerusalemme: 0564 614230, 328 1907173",
-        "fortezza_orsini": "Zwykle 10:00–13:00 i 15:00–19:00 (sezon). Sprawdź przy kasie.",
-        "via_cava_san_giuseppe": "Dostęp 24h (szlak outdoor). Najlepiej 9:00–17:00. ~850 m, ~18 min w jedną stronę.",
-        "il_tufo_allegro": "Poniedziałek: 12:30–14:30 i 19:30–21:30. Wtorek (22.09) ZAMKNIĘTE — zaplanuj kolację dziś!",
+        "via_cava_san_giuseppe": "Dostęp 24h (szlak outdoor). Najlepiej 9:00–17:00. ~850 m, ~18 min w jedną stronę. Unikać po deszczu.",
+        "il_tufo_allegro": "Poniedziałek 21.09: 12:30–14:30 i 19:30–21:30. Wtorek (22.09) ZAMKNIĘTE — zaplanuj kolację dziś!",
         "palazzo_orsini": "Wt–cz 9:00–13:00, 14:00–17:00; pt–nd 9:00–13:00, 14:00–18:00. Poniedziałek ZAMKNIĘTE. Wstęp do 30 min przed zamknięciem.",
-        "sinagoga": "1 IV–31 X: 10:00–13:00, 14:30–18:00. Sobota ZAMKNIĘTA. Poniedziałek 21.09 = OTWARTE.",
-        "via_cave": "Dostęp bezpłatny 24/7 — szlak samodzielny, bez biletu."
+        "sassotondo": "Degustacja: 10:30 lub 15:30, pn–nd. Prenotazione 24h: +39 351 6986750."
       }
     },
     {
@@ -1868,37 +2409,48 @@
       "title": "Sorano i termalna kaskada Saturnia",
       "base_id": "base3",
       "base_label": "BAZA 3 — Pitigliano",
-      "drive_limit_min": 25,
+      "drive_limit_min": 30,
       "attractions": [
         {
           "name": "Sorano — Fortezza Orsini",
           "drive_min": 10,
-          "description": "Bliźniaczy do Pitigliano tuf-town, mniej odwiedzany. Fortezza Orsini (XV w.), wiszące ogrody na krawędzi urwiska. Spacer wąwozem rzeki Lente (via cava Vitozza — niemal nieznana).",
+          "description": "Bliźniaczy do Pitigliano tuf-town, mniej odwiedzany. Fortezza Orsini (XV w.), wiszące ogrody na krawędzi urwiska. Krótki spacer Via Cava di San Rocco w dolinie Lente (start od fortecy, ~45 min). Pełny trekking Vitozza→Sorano to osobna opcja na inny dzień.",
           "type": "medieval",
           "image_key": "sorano",
-          "gps_hint": "Fortezza Orsini, 58010 Sorano GR — parking przy Piazza Cairoli",
+          "gps_hint": "Fortezza Orsini, Piazza Cairoli 3, 58010 Sorano GR — parking San Marco",
           "image": "sorano",
-          "ticket_price": "€10 cumulativo (4 obiekty) lub wstęp tylko forteca — sprawdź w kasie",
-          "opening_hours": "10:00–13:00, 15:00–19:00 (wrzesień), pon. zamknięte"
+          "ticket_price": "€10 cumulativo (forteca + necropoli Sovana + 3 muzea) lub wstęp tylko forteca — sprawdź w kasie",
+          "opening_hours": "10:00–13:00, 15:00–19:00 (wrzesień), pon. zamknięte — wtorek 22.09 OTWARTE"
+        },
+        {
+          "name": "Via Cava di San Rocco — dolina Lente",
+          "drive_min": 10,
+          "description": "Etruska via cava przy fortecy Orsini — necropoli San Rocco, nisze i symbole na skale, dębowy las w wąwozie rzeki Lente. Spacer 45 min–1 h, bezpłatny, bez biletu.",
+          "type": "nature",
+          "image_key": "sorano",
+          "gps_hint": "Chiesa di San Rocco, Sorano GR — start od Fortezza Orsini, szlak w dolinę Lente",
+          "image": "sorano",
+          "ticket_price": "Bezpłatny",
+          "opening_hours": "Całorocznie, szlak samodzielny"
         },
         {
           "name": "Cascate del Mulino — Saturnia",
           "drive_min": 25,
-          "description": "Naturalne wodospady termalne (37°C), wolny wstęp, czynne 24/7. We wtorek po 15:00 tłumy mocno maleją. Siarczane wody, piękny pejzaż.",
+          "description": "Naturalne wodospady termalne (~37°C), wolny wstęp 24/7. We wtorek po 15:00 tłumy wyraźnie maleją (lunch time też spokojniej). Siarczane wody, travertinowe baseny.",
           "type": "nature",
           "image_key": "saturnia",
           "gps_hint": "Cascate del Mulino, 58014 Manciano GR — parking przy SP10 (€2,50/h)",
           "image": "saturnia",
           "ticket_price": "Bezpłatny wstęp",
           "opening_hours": "24/7",
-          "parking_price": "€2,50/h (8:00–20:00)"
+          "parking_price": "€2,50/h (8:00–20:00), bezpłatny 20:00–8:00"
         }
       ],
       "oak_forest": {
-        "spot": "Dolina Lente koło Sorano",
+        "spot": "Dolina Lente — Via Cava di San Rocco",
         "species": "Quercus ilex, Q. pubescens",
-        "note": "Jedna z nienaruszonych enklaw maremmiańskiej puszczy dębowej — spacer wzdłuż Via Cava di San Rocco",
-        "gps_hint": "Via Cava di San Rocco, Sorano GR — start od Fortezza Orsini"
+        "note": "Maremmski las dębowy w wąwozie rzeki Lente — spacer od Fortezza Orsini wzdłuż Via Cava San Rocco. Vitozza (San Quirico) to osobny, dłuższy szlak (~2,5 h) z ~200 jaskiniami.",
+        "gps_hint": "Via Cava di San Rocco, Sorano GR — start od fortecy Orsini"
       },
       "food": {
         "place": "Cantina L'Ottava Rima — Sorano (lunch)",
@@ -1908,85 +2460,87 @@
           "pappardelle al cinghiale",
           "vini autoctoni z piwnicy w tufie"
         ],
-        "note": "Enosteria w wykopanym tufie — Via del Borgo 25. Parking: Piazza del Municipio, zejście przez Via Selvi. Tel. +39 349 8024196. Alternatywa obiad: Ristorante Fidalma, Piazza Pietro Busatti.",
+        "note": "Enosteria w wykopanym tufie. Parking: Piazza del Municipio, zejście przez Via Selvi. Tel. +39 349 8024196. Alternatywy: Ristorante Fidalma (Piazza Busatti 6), Albergo Ristorante La Botte w Montorio (SP Pitiglianese, 0564 638633). UWAGA: „Osteria La Botte Piena” to restauracja w Montefollonico (SI), ~80 km stąd — nie w Sorano.",
         "price": "~€18–25/os",
         "gps_hint": "Via del Borgo 25, Sorano GR — zejście z Piazza del Municipio",
         "phone": "+39 349 8024196"
       },
       "tips": [
-        "Sorano rano, Saturnia po 15:00 — wtorek = mniej tłumów w termach",
-        "Saturnia: weź ręcznik i klapki — kamienie śliskie od siarki",
-        "Parking Saturnia przy SP10 — €2,50/h (8–20h), ~5 min pieszo do kaskad",
-        "Poprawka: „Osteria La Botte Piena\" nie istnieje — Cantina Ottava Rima lub Fidalma",
-        "Saturnia: stary bezpłatny parking przy kaskadach zamknięty — tylko płatny SP10"
+        "Sorano rano (forteca 10:00), Saturnia po 15:00 — wtorek = dzień powszedni, mniej tłumów niż weekend",
+        "Saturnia: weź ręcznik i klapki — kamienie śliskie od siarki; srebrna biżuteria może ściemnieć",
+        "Parking Saturnia przy SP10 — €2,50/h (8–20h), ~5 min pieszo do kaskad; po 20:00 gratis",
+        "„Osteria La Botte Piena” = Montefollonico (SI), nie Sorano — lokalnie: Cantina Ottava Rima lub La Botte (Montorio)",
+        "Vitozza (San Quirico): trekking 2,5 h — za długi na ten dzień z Saturnią; krótki spacer = Via Cava San Rocco"
       ],
       "image": "sorano",
       "opening_hours": {
-        "fortezza_orsini": "1 IV–30 IX: 10:00–13:00, 15:00–19:00. Wtorek 22.09 OTWARTE. Pn zamknięte (oprócz sierpnia/świąt). Visite sotterranee: 12:00, 15:00, 18:00.",
-        "saturnia_cascate": "24/7, wstęp bezpłatny. Najmniej tłumów: wtorek po 15:00.",
-        "saturnia_parking": "Płatny 8:00–20:00 (€2,50/h); bezpłatny 20:00–8:00. EasyPark lub monety/karta.",
+        "fortezza_orsini": "1 IV–30 IX: 10:00–13:00, 15:00–19:00. Wtorek 22.09 OTWARTE. Pn zamknięte (oprócz sierpnia/świąt). Visite sotterranee: 12:00, 15:00, 18:00 — prenotazione 0564/633767.",
+        "saturnia_cascate": "24/7, wstęp bezpłatny. Wtorek we wrześniu: tłumy 10:00–15:00; optymalnie przed 9:00 lub po 15:00–17:00.",
+        "saturnia_parking": "Płatny 8:00–20:00 (€2,50/h); bezpłatny 20:00–8:00. EasyPark, monety lub karta.",
+        "vitozza": "Wstęp: pn–pt gratis, sb/nd/festivi €2. Szlak od San Quirico ~1,5 km do foresterii, anello ~2,5 h. cittadeltufo.com",
         "cantina_ottava_rima": "Śr–nd 12:00–14:30, 19:00–22:00. Wtorek OTWARTE. Poniedziałek zamknięte.",
-        "saturnia": "Cascate del Mulino: 24/7, wstęp bezpłatny. Parking 8:00–20:00.",
+        "la_botte_montorio": "Albergo Ristorante La Botte, Montorio di Sorano — pranzo 12:30–14:30, cena 19:30–21:30. Tel. 0564 638633.",
         "fidalma": "Tradycyjna kuchnia maremmańska — lunch i dinner, rezerwacja zalecana."
       },
       "parking": {
-        "sorano": "Piazza Cairoli lub Parcheggio San Marco — bezpłatny, 2 min do Fortezza Orsini. Via Cava San Rocco: start od fortecy.",
+        "sorano": "Piazza Cairoli lub Parcheggio San Marco (Via Ricasoli 9) — bezpłatny, 2 min do Fortezza Orsini. Via Cava San Rocco: start od fortecy.",
         "saturnia": "Parking płatny przy SP10, ~450 m od kaskad. €2,50/h (8:00–20:00), EasyPark lub monety/karta. Camper max 2,20 m. Bezpłatnie 20:00–8:00.",
+        "vitozza": "San Quirico — Piazza della Repubblica lub parking przy campo sportivo; ~15 min jazdy od Pitigliano.",
         "tip": "Sorano rano (9:00–12:00), Saturnia po 15:00 — optymalna kolejność we wtorek.",
         "saturnia_tip": "NIE parkuj na poboczu SP10 — mandaty. Stary parking przy kaskadach zamknięty."
       },
       "practical_tips": [
         "Fortezza Orsini: bilet cumulativo €10 (forteca + necropoli Sovana + muzea) — opłaca się jeśli jutro idziesz do Sovany.",
-        "Wizyty podziemne fortecy tylko o 12:00, 15:00, 18:00 — zaplanuj Sorano rano na 10:00–13:00.",
-        "Saturnia: weź ręcznik, klapki, strój kąpielowy — kamienie śliskie od siarki. Woda ~37°C.",
-        "Parking Saturnia: zapłać EasyPark lub automatem; po 20:00 bezpłatny — wieczorne kąpiele możliwe.",
-        "Lunch w Sorano: Cantina Ottava Rima (Via del Borgo 25) — tagliere + fonduta, bardzo lokalne.",
-        "Via Cava San Rocco: start od Fortezza Orsini, spacer 1–2 h w dolinie Lente — latarka opcjonalna.",
-        "Wtorek 22.09: Sorano rano (10:00 forteca), Saturnia po 15:00 — optymalna strategia tłumów.",
-        "Saturnia parking: €2,50/h, EasyPark app. 450 m pieszo do kaskad. Nie parkuj na SP10.",
-        "Fortezza Orsini: visite sotterranee o 12:00, 15:00, 18:00 — warto zaplanować 15:00 przed Saturnia.",
-        "Via Cava San Rocco: spacer od fortecy — dębowy las Quercus ilex, ~45 min."
+        "Wizyty podziemne fortecy tylko o 12:00, 15:00, 18:00 — weź lekką kurtkę; zaplanuj 12:00 lub 15:00 przed Saturnią.",
+        "Saturnia wtorek: dzień powszedni = mniej tłumów niż sobota; wrzesień nadal sezon — przyjedź po 15:00 lub przed 9:00.",
+        "Saturnia: ręcznik, klapki, strój kąpielowy — kamienie śliskie, woda ~37°C, zapach siarki normalny.",
+        "Parking Saturnia: EasyPark app lub automaty; po 20:00 bezpłatny — wieczorne kąpiele możliwe.",
+        "Via Cava San Rocco: start od fortecy, ~45 min w dolinie Lente — latarka opcjonalna, buty trekkingowe.",
+        "Vitozza: ~200 jaskiń rupestri w San Quirico, szlak 2,5 h — za ambitny na ten dzień z Sorano + Saturnia.",
+        "„Osteria La Botte Piena” (Montefollonico SI) to inna restauracja — w okolicy Sorano: La Botte Montorio lub Cantina Ottava Rima.",
+        "Lunch: Cantina Ottava Rima (Via del Borgo 25) — tagliere + fonduta w tufie, wtorek otwarte.",
+        "Harmonogram: Pitigliano → Sorano 10 min, Saturnia 25 min — oba w limicie 30 min od bazy."
       ],
       "web_research": [
         {
-          "topic": "Fortezza Orsini Sorano — godziny i bilety",
-          "summary": "Sezon kwiecień–wrzesień: codziennie 10–13 i 15–19, poniedziałek zamknięty (sierpień otwarte). Bilet cumulativo €10 (forteca + necropoli Sovana + 3 muzea). Wizyty podziemne o 12:00, 15:00, 18:00.",
+          "topic": "Cascate del Mulino — godziny i tłumy we wtorek",
+          "summary": "Wstęp bezpłatny 24/7, 365 dni — brak bramek i godzin zamknięcia. We wrześniu nadal sezon: tłumy od rana do wieczora w weekendy; wtorek (dzień powszedni) wyraźnie spokojniejszy. Optymalnie: przed 9:00 (para nad wodą) lub po 15:00–17:00 (lunch time też mniej ludzi). Woda stała ~37,5°C.",
+          "source": "https://www.maremma-tuscany.com/saturnia/le-cascate-del-mulino/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Cascate del Mulino — parking 2026",
+          "summary": "Parking ~450 m od kaskad: €2,50/h (8:00–20:00), bezpłatny 20:00–8:00. Płatność: monety, karta, EasyPark. Zakaz parkowania na poboczu SP10. Stary parking przy kaskadach zamknięty.",
+          "source": "https://agaonthe.run/how-to-visit-cascate-del-mulino-saturnia-hot-springs-in-italy/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Fortezza Orsini Sorano — godziny wrzesień",
+          "summary": "1 IV–30 IX: codziennie 10:00–13:00 i 15:00–19:00. Poniedziałek zamknięty (wyjątek: sierpień i święta). Wtorek 22.09 OTWARTE. Visite sotterranee: 12:00, 15:00, 18:00 — prenotazione tel. 0564/633767 lub 388/5724861. Bilet cumulativo €10.",
           "source": "https://www.museidimaremma.it/museo/museo-civico-archeologico/",
           "checked": "2026-07"
         },
         {
-          "topic": "Cascate del Mulino Saturnia — parking 2026",
-          "summary": "Wstęp bezpłatny 24/7. Parking 450 m od kaskad: €2,50/h (8:00–20:00), bezpłatny nocą. Płatność: monety, karta, EasyPark. Zakaz parkowania przy SP10.",
-          "source": "https://northabroad.com/saturnia-hot-springs-guide/",
+          "topic": "Via Cava di San Rocco i Vitozza — rozróżnienie",
+          "summary": "Via Cava San Rocco: krótki spacer od fortecy Sorano, necropoli etruska w dolinie Lente (~45 min). Vitozza: insediamento rupestre przy San Quirico (5 km od Sorano), ~200 jaskiń, szlak 2,5 h (cittadeltufo.com); wstęp pn–pt gratis, €2 sb/nd. Pełny trekking Vitozza→Sorano przez Lente (~5 km) = osobna wycieczka, nie na ten dzień z Saturnią.",
+          "source": "https://cittadeltufo.com/itinerari/vitozza/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Osteria La Botte Piena — weryfikacja lokalizacji",
+          "summary": "„Osteria La Botte Piena” to restauracja w Montefollonico (Piazza Dionisa Cinughi 12, Torrita di Siena SI) — ~80 km od Pitigliano, poza limitem 30 min. W okolicy Sorano: Albergo Ristorante La Botte, Montorio di Sorano (SP Pitiglianese km 19, tel. 0564 638633, pranzo 12:30–14:30). Lokalne opcje w Sorano: Cantina Ottava Rima, Fidalma, Hosteria del Borgo.",
+          "source": "https://labottesorano.com/",
           "checked": "2026-07"
         },
         {
           "topic": "Parking Fortezza Orsini",
-          "summary": "Parking San Marco, Via Ricasoli 9 — bezpłatny, 2 min pieszo do wejścia na Piazza Cairoli 3.",
+          "summary": "Parcheggio San Marco, Via Ricasoli 9 — bezpłatny, 2 min pieszo do wejścia Piazza Cairoli 3 (muzeum i biglietteria).",
           "source": "https://maremma.name/valle-del-fiora/sorano/fortezza-orsini/",
           "checked": "2026-07"
         },
         {
-          "topic": "Restauracje Sorano — weryfikacja",
-          "summary": "„Osteria La Botte Piena” to restauracja w Montefollonico (SI), nie w Sorano. Lokalne opcje: Cantina Ottava Rima (Via del Borgo 25), Ristorante Fidalma (Piazza Busatti 6, od 1965), Hosteria del Borgo (Via del Borgo 42).",
-          "source": "https://maremma.name/valle-del-fiora/sorano/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Fortezza Orsini Sorano — orari wrzesień",
-          "summary": "1 IV–30 IX: 10–13, 15–19 codziennie (pn zamknięte poza sierpniem). Sotterranei: 12, 15, 18. Cumulativo €10.",
-          "source": "https://www.museidimaremma.it/museo/museo-civico-archeologico/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Saturnia Cascate del Mulino — parking 2026",
-          "summary": "Wstęp bezpłatny 24/7. Parking SP10: €2,50/h (8–20), EasyPark. 450 m pieszo. Camper max 2,20 m.",
-          "source": "https://northabroad.com/saturnia-hot-springs-guide/",
-          "checked": "2026-07"
-        },
-        {
           "topic": "Cantina Ottava Rima Sorano",
-          "summary": "Via del Borgo 25. Enosteria w tufie. Śr–nd 12–14:30, 19–22. Tel. +39 349 8024196.",
+          "summary": "Via del Borgo 25. Enosteria w tufie. Śr–nd 12:00–14:30, 19:00–22:00 — wtorek OTWARTE. Tel. +39 349 8024196.",
           "source": "https://cantinaottavarima.com/it/",
           "checked": "2026-07"
         }
@@ -2012,9 +2566,9 @@
           "image": "sovana"
         },
         {
-          "name": "Selva del Lamone — Sentiero delle Querce",
+          "name": "Selva del Lamone — Sentiero degli Alberi Monumentali (n. 11)",
           "drive_min": 18,
-          "description": "Jeden z najlepiej zachowanych mezofitycznych lasów dębowych południowej Toskanii. Szlak n. 3 (~6 km). Całkowity brak ruchu turystycznego.",
+          "description": "Jeden z najlepiej zachowanych lasów dębowych południowej Toskanii (Quercus cerris). Oficjalny szlak n. 11 — Sentiero degli Alberi Monumentali (~3,5 km, 1h30). Całkowity brak ruchu turystycznego. Uwaga: potoczna nazwa 'Sentiero delle Querce' nie istnieje oficjalnie.",
           "type": "nature",
           "image_key": "lamone",
           "gps_hint": "Selva del Lamone, 58017 Semproniano GR — parking przy SP22",
@@ -2034,7 +2588,7 @@
         "spot": "Selva del Lamone",
         "species": "Quercus cerris (dominant), Q. pubescens",
         "note": "NAJLEPSZY las dębowy trasy — stary rezerwat, nienaruszony, żadnych turystów. Wejście bezpłatne.",
-        "gps_hint": "Sentiero n. 3 — start od parkingu SP22, pętla ~6 km"
+        "gps_hint": "Sentiero n. 11 (alberi monumentali) — start: parking Campo della Villa (Roppozzo) lub SP22"
       },
       "food": {
         "place": "Taverna Etrusca — Sovana (kolacja pożegnalna)",
@@ -2150,39 +2704,79 @@
       "drive_h": "7,5–8 h",
       "base_id": null,
       "depart": "7:00 rano z Pitigliano",
-      "route": "Pitigliano → SS74 → Manciano → Orvieto (A1 zjazd) → A1 north → obwodnica Florencji (Firenze-Incisa/Prato) → Bologna → Modena → A1/A4 → Milano bypass (Tangenziale) → A22 Brenner → Innsbruck → A93/A8 → Rosenheim → Wasserburg am Inn",
+      "route": "Pitigliano → SS74 Maremmana (Manciano) → Orvieto Ovest (A1) → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → Tangenziale Milano → A22 Brennero → A13 AT (Streckenmaut) → A12 Inntal → Rosenheim → B304 → Wasserburg am Inn",
       "attractions": [],
       "nature": null,
       "food": {
-        "place": "Bolonia lub Modena (postój autostradowy)",
-        "address": null,
-        "dishes": [],
-        "note": "Bolonia to stolica włoskiej kuchni — ostatnie włoskie tortellini in brodo na stacji lub krótki zjazd do centrum Bolonii (20 min od A1). Unikaj pełnego centrum Florencji — korki i ZTL.",
+        "place": "Bolonia lub Modena (postój autostradowy A1)",
+        "address": "Autogrill Bologna Borgo Panigale lub Modena Nord",
+        "dishes": [
+          "tortellini in brodo",
+          "tagliatelle al ragù",
+          "caffè"
+        ],
+        "note": "Ostatnie włoskie jedzenie — zjazd A1 Bologna Borgo Panigale (~20 min do centrum Bolonii) lub Modena Nord. Autogrill 24h na A1. NIE zjeżdżaj do centrum Florencji — 24.09 to czwartek, ZTL aktywna 7:30–20:00, kamery na wjazdach.",
         "price": "~€10–15",
-        "gps_hint": "Zjazd A1 Bologna Borgo Panigale lub Modena Nord"
+        "gps_hint": "Naviguj: Autogrill Bologna Borgo Panigale lub A1 uscita Modena Nord",
+        "options": [
+          {
+            "name": "Autogrill Bologna Borgo Panigale",
+            "type": "autostrada",
+            "address": "A1 uscita Bologna Borgo Panigale",
+            "note": "24h — tortellini in brodo, szybki postój bez wjazdu do ZTL Bolonii centrum",
+            "price": "€10–15"
+          },
+          {
+            "name": "Autogrill Modena Nord",
+            "type": "autostrada",
+            "address": "A1 km ~220, Modena Nord",
+            "note": "24h — alternatywa jeśli korki przy Bolonii",
+            "price": "€10–15"
+          }
+        ]
       },
       "accommodation": {
         "place": "Wasserburg am Inn — nocleg tranzytowy (Bawaria)",
-        "note": "Malownicze miasto na zakolu Innu. Wieczorny spacer Altstadt (15 min). Unikaj Monachium (drogo, brak parkingu).",
-        "price": "€45–65/noc",
-        "booking_tip": "Booking: Gasthof w historischen Zentrum — rezerwuj z widokiem na Inn",
-        "gps_hint": "Naviguj: Wasserburg am Inn — parking Altstadt",
+        "note": "Malownicze miasto na zakolu Innu, ~45 km od Monachium. Wieczorny spacer Altstadt (15 min). Unikaj Monachium (drogo, brak parkingu). ⚠️ Szukaj Wasserburg am Inn (83512), NIE Wasserburg am Bodensee.",
+        "price": "€45–75/noc",
+        "booking_tip": "Rezerwuj Gasthof z bezpłatnym parkingiem — Huberwirt (od €46) lub Paulanerstuben w Altstadt",
+        "gps_hint": "Naviguj: Wasserburg am Inn 83512 — NIE Bodensee",
         "options": [
+          {
+            "name": "Hotel & Gasthaus Huberwirt am Kellerberg",
+            "type": "Gasthof",
+            "address": "Salzburgerstr. 25, 83512 Wasserburg am Inn",
+            "price": "od €46/noc",
+            "parking": "bezpłatny prywatny",
+            "url": "https://www.preiswert-uebernachten.de/wasserburg/hotel-gasthaus-huberwirt-am-kellerberg/6917",
+            "note": "Widok na Altstadt, 1,1 km od centrum, śniadanie, recepcja 14:00–20:00"
+          },
+          {
+            "name": "Hotel Gasthof Paulanerstuben",
+            "type": "Gasthof",
+            "address": "Marienplatz 9, 83512 Wasserburg am Inn",
+            "price": "od €94/noc",
+            "parking": "bezpłatny dla gości",
+            "url": "https://www.paulanerstuben-wasserburg.de/",
+            "note": "Historyczny budynek z 1439 r. w samym sercu Altstadt, 1–5 min pieszo do Inn"
+          },
           {
             "name": "Gasthof Staudham",
             "type": "Gasthof",
             "address": "Münchner Str. 30, 83512 Wasserburg am Inn",
             "price": "€55–75/noc",
             "parking": "bezpłatny prywatny",
-            "url": "https://www.bedandbreakfast.eu/en/a/FvjNpfVhYh8d/gasthof-staudham"
+            "url": "https://www.bedandbreakfast.eu/en/a/FvjNpfVhYh8d/gasthof-staudham",
+            "note": "Spokojna lokalizacja, restauracja na miejscu"
           },
           {
-            "name": "Hotel & Gasthaus Huberwirt am Kellerberg",
-            "type": "Gasthof",
-            "address": "Salzburgerstr. 25, 83512 Wasserburg am Inn",
-            "price": "od €46/noc",
-            "parking": "bezpłatny",
-            "url": "https://www.preiswert-uebernachten.de/wasserburg/hotel-gasthaus-huberwirt-am-kellerberg/6917"
+            "name": "Das Fletzinger",
+            "type": "Boutique-Hotel",
+            "address": "Fletzingergasse 3, 83512 Wasserburg am Inn",
+            "price": "€80–110/noc",
+            "parking": "na zapytanie",
+            "url": "https://fletzinger.de/",
+            "note": "Boutique-hotel w historycznej Altstadt, recepcja 24h"
           },
           {
             "name": "Das Wasserburg Hotel",
@@ -2191,163 +2785,162 @@
             "price": "€70–90/noc",
             "parking": "bezpłatny lub garaż €8/dzień",
             "url": "https://daswasserburghotel.de/",
-            "note": "Self-check-in 24h, otwarty 2025"
-          },
-          {
-            "name": "Gasthof Huberwirt am Kellerberg",
-            "type": "Gasthof",
-            "address": "Salzburger Str. 25, 83512 Wasserburg am Inn",
-            "price": "od €46/noc",
-            "parking": "bezpłatny prywatny",
-            "note": "Widok na Altstadt, śniadanie w cenie"
+            "note": "Self-check-in 24h, nowy obiekt (2025), poza Altstadt"
           }
         ]
       },
       "tips": [
+        "Wyjazd 7:00 = uniknięcie korków przy Bolonii i Mediolanie",
+        "Zostań na A1 przy Florencji — czwartek = ZTL aktywna, mandaty €80–335",
+        "Zatankuj w Niemczech po Brenner — paliwo tańsze niż we Włoszech i Austrii",
         "Wasserburg am Inn — wieczorny spacer po starym mieście nad Innem",
-        "Zatankuj przed granicą austriacką — paliwo tańsze w Niemczech",
-        "Wyjazd o 7:00 = uniknięcie korków przy Bolonii i Mediolanie",
-        "Pedaggio A22: przygotuj ~€25 gotówki lub kartę",
-        "Wasserburg Altstadt: najlepszy wieczorny spacer tranzytu powrotnego"
+        "Pedaggio A22 ~€22,80 + A13 Brenner ~€12,50 — gotówka lub karta"
       ],
       "opening_hours": {
-        "gasthof_staudham": "Restaurant na miejscu — sprawdź przy check-in",
+        "ztl_firenze": "pn–pt 7:30–20:00, sob 7:30–16:00 — 24.09 (czw) ZTL AKTYWNA cały dzień tranzytu",
         "huberwirt_checkin": "Recepcja standardowo 14:00–20:00",
+        "paulanerstuben": "Hotel w Altstadt — recepcja wg rezerwacji",
         "das_wasserburg_hotel": "Self-check-in 24h, parking gratis lub garaż €8/dzień",
-        "bologna_lunch": "Autogrill Modena Nord / Bologna Borgo Panigale: 24h na A1.",
+        "bologna_lunch": "Autogrill Bologna Borgo Panigale / Modena Nord: 24h na A1",
         "wasserburg_altstadt": "Restauracje Altstadt: 11:30–22:00. Wieczorny spacer po murach nad Innem."
       },
       "parking": {
-        "wasserburg_altstadt": "Altstadt kompaktowa — parkuj przy hotelu. Większość Gasthöfe ma bezpłatny parking.",
-        "tip": "Wieczorny spacer po starym mieście nad Innem — 10 min od większości noclegów.",
-        "wasserburg": "Altstadt: Parkplatz Innstraße (płatny dzień) lub bezpłatny przy hotelu. Wieczorny spacer nad Innem — 10 min z centrum.",
-        "hotel": "Gasthof Staudham / Huberwirt: bezpłatny parking na miejscu."
+        "wasserburg_altstadt": "Parkhaus Kellerstraße / Überfuhrstraße: do 4h gratis, potem €2,50/dzień. W Altstadt (ulice) osobne strefy — lepiej parkuj przy hotelu.",
+        "tip": "Większość Gasthöfe ma bezpłatny parking — Huberwirt, Paulanerstuben, Staudham. Wieczorny spacer nad Innem — 10 min pieszo z noclegu.",
+        "hotel": "Huberwirt / Paulanerstuben / Staudham: bezpłatny parking na miejscu."
       },
       "practical_tips": [
-        "Wyjazd 7:00 z Pitigliano = dotarcie do Wasserburg ok. 15:00–16:00 (z 2 postojami).",
-        "A1 pedaggio: gotówka lub karta na bramkach. Rozważ Telepass/unipol dla szybszego przejazdu.",
-        "Unikaj centrum Florencji — Variante di Valico to obwodnica bez ZTL.",
-        "Brenner w czwartek popołudniu: umiarkowany ruch — nie powinien być krytyczny we wrześniu.",
-        "Wasserburg: rezerwuj Gasthof z parkingiem — Staudham (Münchner Str. 30) lub Huberwirt (od €46, Salzburgerstr. 25).",
-        "Wieczorny spacer: malownicze miasto na zakolu Innu — ostatni „urlopowy” wieczór.",
-        "Wyjazd 7:00 z Pitigliano — dotarcie Wasserburg ~17:00–18:00 (z 2×20 min postojami).",
-        "A22 Brenner: ~€22,80 klasa A (cała trasa Modena–Brennero, 2026). Gotówka lub karta.",
-        "Lunch: Bolonia Borgo Panigale (A1) — ostatnie tortellini. NIE zjeżdżaj do centrum Florencji.",
+        "Wyjazd 7:00 z Pitigliano → Wasserburg ~17:00–18:00 (z 2 postojami po 20–30 min).",
+        "24.09 to CZWARTEK: ZTL Firenze aktywna 7:30–20:00 — zostań na A1 Variante di Valico, nie ustawiaj celu „Firenze centro”.",
+        "SS74 Maremmana Pitigliano→Orvieto ~55 km (~50 min) — zatankuj przed wjazdem na A1.",
+        "A22 pedaggio Modena–Brennero: ~€22,80 klasa A (2026). A13 AT Brenner: Streckenmaut ~€12,50 osobno od winiety.",
+        "Po Brenner: A12 → Rosenheim → B304 do Wasserburg (~25 km). Nie myl z A93 (idzie na południe do Kufstein).",
+        "Nocleg: Huberwirt od €46 (parking gratis, widok Altstadt) lub Paulanerstuben Marienplatz 9 (w sercu miasta).",
+        "Nie myl Wasserburg am Inn (Bawaria, 83512) z Wasserburg am Bodensee (nad Jeziorem Bodeńskim).",
         "Tankuj w Niemczech po Brenner — tańsze niż we Włoszech i Austrii.",
-        "Wieczór: spacer po Altstadt Wasserburg — malownicze miasto na zakolu Innu."
+        "Wieczór: spacer po Altstadt Wasserburg — malownicze miasto na zakolu Innu, ostatni „urlopowy” wieczór."
       ],
       "web_research": [
         {
+          "topic": "SS74 Maremmana Pitigliano→Orvieto",
+          "summary": "Ex SS74 (dziś SR74/SP144): Pitigliano → Manciano → San Lorenzo Nuovo → Orvieto. ~55 km, ~50 min. Z A1 Orvieto: SS71 verso Bolsena, potem SS74 verso Pitigliano (odwrotnie przy wyjeździe).",
+          "source": "https://pitigliano.org/en/info/how-to-get-here/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "ZTL Firenze — tranzyt czwartek 24.09",
+          "summary": "ZTL obejmuje całe centro storico (sektory A, B, O, F, G). Aktywna pn–pt 7:30–20:00, sob 7:30–16:00. Kamery Varco Elettronico na wszystkich wjazdach. Mandat €80–335 + koszty notyfikacji. Tranzyt: A1 Variante di Valico — nie wjeżdżaj do centrum.",
+          "source": "https://mobilita.comune.firenze.it/muoversi/muoversi/ztl.html",
+          "checked": "2026-07"
+        },
+        {
           "topic": "A22 pedaggio Brenner–Modena 2026",
-          "summary": "Cała trasa A22 Brenner–Modena: €22,80 klasa A. Odcinki: Modena–Verona €6,20, Verona–Trento €7,20, Trento–Bolzano €4,90, Bolzano–Brenner €5,80. Wzrost 1,46% od 01.2026.",
+          "summary": "Cała trasa A22 Brenner–Modena: €22,80 klasa A. Odcinki: Modena–Verona €6,20, Verona–Trento €7,20, Trento–Bolzano €4,90, Bolzano–Brenner €5,80. Wzrost 1,46% od 01.2026. System chiuso.",
           "source": "https://www.telepass.com/it/privati/servizi/telepedaggio/a22-brennero-modena",
           "checked": "2026-07"
         },
         {
-          "topic": "Trasa Maremma → Brenner",
-          "summary": "SS74 → A1 north → obwodnica Florencji → Bologna → Modena → A22 przez Brenner → A93 do Wasserburg. ~770 km, 7,5–8 h z postojami.",
-          "source": "https://www.tenutalemandorlaie.it/driving-from-germany-to-tuscany-best-routes-road-trip-tips-directions-to-maremma/",
+          "topic": "A13 Brenner Sondermaut Austria",
+          "summary": "A13 (AT) od granicy do Innsbruck: Streckenmaut ~€12,50 osobno od winiety. Po A12 Inntal do Rosenheim, potem B304 do Wasserburg am Inn (~25 km).",
+          "source": "https://www.asfinag.at/en/toll/vehicle-classes-and-toll/",
           "checked": "2026-07"
         },
         {
           "topic": "Noclegi Wasserburg am Inn",
-          "summary": "Gasthof Staudham (Münchner Str. 30, parking gratis), Huberwirt am Kellerberg (od €46, Salzburgerstr. 25, parking gratis), Das Wasserburg Hotel (self-check-in, parking gratis/garaż €8).",
-          "source": "https://www.booking.com/city/de/wasserburg-am-inn.html",
+          "summary": "Huberwirt Kellerberg (Salzburgerstr. 25, od €46, parking gratis), Paulanerstuben (Marienplatz 9, od €94, Altstadt), Gasthof Staudham (Münchner Str. 30), Das Fletzinger (Fletzingergasse 3, boutique). Nie mylić z Wasserburg am Bodensee.",
+          "source": "https://www.preiswert-uebernachten.de/wasserburg/hotel-gasthaus-huberwirt-am-kellerberg/6917",
           "checked": "2026-07"
         },
         {
-          "topic": "A22 pedaggio Modena–Brennero 2026",
-          "summary": "€22,80 klasa A (cała tratta). +1,46% od 1 I 2026. Sistema chiuso — biglietto all'ingresso.",
-          "source": "https://www.telepass.com/it/privati/servizi/telepedaggio/a22-brennero-modena",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Obwodnica Florencji A1",
-          "summary": "Zjazd Firenze-Incisa lub Prato-Campi Bisenzio — unikaj ZTL i korków w centrum. Varco Elettronico = mandaty.",
-          "source": "https://pitigliano.org/en/info/how-to-get-here/",
+          "topic": "Parking Wasserburg Altstadt",
+          "summary": "Parkhaus Kellerstraße i Überfuhrstraße: do 4h gratis, powyżej €2,50/dzień. W strefie Altstadt (ulice) osobne opłaty. Hotele Gasthof zwykle oferują bezpłatny parking.",
+          "source": "https://www.wasserburg.de/parkgebuehren",
           "checked": "2026-07"
         }
       ],
       "route_segments": [
         {
-          "segment": "Pitigliano → Orvieto",
-          "road": "SS74 / SR2",
+          "segment": "Pitigliano → Orvieto Ovest (A1)",
+          "road": "SS74 Maremmana / SR74",
           "km": "~55",
-          "note": "Ostatnie tankowanie we Włoszech — stacje przy SS74/A1."
+          "time": "~50 min",
+          "note": "Przez Manciano. Zatankuj przed wjazdem na A1 — ostatnia szansa na stację poza autostradą."
         },
         {
-          "segment": "Orvieto → Florencja bypass",
-          "road": "A1 → Variante di Valico",
+          "segment": "Orvieto → obwodnica Florencji",
+          "road": "A1 north → Variante di Valico",
           "km": "~140",
-          "note": "NIE zjeżdżaj do centrum Florencji (ZTL + korki). Obwodnica Variante di Valico."
+          "time": "~1h 20",
+          "note": "NIE zjeżdżaj do centro Firenze — ZTL aktywna w czwartek 7:30–20:00. Kamery na wjazdach."
         },
         {
-          "segment": "Florencja → Bologna → Modena",
-          "road": "A1",
-          "km": "~120",
-          "note": "Lunch: zjazd Bologna Borgo Panigale lub Modena Nord (~20 min do centrum Bolonii)."
-        },
-        {
-          "segment": "Modena → Brenner",
-          "road": "A1 → A22",
-          "km": "~280",
-          "note": "A22 pedaggio: Modena–Verona €6,20 + Verona–Trento €7,20 + Trento–Bolzano €4,90 + Bolzano–Brenner €5,80 ≈ €24,10 klasa A."
-        },
-        {
-          "segment": "Brenner → Wasserburg",
-          "road": "A13 AT → A93/A94 DE",
-          "km": "~180",
-          "note": "Austria: e-winieta już aktywna. Niemcy: tankowanie tańsze niż AT."
-        },
-        {
-          "segment": "Florencja → Bolonia",
+          "segment": "Florencja bypass → Bologna",
           "road": "A1 north",
           "km": "~105",
-          "note": "Lunch: zjazd Bologna Borgo Panigale (~20 min do centrum) lub Modena Nord."
+          "time": "~1h",
+          "note": "Lunch: zjazd Bologna Borgo Panigale (~30 min postój) lub Modena Nord."
         },
         {
-          "segment": "Bolonia → Modena → Milano",
+          "segment": "Bologna → Modena → Milano tangenziale",
           "road": "A1/A14/A4",
           "km": "~200",
-          "note": "Tangenziale Milano — nie wjeżdżaj w centrum."
+          "time": "~2h",
+          "note": "Tangenziale Milano — nie wjeżdżaj w centrum. Korki popołudniowe możliwe."
         },
         {
           "segment": "Milano → Brenner",
           "road": "A4 → A22",
           "km": "~280",
-          "note": "Pedaggio A22 Modena–Brennero: ~€22,80 klasa A (2026, +1,46%)."
+          "time": "~2h 30",
+          "note": "Pedaggio A22 Modena–Brennero: ~€22,80 klasa A. Wjazd A22 przy Modena."
+        },
+        {
+          "segment": "Brenner → Rosenheim",
+          "road": "A13 AT → A12 Inntal",
+          "km": "~120",
+          "time": "~1h 30",
+          "note": "A13 Streckenmaut ~€12,50. Winieta AT już aktywna. Zjazd Rosenheim."
+        },
+        {
+          "segment": "Rosenheim → Wasserburg am Inn",
+          "road": "B304",
+          "km": "~25",
+          "time": "~25 min",
+          "note": "Zatankuj w DE przed noclegiem — tańsze niż AT. Malownicze miasto na zakolu Innu."
         }
       ],
       "fuel_stops": [
         {
           "name": "Tankowanie Pitigliano",
           "location": "Przed wyjazdem 7:00",
-          "note": "Pełny bak — ostatnia szansa na tańsze paliwo przed A1."
+          "road": "lokalna",
+          "note": "Pełny bak — ostatnia szansa na stację w mieście przed SS74."
         },
         {
-          "name": "Lunch Bolonia/Modena",
-          "location": "A1 Bologna Borgo Panigale lub Modena Nord",
+          "name": "Stacja przy Orvieto / Manciano",
+          "location": "SS74 przed A1",
+          "road": "SS74",
+          "note": "Uzupełnij bak przed wjazdem na A1 — autostradowe stacje droższe."
+        },
+        {
+          "name": "Lunch Bologna Borgo Panigale",
+          "location": "A1 uscita Bologna Borgo Panigale",
+          "road": "A1",
+          "hours": "24h",
           "note": "Tortellini in brodo — ostatnie włoskie jedzenie. ~30 min postój."
         },
         {
-          "name": "Raststätte Brenner / Sterzing",
-          "location": "A22/A13 przed/po granicy",
-          "note": "Postój przed zjazdem do Niemiec. Kawa + tankowanie."
+          "name": "Area servizio Brenner / Vipiteno",
+          "location": "A22/A13 przy granicy IT/AT",
+          "road": "A22/A13",
+          "hours": "24h",
+          "note": "Kawa + krótki postój przed zjazdem do Niemiec."
         },
         {
-          "name": "Tankowanie Niemcy",
-          "location": "Przed Wasserburg",
-          "note": "Zatankuj w DE — tańsze niż Austria."
-        },
-        {
-          "name": "IP Manciano / Orbetello",
-          "location": "SS1/A12 przed zjazdem na A1",
-          "note": "Ostatnie tanie tankowanie we Włoszech przed A1."
-        },
-        {
-          "name": "Autogrill Modena Nord",
-          "location": "A1 km ~220",
-          "note": "Postój lunch + paliwo. Tortellini in brodo na stacji."
+          "name": "Tankowanie Niemcy (przed Wasserburg)",
+          "location": "B304 lub stacja przy Rosenheim",
+          "road": "B304",
+          "note": "Zatankuj w DE — tańsze niż Austria i Włochy."
         }
       ]
     },
@@ -2362,23 +2955,27 @@
       "drive_h": "4–4,5 h",
       "base_id": null,
       "depart": "8:00 rano z Wasserburg",
-      "route": "Wasserburg am Inn → B304/A94 → A8 west (München-Ost) → A9 north → Nürnberg → A9 north → zjazd Hof-Nord/Hof-West → Hof (Saale)",
+      "route": "Wasserburg am Inn → B304/A94 → A99 → A8 west (München-Ost) → A9 north → Nürnberg → A9 north → zjazd Hof-Nord/Hof-West/Naila-Selbitz → Hof (Saale)",
       "attractions": [],
       "nature": null,
       "food": {
-        "place": "Gasthof w Norymberdze lub na A9 (Franconia)",
-        "address": null,
-        "dishes": [],
-        "note": "Krótki postój obiadowy — lokalny Gasthof zamiast dużej Raststätte. Franconia słynie z kiełbas i piwa.",
-        "price": "~€10–14",
-        "gps_hint": "Zjazd A9 Nürnberg-Nord lub Raststätte Franconia"
+        "place": "Restaurant Franconia am See (Himmelkron) lub Serways Nürnberg-Feucht",
+        "address": "Frankenring 1, 95502 Himmelkron",
+        "dishes": [
+          "fränkische Spezialitäten",
+          "pizza i pasta",
+          "kiełbasy frankońskie"
+        ],
+        "note": "Restaurant Franconia am See leży bezpośrednio przy A9 w Himmelkron (nie Raststätte!) — kuchnia frankońsko-włoska, taras nad jeziorem. Alternatywa bliżej Nürnberg: Serways Raststätte Nürnberg-Feucht Ost/West (24h).",
+        "price": "~€10–16",
+        "gps_hint": "Zjazd A9 Himmelkron lub Nürnberg-Feucht (km ~410)"
       },
       "accommodation": {
         "place": "Hof (Saale) lub okolice — nocleg tranzytowy",
-        "note": "Krótszy dzień (~4 h jazdy). Szukaj Pension/Gasthof przy zjeździe A9/A72, nie w centrum. Alternatywa: Naila, Rehau (tańsze).",
+        "note": "Krótszy dzień (~4 h jazdy). Szukaj Pension/Gasthof przy zjeździe A9/A72, nie w centrum. Alternatywa: Rehau (Fränkischer Hof, A93) lub Naila/Selbitz (tańsze, Fichtelgebirge).",
         "price": "€40–55/noc",
-        "booking_tip": "Booking: Pension przy zjeździe A9/A72 — taniej niż centrum Hof",
-        "gps_hint": "Naviguj: Hof (Saale) — dzielnice przy A9, nie centrum",
+        "booking_tip": "Booking: Pension przy zjeździe A9 — taniej niż centrum Hof. Rehau/Naila od €40.",
+        "gps_hint": "Naviguj: Hof-Nord (A9) lub Naila-Selbitz — nie centrum miasta",
         "options": [
           {
             "name": "Quality Hotel Hof",
@@ -2397,12 +2994,30 @@
             "url": "https://www.sorat-hotels.com/en/hotel/central-hof.html"
           },
           {
-            "name": "Pension przy A9 (Rehau/Naila)",
+            "name": "Fränkischer Hof Rehau",
+            "type": "Hotel 3* / Pension",
+            "address": "Sofienstraße 19, 95111 Rehau",
+            "price": "€55–75/noc",
+            "parking": "bezpłatny na miejscu (garaż €8/dzień)",
+            "url": "https://fraenkischer-hof-rehau.de/",
+            "note": "A93 Rehau-Süd 1,7 km. Tańsza alternatywa, 25 km od Hof. B15 łączy z Hof."
+          },
+          {
+            "name": "Landgasthof Grüne Linde",
+            "type": "Landgasthof",
+            "address": "Alte Helmbrechtser Str. 30, 95030 Hof (Wölbattendorf)",
+            "price": "€80–130/noc",
+            "parking": "bezpłatny",
+            "url": "https://www.landgasthof-gruenelinde.de/",
+            "note": "Rodzinny Gasthof od 1875, restauracja regionalna, blisko A9"
+          },
+          {
+            "name": "Pension Naila/Selbitz",
             "type": "Pension",
             "address": "okolice zjazdu A9 Naila/Selbitz",
             "price": "€40–55/noc",
             "parking": "zwykle bezpłatny",
-            "note": "Tańsza alternatywa, 10–15 km od centrum Hof"
+            "note": "Tańsza alternatywa w Fichtelgebirge, 10–15 km od centrum Hof"
           },
           {
             "name": "Fichtelgebirgshof",
@@ -2410,119 +3025,148 @@
             "address": "przy A9 (Himmelkron)",
             "price": "€50–70/noc",
             "parking": "150 miejsc gratis",
-            "note": "Bezpośrednio przy A9, 36 pokoi"
+            "note": "Bezpośrednio przy A9, 36 pokoi — obok Restaurant Franconia am See"
           },
           {
-            "name": "Hotel Strauss",
-            "type": "Gasthof",
-            "address": "Bismarckstr. 31, 95028 Hof",
-            "price": "€55–75/noc",
-            "parking": "bezpłatny przy hotelu",
-            "note": "3★, restauracja regionalna, pn zamknięte"
+            "name": "Hotel Deutsches Haus Garni",
+            "type": "Hotel Garni",
+            "address": "Hof/Saale (centrum)",
+            "price": "€50–80/noc",
+            "parking": "Parkhaus 50 m (płatny)",
+            "url": "https://www.deutsches-haus-hof.de/",
+            "note": "Centrum, 10 pokoi, śniadanie €10 — wygodne ale droższy parking"
           }
         ]
       },
       "tips": [
-        "Krótszy dzień jazdy — czas na odpoczynek przed finałowym etapem",
+        "Krótszy dzień jazdy — czas na odpoczynek przed finałowym etapem do Poznania",
         "Sprawdź stan A9 między Norymbergą a Hof — ewentualne roboty drogowe",
-        "Zjazd Hof-Nord (A9) lub Hof-West (B15) — oba dobre dla noclegu tranzytowego",
-        "Sprawdź A9 baustellen przed wyjazdem na autobahn.de"
+        "Zjazd Hof-Nord (A9), Hof-West (B15) lub Naila/Selbitz — wszystkie dobre dla noclegu tranzytowego",
+        "Restaurant Franconia am See (Himmelkron) to restauracja przy A9, nie autostradowa Raststätte",
+        "Hof słynie z Wärschtlamo (würstchen) i piwa Meinel-Bräu / Scherdel"
       ],
       "opening_hours": {
         "quality_hotel_hof": "Recepcja 24h, sauna od 14:00",
-        "hotel_central_hof": "Check-in od 15:00, parking gratis (Freiheitshalle obok jeśli pełny)"
+        "hotel_central_hof": "Check-in od 15:00, parking gratis (Freiheitshalle obok jeśli pełny)",
+        "fraenkischer_hof_rehau": "Check-in od 13:00, parking gratis",
+        "franconia_am_see": "Restauracja przy A9 Himmelkron — sprawdź godziny na franconia-restaurant.de",
+        "nuernberg_feucht": "Serways Raststätte Nürnberg-Feucht Ost/West — 24h"
       },
       "parking": {
         "hof_hotels": "Quality Hotel Hof i Hotel Central Hof — bezpłatny parking na miejscu (duży plac).",
-        "pension_tip": "Szukaj Pension przy zjeździe A9/A72 — tańsze niż centrum Hof.",
-        "alternatives": "Rehau, Naila — mniejsze miasteczka 10–15 km od Hof, €40–50/noc.",
-        "hof": "Pension przy zjeździe A9 (Hof-Nord/West) — parking gratis. Centrum Hof: płatny."
+        "pension_tip": "Szukaj Pension przy zjeździe A9 — tańsze niż centrum Hof.",
+        "alternatives": "Rehau (Fränkischer Hof, parking gratis), Naila/Selbitz — €40–50/noc, 10–15 km od A9.",
+        "hof": "Pension przy zjeździe A9 (Hof-Nord/West/Naila) — parking gratis. Centrum Hof: płatny."
       },
       "practical_tips": [
         "Krótszy dzień (~4 h) — wyjazd 8:00, przyjazd Hof ok. 12:00–13:00.",
-        "Sprawdź A9 na verkehr.de — roboty drogowe Nürnberg–Hof możliwe.",
-        "Lunch: Gasthof przy zjeździe Nürnberg-Nord zamiast dużej Raststätte — lepsze jedzenie.",
-        "Hof: Quality Hotel (Ernst-Reuter-Str. 137, parking gratis) lub Hotel Central (Kulmbacher Str. 2).",
-        "Alternatywa tańsza: Pension w Rehau lub Naila — 10 km od A9.",
+        "A8 Irschenberg/Holzkirchen — zatłoczony odcinek, unikaj postoju w centrum Monachium.",
+        "Lunch: Restaurant Franconia am See (Himmelkron, A9) — frankońsko-włoska kuchnia nad jeziorem.",
+        "Alternatywa lunch: Serways Nürnberg-Feucht (A9 km ~410) — 24h, szybszy postój.",
+        "Hof: Quality Hotel lub Hotel Central (parking gratis). Tańsze: Fränkischer Hof Rehau (A93).",
+        "Naila/Selbitz: pensiony od €40 — bliżej zjazdu A9, łatwy wyjazd rano na A72/A93.",
         "Jutro finał do Poznania — wcześnie spać, wyjazd 7:00.",
-        "Krótszy dzień — dotarcie Hof ~12:00–13:00. Czas na odpoczynek przed finałem.",
-        "A9 Nürnberg–Hof: sprawdź baustellen na autobahn.de — roboty częste.",
-        "Frankonia: lokalny Gasthof zamiast Raststätte — kiełbasy, Dunkelbier.",
+        "Sprawdź A9 baustellen na autobahn.de — roboty Nürnberg–Hof częste.",
+        "Frankonia: lokalny Gasthof zamiast Raststätte — kiełbasy, Dunkelbier, Scherdel.",
         "Nocleg przy zjeździe A9 — nie w centrum Hof (tańsze, łatwiejszy wyjazd rano)."
       ],
       "web_research": [
         {
-          "topic": "Trasa Wasserburg → Hof",
-          "summary": "A8/A9 przez Nürnberg: ~380 km, 4–4,5 h. Wasserburg → Monachium ~50 min, potem A9 north do Hof.",
+          "topic": "Trasa A8/A9 Wasserburg → Hof",
+          "summary": "B304→A99→A8 west (München-Ost)→A9 north przez Nürnberg: ~380 km, 4–4,5 h. Wasserburg nie leży przy autostradzie (B304/B15) — dojazd do A8 ~60 km. A8 zatłoczona (Irschenberg). A9 Nürnberg–Hof ~120 km.",
           "source": "https://maps.adac.de/routenplaner/",
           "checked": "2026-07"
         },
         {
-          "topic": "Noclegi Hof (Saale)",
-          "summary": "Quality Hotel Hof (111 pokoi, parking gratis, sauna, przy A9). Hotel Central Hof (Kulmbacher Str. 2, parking gratis przy Freiheitshalle). SOIBELMANNS od €46.",
-          "source": "https://www.sorat-hotels.com/en/hotel/central-hof.html",
+          "topic": "A8 — odcinek południowy",
+          "summary": "A8 (497 km): Karlsruhe–Stuttgart–Ulm–Monachium–Salzburg. Wąskie odcinki (Irschenberg, Aichelberg) — częste korki. Postój Raststätte Irschenberg/Holzkirchen zamiast centrum Monachium.",
+          "source": "https://en.wikipedia.org/wiki/Bundesautobahn_8",
           "checked": "2026-07"
         },
         {
-          "topic": "Pension Rehau/Naila alternatywa",
-          "summary": "Mniejsze miasta przy A9/A72 — Pension €40–55/noc, łatwy dojazd do trasy jutrzejszej na wschód (A72).",
-          "source": "https://qualityhof.ohotel.com/",
+          "topic": "A9 — Nürnberg → Hof",
+          "summary": "A9 (530 km): Berlin–Leipzig–Nürnberg–Ingolstadt–Monachium. Odcinek Nürnberg–Hof ~120 km, ~1h 10 min. Zjazdy: Hof-Nord, Hof-West (B15), Naila, Selbitz. B15 łączy Hof–Rehau–Wasserburg.",
+          "source": "https://planroute.de/bundesautobahn/a9/",
           "checked": "2026-07"
         },
         {
-          "topic": "Hotel Central Hof — parking A9",
-          "summary": "Kulmbacher Str. 2. Bezpłatny parking. Przy A9/A72/A93. Zjazd Hof-Nord lub Hof-West.",
-          "source": "https://www.sorat-hotels.com/en/hotel/central-hof/directions/car.html",
+          "topic": "Noclegi Hof (Saale) — Pension",
+          "summary": "32 pensiony w Hof od €30/noc (średnia €47). Popularne: Landgasthof Grüne Linde (Wölbattendorf), Hotel Deutsches Haus Garni (centrum €50–80). Quality Hotel i Central Hof — parking gratis.",
+          "source": "https://www.preiswert-uebernachten.de/hotel-pensionen/hof/5924",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Fränkischer Hof Rehau — alternatywa",
+          "summary": "Sofienstr. 19, 95111 Rehau. Hotel 3* przy A93 (zjazd Rehau-Süd 1,7 km). 25 pokoi, parking gratis, śniadanie regionalne. Tańsza opcja 25 km od Hof, B15 do centrum.",
+          "source": "https://fraenkischer-hof-rehau.de/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Naila/Selbitz — tańsze pensiony",
+          "summary": "Naila w Fichtelgebirge — pensiony €40–55/noc. Zjazd A9 Naila/Selbitz bliżej niż centrum Hof. Atrakcje: Döbraberg (794 m), ruiny zamku Lichtenberg.",
+          "source": "https://trek.zone/pl/niemcy/miejsca/284821/naila",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Restaurant Franconia am See (Gasthof Franconia)",
+          "summary": "Frankenring 1, 95502 Himmelkron — restauracja przy A9 (nie Raststätte). Kuchnia frankońsko-włoska, taras nad jeziorem. Obok Fichtelgebirgshof (nocleg).",
+          "source": "https://pizzeria-restaurant-franconia-am-see.de/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Serways Nürnberg-Feucht — lunch alternatywa",
+          "summary": "Raststätte Nürnberg-Feucht Ost i West na A9 (90537 Feucht). Otwarte 24h. Bliżej Nürnberg niż Himmelkron — szybszy postój tranzytowy.",
+          "source": "https://www.serways.de/standorte/nuernberg-feucht-ost/",
           "checked": "2026-07"
         },
         {
           "topic": "Fichtelgebirgshof przy A9",
-          "summary": "Bezpośrednio przy A9 Himmelkron. 150 darmowych miejsc. Od €50/noc.",
+          "summary": "Bezpośrednio przy A9 Himmelkron. 150 darmowych miejsc parkingowych. Od €50/noc, 36 pokoi. Obok Restaurant Franconia am See.",
           "source": "https://www.hrs.de/de/hotel/62065",
           "checked": "2026-07"
         },
         {
-          "topic": "A9 Nürnberg–Hof",
-          "summary": "~120 km, ~1h 10 min bez trafficu. Raststätte Feucht na lunch.",
+          "topic": "A9 Baustellen Nürnberg–Hof",
+          "summary": "Sprawdź aktualne roboty na autobahn.de i verkehr.de przed wyjazdem. Odcinek Nürnberg–Hof często remontowany (3–4 pasy, ale ograniczenia prędkości).",
           "source": "https://de.wikivoyage.org/wiki/Bundesautobahn_9",
           "checked": "2026-07"
         }
       ],
       "route_segments": [
         {
-          "segment": "Wasserburg → Monachium",
-          "road": "B304 → A94 → A8",
-          "km": "~55",
-          "note": "~50 min. Unikaj centrum Monachium."
+          "segment": "Wasserburg → Monachium (A8)",
+          "road": "B304 → A94/A99 → A8",
+          "km": "~60",
+          "note": "~50–60 min. Wasserburg na B304/B15, nie przy autostradzie. Unikaj centrum Monachium."
         },
         {
           "segment": "Monachium → Nürnberg",
-          "road": "A8 → A9 north",
+          "road": "A8 → Kreuz München-Ost/Nord → A9 north",
           "km": "~170",
-          "note": "Główny odcinek — 2 h jazdy. Raststätte Franconia możliwa."
+          "note": "Główny odcinek — ~2 h. Postój Irschenberg/Holzkirchen (A8) lub Nürnberg-Feucht (A9)."
         },
         {
           "segment": "Nürnberg → Hof",
           "road": "A9 north",
           "km": "~120",
-          "note": "Zjazd Hof-West (B15) lub Naila/Selbitz — bliżej pensionów."
+          "note": "~1h 10 min. Lunch: Franconia am See (Himmelkron) lub Feucht. Zjazd Hof-West (B15), Naila/Selbitz lub Hof-Nord."
         }
       ],
       "fuel_stops": [
         {
-          "name": "Postój Nürnberg",
-          "location": "A9 Raststätte Franconia lub Nürnberg-Nord",
-          "note": "Lunch — kiełbasy frankońskie, piwo. ~30 min."
-        },
-        {
           "name": "Raststätte Irschenberg / Holzkirchen",
           "location": "A8 km ~90",
-          "note": "Postój przed Monachium — mniej ruchu niż w mieście."
+          "note": "Postój przed Monachium — mniej ruchu niż w mieście. A8 zatłoczona."
         },
         {
-          "name": "Raststätte Nürnberg-Feucht",
-          "location": "A9 km ~410",
-          "note": "Lunch w Frankenii — kiełbasy, piwo. 24h."
+          "name": "Restaurant Franconia am See",
+          "location": "A9 Himmelkron (Frankenring 1)",
+          "note": "Lunch — kuchnia frankońsko-włoska nad jeziorem. ~30–45 min. Nie Raststätte!"
+        },
+        {
+          "name": "Serways Raststätte Nürnberg-Feucht",
+          "location": "A9 km ~410 (90537 Feucht)",
+          "note": "Alternatywa lunch — 24h, szybszy postój tranzytowy."
         }
       ]
     },

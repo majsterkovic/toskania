@@ -127,7 +127,13 @@
     ],
     "tip": "3 parkingi w ciągu dnia — nie musisz wracać do Bazy między punktami (wszystko <30 min jazdy)"
   },
-  "fuel_stops": [],
+  "fuel_stops": [
+    {
+      "name": "ENI Castelnuovo di Garfagnana",
+      "location": "Via Roma / SS445, Castelnuovo",
+      "note": "Tankuj po lunchu w Castelnuovo — przed powrotem do bazy w Barga."
+    }
+  ],
   "opening_hours": {
     "orecchiella_centro": "Wrzesień do 14.09: codzi. 10–18; po 14.09: sob–nd 10–18. Sentieri: zawsze",
     "castelnuovo_mercato": "CZWARTEK 8:00–13:00 (Piazza delle Erbe) — nie wtorek!",

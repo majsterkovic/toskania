@@ -133,7 +133,13 @@
     ],
     "tip": "Verrucole rano (8:00) → Vagli po lunchu (13:00) → Gorfigliano wieczorem — logiczna pętla zgodna z drive ≤25 min"
   },
-  "fuel_stops": [],
+  "fuel_stops": [
+    {
+      "name": "IP Gallicano / Castelnuovo",
+      "location": "SS445 dolina Serchio",
+      "note": "Zatankuj rano przed wyjazdem w góry — przy Vagli stacji brak."
+    }
+  ],
   "opening_hours": {
     "verrucole": "Wrzesień (od 15.09): pt–nd 10:30–18:30. 16.09 (środa) = ZAMKNIĘTE",
     "lago_vagli": "Tam i parking: całą dobę (bezpłatny)",

@@ -131,7 +131,7 @@
         }
       }
     },
-    "last_enriched": "2026-07-03T16:27:42.993Z",
+    "last_enriched": "2026-07-03T16:28:13.081Z",
     "enrichment_days": [
       1,
       2,
@@ -858,7 +858,13 @@
         ],
         "tip": "3 parkingi w ciągu dnia — nie musisz wracać do Bazy między punktami (wszystko <30 min jazdy)"
       },
-      "fuel_stops": [],
+      "fuel_stops": [
+        {
+          "name": "ENI Castelnuovo di Garfagnana",
+          "location": "Via Roma / SS445, Castelnuovo",
+          "note": "Tankuj po lunchu w Castelnuovo — przed powrotem do bazy w Barga."
+        }
+      ],
       "opening_hours": {
         "orecchiella_centro": "Wrzesień do 14.09: codzi. 10–18; po 14.09: sob–nd 10–18. Sentieri: zawsze",
         "castelnuovo_mercato": "CZWARTEK 8:00–13:00 (Piazza delle Erbe) — nie wtorek!",
@@ -1000,7 +1006,13 @@
         ],
         "tip": "Verrucole rano (8:00) → Vagli po lunchu (13:00) → Gorfigliano wieczorem — logiczna pętla zgodna z drive ≤25 min"
       },
-      "fuel_stops": [],
+      "fuel_stops": [
+        {
+          "name": "IP Gallicano / Castelnuovo",
+          "location": "SS445 dolina Serchio",
+          "note": "Zatankuj rano przed wyjazdem w góry — przy Vagli stacji brak."
+        }
+      ],
       "opening_hours": {
         "verrucole": "Wrzesień (od 15.09): pt–nd 10:30–18:30. 16.09 (środa) = ZAMKNIĘTE",
         "lago_vagli": "Tam i parking: całą dobę (bezpłatny)",

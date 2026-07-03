@@ -2,8 +2,18 @@
   "meta": {
     "title": "Toskania 2026",
     "subtitle": "Podróż samochodowa Poznań → Toskania → Poznań",
-    "dates": "12–25 września 2026",
-    "participants_note": "Plan prywatny"
+    "dates": "12–27 września 2026",
+    "duration_days": 15,
+    "calendar_days": "12.09 (sob) – 26.09 (sob) = 15 dni aktywnej podróży; 27.09 (nd) = bufor/deadline powrotu",
+    "participants_note": "Plan prywatny",
+    "route_summary": {
+      "outbound_km": "~1535 km w 2 dni (Poznań → Ingolstadt → Barga)",
+      "return_km": "~1620 km w 3 dni (Pitigliano → Wasserburg → Hof → Poznań)",
+      "tuscany_days": 10,
+      "tuscany_bases": 3,
+      "transit_nights_outbound": 1,
+      "transit_nights_return": 2
+    }
   },
   "bases": [
     {
@@ -11,7 +21,7 @@
       "name": "Barga (Garfagnana)",
       "label": "BAZA 1",
       "region": "Garfagnana · Lucca",
-      "nights": "13–16 Sep (4 noce)",
+      "nights": "13–16 wrz (4 noce)",
       "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa",
       "color": "emerald",
       "accommodation": "Agriturismo lub B&B w Barga lub okolicach (Mologno, Loppia, Albiano). Ceny: €60–90/noc z śniadaniem.",
@@ -22,7 +32,7 @@
       "name": "k. Castelnuovo Berardenga",
       "label": "BAZA 2",
       "region": "Chianti Senese · Siena",
-      "nights": "17–19 Sep (3 noce)",
+      "nights": "17–19 wrz (3 noce)",
       "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny",
       "color": "amber",
       "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
@@ -33,71 +43,89 @@
       "name": "okolice Pitigliano",
       "label": "BAZA 3",
       "region": "Maremma Toscana · Grosseto",
-      "nights": "20–22 Sep (3 noce)",
+      "nights": "20–22 wrz (3 noce)",
       "description": "Tuf wulkaniczny, cywilizacja etruska, dąb ostrolistny (leccio), termalna Saturnia",
       "color": "rose",
       "accommodation": "Agriturismo Sassotondo (Sovana, biodynamiczne wino) — €80–110/noc. Alternatywa: agriturismo w dolinie Fiora.",
       "booking_tip": "Sassotondo to realne, nagrodzone winiarski agriturismo — rezerwuj z wyprzedzeniem"
     }
   ],
+  "transit_stops": {
+    "outbound": {
+      "night_1": "Neustadt an der Donau (Bawaria) — 25 km od Ingolstadt, tańsze niż Monachium, Booking-friendly Gasthöfe €40–60/noc"
+    },
+    "return": {
+      "night_1": "Wasserburg am Inn (Bawaria) — malownicze miasto na zakolu Innu, 45 km od Monachium, Gasthof €45–65/noc",
+      "night_2": "Hof (Saale) / okolice — Franconia, małe miasto na trasie A9/A72, Pension €40–55/noc"
+    }
+  },
   "days": [
     {
       "date": "12.09 (sob)",
       "day_num": 1,
       "type": "transit",
       "label": "TRANZYT → NIEMCY",
-      "title": "Poznań → Ingolstadt",
+      "title": "Poznań → Neustadt an der Donau",
       "drive_km": 745,
       "drive_h": "7–7,5 h",
       "base_id": null,
       "depart": "6:00–7:00 rano z Poznania",
-      "route": "A2 west (Świecko) → Frankfurt an der Oder → obwodnica Berlin A10 → A9 south → Norymberga → Ingolstadt",
+      "route": "A2 west (Świecko) → Frankfurt an der Oder → obwodnica Berlin A10 → A9 south → Norymberga → Ingolstadt → Neustadt an der Donau",
       "attractions": [],
       "nature": null,
       "food": {
-        "place": "Autobahn Raststätte",
-        "note": "Dzień tranzytowy — Niemcy. Lunch na stacji.",
-        "price": null
+        "place": "Raststätte Thüringer Wald lub Franken (A9)",
+        "note": "Dzień tranzytowy — lunch na autostradzie. Unikaj centrów dużych miast.",
+        "price": "~€8–12"
       },
       "accommodation": {
-        "place": "Ingolstadt / Neustadt an der Donau",
-        "note": "Mniejsze i tańsze niż Monachium. Szukaj: Gasthof, Pension. Alternatywa: Kelheim (malownicze miasto na Dunaju, 20 km od Ingolstadt).",
-        "price": "€45–65/noc"
+        "place": "Neustadt an der Donau (nocleg tranzytowy)",
+        "note": "Małe bawarskie miasteczko nad Dunajem, 25 km od Ingolstadt. Szukaj: Gasthof, Pension, Ferienwohnung. Alternatywa: Kelheim (malownicze, nad Dunajem). Unikaj Monachium (drogo, ZTL).",
+        "price": "€40–60/noc"
       },
-      "tips": ["Granicę PL/DE przekrocz przez Świecko (A2) — lepsza autostrada przez całe Niemcy", "E-winieta austriacka: kup online na asfinag.at (~€9.90/10 dni) jeszcze w Polsce"]
+      "tips": [
+        "Granicę PL/DE przekrocz przez Świecko (A2) — najlepsza autostrada przez całe Niemcy",
+        "E-winieta austriacka: kup online na asfinag.at (~€9.90/10 dni) jeszcze w Polsce",
+        "Zatankuj w Niemczech przed Austrią — paliwo tańsze niż we Włoszech"
+      ]
     },
     {
       "date": "13.09 (nd)",
       "day_num": 2,
       "type": "transit",
       "label": "TRANZYT → TOSKANIA",
-      "title": "Ingolstadt → Barga (Garfagnana)",
+      "title": "Neustadt an der Donau → Barga (Garfagnana)",
       "drive_km": 790,
       "drive_h": "8–8,5 h",
       "base_id": "base1",
-      "depart": "7:00 rano z Ingolstadt",
+      "depart": "7:00 rano z Neustadt an der Donau",
       "route": "A9/A8 → Rosenheim → A93 Inntal → Innsbruck → Brenner Pass A22 → Bolzano → Trento → Werona bypass → A1/A11 → Lukka → SS12/SS445 north → Barga",
       "attractions": [],
       "nature": null,
       "food": {
-        "place": "Rovereto lub Werona (postój)",
-        "note": "Krótki postój obiadowy — szukaj 'bar trattoria' przy zjeździe z autostrady, nie przy samej bramce",
+        "place": "Rovereto lub Werona (postój przy zjeździe z A22)",
+        "note": "Krótki postój obiadowy — szukaj 'bar trattoria' przy zjeździe, nie przy samej bramce autostradowej",
         "price": "~€10–15"
       },
       "accommodation": {
         "place": "BAZA 1 — Barga / Garfagnana",
-        "note": "Przyjazd ok. 16:00–17:00. Check-in, kolacja na miejscu.",
+        "note": "Przyjazd ok. 16:00–17:00. Check-in, kolacja na miejscu w agriturismo.",
         "price": "€60–90/noc"
       },
-      "tips": ["Ostatnie 50 km to kręta górska droga — nie śpiesz się", "Winieta włoska: płatne bramki gotówką lub kartą bezpośrednio", "Wejazd do Barga: centrum ZTL — parkuj poza murami i idź pieszo"]
+      "tips": [
+        "Ostatnie 50 km to kręta górska droga SS445 — nie śpiesz się",
+        "Winieta włoska: płatne bramki gotówką lub kartą bezpośrednio",
+        "Wejazd do Barga: centrum ZTL — parkuj poza murami (np. parking przy Porta Reale) i idź pieszo"
+      ]
     },
     {
       "date": "14.09 (pn)",
       "day_num": 3,
       "type": "tuscany",
-      "label": "DZIEŃ 1",
+      "label": "TOSKANIA · DZIEŃ 1",
       "title": "Kamienny balkon nad Garfagnaną",
       "base_id": "base1",
+      "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 25,
       "attractions": [
         {
@@ -126,7 +154,7 @@
       },
       "food": {
         "place": "Osteria dei Vecchi Sapori — Barga",
-        "address": "ul. Borgo Giardino, Barga",
+        "address": "Borgo Giardino, Barga",
         "dishes": ["pappardelle al cinghiale (z dzikim)", "necci con ricotta (naleśniki kasztanowe — danie garfagnańskie)", "castagnaccio (ciasto kasztanowe)"],
         "note": "Rodzinnie prowadzona osteria, menu po włosku, tablica dzienna. Autentyczne, bez angielskich tłumaczeń.",
         "price": "~€15–20/os z winem"
@@ -136,9 +164,10 @@
       "date": "15.09 (wt)",
       "day_num": 4,
       "type": "tuscany",
-      "label": "DZIEŃ 2",
+      "label": "TOSKANIA · DZIEŃ 2",
       "title": "Średniowieczne mury i puszcza Orecchiella",
       "base_id": "base1",
+      "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 30,
       "attractions": [
         {
@@ -156,7 +185,7 @@
         {
           "name": "Castelnuovo di Garfagnana",
           "drive_min": 25,
-          "description": "Stolica doliny, zachowane fortyfikacje Ludovica Ariosta (który tu rządził!). Targ środowy z lokalnymi produktami: farro della Garfagnana IGP (orkisz).",
+          "description": "Stolica doliny, zachowane fortyfikacje Ludovica Ariosta (który tu rządził!). Targ wtorkowy z lokalnymi produktami: farro della Garfagnana IGP (orkisz).",
           "type": "medieval"
         }
       ],
@@ -177,9 +206,10 @@
       "date": "16.09 (śr)",
       "day_num": 5,
       "type": "tuscany",
-      "label": "DZIEŃ 3",
+      "label": "TOSKANIA · DZIEŃ 3",
       "title": "Jezioro, forteca i ukryte wioski",
       "base_id": "base1",
+      "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 25,
       "attractions": [
         {
@@ -201,12 +231,16 @@
           "type": "medieval"
         }
       ],
-      "oak_forest": null,
+      "oak_forest": {
+        "spot": "Wzgórza wokół Lago di Vagli",
+        "species": "Quercus cerris, Q. petraea",
+        "note": "Mieszane lasy dębowo-kasztanowe na zboczach jeziora — spacer bezpłatny, bez oznakowania turystycznego"
+      },
       "food": {
-        "place": "Agriturismo w okolicach Careggine / Vagli Sotto",
-        "address": "Zapytaj w bazie noclegowej o polecane agriturismo",
+        "place": "Agriturismo Il Corniolo — Vagli Sotto",
+        "address": "Loc. Vagli Sotto, Careggine (~25 min od bazy)",
         "dishes": ["fagioli di Sorana IGP (delikatna fasola)", "formaggi freschi di pecora (świeże owcze sery)", "wino z doliny Serchio"],
-        "note": "Zadzwoń dzień wcześniej i zarezerwuj 'pranzo tipico' — stała cena, wszystko z własnego gospodarstwa.",
+        "note": "Zadzwoń dzień wcześniej i zarezerwuj 'pranzo tipico' — stała cena, wszystko z własnego gospodarstwa. Ukryte przed masowym turystą.",
         "price": "~€18–22/os z winem"
       }
     },
@@ -214,10 +248,11 @@
       "date": "17.09 (czw)",
       "day_num": 6,
       "type": "tuscany_transfer",
-      "label": "DZIEŃ 4 + ZMIANA BAZY",
+      "label": "TOSKANIA · DZIEŃ 4 + ZMIANA BAZY",
       "title": "Ponte del Diavolo → przejazd do Chianti",
       "base_id": "base1",
       "next_base_id": "base2",
+      "base_label": "BAZA 1 → BAZA 2",
       "transfer_km": 195,
       "transfer_h": "2 h 15 min",
       "transfer_route": "Barga → Lukka (A11 south) → Siena Superstrada → okolice Castelnuovo Berardenga",
@@ -239,20 +274,26 @@
       ],
       "oak_forest": null,
       "food": {
-        "place": "Bar / Trattoria w Bagni di Lucca",
-        "address": "Piazza Jean Varraud, Bagni di Lucca",
-        "dishes": ["pranzo przed trasą — pasta al pomodoro, secondo"],
-        "note": "Wczesny obiad przed przejazdem do BAZY 2.",
+        "place": "Trattoria da Giulio — Bagni di Lucca",
+        "address": "Via Casalini 1, Bagni di Lucca",
+        "dishes": ["tordelli lucchesi (pierogi z mięsem)", "baccalà alla bagnese", "castagnaccio"],
+        "note": "Wczesny obiad przed przejazdem do BAZY 2. Rodzinna trattoria, zero turystycznego menu.",
         "price": "~€12–18/os"
+      },
+      "accommodation": {
+        "place": "BAZA 2 — k. Castelnuovo Berardenga",
+        "note": "Przyjazd ok. 16:00–17:00. Check-in w agriturismo (Vagliagli / Monti in Chianti).",
+        "price": "€70–100/noc"
       }
     },
     {
       "date": "18.09 (pt)",
       "day_num": 7,
       "type": "tuscany",
-      "label": "DZIEŃ 5",
+      "label": "TOSKANIA · DZIEŃ 5",
       "title": "Zamki i wino Chianti",
       "base_id": "base2",
+      "base_label": "BAZA 2 — Chianti Senese",
       "drive_limit_min": 25,
       "attractions": [
         {
@@ -280,23 +321,24 @@
         "note": "Las dębowy otaczający zamek Brolio — jeden z najlepiej zachowanych w Chianti"
       },
       "food": {
-        "place": "Badia a Coltibuono — Gaiole in Chianti",
-        "address": "Loc. Badia a Coltibuono, Gaiole in Chianti (~20 min od bazy)",
-        "dishes": ["pici al ragù di cinghiale", "bistecca di Cinta Senese", "Chianti Classico z własnych winnic"],
-        "note": "Klasztorne opactwo z XI w., estate winiarski ze świetną restauracją. Rezerwacja z wyprzedzeniem przez telefon.",
-        "price": "~€30–40/os z winem"
+        "place": "Osteria di Passignano — Badia a Passignano, Gaiole in Chianti",
+        "address": "Loc. Badia a Passignano (~18 min od bazy)",
+        "dishes": ["pici al ragù di cinghiale", "ribollita", "Chianti Classico z okolicznych winnic"],
+        "note": "Osteria przy benedyktyńskim opactwie z XI w. Mniej znana niż Coltibuono, równie dobra. Rezerwacja telefoniczna.",
+        "price": "~€22–30/os z winem"
       }
     },
     {
       "date": "19.09 (sob)",
       "day_num": 8,
       "type": "tuscany_popular",
-      "label": "DZIEŃ 6 ★ POPULARNY",
+      "label": "TOSKANIA · DZIEŃ 6 ★ POPULARNY",
       "title": "Siena — o świcie przed tłumami",
       "base_id": "base2",
+      "base_label": "BAZA 2 — Chianti Senese",
       "drive_limit_min": 25,
       "popular": true,
-      "crowd_tip": "Wyjazd o 7:00 rano — parking Piazza San Domenico lub Santa Caterina. O 7:30 jesteś na Piazza del Campo praktycznie sam. Tłumy zaczynają się po 10:00. Powrót do bazy przed 14:00.",
+      "crowd_tip": "Wyjazd o 7:00 rano — parking Piazza San Domenico lub Santa Caterina. O 7:30 jesteś na Piazza del Campo praktycznie sam. Tłumy zaczynają się po 10:00. Powrót do bazy przed 14:00. Unikaj sobotniego wieczoru w centrum.",
       "attractions": [
         {
           "name": "Piazza del Campo — o świcie",
@@ -330,10 +372,11 @@
       "date": "20.09 (nd)",
       "day_num": 9,
       "type": "tuscany_transfer",
-      "label": "DZIEŃ 7 + ZMIANA BAZY",
+      "label": "TOSKANIA · DZIEŃ 7 + ZMIANA BAZY",
       "title": "Crete Senesi → przejazd do Maremmy",
       "base_id": "base2",
       "next_base_id": "base3",
+      "base_label": "BAZA 2 → BAZA 3",
       "transfer_km": 130,
       "transfer_h": "1 h 40 min",
       "transfer_route": "Castelnuovo Berardenga → Siena bypass → SS223 → Grosseto → SS74 → okolice Pitigliano",
@@ -353,22 +396,32 @@
           "type": "cultural"
         }
       ],
-      "oak_forest": null,
+      "oak_forest": {
+        "spot": "Bosco della Ragnaia — Asciano",
+        "species": "Quercus pubescens, Q. ilex",
+        "note": "Niewielki, artystycznie zaaranżowany las dębowy 5 min pieszo od centrum Asciano — cichy, bez tłumów"
+      },
       "food": {
-        "place": "Bar/Caffè w Asciano",
-        "address": "Centrum Asciano",
-        "dishes": ["pranzo domenicale — niedziela to ważny dzień jedzenia dla Włochów", "arrosto misto, ribollita"],
-        "note": "W niedzielę wiele trattorie w Asciano serwuje tradycyjne niedzialne menu. Wejdź gdzie widzisz Włochów z rodzinami.",
+        "place": "Trattoria La Lupa — Asciano",
+        "address": "Via Mameli 8, Asciano",
+        "dishes": ["pici alle briciole", "arista di maiale (pieczona wieprzowina)", "vino locale Orcia DOC"],
+        "note": "Niedzielne menu tradycyjne. Wejdź gdzie widzisz Włochów z rodzinami — zero turystycznego klimatu.",
         "price": "~€15–22/os"
+      },
+      "accommodation": {
+        "place": "BAZA 3 — okolice Pitigliano",
+        "note": "Przyjazd ok. 16:00–17:00. Check-in w agriturismo (Sassotondo lub dolina Fiora).",
+        "price": "€80–110/noc"
       }
     },
     {
       "date": "21.09 (pn)",
       "day_num": 10,
       "type": "tuscany",
-      "label": "DZIEŃ 8",
+      "label": "TOSKANIA · DZIEŃ 8",
       "title": "Mała Jerozolima i etruskie drogi",
       "base_id": "base3",
+      "base_label": "BAZA 3 — Pitigliano",
       "drive_limit_min": 15,
       "attractions": [
         {
@@ -401,9 +454,10 @@
       "date": "22.09 (wt)",
       "day_num": 11,
       "type": "tuscany",
-      "label": "DZIEŃ 9",
+      "label": "TOSKANIA · DZIEŃ 9",
       "title": "Sorano i termalna kaskada Saturnia",
       "base_id": "base3",
+      "base_label": "BAZA 3 — Pitigliano",
       "drive_limit_min": 25,
       "attractions": [
         {
@@ -422,7 +476,7 @@
       "oak_forest": {
         "spot": "Dolina Lente koło Sorano",
         "species": "Quercus ilex, Q. pubescens",
-        "note": "Jedna z nienaruszonych enklaw maremmiańskiej puszczy dębowej"
+        "note": "Jedna z nienaruszonych enklaw maremmiańskiej puszczy dębowej — spacer wzdłuż Via Cava di San Rocco"
       },
       "food": {
         "place": "Osteria La Botte Piena — Sorano",
@@ -436,9 +490,10 @@
       "date": "23.09 (śr)",
       "day_num": 12,
       "type": "tuscany",
-      "label": "DZIEŃ 10 (OSTATNI)",
+      "label": "TOSKANIA · DZIEŃ 10 (OSTATNI)",
       "title": "Sovana i zapomniany las Lamone",
       "base_id": "base3",
+      "base_label": "BAZA 3 — Pitigliano",
       "drive_limit_min": 25,
       "attractions": [
         {
@@ -467,9 +522,9 @@
       },
       "food": {
         "place": "Agriturismo Sassotondo — kolacja pożegnalna",
-        "address": "Loc. Sassotondo, Sovana (jeśli to Twoja baza — wróć na kolację)",
+        "address": "Loc. Sassotondo, Sovana",
         "dishes": ["Ciliegiolo di Maremma (lokalny czerwony winogron, unikalny)", "acquacotta po raz ostatni", "cinghiale in umido z ziołami maremmiańskimi"],
-        "note": "Nawet jeśli nie nocujesz w Sassotondo — zadzwoń i zarezerwuj kolację (pranzo ospiti) ~€25/os. Prawdziwe doświadczenie agroturystyczne.",
+        "note": "Zadzwoń i zarezerwuj kolację (cena ospiti) ~€25/os. Prawdziwe doświadczenie agroturystyczne z biodynamicznym winem.",
         "price": "~€25/os"
       }
     },
@@ -488,36 +543,81 @@
       "nature": null,
       "food": {
         "place": "Bolonia lub Modena (postój autostradowy)",
-        "note": "Bolonia to stolica włoskiej kuchni — zjedz ostatnie włoskie tortellini w brodo na stacji lub zjedź z autostrady do centrum (Bolonia 20 min od A1).",
+        "note": "Bolonia to stolica włoskiej kuchni — ostatnie włoskie tortellini in brodo na stacji lub krótki zjazd do centrum Bolonii (20 min od A1). Unikaj pełnego centrum Florencji — korki i ZTL.",
         "price": "~€10–15"
       },
       "accommodation": {
-        "place": "Wasserburg am Inn — Bawaria",
-        "note": "Malownicze bawarskie miasto na zakolu Innu, 45 km od Monachium. Tanie pensje i Gasthöfe w starym mieście. Unikaj Monachium (drogie!). Alternatywa: Rosenheim lub Haag in Oberbayern.",
+        "place": "Wasserburg am Inn — nocleg tranzytowy (Bawaria)",
+        "note": "Malownicze bawarskie miasto na zakolu Innu, 45 km od Monachium. Tanie pensje i Gasthöfe w starym mieście. Unikaj Monachium (drogie, brak parkingu). Alternatywa: Haag in Oberbayern.",
         "price": "€45–65/noc"
       },
-      "tips": ["Wasserburg am Inn to piękne miasteczko, warto wieczorem przejść stare miasto", "Zatankuj przed granicą austriacką — paliwo tańsze w Niemczech"]
+      "tips": [
+        "Wasserburg am Inn — wieczorny spacer po starym mieście nad Innem",
+        "Zatankuj przed granicą austriacką — paliwo tańsze w Niemczech",
+        "Wyjazd o 7:00 = uniknięcie korków przy Bolonii i Mediolanie"
+      ]
     },
     {
       "date": "25.09 (pt)",
       "day_num": 14,
       "type": "transit",
-      "label": "TRANZYT ← POZNAŃ",
-      "title": "Wasserburg → Poznań (powrót)",
-      "drive_km": 850,
-      "drive_h": "8–8,5 h",
+      "label": "TRANZYT ← FRANKONIA",
+      "title": "Wasserburg am Inn → Hof (Saale)",
+      "drive_km": 380,
+      "drive_h": "4–4,5 h",
       "base_id": null,
-      "depart": "6:30–7:00 rano",
-      "route": "A8 west (Monachium-Ost) → A9 north → Norymberga → A9 north → Hof/Plauen → A72/A4 → Drezno → Frankfurt an der Oder → A2 east → Świecko → Poznań",
-      "arrival": "ok. 15:00–16:00 w Poznaniu",
+      "depart": "8:00 rano z Wasserburg",
+      "route": "A8 west (Monachium-Ost) → A9 north → Norymberga → A9 north → Hof (Saale) / okolice",
       "attractions": [],
       "nature": null,
       "food": {
-        "place": "Raststätte lub sklep autostradowy",
-        "note": "Dzień powrotny — minimalne postoje. Kanapki z poprzedniego wieczoru.",
+        "place": "Gasthof w Norymberdze lub na A9 (Franconia)",
+        "note": "Krótki postój obiadowy — lokalny Gasthof zamiast dużej Raststätte. Franconia słynie z kiełbas i piwa.",
+        "price": "~€10–14"
+      },
+      "accommodation": {
+        "place": "Hof (Saale) lub okolice — nocleg tranzytowy",
+        "note": "Małe miasto we Frankonii na trasie A9/A72 do Polski. Szukaj: Pension, Gasthof w dzielnicach poza centrum. Alternatywa: Rehau, Naila (jeszcze mniejsze, tańsze). Unikaj Lipska i Drezna (duże miasta).",
+        "price": "€40–55/noc"
+      },
+      "tips": [
+        "Krótszy dzień jazdy — czas na odpoczynek przed finałowym etapem",
+        "Sprawdź stan A9 między Norymbergą a Hof — ewentualne roboty drogowe"
+      ]
+    },
+    {
+      "date": "26.09 (sob)",
+      "day_num": 15,
+      "type": "transit",
+      "label": "TRANZYT ← POZNAŃ",
+      "title": "Hof (Saale) → Poznań (dotarcie do domu)",
+      "drive_km": 470,
+      "drive_h": "5–5,5 h",
+      "base_id": null,
+      "depart": "7:00–7:30 rano z Hof",
+      "route": "A72/A4 → Drezno (obwodnica) → Cottbus → Frankfurt an der Oder → A2 east → Świecko → Poznań",
+      "arrival": "ok. 13:00–14:30 w Poznaniu",
+      "attractions": [],
+      "nature": null,
+      "food": {
+        "place": "Raststätte Sachsen lub kanapki z poprzedniego wieczoru",
+        "note": "Krótszy finałowy etap — lunch na trasie lub po dotarciu do Poznania.",
         "price": null
       },
-      "tips": ["Powrót 25.09 — 2 dni przed deadlinem 27.09", "Przejście graniczne Świecko (A2) — najszybsze dla kierunku Polska", "Sprawdź stan A4 przez Saksonię — roboty drogowe częste w tym rejonie"]
+      "tips": [
+        "Dotarcie do Poznania 26.09 — 1 dzień przed deadline 27.09",
+        "Przejście graniczne Świecko (A2) — najszybsze dla kierunku Polska",
+        "Sprawdź stan A4 przez Saksonię — roboty drogowe częste w tym rejonie"
+      ]
+    },
+    {
+      "date": "27.09 (nd)",
+      "day_num": null,
+      "type": "buffer",
+      "label": "BUFOR",
+      "title": "Dzień rezerwowy — już w Poznaniu",
+      "note": "Deadline powrotu. Przy planowym harmonogramie jesteś w domu od 26.09. Ten dzień to margines bezpieczeństwa na opóźnienia, pogodę lub dodatkowy postój.",
+      "base_id": null
     }
   ],
   "practical_info": {
@@ -531,6 +631,15 @@
       "maremma": "20–28°C, cieplej niż północ, słonecznie"
     },
     "vendemmia": "Wrzesień = winobranie w Chianti i Maremma — w agriturismo możliwy udział w zbiorach",
-    "ztl_warning": "Centra większości toskańskich borghi mają ZTL (strefa ruchu ograniczonego) — parkuj poza murami"
+    "ztl_warning": "Centra większości toskańskich borghi mają ZTL (strefa ruchu ograniczonego) — parkuj poza murami",
+    "crowd_avoidance": {
+      "popular_days": 1,
+      "popular_places": ["Siena (19.09)"],
+      "tips": [
+        "Siena: tylko poranek, wyjazd przed 14:00",
+        "Saturnia: wtorek po 15:00",
+        "Unikaj Florencji, Pizy i San Gimignano — poza planem celowo"
+      ]
+    }
   }
 }

@@ -1775,3 +1775,214 @@ body.lightbox-open {
   padding: 1rem 1.25rem;
   margin-top: 0.5rem;
 }
+
+/* ── Interactive map section ────────────────────────────────── */
+.leaflet-map--big {
+  height: 520px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+  .leaflet-map--big { height: 580px; }
+}
+
+@media (min-width: 1024px) {
+  .leaflet-map--big { height: 640px; }
+}
+
+.imap-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.map-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.05rem;
+  padding: 0.35rem 0.65rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s, box-shadow 0.15s;
+  line-height: 1.2;
+}
+
+.map-filter:hover {
+  background: var(--cream-deep);
+  color: var(--ink);
+  border-color: var(--stone-dark);
+}
+
+.map-filter--active {
+  background: var(--cipresso);
+  color: var(--cream);
+  border-color: var(--cipresso);
+  box-shadow: 0 2px 6px rgba(28, 51, 41, 0.2);
+}
+
+.map-filter--active:hover {
+  background: var(--cipresso-light);
+  color: var(--cream);
+  border-color: var(--cipresso-light);
+}
+
+.map-filter__num {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.map-filter__date {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.maps-row--single {
+  grid-template-columns: 1fr;
+}
+
+/* ── Todo list section ──────────────────────────────────────── */
+.todo-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .todo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.todo-category {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.todo-category__title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cipresso);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.todo-category__icon {
+  font-size: 1rem;
+}
+
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.todo-item {
+  border-radius: 5px;
+  padding: 0.55rem 0.65rem;
+  background: var(--cream);
+  border-left: 3px solid var(--border);
+  transition: background 0.15s, border-color 0.15s, opacity 0.2s;
+}
+
+.todo-item--high { border-left-color: var(--terracotta); }
+.todo-item--medium { border-left-color: var(--oro); }
+.todo-item--low { border-left-color: var(--stone-dark); }
+
+.todo-item.is-done {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+
+.todo-item__label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.todo-check {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: var(--cipresso);
+  cursor: pointer;
+}
+
+.todo-item__text {
+  flex: 1;
+  color: var(--ink);
+}
+
+.todo-item__priority {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--stone-dark);
+  flex-shrink: 0;
+  padding: 0.1rem 0.35rem;
+  background: var(--stone);
+  border-radius: 3px;
+  align-self: flex-start;
+}
+
+.todo-item--high .todo-item__priority {
+  background: rgba(184, 92, 56, 0.12);
+  color: var(--terracotta-deep);
+}
+
+.todo-item__deadline {
+  font-size: 0.72rem;
+  color: var(--stone-dark);
+  font-style: italic;
+  margin-top: 0.2rem;
+  margin-left: 1.6rem;
+}
+
+.todo-item__detail {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 0.3rem;
+  margin-left: 1.6rem;
+  display: none;
+}
+
+.todo-item:hover .todo-item__detail,
+.todo-item:focus-within .todo-item__detail {
+  display: block;
+}
+
+.todo-item__link {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--terracotta);
+  text-decoration: none;
+  margin-top: 0.2rem;
+  margin-left: 1.6rem;
+}
+
+.todo-item__link:hover {
+  text-decoration: underline;
+}

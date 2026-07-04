@@ -24,12 +24,31 @@ function initScrollReveal() {
   cards.forEach((el) => obs.observe(el));
 }
 
+function initTodo() {
+  const STORAGE_KEY = 'todo-done-toskania-2026';
+  let done = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+
+  document.querySelectorAll('.todo-check').forEach((cb) => {
+    const id = cb.dataset.todoId;
+    if (done.has(id)) {
+      cb.checked = true;
+      cb.closest('.todo-item').classList.add('is-done');
+    }
+    cb.addEventListener('change', () => {
+      if (cb.checked) done.add(id); else done.delete(id);
+      cb.closest('.todo-item').classList.toggle('is-done', cb.checked);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...done]));
+    });
+  });
+}
+
 function mount(plan) {
   const app = document.getElementById('app');
   app.innerHTML = renderApp(plan);
   initDayNav();
   initGallery();
   initVariantsToggle();
+  initTodo();
   requestAnimationFrame(initScrollReveal);
   if (typeof window !== 'undefined') {
     const initMaps = () => {

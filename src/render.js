@@ -78,11 +78,12 @@ function renderSiteNav() {
       <a class="site-nav__brand" href="#start">Toskania</a>
       <div class="site-nav__links">
         <a href="#warianty">Warianty</a>
-        <a href="#mapy">Mapy</a>
+        <a href="#mapa">Mapa</a>
         <a href="#bazy">Bazy</a>
         <a href="#dni">Harmonogram</a>
         <a href="#galeria">Galeria</a>
         <a href="#koszty">Koszty</a>
+        <a href="#todo">Todo</a>
         <a href="#info">Info</a>
       </div>
     </nav>
@@ -125,6 +126,33 @@ function renderHeader(meta, images) {
         ` : ''}
       </div>
     </header>
+  `;
+}
+
+function renderInteractiveMap(days) {
+  const tuscanyDays = days.filter(d =>
+    ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null
+  );
+
+  const filterBtns = tuscanyDays.map(day => `
+    <button type="button" class="map-filter" data-imap-day="${day.day_num}">
+      <span class="map-filter__num">${day.day_num}</span>
+      <span class="map-filter__date">${esc(day.date.split(' ')[0])}</span>
+    </button>
+  `).join('');
+
+  return `
+    <section class="section" id="mapa">
+      <h2 class="section-title">Mapa Toskanii</h2>
+      <p class="section-lead">Kliknij dzień żeby zobaczyć tylko jego atrakcje. Kliknij marker po szczegóły.</p>
+      <div class="imap-filters">
+        <button type="button" class="map-filter map-filter--active" data-imap-day="all">
+          <span class="map-filter__num">Wszystkie</span>
+        </button>
+        ${filterBtns}
+      </div>
+      <div id="map-tuscany-interactive" class="leaflet-map leaflet-map--big" aria-label="Interaktywna mapa Toskanii z atrakcjami"></div>
+    </section>
   `;
 }
 
@@ -647,6 +675,45 @@ function renderCosts(costs) {
   `;
 }
 
+function renderTodo(todo) {
+  if (!todo?.categories?.length) return '';
+
+  const PRIORITY_LABEL = { high: 'pilne', medium: 'warto', low: 'opcjonalnie' };
+
+  const categories = todo.categories.map((cat) => {
+    const items = cat.items.map((item) => `
+      <li class="todo-item todo-item--${esc(item.priority || 'medium')}" id="todo-${esc(item.id)}">
+        <label class="todo-item__label">
+          <input type="checkbox" class="todo-check" data-todo-id="${esc(item.id)}" />
+          <span class="todo-item__text">${esc(item.label)}</span>
+          <span class="todo-item__priority">${esc(PRIORITY_LABEL[item.priority] || '')}</span>
+        </label>
+        ${item.deadline ? `<div class="todo-item__deadline">do: ${esc(item.deadline)}</div>` : ''}
+        ${item.detail ? `<div class="todo-item__detail">${esc(item.detail)}</div>` : ''}
+        ${item.url ? `<a class="todo-item__link" href="${esc(item.url)}" target="_blank" rel="noopener">↗ otwórz</a>` : ''}
+      </li>
+    `).join('');
+
+    return `
+      <div class="todo-category">
+        <h3 class="todo-category__title">
+          <span class="todo-category__icon">${esc(cat.icon || '')}</span>
+          ${esc(cat.name)}
+        </h3>
+        <ul class="todo-list">${items}</ul>
+      </div>
+    `;
+  }).join('');
+
+  return `
+    <section class="section" id="todo">
+      <h2 class="section-title">Lista zadań przed wyjazdem</h2>
+      <p class="section-lead">${esc(todo.note)}</p>
+      <div class="todo-grid">${categories}</div>
+    </section>
+  `;
+}
+
 function renderPractical(info) {
   const climate = Object.entries(info.climate || {})
     .map(([region, desc]) => `<li><strong>${esc(region)}:</strong> ${esc(desc)}</li>`)
@@ -764,16 +831,13 @@ export function renderApp(plan) {
     <div class="page">
       ${renderHeader(plan.meta, images)}
       ${renderVariantsSection(plan.variants)}
+      ${renderInteractiveMap(plan.days)}
       <section class="section section--maps" id="mapy">
-        <h2 class="section-title">Mapy trasy</h2>
-        <div class="maps-row">
+        <h2 class="section-title">Mapa trasy</h2>
+        <div class="maps-row maps-row--single">
           <div class="map-card">
-            <h3 class="map-card__title">Cała trasa</h3>
+            <h3 class="map-card__title">Cała trasa — Poznań → Toskania → Poznań</h3>
             <div id="map-route-overview" class="leaflet-map" aria-label="Mapa trasy Poznań–Toskania–Poznań"></div>
-          </div>
-          <div class="map-card">
-            <h3 class="map-card__title">Toskania — bazy i atrakcje</h3>
-            <div id="map-tuscany-overview" class="leaflet-map" aria-label="Mapa Toskanii z bazami i atrakcjami"></div>
           </div>
         </div>
       </section>
@@ -784,6 +848,7 @@ export function renderApp(plan) {
       </div>
       ${renderGallery(images)}
       ${renderCosts(plan.costs)}
+      ${renderTodo(plan.todo)}
       ${renderPractical(plan.practical_info)}
       <footer class="footer">
         <p>Toskania 2026 · ${esc(plan.meta.dates)}</p>

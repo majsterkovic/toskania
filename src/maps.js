@@ -173,17 +173,194 @@ export function initDayMap(containerId, base, attractions) {
   return map;
 }
 
+// CartoDB Voyager — bardziej kartograficzny styl, bez klucza API
+const VOYAGER_TILE = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+
+const BASE_ACCENT = {
+  base1: '#5c6b45',
+  base2: '#b85c38',
+  base3: '#8f3f28',
+};
+
+/**
+ * Duża interaktywna mapa Toskanii z filtrami po dniach
+ */
+export function initInteractiveMap(containerId, plan) {
+  if (!window.L) return;
+  const el = document.getElementById(containerId);
+  if (!el) return;
+
+  const L = window.L;
+
+  const map = L.map(el, {
+    zoomControl: true,
+    scrollWheelZoom: false,
+    tap: false,
+  });
+
+  L.tileLayer(VOYAGER_TILE, {
+    attribution: CARTO_ATTR,
+    maxZoom: 18,
+    subdomains: 'abcd',
+  }).addTo(map);
+
+  // Collect all days with attractions that have coords
+  const tuscanyDays = (plan.days || []).filter(d =>
+    ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) &&
+    d.day_num != null
+  );
+
+  const basesById = {};
+  (plan.bases || []).forEach(b => { basesById[b.id] = b; });
+
+  // Layer groups per day + "all"
+  const layerGroups = {};      // day_num → L.LayerGroup
+  const allMarkers = L.layerGroup().addTo(map);
+  const allLatLngs = [];
+
+  // Base markers (always visible as anchors)
+  const baseMarkers = {};
+  (plan.bases || []).forEach(base => {
+    if (!base.coords) return;
+    const accent = BASE_ACCENT[base.id] || '#b85c38';
+    const icon = makePinIcon(accent, 20, true);
+    const m = L.marker(base.coords, { icon })
+      .bindPopup(`<strong>${base.name}</strong><br><span style="color:${accent};font-size:0.8em">● baza noclegowa</span>`, { maxWidth: 200 });
+    baseMarkers[base.id] = m;
+    allLatLngs.push(base.coords);
+  });
+
+  tuscanyDays.forEach(day => {
+    const group = L.layerGroup();
+    layerGroups[day.day_num] = group;
+
+    const base = basesById[day.base_id];
+    const accent = BASE_ACCENT[day.base_id] || '#9a8f82';
+
+    // Add base marker to this day's layer
+    if (base?.coords) {
+      const icon = makePinIcon(accent, 18, true);
+      L.marker(base.coords, { icon })
+        .bindPopup(`<strong>${base.name}</strong><br><span style="opacity:.7;font-size:.85em">baza Dnia ${day.day_num}</span>`, { maxWidth: 200 })
+        .addTo(group);
+    }
+
+    (day.attractions || []).forEach(att => {
+      if (!att.coords) return;
+      allLatLngs.push(att.coords);
+      const typeColor = att.type === 'nature' ? '#5c6b45' : att.type === 'popular' ? '#c4860a' : accent;
+      const icon = makePinIcon(typeColor, 13, false);
+      const popup = buildPopup(att, day);
+      L.marker(att.coords, { icon })
+        .bindPopup(popup, { maxWidth: 240 })
+        .addTo(group);
+
+      // Also add to "all" layer
+      L.marker(att.coords, { icon: makePinIcon(typeColor, 13, false) })
+        .bindPopup(popup, { maxWidth: 240 })
+        .addTo(allMarkers);
+    });
+  });
+
+  // Add all base markers to "all" view
+  Object.values(baseMarkers).forEach(m => m.addTo(allMarkers));
+
+  // Draw base-to-base route
+  const baseCoords = (plan.bases || []).filter(b => b.coords).map(b => b.coords);
+  if (baseCoords.length > 1) {
+    L.polyline(baseCoords, {
+      color: '#b85c38', weight: 2.5, opacity: 0.5, dashArray: '8 6',
+    }).addTo(allMarkers);
+  }
+
+  if (allLatLngs.length) {
+    map.fitBounds(L.latLngBounds(allLatLngs), { padding: [36, 36] });
+  }
+
+  // ── Filter wiring (buttons already in DOM, wired via JS) ──
+  const filterBtns = document.querySelectorAll(`[data-imap-day]`);
+  let activeDayNum = 'all';
+
+  function showDay(dayNum) {
+    activeDayNum = dayNum;
+
+    // Remove all layers
+    Object.values(layerGroups).forEach(g => map.removeLayer(g));
+    map.removeLayer(allMarkers);
+
+    if (dayNum === 'all') {
+      allMarkers.addTo(map);
+      if (allLatLngs.length) map.fitBounds(L.latLngBounds(allLatLngs), { padding: [36, 36] });
+    } else {
+      const group = layerGroups[dayNum];
+      if (group) {
+        group.addTo(map);
+        const lls = [];
+        group.eachLayer(l => {
+          if (l.getLatLng) lls.push(l.getLatLng());
+        });
+        if (lls.length === 1) map.setView(lls[0], 13);
+        else if (lls.length > 1) map.fitBounds(L.latLngBounds(lls), { padding: [48, 48] });
+      }
+    }
+
+    filterBtns.forEach(btn => {
+      const isActive = btn.dataset.imapDay === String(dayNum);
+      btn.classList.toggle('map-filter--active', isActive);
+    });
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const val = btn.dataset.imapDay;
+      showDay(val === 'all' ? 'all' : Number(val));
+    });
+  });
+
+  return map;
+}
+
+function buildPopup(att, day) {
+  const typeLabel = { medieval: 'średniowiecze', nature: 'natura', cultural: 'kultura', popular: 'popularne' }[att.type] || att.type || '';
+  return `
+    <div style="font-family:'Outfit',sans-serif;font-size:0.82rem;min-width:160px">
+      <div style="font-weight:600;font-size:0.95rem;margin-bottom:2px">${att.name}</div>
+      <div style="color:#6b6258;margin-bottom:4px">Dzień ${day.day_num} · ${typeLabel}</div>
+      ${att.drive_min ? `<div style="color:#9a8f82">${att.drive_min} min od bazy</div>` : ''}
+      ${att.description ? `<div style="margin-top:4px;color:#2a2420;line-height:1.4">${att.description.slice(0, 120)}${att.description.length > 120 ? '…' : ''}</div>` : ''}
+    </div>`;
+}
+
+function makePinIcon(color, r, isBase) {
+  const size = r * 2;
+  const svg = isBase
+    ? `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size + 6}" viewBox="0 0 ${size} ${size + 6}">
+        <circle cx="${r}" cy="${r}" r="${r - 1}" fill="${color}" stroke="#fff" stroke-width="2"/>
+        <line x1="${r}" y1="${size - 1}" x2="${r}" y2="${size + 5}" stroke="${color}" stroke-width="2"/>
+       </svg>`
+    : `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+        <circle cx="${r}" cy="${r}" r="${r - 1.5}" fill="${color}" stroke="rgba(255,255,255,0.8)" stroke-width="1.5"/>
+       </svg>`;
+  return window.L.divIcon({
+    html: svg,
+    className: '',
+    iconSize: isBase ? [size, size + 6] : [size, size],
+    iconAnchor: [r, isBase ? size + 6 : r],
+    popupAnchor: [0, isBase ? -(size + 6) : -(r + 4)],
+  });
+}
+
 /**
  * Inicjalizuje wszystkie mapy na stronie po wyrenderowaniu HTML
  */
 export function initAllMaps(plan) {
   if (!window.L) return;
 
-  // Mapa overview trasy
-  initRouteOverviewMap('map-route-overview', plan.meta?.map_config);
+  // Duża interaktywna mapa Toskanii
+  initInteractiveMap('map-tuscany-interactive', plan);
 
-  // Mapa Toskanii
-  initTuscanyOverviewMap('map-tuscany-overview', plan.meta?.map_config);
+  // Mapa overview całej trasy
+  initRouteOverviewMap('map-route-overview', plan.meta?.map_config);
 
   // Mini mapy per dzień
   const basesById = {};

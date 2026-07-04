@@ -1009,7 +1009,11 @@
           "type": "medieval",
           "image": "barga",
           "image_key": "barga",
-          "gps_hint": "Duomo di San Cristoforo, Via del Duomo 1, 55051 Barga LU — parking Parcheggio Porta Reale"
+          "gps_hint": "Duomo di San Cristoforo, Via del Duomo 1, 55051 Barga LU — parking Parcheggio Porta Reale",
+          "coords": [
+            44.0733,
+            10.4836
+          ]
         },
         {
           "name": "Treppignana via il Ciocco — las dębowo-kasztanowy",
@@ -1018,7 +1022,11 @@
           "type": "nature",
           "image": "barga",
           "image_key": "barga",
-          "gps_hint": "Treppignana, 55051 Barga LU — parking przy borgo, szlak do Tenuta Il Ciocco"
+          "gps_hint": "Treppignana, 55051 Barga LU — parking przy borgo, szlak do Tenuta Il Ciocco",
+          "coords": [
+            44.058,
+            10.463
+          ]
         },
         {
           "name": "Grotta del Vento — Fornovolasco",
@@ -1026,7 +1034,11 @@
           "description": "4570 m zbadanych jaskiń krasowych w Alpach Apuańskich. 3 itinerari (1–3 h). Po wizycie spacer przez bukowe i dębowe lasy na zboczach Pania della Croce.",
           "type": "nature",
           "image_key": "grotta-vento",
-          "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Località Fornovolasco, 55020 Vergemoli LU"
+          "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Località Fornovolasco, 55020 Vergemoli LU",
+          "coords": [
+            44.0927,
+            10.3846
+          ]
         }
       ],
       "oak_forest": {
@@ -1175,7 +1187,11 @@
           "type": "medieval",
           "image": "castiglione",
           "image_key": "castiglione",
-          "gps_hint": "Castiglione di Garfagnana LU — parking Porta Inferi (26 miejsc, Via Soccorso)"
+          "gps_hint": "Castiglione di Garfagnana LU — parking Porta Inferi (26 miejsc, Via Soccorso)",
+          "coords": [
+            44.1553,
+            10.3936
+          ]
         },
         {
           "name": "Riserva Naturale Orecchiella — Sentiero „Intorno al Monte Orecchiella”",
@@ -1184,7 +1200,11 @@
           "type": "nature",
           "image": "orecchiella",
           "image_key": "orecchiella",
-          "gps_hint": "Centro Visitatori Orecchiella, Località Laghetti 6, 55038 San Romano in Garfagnana LU"
+          "gps_hint": "Centro Visitatori Orecchiella, Località Laghetti 6, 55038 San Romano in Garfagnana LU",
+          "coords": [
+            44.1906,
+            10.3912
+          ]
         },
         {
           "name": "Castelnuovo di Garfagnana",
@@ -1193,7 +1213,11 @@
           "type": "medieval",
           "image": "castelnuovo",
           "image_key": "castelnuovo",
-          "gps_hint": "Castelnuovo di Garfagnana LU — parking Piazzale Europa"
+          "gps_hint": "Castelnuovo di Garfagnana LU — parking Piazzale Europa",
+          "coords": [
+            44.1048,
+            10.4077
+          ]
         }
       ],
       "oak_forest": {
@@ -1339,7 +1363,11 @@
           "type": "medieval",
           "image": "verrucole",
           "image_key": "verrucole",
-          "gps_hint": "Fortezza delle Verrucole, San Romano in Garfagnana LU"
+          "gps_hint": "Fortezza delle Verrucole, San Romano in Garfagnana LU",
+          "coords": [
+            44.1433,
+            10.4681
+          ]
         },
         {
           "name": "Lago di Vagli",
@@ -1348,7 +1376,11 @@
           "type": "nature",
           "image": "vagli",
           "image_key": "vagli",
-          "gps_hint": "Diga del Lago di Vagli, 55030 Vagli Sotto LU — parking przy tamie"
+          "gps_hint": "Diga del Lago di Vagli, 55030 Vagli Sotto LU — parking przy tamie",
+          "coords": [
+            44.1383,
+            10.3452
+          ]
         },
         {
           "name": "Gorfigliano",
@@ -1356,7 +1388,11 @@
           "description": "Mikrowioska z romańskim kościołem, kilkadziesiąt mieszkańców. Przykład autentycznego borgo bez renowacji turystycznej.",
           "type": "medieval",
           "image_key": null,
-          "gps_hint": "Gorfigliano, 55038 Minucciano LU"
+          "gps_hint": "Gorfigliano, 55038 Minucciano LU",
+          "coords": [
+            44.0773,
+            10.3497
+          ]
         }
       ],
       "oak_forest": {
@@ -1516,7 +1552,11 @@
           "type": "medieval",
           "image": "ponte-diavolo",
           "image_key": "ponte-diavolo",
-          "gps_hint": "Ponte del Diavolo, Borgo a Mozzano LU — parking przy SP2"
+          "gps_hint": "Ponte del Diavolo, Borgo a Mozzano LU — parking przy SP2",
+          "coords": [
+            43.9979,
+            10.4536
+          ]
         },
         {
           "name": "Bagni di Lucca",
@@ -1525,7 +1565,11 @@
           "type": "cultural",
           "image": "bagni-lucca",
           "image_key": "bagni-lucca",
-          "gps_hint": "Bagni di Lucca LU — parking przy Ponte delle Catene"
+          "gps_hint": "Bagni di Lucca LU — parking przy Ponte delle Catene",
+          "coords": [
+            44.0065,
+            10.5873
+          ]
         }
       ],
       "oak_forest": null,
@@ -1764,7 +1808,11 @@
           "type": "medieval",
           "image_key": "brolio",
           "gps_hint": "Località Madonna a Brolio, 53013 Gaiole in Chianti SI",
-          "image": "brolio"
+          "image": "brolio",
+          "coords": [
+            43.3948,
+            11.4791
+          ]
         },
         {
           "name": "Radda in Chianti",
@@ -1773,7 +1821,11 @@
           "type": "medieval",
           "image_key": "radda",
           "gps_hint": "Radda in Chianti SI — parking Piazzale del Castello",
-          "image": "radda"
+          "image": "radda",
+          "coords": [
+            43.4835,
+            11.3673
+          ]
         },
         {
           "name": "Bosco di Brolio — querceti",
@@ -1782,7 +1834,11 @@
           "type": "nature",
           "image_key": "brolio",
           "gps_hint": "Parking zamku Brolio — pętla od bramy zamku, 2–3 km",
-          "image": "brolio"
+          "image": "brolio",
+          "coords": [
+            43.394,
+            11.479
+          ]
         }
       ],
       "oak_forest": {
@@ -1911,7 +1967,11 @@
           "type": "popular",
           "image_key": "siena",
           "gps_hint": "Piazza del Campo, 53100 Siena SI",
-          "image": "siena"
+          "image": "siena",
+          "coords": [
+            43.3183,
+            11.3318
+          ]
         },
         {
           "name": "Duomo di Siena + Libreria Piccolomini",
@@ -1920,7 +1980,11 @@
           "type": "popular",
           "image_key": "siena",
           "gps_hint": "Piazza del Duomo, Siena SI — parking Santa Caterina lub San Domenico",
-          "image": "siena"
+          "image": "siena",
+          "coords": [
+            43.3171,
+            11.3289
+          ]
         },
         {
           "name": "Spacer przez kontrade",
@@ -1929,7 +1993,11 @@
           "type": "cultural",
           "image_key": "siena",
           "gps_hint": "Start: Via dei Termini (Oca) lub Piazza Matteotti 18 (Drago)",
-          "image": "siena"
+          "image": "siena",
+          "coords": [
+            43.3183,
+            11.3318
+          ]
         }
       ],
       "oak_forest": null,
@@ -2056,7 +2124,11 @@
           "type": "cultural",
           "image_key": "monte-oliveto",
           "gps_hint": "Abbazia Monte Oliveto Maggiore, Loc. Chiusure, 53041 Asciano SI",
-          "image": "monte-oliveto"
+          "image": "monte-oliveto",
+          "coords": [
+            43.1423,
+            11.4934
+          ]
         },
         {
           "name": "Asciano — Crete Senesi",
@@ -2065,7 +2137,11 @@
           "type": "cultural",
           "image_key": "asciano",
           "gps_hint": "Asciano SI — parking przy Piazza del Grano",
-          "image": "asciano"
+          "image": "asciano",
+          "coords": [
+            43.2343,
+            11.5621
+          ]
         }
       ],
       "oak_forest": {
@@ -2311,7 +2387,11 @@
           "type": "medieval",
           "image_key": "pitigliano",
           "gps_hint": "Pitigliano GR — parking Parcheggio del Fosso (poza ZTL)",
-          "image": "pitigliano"
+          "image": "pitigliano",
+          "coords": [
+            42.6358,
+            11.6713
+          ]
         },
         {
           "name": "Sinagoga e Museo Ebraico — Piccola Gerusalemme",
@@ -2322,7 +2402,11 @@
           "gps_hint": "Vicolo Marghera / Vicolo Manin, Pitigliano GR — przy wejściu do getta",
           "image": "pitigliano",
           "ticket_price": "€6 intero, €5 ridotto (sinagoga + ghetto + museo)",
-          "opening_hours": "1 IV–31 X: 10:00–13:00, 14:30–18:00. Sobota ZAMKNIĘTA. Poniedziałek 21.09 = OTWARTE."
+          "opening_hours": "1 IV–31 X: 10:00–13:00, 14:30–18:00. Sobota ZAMKNIĘTA. Poniedziałek 21.09 = OTWARTE.",
+          "coords": [
+            42.6358,
+            11.6713
+          ]
         },
         {
           "name": "Via Cava di San Giuseppe",
@@ -2333,7 +2417,11 @@
           "gps_hint": "Via Cava di San Giuseppe — start SP42 Pian della Madonna lub pieszo z centrum (~10–15 min)",
           "image": "pitigliano",
           "ticket_price": "Bezpłatny — szlak outdoor",
-          "opening_hours": "24/7; najlepiej 9:00–17:00. Unikać podczas i tuż po deszczu."
+          "opening_hours": "24/7; najlepiej 9:00–17:00. Unikać podczas i tuż po deszczu.",
+          "coords": [
+            42.66,
+            11.69
+          ]
         }
       ],
       "oak_forest": {
@@ -2458,7 +2546,11 @@
           "gps_hint": "Fortezza Orsini, Piazza Cairoli 3, 58010 Sorano GR — parking San Marco",
           "image": "sorano",
           "ticket_price": "€10 cumulativo (forteca + necropoli Sovana + 3 muzea) lub wstęp tylko forteca — sprawdź w kasie",
-          "opening_hours": "10:00–13:00, 15:00–19:00 (wrzesień), pon. zamknięte — wtorek 22.09 OTWARTE"
+          "opening_hours": "10:00–13:00, 15:00–19:00 (wrzesień), pon. zamknięte — wtorek 22.09 OTWARTE",
+          "coords": [
+            42.6816,
+            11.7142
+          ]
         },
         {
           "name": "Via Cava di San Rocco — dolina Lente",
@@ -2469,7 +2561,11 @@
           "gps_hint": "Chiesa di San Rocco, Sorano GR — start od Fortezza Orsini, szlak w dolinę Lente",
           "image": "sorano",
           "ticket_price": "Bezpłatny",
-          "opening_hours": "Całorocznie, szlak samodzielny"
+          "opening_hours": "Całorocznie, szlak samodzielny",
+          "coords": [
+            42.69,
+            11.72
+          ]
         },
         {
           "name": "Cascate del Mulino — Saturnia",
@@ -2481,7 +2577,11 @@
           "image": "saturnia",
           "ticket_price": "Bezpłatny wstęp",
           "opening_hours": "24/7",
-          "parking_price": "€2,50/h (8:00–20:00), bezpłatny 20:00–8:00"
+          "parking_price": "€2,50/h (8:00–20:00), bezpłatny 20:00–8:00",
+          "coords": [
+            42.6477,
+            11.5099
+          ]
         }
       ],
       "oak_forest": {
@@ -2601,7 +2701,11 @@
           "type": "medieval",
           "image_key": "sovana",
           "gps_hint": "Sovana GR — parking przy Via del Duomo, necropoli 10 min pieszo",
-          "image": "sovana"
+          "image": "sovana",
+          "coords": [
+            42.6583,
+            11.6572
+          ]
         },
         {
           "name": "Selva del Lamone — Sentiero degli Alberi Monumentali (n. 11)",
@@ -2610,7 +2714,11 @@
           "type": "nature",
           "image_key": "lamone",
           "gps_hint": "Selva del Lamone, 58017 Semproniano GR — parking przy SP22",
-          "image": "lamone"
+          "image": "lamone",
+          "coords": [
+            42.594,
+            11.594
+          ]
         },
         {
           "name": "Semproniano",
@@ -2619,7 +2727,11 @@
           "type": "medieval",
           "image_key": "semproniano",
           "gps_hint": "Semproniano GR — parking przy Piazza del Popolo",
-          "image": "semproniano"
+          "image": "semproniano",
+          "coords": [
+            42.6327,
+            11.5357
+          ]
         }
       ],
       "oak_forest": {
@@ -3691,6 +3803,288 @@
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
       "Zakupy lokalne, wino do domu, pamiątki",
       "Opcjonalne: gorące źródła Saturnia (bezpłatne), Grotta del Vento (~€12/os)"
+    ]
+  },
+  "todo": {
+    "note": "Lista zadań przed wyjazdem Toskania 12–27 września 2026. Zaznacz jako wykonane klikając pozycję.",
+    "categories": [
+      {
+        "id": "dokumenty",
+        "name": "Dokumenty i ubezpieczenia",
+        "icon": "📋",
+        "items": [
+          {
+            "id": "ekuz-mariusz",
+            "label": "EKUZ — Mariusz (uczeń do 26 lat)",
+            "detail": "Karta EKUZ uprawnia do bezpłatnej pomocy medycznej w UE. Jako uczeń do 26 lat wyrabiasz bezpłatnie przez NFZ: eWUŚ online na pacjent.gov.pl lub osobiście w oddziale NFZ. Ważna 1–2 lata. Nie zastępuje ubezpieczenia turystycznego.",
+            "deadline": "6–8 tygodni przed wyjazdem",
+            "priority": "high",
+            "url": "https://pacjent.gov.pl"
+          },
+          {
+            "id": "ekuz-dziewczyna",
+            "label": "EKUZ — dziewczyna (studentka do 26 lat)",
+            "detail": "Tak samo jak Mariusz — jako studentka do 26 lat uprawniona do EKUZ bezpłatnie. Wyrobić przez pacjent.gov.pl lub NFZ. Sprawdzić czy nie jest na ubezpieczeniu rodziców (wtedy wyrobić przez ich NFZ).",
+            "deadline": "6–8 tygodni przed wyjazdem",
+            "priority": "high",
+            "url": "https://pacjent.gov.pl"
+          },
+          {
+            "id": "ekuz-pozostali",
+            "label": "EKUZ — pozostałe 2 osoby",
+            "detail": "Każda osoba musi mieć własną kartę EKUZ. Wyrobić indywidualnie przez NFZ lub pacjent.gov.pl.",
+            "deadline": "6–8 tygodni przed wyjazdem",
+            "priority": "high",
+            "url": "https://pacjent.gov.pl"
+          },
+          {
+            "id": "dowod",
+            "label": "Sprawdzić ważność dowodów osobistych / paszportów",
+            "detail": "Do Włoch (UE) wystarczy dowód osobisty. Sprawdzić datę ważności — musi być ważny w całym okresie podróży. Paszport opcjonalnie jako backup.",
+            "deadline": "3 miesiące przed wyjazdem",
+            "priority": "high"
+          },
+          {
+            "id": "ubezpieczenie",
+            "label": "Ubezpieczenie turystyczne (all-risk)",
+            "detail": "EKUZ nie pokrywa transportu medycznego, ubezpieczenia bagażu ani OC. Wykup polisę turystyczną dla 4 osób — np. ERGO Hestia, PZU, Allianz. Szukaj opcji z assistance i NNW. Koszt ok. €30–50/os.",
+            "deadline": "przed wyjazdem",
+            "priority": "high"
+          },
+          {
+            "id": "prawo-jazdy",
+            "label": "Prawo jazdy kierowcy (lub kierowców)",
+            "detail": "Prawo jazdy kategorii B ważne w UE. Sprawdzić datę ważności. Warto mieć kopię (zdjęcie w telefonie).",
+            "deadline": "przed wyjazdem",
+            "priority": "high"
+          },
+          {
+            "id": "dowod-rejestracyjny",
+            "label": "Dowód rejestracyjny samochodu",
+            "detail": "Oryginał — obowiązkowo. Sprawdzić ważność badania technicznego (OC i przegląd).",
+            "deadline": "przed wyjazdem",
+            "priority": "high"
+          }
+        ]
+      },
+      {
+        "id": "zdrowie",
+        "name": "Zdrowie i apteczka",
+        "icon": "🏥",
+        "items": [
+          {
+            "id": "szczepienia",
+            "label": "Szczepienia — Włochy nie wymagają",
+            "detail": "Włochy nie wymagają żadnych obowiązkowych szczepień dla obywateli UE. Zalecane (ale nieobowiązkowe): tężec/błonica (jeśli nie miałeś boostera >10 lat), wścieklizna (jeśli planujesz kontakt z dzikimi zwierzętami — nie dotyczy tej trasy). Kleszcze w Toskanii są, ale ryzyko niskie.",
+            "deadline": "brak obowiązku",
+            "priority": "low"
+          },
+          {
+            "id": "kleszcze",
+            "label": "Kleszcze — Toskania (ryzyko umiarkowane)",
+            "detail": "W lasach dębowych (Garfagnana, Foresta di Tocchi) są kleszcze. Zabrać repelent DEET/Icaridin, sprawdzać ciało po spacerach leśnych. Borelia i TBE w Toskanii — ryzyko niskie, ale realne.",
+            "deadline": "przed wyjazdem",
+            "priority": "medium"
+          },
+          {
+            "id": "apteczka",
+            "label": "Apteczka podróżna",
+            "detail": "Podstawy: plastry, bandaż elastyczny, środek dezynfekujący, ibuprofen/paracetamol, lek na biegunkę (np. Smecta/Imodium), krem SPF 50+, repelent na kleszcze, środek na oparzenia słoneczne, leki stałe + zapas na czas podróży.",
+            "deadline": "tydzień przed wyjazdem",
+            "priority": "medium"
+          },
+          {
+            "id": "spf",
+            "label": "Krem przeciwsłoneczny SPF 50+",
+            "detail": "Toskania we wrześniu — słońce nadal intensywne (UV index 4–6). Szczególnie ważne w Crete Senesi i Val d'Orcia (brak cienia).",
+            "deadline": "przed wyjazdem",
+            "priority": "medium"
+          }
+        ]
+      },
+      {
+        "id": "samochod",
+        "name": "Samochód i trasa",
+        "icon": "🚗",
+        "items": [
+          {
+            "id": "przeglad",
+            "label": "Przegląd techniczny + OC aktualne",
+            "detail": "Sprawdzić: olej, płyny, opony (bieżnik min. 3 mm, ciśnienie), koło zapasowe lub zestaw naprawczy, żarówki. OC musi pokrywać Niemcy, Austrię i Włochy (standardowo tak).",
+            "deadline": "2–4 tygodnie przed wyjazdem",
+            "priority": "high"
+          },
+          {
+            "id": "winieta",
+            "label": "Winieta Austria — kupić online",
+            "detail": "E-winieta na asfinag.at — 10-dniowa kosztuje €12,80. Kupić online PRZED wjazdem do Austrii (można dzień wcześniej, aktywacja od wybranej daty). Kara za brak: €120 na miejscu.",
+            "deadline": "dzień przed przejazdem przez Austrię",
+            "priority": "high",
+            "url": "https://www.asfinag.at"
+          },
+          {
+            "id": "zielona-karta",
+            "label": "Zielona Karta (zaświadczenie ubezpieczenia)",
+            "detail": "Poprosić ubezpieczyciela o Zieloną Kartę — formalnie opcjonalna w UE, ale przydatna przy kolizji. Sprawdzić czy OC obejmuje Niemcy, Austrię, Włochy (standardowo tak dla polis polskich).",
+            "deadline": "2 tygodnie przed wyjazdem",
+            "priority": "medium"
+          },
+          {
+            "id": "ztl",
+            "label": "ZTL — strefy zakazu wjazdu w Toskanii",
+            "detail": "Siena, San Gimignano, Pienza i inne mają ZTL (Zona Traffico Limitato). Kamera rejestruje tablice — mandat wysyłany pocztą. Parkować poza centrum i chodzić na pieszo. Sprawdzić aktualne info na ztl.org lub Google Maps.",
+            "deadline": "przed każdym miastem",
+            "priority": "high"
+          },
+          {
+            "id": "nawigacja",
+            "label": "Nawigacja offline — pobrać mapy",
+            "detail": "Pobrać mapy offline Włoch (Toskania), Austrii, Niemiec w Google Maps lub Maps.me przed wyjazdem. W Garfagnanie może być słaby zasięg.",
+            "deadline": "przed wyjazdem",
+            "priority": "medium"
+          }
+        ]
+      },
+      {
+        "id": "rezerwacje",
+        "name": "Rezerwacje",
+        "icon": "🗓️",
+        "items": [
+          {
+            "id": "noclegi-baza1",
+            "label": "Nocleg Baza 1 — Garfagnana (5 nocy, ok. 12–17.09)",
+            "detail": "Agriturismo w okolicach Barga — rezerwować jak najwcześniej, wrzesień to jeszcze sezon. Booking.com, Airbnb lub bezpośrednio. Budżet €60–90/pokój/noc × 2 pokoje.",
+            "deadline": "jak najwcześniej (maj–czerwiec 2026)",
+            "priority": "high"
+          },
+          {
+            "id": "noclegi-baza2",
+            "label": "Nocleg Baza 2 — Chianti (6 nocy, ok. 18–23.09)",
+            "detail": "Agriturismo lub B&B w okolicach Castelnuovo Berardenga. Chianti bardzo popularny — rezerwować z wyprzedzeniem. Budżet €70–100/pokój/noc × 2 pokoje.",
+            "deadline": "jak najwcześniej (maj–czerwiec 2026)",
+            "priority": "high"
+          },
+          {
+            "id": "noclegi-tranzyt",
+            "label": "Noclegi tranzytowe (Neustadt, Wasserburg, Hof)",
+            "detail": "Hotele tranzytowe — mniej krytyczne, można rezerwować 4–8 tygodni przed. Booking.com wystarczy.",
+            "deadline": "lipiec–sierpień 2026",
+            "priority": "medium"
+          },
+          {
+            "id": "siena-duomo",
+            "label": "Siena — Opera del Duomo (opcja rezerwacji)",
+            "detail": "Wstęp do kompleksu Duomo di Siena (OPA SI Pass) można kupić online na operaduomo.siena.it. Cena ok. €20/os. Wrzesień — kolejki mniejsze niż latem, ale warto zarezerwować.",
+            "deadline": "1–2 tygodnie przed wizytą",
+            "priority": "medium"
+          },
+          {
+            "id": "saturnia",
+            "label": "Saturnia Cascate del Mulino — bez rezerwacji",
+            "detail": "Bezpłatne naturalne baseny termalne — brak rezerwacji, wstęp wolny 24/7. Przyjechać rano (przed 10:00) lub po 16:00 żeby uniknąć tłumów. Zabrać ręcznik i klapki.",
+            "deadline": "brak",
+            "priority": "low"
+          }
+        ]
+      },
+      {
+        "id": "finanse",
+        "name": "Finanse",
+        "icon": "💶",
+        "items": [
+          {
+            "id": "gotowka",
+            "label": "Gotówka EUR — wymienić przed wyjazdem",
+            "detail": "Włochy są kartowe, ale małe tratorie, parkingi i rynki preferują gotówkę. Rekomendacja: €100–150/os gotówki. Wymienić w banku lub kantorze przed wyjazdem (nie na lotnisku).",
+            "deadline": "przed wyjazdem",
+            "priority": "medium"
+          },
+          {
+            "id": "karta",
+            "label": "Karta płatnicza bez prowizji za zagranicę",
+            "detail": "Karty Revolut, Wise lub Konto Otwarte na Świat PKO są bezprowizyjne. Sprawdzić limity dzienne i powiadomić bank o wyjeździe (jeśli masz starszą kartę). Mieć 2 karty jako backup.",
+            "deadline": "przed wyjazdem",
+            "priority": "medium"
+          },
+          {
+            "id": "budget",
+            "label": "Ustalić budżet grupowy",
+            "detail": "Szacunkowy koszt: €723–1094/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
+            "deadline": "2–4 tygodnie przed wyjazdem",
+            "priority": "medium"
+          }
+        ]
+      },
+      {
+        "id": "pakowanie",
+        "name": "Pakowanie",
+        "icon": "🎒",
+        "items": [
+          {
+            "id": "buty",
+            "label": "Solidne buty do chodzenia",
+            "detail": "Niezbędne do Garfagnany (szlaki leśne, Orecchiella), Sieny (bruk) i Crete Senesi. Buty turystyczne lub trekingowe z dobrą podeszwą. Nie sandały.",
+            "deadline": "przed wyjazdem",
+            "priority": "high"
+          },
+          {
+            "id": "deby",
+            "label": "Lista do obserwacji dębów (dla Mariusza)",
+            "detail": "Gatunki do wypatrywania: Quercus cerris (dąb burgundzki — Foresta di Tocchi), Quercus pubescens (dąb omszony — Crete Senesi), Quercus ilex (ostrokrzew — Maremma). Zabrać lornetkę, notes, aparat.",
+            "deadline": "przed wyjazdem",
+            "priority": "low"
+          },
+          {
+            "id": "adapter",
+            "label": "Adapter — nie potrzebny",
+            "detail": "Włochy używają wtyczek typu F (Schuko) i L. Polskie wtyczki Schuko (okrągłe 2-bolcowe) pasują do gniazdek typu F. Adapter może być potrzebny tylko do gniazdek typu L (3 bolce w linii) — w starszych budynkach.",
+            "deadline": "sprawdzić",
+            "priority": "low"
+          },
+          {
+            "id": "ubrania",
+            "label": "Ubrania — wrzesień w Toskanii",
+            "detail": "Temperatura: 18–28°C w dzień, 12–16°C wieczorem. Zabrać: lekkie warstwy, jeden sweter/bluza na wieczory, nakrycie głowy, okulary słoneczne. Do kościołów: zakryć ramiona i kolana (chusta/spodnie).",
+            "deadline": "przed wyjazdem",
+            "priority": "medium"
+          }
+        ]
+      },
+      {
+        "id": "aplikacje",
+        "name": "Aplikacje i narzędzia cyfrowe",
+        "icon": "📱",
+        "items": [
+          {
+            "id": "mapy-offline",
+            "label": "Mapy offline Włoch — pobrać przed wyjazdem",
+            "detail": "Google Maps: pobrać obszar Toskania offline. Maps.me: dobra alternatywa z oznaczonymi szlakami. W Garfagnanie (Orecchiella) bywa słaby zasięg — offline obowiązkowe.",
+            "deadline": "przed wyjazdem",
+            "priority": "high"
+          },
+          {
+            "id": "komoot",
+            "label": "Komoot — szlaki Garfagnany",
+            "detail": "Komoot ma dobrze zmapowane szlaki Orecchiella i okolic. Pobrać szlaki offline: \"Intorno al Monte Orecchiella\" (3 km). Bezpłatna wersja wystarczy.",
+            "deadline": "przed wyjazdem",
+            "priority": "medium"
+          },
+          {
+            "id": "ztl-app",
+            "label": "ZTL Checker / Google Maps — unikanie ZTL",
+            "detail": "Google Maps routuje z ominięciem ZTL jeśli ustawisz jako samochód prywatny. Sprawdzać też ztl.org dla konkretnych miast przed wjazdem. Siena, Pienza, San Gimignano — ZTL aktywne całą dobę.",
+            "deadline": "przed każdym miastem",
+            "priority": "high"
+          },
+          {
+            "id": "weather",
+            "label": "Sprawdzić pogodę tydzień przed",
+            "detail": "Wrzesień w Toskanii: ok. 10 dni deszczowych w miesiącu, głównie krótkie burze popołudniowe. Sprawdzić prognozę na meteo.it lub Windy.com 7 dni przed wyjazdem.",
+            "deadline": "7 dni przed wyjazdem",
+            "priority": "low"
+          }
+        ]
+      }
     ]
   }
 }

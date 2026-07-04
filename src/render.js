@@ -83,6 +83,7 @@ function renderSiteNav() {
         <a href="#dni">Harmonogram</a>
         <a href="#galeria">Galeria</a>
         <a href="#koszty">Koszty</a>
+        <a href="#pogoda">Pogoda</a>
         <a href="#todo">Todo</a>
         <a href="#info">Info</a>
       </div>
@@ -857,6 +858,10 @@ export function renderApp(plan) {
       </div>
       ${renderGallery(images)}
       ${renderCosts(plan.costs)}
+      <section class="section" id="pogoda">
+        <h2 class="section-title">Pogoda we wrześniu</h2>
+        <div id="weather-container"></div>
+      </section>
       ${renderTodo(plan.todo)}
       ${renderPractical(plan.practical_info)}
       <footer class="footer">

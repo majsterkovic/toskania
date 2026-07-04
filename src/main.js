@@ -2,6 +2,7 @@ import plan3 from '../plan.json';
 import plan2 from '../plan_2bazy.json';
 import { renderApp, renderVariantsSection, initDayNav, initGallery } from './render.js';
 import { initAllMaps } from './maps.js';
+import { initWeather } from './weather.js';
 import './style.css';
 
 // Apply theme before first paint to prevent FOUC
@@ -73,6 +74,7 @@ function mount(plan) {
   initVariantsToggle();
   initTodo();
   initThemeToggle();
+  initWeather('weather-container');
   requestAnimationFrame(initScrollReveal);
   if (typeof window !== 'undefined') {
     const initMaps = () => {

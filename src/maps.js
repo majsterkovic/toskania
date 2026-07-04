@@ -452,10 +452,10 @@ function makePinIcon(color, r, isBase) {
 }
 
 /**
- * Inicjalizuje wszystkie mapy na stronie po wyrenderowaniu HTML.
- * Duże mapy (interactive, route) — od razu.
- * Mini mapy per dzień — lazy via IntersectionObserver (init dopiero gdy
- * kontener wchodzi do viewportu, żeby Leaflet znał rzeczywisty rozmiar).
+ * Inicjalizuje wszystkie mapy natychmiast (poprawne koordynaty i zoom),
+ * ale wywołuje invalidateSize() dopiero gdy mapa wejdzie do viewportu —
+ * bo karta dnia ma opacity:0 + transform podczas scroll-reveal i Leaflet
+ * nie może wtedy poprawnie obliczyć szerokości kontenera.
  */
 export function initAllMaps(plan) {
   if (!window.L) return;
@@ -463,38 +463,29 @@ export function initAllMaps(plan) {
   const basesById = {};
   (plan.bases || []).forEach(b => { basesById[b.id] = b; });
 
-  // ── Duże mapy: lazy (mogą być daleko w dół) ─────────────────
-  lazyInitMap('map-tuscany-interactive', () => initInteractiveMap('map-tuscany-interactive', plan));
-  lazyInitMap('map-route-overview',     () => initRouteOverviewMap('map-route-overview', plan.meta?.map_config));
+  // Init od razu (żeby fitBounds działał poprawnie)
+  initInteractiveMap('map-tuscany-interactive', plan);
+  initRouteOverviewMap('map-route-overview', plan.meta?.map_config);
 
-  // ── Mini mapy per dzień: lazy ────────────────────────────────
   (plan.days || []).forEach(day => {
     if (!day.day_num) return;
     const mapId = `map-day-${day.day_num}`;
-    const base  = basesById[day.base_id];
-    lazyInitMap(mapId, () => initDayMap(mapId, base, day.attractions));
+    initDayMap(mapId, basesById[day.base_id], day.attractions);
   });
-}
 
-/**
- * Obserwuje kontener i inicjalizuje mapę dopiero gdy wejdzie do viewportu.
- * Po inicjalizacji woła invalidateSize() żeby Leaflet dopasował kafelki.
- */
-function lazyInitMap(containerId, initFn) {
-  const el = document.getElementById(containerId);
-  if (!el) return;
-
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      obs.unobserve(el);
-      const mapInstance = initFn();
-      // invalidateSize po krótkim opóźnieniu — na wypadek animacji CSS lub flex-layout
-      if (mapInstance) {
-        requestAnimationFrame(() => mapInstance.invalidateSize());
-      }
-    });
-  }, { rootMargin: '300px 0px' }); // zacznij ładować 300px przed ekranem
-
-  obs.observe(el);
+  // invalidateSize dla każdej mapy gdy wchodzi do viewportu
+  // (po zakończeniu animacji scroll-reveal)
+  _maps.forEach(({ map }) => {
+    const container = map.getContainer();
+    if (!container) return;
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        obs.unobserve(container);
+        // Czekamy na koniec animacji CSS (0.4s transition na karcie)
+        setTimeout(() => map.invalidateSize({ pan: false }), 450);
+      });
+    }, { threshold: 0.1 });
+    obs.observe(container);
+  });
 }

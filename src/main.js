@@ -4,6 +4,15 @@ import { renderApp, renderVariantsSection, initDayNav, initGallery } from './ren
 import { initAllMaps } from './maps.js';
 import './style.css';
 
+// Apply theme before first paint to prevent FOUC
+(function () {
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (saved === 'dark' || (!saved && prefersDark)) {
+    document.documentElement.classList.add('dark');
+  }
+})();
+
 let currentPlan = plan3;
 
 function initScrollReveal() {
@@ -22,6 +31,20 @@ function initScrollReveal() {
     { threshold: 0.05 }
   );
   cards.forEach((el) => obs.observe(el));
+}
+
+function initThemeToggle() {
+  const btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  const isDark = document.documentElement.classList.contains('dark');
+  btn.textContent = isDark ? '☀' : '◑';
+  btn.title = isDark ? 'Włącz tryb jasny' : 'Włącz tryb ciemny';
+  btn.addEventListener('click', () => {
+    const nowDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', nowDark ? 'dark' : 'light');
+    btn.textContent = nowDark ? '☀' : '◑';
+    btn.title = nowDark ? 'Włącz tryb jasny' : 'Włącz tryb ciemny';
+  });
 }
 
 function initTodo() {
@@ -49,6 +72,7 @@ function mount(plan) {
   initGallery();
   initVariantsToggle();
   initTodo();
+  initThemeToggle();
   requestAnimationFrame(initScrollReveal);
   if (typeof window !== 'undefined') {
     const initMaps = () => {

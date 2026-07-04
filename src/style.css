@@ -2208,3 +2208,240 @@ body.lightbox-open {
   color: var(--muted);
   margin-top: 0.1rem;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   DARK MODE — klasa html.dark
+   Dominuje zieleń cyprysu; złoto (oro) nabiera roli strukturalnej
+   ═══════════════════════════════════════════════════════════════ */
+
+html.dark {
+  /* Surfaces — ciemna zieleń leśna, nie techniczna czerń */
+  --cream:    #112018;   /* body bg — jak gęsty las tuż po zachodzie */
+  --cream-deep: #0d1a12; /* głębsze tło dla sekcji i hero */
+  --card-bg:  #1a3228;   /* karty wyrastają z tła */
+  --stone:    #1e3c2c;   /* surface variant — delikatnie jaśniejszy */
+  --stone-dark: #6a907a; /* captions, muted labels */
+
+  /* Tekst */
+  --ink:   #e4dcc6;   /* ciepły pergamin */
+  --muted: #8da88d;   /* szałwia — nie zimny szary */
+
+  /* Granice — złoto-zielona, nie szara */
+  --border: rgba(168, 136, 60, 0.22);
+
+  /* Złoto awansuje */
+  --oro:       #c9a84c;
+  --oro-light: #dfc06a;
+
+  /* Terracotta lekko jaśniejsza — kontrast na ciemnym */
+  --terracotta:       #cc7248;
+  --terracotta-deep:  #a84f2a;
+  --terracotta-light: #e0895a;
+
+  /* Cipresso: nav ciemniejszy, interaktywne jaśniejsze */
+  --cipresso:       #0b1710;   /* nav — prawie czarna zieleń */
+  --cipresso-light: #1c3329;   /* hover w nav */
+
+  /* Cienie — mocniejsze, zielono-ciemne */
+  --shadow:       0 2px 10px rgba(0, 0, 0, 0.35), 0 1px 4px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.5), 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Nav: złota linia nabiera wagi w dark mode */
+html.dark .site-nav {
+  border-bottom-width: 2px;
+  border-bottom-color: var(--oro);
+}
+
+html.dark .site-nav__links a {
+  color: rgba(228, 220, 198, 0.55);
+}
+
+html.dark .site-nav__links a:hover {
+  color: var(--ore-light, #dfc06a);
+}
+
+/* Hero — zielono-ciemna mgła zamiast brązu */
+html.dark .hero__figure::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 23, 16, 0.25) 0%,
+    rgba(11, 23, 16, 0.65) 100%
+  );
+}
+
+html.dark .hero { background: var(--cream-deep); }
+
+/* Sekcja-title: złota linia bardziej widoczna */
+html.dark .section-title::before {
+  background: var(--oro);
+  width: 3rem;
+  height: 2px;
+}
+
+/* Route stat divider */
+html.dark .route-stats {
+  border-top-color: rgba(168, 136, 60, 0.3);
+}
+
+/* Karty bazowe */
+html.dark .base-card {
+  background: var(--card-bg);
+}
+
+/* Day nav */
+html.dark .day-nav {
+  background: var(--cream-deep);
+  border-bottom-color: var(--border);
+}
+
+html.dark .day-chip {
+  background: var(--stone);
+  color: var(--muted);
+  border-color: var(--border);
+}
+
+html.dark .day-chip--active,
+html.dark .day-chip:hover {
+  background: var(--cipresso-light);
+  color: var(--oro-light);
+  border-color: var(--cipresso-light);
+}
+
+/* Day cards */
+html.dark .day-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+html.dark .day-card__header {
+  background: var(--stone);
+}
+
+html.dark .day-block {
+  background: var(--stone);
+  border-color: var(--border);
+}
+
+/* Koszty */
+html.dark .costs-category {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+html.dark .costs-table tr:nth-child(even) {
+  background: rgba(30, 60, 44, 0.5);
+}
+
+/* Todo */
+html.dark .todo-category {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+html.dark .todo-item {
+  background: var(--stone);
+}
+
+html.dark .todo-item__priority {
+  background: rgba(30, 60, 44, 0.7);
+  color: var(--stone-dark);
+}
+
+html.dark .todo-item--high .todo-item__priority {
+  background: rgba(204, 114, 72, 0.18);
+  color: var(--terracotta-light);
+}
+
+/* Mapa — panel */
+html.dark .imap-panel {
+  background: var(--card-bg);
+  border-left-color: var(--border);
+}
+
+html.dark .imap-wrap {
+  border-color: var(--border);
+}
+
+html.dark .imap-att {
+  border-bottom-color: var(--border);
+}
+
+html.dark .imap-att__name { color: var(--ink); }
+html.dark .imap-att__desc { color: var(--stone-dark); }
+
+html.dark .imap-panel__food {
+  background: rgba(168, 136, 60, 0.1);
+  border-top-color: var(--border);
+}
+
+/* Map filters */
+html.dark .map-filter {
+  background: var(--stone);
+  border-color: var(--border);
+  color: var(--stone-dark);
+}
+
+html.dark .map-filter:hover {
+  background: var(--cipresso-light);
+  color: var(--cream);
+  border-color: var(--cipresso-light);
+}
+
+html.dark .map-filter--active {
+  background: var(--cipresso-light);
+  color: var(--oro-light);
+  border-color: var(--cipresso-light);
+}
+
+/* Galeria */
+html.dark .gallery-img__caption {
+  background: rgba(11, 23, 16, 0.85);
+  color: var(--ink);
+}
+
+/* Lightbox */
+html.dark .lightbox {
+  background: rgba(11, 23, 16, 0.96);
+}
+
+/* Warianty */
+html.dark .variant-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+html.dark .variant-card--active {
+  border-color: var(--oro);
+  background: rgba(30, 60, 44, 0.8);
+}
+
+/* Practical info */
+html.dark .practical-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  background: none;
+  border: 1px solid rgba(247, 242, 232, 0.25);
+  border-radius: 4px;
+  color: rgba(247, 242, 232, 0.7);
+  font-size: 0.9rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  border-color: var(--oro-light);
+  color: var(--oro-light);
+}

@@ -452,28 +452,49 @@ function makePinIcon(color, r, isBase) {
 }
 
 /**
- * Inicjalizuje wszystkie mapy na stronie po wyrenderowaniu HTML
+ * Inicjalizuje wszystkie mapy na stronie po wyrenderowaniu HTML.
+ * Duże mapy (interactive, route) — od razu.
+ * Mini mapy per dzień — lazy via IntersectionObserver (init dopiero gdy
+ * kontener wchodzi do viewportu, żeby Leaflet znał rzeczywisty rozmiar).
  */
 export function initAllMaps(plan) {
   if (!window.L) return;
 
-  // Duża interaktywna mapa Toskanii
-  initInteractiveMap('map-tuscany-interactive', plan);
-
-  // Mapa overview całej trasy
-  initRouteOverviewMap('map-route-overview', plan.meta?.map_config);
-
-  // Mini mapy per dzień
   const basesById = {};
   (plan.bases || []).forEach(b => { basesById[b.id] = b; });
 
+  // ── Duże mapy: lazy (mogą być daleko w dół) ─────────────────
+  lazyInitMap('map-tuscany-interactive', () => initInteractiveMap('map-tuscany-interactive', plan));
+  lazyInitMap('map-route-overview',     () => initRouteOverviewMap('map-route-overview', plan.meta?.map_config));
+
+  // ── Mini mapy per dzień: lazy ────────────────────────────────
   (plan.days || []).forEach(day => {
     if (!day.day_num) return;
     const mapId = `map-day-${day.day_num}`;
-    const el = document.getElementById(mapId);
-    if (!el) return;
-
-    const base = basesById[day.base_id];
-    initDayMap(mapId, base, day.attractions);
+    const base  = basesById[day.base_id];
+    lazyInitMap(mapId, () => initDayMap(mapId, base, day.attractions));
   });
+}
+
+/**
+ * Obserwuje kontener i inicjalizuje mapę dopiero gdy wejdzie do viewportu.
+ * Po inicjalizacji woła invalidateSize() żeby Leaflet dopasował kafelki.
+ */
+function lazyInitMap(containerId, initFn) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      obs.unobserve(el);
+      const mapInstance = initFn();
+      // invalidateSize po krótkim opóźnieniu — na wypadek animacji CSS lub flex-layout
+      if (mapInstance) {
+        requestAnimationFrame(() => mapInstance.invalidateSize());
+      }
+    });
+  }, { rootMargin: '300px 0px' }); // zacznij ładować 300px przed ekranem
+
+  obs.observe(el);
 }

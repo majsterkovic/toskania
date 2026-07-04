@@ -144,14 +144,22 @@ function renderInteractiveMap(days) {
   return `
     <section class="section" id="mapa">
       <h2 class="section-title">Mapa Toskanii</h2>
-      <p class="section-lead">Kliknij dzień żeby zobaczyć tylko jego atrakcje. Kliknij marker po szczegóły.</p>
+      <p class="section-lead">Wybierz dzień — markery ponumerowane, linia trasy i lista atrakcji pojawią się obok.</p>
       <div class="imap-filters">
         <button type="button" class="map-filter map-filter--active" data-imap-day="all">
           <span class="map-filter__num">Wszystkie</span>
         </button>
         ${filterBtns}
       </div>
-      <div id="map-tuscany-interactive" class="leaflet-map leaflet-map--big" aria-label="Interaktywna mapa Toskanii z atrakcjami"></div>
+      <div class="imap-wrap">
+        <div id="map-tuscany-interactive" class="leaflet-map leaflet-map--big" aria-label="Interaktywna mapa Toskanii z atrakcjami"></div>
+        <aside id="imap-panel" class="imap-panel">
+          <div class="imap-panel__placeholder">
+            <span class="imap-panel__hint">Wybierz dzień</span>
+            <p>Numerowane atrakcje i szczegóły trasy pojawią się tutaj.</p>
+          </div>
+        </aside>
+      </div>
     </section>
   `;
 }

@@ -182,8 +182,17 @@ const BASE_ACCENT = {
   base3: '#8f3f28',
 };
 
+const TYPE_COLOR = {
+  nature: '#5c6b45',
+  popular: '#c4860a',
+  medieval: '#7a5c3a',
+  cultural: '#4a6b8a',
+};
+
+const TYPE_LABEL = { medieval: 'średniowiecze', nature: 'natura', cultural: 'kultura', popular: 'popularne' };
+
 /**
- * Duża interaktywna mapa Toskanii z filtrami po dniach
+ * Duża interaktywna mapa Toskanii z filtrami po dniach, numerowanymi markerami i panelem bocznym
  */
 export function initInteractiveMap(containerId, plan) {
   if (!window.L) return;
@@ -191,42 +200,30 @@ export function initInteractiveMap(containerId, plan) {
   if (!el) return;
 
   const L = window.L;
+  const panel = document.getElementById('imap-panel');
 
-  const map = L.map(el, {
-    zoomControl: true,
-    scrollWheelZoom: false,
-    tap: false,
-  });
+  const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, tap: false });
+  L.tileLayer(VOYAGER_TILE, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
 
-  L.tileLayer(VOYAGER_TILE, {
-    attribution: CARTO_ATTR,
-    maxZoom: 18,
-    subdomains: 'abcd',
-  }).addTo(map);
-
-  // Collect all days with attractions that have coords
   const tuscanyDays = (plan.days || []).filter(d =>
-    ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) &&
-    d.day_num != null
+    ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null
   );
 
   const basesById = {};
   (plan.bases || []).forEach(b => { basesById[b.id] = b; });
 
-  // Layer groups per day + "all"
-  const layerGroups = {};      // day_num → L.LayerGroup
-  const allMarkers = L.layerGroup().addTo(map);
+  const layerGroups = {};
+  const allGroup = L.layerGroup().addTo(map);
   const allLatLngs = [];
 
-  // Base markers (always visible as anchors)
-  const baseMarkers = {};
+  // "All" view: base markers + small dots for attractions
+  const allBaseMarkers = {};
   (plan.bases || []).forEach(base => {
     if (!base.coords) return;
-    const accent = BASE_ACCENT[base.id] || '#b85c38';
-    const icon = makePinIcon(accent, 20, true);
-    const m = L.marker(base.coords, { icon })
-      .bindPopup(`<strong>${base.name}</strong><br><span style="color:${accent};font-size:0.8em">● baza noclegowa</span>`, { maxWidth: 200 });
-    baseMarkers[base.id] = m;
+    const color = BASE_ACCENT[base.id] || '#b85c38';
+    allBaseMarkers[base.id] = L.marker(base.coords, { icon: makePinIcon(color, 20, true) })
+      .bindPopup(`<strong>${base.name}</strong><br><span style="color:${color};font-size:.8em">● baza noclegowa</span>`, { maxWidth: 200 })
+      .addTo(allGroup);
     allLatLngs.push(base.coords);
   });
 
@@ -235,79 +232,136 @@ export function initInteractiveMap(containerId, plan) {
     layerGroups[day.day_num] = group;
 
     const base = basesById[day.base_id];
-    const accent = BASE_ACCENT[day.base_id] || '#9a8f82';
+    const accentColor = BASE_ACCENT[day.base_id] || '#9a8f82';
+    const atts = (day.attractions || []).filter(a => a.coords);
 
-    // Add base marker to this day's layer
+    // Base marker for this day
     if (base?.coords) {
-      const icon = makePinIcon(accent, 18, true);
-      L.marker(base.coords, { icon })
-        .bindPopup(`<strong>${base.name}</strong><br><span style="opacity:.7;font-size:.85em">baza Dnia ${day.day_num}</span>`, { maxWidth: 200 })
+      L.marker(base.coords, { icon: makePinIcon(accentColor, 20, true) })
+        .bindPopup(`<b>${base.name}</b><br><span style="opacity:.7;font-size:.85em">baza · Dzień ${day.day_num}</span>`)
         .addTo(group);
     }
 
-    (day.attractions || []).forEach(att => {
-      if (!att.coords) return;
+    // Numbered markers + route polyline
+    const routeCoords = base?.coords ? [base.coords] : [];
+    atts.forEach((att, idx) => {
       allLatLngs.push(att.coords);
-      const typeColor = att.type === 'nature' ? '#5c6b45' : att.type === 'popular' ? '#c4860a' : accent;
-      const icon = makePinIcon(typeColor, 13, false);
-      const popup = buildPopup(att, day);
-      L.marker(att.coords, { icon })
-        .bindPopup(popup, { maxWidth: 240 })
+      routeCoords.push(att.coords);
+
+      const typeColor = TYPE_COLOR[att.type] || accentColor;
+      const num = idx + 1;
+
+      // numbered icon for day view
+      L.marker(att.coords, { icon: makeNumberedIcon(num, typeColor) })
+        .bindPopup(buildPopup(att, day, num), { maxWidth: 260 })
         .addTo(group);
 
-      // Also add to "all" layer
-      L.marker(att.coords, { icon: makePinIcon(typeColor, 13, false) })
-        .bindPopup(popup, { maxWidth: 240 })
-        .addTo(allMarkers);
+      // small dot for "all" view
+      L.marker(att.coords, { icon: makePinIcon(typeColor, 11, false) })
+        .bindPopup(buildPopup(att, day, null), { maxWidth: 260 })
+        .addTo(allGroup);
     });
+
+    // Route polyline: base → att1 → att2 → ...
+    if (routeCoords.length > 1) {
+      L.polyline(routeCoords, {
+        color: accentColor, weight: 2, opacity: 0.6, dashArray: '7 5',
+      }).addTo(group);
+    }
   });
 
-  // Add all base markers to "all" view
-  Object.values(baseMarkers).forEach(m => m.addTo(allMarkers));
-
-  // Draw base-to-base route
+  // Base-to-base line in "all" view
   const baseCoords = (plan.bases || []).filter(b => b.coords).map(b => b.coords);
   if (baseCoords.length > 1) {
-    L.polyline(baseCoords, {
-      color: '#b85c38', weight: 2.5, opacity: 0.5, dashArray: '8 6',
-    }).addTo(allMarkers);
+    L.polyline(baseCoords, { color: '#b85c38', weight: 2, opacity: 0.4, dashArray: '10 7' }).addTo(allGroup);
   }
 
-  if (allLatLngs.length) {
-    map.fitBounds(L.latLngBounds(allLatLngs), { padding: [36, 36] });
+  if (allLatLngs.length) map.fitBounds(L.latLngBounds(allLatLngs), { padding: [36, 36] });
+
+  // ── Panel update ──────────────────────────────────────────
+  function updatePanel(dayNum) {
+    if (!panel) return;
+    if (dayNum === 'all') {
+      panel.innerHTML = `<div class="imap-panel__placeholder"><span class="imap-panel__hint">Wszystkie dni</span><p>Wybierz konkretny dzień żeby zobaczyć numerowaną trasę i szczegóły.</p></div>`;
+      return;
+    }
+    const day = tuscanyDays.find(d => d.day_num === dayNum);
+    const base = day ? basesById[day.base_id] : null;
+    if (!day) { panel.innerHTML = ''; return; }
+
+    const atts = (day.attractions || []).filter(a => a.coords);
+    const accentColor = BASE_ACCENT[day.base_id] || '#9a8f82';
+
+    const attItems = atts.map((att, idx) => {
+      const num = idx + 1;
+      const typeColor = TYPE_COLOR[att.type] || accentColor;
+      const isCar = att.drive_min > 0;
+      const modeHtml = isCar
+        ? `<span class="imap-att__mode imap-att__mode--car">🚗 ${att.drive_min} min od bazy</span>`
+        : `<span class="imap-att__mode imap-att__mode--walk">🚶 pieszo od bazy</span>`;
+      const typeLabel = TYPE_LABEL[att.type] || att.type || '';
+
+      return `
+        <li class="imap-att">
+          <div class="imap-att__num" style="background:${typeColor}">${num}</div>
+          <div class="imap-att__body">
+            <div class="imap-att__name">${att.name}</div>
+            <div class="imap-att__meta">
+              ${typeLabel ? `<span class="imap-att__type">${typeLabel}</span>` : ''}
+              ${modeHtml}
+            </div>
+            ${att.description ? `<div class="imap-att__desc">${att.description.slice(0, 110)}${att.description.length > 110 ? '…' : ''}</div>` : ''}
+          </div>
+        </li>`;
+    }).join('');
+
+    const foodHtml = day.food?.place ? `
+      <div class="imap-panel__food">
+        <span class="imap-panel__food-icon">🍽</span>
+        <div>
+          <div class="imap-panel__food-name">${day.food.place}</div>
+          ${day.food.price ? `<div class="imap-panel__food-price">${day.food.price}</div>` : ''}
+        </div>
+      </div>` : '';
+
+    panel.innerHTML = `
+      <div class="imap-panel__head">
+        <div class="imap-panel__day">Dzień ${day.day_num}</div>
+        <div class="imap-panel__date">${day.date || ''}</div>
+        <div class="imap-panel__title">${day.title || ''}</div>
+        ${base ? `<div class="imap-panel__base">📍 ${base.name}</div>` : ''}
+      </div>
+      <ul class="imap-att-list">${attItems || '<li class="imap-att imap-att--empty">Brak atrakcji z współrzędnymi</li>'}</ul>
+      ${foodHtml}
+    `;
   }
 
-  // ── Filter wiring (buttons already in DOM, wired via JS) ──
-  const filterBtns = document.querySelectorAll(`[data-imap-day]`);
-  let activeDayNum = 'all';
+  // ── Filter wiring ──────────────────────────────────────────
+  const filterBtns = document.querySelectorAll('[data-imap-day]');
 
   function showDay(dayNum) {
-    activeDayNum = dayNum;
-
-    // Remove all layers
     Object.values(layerGroups).forEach(g => map.removeLayer(g));
-    map.removeLayer(allMarkers);
+    map.removeLayer(allGroup);
 
     if (dayNum === 'all') {
-      allMarkers.addTo(map);
+      allGroup.addTo(map);
       if (allLatLngs.length) map.fitBounds(L.latLngBounds(allLatLngs), { padding: [36, 36] });
     } else {
       const group = layerGroups[dayNum];
       if (group) {
         group.addTo(map);
         const lls = [];
-        group.eachLayer(l => {
-          if (l.getLatLng) lls.push(l.getLatLng());
-        });
+        group.eachLayer(l => { if (l.getLatLng) lls.push(l.getLatLng()); });
         if (lls.length === 1) map.setView(lls[0], 13);
-        else if (lls.length > 1) map.fitBounds(L.latLngBounds(lls), { padding: [48, 48] });
+        else if (lls.length > 1) map.fitBounds(L.latLngBounds(lls), { padding: [52, 52] });
       }
     }
 
     filterBtns.forEach(btn => {
-      const isActive = btn.dataset.imapDay === String(dayNum);
-      btn.classList.toggle('map-filter--active', isActive);
+      btn.classList.toggle('map-filter--active', btn.dataset.imapDay === String(dayNum));
     });
+
+    updatePanel(dayNum);
   }
 
   filterBtns.forEach(btn => {
@@ -317,18 +371,39 @@ export function initInteractiveMap(containerId, plan) {
     });
   });
 
+  updatePanel('all');
   return map;
 }
 
-function buildPopup(att, day) {
-  const typeLabel = { medieval: 'średniowiecze', nature: 'natura', cultural: 'kultura', popular: 'popularne' }[att.type] || att.type || '';
+function buildPopup(att, day, num) {
+  const typeLabel = TYPE_LABEL[att.type] || att.type || '';
+  const numBadge = num != null ? `<span style="display:inline-block;background:${TYPE_COLOR[att.type]||'#9a8f82'};color:#fff;border-radius:50%;width:18px;height:18px;text-align:center;line-height:18px;font-size:0.72rem;font-weight:700;margin-right:4px">${num}</span>` : '';
+  const mode = att.drive_min > 0 ? `🚗 ${att.drive_min} min od bazy` : '🚶 pieszo od bazy';
   return `
-    <div style="font-family:'Outfit',sans-serif;font-size:0.82rem;min-width:160px">
-      <div style="font-weight:600;font-size:0.95rem;margin-bottom:2px">${att.name}</div>
-      <div style="color:#6b6258;margin-bottom:4px">Dzień ${day.day_num} · ${typeLabel}</div>
-      ${att.drive_min ? `<div style="color:#9a8f82">${att.drive_min} min od bazy</div>` : ''}
-      ${att.description ? `<div style="margin-top:4px;color:#2a2420;line-height:1.4">${att.description.slice(0, 120)}${att.description.length > 120 ? '…' : ''}</div>` : ''}
+    <div style="font-family:'Outfit',sans-serif;font-size:0.82rem;min-width:170px">
+      <div style="font-weight:600;font-size:0.9rem;margin-bottom:3px">${numBadge}${att.name}</div>
+      <div style="color:#6b6258;margin-bottom:3px">Dzień ${day.day_num} · ${typeLabel}</div>
+      <div style="color:#9a8f82;font-size:0.78rem;margin-bottom:4px">${mode}</div>
+      ${att.description ? `<div style="color:#2a2420;line-height:1.4">${att.description.slice(0, 130)}${att.description.length > 130 ? '…' : ''}</div>` : ''}
     </div>`;
+}
+
+function makeNumberedIcon(num, color) {
+  const size = 28;
+  const r = 14;
+  const fontSize = num > 9 ? 9 : 11;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size + 8}" viewBox="0 0 ${size} ${size + 8}">
+    <circle cx="${r}" cy="${r}" r="${r - 1}" fill="${color}" stroke="#fff" stroke-width="2"/>
+    <text x="${r}" y="${r + 4}" text-anchor="middle" fill="#fff" font-family="'Outfit',sans-serif" font-size="${fontSize}" font-weight="700">${num}</text>
+    <line x1="${r}" y1="${size - 1}" x2="${r}" y2="${size + 7}" stroke="${color}" stroke-width="2"/>
+  </svg>`;
+  return window.L.divIcon({
+    html: svg,
+    className: '',
+    iconSize: [size, size + 8],
+    iconAnchor: [r, size + 8],
+    popupAnchor: [0, -(size + 8)],
+  });
 }
 
 function makePinIcon(color, r, isBase) {

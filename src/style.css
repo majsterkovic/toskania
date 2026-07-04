@@ -1986,3 +1986,225 @@ body.lightbox-open {
 .todo-item__link:hover {
   text-decoration: underline;
 }
+
+/* ── Interactive map: wrap + panel ──────────────────────────── */
+.imap-wrap {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.imap-wrap .leaflet-map--big {
+  border-radius: 0;
+  border: none;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.imap-panel {
+  width: 280px;
+  flex-shrink: 0;
+  background: var(--card-bg);
+  border-left: 1px solid var(--border);
+  overflow-y: auto;
+  max-height: 580px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .imap-panel { width: 300px; max-height: 640px; }
+}
+
+@media (max-width: 767px) {
+  .imap-wrap { flex-direction: column; }
+  .imap-panel {
+    width: 100%;
+    max-height: 320px;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+}
+
+.imap-panel__placeholder {
+  padding: 1.5rem 1.25rem;
+  color: var(--muted);
+  text-align: center;
+  margin: auto;
+}
+
+.imap-panel__hint {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--stone-dark);
+  margin-bottom: 0.5rem;
+}
+
+.imap-panel__placeholder p {
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+/* Panel head */
+.imap-panel__head {
+  padding: 0.85rem 1rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--cipresso);
+  color: var(--cream);
+}
+
+.imap-panel__day {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--oro-light);
+  margin-bottom: 0.1rem;
+}
+
+.imap-panel__date {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: rgba(247, 242, 232, 0.6);
+  margin-bottom: 0.15rem;
+}
+
+.imap-panel__title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--cream);
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
+}
+
+.imap-panel__base {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: rgba(247, 242, 232, 0.65);
+}
+
+/* Attraction list */
+.imap-att-list {
+  list-style: none;
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem 0;
+}
+
+.imap-att {
+  display: flex;
+  gap: 0.65rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+
+.imap-att:last-child { border-bottom: none; }
+
+.imap-att--empty {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.imap-att__num {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.imap-att__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.imap-att__name {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+  margin-bottom: 0.2rem;
+}
+
+.imap-att__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.imap-att__type {
+  font-size: 0.68rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--stone-dark);
+  background: var(--stone);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
+
+.imap-att__mode {
+  font-size: 0.72rem;
+  font-family: var(--font-sans);
+  color: var(--muted);
+}
+
+.imap-att__mode--car { color: var(--terracotta); }
+.imap-att__mode--walk { color: var(--olive); }
+
+.imap-att__desc {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* Food block at panel bottom */
+.imap-panel__food {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+  background: rgba(168, 136, 60, 0.06);
+}
+
+.imap-panel__food-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.imap-panel__food-name {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.imap-panel__food-price {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}

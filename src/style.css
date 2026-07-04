@@ -2615,3 +2615,209 @@ html.dark .practical-card {
 html.dark .weather-card,
 html.dark .weather-forecast-card { background: var(--card-bg); border-color: var(--border); }
 html.dark .fc-day { background: var(--stone); }
+
+/* ── Transit card redesign ──────────────────────────────────── */
+.transit-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--stone);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--stone-dark);
+}
+
+.transit-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+}
+
+.transit-stat__label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--stone-dark);
+}
+
+/* Route waypoints — visual path */
+.route-waypoints {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  position: relative;
+}
+
+.route-wp {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--ink);
+  padding: 0.3rem 0 0.3rem 1.4rem;
+  position: relative;
+  line-height: 1.35;
+}
+
+.route-wp::before {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--stone-dark);
+  border: 2px solid var(--card-bg);
+  box-shadow: 0 0 0 1px var(--stone-dark);
+}
+
+.route-wp--start::before { background: var(--cipresso); box-shadow: 0 0 0 1px var(--cipresso); }
+.route-wp--end::before   { background: var(--terracotta); box-shadow: 0 0 0 1px var(--terracotta); }
+
+/* Vertical connecting line */
+.route-waypoints::before {
+  content: '';
+  position: absolute;
+  left: 0.65rem;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  width: 1px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--border) 0px,
+    var(--border) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+/* Accommodation cards grid */
+.acc-cards {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 0.6rem;
+}
+
+@media (min-width: 640px) {
+  .acc-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .acc-cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+.acc-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.7rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.acc-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.acc-card__name {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.acc-card__address {
+  font-size: 0.72rem;
+  color: var(--stone-dark);
+  line-height: 1.35;
+}
+
+.acc-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.1rem;
+}
+
+.acc-card__price {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--terracotta);
+}
+
+.acc-card__parking {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--olive);
+}
+
+.acc-card__note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.45;
+  flex: 1;
+}
+
+.acc-card__link {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--terracotta);
+  text-decoration: none;
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+
+.acc-card__link:hover { text-decoration: underline; }
+
+/* Food options (multi-stop) */
+.food-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.6rem;
+}
+
+.food-option {
+  padding: 0.5rem 0.7rem;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  border-left: 3px solid var(--oro);
+}
+
+.food-option__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-bottom: 0.2rem;
+}
+
+.food-option__head strong {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--ink);
+}
+
+.food-option__note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* Dark mode adjustments */
+html.dark .acc-card { background: var(--stone); border-color: var(--border); }
+html.dark .food-option { background: var(--stone); border-color: var(--border); }
+html.dark .transit-stats { background: var(--stone); }

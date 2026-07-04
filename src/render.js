@@ -219,6 +219,21 @@ function renderFood(food) {
     food.dishes?.length > 0
       ? `<ul class="dish-list">${food.dishes.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>`
       : '';
+
+  const optionsHtml = food.options?.length > 0
+    ? `<div class="food-options">
+        ${food.options.map(o => `
+          <div class="food-option">
+            <div class="food-option__head">
+              <strong>${esc(o.name)}</strong>
+              ${o.type ? `<span class="type-badge">${esc(o.type)}</span>` : ''}
+            </div>
+            ${o.note ? `<p class="food-option__note">${esc(o.note)}</p>` : ''}
+            ${o.price ? `<span class="price">${esc(o.price)}</span>` : ''}
+          </div>`).join('')}
+      </div>`
+    : '';
+
   return `
     <div class="day-block day-block--food">
       <h4 class="block-label">Kulinaria</h4>
@@ -227,6 +242,7 @@ function renderFood(food) {
       ${dishes}
       ${food.note ? `<p>${esc(food.note)}</p>` : ''}
       ${food.price ? `<p class="price">${esc(food.price)}</p>` : ''}
+      ${optionsHtml}
     </div>
   `;
 }
@@ -421,39 +437,50 @@ function renderFuelStops(stops) {
 
 function renderAccommodationOptions(options) {
   if (!options?.length) return '';
-  const items = options
-    .map(
-      (o) => `
-        <li class="acc-option">
-          <div class="acc-option__head">
-            <strong>${esc(o.name)}</strong>
-            ${o.type ? `<span class="type-badge">${esc(o.type)}</span>` : ''}
-          </div>
-          ${o.address ? `<p class="muted">${esc(o.address)}</p>` : ''}
-          <p class="acc-option__meta">
-            ${o.price ? `<span class="price">${esc(o.price)}</span>` : ''}
-            ${o.parking ? `<span>🅿 ${esc(o.parking)}</span>` : ''}
-          </p>
-          ${o.note ? `<p>${esc(o.note)}</p>` : ''}
-          ${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener noreferrer" class="acc-option__link">Strona obiektu</a>` : ''}
-        </li>
-      `
-    )
-    .join('');
+  const items = options.map((o) => `
+    <div class="acc-card">
+      <div class="acc-card__head">
+        <strong class="acc-card__name">${esc(o.name)}</strong>
+        ${o.type ? `<span class="type-badge">${esc(o.type)}</span>` : ''}
+      </div>
+      ${o.address ? `<p class="acc-card__address">${esc(o.address)}</p>` : ''}
+      <div class="acc-card__meta">
+        ${o.price ? `<span class="acc-card__price">${esc(o.price)}</span>` : ''}
+        ${o.parking ? `<span class="acc-card__parking">🅿 ${esc(o.parking)}</span>` : ''}
+      </div>
+      ${o.note ? `<p class="acc-card__note">${esc(o.note)}</p>` : ''}
+      ${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener noreferrer" class="acc-card__link">↗ strona obiektu</a>` : ''}
+    </div>`).join('');
 
-  return `<ul class="acc-options-list">${items}</ul>`;
+  return `<div class="acc-cards">${items}</div>`;
+}
+
+function renderRouteWaypoints(routeStr) {
+  if (!routeStr) return '';
+  const waypoints = routeStr.split(' → ').map(s => s.trim()).filter(Boolean);
+  if (waypoints.length < 2) return `<p class="meta-row">${esc(routeStr)}</p>`;
+  const items = waypoints.map((wp, i) => {
+    const isFirst = i === 0;
+    const isLast = i === waypoints.length - 1;
+    return `<li class="route-wp${isFirst ? ' route-wp--start' : isLast ? ' route-wp--end' : ''}">${esc(wp)}</li>`;
+  }).join('');
+  return `<ul class="route-waypoints">${items}</ul>`;
 }
 
 function renderTransit(day, images) {
   const dayImg = day.image ? resolvePlaceImage(images, day.image) : null;
   const heroImg = dayImg ? renderImg(dayImg, 'transit-hero') : '';
 
+  const stats = [
+    day.depart ? `<div class="transit-stat"><span class="transit-stat__label">Wyjazd</span><span>${esc(day.depart)}</span></div>` : '',
+    day.drive_km ? `<div class="transit-stat"><span class="transit-stat__label">Dystans</span><span>${day.drive_km} km · ${esc(day.drive_h)}</span></div>` : '',
+    day.arrival ? `<div class="transit-stat"><span class="transit-stat__label">Przyjazd</span><span>${esc(day.arrival)}</span></div>` : '',
+  ].filter(Boolean).join('');
+
   return `
     ${heroImg}
-    ${day.depart ? `<p class="meta-row"><span class="meta-label">Wyjazd</span> ${esc(day.depart)}</p>` : ''}
-    ${day.drive_km ? `<p class="meta-row"><span class="meta-label">Dystans</span> ${day.drive_km} km · ${esc(day.drive_h)}</p>` : ''}
-    ${day.route ? `<p class="meta-row"><span class="meta-label">Trasa</span> ${esc(day.route)}</p>` : ''}
-    ${day.arrival ? `<p class="meta-row"><span class="meta-label">Przyjazd</span> ${esc(day.arrival)}</p>` : ''}
+    ${stats ? `<div class="transit-stats">${stats}</div>` : ''}
+    ${day.route ? `<div class="day-block day-block--route"><h4 class="block-label">Trasa</h4>${renderRouteWaypoints(day.route)}</div>` : ''}
     ${renderRouteSegments(day.route_segments)}
     ${renderFood(day.food)}
     ${renderAccommodation(day.accommodation)}

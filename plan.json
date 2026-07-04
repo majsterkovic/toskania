@@ -682,7 +682,7 @@
           "checked": "2026-07"
         }
       ],
-      "narrative": "Wyruszamy z Poznania jak najwcześniej — każda godzina przed korkami się liczy. Przez Świecko wjeżdżamy do Niemiec i jedziemy A9 na południe przez całe Niemcy. Dobry postój na lunch przy Frankenwald Ost (A9, km 254) — jedyna mostowa stacja w Niemczech. Nocujemy w Neustadt an der Donau: małe bawarskie miasteczko nad Dunajem, wieczorny spacer po starówce i kolacja w Gasthof."
+      "narrative": "Wyjeżdżamy z Poznania o 6:00–6:30 — sobota sprzyja, bo ciężarówek mniej. Przez Świecko na A12 przez Niemcy, potem A9 na południe. Gdzieś w okolicach Frankenwaldu (ok. 13:00) postój na lunch przy Brückenrasthaus nad autostradą. Przez Nürnberg i Ingolstadt zjeżdżamy na B299 do Neustadt an der Donau — przy normalnym ruchu jesteśmy tu ok. 15:30–17:00. Miasteczko nad Dunajem, wieczorny spacer po starówce i kolacja w Gasthof przed jutrzejszym długim dniem przez Brenner."
     },
     {
       "date": "13.09 (nd)",
@@ -694,7 +694,7 @@
       "drive_km": 790,
       "drive_h": "8–8,5 h",
       "base_id": "base1",
-      "depart": "7:00 rano z Neustadt an der Donau",
+      "depart": "5:30–6:00 rano z Neustadt an der Donau",
       "route": "A9/A8 → Rosenheim → A93 Inntal → A12 → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe (obwodnica Werony, bez centrum) → Campogalliano → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
       "attractions": [],
       "nature": null,
@@ -998,7 +998,7 @@
           "event": "Przyjazd Mologno / Barga — check-in"
         }
       ],
-      "narrative": "Drugi i ostatni dzień jazdy przed Toskanią. Rano Austria, Brenner, potem zjeżdżamy do Włoch — od tej chwili wszystko wygląda inaczej. Postój na lunch koło Rovereto (Tre Pini, zjazd A22). Późnym popołudniem schodzimy z autostrady i wąską drogą doliną Serchio docieramy do Bargi. Pierwszy widok na Apeniny po zmroku — warto wyjść na chwilę przed hotelem."
+      "narrative": "Najdłuższy dzień całej trasy — wyjeżdżamy o 5:30–6:00, żeby Brenner przejechać przed 9:00 i ominąć niedzielny szczyt powrotny z Alp (kolejki 10:00–14:00). Przez Rosenheim, A93 Inntal, Innsbruck i A13 wjeżdżamy do Włoch. Postój na lunch przy Rovereto Sud (ok. 13:00–13:30, zjazd A22). Za Bolonią A1 Variante di Valico omija Florencję, potem A11 i Lucca Est. Ostatnie 45 km to dolina Serchio — wąska górska droga, lokalny ruch. Do agriturismo docieramy ok. 17:00–18:30. Toskania się zaczyna."
     },
     {
       "date": "14.09 (pn)",
@@ -1175,7 +1175,7 @@
         "l_osteria_barga": "11:30–15:30, 18:30–22:30 — Piazza Angelio 13, rezerwacja zalecana"
       },
       "image2": "castiglione",
-      "narrative": "Pierwszy dzień toskański — bez pośpiechu. Rano Duomo di San Cristoforo: o 8:00 jeszcze spokojnie, z tarasu widok na Alpy Apuańskie. Potem spacer lasem przez Treppignana — kasztany i dęby, cisza. Po lunchu jedziemy do Grotto del Vento: warto zarezerwować Itinerario 2 na 15:00 (2 godziny, 10°C w środku — kurtka obowiązkowa). Wracamy do Bargi na kolację przed 20:00."
+      "narrative": "Zaczynamy pieszo — Barga jest tuż obok bazy. O 8:00 Duomo di San Cristoforo: moneta €2 na oświetlenie pulpitu Bigarellego, z tarasu widok na Alpy Apuańskie (~1h). Potem 15 min samochodem na południe do Treppignana — spacer 3,2 km przez las dębów bezszypułkowych i kasztanów, widoki na dolinę Serchio (1–1,5h). Wracamy do Bargi na lunch w Osteria Il Borgo dei Sapori (Via Borgo 1). Po lunchu 20 min samochodem na zachód w góry do Fornovolasco — Grotta del Vento, zarezerwowany Itinerario 2 na 15:00 (2h, w środku 10°C, kurtka obowiązkowa). Wracamy do bazy ok. 18:00."
     },
     {
       "date": "15.09 (wt)",
@@ -1350,7 +1350,7 @@
         "da_carlino": "Pranzo 12:00–15:00, cena 19:00–22:00 (zimą zamknięte pon)"
       },
       "image2": "castelnuovo",
-      "narrative": "Zaczynamy od Castiglione di Garfagnana — krótki spacer po murach, parking przy Porta Inferi, zero tłumów. Potem rezerwat Orecchiella: łatwy szlak 3 km przez las dębowy na granicy strefy bukowej — widoki w każdym kierunku. Na lunch do Castelnuovo di Garfagnana, Da Carlino (przychodzimy przed 12:30, bo szybko się zapełnia). Popołudnie wolne na spacer po Castelnuovo lub powrót do bazy."
+      "narrative": "Z bazy wyjeżdżamy o 9:00 samochodem ~20 min na północ do Castiglione di Garfagnana. Parkujemy przy Porta Inferi (26 miejsc, Via Soccorso) i idziemy pieszo 30 min po średniowiecznych murach — zero tłumów. Potem jeszcze 10 min samochodem dalej na północ do rezerwatu Orecchiella: szlak 3 km przez strefę dębów burgundzkich na granicy z buczyną (1–1,5h). Na lunch zjeżdżamy ~15 min na południe do Castelnuovo di Garfagnana — da Carlino (Via Garibaldi 15), przychodzimy przed 12:30. Wracamy do bazy ~25 min. Popołudnie wolne."
     },
     {
       "date": "16.09 (śr)",
@@ -1364,19 +1364,6 @@
       "drive_limit_min": 25,
       "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta czw–nd). Panorama 360° i mury dostępne bezpłatnie.",
       "attractions": [
-        {
-          "name": "Fortezza delle Verrucole — spacer zewnętrzny",
-          "drive_min": 18,
-          "description": "16.09 to środa — forteca zamknięta (otwarta czw–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich. Jeśli chcesz wejść do środka (€8, z przewodnikiem) — przyjdź w piątek 18.09 lub zarezerwuj tel. +39 379 2415958.",
-          "type": "medieval",
-          "image": "verrucole",
-          "image_key": "verrucole",
-          "gps_hint": "Fortezza delle Verrucole, San Romano in Garfagnana LU",
-          "coords": [
-            44.1433,
-            10.4681
-          ]
-        },
         {
           "name": "Lago di Vagli",
           "drive_min": 25,
@@ -1400,6 +1387,19 @@
           "coords": [
             44.0773,
             10.3497
+          ]
+        },
+        {
+          "name": "Fortezza delle Verrucole — spacer zewnętrzny",
+          "drive_min": 18,
+          "description": "16.09 to środa — forteca zamknięta (otwarta czw–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich. Jeśli chcesz wejść do środka (€8, z przewodnikiem) — przyjdź w piątek 18.09 lub zarezerwuj tel. +39 379 2415958.",
+          "type": "medieval",
+          "image": "verrucole",
+          "image_key": "verrucole",
+          "gps_hint": "Fortezza delle Verrucole, San Romano in Garfagnana LU",
+          "coords": [
+            44.1433,
+            10.4681
           ]
         }
       ],
@@ -1535,7 +1535,7 @@
         "gorfigliano_chiesa": "Brak stałych godzin — spontanicznie lub po uzgodnieniu z parafią"
       },
       "image2": "vagli",
-      "narrative": "Fortezza Verrucole jest dziś zamknięta (środa), ale widok z zewnątrz wart zachodu — panorama 360°, wejście bezpłatne. Potem Lago di Vagli: jedziemy rano, bo parking przy tamie szybko się zapełnia. Lunch przy jeziorze w Bar Radicchi (Vagli Sotto). Popołudnie bez pośpiechu — okolice jeziora, ewentualnie mała wioska Gorfigliano z kościółkiem Chiesa Vecchia."
+      "narrative": "Wyjeżdżamy rano z bazy. Pierwsze 40 minut drogi przez Garfagnane wiedzie do Lago di Vagli — parking przy tamie zapełnia się szybko, więc warto być przed 9:30. Z zapory widać zatopioną dzwonnicę kościoła w Fabbriche di Careggine, szczególnie gdy poziom wody jest niski. Przerwa w barze przy jeziorze. Kilka kilometrów dalej Gorfigliano — cicha górska wioska z romańskim kościółkiem Chiesa Vecchia i widokiem na Alpi Apuane. Lunch w okolicach Vagli Sotto, Bar Radicchi. Popołudnie: Fortezza delle Verrucole — zamknięta w środę, ale mury i panorama 360° na całą Garfagnane są bezpłatne. Jeden z najlepszych widoków regionu. Wracamy do bazy na kolację."
     },
     {
       "date": "17.09 (czw)",
@@ -1547,8 +1547,8 @@
       "base_id": "base1",
       "next_base_id": "base2",
       "base_label": "BAZA 1 → BAZA 2",
-      "transfer_km": 195,
-      "transfer_h": "2 h 15 min",
+      "transfer_km": 230,
+      "transfer_h": "2 h 45 min",
       "transfer_route": "Barga → SS12 south → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 → A1 south → wyjazd Val di Chiana lub Val d'Arbia → SR2 south → Castiglione d'Orcia",
       "transfer_depart": "ok. 13:00–14:00",
       "drive_limit_min": 25,
@@ -1704,16 +1704,16 @@
       "practical_tips": [
         "Ponte del Diavolo: przyjedź przed 10:00 — po 11:00 autokary turystyczne z Lucca",
         "Bagni di Lucca: 1–1,5h — Ponte delle Catene, English Church, opcjonalnie kąpiel termalna Bernabò",
-        "Wyjazd do BAZY 2 po lunchu ~13:30 — 195 km, realnie 2h15–2h45 z postojem",
+        "Wyjazd do BAZY 2 po lunchu ~13:30 — ~230 km, ok. 2h45 z postojem",
         "Tankowanie obowiązkowe przed A11 — stacji mało w Chianti poza Gaiole/Castelnuovo Berardenga",
         "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 16:00–17:00, droga do Vagliagli kręta",
         "Bagni di Lucca: 1–1,5h — Ponte delle Catene, English Church, opcjonalnie kąpiel Bernabò (rezerwacja!)",
         "Lunch: Trattoria Borghesi (czwartek OK) — NIE Da Giulio (Lucca, off-route, ZTL)",
-        "Wyjazd do BAZY 2 po lunchu ~13:30 — 195 km, realnie 2h15–2h45 z postojem na A11",
+        "Wyjazd do BAZY 2 po lunchu ~13:30 — ~230 km, ok. 2h45 z postojem na A11",
         "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 16:00–17:00, droga do Vagliagli kręta (SP102/SP9)",
         "Ponte del Diavolo najlepiej rano (8:00–10:00) — mniej autokarów, mgła nad Serchio",
         "Osteria del Diavolo przy moście zamknięta w czwartek — lunch w Trattoria Borghesi w Bagni",
-        "Wyjazd do BAZY 2 po lunchu (~13:30) — bagaż w aucie, ~2h 15 min jazdy",
+        "Wyjazd do BAZY 2 po lunchu (~13:30) — bagaż w aucie, ~2h 45 min jazdy",
         "Ostatni przystanek Garfagnany — tankowanie przed A11",
         "Trattoria da Giulio (Via delle Conce 45) jest w LUCCA, nie w Bagni di Lucca — poprawka!",
         "Osteria del Diavolo przy moście ZAMKNIĘTA w czwartek (17.09) — lunch w Trattoria Borghesi w Bagni",
@@ -1798,81 +1798,75 @@
         }
       ],
       "image2": "bagni-lucca",
-      "narrative": "Ostatni ranek w Garfagnanie. Ponte del Diavolo najlepiej przed 10:00 — mgła nad Serchio i jeszcze nie ma autokarów z Lukki. Opcjonalnie Bagni di Lucca: kąpiele termalne Bernabò albo spacer do angielskiego kościoła. Po lunchu (~13:30) pakujemy bagaże i ruszamy na Bazę 2 — około 2 godziny 15 minut przez Toskanię. Wieczorem zameldowanie w agriturismo koło Castiglione d'Orcia."
+      "narrative": "Ostatni ranek w Garfagnanie. Ponte del Diavolo najlepiej przed 10:00 — mgła nad Serchio i jeszcze nie ma autokarów z Lukki. Opcjonalnie Bagni di Lucca: kąpiele termalne Bernabò albo spacer do angielskiego kościoła. Po lunchu (~13:30) pakujemy bagaże i ruszamy na Bazę 2 — około 2 godziny 45 minut, około 230 km przez Toskanię: A11 od Lukki, A1 na południe, potem malownicze drogi Val d'Arbia i SR2. Wieczorem zameldowanie w agriturismo koło Castiglione d'Orcia."
     },
     {
       "date": "18.09 (pt)",
       "day_num": 7,
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 5",
-      "title": "Zamki i wino Chianti",
+      "title": "Bagno Vignoni, San Quirico i Pienza",
       "base_id": "base2",
-      "base_label": "BAZA 2 — Val d'Orcia",
+      "base_label": "Val d'Orcia",
       "drive_limit_min": 30,
       "attractions": [
         {
-          "name": "Castello di Brolio",
-          "drive_min": 20,
-          "description": "Zamek rodziny Ricasoli od 1141 — tu ustalono recepturę Chianti Classico. Bastioni, giardini, cappella, Collezione Ricasoli. 1200 ha własności (240 ha winnic). Nieturystyczny jak na rangę zabytku.",
-          "type": "medieval",
-          "image_key": "brolio",
-          "gps_hint": "Località Madonna a Brolio, 53013 Gaiole in Chianti SI",
-          "image": "brolio",
-          "coords": [
-            43.3948,
-            11.4791
-          ]
-        },
-        {
-          "name": "Radda in Chianti",
-          "drive_min": 22,
-          "description": "Średniowieczne borgo (530 m n.p.m.), dawna stolica Ligi Chianti (1384). Piazza Ferrucci z Palazzo del Podestà (XIV w.), Propositura di San Niccolò, porte Valdarnese i Fiorentina. Casa del Chianti Classico w dawnych klasztorze.",
-          "type": "medieval",
-          "image_key": "radda",
-          "gps_hint": "Radda in Chianti SI — parking Piazzale del Castello",
-          "image": "radda",
-          "coords": [
-            43.4835,
-            11.3673
-          ]
-        },
-        {
-          "name": "Bosco di Brolio — querceti",
-          "drive_min": 20,
-          "description": "Querceti (roverella Quercus pubescens, cerro Q. cerris) otaczające zamek — jeden z najlepiej zachowanych w Chianti. Bosco Inglese (park XIX w. Bettino Ricasoli). Nieformalna pętla 2–3 km wokół murów zamku.",
+          "name": "Bagno Vignoni — terme i piazza",
           "type": "nature",
-          "image_key": "brolio",
-          "gps_hint": "Parking zamku Brolio — pętla od bramy zamku, 2–3 km",
-          "image": "brolio",
           "coords": [
-            43.394,
-            11.479
-          ]
+            43.027,
+            11.622
+          ],
+          "drive_min": 5,
+          "duration_h": 1.5,
+          "note": "Geotermiczny basen zamiast rynku — unikalna piazza d'acqua. Woda paruje o świcie. Wejście bezpłatne do oglądania, kąpiel w Santa Caterina Terme.",
+          "opening_hours": "Otwarte całą dobę (teren zewnętrzny)",
+          "entry_fee": "bezpłatne (widok), €15–20 (kąpiel terme)"
+        },
+        {
+          "name": "San Quirico d'Orcia — Kolegiata i Horti Leonini",
+          "type": "medieval",
+          "coords": [
+            43.058,
+            11.604
+          ],
+          "drive_min": 10,
+          "duration_h": 2.0,
+          "note": "Romańska kolegiata z XII w., renesansowe Horti Leonini — ogrody geometrycznych żywopłotów. Lawendowe uliczki, lokalne sklepy z pecorino.",
+          "opening_hours": "Horti Leonini: zawsze otwarte. Kolegiata: 8:00–19:00",
+          "entry_fee": "bezpłatne"
+        },
+        {
+          "name": "Pienza — renesansowe miasto papieskie",
+          "type": "popular",
+          "coords": [
+            43.077,
+            11.679
+          ],
+          "drive_min": 20,
+          "duration_h": 2.5,
+          "note": "Miasto wybudowane od podstaw przez papieża Piusa II w XV w. jako idealne renesansowe centrum. Piazza Pio II, katedra, Palazzo Piccolomini. Sklepy z pecorino toscano.",
+          "opening_hours": "Palazzo Piccolomini: 10:00–18:00 (zamknięty wt)",
+          "entry_fee": "Palazzo €7; katedra bezpłatna"
         }
       ],
-      "oak_forest": {
-        "spot": "Bosco di Brolio — querceti",
-        "species": "Quercus pubescens (roverella), Q. cerris (cerro)",
-        "note": "Dąb omszony i dąb burgundzki wokół murów zamku — we wrześniu warto zajrzeć między korzenie, bo sezon na prawdziwki. Krótka pętla 2–3 km prosto z parkingu, dłuższa (17 km) dla chętnych.",
-        "gps_hint": "Start: parking Castello di Brolio — pętla 2–3 km wokół murów"
-      },
+      "oak_forest": null,
       "food": {
-        "place": "Osteria di Passignano — Badia a Passignano",
-        "address": "Via Passignano 33, Loc. Badia a Passignano, 50028 Tavarnelle Val di Pesa FI",
+        "place": "Ristorante Il Rossellino — Pienza",
+        "address": "Piazza di Spagna 4, 53026 Pienza SI",
+        "phone": "+39 0578 748936",
+        "price": "~€25–35/os",
+        "note": "Klasyczna toskańska trattoria w sercu Pienzy. Widok na Val d'Orcia z tarasu. Lunch 12:30–14:30.",
+        "gps_hint": "Piazza di Spagna 4, Pienza",
         "dishes": [
-          "pici al ragù di cinghiale (grube spaghetti z sosem z dzika)",
-          "ribollita (gęsta toskańska zupa z warzywami i chlebem)",
-          "Chianti Classico Antinori Gran Selezione",
-          "menu sezonowe z Orto di Badia (ogrodek klasztorny)"
-        ],
-        "note": "Michelin ⭐ nieprzerwanie od 2007. Przy opactwie benedyktyńskim XI w. (Marchesi Antinori). Rezerwacja OBOWIĄZKOWA — 4–6 tygodni wcześniej na piątek. Lunch 12:15–14:15 lepszy niż kolacja (widok na klasztor w świetle dziennym). Zamknięte niedziela.",
-        "price": "~€80–120/os z winem (Michelin €€€€)",
-        "gps_hint": "Via Passignano 33, Badia a Passignano FI",
-        "phone": "+39 055 8071278",
-        "reservation_url": "https://www.osteriadipassignano.com/en/reservation/"
+          "pici al cacio e pepe (grube ręcznie toczone spaghetti z serem i pieprzem)",
+          "pici all'aglione (z sosem czosnkowym ze świeżych pomidorów)",
+          "pecorino di Pienza stagionato (dojrzały owczy ser — regionalny skarb)",
+          "tagliata di manzo (plasterki wołowiny z rukolą i parmezanem)"
+        ]
       },
       "tips": [],
-      "image": "brolio",
+      "image": "bagno-vignoni",
       "web_research": [
         {
           "topic": "Castello di Brolio — orari 2026",
@@ -1912,19 +1906,12 @@
         }
       ],
       "practical_tips": [
-        "Brolio: przyjedź na 10:00 (otwarcie) — 1–1,5h na giardini, bastioni i degustację Chianti Classico",
-        "Bosco delle Querce: pętla 2–3 km bezpłatnie od parkingu — dąb omszony i cerrowy, wrzesień = sezon grzybów",
-        "Radda: 2–3h na borgo — Piazza Ferrucci, Casa del Chianti Classico, enoteca z degustacją €5–10",
-        "Osteria di Passignano: Michelin — rezerwuj min. 4 tyg. wcześniej. Piątek lunch = OK, nd zamknięte",
-        "Vendemmia (wrzesień): winiarnie mogą mieć krótsze godziny — sprawdź przed wyjazdem",
-        "Brolio: bilet giardini €7,50 (nie €15!) — degustacja 1 wina w cenie, bez rezerwacji, visit.ricasoli.com",
-        "Brolio: przyjedź na 10:00 otwarcie — 1–1,5h na giardini i bastioni, potem Bosco",
-        "Bosco di Brolio: wejście bezpłatne od parkingu zamku, pętla 2–3 km przez querceti",
-        "Radda: Palazzo del Podestà + Casa del Chianti Classico — enoteche 10:00–13:00 i 15:00–19:00",
-        "Radda: mniej turystów niż Greve — lokalne pecorino i Chianti Classico",
-        "Osteria di Passignano: rezerwuj 4–6 tyg. wcześniej! Tel. 055 8071278. Nd chiuso.",
-        "Dojazd z bazy (Castelnuovo Berardenga): Brolio ~20 min (SP484), Radda ~22 min — wszystko ≤30 min",
-        "Wrzesień = vendemmia — winiarnie mogą mieć skrócone godziny, sprawdź przed wyjazdem"
+        "Bagno Vignoni: przyjedź o 8:30–9:00 — mgła nad basenem i prawie nikogo",
+        "Parking w Pienzy: darmowy parking pod murami (Parcheggio Tabaccone), potem 5 min pieszo",
+        "Pecorino di Pienza: sklep Biagiotti przy Via del Borghetto — najlepszy wybór",
+        "Palazzo Piccolomini: zwiedzanie tylko z przewodnikiem, co 30 min — bilet €7",
+        "San Quirico d'Orcia: Horti Leonini wczesnym rankiem lub wieczorem — w południe tłumy",
+        "Dojazd z bazy (Castiglione d'Orcia): Bagno Vignoni 5 min, San Quirico 10 min, Pienza 20 min"
       ],
       "parking": {
         "castello_brolio": "Parking u podnóża zamku — bezpłatny, duży. Via Madonna a Brolio, Gaiole in Chianti. Wejście pieszo ~5 min pod górę.",
@@ -1955,8 +1942,8 @@
           "note": "Stacja przy bazie — tankuj wieczorem po powrocie z dnia."
         }
       ],
-      "image2": "radda",
-      "narrative": "Rano zamek Brolio — otwiera o 10:00, warto być pierwszymi. Ogrody, bastiony, jedno wino Chianti Classico w cenie biletu. Potem krótka pętla 2-3 km przez las dębowy wokół murów — we wrześniu można trafić na prawdziwki. Po lunchu Radda in Chianti: mury, wieże, enoteka z degustacją za kilka euro. Wracamy do bazy przed 18:00."
+      "image2": "pienza",
+      "narrative": "Dziś eksplorujemy serce Val d'Orcia — wszystkie miejsca w promieniu 20 minut od bazy. Wyjeżdżamy o 8:30 do Bagno Vignoni: wioska z geotermicznym basenem zamiast rynku — woda paruje o świcie i wygląda jak z innego wymiaru. Wejście bezpłatne, godzina spaceru. Potem 10 minut jazdy do San Quirico d'Orcia: romańska kolegiata z XII w., a za nią Horti Leonini z geometrycznymi żywopłotami i lawendowymi alejkami. Lunch w miasteczku. Po południu Pienza — miasto zbudowane od podstaw w XV wieku przez papieża Piusa II jako idealne renesansowe centrum. Piazza Pio II, katedra, Palazzo Piccolomini, a na koniec sklep z pecorino toscano na wynos. Wracamy do bazy przed 18:00."
     },
     {
       "date": "19.09 (sob)",
@@ -1972,7 +1959,7 @@
       "attractions": [
         {
           "name": "Piazza del Campo — o świcie",
-          "drive_min": 25,
+          "drive_min": 47,
           "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Torre del Mangia widoczna (wstęp od 10:00). Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
           "type": "popular",
           "image_key": "siena",
@@ -1985,7 +1972,7 @@
         },
         {
           "name": "Duomo di Siena + Libreria Piccolomini",
-          "drive_min": 25,
+          "drive_min": 47,
           "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki. Wejdź tuż po otwarciu (najciszej).",
           "type": "popular",
           "image_key": "siena",
@@ -1998,7 +1985,7 @@
         },
         {
           "name": "Spacer przez kontrade",
-          "drive_min": 25,
+          "drive_min": 47,
           "description": "11:00–12:00. Oca (Gęś, biało-zielona): Via dei Termini → Fontebranda → Santuario Santa Caterina. Drago (Smok, czerwono-zielona): Piazza Matteotti 18 → Via del Paradiso → Via della Sapienza. Autentyczne dzielnice zamiast turystycznych tras.",
           "type": "cultural",
           "image_key": "siena",
@@ -2109,7 +2096,7 @@
         }
       ],
       "image2": "siena-duomo",
-      "narrative": "Wyjazd o 7:00 — Campo o 7:30 jest prawie pusty i to jest właśnie ten moment. Tłumy zaczynają się od 10:00, szczyt między 11:00 a 15:00. Bilet do Duomo (OPA SI Pass) najlepiej kupić wieczorem wcześniej online — skip kolejki. Po lunchu stopniowo wychodzi się z centrum. Wracamy do bazy w Val d'Orcia po południu."
+      "narrative": "Wyjazd o 6:30 — do Sieny jest około 47 km i 50 minut drogi. Na Piazza del Campo jesteśmy o 7:20–7:30, gdy słońce dopiero wchodzi nad dachy i tłumów prawie nie ma — ten moment jest wart wczesnej pobudki. Bilet do Duomo (OPA SI Pass) najlepiej kupić wieczorem wcześniej online — omijamy kolejkę. Libreria Piccolomini w środku to ukryta perełka ze złoconymi freskami Pinturicchia. Tłumy robią się od 10:00, szczyt 11:00–15:00 — o tej porze już przechodzimy bocznymi uliczkami kontrad. Lunch w jednej z trattoriach przy Via di Città. Wracamy do bazy w Val d'Orcia po 14:00."
     },
     {
       "date": "20.09 (nd)",
@@ -2378,7 +2365,7 @@
         }
       ],
       "image2": "asciano",
-      "narrative": "Rano klasztor Monte Oliveto Maggiore — freski Signorellego i Sodomy w wielkim krużganku, cisza obowiązkowa, zdjęcia bez flesza. Opcjonalnie: Bosco della Ragnaia w San Giovanni d'Asso (15 min dalej) — filozoficzny ogród w starym lesie, wstęp wolny. Lunch w Asciano (La Tombolina, Via Mameli 11). Potem przenosimy się na Bazę 3 — Maremma czeka. Wieczorem zameldowanie koło Pitigliano."
+      "narrative": "Bagaże spakowane wieczorem. Wyjeżdżamy o 9:00 — 28 min samochodem na południe do Abbazia Monte Oliveto Maggiore. Otwiera o 9:30: freski Signorellego i Sodomy w Chiostro Grande, cisza obowiązkowa (~1,5h). Opcjonalnie 15 min dalej: Bosco della Ragnaia w San Giovanni d'Asso — filozoficzny ogród w lesie, wstęp wolny. Potem 20 min na północ do Asciano — Crete Senesi. Lunch w La Tombolina (Via Mameli 11). Ok. 13:30 wyruszamy na Bazę 3: przez Grosseto SS223 do Pitigliano, ~1h 45 min. Zameldowanie ok. 15:30."
     },
     {
       "date": "21.09 (pn)",
@@ -2536,7 +2523,7 @@
         "sassotondo": "Degustacja: 10:30 lub 15:30, pn–nd. Prenotazione 24h: +39 351 6986750."
       },
       "image2": "via-cava",
-      "narrative": "Spacer po Pitigliano rano — miasteczko wyrośnięte ze skały tufowej robi duże wrażenie. O 10:00 synagoga i żydowskie ghetto (panowie: kippa dostępna na miejscu). Potem Via Cava San Giuseppe — etruskie drogi wkopane do 20 m w tuf; latarka i buty trekkingowe obowiązkowe, unikamy po deszczu. Lunch w Il Tufo Allegro (rezerwacja: 0564 616192). Popołudnie wolne — można wstąpić do winiarni Sassotondo."
+      "narrative": "Wszystko w zasięgu ręki — 5 min samochodem lub 15 min pieszo z bazy. Rano spacer po Pitigliano z punktu widokowego — miasto na skale tufowej. O 10:00 Piccola Gerusalemme: synagoga i żydowskie ghetto (panowie mają kippę na miejscu, ~1h). Potem 5 min samochodem do SP42 — Via Cava di San Giuseppe: parking gratis, szlak 850 m w głąb wąwozu, ściany tufu do 20 m (latarka i buty trekkingowe obowiązkowe, ~1–1,5h). Lunch w Il Tufo Allegro (Vicolo della Costituzione 5, rezerwacja: 0564 616192). Popołudnie wolne."
     },
     {
       "date": "22.09 (wt)",
@@ -2694,7 +2681,7 @@
         }
       ],
       "image2": "saturnia",
-      "narrative": "Rano do Sorano: forteca Orsini, spacer wzdłuż Via Cava San Rocco. Wycieczki podziemne fortecy tylko o 12:00, 15:00 lub 18:00 — warto złapać jedną z nich. Po południu Saturnia: we wtorek znacznie spokojniej niż w weekend. Przyjeżdżamy po 15:00, bierzemy ręcznik i klapki (kamienie śliskie od siarki). Parking przy SP10 płatny do 20:00, potem wejście gratis."
+      "narrative": "Z bazy 10 min samochodem do Sorano. Parkujemy przy fortecy Orsini — bilet cumulativo €10 (obejmuje też jutrzejszą Sovanę). Wycieczka podziemna o 12:00 lub 15:00 (kurtka, zimno). Przed nią: spacer wzdłuż Via Cava di San Rocco od fortecy w dół doliny Lente (~30 min pieszo). Lunch w Cantina L'Ottava Rima (Via del Borgo 25, Sorano). Po południu 30 min samochodem na zachód do Saturni — Cascate del Mulino. Przyjeżdżamy po 15:00 (mniej tłumów). Parking SP10 (€2,50/h do 20:00), 5 min pieszo do kaskad. Ręcznik i klapki — kamienie śliskie. Wracamy do bazy ok. 18:00 (25 min)."
     },
     {
       "date": "23.09 (śr)",
@@ -2797,7 +2784,8 @@
         "Selva del Lamone: najlepszy las trasy — weź wodę, szlak 6 km",
         "Sassotondo: degustacja wina 15:30 (€28–45/os) — rezerwuj 24h wcześniej, kolacja w Taverna Etrusca",
         "Sassotondo = degustacja wina, NIE kolacja — poprawka do planu",
-        "Bilet necropoli €7 (nie €5) — cumulativo €10 opłaca się przy Sorano"
+        "Bilet necropoli €7 (nie €5) — cumulativo €10 opłaca się przy Sorano",
+        "Uwaga: jutro wyjazd tranzytowy o 7:00 — spakuj bagaż dziś wieczorem po kolacji"
       ],
       "web_research": [
         {
@@ -2852,7 +2840,7 @@
         "gps_hint": "SP46 km 2 — follow signs sassotondo"
       },
       "image2": "lamone",
-      "narrative": "Ostatni dzień toskański. Zaczynamy w Sovanie: necropolis etruska to 2-3 godziny (bilet €7, warto wziąć kumulatywny z Soranem za €10). Highlight: Tomba Ildebranda. Potem Selva del Lamone — stary rezerwat dębowy, szlak n.11, ani jednego turysty. Wieczorem degustacja wina w Sassotondo (rezerwuj 24h wcześniej). Kolacja pożegnalna w Taverna Etrusca."
+      "narrative": "Ostatni dzień toskański. Zaczynamy w Sovanie: necropolis etruska to 2–3 godziny (bilet €7, warto wziąć bilet kumulatywny z Soranem za €10). Highlight: Tomba Ildebranda z rzeźbionymi kolumnami. Potem Selva del Lamone — stary rezerwat dębowy, szlak nr 11, ani jednego turysty, cisza i cień w środku dnia. Weronika, tu rosną dęby omszałe w starym lesie. Wieczorem degustacja wina w Sassotondo (rezerwuj 24h wcześniej). Kolacja pożegnalna w Taverna Etrusca w Pitigliano — na zakończenie toskańskiej przygody. Uwaga: jutro wyjazd o 7:00 rano — warto spakować bagaż już dziś wieczorem po kolacji."
     },
     {
       "date": "24.09 (czw)",
@@ -3102,7 +3090,7 @@
           "note": "Zatankuj w DE — tańsze niż Austria i Włochy."
         }
       ],
-      "narrative": "Wyjazd o 7:00 — nie ma tu miejsca na luz, przy Bolonii i Mediolanie korki narastają szybko. SS74 do Orvieto, potem A1 na północ. Przy Florencji zostajemy na obwodnicy Variante di Valico — dziś czwartek, ZTL aktywna, mandaty dotkliwe. Postój na ostatnie włoskie jedzenie przy Bolonii lub Modenie. Brenner po południu, wieczorem Wasserburg am Inn — ładne miasteczko nad Innem, krótki spacer po Altstadt."
+      "narrative": "Wyjeżdżamy o 7:00 z Pitigliano — SS74 przez Manciano do Orvieto to ostatnie 55 km włoskiej drogi regionalnej. Na A1 w Orvieto i na północ. Przy Florencji Variante di Valico omija ZTL (czwartek, aktywna do 20:00). Postój przy Bolonii lub Modenie ok. 10:30–11:00 — ostatni włoski espresso. Mediolan Tangenziale może dołożyć pół godziny. A22 Brennero, A13 przez Austrię, A12 Inntal i B304 do Wasserburga — jesteśmy ok. 17:30–18:30. Wieczorny spacer wzdłuż Innu po starej części miasta."
     },
     {
       "date": "25.09 (pt)",
@@ -3328,7 +3316,7 @@
           "note": "Alternatywa lunch — 24h, szybszy postój tranzytowy."
         }
       ],
-      "narrative": "Krótszy dzień — tylko 380 km, jakieś 4 godziny jazdy. Wyjeżdżamy o 8:00. Przez Monachium obwodnicą (A99/A8), potem A9 przez Norymbergę do Hof. Dobry przystanek na obiad: Restaurant Franconia am See w Himmelkron przy A9. Przybywamy do Hof wczesnym popołudniem — czas na odpoczynek przed ostatnim etapem do domu."
+      "narrative": "Najkrótszy dzień jazdy — 380 km, wyjeżdżamy o 8:00 bez pośpiechu. B304 do A94, potem A99 obwodnicą Monachium, na A8 i A9 na północ przez Nürnberg. Na lunch zjeżdżamy przy Himmelkron na Restaurant Franconia am See — restauracja nad jeziorem przy autostradzie. Do Hof docieramy ok. 12:30–13:30, cały popołudniem na odpoczynek przed jutrzejszym powrotem do Polski."
     },
     {
       "date": "26.09 (sob)",
@@ -3340,7 +3328,7 @@
       "drive_h": "5–5,5 h",
       "base_id": null,
       "depart": "7:00–7:30 rano z Hof",
-      "route": "Hof (Saale) → A72 north → Kreuz Chemnitz (A4) → A4 west → Drezno obwodnica → B97/Cottbus → A15 → Frankfurt (Oder) → A2 east → Świecko → Poznań",
+      "route": "Hof (Saale) → A72 north → Kreuz Chemnitz → A4 east → Drezno obwodnica (A4/A17) → A13 (Cottbus) → A15 → Frankfurt (Oder) → A12 (DE) → Świecko → A2 (PL) → Poznań",
       "arrival": "ok. 13:30–15:00 w Poznaniu (zależnie od A4 Baustelle i ruchu przy Świecku)",
       "attractions": [],
       "nature": null,
@@ -3486,7 +3474,7 @@
       "parking": {
         "arrival": "Dotarcie do domu — brak noclegu. Lunch na trasie lub w Poznaniu."
       },
-      "narrative": "Ostatni odcinek: 470 km, około 5-5,5 godziny. A72 → A4 przez Drezno (obwodnicą, nie przez centrum) → A13 → granica Świecko → A2 do Poznania. Rano warto sprawdzić stan A4 przez Saksonię — roboty drogowe częste. W domu w Poznaniu gdzieś między 13:30 a 15:00 — cały dzień przed deadline 27.09."
+      "narrative": "Ostatni odcinek — 470 km, sobota rano. Wyjeżdżamy o 7:00–7:30, A72 z Hof do Chemnitz, potem A4 na wschód przez Saksonię. Warto sprawdzić autobahn.de przy śniadaniu — roboty na A4 między Ohorn a Salzenforst bywają kapryśne. Drezno obwodnicą A4/A17, potem A13 przy Cottbus i A15 do Frankfurtu nad Odrą. Przez Świecko wjeżdżamy do Polski i A2 do Poznania — w domu ok. 13:30–15:00, cały dzień przed buforem 27.09."
     },
     {
       "date": "27.09 (nd)",

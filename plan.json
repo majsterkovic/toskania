@@ -1535,7 +1535,7 @@
         "gorfigliano_chiesa": "Brak stałych godzin — spontanicznie lub po uzgodnieniu z parafią"
       },
       "image2": "vagli",
-      "narrative": "Wyjeżdżamy rano z bazy. Pierwsze 40 minut drogi przez Garfagnane wiedzie do Lago di Vagli — parking przy tamie zapełnia się szybko, więc warto być przed 9:30. Z zapory widać zatopioną dzwonnicę kościoła w Fabbriche di Careggine, szczególnie gdy poziom wody jest niski. Przerwa w barze przy jeziorze. Kilka kilometrów dalej Gorfigliano — cicha górska wioska z romańskim kościółkiem Chiesa Vecchia i widokiem na Alpi Apuane. Lunch w okolicach Vagli Sotto, Bar Radicchi. Popołudnie: Fortezza delle Verrucole — zamknięta w środę, ale mury i panorama 360° na całą Garfagnane są bezpłatne. Jeden z najlepszych widoków regionu. Wracamy do bazy na kolację."
+      "narrative": "Wyjeżdżamy o 9:00 samochodem 25 min na zachód do Lago di Vagli. Parking przy tamie — przyjeżdżamy przed 9:30, bo miejsca kończą się szybko. Z zapory widać (jeśli poziom niski) fragmenty zatopionej wioski Fabbriche di Careggine. Spacer wzdłuż brzegu, potem przerwa w Bar Radicchi w Vagli Sotto. Kilka km dalej (ok. 15 min) Gorfigliano: cicha górska wioska, romański kościółek Chiesa Vecchia, kompletny brak turystów. Wracamy 18 min na północny wschód do Fortezzy delle Verrucole — dziś środa, wewnątrz zamknięte, ale mury i panorama 360° na Garfagnane bezpłatne, jeden z najlepszych widoków regionu. Z powrotem do bazy ok. 17:30 (18 min)."
     },
     {
       "date": "17.09 (czw)",
@@ -1798,7 +1798,7 @@
         }
       ],
       "image2": "bagni-lucca",
-      "narrative": "Ostatni ranek w Garfagnanie. Ponte del Diavolo najlepiej przed 10:00 — mgła nad Serchio i jeszcze nie ma autokarów z Lukki. Opcjonalnie Bagni di Lucca: kąpiele termalne Bernabò albo spacer do angielskiego kościoła. Po lunchu (~13:30) pakujemy bagaże i ruszamy na Bazę 2 — około 2 godziny 45 minut, około 230 km przez Toskanię: A11 od Lukki, A1 na południe, potem malownicze drogi Val d'Arbia i SR2. Wieczorem zameldowanie w agriturismo koło Castiglione d'Orcia."
+      "narrative": "Bagaże spakowane wieczorem. Wyjeżdżamy o 8:30 — 22 min samochodem na południe SS12 do Ponte della Maddalena (Ponte del Diavolo). Parkujemy przy drodze za darmo, 5 min pieszo na most — o 9:00 mgła nad Serchio i zero autokarów. Potem 15 min na wschód do Bagni di Lucca: Ponte delle Catene, angielski kościół, opcjonalnie kąpiel w Bernabò. Lunch w Trattoria Borghesi (Viale Umberto I 85). Ok. 13:30 wsiadamy i jedziemy na Bazę 2: przez Lucca na A11, A1 na południe, potem Val d'Arbia i SR2 — ok. 2h 15 min, ~230 km. Zameldowanie w agriturismo koło Castiglione d'Orcia ok. 16:00–17:00."
     },
     {
       "date": "18.09 (pt)",
@@ -1943,7 +1943,7 @@
         }
       ],
       "image2": "pienza",
-      "narrative": "Dziś eksplorujemy serce Val d'Orcia — wszystkie miejsca w promieniu 20 minut od bazy. Wyjeżdżamy o 8:30 do Bagno Vignoni: wioska z geotermicznym basenem zamiast rynku — woda paruje o świcie i wygląda jak z innego wymiaru. Wejście bezpłatne, godzina spaceru. Potem 10 minut jazdy do San Quirico d'Orcia: romańska kolegiata z XII w., a za nią Horti Leonini z geometrycznymi żywopłotami i lawendowymi alejkami. Lunch w miasteczku. Po południu Pienza — miasto zbudowane od podstaw w XV wieku przez papieża Piusa II jako idealne renesansowe centrum. Piazza Pio II, katedra, Palazzo Piccolomini, a na koniec sklep z pecorino toscano na wynos. Wracamy do bazy przed 18:00."
+      "narrative": "Wyjeżdżamy o 8:30 — 10 min samochodem do Bagno Vignoni. Parkujemy bezpłatnie przy Parcheggio Bagno Vignoni. Piazza delle Sorgenti: geotermiczny basen o świcie paruje jak z innego wymiaru, wstęp wolny (~1h spacer). Potem 10 min na południe do San Quirico d'Orcia: romańska kolegiata z XII w., a za nią Horti Leonini — geometryczne żywopłoty i lawendowe alejki (€2/os). Lunch w San Quirico lub przy drodze. Po południu 15 min na wschód do Pienzy: Piazza Pio II, katedra, Palazzo Piccolomini, enoteka z pecorino toscano. Wracamy do bazy ok. 18:00 (~15–20 min)."
     },
     {
       "date": "19.09 (sob)",
@@ -1953,7 +1953,7 @@
       "title": "Siena — o świcie przed tłumami",
       "base_id": "base2",
       "base_label": "BAZA 2 — Val d'Orcia",
-      "drive_limit_min": 25,
+      "drive_limit_min": 50,
       "popular": true,
       "crowd_tip": "SOBOTA 19.09 — najgorszy dzień tygodnia w Sienie. Wyjazd 7:00, parking Santa Caterina lub Stadio-Fortezza (lato stadio). Campo o 7:30 prawie sam. Tłumy od 10:00, szczyt 11:00–15:00. Powrót do bazy przed 14:00. Unikaj wieczoru w centrum.",
       "attractions": [
@@ -2096,7 +2096,7 @@
         }
       ],
       "image2": "siena-duomo",
-      "narrative": "Wyjazd o 6:30 — do Sieny jest około 47 km i 50 minut drogi. Na Piazza del Campo jesteśmy o 7:20–7:30, gdy słońce dopiero wchodzi nad dachy i tłumów prawie nie ma — ten moment jest wart wczesnej pobudki. Bilet do Duomo (OPA SI Pass) najlepiej kupić wieczorem wcześniej online — omijamy kolejkę. Libreria Piccolomini w środku to ukryta perełka ze złoconymi freskami Pinturicchia. Tłumy robią się od 10:00, szczyt 11:00–15:00 — o tej porze już przechodzimy bocznymi uliczkami kontrad. Lunch w jednej z trattoriach przy Via di Città. Wracamy do bazy w Val d'Orcia po 14:00."
+      "narrative": "Wyjeżdżamy z bazy o 6:30 — 47 km, ok. 50 min jazdy do Sieny. Parkujemy przy Santa Caterina (schody ruchome do centrum, €2/h) lub Stadio-Fortezza (wyjście San Domenico). Piazza del Campo o 7:20–7:30: słońce dopiero wchodzi nad dachy, zero tłumów — ten moment wart wczesnej pobudki. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16, omijamy kolejkę). Libreria Piccolomini w środku: ukryta perełka ze złoconymi freskami Pinturicchia. Lunch w Antica Trattoria Papei (Piazza del Mercato 6). Tłumy między 10:00–15:00 — popołudnie na bocznych uliczkach kontrad. Wracamy do bazy ok. 17:30 (50 min)."
     },
     {
       "date": "20.09 (nd)",
@@ -2840,7 +2840,7 @@
         "gps_hint": "SP46 km 2 — follow signs sassotondo"
       },
       "image2": "lamone",
-      "narrative": "Ostatni dzień toskański. Zaczynamy w Sovanie: necropolis etruska to 2–3 godziny (bilet €7, warto wziąć bilet kumulatywny z Soranem za €10). Highlight: Tomba Ildebranda z rzeźbionymi kolumnami. Potem Selva del Lamone — stary rezerwat dębowy, szlak nr 11, ani jednego turysty, cisza i cień w środku dnia. Weronika, tu rosną dęby omszałe w starym lesie. Wieczorem degustacja wina w Sassotondo (rezerwuj 24h wcześniej). Kolacja pożegnalna w Taverna Etrusca w Pitigliano — na zakończenie toskańskiej przygody. Uwaga: jutro wyjazd o 7:00 rano — warto spakować bagaż już dziś wieczorem po kolacji."
+      "narrative": "Ostatni dzień toskański. Wyjeżdżamy o 9:30 — 10 min samochodem z Pitigliano na zachód do Sovany. Parkujemy w centrum i idziemy na Necropoli Etrusca: 2–3h (bilet €7, highlight: Tomba Ildebranda z rzeźbionymi kolumnami). Po necropolis 18 min samochodem na południe do Selva del Lamone — Sentiero n.11 Alberi Monumentali, 1,5h spaceru przez stary rezerwat dębowy, ani jednego turysty, pełna cisza. Potem 15 min na zachód do Semproniano: widokowe miasteczko nad doliną Albegna, krótki spacer. Ok. 15:30 powrót w okolice Sovany — degustacja w Sassotondo (rezerwuj 24h wcześniej, €28–45/os). Wieczorem pożegnalna kolacja w Taverna Etrusca na Piazza del Pretorio w Sovanie. Powrót do Pitigliano ok. 21:00."
     },
     {
       "date": "24.09 (czw)",

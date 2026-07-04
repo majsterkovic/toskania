@@ -1993,12 +1993,12 @@ body.lightbox-open {
   gap: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
   box-shadow: var(--shadow);
+  /* No overflow:hidden — would clip Leaflet popups */
 }
 
 .imap-wrap .leaflet-map--big {
-  border-radius: 0;
+  border-radius: var(--radius) 0 0 var(--radius);
   border: none;
   flex: 1 1 auto;
   min-width: 0;
@@ -2009,23 +2009,26 @@ body.lightbox-open {
   flex-shrink: 0;
   background: var(--card-bg);
   border-left: 1px solid var(--border);
+  border-radius: 0 var(--radius) var(--radius) 0;
   overflow-y: auto;
-  max-height: 580px;
   display: flex;
   flex-direction: column;
+  /* height matches map via flex align-items:stretch */
 }
 
 @media (min-width: 1024px) {
-  .imap-panel { width: 300px; max-height: 640px; }
+  .imap-panel { width: 300px; }
 }
 
 @media (max-width: 767px) {
   .imap-wrap { flex-direction: column; }
+  .imap-wrap .leaflet-map--big { border-radius: var(--radius) var(--radius) 0 0; }
   .imap-panel {
     width: 100%;
     max-height: 320px;
     border-left: none;
     border-top: 1px solid var(--border);
+    border-radius: 0 0 var(--radius) var(--radius);
   }
 }
 
@@ -2097,8 +2100,8 @@ body.lightbox-open {
 .imap-att-list {
   list-style: none;
   flex: 1;
-  overflow-y: auto;
   padding: 0.5rem 0;
+  /* scrolling handled by .imap-panel, not the list itself */
 }
 
 .imap-att {

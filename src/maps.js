@@ -394,7 +394,7 @@ function makeNumberedIcon(num, color) {
   const fontSize = num > 9 ? 9 : 11;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size + 8}" viewBox="0 0 ${size} ${size + 8}">
     <circle cx="${r}" cy="${r}" r="${r - 1}" fill="${color}" stroke="#fff" stroke-width="2"/>
-    <text x="${r}" y="${r + 4}" text-anchor="middle" fill="#fff" font-family="'Outfit',sans-serif" font-size="${fontSize}" font-weight="700">${num}</text>
+    <text x="${r}" y="${r}" text-anchor="middle" dominant-baseline="central" fill="#fff" font-family="'Outfit',sans-serif" font-size="${fontSize}" font-weight="700">${num}</text>
     <line x1="${r}" y1="${size - 1}" x2="${r}" y2="${size + 7}" stroke="${color}" stroke-width="2"/>
   </svg>`;
   return window.L.divIcon({

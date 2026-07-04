@@ -1,7 +1,7 @@
 import plan3 from '../plan.json';
 import plan2 from '../plan_2bazy.json';
 import { renderApp, renderVariantsSection, initDayNav, initGallery } from './render.js';
-import { initAllMaps, swapMapTiles } from './maps.js';
+import { initAllMaps, destroyAllMaps, swapMapTiles } from './maps.js';
 import { initWeather } from './weather.js';
 import './style.css';
 
@@ -68,6 +68,7 @@ function initTodo() {
 }
 
 function mount(plan) {
+  destroyAllMaps();
   const app = document.getElementById('app');
   app.innerHTML = renderApp(plan);
   initDayNav();

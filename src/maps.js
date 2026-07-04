@@ -3,29 +3,33 @@
  * Używa globalnego L (Leaflet ładowany z CDN w index.html)
  */
 
-const OSM_TILE = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-const OSM_ATTR = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-
-const CARTO_TILE = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+const OSM_ATTR   = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 const CARTO_ATTR = '© <a href="https://carto.com/attributions">CARTO</a>, ' + OSM_ATTR;
-const DARK_TILE  = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+
+const VOYAGER_TILE = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+const CARTO_TILE   = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+const DARK_TILE    = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
 
 function isDarkMode() { return document.documentElement.classList.contains('dark'); }
+function activeTileUrl() { return isDarkMode() ? DARK_TILE : VOYAGER_TILE; }
 
-// Registry of all active Leaflet map instances for theme-swap
+// Registry of active Leaflet map instances — rebuilt on every mount
 const _maps = [];
 
-function registerMap(map) { _maps.push(map); return map; }
+export function destroyAllMaps() {
+  _maps.forEach(({ map }) => { try { map.remove(); } catch (_) {} });
+  _maps.length = 0;
+}
 
-/** Call after toggling html.dark to swap tile layers on all maps */
+function registerMap(entry) { _maps.push(entry); return entry; }
+
+/** Call after toggling html.dark to swap tile layers on all initialised maps */
 export function swapMapTiles() {
-  const url = isDarkMode() ? DARK_TILE : VOYAGER_TILE;
-  const dayUrl = isDarkMode() ? DARK_TILE : OSM_TILE;
-  _maps.forEach(({ map, type }) => {
+  const tileUrl = activeTileUrl();
+  _maps.forEach(({ map }) => {
     map.eachLayer(layer => {
       if (layer instanceof window.L.TileLayer) map.removeLayer(layer);
     });
-    const tileUrl = type === 'day' ? dayUrl : url;
     window.L.tileLayer(tileUrl, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
   });
 }
@@ -84,8 +88,7 @@ export function initRouteOverviewMap(containerId, mapConfig) {
   if (!el || !mapConfig?.route_overview?.length) return;
 
   const map = window.L.map(el, { zoomControl: true, scrollWheelZoom: false });
-  const routeTileUrl = isDarkMode() ? DARK_TILE : CARTO_TILE;
-  window.L.tileLayer(routeTileUrl, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  window.L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
   registerMap({ map, type: 'route' });
 
   const points = mapConfig.route_overview;
@@ -160,8 +163,7 @@ export function initDayMap(containerId, base, attractions) {
   if (!el) return;
 
   const map = window.L.map(el, { zoomControl: false, scrollWheelZoom: false });
-  const dayTileUrl = isDarkMode() ? DARK_TILE : OSM_TILE;
-  window.L.tileLayer(dayTileUrl, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  window.L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
   registerMap({ map, type: 'day' });
 
   const latLngs = [];
@@ -197,9 +199,6 @@ export function initDayMap(containerId, base, attractions) {
   return map;
 }
 
-// CartoDB Voyager — bardziej kartograficzny styl, bez klucza API
-const VOYAGER_TILE = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-
 const BASE_ACCENT = {
   base1: '#5c6b45',
   base2: '#b85c38',
@@ -227,8 +226,7 @@ export function initInteractiveMap(containerId, plan) {
   const panel = document.getElementById('imap-panel');
 
   const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, tap: false });
-  const iMapTile = isDarkMode() ? DARK_TILE : VOYAGER_TILE;
-  L.tileLayer(iMapTile, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
   registerMap({ map, type: 'interactive' });
 
   const tuscanyDays = (plan.days || []).filter(d =>
@@ -452,10 +450,10 @@ function makePinIcon(color, r, isBase) {
 }
 
 /**
- * Inicjalizuje wszystkie mapy natychmiast (poprawne koordynaty i zoom),
- * ale wywołuje invalidateSize() dopiero gdy mapa wejdzie do viewportu —
- * bo karta dnia ma opacity:0 + transform podczas scroll-reveal i Leaflet
- * nie może wtedy poprawnie obliczyć szerokości kontenera.
+ * Inicjalizuje mapy przeglądowe natychmiast, a mini mapy dnia leniwie —
+ * dopiero po zakończeniu animacji scroll-reveal karty (opacity:0→1, 0.4s).
+ * Dzięki temu Leaflet zawsze dostaje kontener o prawidłowych wymiarach
+ * i nie potrzebuje invalidateSize.
  */
 export function initAllMaps(plan) {
   if (!window.L) return;
@@ -463,29 +461,49 @@ export function initAllMaps(plan) {
   const basesById = {};
   (plan.bases || []).forEach(b => { basesById[b.id] = b; });
 
-  // Init od razu (żeby fitBounds działał poprawnie)
+  // Mapy przeglądowe są poza animowanymi kartami — init od razu
   initInteractiveMap('map-tuscany-interactive', plan);
   initRouteOverviewMap('map-route-overview', plan.meta?.map_config);
 
+  // Mini mapy dnia: leniwa inicjalizacja — dopiero gdy karta staje się widoczna
   (plan.days || []).forEach(day => {
     if (!day.day_num) return;
     const mapId = `map-day-${day.day_num}`;
-    initDayMap(mapId, basesById[day.base_id], day.attractions);
-  });
+    const mapEl = document.getElementById(mapId);
+    if (!mapEl) return;
+    const card = mapEl.closest('.day-card');
 
-  // invalidateSize dla każdej mapy gdy wchodzi do viewportu
-  // (po zakończeniu animacji scroll-reveal)
-  _maps.forEach(({ map }) => {
-    const container = map.getContainer();
-    if (!container) return;
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        obs.unobserve(container);
-        // Czekamy na koniec animacji CSS (0.4s transition na karcie)
-        setTimeout(() => map.invalidateSize({ pan: false }), 450);
-      });
-    }, { threshold: 0.1 });
-    obs.observe(container);
+    function doInit() {
+      initDayMap(mapId, basesById[day.base_id], day.attractions);
+    }
+
+    // Karta bez scroll-reveal: init natychmiast
+    if (!card || !card.classList.contains('reveal')) {
+      setTimeout(doInit, 50);
+      return;
+    }
+
+    // Karta już widoczna gdy initAllMaps odpali (np. góra strony):
+    // czekamy 450ms na ewentualne resztki animacji
+    if (card.classList.contains('is-visible')) {
+      setTimeout(doInit, 450);
+      return;
+    }
+
+    // Czekamy na dodanie is-visible przez scroll-reveal, potem init po transition (0.4s)
+    const mo = new MutationObserver(() => {
+      if (card.classList.contains('is-visible')) {
+        mo.disconnect();
+        setTimeout(doInit, 420);
+      }
+    });
+    mo.observe(card, { attributes: true, attributeFilter: ['class'] });
+
+    // Zabezpieczenie przed race condition: is-visible mogło być dodane między
+    // sprawdzeniem wyżej a ustawieniem MutationObserver
+    if (card.classList.contains('is-visible')) {
+      mo.disconnect();
+      setTimeout(doInit, 450);
+    }
   });
 }

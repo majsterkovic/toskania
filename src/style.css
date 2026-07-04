@@ -2644,56 +2644,49 @@ html.dark .fc-day { background: var(--stone); }
   color: var(--stone-dark);
 }
 
-/* Route waypoints — visual path */
+/* Route waypoints — horizontal scrollable chips */
 .route-waypoints {
   list-style: none;
-  padding: 0;
+  padding: 0.25rem 0 0.5rem;
   margin: 0.5rem 0 0;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0;
+  align-items: center;
 }
 
 .route-wp {
   font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  white-space: nowrap;
+}
+
+/* Arrow between waypoints */
+.route-wp + .route-wp::before {
+  content: '›';
+  color: var(--border);
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+
+.route-wp--start {
+  font-weight: 600;
+  color: var(--cipresso);
   font-size: 0.82rem;
-  color: var(--ink);
-  padding: 0.3rem 0 0.3rem 1.4rem;
-  position: relative;
-  line-height: 1.35;
 }
 
-.route-wp::before {
-  content: '';
-  position: absolute;
-  left: 0.4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--stone-dark);
-  border: 2px solid var(--card-bg);
-  box-shadow: 0 0 0 1px var(--stone-dark);
+.route-wp--end {
+  font-weight: 600;
+  color: var(--terracotta);
+  font-size: 0.82rem;
 }
 
-.route-wp--start::before { background: var(--cipresso); box-shadow: 0 0 0 1px var(--cipresso); }
-.route-wp--end::before   { background: var(--terracotta); box-shadow: 0 0 0 1px var(--terracotta); }
-
-/* Vertical connecting line */
-.route-waypoints::before {
-  content: '';
-  position: absolute;
-  left: 0.65rem;
-  top: 0.6rem;
-  bottom: 0.6rem;
-  width: 1px;
-  background: repeating-linear-gradient(
-    to bottom,
-    var(--border) 0px,
-    var(--border) 4px,
-    transparent 4px,
-    transparent 8px
-  );
-}
+html.dark .route-wp--start { color: var(--oro-light); }
+html.dark .route-wp--end   { color: var(--terracotta-light); }
 
 /* Accommodation cards grid */
 .acc-cards {

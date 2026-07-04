@@ -468,9 +468,6 @@ function renderRouteWaypoints(routeStr) {
 }
 
 function renderTransit(day, images) {
-  const dayImg = day.image ? resolvePlaceImage(images, day.image) : null;
-  const heroImg = dayImg ? renderImg(dayImg, 'transit-hero') : '';
-
   const stats = [
     day.depart ? `<div class="transit-stat"><span class="transit-stat__label">Wyjazd</span><span>${esc(day.depart)}</span></div>` : '',
     day.drive_km ? `<div class="transit-stat"><span class="transit-stat__label">Dystans</span><span>${day.drive_km} km · ${esc(day.drive_h)}</span></div>` : '',
@@ -478,7 +475,6 @@ function renderTransit(day, images) {
   ].filter(Boolean).join('');
 
   return `
-    ${heroImg}
     ${stats ? `<div class="transit-stats">${stats}</div>` : ''}
     ${day.route ? `<div class="day-block day-block--route"><h4 class="block-label">Trasa</h4>${renderRouteWaypoints(day.route)}</div>` : ''}
     ${renderRouteSegments(day.route_segments)}

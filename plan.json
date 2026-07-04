@@ -3536,5 +3536,161 @@
         ]
       }
     ]
+  },
+  "costs": {
+    "persons": 4,
+    "rooms": 2,
+    "note": "Szacunki dla 4 dorosłych, 2 pokoje dwuosobowe. Paliwo na tranzyt Poznań↔Toskania nie jest uwzględnione (zależy od samochodu i podziału kosztów).",
+    "categories": [
+      {
+        "id": "accommodation",
+        "name": "Noclegi",
+        "icon": "🏨",
+        "per_person_min": 420,
+        "per_person_max": 620,
+        "note": "2 pokoje dwuosobowe, ceny za pokój za noc",
+        "items": [
+          {
+            "label": "Neustadt an der Donau — 1 noc (tranzyt tam)",
+            "detail": "€40–60/pokój",
+            "per_person_min": 20,
+            "per_person_max": 30
+          },
+          {
+            "label": "Baza 1 — Garfagnana / Barga — 5 nocy",
+            "detail": "€60–90/pokój",
+            "per_person_min": 150,
+            "per_person_max": 225
+          },
+          {
+            "label": "Baza 2 — Chianti / Castelnuovo Berardenga — 6 nocy",
+            "detail": "€70–100/pokój",
+            "per_person_min": 210,
+            "per_person_max": 300
+          },
+          {
+            "label": "Wasserburg am Inn — 1 noc (tranzyt powrót)",
+            "detail": "€45–75/pokój",
+            "per_person_min": 22,
+            "per_person_max": 37
+          },
+          {
+            "label": "Hof an der Saale — 1 noc (tranzyt powrót)",
+            "detail": "€40–55/pokój",
+            "per_person_min": 20,
+            "per_person_max": 28
+          }
+        ]
+      },
+      {
+        "id": "fuel",
+        "name": "Paliwo",
+        "icon": "⛽",
+        "per_person_min": 13,
+        "per_person_max": 18,
+        "note": "~450 km po Toskanii (bazy ↔ atrakcje), 7L/100km. Paliwo na tranzyt Poznań↔Toskania nie uwzględnione.",
+        "items": [
+          {
+            "label": "Przejazdy lokalne w Toskanii (~450 km)",
+            "detail": "~€50–70 / auto, diesel ~€1.85/L",
+            "per_person_min": 13,
+            "per_person_max": 18
+          }
+        ]
+      },
+      {
+        "id": "tolls",
+        "name": "Autostrady i winiety",
+        "icon": "🛣️",
+        "per_person_min": 10,
+        "per_person_max": 16,
+        "items": [
+          {
+            "label": "Winieta Austria (10 dni)",
+            "detail": "€12,80 / auto — asfinag.at",
+            "per_person_min": 3,
+            "per_person_max": 3
+          },
+          {
+            "label": "Autostrady Włochy (A1, A11, lokalne)",
+            "detail": "~€25–45 / auto",
+            "per_person_min": 6,
+            "per_person_max": 11
+          },
+          {
+            "label": "Autostrady Niemcy + Polska",
+            "detail": "brak opłat",
+            "per_person_min": 0,
+            "per_person_max": 0
+          }
+        ]
+      },
+      {
+        "id": "food",
+        "name": "Jedzenie",
+        "icon": "🍽️",
+        "per_person_min": 250,
+        "per_person_max": 375,
+        "note": "Śniadania w bazie lub bar (~€4–6), lunch trattoria ~€14–20, kolacja ~€18–25",
+        "items": [
+          {
+            "label": "Dni tranzytowe — 5 dni (Autogrill, supermarket, bistro)",
+            "detail": "€10–15/os/dzień",
+            "per_person_min": 50,
+            "per_person_max": 75
+          },
+          {
+            "label": "Toskania — 10 dni (trattorie, osterie, ryneczki)",
+            "detail": "€20–30/os/dzień",
+            "per_person_min": 200,
+            "per_person_max": 300
+          }
+        ]
+      },
+      {
+        "id": "attractions",
+        "name": "Atrakcje i wejściówki",
+        "icon": "🎟️",
+        "per_person_min": 30,
+        "per_person_max": 65,
+        "note": "Większość miejsc bezpłatna lub z symbolicznym wstępem",
+        "items": [
+          {
+            "label": "Siena — Opera del Duomo (Katedra + muzea)",
+            "detail": "~€20/os",
+            "per_person_min": 20,
+            "per_person_max": 20
+          },
+          {
+            "label": "Monteriggioni — mury obronne",
+            "detail": "€5/os",
+            "per_person_min": 5,
+            "per_person_max": 5
+          },
+          {
+            "label": "Montalcino — degustacja wina (Enoteca Fortezza)",
+            "detail": "~€12–18/os (3 wina)",
+            "per_person_min": 12,
+            "per_person_max": 18
+          },
+          {
+            "label": "Inne: Grotta del Vento, parki, muzea lokalne",
+            "detail": "łącznie",
+            "per_person_min": 0,
+            "per_person_max": 22
+          }
+        ]
+      }
+    ],
+    "total_per_person_min": 723,
+    "total_per_person_max": 1094,
+    "total_4persons_min": 2892,
+    "total_4persons_max": 4376,
+    "not_included": [
+      "Bilety promowe / tunele (nie dotyczy tej trasy)",
+      "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
+      "Zakupy lokalne, wino do domu, pamiątki",
+      "Opcjonalne: gorące źródła Saturnia (bezpłatne), Grotta del Vento (~€12/os)"
+    ]
   }
 }

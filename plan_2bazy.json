@@ -116,30 +116,186 @@
     },
     "map_config": {
       "route_overview": [
-        { "label": "Poznań", "coords": [52.406, 16.925], "type": "home" },
-        { "label": "Świecko (granica)", "coords": [52.352, 14.56], "type": "transit" },
-        { "label": "Neustadt a.d. Donau", "coords": [48.801, 11.778], "type": "transit_night" },
-        { "label": "Innsbruck/Brenner", "coords": [47.006, 11.51], "type": "transit" },
-        { "label": "Barga — BAZA 1", "coords": [44.073, 10.483], "type": "base" },
-        { "label": "Castelnuovo Berardenga — BAZA 2", "coords": [43.365, 11.513], "type": "base" },
-        { "label": "Wasserburg am Inn", "coords": [47.999, 12.22], "type": "transit_night" },
-        { "label": "Hof (Saale)", "coords": [50.315, 11.92], "type": "transit_night" },
-        { "label": "Poznań (powrót)", "coords": [52.406, 16.925], "type": "home" }
+        {
+          "label": "Poznań",
+          "coords": [
+            52.406,
+            16.925
+          ],
+          "type": "home"
+        },
+        {
+          "label": "Świecko (granica)",
+          "coords": [
+            52.352,
+            14.56
+          ],
+          "type": "transit"
+        },
+        {
+          "label": "Neustadt a.d. Donau",
+          "coords": [
+            48.801,
+            11.778
+          ],
+          "type": "transit_night"
+        },
+        {
+          "label": "Innsbruck/Brenner",
+          "coords": [
+            47.006,
+            11.51
+          ],
+          "type": "transit"
+        },
+        {
+          "label": "Barga — BAZA 1",
+          "coords": [
+            44.073,
+            10.483
+          ],
+          "type": "base"
+        },
+        {
+          "label": "Castelnuovo Berardenga — BAZA 2",
+          "coords": [
+            43.365,
+            11.513
+          ],
+          "type": "base"
+        },
+        {
+          "label": "Wasserburg am Inn",
+          "coords": [
+            47.999,
+            12.22
+          ],
+          "type": "transit_night"
+        },
+        {
+          "label": "Hof (Saale)",
+          "coords": [
+            50.315,
+            11.92
+          ],
+          "type": "transit_night"
+        },
+        {
+          "label": "Poznań (powrót)",
+          "coords": [
+            52.406,
+            16.925
+          ],
+          "type": "home"
+        }
       ],
       "tuscany_overview": [
-        { "label": "Barga (BAZA 1)", "coords": [44.073, 10.483], "type": "base", "days": "13–17.09" },
-        { "label": "Castiglione di G.", "coords": [44.155, 10.394], "type": "attraction" },
-        { "label": "Orecchiella", "coords": [44.19, 10.39], "type": "nature" },
-        { "label": "Grotta del Vento", "coords": [44.069, 10.317], "type": "attraction" },
-        { "label": "Lago di Vagli", "coords": [44.134, 10.338], "type": "nature" },
-        { "label": "Ponte del Diavolo", "coords": [43.984, 10.539], "type": "attraction" },
-        { "label": "Castelnuovo B. (BAZA 2)", "coords": [43.365, 11.513], "type": "base", "days": "18–23.09" },
-        { "label": "Castello di Brolio", "coords": [43.378, 11.424], "type": "attraction" },
-        { "label": "Siena", "coords": [43.318, 11.33], "type": "popular" },
-        { "label": "Monte Oliveto M.", "coords": [43.126, 11.517], "type": "attraction" },
-        { "label": "Pienza", "coords": [43.076, 11.678], "type": "attraction" },
-        { "label": "Montalcino", "coords": [43.058, 11.487], "type": "attraction" },
-        { "label": "Monteriggioni", "coords": [43.389, 11.219], "type": "attraction" }
+        {
+          "label": "Barga (BAZA 1)",
+          "coords": [
+            44.073,
+            10.483
+          ],
+          "type": "base",
+          "days": "13–17.09"
+        },
+        {
+          "label": "Castiglione di G.",
+          "coords": [
+            44.155,
+            10.394
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Orecchiella",
+          "coords": [
+            44.19,
+            10.39
+          ],
+          "type": "nature"
+        },
+        {
+          "label": "Grotta del Vento",
+          "coords": [
+            44.069,
+            10.317
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Lago di Vagli",
+          "coords": [
+            44.134,
+            10.338
+          ],
+          "type": "nature"
+        },
+        {
+          "label": "Ponte del Diavolo",
+          "coords": [
+            43.984,
+            10.539
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Castelnuovo B. (BAZA 2)",
+          "coords": [
+            43.365,
+            11.513
+          ],
+          "type": "base",
+          "days": "18–23.09"
+        },
+        {
+          "label": "Castello di Brolio",
+          "coords": [
+            43.378,
+            11.424
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Siena",
+          "coords": [
+            43.318,
+            11.33
+          ],
+          "type": "popular"
+        },
+        {
+          "label": "Monte Oliveto M.",
+          "coords": [
+            43.126,
+            11.517
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Pienza",
+          "coords": [
+            43.076,
+            11.678
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Montalcino",
+          "coords": [
+            43.058,
+            11.487
+          ],
+          "type": "attraction"
+        },
+        {
+          "label": "Monteriggioni",
+          "coords": [
+            43.389,
+            11.219
+          ],
+          "type": "attraction"
+        }
       ]
     },
     "last_enriched": "2026-07-03T17:45:58.831Z"
@@ -157,7 +313,10 @@
       "accommodation": "Agriturismo lub B&B w Barga lub okolicach (Mologno, Loppia, Albiano). Ceny: €60–90/noc z śniadaniem.",
       "booking_tip": "Szukaj: agriturismo barga garfagnana — wioska Mologno 5 km od centrum, cisza, las",
       "gps_hint": "Naviguj: Barga LU lub Mologno LU — unikaj centrum (ZTL)",
-      "coords": [44.073, 10.483]
+      "coords": [
+        44.073,
+        10.483
+      ]
     },
     {
       "id": "base2",
@@ -171,7 +330,10 @@
       "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
       "booking_tip": "Szukaj z własną produkcją wina i oliwek — Vagliagli lub Monti in Chianti",
       "gps_hint": "Naviguj: Castelnuovo Berardenga SI lub Vagliagli SI — poza ZTL wsi",
-      "coords": [43.365, 11.513]
+      "coords": [
+        43.365,
+        11.513
+      ]
     }
   ],
   "transit_stops": {
@@ -202,10 +364,30 @@
       "depart": "6:00–7:00 rano z Poznania",
       "route": "A2 west (Świecko) → A12/A13 → Berliner Ring A10 (południowy łuk) → A9 south → Nürnberg → Ingolstadt → zjazd Neustadt/Kelheim (B299/B16)",
       "route_segments": [
-        { "segment": "Poznań → Świecko (granica PL/DE)", "road": "A2", "km": "~280", "note": "Opłata koncesyjna AWSA Świecko–Konin" },
-        { "segment": "Świecko → Berlin (obwodnica)", "road": "A12 → A10 Berliner Ring", "km": "~280", "note": "Unikaj centrum Berlina — A10 pełna obwodnica" },
-        { "segment": "Berlin → Norymberga", "road": "A9 south", "km": "~280", "note": "Raststätte Frankenwald (most) ok. km 254" },
-        { "segment": "Norymberga → Ingolstadt → Neustadt", "road": "A9 → wyjazd Neustadt/Kelheim", "km": "~120", "note": "Kelheim 15 km na wschód — alternatywa noclegowa" }
+        {
+          "segment": "Poznań → Świecko (granica PL/DE)",
+          "road": "A2",
+          "km": "~280",
+          "note": "Opłata koncesyjna AWSA Świecko–Konin"
+        },
+        {
+          "segment": "Świecko → Berlin (obwodnica)",
+          "road": "A12 → A10 Berliner Ring",
+          "km": "~280",
+          "note": "Unikaj centrum Berlina — A10 pełna obwodnica"
+        },
+        {
+          "segment": "Berlin → Norymberga",
+          "road": "A9 south",
+          "km": "~280",
+          "note": "Raststätte Frankenwald (most) ok. km 254"
+        },
+        {
+          "segment": "Norymberga → Ingolstadt → Neustadt",
+          "road": "A9 → wyjazd Neustadt/Kelheim",
+          "km": "~120",
+          "note": "Kelheim 15 km na wschód — alternatywa noclegowa"
+        }
       ],
       "attractions": [],
       "food": {
@@ -220,9 +402,29 @@
         "note": "Małe bawarskie miasteczko nad Dunajem, ~25 km od Ingolstadt. Polecane: Gasthof Gigl (centrum, parking gratis), Hotel Pflügler (Schwaig, Biergarten).",
         "price": "€40–60/noc",
         "options": [
-          { "name": "Gasthof Gigl", "type": "Gasthof", "address": "Herzog-Ludwig-Straße 6, 93333 Neustadt a.d. Donau", "price": "€50–70/noc", "parking": "bezpłatny na dziedziancu", "url": "https://www.gigl.de/" },
-          { "name": "Hotel Pflügler", "type": "Landgasthof", "address": "Hauptstr. 14, 93333 Neustadt (Schwaig)", "price": "€45–65/noc", "parking": "bezpłatny przed hotelem" },
-          { "name": "KEH Hotel Kelheim (alternatywa)", "type": "Designhotel", "address": "Am Kastlacker 1a, 93309 Kelheim", "price": "od €46/noc", "parking": "duży bezpłatny parking", "note": "Malownicze Kelheim nad Dunajem, check-in kodem od 16:00" }
+          {
+            "name": "Gasthof Gigl",
+            "type": "Gasthof",
+            "address": "Herzog-Ludwig-Straße 6, 93333 Neustadt a.d. Donau",
+            "price": "€50–70/noc",
+            "parking": "bezpłatny na dziedziancu",
+            "url": "https://www.gigl.de/"
+          },
+          {
+            "name": "Hotel Pflügler",
+            "type": "Landgasthof",
+            "address": "Hauptstr. 14, 93333 Neustadt (Schwaig)",
+            "price": "€45–65/noc",
+            "parking": "bezpłatny przed hotelem"
+          },
+          {
+            "name": "KEH Hotel Kelheim (alternatywa)",
+            "type": "Designhotel",
+            "address": "Am Kastlacker 1a, 93309 Kelheim",
+            "price": "od €46/noc",
+            "parking": "duży bezpłatny parking",
+            "note": "Malownicze Kelheim nad Dunajem, check-in kodem od 16:00"
+          }
         ]
       },
       "tips": [
@@ -253,7 +455,10 @@
       "food": {
         "place": "Rovereto Sud (A22) — pierwszy wybór",
         "address": "Ristorante Tre Pini: Via Stazione 14, 38068 Rovereto TN",
-        "dishes": ["pizza", "menu del giorno"],
+        "dishes": [
+          "pizza",
+          "menu del giorno"
+        ],
         "note": "Zjazd A22 Rovereto Sud — Tre Pini: duży parking, szybka obsługa (~€10–15).",
         "price": "~€10–15"
       },
@@ -262,9 +467,27 @@
         "note": "Przyjazd ok. 17:00–17:30. Mologno = frazione Barga, ~5 km od centro, cisza, las kasztanowy.",
         "price": "€60–90/noc",
         "options": [
-          { "name": "Agriturismo Il Musaccio", "type": "agriturismo", "address": "Via Pian di Gragno 15, 55051 Barga LU", "price": "€60–90/noc", "parking": "bezpłatny na terenie" },
-          { "name": "Agriturismo PURO", "type": "agriturismo", "address": "Mologno, 55051 Barga LU", "price": "€70–100/noc", "parking": "bezpłatny prywatny" },
-          { "name": "Agriturismo Chioi (Casa Chioi)", "type": "agriturismo", "address": "Mologno, Barga LU", "price": "€60–90/noc", "parking": "na terenie farmy" }
+          {
+            "name": "Agriturismo Il Musaccio",
+            "type": "agriturismo",
+            "address": "Via Pian di Gragno 15, 55051 Barga LU",
+            "price": "€60–90/noc",
+            "parking": "bezpłatny na terenie"
+          },
+          {
+            "name": "Agriturismo PURO",
+            "type": "agriturismo",
+            "address": "Mologno, 55051 Barga LU",
+            "price": "€70–100/noc",
+            "parking": "bezpłatny prywatny"
+          },
+          {
+            "name": "Agriturismo Chioi (Casa Chioi)",
+            "type": "agriturismo",
+            "address": "Mologno, Barga LU",
+            "price": "€60–90/noc",
+            "parking": "na terenie farmy"
+          }
         ]
       },
       "tips": [
@@ -274,13 +497,48 @@
         "Barga ZTL: parkuj Porta Reale (Via Bellavista) lub przy agriturismo Mologno"
       ],
       "route_segments": [
-        { "segment": "Neustadt → Rosenheim", "road": "A9 → A8", "km": "~200", "note": "Winieta AT aktywna" },
-        { "segment": "Rosenheim → Innsbruck", "road": "A93 Inntal → A12", "km": "~100", "note": "A12 wymaga winiety AT" },
-        { "segment": "Innsbruck → Brenner", "road": "A13 Sondermaut", "km": "~35", "note": "Streckenmaut €12,50" },
-        { "segment": "Brenner → Rovereto", "road": "A22", "km": "~120", "note": "Lunch: Rovereto Sud (~13:00)" },
-        { "segment": "Rovereto → Modena", "road": "A22", "km": "~130", "note": "Bez zjazdu do centro Verona (ZTL)" },
-        { "segment": "Modena → Lucca", "road": "A1 Variante di Valico → A11 Firenze-Mare", "km": "~150", "note": "Zjazd Lucca Est" },
-        { "segment": "Lucca → Barga", "road": "SS12 → SR445 → SP7", "km": "~50", "note": "Kręte odcinki, ~45–60 min" }
+        {
+          "segment": "Neustadt → Rosenheim",
+          "road": "A9 → A8",
+          "km": "~200",
+          "note": "Winieta AT aktywna"
+        },
+        {
+          "segment": "Rosenheim → Innsbruck",
+          "road": "A93 Inntal → A12",
+          "km": "~100",
+          "note": "A12 wymaga winiety AT"
+        },
+        {
+          "segment": "Innsbruck → Brenner",
+          "road": "A13 Sondermaut",
+          "km": "~35",
+          "note": "Streckenmaut €12,50"
+        },
+        {
+          "segment": "Brenner → Rovereto",
+          "road": "A22",
+          "km": "~120",
+          "note": "Lunch: Rovereto Sud (~13:00)"
+        },
+        {
+          "segment": "Rovereto → Modena",
+          "road": "A22",
+          "km": "~130",
+          "note": "Bez zjazdu do centro Verona (ZTL)"
+        },
+        {
+          "segment": "Modena → Lucca",
+          "road": "A1 Variante di Valico → A11 Firenze-Mare",
+          "km": "~150",
+          "note": "Zjazd Lucca Est"
+        },
+        {
+          "segment": "Lucca → Barga",
+          "road": "SS12 → SR445 → SP7",
+          "km": "~50",
+          "note": "Kręte odcinki, ~45–60 min"
+        }
       ],
       "practical_tips": [
         "Kup Streckenmaut A13 Brenner online (€12,50)",
@@ -332,7 +590,11 @@
       "food": {
         "place": "Osteria Il Borgo dei Sapori — Barga",
         "address": "Via Borgo 1, 55051 Barga LU",
-        "dishes": ["pappardelle al cinghiale", "necci con ricotta (naleśniki kasztanowe)", "castagnaccio"],
+        "dishes": [
+          "pappardelle al cinghiale",
+          "necci con ricotta (naleśniki kasztanowe)",
+          "castagnaccio"
+        ],
         "note": "Toskańska kuchnia z lokalnymi składnikami Garfagnany.",
         "price": "~€9–15/piatto, ~€25–35/os z winem"
       },
@@ -391,12 +653,15 @@
       "food": {
         "place": "Trattoria da Carlino — Castelnuovo di Garfagnana",
         "address": "Via Garibaldi 15, 55032 Castelnuovo di Garfagnana",
-        "dishes": ["minestra di farro (zupa z orkiszem IGP)", "trota garfagnina alla griglia"],
+        "dishes": [
+          "minestra di farro (zupa z orkiszem IGP)",
+          "trota garfagnina alla griglia"
+        ],
         "note": "Albergo-ristorante w centrum historycznym Castelnuovo. Kultowe miejsce wśród lokalnych — terrazza z widokiem na dolinę.",
         "price": "~€12–16/os"
       },
       "tips": [
-        "KOREKTA: targ Castelnuovo = CZWARTEK (nie wtorek) — farro IGP w sklepie",
+        "Targ w Castelnuovo: czwartek (18 IX) — farro IGP i lokalne sery w sklepach przy targu",
         "Orecchiella 15.09 (wt): centrum/muzea ZAMKNIĘTE po 14.09 (tylko sob–nd), szlaki i recinti ZAWSZE otwarte",
         "Castiglione: parking Porta Inferi (26 miejsc) — obejście murów ~30 min",
         "Da Carlino: lunch 12:00–15:00, przyjdź przed 13:00"
@@ -416,10 +681,10 @@
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 25,
-      "warning": "⚠️ 16.09 to środa — Fortezza delle Verrucole ZAMKNIĘTA (otwarta pt–nd). Wejście zewnętrzne bezpłatne, panorama 360° dostępna.",
+      "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta pt–nd). Panorama 360° i mury dostępne bezpłatnie.",
       "attractions": [
         {
-          "name": "Fortezza delle Verrucole (zewnątrz) ⚠️ środa = zamknięta w środku",
+          "name": "Fortezza delle Verrucole — spacer zewnętrzny",
           "drive_min": 18,
           "description": "16.09 to środa — forteca zamknięta (otwarta pt–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich.",
           "type": "medieval",
@@ -450,7 +715,11 @@
       "food": {
         "place": "Ristorante Bar Radicchi — Vagli Sotto",
         "address": "Via Pietro Pieroni 2/4, 55030 Vagli Sotto LU (~25 min od Barga)",
-        "dishes": ["cucina casalinga garfagnina", "fagioli di Sorana IGP", "tortelli z doliny Serchio"],
+        "dishes": [
+          "cucina casalinga garfagnina",
+          "fagioli di Sorana IGP",
+          "tortelli z doliny Serchio"
+        ],
         "note": "Taras i ogród z widokiem na jezioro. Potwierdź pranzo tel. 0583 995237.",
         "price": "~€15–25/os"
       },
@@ -460,7 +729,7 @@
         "Parking przy tamie Vagli — przyjedź rano, zapełnia się po południu"
       ],
       "practical_tips": [
-        "UWAGA: 16.09 = środa — Fortezza Verrucole ZAMKNIĘTA. Spacer zewnętrzny OK",
+        "16.09 środa: Fortezza Verrucole — zwiedzanie zewnętrzne (wejście wewnątrz pt–nd); panorama 360° dostępna bezpłatnie",
         "Vagli: parking przy tamie zapełnia się w południe — jedź tam rano (9:00)"
       ]
     },
@@ -507,7 +776,11 @@
       "food": {
         "place": "Trattoria Borghesi — Bagni di Lucca",
         "address": "Viale Umberto I 85, 55022 Bagni di Lucca LU",
-        "dishes": ["tordelli lucchesi", "zuppa di farro", "castagnaccio"],
+        "dishes": [
+          "tordelli lucchesi",
+          "zuppa di farro",
+          "castagnaccio"
+        ],
         "note": "Rodzinna trattoria w Bagni di Lucca. Czwartek 17.09 otwarte 7:00–20:00. Wczesny lunch (~12:30). Tel. +39 0583 805919.",
         "price": "~€12–18/os"
       },
@@ -540,10 +813,14 @@
       "attractions": [],
       "oak_forest": null,
       "food": {
-        "place": "Lunch w trasie — okolice Pistoia / Montecatini (A11)",
-        "address": "zjazd Pistoia Ovest lub Montecatini Est",
-        "dishes": ["ribollita", "pasta al ragù", "bistecca"],
-        "note": "UWAGA: 'Trattoria da Moreno' w tej lokalizacji nie istnieje w żadnej bazie (TripAdvisor, Google, Pagine Gialle) — prawdopodobnie zamknięta lub błędna nazwa. Zamiast tego: Trattoria La Limonaia (Pistoia), lub po prostu Autogrill na A11 dla szybkiego postoju w dniu transferu.",
+        "place": "Trattoria La Limonaia — Pistoia",
+        "address": "Via della Limonaia 6, 51100 Pistoia PT",
+        "dishes": [
+          "ribollita",
+          "pasta al ragù",
+          "bistecca"
+        ],
+        "note": "Prosta trattoria toskańska w Pistoi — dobra na przerwę obiadową w dniu transferu. Alternatywa szybsza: Autogrill A11 Montecatini Est.",
         "price": "~€10–18/os"
       },
       "accommodation": {
@@ -551,9 +828,23 @@
         "note": "Przyjazd ok. 13:30–14:30 (wcześniej niż w 3-bazowym, bo wyjazd o 10:00). Check-in w agriturismo typowo 14:00–19:00.",
         "price": "€70–100/noc",
         "options": [
-          { "name": "Agriturismo Amina, Winery & Hiking", "area": "Vagliagli (Loc. Corsignano)", "address": "SP 102 di Vagliagli, 53019 Vagliagli SI", "note": "Winnica, basen, śniadanie, 5 min od centrum Vagliagli, 15 min od Sieny." },
-          { "name": "Agriturismo Le Macie", "area": "Vagliagli", "address": "Strada Provinciale 9 n. 54, 53019 Vagliagli SI", "note": "Apartamenty z kuchnią, basen sezonowy, restauracja." },
-          { "name": "Fattoria di Corsignano", "area": "k. Vagliagli", "note": "Ekologiczny agriturismo, basen, restauracja, degustacje wina." }
+          {
+            "name": "Agriturismo Amina, Winery & Hiking",
+            "area": "Vagliagli (Loc. Corsignano)",
+            "address": "SP 102 di Vagliagli, 53019 Vagliagli SI",
+            "note": "Winnica, basen, śniadanie, 5 min od centrum Vagliagli, 15 min od Sieny."
+          },
+          {
+            "name": "Agriturismo Le Macie",
+            "area": "Vagliagli",
+            "address": "Strada Provinciale 9 n. 54, 53019 Vagliagli SI",
+            "note": "Apartamenty z kuchnią, basen sezonowy, restauracja."
+          },
+          {
+            "name": "Fattoria di Corsignano",
+            "area": "k. Vagliagli",
+            "note": "Ekologiczny agriturismo, basen, restauracja, degustacje wina."
+          }
         ]
       },
       "tips": [
@@ -562,9 +853,24 @@
         "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 14:00, droga do Vagliagli kręta"
       ],
       "route_segments": [
-        { "segment": "Barga → Lucca (A11)", "road": "SS12/SS445 → SS12 → A11", "km": "~60", "note": "Zjazd A11 Lucca Est, tankuj przed wjazdem na autostradę" },
-        { "segment": "A11 → Siena Superstrada", "road": "A11/E70", "km": "~110", "note": "Superstrada Siena-Bettolle, zjazd Castelnuovo Berardenga" },
-        { "segment": "Siena Sud → BAZA 2 (Vagliagli)", "road": "SP408/SS326/SP102", "km": "~25", "note": "Kręte drogi do agriturismo. ETA 13:30–14:30." }
+        {
+          "segment": "Barga → Lucca (A11)",
+          "road": "SS12/SS445 → SS12 → A11",
+          "km": "~60",
+          "note": "Zjazd A11 Lucca Est, tankuj przed wjazdem na autostradę"
+        },
+        {
+          "segment": "A11 → Siena Superstrada",
+          "road": "A11/E70",
+          "km": "~110",
+          "note": "Superstrada Siena-Bettolle, zjazd Castelnuovo Berardenga"
+        },
+        {
+          "segment": "Siena Sud → BAZA 2 (Vagliagli)",
+          "road": "SP408/SS326/SP102",
+          "km": "~25",
+          "note": "Kręte drogi do agriturismo. ETA 13:30–14:30."
+        }
       ],
       "practical_tips": [
         "Wyjazd wcześniejszy (10:00) niż w 3-bazowym — most i Bagni di Lucca były dzień wcześniej",
@@ -612,7 +918,12 @@
       "food": {
         "place": "Antica Trattoria Papei — Siena",
         "address": "Piazza del Mercato 6, 53100 Siena SI",
-        "dishes": ["pici cacio e pepe", "ribollita", "pappardelle al cinghiale", "vino sfuso (z beczki)"],
+        "dishes": [
+          "pici cacio e pepe",
+          "ribollita",
+          "pappardelle al cinghiale",
+          "vino sfuso (z beczki)"
+        ],
         "note": "Kultowa trattoria za Palazzo Pubblico. Rezerwacja tel. od 10:00 (sobota lunch!). Tel. +39 0577 280894.",
         "price": "~€15–22/os"
       },
@@ -672,8 +983,13 @@
       "food": {
         "place": "Osteria Il Rifugio del Chianti — Radda in Chianti",
         "address": "Via Roma 6, 53017 Radda in Chianti SI (~25 min od bazy)",
-        "dishes": ["pici al ragù toscano", "tagliata di manzo", "pappardelle al cinghiale", "Chianti Classico kieliszek"],
-        "note": "Lokalna osteria w centrum Raddy — proste toskańskie menu, dobre relacja cena/jakość. Alternatywa w tym samym rejonie: La Bottega di Volpaia (SP112, Volpaia) — kanapki i deski serów na tarasie z widokiem. Uwaga: La Bottega del 30 w Villa a Sesta to gwiazdka Michelin (€40–60/os) — warta odwiedzin jeśli macie budżet na fine dining.",
+        "dishes": [
+          "pici al ragù toscano",
+          "tagliata di manzo",
+          "pappardelle al cinghiale",
+          "Chianti Classico kieliszek"
+        ],
+        "note": "Lokalna osteria w centrum Raddy — proste toskańskie menu, dobra relacja cena/jakość. Alternatywa w tym samym rejonie: La Bottega di Volpaia (SP112, Volpaia) — kanapki i deski serów na tarasie z widokiem.",
         "price": "~€18–28/os"
       },
       "tips": [
@@ -731,7 +1047,12 @@
       "food": {
         "place": "Osteria La Tombolina — Asciano",
         "address": "Via Goffredo Mameli 11, 53041 Asciano SI",
-        "dishes": ["pici alle briciole", "arista di maiale", "ribollita", "vino Orcia DOC"],
+        "dishes": [
+          "pici alle briciole",
+          "arista di maiale",
+          "ribollita",
+          "vino Orcia DOC"
+        ],
         "note": "Lokalna osteria w centrum Asciano. Tel. +39 0577 718056. Poniedziałek: sprawdź godziny.",
         "price": "~€15–22/os"
       },
@@ -787,12 +1108,17 @@
       "food": {
         "place": "Trattoria Latte di Luna — Pienza",
         "address": "Via San Carlo 2-4, 53026 Pienza SI",
-        "dishes": ["pici al ragù di cinta senese", "pecorino di Pienza (fresco/stagionato)", "ribollita", "pasta al tartufo"],
+        "dishes": [
+          "pici al ragù di cinta senese",
+          "pecorino di Pienza (fresco/stagionato)",
+          "ribollita",
+          "pasta al tartufo"
+        ],
         "note": "Klasyczna trattoria w centrum Pienzy — lokale, porządne porcje, uczciwa cena. Czynna na lunch. Rezerwacja zalecana w sezonie przez TripAdvisor lub telefon. Alternatywa: La Terrazza della Val d'Orcia (widok na dolinę z tarasu, Via Condotti 11). Osobno: Osteria Perillà to gwiazdkowe fine dining w Rocca d'Orcia (€85–130/os) — jeśli chcecie spróbować, rezerwuj tygodnie wcześniej: info@osteriaperilla.it.",
         "price": "~€15–25/os"
       },
       "tips": [
-        "UWAGA: dojazd 40–45 min — poza limitem 30 min. Uzasadniony wyjątek dla Val d'Orcia UNESCO",
+        "Val d'Orcia: dojazd 40–45 min — uzasadniony wyjątek dla dziedzictwa UNESCO",
         "Pienza: przyjedź przed 9:30 — najpiękniejsze miasto-utopia Toskanii, wtorek mniej tłumów niż weekend",
         "Bagno Vignoni: Parco dei Mulini poniżej wioski — bezpłatna kąpiel termalna (38°C). NIE basen na placu",
         "Montalcino: degustacja w Enoteca La Fortezza lub Franci — bez rezerwacji, 3 wina od €15"
@@ -838,12 +1164,17 @@
       "oak_forest": {
         "spot": "Foresta di Tocchi — między Murlo a Buonconvento",
         "species": "Quercus cerris (dąb burgundzki), dominujący",
-        "note": "UWAGA: Riserva Biogenetica Tocchi wymaga zezwolenia i przewodnika (Raggruppamento Carabinieri Biodiversità — rgpbio.it). Swobodny wstęp tylko na drogi szutrowe (strade bianche). Swobodne wędrowanie po lesie bez autoryzacji jest zabronione. Kontakt przed wyjazdem: rgpbio.it lub comune.monticiano.si.it (I sentieri di Tocchi)."
+        "note": "Wstęp swobodny tylko drogami szutrowymi (strade bianche). Wędrowanie po lesie poza oznaczonymi drogami wymaga zezwolenia — kontakt przed wyjazdem: rgpbio.it lub comune.monticiano.si.it"
       },
       "food": {
         "place": "Il Pozzo — Monteriggioni",
         "address": "Piazza Roma 2, 53035 Monteriggioni SI",
-        "dishes": ["pici al ragù toscano", "tagliata di chianina", "ribollita", "Chianti Classico riserva"],
+        "dishes": [
+          "pici al ragù toscano",
+          "tagliata di chianina",
+          "ribollita",
+          "Chianti Classico riserva"
+        ],
         "note": "Restauracja w centrum Monteriggioni — widok na wieże. Rezerwacja zalecana: +39 0577 304127. Kolacja pożegnalna w Toskanii.",
         "price": "~€25–40/os"
       },
@@ -874,7 +1205,11 @@
       "food": {
         "place": "Bolonia lub Modena (postój autostradowy A1)",
         "address": "Autogrill Bologna Borgo Panigale lub Modena Nord",
-        "dishes": ["tortellini in brodo", "tagliatelle al ragù", "caffè"],
+        "dishes": [
+          "tortellini in brodo",
+          "tagliatelle al ragù",
+          "caffè"
+        ],
         "note": "Ostatnie włoskie jedzenie — zjazd A1 Bologna Borgo Panigale lub Modena Nord. NIE zjeżdżaj do centrum Florencji — 24.09 czwartek, ZTL aktywna 7:30–20:00.",
         "price": "~€10–15"
       },
@@ -883,9 +1218,30 @@
         "note": "Malownicze miasto na zakolu Innu, ~45 km od Monachium. Wieczorny spacer Altstadt (15 min). ⚠️ Szukaj Wasserburg am Inn (83512), NIE Wasserburg am Bodensee.",
         "price": "€45–75/noc",
         "options": [
-          { "name": "Hotel & Gasthaus Huberwirt am Kellerberg", "type": "Gasthof", "address": "Salzburgerstr. 25, 83512 Wasserburg am Inn", "price": "od €46/noc", "parking": "bezpłatny prywatny", "url": "https://www.preiswert-uebernachten.de/wasserburg/hotel-gasthaus-huberwirt-am-kellerberg/6917" },
-          { "name": "Hotel Gasthof Paulanerstuben", "type": "Gasthof", "address": "Marienplatz 9, 83512 Wasserburg am Inn", "price": "od €94/noc", "parking": "bezpłatny dla gości", "url": "https://www.paulanerstuben-wasserburg.de/" },
-          { "name": "Das Fletzinger", "type": "Boutique-Hotel", "address": "Fletzingergasse 3, 83512 Wasserburg am Inn", "price": "€80–110/noc", "parking": "na zapytanie", "url": "https://fletzinger.de/" }
+          {
+            "name": "Hotel & Gasthaus Huberwirt am Kellerberg",
+            "type": "Gasthof",
+            "address": "Salzburgerstr. 25, 83512 Wasserburg am Inn",
+            "price": "od €46/noc",
+            "parking": "bezpłatny prywatny",
+            "url": "https://www.preiswert-uebernachten.de/wasserburg/hotel-gasthaus-huberwirt-am-kellerberg/6917"
+          },
+          {
+            "name": "Hotel Gasthof Paulanerstuben",
+            "type": "Gasthof",
+            "address": "Marienplatz 9, 83512 Wasserburg am Inn",
+            "price": "od €94/noc",
+            "parking": "bezpłatny dla gości",
+            "url": "https://www.paulanerstuben-wasserburg.de/"
+          },
+          {
+            "name": "Das Fletzinger",
+            "type": "Boutique-Hotel",
+            "address": "Fletzingergasse 3, 83512 Wasserburg am Inn",
+            "price": "€80–110/noc",
+            "parking": "na zapytanie",
+            "url": "https://fletzinger.de/"
+          }
         ]
       },
       "tips": [
@@ -896,11 +1252,36 @@
         "Wasserburg am Inn — wieczorny spacer po starym mieście nad Innem"
       ],
       "route_segments": [
-        { "segment": "Chianti (Vagliagli) → A1 Firenze-Sud", "road": "SP9 → SS408 → SS222 → A1", "km": "~50", "note": "Z Vagliagli: SS222 Chiantigiana lub SP9 → A1 wjazd Firenze-Sud/Incisa. ~50 min." },
-        { "segment": "Firenze → Bologna (obwodnica FI)", "road": "A1 Variante di Valico", "km": "~105", "note": "NIE zjeżdżaj do centro Firenze — ZTL aktywna czwartek 7:30–20:00" },
-        { "segment": "Bologna → Milano tangenziale", "road": "A1/A14/A4", "km": "~200", "note": "Lunch: zjazd Bologna Borgo Panigale lub Modena Nord" },
-        { "segment": "Milano → Brenner", "road": "A4 → A22", "km": "~280", "note": "Pedaggio A22 Modena–Brennero: ~€22,80 klasa A" },
-        { "segment": "Brenner → Wasserburg am Inn", "road": "A13 AT → A12 Inntal → Rosenheim → B304", "km": "~145", "note": "A13 Streckenmaut ~€12,50. B304 do Wasserburg ~25 km od Rosenheim" }
+        {
+          "segment": "Chianti (Vagliagli) → A1 Firenze-Sud",
+          "road": "SP9 → SS408 → SS222 → A1",
+          "km": "~50",
+          "note": "Z Vagliagli: SS222 Chiantigiana lub SP9 → A1 wjazd Firenze-Sud/Incisa. ~50 min."
+        },
+        {
+          "segment": "Firenze → Bologna (obwodnica FI)",
+          "road": "A1 Variante di Valico",
+          "km": "~105",
+          "note": "NIE zjeżdżaj do centro Firenze — ZTL aktywna czwartek 7:30–20:00"
+        },
+        {
+          "segment": "Bologna → Milano tangenziale",
+          "road": "A1/A14/A4",
+          "km": "~200",
+          "note": "Lunch: zjazd Bologna Borgo Panigale lub Modena Nord"
+        },
+        {
+          "segment": "Milano → Brenner",
+          "road": "A4 → A22",
+          "km": "~280",
+          "note": "Pedaggio A22 Modena–Brennero: ~€22,80 klasa A"
+        },
+        {
+          "segment": "Brenner → Wasserburg am Inn",
+          "road": "A13 AT → A12 Inntal → Rosenheim → B304",
+          "km": "~145",
+          "note": "A13 Streckenmaut ~€12,50. B304 do Wasserburg ~25 km od Rosenheim"
+        }
       ],
       "practical_tips": [
         "Wyjazd 7:00 z Chianti → Wasserburg ~17:00–18:00 (z 2 postojami po 20–30 min).",
@@ -925,7 +1306,10 @@
       "food": {
         "place": "Restaurant Franconia am See (Himmelkron) lub Serways Nürnberg-Feucht",
         "address": "Frankenring 1, 95502 Himmelkron",
-        "dishes": ["fränkische Spezialitäten", "pizza i pasta"],
+        "dishes": [
+          "fränkische Spezialitäten",
+          "pizza i pasta"
+        ],
         "note": "Restaurant Franconia am See leży bezpośrednio przy A9 w Himmelkron — kuchnia frankońsko-włoska, taras nad jeziorem.",
         "price": "~€10–16"
       },
@@ -934,9 +1318,27 @@
         "note": "Krótszy dzień (~4 h jazdy). Szukaj Pension/Gasthof przy zjeździe A9/A72.",
         "price": "€40–55/noc",
         "options": [
-          { "name": "Quality Hotel Hof", "type": "Hotel 3*", "address": "Ernst-Reuter-Strasse 137, 95030 Hof", "price": "€55–80/noc", "parking": "duży bezpłatny plac" },
-          { "name": "Hotel Central Hof", "type": "Hotel 4*", "address": "Kulmbacher Straße 2, 95030 Hof", "price": "€60–85/noc", "parking": "bezpłatny" },
-          { "name": "Fränkischer Hof Rehau", "type": "Hotel 3*", "address": "Sofienstraße 19, 95111 Rehau", "price": "€55–75/noc", "parking": "bezpłatny" }
+          {
+            "name": "Quality Hotel Hof",
+            "type": "Hotel 3*",
+            "address": "Ernst-Reuter-Strasse 137, 95030 Hof",
+            "price": "€55–80/noc",
+            "parking": "duży bezpłatny plac"
+          },
+          {
+            "name": "Hotel Central Hof",
+            "type": "Hotel 4*",
+            "address": "Kulmbacher Straße 2, 95030 Hof",
+            "price": "€60–85/noc",
+            "parking": "bezpłatny"
+          },
+          {
+            "name": "Fränkischer Hof Rehau",
+            "type": "Hotel 3*",
+            "address": "Sofienstraße 19, 95111 Rehau",
+            "price": "€55–75/noc",
+            "parking": "bezpłatny"
+          }
         ]
       },
       "tips": [
@@ -945,9 +1347,24 @@
         "Hof słynie z Wärschtlamo (würstchen) i piwa Meinel-Bräu"
       ],
       "route_segments": [
-        { "segment": "Wasserburg → Monachium (A8)", "road": "B304 → A94/A99 → A8", "km": "~60", "note": "~50–60 min. Unikaj centrum Monachium." },
-        { "segment": "Monachium → Nürnberg", "road": "A8 → A9 north", "km": "~170", "note": "Główny odcinek — ~2 h." },
-        { "segment": "Nürnberg → Hof", "road": "A9 north", "km": "~120", "note": "Lunch: Franconia am See (Himmelkron)." }
+        {
+          "segment": "Wasserburg → Monachium (A8)",
+          "road": "B304 → A94/A99 → A8",
+          "km": "~60",
+          "note": "~50–60 min. Unikaj centrum Monachium."
+        },
+        {
+          "segment": "Monachium → Nürnberg",
+          "road": "A8 → A9 north",
+          "km": "~170",
+          "note": "Główny odcinek — ~2 h."
+        },
+        {
+          "segment": "Nürnberg → Hof",
+          "road": "A9 north",
+          "km": "~120",
+          "note": "Lunch: Franconia am See (Himmelkron)."
+        }
       ],
       "practical_tips": [
         "Krótszy dzień (~4 h) — wyjazd 8:00, przyjazd Hof ok. 12:00–13:00.",
@@ -987,10 +1404,30 @@
         "Dotarcie 26.09 = 1 dzień marginesu przed deadline 27.09."
       ],
       "route_segments": [
-        { "segment": "Hof → Chemnitz", "road": "A72", "km": "~90", "note": "A72 łączy Hof z A4 przy Dreznie." },
-        { "segment": "Chemnitz → Drezno", "road": "A4 west", "km": "~80", "note": "Obwodnica Drezna — nie centrum. Uwaga na baustellen Saksonia." },
-        { "segment": "Drezno → Frankfurt (Oder)", "road": "A4 → A13 → A15", "km": "~145", "note": "Przejście graniczne A15 → A2." },
-        { "segment": "Frankfurt (Oder) → Poznań", "road": "A2 east", "km": "~150", "note": "Świecko — granica PL/DE. Opłata AW ~138 zł. Dotarcie ~13:00–14:30." }
+        {
+          "segment": "Hof → Chemnitz",
+          "road": "A72",
+          "km": "~90",
+          "note": "A72 łączy Hof z A4 przy Dreznie."
+        },
+        {
+          "segment": "Chemnitz → Drezno",
+          "road": "A4 west",
+          "km": "~80",
+          "note": "Obwodnica Drezna — nie centrum. Uwaga na baustellen Saksonia."
+        },
+        {
+          "segment": "Drezno → Frankfurt (Oder)",
+          "road": "A4 → A13 → A15",
+          "km": "~145",
+          "note": "Przejście graniczne A15 → A2."
+        },
+        {
+          "segment": "Frankfurt (Oder) → Poznań",
+          "road": "A2 east",
+          "km": "~150",
+          "note": "Świecko — granica PL/DE. Opłata AW ~138 zł. Dotarcie ~13:00–14:30."
+        }
       ]
     },
     {
@@ -1017,7 +1454,9 @@
     "ztl_warning": "Centra większości toskańskich borghi mają ZTL (strefa ruchu ograniczonego) — parkuj poza murami",
     "crowd_avoidance": {
       "popular_days": 1,
-      "popular_places": ["Siena (19.09)"],
+      "popular_places": [
+        "Siena (19.09)"
+      ],
       "tips": [
         "Siena: tylko poranek, wyjazd przed 14:00",
         "Pienza (22.09): przyjedź przed 9:30 — wtorek spokojniejszy niż weekend",
@@ -1034,15 +1473,46 @@
         "subtitle": "k. Castelnuovo Berardenga",
         "is_current": true,
         "distances": [
-          {"place": "Siena", "drive_min": 25, "ok": true},
-          {"place": "Castello di Brolio", "drive_min": 15, "ok": true},
-          {"place": "Radda in Chianti", "drive_min": 25, "ok": true},
-          {"place": "Pienza", "drive_min": 55, "ok": false},
-          {"place": "Montalcino", "drive_min": 50, "ok": false},
-          {"place": "Bagno Vignoni", "drive_min": 50, "ok": false}
+          {
+            "place": "Siena",
+            "drive_min": 25,
+            "ok": true
+          },
+          {
+            "place": "Castello di Brolio",
+            "drive_min": 15,
+            "ok": true
+          },
+          {
+            "place": "Radda in Chianti",
+            "drive_min": 25,
+            "ok": true
+          },
+          {
+            "place": "Pienza",
+            "drive_min": 55,
+            "ok": false
+          },
+          {
+            "place": "Montalcino",
+            "drive_min": 50,
+            "ok": false
+          },
+          {
+            "place": "Bagno Vignoni",
+            "drive_min": 50,
+            "ok": false
+          }
         ],
-        "pros": ["Siena 25 min — wczesny ranek przed tłumami", "Zamki Chianti: Brolio 15 min", "Wino Chianti Classico na miejscu"],
-        "cons": ["Val d'Orcia za daleko (50+ min)", "Pienza, Montalcino poza limitem 30 min"],
+        "pros": [
+          "Siena 25 min — wczesny ranek przed tłumami",
+          "Zamki Chianti: Brolio 15 min",
+          "Wino Chianti Classico na miejscu"
+        ],
+        "cons": [
+          "Val d'Orcia za daleko (50+ min)",
+          "Pienza, Montalcino poza limitem 30 min"
+        ],
         "best_for": "Priorytet: Siena i klimat Chianti"
       },
       {
@@ -1051,15 +1521,47 @@
         "subtitle": "k. Castiglione d'Orcia",
         "is_current": false,
         "distances": [
-          {"place": "Bagno Vignoni", "drive_min": 5, "ok": true},
-          {"place": "San Quirico d'Orcia", "drive_min": 10, "ok": true},
-          {"place": "Monticchiello", "drive_min": 15, "ok": true},
-          {"place": "Pienza", "drive_min": 20, "ok": true},
-          {"place": "Montalcino", "drive_min": 20, "ok": true},
-          {"place": "Siena", "drive_min": 50, "ok": false}
+          {
+            "place": "Bagno Vignoni",
+            "drive_min": 5,
+            "ok": true
+          },
+          {
+            "place": "San Quirico d'Orcia",
+            "drive_min": 10,
+            "ok": true
+          },
+          {
+            "place": "Monticchiello",
+            "drive_min": 15,
+            "ok": true
+          },
+          {
+            "place": "Pienza",
+            "drive_min": 20,
+            "ok": true
+          },
+          {
+            "place": "Montalcino",
+            "drive_min": 20,
+            "ok": true
+          },
+          {
+            "place": "Siena",
+            "drive_min": 50,
+            "ok": false
+          }
         ],
-        "pros": ["Bagno Vignoni 5 min", "Pienza 20 min", "Montalcino 20 min", "Krajobraz UNESCO Val d'Orcia"],
-        "cons": ["Siena 50 min (wypad opcjonalny)", "Zamki Chianti za daleko"],
+        "pros": [
+          "Bagno Vignoni 5 min",
+          "Pienza 20 min",
+          "Montalcino 20 min",
+          "Krajobraz UNESCO Val d'Orcia"
+        ],
+        "cons": [
+          "Siena 50 min (wypad opcjonalny)",
+          "Zamki Chianti za daleko"
+        ],
         "best_for": "Priorytet: średniowieczne borghi i Val d'Orcia"
       }
     ],
@@ -1070,8 +1572,16 @@
         "is_current": false,
         "summary": "Garfagnana → Środkowa Toskania → Maremma",
         "nights_label": "4 + 3 + 3 noce",
-        "pros": ["Pełna Toskania: północ, centrum, południe", "Pitigliano, Sovana, Via Cave", "Saturnia — termalna kaskada", "Selva del Lamone — dębowy las etruski"],
-        "cons": ["2 przeprowadzki w Toskanii", "3 noce w każdej bazie = mniej czasu"]
+        "pros": [
+          "Pełna Toskania: północ, centrum, południe",
+          "Pitigliano, Sovana, Via Cave",
+          "Saturnia — termalna kaskada",
+          "Selva del Lamone — dębowy las etruski"
+        ],
+        "cons": [
+          "2 przeprowadzki w Toskanii",
+          "3 noce w każdej bazie = mniej czasu"
+        ]
       },
       {
         "id": "2bazy",
@@ -1079,9 +1589,172 @@
         "is_current": true,
         "summary": "Garfagnana → Środkowa Toskania (bez Maremmy)",
         "nights_label": "5 + 5 nocy",
-        "pros": ["Tylko 1 przeprowadzka", "5 nocy w każdej bazie — więcej spokoju", "Głębsze poznanie 2 regionów"],
-        "cons": ["Brak Maremmy — Pitigliano, Sovana, Saturnia pominięte", "Mniej zróżnicowany krajobraz"]
+        "pros": [
+          "Tylko 1 przeprowadzka",
+          "5 nocy w każdej bazie — więcej spokoju",
+          "Głębsze poznanie 2 regionów"
+        ],
+        "cons": [
+          "Brak Maremmy — Pitigliano, Sovana, Saturnia pominięte",
+          "Mniej zróżnicowany krajobraz"
+        ]
       }
+    ]
+  },
+  "costs": {
+    "persons": 4,
+    "rooms": 2,
+    "note": "Szacunki dla 4 dorosłych, 2 pokoje dwuosobowe. Paliwo na tranzyt Poznań↔Toskania nie jest uwzględnione (zależy od samochodu i podziału kosztów).",
+    "categories": [
+      {
+        "id": "accommodation",
+        "name": "Noclegi",
+        "icon": "🏨",
+        "per_person_min": 420,
+        "per_person_max": 620,
+        "note": "2 pokoje dwuosobowe, ceny za pokój za noc",
+        "items": [
+          {
+            "label": "Neustadt an der Donau — 1 noc (tranzyt tam)",
+            "detail": "€40–60/pokój",
+            "per_person_min": 20,
+            "per_person_max": 30
+          },
+          {
+            "label": "Baza 1 — Garfagnana / Barga — 5 nocy",
+            "detail": "€60–90/pokój",
+            "per_person_min": 150,
+            "per_person_max": 225
+          },
+          {
+            "label": "Baza 2 — Chianti / Castelnuovo Berardenga — 6 nocy",
+            "detail": "€70–100/pokój",
+            "per_person_min": 210,
+            "per_person_max": 300
+          },
+          {
+            "label": "Wasserburg am Inn — 1 noc (tranzyt powrót)",
+            "detail": "€45–75/pokój",
+            "per_person_min": 22,
+            "per_person_max": 37
+          },
+          {
+            "label": "Hof an der Saale — 1 noc (tranzyt powrót)",
+            "detail": "€40–55/pokój",
+            "per_person_min": 20,
+            "per_person_max": 28
+          }
+        ]
+      },
+      {
+        "id": "fuel",
+        "name": "Paliwo",
+        "icon": "⛽",
+        "per_person_min": 13,
+        "per_person_max": 18,
+        "note": "~450 km po Toskanii (bazy ↔ atrakcje), 7L/100km. Paliwo na tranzyt Poznań↔Toskania nie uwzględnione.",
+        "items": [
+          {
+            "label": "Przejazdy lokalne w Toskanii (~450 km)",
+            "detail": "~€50–70 / auto, diesel ~€1.85/L",
+            "per_person_min": 13,
+            "per_person_max": 18
+          }
+        ]
+      },
+      {
+        "id": "tolls",
+        "name": "Autostrady i winiety",
+        "icon": "🛣️",
+        "per_person_min": 10,
+        "per_person_max": 16,
+        "items": [
+          {
+            "label": "Winieta Austria (10 dni)",
+            "detail": "€12,80 / auto — asfinag.at",
+            "per_person_min": 3,
+            "per_person_max": 3
+          },
+          {
+            "label": "Autostrady Włochy (A1, A11, lokalne)",
+            "detail": "~€25–45 / auto",
+            "per_person_min": 6,
+            "per_person_max": 11
+          },
+          {
+            "label": "Autostrady Niemcy + Polska",
+            "detail": "brak opłat",
+            "per_person_min": 0,
+            "per_person_max": 0
+          }
+        ]
+      },
+      {
+        "id": "food",
+        "name": "Jedzenie",
+        "icon": "🍽️",
+        "per_person_min": 250,
+        "per_person_max": 375,
+        "note": "Śniadania w bazie lub bar (~€4–6), lunch trattoria ~€14–20, kolacja ~€18–25",
+        "items": [
+          {
+            "label": "Dni tranzytowe — 5 dni (Autogrill, supermarket, bistro)",
+            "detail": "€10–15/os/dzień",
+            "per_person_min": 50,
+            "per_person_max": 75
+          },
+          {
+            "label": "Toskania — 10 dni (trattorie, osterie, ryneczki)",
+            "detail": "€20–30/os/dzień",
+            "per_person_min": 200,
+            "per_person_max": 300
+          }
+        ]
+      },
+      {
+        "id": "attractions",
+        "name": "Atrakcje i wejściówki",
+        "icon": "🎟️",
+        "per_person_min": 30,
+        "per_person_max": 65,
+        "note": "Większość miejsc bezpłatna lub z symbolicznym wstępem",
+        "items": [
+          {
+            "label": "Siena — Opera del Duomo (Katedra + muzea)",
+            "detail": "~€20/os",
+            "per_person_min": 20,
+            "per_person_max": 20
+          },
+          {
+            "label": "Monteriggioni — mury obronne",
+            "detail": "€5/os",
+            "per_person_min": 5,
+            "per_person_max": 5
+          },
+          {
+            "label": "Montalcino — degustacja wina (Enoteca Fortezza)",
+            "detail": "~€12–18/os (3 wina)",
+            "per_person_min": 12,
+            "per_person_max": 18
+          },
+          {
+            "label": "Inne: Grotta del Vento, parki, muzea lokalne",
+            "detail": "łącznie",
+            "per_person_min": 0,
+            "per_person_max": 22
+          }
+        ]
+      }
+    ],
+    "total_per_person_min": 723,
+    "total_per_person_max": 1094,
+    "total_4persons_min": 2892,
+    "total_4persons_max": 4376,
+    "not_included": [
+      "Bilety promowe / tunele (nie dotyczy tej trasy)",
+      "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
+      "Zakupy lokalne, wino do domu, pamiątki",
+      "Opcjonalne: gorące źródła Saturnia (bezpłatne), Grotta del Vento (~€12/os)"
     ]
   }
 }

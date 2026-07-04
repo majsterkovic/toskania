@@ -6,12 +6,31 @@ import './style.css';
 
 let currentPlan = plan3;
 
+function initScrollReveal() {
+  if (!('IntersectionObserver' in window)) return;
+  const cards = document.querySelectorAll('.day-card');
+  cards.forEach((el) => el.classList.add('reveal'));
+  const obs = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          obs.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.05 }
+  );
+  cards.forEach((el) => obs.observe(el));
+}
+
 function mount(plan) {
   const app = document.getElementById('app');
   app.innerHTML = renderApp(plan);
   initDayNav();
   initGallery();
   initVariantsToggle();
+  requestAnimationFrame(initScrollReveal);
   if (typeof window !== 'undefined') {
     const initMaps = () => {
       if (window.L) {

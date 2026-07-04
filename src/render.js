@@ -82,6 +82,7 @@ function renderSiteNav() {
         <a href="#bazy">Bazy</a>
         <a href="#dni">Harmonogram</a>
         <a href="#galeria">Galeria</a>
+        <a href="#koszty">Koszty</a>
         <a href="#info">Info</a>
       </div>
     </nav>
@@ -576,6 +577,76 @@ function renderGallery(images) {
   `;
 }
 
+function renderCosts(costs) {
+  if (!costs) return '';
+
+  const categories = costs.categories
+    .map((cat) => {
+      const items = cat.items
+        .filter((item) => item.per_person_min > 0 || item.per_person_max > 0)
+        .map((item) => `
+          <tr class="costs-item">
+            <td class="costs-item__label">${esc(item.label)}</td>
+            <td class="costs-item__detail muted">${esc(item.detail || '')}</td>
+            <td class="costs-item__range">
+              ${item.per_person_min === item.per_person_max
+                ? `€${item.per_person_min}`
+                : `€${item.per_person_min}–${item.per_person_max}`}
+            </td>
+          </tr>
+        `)
+        .join('');
+
+      const subtotalRange = cat.per_person_min === cat.per_person_max
+        ? `€${cat.per_person_min}`
+        : `€${cat.per_person_min}–${cat.per_person_max}`;
+
+      return `
+        <div class="costs-category">
+          <div class="costs-category__header">
+            <span class="costs-category__icon">${esc(cat.icon || '')}</span>
+            <h4 class="costs-category__name">${esc(cat.name)}</h4>
+            <span class="costs-category__subtotal">${subtotalRange} <span class="costs-per-label">/os</span></span>
+          </div>
+          ${cat.note ? `<p class="costs-category__note muted">${esc(cat.note)}</p>` : ''}
+          <table class="costs-table">
+            <tbody>${items}</tbody>
+          </table>
+        </div>
+      `;
+    })
+    .join('');
+
+  const notIncluded = costs.not_included?.length
+    ? `<div class="costs-not-included">
+        <h4 class="block-label">Nie uwzględniono</h4>
+        <ul class="tips-list">${costs.not_included.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>
+      </div>`
+    : '';
+
+  return `
+    <section class="section" id="koszty">
+      <h2 class="section-title">Szacunkowe koszty</h2>
+      <p class="section-lead">${esc(costs.note)}</p>
+
+      <div class="costs-summary-banner">
+        <div class="costs-summary-item">
+          <span class="costs-summary-label">Na osobę</span>
+          <span class="costs-summary-value">€${costs.total_per_person_min}–${costs.total_per_person_max}</span>
+        </div>
+        <div class="costs-summary-divider"></div>
+        <div class="costs-summary-item">
+          <span class="costs-summary-label">Razem ${costs.persons} osoby</span>
+          <span class="costs-summary-value">€${costs.total_4persons_min}–${costs.total_4persons_max}</span>
+        </div>
+      </div>
+
+      <div class="costs-categories">${categories}</div>
+      ${notIncluded}
+    </section>
+  `;
+}
+
 function renderPractical(info) {
   const climate = Object.entries(info.climate || {})
     .map(([region, desc]) => `<li><strong>${esc(region)}:</strong> ${esc(desc)}</li>`)
@@ -712,6 +783,7 @@ export function renderApp(plan) {
         ${renderDays(plan.days, images, plan.bases)}
       </div>
       ${renderGallery(images)}
+      ${renderCosts(plan.costs)}
       ${renderPractical(plan.practical_info)}
       <footer class="footer">
         <p>Toskania 2026 · ${esc(plan.meta.dates)}</p>

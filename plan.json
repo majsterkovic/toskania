@@ -485,7 +485,7 @@
       "day_num": 1,
       "type": "transit",
       "label": "TRANZYT → NIEMCY",
-      "title": "Poznań → Neustadt an der Donau",
+      "title": "Poznań → Kufstein (Tyrol)",
       "image": "neustadt",
       "drive_km": 745,
       "drive_h": "7–7,5 h",
@@ -682,14 +682,14 @@
           "checked": "2026-07"
         }
       ],
-      "narrative": "Wyjeżdżamy z Poznania o 6:00–6:30 — sobota sprzyja, bo ciężarówek mniej. Przez Świecko na A12 przez Niemcy, potem A9 na południe. Gdzieś w okolicach Frankenwaldu (ok. 13:00) postój na lunch przy Brückenrasthaus nad autostradą. Przez Nürnberg i Ingolstadt zjeżdżamy na B299 do Neustadt an der Donau — przy normalnym ruchu jesteśmy tu ok. 15:30–17:00. Miasteczko nad Dunajem, wieczorny spacer po starówce i kolacja w Gasthof przed jutrzejszym długim dniem przez Brenner."
+      "narrative": "Wyjeżdżamy z Poznania o 6:00–6:30 — sobota, ciężarówek mniej. Przez Świecko na A12 w kierunku Berlina, potem A9 na południe przez Lipsk i Norymbergę. Gdzieś w okolicach Norymbergi (ok. 12:30) postój na lunch przy stacji benzynowej lub Raststätte. Za Monachium A8 do Rosenheim, następnie A93 Inntal w kierunku Austrii. Kufstein jest tuż za granicą — przy normalnym ruchu jesteśmy ok. 15:30–16:30. Małe tyrolskie miasto na skale nad Inn, urokliwa starówka, tańsze noclegi niż w Innsbrucku. Kolacja w oberży i wcześnie spać — jutro spokojny dzień przez Brenner do Toskanii."
     },
     {
       "date": "13.09 (nd)",
       "day_num": 2,
       "type": "transit",
       "label": "TRANZYT → TOSKANIA",
-      "title": "Neustadt an der Donau → Barga (Garfagnana)",
+      "title": "Kufstein → Barga (Garfagnana)",
       "image": "barga",
       "drive_km": 790,
       "drive_h": "8–8,5 h",
@@ -998,7 +998,7 @@
           "event": "Przyjazd Mologno / Barga — check-in"
         }
       ],
-      "narrative": "Najdłuższy dzień całej trasy — wyjeżdżamy o 5:30–6:00, żeby Brenner przejechać przed 9:00 i ominąć niedzielny szczyt powrotny z Alp (kolejki 10:00–14:00). Przez Rosenheim, A93 Inntal, Innsbruck i A13 wjeżdżamy do Włoch. Postój na lunch przy Rovereto Sud (ok. 13:00–13:30, zjazd A22). Za Bolonią A1 Variante di Valico omija Florencję, potem A11 i Lucca Est. Ostatnie 45 km to dolina Serchio — wąska górska droga, lokalny ruch. Do agriturismo docieramy ok. 17:00–18:30. Toskania się zaczyna."
+      "narrative": "Wyjeżdżamy o 7:00 — jesteśmy 40 km przed Innsbruckiem i 80 km przed Brennerem. A93 do Innsbrucku, potem A13 przez Brenner do Włoch — o tej porze w sobotni kierunek południowy prawie bez kolejek. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, Dolomity po prawej. Postój na lunch w okolicach Rovereto lub Werony (ok. 10:30–11:00). Za Bolonią A1 Variante di Valico omija Florencję, potem A11 i zjazd Lucca Est. Ostatnie 45 km to dolina Serchio — wąska górska droga, zielono i spokojnie. Do agriturismo docieramy ok. 14:00–15:00. Reszta dnia wolna — Toskania się zaczyna."
     },
     {
       "date": "14.09 (pn)",

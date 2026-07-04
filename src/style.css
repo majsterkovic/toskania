@@ -521,12 +521,23 @@ body {
   opacity: 0.85;
 }
 
+.day-card__thumbs {
+  display: flex;
+  gap: 2px;
+}
+
+.day-card__thumbs .day-card__thumb:last-child {
+  display: none;
+}
+
 .day-card__thumb {
   margin: 0;
   aspect-ratio: 21 / 9;
   max-height: 160px;
   overflow: hidden;
   background: var(--stone);
+  flex: 1;
+  min-width: 0;
 }
 
 .day-card__thumb img {
@@ -534,6 +545,16 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+@media (min-width: 900px) {
+  .day-card__thumbs .day-card__thumb:last-child {
+    display: block;
+  }
+  .day-card__thumbs .day-card__thumb {
+    aspect-ratio: 16 / 9;
+    max-height: 200px;
+  }
 }
 
 .day-card__inner {

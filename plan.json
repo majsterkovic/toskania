@@ -171,6 +171,16 @@
           "src": "images/chianti.jpg",
           "alt": "Colline del Chianti",
           "credit": "Wikimedia Commons · Anna.Massini"
+        },
+        "siena-duomo": {
+          "src": "images/siena-duomo.jpg",
+          "alt": "Duomo di Siena — fasada katedry",
+          "credit": "Wikimedia Commons · Rolf Gebhardt"
+        },
+        "via-cava": {
+          "src": "images/via-cava.jpg",
+          "alt": "Via Cava etruska — wąwóz w tufie, okolice Pitigliano",
+          "credit": "Wikimedia Commons · Sidvics"
         }
       }
     },
@@ -1161,7 +1171,8 @@
         "grotta_del_vento": "Cały rok (25.12 wył.). Lato: It.1 co godz. 10–18; It.2 11/15/17; It.3 10/14.",
         "osteria_borgo_sapori": "Pranzo 12:00–15:00, cena 19:00–23:00 (sprawdź dzień zamknięcia)",
         "l_osteria_barga": "11:30–15:30, 18:30–22:30 — Piazza Angelio 13, rezerwacja zalecana"
-      }
+      },
+      "image2": "castiglione"
     },
     {
       "date": "15.09 (wt)",
@@ -1334,7 +1345,8 @@
         "castelnuovo_mercato": "CZWARTEK 8:00–13:00 (Piazza delle Erbe + via V.Emanuele/Farini/Garibaldi) — nie wtorek!",
         "piazza_al_serchio_mercato": "WTOREK — Piazza Giovanni XXIII (~20 min od Barga)",
         "da_carlino": "Pranzo 12:00–15:00, cena 19:00–22:00 (zimą zamknięte pon)"
-      }
+      },
+      "image2": "castelnuovo"
     },
     {
       "date": "16.09 (śr)",
@@ -1517,7 +1529,8 @@
         "lago_vagli": "Tam i parking: całą dobę (bezpłatny)",
         "bar_radicchi_vagli": "Typowo 10–22 (środa otwarty). Pranzo — potwierdź tel. 0583 995237",
         "gorfigliano_chiesa": "Brak stałych godzin — spontanicznie lub po uzgodnieniu z parafią"
-      }
+      },
+      "image2": "vagli"
     },
     {
       "date": "17.09 (czw)",
@@ -1778,7 +1791,8 @@
           "km": "~25",
           "note": "Wjazd w Chianti — wyjazd Castelnuovo Berardenga (SS73). Kręte drogi do Vagliagli. ETA 16:00–17:00."
         }
-      ]
+      ],
+      "image2": "bagni-lucca"
     },
     {
       "date": "18.09 (pt)",
@@ -1934,7 +1948,8 @@
           "location": "Via Chiantigiana / SS408, Castelnuovo Berardenga",
           "note": "Stacja przy bazie — tankuj wieczorem po powrocie z dnia."
         }
-      ]
+      ],
+      "image2": "radda"
     },
     {
       "date": "19.09 (sob)",
@@ -2085,7 +2100,8 @@
           "location": "BAZA 2 — Chianti Senese",
           "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót, stacja przy SP408."
         }
-      ]
+      ],
+      "image2": "siena-duomo"
     },
     {
       "date": "20.09 (nd)",
@@ -2352,7 +2368,8 @@
           "road": "SS74",
           "note": "Alternatywa na trasie do Pitigliano — stacje rzadsze na odcinku górskim SS74"
         }
-      ]
+      ],
+      "image2": "asciano"
     },
     {
       "date": "21.09 (pn)",
@@ -2508,7 +2525,8 @@
         "il_tufo_allegro": "Poniedziałek 21.09: 12:30–14:30 i 19:30–21:30. Wtorek (22.09) ZAMKNIĘTE — zaplanuj kolację dziś!",
         "palazzo_orsini": "Wt–cz 9:00–13:00, 14:00–17:00; pt–nd 9:00–13:00, 14:00–18:00. Poniedziałek ZAMKNIĘTE. Wstęp do 30 min przed zamknięciem.",
         "sassotondo": "Degustacja: 10:30 lub 15:30, pn–nd. Prenotazione 24h: +39 351 6986750."
-      }
+      },
+      "image2": "via-cava"
     },
     {
       "date": "22.09 (wt)",
@@ -2664,7 +2682,8 @@
           "source": "https://cantinaottavarima.com/it/",
           "checked": "2026-07"
         }
-      ]
+      ],
+      "image2": "saturnia"
     },
     {
       "date": "23.09 (śr)",
@@ -2820,7 +2839,8 @@
         "price": "od €28/os (4 wina) do €55/os (5 win premium)",
         "note": "Winiarnia w tufie — piwnica podziemna, Ciliegiolo, Ombra Blu. 2,2 km szutrem od SP46. Tel. +39 351 6986750 lub online sassotondo.it",
         "gps_hint": "SP46 km 2 — follow signs sassotondo"
-      }
+      },
+      "image2": "lamone"
     },
     {
       "date": "24.09 (czw)",

@@ -479,7 +479,10 @@ function renderDay(day, images, bases) {
   const base = bases?.find((b) => b.id === day.base_id);
   const thumbKey = day.image || base?.image;
   const placeImg = thumbKey ? resolvePlaceImage(images, thumbKey) : null;
-  const thumbHtml = placeImg ? renderImg(placeImg, 'day-card__thumb') : '';
+  const placeImg2 = day.image2 ? resolvePlaceImage(images, day.image2) : null;
+  const thumbHtml = placeImg2
+    ? `<div class="day-card__thumbs">${renderImg(placeImg, 'day-card__thumb')}${renderImg(placeImg2, 'day-card__thumb')}</div>`
+    : placeImg ? renderImg(placeImg, 'day-card__thumb') : '';
 
   const hasMiniMap = (day.type === 'tuscany' || day.type === 'tuscany_transfer') && day.base_id;
   const miniMap = hasMiniMap

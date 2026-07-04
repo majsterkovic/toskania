@@ -692,8 +692,8 @@
         "address": "Ristorante Tre Pini: Via Stazione 14, 38068 Rovereto TN",
         "dishes": [
           "pizza",
-          "menu del giorno",
-          "pesce"
+          "menu del giorno (danie dnia)",
+          "pesce (ryba)"
         ],
         "note": "Zjazd A22 Rovereto Sud/Lago di Garda Sud — 300 m w kierunku Mori, nie na bramkę. Tre Pini: duży parking, szybka obsługa (~€10–15). Alternatywa: Moja Ristorante, Borgo Sacco (~10 min od zjazdu, zamknięte pon). Area Nogaredo Est na A22 = tylko przekąska 24/7. Werona centro = ZTL + korki — zostań na A22.",
         "price": "~€10–15",
@@ -1048,8 +1048,8 @@
         "place": "Osteria Il Borgo dei Sapori — Barga",
         "address": "Via Borgo 1, 55051 Barga LU",
         "dishes": [
-          "pappardelle al cinghiale (z dzikim)",
-          "maltagliati al ragù di carne",
+          "pappardelle al cinghiale (szeroki makaron z sosem z dzika)",
+          "maltagliati al ragù di carne (nieregularny makaron z sosem mięsnym)",
           "necci con ricotta (naleśniki kasztanowe — sezon jesienny)",
           "castagnaccio (ciasto kasztanowe)"
         ],
@@ -1225,8 +1225,8 @@
         "address": "Via Garibaldi 15, 55032 Castelnuovo di Garfagnana",
         "dishes": [
           "minestra di farro (zupa z orkiszem IGP)",
-          "trota garfagnina alla griglia",
-          "risotto cacio e pepe w formie serowej"
+          "trota garfagnina alla griglia (pstrąg z Garfagnany z grilla)",
+          "risotto cacio e pepe (ryż z serem i pieprzem) w formie serowej"
         ],
         "note": "Albergo-ristorante w centrum historycznym Castelnuovo. Kultowe miejsce wśród lokalnych — terrazza z widokiem na dolinę.",
         "price": "~€12–16/os",
@@ -1397,9 +1397,9 @@
         "place": "Ristorante Bar Radicchi — Vagli Sotto",
         "address": "Via Pietro Pieroni 2/4, 55030 Vagli Sotto LU (~25 min od Barga)",
         "dishes": [
-          "cucina casalinga garfagnina (produkty lokalne)",
-          "fagioli di Sorana IGP",
-          "tortelli / minestre z doliny Serchio"
+          "cucina casalinga garfagnina (domowa kuchnia z Garfagnany, produkty lokalne)",
+          "fagioli di Sorana IGP (chroniona fasola z Sorana)",
+          "tortelli (pierożki) / minestre (zupy) z doliny Serchio"
         ],
         "note": "Taras i ogród z widokiem na jezioro. Bar + sklep spożywczy. Potwierdź pranzo tel. 0583 995237. GPS: „Ristorante Radicchi Vagli”.",
         "price": "~€15–25/os",
@@ -1567,10 +1567,10 @@
         "place": "Trattoria Borghesi — Bagni di Lucca",
         "address": "Viale Umberto I 85, 55022 Bagni di Lucca LU",
         "dishes": [
-          "tordelli lucchesi",
-          "zuppa di farro",
-          "castagnaccio",
-          "risotto alle nettarine (sezonowe)"
+          "tordelli lucchesi (nadziewane pierożki z Lukki)",
+          "zuppa di farro (zupa orkiszowa)",
+          "castagnaccio (ciasto kasztanowe)",
+          "risotto alle nettarine (risotto z nektarynkami, sezonowe)"
         ],
         "note": "Rodzinna trattoria w Bagni di Lucca (NIE mylić z Trattoria da Giulio — ta jest w centrum LUCCA, Via delle Conce 45/47, off-route). Czwartek 17.09 otwarte 7:00–20:00. Wczesny lunch przed przejazdem do BAZY 2.",
         "price": "~€12–18/os",
@@ -1840,8 +1840,8 @@
         "place": "Osteria di Passignano — Badia a Passignano",
         "address": "Via Passignano 33, Loc. Badia a Passignano, 50028 Tavarnelle Val di Pesa FI",
         "dishes": [
-          "pici al ragù di cinghiale",
-          "ribollita",
+          "pici al ragù di cinghiale (grube spaghetti z sosem z dzika)",
+          "ribollita (gęsta toskańska zupa z warzywami i chlebem)",
           "Chianti Classico Antinori Gran Selezione",
           "menu sezonowe z Orto di Badia (ogrodek klasztorny)"
         ],
@@ -1993,9 +1993,9 @@
         "place": "Antica Trattoria Papei — Siena",
         "address": "Piazza del Mercato 6, 53100 Siena SI",
         "dishes": [
-          "pici cacio e pepe",
-          "ribollita",
-          "pappardelle al cinghiale",
+          "pici cacio e pepe (grube spaghetti z serem i pieprzem)",
+          "ribollita (gęsta toskańska zupa z warzywami i chlebem)",
+          "pappardelle al cinghiale (szeroki makaron z sosem z dzika)",
           "vino sfuso (z beczki)"
         ],
         "note": "Kultowa trattoria za Palazzo Pubblico — sienyjsi urzędnicy i studenci. Taras latem z widokiem na Torre del Mangia. Rezerwacja tel. od 10:00 (sobota lunch!). Bez angielskiego menu — pici, ribollita, vino sfuso.",
@@ -2139,9 +2139,9 @@
         "place": "Osteria La Tombolina — Asciano",
         "address": "Via Goffredo Mameli 11, 53041 Asciano SI",
         "dishes": [
-          "pici alle briciole",
-          "arista di maiale",
-          "ribollita",
+          "pici alle briciole (grube spaghetti z rumianą bułką tartą)",
+          "arista di maiale (pieczeń wieprzowa)",
+          "ribollita (gęsta toskańska zupa z warzywami i chlebem)",
           "vino Orcia DOC"
         ],
         "note": "Prosta osteria w centrum Asciano — dania toskańskie, cienkie pizze. Alternatywa: Bar Centrale przy Piazza Matteotti.",
@@ -2418,11 +2418,11 @@
         "place": "Il Tufo Allegro — Pitigliano",
         "address": "Vicolo della Costituzione 5, 58017 Pitigliano GR",
         "dishes": [
-          "acquacotta maremma",
-          "buglione d'agnello",
+          "acquacotta (zupa z Maremmy — dosł. gotowana woda, z warzywami i jajkiem)",
+          "buglione d'agnello (duszony udziec jagnięcy)",
           "Pitigliano DOC Bianco",
-          "crostini al tufo",
-          "pappardelle al ragù"
+          "crostini al tufo (grzanki z lokalnym serem i wędliną)",
+          "pappardelle al ragù (szeroki makaron z sosem mięsnym)"
         ],
         "note": "Trattoria wydrążona w tufie, tuż przy wejściu do getta i synagogi. Szef Domenico Pichini — kuchnia maremmańska z lokalnych producentów. Michelin Plate, piwnica 500+ etykiet. Rezerwacja: tel. 0564 616192 lub 335 102 8814, email iltufoallegro@gmail.com. Wtorek 22.09 ZAMKNIĘTE — zaplanuj kolację dziś!",
         "price": "~€50–60/os",
@@ -2577,9 +2577,9 @@
         "place": "Cantina L'Ottava Rima — Sorano (lunch)",
         "address": "Via del Borgo 25, 58010 Sorano GR",
         "dishes": [
-          "taglieri Cinta Senese i formaggi locali",
-          "pappardelle al cinghiale",
-          "vini autoctoni z piwnicy w tufie"
+          "taglieri Cinta Senese (deski wędlin z lokalnej rasy świni) i formaggi locali (sery lokalne)",
+          "pappardelle al cinghiale (szeroki makaron z sosem z dzika)",
+          "vini autoctoni (wina ze szczepów miejscowych) z piwnicy w tufie"
         ],
         "note": "Enosteria w wykopanym tufie. Parking: Piazza del Municipio, zejście przez Via Selvi. Tel. +39 349 8024196. Alternatywy: Ristorante Fidalma (Piazza Busatti 6), Albergo Ristorante La Botte w Montorio (SP Pitiglianese, 0564 638633).",
         "price": "~€18–25/os",
@@ -2726,8 +2726,8 @@
         "place": "Taverna Etrusca — Sovana (kolacja pożegnalna)",
         "address": "Piazza del Pretorio 16, 58010 Sovana GR",
         "dishes": [
-          "cinghiale in umido maremma",
-          "pici al ragù di chianina",
+          "cinghiale in umido (duszony dzik po maremmańsku)",
+          "pici al ragù di chianina (grube spaghetti z wołowiną chianina)",
           "vino locale z Maremmy"
         ],
         "note": "Kolacja w historycznym centrum Sovana. Sassotondo = TYLKO degustacja wina (10:30 lub 15:30, od €28–45/os), NIE kolacja. Rezerwuj: +39 0564 1640019 lub WhatsApp +39 349 1245540.",
@@ -2840,8 +2840,8 @@
         "place": "Bolonia lub Modena (postój autostradowy A1)",
         "address": "Autogrill Bologna Borgo Panigale lub Modena Nord",
         "dishes": [
-          "tortellini in brodo",
-          "tagliatelle al ragù",
+          "tortellini in brodo (tortellini w rosole)",
+          "tagliatelle al ragù (makaron wstążkowy z sosem mięsnym)",
           "caffè"
         ],
         "note": "Ostatnie włoskie jedzenie — zjazd A1 Bologna Borgo Panigale (~20 min do centrum Bolonii) lub Modena Nord. Autogrill 24h na A1. NIE zjeżdżaj do centrum Florencji — 24.09 to czwartek, ZTL aktywna 7:30–20:00, kamery na wjazdach.",

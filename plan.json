@@ -1106,7 +1106,6 @@
         "Rano 8:00: Duomo (1 h) → Treppignana–Ciocco (1–1,5 h) — popołudnie Grotta del Vento",
         "Grotta: zarezerwuj Itinerario 2 (2 h, €18) na 15:00 — kurtka obowiązkowa (~10°C)",
         "Parking Porta Reale rano wolny we wrześniu — zostaw auto, wróć po Grotta (~20 min jazdy)",
-        "Restauracja: Il Borgo dei Sapori (Via Borgo 1), NIE „Vecchi Sapori” (Mediolan)",
         "Duomo: weź monety €2 — bez nich ciemno, pulpito niewidoczny",
         "CAI B1 (14 km) alternatywa dla całodziennego trekkingu — wrzesień 2025 ponownie otwarty po franie",
         "Rano (8:00–10:00) najlepsze światło na Duomo i widok na Alpy Apuańskie",
@@ -1162,8 +1161,7 @@
         "grotta_del_vento": "Cały rok (25.12 wył.). Lato: It.1 co godz. 10–18; It.2 11/15/17; It.3 10/14.",
         "osteria_borgo_sapori": "Pranzo 12:00–15:00, cena 19:00–23:00 (sprawdź dzień zamknięcia)",
         "l_osteria_barga": "11:30–15:30, 18:30–22:30 — Piazza Angelio 13, rezerwacja zalecana"
-      },
-      "food_note": "„Osteria dei Vecchi Sapori” to restauracja w Mediolanie. W Barga: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121) lub L'Osteria (Piazza Angelio 13)."
+      }
     },
     {
       "date": "15.09 (wt)",

@@ -49,9 +49,13 @@ function resolvePlaceImage(images, key) {
 
 function renderImg({ src, alt, credit }, className = 'img', loading = 'lazy') {
   if (!src) return '';
+  const webpSrc = src.replace(/\.(jpe?g|png)$/i, '.webp');
   return `
     <figure class="${className}">
-      <img src="${esc(src)}" alt="${esc(alt)}" loading="${loading}" decoding="async" />
+      <picture>
+        <source srcset="${esc(webpSrc)}" type="image/webp" />
+        <img src="${esc(src)}" alt="${esc(alt)}" loading="${loading}" decoding="async" />
+      </picture>
       ${credit ? `<figcaption class="img-credit">${esc(credit)}</figcaption>` : ''}
     </figure>
   `;

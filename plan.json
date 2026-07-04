@@ -141,6 +141,36 @@
           "src": "images/semproniano.jpg",
           "alt": "Semproniano — kościół Santa Croce",
           "credit": "Wikimedia Commons · Roberto Nencini"
+        },
+        "brolio": {
+          "src": "images/castello-brolio.jpg",
+          "alt": "Castello di Brolio i winnice Chianti",
+          "credit": "Wikimedia Commons · Eric Kilby"
+        },
+        "radda": {
+          "src": "images/radda-chianti.jpg",
+          "alt": "Radda in Chianti — mury i wieże",
+          "credit": "Wikimedia Commons · Anna.Massini"
+        },
+        "siena": {
+          "src": "images/siena-campo.jpg",
+          "alt": "Piazza del Campo, Siena",
+          "credit": "Wikimedia Commons · Perituss"
+        },
+        "monte-oliveto": {
+          "src": "images/monte-oliveto-maggiore.jpg",
+          "alt": "Abbazia Monte Oliveto Maggiore",
+          "credit": "Wikimedia Commons · Holger Uwe Schmitt"
+        },
+        "asciano": {
+          "src": "images/asciano-crete.jpg",
+          "alt": "Crete Senesi, Asciano",
+          "credit": "Wikimedia Commons · Anna.Massini"
+        },
+        "chianti": {
+          "src": "images/chianti.jpg",
+          "alt": "Colline del Chianti",
+          "credit": "Wikimedia Commons · Anna.Massini"
         }
       }
     },
@@ -3379,15 +3409,46 @@
         "subtitle": "k. Castelnuovo Berardenga",
         "is_current": true,
         "distances": [
-          {"place": "Siena", "drive_min": 25, "ok": true},
-          {"place": "Castello di Brolio", "drive_min": 15, "ok": true},
-          {"place": "Radda in Chianti", "drive_min": 25, "ok": true},
-          {"place": "Pienza", "drive_min": 55, "ok": false},
-          {"place": "Montalcino", "drive_min": 50, "ok": false},
-          {"place": "Bagno Vignoni", "drive_min": 50, "ok": false}
+          {
+            "place": "Siena",
+            "drive_min": 25,
+            "ok": true
+          },
+          {
+            "place": "Castello di Brolio",
+            "drive_min": 15,
+            "ok": true
+          },
+          {
+            "place": "Radda in Chianti",
+            "drive_min": 25,
+            "ok": true
+          },
+          {
+            "place": "Pienza",
+            "drive_min": 55,
+            "ok": false
+          },
+          {
+            "place": "Montalcino",
+            "drive_min": 50,
+            "ok": false
+          },
+          {
+            "place": "Bagno Vignoni",
+            "drive_min": 50,
+            "ok": false
+          }
         ],
-        "pros": ["Siena 25 min — wczesny ranek przed tłumami", "Zamki Chianti: Brolio 15 min", "Wino Chianti Classico na miejscu"],
-        "cons": ["Val d'Orcia za daleko (50+ min)", "Pienza, Montalcino poza limitem 30 min"],
+        "pros": [
+          "Siena 25 min — wczesny ranek przed tłumami",
+          "Zamki Chianti: Brolio 15 min",
+          "Wino Chianti Classico na miejscu"
+        ],
+        "cons": [
+          "Val d'Orcia za daleko (50+ min)",
+          "Pienza, Montalcino poza limitem 30 min"
+        ],
         "best_for": "Priorytet: Siena i klimat Chianti"
       },
       {
@@ -3396,15 +3457,47 @@
         "subtitle": "k. Castiglione d'Orcia",
         "is_current": false,
         "distances": [
-          {"place": "Bagno Vignoni", "drive_min": 5, "ok": true},
-          {"place": "San Quirico d'Orcia", "drive_min": 10, "ok": true},
-          {"place": "Monticchiello", "drive_min": 15, "ok": true},
-          {"place": "Pienza", "drive_min": 20, "ok": true},
-          {"place": "Montalcino", "drive_min": 20, "ok": true},
-          {"place": "Siena", "drive_min": 50, "ok": false}
+          {
+            "place": "Bagno Vignoni",
+            "drive_min": 5,
+            "ok": true
+          },
+          {
+            "place": "San Quirico d'Orcia",
+            "drive_min": 10,
+            "ok": true
+          },
+          {
+            "place": "Monticchiello",
+            "drive_min": 15,
+            "ok": true
+          },
+          {
+            "place": "Pienza",
+            "drive_min": 20,
+            "ok": true
+          },
+          {
+            "place": "Montalcino",
+            "drive_min": 20,
+            "ok": true
+          },
+          {
+            "place": "Siena",
+            "drive_min": 50,
+            "ok": false
+          }
         ],
-        "pros": ["Bagno Vignoni 5 min", "Pienza 20 min", "Montalcino 20 min", "Krajobraz UNESCO Val d'Orcia"],
-        "cons": ["Siena 50 min (wypad opcjonalny)", "Zamki Chianti za daleko"],
+        "pros": [
+          "Bagno Vignoni 5 min",
+          "Pienza 20 min",
+          "Montalcino 20 min",
+          "Krajobraz UNESCO Val d'Orcia"
+        ],
+        "cons": [
+          "Siena 50 min (wypad opcjonalny)",
+          "Zamki Chianti za daleko"
+        ],
         "best_for": "Priorytet: średniowieczne borghi i Val d'Orcia"
       }
     ],
@@ -3415,8 +3508,16 @@
         "is_current": true,
         "summary": "Garfagnana → Środkowa Toskania → Maremma",
         "nights_label": "4 + 3 + 3 noce",
-        "pros": ["Pełna Toskania: północ, centrum, południe", "Pitigliano, Sovana, Via Cave", "Saturnia — termalna kaskada", "Selva del Lamone — dębowy las etruski"],
-        "cons": ["2 przeprowadzki w Toskanii", "3 noce w każdej bazie = mniej czasu"]
+        "pros": [
+          "Pełna Toskania: północ, centrum, południe",
+          "Pitigliano, Sovana, Via Cave",
+          "Saturnia — termalna kaskada",
+          "Selva del Lamone — dębowy las etruski"
+        ],
+        "cons": [
+          "2 przeprowadzki w Toskanii",
+          "3 noce w każdej bazie = mniej czasu"
+        ]
       },
       {
         "id": "2bazy",
@@ -3424,8 +3525,15 @@
         "is_current": false,
         "summary": "Garfagnana → Środkowa Toskania (bez Maremmy)",
         "nights_label": "5 + 5 nocy",
-        "pros": ["Tylko 1 przeprowadzka", "5 nocy w każdej bazie — więcej spokoju", "Głębsze poznanie 2 regionów"],
-        "cons": ["Brak Maremmy — Pitigliano, Sovana, Saturnia pominięte", "Mniej zróżnicowany krajobraz"]
+        "pros": [
+          "Tylko 1 przeprowadzka",
+          "5 nocy w każdej bazie — więcej spokoju",
+          "Głębsze poznanie 2 regionów"
+        ],
+        "cons": [
+          "Brak Maremmy — Pitigliano, Sovana, Saturnia pominięte",
+          "Mniej zróżnicowany krajobraz"
+        ]
       }
     ]
   }

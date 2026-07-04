@@ -540,10 +540,10 @@
       "attractions": [],
       "oak_forest": null,
       "food": {
-        "place": "Trattoria da Moreno — okolice Pistoia (A11)",
-        "address": "okolice A11, Pistoia / Montecatini",
+        "place": "Lunch w trasie — okolice Pistoia / Montecatini (A11)",
+        "address": "zjazd Pistoia Ovest lub Montecatini Est",
         "dishes": ["ribollita", "pasta al ragù", "bistecca"],
-        "note": "Opcja lunchu w trakcie transferu — zjazd Pistoia lub Montecatini Est na A11. Alternatywa: Autogrill na A11 dla szybkiego postoju.",
+        "note": "UWAGA: 'Trattoria da Moreno' w tej lokalizacji nie istnieje w żadnej bazie (TripAdvisor, Google, Pagine Gialle) — prawdopodobnie zamknięta lub błędna nazwa. Zamiast tego: Trattoria La Limonaia (Pistoia), lub po prostu Autogrill na A11 dla szybkiego postoju w dniu transferu.",
         "price": "~€10–18/os"
       },
       "accommodation": {
@@ -670,11 +670,11 @@
         "note": "Querceti coltivati a ceduo wokół zamku Brolio — mieszane z cyprysem i pinem. We wrześniu możliwe grzyby (porcini). Nieformalna pętla 2–3 km wokół murów zamku."
       },
       "food": {
-        "place": "La Bottega del Trenta — Villa a Sesta",
-        "address": "Via Santa Caterina 2, 53019 Villa a Sesta SI (~18 min od bazy)",
-        "dishes": ["pici al ragù di cinghiale", "pappardelle ai porcini", "Chianti Classico", "ribollita"],
-        "note": "Rodzinna osteria w malutkim borgo Villa a Sesta — lokalne, sezonowe menu. Rezerwacja zalecana tel. 0577 359226.",
-        "price": "~€25–35/os"
+        "place": "Osteria Il Rifugio del Chianti — Radda in Chianti",
+        "address": "Via Roma 6, 53017 Radda in Chianti SI (~25 min od bazy)",
+        "dishes": ["pici al ragù toscano", "tagliata di manzo", "pappardelle al cinghiale", "Chianti Classico kieliszek"],
+        "note": "Lokalna osteria w centrum Raddy — proste toskańskie menu, dobre relacja cena/jakość. Alternatywa w tym samym rejonie: La Bottega di Volpaia (SP112, Volpaia) — kanapki i deski serów na tarasie z widokiem. Uwaga: La Bottega del 30 w Villa a Sesta to gwiazdka Michelin (€40–60/os) — warta odwiedzin jeśli macie budżet na fine dining.",
+        "price": "~€18–28/os"
       },
       "tips": [
         "Brolio: bilet giardini €7,50 (nie €15!) — degustacja 1 wina w cenie, bez rezerwacji",
@@ -785,11 +785,11 @@
         "note": "Suchy las roverella między Pienza a Montalcino — typowy krajobraz Val d'Orcia. Ścieżki wokół Montalcino."
       },
       "food": {
-        "place": "Osteria Perillà — Pienza",
-        "address": "Via Condotti 11, 53026 Pienza SI",
-        "dishes": ["pici al ragù di cinta senese", "pecorino di Pienza (fresco/stagionato)", "ribollita", "Brunello calice"],
-        "note": "Lokalna osteria blisko centro. Lunch z widokiem na dolinę. Rezerwacja zalecana w sezonie. Alternatywa: Il Leccio w Montalcino (Via Costa Gualtiero 1).",
-        "price": "~€20–30/os"
+        "place": "Trattoria Latte di Luna — Pienza",
+        "address": "Via San Carlo 2-4, 53026 Pienza SI",
+        "dishes": ["pici al ragù di cinta senese", "pecorino di Pienza (fresco/stagionato)", "ribollita", "pasta al tartufo"],
+        "note": "Klasyczna trattoria w centrum Pienzy — lokale, porządne porcje, uczciwa cena. Czynna na lunch. Rezerwacja zalecana w sezonie przez TripAdvisor lub telefon. Alternatywa: La Terrazza della Val d'Orcia (widok na dolinę z tarasu, Via Condotti 11). Osobno: Osteria Perillà to gwiazdkowe fine dining w Rocca d'Orcia (€85–130/os) — jeśli chcecie spróbować, rezerwuj tygodnie wcześniej: info@osteriaperilla.it.",
+        "price": "~€15–25/os"
       },
       "tips": [
         "UWAGA: dojazd 40–45 min — poza limitem 30 min. Uzasadniony wyjątek dla Val d'Orcia UNESCO",
@@ -798,8 +798,8 @@
         "Montalcino: degustacja w Enoteca La Fortezza lub Franci — bez rezerwacji, 3 wina od €15"
       ],
       "practical_tips": [
-        "Timeline: Bagno Vignoni (9:00, 1h) → Pienza (10:30, 2h) → lunch Osteria Perillà (12:30) → Montalcino (14:30, 1,5h) → powrót ~17:00",
-        "Dojazd: z Castelnuovo B. — Bagno Vignoni ~45 min (SP2/SS2/SP53). Zaplanuj ~25 km od bazy więcej niż zwykle"
+        "Timeline: Bagno Vignoni (9:00, 1h) → Pienza (10:30, 2h) → lunch Latte di Luna / Pienza (12:30) → Montalcino (14:30, 1,5h) → powrót ~17:00",
+        "Dojazd: z Castelnuovo B. — Bagno Vignoni ~45–60 min (SP2/SP53, wrzesień = zbiory, traktory). Wyjazd przed 8:00."
       ]
     },
     {
@@ -838,7 +838,7 @@
       "oak_forest": {
         "spot": "Foresta di Tocchi — między Murlo a Buonconvento",
         "species": "Quercus cerris (dąb burgundzki), dominujący",
-        "note": "NAJLEPSZY las dębowy wariantu Chianti — stary, cichy, zero turystów. Quercus cerris w pełnej jesiennej aurze. Dostęp bezpłatny."
+        "note": "UWAGA: Riserva Biogenetica Tocchi wymaga zezwolenia i przewodnika (Raggruppamento Carabinieri Biodiversità — rgpbio.it). Swobodny wstęp tylko na drogi szutrowe (strade bianche). Swobodne wędrowanie po lesie bez autoryzacji jest zabronione. Kontakt przed wyjazdem: rgpbio.it lub comune.monticiano.si.it (I sentieri di Tocchi)."
       },
       "food": {
         "place": "Il Pozzo — Monteriggioni",

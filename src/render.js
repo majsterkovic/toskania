@@ -392,7 +392,7 @@ function renderRouteSegments(segments) {
 function renderParking(parking) {
   if (!parking) return '';
   const rows = Object.entries(parking)
-    .filter(([, v]) => v)
+    .filter(([, v]) => v && typeof v !== 'object')
     .map(
       ([key, value]) => `
         <div class="parking-row">

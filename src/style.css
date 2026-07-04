@@ -602,6 +602,22 @@ body {
   gap: 1rem;
 }
 
+.day-narrative {
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  line-height: 1.7;
+  color: var(--ink);
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--day-accent, var(--cipresso));
+  background: color-mix(in srgb, var(--day-accent, var(--cipresso)) 6%, var(--card-bg));
+  border-radius: 0 6px 6px 0;
+  margin: 0;
+}
+
+html.dark .day-narrative {
+  background: color-mix(in srgb, var(--day-accent, var(--cipresso)) 12%, var(--card-bg));
+}
+
 .day-block h4 {
   font-family: var(--font-sans);
 }

@@ -470,8 +470,12 @@ function renderDay(day, images, bases) {
     `;
   }
 
+  const narrativeHtml = day.narrative
+    ? `<p class="day-narrative">${esc(day.narrative)}</p>`
+    : '';
+
   const body =
-    day.type === 'transit' ? renderTransit(day, images) : renderTuscany(day, images);
+    narrativeHtml + (day.type === 'transit' ? renderTransit(day, images) : renderTuscany(day, images));
 
   const popularClass = day.popular ? ' day-card--popular' : '';
   const typeClass = ` day-card--${day.type}`;

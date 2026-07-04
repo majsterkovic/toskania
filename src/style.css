@@ -33,8 +33,8 @@
   --transit: var(--stone-dark);
 
   --font-display: 'Cormorant Garamond', Georgia, serif;  /* h1 i sekcje — renesans */
-  --font-serif: 'Lora', Georgia, 'Times New Roman', serif; /* body + nagłówki kart */
-  --font-sans: 'Raleway', system-ui, sans-serif;           /* UI labels, nav — nie tech */
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif; /* body — editorial optical-size */
+  --font-sans: 'Outfit', system-ui, sans-serif;           /* UI labels, nav — geometric, nie tech */
 
   --nav-h: 3rem;
   --day-nav-h: 3.25rem;

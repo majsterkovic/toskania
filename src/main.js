@@ -1,7 +1,7 @@
 import plan3 from '../plan.json';
 import plan2 from '../plan_2bazy.json';
 import { renderApp, renderVariantsSection, initDayNav, initGallery } from './render.js';
-import { initAllMaps } from './maps.js';
+import { initAllMaps, swapMapTiles } from './maps.js';
 import { initWeather } from './weather.js';
 import './style.css';
 
@@ -45,6 +45,7 @@ function initThemeToggle() {
     localStorage.setItem('theme', nowDark ? 'dark' : 'light');
     btn.textContent = nowDark ? '☀' : '◑';
     btn.title = nowDark ? 'Włącz tryb jasny' : 'Włącz tryb ciemny';
+    swapMapTiles();
   });
 }
 

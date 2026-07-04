@@ -6,9 +6,29 @@
 const OSM_TILE = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const OSM_ATTR = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-// CartoDB Positron — darmowe, bez klucza API, pastelowe tło idealne dla toskańskiej palety
 const CARTO_TILE = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
 const CARTO_ATTR = '© <a href="https://carto.com/attributions">CARTO</a>, ' + OSM_ATTR;
+const DARK_TILE  = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+
+function isDarkMode() { return document.documentElement.classList.contains('dark'); }
+
+// Registry of all active Leaflet map instances for theme-swap
+const _maps = [];
+
+function registerMap(map) { _maps.push(map); return map; }
+
+/** Call after toggling html.dark to swap tile layers on all maps */
+export function swapMapTiles() {
+  const url = isDarkMode() ? DARK_TILE : VOYAGER_TILE;
+  const dayUrl = isDarkMode() ? DARK_TILE : OSM_TILE;
+  _maps.forEach(({ map, type }) => {
+    map.eachLayer(layer => {
+      if (layer instanceof window.L.TileLayer) map.removeLayer(layer);
+    });
+    const tileUrl = type === 'day' ? dayUrl : url;
+    window.L.tileLayer(tileUrl, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  });
+}
 
 const ICON_COLORS = {
   home: '#5c6b45',
@@ -64,7 +84,9 @@ export function initRouteOverviewMap(containerId, mapConfig) {
   if (!el || !mapConfig?.route_overview?.length) return;
 
   const map = window.L.map(el, { zoomControl: true, scrollWheelZoom: false });
-  tileLayer(el).addTo(map);
+  const routeTileUrl = isDarkMode() ? DARK_TILE : CARTO_TILE;
+  window.L.tileLayer(routeTileUrl, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  registerMap({ map, type: 'route' });
 
   const points = mapConfig.route_overview;
   const latLngs = points.map(p => p.coords);
@@ -138,7 +160,9 @@ export function initDayMap(containerId, base, attractions) {
   if (!el) return;
 
   const map = window.L.map(el, { zoomControl: false, scrollWheelZoom: false });
-  window.L.tileLayer(OSM_TILE, { attribution: OSM_ATTR, maxZoom: 18 }).addTo(map);
+  const dayTileUrl = isDarkMode() ? DARK_TILE : OSM_TILE;
+  window.L.tileLayer(dayTileUrl, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  registerMap({ map, type: 'day' });
 
   const latLngs = [];
 
@@ -203,7 +227,9 @@ export function initInteractiveMap(containerId, plan) {
   const panel = document.getElementById('imap-panel');
 
   const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, tap: false });
-  L.tileLayer(VOYAGER_TILE, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  const iMapTile = isDarkMode() ? DARK_TILE : VOYAGER_TILE;
+  L.tileLayer(iMapTile, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  registerMap({ map, type: 'interactive' });
 
   const tuscanyDays = (plan.days || []).filter(d =>
     ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null

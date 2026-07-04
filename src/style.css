@@ -32,9 +32,9 @@
   --base3: var(--terracotta-deep);
   --transit: var(--stone-dark);
 
-  --font-display: 'Cormorant Garamond', Georgia, serif;  /* tytuły — renesans */
-  --font-serif: 'Crimson Pro', Georgia, 'Times New Roman', serif;
-  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;  /* h1 i sekcje — renesans */
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif; /* body + nagłówki kart */
+  --font-sans: 'Raleway', system-ui, sans-serif;           /* UI labels, nav — nie tech */
 
   --nav-h: 3rem;
   --day-nav-h: 3.25rem;
@@ -55,8 +55,8 @@ html {
 
 body {
   font-family: var(--font-serif);
-  font-size: 1.0625rem;
-  line-height: 1.65;
+  font-size: 1.125rem;
+  line-height: 1.7;
   color: var(--ink);
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
@@ -111,9 +111,9 @@ body {
 
 .site-nav__links a {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: rgba(247, 242, 232, 0.6);
   text-decoration: none;
@@ -187,9 +187,9 @@ body {
 
 .hero__eyebrow {
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--oro);
   margin-bottom: 0.75rem;
@@ -240,16 +240,16 @@ body {
 
 .route-stat dt {
   font-family: var(--font-sans);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--stone-dark);
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.2rem;
 }
 
 .route-stat dd {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--ink);
 }
@@ -258,7 +258,7 @@ body {
 
 .img-credit {
   font-family: var(--font-sans);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: var(--stone-dark);
   padding: 0.35rem 0.5rem;
   background: var(--cream);
@@ -303,10 +303,10 @@ body {
 
 .block-label {
   font-family: var(--font-sans);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--olive);
   margin-bottom: 0.5rem;
 }
@@ -353,10 +353,10 @@ body {
 
 .base-label {
   font-family: var(--font-sans);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   color: var(--accent);
   margin-bottom: 0.25rem;
 }
@@ -428,9 +428,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.1rem;
-  padding: 0.35rem 0.6rem;
+  padding: 0.4rem 0.7rem;
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   color: var(--muted);
   text-decoration: none;
   border-radius: 6px;
@@ -440,12 +440,12 @@ body {
 
 .day-chip__num {
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--chip-accent, var(--ink));
 }
 
 .day-chip__date {
-  font-size: 0.68rem;
+  font-size: 0.78rem;
   white-space: nowrap;
 }
 
@@ -525,14 +525,14 @@ body {
 
 .day-date {
   font-family: var(--font-sans);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--muted);
 }
 
 .day-label {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -567,10 +567,10 @@ body {
 
 .meta-label {
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.78rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   color: var(--stone-dark);
   display: block;
   margin-bottom: 0.1rem;
@@ -631,8 +631,8 @@ body {
 .tips-list li {
   padding-left: 1rem;
   position: relative;
-  margin-bottom: 0.25rem;
-  font-size: 0.92rem;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
 }
 
 .dish-list li::before {
@@ -712,13 +712,13 @@ body {
 
 .drive-min {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: var(--muted);
 }
 
 .type-badge {
   font-family: var(--font-sans);
-  font-size: 0.6rem;
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -740,7 +740,7 @@ body {
 }
 
 .attraction p {
-  font-size: 0.92rem;
+  font-size: 1rem;
 }
 
 /* Special blocks */
@@ -1159,7 +1159,7 @@ body.lightbox-open {
   }
 
   body {
-    font-size: 1.125rem;
+    font-size: 1.1875rem;
   }
 
   .page {
@@ -1305,11 +1305,11 @@ body.lightbox-open {
   }
 
   .site-nav__links {
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
 
   .site-nav__links a {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
   }
 }
 

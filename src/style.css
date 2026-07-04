@@ -33,7 +33,7 @@
   --transit: var(--stone-dark);
 
   --font-display: 'Cormorant Garamond', Georgia, serif;  /* tytuły — renesans */
-  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-serif: 'Crimson Pro', Georgia, 'Times New Roman', serif;
   --font-sans: 'DM Sans', system-ui, sans-serif;
 
   --nav-h: 3rem;
@@ -111,7 +111,7 @@ body {
 
 .site-nav__links a {
   font-family: var(--font-sans);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1172,7 +1172,7 @@ body.lightbox-open {
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
 
   .route-stats {
@@ -1236,7 +1236,7 @@ body.lightbox-open {
 
 @media (min-width: 1024px) {
   .page {
-    max-width: 960px;
+    max-width: 1060px;
   }
 
   .hero {
@@ -1304,9 +1304,12 @@ body.lightbox-open {
     gap: 1rem;
   }
 
-  .site-nav__links a {
-    font-size: 0.75rem;
+  .site-nav__links {
     gap: 1.25rem;
+  }
+
+  .site-nav__links a {
+    font-size: 0.78rem;
   }
 }
 

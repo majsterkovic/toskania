@@ -1215,15 +1215,15 @@
         "gps_hint": "Via Garibaldi 15, 55032 Castelnuovo di Garfagnana LU — tel. 0583 644270"
       },
       "tips": [
-        "KOREKTA: targ Castelnuovo = CZWARTEK (nie wtorek) — farro IGP w sklepie lub targ wt w Piazza al Serchio (~20 min)",
-        "KOREKTA: szlak to „Intorno al Monte Orecchiella” (Sentieri della Domenica), NIE CAI 587",
+        "Targ w Castelnuovo di Garfagnana: czwartek — farro IGP i lokalne sery",
+        "Szlak w Orecchiella: „Intorno al Monte Orecchiella\" (Sentieri della Domenica), 3 km, ok. 1 h",
         "Orecchiella 15.09 (wt): centrum/muzea ZAMKNIĘTE (po 14.09 tylko sob–nd), ale szlaki i recinti ZAWSZE otwarte",
         "Castiglione: parking Porta Inferi (26 miejsc) — obejście murów ~30 min",
         "Da Carlino: lunch 12:00–15:00, przyjdź przed 13:00"
       ],
       "web_research": [
         {
-          "topic": "Mercato Castelnuovo — KOREKTA DNIA",
+          "topic": "Mercato Castelnuovo",
           "summary": "Targ tygodniowy w Castelnuovo di Garfagnana to CZWARTEK (giovedì), 8:00–13:00 — Piazza delle Erbe, via Vittorio Emanuele, via Farini, via Garibaldi. 15.09 (wt) = brak targu. Alternatywa wtorkowa: mercato Piazza al Serchio (Piazza Giovanni XXIII, ~20 min od Barga).",
           "source": "https://www.eventiesagre.it/Mercatini_Filiera+Corta/21184575_Mercato+Settimanale+Di+Castelnuovo+Di+Garfagnana.html",
           "checked": "2026-07"
@@ -1241,7 +1241,7 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Szlaki Orecchiella — KOREKTA CAI 587",
+          "topic": "Szlaki Orecchiella",
           "summary": "Sentiero CAI 587 NIE istnieje w Garfagnanie (to szlak Cinque Terre/Bergamo). W Orecchiella: Sentieri della Domenica (np. „Intorno al Monte Orecchiella” 3 km/1 h, łatwy) oraz CAI 62, 64, 66. Recinti faunistici i szlaki zawsze bezpłatne.",
           "source": "https://orecchiella.com/sentieri-liberi/sentieri-domenica/intorno-al-monte-orecchiella/",
           "checked": "2026-07"
@@ -1272,8 +1272,8 @@
         }
       ],
       "practical_tips": [
-        "KOREKTA: targ w Castelnuovo to CZWARTEK — we wt 15.09 kup farro IGP w sklepie albo pojedź na targ Piazza al Serchio (wt, ~20 min)",
-        "KOREKTA: szlak w Orecchiella to Sentiero „Intorno al Monte Orecchiella” (3 km, 1 h), nie CAI 587",
+        "Targ w Castelnuovo: czwartek — farro IGP w sklepie lub targ we wt w Piazza al Serchio (~20 min)",
+        "Szlak Orecchiella: „Intorno al Monte Orecchiella\" (3 km, 1 h, łatwy)",
         "Orecchiella 15.09: centrum zamknięte (wt po 14.09), ale szlaki i recinti faunistici ZAWSZE bezpłatne — planuj spacer bez muzeów",
         "Castiglione: parking Porta Inferi (26 miejsc, Via Soccorso) — obejście murów ~30 min, zero tłumów",
         "Orecchiella: weź kurtkę — 750–1200 m n.p.m., różnica temperatur 5–8°C",
@@ -1330,12 +1330,12 @@
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 25,
-      "warning": "⚠️ 16.09 to środa — Fortezza delle Verrucole ZAMKNIĘTA (otwarta pt–nd). Wejście zewnętrzne bezpłatne, panorama 360° dostępna. Tel. do rezerwacji pt: +39 379 2415958.",
+      "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta czw–nd). Panorama 360° i mury dostępne bezpłatnie.",
       "attractions": [
         {
-          "name": "Fortezza delle Verrucole (zewnątrz) ⚠️ środa = zamknięta w środku",
+          "name": "Fortezza delle Verrucole — spacer zewnętrzny",
           "drive_min": 18,
-          "description": "16.09 to środa — forteca zamknięta (otwarta pt–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich. Jeśli chcesz wejść do środka (€8, z przewodnikiem) — przyjdź w piątek 18.09 lub zarezerwuj tel. +39 379 2415958.",
+          "description": "16.09 to środa — forteca zamknięta (otwarta czw–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich. Jeśli chcesz wejść do środka (€8, z przewodnikiem) — przyjdź w piątek 18.09 lub zarezerwuj tel. +39 379 2415958.",
           "type": "medieval",
           "image": "verrucole",
           "image_key": "verrucole",
@@ -1380,11 +1380,11 @@
         "rejected_alternative": "Agriturismo Il Corniolo — to nocleg w Castiglione di Garfagnana (Loc. Le Prade), NIE lunch przy Vagli"
       },
       "tips": [
-        "16.09 = środa: Verrucole ZAMKNIĘTA (wrzesień pt–nd) — spacer zewnętrzny lub zmiana dnia",
+        "16.09 = środa: Verrucole ZAMKNIĘTA (wrzesień czw–nd) — spacer zewnętrzny lub zmiana dnia",
         "Lago di Vagli: ruiny Fabbriche niewidoczne w 2026 — oprożnienie planowane 2027",
         "Il Corniolo jest w Castiglione, nie Vagli — lunch: Bar Radicchi nad jeziorem",
         "Parking przy tamie Vagli — przyjedź rano, zapełnia się po południu",
-        "16.09 = środa: Verrucole ZAMKNIĘTA (wrzesień pt–nd od 15.09) — spacer zewnętrzny OK",
+        "16.09 = środa: Verrucole ZAMKNIĘTA (wrzesień czw–nd od 15.09) — spacer zewnętrzny OK",
         "Lago di Vagli: ruiny Fabbriche niewidoczne w 2026 — oprożnienie oficjalnie planowane lato 2027",
         "Lunch przy jeziorze: Bar Radicchi (NIE Il Corniolo — ten jest w Castiglione, 35 km dalej)",
         "Parking przy tamie Vagli — przyjedź rano, zapełnia się ~12:30",
@@ -1435,12 +1435,12 @@
         }
       ],
       "practical_tips": [
-        "UWAGA: 16.09 = środa — Fortezza Verrucole ZAMKNIĘTA (wrzesień pt–nd). Spacer zewnętrzny OK, wstęp od pt",
+        "16.09 środa: Fortezza Verrucole — wejście zewnętrzne (zamknięta wt–czw); panorama 360° dostępna bezpłatnie",
         "Lago di Vagli: ruiny Fabbriche NIE widoczne w 2026 — oprożnienie planowane na lato 2027",
         "Vagli: parking przy tamie zapełnia się w południe — jedź tam rano (9:00) lub po Verrucole",
         "Il Corniolo jest w Castiglione (35 km), nie Vagli — na lunch przy jeziorze: Bar Radicchi, Vagli Sotto",
         "Gorfigliano: mikrowioska, zero turystów — 20 min od Vagli, idealnie na koniec dnia",
-        "UWAGA: 16.09 = środa — Fortezza Verrucole ZAMKNIĘTA (wrzesień pt–nd od 15.09). Spacer zewnętrzny OK, wstęp wewnętrzny od pt 18.09",
+        "16.09 środa: Fortezza Verrucole — wejście zewnętrzne (zamknięta wt–czw); panorama 360° dostępna bezpłatnie",
         "Lunch: Bar Radicchi nad jeziorem (tel. 0583 995237) — NIE Il Corniolo (Castiglione, tylko noclegi)",
         "Gorfigliano: Chiesa Vecchia + muzeum, zero turystów — 20 min od Vagli, idealnie na koniec dnia",
         "Zatankuj rano w Gallicano/Castelnuovo — przy Vagli brak stacji paliw"
@@ -1640,7 +1640,7 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Trattoria da Giulio — KOREKTA: Lucca, nie Bagni",
+          "topic": "Trattoria da Giulio — Lucca, nie Bagni",
           "summary": "Via delle Conce 45/47, 55100 Lucca (Pelleria). Od 1945, kuchnia lucchese: farro, tordelli, cioncia, baccalà. Pn–Sb 12:00–14:30 / 19:00–22:30, nd zamknięte. We wrześniu otwarte w niedziele na lunch. Tel. +39 0583 55948. OFF-ROUTE — wymaga detouru przez ZTL Lucca.",
           "source": "https://www.trattoriadagiulio.it/",
           "checked": "2026-07"
@@ -2083,7 +2083,7 @@
           "ribollita",
           "vino Orcia DOC"
         ],
-        "note": "Lokalna osteria w centrum Asciano. KOREKTA: 'Trattoria La Lupa' z oryginalnego planu nie istnieje w Asciano (La Lupa = Livorno lub Biella). Lunch przed przejazdem do Maremmy.",
+        "note": "Prosta osteria w centrum Asciano — dania toskańskie, cienkie pizze. Alternatywa: Bar Centrale przy Piazza Matteotti.",
         "price": "~€15–22/os",
         "gps_hint": "Via Goffredo Mameli 11, Asciano SI",
         "phone": "+39 0577 718056",
@@ -2498,7 +2498,7 @@
           "pappardelle al cinghiale",
           "vini autoctoni z piwnicy w tufie"
         ],
-        "note": "Enosteria w wykopanym tufie. Parking: Piazza del Municipio, zejście przez Via Selvi. Tel. +39 349 8024196. Alternatywy: Ristorante Fidalma (Piazza Busatti 6), Albergo Ristorante La Botte w Montorio (SP Pitiglianese, 0564 638633). UWAGA: „Osteria La Botte Piena” to restauracja w Montefollonico (SI), ~80 km stąd — nie w Sorano.",
+        "note": "Enosteria w wykopanym tufie. Parking: Piazza del Municipio, zejście przez Via Selvi. Tel. +39 349 8024196. Alternatywy: Ristorante Fidalma (Piazza Busatti 6), Albergo Ristorante La Botte w Montorio (SP Pitiglianese, 0564 638633).",
         "price": "~€18–25/os",
         "gps_hint": "Via del Borgo 25, Sorano GR — zejście z Piazza del Municipio",
         "phone": "+39 349 8024196"
@@ -3303,7 +3303,7 @@
           "segment": "Drezno → Cottbus",
           "road": "A4 → A13",
           "km": "~130",
-          "note": "UWAGA: roboty A4 Ohorn–Salzenforst (IV–X 2026) — 1 pas kier. Drezno. Zaplanuj +30–45 min."
+          "note": "Roboty drogowe A4 Ohorn–Salzenforst (IV–X 2026) — 1 pas kier. Drezno. Zaplanuj +30–45 min."
         },
         {
           "segment": "Cottbus → granica PL",

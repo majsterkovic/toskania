@@ -661,7 +661,7 @@
         "price": "~€12–16/os"
       },
       "tips": [
-        "Targ w Castelnuovo: czwartek (18 IX) — farro IGP i lokalne sery w sklepach przy targu",
+        "Targ w Castelnuovo: czwartek (17 IX) — farro IGP i lokalne sery w sklepach przy targu",
         "Orecchiella 15.09 (wt): centrum/muzea ZAMKNIĘTE po 14.09 (tylko sob–nd), szlaki i recinti ZAWSZE otwarte",
         "Castiglione: parking Porta Inferi (26 miejsc) — obejście murów ~30 min",
         "Da Carlino: lunch 12:00–15:00, przyjdź przed 13:00"
@@ -681,12 +681,12 @@
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 25,
-      "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta pt–nd). Panorama 360° i mury dostępne bezpłatnie.",
+      "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta czw–nd). Panorama 360° i mury dostępne bezpłatnie.",
       "attractions": [
         {
           "name": "Fortezza delle Verrucole — spacer zewnętrzny",
           "drive_min": 18,
-          "description": "16.09 to środa — forteca zamknięta (otwarta pt–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich.",
+          "description": "16.09 to środa — forteca zamknięta (otwarta czw–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich.",
           "type": "medieval",
           "image_key": "verrucole",
           "gps_hint": "Fortezza delle Verrucole, San Romano in Garfagnana LU"
@@ -729,7 +729,7 @@
         "Parking przy tamie Vagli — przyjedź rano, zapełnia się po południu"
       ],
       "practical_tips": [
-        "16.09 środa: Fortezza Verrucole — zwiedzanie zewnętrzne (wejście wewnątrz pt–nd); panorama 360° dostępna bezpłatnie",
+        "16.09 środa: Fortezza Verrucole — zwiedzanie zewnętrzne (wejście wewnątrz czw–nd); panorama 360° dostępna bezpłatnie",
         "Vagli: parking przy tamie zapełnia się w południe — jedź tam rano (9:00)"
       ]
     },
@@ -814,7 +814,7 @@
       "oak_forest": null,
       "food": {
         "place": "Trattoria La Limonaia — Pistoia",
-        "address": "Via della Limonaia 6, 51100 Pistoia PT",
+        "address": "Via di Gello 9/A, 51100 Pistoia PT",
         "dishes": [
           "ribollita",
           "pasta al ragù",
@@ -1120,7 +1120,7 @@
       "tips": [
         "Val d'Orcia: dojazd 40–45 min — uzasadniony wyjątek dla dziedzictwa UNESCO",
         "Pienza: przyjedź przed 9:30 — najpiękniejsze miasto-utopia Toskanii, wtorek mniej tłumów niż weekend",
-        "Bagno Vignoni: Parco dei Mulini poniżej wioski — bezpłatna kąpiel termalna (38°C). NIE basen na placu",
+        "Bagno Vignoni: Parco dei Mulini poniżej wioski — bezpłatne kanaliki termalne 38°C — naturalne strumienie (NIE basen na Piazza delle Sorgenti)",
         "Montalcino: degustacja w Enoteca La Fortezza lub Franci — bez rezerwacji, 3 wina od €15"
       ],
       "practical_tips": [

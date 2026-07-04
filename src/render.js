@@ -307,49 +307,22 @@ function renderOakForest(oak) {
   `;
 }
 
-function renderTips(tips) {
-  if (!tips?.length) return '';
-  return `
-    <div class="day-block">
-      <h4 class="block-label">Wskazówki</h4>
-      <ul class="tips-list">${tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
-    </div>
-  `;
-}
-
-function renderPracticalTips(tips) {
-  if (!tips?.length) return '';
+function renderLogistics(day) {
+  const tips = day.practical_tips || [];
+  const parkingNote = day.parking && typeof day.parking === 'object'
+    ? Object.entries(day.parking)
+        .filter(([k, v]) => v && typeof v === 'string' && k !== 'options')
+        .map(([k, v]) => `${k.replace(/_/g, ' ')}: ${v}`)
+    : [];
+  const fuelItems = (day.fuel_stops || []).map(
+    (s) => `${s.name}${s.location ? ` (${s.location})` : ''}${s.note ? ' — ' + s.note : ''}`
+  );
+  const allTips = [...tips, ...parkingNote, ...fuelItems];
+  if (!allTips.length) return '';
   return `
     <div class="day-block day-block--practical">
-      <h4 class="block-label">Wskazówki praktyczne</h4>
-      <ul class="tips-list tips-list--practical">${tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
-    </div>
-  `;
-}
-
-function renderWebResearch(items) {
-  if (!items?.length) return '';
-  const cards = items
-    .map(
-      (item) => `
-        <details class="research-item">
-          <summary class="research-item__summary">
-            <span class="research-item__topic">${esc(item.topic)}</span>
-            ${item.checked ? `<span class="research-item__checked">spr. ${esc(item.checked)}</span>` : ''}
-          </summary>
-          <div class="research-item__body">
-            <p>${esc(item.summary)}</p>
-            ${item.source ? `<a class="research-item__source" href="${esc(item.source)}" target="_blank" rel="noopener noreferrer">Źródło</a>` : ''}
-          </div>
-        </details>
-      `
-    )
-    .join('');
-
-  return `
-    <div class="day-block day-block--research">
-      <h4 class="block-label">Research</h4>
-      <div class="research-list">${cards}</div>
+      <h4 class="block-label">Logistyka i wskazówki</h4>
+      <ul class="tips-list">${allTips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
     </div>
   `;
 }
@@ -389,51 +362,6 @@ function renderRouteSegments(segments) {
   `;
 }
 
-function renderParking(parking) {
-  if (!parking) return '';
-  const rows = Object.entries(parking)
-    .filter(([, v]) => v && typeof v !== 'object')
-    .map(
-      ([key, value]) => `
-        <div class="parking-row">
-          <span class="parking-label">${esc(key.replace(/_/g, ' '))}</span>
-          <p>${esc(value)}</p>
-        </div>
-      `
-    )
-    .join('');
-
-  return `
-    <div class="day-block">
-      <h4 class="block-label">Parking</h4>
-      ${rows}
-    </div>
-  `;
-}
-
-function renderFuelStops(stops) {
-  if (!stops?.length) return '';
-  const items = stops
-    .map(
-      (s) => `
-        <li class="fuel-stop">
-          <strong>${esc(s.name)}</strong>
-          ${s.location ? `<span class="muted">${esc(s.location)}</span>` : ''}
-          ${s.road ? `<span class="fuel-stop__road">${esc(s.road)}</span>` : ''}
-          ${s.opening_hours ? `<span class="fuel-stop__hours">${esc(s.opening_hours)}</span>` : ''}
-          ${s.note ? `<p>${esc(s.note)}</p>` : ''}
-        </li>
-      `
-    )
-    .join('');
-
-  return `
-    <div class="day-block">
-      <h4 class="block-label">Postoje / tankowanie</h4>
-      <ul class="fuel-stops-list">${items}</ul>
-    </div>
-  `;
-}
 
 function renderAccommodationOptions(options) {
   if (!options?.length) return '';
@@ -480,11 +408,7 @@ function renderTransit(day, images) {
     ${renderRouteSegments(day.route_segments)}
     ${renderFood(day.food)}
     ${renderAccommodation(day.accommodation)}
-    ${renderParking(day.parking)}
-    ${renderFuelStops(day.fuel_stops)}
-    ${renderPracticalTips(day.practical_tips)}
-    ${renderWebResearch(day.web_research)}
-    ${renderTips(day.tips)}
+    ${renderLogistics(day)}
   `;
 }
 
@@ -522,9 +446,7 @@ function renderTuscany(day, images) {
     ${renderOakForest(day.oak_forest)}
     ${renderFood(day.food)}
     ${transfer}
-    ${renderPracticalTips(day.practical_tips)}
-    ${renderWebResearch(day.web_research)}
-    ${renderTips(day.tips)}
+    ${renderLogistics(day)}
   `;
 }
 

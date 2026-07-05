@@ -530,7 +530,7 @@
       "drive_km": 560,
       "drive_h": "6–6,5 h",
       "base_id": "base1",
-      "depart": "7:00 rano z Neustadt an der Donau",
+      "depart": "7:00 rano z Kufstein",
       "route": "A9/A8 → Rosenheim → A93 Inntal → A12 → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
       "attractions": [],
       "food": {
@@ -619,6 +619,11 @@
         "Kup Streckenmaut A13 Brenner online (€12,50)",
         "Lunch ~13:00 przy Rovereto Sud (Tre Pini) — nie trać czasu na Weronę",
         "SR445: po minięciu Castelnuovo zadzwoń do agriturismo (+30 min ETA)"
+      ],
+      "fuel_stops": [
+        {"name": "Eni/OMV Kufstein / Innsbruck area", "location": "A12/A93, okolice Innsbrucku", "road": "A12", "hours": "6–22", "note": "Uzupełnienie przed A13 Brennerem — w Austrii drożej niż w DE"},
+        {"name": "IP/Eni przy zjeździe A22 Rovereto Sud", "location": "SS240, Rovereto", "road": "A22 exit", "hours": "7–20", "note": "Postój obiadowy Tre Pini + tankowanie — poza bramką autostradową"},
+        {"name": "Q8/Eni Castelnuovo di Garfagnana", "location": "SR445, Castelnuovo", "road": "SR445", "hours": "7–20", "note": "Ostatnie tankowanie w dolinie przed podjazdem do Barga/Mologno"}
       ],
       "narrative": "Wyjeżdżamy o 7:00 — jesteśmy 40 km przed Innsbruckiem i 80 km przed Brennerem. A93 do Innsbrucku, potem A13 przez Brenner do Włoch — o tej porze w sobotni kierunek południowy prawie bez kolejek. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, Dolomity po prawej. Postój na lunch w okolicach Rovereto lub Werony (ok. 10:30–11:00). Za Bolonią A1 Variante di Valico omija Florencję, potem A11 i zjazd Lucca Est. Ostatnie 45 km to dolina Serchio — wąska górska droga, zielono i spokojnie. Do agriturismo docieramy ok. 14:00–15:00. Reszta dnia wolna — Toskania się zaczyna."
     },
@@ -1430,6 +1435,12 @@
         "Trasa z Chianti krótsza niż z Pitigliano (~710 km vs 770 km) — bufor ~30 min.",
         "Nocleg: Huberwirt od €46 (parking gratis) lub Paulanerstuben Marienplatz 9."
       ],
+      "fuel_stops": [
+        {"name": "Stacja przed wyjazdem Chianti", "location": "SP484 lub SS2 okolice Castelnuovo Berardenga", "road": "lokalna", "note": "Pełny bak — autostradowe stacje włoskie droższe."},
+        {"name": "Lunch Bologna / Modena", "location": "A1 wyjazd Bologna Borgo Panigale lub Modena", "road": "A1", "hours": "24h", "note": "Ostatni włoski postój. ~30 min."},
+        {"name": "Area servizio Brenner / Vipiteno", "location": "A22/A13 przy granicy IT/AT", "road": "A22/A13", "hours": "24h", "note": "Kawa + krótki postój przed zjazdem do Niemiec."},
+        {"name": "Tankowanie Niemcy (przed Wasserburg)", "location": "B304 lub stacja przy Rosenheim", "road": "B304", "note": "Zatankuj w DE — tańsze niż Austria i Włochy."}
+      ],
       "narrative": "Wyjeżdżamy o 7:00 z Chianti — SR2 na SR2bis do Firenze Sud i wjazd na A1, ok. 45 min. A1 na północ bez tłumów o poranku; Variante di Valico A1 omija centrum Florencji (środa: ZTL aktywna). Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni włoski espresso. Mediolan Tangenziale może dołożyć pół godziny w szczycie. A22 Brennero na północ — uwaga: bramki A13 Brenner Streckenmaut €12,50 (oddzielnie od winiety, płatne przy bramkach). A12 Inntal i B304 do Wasserburga — jesteśmy ok. 16:30–17:30. Wieczorny spacer wzdłuż Innu po starej części miasta."
     },
     {
@@ -1508,6 +1519,10 @@
         "Lunch: Restaurant Franconia am See (Himmelkron, A9) — frankońsko-włoska kuchnia nad jeziorem.",
         "Jutro finał do Poznania — wcześnie spać, wyjazd 7:00."
       ],
+      "fuel_stops": [
+        {"name": "Raststätte Irschenberg / Holzkirchen", "location": "A8 km ~90", "note": "Postój przed Monachium — mniej ruchu niż w mieście. A8 zatłoczona."},
+        {"name": "Restaurant Franconia am See", "location": "A9 Himmelkron (Frankenring 1)", "note": "Lunch — kuchnia frankońsko-włoska nad jeziorem. ~30–45 min. Nie Raststätte!"}
+      ],
       "narrative": "Najkrótszy dzień jazdy — 380 km, wyjeżdżamy o 8:00 bez pośpiechu. B304 do A94, potem A99 obwodnicą Monachium, na A8 i A9 na północ przez Nürnberg. Na lunch zjeżdżamy przy Himmelkron na Restaurant Franconia am See — restauracja nad jeziorem przy autostradzie. Do Hof docieramy ok. 12:30–13:30, cały popołudniem na odpoczynek przed jutrzejszym powrotem do Polski."
     },
     {
@@ -1535,6 +1550,11 @@
         "A4 Ohorn–Salzenforst: do października 2026 jeden pas kier. Drezno — sprawdź autobahn.de rano.",
         "Granica Świecko (A2) — A2 PL: ~138 zł na videotolling.",
         "Dotarcie 26.09 = 1 dzień marginesu przed deadline 27.09."
+      ],
+      "fuel_stops": [
+        {"name": "Tankowanie przed wyjazdem Hof", "location": "Hof / A72 wjazd", "note": "Pełny bak przed długim odcinkiem A4."},
+        {"name": "Postój A4/A13", "location": "Raststätte Sachsen lub Cottbus", "note": "Krótki postój — kanapki lub Raststätte. ~20 min."},
+        {"name": "Tankowanie przed granicą PL", "location": "A2 przed Świeckiem lub tuż po", "note": "Ostatnie tankowanie w DE często tańsze."}
       ],
       "route_segments": [
         {

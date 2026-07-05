@@ -2354,7 +2354,7 @@ html.dark .base-card {
 
 /* Day nav */
 html.dark .day-nav {
-  background: var(--cream-deep);
+  background: rgba(13, 26, 18, 0.94);
   border-bottom-color: var(--border);
 }
 

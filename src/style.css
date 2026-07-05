@@ -2886,7 +2886,7 @@ html.dark .route-wp--end   { color: var(--terracotta-light); }
 /* Dark mode adjustments */
 html.dark .acc-card { background: var(--stone); border-color: var(--border); }
 html.dark .food-option { background: var(--stone); border-color: var(--border); }
-html.dark .transit-stats { background: var(--stone); }
+html.dark .oak-block { background: var(--stone); border-left-color: var(--olive-light); }
 
 html.dark .day-block--food {
   background: rgba(168, 136, 60, 0.08);

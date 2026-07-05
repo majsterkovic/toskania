@@ -3382,7 +3382,7 @@
         "id": "chianti",
         "label": "Chianti Senese",
         "subtitle": "k. Castelnuovo Berardenga",
-        "is_current": true,
+        "is_current": false,
         "distances": [
           {
             "place": "Siena",
@@ -3430,7 +3430,7 @@
         "id": "val_dorcia",
         "label": "Val d'Orcia",
         "subtitle": "k. Castiglione d'Orcia",
-        "is_current": false,
+        "is_current": true,
         "distances": [
           {
             "place": "Bagno Vignoni",

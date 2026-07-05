@@ -917,7 +917,14 @@
       "transfer_route": "Barga → SS12 south → Borgo a Mozzano → Capannori → A11 (Firenze-Mare) → Siena Superstrada → Castelnuovo Berardenga / Vagliagli",
       "transfer_depart": "ok. 10:00–11:00 (wcześniejszy wyjazd niż w wersji 3-bazowej — most był już w dniu 6)",
       "drive_limit_min": 0,
-      "attractions": [],
+      "attractions": [
+        {
+          "name": "Pistoia — gotycki przystanek na trasie",
+          "type": "cultural",
+          "drive_min": 120,
+          "description": "Miasteczko między Lucca a Florencją, 5 min zjazdu z A11. Piazza del Duomo: gotycka katedra z XIV w. z Capella del Tau i Srebrnym Ołtarzem Jakuba, Battistero, Palazzo del Comune. Spacer 45–60 min, bez kolejek. Obiad tuż obok."
+        }
+      ],
       "oak_forest": null,
       "food": {
         "place": "Trattoria La Limonaia — Pistoia",
@@ -986,6 +993,7 @@
       "type": "tuscany_popular",
       "label": "TOSKANIA · DZIEŃ 6 ★ POPULARNY",
       "title": "Siena — o świcie przed tłumami",
+      "image": "siena",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
       "drive_limit_min": 25,

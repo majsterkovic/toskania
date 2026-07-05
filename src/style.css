@@ -2491,6 +2491,13 @@ html.dark .transit-stats {
   border-left-color: var(--muted);
 }
 
+/* Day warning (hardcoded amber — override for dark) */
+html.dark .day-warning {
+  background: rgba(168, 136, 60, 0.12);
+  border-left-color: var(--oro);
+  color: var(--oro-light);
+}
+
 /* Theme toggle button */
 .theme-toggle {
   flex-shrink: 0;

@@ -2905,6 +2905,10 @@ html.dark .acc-card { background: var(--stone); border-color: var(--border); }
 html.dark .food-option { background: var(--stone); border-color: var(--border); }
 html.dark .oak-block { background: var(--stone); border-left-color: var(--olive-light); }
 
+/* Route segments table — cream-deep jest prawie czarny w dark mode */
+html.dark .route-segments th { background: var(--stone); }
+html.dark .route-seg__road code { background: var(--stone); }
+
 html.dark .day-block--food {
   background: rgba(168, 136, 60, 0.08);
 }

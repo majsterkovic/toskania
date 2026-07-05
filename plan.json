@@ -3832,7 +3832,7 @@
             "id": "dowod",
             "label": "Sprawdzić ważność dowodów osobistych / paszportów",
             "detail": "Do Włoch (UE) wystarczy dowód osobisty. Sprawdzić datę ważności — musi być ważny w całym okresie podróży. Paszport opcjonalnie jako backup.",
-            "deadline": "3 miesiące przed wyjazdem",
+            "deadline": "PILNIE — sprawdź teraz (3 mies. przed wyjazdem minęło)",
             "priority": "high"
           },
           {
@@ -3966,7 +3966,7 @@
             "id": "noclegi-tranzyt",
             "label": "Noclegi tranzytowe (Kufstein, Wasserburg, Hof)",
             "detail": "Hotele tranzytowe — mniej krytyczne, można rezerwować 4–8 tygodni przed. Booking.com wystarczy. Kufstein (Tyrol) — klimatyczne miasteczko nad Innem.",
-            "deadline": "lipiec–sierpień 2026",
+            "deadline": "lipiec 2026 — zarezerwuj teraz! Kufstein szczególnie.",
             "priority": "medium"
           },
           {

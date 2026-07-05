@@ -690,8 +690,16 @@ function renderTodo(todo) {
   `;
 }
 
+const CLIMATE_LABELS = {
+  garfagnana: 'Garfagnana',
+  chianti: 'Chianti',
+  maremma: 'Maremma',
+  val_dorcia: "Val d'Orcia",
+  orcia: "Val d'Orcia",
+};
+
 function fmtClimateKey(key) {
-  return key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  return CLIMATE_LABELS[key] || key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 function renderPractical(info) {

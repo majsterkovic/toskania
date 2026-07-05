@@ -7,7 +7,6 @@ const OSM_ATTR   = '© <a href="https://www.openstreetmap.org/copyright">OpenStr
 const CARTO_ATTR = '© <a href="https://carto.com/attributions">CARTO</a>, ' + OSM_ATTR;
 
 const VOYAGER_TILE = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-const CARTO_TILE   = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
 const DARK_TILE    = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
 
 function isDarkMode() { return document.documentElement.classList.contains('dark'); }
@@ -71,14 +70,6 @@ function makeIcon(type) {
   });
 }
 
-function tileLayer() {
-  return window.L.tileLayer(CARTO_TILE, {
-    attribution: CARTO_ATTR,
-    maxZoom: 19,
-    subdomains: 'abcd',
-  });
-}
-
 /**
  * Mapa przeglądowa całej trasy (Poznań → Toskania → Poznań)
  */
@@ -110,47 +101,6 @@ export function initRouteOverviewMap(containerId, mapConfig) {
   });
 
   map.fitBounds(window.L.latLngBounds(latLngs), { padding: [24, 24] });
-  return map;
-}
-
-/**
- * Mapa Toskanii — wszystkie bazy i atrakcje
- */
-export function initTuscanyOverviewMap(containerId, mapConfig) {
-  if (!window.L) return;
-  const el = document.getElementById(containerId);
-  if (!el || !mapConfig?.tuscany_overview?.length) return;
-
-  const map = window.L.map(el, { zoomControl: true, scrollWheelZoom: false });
-  tileLayer(el).addTo(map);
-
-  const points = mapConfig.tuscany_overview;
-  const bases = points.filter(p => p.type === 'base');
-  const others = points.filter(p => p.type !== 'base');
-
-  // Połącz bazy linią przejazdu
-  if (bases.length > 1) {
-    window.L.polyline(bases.map(b => b.coords), {
-      color: '#b85c38',
-      weight: 2,
-      opacity: 0.6,
-      dashArray: '8 5',
-    }).addTo(map);
-  }
-
-  // Markery
-  points.forEach(p => {
-    const icon = makeIcon(p.type);
-    const popup = p.days
-      ? `<strong>${p.label}</strong><br><em>${p.days}</em>`
-      : `<strong>${p.label}</strong>`;
-    window.L.marker(p.coords, { icon })
-      .bindPopup(popup, { maxWidth: 200 })
-      .addTo(map);
-  });
-
-  const latLngs = points.map(p => p.coords);
-  map.fitBounds(window.L.latLngBounds(latLngs), { padding: [32, 32] });
   return map;
 }
 

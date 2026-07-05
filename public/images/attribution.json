@@ -236,5 +236,11 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "description": "Monti del Chianti (Q55712940)"
     }
+  },
+  "kufstein.jpg": {
+    "title": "Blick über Kufstein von der Festung aus",
+    "author": "Dnalor 01",
+    "license": "CC BY-SA 3.0 at",
+    "source": "https://commons.wikimedia.org/wiki/File:Blick_%C3%BCber_Kufstein_von_der_Festung_aus.JPG"
   }
 }

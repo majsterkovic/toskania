@@ -97,11 +97,6 @@
           "alt": "Crete Senesi, Asciano",
           "credit": "Wikimedia Commons · Anna.Massini"
         },
-        "neustadt": {
-          "src": "images/neustadt.jpg",
-          "alt": "Nocleg tranzytowy — małe bawarskie miasteczko",
-          "credit": "Wikimedia Commons · Stefan Oemisch"
-        },
         "wasserburg": {
           "src": "images/wasserburg.jpg",
           "alt": "Wasserburg am Inn",
@@ -111,6 +106,11 @@
           "src": "images/hof.jpg",
           "alt": "Hof (Saale), Frankonia",
           "credit": "Wikimedia Commons · Stefan Oemisch"
+        },
+        "kufstein": {
+          "src": "images/kufstein.jpg",
+          "alt": "Widok z Festung Kufstein — miasteczko nad Innem i Alpy bawarskie",
+          "credit": "Dnalor 01 / Wikimedia Commons (CC BY-SA 3.0 at)"
         }
       }
     },
@@ -357,7 +357,7 @@
       "type": "transit",
       "label": "TRANZYT → NIEMCY",
       "title": "Poznań → Kufstein (Tyrol)",
-      "image": "neustadt",
+      "image": "kufstein",
       "drive_km": 1010,
       "drive_h": "10–11 h",
       "base_id": null,

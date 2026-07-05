@@ -76,7 +76,16 @@ function mount(plan) {
   initVariantsToggle();
   initTodo();
   initThemeToggle();
-  initWeather('weather-container');
+  const weatherLocs = (plan.bases || [])
+    .filter(b => Array.isArray(b.coords) && b.coords.length === 2)
+    .map(b => ({
+      id: b.id,
+      name: (b.region || b.name).split('·')[0].trim(),
+      sub: b.name,
+      lat: b.coords[0],
+      lon: b.coords[1],
+    }));
+  initWeather('weather-container', weatherLocs.length ? weatherLocs : undefined);
   requestAnimationFrame(initScrollReveal);
   if (typeof window !== 'undefined') {
     const initMaps = () => {

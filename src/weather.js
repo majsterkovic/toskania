@@ -123,7 +123,7 @@ function renderError(loc) {
   return `<div class="weather-card weather-card--error"><div class="weather-card__name">${loc.name}</div><p class="weather-card__sub">Brak danych</p></div>`;
 }
 
-export async function initWeather(containerId) {
+export async function initWeather(containerId, locs = LOCATIONS) {
   const el = document.getElementById(containerId);
   if (!el) return;
 
@@ -137,10 +137,10 @@ export async function initWeather(containerId) {
   el.innerHTML = `
     <p class="weather-mode">${label}</p>
     <div class="weather-grid" id="weather-grid">
-      ${LOCATIONS.map(l => `<div class="weather-loading" id="w-${l.id}">⏳ ${l.name}…</div>`).join('')}
+      ${locs.map(l => `<div class="weather-loading" id="w-${l.id}">⏳ ${l.name}…</div>`).join('')}
     </div>`;
 
-  await Promise.all(LOCATIONS.map(async loc => {
+  await Promise.all(locs.map(async loc => {
     const slot = document.getElementById(`w-${loc.id}`);
     try {
       const w = isForecast ? await getForecast(loc) : await getClimateNormals(loc);

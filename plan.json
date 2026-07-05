@@ -9,7 +9,7 @@
     "route_summary": {
       "outbound_km": "~1570 km w 2 dni (Poznań → Kufstein → Barga)",
       "return_km": "~1620 km w 3 dni (Pitigliano → Wasserburg → Hof → Poznań)",
-      "total_km": "~3155 km",
+      "total_km": "~3190 km",
       "tuscany_days": 10,
       "tuscany_bases": 3,
       "transit_nights_outbound": 1,
@@ -181,6 +181,11 @@
           "src": "images/kufstein.jpg",
           "alt": "Widok z Festung Kufstein — miasteczko nad Innem i Alpy bawarskie",
           "credit": "Dnalor 01 / Wikimedia Commons (CC BY-SA 3.0 at)"
+        },
+        "gorfigliano": {
+          "src": "images/gorfigliano.jpg",
+          "alt": "Gorfigliano — średniowieczna wioska w Garfagnanie",
+          "credit": "Antiedipo / CC BY-SA 3.0"
         }
       }
     },
@@ -676,8 +681,8 @@
       "label": "TRANZYT → TOSKANIA",
       "title": "Kufstein → Barga (Garfagnana)",
       "image": "barga",
-      "drive_km": 790,
-      "drive_h": "8–8,5 h",
+      "drive_km": 560,
+      "drive_h": "6–6,5 h",
       "base_id": "base1",
       "depart": "5:30–6:00 rano z Neustadt an der Donau",
       "route": "A9/A8 → Rosenheim → A93 Inntal → A12 → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe (obwodnica Werony, bez centrum) → Campogalliano → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
@@ -756,7 +761,12 @@
           }
         ]
       },
-      "tips": [],
+      "tips": [
+        "Streckenmaut A13 Brenner: €12,50 — zapłać PRZED wjazdem na shop.asfinag.at (zielony pas DIGITAL)",
+        "Zatankuj w Weronie lub Bolzano — paliwo drożeje im dalej na południe",
+        "A22 po włoskiej stronie: bramki za gotówkę lub kartę (Visa/MC OK) — przygotuj €20–30",
+        "Zjazd Lucca Est → SS12 doliną Serchio — wolna droga, bez opłat, piękna"
+      ],
       "route_segments": [
         {
           "segment": "Neustadt → Norymberga → Rosenheim",
@@ -1367,7 +1377,7 @@
           "drive_min": 20,
           "description": "Mikrowioska z romańskim kościołem, kilkadziesiąt mieszkańców. Przykład autentycznego borgo bez renowacji turystycznej.",
           "type": "medieval",
-          "image_key": null,
+          "image_key": "gorfigliano",
           "gps_hint": "Gorfigliano, 55038 Minucciano LU",
           "coords": [
             44.0773,
@@ -1806,7 +1816,8 @@
           "duration_h": 1.5,
           "note": "Geotermiczny basen zamiast rynku — unikalna piazza d'acqua. Woda paruje o świcie. Wejście bezpłatne do oglądania, kąpiel w Santa Caterina Terme.",
           "opening_hours": "Otwarte całą dobę (teren zewnętrzny)",
-          "entry_fee": "bezpłatne (widok), €15–20 (kąpiel terme)"
+          "entry_fee": "bezpłatne (widok), €15–20 (kąpiel terme)",
+          "image_key": "bagno-vignoni"
         },
         {
           "name": "San Quirico d'Orcia — Kolegiata i Horti Leonini",
@@ -1819,7 +1830,8 @@
           "duration_h": 2.0,
           "note": "Romańska kolegiata z XII w., renesansowe Horti Leonini — ogrody geometrycznych żywopłotów. Lawendowe uliczki, lokalne sklepy z pecorino.",
           "opening_hours": "Horti Leonini: zawsze otwarte. Kolegiata: 8:00–19:00",
-          "entry_fee": "bezpłatne"
+          "entry_fee": "bezpłatne",
+          "image_key": "san-quirico"
         },
         {
           "name": "Pienza — renesansowe miasto papieskie",
@@ -1832,7 +1844,8 @@
           "duration_h": 2.5,
           "note": "Miasto wybudowane od podstaw przez papieża Piusa II w XV w. jako idealne renesansowe centrum. Piazza Pio II, katedra, Palazzo Piccolomini. Sklepy z pecorino toscano.",
           "opening_hours": "Palazzo Piccolomini: 10:00–18:00 (zamknięty wt)",
-          "entry_fee": "Palazzo €7; katedra bezpłatna"
+          "entry_fee": "Palazzo €7; katedra bezpłatna",
+          "image_key": "pienza"
         }
       ],
       "oak_forest": null,
@@ -3475,7 +3488,7 @@
   ],
   "practical_info": {
     "vignettes": {
-      "austria": "E-winieta online: asfinag.at, ~€9.90/10 dni — kup przed wyjazdem",
+      "austria": "E-winieta online: asfinag.at, €12,80/10 dni — kup przed wyjazdem. Dodatkowo A13 Brenner Streckenmaut €12,50 — oddzielnie na shop.asfinag.at.",
       "italy": "Płatne bramki: gotówka lub karta bezpośrednio"
     },
     "climate": {

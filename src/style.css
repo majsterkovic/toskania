@@ -2462,6 +2462,25 @@ html.dark .practical-card {
   border-color: var(--border);
 }
 
+/* Type badges — hardcoded rgba doesn't adapt; re-tint for dark */
+html.dark .type-badge {
+  color: var(--olive-light);
+  background: rgba(122, 143, 94, 0.12);
+  border-color: rgba(122, 143, 94, 0.28);
+}
+
+html.dark .type-badge--popular {
+  color: var(--terracotta-light);
+  background: rgba(204, 114, 72, 0.12);
+  border-color: rgba(204, 114, 72, 0.28);
+}
+
+/* Transit stats strip */
+html.dark .transit-stats {
+  background: var(--stone);
+  border-left-color: var(--muted);
+}
+
 /* Theme toggle button */
 .theme-toggle {
   flex-shrink: 0;

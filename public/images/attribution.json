@@ -235,12 +235,24 @@
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "description": "Monti del Chianti (Q55712940)"
+    },
+    "kufstein.jpg": {
+      "place": "Kufstein (Tyrol)",
+      "wikimedia_title": "File:Blick über Kufstein von der Festung aus.JPG",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blick_%C3%BCber_Kufstein_von_der_Festung_aus.JPG",
+      "author": "Dnalor 01",
+      "license": "CC BY-SA 3.0 at",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/at",
+      "description": "Blick über Kufstein von der Festung aus — widok na miasto i Alpy Bawarskie"
+    },
+    "gorfigliano.jpg": {
+      "place": "Gorfigliano (Minucciano, Garfagnana)",
+      "wikimedia_title": "File:Gorfigliano 2010.JPG",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gorfigliano_2010.JPG",
+      "author": "Antiedipo",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Gorfigliano — średniowieczna wioska na zboczach Alpi Apuane w Garfagnanie"
     }
-  },
-  "kufstein.jpg": {
-    "title": "Blick über Kufstein von der Festung aus",
-    "author": "Dnalor 01",
-    "license": "CC BY-SA 3.0 at",
-    "source": "https://commons.wikimedia.org/wiki/File:Blick_%C3%BCber_Kufstein_von_der_Festung_aus.JPG"
   }
 }

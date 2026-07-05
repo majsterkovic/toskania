@@ -9,7 +9,7 @@
     "route_summary": {
       "outbound_km": "~1570 km w 2 dni (Poznań → Kufstein → Barga)",
       "return_km": "~1500 km w 3 dni (Chianti → Wasserburg → Hof → Poznań)",
-      "total_km": "~3035 km",
+      "total_km": "~3190 km",
       "tuscany_days": 10,
       "tuscany_bases": 2,
       "transit_nights_outbound": 1,
@@ -111,6 +111,11 @@
           "src": "images/kufstein.jpg",
           "alt": "Widok z Festung Kufstein — miasteczko nad Innem i Alpy bawarskie",
           "credit": "Dnalor 01 / Wikimedia Commons (CC BY-SA 3.0 at)"
+        },
+        "gorfigliano": {
+          "src": "images/gorfigliano.jpg",
+          "alt": "Gorfigliano — średniowieczna wioska w Garfagnanie",
+          "credit": "Antiedipo / CC BY-SA 3.0"
         }
       }
     },
@@ -499,7 +504,8 @@
           "hours": "24/7",
           "note": "Ostatnie tankowanie w Niemczech przed Austrią — paliwo tańsze niż w AT"
         }
-      ]
+      ],
+      "narrative": "Wyjeżdżamy z Poznania o 6:00–6:30 — sobota, ciężarówek mniej. Przez Świecko na A12 w kierunku Berlina, potem A9 na południe przez Lipsk i Norymbergę. Gdzieś w okolicach Norymbergi (ok. 12:30) postój na lunch przy stacji benzynowej lub Raststätte. Za Monachium A8 do Rosenheim, następnie A93 Inntal w kierunku Austrii. Kufstein jest tuż za granicą — przy normalnym ruchu jesteśmy ok. 15:30–16:30. Małe tyrolskie miasto na skale nad Inn, urokliwa starówka, tańsze noclegi niż w Innsbrucku. Kolacja w oberży i wcześnie spać — jutro spokojny dzień przez Brenner do Toskanii."
     },
     {
       "date": "13.09 (nd)",
@@ -508,8 +514,8 @@
       "label": "TRANZYT → TOSKANIA",
       "title": "Kufstein → Barga (Garfagnana)",
       "image": "barga",
-      "drive_km": 790,
-      "drive_h": "8–8,5 h",
+      "drive_km": 560,
+      "drive_h": "6–6,5 h",
       "base_id": "base1",
       "depart": "7:00 rano z Neustadt an der Donau",
       "route": "A9/A8 → Rosenheim → A93 Inntal → A12 → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
@@ -606,7 +612,8 @@
         "Kup Streckenmaut A13 Brenner online (€12,50)",
         "Lunch ~13:00 przy Rovereto Sud (Tre Pini) — nie trać czasu na Weronę",
         "SR445: po minięciu Castelnuovo zadzwoń do agriturismo (+30 min ETA)"
-      ]
+      ],
+      "narrative": "Wyjeżdżamy o 7:00 — jesteśmy 40 km przed Innsbruckiem i 80 km przed Brennerem. A93 do Innsbrucku, potem A13 przez Brenner do Włoch — o tej porze w sobotni kierunek południowy prawie bez kolejek. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, Dolomity po prawej. Postój na lunch w okolicach Rovereto lub Werony (ok. 10:30–11:00). Za Bolonią A1 Variante di Valico omija Florencję, potem A11 i zjazd Lucca Est. Ostatnie 45 km to dolina Serchio — wąska górska droga, zielono i spokojnie. Do agriturismo docieramy ok. 14:00–15:00. Reszta dnia wolna — Toskania się zaczyna."
     },
     {
       "date": "14.09 (pn)",
@@ -802,7 +809,8 @@
           "coords": [
             44.0773,
             10.3497
-          ]
+          ],
+          "image_key": "gorfigliano"
         }
       ],
       "oak_forest": {
@@ -1233,7 +1241,8 @@
           "coords": [
             43.0307,
             11.6182
-          ]
+          ],
+          "image_key": "bagno-vignoni"
         },
         {
           "name": "Pienza — idealne miasto Piusa II",
@@ -1244,7 +1253,8 @@
           "coords": [
             43.0762,
             11.6781
-          ]
+          ],
+          "image_key": "pienza"
         },
         {
           "name": "Montalcino — forteca Brunello",
@@ -1255,7 +1265,8 @@
           "coords": [
             43.0583,
             11.4887
-          ]
+          ],
+          "image_key": "montalcino"
         }
       ],
       "oak_forest": {
@@ -1612,7 +1623,7 @@
   ],
   "practical_info": {
     "vignettes": {
-      "austria": "E-winieta online: asfinag.at, ~€12,80/10 dni — kup przed wyjazdem",
+      "austria": "E-winieta online: asfinag.at, €12,80/10 dni — kup przed wyjazdem. Dodatkowo A13 Brenner Streckenmaut €12,50 — oddzielnie na shop.asfinag.at.",
       "italy": "Płatne bramki: gotówka lub karta bezpośrednio"
     },
     "climate": {

@@ -545,6 +545,7 @@ function renderGallery(images) {
   const items = Object.entries(places)
     .map(([key, place]) => {
       const src = imgSrc(place.src);
+      const webpSrc = src.replace(/\.(jpe?g|png)$/i, '.webp');
       return `
         <button
           type="button"
@@ -553,7 +554,10 @@ function renderGallery(images) {
           data-alt="${esc(place.alt || key)}"
           aria-label="${esc(place.alt || key)}"
         >
-          <img src="${esc(src)}" alt="${esc(place.alt || key)}" loading="lazy" decoding="async" />
+          <picture>
+            <source srcset="${esc(webpSrc)}" type="image/webp" />
+            <img src="${esc(src)}" alt="${esc(place.alt || key)}" loading="lazy" decoding="async" />
+          </picture>
           <span class="gallery-item__caption">${esc(place.alt || key)}</span>
         </button>
       `;

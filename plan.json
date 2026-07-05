@@ -239,7 +239,7 @@
         {
           "label": "Castiglione d'Orcia — BAZA 2",
           "coords": [
-            43.0,
+            43,
             11.617
           ],
           "type": "base"
@@ -330,7 +330,7 @@
         {
           "label": "Castiglione d'Orcia (BAZA 2)",
           "coords": [
-            43.0,
+            43,
             11.617
           ],
           "type": "base",
@@ -453,7 +453,7 @@
       "booking_tip": "Szukaj: agriturismo Castiglione d'Orcia lub Monticchiello — z widokiem na dolinę i własnym ogrodem",
       "gps_hint": "Naviguj: Castiglione d'Orcia SI lub Rocca d'Orcia SI — unikaj wjazdu do Rocca (ZTL)",
       "coords": [
-        43.0,
+        43,
         11.617
       ]
     },
@@ -1816,7 +1816,7 @@
             11.604
           ],
           "drive_min": 10,
-          "duration_h": 2.0,
+          "duration_h": 2,
           "note": "Romańska kolegiata z XII w., renesansowe Horti Leonini — ogrody geometrycznych żywopłotów. Lawendowe uliczki, lokalne sklepy z pecorino.",
           "opening_hours": "Horti Leonini: zawsze otwarte. Kolegiata: 8:00–19:00",
           "entry_fee": "bezpłatne",
@@ -3808,7 +3808,7 @@
             "id": "ekuz-mariusz",
             "label": "EKUZ — Mariusz (uczeń do 26 lat)",
             "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) uprawnia do bezpłatnej pomocy medycznej w UE. Jako uczeń do 26 lat wyrabiasz bezpłatnie przez NFZ: eWUŚ online na pacjent.gov.pl lub osobiście w oddziale NFZ. Ważna 1–2 lata. Nie zastępuje ubezpieczenia turystycznego — pokrywa tylko nagłą pomoc medyczną.",
-            "deadline": "6–8 tygodni przed wyjazdem",
+            "deadline": "18 lipca – 1 sierpnia 2026 (6–8 tyg. przed wyjazdem)",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
           },
@@ -3816,7 +3816,7 @@
             "id": "ekuz-dziewczyna",
             "label": "EKUZ — dziewczyna (studentka do 26 lat)",
             "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) — tak samo jak Mariusz. Jako studentka do 26 lat uprawniona do EKUZ bezpłatnie. Wyrobić przez pacjent.gov.pl lub NFZ. Sprawdzić czy nie jest na ubezpieczeniu rodziców (wtedy wyrobić przez ich NFZ).",
-            "deadline": "6–8 tygodni przed wyjazdem",
+            "deadline": "18 lipca – 1 sierpnia 2026 (6–8 tyg. przed wyjazdem)",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
           },
@@ -3824,7 +3824,7 @@
             "id": "ekuz-pozostali",
             "label": "EKUZ — pozostałe 2 osoby",
             "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) — każda osoba musi mieć własną kartę. Wyrobić indywidualnie przez NFZ lub pacjent.gov.pl. Koszt: bezpłatny dla ubezpieczonych w NFZ.",
-            "deadline": "6–8 tygodni przed wyjazdem",
+            "deadline": "18 lipca – 1 sierpnia 2026 (6–8 tyg. przed wyjazdem)",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
           },

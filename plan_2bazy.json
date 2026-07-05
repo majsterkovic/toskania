@@ -1903,7 +1903,7 @@
             "id": "ekuz-mariusz",
             "label": "EKUZ — Mariusz (uczeń do 26 lat)",
             "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) uprawnia do bezpłatnej pomocy medycznej w UE. Jako uczeń do 26 lat wyrabiasz bezpłatnie przez NFZ: eWUŚ online na pacjent.gov.pl lub osobiście w oddziale NFZ. Ważna 1–2 lata. Nie zastępuje ubezpieczenia turystycznego — pokrywa tylko nagłą pomoc medyczną.",
-            "deadline": "6–8 tygodni przed wyjazdem",
+            "deadline": "18 lipca – 1 sierpnia 2026 (6–8 tyg. przed wyjazdem)",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
           },
@@ -1911,7 +1911,7 @@
             "id": "ekuz-dziewczyna",
             "label": "EKUZ — dziewczyna (studentka do 26 lat)",
             "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) — tak samo jak Mariusz. Jako studentka do 26 lat uprawniona do EKUZ bezpłatnie. Wyrobić przez pacjent.gov.pl lub NFZ. Sprawdzić czy nie jest na ubezpieczeniu rodziców (wtedy wyrobić przez ich NFZ).",
-            "deadline": "6–8 tygodni przed wyjazdem",
+            "deadline": "18 lipca – 1 sierpnia 2026 (6–8 tyg. przed wyjazdem)",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
           },
@@ -1919,7 +1919,7 @@
             "id": "ekuz-pozostali",
             "label": "EKUZ — pozostałe 2 osoby",
             "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) — każda osoba musi mieć własną kartę. Wyrobić indywidualnie przez NFZ lub pacjent.gov.pl. Koszt: bezpłatny dla ubezpieczonych w NFZ.",
-            "deadline": "6–8 tygodni przed wyjazdem",
+            "deadline": "18 lipca – 1 sierpnia 2026 (6–8 tyg. przed wyjazdem)",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
           },

@@ -2880,3 +2880,17 @@ html.dark .route-wp--end   { color: var(--terracotta-light); }
 html.dark .acc-card { background: var(--stone); border-color: var(--border); }
 html.dark .food-option { background: var(--stone); border-color: var(--border); }
 html.dark .transit-stats { background: var(--stone); }
+
+html.dark .day-block--food {
+  background: rgba(168, 136, 60, 0.08);
+}
+
+html.dark .day-block--practical {
+  background: linear-gradient(135deg, rgba(204, 114, 72, 0.09), rgba(122, 143, 94, 0.07));
+  border-color: rgba(204, 114, 72, 0.2);
+}
+
+html.dark .crowd-tip {
+  background: linear-gradient(135deg, rgba(168, 136, 60, 0.1), rgba(204, 114, 72, 0.07));
+  border-color: rgba(168, 136, 60, 0.25);
+}

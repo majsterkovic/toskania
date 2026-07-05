@@ -316,6 +316,35 @@ function renderOakForest(oak) {
   `;
 }
 
+function renderWineTasting(wt) {
+  if (!wt) return '';
+  return `
+    <div class="day-block day-block--wine">
+      <h4 class="block-label">🍷 Degustacja wina</h4>
+      <p><strong>${esc(wt.place)}</strong></p>
+      ${wt.address ? `<p class="muted">${esc(wt.address)}</p>` : ''}
+      ${wt.time ? `<p><span class="meta-label">Termin</span> ${esc(wt.time)}</p>` : ''}
+      ${wt.price ? `<p class="price">${esc(wt.price)}</p>` : ''}
+      ${wt.note ? `<p>${esc(wt.note)}</p>` : ''}
+      ${wt.gps_hint ? `<p class="muted">📍 ${esc(wt.gps_hint)}</p>` : ''}
+    </div>
+  `;
+}
+
+function renderOpeningHours(day) {
+  const hours = day.opening_hours;
+  if (!hours || !Object.keys(hours).length) return '';
+  const rows = Object.entries(hours).map(([k, v]) =>
+    `<li><span class="oh-key">${esc(k.replace(/_/g, ' '))}</span> <span class="oh-val">${esc(v)}</span></li>`
+  ).join('');
+  return `
+    <details class="day-block oh-block">
+      <summary class="block-label oh-summary">Godziny otwarcia</summary>
+      <ul class="oh-list">${rows}</ul>
+    </details>
+  `;
+}
+
 function renderLogistics(day) {
   const tips = day.practical_tips || [];
   const parkingNote = day.parking && typeof day.parking === 'object'
@@ -404,6 +433,19 @@ function renderRouteWaypoints(routeStr) {
   return `<ul class="route-waypoints">${items}</ul>`;
 }
 
+function renderEtaTimeline(etaList) {
+  if (!etaList?.length) return '';
+  const rows = etaList.map(item =>
+    `<li class="eta-row"><span class="eta-time">${esc(item.time)}</span><span class="eta-event">${esc(item.event)}</span></li>`
+  ).join('');
+  return `
+    <details class="day-block eta-block">
+      <summary class="block-label oh-summary">Harmonogram godzinowy</summary>
+      <ul class="eta-list">${rows}</ul>
+    </details>
+  `;
+}
+
 function renderTransit(day, images) {
   const stats = [
     day.depart ? `<div class="transit-stat"><span class="transit-stat__label">Wyjazd</span><span>${esc(day.depart)}</span></div>` : '',
@@ -414,10 +456,12 @@ function renderTransit(day, images) {
   return `
     ${stats ? `<div class="transit-stats">${stats}</div>` : ''}
     ${day.route ? `<div class="day-block day-block--route"><h4 class="block-label">Trasa</h4>${renderRouteWaypoints(day.route)}</div>` : ''}
+    ${renderEtaTimeline(day.eta_timeline)}
     ${renderRouteSegments(day.route_segments)}
     ${renderFood(day.food)}
     ${renderAccommodation(day.accommodation)}
     ${renderLogistics(day)}
+    ${renderOpeningHours(day)}
   `;
 }
 
@@ -454,8 +498,10 @@ function renderTuscany(day, images) {
     ${renderAttractions(day.attractions, images)}
     ${renderOakForest(day.oak_forest)}
     ${renderFood(day.food)}
+    ${renderWineTasting(day.wine_tasting)}
     ${transfer}
     ${renderLogistics(day)}
+    ${renderOpeningHours(day)}
   `;
 }
 

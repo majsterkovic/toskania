@@ -2900,11 +2900,119 @@ html.dark .route-wp--end   { color: var(--terracotta-light); }
   line-height: 1.4;
 }
 
+/* ── Wine tasting block ── */
+
+.day-block--wine {
+  border-left-color: var(--oro);
+  background: linear-gradient(135deg, rgba(168, 136, 60, 0.06), rgba(92, 107, 69, 0.04));
+}
+
+html.dark .day-block--wine {
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.09), rgba(92, 107, 69, 0.05));
+  border-left-color: var(--oro-light);
+}
+
+/* ── ETA timeline (collapsible) ── */
+
+.eta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.65rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.eta-row {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.83rem;
+  font-family: var(--font-sans);
+  align-items: baseline;
+}
+
+.eta-row:last-child { border-bottom: none; }
+
+.eta-time {
+  font-weight: 700;
+  color: var(--oro);
+  min-width: 3.2rem;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+html.dark .eta-time { color: var(--oro-light); }
+
+.eta-event {
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+/* ── Opening hours (collapsible) ── */
+
+.oh-summary {
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.oh-summary::-webkit-details-marker {
+  display: none;
+}
+
+.oh-summary::before {
+  content: '▸';
+  font-size: 0.7rem;
+  color: var(--muted);
+  transition: transform 0.15s;
+}
+
+.oh-block[open] .oh-summary::before {
+  transform: rotate(90deg);
+}
+
+.oh-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.65rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.oh-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  font-size: 0.83rem;
+  font-family: var(--font-sans);
+  line-height: 1.4;
+}
+
+.oh-key {
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.oh-key::after { content: ':'; }
+
+.oh-val {
+  color: var(--muted);
+}
+
 /* Dark mode adjustments */
 html.dark .acc-card { background: var(--stone); border-color: var(--border); }
 html.dark .food-option { background: var(--stone); border-color: var(--border); }
 html.dark .oak-block { background: var(--stone); border-left-color: var(--olive-light); }
 html.dark .section--variants { background: var(--card-bg); }
+html.dark .img-credit { background: transparent; }
 
 /* Route segments table — cream-deep jest prawie czarny w dark mode */
 html.dark .route-segments th { background: var(--stone); }

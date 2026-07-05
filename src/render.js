@@ -529,10 +529,11 @@ function renderDay(day, images, bases) {
 
 function renderDays(days, images, bases) {
   const cards = days.map((d) => renderDay(d, images, bases)).join('');
+  const baseWord = bases?.length === 2 ? 'dwie bazy toskańskie' : 'trzy bazy toskańskie';
   return `
     <section class="section" id="dni">
       <h2 class="section-title">Harmonogram</h2>
-      <p class="section-lead">15 dni aktywnej podróży — tranzyt, trzy bazy toskańskie i powrót.</p>
+      <p class="section-lead">15 dni aktywnej podróży — tranzyt, ${baseWord} i powrót.</p>
       <div class="days-list">${cards}</div>
     </section>
   `;

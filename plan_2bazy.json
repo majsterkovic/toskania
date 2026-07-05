@@ -2072,10 +2072,10 @@
             "priority": "medium"
           },
           {
-            "id": "saturnia",
-            "label": "Saturnia Cascate del Mulino — bez rezerwacji",
-            "detail": "Bezpłatne naturalne baseny termalne — brak rezerwacji, wstęp wolny 24/7. Przyjechać rano (przed 10:00) lub po 16:00 żeby uniknąć tłumów. Zabrać ręcznik i klapki.",
-            "deadline": "brak",
+            "id": "brolio-wino",
+            "label": "Castello di Brolio — degustacja winiarni (opcja)",
+            "detail": "Winiarnia Barone Ricasoli — degustacje i zwiedzanie zamku. Rezerwacja zalecana (szczególnie w sezonie zbiorów). ricasoli.it. Dostępne opcje Chianti Classico Gran Selezione.",
+            "deadline": "1–2 tygodnie przed wizytą",
             "priority": "low"
           }
         ]
@@ -2123,7 +2123,7 @@
           {
             "id": "deby",
             "label": "Lista do obserwacji dębów (dla Mariusza)",
-            "detail": "Gatunki do wypatrywania: Quercus cerris (dąb burgundzki — Foresta di Tocchi), Quercus pubescens (dąb omszony — Crete Senesi), Quercus ilex (ostrokrzew — Maremma). Zabrać lornetkę, notes, aparat.",
+            "detail": "Gatunki do wypatrywania: Quercus cerris (dąb burgundzki — Foresta di Tocchi), Quercus pubescens (dąb omszony — Crete Senesi i Chianti), Quercus ilex (ostrokrzew — zbocza Chianti). Zabrać lornetkę, notes, aparat.",
             "deadline": "przed wyjazdem",
             "priority": "low"
           },

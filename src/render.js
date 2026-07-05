@@ -714,6 +714,7 @@ function renderPractical(info) {
   return `
     <section class="section" id="info">
       <h2 class="section-title">Informacje praktyczne</h2>
+      ${info.plan_note ? `<p class="plan-note">${esc(info.plan_note)}</p>` : ''}
       <div class="practical-grid">
         <div class="day-block practical-card">
           <h4 class="block-label">Winiety</h4>

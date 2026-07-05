@@ -303,6 +303,23 @@ body {
   max-width: 52ch;
 }
 
+.plan-note {
+  font-size: 0.92rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--cream-deep);
+  border-left: 3px solid var(--oro);
+  border-radius: 0 6px 6px 0;
+  max-width: 60ch;
+}
+
+html.dark .plan-note {
+  background: rgba(168, 136, 60, 0.08);
+  border-left-color: var(--oro-light);
+}
+
 .block-label {
   font-family: var(--font-sans);
   font-size: 0.8rem;

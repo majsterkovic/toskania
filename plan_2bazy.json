@@ -7,7 +7,7 @@
     "calendar_days": "12.09 (sob) – 26.09 (sob) = 15 dni aktywnej podróży; 27.09 (nd) = bufor/deadline powrotu",
     "participants_note": "Plan prywatny — wariant 2 baz",
     "route_summary": {
-      "outbound_km": "~1535 km w 2 dni (Poznań → Neustadt → Barga)",
+      "outbound_km": "~1570 km w 2 dni (Poznań → Kufstein → Barga)",
       "return_km": "~1500 km w 3 dni (Chianti → Wasserburg → Hof → Poznań)",
       "total_km": "~3035 km",
       "tuscany_days": 10,
@@ -111,6 +111,11 @@
           "src": "images/hof.jpg",
           "alt": "Hof (Saale), Frankonia",
           "credit": "Wikimedia Commons · Stefan Oemisch"
+        },
+        "kufstein": {
+          "src": "images/wasserburg.jpg",
+          "alt": "Kufstein (Tyrol) — nocleg tranzytowy w Alpach",
+          "credit": "Wikimedia Commons (placeholder — brak zdjęcia Kufstein)"
         }
       }
     },
@@ -133,10 +138,10 @@
           "type": "transit"
         },
         {
-          "label": "Neustadt a.d. Donau",
+          "label": "Kufstein (Tyrol)",
           "coords": [
-            48.801,
-            11.778
+            47.583,
+            12.166
           ],
           "type": "transit_night"
         },
@@ -338,9 +343,9 @@
   ],
   "transit_stops": {
     "outbound": {
-      "night_1": "Neustadt an der Donau (Bawaria) — 25 km od Ingolstadt, tańsze niż Monachium, Booking-friendly Gasthöfe €40–60/noc",
-      "image": "neustadt",
-      "gps_hint": "Naviguj: Neustadt an der Donau, Bayern"
+      "night_1": "Kufstein (Tyrol, Austria) — 40 km od Innsbrucku, u stóp Alp, nad Innem. Festung Kufstein, klimatyczne centrum, hotele €55–90/noc",
+      "image": "wasserburg",
+      "gps_hint": "Naviguj: Kufstein, Tirol, Austria"
     },
     "return": {
       "night_1": "Wasserburg am Inn (Bawaria) — malownicze miasto na zakolu Innu, 45 km od Monachium, Gasthof €45–65/noc",
@@ -356,37 +361,43 @@
       "day_num": 1,
       "type": "transit",
       "label": "TRANZYT → NIEMCY",
-      "title": "Poznań → Neustadt an der Donau",
-      "image": "neustadt",
-      "drive_km": 745,
-      "drive_h": "7–7,5 h",
+      "title": "Poznań → Kufstein (Tyrol)",
+      "image": "kufstein",
+      "drive_km": 1010,
+      "drive_h": "10–11 h",
       "base_id": null,
       "depart": "6:00–7:00 rano z Poznania",
-      "route": "A2 west (Świecko) → A12/A13 → Berliner Ring A10 (południowy łuk) → A9 south → Nürnberg → Ingolstadt → zjazd Neustadt/Kelheim (B299/B16)",
+      "route": "A2 west (Świecko) → A12 → Berliner Ring A10 → A9 south → Nürnberg → Monachium → A8 → A93 south → Kufstein (Tyrol, Austria)",
       "route_segments": [
         {
           "segment": "Poznań → Świecko (granica PL/DE)",
           "road": "A2",
-          "km": "~280",
-          "note": "Opłata koncesyjna AWSA Świecko–Konin"
+          "km": "~175",
+          "note": "Videotolling AWSA Świecko–Konin ~138 zł"
         },
         {
           "segment": "Świecko → Berlin (obwodnica)",
           "road": "A12 → A10 Berliner Ring",
-          "km": "~280",
+          "km": "~115",
           "note": "Unikaj centrum Berlina — A10 pełna obwodnica"
         },
         {
           "segment": "Berlin → Norymberga",
           "road": "A9 south",
-          "km": "~280",
+          "km": "~430",
           "note": "Raststätte Frankenwald (most) ok. km 254"
         },
         {
-          "segment": "Norymberga → Ingolstadt → Neustadt",
-          "road": "A9 → wyjazd Neustadt/Kelheim",
-          "km": "~120",
-          "note": "Kelheim 15 km na wschód — alternatywa noclegowa"
+          "segment": "Norymberga → Monachium",
+          "road": "A9 south",
+          "km": "~165",
+          "note": "Ostatnie tankowanie w DE przed Austrią"
+        },
+        {
+          "segment": "Monachium → Kufstein (Austria)",
+          "road": "A8 east → A93 south",
+          "km": "~85",
+          "note": "Wjazd do Austrii — winieta aktywna od A93/Kiefersfelden"
         }
       ],
       "attractions": [],
@@ -398,45 +409,101 @@
         "price": "~€8–12"
       },
       "accommodation": {
-        "place": "Neustadt an der Donau (nocleg tranzytowy)",
-        "note": "Małe bawarskie miasteczko nad Dunajem, ~25 km od Ingolstadt. Polecane: Gasthof Gigl (centrum, parking gratis), Hotel Pflügler (Schwaig, Biergarten).",
-        "price": "€40–60/noc",
+        "place": "Kufstein (Tyrol — nocleg tranzytowy)",
+        "note": "Klimatyczne miasteczko nad Innem u stóp Alp, 40 km od Innsbrucku. Festung Kufstein widoczna z centrum — idealne miejsce na nocleg tranzytowy przed Brennerem.",
+        "price": "€55–90/noc",
+        "booking_tip": "Booking lub direct — polecane hotele poniżej. Direct booking bywa tańsze w mniejszych pensjonatach.",
+        "gps_hint": "Naviguj: Kufstein, Tirol, Austria",
         "options": [
           {
-            "name": "Gasthof Gigl",
-            "type": "Gasthof",
-            "address": "Herzog-Ludwig-Straße 6, 93333 Neustadt a.d. Donau",
-            "price": "€50–70/noc",
-            "parking": "bezpłatny na dziedziancu",
-            "url": "https://www.gigl.de/"
+            "name": "Hotel Andreas Hofer",
+            "type": "Hotel",
+            "address": "Giessenbach 1, 6330 Kufstein",
+            "price": "€65–90/noc",
+            "parking": "bezpłatny (własny parking)",
+            "note": "Spokojne położenie, rodzinna atmosfera, 10 min do centrum"
           },
           {
-            "name": "Hotel Pflügler",
-            "type": "Landgasthof",
-            "address": "Hauptstr. 14, 93333 Neustadt (Schwaig)",
-            "price": "€45–65/noc",
-            "parking": "bezpłatny przed hotelem"
+            "name": "Gasthof Auracher Löchl",
+            "type": "Historyczny Gasthof",
+            "address": "Römerstraße 3, 6330 Kufstein",
+            "price": "€85–120/noc",
+            "parking": "Parkhaus Kufstein Innenstadt (3 min pieszo, €12/noc)",
+            "note": "Legendarny Gasthof nad Innem z 1410 roku — wyjątkowa lokalizacja"
           },
           {
-            "name": "KEH Hotel Kelheim (alternatywa)",
-            "type": "Designhotel",
-            "address": "Am Kastlacker 1a, 93309 Kelheim",
-            "price": "od €46/noc",
-            "parking": "duży bezpłatny parking",
-            "note": "Malownicze Kelheim nad Dunajem, check-in kodem od 16:00"
+            "name": "Hotel Alpenrose",
+            "type": "Hotel",
+            "address": "Stadtplatz Kufstein",
+            "price": "€70–95/noc",
+            "parking": "parking publiczny w pobliżu",
+            "note": "Centralne położenie, widok na Festung"
+          },
+          {
+            "name": "Pension Gästehaus Inntal",
+            "type": "Pension",
+            "address": "okolice Kufstein",
+            "price": "€55–70/noc",
+            "parking": "bezpłatny",
+            "note": "Tańsza opcja budżetowa po tej stronie granicy"
           }
         ]
       },
       "tips": [
-        "Granicę PL/DE przekrocz przez Świecko (A2) — opłata AWSA ~129 PLN do Konina",
-        "E-winieta AT: €12,80/10 dni na shop.asfinag.at — kup w PL, start 13.09",
-        "Zatankuj w Niemczech przed Austrią — paliwo tańsze niż we Włoszech",
-        "Frankenwald Ost (A9 km 254) — dobry postój lunchowy w połowie trasy"
+        "Granicę PL/DE przekrocz przez Świecko (A2) — videotolling ~138 zł do Konina",
+        "E-winieta AT: €12,80/10 dni na shop.asfinag.at — kup przed wyjazdem, start 12.09",
+        "Tankuj przed Austrią (Monachium) — paliwo tańsze niż we Włoszech i Austrii",
+        "Frankenwald Ost (A9 km 254) — dobry postój lunchowy w połowie trasy",
+        "Granica DE/AT przy Kufstein — automatyczne kamery, bez kontroli; winieta wymagana od pierwszego km A93"
       ],
       "practical_tips": [
-        "Kup e-winietę AT online przed wyjazdem — €12,80, start 13.09",
-        "Tankuj w Niemczech przed Austrią — benzyna tańsza niż we Włoszech i Austrii",
-        "Frankenwald Ost (A9 km 254) — jedyna mostowa Raststätte w Niemczech, dobry postój na lunch"
+        "Kup e-winietę AT online przed wyjazdem — €12,80, start 12.09",
+        "Tankuj w Niemczech przed Austrią — benzyna tańsza (~€0.15–0.20/L różnica)",
+        "Frankenwald Ost (A9 km 254) — jedyna mostowa Raststätte w Niemczech, dobry postój na lunch",
+        "Kufstein: parkuj przy hotelu lub Parkhaus Innenstadt — stare miasto bez wjazdu"
+      ],
+      "parking": {
+        "destination": "Kufstein — nocleg tranzytowy",
+        "options": [
+          {
+            "name": "Parking hotelu — priorytet",
+            "type": "hotel",
+            "price": "gratis lub wliczony",
+            "gps_hint": "Kufstein, Tirol, Austria",
+            "note": "Wybieraj hotele z własnym parkingiem (Andreas Hofer, Pension Inntal)"
+          },
+          {
+            "name": "Parkhaus Kufstein Innenstadt",
+            "type": "garaż",
+            "price": "~€12–14/noc",
+            "gps_hint": "Stadtpark, 6330 Kufstein",
+            "note": "24h, 2 min pieszo do centrum i historycznych hoteli"
+          }
+        ],
+        "tip": "Jeśli hotel bez parkingu — zapytaj o bliski parking przy check-in"
+      },
+      "fuel_stops": [
+        {
+          "name": "Orlen / Shell przy A2 Świecko",
+          "location": "A2 km ~10 PL, przed granicą",
+          "road": "A2",
+          "hours": "24h",
+          "note": "Ostatnie tanie tankowanie w PL przed DE"
+        },
+        {
+          "name": "Raststätte Frankenwald Ost",
+          "location": "A9 km 254, Berg-Rudolphstein",
+          "road": "A9",
+          "hours": "24/7",
+          "note": "Aral, McDonald's — dobry postój lunchowy ~700 km od startu"
+        },
+        {
+          "name": "Raststätte München-Nord lub Holzkirchen",
+          "location": "A9/A8 okolice Monachium",
+          "road": "A9 → A8",
+          "hours": "24/7",
+          "note": "Ostatnie tankowanie w Niemczech przed Austrią — paliwo tańsze niż w AT"
+        }
       ]
     },
     {
@@ -444,7 +511,7 @@
       "day_num": 2,
       "type": "transit",
       "label": "TRANZYT → TOSKANIA",
-      "title": "Neustadt an der Donau → Barga (Garfagnana)",
+      "title": "Kufstein → Barga (Garfagnana)",
       "image": "barga",
       "drive_km": 790,
       "drive_h": "8–8,5 h",
@@ -1718,15 +1785,15 @@
         "id": "accommodation",
         "name": "Noclegi",
         "icon": "🏨",
-        "per_person_min": 420,
-        "per_person_max": 620,
+        "per_person_min": 425,
+        "per_person_max": 623,
         "note": "2 pokoje dwuosobowe, ceny za pokój za noc",
         "items": [
           {
-            "label": "Neustadt an der Donau — 1 noc (tranzyt tam)",
-            "detail": "€40–60/pokój",
-            "per_person_min": 20,
-            "per_person_max": 30
+            "label": "Kufstein (Tyrol) — 1 noc (tranzyt tam)",
+            "detail": "€45–65/pokój",
+            "per_person_min": 23,
+            "per_person_max": 33
           },
           {
             "label": "Baza 1 — Garfagnana / Barga — 5 nocy",
@@ -1774,8 +1841,8 @@
         "id": "tolls",
         "name": "Autostrady i winiety",
         "icon": "🛣️",
-        "per_person_min": 10,
-        "per_person_max": 16,
+        "per_person_min": 25,
+        "per_person_max": 30,
         "items": [
           {
             "label": "Winieta Austria (10 dni)",
@@ -1790,10 +1857,10 @@
             "per_person_max": 11
           },
           {
-            "label": "Autostrady Niemcy + Polska",
-            "detail": "brak opłat",
-            "per_person_min": 0,
-            "per_person_max": 0
+            "label": "Autostrada A2 Polska (Świecko–Konin, tam i z powrotem)",
+            "detail": "~276 zł / auto (≈€65) — videotolling bez zatrzymania",
+            "per_person_min": 16,
+            "per_person_max": 16
           }
         ]
       },
@@ -1854,10 +1921,10 @@
         ]
       }
     ],
-    "total_per_person_min": 723,
-    "total_per_person_max": 1094,
-    "total_4persons_min": 2892,
-    "total_4persons_max": 4376,
+    "total_per_person_min": 743,
+    "total_per_person_max": 1111,
+    "total_4persons_min": 2972,
+    "total_4persons_max": 4444,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
@@ -1876,7 +1943,7 @@
           {
             "id": "ekuz-mariusz",
             "label": "EKUZ — Mariusz (uczeń do 26 lat)",
-            "detail": "Karta EKUZ uprawnia do bezpłatnej pomocy medycznej w UE. Jako uczeń do 26 lat wyrabiasz bezpłatnie przez NFZ: eWUŚ online na pacjent.gov.pl lub osobiście w oddziale NFZ. Ważna 1–2 lata. Nie zastępuje ubezpieczenia turystycznego.",
+            "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) uprawnia do bezpłatnej pomocy medycznej w UE. Jako uczeń do 26 lat wyrabiasz bezpłatnie przez NFZ: eWUŚ online na pacjent.gov.pl lub osobiście w oddziale NFZ. Ważna 1–2 lata. Nie zastępuje ubezpieczenia turystycznego — pokrywa tylko nagłą pomoc medyczną.",
             "deadline": "6–8 tygodni przed wyjazdem",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
@@ -1884,7 +1951,7 @@
           {
             "id": "ekuz-dziewczyna",
             "label": "EKUZ — dziewczyna (studentka do 26 lat)",
-            "detail": "Tak samo jak Mariusz — jako studentka do 26 lat uprawniona do EKUZ bezpłatnie. Wyrobić przez pacjent.gov.pl lub NFZ. Sprawdzić czy nie jest na ubezpieczeniu rodziców (wtedy wyrobić przez ich NFZ).",
+            "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) — tak samo jak Mariusz. Jako studentka do 26 lat uprawniona do EKUZ bezpłatnie. Wyrobić przez pacjent.gov.pl lub NFZ. Sprawdzić czy nie jest na ubezpieczeniu rodziców (wtedy wyrobić przez ich NFZ).",
             "deadline": "6–8 tygodni przed wyjazdem",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
@@ -1892,7 +1959,7 @@
           {
             "id": "ekuz-pozostali",
             "label": "EKUZ — pozostałe 2 osoby",
-            "detail": "Każda osoba musi mieć własną kartę EKUZ. Wyrobić indywidualnie przez NFZ lub pacjent.gov.pl.",
+            "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) — każda osoba musi mieć własną kartę. Wyrobić indywidualnie przez NFZ lub pacjent.gov.pl. Koszt: bezpłatny dla ubezpieczonych w NFZ.",
             "deadline": "6–8 tygodni przed wyjazdem",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
@@ -2026,8 +2093,8 @@
           },
           {
             "id": "noclegi-tranzyt",
-            "label": "Noclegi tranzytowe (Neustadt, Wasserburg, Hof)",
-            "detail": "Hotele tranzytowe — mniej krytyczne, można rezerwować 4–8 tygodni przed. Booking.com wystarczy.",
+            "label": "Noclegi tranzytowe (Kufstein, Wasserburg, Hof)",
+            "detail": "Hotele tranzytowe — mniej krytyczne, można rezerwować 4–8 tygodni przed. Booking.com wystarczy. Kufstein (Tyrol) — klimatyczne miasteczko nad Innem.",
             "deadline": "lipiec–sierpień 2026",
             "priority": "medium"
           },

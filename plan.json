@@ -186,6 +186,11 @@
           "src": "images/gorfigliano.jpg",
           "alt": "Gorfigliano — średniowieczna wioska w Garfagnanie",
           "credit": "Antiedipo / CC BY-SA 3.0"
+        },
+        "poznan": {
+          "src": "images/poznan.jpg",
+          "alt": "Stary Rynek w Poznaniu — powrót do domu",
+          "credit": "A.Savin / CC BY-SA 3.0"
         }
       }
     },
@@ -627,13 +632,6 @@
         "gasthof_gigl_checkin": "15:00–21:00 (po 21:00 kontakt telefoniczny)",
         "raststaette_a9": "24/7"
       },
-      "tips": [
-        "Granicę PL/DE przekrocz przez Świecko (A2) — videotolling ~138 zł do Konina",
-        "E-winieta AT: €12,80/10 dni na shop.asfinag.at — kup przed wyjazdem, start 12.09",
-        "Tankuj przed Austrią (Monachium) — paliwo tańsze niż we Włoszech i Austrii",
-        "Frankenwald Ost (A9 km 254) — dobry postój lunchowy w połowie trasy",
-        "Granica DE/AT przy Kufstein — automatyczne kamery, bez kontroli; winieta wymagana od pierwszego km A93"
-      ],
       "practical_tips": [
         "Kup e-winietę AT online przed wyjazdem — €12,80, start 12.09",
         "Tankuj w Niemczech przed Austrią — benzyna tańsza (~€0.15–0.20/L różnica)",
@@ -761,12 +759,6 @@
           }
         ]
       },
-      "tips": [
-        "Streckenmaut A13 Brenner: €12,50 — zapłać PRZED wjazdem na shop.asfinag.at (zielony pas DIGITAL)",
-        "Zatankuj w Weronie lub Bolzano — paliwo drożeje im dalej na południe",
-        "A22 po włoskiej stronie: bramki za gotówkę lub kartę (Visa/MC OK) — przygotuj €20–30",
-        "Zjazd Lucca Est → SS12 doliną Serchio — wolna droga, bez opłat, piękna"
-      ],
       "route_segments": [
         {
           "segment": "Neustadt → Norymberga → Rosenheim",
@@ -1064,7 +1056,6 @@
         "price": "~€9–15/piatto, ~€25–35/os z winem",
         "gps_hint": "Via Borgo 1, 55051 Barga LU — tel. 0583 724121"
       },
-      "tips": [],
       "web_research": [
         {
           "topic": "Duomo di San Cristoforo — godziny i atrakcje",
@@ -1241,7 +1232,6 @@
         "price": "~€12–16/os",
         "gps_hint": "Via Garibaldi 15, 55032 Castelnuovo di Garfagnana LU — tel. 0583 644270"
       },
-      "tips": [],
       "web_research": [
         {
           "topic": "Mercato Castelnuovo",
@@ -1418,7 +1408,6 @@
         "phone": "+39 0583 995237",
         "rejected_alternative": "Agriturismo Il Corniolo — to nocleg w Castiglione di Garfagnana (Loc. Le Prade), NIE lunch przy Vagli"
       },
-      "tips": [],
       "web_research": [
         {
           "topic": "Fortezza Verrucole — KRYTYCZNE: 16.09 to środa",
@@ -1627,7 +1616,6 @@
           }
         ]
       },
-      "tips": [],
       "web_research": [
         {
           "topic": "Ponte del Diavolo — parking i dostęp",
@@ -1863,7 +1851,6 @@
           "tagliata di manzo (plasterki wołowiny z rukolą i parmezanem)"
         ]
       },
-      "tips": [],
       "image": "bagno-vignoni",
       "web_research": [
         {
@@ -2011,7 +1998,6 @@
         "phone": "+39 0577 280894",
         "opening_hours": "Codziennie 12:00–15:00 i 19:00–22:30 (sobota lunch OK)"
       },
-      "tips": [],
       "image": "siena",
       "web_research": [
         {
@@ -2195,7 +2181,6 @@
           }
         ]
       },
-      "tips": [],
       "image": "monte-oliveto",
       "web_research": [
         {
@@ -2441,7 +2426,6 @@
         "phone": "+39 0564 616192",
         "opening_hours": "Pn, Cz–Nd: 12:30–14:30 i 19:30–21:30. Wt ZAMKNIĘTE. Śr tylko kolacja (19:30–21:30)."
       },
-      "tips": [],
       "image": "pitigliano",
       "web_research": [
         {
@@ -2599,7 +2583,6 @@
         "gps_hint": "Via del Borgo 25, Sorano GR — zejście z Piazza del Municipio",
         "phone": "+39 349 8024196"
       },
-      "tips": [],
       "image": "sorano",
       "opening_hours": {
         "fortezza_orsini": "1 IV–30 IX: 10:00–13:00, 15:00–19:00. Wtorek 22.09 OTWARTE. Pn zamknięte (oprócz sierpnia/świąt). Visite sotterranee: 12:00, 15:00, 18:00 — prenotazione 0564/633767.",
@@ -2750,7 +2733,6 @@
         "gps_hint": "Piazza del Pretorio 16, Sovana GR",
         "phone": "+39 0564 1640019"
       },
-      "tips": [],
       "image": "sovana",
       "opening_hours": {
         "necropoli_sovana": "1.04–30.09: codziennie 10:00–19:00, ostatni wstęp 18:00.",
@@ -2936,7 +2918,6 @@
           }
         ]
       },
-      "tips": [],
       "opening_hours": {
         "ztl_firenze": "pn–pt 7:30–20:00, sob 7:30–16:00 — 24.09 (czw) ZTL AKTYWNA cały dzień tranzytu",
         "huberwirt_checkin": "Recepcja standardowo 14:00–20:00",
@@ -3184,7 +3165,6 @@
           }
         ]
       },
-      "tips": [],
       "opening_hours": {
         "quality_hotel_hof": "Recepcja 24h, sauna od 14:00",
         "hotel_central_hof": "Check-in od 15:00, parking gratis (Freiheitshalle obok jeśli pełny)",
@@ -3338,7 +3318,6 @@
         "price": null,
         "gps_hint": null
       },
-      "tips": [],
       "opening_hours": {
         "raststaette_sachsen": "24/7",
         "border_swiecko": "A2 Świecko: 24h. Videotolling PL od Konin."
@@ -3472,7 +3451,8 @@
       "parking": {
         "arrival": "Dotarcie do domu — brak noclegu. Lunch na trasie lub w Poznaniu."
       },
-      "narrative": "Ostatni odcinek — 470 km, sobota rano. Wyjeżdżamy o 7:00–7:30, A72 z Hof do Chemnitz, potem A4 na wschód przez Saksonię. Warto sprawdzić autobahn.de przy śniadaniu — roboty na A4 między Ohorn a Salzenforst bywają kapryśne. Drezno obwodnicą A4/A17, potem A13 przy Cottbus i A15 do Frankfurtu nad Odrą. Przez Świecko wjeżdżamy do Polski i A2 do Poznania — w domu ok. 13:30–15:00, cały dzień przed buforem 27.09."
+      "narrative": "Ostatni odcinek — 470 km, sobota rano. Wyjeżdżamy o 7:00–7:30, A72 z Hof do Chemnitz, potem A4 na wschód przez Saksonię. Warto sprawdzić autobahn.de przy śniadaniu — roboty na A4 między Ohorn a Salzenforst bywają kapryśne. Drezno obwodnicą A4/A17, potem A13 przy Cottbus i A15 do Frankfurtu nad Odrą. Przez Świecko wjeżdżamy do Polski i A2 do Poznania — w domu ok. 13:30–15:00, cały dzień przed buforem 27.09.",
+      "image": "poznan"
     },
     {
       "date": "27.09 (nd)",
@@ -3482,7 +3462,6 @@
       "title": "Dzień rezerwowy — już w Poznaniu",
       "note": "Deadline powrotu. Przy planowym harmonogramie jesteś w domu od 26.09. Ten dzień to margines bezpieczeństwa na opóźnienia, pogodę lub dodatkowy postój.",
       "base_id": null,
-      "tips": [],
       "practical_tips": []
     }
   ],
@@ -3717,14 +3696,20 @@
         "id": "tolls",
         "name": "Autostrady i winiety",
         "icon": "🛣️",
-        "per_person_min": 25,
-        "per_person_max": 30,
+        "per_person_min": 28,
+        "per_person_max": 35,
         "items": [
           {
             "label": "Winieta Austria (10 dni)",
             "detail": "€12,80 / auto — asfinag.at",
             "per_person_min": 3,
-            "per_person_max": 3
+            "per_person_max": 4
+          },
+          {
+            "label": "A13 Brenner Streckenmaut (Austria)",
+            "detail": "€12,50 / auto — shop.asfinag.at (Streckenabschnitt A13). Płatna osobno od winiety.",
+            "per_person_min": 3,
+            "per_person_max": 4
           },
           {
             "label": "Autostrady Włochy (A1, A11, lokalne)",
@@ -3797,10 +3782,10 @@
         ]
       }
     ],
-    "total_per_person_min": 728,
-    "total_per_person_max": 1111,
-    "total_4persons_min": 2912,
-    "total_4persons_max": 4444,
+    "total_per_person_min": 731,
+    "total_per_person_max": 1116,
+    "total_4persons_min": 2924,
+    "total_4persons_max": 4464,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",

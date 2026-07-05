@@ -689,9 +689,13 @@ function renderTodo(todo) {
   `;
 }
 
+function fmtClimateKey(key) {
+  return key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
 function renderPractical(info) {
   const climate = Object.entries(info.climate || {})
-    .map(([region, desc]) => `<li><strong>${esc(region)}:</strong> ${esc(desc)}</li>`)
+    .map(([region, desc]) => `<li><strong>${esc(fmtClimateKey(region))}:</strong> ${esc(desc)}</li>`)
     .join('');
 
   const crowdTips = info.crowd_avoidance?.tips?.length

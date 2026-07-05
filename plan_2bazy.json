@@ -116,6 +116,11 @@
           "src": "images/gorfigliano.jpg",
           "alt": "Gorfigliano — średniowieczna wioska w Garfagnanie",
           "credit": "Antiedipo / CC BY-SA 3.0"
+        },
+        "poznan": {
+          "src": "images/poznan.jpg",
+          "alt": "Stary Rynek w Poznaniu — powrót do domu",
+          "credit": "A.Savin / CC BY-SA 3.0"
         }
       }
     },
@@ -449,13 +454,6 @@
           }
         ]
       },
-      "tips": [
-        "Granicę PL/DE przekrocz przez Świecko (A2) — videotolling ~138 zł do Konina",
-        "E-winieta AT: €12,80/10 dni na shop.asfinag.at — kup przed wyjazdem, start 12.09",
-        "Tankuj przed Austrią (Monachium) — paliwo tańsze niż we Włoszech i Austrii",
-        "Frankenwald Ost (A9 km 254) — dobry postój lunchowy w połowie trasy",
-        "Granica DE/AT przy Kufstein — automatyczne kamery, bez kontroli; winieta wymagana od pierwszego km A93"
-      ],
       "practical_tips": [
         "Kup e-winietę AT online przed wyjazdem — €12,80, start 12.09",
         "Tankuj w Niemczech przed Austrią — benzyna tańsza (~€0.15–0.20/L różnica)",
@@ -558,12 +556,6 @@
           }
         ]
       },
-      "tips": [
-        "Niedziela 13.09 = spodziewany ruch powrotny z Alp na Brennerze — wyjedź o 7:00",
-        "Streckenmaut A13 Brenner: €12,50 (2026) — kup digital na shop.asfinag.at",
-        "Ostatnie ~50 km SR445: +45–60 min do ETA — zadzwoń do agriturismo z Castelnuovo",
-        "Barga ZTL: parkuj Porta Reale (Via Bellavista) lub przy agriturismo Mologno"
-      ],
       "route_segments": [
         {
           "segment": "Neustadt → Rosenheim",
@@ -679,12 +671,6 @@
         "note": "Toskańska kuchnia z lokalnymi składnikami Garfagnany.",
         "price": "~€9–15/piatto, ~€25–35/os z winem"
       },
-      "tips": [
-        "Rano (8:00–10:00) najlepsze światło na Duomo i widok na Alpy Apuańskie",
-        "Parking poza ZTL: Parcheggio Porta Reale — centrum pieszo 5 min",
-        "Grotta del Vento: rezerwacja online grottadelvento.com — It.2 o 15:00 idealny po lunchu",
-        "Duomo: moneta €2 na oświetlenie — ciemno w środku bez niej"
-      ],
       "practical_tips": [
         "Rano 8:00: Duomo (1 h) → Treppignana–Ciocco (1–1,5 h) — popołudnie Grotta del Vento",
         "Grotta: zarezerwuj Itinerario 2 (2 h, €18) na 15:00 — kurtka obowiązkowa (~10°C)"
@@ -753,12 +739,6 @@
         "note": "Albergo-ristorante w centrum historycznym Castelnuovo. Kultowe miejsce wśród lokalnych — terrazza z widokiem na dolinę.",
         "price": "~€12–16/os"
       },
-      "tips": [
-        "Targ w Castelnuovo: czwartek (17 IX) — farro IGP i lokalne sery w sklepach przy targu",
-        "Orecchiella 15.09 (wt): centrum/muzea ZAMKNIĘTE po 14.09 (tylko sob–nd), szlaki i recinti ZAWSZE otwarte",
-        "Castiglione: parking Porta Inferi (26 miejsc) — obejście murów ~30 min",
-        "Da Carlino: lunch 12:00–15:00, przyjdź przed 13:00"
-      ],
       "practical_tips": [
         "Castiglione (9:00) → Orecchiella szlak (10:30) → lunch Castelnuovo (13:00) → powrót do Barga",
         "Orecchiella 15.09 (wt): szlaki OTWARTE, centrum muzeum ZAMKNIĘTE — planuj bez muzeum"
@@ -829,11 +809,6 @@
         "note": "Taras i ogród z widokiem na jezioro. Potwierdź pranzo tel. 0583 995237.",
         "price": "~€15–25/os"
       },
-      "tips": [
-        "16.09 = środa: Verrucole ZAMKNIĘTA (wrzesień pt–nd) — spacer zewnętrzny OK",
-        "Lago di Vagli: ruiny Fabbriche niewidoczne w 2026 — oprożnienie planowane 2027",
-        "Parking przy tamie Vagli — przyjedź rano, zapełnia się po południu"
-      ],
       "practical_tips": [
         "16.09 środa: Fortezza Verrucole — zwiedzanie zewnętrzne (wejście wewnątrz czw–nd); panorama 360° dostępna bezpłatnie",
         "Vagli: parking przy tamie zapełnia się w południe — jedź tam rano (9:00)"
@@ -902,12 +877,6 @@
         "note": "Rodzinna trattoria w Bagni di Lucca. Czwartek 17.09 otwarte 7:00–20:00. Wczesny lunch (~12:30). Tel. +39 0583 805919.",
         "price": "~€12–18/os"
       },
-      "tips": [
-        "Ponte del Diavolo najlepiej rano (8:00–10:00) — mniej autokarów, mgła nad Serchio",
-        "Osteria del Diavolo przy moście zamknięta w czwartek — lunch w Trattoria Borghesi w Bagni",
-        "Bagno Bernabò (Bagni di Lucca): termy historyczne — rezerwacja tel. 331 171 9014",
-        "Pieve di Careggine: odmienny widok na jezioro Vagli niż od tamy — cicho, zero turystów"
-      ],
       "practical_tips": [
         "Ponte del Diavolo (8:00–9:30) → Bagni di Lucca (10:00–11:30) → Pieve di Careggine (12:00) → lunch Borghesi (13:00) → powrót do bazy",
         "Osteria del Diavolo ZAMKNIĘTA w czwartek (17.09) — lunch w Trattoria Borghesi w Bagni"
@@ -965,11 +934,6 @@
           }
         ]
       },
-      "tips": [
-        "Wyjazd ~10:00 (most był już wczoraj) — wcześniejszy przyjazd do Chianti",
-        "Tankuj przed A11 — stacje rzadsze w Chianti poza Gaiole/Castelnuovo Berardenga",
-        "Zadzwoń do agriturismo BAZA 2 z A11 — check-in 14:00, droga do Vagliagli kręta"
-      ],
       "route_segments": [
         {
           "segment": "Barga → Lucca (A11)",
@@ -1057,13 +1021,6 @@
         "note": "Kultowa trattoria za Palazzo Pubblico. Rezerwacja tel. od 10:00 (sobota lunch!). Tel. +39 0577 280894.",
         "price": "~€15–22/os"
       },
-      "tips": [
-        "Wyjazd 7:00 z bazy — parking Santa Caterina lub Stadio-Fortezza",
-        "Campo o 7:30 prawie pusty — tłumy od 10:00, sobota = najgorszy dzień tygodnia",
-        "OPA SI PASS online: operaduomo.siena.it — €16 (podłoga odkryta), skip kolejki",
-        "Podłoga mozaikowa odkryta do 15.11.2026 — główny powód wizyty we wrześniu",
-        "Powrót do bazy przed 14:00 — sobota popołudnie = korki, autokary z Florencji"
-      ],
       "practical_tips": [
         "SOBOTA = kluczowy dzień: wyjazd 7:00, Campo o 7:30 prawie pusty. Tłumy od 10:00, szczyt 11:00–15:00",
         "Parking: Santa Caterina (schody ruchome, bliżej Duomo) — €2/h",
@@ -1134,13 +1091,6 @@
         "note": "Lokalna osteria w centrum Raddy — proste toskańskie menu, dobra relacja cena/jakość. Alternatywa w tym samym rejonie: La Bottega di Volpaia (SP112, Volpaia) — kanapki i deski serów na tarasie z widokiem.",
         "price": "~€18–28/os"
       },
-      "tips": [
-        "Brolio: bilet giardini €7,50 (nie €15!) — degustacja 1 wina w cenie, bez rezerwacji",
-        "Brolio: przyjedź na 10:00 otwarcie — 1–1,5h na giardini i bastioni, potem Bosco",
-        "Badia a Coltibuono: otwarta codziennie, ogród i sklep bez rezerwacji",
-        "Radda: Palazzo del Podestà + Casa del Chianti Classico — enoteche 10:00–13:00 i 15:00–19:00",
-        "Niedziela 20.09: Brolio otwarte, Badia otwarta — idealny dzień na zamki i wino"
-      ],
       "practical_tips": [
         "Brolio (10:00–12:00, giardini + querceti) → Badia a Coltibuono (~12:30, ogród i sklep) → lunch Villa a Sesta → Radda popołudnie",
         "Vendemmia (wrzesień): winiarnie mogą mieć skrócone godziny — sprawdź przed wyjazdem"
@@ -1210,12 +1160,6 @@
         "note": "Lokalna osteria w centrum Asciano. Tel. +39 0577 718056. Poniedziałek: sprawdź godziny.",
         "price": "~€15–22/os"
       },
-      "tips": [
-        "Monte Oliveto: kup bilet online Vivaticket — unikniesz kolejki (€6 prevendita)",
-        "Bosco della Ragnaia = San Giovanni d'Asso, nie Asciano — opcjonalny detour ~15 min od abbazii",
-        "Crete Senesi: biancane — najlepsze światło popołudniowe",
-        "Poniedziałek 21.09: Monte Oliveto otwarte, Asciano otwarte"
-      ],
       "practical_tips": [
         "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma, 2h) → 11:30 opcjonalnie Bosco Ragnaia (30–45 min) → 12:30 Asciano → 13:00 lunch La Tombolina → popołudnie Crete Senesi",
         "Bilet Monte Oliveto poniedziałek: €7 (Vivaticket €6) — bibl. €4 pn–cz"
@@ -1286,12 +1230,6 @@
         "note": "Klasyczna trattoria w centrum Pienzy — lokale, porządne porcje, uczciwa cena. Czynna na lunch. Rezerwacja zalecana w sezonie przez TripAdvisor lub telefon. Alternatywa: La Terrazza della Val d'Orcia (widok na dolinę z tarasu, Via Condotti 11). Osobno: Osteria Perillà to gwiazdkowe fine dining w Rocca d'Orcia (€85–130/os) — jeśli chcecie spróbować, rezerwuj tygodnie wcześniej: info@osteriaperilla.it.",
         "price": "~€15–25/os"
       },
-      "tips": [
-        "Val d'Orcia: dojazd 40–45 min — uzasadniony wyjątek dla dziedzictwa UNESCO",
-        "Pienza: przyjedź przed 9:30 — najpiękniejsze miasto-utopia Toskanii, wtorek mniej tłumów niż weekend",
-        "Bagno Vignoni: Parco dei Mulini poniżej wioski — bezpłatne kanaliki termalne 38°C — naturalne strumienie (NIE basen na Piazza delle Sorgenti)",
-        "Montalcino: degustacja w Enoteca La Fortezza lub Franci — bez rezerwacji, 3 wina od €15"
-      ],
       "practical_tips": [
         "Timeline: Bagno Vignoni (9:00, 1h) → Pienza (10:30, 2h) → lunch Latte di Luna / Pienza (12:30) → Montalcino (14:30, 1,5h) → powrót ~17:00",
         "Dojazd: z Castelnuovo B. — Bagno Vignoni ~45–60 min (SP2/SP53, wrzesień = zbiory, traktory). Wyjazd przed 8:00."
@@ -1359,12 +1297,6 @@
         "note": "Restauracja w centrum Monteriggioni — widok na wieże. Rezerwacja zalecana: +39 0577 304127. Kolacja pożegnalna w Toskanii.",
         "price": "~€25–40/os"
       },
-      "tips": [
-        "Monteriggioni: najlepiej rano (~9:00–11:00) przed autokarami; wolny wstęp na teren, mury €5",
-        "Murlo Antiquarium: zamknięte poniedziałek — środa 23.09 OTWARTE (wt–nd)",
-        "Foresta di Tocchi: spacer 1–2 h, brak oznaczeń turystycznych — orientacja leśnymi ścieżkami",
-        "Jutro wyjazd tranzytowy o 7:00 — spakuj wieczorem, tankowanie w Castelnuovo Berardenga dziś"
-      ],
       "practical_tips": [
         "Monteriggioni (9:00–11:00) → Las Tocchi (11:30–13:00) → Murlo + Antiquarium (13:30) → kolacja Il Pozzo 19:00",
         "Ostatni dzień Toskanii: zaplanuj kolację — Il Pozzo to jedna z lepszych restauracji okolicy"
@@ -1425,13 +1357,6 @@
           }
         ]
       },
-      "tips": [
-        "Wyjazd 7:00 z agriturismo = uniknięcie korków przy Florencji i Bolonii",
-        "Z Chianti do A1: SP9 → SS408 → A1 Firenze-Sud lub Valdarno (~50 min do autostrady)",
-        "Zostań na A1 przy Florencji — czwartek = ZTL aktywna, mandaty €80–335",
-        "Zatankuj w Niemczech po Brenner — paliwo tańsze niż we Włoszech i Austrii",
-        "Wasserburg am Inn — wieczorny spacer po starym mieście nad Innem"
-      ],
       "route_segments": [
         {
           "segment": "Chianti (Vagliagli) → A1 Firenze-Sud",
@@ -1522,11 +1447,6 @@
           }
         ]
       },
-      "tips": [
-        "Krótszy dzień jazdy — czas na odpoczynek przed finałowym etapem do Poznania",
-        "Zjazd Hof-Nord (A9), Hof-West (B15) lub Naila/Selbitz — wszystkie dobre dla noclegu",
-        "Hof słynie z Wärschtlamo (würstchen) i piwa Meinel-Bräu"
-      ],
       "route_segments": [
         {
           "segment": "Wasserburg → Monachium (A8)",
@@ -1573,11 +1493,6 @@
         "note": "Krótszy finałowy etap — lunch na trasie lub po dotarciu do Poznania.",
         "price": null
       },
-      "tips": [
-        "Dotarcie do Poznania 26.09 — 1 dzień przed deadline 27.09",
-        "Przejście graniczne Świecko (A2) — najszybsze dla kierunku Polska",
-        "Sprawdź stan A4 przez Saksonię — roboty drogowe częste w tym rejonie"
-      ],
       "practical_tips": [
         "Wyjazd 7:00–7:30 z Hof — dotarcie Poznań ok. 13:30–15:00.",
         "A4 Ohorn–Salzenforst: do października 2026 jeden pas kier. Drezno — sprawdź autobahn.de rano.",
@@ -1609,7 +1524,8 @@
           "km": "~150",
           "note": "Świecko — granica PL/DE. Opłata AW ~138 zł. Dotarcie ~13:00–14:30."
         }
-      ]
+      ],
+      "image": "poznan"
     },
     {
       "date": "27.09 (nd)",
@@ -1847,14 +1763,20 @@
         "id": "tolls",
         "name": "Autostrady i winiety",
         "icon": "🛣️",
-        "per_person_min": 25,
-        "per_person_max": 30,
+        "per_person_min": 28,
+        "per_person_max": 35,
         "items": [
           {
             "label": "Winieta Austria (10 dni)",
             "detail": "€12,80 / auto — asfinag.at",
             "per_person_min": 3,
-            "per_person_max": 3
+            "per_person_max": 4
+          },
+          {
+            "label": "A13 Brenner Streckenmaut (Austria)",
+            "detail": "€12,50 / auto — shop.asfinag.at (Streckenabschnitt A13). Płatna osobno od winiety.",
+            "per_person_min": 3,
+            "per_person_max": 4
           },
           {
             "label": "Autostrady Włochy (A1, A11, lokalne)",
@@ -1927,10 +1849,10 @@
         ]
       }
     ],
-    "total_per_person_min": 743,
-    "total_per_person_max": 1111,
-    "total_4persons_min": 2972,
-    "total_4persons_max": 4444,
+    "total_per_person_min": 746,
+    "total_per_person_max": 1116,
+    "total_4persons_min": 2984,
+    "total_4persons_max": 4464,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",

@@ -99,7 +99,7 @@
         },
         "neustadt": {
           "src": "images/neustadt.jpg",
-          "alt": "Neustadt an der Donau",
+          "alt": "Nocleg tranzytowy — małe bawarskie miasteczko",
           "credit": "Wikimedia Commons · Stefan Oemisch"
         },
         "wasserburg": {
@@ -111,11 +111,6 @@
           "src": "images/hof.jpg",
           "alt": "Hof (Saale), Frankonia",
           "credit": "Wikimedia Commons · Stefan Oemisch"
-        },
-        "kufstein": {
-          "src": "images/wasserburg.jpg",
-          "alt": "Kufstein (Tyrol) — nocleg tranzytowy w Alpach",
-          "credit": "Wikimedia Commons (placeholder — brak zdjęcia Kufstein)"
         }
       }
     },
@@ -329,7 +324,7 @@
       "image": "chianti",
       "label": "BAZA 2",
       "region": "Chianti Senese · Siena",
-      "nights": "18–22 wrz (5 nocy)",
+      "nights": "18–23 wrz (6 nocy)",
       "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny. Wariant 2-bazowy: 5 nocy — więcej czasu na Crete Senesi, Val d'Orcia i lasy dębowe.",
       "color": "amber",
       "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
@@ -362,7 +357,7 @@
       "type": "transit",
       "label": "TRANZYT → NIEMCY",
       "title": "Poznań → Kufstein (Tyrol)",
-      "image": "kufstein",
+      "image": "neustadt",
       "drive_km": 1010,
       "drive_h": "10–11 h",
       "base_id": null,

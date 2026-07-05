@@ -124,7 +124,7 @@
         },
         "neustadt": {
           "src": "images/neustadt.jpg",
-          "alt": "Neustadt an der Donau",
+          "alt": "Nocleg tranzytowy — małe bawarskie miasteczko",
           "credit": "Wikimedia Commons · Stefan Oemisch"
         },
         "wasserburg": {
@@ -181,11 +181,6 @@
           "src": "images/via-cava.jpg",
           "alt": "Via Cava etruska — wąwóz w tufie, okolice Pitigliano",
           "credit": "Wikimedia Commons · Sidvics"
-        },
-        "kufstein": {
-          "src": "images/wasserburg.jpg",
-          "alt": "Kufstein (Tyrol) — nocleg tranzytowy w Alpach",
-          "credit": "Wikimedia Commons (placeholder — brak zdjęcia Kufstein)"
         }
       }
     },
@@ -458,7 +453,7 @@
       "image": "pitigliano",
       "label": "BAZA 3",
       "region": "Maremma Toscana · Grosseto",
-      "nights": "20–22 wrz (3 noce)",
+      "nights": "20–23 wrz (4 noce)",
       "description": "Tuf wulkaniczny, cywilizacja etruska, dąb ostrolistny (leccio), termalna Saturnia",
       "color": "rose",
       "accommodation": "Agriturismo Sassotondo (Sovana, biodynamiczne wino) — €80–110/noc. Alternatywa: agriturismo w dolinie Fiora.",
@@ -491,7 +486,7 @@
       "type": "transit",
       "label": "TRANZYT → NIEMCY",
       "title": "Poznań → Kufstein (Tyrol)",
-      "image": "kufstein",
+      "image": "neustadt",
       "drive_km": 1010,
       "drive_h": "10–11 h",
       "base_id": null,

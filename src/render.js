@@ -193,10 +193,15 @@ function renderBases(bases, images) {
     })
     .join('');
 
+  const regionNames = bases.map(b => b.region?.split('·')[0].trim()).filter(Boolean);
+  const lead = regionNames.length > 1
+    ? `${regionNames.slice(0, -1).join(', ')} i ${regionNames.at(-1)} — po 3–6 noce w każdej.`
+    : `${regionNames[0]} — baza wypadowa.`;
+
   return `
     <section class="section" id="bazy">
       <h2 class="section-title">Bazy noclegowe</h2>
-      <p class="section-lead">Trzy regiony — Garfagnana, Chianti i Maremma — po 3–4 noce w każdym.</p>
+      <p class="section-lead">${esc(lead)}</p>
       <div class="bases-grid">${cards}</div>
     </section>
   `;

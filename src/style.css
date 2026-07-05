@@ -603,7 +603,7 @@ body {
 }
 
 .day-narrative {
-  font-family: var(--font-body);
+  font-family: var(--font-serif);
   font-size: 0.97rem;
   line-height: 1.7;
   color: var(--ink);
@@ -1734,7 +1734,7 @@ body.lightbox-open {
 }
 
 .costs-category {
-  background: var(--surface);
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1rem 1.25rem;
@@ -1757,7 +1757,7 @@ body.lightbox-open {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--text-muted);
+  color: var(--muted);
   flex: 1;
 }
 
@@ -1770,7 +1770,7 @@ body.lightbox-open {
 
 .costs-per-label {
   font-size: 0.75rem;
-  color: var(--text-muted);
+  color: var(--muted);
   font-family: var(--font-sans);
   font-weight: 400;
 }
@@ -1806,7 +1806,7 @@ body.lightbox-open {
 }
 
 .costs-not-included {
-  background: var(--surface);
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1rem 1.25rem;
@@ -2298,7 +2298,7 @@ html.dark .site-nav__links a {
 }
 
 html.dark .site-nav__links a:hover {
-  color: var(--ore-light, #dfc06a);
+  color: var(--oro-light, #dfc06a);
 }
 
 /* Hero — zielono-ciemna mgła zamiast brązu */

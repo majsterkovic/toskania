@@ -663,7 +663,7 @@ function renderTodo(todo) {
           <span class="todo-item__text">${esc(item.label)}</span>
           <span class="todo-item__priority">${esc(PRIORITY_LABEL[item.priority] || '')}</span>
         </label>
-        ${item.deadline ? `<div class="todo-item__deadline">do: ${esc(item.deadline)}</div>` : ''}
+        ${item.deadline ? `<div class="todo-item__deadline${item.deadline.includes('PILNIE') ? ' todo-item__deadline--overdue' : ''}">⏰ ${esc(item.deadline)}</div>` : ''}
         ${item.detail ? `<div class="todo-item__detail">${esc(item.detail)}</div>` : ''}
         ${item.url ? `<a class="todo-item__link" href="${esc(item.url)}" target="_blank" rel="noopener">↗ otwórz</a>` : ''}
       </li>

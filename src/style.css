@@ -1997,6 +1997,12 @@ body.lightbox-open {
   margin-left: 1.6rem;
 }
 
+.todo-item__deadline--overdue {
+  color: var(--terracotta-deep);
+  font-style: normal;
+  font-weight: 600;
+}
+
 .todo-item__detail {
   font-size: 0.78rem;
   color: var(--muted);
@@ -2390,6 +2396,10 @@ html.dark .todo-item__priority {
 
 html.dark .todo-item--high .todo-item__priority {
   background: rgba(204, 114, 72, 0.18);
+  color: var(--terracotta-light);
+}
+
+html.dark .todo-item__deadline--overdue {
   color: var(--terracotta-light);
 }
 

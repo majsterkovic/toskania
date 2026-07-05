@@ -1805,7 +1805,8 @@
           "note": "Geotermiczny basen zamiast rynku — unikalna piazza d'acqua. Woda paruje o świcie. Wejście bezpłatne do oglądania, kąpiel w Santa Caterina Terme.",
           "opening_hours": "Otwarte całą dobę (teren zewnętrzny)",
           "entry_fee": "bezpłatne (widok), €15–20 (kąpiel terme)",
-          "image_key": "bagno-vignoni"
+          "image_key": "bagno-vignoni",
+          "description": "Geotermiczny basen zamiast rynku — unikalna piazza d'acqua. Woda paruje o świcie. Wejście bezpłatne do oglądania, kąpiel w Santa Caterina Terme."
         },
         {
           "name": "San Quirico d'Orcia — Kolegiata i Horti Leonini",
@@ -1819,7 +1820,8 @@
           "note": "Romańska kolegiata z XII w., renesansowe Horti Leonini — ogrody geometrycznych żywopłotów. Lawendowe uliczki, lokalne sklepy z pecorino.",
           "opening_hours": "Horti Leonini: zawsze otwarte. Kolegiata: 8:00–19:00",
           "entry_fee": "bezpłatne",
-          "image_key": "san-quirico"
+          "image_key": "san-quirico",
+          "description": "Romańska kolegiata z XII w., renesansowe Horti Leonini — ogrody geometrycznych żywopłotów. Lawendowe uliczki, lokalne sklepy z pecorino."
         },
         {
           "name": "Pienza — renesansowe miasto papieskie",
@@ -1833,7 +1835,8 @@
           "note": "Miasto wybudowane od podstaw przez papieża Piusa II w XV w. jako idealne renesansowe centrum. Piazza Pio II, katedra, Palazzo Piccolomini. Sklepy z pecorino toscano.",
           "opening_hours": "Palazzo Piccolomini: 10:00–18:00 (zamknięty wt)",
           "entry_fee": "Palazzo €7; katedra bezpłatna",
-          "image_key": "pienza"
+          "image_key": "pienza",
+          "description": "Miasto wybudowane od podstaw przez papieża Piusa II w XV w. jako idealne renesansowe centrum. Piazza Pio II, katedra, Palazzo Piccolomini. Sklepy z pecorino toscano."
         }
       ],
       "oak_forest": null,
@@ -2393,7 +2396,7 @@
           "drive_min": 5,
           "description": "Najbardziej charakterystyczna z 10 vie cave Pitigliano — etruska droga łącząca Pitigliano z Sovana, wykuta w tufie (ściany do 12–20 m). Necropoli VII–VI w. p.n.e., grobowiec PSG1 (jedyny drum tomb w dolinie Fiora), Fonte dell'Olmo, edicola San Giuseppe. Co 19 III: Torciata di San Giuseppe — procesja z pochodniami.",
           "type": "nature",
-          "image_key": "pitigliano",
+          "image_key": "via-cava",
           "gps_hint": "Via Cava di San Giuseppe — start SP42 Pian della Madonna lub pieszo z centrum (~10–15 min)",
           "image": "pitigliano",
           "ticket_price": "Bezpłatny — szlak outdoor",
@@ -2537,7 +2540,7 @@
           "drive_min": 10,
           "description": "Etruska via cava przy fortecy Orsini — necropoli San Rocco, nisze i symbole na skale, dębowy las w wąwozie rzeki Lente. Spacer 45 min–1 h, bezpłatny, bez biletu.",
           "type": "nature",
-          "image_key": "sorano",
+          "image_key": "via-cava",
           "gps_hint": "Chiesa di San Rocco, Sorano GR — start od Fortezza Orsini, szlak w dolinę Lente",
           "image": "sorano",
           "ticket_price": "Bezpłatny",
@@ -3942,21 +3945,21 @@
             "id": "noclegi-baza1",
             "label": "Nocleg Baza 1 — Garfagnana (4 nocy, ok. 13–17.09)",
             "detail": "Agriturismo w okolicach Barga — rezerwować jak najwcześniej, wrzesień to jeszcze sezon. Booking.com, Airbnb lub bezpośrednio. Budżet €60–90/pokój/noc × 2 pokoje.",
-            "deadline": "jak najwcześniej (maj–czerwiec 2026)",
+            "deadline": "PILNIE — maj–czerwiec minął, rezerwuj teraz!",
             "priority": "high"
           },
           {
             "id": "noclegi-baza2",
             "label": "Nocleg Baza 2 — Val d'Orcia (3 nocy, ok. 17–20.09)",
             "detail": "Agriturismo lub B&B w okolicach Castiglione d'Orcia / San Quirico d'Orcia. Val d'Orcia bardzo popularne — rezerwować jak najwcześniej. Budżet €70–110/pokój/noc × 2 pokoje.",
-            "deadline": "jak najwcześniej (maj–czerwiec 2026)",
+            "deadline": "PILNIE — maj–czerwiec minął, rezerwuj teraz!",
             "priority": "high"
           },
           {
             "id": "noclegi-baza3",
             "label": "Nocleg Baza 3 — Maremma (4 nocy, ok. 20–24.09)",
             "detail": "Agriturismo lub B&B w okolicach Pitigliano / Manciano / Sorano. Maremma mniej turystyczna — łatwiej o rezerwację niż Chianti, ale wrzesień wciąż sezon. Budżet €60–90/pokój/noc × 2 pokoje.",
-            "deadline": "jak najwcześniej (maj–czerwiec 2026)",
+            "deadline": "PILNIE — maj–czerwiec minął, rezerwuj teraz!",
             "priority": "high"
           },
           {

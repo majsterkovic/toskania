@@ -453,8 +453,8 @@
       "booking_tip": "Szukaj: agriturismo Castiglione d'Orcia lub Monticchiello — z widokiem na dolinę i własnym ogrodem",
       "gps_hint": "Naviguj: Castiglione d'Orcia SI lub Rocca d'Orcia SI — unikaj wjazdu do Rocca (ZTL)",
       "coords": [
-        43,
-        11.617
+        43.062,
+        11.618
       ]
     },
     {
@@ -3353,6 +3353,7 @@
     }
   ],
   "practical_info": {
+    "plan_note": "Wariant 3 bazy: Garfagnana (baza 1) → Val d'Orcia (baza 2) → Maremma (baza 3). Pełna rozpiętość Toskanii — od Alp Apuańskich po wybrzeże tyreńskie. Więcej transferów niż w wariancie 2 baz, ale dostęp do etruskich via cave, Saturnii i maremmańskiej kuchni.",
     "vignettes": {
       "austria": "E-winieta online: asfinag.at, €12,80/10 dni — kup przed wyjazdem. Dodatkowo A13 Brenner Streckenmaut €12,50 — oddzielnie na shop.asfinag.at.",
       "italy": "Płatne bramki: gotówka lub karta bezpośrednio"

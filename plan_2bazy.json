@@ -2039,7 +2039,7 @@
           {
             "id": "winieta",
             "label": "Winieta Austria — kupić online",
-            "detail": "E-winieta na asfinag.at — 10-dniowa kosztuje €12,80. Kupić online PRZED wjazdem do Austrii (można dzień wcześniej, aktywacja od wybranej daty). Kara za brak: €120 na miejscu.",
+            "detail": "E-winieta na asfinag.at — 10-dniowa kosztuje €12,80. Kupić online PRZED wjazdem do Austrii (aktywacja od wybranej daty). Kara za brak: €120 na miejscu.\n\nOsobno: Streckenmaut A13 Brenner — €12,50 (2026). Kupić na shop.asfinag.at → 'Section toll / Abschnittsmaut'. Zielony pas DIGITAL — bez zatrzymania. Łącznie: €12,80 + €12,50 = €25,30 za auto.",
             "deadline": "dzień przed przejazdem przez Austrię",
             "priority": "high",
             "url": "https://www.asfinag.at"

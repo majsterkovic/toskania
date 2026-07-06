@@ -670,6 +670,23 @@ html.dark .day-narrative {
   margin-bottom: 0.25rem;
 }
 
+.food-phone,
+.food-hours,
+.food-gps {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  margin-top: 0.15rem;
+}
+
+.food-phone a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.food-phone a:hover {
+  text-decoration: underline;
+}
+
 .day-block--food {
   padding: 0.85rem 0.85rem 0.85rem 1.1rem;
   border-left: 2px solid var(--oro);

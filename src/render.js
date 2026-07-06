@@ -237,10 +237,15 @@ function renderFood(food) {
               <strong>${esc(o.name)}</strong>
               ${o.type ? `<span class="type-badge">${esc(o.type)}</span>` : ''}
             </div>
+            ${o.address ? `<p class="food-option__note muted">${esc(o.address)}</p>` : ''}
             ${o.note ? `<p class="food-option__note">${esc(o.note)}</p>` : ''}
             ${o.price ? `<span class="price">${esc(o.price)}</span>` : ''}
           </div>`).join('')}
       </div>`
+    : '';
+
+  const gpsHtml = food.gps_hint && food.gps_hint !== food.address
+    ? `<p class="food-gps muted">📍 ${esc(food.gps_hint)}</p>`
     : '';
 
   return `
@@ -248,9 +253,12 @@ function renderFood(food) {
       <h4 class="block-label">Kulinaria</h4>
       <p class="food-place"><strong>${esc(food.place)}</strong></p>
       ${food.address ? `<p class="muted">${esc(food.address)}</p>` : ''}
+      ${food.phone ? `<p class="food-phone muted">📞 <a href="tel:${esc(food.phone)}">${esc(food.phone)}</a></p>` : ''}
+      ${food.opening_hours ? `<p class="food-hours muted">🕐 ${esc(food.opening_hours)}</p>` : ''}
       ${dishes}
       ${food.note ? `<p>${esc(food.note)}</p>` : ''}
       ${food.price ? `<p class="price">${esc(food.price)}</p>` : ''}
+      ${gpsHtml}
       ${optionsHtml}
     </div>
   `;

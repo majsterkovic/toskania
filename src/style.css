@@ -2418,6 +2418,14 @@ html.dark .todo-category {
   border-color: var(--border);
 }
 
+html.dark .todo-category__title {
+  color: var(--oro);
+}
+
+html.dark .todo-check {
+  accent-color: var(--oro);
+}
+
 html.dark .todo-item {
   background: var(--stone);
 }

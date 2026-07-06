@@ -527,13 +527,13 @@ function renderWebResearch(webResearch) {
   `;
 }
 
-function renderEtaTimeline(etaList) {
+function renderEtaTimeline(etaList, openByDefault = false) {
   if (!etaList?.length) return '';
   const rows = etaList.map(item =>
     `<li class="eta-row"><span class="eta-time">${esc(item.time)}</span><span class="eta-event">${esc(item.event)}</span></li>`
   ).join('');
   return `
-    <details class="day-block eta-block">
+    <details class="day-block eta-block"${openByDefault ? ' open' : ''}>
       <summary class="block-label oh-summary">Harmonogram godzinowy</summary>
       <ul class="eta-list">${rows}</ul>
     </details>
@@ -550,7 +550,7 @@ function renderTransit(day, images) {
   return `
     ${stats ? `<div class="transit-stats">${stats}</div>` : ''}
     ${day.route ? `<div class="day-block day-block--route"><h4 class="block-label">Trasa</h4>${renderRouteWaypoints(day.route)}</div>` : ''}
-    ${renderEtaTimeline(day.eta_timeline)}
+    ${renderEtaTimeline(day.eta_timeline, true)}
     ${renderRouteSegments(day.route_segments)}
     ${renderFood(day.food)}
     ${renderAccommodation(day.accommodation)}

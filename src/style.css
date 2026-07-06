@@ -2048,6 +2048,22 @@ body.lightbox-open {
   opacity: 0.8;
 }
 
+.map-filter__km {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--stone-dark);
+  line-height: 1;
+}
+.map-filter__km[data-drive="high"] {
+  color: var(--oro);
+}
+.map-filter__km[data-drive="medium"] {
+  color: var(--olive);
+}
+.map-filter--active .map-filter__km {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 .maps-row--single {
   grid-template-columns: 1fr;
 }

@@ -140,12 +140,18 @@ function renderInteractiveMap(days) {
     ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null
   );
 
-  const filterBtns = tuscanyDays.map(day => `
+  const filterBtns = tuscanyDays.map(day => {
+    const km = day.daily_km_estimate;
+    const level = driveLevel(km);
+    const kmSpan = km ? `<span class="map-filter__km" data-drive="${level}">~${km}km</span>` : '';
+    return `
     <button type="button" class="map-filter" data-imap-day="${day.day_num}">
       <span class="map-filter__num">${day.day_num}</span>
       <span class="map-filter__date">${esc(day.date.split(' ')[0])}</span>
+      ${kmSpan}
     </button>
-  `).join('');
+  `;
+  }).join('');
 
   return `
     <section class="section" id="mapa">

@@ -1966,7 +1966,15 @@
           "event": "Powrót do bazy Chianti"
         }
       ],
-      "daily_km_estimate": 47
+      "daily_km_estimate": 47,
+      "wine_tasting": {
+        "place": "Enoteca Italiana — Fortezza Medicea",
+        "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
+        "time": "ok. 16:00–17:30 (po zwiedzaniu города)",
+        "price": "od €3/kieliszek; butelki od €12",
+        "note": "Narodowa enoteka włoska w renesansowej fortecy Medyceuszów. 1500+ win — Brunello di Montalcino, Chianti Classico DOCG, Morellino, Nobile di Montepulciano. Degustacja przy stolikach w historycznych piwnicach. Zweryfikuj godziny otwarcia przed wizytą (wt–sob 12:00–20:00).",
+        "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
+      }
     },
     {
       "date": "20.09 (nd)",

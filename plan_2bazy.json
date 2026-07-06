@@ -565,7 +565,11 @@
           "source": "https://www.serways.de/standorte/frankenwald-ost/",
           "checked": "2026-07"
         }
-      ]
+      ],
+      "opening_hours": {
+        "gasthof_gigl_checkin": "15:00–21:00 (po 21:00 kontakt telefoniczny)",
+        "raststaette_a9": "24/7"
+      }
     },
     {
       "date": "13.09 (nd)",
@@ -774,7 +778,53 @@
           "time": "17:30",
           "event": "Przyjazd Mologno / Barga — check-in"
         }
-      ]
+      ],
+      "opening_hours": {
+        "agriturismo_checkin": "14:00–19:00 (Il Musaccio 15:30–18:00) — zadzwoń z ETA",
+        "a22_toll_booths": "24/7 (automaty + Carte)",
+        "tre_pini_lunch": "12:00–15:00 typowo (sprawdź w niedzielę)"
+      },
+      "parking": {
+        "destination": "Barga — check-in BAZA 1 (Mologno lub centro)",
+        "options": [
+          {
+            "name": "Parking agriturismo Mologno",
+            "type": "hotel",
+            "price": "gratis dla gości",
+            "gps_hint": "Via Pian di Gragno 15 lub Mologno LU",
+            "note": "Preferowany przy noclegu w Mologno — bez ZTL, cisza, las"
+          },
+          {
+            "name": "Parcheggio Porta Reale",
+            "type": "public",
+            "price": "bezpłatny / niski",
+            "gps_hint": "Via Bellavista, incrocio Via del Sasso — przy murach",
+            "note": "Najbliżej centro; 5 min pieszo do Duomo. Przed murami — nie wjeżdżaj dalej (ZTL)"
+          },
+          {
+            "name": "Piazzale Matteotti",
+            "type": "public",
+            "price": "płatny",
+            "gps_hint": "Via Piero Gobetti, dolna Barga",
+            "note": "Większy parking, 10 min pieszo w górę do centro"
+          },
+          {
+            "name": "Viale Cesare Biondi 44",
+            "type": "public",
+            "price": "gratis",
+            "gps_hint": "55051 Barga",
+            "note": "900 m od centro, przy szkole — backup gdy Porta Reale pełny"
+          },
+          {
+            "name": "Parcheggio San Cristoforo (camper)",
+            "type": "public",
+            "price": "~€10/dzień",
+            "gps_hint": "Via Hayange, 55051 Barga",
+            "note": "Płaski, szeroki — 5 min pieszo do centro w górę"
+          }
+        ],
+        "tip": "Przy noclegu Mologno: parkuj przy agriturismo. Wieczorny spacer do Barga Vecchia: auto zostaje w Mologno lub Porta Reale"
+      }
     },
     {
       "date": "14.09 (pn)",
@@ -2505,7 +2555,19 @@
           "summary": "Huberwirt Kellerberg (Salzburgerstr. 25, od €46, parking gratis), Paulanerstuben (Marienplatz 14, od €58), Hotel Fletzinger (Inn-ufer, od €62). Wasserburg: Altstadt na półwyspie rzeki Inn, XIV–XV w. Parkhaus Kellerstr. gratis do 4h.",
           "checked": "2026-06"
         }
-      ]
+      ],
+      "opening_hours": {
+        "sr2_firenze": "pn–nd 24/7 — trasa SR222/A1 przez Firenze Impruneta. ZTL Firenze aktywna 7:30–20:00 pn–pt; sob 7:30–16:00. Korzystaj z obwodnicy.",
+        "huberwirt_checkin": "Recepcja standardowo 14:00–20:00",
+        "das_wasserburg_hotel": "Self-check-in 24h, parking gratis lub garaż €8/dzień",
+        "bologna_lunch": "Autogrill Bologna Borgo Panigale / Modena Nord: 24h na A1",
+        "wasserburg_altstadt": "Restauracje Altstadt: 11:30–22:00. Wieczorny spacer po murach nad Innem."
+      },
+      "parking": {
+        "wasserburg_altstadt": "Parkhaus Kellerstraße / Überfuhrstraße: do 4h gratis, potem €2,50/dzień. W Altstadt (ulice) osobne strefy — lepiej parkuj przy hotelu.",
+        "tip": "Większość Gasthöfe ma bezpłatny parking — Huberwirt, Paulanerstuben, Staudham. Wieczorny spacer nad Innem — 10 min pieszo z noclegu.",
+        "hotel": "Huberwirt / Paulanerstuben / Staudham: bezpłatny parking na miejscu."
+      }
     },
     {
       "date": "25.09 (pt)",
@@ -2657,7 +2719,20 @@
           "source": "https://de.wikivoyage.org/wiki/Bundesautobahn_9",
           "checked": "2026-07"
         }
-      ]
+      ],
+      "opening_hours": {
+        "quality_hotel_hof": "Recepcja 24h, sauna od 14:00",
+        "hotel_central_hof": "Check-in od 15:00, parking gratis (Freiheitshalle obok jeśli pełny)",
+        "fraenkischer_hof_rehau": "Check-in od 13:00, parking gratis",
+        "franconia_am_see": "Restauracja przy A9 Himmelkron — sprawdź godziny na franconia-restaurant.de",
+        "nuernberg_feucht": "Serways Raststätte Nürnberg-Feucht Ost/West — 24h"
+      },
+      "parking": {
+        "hof_hotels": "Quality Hotel Hof i Hotel Central Hof — bezpłatny parking na miejscu (duży plac).",
+        "pension_tip": "Szukaj Pension przy zjeździe A9 — tańsze niż centrum Hof.",
+        "alternatives": "Rehau (Fränkischer Hof, parking gratis), Naila/Selbitz — €40–50/noc, 10–15 km od A9.",
+        "hof": "Pension przy zjeździe A9 (Hof-Nord/West/Naila) — parking gratis. Centrum Hof: płatny."
+      }
     },
     {
       "date": "26.09 (sob)",
@@ -2767,7 +2842,14 @@
           "source": "https://www.autobahn.de/",
           "checked": "2026-07"
         }
-      ]
+      ],
+      "opening_hours": {
+        "raststaette_sachsen": "24/7",
+        "border_swiecko": "A2 Świecko: 24h. Videotolling PL od Konin."
+      },
+      "parking": {
+        "arrival": "Dotarcie do domu — brak noclegu. Lunch na trasie lub w Poznaniu."
+      }
     },
     {
       "date": "27.09 (nd)",

@@ -576,6 +576,7 @@ function renderTuscany(day, images) {
     ${renderOakForest(day.oak_forest)}
     ${renderFood(day.food)}
     ${renderWineTasting(day.wine_tasting)}
+    ${renderEtaTimeline(day.eta_timeline)}
     ${transfer}
     ${renderLogistics(day)}
     ${renderOpeningHours(day)}

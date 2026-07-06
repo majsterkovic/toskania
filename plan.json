@@ -1004,7 +1004,8 @@
             44.0733,
             10.4836
           ],
-          "duration_h": 1.5
+          "duration_h": 1.5,
+          "opening_hours": "Duomo San Cristoforo: pon–sob 8:00–12:00, 15:00–19:00; nd 15:00–19:00. Wejście bezpłatne."
         },
         {
           "name": "Treppignana via il Ciocco — las dębowo-kasztanowy",
@@ -1018,7 +1019,8 @@
             44.058,
             10.463
           ],
-          "duration_h": 1.5
+          "duration_h": 1.5,
+          "opening_hours": "Teren leśny otwarty całą dobę, wstęp bezpłatny."
         },
         {
           "name": "Grotta del Vento — Fornovolasco",
@@ -1031,7 +1033,8 @@
             44.0927,
             10.3846
           ],
-          "duration_h": 1.5
+          "duration_h": 1.5,
+          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Bilety: tour 1h €11, 2h €16, 3h €24. Rezerwacja obowiązkowa: grottadelvento.com"
         }
       ],
       "oak_forest": {
@@ -1155,7 +1158,50 @@
       },
       "image2": "castiglione",
       "narrative": "Zaczynamy pieszo — Barga jest tuż obok bazy. O 8:00 Duomo di San Cristoforo: moneta €2 na oświetlenie pulpitu Bigarellego, z tarasu widok na Alpy Apuańskie (~1h). Potem 15 min samochodem na południe do Treppignana — spacer 3,2 km przez las dębów bezszypułkowych i kasztanów, widoki na dolinę Serchio (1–1,5h). Wracamy do Bargi na lunch w Osteria Il Borgo dei Sapori (Via Borgo 1). Po lunchu 20 min samochodem na zachód w góry do Fornovolasco — Grotta del Vento, zarezerwowany Itinerario 2 na 15:00 (2h, w środku 10°C, kurtka obowiązkowa). Wracamy do bazy ok. 18:00.",
-      "daily_km_estimate": 41
+      "daily_km_estimate": 41,
+      "eta_timeline": [
+        {
+          "time": "09:00",
+          "event": "Wyjazd z bazy Garfagnana (~15 min do Barga)"
+        },
+        {
+          "time": "09:15",
+          "event": "Barga — parking Porta Reale (gratuito), wejście pieszo"
+        },
+        {
+          "time": "09:30",
+          "event": "Duomo San Cristoforo — moneta €2 włącza oświetlenie"
+        },
+        {
+          "time": "10:30",
+          "event": "Giardino del Balcone — taras widokowy na Garfagnanę"
+        },
+        {
+          "time": "11:15",
+          "event": "Spacer Corso Garibaldi — kawiarnia, pecorino, miód"
+        },
+        {
+          "time": "12:30",
+          "event": "Obiad w Barga lub powrót (piknik w lesie)"
+        },
+        {
+          "time": "14:00",
+          "event": "Treppignana — parking dolina, szlak leśny (dęby i kasztany)"
+        },
+        {
+          "time": "15:30",
+          "event": "Wyjazd do Grotta del Vento (25 min)"
+        },
+        {
+          "time": "16:00",
+          "event": "Grotta del Vento — tour 1h (rezerwacja wymagana!)"
+        },
+        {
+          "time": "17:30",
+          "event": "Powrót do bazy"
+        }
+      ],
+      "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: tłumy w weekendy lipiec–sierpień, wrzesień znacznie spokojniej. Rezerwacja wymagana online."
     },
     {
       "date": "15.09 (wt)",
@@ -1180,7 +1226,8 @@
             44.1553,
             10.3936
           ],
-          "duration_h": 1.0
+          "duration_h": 1.0,
+          "opening_hours": "Codziennie 10:00–18:00 (latem do 19:00). Rocca Ariostesca: bilet €4. Mury i centro storico: wstęp wolny."
         },
         {
           "name": "Riserva Naturale Orecchiella — Sentiero „Intorno al Monte Orecchiella”",
@@ -1194,7 +1241,8 @@
             44.1906,
             10.3912
           ],
-          "duration_h": 2.0
+          "duration_h": 2.0,
+          "opening_hours": "Teren otwarty całą dobę. Centro visitatori: pon–pt 9:00–13:00, sob–nd 10:00–17:00 (VI–IX). Wstęp bezpłatny."
         },
         {
           "name": "Castelnuovo di Garfagnana",
@@ -1208,7 +1256,8 @@
             44.1048,
             10.4077
           ],
-          "duration_h": 1.0
+          "duration_h": 1.0,
+          "opening_hours": "Rocca Ariostesca: wt–nd 10:00–12:30, 15:00–18:30. Bilet €4. Piazza Ariosto: zawsze dostępna. Targ czwartkowy 8:00–13:00."
         }
       ],
       "oak_forest": {
@@ -1327,7 +1376,42 @@
       },
       "image2": "castelnuovo",
       "narrative": "Z bazy wyjeżdżamy o 9:00 samochodem ~20 min na północ do Castiglione di Garfagnana. Parkujemy przy Porta Inferi (26 miejsc, Via Soccorso) i idziemy pieszo 30 min po średniowiecznych murach — zero tłumów. Potem jeszcze 10 min samochodem dalej na północ do rezerwatu Orecchiella: szlak 3 km przez strefę dębów burgundzkich na granicy z buczyną (1–1,5h). Na lunch zjeżdżamy ~15 min na południe do Castelnuovo di Garfagnana — da Carlino (Via Garibaldi 15), przychodzimy przed 12:30. Wracamy do bazy ~25 min. Popołudnie wolne.",
-      "daily_km_estimate": 50
+      "daily_km_estimate": 50,
+      "eta_timeline": [
+        {
+          "time": "09:30",
+          "event": "Wyjazd z bazy do Castiglione di Garfagnana (25 min)"
+        },
+        {
+          "time": "10:00",
+          "event": "Castiglione — Rocca medievale, mury i brama San Pietro"
+        },
+        {
+          "time": "11:30",
+          "event": "Wyjazd do Orecchiella (15 min)"
+        },
+        {
+          "time": "11:45",
+          "event": "Riserva Orecchiella — szlak przez las, centrum przyrodnicze"
+        },
+        {
+          "time": "13:30",
+          "event": "Picnic przy strumieniu lub powrót do Castelnuovo"
+        },
+        {
+          "time": "14:30",
+          "event": "Castelnuovo di Garfagnana — Rocca Ariostesca i centro storico"
+        },
+        {
+          "time": "16:00",
+          "event": "Mercato (jeśli środa lub czwartek) lub enoteka lokalna"
+        },
+        {
+          "time": "17:00",
+          "event": "Powrót do bazy"
+        }
+      ],
+      "crowd_tip": "Castiglione i Orecchiella: turystyka lokalna, prawie bez obcokrajowców. Orecchiella pełna w weekendy letnie — przyjdź rano. Castelnuovo: czwartkowy targ przyciąga mieszkańców regionu."
     },
     {
       "date": "16.09 (śr)",
@@ -1353,7 +1437,8 @@
             44.1383,
             10.3452
           ],
-          "duration_h": 1.5
+          "duration_h": 1.5,
+          "opening_hours": "Teren otwarty całą dobę, wstęp bezpłatny. Widok na zatopioną wieś z SS445."
         },
         {
           "name": "Gorfigliano",
@@ -1366,7 +1451,8 @@
             44.0773,
             10.3497
           ],
-          "duration_h": 0.5
+          "duration_h": 0.5,
+          "opening_hours": "Wioska dostępna całą dobę. Kamieniołomy prywatne — obserwacja z zewnątrz."
         },
         {
           "name": "Fortezza delle Verrucole — spacer zewnętrzny",
@@ -1380,7 +1466,8 @@
             44.1433,
             10.4681
           ],
-          "duration_h": 0.5
+          "duration_h": 0.5,
+          "opening_hours": "Czerwiec–sierpień: codziennie. Wrzesień: pt–nd 10:00–18:00. Bilet €5 (wnętrze). Spacer zewnętrzny/widok: zawsze. WhatsApp: 379 2415958."
         }
       ],
       "oak_forest": {
@@ -1504,7 +1591,46 @@
       },
       "image2": "vagli",
       "narrative": "Wyjeżdżamy o 9:00 samochodem 25 min na zachód do Lago di Vagli. Parking przy tamie — przyjeżdżamy przed 9:30, bo miejsca kończą się szybko. Z zapory widać (jeśli poziom niski) fragmenty zatopionej wioski Fabbriche di Careggine. Spacer wzdłuż brzegu, potem przerwa w Bar Radicchi w Vagli Sotto. Kilka km dalej (ok. 15 min) Gorfigliano: cicha górska wioska, romański kościółek Chiesa Vecchia, kompletny brak turystów. Wracamy 18 min na północny wschód do Fortezzy delle Verrucole — dziś środa, wewnątrz zamknięte, ale mury i panorama 360° na Garfagnane bezpłatne, jeden z najlepszych widoków regionu. Z powrotem do bazy ok. 17:30 (18 min).",
-      "daily_km_estimate": 47
+      "daily_km_estimate": 47,
+      "eta_timeline": [
+        {
+          "time": "09:00",
+          "event": "Wyjazd z bazy do Lago di Vagli (20 min)"
+        },
+        {
+          "time": "09:20",
+          "event": "Lago di Vagli — punkt widokowy na zatopioną wieś Fabbriche"
+        },
+        {
+          "time": "10:30",
+          "event": "Spacer wzdłuż brzegu jeziora (szlak ~3 km)"
+        },
+        {
+          "time": "11:30",
+          "event": "Wyjazd do Gorfigliano (10 min)"
+        },
+        {
+          "time": "11:45",
+          "event": "Gorfigliano — wioska kamieniarzów, kamieniołomy białego marmuru"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad w Gorfigliano lub Vagli di Sotto"
+        },
+        {
+          "time": "14:30",
+          "event": "Fortezza delle Verrucole (UWAGA: pt–nd, sprawdź przed wyjazdem)"
+        },
+        {
+          "time": "15:00",
+          "event": "Zwiedzanie fortecy — widok na całą Garfagnanę"
+        },
+        {
+          "time": "16:30",
+          "event": "Powrót do bazy"
+        }
+      ],
+      "crowd_tip": "Vagli: tłumy po spuszczeniu jeziora (co 10 lat, nie w 2026). Fortezza Verrucole: otwarta pt–nd wrzesień — absolutna cisza w tygodniu. Gorfigliano prawie bez turystów."
     },
     {
       "date": "17.09 (czw)",
@@ -1534,7 +1660,8 @@
             43.9979,
             10.4536
           ],
-          "duration_h": 0.75
+          "duration_h": 0.75,
+          "opening_hours": "Most: zawsze dostępny, wstęp bezpłatny. Parking SS12 (gratuito)."
         },
         {
           "name": "Bagni di Lucca",
@@ -1548,7 +1675,8 @@
             44.0065,
             10.5873
           ],
-          "duration_h": 1.5
+          "duration_h": 1.5,
+          "opening_hours": "Casino Reale: wt–nd 10:00–13:00, 15:30–18:30. Terme: tel. 0583 87038. Piazza e ville: zawsze dostępne."
         }
       ],
       "oak_forest": null,
@@ -1974,7 +2102,8 @@
             43.3183,
             11.3318
           ],
-          "duration_h": 1.5
+          "duration_h": 1.5,
+          "opening_hours": "Plac publiczny, otwarty 24/7. Muzea przy piazza (Torre del Mangia): 10:00–19:00, bilet €10."
         },
         {
           "name": "Duomo di Siena + Libreria Piccolomini",
@@ -1988,7 +2117,8 @@
             43.3171,
             11.3289
           ],
-          "duration_h": 2.0
+          "duration_h": 2.0,
+          "opening_hours": "Mar–Oct: pon–sb 10:30–19:00, nd 13:30–18:00. Bilet podstawowy €5; combo z Libreria €8. Libreria: otwarta w tych samych godzinach."
         },
         {
           "name": "Spacer przez kontrade",
@@ -2002,7 +2132,8 @@
             43.3183,
             11.3318
           ],
-          "duration_h": 1.0
+          "duration_h": 1.0,
+          "opening_hours": "Ulice publiczne, brak godzin. Muzea kontrady: na zamówienie grupowe. Osteria kont. otwarta od 12:00."
         }
       ],
       "oak_forest": null,
@@ -2939,7 +3070,8 @@
           "event": "Powrót do bazy — ostatni wieczór toskański"
         }
       ],
-      "daily_km_estimate": 43
+      "daily_km_estimate": 43,
+      "crowd_tip": "Sovana: mało turystów, szczyt to weekendy w lipcu–sierpniu. Via Cava Lamone: brak bramek, tłumy niemal nie istnieją — jeden z spokojniejszych szlaków etruskich. Semproniano: całkowicie omijany przez turystów."
     },
     {
       "date": "24.09 (czw)",

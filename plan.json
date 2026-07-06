@@ -1906,7 +1906,45 @@
       ],
       "image2": "pienza",
       "narrative": "Wyjeżdżamy o 8:30 — 10 min samochodem do Bagno Vignoni. Parkujemy bezpłatnie przy Parcheggio Bagno Vignoni. Piazza delle Sorgenti: geotermiczny basen o świcie paruje jak z innego wymiaru, wstęp wolny (~1h spacer). Potem 10 min na południe do San Quirico d'Orcia: romańska kolegiata z XII w., a za nią Horti Leonini — geometryczne żywopłoty i lawendowe alejki (€2/os). Lunch w San Quirico lub przy drodze. Po południu 15 min na wschód do Pienzy: Piazza Pio II, katedra, Palazzo Piccolomini, enoteka z pecorino toscano. Wracamy do bazy ok. 18:00 (~15–20 min).",
-      "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:30–16:00. Bagno Vignoni: przyjedź przed 9:30 — basen termalny o świcie, bez tłumów. Pienza: wejdź przed 11:00 przez Porta al Ciglio (zachodnia brama, mniej uczęszczana niż wschodnia). W środku piku (12–14h) trudno o spokojne zdjęcie Piazza Pio II."
+      "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:30–16:00. Bagno Vignoni: przyjedź przed 9:30 — basen termalny o świcie, bez tłumów. Pienza: wejdź przed 11:00 przez Porta al Ciglio (zachodnia brama, mniej uczęszczana niż wschodnia). W środku piku (12–14h) trudno o spokojne zdjęcie Piazza Pio II.",
+      "eta_timeline": [
+        {
+          "time": "08:30",
+          "event": "Wyjazd z bazy Val d'Orcia (10 min)"
+        },
+        {
+          "time": "08:40",
+          "event": "Bagno Vignoni — Piazza delle Sorgenti (parking SS2)"
+        },
+        {
+          "time": "10:00",
+          "event": "Wyjazd do San Quirico d'Orcia (12 km)"
+        },
+        {
+          "time": "10:15",
+          "event": "San Quirico — Kolegiata i Horti Leonini"
+        },
+        {
+          "time": "11:30",
+          "event": "Wyjazd do Pienzy (12 km)"
+        },
+        {
+          "time": "11:45",
+          "event": "Pienza — parking Madonna delle Grazie"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad Il Rossellino (Piazza di Spagna 4)"
+        },
+        {
+          "time": "14:30",
+          "event": "Spacer Corso Rossellino — pecorino i widoki"
+        },
+        {
+          "time": "16:30",
+          "event": "Powrót do bazy"
+        }
+      ]
     },
     {
       "date": "19.09 (sob)",
@@ -2501,7 +2539,33 @@
       },
       "image2": "via-cava",
       "narrative": "Wszystko w zasięgu ręki — 5 min samochodem lub 15 min pieszo z bazy. Rano spacer po Pitigliano z punktu widokowego — miasto na skale tufowej. O 10:00 Piccola Gerusalemme: synagoga i żydowskie ghetto (panowie mają kippę na miejscu, ~1h). Potem 5 min samochodem do SP42 — Via Cava di San Giuseppe: parking gratis, szlak 850 m w głąb wąwozu, ściany tufu do 20 m (latarka i buty trekkingowe obowiązkowe, ~1–1,5h). Lunch w Il Tufo Allegro (Vicolo della Costituzione 5, rezerwacja: 0564 616192). Popołudnie wolne.",
-      "crowd_tip": "Pitigliano i Sorano: sobotni rynek w Pitigliano (rano) przyciąga lokalnych, nie turystów — świetny czas. Sorano Fortezza Orsini: grupy wchodzą od 10:30 — przyjedź przed 10:00 lub po 14:00."
+      "crowd_tip": "Pitigliano i Sorano: sobotni rynek w Pitigliano (rano) przyciąga lokalnych, nie turystów — świetny czas. Sorano Fortezza Orsini: grupy wchodzą od 10:30 — przyjedź przed 10:00 lub po 14:00.",
+      "eta_timeline": [
+        {
+          "time": "09:00",
+          "event": "Poranny spacer po Pitigliano — punkt widokowy"
+        },
+        {
+          "time": "10:00",
+          "event": "Sinagoga e Museo Ebraico (Via Zuccarelli)"
+        },
+        {
+          "time": "11:30",
+          "event": "Via Cava di San Giuseppe (szlak etruski)"
+        },
+        {
+          "time": "13:00",
+          "event": "Powrót — obiad Il Tufo Allegro (Vicolo della Costituzione)"
+        },
+        {
+          "time": "14:30",
+          "event": "Odpoczynek w bazie lub Via Cava di San Pietro"
+        },
+        {
+          "time": "16:00",
+          "event": "Spacer po Pitigliano — zachód słońca z murów"
+        }
+      ]
     },
     {
       "date": "22.09 (wt)",
@@ -2652,7 +2716,37 @@
       ],
       "image2": "saturnia",
       "narrative": "Z bazy 10 min samochodem do Sorano. Parkujemy przy fortecy Orsini — bilet cumulativo €10 (obejmuje też jutrzejszą Sovanę). Wycieczka podziemna o 12:00 lub 15:00 (kurtka, zimno). Przed nią: spacer wzdłuż Via Cava di San Rocco od fortecy w dół doliny Lente (~30 min pieszo). Lunch w Cantina L'Ottava Rima (Via del Borgo 25, Sorano). Po południu 30 min samochodem na zachód do Saturni — Cascate del Mulino. Przyjeżdżamy po 15:00 (mniej tłumów). Parking SP10 (€2,50/h do 20:00), 5 min pieszo do kaskad. Ręcznik i klapki — kamienie śliskie. Wracamy do bazy ok. 18:00 (25 min).",
-      "crowd_tip": "Terme di Saturnia: popularne w każdą niedzielę i weekendy. Wodospad Cascata del Mulino gratis — przyjedź przed 9:30. Płatny basen terme otwiera 9:30 — rezerwacja online polecana. Sorano spokojniejsze — ale nie łącz Sorany z Saturnią i Sovano w jeden dzień."
+      "crowd_tip": "Terme di Saturnia: popularne w każdą niedzielę i weekendy. Wodospad Cascata del Mulino gratis — przyjedź przed 9:30. Płatny basen terme otwiera 9:30 — rezerwacja online polecana. Sorano spokojniejsze — ale nie łącz Sorany z Saturnią i Sovano w jeden dzień.",
+      "eta_timeline": [
+        {
+          "time": "09:30",
+          "event": "Wyjazd do Sorano (10 min od bazy)"
+        },
+        {
+          "time": "09:45",
+          "event": "Fortezza Orsini Sorano — bilety przy kasie"
+        },
+        {
+          "time": "11:30",
+          "event": "Via Cava di San Rocco (szlak od fortecy)"
+        },
+        {
+          "time": "12:30",
+          "event": "Obiad Cantina L'Ottava Rima (Via del Borgo)"
+        },
+        {
+          "time": "14:00",
+          "event": "Wyjazd do Saturnia (40 km, 50 min)"
+        },
+        {
+          "time": "15:00",
+          "event": "Cascata del Mulino — parking SS74, zejście 5 min"
+        },
+        {
+          "time": "17:00",
+          "event": "Powrót do bazy (40 min)"
+        }
+      ]
     },
     {
       "date": "23.09 (śr)",
@@ -2807,7 +2901,37 @@
         "gps_hint": "SP46 km 2 — follow signs sassotondo"
       },
       "image2": "semproniano",
-      "narrative": "Ostatni dzień toskański. Wyjeżdżamy o 9:30 — 10 min samochodem z Pitigliano na zachód do Sovany. Parkujemy w centrum i idziemy na Necropoli Etrusca: 2–3h (bilet €7, highlight: Tomba Ildebranda z rzeźbionymi kolumnami). Po necropolis 18 min samochodem na południe do Selva del Lamone — Sentiero n.11 Alberi Monumentali, 1,5h spaceru przez stary rezerwat dębowy, ani jednego turysty, pełna cisza. Potem 15 min na zachód do Semproniano: widokowe miasteczko nad doliną Albegna, krótki spacer. Ok. 15:30 powrót w okolice Sovany — degustacja w Sassotondo (rezerwuj 24h wcześniej, €28–45/os). Wieczorem pożegnalna kolacja w Taverna Etrusca na Piazza del Pretorio w Sovanie. Powrót do Pitigliano ok. 21:00."
+      "narrative": "Ostatni dzień toskański. Wyjeżdżamy o 9:30 — 10 min samochodem z Pitigliano na zachód do Sovany. Parkujemy w centrum i idziemy na Necropoli Etrusca: 2–3h (bilet €7, highlight: Tomba Ildebranda z rzeźbionymi kolumnami). Po necropolis 18 min samochodem na południe do Selva del Lamone — Sentiero n.11 Alberi Monumentali, 1,5h spaceru przez stary rezerwat dębowy, ani jednego turysty, pełna cisza. Potem 15 min na zachód do Semproniano: widokowe miasteczko nad doliną Albegna, krótki spacer. Ok. 15:30 powrót w okolice Sovany — degustacja w Sassotondo (rezerwuj 24h wcześniej, €28–45/os). Wieczorem pożegnalna kolacja w Taverna Etrusca na Piazza del Pretorio w Sovanie. Powrót do Pitigliano ok. 21:00.",
+      "eta_timeline": [
+        {
+          "time": "09:30",
+          "event": "Wyjazd do Sovany (10 min od Pitigliano)"
+        },
+        {
+          "time": "09:45",
+          "event": "Sovana — Necropoli Etrusca (ticket €10 kumulat.)"
+        },
+        {
+          "time": "11:30",
+          "event": "Via Cava di San Giovanni (szlak etruski)"
+        },
+        {
+          "time": "12:30",
+          "event": "Lunch w Sovanie lub powrót Pitigliano"
+        },
+        {
+          "time": "14:00",
+          "event": "Selva del Lamone — Sentiero n.11 (parking Campo della Villa)"
+        },
+        {
+          "time": "15:30",
+          "event": "Degustacja Sassotondo — Agriturismo (15:30, rezerwacja)"
+        },
+        {
+          "time": "17:00",
+          "event": "Powrót do bazy — ostatni wieczór toskański"
+        }
+      ]
     },
     {
       "date": "24.09 (czw)",

@@ -1945,7 +1945,37 @@
         "price": "od €25/os (4 wina Chianti Classico DOCG) do €35/os (premium + oliwa)",
         "note": "Wino benedyktyńskie od 1051 r. Klasztor + piwnica + ogród. Chianti Classico DOCG Gran Selezione, Cultus Boni. Tel. 0577 744832 lub coltibuono.com",
         "gps_hint": "Localita Badia a Coltibuono — 6 km na pn-wsch od Gaiole in Chianti"
-      }
+      },
+      "eta_timeline": [
+        {
+          "time": "09:00",
+          "event": "Wyjazd z bazy Chianti (20 min do Brolio)"
+        },
+        {
+          "time": "09:25",
+          "event": "Castello di Brolio — otwiera 10:00 (park przy bramie)"
+        },
+        {
+          "time": "11:30",
+          "event": "Wyjazd do Badia a Coltibuono (9 km)"
+        },
+        {
+          "time": "13:00",
+          "event": "Degustacja Badia a Coltibuono (rezerwacja wymagana)"
+        },
+        {
+          "time": "14:30",
+          "event": "Obiad lub degustacja w Radda in Chianti (22 min)"
+        },
+        {
+          "time": "16:00",
+          "event": "Spacer po Radda — mury, wino enoteka lokalna"
+        },
+        {
+          "time": "17:00",
+          "event": "Powrót do bazy"
+        }
+      ]
     },
     {
       "date": "21.09 (pn)",
@@ -2100,7 +2130,41 @@
         "monte_oliveto": "Parcheggio Monte Oliveto Maggiore — bezpłatny, przy wejściu do klasztoru.",
         "bosco_ragnaia": "Parking SP146 San Giovanni d'Asso — przy znaku Ragnaia, bezpłatny.",
         "asciano": "Piazza Roma Asciano — centrum, płatny (€1/h). Lub poza ZTL bezpłatny."
-      }
+      },
+      "eta_timeline": [
+        {
+          "time": "09:00",
+          "event": "Wyjazd z bazy Chianti (28 min do Monte Oliveto)"
+        },
+        {
+          "time": "09:30",
+          "event": "Monte Oliveto Maggiore — otwiera 9:30, krużganki z freskami"
+        },
+        {
+          "time": "11:15",
+          "event": "Wyjazd do Bosco della Ragnaia (12 km, 15 min)"
+        },
+        {
+          "time": "11:30",
+          "event": "Bosco della Ragnaia — ogród filozoficzny, wstęp wolny"
+        },
+        {
+          "time": "12:30",
+          "event": "Wyjazd do Asciano (8 km, 12 min)"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad Osteria La Tombolina (Via Goffredo Mameli 11)"
+        },
+        {
+          "time": "14:30",
+          "event": "Asciano — Museo d'Arte Sacra + widok na Crete"
+        },
+        {
+          "time": "16:30",
+          "event": "Powrót do bazy"
+        }
+      ]
     },
     {
       "date": "22.09 (wt)",
@@ -2405,7 +2469,41 @@
         "monteriggioni": "Parcheggio Centrale — 200 m od bramy, bezpłatny.",
         "murlo": "Parking bezpłatny przy wejściu do wsi Murlo.",
         "tocchi": "Parking przy SP541 — kilka miejsc przy leśnym dukcie."
-      }
+      },
+      "eta_timeline": [
+        {
+          "time": "09:30",
+          "event": "Wyjazd z bazy Chianti (30 min do Monteriggioni)"
+        },
+        {
+          "time": "10:00",
+          "event": "Monteriggioni — parking centralne, spacer po murach"
+        },
+        {
+          "time": "11:15",
+          "event": "Wyjazd do Murlo (25 min)"
+        },
+        {
+          "time": "11:45",
+          "event": "Murlo Antiquarium Etrusco (otwiera 10:00, bilet €4)"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad Il Pozzo — Monteriggioni (powrót, 25 min)"
+        },
+        {
+          "time": "14:30",
+          "event": "Wyjazd do Foresta di Tocchi (25 min od Murlo)"
+        },
+        {
+          "time": "15:00",
+          "event": "Las dębowy Tocchi — cisza i brak turystów"
+        },
+        {
+          "time": "16:30",
+          "event": "Powrót do bazy — ostatni wieczór toskański"
+        }
+      ]
     },
     {
       "date": "24.09 (czw)",

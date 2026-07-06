@@ -2383,6 +2383,10 @@ html.dark .day-chip:hover {
   border-color: var(--cipresso-light);
 }
 
+html.dark .day-chip.active .day-chip__num {
+  color: var(--oro-light);
+}
+
 /* Day cards */
 html.dark .day-card {
   background: var(--card-bg);
@@ -2438,6 +2442,15 @@ html.dark .imap-panel {
   border-left-color: var(--border);
 }
 
+html.dark .imap-panel__head {
+  background: var(--cipresso-light);
+  color: var(--ink);
+}
+
+html.dark .imap-panel__title {
+  color: var(--ink);
+}
+
 html.dark .imap-wrap {
   border-color: var(--border);
 }
@@ -2463,7 +2476,7 @@ html.dark .map-filter {
 
 html.dark .map-filter:hover {
   background: var(--cipresso-light);
-  color: var(--cream);
+  color: var(--oro-light);
   border-color: var(--cipresso-light);
 }
 

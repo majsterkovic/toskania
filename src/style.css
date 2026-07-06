@@ -2877,6 +2877,18 @@ html.dark .route-wp--end   { color: var(--terracotta-light); }
   color: var(--olive);
 }
 
+.acc-card__checkin {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--stone-dark);
+}
+
+.acc-card__area {
+  font-size: 0.75rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
 .acc-card__note {
   font-size: 0.75rem;
   color: var(--muted);

@@ -409,10 +409,12 @@ function renderAccommodationOptions(options) {
         <strong class="acc-card__name">${esc(o.name)}</strong>
         ${o.type ? `<span class="type-badge">${esc(o.type)}</span>` : ''}
       </div>
+      ${o.area ? `<p class="acc-card__area muted">📍 ${esc(o.area)}</p>` : ''}
       ${o.address ? `<p class="acc-card__address">${esc(o.address)}</p>` : ''}
       <div class="acc-card__meta">
         ${o.price ? `<span class="acc-card__price">${esc(o.price)}</span>` : ''}
         ${o.parking ? `<span class="acc-card__parking">🅿 ${esc(o.parking)}</span>` : ''}
+        ${o.check_in ? `<span class="acc-card__checkin">🔑 ${esc(o.check_in)}</span>` : ''}
       </div>
       ${o.note ? `<p class="acc-card__note">${esc(o.note)}</p>` : ''}
       ${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener noreferrer" class="acc-card__link">↗ strona obiektu</a>` : ''}

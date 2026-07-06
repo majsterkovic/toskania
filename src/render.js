@@ -334,6 +334,7 @@ function renderOakForest(oak) {
       <p><strong>${esc(oak.spot)}</strong></p>
       <p class="muted">${esc(oak.species)}</p>
       <p>${esc(oak.note)}</p>
+      ${oak.gps_hint ? `<p class="logistics-gps">📍 ${esc(oak.gps_hint)}</p>` : ''}
     </div>
   `;
 }

@@ -827,7 +827,8 @@
       "oak_forest": {
         "spot": "Treppignana — Tenuta Il Ciocco",
         "species": "Quercus petraea (dąb bezszypułkowy), Castanea sativa (kasztan jadalny)",
-        "note": "Gęsty las mieszany dębowo-kasztanowy na stokach nad doliną Serchio — typowy krajobraz Garfagnany."
+        "note": "Gęsty las mieszany dębowo-kasztanowy na stokach nad doliną Serchio — typowy krajobraz Garfagnany.",
+        "gps_hint": "Treppignana LU — szlak via il Ciocco, 3,2 km, ~15 min jazdy od Barga"
       },
       "food": {
         "place": "Osteria Il Borgo dei Sapori — Barga",
@@ -991,7 +992,8 @@
       "oak_forest": {
         "spot": "Riserva Naturale Orecchiella",
         "species": "Quercus cerris (dąb burgundzki)",
-        "note": "Granica między buczyną (>1200 m) a dębowo-kasztanowym lasem mieszanym (750–1100 m) — klasyczny toskański las apeniński."
+        "note": "Granica między buczyną (>1200 m) a dębowo-kasztanowym lasem mieszanym (750–1100 m) — klasyczny toskański las apeniński.",
+        "gps_hint": "Centro Visitatori — sentiero „Intorno al Monte Orecchiella” (3 km) przez strefę dębową"
       },
       "food": {
         "place": "Trattoria da Carlino — Castelnuovo di Garfagnana",
@@ -1152,7 +1154,8 @@
       "oak_forest": {
         "spot": "Wzgórza wokół Lago di Vagli",
         "species": "Quercus cerris, Q. petraea",
-        "note": "Mieszane lasy dębowo-kasztanowe na zboczach jeziora — spacer bezpłatny, bez oznakowania turystycznego."
+        "note": "Mieszane lasy dębowo-kasztanowe na zboczach jeziora — spacer bezpłatny, bez oznakowania turystycznego.",
+        "gps_hint": "Ścieżki od tamy w kierunku Careggine — las na wschodnim brzegu"
       },
       "food": {
         "place": "Ristorante Bar Radicchi — Vagli Sotto",
@@ -1314,7 +1317,8 @@
       "oak_forest": {
         "spot": "Las wzdłuż doliny Serchio — okolice Borgo a Mozzano",
         "species": "Quercus cerris, Q. petraea",
-        "note": "Lasy dębowe na stokach nad Serchio między Barga a Borgo a Mozzano — wrzesień: złote przebarwienia liści."
+        "note": "Lasy dębowe na stokach nad Serchio między Barga a Borgo a Mozzano — wrzesień: złote przebarwienia liści.",
+        "gps_hint": "SS12 — lasy wzdłuż doliny Serchio między Piazza al Serchio a Borgo a Mozzano. Najlepiej: zjazd Fornoli, 5 min pieszo wzdłuż rzeki."
       },
       "food": {
         "place": "Trattoria Borghesi — Bagni di Lucca",
@@ -1568,7 +1572,10 @@
           "coords": [
             43.3183,
             11.3318
-          ]
+          ],
+          "opening_hours": "Plac otwarty całą dobę. Palazzo Pubblico: Pn–Sb 10:00–19:00, Nd 11:00–18:00.",
+          "ticket_price": "Plac — bezpłatny. Torre del Mangia: €10 (wejście 10:00–19:00)",
+          "duration_h": 1.5
         },
         {
           "name": "Duomo di Siena + Libreria Piccolomini",
@@ -1580,7 +1587,10 @@
           "coords": [
             43.3171,
             11.3289
-          ]
+          ],
+          "opening_hours": "Śr–Sb 10:30–19:00, Pn–Wt 10:30–17:30, Nd 13:30–17:30.",
+          "ticket_price": "OPA SI Pass: €14 (Duomo + Libreria + Battistero). Libreria Piccolomini extra: €4–6.",
+          "duration_h": 2.0
         },
         {
           "name": "Spacer przez kontrade",
@@ -1592,7 +1602,8 @@
           "coords": [
             43.3183,
             11.3318
-          ]
+          ],
+          "duration_h": 1.0
         }
       ],
       "oak_forest": null,
@@ -1608,7 +1619,8 @@
         "note": "Kultowa trattoria za Palazzo Pubblico. Rezerwacja tel. od 10:00 (sobota lunch!). Tel. +39 0577 280894.",
         "price": "~€15–22/os",
         "phone": "+39 0577 280894",
-        "opening_hours": "Pranzo 12:00–15:00, cena 19:00–22:30. Nd zamkn. Rezerwacja wskazana."
+        "opening_hours": "Pranzo 12:00–15:00, cena 19:00–22:30. Nd zamkn. Rezerwacja wskazana.",
+        "gps_hint": "Piazza del Mercato 6 — wejście od tyłu Piazza del Campo"
       },
       "practical_tips": [
         "SOBOTA = kluczowy dzień: wyjazd 7:00, Campo o 7:30 prawie pusty. Tłumy od 10:00, szczyt 11:00–15:00",
@@ -1740,7 +1752,10 @@
           "coords": [
             43.3948,
             11.4791
-          ]
+          ],
+          "opening_hours": "20.03–12.10: codz. 10:00–19:00. 13–31.10: 10:00–18:00.",
+          "ticket_price": "Giardini + 1 degustacja: €7,50. Tylko wino: €10–15 (3 wina).",
+          "duration_h": 1.5
         },
         {
           "name": "Badia a Coltibuono",
@@ -1752,7 +1767,10 @@
           "coords": [
             43.5023,
             11.4107
-          ]
+          ],
+          "opening_hours": "Rezerwacja online/tel. — nie ma godzin walk-in.",
+          "ticket_price": "Degustacja guidata: €25–40/os.",
+          "duration_h": 2.0
         },
         {
           "name": "Radda in Chianti",
@@ -1764,13 +1782,17 @@
           "coords": [
             43.4835,
             11.3673
-          ]
+          ],
+          "opening_hours": "Miasteczko dostępne całą dobę.",
+          "ticket_price": "Bezpłatne",
+          "duration_h": 1.0
         }
       ],
       "oak_forest": {
         "spot": "Bosco di Brolio — querceti",
         "species": "Quercus pubescens (roverella), Q. cerris (cerro)",
-        "note": "Querceti coltivati a ceduo wokół zamku Brolio — mieszane z cyprysem i pinem. We wrześniu możliwe grzyby (porcini). Nieformalna pętla 2–3 km wokół murów zamku."
+        "note": "Querceti coltivati a ceduo wokół zamku Brolio — mieszane z cyprysem i pinem. We wrześniu możliwe grzyby (porcini). Nieformalna pętla 2–3 km wokół murów zamku.",
+        "gps_hint": "Bosco intorno al Brolio — Via Brolio / SP408, Gaiole in Chianti. Sentieri tra vigneti dal parcheggio castello."
       },
       "food": {
         "place": "Osteria Il Rifugio del Chianti — Radda in Chianti",
@@ -1883,7 +1905,10 @@
           "coords": [
             43.1423,
             11.4934
-          ]
+          ],
+          "opening_hours": "9:30–12:20 i 14:30–17:40 (ora legale). Zamkn. podczas mszy (11:00 nd).",
+          "ticket_price": "Biglietto unico: €7 (w-d pn–czw). Pt–nd prevendita Vivaticket €6.",
+          "duration_h": 1.5
         },
         {
           "name": "Bosco della Ragnaia — San Giovanni d'Asso",
@@ -1895,7 +1920,10 @@
           "coords": [
             43.2028,
             11.5342
-          ]
+          ],
+          "opening_hours": "Zawsze otwarty (dawn to dusk).",
+          "ticket_price": "Bezpłatny",
+          "duration_h": 1.0
         },
         {
           "name": "Asciano — Crete Senesi",
@@ -1907,13 +1935,17 @@
           "coords": [
             43.2343,
             11.5621
-          ]
+          ],
+          "opening_hours": "Museo d'Arte Sacra: 10:30–13:00, 15:30–18:00 (wt–nd).",
+          "ticket_price": "Muzeum: €5. Miasteczko: bezpłatne.",
+          "duration_h": 1.5
         }
       ],
       "oak_forest": {
         "spot": "Bosco di Tricerchi — Crete Senesi",
         "species": "Quercus pubescens (roverella), suchy las na kredowych wzgórzach",
-        "note": "Charakterystyczny suchy las dębowy na glinianych wzgórzach Crete Senesi — zupełnie inny krajobraz niż las wilgotny Garfagnany. Dostęp bezpłatny ze szlaków przy Monte Oliveto."
+        "note": "Charakterystyczny suchy las dębowy na glinianych wzgórzach Crete Senesi — zupełnie inny krajobraz niż las wilgotny Garfagnany. Dostęp bezpłatny ze szlaków przy Monte Oliveto.",
+        "gps_hint": "SP71 tra Asciano e Rapolano Terme — bosco a ceduo sui versanti argillosi. Piedi da Asciano verso nord."
       },
       "food": {
         "place": "Osteria La Tombolina — Asciano",
@@ -2028,7 +2060,10 @@
             43.0307,
             11.6182
           ],
-          "image_key": "bagno-vignoni"
+          "image_key": "bagno-vignoni",
+          "opening_hours": "Piazza delle Sorgenti: całą dobę. Adler Thermae day-use: 9:00–19:00.",
+          "ticket_price": "Piazza — bezpłatna. Kąpiel legalna w Parco dei Mulini (gratis).",
+          "duration_h": 1.5
         },
         {
           "name": "Pienza — idealne miasto Piusa II",
@@ -2040,7 +2075,10 @@
             43.0762,
             11.6781
           ],
-          "image_key": "pienza"
+          "image_key": "pienza",
+          "opening_hours": "Palazzo Piccolomini: Wt–Nd 10:00–18:30. Cattedrale: codziennie 10:00–18:00.",
+          "ticket_price": "Palazzo Piccolomini: €7. Katedra: bezpłatna.",
+          "duration_h": 2.0
         },
         {
           "name": "Montalcino — forteca Brunello",
@@ -2052,13 +2090,17 @@
             43.0583,
             11.4887
           ],
-          "image_key": "montalcino"
+          "image_key": "montalcino",
+          "opening_hours": "Fortezza: codz. 9:00–20:00.",
+          "ticket_price": "Fortezza: €4/os.",
+          "duration_h": 1.5
         }
       ],
       "oak_forest": {
         "spot": "Bosco di San Piero — Val d'Orcia",
         "species": "Quercus pubescens (roverella)",
-        "note": "Suchy las roverella między Pienza a Montalcino — typowy krajobraz Val d'Orcia. Ścieżki wokół Montalcino."
+        "note": "Suchy las roverella między Pienza a Montalcino — typowy krajobraz Val d'Orcia. Ścieżki wokół Montalcino.",
+        "gps_hint": "SP146 San Quirico d'Orcia → Montalcino — boschi spontanei scendendo verso Castiglione d'Orcia."
       },
       "food": {
         "place": "Trattoria Latte di Luna — Pienza",
@@ -2202,7 +2244,10 @@
           "coords": [
             43.3892,
             11.2192
-          ]
+          ],
+          "opening_hours": "Mury: lis–lut 10:00–13:30, 14:00–17:00. Mar–paź: 9:30–19:30.",
+          "ticket_price": "Mury: €3,50. Piazza: bezpłatna.",
+          "duration_h": 1.0
         },
         {
           "name": "Murlo — muzeum etruskie Antiquarium",
@@ -2213,7 +2258,10 @@
           "coords": [
             43.1738,
             11.3813
-          ]
+          ],
+          "opening_hours": "Antiquarium: Wt–Nd 10:00–13:00, 14:30–17:30.",
+          "ticket_price": "Antiquarium Etrusco: €4",
+          "duration_h": 1.0
         },
         {
           "name": "Foresta di Tocchi — las dębowy Quercus cerris",
@@ -2224,13 +2272,17 @@
           "coords": [
             43.142,
             11.3505
-          ]
+          ],
+          "opening_hours": "Las dostępny całą dobę.",
+          "ticket_price": "Bezpłatny",
+          "duration_h": 0.75
         }
       ],
       "oak_forest": {
         "spot": "Foresta di Tocchi — między Murlo a Buonconvento",
         "species": "Quercus cerris (dąb burgundzki), dominujący",
-        "note": "Wstęp swobodny tylko drogami szutrowymi (strade bianche). Wędrowanie po lesie poza oznaczonymi drogami wymaga zezwolenia — kontakt przed wyjazdem: rgpbio.it lub comune.monticiano.si.it"
+        "note": "Wstęp swobodny tylko drogami szutrowymi (strade bianche). Wędrowanie po lesie poza oznaczonymi drogami wymaga zezwolenia — kontakt przed wyjazdem: rgpbio.it lub comune.monticiano.si.it",
+        "gps_hint": "SP541 Murlo–Buonconvento — cartello Tocchi. Parking przy dukcie leśnym, sentiero wśród cerro."
       },
       "food": {
         "place": "Il Pozzo — Monteriggioni",
@@ -2244,7 +2296,8 @@
         "note": "Restauracja w centrum Monteriggioni — widok na wieże. Rezerwacja zalecana: +39 0577 304127. Kolacja pożegnalna w Toskanii.",
         "price": "~€25–40/os",
         "phone": "+39 0577 304127",
-        "opening_hours": "Śr–Pn 12:30–14:00, 19:30–21:30. Wt zamkn."
+        "opening_hours": "Śr–Pn 12:30–14:00, 19:30–21:30. Wt zamkn.",
+        "gps_hint": "Piazza Roma 2 — wewnątrz murów Monteriggioni, przez bramę miejską"
       },
       "practical_tips": [
         "Monteriggioni (9:00–11:00) → Las Tocchi (11:30–13:00) → Murlo + Antiquarium (13:30) → kolacja Il Pozzo 19:00",

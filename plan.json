@@ -239,8 +239,8 @@
         {
           "label": "Castiglione d'Orcia — BAZA 2",
           "coords": [
-            43,
-            11.617
+            43.062,
+            11.618
           ],
           "type": "base"
         },
@@ -330,8 +330,8 @@
         {
           "label": "Castiglione d'Orcia (BAZA 2)",
           "coords": [
-            43,
-            11.617
+            43.062,
+            11.618
           ],
           "type": "base",
           "days": "17–19.09"

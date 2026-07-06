@@ -2376,7 +2376,7 @@ html.dark .day-chip {
   border-color: var(--border);
 }
 
-html.dark .day-chip--active,
+html.dark .day-chip.active,
 html.dark .day-chip:hover {
   background: var(--cipresso-light);
   color: var(--oro-light);
@@ -3042,4 +3042,9 @@ html.dark .day-block--practical {
 html.dark .crowd-tip {
   background: linear-gradient(135deg, rgba(168, 136, 60, 0.1), rgba(204, 114, 72, 0.07));
   border-color: rgba(168, 136, 60, 0.25);
+}
+
+html.dark .research-item {
+  background: var(--stone);
+  border-color: var(--border);
 }

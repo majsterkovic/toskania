@@ -433,6 +433,28 @@ function renderRouteWaypoints(routeStr) {
   return `<ul class="route-waypoints">${items}</ul>`;
 }
 
+function renderWebResearch(webResearch) {
+  if (!webResearch?.length) return '';
+  const items = webResearch.map(item => `
+    <details class="research-item">
+      <summary class="research-item__summary">
+        <span class="research-item__topic">${esc(item.topic)}</span>
+        ${item.checked ? `<span class="research-item__checked">✓ ${esc(item.checked)}</span>` : ''}
+      </summary>
+      <div class="research-item__body">
+        <p>${esc(item.summary)}</p>
+        ${item.source ? `<a class="research-item__source" href="${esc(item.source)}" target="_blank" rel="noopener noreferrer">↗ źródło</a>` : ''}
+      </div>
+    </details>
+  `).join('');
+  return `
+    <div class="day-block day-block--research">
+      <h4 class="block-label">Research</h4>
+      <div class="research-list">${items}</div>
+    </div>
+  `;
+}
+
 function renderEtaTimeline(etaList) {
   if (!etaList?.length) return '';
   const rows = etaList.map(item =>
@@ -462,6 +484,7 @@ function renderTransit(day, images) {
     ${renderAccommodation(day.accommodation)}
     ${renderLogistics(day)}
     ${renderOpeningHours(day)}
+    ${renderWebResearch(day.web_research)}
   `;
 }
 
@@ -502,6 +525,7 @@ function renderTuscany(day, images) {
     ${transfer}
     ${renderLogistics(day)}
     ${renderOpeningHours(day)}
+    ${renderWebResearch(day.web_research)}
   `;
 }
 

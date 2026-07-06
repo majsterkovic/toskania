@@ -779,8 +779,19 @@ function renderPractical(info) {
     .map(([region, desc]) => `<li><strong>${esc(fmtClimateKey(region))}:</strong> ${esc(desc)}</li>`)
     .join('');
 
-  const crowdTips = info.crowd_avoidance?.tips?.length
-    ? `<ul class="tips-list">${info.crowd_avoidance.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`
+  const ca = info.crowd_avoidance;
+  const crowdCard = ca
+    ? (() => {
+        const places = ca.popular_places?.length
+          ? `<p class="muted">${esc(ca.popular_places.join(', '))}</p>`
+          : '';
+        const tips = ca.tips?.length
+          ? `<ul class="tips-list">${ca.tips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`
+          : '';
+        return places || tips
+          ? `<div class="day-block practical-card"><h4 class="block-label">Unikanie tłumów</h4>${places}${tips}</div>`
+          : '';
+      })()
     : '';
 
   return `
@@ -799,7 +810,7 @@ function renderPractical(info) {
         </div>
         ${info.vendemmia ? `<div class="day-block practical-card"><h4 class="block-label">Winobranie</h4><p>${esc(info.vendemmia)}</p></div>` : ''}
         ${info.ztl_warning ? `<div class="day-block practical-card ztl-warning"><h4 class="block-label">ZTL</h4><p>${esc(info.ztl_warning)}</p></div>` : ''}
-        ${crowdTips ? `<div class="day-block practical-card"><h4 class="block-label">Unikanie tłumów</h4>${crowdTips}</div>` : ''}
+        ${crowdCard}
       </div>
     </section>
   `;

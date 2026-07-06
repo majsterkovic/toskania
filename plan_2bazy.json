@@ -725,6 +725,40 @@
           "source": "https://www.booking.com/hotel/it/agriturismo-franca.it.html",
           "checked": "2026-07"
         }
+      ],
+      "eta_timeline": [
+        {
+          "time": "07:00",
+          "event": "Wyjazd Kufstein (Tyrol)"
+        },
+        {
+          "time": "09:30",
+          "event": "Rosenheim → A93 Inntal"
+        },
+        {
+          "time": "11:00",
+          "event": "A13 Brenner (możliwy korek Lueg)"
+        },
+        {
+          "time": "12:30",
+          "event": "Granica AT/IT → A22 Bolzano"
+        },
+        {
+          "time": "13:00",
+          "event": "Lunch Rovereto Sud (Tre Pini)"
+        },
+        {
+          "time": "15:00",
+          "event": "A22 → A1 → A11, kier. Lucca"
+        },
+        {
+          "time": "16:30",
+          "event": "Zjazd Lucca Est → SS12/SR445"
+        },
+        {
+          "time": "17:30",
+          "event": "Przyjazd Mologno / Barga — check-in"
+        }
       ]
     },
     {
@@ -1761,7 +1795,15 @@
           "location": "SP408/SP484",
           "note": "Zatankuj rano przed wyruszeniem — stacje w Chianti rzadkie i drogie."
         }
-      ]
+      ],
+      "wine_tasting": {
+        "place": "Badia a Coltibuono — degustacja (popołudnie)",
+        "address": "Localita Badia a Coltibuono, 53013 Gaiole in Chianti SI",
+        "time": "15:00 (slot drugi; 11:00 rano — opcja alternatywna). Rezerwacja online lub tel.",
+        "price": "od €25/os (4 wina Chianti Classico DOCG) do €35/os (premium + oliwa)",
+        "note": "Wino benedyktyńskie od 1051 r. Klasztor + piwnica + ogród. Chianti Classico DOCG Gran Selezione, Cultus Boni. Tel. 0577 744832 lub coltibuono.com",
+        "gps_hint": "Localita Badia a Coltibuono — 6 km na pn-wsch od Gaiole in Chianti"
+      }
     },
     {
       "date": "21.09 (pn)",
@@ -2026,7 +2068,15 @@
           "location": "SS2 Cassia",
           "note": "Tankuj w drodze do Val d'Orcia — przy Torrenieri zanim zjazd do Pienzy."
         }
-      ]
+      ],
+      "wine_tasting": {
+        "place": "Enoteca La Fortezza di Montalcino",
+        "address": "Piazzale della Fortezza, 53024 Montalcino SI",
+        "time": "09:00–20:00 (bez rezerwacji — walk-in)",
+        "price": "Brunello DOCG od €8–15/kieliszek, Rosso di Montalcino €4–7, degustacja 3 win €18",
+        "note": "Enoteca w murach fortecy XIV-wiecznej. Panorama 360° na Orcia i Amiata. Sprzedaż butelek: Brunello od €20, Rosso od €10. Wrzesień = sezon bez kolejek.",
+        "gps_hint": "Piazzale Fortezza — wejście od strony Viale Strozzi, parking przy murach"
+      }
     },
     {
       "date": "23.09 (śr)",

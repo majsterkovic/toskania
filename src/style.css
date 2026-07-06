@@ -418,6 +418,12 @@ html.dark .plan-note {
   font-style: italic;
 }
 
+.base-gps {
+  margin-top: 0.35rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+}
+
 /* Schedule wrapper */
 
 .schedule-wrap {

@@ -187,6 +187,7 @@ function renderBases(bases, images) {
             <p class="base-desc">${esc(base.description)}</p>
             <p class="base-accommodation"><strong>Nocleg:</strong> ${esc(base.accommodation)}</p>
             <p class="base-tip">→ ${esc(base.booking_tip)}</p>
+            ${base.gps_hint ? `<p class="base-gps muted">📍 ${esc(base.gps_hint)}</p>` : ''}
           </div>
         </article>
       `;

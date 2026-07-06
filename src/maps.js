@@ -105,6 +105,43 @@ export function initRouteOverviewMap(containerId, mapConfig) {
 }
 
 /**
+ * Pobiera trasę drogową z OSRM z cache'owaniem w localStorage.
+ * waypointsLatLon: [[lat, lon], [lat, lon], ...]
+ * Zwraca Promise<[[lat, lon], ...]> lub null przy błędzie.
+ */
+const OSRM_BASE = 'https://router.project-osrm.org/route/v1/driving';
+const OSRM_CACHE_KEY_PREFIX = 'osrm_v1_';
+
+async function fetchOSRMRoute(waypointsLatLon) {
+  if (!waypointsLatLon || waypointsLatLon.length < 2) return null;
+  const roundedKey = waypointsLatLon.map(([lat, lon]) => `${lat.toFixed(4)},${lon.toFixed(4)}`).join(';');
+  const cacheKey = OSRM_CACHE_KEY_PREFIX + roundedKey;
+
+  try {
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) return JSON.parse(cached);
+  } catch (_) {}
+
+  // OSRM: lon,lat order
+  const coordStr = waypointsLatLon.map(([lat, lon]) => `${lon},${lat}`).join(';');
+  const url = `${OSRM_BASE}/${coordStr}?overview=full&geometries=geojson`;
+
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    const data = await r.json();
+    const rawCoords = data.routes?.[0]?.geometry?.coordinates;
+    if (!rawCoords) return null;
+    // Convert geojson [lon, lat] → Leaflet [lat, lon]
+    const leafletCoords = rawCoords.map(([lon, lat]) => [lat, lon]);
+    try { localStorage.setItem(cacheKey, JSON.stringify(leafletCoords)); } catch (_) {}
+    return leafletCoords;
+  } catch (_) {
+    return null;
+  }
+}
+
+/**
  * Mini mapa dnia — baza + atrakcje dnia
  */
 export function initDayMap(containerId, base, attractions) {
@@ -117,6 +154,7 @@ export function initDayMap(containerId, base, attractions) {
   registerMap({ map, type: 'day' });
 
   const latLngs = [];
+  const atts = (attractions || []).filter(a => a.coords);
 
   if (base?.coords) {
     window.L.marker(base.coords, { icon: makeIcon('base') })
@@ -125,18 +163,19 @@ export function initDayMap(containerId, base, attractions) {
     latLngs.push(base.coords);
   }
 
-  (attractions || []).forEach(a => {
-    if (!a.coords) return;
+  atts.forEach(a => {
     latLngs.push(a.coords);
     window.L.marker(a.coords, { icon: makeIcon(a.type === 'nature' ? 'nature' : 'attraction') })
       .bindPopup(`<strong>${a.name}</strong>${a.drive_min ? `<br><em>${a.drive_min} min od bazy</em>` : ''}`, { maxWidth: 180 })
       .addTo(map);
   });
 
+  // Fallback: prosta linia (zastąpiona trasą drogową gdy OSRM odpowie)
+  let routeLayer = null;
   if (base?.coords && latLngs.length > 1) {
-    window.L.polyline(
+    routeLayer = window.L.polyline(
       [base.coords, ...latLngs.slice(1)],
-      { color: '#9a8f82', weight: 1.5, dashArray: '4 3', opacity: 0.5 }
+      { color: '#9a8f82', weight: 1.5, dashArray: '4 3', opacity: 0.4 }
     ).addTo(map);
   }
 
@@ -144,6 +183,16 @@ export function initDayMap(containerId, base, attractions) {
     map.setView(latLngs[0], 12);
   } else if (latLngs.length > 1) {
     map.fitBounds(window.L.latLngBounds(latLngs), { padding: [28, 28] });
+  }
+
+  // Async: pobierz trasę drogową (z cache lub OSRM)
+  if (base?.coords && atts.length > 0) {
+    const waypoints = [base.coords, ...atts.map(a => a.coords)];
+    fetchOSRMRoute(waypoints).then(route => {
+      if (!route || !map._container) return;
+      if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
+      window.L.polyline(route, { color: '#9a8f82', weight: 2.5, opacity: 0.75 }).addTo(map);
+    });
   }
 
   return map;
@@ -236,11 +285,18 @@ export function initInteractiveMap(containerId, plan) {
         .addTo(allGroup);
     });
 
-    // Route polyline: base → att1 → att2 → ...
+    // Route polyline: prosta linia jako fallback, zastąpiona trasą drogową z OSRM
+    let dayPolyline = null;
     if (routeCoords.length > 1) {
-      L.polyline(routeCoords, {
-        color: accentColor, weight: 2, opacity: 0.6, dashArray: '7 5',
+      dayPolyline = L.polyline(routeCoords, {
+        color: accentColor, weight: 2, opacity: 0.45, dashArray: '7 5',
       }).addTo(group);
+
+      fetchOSRMRoute(routeCoords).then(route => {
+        if (!route || !map._container) return;
+        if (dayPolyline) { group.removeLayer(dayPolyline); dayPolyline = null; }
+        L.polyline(route, { color: accentColor, weight: 2.5, opacity: 0.8 }).addTo(group);
+      });
     }
   });
 

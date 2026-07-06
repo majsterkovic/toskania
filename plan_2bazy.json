@@ -992,7 +992,8 @@
           "hours": "7–20",
           "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym"
         }
-      ]
+      ],
+      "daily_km_estimate": 41
     },
     {
       "date": "15.09 (wt)",
@@ -1156,7 +1157,8 @@
           "location": "Via Roma / SS445, Castelnuovo",
           "note": "Tankuj po lunchu w Castelnuovo — przed powrotem do bazy w Barga."
         }
-      ]
+      ],
+      "daily_km_estimate": 50
     },
     {
       "date": "16.09 (śr)",
@@ -1323,7 +1325,8 @@
           "location": "SS445 dolina Serchio",
           "note": "Zatankuj rano przed wyjazdem w góry — przy Vagli stacji brak."
         }
-      ]
+      ],
+      "daily_km_estimate": 47
     },
     {
       "date": "17.09 (czw)",
@@ -1470,7 +1473,8 @@
           "opening_hours": "24/7",
           "note": "Opcjonalny postój na A11 — kawa przed Sieną."
         }
-      ]
+      ],
+      "daily_km_estimate": 43
     },
     {
       "date": "18.09 (pt)",
@@ -1792,7 +1796,8 @@
           "time": "15:00",
           "event": "Powrót do bazy Chianti"
         }
-      ]
+      ],
+      "daily_km_estimate": 47
     },
     {
       "date": "20.09 (nd)",
@@ -1975,7 +1980,8 @@
           "time": "17:00",
           "event": "Powrót do bazy"
         }
-      ]
+      ],
+      "daily_km_estimate": 43
     },
     {
       "date": "21.09 (pn)",
@@ -2164,7 +2170,8 @@
           "time": "16:30",
           "event": "Powrót do bazy"
         }
-      ]
+      ],
+      "daily_km_estimate": 52
     },
     {
       "date": "22.09 (wt)",
@@ -2349,7 +2356,8 @@
           "event": "Powrót do bazy"
         }
       ],
-      "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00."
+      "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
+      "daily_km_estimate": 70
     },
     {
       "date": "23.09 (śr)",
@@ -2503,7 +2511,8 @@
           "time": "16:30",
           "event": "Powrót do bazy — ostatni wieczór toskański"
         }
-      ]
+      ],
+      "daily_km_estimate": 52
     },
     {
       "date": "24.09 (czw)",

@@ -208,16 +208,28 @@ function renderBases(bases, images) {
   `;
 }
 
+function driveLevel(km) {
+  if (!km) return null;
+  if (km >= 60) return 'high';
+  if (km >= 40) return 'medium';
+  return 'low';
+}
+
 function renderDayNav(days) {
   const chips = activeDays(days)
-    .map(
-      (day) => `
+    .map((day) => {
+      const isPobyt = day.type === 'tuscany' || day.type === 'tuscany_popular';
+      const km = isPobyt ? day.daily_km_estimate : null;
+      const level = driveLevel(km);
+      const kmBadge = km ? `<span class="day-chip__km" data-drive="${level}">~${km}km</span>` : '';
+      return `
         <a href="#dzien-${day.day_num}" class="day-chip" data-day="${day.day_num}" style="--chip-accent: ${dayAccent(day)}">
           <span class="day-chip__num">${day.day_num}</span>
           <span class="day-chip__date">${esc(shortDate(day.date))}</span>
+          ${kmBadge}
         </a>
-      `
-    )
+      `;
+    })
     .join('');
 
   return `<nav class="day-nav" id="day-nav" aria-label="Nawigacja po dniach">${chips}</nav>`;
@@ -644,6 +656,12 @@ function renderDay(day, images, bases) {
         <div class="day-card-header">
           <span class="day-date">${esc(day.date)}</span>
           <span class="day-label">${esc(day.label)}</span>
+          ${(() => {
+            const isPobyt = day.type === 'tuscany' || day.type === 'tuscany_popular';
+            const km = isPobyt ? day.daily_km_estimate : null;
+            const level = driveLevel(km);
+            return km ? `<span class="day-drive-badge" data-drive="${level}" title="Szacowany dzienny przejazd samochodem">🚗 ~${km} km</span>` : '';
+          })()}
         </div>
         <h3 class="day-title">${esc(day.title)}</h3>
         ${warning}

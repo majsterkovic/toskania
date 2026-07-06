@@ -1154,7 +1154,8 @@
         "l_osteria_barga": "11:30–15:30, 18:30–22:30 — Piazza Angelio 13, rezerwacja zalecana"
       },
       "image2": "castiglione",
-      "narrative": "Zaczynamy pieszo — Barga jest tuż obok bazy. O 8:00 Duomo di San Cristoforo: moneta €2 na oświetlenie pulpitu Bigarellego, z tarasu widok na Alpy Apuańskie (~1h). Potem 15 min samochodem na południe do Treppignana — spacer 3,2 km przez las dębów bezszypułkowych i kasztanów, widoki na dolinę Serchio (1–1,5h). Wracamy do Bargi na lunch w Osteria Il Borgo dei Sapori (Via Borgo 1). Po lunchu 20 min samochodem na zachód w góry do Fornovolasco — Grotta del Vento, zarezerwowany Itinerario 2 na 15:00 (2h, w środku 10°C, kurtka obowiązkowa). Wracamy do bazy ok. 18:00."
+      "narrative": "Zaczynamy pieszo — Barga jest tuż obok bazy. O 8:00 Duomo di San Cristoforo: moneta €2 na oświetlenie pulpitu Bigarellego, z tarasu widok na Alpy Apuańskie (~1h). Potem 15 min samochodem na południe do Treppignana — spacer 3,2 km przez las dębów bezszypułkowych i kasztanów, widoki na dolinę Serchio (1–1,5h). Wracamy do Bargi na lunch w Osteria Il Borgo dei Sapori (Via Borgo 1). Po lunchu 20 min samochodem na zachód w góry do Fornovolasco — Grotta del Vento, zarezerwowany Itinerario 2 na 15:00 (2h, w środku 10°C, kurtka obowiązkowa). Wracamy do bazy ok. 18:00.",
+      "daily_km_estimate": 41
     },
     {
       "date": "15.09 (wt)",
@@ -1325,7 +1326,8 @@
         "da_carlino": "Pranzo 12:00–15:00, cena 19:00–22:00 (zimą zamknięte pon)"
       },
       "image2": "castelnuovo",
-      "narrative": "Z bazy wyjeżdżamy o 9:00 samochodem ~20 min na północ do Castiglione di Garfagnana. Parkujemy przy Porta Inferi (26 miejsc, Via Soccorso) i idziemy pieszo 30 min po średniowiecznych murach — zero tłumów. Potem jeszcze 10 min samochodem dalej na północ do rezerwatu Orecchiella: szlak 3 km przez strefę dębów burgundzkich na granicy z buczyną (1–1,5h). Na lunch zjeżdżamy ~15 min na południe do Castelnuovo di Garfagnana — da Carlino (Via Garibaldi 15), przychodzimy przed 12:30. Wracamy do bazy ~25 min. Popołudnie wolne."
+      "narrative": "Z bazy wyjeżdżamy o 9:00 samochodem ~20 min na północ do Castiglione di Garfagnana. Parkujemy przy Porta Inferi (26 miejsc, Via Soccorso) i idziemy pieszo 30 min po średniowiecznych murach — zero tłumów. Potem jeszcze 10 min samochodem dalej na północ do rezerwatu Orecchiella: szlak 3 km przez strefę dębów burgundzkich na granicy z buczyną (1–1,5h). Na lunch zjeżdżamy ~15 min na południe do Castelnuovo di Garfagnana — da Carlino (Via Garibaldi 15), przychodzimy przed 12:30. Wracamy do bazy ~25 min. Popołudnie wolne.",
+      "daily_km_estimate": 50
     },
     {
       "date": "16.09 (śr)",
@@ -1501,7 +1503,8 @@
         "gorfigliano_chiesa": "Brak stałych godzin — spontanicznie lub po uzgodnieniu z parafią"
       },
       "image2": "vagli",
-      "narrative": "Wyjeżdżamy o 9:00 samochodem 25 min na zachód do Lago di Vagli. Parking przy tamie — przyjeżdżamy przed 9:30, bo miejsca kończą się szybko. Z zapory widać (jeśli poziom niski) fragmenty zatopionej wioski Fabbriche di Careggine. Spacer wzdłuż brzegu, potem przerwa w Bar Radicchi w Vagli Sotto. Kilka km dalej (ok. 15 min) Gorfigliano: cicha górska wioska, romański kościółek Chiesa Vecchia, kompletny brak turystów. Wracamy 18 min na północny wschód do Fortezzy delle Verrucole — dziś środa, wewnątrz zamknięte, ale mury i panorama 360° na Garfagnane bezpłatne, jeden z najlepszych widoków regionu. Z powrotem do bazy ok. 17:30 (18 min)."
+      "narrative": "Wyjeżdżamy o 9:00 samochodem 25 min na zachód do Lago di Vagli. Parking przy tamie — przyjeżdżamy przed 9:30, bo miejsca kończą się szybko. Z zapory widać (jeśli poziom niski) fragmenty zatopionej wioski Fabbriche di Careggine. Spacer wzdłuż brzegu, potem przerwa w Bar Radicchi w Vagli Sotto. Kilka km dalej (ok. 15 min) Gorfigliano: cicha górska wioska, romański kościółek Chiesa Vecchia, kompletny brak turystów. Wracamy 18 min na północny wschód do Fortezzy delle Verrucole — dziś środa, wewnątrz zamknięte, ale mury i panorama 360° na Garfagnane bezpłatne, jeden z najlepszych widoków regionu. Z powrotem do bazy ok. 17:30 (18 min).",
+      "daily_km_estimate": 47
     },
     {
       "date": "17.09 (czw)",
@@ -1944,7 +1947,8 @@
           "time": "16:30",
           "event": "Powrót do bazy"
         }
-      ]
+      ],
+      "daily_km_estimate": 41
     },
     {
       "date": "19.09 (sob)",
@@ -2128,7 +2132,8 @@
           "time": "15:30",
           "event": "Powrót do bazy"
         }
-      ]
+      ],
+      "daily_km_estimate": 72
     },
     {
       "date": "20.09 (nd)",
@@ -2565,7 +2570,8 @@
           "time": "16:00",
           "event": "Spacer po Pitigliano — zachód słońca z murów"
         }
-      ]
+      ],
+      "daily_km_estimate": 23
     },
     {
       "date": "22.09 (wt)",
@@ -2746,7 +2752,8 @@
           "time": "17:00",
           "event": "Powrót do bazy (40 min)"
         }
-      ]
+      ],
+      "daily_km_estimate": 47
     },
     {
       "date": "23.09 (śr)",
@@ -2931,7 +2938,8 @@
           "time": "17:00",
           "event": "Powrót do bazy — ostatni wieczór toskański"
         }
-      ]
+      ],
+      "daily_km_estimate": 43
     },
     {
       "date": "24.09 (czw)",

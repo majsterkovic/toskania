@@ -519,6 +519,36 @@ html.dark .research-count {
   color: var(--chip-accent, var(--terracotta));
 }
 
+.day-chip__km {
+  font-size: 0.68rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--stone-dark);
+  line-height: 1;
+}
+.day-chip__km[data-drive="high"] {
+  color: var(--oro);
+}
+.day-chip__km[data-drive="medium"] {
+  color: var(--olive);
+}
+
+.day-drive-badge {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--stone-dark);
+  white-space: nowrap;
+  margin-left: auto;
+}
+.day-drive-badge[data-drive="high"] {
+  color: var(--oro);
+}
+.day-drive-badge[data-drive="medium"] {
+  color: var(--olive);
+}
+
 /* Day cards */
 
 .days-list {
@@ -2519,6 +2549,26 @@ html.dark .day-chip:hover {
 
 html.dark .day-chip.active .day-chip__num {
   color: var(--oro-light);
+}
+
+html.dark .day-chip__km {
+  color: var(--stone-dark);
+}
+html.dark .day-chip__km[data-drive="high"] {
+  color: var(--oro-light);
+}
+html.dark .day-chip__km[data-drive="medium"] {
+  color: var(--olive-light);
+}
+
+html.dark .day-drive-badge {
+  color: var(--stone-dark);
+}
+html.dark .day-drive-badge[data-drive="high"] {
+  color: var(--oro-light);
+}
+html.dark .day-drive-badge[data-drive="medium"] {
+  color: var(--olive-light);
 }
 
 /* Day cards */

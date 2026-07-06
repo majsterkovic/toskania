@@ -1003,7 +1003,8 @@
           "coords": [
             44.0733,
             10.4836
-          ]
+          ],
+          "duration_h": 1.5
         },
         {
           "name": "Treppignana via il Ciocco — las dębowo-kasztanowy",
@@ -1016,7 +1017,8 @@
           "coords": [
             44.058,
             10.463
-          ]
+          ],
+          "duration_h": 1.5
         },
         {
           "name": "Grotta del Vento — Fornovolasco",
@@ -1028,7 +1030,8 @@
           "coords": [
             44.0927,
             10.3846
-          ]
+          ],
+          "duration_h": 1.5
         }
       ],
       "oak_forest": {
@@ -1175,7 +1178,8 @@
           "coords": [
             44.1553,
             10.3936
-          ]
+          ],
+          "duration_h": 1.0
         },
         {
           "name": "Riserva Naturale Orecchiella — Sentiero „Intorno al Monte Orecchiella”",
@@ -1188,7 +1192,8 @@
           "coords": [
             44.1906,
             10.3912
-          ]
+          ],
+          "duration_h": 2.0
         },
         {
           "name": "Castelnuovo di Garfagnana",
@@ -1201,7 +1206,8 @@
           "coords": [
             44.1048,
             10.4077
-          ]
+          ],
+          "duration_h": 1.0
         }
       ],
       "oak_forest": {
@@ -1344,7 +1350,8 @@
           "coords": [
             44.1383,
             10.3452
-          ]
+          ],
+          "duration_h": 1.5
         },
         {
           "name": "Gorfigliano",
@@ -1356,7 +1363,8 @@
           "coords": [
             44.0773,
             10.3497
-          ]
+          ],
+          "duration_h": 0.5
         },
         {
           "name": "Fortezza delle Verrucole — spacer zewnętrzny",
@@ -1369,7 +1377,8 @@
           "coords": [
             44.1433,
             10.4681
-          ]
+          ],
+          "duration_h": 0.5
         }
       ],
       "oak_forest": {
@@ -1521,7 +1530,8 @@
           "coords": [
             43.9979,
             10.4536
-          ]
+          ],
+          "duration_h": 0.75
         },
         {
           "name": "Bagni di Lucca",
@@ -1534,7 +1544,8 @@
           "coords": [
             44.0065,
             10.5873
-          ]
+          ],
+          "duration_h": 1.5
         }
       ],
       "oak_forest": null,
@@ -1920,7 +1931,8 @@
           "coords": [
             43.3183,
             11.3318
-          ]
+          ],
+          "duration_h": 1.5
         },
         {
           "name": "Duomo di Siena + Libreria Piccolomini",
@@ -1933,7 +1945,8 @@
           "coords": [
             43.3171,
             11.3289
-          ]
+          ],
+          "duration_h": 2.0
         },
         {
           "name": "Spacer przez kontrade",
@@ -1946,7 +1959,8 @@
           "coords": [
             43.3183,
             11.3318
-          ]
+          ],
+          "duration_h": 1.0
         }
       ],
       "oak_forest": null,
@@ -2104,7 +2118,8 @@
           "coords": [
             43.1423,
             11.4934
-          ]
+          ],
+          "duration_h": 1.5
         },
         {
           "name": "Asciano — Crete Senesi",
@@ -2117,7 +2132,8 @@
           "coords": [
             43.2343,
             11.5621
-          ]
+          ],
+          "duration_h": 1.5
         }
       ],
       "oak_forest": {
@@ -2355,7 +2371,10 @@
           "coords": [
             42.6358,
             11.6713
-          ]
+          ],
+          "opening_hours": "Miasteczko dostępne całą dobę. Museo Civico: 10:00–13:00, 15:00–18:30 (wt–nd).",
+          "ticket_price": "Miasteczko: bezpłatne. Museo Civico: €5.",
+          "duration_h": 2.0
         },
         {
           "name": "Sinagoga e Museo Ebraico — Piccola Gerusalemme",
@@ -2370,7 +2389,8 @@
           "coords": [
             42.6358,
             11.6713
-          ]
+          ],
+          "duration_h": 1.0
         },
         {
           "name": "Via Cava di San Giuseppe",
@@ -2385,7 +2405,8 @@
           "coords": [
             42.66,
             11.69
-          ]
+          ],
+          "duration_h": 1.5
         }
       ],
       "oak_forest": {
@@ -2505,7 +2526,8 @@
           "coords": [
             42.6816,
             11.7142
-          ]
+          ],
+          "duration_h": 2.0
         },
         {
           "name": "Via Cava di San Rocco — dolina Lente",
@@ -2520,7 +2542,8 @@
           "coords": [
             42.69,
             11.72
-          ]
+          ],
+          "duration_h": 1.5
         },
         {
           "name": "Cascate del Mulino — Saturnia",
@@ -2536,7 +2559,8 @@
           "coords": [
             42.6477,
             11.5099
-          ]
+          ],
+          "duration_h": 2.0
         }
       ],
       "oak_forest": {
@@ -2651,7 +2675,10 @@
           "coords": [
             42.6583,
             11.6572
-          ]
+          ],
+          "opening_hours": "1 IV–31 X: 9:30–19:00. 1 XI–31 III: 10:00–17:00.",
+          "ticket_price": "Biglietto cumulativo Sovana + Sorano: €10 (ważny 2 dni).",
+          "duration_h": 2.0
         },
         {
           "name": "Selva del Lamone — Sentiero degli Alberi Monumentali (n. 11)",
@@ -2664,7 +2691,10 @@
           "coords": [
             42.594,
             11.594
-          ]
+          ],
+          "opening_hours": "Całorocznie. Sentiero n.11 dostępny od świtu do zmierzchu.",
+          "ticket_price": "Bezpłatny",
+          "duration_h": 1.5
         },
         {
           "name": "Semproniano",
@@ -2677,7 +2707,10 @@
           "coords": [
             42.6327,
             11.5357
-          ]
+          ],
+          "opening_hours": "Miasteczko dostępne całą dobę.",
+          "ticket_price": "Bezpłatne",
+          "duration_h": 0.5
         }
       ],
       "oak_forest": {

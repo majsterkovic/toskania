@@ -368,20 +368,38 @@ function renderOpeningHours(day) {
 
 function renderLogistics(day) {
   const tips = day.practical_tips || [];
-  const parkingNote = day.parking && typeof day.parking === 'object'
-    ? Object.entries(day.parking)
+  const p = day.parking;
+  const parkingStrings = p && typeof p === 'object'
+    ? Object.entries(p)
         .filter(([k, v]) => v && typeof v === 'string' && k !== 'options')
-        .map(([k, v]) => `${k.replace(/_/g, ' ')}: ${v}`)
+        .map(([k, v]) => `🅿 ${k.replace(/_/g, ' ')}: ${v}`)
     : [];
-  const fuelItems = (day.fuel_stops || []).map(
-    (s) => `${s.name}${s.location ? ` (${s.location})` : ''}${s.note ? ' — ' + s.note : ''}`
-  );
-  const allTips = [...tips, ...parkingNote, ...fuelItems];
-  if (!allTips.length) return '';
+  const parkingOptions = (p?.options || []).map((o) => {
+    const parts = [
+      `🅿 <strong>${esc(o.name)}</strong>`,
+      o.price ? `— ${esc(o.price)}` : '',
+      o.gps_hint ? `<span class="logistics-gps">📍 ${esc(o.gps_hint)}</span>` : '',
+      o.note ? `<span class="logistics-note">${esc(o.note)}</span>` : '',
+    ].filter(Boolean);
+    return parts.join(' ');
+  });
+  const fuelItems = (day.fuel_stops || []).map((s) => {
+    const parts = [
+      `⛽ <strong>${esc(s.name)}</strong>`,
+      s.location ? `(${esc(s.location)})` : '',
+      s.note ? `— ${esc(s.note)}` : '',
+    ].filter(Boolean);
+    return parts.join(' ');
+  });
+  const allTips = tips.map((t) => esc(t));
+  const allLogistics = [...parkingStrings, ...parkingOptions, ...fuelItems];
+  if (!allTips.length && !allLogistics.length) return '';
+  const tipItems = allTips.map((t) => `<li class="logistics-tip">${t}</li>`).join('');
+  const logItems = allLogistics.map((t) => `<li>${t}</li>`).join('');
   return `
     <div class="day-block day-block--practical">
       <h4 class="block-label">Logistyka i wskazówki</h4>
-      <ul class="tips-list">${allTips.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
+      <ul class="tips-list">${tipItems}${logItems}</ul>
     </div>
   `;
 }
@@ -458,18 +476,29 @@ function renderRouteWaypoints(routeStr) {
 
 function renderWebResearch(webResearch) {
   if (!webResearch?.length) return '';
-  const items = webResearch.map(item => `
+  const items = webResearch.map(item => {
+    const summary = item.summary || '';
+    const preview = summary.length > 100
+      ? summary.slice(0, 97).replace(/\s+\S*$/, '') + '…'
+      : summary;
+    return `
     <details class="research-item">
       <summary class="research-item__summary">
-        <span class="research-item__topic">${esc(item.topic)}</span>
-        ${item.checked ? `<span class="research-item__checked">✓ ${esc(item.checked)}</span>` : ''}
+        <div class="research-item__summary-inner">
+          <div class="research-item__main">
+            <span class="research-item__topic">${esc(item.topic)}</span>
+            ${item.checked ? `<span class="research-item__checked">✓ ${esc(item.checked)}</span>` : ''}
+          </div>
+          ${preview ? `<span class="research-item__preview">${esc(preview)}</span>` : ''}
+        </div>
       </summary>
       <div class="research-item__body">
-        <p>${esc(item.summary)}</p>
+        <p>${esc(summary)}</p>
         ${item.source ? `<a class="research-item__source" href="${esc(item.source)}" target="_blank" rel="noopener noreferrer">↗ źródło</a>` : ''}
       </div>
     </details>
-  `).join('');
+  `;
+  }).join('');
   return `
     <div class="day-block day-block--research">
       <h4 class="block-label">Research</h4>

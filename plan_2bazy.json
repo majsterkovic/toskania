@@ -883,7 +883,8 @@
             10.4836
           ],
           "duration_h": 1.5,
-          "opening_hours": "Duomo San Cristoforo: pon–sob 8:00–12:00, 15:00–19:00; nd 15:00–19:00. Wejście bezpłatne."
+          "opening_hours": "Duomo San Cristoforo: pon–sob 8:00–12:00, 15:00–19:00; nd 15:00–19:00. Wejście bezpłatne.",
+          "entry_fee": "Wejście bezpłatne (Duomo: moneta €2 na oświetlenie)"
         },
         {
           "name": "Treppignana via il Ciocco — las dębowo-kasztanowy",
@@ -897,7 +898,8 @@
             10.463
           ],
           "duration_h": 1.5,
-          "opening_hours": "Teren leśny otwarty całą dobę, wstęp bezpłatny."
+          "opening_hours": "Teren leśny otwarty całą dobę, wstęp bezpłatny.",
+          "entry_fee": "Bezpłatny — teren leśny publiczny"
         },
         {
           "name": "Grotta del Vento — Fornovolasco",
@@ -911,7 +913,8 @@
             10.3846
           ],
           "duration_h": 1.5,
-          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Bilety: tour 1h €11, 2h €16, 3h €24. Rezerwacja obowiązkowa: grottadelvento.com"
+          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Bilety: tour 1h €11, 2h €16, 3h €24. Rezerwacja obowiązkowa: grottadelvento.com",
+          "entry_fee": "Tour 1h: €11 | 2h: €16 | 3h: €24 — rezerwacja: grottadelvento.com"
         }
       ],
       "oak_forest": {
@@ -1098,7 +1101,8 @@
             10.3936
           ],
           "duration_h": 1.0,
-          "opening_hours": "Codziennie 10:00–18:00 (latem do 19:00). Rocca Ariostesca: bilet €4. Mury i centro storico: wstęp wolny."
+          "opening_hours": "Codziennie 10:00–18:00 (latem do 19:00). Rocca Ariostesca: bilet €4. Mury i centro storico: wstęp wolny.",
+          "entry_fee": "Rocca: €4 | Mury i centro: bezpłatne"
         },
         {
           "name": "Riserva Naturale Orecchiella — Sentiero 'Intorno al Monte Orecchiella'",
@@ -1112,7 +1116,8 @@
             10.3912
           ],
           "duration_h": 2.0,
-          "opening_hours": "Teren otwarty całą dobę. Centro visitatori: pon–pt 9:00–13:00, sob–nd 10:00–17:00 (VI–IX). Wstęp bezpłatny."
+          "opening_hours": "Teren otwarty całą dobę. Centro visitatori: pon–pt 9:00–13:00, sob–nd 10:00–17:00 (VI–IX). Wstęp bezpłatny.",
+          "entry_fee": "Bezpłatny (park narodowy)"
         },
         {
           "name": "Castelnuovo di Garfagnana",
@@ -1126,7 +1131,8 @@
             10.4077
           ],
           "duration_h": 1.0,
-          "opening_hours": "Rocca Ariostesca: wt–nd 10:00–12:30, 15:00–18:30. Bilet €4. Piazza Ariosto: zawsze dostępna. Targ czwartkowy 8:00–13:00."
+          "opening_hours": "Rocca Ariostesca: wt–nd 10:00–12:30, 15:00–18:30. Bilet €4. Piazza Ariosto: zawsze dostępna. Targ czwartkowy 8:00–13:00.",
+          "entry_fee": "Rocca Ariostesca: €4 | Piazza i centro: bezpłatne"
         }
       ],
       "oak_forest": {
@@ -1302,7 +1308,8 @@
             10.4681
           ],
           "duration_h": 0.5,
-          "opening_hours": "Czerwiec–sierpień: codziennie. Wrzesień: pt–nd 10:00–18:00. Bilet €5 (wnętrze). Spacer zewnętrzny/widok: zawsze. WhatsApp: 379 2415958."
+          "opening_hours": "Czerwiec–sierpień: codziennie. Wrzesień: pt–nd 10:00–18:00. Bilet €5 (wnętrze). Spacer zewnętrzny/widok: zawsze. WhatsApp: 379 2415958.",
+          "entry_fee": "Wnętrze: €5 | Zewnątrz/widok: bezpłatny"
         },
         {
           "name": "Lago di Vagli",
@@ -1316,7 +1323,8 @@
             10.3452
           ],
           "duration_h": 1.5,
-          "opening_hours": "Teren otwarty całą dobę, wstęp bezpłatny. Widok na zatopioną wieś z SS445."
+          "opening_hours": "Teren otwarty całą dobę, wstęp bezpłatny. Widok na zatopioną wieś z SS445.",
+          "entry_fee": "Bezpłatny dostęp"
         },
         {
           "name": "Gorfigliano",
@@ -1330,7 +1338,8 @@
           ],
           "image_key": "gorfigliano",
           "duration_h": 0.5,
-          "opening_hours": "Wioska dostępna całą dobę. Kamieniołomy prywatne — obserwacja z zewnątrz."
+          "opening_hours": "Wioska dostępna całą dobę. Kamieniołomy prywatne — obserwacja z zewnątrz.",
+          "entry_fee": "Bezpłatny"
         }
       ],
       "oak_forest": {
@@ -1511,7 +1520,8 @@
             10.4536
           ],
           "duration_h": 0.75,
-          "opening_hours": "Most: zawsze dostępny, wstęp bezpłatny. Parking SS12 (gratuito)."
+          "opening_hours": "Most: zawsze dostępny, wstęp bezpłatny. Parking SS12 (gratuito).",
+          "entry_fee": "Bezpłatny — most publiczny"
         },
         {
           "name": "Bagni di Lucca — terme i Ponte delle Catene",
@@ -1525,7 +1535,8 @@
             10.5873
           ],
           "duration_h": 1.5,
-          "opening_hours": "Casino Reale: wt–nd 10:00–13:00, 15:30–18:30. Terme: tel. 0583 87038. Piazza e ville: zawsze dostępne."
+          "opening_hours": "Casino Reale: wt–nd 10:00–13:00, 15:30–18:30. Terme: tel. 0583 87038. Piazza e ville: zawsze dostępne.",
+          "entry_fee": "Terme wstęp: od €15 (rezerwacja) | Spacer: bezpłatny"
         },
         {
           "name": "Pieve di Careggine",
@@ -1539,7 +1550,8 @@
             10.3509
           ],
           "duration_h": 0.5,
-          "opening_hours": "Kościół dostępny całą dobę (widok zewnętrzny z SS445/Vagli). Gdy poziom wody niski — możliwy dostęp przez most."
+          "opening_hours": "Kościół dostępny całą dobę (widok zewnętrzny z SS445/Vagli). Gdy poziom wody niski — możliwy dostęp przez most.",
+          "entry_fee": "Bezpłatny — widok z zewnątrz"
         }
       ],
       "oak_forest": {

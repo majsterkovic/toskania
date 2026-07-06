@@ -806,6 +806,20 @@ html.dark .day-narrative {
   margin-bottom: 0.35rem;
 }
 
+.attraction-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.8rem;
+  margin-top: 0.35rem;
+}
+
+.attraction-meta span {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
 .drive-min {
   font-family: var(--font-sans);
   font-size: 0.85rem;

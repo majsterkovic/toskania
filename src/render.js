@@ -289,6 +289,17 @@ function renderAttractions(attractions, images) {
       const imgKey = a.image_key || a.image;
       const placeImg = resolvePlaceImage(images, imgKey);
       const thumb = placeImg ? renderImg(placeImg, 'attraction-thumb') : '';
+      const ticketPrice = a.entry_fee || a.ticket_price;
+      const metaItems = [
+        a.opening_hours ? `🕐 ${esc(a.opening_hours)}` : '',
+        ticketPrice ? `🎟 ${esc(ticketPrice)}` : '',
+        a.parking_price ? `🅿 ${esc(a.parking_price)}` : '',
+        a.duration_h ? `⏱ ok. ${a.duration_h}h` : '',
+        a.gps_hint ? `📍 ${esc(a.gps_hint)}` : '',
+      ].filter(Boolean);
+      const metaHtml = metaItems.length
+        ? `<div class="attraction-meta">${metaItems.map(m => `<span>${m}</span>`).join('')}</div>`
+        : '';
       return `
         <li class="attraction">
           ${thumb}
@@ -299,6 +310,7 @@ function renderAttractions(attractions, images) {
               <span class="type-badge type-badge--${esc(a.type)}">${esc(typeLabel)}</span>
             </div>
             <p>${esc(a.description)}</p>
+            ${metaHtml}
           </div>
         </li>
       `;

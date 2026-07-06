@@ -515,12 +515,14 @@ function renderDay(day, images, bases) {
   if (day.type === 'buffer') {
     return `
       <article class="day-card day-card--buffer" id="bufor" style="--day-accent: ${accent}">
-        <div class="day-card-header">
-          <span class="day-date">${esc(day.date)}</span>
-          <span class="day-label">${esc(day.label)}</span>
+        <div class="day-card__inner">
+          <div class="day-card-header">
+            <span class="day-date">${esc(day.date)}</span>
+            <span class="day-label">${esc(day.label)}</span>
+          </div>
+          <h3 class="day-title">${esc(day.title)}</h3>
+          <div class="day-body">${renderBuffer(day)}</div>
         </div>
-        <h3 class="day-title">${esc(day.title)}</h3>
-        <div class="day-body">${renderBuffer(day)}</div>
       </article>
     `;
   }

@@ -330,6 +330,26 @@ html.dark .plan-note {
   margin-bottom: 0.5rem;
 }
 
+.research-count {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  color: var(--muted);
+  background: var(--stone);
+  border-radius: 20px;
+  padding: 0.05em 0.55em;
+  letter-spacing: 0;
+  text-transform: none;
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
+
+html.dark .research-count {
+  background: rgba(255,255,255,0.07);
+  color: var(--muted);
+}
+
 /* Bases */
 
 .bases-grid {

@@ -1894,7 +1894,8 @@
         }
       ],
       "image2": "pienza",
-      "narrative": "Wyjeżdżamy o 8:30 — 10 min samochodem do Bagno Vignoni. Parkujemy bezpłatnie przy Parcheggio Bagno Vignoni. Piazza delle Sorgenti: geotermiczny basen o świcie paruje jak z innego wymiaru, wstęp wolny (~1h spacer). Potem 10 min na południe do San Quirico d'Orcia: romańska kolegiata z XII w., a za nią Horti Leonini — geometryczne żywopłoty i lawendowe alejki (€2/os). Lunch w San Quirico lub przy drodze. Po południu 15 min na wschód do Pienzy: Piazza Pio II, katedra, Palazzo Piccolomini, enoteka z pecorino toscano. Wracamy do bazy ok. 18:00 (~15–20 min)."
+      "narrative": "Wyjeżdżamy o 8:30 — 10 min samochodem do Bagno Vignoni. Parkujemy bezpłatnie przy Parcheggio Bagno Vignoni. Piazza delle Sorgenti: geotermiczny basen o świcie paruje jak z innego wymiaru, wstęp wolny (~1h spacer). Potem 10 min na południe do San Quirico d'Orcia: romańska kolegiata z XII w., a za nią Horti Leonini — geometryczne żywopłoty i lawendowe alejki (€2/os). Lunch w San Quirico lub przy drodze. Po południu 15 min na wschód do Pienzy: Piazza Pio II, katedra, Palazzo Piccolomini, enoteka z pecorino toscano. Wracamy do bazy ok. 18:00 (~15–20 min).",
+      "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:30–16:00. Bagno Vignoni: przyjedź przed 9:30 — basen termalny o świcie, bez tłumów. Pienza: wejdź przed 11:00 przez Porta al Ciglio (zachodnia brama, mniej uczęszczana niż wschodnia). W środku piku (12–14h) trudno o spokojne zdjęcie Piazza Pio II."
     },
     {
       "date": "19.09 (sob)",
@@ -2037,7 +2038,45 @@
         }
       ],
       "image2": "siena-duomo",
-      "narrative": "Wyjeżdżamy z bazy o 6:30 — 47 km, ok. 50 min jazdy do Sieny. Parkujemy przy Santa Caterina (schody ruchome do centrum, €2/h) lub Stadio-Fortezza (wyjście San Domenico). Piazza del Campo o 7:20–7:30: słońce dopiero wchodzi nad dachy, zero tłumów — ten moment wart wczesnej pobudki. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16, omijamy kolejkę). Libreria Piccolomini w środku: ukryta perełka ze złoconymi freskami Pinturicchia. Lunch w Antica Trattoria Papei (Piazza del Mercato 6). Tłumy między 10:00–15:00 — popołudnie na bocznych uliczkach kontrad. Wracamy do bazy ok. 17:30 (50 min)."
+      "narrative": "Wyjeżdżamy z bazy o 6:30 — 47 km, ok. 50 min jazdy do Sieny. Parkujemy przy Santa Caterina (schody ruchome do centrum, €2/h) lub Stadio-Fortezza (wyjście San Domenico). Piazza del Campo o 7:20–7:30: słońce dopiero wchodzi nad dachy, zero tłumów — ten moment wart wczesnej pobudki. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16, omijamy kolejkę). Libreria Piccolomini w środku: ukryta perełka ze złoconymi freskami Pinturicchia. Lunch w Antica Trattoria Papei (Piazza del Mercato 6). Tłumy między 10:00–15:00 — popołudnie na bocznych uliczkach kontrad. Wracamy do bazy ok. 17:30 (50 min).",
+      "eta_timeline": [
+        {
+          "time": "06:30",
+          "event": "Wyjazd z bazy (47 km do Sieny)"
+        },
+        {
+          "time": "07:20",
+          "event": "Parking Santa Caterina lub Stadio-Fortezza"
+        },
+        {
+          "time": "07:30",
+          "event": "Piazza del Campo — Fontana Gaia bez tłumów"
+        },
+        {
+          "time": "09:30",
+          "event": "Caffè Fiorella — espresso + cornetto"
+        },
+        {
+          "time": "10:30",
+          "event": "Duomo otwiera → Libreria Piccolomini"
+        },
+        {
+          "time": "12:00",
+          "event": "Spacer przez kontrade (Torre, Aquila, Chiocciola)"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad Trattoria Papei (Piazza del Mercato 6)"
+        },
+        {
+          "time": "14:30",
+          "event": "Wyjazd z parkingu — przed południowym szczytem"
+        },
+        {
+          "time": "15:30",
+          "event": "Powrót do bazy"
+        }
+      ]
     },
     {
       "date": "20.09 (nd)",
@@ -2440,7 +2479,8 @@
         "sassotondo": "Degustacja: 10:30 lub 15:30, pn–nd. Prenotazione 24h: +39 351 6986750."
       },
       "image2": "via-cava",
-      "narrative": "Wszystko w zasięgu ręki — 5 min samochodem lub 15 min pieszo z bazy. Rano spacer po Pitigliano z punktu widokowego — miasto na skale tufowej. O 10:00 Piccola Gerusalemme: synagoga i żydowskie ghetto (panowie mają kippę na miejscu, ~1h). Potem 5 min samochodem do SP42 — Via Cava di San Giuseppe: parking gratis, szlak 850 m w głąb wąwozu, ściany tufu do 20 m (latarka i buty trekkingowe obowiązkowe, ~1–1,5h). Lunch w Il Tufo Allegro (Vicolo della Costituzione 5, rezerwacja: 0564 616192). Popołudnie wolne."
+      "narrative": "Wszystko w zasięgu ręki — 5 min samochodem lub 15 min pieszo z bazy. Rano spacer po Pitigliano z punktu widokowego — miasto na skale tufowej. O 10:00 Piccola Gerusalemme: synagoga i żydowskie ghetto (panowie mają kippę na miejscu, ~1h). Potem 5 min samochodem do SP42 — Via Cava di San Giuseppe: parking gratis, szlak 850 m w głąb wąwozu, ściany tufu do 20 m (latarka i buty trekkingowe obowiązkowe, ~1–1,5h). Lunch w Il Tufo Allegro (Vicolo della Costituzione 5, rezerwacja: 0564 616192). Popołudnie wolne.",
+      "crowd_tip": "Pitigliano i Sorano: sobotni rynek w Pitigliano (rano) przyciąga lokalnych, nie turystów — świetny czas. Sorano Fortezza Orsini: grupy wchodzą od 10:30 — przyjedź przed 10:00 lub po 14:00."
     },
     {
       "date": "22.09 (wt)",
@@ -2587,7 +2627,8 @@
         }
       ],
       "image2": "saturnia",
-      "narrative": "Z bazy 10 min samochodem do Sorano. Parkujemy przy fortecy Orsini — bilet cumulativo €10 (obejmuje też jutrzejszą Sovanę). Wycieczka podziemna o 12:00 lub 15:00 (kurtka, zimno). Przed nią: spacer wzdłuż Via Cava di San Rocco od fortecy w dół doliny Lente (~30 min pieszo). Lunch w Cantina L'Ottava Rima (Via del Borgo 25, Sorano). Po południu 30 min samochodem na zachód do Saturni — Cascate del Mulino. Przyjeżdżamy po 15:00 (mniej tłumów). Parking SP10 (€2,50/h do 20:00), 5 min pieszo do kaskad. Ręcznik i klapki — kamienie śliskie. Wracamy do bazy ok. 18:00 (25 min)."
+      "narrative": "Z bazy 10 min samochodem do Sorano. Parkujemy przy fortecy Orsini — bilet cumulativo €10 (obejmuje też jutrzejszą Sovanę). Wycieczka podziemna o 12:00 lub 15:00 (kurtka, zimno). Przed nią: spacer wzdłuż Via Cava di San Rocco od fortecy w dół doliny Lente (~30 min pieszo). Lunch w Cantina L'Ottava Rima (Via del Borgo 25, Sorano). Po południu 30 min samochodem na zachód do Saturni — Cascate del Mulino. Przyjeżdżamy po 15:00 (mniej tłumów). Parking SP10 (€2,50/h do 20:00), 5 min pieszo do kaskad. Ręcznik i klapki — kamienie śliskie. Wracamy do bazy ok. 18:00 (25 min).",
+      "crowd_tip": "Terme di Saturnia: popularne w każdą niedzielę i weekendy. Wodospad Cascata del Mulino gratis — przyjedź przed 9:30. Płatny basen terme otwiera 9:30 — rezerwacja online polecana. Sorano spokojniejsze — ale nie łącz Sorany z Saturnią i Sovano w jeden dzień."
     },
     {
       "date": "23.09 (śr)",

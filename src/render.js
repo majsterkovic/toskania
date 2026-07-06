@@ -502,7 +502,7 @@ function renderWebResearch(webResearch) {
   }).join('');
   return `
     <div class="day-block day-block--research">
-      <h4 class="block-label">Research</h4>
+      <h4 class="block-label">Research <span class="research-count">${webResearch.length}</span></h4>
       <div class="research-list">${items}</div>
     </div>
   `;

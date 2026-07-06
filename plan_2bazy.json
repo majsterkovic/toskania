@@ -1606,7 +1606,9 @@
           "vino sfuso (z beczki)"
         ],
         "note": "Kultowa trattoria za Palazzo Pubblico. Rezerwacja tel. od 10:00 (sobota lunch!). Tel. +39 0577 280894.",
-        "price": "~€15–22/os"
+        "price": "~€15–22/os",
+        "phone": "+39 0577 280894",
+        "opening_hours": "Pranzo 12:00–15:00, cena 19:00–22:30. Nd zamkn. Rezerwacja wskazana."
       },
       "practical_tips": [
         "SOBOTA = kluczowy dzień: wyjazd 7:00, Campo o 7:30 prawie pusty. Tłumy od 10:00, szczyt 11:00–15:00",
@@ -1677,6 +1679,44 @@
           "location": "BAZA 2 — Chianti Senese",
           "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót, stacja przy SP408."
         }
+      ],
+      "eta_timeline": [
+        {
+          "time": "06:30",
+          "event": "Wyjazd z bazy Chianti (25 min do Sieny)"
+        },
+        {
+          "time": "06:55",
+          "event": "Parking Santa Caterina lub Stadio-Fortezza"
+        },
+        {
+          "time": "07:00",
+          "event": "Piazza del Campo — Fontana Gaia bez tłumów"
+        },
+        {
+          "time": "09:30",
+          "event": "Caffè Fiorella — espresso + cornetto"
+        },
+        {
+          "time": "10:30",
+          "event": "Duomo otwiera → Libreria Piccolomini"
+        },
+        {
+          "time": "12:00",
+          "event": "Spacer przez kontrade (Torre, Aquila, Chiocciola)"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad Trattoria Papei (Piazza del Mercato 6)"
+        },
+        {
+          "time": "14:30",
+          "event": "Wyjazd z parkingu — przed południowym szczytem"
+        },
+        {
+          "time": "15:00",
+          "event": "Powrót do bazy Chianti"
+        }
       ]
     },
     {
@@ -1742,7 +1782,9 @@
           "Chianti Classico kieliszek"
         ],
         "note": "Lokalna osteria w centrum Raddy — proste toskańskie menu, dobra relacja cena/jakość. Alternatywa w tym samym rejonie: La Bottega di Volpaia (SP112, Volpaia) — kanapki i deski serów na tarasie z widokiem.",
-        "price": "~€18–28/os"
+        "price": "~€18–28/os",
+        "phone": "+39 0577 738055",
+        "opening_hours": "Śr–Pn 12:30–14:30, 19:30–21:30. Wt zamkn."
       },
       "practical_tips": [
         "Brolio (10:00–12:00, giardini + querceti) → Badia a Coltibuono (~12:30, ogród i sklep) → lunch Villa a Sesta → Radda popołudnie",
@@ -1883,7 +1925,9 @@
           "vino Orcia DOC"
         ],
         "note": "Lokalna osteria w centrum Asciano. Tel. +39 0577 718056. Poniedziałek: sprawdź godziny.",
-        "price": "~€15–22/os"
+        "price": "~€15–22/os",
+        "phone": "+39 0577 718056",
+        "opening_hours": "Codz. 12:30–14:30, 19:30–21:30."
       },
       "practical_tips": [
         "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma, 2h) → 11:30 opcjonalnie Bosco Ragnaia (30–45 min) → 12:30 Asciano → 13:00 lunch La Tombolina → popołudnie Crete Senesi",
@@ -2026,7 +2070,9 @@
           "pasta al tartufo"
         ],
         "note": "Klasyczna trattoria w centrum Pienzy — lokale, porządne porcje, uczciwa cena. Czynna na lunch. Rezerwacja zalecana w sezonie przez TripAdvisor lub telefon. Alternatywa: La Terrazza della Val d'Orcia (widok na dolinę z tarasu, Via Condotti 11). Osobno: Osteria Perillà to gwiazdkowe fine dining w Rocca d'Orcia (€85–130/os) — jeśli chcecie spróbować, rezerwuj tygodnie wcześniej: info@osteriaperilla.it.",
-        "price": "~€15–25/os"
+        "price": "~€15–25/os",
+        "phone": "+39 0578 748606",
+        "opening_hours": "Śr–Pn 12:30–14:00, 19:30–21:30. Wt zamkn."
       },
       "practical_tips": [
         "Timeline: Bagno Vignoni (9:00, 1h) → Pienza (10:30, 2h) → lunch Latte di Luna / Pienza (12:30) → Montalcino (14:30, 1,5h) → powrót ~17:00",
@@ -2091,7 +2137,50 @@
         "price": "Brunello DOCG od €8–15/kieliszek, Rosso di Montalcino €4–7, degustacja 3 win €18",
         "note": "Enoteca w murach fortecy XIV-wiecznej. Panorama 360° na Orcia i Amiata. Sprzedaż butelek: Brunello od €20, Rosso od €10. Wrzesień = sezon bez kolejek.",
         "gps_hint": "Piazzale Fortezza — wejście od strony Viale Strozzi, parking przy murach"
-      }
+      },
+      "eta_timeline": [
+        {
+          "time": "08:30",
+          "event": "Wyjazd z bazy Chianti (45 min do Bagno Vignoni)"
+        },
+        {
+          "time": "09:15",
+          "event": "Bagno Vignoni — Piazza delle Sorgenti (parking SS2, 400 m)"
+        },
+        {
+          "time": "10:30",
+          "event": "Wyjazd do Pienzy (15 km, 20 min)"
+        },
+        {
+          "time": "11:00",
+          "event": "Pienza — parking Madonna delle Grazie (300 m od bramy)"
+        },
+        {
+          "time": "12:30",
+          "event": "Obiad Trattoria Latte di Luna (Via San Carlo 2-4)"
+        },
+        {
+          "time": "14:00",
+          "event": "Wyjazd do Montalcino (22 km, 25 min)"
+        },
+        {
+          "time": "14:30",
+          "event": "Montalcino — Fortezza, mury (€4), widok na Val d'Orcia"
+        },
+        {
+          "time": "15:30",
+          "event": "Enoteca La Fortezza — degustacja Brunello DOCG"
+        },
+        {
+          "time": "16:30",
+          "event": "Wyjazd z Montalcino do bazy Chianti (60 km)"
+        },
+        {
+          "time": "17:30",
+          "event": "Powrót do bazy"
+        }
+      ],
+      "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00."
     },
     {
       "date": "23.09 (śr)",
@@ -2153,7 +2242,9 @@
           "Chianti Classico riserva"
         ],
         "note": "Restauracja w centrum Monteriggioni — widok na wieże. Rezerwacja zalecana: +39 0577 304127. Kolacja pożegnalna w Toskanii.",
-        "price": "~€25–40/os"
+        "price": "~€25–40/os",
+        "phone": "+39 0577 304127",
+        "opening_hours": "Śr–Pn 12:30–14:00, 19:30–21:30. Wt zamkn."
       },
       "practical_tips": [
         "Monteriggioni (9:00–11:00) → Las Tocchi (11:30–13:00) → Murlo + Antiquarium (13:30) → kolacja Il Pozzo 19:00",

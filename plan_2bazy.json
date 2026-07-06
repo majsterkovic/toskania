@@ -569,7 +569,41 @@
       "opening_hours": {
         "gasthof_gigl_checkin": "15:00–21:00 (po 21:00 kontakt telefoniczny)",
         "raststaette_a9": "24/7"
-      }
+      },
+      "eta_timeline": [
+        {
+          "time": "05:30",
+          "event": "Wyjazd z Poznania (autostrada A2 kierunek Świecko)"
+        },
+        {
+          "time": "07:30",
+          "event": "Świecko — przejście graniczne PL/DE (A2 → A12)"
+        },
+        {
+          "time": "08:30",
+          "event": "Obwodnica Berlina (A10 ring, zjazd na A9 południe)"
+        },
+        {
+          "time": "11:00",
+          "event": "Postój Frankenwald Ost (A9, km 254) — lunch i tank DE"
+        },
+        {
+          "time": "13:30",
+          "event": "Norymberga (A9/A6 węzeł Nürnberg) — bez zjazdu"
+        },
+        {
+          "time": "14:30",
+          "event": "Monachium Ost — A8 kierunek Salzburg"
+        },
+        {
+          "time": "15:30",
+          "event": "Granica AT (Kiefersfelden) — e-winieta aktywna"
+        },
+        {
+          "time": "16:00",
+          "event": "Kufstein — hotel, parking Innenstadt lub hotelowy"
+        }
+      ]
     },
     {
       "date": "13.09 (nd)",
@@ -1931,14 +1965,14 @@
       "eta_timeline": [
         {
           "time": "06:30",
-          "event": "Wyjazd z bazy Chianti (25 min do Sieny)"
+          "event": "Wyjazd z bazy (47 km do Sieny)"
         },
         {
-          "time": "06:55",
+          "time": "07:20",
           "event": "Parking Santa Caterina lub Stadio-Fortezza"
         },
         {
-          "time": "07:00",
+          "time": "07:30",
           "event": "Piazza del Campo — Fontana Gaia bez tłumów"
         },
         {
@@ -1958,21 +1992,25 @@
           "event": "Obiad Trattoria Papei (Piazza del Mercato 6)"
         },
         {
-          "time": "14:30",
-          "event": "Wyjazd z parkingu — przed południowym szczytem"
+          "time": "14:00",
+          "event": "Enoteca Italiana (Fortezza Medicea) — opcjonalna degustacja (45 min)"
         },
         {
           "time": "15:00",
-          "event": "Powrót do bazy Chianti"
+          "event": "Wyjazd z parkingu — przed popołudniowym szczytem"
+        },
+        {
+          "time": "16:00",
+          "event": "Powrót do bazy"
         }
       ],
       "daily_km_estimate": 47,
       "wine_tasting": {
         "place": "Enoteca Italiana — Fortezza Medicea",
         "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
-        "time": "ok. 16:00–17:30 (po zwiedzaniu города)",
+        "time": "14:00 (po obiedzie, przed odjazdem z parkingu)",
         "price": "od €3/kieliszek; butelki od €12",
-        "note": "Narodowa enoteka włoska w renesansowej fortecy Medyceuszów. 1500+ win — Brunello di Montalcino, Chianti Classico DOCG, Morellino, Nobile di Montepulciano. Degustacja przy stolikach w historycznych piwnicach. Zweryfikuj godziny otwarcia przed wizytą (wt–sob 12:00–20:00).",
+        "note": "Narodowa enoteka włoska — 1500+ win, Brunello, Chianti Classico, Morellino, Nobile. Po obiedzie u Papei: Piazza del Mercato → Fortezza (12 min pieszo). Daj sobie 45 min. Zweryfikuj godziny przed wizytą (wt–sob 12:00–20:00 w sezonie).",
         "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
       }
     },
@@ -2854,7 +2892,41 @@
         "wasserburg_altstadt": "Parkhaus Kellerstraße / Überfuhrstraße: do 4h gratis, potem €2,50/dzień. W Altstadt (ulice) osobne strefy — lepiej parkuj przy hotelu.",
         "tip": "Większość Gasthöfe ma bezpłatny parking — Huberwirt, Paulanerstuben, Staudham. Wieczorny spacer nad Innem — 10 min pieszo z noclegu.",
         "hotel": "Huberwirt / Paulanerstuben / Staudham: bezpłatny parking na miejscu."
-      }
+      },
+      "eta_timeline": [
+        {
+          "time": "07:30",
+          "event": "Wyjazd z bazy Chianti (SR222/A1 Firenze-Sud, ~50 km)"
+        },
+        {
+          "time": "08:30",
+          "event": "Firenze-Sud wjazd A1 — uwaga ZTL aktywna, trzymaj autostradę"
+        },
+        {
+          "time": "09:45",
+          "event": "Bologna — A1/A14 węzeł, tankowanie i krótki postój"
+        },
+        {
+          "time": "11:30",
+          "event": "Postój na lunch (Autogrill A22 Trento Nord lub Rovereto)"
+        },
+        {
+          "time": "13:00",
+          "event": "Brennero/Brenner — Streckenmaut A22 ~€12,50"
+        },
+        {
+          "time": "14:30",
+          "event": "Innsbruck bypass — A12 Inntal (winieta AT)"
+        },
+        {
+          "time": "15:30",
+          "event": "Rosenheim — zjazd B304 do Wasserburg (25 km)"
+        },
+        {
+          "time": "16:00",
+          "event": "Wasserburg am Inn — hotel, spacer Altstadt, kolacja Paulaner"
+        }
+      ]
     },
     {
       "date": "25.09 (pt)",
@@ -3019,7 +3091,29 @@
         "pension_tip": "Szukaj Pension przy zjeździe A9 — tańsze niż centrum Hof.",
         "alternatives": "Rehau (Fränkischer Hof, parking gratis), Naila/Selbitz — €40–50/noc, 10–15 km od A9.",
         "hof": "Pension przy zjeździe A9 (Hof-Nord/West/Naila) — parking gratis. Centrum Hof: płatny."
-      }
+      },
+      "eta_timeline": [
+        {
+          "time": "08:00",
+          "event": "Wyjazd z Wasserburga (B304 → A8 Richtung München)"
+        },
+        {
+          "time": "09:00",
+          "event": "Monachium Tangenziale (A8/A9 north) — wczesna pora, mały ruch"
+        },
+        {
+          "time": "10:30",
+          "event": "Norymberga (A9 north) — opcjonalnie: Autoraststätte tankowanie"
+        },
+        {
+          "time": "12:30",
+          "event": "Hof (Saale) — zjazd A9, hotel przy autostradzie"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad i odpoczynek — ostatni nocleg w drodze powrotnej"
+        }
+      ]
     },
     {
       "date": "26.09 (sob)",
@@ -3136,7 +3230,33 @@
       },
       "parking": {
         "arrival": "Dotarcie do domu — brak noclegu. Lunch na trasie lub w Poznaniu."
-      }
+      },
+      "eta_timeline": [
+        {
+          "time": "07:00",
+          "event": "Wyjazd z Hof (A72 → A4 kierunek Drezno)"
+        },
+        {
+          "time": "08:30",
+          "event": "Chemnitz → Drezno (A4) — UWAGA: roboty do X 2026 (1 pas)"
+        },
+        {
+          "time": "10:00",
+          "event": "Cottbus (A13) — opcjonalnie: ostatni stop w DE"
+        },
+        {
+          "time": "11:00",
+          "event": "A15 → A12 Frankfurt (Oder) — granica PL/DE Świecko"
+        },
+        {
+          "time": "11:30",
+          "event": "Wjazd do PL — A2 Świecko (videotoll ~138 zł)"
+        },
+        {
+          "time": "13:30",
+          "event": "Poznań — dom 🏠"
+        }
+      ]
     },
     {
       "date": "27.09 (nd)",

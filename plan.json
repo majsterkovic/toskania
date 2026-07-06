@@ -670,7 +670,41 @@
           "checked": "2026-07"
         }
       ],
-      "narrative": "Wyjeżdżamy z Poznania o 6:00–6:30 — sobota, ciężarówek mniej. Przez Świecko na A12 w kierunku Berlina, potem A9 na południe przez Lipsk i Norymbergę. Gdzieś w okolicach Norymbergi (ok. 12:30) postój na lunch przy stacji benzynowej lub Raststätte. Za Monachium A8 do Rosenheim, następnie A93 Inntal w kierunku Austrii. Kufstein jest tuż za granicą — przy normalnym ruchu jesteśmy ok. 15:30–16:30. Małe tyrolskie miasto na skale nad Inn, urokliwa starówka, tańsze noclegi niż w Innsbrucku. Kolacja w oberży i wcześnie spać — jutro spokojny dzień przez Brenner do Toskanii."
+      "narrative": "Wyjeżdżamy z Poznania o 6:00–6:30 — sobota, ciężarówek mniej. Przez Świecko na A12 w kierunku Berlina, potem A9 na południe przez Lipsk i Norymbergę. Gdzieś w okolicach Norymbergi (ok. 12:30) postój na lunch przy stacji benzynowej lub Raststätte. Za Monachium A8 do Rosenheim, następnie A93 Inntal w kierunku Austrii. Kufstein jest tuż za granicą — przy normalnym ruchu jesteśmy ok. 15:30–16:30. Małe tyrolskie miasto na skale nad Inn, urokliwa starówka, tańsze noclegi niż w Innsbrucku. Kolacja w oberży i wcześnie spać — jutro spokojny dzień przez Brenner do Toskanii.",
+      "eta_timeline": [
+        {
+          "time": "05:30",
+          "event": "Wyjazd z Poznania (autostrada A2 kierunek Świecko)"
+        },
+        {
+          "time": "07:30",
+          "event": "Świecko — przejście graniczne PL/DE (A2 → A12)"
+        },
+        {
+          "time": "08:30",
+          "event": "Obwodnica Berlina (A10 ring, zjazd na A9 południe)"
+        },
+        {
+          "time": "11:00",
+          "event": "Postój Frankenwald Ost (A9, km 254) — lunch i tank DE"
+        },
+        {
+          "time": "13:30",
+          "event": "Norymberga (A9/A6 węzeł Nürnberg) — bez zjazdu"
+        },
+        {
+          "time": "14:30",
+          "event": "Monachium Ost — A8 kierunek Salzburg"
+        },
+        {
+          "time": "15:30",
+          "event": "Granica AT (Kiefersfelden) — e-winieta aktywna"
+        },
+        {
+          "time": "16:00",
+          "event": "Kufstein — hotel, parking Innenstadt lub hotelowy"
+        }
+      ]
     },
     {
       "date": "13.09 (nd)",
@@ -2256,11 +2290,15 @@
           "event": "Obiad Trattoria Papei (Piazza del Mercato 6)"
         },
         {
-          "time": "14:30",
-          "event": "Wyjazd z parkingu — przed południowym szczytem"
+          "time": "14:00",
+          "event": "Enoteca Italiana (Fortezza Medicea) — opcjonalna degustacja (45 min)"
         },
         {
-          "time": "15:30",
+          "time": "15:00",
+          "event": "Wyjazd z parkingu — przed popołudniowym szczytem"
+        },
+        {
+          "time": "16:00",
           "event": "Powrót do bazy"
         }
       ],
@@ -2268,9 +2306,9 @@
       "wine_tasting": {
         "place": "Enoteca Italiana — Fortezza Medicea",
         "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
-        "time": "ok. 16:00–17:30 (po zwiedzaniu города)",
+        "time": "14:00 (po obiedzie, przed odjazdem z parkingu)",
         "price": "od €3/kieliszek; butelki od €12",
-        "note": "Narodowa enoteka włoska w renesansowej fortecy Medyceuszów. 1500+ win — Brunello di Montalcino, Chianti Classico DOCG, Morellino, Nobile di Montepulciano. Degustacja przy stolikach w historycznych piwnicach. Zweryfikuj godziny otwarcia przed wizytą (wt–sob 12:00–20:00).",
+        "note": "Narodowa enoteka włoska — 1500+ win, Brunello, Chianti Classico, Morellino, Nobile. Po obiedzie u Papei: Piazza del Mercato → Fortezza (12 min pieszo). Daj sobie 45 min. Zweryfikuj godziny przed wizytą (wt–sob 12:00–20:00 w sezonie).",
         "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
       }
     },
@@ -3322,7 +3360,45 @@
           "note": "Zatankuj w DE — tańsze niż Austria i Włochy."
         }
       ],
-      "narrative": "Wyjeżdżamy o 7:00 z Pitigliano — SS74 przez Manciano do Orvieto to ostatnie 55 km włoskiej drogi regionalnej. Na A1 w Orvieto i na północ. Przy Florencji Variante di Valico omija ZTL (czwartek, aktywna do 20:00). Postój przy Bolonii lub Modenie ok. 10:30–11:00 — ostatni włoski espresso. Mediolan Tangenziale może dołożyć pół godziny. A22 Brennero, A13 przez Austrię, A12 Inntal i B304 do Wasserburga — jesteśmy ok. 17:30–18:30. Wieczorny spacer wzdłuż Innu po starej części miasta."
+      "narrative": "Wyjeżdżamy o 7:00 z Pitigliano — SS74 przez Manciano do Orvieto to ostatnie 55 km włoskiej drogi regionalnej. Na A1 w Orvieto i na północ. Przy Florencji Variante di Valico omija ZTL (czwartek, aktywna do 20:00). Postój przy Bolonii lub Modenie ok. 10:30–11:00 — ostatni włoski espresso. Mediolan Tangenziale może dołożyć pół godziny. A22 Brennero, A13 przez Austrię, A12 Inntal i B304 do Wasserburga — jesteśmy ok. 17:30–18:30. Wieczorny spacer wzdłuż Innu po starej części miasta.",
+      "eta_timeline": [
+        {
+          "time": "07:00",
+          "event": "Wyjazd z Pitigliano (SS74 → Orvieto Ovest A1)"
+        },
+        {
+          "time": "08:00",
+          "event": "Orvieto Ovest — wjazd A1, tankowanie (ostatnia tanio IT)"
+        },
+        {
+          "time": "10:00",
+          "event": "Obwodnica Florencji — trzymaj A1 Variante di Valico"
+        },
+        {
+          "time": "11:30",
+          "event": "Bologna — węzeł A1/A14, keep going north"
+        },
+        {
+          "time": "12:30",
+          "event": "Postój na lunch (Autogrill A22 Trento Nord lub Riva)"
+        },
+        {
+          "time": "14:00",
+          "event": "Brennero/Brenner — Streckenmaut A22 ~€12,50"
+        },
+        {
+          "time": "15:30",
+          "event": "Innsbruck — A12 Inntal, wchodzi winieta (gratis przy dziennej)"
+        },
+        {
+          "time": "16:30",
+          "event": "Rosenheim — B304 do Wasserburg (25 km, unikaj A93)"
+        },
+        {
+          "time": "17:00",
+          "event": "Wasserburg am Inn — hotel, spacer Altstadt przed kolacją"
+        }
+      ]
     },
     {
       "date": "25.09 (pt)",
@@ -3537,7 +3613,29 @@
           "note": "Alternatywa lunch — 24h, szybszy postój tranzytowy."
         }
       ],
-      "narrative": "Najkrótszy dzień jazdy — 380 km, wyjeżdżamy o 8:00 bez pośpiechu. B304 do A94, potem A99 obwodnicą Monachium, na A8 i A9 na północ przez Nürnberg. Na lunch zjeżdżamy przy Himmelkron na Restaurant Franconia am See — restauracja nad jeziorem przy autostradzie. Do Hof docieramy ok. 12:30–13:30, cały popołudniem na odpoczynek przed jutrzejszym powrotem do Polski."
+      "narrative": "Najkrótszy dzień jazdy — 380 km, wyjeżdżamy o 8:00 bez pośpiechu. B304 do A94, potem A99 obwodnicą Monachium, na A8 i A9 na północ przez Nürnberg. Na lunch zjeżdżamy przy Himmelkron na Restaurant Franconia am See — restauracja nad jeziorem przy autostradzie. Do Hof docieramy ok. 12:30–13:30, cały popołudniem na odpoczynek przed jutrzejszym powrotem do Polski.",
+      "eta_timeline": [
+        {
+          "time": "08:00",
+          "event": "Wyjazd z Wasserburga (B304 → A8 Richtung München)"
+        },
+        {
+          "time": "09:00",
+          "event": "Monachium Tangenziale (A8/A9 north) — wczesna pora, mały ruch"
+        },
+        {
+          "time": "10:30",
+          "event": "Norymberga (A9 north) — opcjonalnie: Autoraststätte tankowanie"
+        },
+        {
+          "time": "12:30",
+          "event": "Hof (Saale) — zjazd A9, hotel przy autostradzie"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad i odpoczynek — ostatni nocleg w drodze powrotnej"
+        }
+      ]
     },
     {
       "date": "26.09 (sob)",
@@ -3685,7 +3783,33 @@
         "arrival": "Dotarcie do domu — brak noclegu. Lunch na trasie lub w Poznaniu."
       },
       "narrative": "Ostatni odcinek — 470 km, sobota rano. Wyjeżdżamy o 7:00–7:30, A72 z Hof do Chemnitz, potem A4 na wschód przez Saksonię. Warto sprawdzić autobahn.de przy śniadaniu — roboty na A4 między Ohorn a Salzenforst bywają kapryśne. Drezno obwodnicą A4/A17, potem A13 przy Cottbus i A15 do Frankfurtu nad Odrą. Przez Świecko wjeżdżamy do Polski i A2 do Poznania — w domu ok. 13:30–15:00, cały dzień przed buforem 27.09.",
-      "image": "poznan"
+      "image": "poznan",
+      "eta_timeline": [
+        {
+          "time": "07:00",
+          "event": "Wyjazd z Hof (A72 → A4 kierunek Drezno)"
+        },
+        {
+          "time": "08:30",
+          "event": "Chemnitz → Drezno (A4) — UWAGA: roboty do X 2026 (1 pas)"
+        },
+        {
+          "time": "10:00",
+          "event": "Cottbus (A13) — opcjonalnie: ostatni stop w DE"
+        },
+        {
+          "time": "11:00",
+          "event": "A15 → A12 Frankfurt (Oder) — granica PL/DE Świecko"
+        },
+        {
+          "time": "11:30",
+          "event": "Wjazd do PL — A2 Świecko (videotoll ~138 zł)"
+        },
+        {
+          "time": "13:30",
+          "event": "Poznań — dom 🏠"
+        }
+      ]
     },
     {
       "date": "27.09 (nd)",

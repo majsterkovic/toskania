@@ -274,6 +274,7 @@ function renderAccommodation(acc) {
       ${acc.note ? `<p>${esc(acc.note)}</p>` : ''}
       ${acc.booking_tip ? `<p class="muted">${esc(acc.booking_tip)}</p>` : ''}
       ${acc.price ? `<p class="price">${esc(acc.price)}</p>` : ''}
+      ${acc.gps_hint ? `<p class="food-gps muted">📍 ${esc(acc.gps_hint)}</p>` : ''}
       ${options}
     </div>
   `;

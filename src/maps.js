@@ -107,10 +107,10 @@ export function initRouteOverviewMap(containerId, mapConfig) {
 /**
  * Pobiera trasę drogową z OSRM z cache'owaniem w localStorage.
  * waypointsLatLon: [[lat, lon], [lat, lon], ...]
- * Zwraca Promise<[[lat, lon], ...]> lub null przy błędzie.
+ * Zwraca Promise<{ route: [[lat,lon],...], distanceKm: number }> lub null przy błędzie.
  */
 const OSRM_BASE = 'https://router.project-osrm.org/route/v1/driving';
-const OSRM_CACHE_KEY_PREFIX = 'osrm_v1_';
+const OSRM_CACHE_KEY_PREFIX = 'osrm_v2_';
 
 async function fetchOSRMRoute(waypointsLatLon) {
   if (!waypointsLatLon || waypointsLatLon.length < 2) return null;
@@ -130,12 +130,13 @@ async function fetchOSRMRoute(waypointsLatLon) {
     const r = await fetch(url);
     if (!r.ok) return null;
     const data = await r.json();
-    const rawCoords = data.routes?.[0]?.geometry?.coordinates;
-    if (!rawCoords) return null;
-    // Convert geojson [lon, lat] → Leaflet [lat, lon]
-    const leafletCoords = rawCoords.map(([lon, lat]) => [lat, lon]);
-    try { localStorage.setItem(cacheKey, JSON.stringify(leafletCoords)); } catch (_) {}
-    return leafletCoords;
+    const routeData = data.routes?.[0];
+    if (!routeData?.geometry?.coordinates) return null;
+    const route = routeData.geometry.coordinates.map(([lon, lat]) => [lat, lon]);
+    const distanceKm = Math.round((routeData.distance || 0) / 1000);
+    const result = { route, distanceKm };
+    try { localStorage.setItem(cacheKey, JSON.stringify(result)); } catch (_) {}
+    return result;
   } catch (_) {
     return null;
   }
@@ -185,13 +186,25 @@ export function initDayMap(containerId, base, attractions) {
     map.fitBounds(window.L.latLngBounds(latLngs), { padding: [28, 28] });
   }
 
-  // Async: pobierz trasę drogową (z cache lub OSRM)
+  // Async: pobierz trasę drogową + km (z cache lub OSRM)
   if (base?.coords && atts.length > 0) {
-    const waypoints = [base.coords, ...atts.map(a => a.coords)];
-    fetchOSRMRoute(waypoints).then(route => {
-      if (!route || !map._container) return;
+    // Round trip: base → attractions → base
+    const waypoints = [base.coords, ...atts.map(a => a.coords), base.coords];
+    fetchOSRMRoute(waypoints).then(result => {
+      if (!result || !map._container) return;
+      const { route, distanceKm } = result;
       if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
       window.L.polyline(route, { color: '#9a8f82', weight: 2.5, opacity: 0.75 }).addTo(map);
+      // Km badge (Leaflet custom control)
+      if (distanceKm > 0) {
+        const kmCtrl = window.L.control({ position: 'bottomleft' });
+        kmCtrl.onAdd = () => {
+          const div = window.L.DomUtil.create('div', 'map-km-badge');
+          div.innerHTML = `🚗 ${distanceKm} km`;
+          return div;
+        };
+        kmCtrl.addTo(map);
+      }
     });
   }
 
@@ -287,15 +300,19 @@ export function initInteractiveMap(containerId, plan) {
 
     // Route polyline: prosta linia jako fallback, zastąpiona trasą drogową z OSRM
     let dayPolyline = null;
+    const roundTripCoords = base?.coords ? [...routeCoords, base.coords] : routeCoords;
     if (routeCoords.length > 1) {
       dayPolyline = L.polyline(routeCoords, {
         color: accentColor, weight: 2, opacity: 0.45, dashArray: '7 5',
       }).addTo(group);
 
-      fetchOSRMRoute(routeCoords).then(route => {
-        if (!route || !map._container) return;
+      fetchOSRMRoute(roundTripCoords).then(result => {
+        if (!result || !map._container) return;
+        const { route, distanceKm } = result;
         if (dayPolyline) { group.removeLayer(dayPolyline); dayPolyline = null; }
         L.polyline(route, { color: accentColor, weight: 2.5, opacity: 0.8 }).addTo(group);
+        // Store distanceKm for panel display
+        if (distanceKm > 0) layerGroups[day.day_num]._distanceKm = distanceKm;
       });
     }
   });
@@ -354,12 +371,16 @@ export function initInteractiveMap(containerId, plan) {
         </div>
       </div>` : '';
 
+    const distKm = layerGroups[day.day_num]?._distanceKm;
+    const kmHtml = distKm ? `<div class="imap-panel__km">🚗 ${distKm} km dzienny objazd</div>` : '';
+
     panel.innerHTML = `
       <div class="imap-panel__head">
         <div class="imap-panel__day">Dzień ${day.day_num}</div>
         <div class="imap-panel__date">${day.date || ''}</div>
         <div class="imap-panel__title">${day.title || ''}</div>
         ${base ? `<div class="imap-panel__base">📍 ${base.name}</div>` : ''}
+        ${kmHtml}
       </div>
       <ul class="imap-att-list">${attItems || '<li class="imap-att imap-att--empty">Brak atrakcji z współrzędnymi</li>'}</ul>
       ${foodHtml}

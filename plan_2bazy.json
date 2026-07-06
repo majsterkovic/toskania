@@ -136,6 +136,21 @@
           "src": "images/montalcino.jpg",
           "alt": "Fortezza di Montalcino",
           "credit": "Wikimedia Commons · Frieda"
+        },
+        "asciano-crete": {
+          "src": "images/asciano-crete.jpg",
+          "alt": "Crete Senesi, Asciano — gliniane wzgórza",
+          "credit": "Wikimedia Commons · Anna.Massini"
+        },
+        "radda-chianti": {
+          "src": "images/radda-chianti.jpg",
+          "alt": "Radda in Chianti — borgo z widokiem na winnice",
+          "credit": "Wikimedia Commons"
+        },
+        "siena-duomo": {
+          "src": "images/siena-duomo.jpg",
+          "alt": "Duomo di Siena — fasada katedry",
+          "credit": "Wikimedia Commons · Rolf Gebhardt"
         }
       }
     },

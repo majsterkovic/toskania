@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Toskania 2026 — audyt wykonalności planu</title>
+<style>
+  @font-face {
+    font-family: "IowanFallback";
+    src: local("Iowan Old Style"), local("Palatino Linotype"), local("Book Antiqua");
+  }
+
+  :root {
+    --paper: #eef1e6;
+    --paper-raised: #f9faf3;
+    --paper-line: #d7ddc8;
+    --ink: #202822;
+    --ink-soft: #59634f;
+    --ink-faint: #8b937f;
+    --accent: #2c5a63;
+    --accent-tint: #dde9e5;
+    --route: #b5652f;
+    --ok: #3f6f36;
+    --ok-tint: #e2ecd8;
+    --warn: #96701b;
+    --warn-tint: #f2e7c8;
+    --bad: #9c3227;
+    --bad-tint: #f3ddd7;
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --font-body: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #171b15;
+      --paper-raised: #1f241c;
+      --paper-line: #343d2c;
+      --ink: #e9ede1;
+      --ink-soft: #aab29c;
+      --ink-faint: #74806a;
+      --accent: #8fc1ba;
+      --accent-tint: #223330;
+      --route: #e0925f;
+      --ok: #8ecb77;
+      --ok-tint: #21301c;
+      --warn: #e0b458;
+      --warn-tint: #33291a;
+      --bad: #e8776a;
+      --bad-tint: #3a1d19;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #171b15;
+    --paper-raised: #1f241c;
+    --paper-line: #343d2c;
+    --ink: #e9ede1;
+    --ink-soft: #aab29c;
+    --ink-faint: #74806a;
+    --accent: #8fc1ba;
+    --accent-tint: #223330;
+    --route: #e0925f;
+    --ok: #8ecb77;
+    --ok-tint: #21301c;
+    --warn: #e0b458;
+    --warn-tint: #33291a;
+    --bad: #e8776a;
+    --bad-tint: #3a1d19;
+  }
+  :root[data-theme="light"] {
+    --paper: #eef1e6;
+    --paper-raised: #f9faf3;
+    --paper-line: #d7ddc8;
+    --ink: #202822;
+    --ink-soft: #59634f;
+    --ink-faint: #8b937f;
+    --accent: #2c5a63;
+    --accent-tint: #dde9e5;
+    --route: #b5652f;
+    --ok: #3f6f36;
+    --ok-tint: #e2ecd8;
+    --warn: #96701b;
+    --warn-tint: #f2e7c8;
+    --bad: #9c3227;
+    --bad-tint: #f3ddd7;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent-tint); color: var(--ink); }
+
+  .page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3.2rem 1.5rem 6rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--route);
+    margin: 0 0 0.9rem;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    line-height: 1.12;
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+
+  .lede {
+    font-size: 1.03rem;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0 0 0.6rem;
+  }
+
+  .method {
+    font-size: 0.88rem;
+    color: var(--ink-faint);
+    max-width: 68ch;
+    border-left: 2px solid var(--paper-line);
+    padding-left: 0.9rem;
+    margin: 1.4rem 0 0;
+  }
+  .method b { color: var(--ink-soft); font-weight: 600; }
+
+  .roadline {
+    border: none;
+    border-top: 1px dashed var(--paper-line);
+    margin: 2.6rem 0;
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.3rem;
+    text-wrap: balance;
+  }
+  .h2-sub {
+    font-size: 0.86rem;
+    color: var(--ink-faint);
+    margin: 0 0 1.4rem;
+  }
+
+  /* ---- summary cards ---- */
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.6rem 0 0;
+  }
+  @media (max-width: 640px) {
+    .summary-grid { grid-template-columns: 1fr; }
+  }
+  .sumcard {
+    background: var(--paper-raised);
+    border: 1px solid var(--paper-line);
+    border-radius: 3px;
+    padding: 1.3rem 1.4rem 1.5rem;
+  }
+  .sumcard .tag {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .sumcard h3 {
+    font-family: var(--font-display);
+    font-size: 1.22rem;
+    margin: 0.25rem 0 0.7rem;
+  }
+  .pillrow { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
+  .pill {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    padding: 0.18rem 0.55rem;
+    border-radius: 99px;
+    font-variant-numeric: tabular-nums;
+  }
+  .pill.ok { background: var(--ok-tint); color: var(--ok); }
+  .pill.warn { background: var(--warn-tint); color: var(--warn); }
+  .pill.bad { background: var(--bad-tint); color: var(--bad); }
+  .sumcard p { font-size: 0.9rem; color: var(--ink-soft); margin: 0; }
+  .sumcard .worst {
+    margin-top: 0.9rem;
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    border-top: 1px solid var(--paper-line);
+    padding-top: 0.7rem;
+  }
+  .sumcard .worst b { color: var(--bad); font-weight: 600; }
+
+  /* ---- legend ---- */
+  .legend {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    margin: 1.6rem 0 0;
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .dot.ok { background: var(--ok); }
+  .dot.warn { background: var(--warn); }
+  .dot.bad { background: var(--bad); }
+
+  /* ---- day table ---- */
+  .tablewrap { overflow-x: auto; margin-top: 1.6rem; }
+  table.days {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.86rem;
+    min-width: 760px;
+  }
+  table.days th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 500;
+    padding: 0.5rem 0.7rem;
+    border-bottom: 1px solid var(--paper-line);
+    white-space: nowrap;
+  }
+  table.days td {
+    padding: 0.65rem 0.7rem;
+    border-bottom: 1px solid var(--paper-line);
+    vertical-align: top;
+  }
+  table.days tbody tr:hover { background: var(--paper-raised); }
+  table.days .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  table.days .daytitle { font-weight: 600; }
+  table.days .daybase { color: var(--ink-faint); font-size: 0.78rem; }
+  table.days .dnum { font-family: var(--font-mono); color: var(--ink-faint); font-size: 0.78rem; }
+
+  .badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .badge.ok { background: var(--ok-tint); color: var(--ok); }
+  .badge.warn { background: var(--warn-tint); color: var(--warn); }
+  .badge.bad { background: var(--bad-tint); color: var(--bad); }
+  .badge.neu { background: var(--paper-line); color: var(--ink-soft); }
+
+  .slackbar {
+    position: relative;
+    width: 96px;
+    height: 7px;
+    background: var(--paper-line);
+    border-radius: 2px;
+    margin-top: 0.35rem;
+  }
+  .slackbar .zero {
+    position: absolute; left: 41.5%; top: -2px; bottom: -2px;
+    width: 1px; background: var(--ink-faint); opacity: 0.5;
+  }
+  .slackbar .fill {
+    position: absolute; top: 0; bottom: 0; border-radius: 2px;
+  }
+  .slackbar .fill.ok { background: var(--ok); }
+  .slackbar .fill.warn { background: var(--warn); }
+  .slackbar .fill.bad { background: var(--bad); }
+
+  /* ---- evidence cards ---- */
+  .evidence {
+    background: var(--paper-raised);
+    border: 1px solid var(--paper-line);
+    border-left: 3px solid var(--bad);
+    border-radius: 0 3px 3px 0;
+    padding: 1rem 1.2rem;
+    margin: 0.9rem 0;
+    font-size: 0.88rem;
+  }
+  .evidence.warn-left { border-left-color: var(--warn); }
+  .evidence h4 {
+    font-family: var(--font-display);
+    font-size: 1.02rem;
+    margin: 0 0 0.5rem;
+  }
+  .evidence h4 .dnum { font-family: var(--font-mono); color: var(--ink-faint); font-size: 0.8rem; margin-right: 0.4rem; }
+  .evidence ul { margin: 0.4rem 0 0; padding-left: 1.15rem; }
+  .evidence li { margin-bottom: 0.32rem; color: var(--ink-soft); }
+  .evidence li b { color: var(--ink); font-weight: 600; }
+  .evidence .verdict-line {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    margin-top: 0.6rem;
+  }
+
+  /* ---- bug list ---- */
+  .bugs { margin-top: 1.2rem; }
+  .bugday {
+    display: grid;
+    grid-template-columns: 118px 1fr;
+    gap: 0.9rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--paper-line);
+  }
+  .bugday:last-child { border-bottom: none; }
+  .bugday .label {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--route);
+    padding-top: 0.15rem;
+  }
+  .bugday ul { margin: 0; padding-left: 1.1rem; }
+  .bugday li { margin-bottom: 0.45rem; font-size: 0.87rem; color: var(--ink-soft); }
+  .bugday li b { color: var(--ink); font-weight: 600; }
+  .bugday li .quote { font-style: italic; color: var(--ink-faint); }
+
+  /* ---- recommendations ---- */
+  .fixlist { margin: 1.2rem 0 0; padding: 0; list-style: none; }
+  .fixlist li {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    gap: 0.7rem;
+    margin-bottom: 0.85rem;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+  .fixlist li b { color: var(--ink); }
+  .fixlist .mk { color: var(--route); font-family: var(--font-mono); }
+
+  footer.note {
+    margin-top: 3rem;
+    padding-top: 1.4rem;
+    border-top: 1px dashed var(--paper-line);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+  }
+
+  details > summary { cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <p class="eyebrow">Audyt wykonalności · 12–27.09.2026</p>
+  <h1>Czy w Toskanii da się to wszystko zobaczyć „na spokojnie”?</h1>
+  <p class="lede">
+    Dla każdego dnia zwiedzania w obu wariantach (<b>plan.json</b> — 3 bazy: Barga /
+    Val d'Orcia / Pitigliano, oraz <b>plan_2bazy.json</b> — 2 bazy: Barga / Chianti)
+    policzyłem realny czas jazdy prawdziwą siecią dróg, a nie po linii prostej, i
+    zestawiłem go z tym, co zakłada plan.
+  </p>
+  <p class="method">
+    <b>Metoda:</b> trasa każdego dnia (baza → atrakcja 1 → 2 → 3 → powrót do bazy)
+    policzona routingiem OSRM po rzeczywistych drogach. Do tego doliczone
+    <code>duration_h</code> (czas zwiedzania z planu) i 75&nbsp;min na spokojny obiad —
+    razem to „potrzeba”. Zestawione z oknem czasowym z <code>eta_timeline</code> w
+    planie („okno”). Dodatkowo dwóch niezależnych agentów przeczytało oba pliki
+    JSON w całości (linia po linii, ~8300 linijek) szukając sprzecznych danych.
+  </p>
+
+  <hr class="roadline" />
+
+  <h2>W skrócie</h2>
+  <p class="h2-sub">10 dni zwiedzania na wariant (bez dni transferowych i buforu)</p>
+
+  <div class="summary-grid">
+    <div class="sumcard">
+      <p class="tag">Wariant A</p>
+      <h3>3 bazy — Barga / Val d'Orcia / Pitigliano</h3>
+      <div class="pillrow">
+        <span class="pill ok">3 komfortowe</span>
+        <span class="pill warn">2 na styk</span>
+        <span class="pill bad">3 nierealne</span>
+      </div>
+      <p>Rytm jest znośniejszy — po najgorszym dniu (D7, Val d'Orcia) przychodzi
+      bardzo luźny dzień w Sienie. Ale ostatnie dwa dni w Maremmie (D11–D12)
+      wychodzą na zero lub na minus.</p>
+      <p class="worst">Najgorszy dzień: <b>D7, Bagno Vignoni + San Quirico + Pienza</b>
+      — 6h samego zwiedzania, zapas −12 min.</p>
+    </div>
+    <div class="sumcard">
+      <p class="tag">Wariant B</p>
+      <h3>2 bazy — Barga / Chianti (Castelnuovo Berardenga)</h3>
+      <div class="pillrow">
+        <span class="pill ok">4 komfortowe</span>
+        <span class="pill warn">2 na styk</span>
+        <span class="pill bad">3 nierealne</span>
+      </div>
+      <p>Baza w Garfagnanie wygodniejsza (4 luźne dni), Siena bliżej i lżej. Ale
+      trzy ostatnie dni pod rząd (D10–D11–D12) są przeciążone — Val d'Orcia i Crete
+      Senesi robione jako dalekie wypady z Chianti, bez dnia oddechu między nimi.</p>
+      <p class="worst">Najgorszy dzień: <b>D11, wypad do Val d'Orcia</b> — sama jazda
+      to 3h50min, zapas −65 min. Najgorszy dzień całego audytu.</p>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><i class="dot ok"></i> komfortowo — zapas &gt; 90 min</span>
+    <span><i class="dot warn"></i> na styk — zapas 15–90 min</span>
+    <span><i class="dot bad"></i> nierealne — zapas &lt; 15 min lub ujemny</span>
+  </div>
+
+  <hr class="roadline" />
+
+  <h2>Wariant A — 3 bazy</h2>
+  <p class="h2-sub">Barga (D3–D6) → Val d'Orcia (D7–D9) → Pitigliano (D10–D12)</p>
+
+  <div class="tablewrap">
+    <table class="days">
+      <thead>
+        <tr>
+          <th>Dzień</th><th>Trasa</th><th>Jazda realnie</th><th>Zwiedzanie</th>
+          <th>Potrzeba (+obiad)</th><th>Okno planu</th><th>Zapas / deficyt</th><th>Werdykt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="dnum">D3</td>
+          <td><div class="daytitle">Barga, Treppignana, Grotta del Vento</div><div class="daybase">baza: Barga</div></td>
+          <td class="num">59 min</td><td class="num">4h30</td><td class="num">6h44</td>
+          <td class="num">09:00–17:30 (8h30)</td>
+          <td class="num" style="color:var(--ok)">+1h46</td>
+          <td><span class="badge ok">komfortowo</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D4</td>
+          <td><div class="daytitle">Castiglione, Orecchiella, Castelnuovo</div><div class="daybase">baza: Barga</div></td>
+          <td class="num">75 min</td><td class="num">4h00</td><td class="num">6h30</td>
+          <td class="num">09:30–17:00 (7h30)</td>
+          <td class="num" style="color:var(--warn)">+1h00</td>
+          <td><span class="badge warn">na styk</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D5</td>
+          <td><div class="daytitle">Lago di Vagli, Gorfigliano, Verrucole</div><div class="daybase">baza: Barga</div></td>
+          <td class="num">2h10</td><td class="num">2h30</td><td class="num">5h55</td>
+          <td class="num">09:00–16:30 (7h30)</td>
+          <td class="num" style="color:var(--ok)">+1h35</td>
+          <td><span class="badge ok">komfortowo</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D6</td>
+          <td><div class="daytitle">Ponte del Diavolo + przejazd do Val d'Orcia</div><div class="daybase">transfer Barga → baza 2 (230 km)</div></td>
+          <td class="num">3h45</td><td class="num">2h15</td><td class="num">7h15</td>
+          <td class="num">dzień transferowy</td>
+          <td class="num">—</td>
+          <td><span class="badge neu">transfer</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D7</td>
+          <td><div class="daytitle">Bagno Vignoni, San Quirico, Pienza</div><div class="daybase">baza: Val d'Orcia</div></td>
+          <td class="num">57 min</td><td class="num">6h00</td><td class="num">8h12</td>
+          <td class="num">08:30–16:30 (8h00)</td>
+          <td class="num" style="color:var(--bad)">−12 min</td>
+          <td><span class="badge bad">nierealne</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D8</td>
+          <td><div class="daytitle">Siena o świcie</div><div class="daybase">baza: Val d'Orcia</div></td>
+          <td class="num">2h13</td><td class="num">4h30</td><td class="num">7h58</td>
+          <td class="num">06:30–16:00 (9h30)</td>
+          <td class="num" style="color:var(--ok)">+1h32</td>
+          <td><span class="badge ok">komfortowo</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D9</td>
+          <td><div class="daytitle">Crete Senesi + przejazd do Maremmy</div><div class="daybase">transfer baza 2 → baza 3</div></td>
+          <td class="num">2h46</td><td class="num">3h00</td><td class="num">7h01</td>
+          <td class="num">dzień transferowy</td>
+          <td class="num">—</td>
+          <td><span class="badge neu">transfer</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D10</td>
+          <td><div class="daytitle">Pitigliano, Piccola Gerusalemme, Via Cava</div><div class="daybase">baza: Pitigliano</div></td>
+          <td class="num">24 min</td><td class="num">4h30</td><td class="num">6h09</td>
+          <td class="num">09:00–16:00 (7h00)</td>
+          <td class="num" style="color:var(--warn)">+51 min</td>
+          <td><span class="badge warn">na styk</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D11</td>
+          <td><div class="daytitle">Sorano + kaskady Saturnia</div><div class="daybase">baza: Pitigliano</div></td>
+          <td class="num">1h23</td><td class="num">5h30</td><td class="num">8h08</td>
+          <td class="num">09:30–17:00 (7h30)</td>
+          <td class="num" style="color:var(--bad)">−38 min</td>
+          <td><span class="badge bad">nierealne</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D12</td>
+          <td><div class="daytitle">Sovana, Selva del Lamone, Semproniano</div><div class="daybase">baza: Pitigliano</div></td>
+          <td class="num">2h20</td><td class="num">4h00</td><td class="num">7h35</td>
+          <td class="num">09:30–17:00 (7h30)</td>
+          <td class="num" style="color:var(--bad)">−5 min</td>
+          <td><span class="badge bad">nierealne</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="evidence">
+    <h4><span class="dnum">D7</span>Bagno Vignoni + San Quirico + Pienza — 3 miasteczka to za dużo na jeden dzień</h4>
+    <ul>
+      <li>Same trzy przystanki mają zsumowane <b>duration_h = 6,0 h</b> zwiedzania —
+      zanim doliczy się dojazdy i obiad, to już prawie cały ośmiogodzinny dzień.</li>
+      <li>Realny czas jazdy jest tu akurat niski (57 min łącznie) — problem to nie
+      droga, tylko sam apetyt programu na trzy pełne miasteczka plus obiad w Pienzy.</li>
+      <li>Najprostsza naprawa: zrezygnować z San Quirico (Horti Leonini można
+      zobaczyć „po drodze”, 15 min, nie 2h) albo przenieść je na dzień D9
+      (Crete Senesi), który ma spory zapas czasu.</li>
+    </ul>
+  </div>
+
+  <div class="evidence">
+    <h4><span class="dnum">D11</span>Sorano + Saturnia — plan sam sobie przeczy co do czasu dojazdu</h4>
+    <ul>
+      <li>Odcinek Via Cava San Rocco → Cascate del Mulino: pole <code>drive_min</code>
+      mówi <b>25 min</b>, narracja dnia mówi <b>30 min</b>, a <code>eta_timeline</code>
+      (odstęp 14:00→15:00) sam sobie zakłada <b>50–60 min</b>. Realny dojazd (OSRM):
+      <b>43 min</b> — bliżej wersji z harmonogramu niż pola „drive_min”.</li>
+      <li>Nawet licząc najbardziej optymistyczną wersję z samego planu, harmonogram
+      kończy się dokładnie o 17:00 co do minuty — zero zapasu na dłuższą kąpiel w
+      Saturnii czy na cokolwiek nieprzewidzianego.</li>
+      <li>Naprawa: skreślić Via Cava di San Rocco (spacer bez unikalnej wartości
+      obok Sorano) albo przenieść Saturnię na D10 (Pitigliano), który ma 51 min
+      luzu.</li>
+    </ul>
+  </div>
+
+  <div class="evidence">
+    <h4><span class="dnum">D12</span>Sovana + Lamone — Semproniano to niedoszacowany objazd, a degustacja ma stały termin</h4>
+    <ul>
+      <li>Odcinek Selva del Lamone → Semproniano zaplanowany na 22 min, realnie
+      (OSRM) to <b>53 min</b> — 2,4× więcej. Powrót do bazy z Semproniano to kolejne
+      realnie ok. 60 min, nigdzie niezadeklarowane.</li>
+      <li>Dzień kończy się rezerwacją degustacji wina w Sassotondo o 15:30 —
+      sztywny termin na dzień, który i tak wychodzi na zero.</li>
+      <li>Naprawa: pominąć Semproniano (to głównie przejazd tranzytowy, nie
+      atrakcja) albo przesunąć degustację na wcześniejszą godzinę.</li>
+    </ul>
+  </div>
+
+  <hr class="roadline" />
+
+  <h2>Wariant B — 2 bazy</h2>
+  <p class="h2-sub">Barga (D3–D6) → Chianti / Castelnuovo Berardenga (D8–D12)</p>
+
+  <div class="tablewrap">
+    <table class="days">
+      <thead>
+        <tr>
+          <th>Dzień</th><th>Trasa</th><th>Jazda realnie</th><th>Zwiedzanie</th>
+          <th>Potrzeba (+obiad)</th><th>Okno planu</th><th>Zapas / deficyt</th><th>Werdykt</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="dnum">D3</td>
+          <td><div class="daytitle">Barga, Treppignana, Grotta del Vento</div><div class="daybase">baza: Barga</div></td>
+          <td class="num">59 min</td><td class="num">4h30</td><td class="num">6h44</td>
+          <td class="num">09:00–17:30 (8h30)</td>
+          <td class="num" style="color:var(--ok)">+1h46</td>
+          <td><span class="badge ok">komfortowo</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D4</td>
+          <td><div class="daytitle">Castiglione, Orecchiella, Castelnuovo</div><div class="daybase">baza: Barga</div></td>
+          <td class="num">75 min</td><td class="num">4h00</td><td class="num">6h30</td>
+          <td class="num">09:30–17:00 (7h30)</td>
+          <td class="num" style="color:var(--warn)">+1h00</td>
+          <td><span class="badge warn">na styk</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D5</td>
+          <td><div class="daytitle">Verrucole, Lago di Vagli, Gorfigliano</div><div class="daybase">baza: Barga</div></td>
+          <td class="num">2h10</td><td class="num">2h30</td><td class="num">5h55</td>
+          <td class="num">09:00–16:30 (7h30)</td>
+          <td class="num" style="color:var(--ok)">+1h35</td>
+          <td><span class="badge ok">komfortowo</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D6</td>
+          <td><div class="daytitle">Ponte del Diavolo, Bagni di Lucca, Pieve di Careggine</div><div class="daybase">baza: Barga (pełny dzień, bez transferu)</div></td>
+          <td class="num">2h06</td><td class="num">2h45</td><td class="num">6h06</td>
+          <td class="num">09:00–17:00 (8h00)</td>
+          <td class="num" style="color:var(--ok)">+1h54</td>
+          <td><span class="badge ok">komfortowo</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D7</td>
+          <td><div class="daytitle">Przejazd Garfagnana → Chianti (przez Pistoię)</div><div class="daybase">transfer baza 1 → baza 2</div></td>
+          <td class="num">2h57</td><td class="num">1h30</td><td class="num">5h42</td>
+          <td class="num">dzień transferowy</td>
+          <td class="num">—</td>
+          <td><span class="badge neu">transfer</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D8</td>
+          <td><div class="daytitle">Siena o świcie</div><div class="daybase">baza: Chianti</div></td>
+          <td class="num">1h20</td><td class="num">4h30</td><td class="num">7h05</td>
+          <td class="num">06:30–16:00 (9h30)</td>
+          <td class="num" style="color:var(--ok)">+2h25</td>
+          <td><span class="badge ok">komfortowo</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D9</td>
+          <td><div class="daytitle">Castello di Brolio, Coltibuono, Radda</div><div class="daybase">baza: Chianti</div></td>
+          <td class="num">1h44</td><td class="num">4h30</td><td class="num">7h29</td>
+          <td class="num">09:00–17:00 (8h00)</td>
+          <td class="num" style="color:var(--warn)">+31 min</td>
+          <td><span class="badge warn">na styk</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D10</td>
+          <td><div class="daytitle">Monte Oliveto Maggiore, Bosco della Ragnaia, Asciano</div><div class="daybase">baza: Chianti</div></td>
+          <td class="num">2h59</td><td class="num">4h00</td><td class="num">8h14</td>
+          <td class="num">09:00–16:30 (7h30)</td>
+          <td class="num" style="color:var(--bad)">−44 min</td>
+          <td><span class="badge bad">nierealne</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D11</td>
+          <td><div class="daytitle">Bagno Vignoni, Pienza, Montalcino (wypad do Val d'Orcia)</div><div class="daybase">baza: Chianti</div></td>
+          <td class="num">3h50</td><td class="num">5h00</td><td class="num">10h05</td>
+          <td class="num">08:30–17:30 (9h00)</td>
+          <td class="num" style="color:var(--bad)">−1h05</td>
+          <td><span class="badge bad">nierealne</span></td>
+        </tr>
+        <tr>
+          <td class="dnum">D12</td>
+          <td><div class="daytitle">Monteriggioni, Murlo, Foresta di Tocchi</div><div class="daybase">baza: Chianti</div></td>
+          <td class="num">3h08</td><td class="num">2h45</td><td class="num">7h08</td>
+          <td class="num">09:30–16:30 (7h00)</td>
+          <td class="num" style="color:var(--bad)">−8 min</td>
+          <td><span class="badge bad">nierealne</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="evidence">
+    <h4><span class="dnum">D11</span>Wypad do Val d'Orcia z Chianti — najgorszy dzień całego audytu</h4>
+    <ul>
+      <li>Sama jazda w pętli (baza → Bagno Vignoni → Pienza → Montalcino → baza)
+      to realnie <b>3h50min</b> — plan zakłada 2h10min łącznie (suma
+      <code>drive_min</code>). To ponad 100 km różnicy w ciągu jednego dnia.</li>
+      <li>Nawet własny harmonogram planu jest już napięty: powrót z Montalcino
+      ma zająć „60 km / 60 min”, a realnie to <b>84 min</b> — przyjazd do bazy
+      wypadnie bliżej 17:53 niż 17:30, czyli spóźniony jeszcze przed doliczeniem
+      typowych poślizgów przy zwiedzaniu.</li>
+      <li>To dokładnie ten scenariusz, dla którego wariant A trzyma osobną bazę w
+      Val d'Orcia — z Chianti ten sam zestaw atrakcji jako jednodniowy wypad jest
+      wyraźnie za ciasny.</li>
+      <li>Naprawa: wykreślić Montalcino (oszczędza ok. 1h40 jazdy) albo zamienić
+      ten dzień na wcześniejszy wyjazd (7:30) i krótszy obiad.</li>
+    </ul>
+    <p class="verdict-line">Aktualizacja: do <code>plan_2bazy.json</code> dodano
+    pole <code>warning</code> przy tym dniu — program został bez zmian, ale plan
+    teraz sam ostrzega, że to najdłuższy dzień jazdy w całej trasie i każe
+    zostawić bufor (nic po powrocie do bazy).</p>
+  </div>
+
+  <div class="evidence warn-left">
+    <h4><span class="dnum">D10</span>Crete Senesi — dojazdy niedoszacowane średnio 2×</h4>
+    <ul>
+      <li>Monte Oliveto Maggiore: plan 28 min, realnie 61 min. Odcinek do
+      Asciano: plan 24 min, realnie 51 min. To nie pojedynczy błąd, tylko
+      systematyczny wzorzec na tych wiejskich drogach Crete Senesi.</li>
+      <li>Naprawa: wybrać dwa z trzech przystanków (np. Monte Oliveto +
+      Asciano, bez Bosco della Ragnaia, który i tak jest opcjonalnym „ogrodem
+      filozoficznym” bez stałych godzin).</li>
+    </ul>
+  </div>
+
+  <div class="evidence warn-left">
+    <h4><span class="dnum">D12</span>Monteriggioni + Murlo + Tocchi — trzy różne kierunki z jednej bazy</h4>
+    <ul>
+      <li>Monteriggioni leży na północny zachód od bazy, Murlo i Foresta di
+      Tocchi na południe — to nie pętla, tylko dwa osobne wypady sklejone w
+      jeden dzień, stąd realne 3h08 jazdy przy 165 min samego zwiedzania.</li>
+      <li>Naprawa: zostawić Monteriggioni (po drodze z/do Sieny, można dokleić
+      do dnia D8) i zrobić Murlo + Tocchi jako osobny, spokojniejszy dzień.</li>
+    </ul>
+  </div>
+
+  <hr class="roadline" />
+
+  <h2>Błędy i sprzeczności w danych</h2>
+  <p class="h2-sub">Znalezione przez pełne, niezależne przeczytanie obu plików JSON — nie tylko dni zwiedzania</p>
+
+  <h3 style="font-family:var(--font-display); font-size:1.1rem; margin-bottom:0.2rem;">plan.json (wariant 3 bazy)</h3>
+  <div class="bugs">
+    <div class="bugday">
+      <div class="label">D6–D9</div>
+      <ul>
+        <li><b>Poszarpane resztki wariantu Chianti.</b> Dni 6, 7 i 9 opisują bazę
+        w Val d'Orcia, ale ich pola <code>accommodation.options</code>,
+        <code>web_research</code>, <code>parking</code>, <code>opening_hours</code> i
+        <code>fuel_stops</code> w dużej części mówią o Chianti — Castello di
+        Brolio, Radda in Chianti, Vagliagli, Castelnuovo Berardenga. Widać to też
+        wprost w polu <code>variants.base2_options</code>, gdzie wariant „chianti”
+        ma <span class="quote">is_current: false</span>, ale jego treść nie
+        została wyczyszczona z dni. Realne ryzyko: nawigowanie/tankowanie/godziny
+        otwarcia mogą dotyczyć złego miejsca.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D8</div>
+      <ul>
+        <li>Godziny otwarcia Duomo di Siena podane dwa razy inaczej w tym samym
+        dniu: <span class="quote">10:00–19:00</span> vs
+        <span class="quote">pon–sob 10:30–19:00</span> (a <code>eta_timeline</code>
+        zakłada wejście o 10:30).</li>
+        <li><code>daily_km_estimate: 72</code> jest zaniżone — sama trasa
+        tam-i-z-powrotem do Sieny to ok. 94 km wg własnych danych dnia.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D10</div>
+      <ul>
+        <li><code>crowd_tip</code> opisuje sobotni targ w Pitigliano i kolejki do
+        Fortezza Orsini w Sorano — ale D10 to <b>poniedziałek</b>, a Sorano w
+        ogóle nie jest częścią tego dnia (to temat D11).</li>
+        <li>„Pitigliano — stare miasto” i „Sinagoga” mają identyczne
+        współrzędne co do 4 miejsca po przecinku, mimo że to dwa różne punkty w
+        mieście.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D11</div>
+      <ul>
+        <li>Godziny Cantina L'Ottava Rima są wewnętrznie sprzeczne: plan pisze
+        „śr–nd” i w tym samym miejscu „wtorek OTWARTE” — a D11 wypada właśnie
+        we wtorek (22.09), czyli w dniu, w którym zaplanowany jest tam obiad.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D12</div>
+      <ul>
+        <li><code>eta_timeline</code> zamienia Semproniano (realną, zaplanowaną
+        atrakcję) na nieistniejący punkt „Via Cava di San Giovanni” — taki szlak
+        nigdzie indziej w planie się nie pojawia.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">ogólne</div>
+      <ul>
+        <li>Dwie pinezki na mapie przeglądowej (Grotta del Vento, Ponte del
+        Diavolo) leżą 6–7 km od faktycznych współrzędnych tych atrakcji w
+        dniach D3/D6.</li>
+        <li>Budżet w liście „todo” (€723–1094/os) nie zgadza się z sumą
+        w <code>costs</code> (€731–1116/os).</li>
+        <li>Montalcino jest sprzedawane jako atut bazy 2 („20 min od bazy”) i ma
+        wliczoną degustację w budżecie, ale w żadnym z 15 dni nie jest
+        faktycznie odwiedzone.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="font-family:var(--font-display); font-size:1.1rem; margin: 1.6rem 0 0.2rem;">plan_2bazy.json (wariant 2 bazy)</h3>
+  <p class="method" style="margin-top:0.4rem; border-left-color: var(--ok);">
+    <b>Aktualizacja:</b> wszystkie poniższe znaleziska zostały już naniesione
+    bezpośrednio na <code>plan_2bazy.json</code> w repo (niezacommitowana zmiana
+    w working tree) — lista poniżej to zapis stanu <i>przed</i> poprawką, żeby
+    było widać, co dokładnie było nie tak. Godziny jazdy i werdykty w tabeli
+    wyżej się nie zmieniają — to były błędy opisowe/tekstowe, nie w geometrii tras.
+  </p>
+  <div class="bugs">
+    <div class="bugday">
+      <div class="label">D2</div>
+      <ul>
+        <li>Sprzeczne godziny przyjazdu do bazy 1: narracja mówi
+        <span class="quote">14:00–15:00</span>, a nocleg i
+        <code>eta_timeline</code> mówią <span class="quote">17:30</span> —
+        różnica 3 godzin w obrębie tego samego dnia.</li>
+        <li>Suma odcinków trasy w <code>route_segments</code> daje ok. 785 km,
+        podczas gdy dzień deklaruje <code>drive_km: 560</code>.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D5</div>
+      <ul>
+        <li>Kolejność zwiedzania w <code>eta_timeline</code> (Vagli → Gorfigliano
+        → Verrucole) jest odwrócona względem listy atrakcji i narracji
+        (Verrucole → Vagli → Gorfigliano).</li>
+        <li>Plan sam sobie przeczy w sprawie zatopionej wsi: jedno pole mówi, że
+        we wrześniu 2026 poziom jeziora jest pełny i ruin nie widać, a
+        <code>eta_timeline</code>/opis atrakcji nadal obiecują ten widok.</li>
+        <li>Dzień ma własną notatkę „forteca zamknięta, tylko spacer
+        zewnętrzny”, a mimo to <code>eta_timeline</code> opisuje zwiedzanie
+        wnętrza fortecy o 15:00.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D6</div>
+      <ul>
+        <li><code>eta_timeline</code> podmienia trzecią atrakcję dnia (Pieve di
+        Careggine) na opis jeziora Vagli i „zatopionego kościoła” — czyli
+        duplikuje temat D5, łącznie z tym samym już obalonym twierdzeniem o
+        widoczności ruin.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D8</div>
+      <ul>
+        <li>Większość pól mówi „wyjazd 7:00, 25 min do Sieny”, ale
+        <code>eta_timeline</code> zakłada wyjazd 6:30 i dojazd 47 km/50 min —
+        te liczby pasują do dystansu z <b>innego</b> wariantu (baza w Val
+        d'Orcia), nie do bazy w Chianti.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D9</div>
+      <ul>
+        <li>Cena biletu do ogrodów Castello di Brolio podana dwa razy inaczej:
+        €5 w narracji vs €7,50 w danych atrakcji.</li>
+        <li>Miejsce obiadu niespójne: wskazówki mówią „lunch koło Villa a
+        Sesta”, a faktyczny wpis restauracji to Radda in Chianti — kilkanaście
+        km dalej.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">D13</div>
+      <ul>
+        <li>Opis trasy powrotnej (Bolonia → Mediolan-tangenziale → Brenner)
+        koliduje z własnym, poprawnym <code>eta_timeline</code> tego dnia,
+        który jedzie prosto Bolonia → Trydent → Brenner, bez Mediolanu — objazd
+        przez Mediolan nie zgadza się też z deklarowanym dystansem 710 km.</li>
+        <li>Ceny i adresy hoteli w Wasserburgu różnią się między
+        <code>accommodation.options</code> a <code>web_research</code> tego samego dnia.</li>
+      </ul>
+    </div>
+    <div class="bugday">
+      <div class="label">ogólne</div>
+      <ul>
+        <li>Etykieta wariantu „5+5 nocy” nie zgadza się z danymi baz — baza 2 ma
+        zadeklarowane 6 nocy (powinno być „5+6”).</li>
+        <li>Budżet w „todo” (€723–1094/os) różni się od sumy w
+        <code>costs</code> (€746–1116/os).</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="roadline" />
+
+  <h2>Co z tym zrobić</h2>
+
+  <ul class="fixlist">
+    <li><span class="mk">→</span><span><b>Systematycznie doliczyć zapas na drogach lokalnych.</b>
+    Na wiejskich/górskich drogach Toskanii (Garfagnana, Crete Senesi, okolice
+    Semproniano) realny czas jazdy wychodzi średnio 1,5–2,4× wyższy niż
+    zadeklarowany w planie — to nie pojedyncze pomyłki, tylko powtarzający się
+    wzorzec w obu wariantach.</span></li>
+    <li><span class="mk">→</span><span><b>6 dni do przycięcia o jeden przystanek</b> —
+    po jednym stopniu z trzech w D7, D11, D12 (wariant A) i D10, D11, D12
+    (wariant B) wystarczy, żeby przejść z „nierealne” na „na styk” lub lepiej.
+    Konkretne propozycje są przy każdym dniu wyżej.</span></li>
+    <li><span class="mk">→</span><span><b>Wariant A ma zdrowszy rytm</b> — przeciążone
+    dni są przedzielone bardzo luźnym dniem w Sienie. Wariant B ma trzy
+    przeciążone dni pod rząd na sam koniec pobytu w Toskanii (D10–D11–D12), bez
+    żadnego oddechu między nimi.</span></li>
+    <li><span class="mk">→</span><span><b>Wariant B ma za to lżejszą Sienę i Garfagnanę</b> —
+    baza w Chianti jest bliżej Sieny (+2h25 zapasu, najlepszy wynik audytu), a
+    czwarty pełny dzień w Barga (dzięki brakowi transferu) jest najbardziej
+    komfortowym dniem całego planu.</span></li>
+    <li><span class="mk">→</span><span><b>Przed wyjazdem wyczyścić dane wariantu A dla dni 6–9</b> —
+    to tam jest najwięcej wklejonej treści z niewybranego wariantu Chianti
+    (złe stacje benzynowe, złe restauracje, złe godziny otwarcia).</span></li>
+  </ul>
+
+  <footer class="note">
+    Realne czasy jazdy: routing samochodowy OSRM po sieci OpenStreetMap (dane z
+    lipca 2026), trasa pętli baza → kolejne atrakcje → baza, bez uwzględnienia
+    ruchu czy sezonowych zamknięć dróg. Bufor obiadowy: 75 min. Audyt danych:
+    pełne, niezależne przeczytanie plan.json i plan_2bazy.json.
+  </footer>
+
+</div>
+</body>
+</html>

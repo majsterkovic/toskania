@@ -1743,19 +1743,28 @@
         "gps_hint": "Naviguj: Castiglione d'Orcia SI lub Rocca d'Orcia SI — unikaj wjazdu do Rocca (ZTL)",
         "options": [
           {
-            "name": "Agriturismo w rejonie Castiglione d'Orcia",
-            "area": "Castiglione d'Orcia",
-            "note": "Serce Val d'Orcia — Bagno Vignoni 5 min, San Quirico 10 min. Konkretne obiekty: do weryfikacji przy rezerwacji."
+            "name": "Agriturismo San Pietro",
+            "area": "Castiglione d'Orcia (Podere San Pietro, <1 km od centrum)",
+            "note": "Basen z widokiem na dolinę, ogród, apartamenty z aneksem kuchennym i WiFi. Blisko Bagno Vignoni (ok. 10 min) i Pienzy (ok. 20 min). Cena do potwierdzenia przy rezerwacji.",
+            "address": "Podere San Pietro 7, 53023 Castiglione d'Orcia SI"
           },
           {
-            "name": "Agriturismo k. Rocca d'Orcia",
-            "area": "Rocca d'Orcia",
-            "note": "Pod średniowieczną Rocca di Tentennano — parkuj poza murami (ZTL)."
+            "name": "Agriturismo Grossola",
+            "area": "Castiglione d'Orcia (ok. 10 min jazdy od centrum)",
+            "note": "Ekologiczne gospodarstwo (wino, oliwa), basen zewnętrzny czynny V–X, śniadanie włoskie w cenie (domowe ciasta, dżemy, jogurty). Od ok. €117/noc. Bagno Vignoni ok. 15 min, Pienza ok. 25 min.",
+            "address": "Via Grossola 4, 53023 Castiglione d'Orcia SI"
           },
           {
-            "name": "Agriturismo k. Monticchiello",
-            "area": "Monticchiello",
-            "note": "Między Pienzą a Bagno Vignoni, widok na dolinę — 15 min do obu."
+            "name": "Agriturismo Il Noce",
+            "area": "Castiglione d'Orcia (Località La Fonte)",
+            "note": "25-hektarowe gospodarstwo ekologiczne, apartament do 6 os., sauna i jacuzzi za dopłatą, własne wino i oliwa. Od ok. €50/os./noc. Blisko Bagno Vignoni, Bagni San Filippo i Pienzy.",
+            "address": "Località La Fonte 13, 53023 Castiglione d'Orcia SI"
+          },
+          {
+            "name": "Agriturismo Le Macchie",
+            "area": "Monticchiello (gm. Pienza)",
+            "note": "Basen 12×6 m i jacuzzi, panoramiczny widok na Monte Amiata i Crete Senesi. 3 km od Monticchiello, blisko Pienzy i Montepulciano. Cena do potwierdzenia przy rezerwacji.",
+            "address": "Monticchiello, 53026 Pienza SI"
           }
         ]
       },
@@ -1980,7 +1989,51 @@
         ]
       },
       "image": "bagno-vignoni",
-      "web_research": [],
+      "opening_hours": {
+        "palazzo_piccolomini": "Pon–nd 10:00–16:30 (kasa do 16:00), zamknięte we wtorki (nasza wizyta wypada w piątek). Zamknięte 16–30.11 i 7.01–14.02. Dane 2025 — sprawdź przed wizytą.",
+        "duomo_pienza": "Codziennie 8:00–13:00, 14:30–19:00. Wstęp do nawy bezpłatny, krypta/labirynt płatne osobno.",
+        "collegiata_san_quirico": "Codziennie ok. 9:00–19:00 (lato) / 9:00–18:00 (poza sezonem). W tygodniu msza o 18:00 (V–IX) — unikaj wtedy zwiedzania.",
+        "horti_leonini": "Codziennie ok. 8:00–19:30/20:00 latem (poza sezonem do zmierzchu). Wstęp bezpłatny.",
+        "bagno_vignoni_terme_libere": "Park dostępny bezpłatnie, praktycznie całodobowo — brak przebieralni/prysznic. Pełne zanurzenie w dolnych basenach zakazane od 2010 (mandat €25–500), dozwolone moczenie stóp w kanałach. Terme Santa Caterina (basen płatny) ma osobne godziny — sprawdź przed wizytą."
+      },
+      "web_research": [
+        {
+          "topic": "Palazzo Piccolomini Pienza — godziny i bilety",
+          "summary": "Pon–nd 10:00–16:30 (kasa zamyka pół godziny wcześniej), zamknięte we wtorki — nie dotyczy naszej wizyty (piątek). Bilet €7 (ulgowy €5 grupy 15–40 os., €3,50 grupy szkolne), audioprzewodnik w cenie. Zamknięte 16–30.11 i 7.01–14.02.",
+          "source": "https://www.palazzopiccolominipienza.it/orari.htm",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Duomo di Pienza — godziny i wstęp",
+          "summary": "Katedra Santa Maria Assunta czynna codziennie 8:00–13:00 i 14:30–19:00. Wstęp do nawy głównej bezpłatny; krypta i labirynt płatne osobno (dostępny bilet łączony z Palazzo Piccolomini i Museo Diocesano).",
+          "source": "https://www.duomopienza.it/en/opening-hours/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Horti Leonini San Quirico d'Orcia — godziny",
+          "summary": "Renesansowy ogród miejski (od 1975 własność gminy) otwarty codziennie, ok. 8:00–19:30/20:00 latem (poza sezonem do zmierzchu). Wstęp bezpłatny.",
+          "source": "https://www.idealista.it/news/vacanze/mete-turistiche/2023/10/06/175943-horti-leonini-cosa-vedere-dove-si-trovano-orari-statue",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Collegiata dei Santi Quirico e Giulitta — godziny",
+          "summary": "Romańska kolegiata otwarta zwykle ok. 9:00–19:00 latem (9:00–18:00 poza sezonem). Msze w tygodniu o 18:00 (maj–wrzesień) — lepiej zwiedzać rano lub wczesnym popołudniem.",
+          "source": "https://www.valdorciamiata.it/collegiata-dei-santi-quirico-e-giulitta/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Bagno Vignoni — darmowe baseny termalne (Parco dei Mulini)",
+          "summary": "Park młynów dostępny bezpłatnie, bez formalnych godzin (praktycznie całodobowo), brak przebieralni/prysznic. Od ordynacji burmistrza z 2010 zakaz pełnego zanurzenia w dolnych basenach (mandat €25–500) — dozwolone moczenie stóp w kanałach (gorelli) wzdłuż ścieżki. Pełna kąpiel tylko w płatnych Terme Santa Caterina/Adler.",
+          "source": "https://www.gogoterme.com/en/free-spa/italy/tuscany/free-thermal-baths-of-bagno-vignoni-park-of-the-mills/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Bagno Vignoni — parkingi przy wjeździe do wioski",
+          "summary": "Kilka parkingów przy wjeździe: część płatna (oznaczenia niebieskie), część bezpłatna (m.in. duży parking przy hotelu Adler) — kilka minut pieszo do Piazza delle Sorgenti. Cenniki bywają sezonowe, sprawdź oznaczenia na miejscu.",
+          "source": "https://www.pleinairclub.it/listing/toscana/area-di-sosta/area-di-sosta-bagno-vignoni-1000003360/",
+          "checked": "2026-07"
+        }
+      ],
       "practical_tips": [
         "Bagno Vignoni: przyjedź o 8:30–9:00 — mgła nad basenem i prawie nikogo",
         "Parking w Pienzy: darmowy parking pod murami (Parcheggio Tabaccone), potem 5 min pieszo",
@@ -2751,17 +2804,17 @@
         "gps_hint": "Via Cava di San Rocco, Sorano GR — start od fortecy Orsini"
       },
       "food": {
-        "place": "Cantina L'Ottava Rima — Sorano (lunch)",
-        "address": "Via del Borgo 25, 58010 Sorano GR",
+        "place": "Ristorante Fidalma — Sorano (lunch)",
+        "address": "Piazza Busatti 6, 58010 Sorano GR",
         "dishes": [
           "taglieri Cinta Senese (deski wędlin z lokalnej rasy świni) i formaggi locali (sery lokalne)",
           "pappardelle al cinghiale (szeroki makaron z sosem z dzika)",
-          "vini autoctoni (wina ze szczepów miejscowych) z piwnicy w tufie"
+          "vini autoctoni (wina ze szczepów miejscowych)"
         ],
-        "note": "Enosteria w wykopanym tufie. Parking: Piazza del Municipio, zejście przez Via Selvi. Tel. +39 349 8024196. Alternatywy: Ristorante Fidalma (Piazza Busatti 6), Albergo Ristorante La Botte w Montorio (SP Pitiglianese, 0564 638633).",
+        "note": "Kuchnia maremmańska w centrum Sorano. UWAGA: Cantina Ottava Rima (Via del Borgo 25) — nasz pierwotny wybór — jest we WTOREK zamknięta (czynna pon, czw–nd), więc na 22.09 lunch przeniesiony tu. Alternatywa: Albergo Ristorante La Botte w Montorio (SP Pitiglianese, 0564 638633).",
         "price": "~€18–25/os",
-        "gps_hint": "Via del Borgo 25, Sorano GR — zejście z Piazza del Municipio",
-        "phone": "+39 349 8024196"
+        "gps_hint": "Piazza Busatti 6, Sorano GR",
+        "phone": "+39 0564 633056"
       },
       "image": "sorano",
       "opening_hours": {
@@ -2769,7 +2822,7 @@
         "saturnia_cascate": "24/7, wstęp bezpłatny. Wtorek we wrześniu: tłumy 10:00–15:00; optymalnie przed 9:00 lub po 15:00–17:00.",
         "saturnia_parking": "Płatny 8:00–20:00 (€2,50/h); bezpłatny 20:00–8:00. EasyPark, monety lub karta.",
         "vitozza": "Wstęp: pn–pt gratis, sb/nd/festivi €2. Szlak od San Quirico ~1,5 km do foresterii, anello ~2,5 h. cittadeltufo.com",
-        "cantina_ottava_rima": "Śr–nd 12:00–14:30, 19:00–22:00. Wtorek OTWARTE. Poniedziałek zamknięte.",
+        "cantina_ottava_rima": "Pon 12:00–14:30, 19:00–22:00; wt–śr ZAMKNIĘTE; czw–nd 12:00–14:30, 19:00–22:00. UWAGA: nasza wizyta wypada we wtorek 22.09 — lokal zamknięty. Alternatywa na lunch w Sorano: Ristorante Fidalma (Piazza Busatti 6, tel. +39 0564 633056), otwarte we wtorki 12:30–15:30 i 19:30–22:30.",
         "la_botte_montorio": "Albergo Ristorante La Botte, Montorio di Sorano — pranzo 12:30–14:30, cena 19:30–21:30. Tel. 0564 638633.",
         "fidalma": "Tradycyjna kuchnia maremmańska — lunch i dinner, rezerwacja zalecana."
       },
@@ -2785,7 +2838,7 @@
         "Via Cava San Rocco: start od fortecy, ~45 min w dolinie Lente — latarka opcjonalna, buty trekkingowe",
         "Saturnia: przyjedź po 15:00 (mniej tłumów we wtorek); ręcznik, klapki, strój kąpielowy — kamienie śliskie, woda ~37°C",
         "Parking Saturnia: EUR2,50/h (8–20h) przy SP10, ~5 min pieszo do kaskad; po 20:00 gratis",
-        "Lunch: Cantina Ottava Rima (Via del Borgo 25, Sorano) — tagliere + fonduta, wtorek otwarte"
+        "Lunch: Ristorante Fidalma (Piazza Busatti 6, Sorano) — Ottava Rima jest we wtorek zamknięta"
       ],
       "web_research": [
         {
@@ -2826,8 +2879,8 @@
         },
         {
           "topic": "Cantina Ottava Rima Sorano",
-          "summary": "Via del Borgo 25. Enosteria w tufie. Śr–nd 12:00–14:30, 19:00–22:00 — wtorek OTWARTE. Tel. +39 349 8024196.",
-          "source": "https://cantinaottavarima.com/it/",
+          "summary": "Via del Borgo 25. Enosteria w tufie. Czynne pon, czw–nd 12:00–14:30 i 19:00–22:00 — WTOREK i ŚRODA zamknięte (różne źródła zgodnie potwierdzają zamknięcie we wtorek). Nasza wizyta wypada we wtorek 22.09 — lokal nieczynny. Na lunch w Sorano: Ristorante Fidalma (Piazza Busatti 6, tel. 0564 633056), czynne we wtorki 12:30–15:30, 19:30–22:30.",
+          "source": "https://www.paginegialle.it/sorano-gr/ristoranti/cantina-ottava-rima",
           "checked": "2026-07"
         }
       ],

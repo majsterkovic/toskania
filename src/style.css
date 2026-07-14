@@ -12,6 +12,7 @@
   --terracotta-light: #d4845f;
   --olive: #5c6b45;
   --olive-light: #7a8f5e;
+  --danger: #a83232;
   --stone: #e8e0d4;
   --stone-dark: #9a8f82;
   --cream: #f7f2e8;
@@ -547,6 +548,38 @@ html.dark .research-count {
 }
 .day-drive-badge[data-drive="medium"] {
   color: var(--olive);
+}
+
+.feasibility-badge {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  cursor: help;
+}
+.feasibility-badge--pending {
+  opacity: 0.55;
+  font-weight: 500;
+  border-style: dashed;
+}
+.feasibility-badge[data-verdict="comfortable"] {
+  color: var(--olive);
+  border-color: var(--olive);
+  background: color-mix(in srgb, var(--olive) 12%, transparent);
+}
+.feasibility-badge[data-verdict="tight"] {
+  color: var(--oro);
+  border-color: var(--oro);
+  background: color-mix(in srgb, var(--oro) 14%, transparent);
+}
+.feasibility-badge[data-verdict="unrealistic"] {
+  color: var(--danger);
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 14%, transparent);
 }
 
 /* Day cards */
@@ -2492,6 +2525,7 @@ html.dark {
   --terracotta:       #cc7248;
   --terracotta-deep:  #a84f2a;
   --terracotta-light: #e0895a;
+  --danger:           #d9635a;
 
   /* Cipresso: nav ciemniejszy, interaktywne jaśniejsze */
   --cipresso:       #0b1710;   /* nav — prawie czarna zieleń */

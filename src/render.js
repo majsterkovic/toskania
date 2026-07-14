@@ -221,6 +221,14 @@ function driveLevel(km) {
   return 'low';
 }
 
+const FEASIBILITY_DAY_TYPES = new Set(['tuscany', 'tuscany_transfer', 'tuscany_popular']);
+
+/** Placeholder wypełniany asynchronicznie przez maps.js po policzeniu realnej trasy z OSRM */
+function renderFeasibilityPlaceholder(day) {
+  if (!FEASIBILITY_DAY_TYPES.has(day.type) || !day.eta_timeline?.length || day.day_num == null) return '';
+  return `<span class="feasibility-badge feasibility-badge--pending" id="feas-${day.day_num}" title="Liczę realny czas jazdy (OSRM)…">⏳ licząc zapas</span>`;
+}
+
 function renderDayNav(days) {
   const chips = activeDays(days)
     .map((day) => {
@@ -668,6 +676,7 @@ function renderDay(day, images, bases) {
             const level = driveLevel(km);
             return km ? `<span class="day-drive-badge" data-drive="${level}" title="Szacowany dzienny przejazd samochodem">🚗 ~${km} km</span>` : '';
           })()}
+          ${renderFeasibilityPlaceholder(day)}
         </div>
         <h3 class="day-title">${esc(day.title)}</h3>
         ${warning}

@@ -110,7 +110,7 @@ export function initRouteOverviewMap(containerId, mapConfig) {
  * Zwraca Promise<{ route: [[lat,lon],...], distanceKm: number }> lub null przy błędzie.
  */
 const OSRM_BASE = 'https://router.project-osrm.org/route/v1/driving';
-const OSRM_CACHE_KEY_PREFIX = 'osrm_v2_';
+const OSRM_CACHE_KEY_PREFIX = 'osrm_v3_'; // v3: cache now also carries durationMin — bump to drop stale v2 entries
 
 async function fetchOSRMRoute(waypointsLatLon) {
   if (!waypointsLatLon || waypointsLatLon.length < 2) return null;
@@ -134,12 +134,61 @@ async function fetchOSRMRoute(waypointsLatLon) {
     if (!routeData?.geometry?.coordinates) return null;
     const route = routeData.geometry.coordinates.map(([lon, lat]) => [lat, lon]);
     const distanceKm = Math.round((routeData.distance || 0) / 1000);
-    const result = { route, distanceKm };
+    const durationMin = Math.round((routeData.duration || 0) / 60);
+    const result = { route, distanceKm, durationMin };
     try { localStorage.setItem(cacheKey, JSON.stringify(result)); } catch (_) {}
     return result;
   } catch (_) {
     return null;
   }
+}
+
+/**
+ * Werdykt wykonalności dnia: realna jazda (OSRM) + zwiedzanie (duration_h) + bufor na
+ * obiad, zestawione z oknem czasowym z eta_timeline. Ta sama metodologia co w audycie
+ * planu: >90 min zapasu = komfortowo, 15–90 = na styk, <15 = nierealne.
+ */
+const LUNCH_BUFFER_MIN = 75;
+
+function parseTimeMin(t) {
+  const m = /^(\d{1,2}):(\d{2})/.exec((t || '').trim());
+  return m ? parseInt(m[1], 10) * 60 + parseInt(m[2], 10) : null;
+}
+
+function etaWindowMin(etaList) {
+  const times = (etaList || []).map((e) => parseTimeMin(e.time)).filter((t) => t != null);
+  return times.length >= 2 ? Math.max(...times) - Math.min(...times) : null;
+}
+
+function sightseeingMin(attractions) {
+  return (attractions || []).reduce((sum, a) => sum + (a.duration_h ? a.duration_h * 60 : 0), 0);
+}
+
+function computeFeasibility(day, realDriveMin) {
+  const windowMin = etaWindowMin(day.eta_timeline);
+  if (windowMin == null || realDriveMin == null) return null;
+  const sightMin = sightseeingMin(day.attractions);
+  const requiredMin = realDriveMin + sightMin + LUNCH_BUFFER_MIN;
+  const slack = windowMin - requiredMin;
+  const verdict = slack > 90 ? 'comfortable' : slack >= 15 ? 'tight' : 'unrealistic';
+  return { windowMin, sightMin, requiredMin, realDriveMin, slack, verdict };
+}
+
+const VERDICT_LABEL = {
+  comfortable: '✓ komfortowo',
+  tight: '⚠ na styk',
+  unrealistic: '✗ nierealne',
+};
+
+function updateFeasibilityBadge(dayNum, result) {
+  const el = document.getElementById(`feas-${dayNum}`);
+  if (!el) return;
+  if (!result) { el.remove(); return; }
+  const { slack, verdict, requiredMin, windowMin, realDriveMin, sightMin } = result;
+  el.classList.remove('feasibility-badge--pending');
+  el.dataset.verdict = verdict;
+  el.textContent = `${VERDICT_LABEL[verdict]} · ${slack >= 0 ? '+' : ''}${slack} min`;
+  el.title = `Realna jazda (OSRM): ${realDriveMin} min · zwiedzanie: ${Math.round(sightMin)} min · obiad: ${LUNCH_BUFFER_MIN} min → potrzeba ${Math.round(requiredMin)} min. Okno w planie: ${windowMin} min.`;
 }
 
 /**
@@ -308,11 +357,12 @@ export function initInteractiveMap(containerId, plan) {
 
       fetchOSRMRoute(roundTripCoords).then(result => {
         if (!result || !map._container) return;
-        const { route, distanceKm } = result;
+        const { route, distanceKm, durationMin } = result;
         if (dayPolyline) { group.removeLayer(dayPolyline); dayPolyline = null; }
         L.polyline(route, { color: accentColor, weight: 2.5, opacity: 0.8 }).addTo(group);
         // Store distanceKm for panel display
         if (distanceKm > 0) layerGroups[day.day_num]._distanceKm = distanceKm;
+        updateFeasibilityBadge(day.day_num, computeFeasibility(day, durationMin));
       });
     }
   });

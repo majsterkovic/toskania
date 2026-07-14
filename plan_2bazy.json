@@ -258,8 +258,8 @@
         {
           "label": "Grotta del Vento",
           "coords": [
-            44.069,
-            10.317
+            44.0342,
+            10.3576
           ],
           "type": "attraction"
         },
@@ -274,8 +274,8 @@
         {
           "label": "Ponte del Diavolo",
           "coords": [
-            43.984,
-            10.539
+            43.9857,
+            10.5519
           ],
           "type": "attraction"
         },
@@ -722,7 +722,7 @@
           "note": "Ostatnie tankowanie w dolinie przed podjazdem do Barga/Mologno"
         }
       ],
-      "narrative": "Wyjeżdżamy o 7:00 — jesteśmy 40 km przed Innsbruckiem i 80 km przed Brennerem. A93 do Innsbrucku, potem A13 przez Brenner do Włoch — o tej porze w sobotni kierunek południowy prawie bez kolejek. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, Dolomity po prawej. Postój na lunch w okolicach Rovereto lub Werony (ok. 10:30–11:00). Za Bolonią A1 Variante di Valico omija Florencję, potem A11 i zjazd Lucca Est. Ostatnie 45 km to dolina Serchio — wąska górska droga, zielono i spokojnie. Do agriturismo docieramy ok. 14:00–15:00. Reszta dnia wolna — Toskania się zaczyna.",
+      "narrative": "Wyjeżdżamy o 7:00 — jesteśmy 40 km przed Innsbruckiem i 80 km przed Brennerem. A93 do Innsbrucku, potem A13 przez Brenner do Włoch — o tej porze w sobotni kierunek południowy prawie bez kolejek. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, Dolomity po prawej. Postój na lunch w okolicach Rovereto lub Werony (ok. 10:30–11:00). Za Bolonią A1 Variante di Valico omija Florencję, potem A11 i zjazd Lucca Est. Ostatnie 45 km to dolina Serchio — wąska górska droga, zielono i spokojnie. Do agriturismo docieramy ok. 15:00–15:30. Reszta dnia wolna — Toskania się zaczyna.",
       "web_research": [
         {
           "topic": "Streckenmaut A13 Brenner (AT) 2026",
@@ -907,8 +907,8 @@
           "image_key": "grotta-vento",
           "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Fornovolasco, 55020 Vergemoli LU",
           "coords": [
-            44.0927,
-            10.3846
+            44.0342,
+            10.3576
           ],
           "duration_h": 1.5,
           "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Bilety: tour 1h €11, 2h €16, 3h €24. Rezerwacja obowiązkowa: grottadelvento.com",
@@ -1510,8 +1510,8 @@
           "image_key": "ponte-diavolo",
           "gps_hint": "Ponte del Diavolo, Borgo a Mozzano LU — parking przy SP2",
           "coords": [
-            43.9979,
-            10.4536
+            43.9857,
+            10.5519
           ],
           "duration_h": 0.75,
           "opening_hours": "Most: zawsze dostępny, wstęp bezpłatny. Parking SS12 (gratuito).",
@@ -2388,7 +2388,8 @@
         }
       ],
       "daily_km_estimate": 52,
-      "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto."
+      "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto.",
+      "warning": "Plan napięty — audyt czasowy wykazał deficyt ~44 min. Bosco della Ragnaia jest opcjonalne: pomiń je, jeśli Monte Oliveto Maggiore się przeciągnie."
     },
     {
       "date": "22.09 (wt)",
@@ -2731,7 +2732,8 @@
         }
       ],
       "daily_km_estimate": 52,
-      "crowd_tip": "Monteriggioni: tłumy 10:00–12:00 i 14:00–16:00 (wycieczki). Przyjedź przed 10:00 lub po 16:30. Murlo: muzeum etruskie bez kolejek. Tocchi: las bez turystów."
+      "crowd_tip": "Monteriggioni: tłumy 10:00–12:00 i 14:00–16:00 (wycieczki). Przyjedź przed 10:00 lub po 16:30. Murlo: muzeum etruskie bez kolejek. Tocchi: las bez turystów.",
+      "warning": "Dzień bez zapasu czasowego. Monteriggioni (~35 min od bazy) można alternatywnie dokleić do popołudnia dnia sieneńskiego, albo skrócić Murlo do samego Antiquarium."
     },
     {
       "date": "24.09 (czw)",
@@ -3802,7 +3804,7 @@
           {
             "id": "budget",
             "label": "Ustalić budżet grupowy",
-            "detail": "Szacunkowy koszt: €746–1116/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
+            "detail": "Szacunkowy koszt: €796–1172/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
             "deadline": "2–4 tygodnie przed wyjazdem",
             "priority": "medium"
           }

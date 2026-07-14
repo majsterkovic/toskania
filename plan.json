@@ -306,8 +306,8 @@
         {
           "label": "Grotta del Vento",
           "coords": [
-            44.069,
-            10.317
+            44.0342,
+            10.3576
           ],
           "type": "attraction"
         },
@@ -322,8 +322,8 @@
         {
           "label": "Ponte del Diavolo",
           "coords": [
-            43.984,
-            10.539
+            43.9857,
+            10.5519
           ],
           "type": "attraction"
         },
@@ -1062,8 +1062,8 @@
           "image_key": "grotta-vento",
           "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Località Fornovolasco, 55020 Vergemoli LU",
           "coords": [
-            44.0927,
-            10.3846
+            44.0342,
+            10.3576
           ],
           "duration_h": 1.5,
           "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Bilety: tour 1h €11, 2h €16, 3h €24. Rezerwacja obowiązkowa: grottadelvento.com",
@@ -1696,8 +1696,8 @@
           "image_key": "ponte-diavolo",
           "gps_hint": "Ponte del Diavolo, Borgo a Mozzano LU — parking przy SP2",
           "coords": [
-            43.9979,
-            10.4536
+            43.9857,
+            10.5519
           ],
           "duration_h": 0.75,
           "opening_hours": "Most: zawsze dostępny, wstęp bezpłatny. Parking SS12 (gratuito).",
@@ -1739,35 +1739,23 @@
         "place": "BAZA 2 — k. Castiglione d'Orcia",
         "note": "Przyjazd ok. 16:00–17:30 (transfer ~2h15 po lunchu). Check-in w agriturismo — typowo 15:00–19:00, poza sezonem do 18:00. Zadzwoń z ETA z A11.",
         "price": "€70–100/noc",
-        "booking_tip": "Vagliagli lub Monti in Chianti — poza ZTL. Direct booking u właściciela często taniej niż Booking. Naviguj do agriturismo, nie centrum Castelnuovo Berardenga.",
-        "gps_hint": "Naviguj: Vagliagli SI lub Monti in Chianti SI — nie centrum Castelnuovo (ZTL)",
+        "booking_tip": "Szukaj: agriturismo Castiglione d'Orcia, Rocca d'Orcia lub Monticchiello — z widokiem na dolinę. Direct booking u właściciela często taniej niż Booking.",
+        "gps_hint": "Naviguj: Castiglione d'Orcia SI lub Rocca d'Orcia SI — unikaj wjazdu do Rocca (ZTL)",
         "options": [
           {
-            "name": "Agriturismo Podere Santa Maria",
-            "area": "Vagliagli",
-            "note": "Typowy chianti agriturismo z własnym winem"
+            "name": "Agriturismo w rejonie Castiglione d'Orcia",
+            "area": "Castiglione d'Orcia",
+            "note": "Serce Val d'Orcia — Bagno Vignoni 5 min, San Quirico 10 min. Konkretne obiekty: do weryfikacji przy rezerwacji."
           },
           {
-            "name": "Agriturismo Monti in Chianti",
-            "area": "Monti in Chianti",
-            "note": "Cisza, winnice, 20 min od Sieny"
+            "name": "Agriturismo k. Rocca d'Orcia",
+            "area": "Rocca d'Orcia",
+            "note": "Pod średniowieczną Rocca di Tentennano — parkuj poza murami (ZTL)."
           },
           {
-            "name": "Agriturismo Amina, Winery & Hiking",
-            "area": "Vagliagli (Località Corsignano)",
-            "address": "SP 102 di Vagliagli, 53019 Vagliagli SI",
-            "note": "Winnica, basen, śniadanie, 5 min od centrum Vagliagli, 15 min od Sieny. Booking ~9.5/10."
-          },
-          {
-            "name": "Agriturismo Le Macie",
-            "area": "Vagliagli",
-            "address": "Strada Provinciale 9 n. 54, 53019 Vagliagli SI",
-            "note": "Apartamenty z kuchnią, basen sezonowy, restauracja. 25 min pieszo od Chianti Sculpture Park."
-          },
-          {
-            "name": "Fattoria di Corsignano",
-            "area": "k. Vagliagli",
-            "note": "Ekologiczny agriturismo, basen, restauracja, degustacje wina w winnicach."
+            "name": "Agriturismo k. Monticchiello",
+            "area": "Monticchiello",
+            "note": "Między Pienzą a Bagno Vignoni, widok na dolinę — 15 min do obu."
           }
         ]
       },
@@ -1827,16 +1815,14 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Trasa Barga → Castelnuovo Berardenga",
-          "summary": "SS445/SS12 → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 (Firenze-Mare) → Raccordo Siena → wyjazd Castelnuovo Berardenga (SS73/SP408). ~142–195 km, 1h 48 min – 2h 45 min. Pedaggio A11 ~€8–10. Unikaj ZTL centrum Lucca.",
-          "source": "https://fromto.travel/en/italy/to-barga/to-castellina-in-chianti",
-          "checked": "2026-07"
+          "topic": "Trasa Barga → Castiglione d'Orcia",
+          "summary": "SS445/SS12 → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 → raccordo Firenze–Siena (bezpłatny) → Siena Sud → SS2 Cassia → Buonconvento → San Quirico d'Orcia → Castiglione d'Orcia. ~205 km, ~2h45–3h z lekkim ruchem.",
+          "source": "https://www.viamichelin.com"
         },
         {
-          "topic": "Agriturismo Vagliagli — opcje noclegu BAZA 2",
-          "summary": "Vagliagli: XIII-w. borgo („dolina czosnku”), południowy Chianti. Agriturismo Amina (SP 102 Corsignano, winnica, basen, 5 min od centrum). Le Macie (SP9 n. 54, apartamenty). Fattoria di Corsignano (degustacje). Chianti Sculpture Park w okolicy. 15 min od Sieny.",
-          "source": "https://www.to-tuscany.com/travel-guide/towns-villages/vagliagli/",
-          "checked": "2026-07"
+          "topic": "Nocleg BAZA 2 — Castiglione d'Orcia",
+          "summary": "Castiglione d'Orcia i Rocca d'Orcia: agriturismo oraz piccolo hotel €70–100/noc, wiele z widokiem na dolinę Orcii. Rocca d'Orcia ma ZTL — nocleg wybieraj z parkingiem na miejscu. Alternatywa: okolice Monticchiello (bliżej Pienzy).",
+          "source": "https://www.visittuscany.com"
         }
       ],
       "practical_tips": [
@@ -1852,7 +1838,7 @@
         "ponte_diavolo": "Parcheggio al Ponte del Diavolo — bezpłatny, 24h, przy SS12 tuż przy moście (strona wschodnia). Most pieszy — 5–15 min spacer. Stacja FS Borgo a Mozzano ~2 km.",
         "bagni_lucca": "Parking przy Ponte delle Catene lub centrum — strefy płatne. Terme Bernabò: Via Bagni Caldi 36 — kilka miejsc parkingowych.",
         "transfer_fuel": "Zatankuj w Castelnuovo di Garfagnana lub przy zjeździe na A11 (Capannori/Fornaci) — ostatnia okazja przed płatną autostradą.",
-        "base2_agriturismo": "Parkuj na terenie agriturismo — nie w centrum Castelnuovo Berardenga (ZTL aktywna). Naviguj: Vagliagli SI, nie Castelnuovo centro.",
+        "base2_agriturismo": "Parkuj na terenie agriturismo. Naviguj: Castiglione d'Orcia SI lub Rocca d'Orcia SI — unikaj wjazdu do samej Rocca (ZTL, wąskie uliczki).",
         "transfer_tip": "Bagaż w aucie cały dzień — zaparkuj przy moście, zwiedzaj pieszo, wróć po lunchu na transfer"
       },
       "fuel_stops": [
@@ -1870,10 +1856,10 @@
           "note": "Opcjonalny postój na A11 — kawa przed Sieną."
         },
         {
-          "name": "IP Castelnuovo Berardenga",
-          "location": "SP408, Chianti",
-          "km_from_start": "~195",
-          "note": "Zatankuj przy dotarciu do bazy — stacji mało na wiejskich drogach Chianti."
+          "name": "Stacja paliw San Quirico d'Orcia",
+          "location": "SS2 Cassia, k. San Quirico d'Orcia",
+          "km_from_start": "~190",
+          "note": "Zatankuj przed dotarciem do bazy — w samym Val d'Orcia stacji mało."
         }
       ],
       "opening_hours": {
@@ -1910,19 +1896,13 @@
           "segment": "A11 → Siena",
           "road": "A11/E70/Siena Sud",
           "km": "~110",
-          "note": "Superstrada Siena-Bettolle. Raccordo do Castelnuovo Berardenga."
+          "note": "Raccordo Firenze–Siena (bezpłatna superstrada) do zjazdu Siena Sud."
         },
         {
           "segment": "Siena Sud → BAZA 2",
-          "road": "SP408/SS326",
-          "km": "~25",
-          "note": "Wjazd w Chianti — kręte drogi do agriturismo. ETA 16:00–17:00."
-        },
-        {
-          "segment": "Siena Sud → BAZA 2 (Vagliagli)",
-          "road": "SP408/SS326/SP102",
-          "km": "~25",
-          "note": "Wjazd w Chianti — wyjazd Castelnuovo Berardenga (SS73). Kręte drogi do Vagliagli. ETA 16:00–17:00."
+          "road": "SS2 Cassia",
+          "km": "~45",
+          "note": "SS2 Cassia na południe: Buonconvento → San Quirico d'Orcia → zjazd na Castiglione d'Orcia. ETA 16:00–17:00."
         }
       ],
       "image2": "bagni-lucca",
@@ -2000,44 +1980,7 @@
         ]
       },
       "image": "bagno-vignoni",
-      "web_research": [
-        {
-          "topic": "Castello di Brolio — orari 2026",
-          "summary": "20.03–12.10: codziennie 10–19 (biglietteria do 18). 13–31.10: 10–18. 18.09 = piątek: otwarte. Zimą (koniec XII–połowa III) zamknięte.",
-          "source": "https://www.ricasoli.com/castello/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Castello di Brolio — prezzi i wstęp",
-          "summary": "Visita libera giardini+bastioni+cappella+1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji — biglietti all'ingresso. Classic Tour (cantina, 3 vini): €55, 2h30, prenotazione visit.ricasoli.com. Gran Cru €170, Tramonto €90.",
-          "source": "https://visit.ricasoli.com/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Bosco delle Querce — querceti Brolio",
-          "summary": "Okolice zamku: querceti a ceduo (cerro + roverella) z cyprysem i pinem. Bosco Inglese — park historyczny XIX w. Nieformalna pętla 2–3 km wokół murów. Anello 17 km (Brolio–Cacchiano–Monti–San Felice) dla aktywnych.",
-          "source": "https://eco.museisenesi.org/archivio/110/il-bosco/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Radda in Chianti — borgo",
-          "summary": "Capitale Lega del Chianti (1384). Piazza Ferrucci: Palazzo del Podestà (XIV w., stemmi), Propositura di San Niccolò (neogotyk Coppedè 1926). Porte Valdarnese/Fiorentina. Casa del Chianti Classico (ex-convento Santa Maria al Prato). Ghiacciaia Granducale poza borgo.",
-          "source": "https://www.visittuscany.com/it/citta-e-borghi/radda-in-chianti/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Osteria di Passignano — orari i rezerwacja",
-          "summary": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. Michelin ⭐ od 2007. Chef Matteo Lorenzini. Tel. +39 055 8071278, info@osteriadipassignano.com. Prenotazione obbligatoria.",
-          "source": "https://www.osteriadipassignano.com/en/home-en/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Dojazd z Castelnuovo Berardenga",
-          "summary": "Brolio: ~13 km, ~20–25 min (SP7 → SP484). Radda: ~22 min. Badia a Passignano: ~25 min. Wszystkie punkty dnia ≤30 min od Bazy 2.",
-          "source": "https://www.ricasoli.com/wp-content/uploads/2018/04/RICASOLI_INDICAZIONI_STRADALI_ENG.pdf",
-          "checked": "2026-07"
-        }
-      ],
+      "web_research": [],
       "practical_tips": [
         "Bagno Vignoni: przyjedź o 8:30–9:00 — mgła nad basenem i prawie nikogo",
         "Parking w Pienzy: darmowy parking pod murami (Parcheggio Tabaccone), potem 5 min pieszo",
@@ -2047,32 +1990,16 @@
         "Dojazd z bazy (Castiglione d'Orcia): Bagno Vignoni 5 min, San Quirico 10 min, Pienza 20 min"
       ],
       "parking": {
-        "castello_brolio": "Parking u podnóża zamku — bezpłatny, duży. Via Madonna a Brolio, Gaiole in Chianti. Wejście pieszo ~5 min pod górę.",
-        "radda": "Parcheggio Piazzale del Castello — płatny, krótki spacer do centrum. ZTL w centro storico — parkuj na piazzale.",
-        "badia_passignano": "Parking przy opactwie Badia a Passignano — ograniczona liczba miejsc, przyjedź 10 min przed rezerwacją.",
-        "bosco_brolio": "Ten sam parking co zamek — pętla querceti od bramy zamku.",
-        "tip": "Brolio rano (10:00) → Bosco → Radda → lunch Passignano (rezerwacja!)"
-      },
-      "opening_hours": {
-        "castello_brolio": "20.03–12.10.2026: codziennie 10:00–19:00 (biglietteria do 18:00). 18.09 = piątek: otwarte.",
-        "castello_brolio_ticket": "Giardini + bastioni + cappella + 1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji — all'ingresso.",
-        "brolio_classic_tour": "Tour Classico (cantina + 3 vini): €55, 2h30, start 10:30, prenotazione visit.ricasoli.com",
-        "brolio_gran_cru": "Tour Gran Cru (cantina + 4 vini + pranzo): €170, prenotazione obbligatoria",
-        "osteria_passignano": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. 18.09 = piątek OK na lunch. Tel. +39 055 8071278.",
-        "radda_enoteche": "Sklepy z winem: typowo 10:00–13:00 i 15:00–19:00",
-        "casa_chianti_classico": "Casa del Chianti Classico, Radda — sprawdź godziny na chianticlassico.com (wystawy + degustacje)",
-        "bosco_brolio": "Szlak wokół murów: dostęp 24h, bezpłatny — najlepszy rano po wizycie zamku"
+        "bagno_vignoni": "Parking przy wjeździe do wioski (Via Ara Urcea) — płatny w sezonie, 3 min pieszo do Piazza delle Sorgenti. Rano przed 9:30 bez problemu.",
+        "san_quirico": "Parkingi wzdłuż murów: Via Cassia Vecchia / k. Porta Cappuccini — częściowo bezpłatne. Centro storico to ZTL — nie wjeżdżaj.",
+        "pienza": "Parcheggio Via San Gregorio lub Via Mencattelli (płatne, €1,50/h) — poza murami, 5 min do Piazza Pio II. ZTL w całym centrum.",
+        "tip": "Bagno Vignoni rano (przed 9:30) → San Quirico → Pienza po lunchu."
       },
       "fuel_stops": [
         {
-          "name": "IP Gaiole in Chianti",
-          "location": "SP408, centrum Gaiole",
-          "note": "Stacja w centrum Chianti — tankuj rano przed objazdem winnic."
-        },
-        {
-          "name": "IP / Q8 Castelnuovo Berardenga",
-          "location": "Via Chiantigiana / SS408, Castelnuovo Berardenga",
-          "note": "Stacja przy bazie — tankuj wieczorem po powrocie z dnia."
+          "name": "Stacja paliw San Quirico d'Orcia",
+          "location": "SS2 Cassia",
+          "note": "Po drodze między Bagno Vignoni a Pienzą — tankuj przy okazji."
         }
       ],
       "image2": "pienza",
@@ -2116,7 +2043,8 @@
           "event": "Powrót do bazy"
         }
       ],
-      "daily_km_estimate": 41
+      "daily_km_estimate": 41,
+      "warning": "Plan napięty — audyt czasowy wykazał deficyt ~12 min przy pełnym programie. Bufor odzyskasz skracając San Quirico d'Orcia do Horti Leonini (30–40 min) albo pomijając go — Bagno Vignoni i Pienza to priorytety dnia."
     },
     {
       "date": "19.09 (sob)",
@@ -2214,7 +2142,7 @@
         },
         {
           "topic": "OPA SI PASS — skip-line + podłoga 2026",
-          "summary": "Sobota 19.09: kompleks 10:00–19:00 (Muzeum 9:30–19:30). Podłoga odkryta 18.08–15.11, bilet €16. Kup online = bez kolejki do kasy. Ważny 3 dni, audioguide w cenie.",
+          "summary": "Sobota 19.09: kompleks 10:30–19:00 (Muzeum 9:30–19:30). Podłoga odkryta 18.08–15.11, bilet €16. Kup online = bez kolejki do kasy. Ważny 3 dni, audioguide w cenie.",
           "source": "https://www.opasipass.com/en/opening-hours/",
           "checked": "2026-07"
         },
@@ -2251,7 +2179,7 @@
       "opening_hours": {
         "piazza_campo": "Dostęp 24h. Najlepsze światło i brak tłumów: 7:00–8:30.",
         "torre_mangia": "10:00–19:00 (1.04–31.10). Ostatnie wejście ~45 min przed zamknięciem. Bilet osobny (nie w OPA SI PASS).",
-        "duomo_complex": "19.09 (sobota, sezon): 10:00–19:00. Muzeum dell'Opera: 9:30–19:30. Ostatnie wejście 30 min przed zamknięciem.",
+        "duomo_complex": "19.09 (sobota, sezon): 10:30–19:00. Muzeum dell'Opera: 9:30–19:30. Ostatnie wejście 30 min przed zamknięciem.",
         "duomo_floor": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — OPA SI PASS €16 (vs €14 standard).",
         "opera_duomo_ticket_office": "Piazza Duomo 7 + Visitor Center Via di Città 48 (obok Campo). Online = skip kolejki do kasy.",
         "libreria_piccolomini": "W kompleksie Duomo — ten sam bilet OPA SI PASS.",
@@ -2259,9 +2187,9 @@
       },
       "fuel_stops": [
         {
-          "name": "IP / Q8 Castelnuovo Berardenga",
-          "location": "BAZA 2 — Chianti Senese",
-          "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót, stacja przy SP408."
+          "name": "Stacja paliw San Quirico d'Orcia",
+          "location": "SS2 Cassia — po drodze do Sieny",
+          "note": "Tankuj rano przy wyjeździe 6:30 — paliwo na powrót, dalej po SS2 stacje rzadkie."
         }
       ],
       "image2": "siena-duomo",
@@ -2308,7 +2236,7 @@
           "event": "Powrót do bazy"
         }
       ],
-      "daily_km_estimate": 72,
+      "daily_km_estimate": 94,
       "wine_tasting": {
         "place": "Enoteca Italiana — Fortezza Medicea",
         "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
@@ -2329,7 +2257,7 @@
       "base_label": "BAZA 2 → BAZA 3",
       "transfer_km": 130,
       "transfer_h": "1 h 40 min",
-      "transfer_route": "Castelnuovo Berardenga → obwodnica Sieny (unikaj ZTL) → SS223 (Siena–Grosseto) → Grosseto → SS1 Aurelia → Albinia → SS74 → okolice Pitigliano/Sovana",
+      "transfer_route": "Castiglione d'Orcia → SS2 Cassia (Buonconvento) → SP451 Monte Oliveto → Asciano → obwodnica Sieny (unikaj ZTL) → SS223 (Siena–Grosseto) → Grosseto → SS1 Aurelia → Albinia → SS74 → okolice Pitigliano/Sovana",
       "transfer_depart": "ok. 13:00",
       "drive_limit_min": 30,
       "attractions": [
@@ -2525,10 +2453,10 @@
       },
       "route_segments": [
         {
-          "segment": "BAZA 2 (Chianti) → Monte Oliveto Maggiore",
-          "road": "Raccordo Siena-Bettolle → SS2/SP451",
-          "km": "~35",
-          "note": "Crete Senesi — krajobraz glinianych wzgórz. Dojazd ~28 min. Ostatni wstęp 12:20."
+          "segment": "BAZA 2 (Val d'Orcia) → Monte Oliveto Maggiore",
+          "road": "SS2 Cassia → SP451 (przez Buonconvento)",
+          "km": "~28",
+          "note": "Crete Senesi — krajobraz glinianych wzgórz. Dojazd ~35 min. Ostatni wstęp 12:20."
         },
         {
           "segment": "Monte Oliveto → Bosco della Ragnaia (opcja)",
@@ -2613,8 +2541,8 @@
           "ticket_price": "€6 intero, €5 ridotto (sinagoga + ghetto + museo)",
           "opening_hours": "1 IV–31 X: 10:00–13:00, 14:30–18:00. Sobota ZAMKNIĘTA. Poniedziałek 21.09 = OTWARTE.",
           "coords": [
-            42.6358,
-            11.6713
+            42.6333,
+            11.666
           ],
           "duration_h": 1.0
         },
@@ -2727,7 +2655,7 @@
       },
       "image2": "via-cava",
       "narrative": "Wszystko w zasięgu ręki — 5 min samochodem lub 15 min pieszo z bazy. Rano spacer po Pitigliano z punktu widokowego — miasto na skale tufowej. O 10:00 Piccola Gerusalemme: synagoga i żydowskie ghetto (panowie mają kippę na miejscu, ~1h). Potem 5 min samochodem do SP42 — Via Cava di San Giuseppe: parking gratis, szlak 850 m w głąb wąwozu, ściany tufu do 20 m (latarka i buty trekkingowe obowiązkowe, ~1–1,5h). Lunch w Il Tufo Allegro (Vicolo della Costituzione 5, rezerwacja: 0564 616192). Popołudnie wolne.",
-      "crowd_tip": "Pitigliano i Sorano: sobotni rynek w Pitigliano (rano) przyciąga lokalnych, nie turystów — świetny czas. Sorano Fortezza Orsini: grupy wchodzą od 10:30 — przyjedź przed 10:00 lub po 14:00.",
+      "crowd_tip": "Poniedziałek 21.09 — Pitigliano poza weekendem jest spokojne; najwięcej zwiedzających 11:00–16:00. Via Cava di San Giuseppe najlepiej rano (chłód, pusto). Sinagoga: nieczynna w soboty (szabat) — w poniedziałek otwarta, sprawdź godziny na miejscu.",
       "eta_timeline": [
         {
           "time": "09:00",
@@ -2936,7 +2864,8 @@
           "event": "Powrót do bazy (40 min)"
         }
       ],
-      "daily_km_estimate": 47
+      "daily_km_estimate": 47,
+      "warning": "Plan napięty — audyt czasowy wykazał deficyt ~38 min. Najłatwiej odpuścić Via Cava di San Rocco (~1,5 h); Cascate del Mulino zostaw na późne popołudnie — o zmierzchu są najlepsze."
     },
     {
       "date": "23.09 (śr)",
@@ -3103,11 +3032,11 @@
         },
         {
           "time": "11:30",
-          "event": "Via Cava di San Giovanni (szlak etruski)"
+          "event": "Semproniano — spacer po borgo (25 min jazdy z Sovany)"
         },
         {
           "time": "12:30",
-          "event": "Lunch w Sovanie lub powrót Pitigliano"
+          "event": "Lunch w Semproniano lub powrót do Sovany"
         },
         {
           "time": "14:00",
@@ -3123,7 +3052,8 @@
         }
       ],
       "daily_km_estimate": 43,
-      "crowd_tip": "Sovana: mało turystów, szczyt to weekendy w lipcu–sierpniu. Via Cava Lamone: brak bramek, tłumy niemal nie istnieją — jeden z spokojniejszych szlaków etruskich. Semproniano: całkowicie omijany przez turystów."
+      "crowd_tip": "Sovana: mało turystów, szczyt to weekendy w lipcu–sierpniu. Via Cava Lamone: brak bramek, tłumy niemal nie istnieją — jeden z spokojniejszych szlaków etruskich. Semproniano: całkowicie omijany przez turystów.",
+      "warning": "Dzień bez zapasu czasowego, a degustacja Sassotondo ma sztywną godzinę 15:30 (rezerwacja). W razie poślizgu odpuść Semproniano."
     },
     {
       "date": "24.09 (czw)",
@@ -4366,7 +4296,7 @@
           {
             "id": "budget",
             "label": "Ustalić budżet grupowy",
-            "detail": "Szacunkowy koszt: €723–1094/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
+            "detail": "Szacunkowy koszt: €752–1134/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
             "deadline": "2–4 tygodnie przed wyjazdem",
             "priority": "medium"
           }

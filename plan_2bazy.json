@@ -8,8 +8,8 @@
     "participants_note": "Plan prywatny — wariant 2 baz",
     "route_summary": {
       "outbound_km": "~1570 km w 2 dni (Poznań → Kufstein → Barga)",
-      "return_km": "~1500 km w 3 dni (Chianti → Wasserburg → Hof → Poznań)",
-      "total_km": "~3070 km",
+      "return_km": "~1560 km w 3 dni (Chianti → Wasserburg → Hof → Poznań)",
+      "total_km": "~3130 km",
       "tuscany_days": 10,
       "tuscany_bases": 2,
       "transit_nights_outbound": 1,
@@ -291,8 +291,8 @@
         {
           "label": "Castello di Brolio",
           "coords": [
-            43.378,
-            11.424
+            43.3948,
+            11.4791
           ],
           "type": "attraction"
         },
@@ -365,7 +365,7 @@
       "label": "BAZA 2",
       "region": "Chianti Senese · Siena",
       "nights": "18–23 wrz (6 nocy)",
-      "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny. Wariant 2-bazowy: 5 nocy — więcej czasu na Crete Senesi, Val d'Orcia i lasy dębowe.",
+      "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny. Wariant 2-bazowy: 6 nocy — więcej czasu na Crete Senesi, Val d'Orcia i lasy dębowe.",
       "color": "amber",
       "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
       "booking_tip": "Szukaj z własną produkcją wina i oliwek — Vagliagli lub Monti in Chianti",
@@ -432,7 +432,7 @@
           "segment": "Monachium → Kufstein (Austria)",
           "road": "A8 east → A93 south",
           "km": "~85",
-          "note": "Wjazd do Austrii — winieta aktywna od A93/Kiefersfelden"
+          "note": "Wjazd do Austrii — odcinek granica–Kufstein-Süd bezwinietowy; w dniu 1 winieta niepotrzebna"
         }
       ],
       "attractions": [],
@@ -613,10 +613,10 @@
       "title": "Kufstein → Barga (Garfagnana)",
       "image": "barga",
       "drive_km": 560,
-      "drive_h": "6–6,5 h",
+      "drive_h": "7–7,5 h",
       "base_id": "base1",
       "depart": "7:00 rano z Kufstein",
-      "route": "A9/A8 → Rosenheim → A93 Inntal → A12 → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
+      "route": "A12 Inntal → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
       "attractions": [],
       "food": {
         "place": "Rovereto Sud (A22) — pierwszy wybór",
@@ -630,7 +630,7 @@
       },
       "accommodation": {
         "place": "BAZA 1 — Agriturismo Mologno / Barga (Garfagnana)",
-        "note": "Przyjazd ok. 17:00–17:30. Mologno = frazione Barga, ~5 km od centro, cisza, las kasztanowy.",
+        "note": "Przyjazd ok. 15:00–15:30. Mologno = frazione Barga, ~5 km od centro, cisza, las kasztanowy.",
         "price": "€60–90/noc",
         "options": [
           {
@@ -658,16 +658,10 @@
       },
       "route_segments": [
         {
-          "segment": "Neustadt → Rosenheim",
-          "road": "A9 → A8",
-          "km": "~200",
-          "note": "Winieta AT aktywna"
-        },
-        {
-          "segment": "Rosenheim → Innsbruck",
-          "road": "A93 Inntal → A12",
-          "km": "~100",
-          "note": "A12 wymaga winiety AT"
+          "segment": "Kufstein → Innsbruck",
+          "road": "A12 Inntal",
+          "km": "~90",
+          "note": "1-dniowa winieta AT na 13.09 (€9,60) — kup online przed wyjazdem z Kufstein"
         },
         {
           "segment": "Innsbruck → Brenner",
@@ -679,7 +673,7 @@
           "segment": "Brenner → Rovereto",
           "road": "A22",
           "km": "~120",
-          "note": "Lunch: Rovereto Sud (~13:00)"
+          "note": "Wczesny lunch: Rovereto Sud (~10:00)"
         },
         {
           "segment": "Rovereto → Modena",
@@ -782,34 +776,38 @@
       "eta_timeline": [
         {
           "time": "07:00",
-          "event": "Wyjazd Kufstein (Tyrol)"
+          "event": "Wyjazd z Kufstein (A12 Inntal)"
         },
         {
-          "time": "09:30",
-          "event": "Rosenheim → A93 Inntal"
+          "time": "07:45",
+          "event": "Innsbruck → wjazd na A13 Brenner"
         },
         {
-          "time": "11:00",
+          "time": "08:15",
           "event": "A13 Brenner (możliwy korek Lueg)"
         },
         {
-          "time": "12:30",
-          "event": "Granica AT/IT → A22 Bolzano"
+          "time": "09:10",
+          "event": "Bolzano — A22 na południe"
         },
         {
-          "time": "13:00",
-          "event": "Lunch Rovereto Sud (Tre Pini)"
+          "time": "10:00",
+          "event": "Wczesny lunch Rovereto Sud (Tre Pini)"
         },
         {
-          "time": "15:00",
-          "event": "A22 → A1 → A11, kier. Lucca"
+          "time": "10:45",
+          "event": "Dalej A22 na południe (Verona, Mantova)"
         },
         {
-          "time": "16:30",
+          "time": "12:35",
+          "event": "Koniec A22 (Campogalliano) → A1 Variante di Valico"
+        },
+        {
+          "time": "14:15",
           "event": "Zjazd Lucca Est → SS12/SR445"
         },
         {
-          "time": "17:30",
+          "time": "15:15",
           "event": "Przyjazd Mologno / Barga — check-in"
         }
       ],
@@ -883,7 +881,7 @@
             10.4836
           ],
           "duration_h": 1.5,
-          "opening_hours": "Duomo San Cristoforo: pon–sob 8:00–12:00, 15:00–19:00; nd 15:00–19:00. Wejście bezpłatne.",
+          "opening_hours": "Duomo San Cristoforo: codziennie 8:00–18:00. Wejście bezpłatne.",
           "entry_fee": "Wejście bezpłatne (Duomo: moneta €2 na oświetlenie)"
         },
         {
@@ -1101,7 +1099,7 @@
             10.3936
           ],
           "duration_h": 1.0,
-          "opening_hours": "Codziennie 10:00–18:00 (latem do 19:00). Rocca Ariostesca: bilet €4. Mury i centro storico: wstęp wolny.",
+          "opening_hours": "Codziennie 10:00–18:00 (latem do 19:00). Rocca (zamek Castiglione): bilet €4. Mury i centro storico: wstęp wolny.",
           "entry_fee": "Rocca: €4 | Mury i centro: bezpłatne"
         },
         {
@@ -1294,12 +1292,12 @@
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 25,
-      "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta czw–nd). Panorama 360° i mury dostępne bezpłatnie.",
+      "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta pt–nd). Panorama 360° i mury dostępne bezpłatnie.",
       "attractions": [
         {
           "name": "Fortezza delle Verrucole — spacer zewnętrzny",
           "drive_min": 18,
-          "description": "16.09 to środa — forteca zamknięta (otwarta czw–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich.",
+          "description": "16.09 to środa — forteca zamknięta (otwarta pt–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich.",
           "type": "medieval",
           "image_key": "verrucole",
           "gps_hint": "Fortezza delle Verrucole, San Romano in Garfagnana LU",
@@ -1308,8 +1306,8 @@
             10.4681
           ],
           "duration_h": 0.5,
-          "opening_hours": "Czerwiec–sierpień: codziennie. Wrzesień: pt–nd 10:00–18:00. Bilet €5 (wnętrze). Spacer zewnętrzny/widok: zawsze. WhatsApp: 379 2415958.",
-          "entry_fee": "Wnętrze: €5 | Zewnątrz/widok: bezpłatny"
+          "opening_hours": "Czerwiec–sierpień: codziennie. Wrzesień (od 15.09): pt–nd 10:30–18:30. Wstęp z przewodnikiem €8 (6–18 lat €5), częściowy €4. Spacer zewnętrzny/widok: zawsze. WhatsApp: 379 2415958.",
+          "entry_fee": "Z przewodnikiem: €8 (6–18 lat: €5) | częściowy bez tour: €4 | Zewnątrz/widok: bezpłatny"
         },
         {
           "name": "Lago di Vagli",
@@ -1323,7 +1321,7 @@
             10.3452
           ],
           "duration_h": 1.5,
-          "opening_hours": "Teren otwarty całą dobę, wstęp bezpłatny. Widok na zatopioną wieś z SS445.",
+          "opening_hours": "Teren otwarty całą dobę, wstęp bezpłatny. W 2026 jezioro pełne — ruiny zatopionej wsi NIE są widoczne (opróżnienie planowane na 2027).",
           "entry_fee": "Bezpłatny dostęp"
         },
         {
@@ -1331,7 +1329,7 @@
           "drive_min": 20,
           "description": "Mikrowioska z romańskim kościołem, kilkadziesiąt mieszkańców. Przykład autentycznego borgo bez renowacji turystycznej.",
           "type": "medieval",
-          "gps_hint": "Gorfigliano, 55038 Minucciano LU",
+          "gps_hint": "Gorfigliano, 55034 Minucciano LU",
           "coords": [
             44.0773,
             10.3497
@@ -1360,10 +1358,10 @@
         "price": "~€15–25/os"
       },
       "practical_tips": [
-        "16.09 środa: Fortezza Verrucole — zwiedzanie zewnętrzne (wejście wewnątrz czw–nd); panorama 360° dostępna bezpłatnie",
+        "16.09 środa: Fortezza Verrucole — zwiedzanie zewnętrzne (wejście wewnątrz pt–nd); panorama 360° dostępna bezpłatnie",
         "Vagli: parking przy tamie zapełnia się w południe — jedź tam rano (9:00)"
       ],
-      "narrative": "Wyjeżdżamy o 9:00 samochodem 18 min na wschód do Fortezzy delle Verrucole — otwarta środa–niedziela 10:00–18:00. Mury i panorama 360° na Garfagnane, jeden z najlepszych widoków regionu (~1h). Potem 25 min na zachód do Lago di Vagli: parking przy tamie, przyjeżdżamy przed 11:00. Z zapory widać (jeśli poziom niski) fragmenty zatopionej wioski Fabbriche di Careggine. Spacer wzdłuż brzegu, przerwa w Bar Radicchi w Vagli Sotto. Kilka km dalej (ok. 10 min) Gorfigliano: cicha górska wioska, romański kościółek Chiesa Vecchia, kompletny brak turystów. Z powrotem do bazy ok. 17:00.",
+      "narrative": "Wyjeżdżamy o 9:00 samochodem 18 min na wschód do Fortezzy delle Verrucole — 16.09 to środa, więc dostępny jest tylko spacer zewnętrzny (mury i panorama 360°, wejście do wnętrza dopiero pt–nd). Jeden z najlepszych widoków regionu (~1h). Potem 25 min na zachód do Lago di Vagli: parking przy tamie, przyjeżdżamy przed 11:00. Z zapory rozciąga się widok na jezioro i otaczające wzgórza — w 2026 poziom wody jest wysoki, więc ruiny zatopionej wioski Fabbriche di Careggine nie są widoczne (opróżnienie planowane dopiero na 2027). Spacer wzdłuż brzegu, przerwa w Bar Radicchi w Vagli Sotto. Kilka km dalej (ok. 10 min) Gorfigliano: cicha górska wioska, romański kościółek Chiesa Vecchia, kompletny brak turystów. Z powrotem do bazy ok. 17:00.",
       "web_research": [
         {
           "topic": "Fortezza Verrucole — KRYTYCZNE: 16.09 to środa",
@@ -1460,38 +1458,34 @@
       "eta_timeline": [
         {
           "time": "09:00",
-          "event": "Wyjazd z bazy do Lago di Vagli (20 min)"
+          "event": "Wyjazd z bazy do Fortezzy delle Verrucole (18 min)"
         },
         {
           "time": "09:20",
-          "event": "Lago di Vagli — punkt widokowy na zatopioną wieś Fabbriche"
+          "event": "Fortezza delle Verrucole — spacer zewnętrzny, mury i panorama 360° (środa: wnętrze niedostępne)"
         },
         {
           "time": "10:30",
-          "event": "Spacer wzdłuż brzegu jeziora (szlak ~3 km)"
+          "event": "Wyjazd do Lago di Vagli (25 min)"
         },
         {
-          "time": "11:30",
+          "time": "11:00",
+          "event": "Lago di Vagli — spacer przy tamie i wzgórzach (ruiny wsi niewidoczne w 2026)"
+        },
+        {
+          "time": "12:00",
+          "event": "Obiad w Bar Radicchi (Vagli Sotto)"
+        },
+        {
+          "time": "13:30",
           "event": "Wyjazd do Gorfigliano (10 min)"
         },
         {
-          "time": "11:45",
-          "event": "Gorfigliano — wioska kamieniarzów, kamieniołomy białego marmuru"
-        },
-        {
-          "time": "13:00",
-          "event": "Obiad w Gorfigliano lub Vagli di Sotto"
-        },
-        {
-          "time": "14:30",
-          "event": "Fortezza delle Verrucole (UWAGA: pt–nd, sprawdź przed wyjazdem)"
+          "time": "13:45",
+          "event": "Gorfigliano — cicha górska wioska, kamieniołomy marmuru"
         },
         {
           "time": "15:00",
-          "event": "Zwiedzanie fortecy — widok na całą Garfagnanę"
-        },
-        {
-          "time": "16:30",
           "event": "Powrót do bazy"
         }
       ],
@@ -1673,15 +1667,15 @@
         },
         {
           "time": "13:30",
-          "event": "Wyjazd do Pieve di Careggine / Vagli di Sopra (30 min)"
+          "event": "Wyjazd do Pieve di Careggine (30 min)"
         },
         {
           "time": "14:00",
-          "event": "Lago di Vagli — punkt widokowy na zatopioną kościół"
+          "event": "Pieve di Careggine — romańska pieve na wzgórzu nad Lago di Vagli"
         },
         {
-          "time": "15:30",
-          "event": "Spacer brzegiem lub wizyta w Vagli di Sopra"
+          "time": "15:00",
+          "event": "Spacer po wiosce Careggine (~200 mieszkańców)"
         },
         {
           "time": "17:00",
@@ -1976,11 +1970,11 @@
       ],
       "eta_timeline": [
         {
-          "time": "06:30",
-          "event": "Wyjazd z bazy (47 km do Sieny)"
+          "time": "07:00",
+          "event": "Wyjazd z bazy (~20 km, 25 min do Sieny)"
         },
         {
-          "time": "07:20",
+          "time": "07:25",
           "event": "Parking Santa Caterina lub Stadio-Fortezza"
         },
         {
@@ -2104,10 +2098,10 @@
         "opening_hours": "Śr–Pn 12:30–14:30, 19:30–21:30. Wt zamkn."
       },
       "practical_tips": [
-        "Brolio (10:00–12:00, giardini + querceti) → Badia a Coltibuono (~12:30, ogród i sklep) → lunch Villa a Sesta → Radda popołudnie",
+        "Brolio (10:00–12:00, giardini + querceti) → Badia a Coltibuono (~12:30, ogród i sklep) → lunch w Radda in Chianti → spacer po Radda popołudnie",
         "Vendemmia (wrzesień): winiarnie mogą mieć skrócone godziny — sprawdź przed wyjazdem"
       ],
-      "narrative": "Wyjeżdżamy o 9:30 — 20 min samochodem na południe do Castello di Brolio. Parking przy wejściu, ogrody otwarte od 10:00 (€5). Zamek rodu Ricasoli: widok na Chianti Classico i pasy winnicy burgundzkiej. Querceti (roverella i cerro) wokół murów — nieformalna pętla 2–3 km. Ok. 12:00 przesiadamy się 10 min dalej do Badia a Coltibuono: benedyktyńskie opactwo z 1051 r., ogród ziołowy, sklep z winem i oliwą Coltibuono. Lunch w osterii koło Villa a Sesta (ok. 12:30). Popołudnie: 20 min na północny zachód do Radda in Chianti — średniowieczne borgo, dawna stolica Ligi Chianti (1384). Piazza Ferrucci i Palazzo del Podestà, uliczki bez tłumów. Wracamy do bazy ok. 18:00.",
+      "narrative": "Wyjeżdżamy o 9:30 — 20 min samochodem na południe do Castello di Brolio. Parking przy wejściu, ogrody otwarte od 10:00 (€7,50 z degustacją). Zamek rodu Ricasoli: widok na Chianti Classico i pasy winnicy burgundzkiej. Querceti (roverella i cerro) wokół murów — nieformalna pętla 2–3 km. Ok. 12:00 przesiadamy się 10 min dalej do Badia a Coltibuono: benedyktyńskie opactwo z 1051 r., ogród ziołowy, sklep z winem i oliwą Coltibuono. Stamtąd 20 min na północny zachód do Radda in Chianti — średniowieczne borgo, dawna stolica Ligi Chianti (1384). Lunch w Osteria Il Rifugio del Chianti (Via Roma 6, ok. 13:00). Popołudnie: spacer po Piazza Ferrucci i Palazzo del Podestà, uliczki bez tłumów. Wracamy do bazy ok. 18:00.",
       "web_research": [
         {
           "topic": "Castello di Brolio — orari 2026",
@@ -2313,12 +2307,6 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Trasa Asciano → Pitigliano",
-          "summary": "SS438/SS223 przez Grosseto, potem SS74 do Pitigliano. ~130 km, ~1h40. Niedzielny dojazd bez większych utrudnień.",
-          "source": "https://www.visitcretesenesi.it/",
-          "checked": "2026-07"
-        },
-        {
           "topic": "Monte Oliveto Maggiore — orari wrzesień",
           "summary": "Ora legale: 9:30–12:20 i 14:30–17:40. Pn 21.09 = biglietto unico €7 (Vivaticket €6). Cykl fresków Il Sodoma w chiostro.",
           "source": "https://www.monteolivetomaggiore.it/abbazia/orario-di-apertura/",
@@ -2412,6 +2400,7 @@
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
       "drive_limit_min": 50,
+      "warning": "22.09: najdłuższy i najbardziej napięty dzień jazdy w całym planie — jedyny dzień z drive_limit_min: 50 (pozostałe dni ≤35 min). Sam plan oznacza te cele jako niewygodne z bazy Chianti (patrz variants.base2_options: Pienza/Montalcino/Bagno Vignoni — „ok\": false). To ok. 2,5 h czystej jazdy w ciągu dnia i praktycznie zero marginesu — uważaj na wolne traktory żniwne na SP2/SP53 (wrzesień = zbiory, patrz practical_tips). Zostaw bufor: nie planuj nic po powrocie do bazy, powrót może się przesunąć.",
       "attractions": [
         {
           "name": "Bagno Vignoni — piazza termalna",
@@ -2463,7 +2452,7 @@
         "spot": "Bosco di San Piero — Val d'Orcia",
         "species": "Quercus pubescens (roverella)",
         "note": "Suchy las roverella między Pienza a Montalcino — typowy krajobraz Val d'Orcia. Ścieżki wokół Montalcino.",
-        "gps_hint": "SP146 San Quirico d'Orcia → Montalcino — boschi spontanei scendendo verso Castiglione d'Orcia."
+        "gps_hint": "SP146/SP14 między San Quirico d'Orcia a Montalcino — boschi spontanei na zboczach doliny Orcia."
       },
       "food": {
         "place": "Trattoria Latte di Luna — Pienza",
@@ -2586,7 +2575,7 @@
         }
       ],
       "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
-      "daily_km_estimate": 70
+      "daily_km_estimate": 140
     },
     {
       "date": "23.09 (śr)",
@@ -2754,8 +2743,8 @@
       "drive_km": 710,
       "drive_h": "7–7,5 h",
       "base_id": null,
-      "depart": "7:00 rano z Castelnuovo Berardenga / Vagliagli",
-      "route": "Vagliagli → SS408/SP9 → A1 Firenze-Sud (lub Valdarno) → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → Tangenziale Milano → A22 Brennero → A13 AT (Streckenmaut) → A12 Inntal → Rosenheim → B304 → Wasserburg am Inn",
+      "depart": "7:30 rano z Castelnuovo Berardenga / Vagliagli",
+      "route": "Vagliagli → SS408/SP9 → A1 Firenze-Sud (lub Valdarno) → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → A13 AT (Streckenmaut) → A12 Inntal → Rosenheim → B304 → Wasserburg am Inn",
       "attractions": [],
       "food": {
         "place": "Bolonia lub Modena (postój autostradowy A1)",
@@ -2784,16 +2773,16 @@
           {
             "name": "Hotel Gasthof Paulanerstuben",
             "type": "Gasthof",
-            "address": "Marienplatz 9, 83512 Wasserburg am Inn",
-            "price": "od €94/noc",
+            "address": "Marienplatz 14, 83512 Wasserburg am Inn",
+            "price": "od €58/noc",
             "parking": "bezpłatny dla gości",
             "url": "https://www.paulanerstuben-wasserburg.de/"
           },
           {
             "name": "Das Fletzinger",
             "type": "Boutique-Hotel",
-            "address": "Fletzingergasse 3, 83512 Wasserburg am Inn",
-            "price": "€80–110/noc",
+            "address": "Inn-Ufer, 83512 Wasserburg am Inn",
+            "price": "od €62/noc",
             "parking": "na zapytanie",
             "url": "https://fletzinger.de/"
           }
@@ -2813,29 +2802,29 @@
           "note": "NIE zjeżdżaj do centro Firenze — ZTL aktywna czwartek 7:30–20:00"
         },
         {
-          "segment": "Bologna → Milano tangenziale",
-          "road": "A1/A14/A4",
-          "km": "~200",
+          "segment": "Bologna → Modena",
+          "road": "A1",
+          "km": "~40",
           "note": "Lunch: zjazd Bologna Borgo Panigale lub Modena Nord"
         },
         {
-          "segment": "Milano → Brenner",
-          "road": "A4 → A22",
-          "km": "~280",
+          "segment": "Modena → Brenner",
+          "road": "A22 (Verona, Trento, Bolzano)",
+          "km": "~300",
           "note": "Pedaggio A22 Modena–Brennero: ~€22,80 klasa A"
         },
         {
           "segment": "Brenner → Wasserburg am Inn",
           "road": "A13 AT → A12 Inntal → Rosenheim → B304",
           "km": "~145",
-          "note": "A13 Streckenmaut ~€12,50. B304 do Wasserburg ~25 km od Rosenheim"
+          "note": "A13 Streckenmaut €12,50 (2. przejazd) + 1-dniowa winieta AT na 24.09 (€9,60) na A12 Inntal. B304 do Wasserburg ~25 km od Rosenheim"
         }
       ],
       "practical_tips": [
         "Wyjazd 7:00 z Chianti → Wasserburg ~17:00–18:00 (z 2 postojami po 20–30 min).",
         "24.09 to CZWARTEK: ZTL Firenze aktywna 7:30–20:00 — zostań na A1 Variante di Valico.",
         "Trasa z Chianti krótsza niż z Pitigliano (~710 km vs 770 km) — bufor ~30 min.",
-        "Nocleg: Huberwirt od €46 (parking gratis) lub Paulanerstuben Marienplatz 9."
+        "Nocleg: Huberwirt od €46 (parking gratis) lub Paulanerstuben Marienplatz 14."
       ],
       "fuel_stops": [
         {
@@ -2865,7 +2854,7 @@
           "note": "Zatankuj w DE — tańsze niż Austria i Włochy."
         }
       ],
-      "narrative": "Wyjeżdżamy o 7:00 z Chianti — SR2 na SR2bis do Firenze Sud i wjazd na A1, ok. 45 min. A1 na północ bez tłumów o poranku; Variante di Valico A1 omija centrum Florencji (środa: ZTL aktywna). Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni włoski espresso. Mediolan Tangenziale może dołożyć pół godziny w szczycie. A22 Brennero na północ — uwaga: bramki A13 Brenner Streckenmaut €12,50 (oddzielnie od winiety, płatne przy bramkach). A12 Inntal i B304 do Wasserburga — jesteśmy ok. 16:30–17:30. Wieczorny spacer wzdłuż Innu po starej części miasta.",
+      "narrative": "Wyjeżdżamy o 7:00 z Chianti — SR2 na SR2bis do Firenze Sud i wjazd na A1, ok. 45 min. A1 na północ bez tłumów o poranku; Variante di Valico A1 omija centrum Florencji (środa: ZTL aktywna). Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni włoski espresso. Odcinek A22 Modena–Brennero koło Werony bywa zatłoczony w szczycie — możliwe +30 min. A22 Brennero na północ — uwaga: bramki A13 Brenner Streckenmaut €12,50 (oddzielnie od winiety, płatne przy bramkach). A12 Inntal i B304 do Wasserburga — jesteśmy ok. 16:30–17:30. Wieczorny spacer wzdłuż Innu po starej części miasta.",
       "web_research": [
         {
           "topic": "Trasa Castelnuovo Berardenga → Wasserburg am Inn",
@@ -2924,11 +2913,11 @@
         },
         {
           "time": "13:00",
-          "event": "Brennero/Brenner — Streckenmaut A22 ~€12,50"
+          "event": "Brennero/Brenner — wjazd na A13 (Streckenmaut €12,50)"
         },
         {
           "time": "14:30",
-          "event": "Innsbruck bypass — A12 Inntal (winieta AT)"
+          "event": "Innsbruck bypass — A12 Inntal (1-dniowa winieta AT na 24.09)"
         },
         {
           "time": "15:30",
@@ -3282,7 +3271,7 @@
   ],
   "practical_info": {
     "vignettes": {
-      "austria": "E-winieta online: asfinag.at, €12,80/10 dni — kup przed wyjazdem. Dodatkowo A13 Brenner Streckenmaut €12,50 — oddzielnie na shop.asfinag.at.",
+      "austria": "Potrzebne DWIE winiety: 10-dniowa (€12,80) aktywowana 12/13.09 NIE obejmie powrotu 24.09. Najtaniej 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 24.09), razem €19,20 — asfinag.at. Dojazd do Kufstein 12.09 bez winiety (odcinek granica–Kufstein-Süd bezwinietowy). Dodatkowo A13 Brenner Streckenmaut €12,50 za każdy przejazd (2× = €25) — oddzielnie na shop.asfinag.at.",
       "italy": "Płatne bramki: gotówka lub karta bezpośrednio"
     },
     "climate": {
@@ -3428,7 +3417,7 @@
         "label": "2 bazy",
         "is_current": true,
         "summary": "Garfagnana → Środkowa Toskania (bez Maremmy)",
-        "nights_label": "5 + 5 nocy",
+        "nights_label": "5 + 6 nocy",
         "pros": [
           "Tylko 1 przeprowadzka",
           "5 nocy w każdej bazie — więcej spokoju",
@@ -3490,15 +3479,15 @@
         "id": "fuel",
         "name": "Paliwo",
         "icon": "⛽",
-        "per_person_min": 13,
-        "per_person_max": 18,
-        "note": "~450 km po Toskanii (bazy ↔ atrakcje), 7L/100km. Paliwo na tranzyt Poznań↔Toskania nie uwzględnione.",
+        "per_person_min": 21,
+        "per_person_max": 25,
+        "note": "~710 km po Toskanii (bazy ↔ atrakcje + transfery między bazami), 7L/100km. Paliwo na tranzyt Poznań↔Toskania nie uwzględnione.",
         "items": [
           {
-            "label": "Przejazdy lokalne w Toskanii (~450 km)",
-            "detail": "~€50–70 / auto, diesel ~€1.85/L",
-            "per_person_min": 13,
-            "per_person_max": 18
+            "label": "Przejazdy lokalne w Toskanii (~710 km)",
+            "detail": "~€85–100 / auto, diesel ~€1.85/L",
+            "per_person_min": 21,
+            "per_person_max": 25
           }
         ]
       },
@@ -3506,26 +3495,26 @@
         "id": "tolls",
         "name": "Autostrady i winiety",
         "icon": "🛣️",
-        "per_person_min": 28,
-        "per_person_max": 35,
+        "per_person_min": 43,
+        "per_person_max": 46,
         "items": [
           {
-            "label": "Winieta Austria (10 dni)",
-            "detail": "€12,80 / auto — asfinag.at",
-            "per_person_min": 3,
-            "per_person_max": 4
+            "label": "Winieta Austria (2× 1-dniowa)",
+            "detail": "2× €9,60 = €19,20 / auto — na 13.09 i 24.09 (10-dniowa nie obejmuje powrotu; dojazd do Kufstein 12.09 bezwinietowy) — asfinag.at",
+            "per_person_min": 5,
+            "per_person_max": 5
           },
           {
-            "label": "A13 Brenner Streckenmaut (Austria)",
-            "detail": "€12,50 / auto — shop.asfinag.at (Streckenabschnitt A13). Płatna osobno od winiety.",
-            "per_person_min": 3,
-            "per_person_max": 4
+            "label": "A13 Brenner Streckenmaut (Austria, 2× przejazd)",
+            "detail": "2× €12,50 = €25 / auto — shop.asfinag.at (Streckenabschnitt A13). Płatna osobno od winiety.",
+            "per_person_min": 6,
+            "per_person_max": 6
           },
           {
             "label": "Autostrady Włochy (A1, A11, lokalne)",
-            "detail": "~€25–45 / auto",
-            "per_person_min": 6,
-            "per_person_max": 11
+            "detail": "~€65–75 / auto w obie strony (sama A22 Modena–Brennero ~€23/kierunek + A1/A11)",
+            "per_person_min": 16,
+            "per_person_max": 19
           },
           {
             "label": "Autostrada A2 Polska (Świecko–Konin, tam i z powrotem)",
@@ -3561,21 +3550,21 @@
         "id": "attractions",
         "name": "Atrakcje i wejściówki",
         "icon": "🎟️",
-        "per_person_min": 30,
-        "per_person_max": 65,
+        "per_person_min": 57,
+        "per_person_max": 103,
         "note": "Większość miejsc bezpłatna lub z symbolicznym wstępem",
         "items": [
           {
             "label": "Siena — Opera del Duomo (Katedra + muzea)",
-            "detail": "~€20/os",
-            "per_person_min": 20,
-            "per_person_max": 20
+            "detail": "OPA SI PASS €16/os — podłoga katedry odkryta 18.08–15.11.2026",
+            "per_person_min": 16,
+            "per_person_max": 16
           },
           {
             "label": "Monteriggioni — mury obronne",
-            "detail": "€5/os",
-            "per_person_min": 5,
-            "per_person_max": 5
+            "detail": "€3,50/os",
+            "per_person_min": 4,
+            "per_person_max": 4
           },
           {
             "label": "Montalcino — degustacja wina (Enoteca Fortezza)",
@@ -3584,18 +3573,24 @@
             "per_person_max": 18
           },
           {
+            "label": "Badia a Coltibuono — degustacja win (20.09)",
+            "detail": "€25–35/os (4 wina Chianti Classico DOCG, rezerwacja)",
+            "per_person_min": 25,
+            "per_person_max": 35
+          },
+          {
             "label": "Inne: Grotta del Vento, parki, muzea lokalne",
-            "detail": "łącznie",
+            "detail": "Grotta del Vento (€11–16), Rocca ×2 (€8), Palazzo Piccolomini (€7), terme opcjonalnie",
             "per_person_min": 0,
-            "per_person_max": 22
+            "per_person_max": 30
           }
         ]
       }
     ],
-    "total_per_person_min": 746,
-    "total_per_person_max": 1116,
-    "total_4persons_min": 2984,
-    "total_4persons_max": 4464,
+    "total_per_person_min": 796,
+    "total_per_person_max": 1172,
+    "total_4persons_min": 3184,
+    "total_4persons_max": 4688,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
@@ -3714,8 +3709,8 @@
           },
           {
             "id": "winieta",
-            "label": "Winieta Austria — kupić online",
-            "detail": "E-winieta na asfinag.at — 10-dniowa kosztuje €12,80. Kupić online PRZED wjazdem do Austrii (aktywacja od wybranej daty). Kara za brak: €120 na miejscu.\n\nOsobno: Streckenmaut A13 Brenner — €12,50 (2026). Kupić na shop.asfinag.at → 'Section toll / Abschnittsmaut'. Zielony pas DIGITAL — bez zatrzymania. Łącznie: €12,80 + €12,50 = €25,30 za auto.",
+            "label": "Winiety Austria (2×) + Streckenmaut Brenner (2×) — kupić online",
+            "detail": "UWAGA: potrzebne DWIE winiety — 10-dniowa aktywowana 12/13.09 NIE obejmie powrotu 24.09 (rozpiętość podróży = 13 dni). Najtaniej: 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 24.09), razem €19,20. Dojazd do Kufstein 12.09 nie wymaga winiety — odcinek granica–Kufstein-Süd jest bezwinietowy. Kupić online na asfinag.at (e-winieta 1-dniowa ważna od razu). Kara za brak: €120 na miejscu.\n\nOsobno: Streckenmaut A13 Brenner — €12,50 za KAŻDY przejazd (13.09 i 24.09 → 2× = €25). Kupić na shop.asfinag.at → 'Section toll / Abschnittsmaut'. Zielony pas DIGITAL — bez zatrzymania. Łącznie Austria: €19,20 + €25,00 = €44,20 za auto.",
             "deadline": "dzień przed przejazdem przez Austrię",
             "priority": "high",
             "url": "https://www.asfinag.at"
@@ -3750,7 +3745,7 @@
         "items": [
           {
             "id": "noclegi-baza1",
-            "label": "Nocleg Baza 1 — Garfagnana (5 nocy, ok. 12–17.09)",
+            "label": "Nocleg Baza 1 — Garfagnana (5 nocy, ok. 13–17.09)",
             "detail": "Agriturismo w okolicach Barga — rezerwować jak najwcześniej, wrzesień to jeszcze sezon. Booking.com, Airbnb lub bezpośrednio. Budżet €60–90/pokój/noc × 2 pokoje.",
             "deadline": "PILNIE — maj–czerwiec minął, rezerwuj teraz!",
             "priority": "high"
@@ -3807,7 +3802,7 @@
           {
             "id": "budget",
             "label": "Ustalić budżet grupowy",
-            "detail": "Szacunkowy koszt: €723–1094/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
+            "detail": "Szacunkowy koszt: €746–1116/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
             "deadline": "2–4 tygodnie przed wyjazdem",
             "priority": "medium"
           }

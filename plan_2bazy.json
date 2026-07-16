@@ -151,6 +151,26 @@
           "src": "images/siena-duomo.jpg",
           "alt": "Duomo di Siena — fasada katedry",
           "credit": "Wikimedia Commons · Rolf Gebhardt"
+        },
+        "pistoia": {
+          "src": "images/pistoia.jpg",
+          "alt": "Katedra San Zeno i dzwonnica na Piazza del Duomo w Pistoi",
+          "credit": "Gianni Careddu / Wikimedia Commons (CC BY-SA 4.0)"
+        },
+        "monteriggioni": {
+          "src": "images/monteriggioni.jpg",
+          "alt": "Średniowieczne mury obronne Monteriggioni na wzgórzu, w tle pole słoneczników",
+          "credit": "Diego Baglieri / Wikimedia Commons (CC BY-SA 4.0)"
+        },
+        "murlo": {
+          "src": "images/murlo.jpg",
+          "alt": "Wejście do Antiquarium di Poggio Civitate, muzeum etruskiego w zamku w Murlo",
+          "credit": "Flo Sorg / Wikimedia Commons (CC0)"
+        },
+        "foresta_tocchi": {
+          "src": "images/foresta-tocchi.jpg",
+          "alt": "Zalesione wzgórza Riserva Naturale di Tocchi z widokiem na osadę Tocchi",
+          "credit": "LigaDue / Wikimedia Commons (CC BY-SA 4.0)"
         }
       }
     },
@@ -1709,7 +1729,8 @@
             10.917
           ],
           "drive_min": 0,
-          "duration_h": 1.5
+          "duration_h": 1.5,
+          "image_key": "pistoia"
         }
       ],
       "oak_forest": null,
@@ -2584,7 +2605,7 @@
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 10 (OSTATNI)",
       "title": "Monteriggioni, Murlo i dębowy las Tocchi",
-      "image": "chianti",
+      "image": "monteriggioni",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
       "drive_limit_min": 35,
@@ -2601,7 +2622,8 @@
           ],
           "opening_hours": "Mury: lis–lut 10:00–13:30, 14:00–17:00. Mar–paź: 9:30–19:30.",
           "ticket_price": "Mury: €3,50. Piazza: bezpłatna.",
-          "duration_h": 1.0
+          "duration_h": 1.0,
+          "image_key": "monteriggioni"
         },
         {
           "name": "Murlo — muzeum etruskie Antiquarium",
@@ -2615,7 +2637,8 @@
           ],
           "opening_hours": "Antiquarium: Wt–Nd 10:00–13:00, 14:30–17:30.",
           "ticket_price": "Antiquarium Etrusco: €4",
-          "duration_h": 1.0
+          "duration_h": 1.0,
+          "image_key": "murlo"
         },
         {
           "name": "Foresta di Tocchi — las dębowy Quercus cerris",
@@ -2629,7 +2652,8 @@
           ],
           "opening_hours": "Las dostępny całą dobę.",
           "ticket_price": "Bezpłatny",
-          "duration_h": 0.75
+          "duration_h": 0.75,
+          "image_key": "foresta_tocchi"
         }
       ],
       "oak_forest": {
@@ -2733,7 +2757,8 @@
       ],
       "daily_km_estimate": 52,
       "crowd_tip": "Monteriggioni: tłumy 10:00–12:00 i 14:00–16:00 (wycieczki). Przyjedź przed 10:00 lub po 16:30. Murlo: muzeum etruskie bez kolejek. Tocchi: las bez turystów.",
-      "warning": "Dzień bez zapasu czasowego. Monteriggioni (~35 min od bazy) można alternatywnie dokleić do popołudnia dnia sieneńskiego, albo skrócić Murlo do samego Antiquarium."
+      "warning": "Dzień bez zapasu czasowego. Monteriggioni (~35 min od bazy) można alternatywnie dokleić do popołudnia dnia sieneńskiego, albo skrócić Murlo do samego Antiquarium.",
+      "image2": "foresta_tocchi"
     },
     {
       "date": "24.09 (czw)",

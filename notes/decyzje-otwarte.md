@@ -18,4 +18,5 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `plan_2bazy.json`.
 - ✅ Florencja zamiast dnia 12 (Monteriggioni/Murlo/Foresta di Tocchi) — [[Florencja]]
 - ✅ Wariant 2-bazowy jako jedyny prezentowany plan (przełącznik 2/3 bazy usunięty)
 - ✅ **Korekta czasów jazdy OSRM** (2026-07): D8 Siena 25→39 min, D10 Monte Oliveto 28→61 min — patrz [[odleglosci]]
-- ✅ **Refaktor D11 Val d'Orcia**: nowa kolejność Pienza→Bagno Vignoni→Montalcino (oszczędza 20 min jazdy), Palazzo Piccolomini pominięty (zamknięty we wtorki — a 22.09 to wtorek), realne czasy i timeline
+- ✅ **Refaktor D11 Val d'Orcia**: nowa kolejność Pienza→Bagno Vignoni→Montalcino (oszczędza 20 min jazdy), realne czasy i timeline
+- ✅ **Rotacja bloku Chianti — Siena poza weekend** (2026-07): Chianti→sob 19.09, Crete→nd 20.09, Val d'Orcia→pn 21.09, **Siena→wt 22.09**. Jedna rotacja naprawiła 3 rzeczy naraz: (1) Siena z soboty (najgorszy dzień) na wtorek powszedni; (2) muzeum Palazzo Corboli w Asciano — teraz w niedzielę OTWARTE (było zamknięte w pon.); (3) Palazzo Piccolomini w Pienzy — teraz w poniedziałek OTWARTE (było zamknięte we wt.), więc wchodzimy do środka. Duomo Sieny we wtorek 10:00–19:00 (sezon odkrytej podłogi, pn–sb) — bez zmian względem soboty.

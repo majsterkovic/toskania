@@ -1848,205 +1848,8 @@
     {
       "date": "19.09 (sob)",
       "day_num": 8,
-      "type": "tuscany_popular",
-      "label": "TOSKANIA · DZIEŃ 6 ★ POPULARNY",
-      "title": "Siena — o świcie przed tłumami",
-      "image": "siena",
-      "base_id": "base2",
-      "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 39,
-      "popular": true,
-      "crowd_tip": "SOBOTA 19.09 — najgorszy dzień tygodnia w Sienie. Wyjazd 7:00, parking Santa Caterina lub Stadio-Fortezza. Campo o 7:30 prawie sam. Tłumy od 10:00. Powrót do bazy przed 14:00.",
-      "attractions": [
-        {
-          "name": "Piazza del Campo (główny plac Sieny) — o świcie",
-          "drive_min": 39,
-          "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
-          "type": "popular",
-          "image_key": "siena",
-          "gps_hint": "Piazza del Campo, 53100 Siena SI",
-          "coords": [
-            43.3183,
-            11.3318
-          ],
-          "opening_hours": "Plac otwarty całą dobę. Palazzo Pubblico: Pn–Sb 10:00–19:00, Nd 11:00–18:00.",
-          "ticket_price": "Plac — bezpłatny. Torre del Mangia: €10 (wejście 10:00–19:00)",
-          "duration_h": 1.5
-        },
-        {
-          "name": "Duomo di Siena (katedra) + Libreria Piccolomini (biblioteka z freskami)",
-          "drive_min": 39,
-          "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki.",
-          "type": "popular",
-          "image_key": "siena",
-          "gps_hint": "Piazza del Duomo, Siena SI",
-          "coords": [
-            43.3171,
-            11.3289
-          ],
-          "opening_hours": "Śr–Sb 10:30–19:00, Pn–Wt 10:30–17:30, Nd 13:30–17:30.",
-          "ticket_price": "OPA SI Pass: €14 (Duomo + Libreria + Battistero). Libreria Piccolomini extra: €4–6.",
-          "duration_h": 2.0
-        },
-        {
-          "name": "Spacer przez kontrade (historyczne dzielnice-klany Sieny)",
-          "drive_min": 39,
-          "description": "11:00–12:00. Oca (Via dei Termini → Fontebranda) i Drago (Piazza Matteotti → Via del Paradiso). Autentyczne dzielnice zamiast turystycznych tras.",
-          "type": "cultural",
-          "image_key": "siena",
-          "gps_hint": "Via dei Termini (Oca) lub Piazza Matteotti 18 (Drago)",
-          "coords": [
-            43.3183,
-            11.3318
-          ],
-          "duration_h": 1.0,
-          "opening_hours": "Ulice publiczne, brak godzin. Muzea kontrady: na zamówienie grupowe. Osteria kont. otwarta od 12:00."
-        }
-      ],
-      "oak_forest": null,
-      "food": {
-        "place": "Antica Trattoria Papei — Siena",
-        "address": "Piazza del Mercato 6, 53100 Siena SI",
-        "dishes": [
-          "pici cacio e pepe",
-          "ribollita",
-          "pappardelle al cinghiale",
-          "vino sfuso (z beczki)"
-        ],
-        "note": "Kultowa trattoria za Palazzo Pubblico. Rezerwacja tel. od 10:00 (sobota lunch!). Tel. +39 0577 280894.",
-        "price": "~€15–22/os",
-        "phone": "+39 0577 280894",
-        "opening_hours": "Pranzo 12:00–15:00, cena 19:00–22:30. Nd zamkn. Rezerwacja wskazana.",
-        "gps_hint": "Piazza del Mercato 6 — wejście od tyłu Piazza del Campo"
-      },
-      "practical_tips": [
-        "SOBOTA = kluczowy dzień: wyjazd 7:00, Campo o 7:30 prawie pusty. Tłumy od 10:00, szczyt 11:00–15:00",
-        "Parking: Santa Caterina (schody ruchome, bliżej Duomo) — €2/h",
-        "OPA SI PASS kup online wieczorem wcześniej — skip kolejki, wejdź tuż po 10:00"
-      ],
-      "narrative": "Wyjeżdżamy z bazy o 7:00 — sobota, ale o tej porze Chianti jeszcze śpi, a do Sieny mamy ok. 24 km i 40 minut jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą wprost pod mury, albo przy Stadio-Fortezza. Piazza del Campo o 7:30 należy właściwie tylko do nas — słońce dopiero wschodzi, ktoś zamiata próg kawiarni, cisza, w której słychać własne kroki po charakterystycznym wachlarzowatym bruku. To ten sam plac, na którym za kilka godzin będzie tłoczno jak na Palio, ale teraz Fonte Gaia szumi tylko dla nas. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16 w sezonie odkrytej podłogi mozaikowej) pozwala ominąć kolejkę, a w środku Libreria Piccolomini olśniewa złoconymi freskami Pinturicchia, które nie wyblakły przez pięćset lat. Ok. 11:00 spacer przez kontrady Oca i Drago — boczne uliczki z chorągiewkami bractw rywalizujących w Palio, gdy tłumy od 10:00 zaczynają zalewać Campo. Lunch w Antica Trattoria Papei (Piazza del Mercato 6, rezerwacja) — wśród sieneńczyków jedzących tu od pokoleń. Po obiedzie opcjonalnie degustacja w Enoteca Italiana (Fortezza Medicea, 12 minut pieszo, 45 minut) — narodowa enoteka z winami z całych Włoch, w tym miejscowym Chianti Classico. Z parkingu wyjeżdżamy ok. 15:00, zanim popołudniowy szczyt zamieni uliczki w korek turystów, w bazie jesteśmy ok. 15:45 — reszta popołudnia znów należy tylko do nas.",
-      "web_research": [
-        {
-          "topic": "Siena o 7:30 — bez tłumów",
-          "summary": "Piazza del Campo o świcie: pusty plac, fotografowie i lokalni. Kawiarnie od ~7:00. Tłumy (wycieczki z Florencji) od 10:00. Sobota = najbardziej zatłoczony dzień.",
-          "source": "https://www.chasinghippoz.com/travel-photo-blog/siena-italy",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Parking Santa Caterina",
-          "summary": "Via Esterna di Fontebranda. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome gratis do centrum. Max wys. 2,0 m. Blisko Duomo i San Domenico.",
-          "source": "https://sigericospa.it/parcheggio-santa-caterina/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Parking Stadio-Fortezza (zona San Domenico)",
-          "summary": "Area Fortezza Medicea, wyjście lato stadio = zona San Domenico, przed bazyliką. €2/h (7–20), €26/dzień, gratis 20:00–7:00. 709 miejsc, ~15 min pieszo do Campo.",
-          "source": "https://sipark.siena.it/tariffe/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "OPA SI PASS — skip-line + podłoga 2026",
-          "summary": "Sobota 19.09: kompleks 10:00–19:00 (Muzeum 9:30–19:30). Podłoga odkryta 18.08–15.11, bilet €16. Kup online = bez kolejki do kasy. Ważny 3 dni, audioguide w cenie.",
-          "source": "https://www.opasipass.com/en/opening-hours/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Antica Trattoria Papei",
-          "summary": "Piazza del Mercato 6. Cucina 12:00–22:30. Pranzo 12–15, cena 19–22:30. Rezerwacje: 0577 280894 (10:00–19:00). Taras latem, >100 miejsc na zewnątrz.",
-          "source": "https://anticatrattoriapapei.com/reservations/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Spacer kontrade Oca i Drago",
-          "summary": "Oca (Terzo Camollìa): Via dei Termini, Fontebranda, Santuario Santa Caterina, siedziba Vicolo del Tiratoio 13. Drago: Piazza Matteotti 18, Via del Paradiso, Via della Sapienza. Wieczorny spacer: Via del Costone.",
-          "source": "https://www.thepalio.eu/siena-tourist-guide/",
-          "checked": "2026-07"
-        }
-      ],
-      "image2": "siena-duomo",
-      "opening_hours": {
-        "piazza_campo": "Dostęp 24h. Najlepsze światło i brak tłumów: 7:00–8:30.",
-        "torre_mangia": "10:00–19:00 (1.04–31.10). Ostatnie wejście ~45 min przed zamknięciem. Bilet osobny (nie w OPA SI PASS).",
-        "duomo_complex": "19.09 (sobota, sezon): 10:00–19:00. Muzeum dell'Opera: 9:30–19:30. Ostatnie wejście 30 min przed zamknięciem.",
-        "duomo_floor": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — OPA SI PASS €16 (vs €14 standard).",
-        "opera_duomo_ticket_office": "Piazza Duomo 7 + Visitor Center Via di Città 48 (obok Campo). Online = skip kolejki do kasy.",
-        "libreria_piccolomini": "W kompleksie Duomo — ten sam bilet OPA SI PASS.",
-        "antica_trattoria_papei": "Cucina 12:00–22:30. Pranzo 12:00–15:00, cena 19:00–22:30. Tel. 0577 280894 (rezerwacje 10:00–19:00)."
-      },
-      "parking": {
-        "recommended": "Santa Caterina (najwygodniejszy) lub Stadio-Fortezza lato stadio (zona San Domenico)",
-        "santa_caterina": "Parcheggio Santa Caterina — Via Esterna di Fontebranda. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome do centrum (gratis). Max wysokość 2,0 m. ~10 min pieszo do Campo.",
-        "stadio_fortezza_san_domenico": "Parcheggio Stadio-Fortezza — wyjście LATO STADIO (zona San Domenico), przed bazyliką San Domenico. 709 miejsc. €2/h (7:00–20:00), €26/dzień, gratis 20:00–7:00. ~15 min pieszo do Campo.",
-        "san_domenico_note": "Nie ma osobnego parkingu „San Domenico” — chodzi o wyjście Stadio-Fortezza od strony stadionu lub parking Santa Caterina (schody przy San Domenico).",
-        "ztl": "Centrum Siena = ZTL z kamerami. Mandaty €80–150. Samochód zostaw na parkingu.",
-        "saturday_tip": "Sobota 7:00 wyjazd → parking 7:20 → Campo 7:30 pieszo. Wyjazd z parkingu przed 14:00.",
-        "cost_estimate": "~€8–10 za 4h poranną wizytę (€2/h × 4h)"
-      },
-      "fuel_stops": [
-        {
-          "name": "IP / Q8 Castelnuovo Berardenga",
-          "location": "BAZA 2 — Chianti Senese",
-          "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót, stacja przy SP408."
-        }
-      ],
-      "eta_timeline": [
-        {
-          "time": "07:00",
-          "event": "Wyjazd z bazy (~24 km, 39 min do Sieny)"
-        },
-        {
-          "time": "07:40",
-          "event": "Parking Santa Caterina lub Stadio-Fortezza"
-        },
-        {
-          "time": "07:45",
-          "event": "Piazza del Campo — Fontana Gaia bez tłumów"
-        },
-        {
-          "time": "09:30",
-          "event": "Caffè Fiorella — espresso + cornetto"
-        },
-        {
-          "time": "10:30",
-          "event": "Duomo otwiera → Libreria Piccolomini"
-        },
-        {
-          "time": "12:00",
-          "event": "Spacer przez kontrade (Torre, Aquila, Chiocciola)"
-        },
-        {
-          "time": "13:00",
-          "event": "Obiad Trattoria Papei (Piazza del Mercato 6)"
-        },
-        {
-          "time": "14:00",
-          "event": "Enoteca Italiana (Fortezza Medicea) — opcjonalna degustacja (45 min)"
-        },
-        {
-          "time": "15:00",
-          "event": "Wyjazd z parkingu — przed popołudniowym szczytem"
-        },
-        {
-          "time": "15:40",
-          "event": "Powrót do bazy"
-        }
-      ],
-      "daily_km_estimate": 48,
-      "wine_tasting": {
-        "place": "Enoteca Italiana — Fortezza Medicea",
-        "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
-        "time": "14:00 (po obiedzie, przed odjazdem z parkingu)",
-        "price": "od €3/kieliszek; butelki od €12",
-        "note": "Narodowa enoteka włoska — 1500+ win, Brunello, Chianti Classico, Morellino, Nobile. Po obiedzie u Papei: Piazza del Mercato → Fortezza (12 min pieszo). Daj sobie 45 min. Zweryfikuj godziny przed wizytą (wt–sob 12:00–20:00 w sezonie).",
-        "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
-      },
-      "summary": "Siena o świcie, zanim przyjdą sobotnie tłumy (wyjazd ~7:00, Campo ok. 7:30). Piazza del Campo — muszlowy plac wyłożony cegłą w 9 segmentach (nawiązanie do „Rządu Dziewięciu”), z Palazzo Pubblico i Fonte Gaia. Potem Duomo di Siena (katedra) z Libreria Piccolomini (biblioteka z freskami); we wrześniu 2026 odkryta podłoga mozaikowa. Spacer przez kontrade Oca i Drago — historyczne dzielnice-klany poza trasą turystyczną."
-    },
-    {
-      "date": "20.09 (nd)",
-      "day_num": 9,
       "type": "tuscany",
-      "label": "TOSKANIA · DZIEŃ 7",
+      "label": "TOSKANIA · DZIEŃ 6",
       "title": "Zamki i wino Chianti",
       "image": "brolio",
       "base_id": "base2",
@@ -2121,13 +1924,14 @@
       },
       "practical_tips": [
         "Brolio (10:00–12:00, giardini + querceti) → Badia a Coltibuono (~12:30, ogród i sklep) → lunch w Radda in Chianti → spacer po Radda popołudnie",
-        "Vendemmia (wrzesień): winiarnie mogą mieć skrócone godziny — sprawdź przed wyjazdem"
+        "Vendemmia (wrzesień): winiarnie mogą mieć skrócone godziny — sprawdź przed wyjazdem",
+        "Sobota — winnice bywają zajęte: degustacje w Brolio/Coltibuono rezerwuj z wyprzedzeniem."
       ],
       "narrative": "Wyjeżdżamy o 9:30, powietrze już się rozgrzewa, cykady zaczynają swój koncert — 20 minut do Castello di Brolio, otwiera o 10:00. Zamek rodu Ricasoli stoi na tym wzgórzu od 1141 roku, a to właśnie tu, w XIX wieku, baron Bettino Ricasoli ustalił recepturę Chianti Classico, którą świat zna do dziś. Bilet (€7,50) otwiera ogrody, bastiony i kaplicę, w cenie jedna degustacja wina — stoimy potem na murach z kieliszkiem sangiovese, patrząc na 240 hektarów winnic rozlanych po wzgórzach aż po horyzont. Wokół murów nieformalna pętla 2–3 km przez querceti — dęby omszałe upałem, cień i zapach rozgrzanej żywicy. Ok. 12:00 wyjazd do Badia a Coltibuono (10 minut) — benedyktyńskie opactwo z 1051 roku, jeden z najlepiej zachowanych klasztornych kompleksów Chianti: krótki spacer po ogrodzie ziołowym, sklep z winem i oliwą pachnący drewnem starych beczek; pełna degustacja (€25–35, slot 15:00) tylko dla chętnych, którzy mają jeszcze czas. Lunch w Radda in Chianti — Osteria Il Rifugio del Chianti (Via Roma 6), okno pranzo 12:30–14:30, więc nie zwlekamy z wyjazdem z opactwa. Po lunchu spacer po Piazza Ferrucci i Palazzo del Podestà — dawnej stolicy Ligi Chianti z 1384 roku, kamienne uliczki bez tłumów, jakie zalewają dziś Greve. Wracamy do bazy ok. 17:00, gdy słońce zaczyna już złocić rzędy winorośli.",
       "web_research": [
         {
           "topic": "Castello di Brolio — orari 2026",
-          "summary": "20.03–12.10: codziennie 10–19 (biglietteria do 18). 13–31.10: 10–18. 20.09 = niedziela: otwarte. Zimą (koniec XII–połowa III) zamknięte.",
+          "summary": "20.03–12.10: codziennie 10–19 (biglietteria do 18). 13–31.10: 10–18. 19.09 = sobota: otwarte. Zimą (koniec XII–połowa III) zamknięte.",
           "source": "https://www.ricasoli.com/castello/",
           "checked": "2026-07"
         },
@@ -2170,7 +1974,7 @@
       ],
       "image2": "radda-chianti",
       "opening_hours": {
-        "castello_brolio": "20.03–12.10: codz. 10–19 (biglietteria do 18). 20.09 nd = otwarte.",
+        "castello_brolio": "20.03–12.10: codz. 10–19 (biglietteria do 18). 19.09 sob = otwarte.",
         "badia_coltibuono": "Sklep: pn–nd 10–18. Degustacje: codz. 11:00 i 15:00. Ristorante: 12:30–14:30.",
         "radda_in_chianti": "Palazzo del Podestà: zewnątrz 24h. Enotece w Radda: 10–19."
       },
@@ -2229,10 +2033,10 @@
       "summary": "Klasyczny dzień Chianti wśród winnic i cyprysów. Castello di Brolio (zamek Ricasoli od 1141) — tu Bettino Ricasoli w 1872 r. zapisał „recepturę” Chianti Classico (Sangiovese + Canaiolo). Badia a Coltibuono — opactwo benedyktyńskie z XI w., ogród ziołowy i degustacja. Wieczór: Radda in Chianti — średniowieczne borgo na 530 m n.p.m., dawna stolica Ligi Chianti (1384)."
     },
     {
-      "date": "21.09 (pn)",
-      "day_num": 10,
+      "date": "20.09 (nd)",
+      "day_num": 9,
       "type": "tuscany",
-      "label": "TOSKANIA · DZIEŃ 8",
+      "label": "TOSKANIA · DZIEŃ 7",
       "title": "Crete Senesi (gliniaste wzgórza) — opactwo i krajobraz",
       "image": "monte-oliveto",
       "base_id": "base2",
@@ -2242,7 +2046,7 @@
         {
           "name": "Abbazia di Monte Oliveto Maggiore (opactwo z freskami św. Benedykta)",
           "drive_min": 61,
-          "description": "Benedyktyńska abbazia z XIV w. w krajobrazie Crete Senesi. Chiostro Grande: 35 lunet z cyklem życia św. Benedykta — Luca Signorelli (8 scen) i Il Sodoma (26 scen, 1505–1508). Poniedziałek: otwarte.",
+          "description": "Benedyktyńska abbazia z XIV w. w krajobrazie Crete Senesi. Chiostro Grande: 35 lunet z cyklem życia św. Benedykta — Luca Signorelli (8 scen) i Il Sodoma (26 scen, 1505–1508). Niedziela: otwarte (o 11:00 msza z chorałem — freski w Chiostro Grande zwiedzaj wcześniej).",
           "type": "cultural",
           "image_key": "monte-oliveto",
           "gps_hint": "Abbazia Monte Oliveto Maggiore, Loc. Chiusure, 53041 Asciano SI",
@@ -2272,7 +2076,7 @@
         {
           "name": "Asciano — Crete Senesi (gliniaste wzgórza, biancane)",
           "drive_min": 18,
-          "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez biancane (białe gliniane wzgórza). Museo d'Arte Sacra w Palazzo Corboli — w poniedziałki zamknięte.",
+          "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez biancane (białe gliniane wzgórza). Museo d'Arte Sacra w Palazzo Corboli — otwarte śr–nd (w niedzielę czynne 10:30–13, 15–18:30).",
           "type": "cultural",
           "image_key": "asciano",
           "gps_hint": "Asciano SI — parking przy Piazza del Grano",
@@ -2300,16 +2104,16 @@
           "ribollita",
           "vino Orcia DOC"
         ],
-        "note": "Lokalna osteria w centrum Asciano. Tel. +39 0577 718056. Poniedziałek: sprawdź godziny.",
+        "note": "Lokalna osteria w centrum Asciano. Tel. +39 0577 718056. Niedziela: sprawdź godziny.",
         "price": "~€15–22/os",
         "phone": "+39 0577 718056",
         "opening_hours": "Codz. 12:30–14:30, 19:30–21:30."
       },
       "practical_tips": [
         "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma, 2h) → 11:30 opcjonalnie Bosco Ragnaia (30–45 min) → 12:30 Asciano → 13:00 lunch La Tombolina → popołudnie Crete Senesi",
-        "Bilet Monte Oliveto poniedziałek: €7 (Vivaticket €6) — bibl. €4 pn–cz"
+        "Bilet Monte Oliveto: €7 (Vivaticket €6). Niedziela: msza z chorałem 11:00 — freski w Chiostro Grande zwiedzaj 9:30–11:00."
       ],
-      "narrative": "Wyjeżdżamy o 9:00 w stronę zupełnie innego krajobrazu — ok. godzinę (61 min) do Abbazia Monte Oliveto Maggiore, otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5–2h). Plan dnia jest napięty, więc kolejny przystanek jest opcjonalny: jeśli starczy czasu, 26 minut dalej czeka Bosco della Ragnaia w San Giovanni d'Asso — filozoficzny ogród założony w dawnym lesie leccio, cichy i pusty, wstęp wolny; w razie poślizgu pomijamy go bez żalu. Dalej do Asciano, serca Crete Senesi, na lunch w Osteria La Tombolina (Via Mameli 11). Muzeum w Asciano jest dziś, w poniedziałek, zamknięte, więc popołudnie spędzamy inaczej — spacerem po biancane, białych glinianych wzgórzach pociętych erozją jak księżycowy krajobraz, gdzie nie rośnie prawie nic poza kępami traw, i po sennych uliczkach miasteczka, gdzie okiennice już się domykają na sjestę. Wracamy do bazy ok. 17:30, z butami pokrytymi jasnym pyłem Crete.",
+      "narrative": "Wyjeżdżamy o 9:00 w stronę zupełnie innego krajobrazu — ok. godzinę (61 min) do Abbazia Monte Oliveto Maggiore, otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5–2h; w niedzielę o 11:00 msza z chorałem gregoriańskim — freski oglądamy wcześniej). Plan dnia jest napięty, więc kolejny przystanek jest opcjonalny: jeśli starczy czasu, 26 minut dalej czeka Bosco della Ragnaia w San Giovanni d'Asso — filozoficzny ogród założony w dawnym lesie leccio, cichy i pusty, wstęp wolny; w razie poślizgu pomijamy go bez żalu. Dalej do Asciano, serca Crete Senesi, na lunch w Osteria La Tombolina (Via Mameli 11). Muzeum d'Arte Sacra w Palazzo Corboli jest dziś, w niedzielę, otwarte, więc po drodze zaglądamy do środka, a resztę popołudnia spędzamy na spacerze po biancane, białych glinianych wzgórzach pociętych erozją jak księżycowy krajobraz, gdzie nie rośnie prawie nic poza kępami traw, i po sennych uliczkach miasteczka, gdzie okiennice już się domykają na sjestę. Wracamy do bazy ok. 17:30, z butami pokrytymi jasnym pyłem Crete.",
       "web_research": [
         {
           "topic": "Monte Oliveto Maggiore — orari",
@@ -2331,7 +2135,7 @@
         },
         {
           "topic": "Monte Oliveto Maggiore — orari wrzesień",
-          "summary": "Ora legale: 9:30–12:20 i 14:30–17:40. Pn 21.09 = biglietto unico €7 (Vivaticket €6). Cykl fresków Il Sodoma w chiostro.",
+          "summary": "Ora legale: 9:30–12:20 i 14:30–17:40. Nd 20.09 = biglietto unico €7 (Vivaticket €6). Cykl fresków Il Sodoma w chiostro.",
           "source": "https://www.monteolivetomaggiore.it/abbazia/orario-di-apertura/",
           "checked": "2026-07"
         },
@@ -2361,7 +2165,7 @@
         },
         {
           "topic": "Asciano i Crete Senesi — krajobraz",
-          "summary": "Asciano = serce Crete Senesi. Museo d'Arte Sacra (Palazzo Corboli): €5, 10:30–13:00 i 15:00–18:30 (pn zamknięte — 21.09 pn = ZAMKNIĘTE). Balze gliniane najlepiej widoczne ze SP438, km 14–20 (parking przy drodze). Idealne światło: wczesny poranók lub złota godzina.",
+          "summary": "Asciano = serce Crete Senesi. Museo d'Arte Sacra (Palazzo Corboli): €5, 10:30–13:00 i 15:00–18:30 (pn–wt zamknięte — 20.09 nd = OTWARTE). Balze gliniane najlepiej widoczne ze SP438, km 14–20 (parking przy drodze). Idealne światło: wczesny poranók lub złota godzina.",
           "checked": "2026-06"
         }
       ],
@@ -2369,7 +2173,7 @@
       "opening_hours": {
         "monte_oliveto_maggiore": "Codziennie 9:30–12:20 i 14:30–17:40 (ora legale). Cisza obowiązuje.",
         "bosco_della_ragnaia": "Codz. świt–zmierzch (bezpłatny). GPS: San Giovanni d'Asso, SP146.",
-        "asciano_museo": "Museo d'Arte Sacra (Palazzo Corboli): wt–nd 10:30–13 i 15–18:30. 21.09 pn = ZAMKNIĘTE."
+        "asciano_museo": "Museo d'Arte Sacra (Palazzo Corboli): śr–nd 10:30–13 i 15–18:30 (pn–wt zamknięte). 20.09 nd = OTWARTE."
       },
       "parking": {
         "monte_oliveto": "Parcheggio Monte Oliveto Maggiore — bezpłatny, przy wejściu do klasztoru.",
@@ -2416,16 +2220,16 @@
       "summary": "Całkiem inny krajobraz: Crete Senesi — gliniaste, „księżycowe” wzgórza na południe od Sieny. Abbazia di Monte Oliveto Maggiore (ceglane opactwo wśród cyprysów): Chiostro Grande z cyklem fresków życia św. Benedykta — Luca Signorelli i Il Sodoma. Opcjonalnie Bosco della Ragnaia (ogród filozoficzny w lesie leccio). Asciano i biancane — białe gliniane pagórki typowe dla Crete."
     },
     {
-      "date": "22.09 (wt)",
-      "day_num": 11,
+      "date": "21.09 (pn)",
+      "day_num": 10,
       "type": "tuscany",
-      "label": "TOSKANIA · DZIEŃ 9",
+      "label": "TOSKANIA · DZIEŃ 8",
       "title": "Val d'Orcia — Pienza, Bagno Vignoni i Brunello",
       "image": "bagno-vignoni",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
       "drive_limit_min": 82,
-      "warning": "22.09 to najdłuższy dzień jazdy w całym planie i jedyny, gdzie cele leżą 70–85 min od bazy (reszta ≤61 min). Realnie ok. 3,5 h za kierownicą (base→Pienza 71 min, powrót Montalcino→baza 82 min — zweryfikowane OSRM). Kolejność ułożona tak, by minimalizować jazdę i złapać Pienzę wcześnie rano, gdy jest pusta. UWAGA: Palazzo Piccolomini jest we wtorki ZAMKNIĘTY, więc Pienza to dziś spacer po mieście i tarasy, bez wnętrza pałacu. Wrzesień = żniwa: uważaj na wolne traktory na SP2/SP53. Zostaw bufor — nie planuj nic po powrocie.",
+      "warning": "21.09 (poniedziałek) to najdłuższy dzień jazdy w całym planie i jedyny, gdzie cele leżą 70–85 min od bazy (reszta ≤61 min). Realnie ok. 3,5 h za kierownicą (base→Pienza 71 min, powrót Montalcino→baza 82 min — zweryfikowane OSRM). Kolejność ułożona tak, by minimalizować jazdę i złapać Pienzę wcześnie rano. Plus dnia powszedniego: Pienza jest spokojniejsza niż w weekend, a Palazzo Piccolomini — zamknięte we wtorki — w poniedziałek jest OTWARTE, więc wchodzimy do środka. Wrzesień = żniwa: uważaj na wolne traktory na SP2/SP53. Zostaw bufor — nie planuj nic po powrocie.",
       "attractions": [
         {
           "name": "Pienza — renesansowe miasto-utopia Piusa II",
@@ -2438,8 +2242,8 @@
             11.6781
           ],
           "image_key": "pienza",
-          "opening_hours": "Palazzo Piccolomini: ZAMKNIĘTY we wtorki — a 22.09 to wtorek! (sezon pn/śr–nd 10:30–17:00, kasa do 16:30). Cattedrale, Piazza Pio II i tarasy nad Val d'Orcia: dostępne codziennie.",
-          "ticket_price": "Palazzo Piccolomini: €7 — ale we wtorek zamknięty, więc dziś Pienza to spacer po mieście (bezpłatny). Katedra: bezpłatna.",
+          "opening_hours": "Palazzo Piccolomini: otwarte pn/śr–nd 10:30–17:00 (kasa do 16:30), we wtorki zamknięte — 21.09 to poniedziałek, więc OTWARTE. Cattedrale, Piazza Pio II i tarasy nad Val d'Orcia: dostępne codziennie.",
+          "ticket_price": "Palazzo Piccolomini: €7 (21.09 pn — otwarte). Katedra: bezpłatna.",
           "duration_h": 2.0
         },
         {
@@ -2497,7 +2301,7 @@
         "Timeline: Bagno Vignoni (9:00, 1h) → Pienza (10:30, 2h) → lunch Latte di Luna / Pienza (12:30) → Montalcino (14:30, 1,5h) → powrót ~17:00",
         "Dojazd: z Castelnuovo B. — Bagno Vignoni ~45–60 min (SP2/SP53, wrzesień = zbiory, traktory). Wyjazd przed 8:00."
       ],
-      "narrative": "Najdłuższy wypad całego wyjazdu — Val d'Orcia leży realnie 70–85 minut od bazy w Chianti, więc ruszamy o 8:00 i układamy dzień tak, żeby jak najmniej kluczyć. Najpierw, po ok. 71 minutach przez Crete i SP2, docieramy do Pienzy — o tej porze miasto należy jeszcze do nas. Pienza to renesansowe marzenie papieża Piusa II, który w XV wieku kazał przebudować rodzinne Corsignano w „idealne miasto\": regularna Piazza Pio II, katedra i tarasy, z których Val d'Orcia rozlewa się aż po Monte Amiata. Jest jednak haczyk — Palazzo Piccolomini, zwykły cel numer jeden, we wtorki jest zamknięty, a dziś właśnie wtorek; nie tracimy więc na niego czasu, tylko chłoniemy miasto, katedrę i pecorino di Pienza wprost z serowarni przy Corso Rossellino. Stąd tylko 21 minut do Bagno Vignoni, gdzie zamiast rynku jest wielki termalny basen — para unosi się nad wodą pośrodku placu, a my jemy obiad w trattorii tuż obok (kąpiel na samym placu jest zakazana, ale darmowe Parco dei Mulini poniżej pozwala zamoczyć nogi w ciepłych strumieniach). Po południu 28 minut na zachód do Montalcino — miasta Brunello. Wspinamy się na Fortezzę (€4) po widok 360° na całą dolinę, a potem w Enoteca La Fortezza, wbudowanej w mury twierdzy, degustujemy to, co uczyniło Montalcino sławnym: Brunello di Montalcino DOCG, wino, które dojrzewa w beczce latami. Powrót do bazy zajmuje jeszcze 82 minuty, więc w Chianti jesteśmy ok. 17:30 — i świadomie nie planujemy już nic na wieczór, bo to był dzień z pełnym bakiem wrażeń i pełnym licznikiem kilometrów.",
+      "narrative": "Najdłuższy wypad całego wyjazdu — Val d'Orcia leży realnie 70–85 minut od bazy w Chianti, więc ruszamy o 8:00 i układamy dzień tak, żeby jak najmniej kluczyć. Najpierw, po ok. 71 minutach przez Crete i SP2, docieramy do Pienzy — o tej porze miasto należy jeszcze do nas. Pienza to renesansowe marzenie papieża Piusa II, który w XV wieku kazał przebudować rodzinne Corsignano w „idealne miasto\": regularna Piazza Pio II, katedra i tarasy, z których Val d'Orcia rozlewa się aż po Monte Amiata. Mamy szczęście co do dnia tygodnia: Palazzo Piccolomini, letnia rezydencja papieża Piusa II, we wtorki jest zamknięty — ale dziś poniedziałek, więc wchodzimy do środka, na renesansowe komnaty i wiszący ogród z lodżią, z której rozciąga się widok na całą dolinę. Do tego katedra i pecorino di Pienza wprost z serowarni przy Corso Rossellino, a że to powszedni dzień, miasto jest spokojniejsze niż w weekend. Stąd tylko 21 minut do Bagno Vignoni, gdzie zamiast rynku jest wielki termalny basen — para unosi się nad wodą pośrodku placu, a my jemy obiad w trattorii tuż obok (kąpiel na samym placu jest zakazana, ale darmowe Parco dei Mulini poniżej pozwala zamoczyć nogi w ciepłych strumieniach). Po południu 28 minut na zachód do Montalcino — miasta Brunello. Wspinamy się na Fortezzę (€4) po widok 360° na całą dolinę, a potem w Enoteca La Fortezza, wbudowanej w mury twierdzy, degustujemy to, co uczyniło Montalcino sławnym: Brunello di Montalcino DOCG, wino, które dojrzewa w beczce latami. Powrót do bazy zajmuje jeszcze 82 minuty, więc w Chianti jesteśmy ok. 17:30 — i świadomie nie planujemy już nic na wieczór, bo to był dzień z pełnym bakiem wrażeń i pełnym licznikiem kilometrów.",
       "web_research": [
         {
           "topic": "Bagno Vignoni — piazza termalna",
@@ -2506,7 +2310,7 @@
         },
         {
           "topic": "Pienza — Piazza Pio II i ZTL",
-          "summary": "Centrum UNESCO. Cattedrale (bezpłatna). Palazzo Piccolomini €7 (wt–nd 10–18:30, pn zamknięte — 22.09 wt = OTWARTE). Museo Diocesano €4,50. ZTL dla obcych tablic. Parking: Parcheggio Madonna delle Grazie, 300 m od Porta al Ciglio, bezpłatny.",
+          "summary": "Centrum UNESCO. Cattedrale (bezpłatna). Palazzo Piccolomini €7 (pn/śr–nd 10:30–17:00, wt zamknięte — 21.09 pn = OTWARTE). Museo Diocesano €4,50. ZTL dla obcych tablic. Parking: Parcheggio Madonna delle Grazie, 300 m od Porta al Ciglio, bezpłatny.",
           "checked": "2026-06"
         },
         {
@@ -2534,7 +2338,7 @@
       "image2": "pienza",
       "opening_hours": {
         "bagno_vignoni": "Vasche medicee: 24h (kąpiel zakazana). Parco dei Mulini: świt–zmierzch.",
-        "pienza_palazzo_piccolomini": "Wt–Nd 10:00–18:30. 22.09 wt = otwarte (€7).",
+        "pienza_palazzo_piccolomini": "Pn/śr–nd 10:30–17:00 (kasa do 16:30), wt zamknięte. 21.09 pn = otwarte (€7).",
         "montalcino_fortezza": "Codz. 9:00–20:00 (€4). Enoteca La Fortezza: 9:00–20:00."
       },
       "parking": {
@@ -2568,7 +2372,7 @@
         },
         {
           "time": "10:00",
-          "event": "Duomo, Corso Rossellino, pecorino di Pienza (Palazzo Piccolomini zamknięty — wtorek)"
+          "event": "Palazzo Piccolomini (otwarte w pon), Duomo, Corso Rossellino, pecorino di Pienza"
         },
         {
           "time": "11:15",
@@ -2606,6 +2410,204 @@
       "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
       "daily_km_estimate": 146,
       "summary": "Najdłuższy dzień jazdy z Chianti (~70–85 min w jedną stronę): Val d'Orcia — dolina Orcia, krajobraz UNESCO. Pienza — renesansowe miasto-utopia Piusa II (projekt Rosselliniego, 1459–62), pecorino i panorama doliny. Bagno Vignoni — wioska z XVI-wiecznym basenem termalnym na Piazza delle Sorgenti (kąpiel w placu zabroniona; Parco dei Mulini poniżej). Montalcino — forteca z panoramą 360° i degustacja Brunello di Montalcino DOCG."
+    },
+    {
+      "date": "22.09 (wt)",
+      "day_num": 11,
+      "type": "tuscany_popular",
+      "label": "TOSKANIA · DZIEŃ 9 ★ POPULARNY",
+      "title": "Siena — o świcie przed tłumami",
+      "image": "siena",
+      "base_id": "base2",
+      "base_label": "BAZA 2 — Chianti Senese",
+      "drive_limit_min": 39,
+      "popular": true,
+      "crowd_tip": "WTOREK 22.09 — dzień powszedni, znacznie mniej tłumów niż w sobotę. Wyjazd 7:00, parking Santa Caterina lub Stadio-Fortezza. Campo o 7:30 jeszcze prawie puste. Tłumy narastają od 10:00 (wycieczki), ale w powszedni dzień są wyraźnie mniejsze. Powrót do bazy przed 14:00.",
+      "attractions": [
+        {
+          "name": "Piazza del Campo (główny plac Sieny) — o świcie",
+          "drive_min": 39,
+          "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
+          "type": "popular",
+          "image_key": "siena",
+          "gps_hint": "Piazza del Campo, 53100 Siena SI",
+          "coords": [
+            43.3183,
+            11.3318
+          ],
+          "opening_hours": "Plac otwarty całą dobę. Palazzo Pubblico: Pn–Sb 10:00–19:00, Nd 11:00–18:00.",
+          "ticket_price": "Plac — bezpłatny. Torre del Mangia: €10 (wejście 10:00–19:00)",
+          "duration_h": 1.5
+        },
+        {
+          "name": "Duomo di Siena (katedra) + Libreria Piccolomini (biblioteka z freskami)",
+          "drive_min": 39,
+          "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki.",
+          "type": "popular",
+          "image_key": "siena",
+          "gps_hint": "Piazza del Duomo, Siena SI",
+          "coords": [
+            43.3171,
+            11.3289
+          ],
+          "opening_hours": "Śr–Sb 10:30–19:00, Pn–Wt 10:30–17:30, Nd 13:30–17:30.",
+          "ticket_price": "OPA SI Pass: €14 (Duomo + Libreria + Battistero). Libreria Piccolomini extra: €4–6.",
+          "duration_h": 2.0
+        },
+        {
+          "name": "Spacer przez kontrade (historyczne dzielnice-klany Sieny)",
+          "drive_min": 39,
+          "description": "11:00–12:00. Oca (Via dei Termini → Fontebranda) i Drago (Piazza Matteotti → Via del Paradiso). Autentyczne dzielnice zamiast turystycznych tras.",
+          "type": "cultural",
+          "image_key": "siena",
+          "gps_hint": "Via dei Termini (Oca) lub Piazza Matteotti 18 (Drago)",
+          "coords": [
+            43.3183,
+            11.3318
+          ],
+          "duration_h": 1.0,
+          "opening_hours": "Ulice publiczne, brak godzin. Muzea kontrady: na zamówienie grupowe. Osteria kont. otwarta od 12:00."
+        }
+      ],
+      "oak_forest": null,
+      "food": {
+        "place": "Antica Trattoria Papei — Siena",
+        "address": "Piazza del Mercato 6, 53100 Siena SI",
+        "dishes": [
+          "pici cacio e pepe",
+          "ribollita",
+          "pappardelle al cinghiale",
+          "vino sfuso (z beczki)"
+        ],
+        "note": "Kultowa trattoria za Palazzo Pubblico. Rezerwacja tel. od 10:00 (wtorek — rezerwacja i tak wskazana). Tel. +39 0577 280894.",
+        "price": "~€15–22/os",
+        "phone": "+39 0577 280894",
+        "opening_hours": "Pranzo 12:00–15:00, cena 19:00–22:30. Nd zamkn. Rezerwacja wskazana.",
+        "gps_hint": "Piazza del Mercato 6 — wejście od tyłu Piazza del Campo"
+      },
+      "practical_tips": [
+        "Wtorek (powszedni) — mniejszy tłok niż w weekend, ale wyjazd i tak 7:00: Campo o 7:30 prawie puste. Tłumy od 10:00, szczyt 11:00–15:00.",
+        "Parking: Santa Caterina (schody ruchome, bliżej Duomo) — €2/h",
+        "OPA SI PASS kup online wieczorem wcześniej — skip kolejki, wejdź tuż po 10:00",
+        "Bonus wtorku: tour „Il Clavigero del Duomo — per primi in Cattedrale\" (wt–pt, 7:30–9:00, maks. 18 os., rezerwacja operaduomo.siena.it) — wejście do katedry przed wszystkimi, idealne pod strategię świtu."
+      ],
+      "narrative": "Wyjeżdżamy z bazy o 7:00 — wtorek, a o tej porze Chianti jeszcze śpi, a do Sieny mamy ok. 24 km i 40 minut jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą wprost pod mury, albo przy Stadio-Fortezza. Piazza del Campo o 7:30 należy właściwie tylko do nas — słońce dopiero wschodzi, ktoś zamiata próg kawiarni, cisza, w której słychać własne kroki po charakterystycznym wachlarzowatym bruku. To ten sam plac, na którym za kilka godzin będzie tłoczno jak na Palio, ale teraz Fonte Gaia szumi tylko dla nas. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16 w sezonie odkrytej podłogi mozaikowej) pozwala ominąć kolejkę, a w środku Libreria Piccolomini olśniewa złoconymi freskami Pinturicchia, które nie wyblakły przez pięćset lat. Ok. 11:00 spacer przez kontrady Oca i Drago — boczne uliczki z chorągiewkami bractw rywalizujących w Palio, gdy tłumy od 10:00 zaczynają zalewać Campo. Lunch w Antica Trattoria Papei (Piazza del Mercato 6, rezerwacja) — wśród sieneńczyków jedzących tu od pokoleń. Po obiedzie opcjonalnie degustacja w Enoteca Italiana (Fortezza Medicea, 12 minut pieszo, 45 minut) — narodowa enoteka z winami z całych Włoch, w tym miejscowym Chianti Classico. Z parkingu wyjeżdżamy ok. 15:00, zanim popołudniowy szczyt zamieni uliczki w korek turystów, w bazie jesteśmy ok. 15:45 — reszta popołudnia znów należy tylko do nas.",
+      "web_research": [
+        {
+          "topic": "Siena o 7:30 — bez tłumów",
+          "summary": "Piazza del Campo o świcie: pusty plac, fotografowie i lokalni. Kawiarnie od ~7:00. Tłumy (wycieczki z Florencji) od 10:00. W dni powszednie (jak wtorek) wyraźnie luźniej niż w weekend.",
+          "source": "https://www.chasinghippoz.com/travel-photo-blog/siena-italy",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Parking Santa Caterina",
+          "summary": "Via Esterna di Fontebranda. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome gratis do centrum. Max wys. 2,0 m. Blisko Duomo i San Domenico.",
+          "source": "https://sigericospa.it/parcheggio-santa-caterina/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Parking Stadio-Fortezza (zona San Domenico)",
+          "summary": "Area Fortezza Medicea, wyjście lato stadio = zona San Domenico, przed bazyliką. €2/h (7–20), €26/dzień, gratis 20:00–7:00. 709 miejsc, ~15 min pieszo do Campo.",
+          "source": "https://sipark.siena.it/tariffe/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "OPA SI PASS — skip-line + podłoga 2026",
+          "summary": "Wtorek 22.09: kompleks 10:00–19:00 (Muzeum 9:30–19:30). Podłoga odkryta 18.08–15.11, bilet €16. Kup online = bez kolejki do kasy. Ważny 3 dni, audioguide w cenie.",
+          "source": "https://www.opasipass.com/en/opening-hours/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Antica Trattoria Papei",
+          "summary": "Piazza del Mercato 6. Cucina 12:00–22:30. Pranzo 12–15, cena 19–22:30. Rezerwacje: 0577 280894 (10:00–19:00). Taras latem, >100 miejsc na zewnątrz.",
+          "source": "https://anticatrattoriapapei.com/reservations/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Spacer kontrade Oca i Drago",
+          "summary": "Oca (Terzo Camollìa): Via dei Termini, Fontebranda, Santuario Santa Caterina, siedziba Vicolo del Tiratoio 13. Drago: Piazza Matteotti 18, Via del Paradiso, Via della Sapienza. Wieczorny spacer: Via del Costone.",
+          "source": "https://www.thepalio.eu/siena-tourist-guide/",
+          "checked": "2026-07"
+        }
+      ],
+      "image2": "siena-duomo",
+      "opening_hours": {
+        "piazza_campo": "Dostęp 24h. Najlepsze światło i brak tłumów: 7:00–8:30.",
+        "torre_mangia": "10:00–19:00 (1.04–31.10). Ostatnie wejście ~45 min przed zamknięciem. Bilet osobny (nie w OPA SI PASS).",
+        "duomo_complex": "22.09 (wtorek, sezon odkrytej podłogi): kompleks 10:00–19:00 (pn–sb). Muzeum dell'Opera: 9:30–19:30. Ostatnie wejście 30 min przed zamknięciem.",
+        "duomo_floor": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — OPA SI PASS €16 (vs €14 standard).",
+        "opera_duomo_ticket_office": "Piazza Duomo 7 + Visitor Center Via di Città 48 (obok Campo). Online = skip kolejki do kasy.",
+        "libreria_piccolomini": "W kompleksie Duomo — ten sam bilet OPA SI PASS.",
+        "antica_trattoria_papei": "Cucina 12:00–22:30. Pranzo 12:00–15:00, cena 19:00–22:30. Tel. 0577 280894 (rezerwacje 10:00–19:00)."
+      },
+      "parking": {
+        "recommended": "Santa Caterina (najwygodniejszy) lub Stadio-Fortezza lato stadio (zona San Domenico)",
+        "santa_caterina": "Parcheggio Santa Caterina — Via Esterna di Fontebranda. 473 miejsc, kryty, 24h. €2/h, €35/dzień. Schody ruchome do centrum (gratis). Max wysokość 2,0 m. ~10 min pieszo do Campo.",
+        "stadio_fortezza_san_domenico": "Parcheggio Stadio-Fortezza — wyjście LATO STADIO (zona San Domenico), przed bazyliką San Domenico. 709 miejsc. €2/h (7:00–20:00), €26/dzień, gratis 20:00–7:00. ~15 min pieszo do Campo.",
+        "san_domenico_note": "Nie ma osobnego parkingu „San Domenico” — chodzi o wyjście Stadio-Fortezza od strony stadionu lub parking Santa Caterina (schody przy San Domenico).",
+        "ztl": "Centrum Siena = ZTL z kamerami. Mandaty €80–150. Samochód zostaw na parkingu.",
+        "cost_estimate": "~€8–10 za 4h poranną wizytę (€2/h × 4h)",
+        "wyjazd_tip": "Wtorek 7:00 wyjazd → parking 7:20 → Campo 7:30 pieszo. Wyjazd z parkingu przed 14:00."
+      },
+      "fuel_stops": [
+        {
+          "name": "IP / Q8 Castelnuovo Berardenga",
+          "location": "BAZA 2 — Chianti Senese",
+          "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót, stacja przy SP408."
+        }
+      ],
+      "eta_timeline": [
+        {
+          "time": "07:00",
+          "event": "Wyjazd z bazy (~24 km, 39 min do Sieny)"
+        },
+        {
+          "time": "07:40",
+          "event": "Parking Santa Caterina lub Stadio-Fortezza"
+        },
+        {
+          "time": "07:45",
+          "event": "Piazza del Campo — Fontana Gaia bez tłumów"
+        },
+        {
+          "time": "09:30",
+          "event": "Caffè Fiorella — espresso + cornetto"
+        },
+        {
+          "time": "10:30",
+          "event": "Duomo otwiera → Libreria Piccolomini"
+        },
+        {
+          "time": "12:00",
+          "event": "Spacer przez kontrade (Torre, Aquila, Chiocciola)"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad Trattoria Papei (Piazza del Mercato 6)"
+        },
+        {
+          "time": "14:00",
+          "event": "Enoteca Italiana (Fortezza Medicea) — opcjonalna degustacja (45 min)"
+        },
+        {
+          "time": "15:00",
+          "event": "Wyjazd z parkingu — przed popołudniowym szczytem"
+        },
+        {
+          "time": "15:40",
+          "event": "Powrót do bazy"
+        }
+      ],
+      "daily_km_estimate": 48,
+      "wine_tasting": {
+        "place": "Enoteca Italiana — Fortezza Medicea",
+        "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
+        "time": "14:00 (po obiedzie, przed odjazdem z parkingu)",
+        "price": "od €3/kieliszek; butelki od €12",
+        "note": "Narodowa enoteka włoska — 1500+ win, Brunello, Chianti Classico, Morellino, Nobile. Po obiedzie u Papei: Piazza del Mercato → Fortezza (12 min pieszo). Daj sobie 45 min. Zweryfikuj godziny przed wizytą (wt–sob 12:00–20:00 w sezonie).",
+        "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
+      },
+      "summary": "Siena o świcie, zanim przyjdą tłumy (wyjazd ~7:00, Campo ok. 7:30). Piazza del Campo — muszlowy plac wyłożony cegłą w 9 segmentach (nawiązanie do „Rządu Dziewięciu”), z Palazzo Pubblico i Fonte Gaia. Potem Duomo di Siena (katedra) z Libreria Piccolomini (biblioteka z freskami); we wrześniu 2026 odkryta podłoga mozaikowa. Spacer przez kontrade Oca i Drago — historyczne dzielnice-klany poza trasą turystyczną."
     },
     {
       "date": "23.09 (śr)",
@@ -3338,12 +3340,12 @@
     "crowd_avoidance": {
       "popular_days": 2,
       "popular_places": [
-        "Siena (19.09)",
+        "Siena (22.09, wt)",
         "Florencja (23.09) — świadomy wyjątek"
       ],
       "tips": [
-        "Siena: tylko poranek, wyjazd przed 14:00",
-        "Pienza (22.09): przyjedź przed 9:30 — wtorek spokojniejszy niż weekend",
+        "Siena (22.09, wt): tylko poranek, wyjazd przed 14:00 — wtorek znacznie luźniejszy niż sobota",
+        "Pienza (21.09, pon): dzień powszedni, spokojniej niż w weekend, Palazzo Piccolomini otwarte",
         "Florencja (23.09): jedyny dzień, gdzie świadomie rezygnujemy z zasady unikania tłumów — przyjedź najwcześniej się da, zobacz Duomo przed 10:00",
         "Poza tym jednym dniem plan nadal unika Pizy i San Gimignano — zbyt daleko, żeby dokleić do istniejących dni bez rezygnacji z czegoś innego"
       ]

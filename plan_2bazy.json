@@ -1308,12 +1308,12 @@
       "image": "verrucole",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 25,
+      "drive_limit_min": 35,
       "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta pt–nd). Panorama 360° i mury dostępne bezpłatnie.",
       "attractions": [
         {
           "name": "Fortezza delle Verrucole (forteca) — spacer zewnętrzny",
-          "drive_min": 18,
+          "drive_min": 35,
           "description": "16.09 to środa — forteca zamknięta (otwarta pt–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich.",
           "type": "medieval",
           "image_key": "verrucole",
@@ -1328,7 +1328,7 @@
         },
         {
           "name": "Lago di Vagli (jezioro z zatopioną wioską Fabbriche di Careggine)",
-          "drive_min": 25,
+          "drive_min": 29,
           "description": "Sztuczne jezioro z zatopionym w 1953 r. miasteczkiem Fabbriche di Careggine. Spacer po tamie i okolicznych wzgórzach.",
           "type": "nature",
           "image_key": "vagli",
@@ -1343,7 +1343,7 @@
         },
         {
           "name": "Gorfigliano (mikrowioska z romańskim kościołem)",
-          "drive_min": 20,
+          "drive_min": 17,
           "description": "Mikrowioska z romańskim kościołem, kilkadziesiąt mieszkańców. Przykład autentycznego borgo bez renowacji turystycznej.",
           "type": "medieval",
           "gps_hint": "Gorfigliano, 55034 Minucciano LU",
@@ -1471,19 +1471,19 @@
           "note": "Zatankuj rano przed wyjazdem w góry — przy Vagli stacji brak."
         }
       ],
-      "daily_km_estimate": 47,
+      "daily_km_estimate": 95,
       "eta_timeline": [
         {
           "time": "09:00",
-          "event": "Wyjazd z bazy do Fortezzy delle Verrucole (18 min)"
+          "event": "Wyjazd z bazy do Fortezzy delle Verrucole (35 min)"
         },
         {
-          "time": "09:20",
+          "time": "09:35",
           "event": "Fortezza delle Verrucole — spacer zewnętrzny, mury i panorama 360° (środa: wnętrze niedostępne)"
         },
         {
           "time": "10:30",
-          "event": "Wyjazd do Lago di Vagli (25 min)"
+          "event": "Wyjazd do Lago di Vagli (29 min)"
         },
         {
           "time": "11:00",
@@ -1518,7 +1518,7 @@
       "image": "ponte-diavolo",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 25,
+      "drive_limit_min": 47,
       "attractions": [
         {
           "name": "Ponte della Maddalena / Ponte del Diavolo (most gotycki nazywany mostem diabelskim)",
@@ -1552,7 +1552,7 @@
         },
         {
           "name": "Pieve di Careggine (romański kościół parafialny nad Lago di Vagli)",
-          "drive_min": 22,
+          "drive_min": 47,
           "description": "Piękna romańska pieve z XI w. na wzgórzu nad Lago di Vagli — odmienny kąt widoku niż przy tamie. Wioska z ~200 mieszkańcami, zero turystów.",
           "type": "medieval",
           "image_key": "vagli",
@@ -1661,7 +1661,7 @@
           "note": "Opcjonalny postój na A11 — kawa przed Sieną."
         }
       ],
-      "daily_km_estimate": 43,
+      "daily_km_estimate": 77,
       "eta_timeline": [
         {
           "time": "09:00",
@@ -1685,18 +1685,18 @@
         },
         {
           "time": "13:30",
-          "event": "Wyjazd do Pieve di Careggine (30 min)"
+          "event": "Wyjazd do Pieve di Careggine (47 min)"
         },
         {
-          "time": "14:00",
+          "time": "14:17",
           "event": "Pieve di Careggine — romańska pieve na wzgórzu nad Lago di Vagli"
         },
         {
-          "time": "15:00",
+          "time": "15:05",
           "event": "Spacer po wiosce Careggine (~200 mieszkańców)"
         },
         {
-          "time": "17:00",
+          "time": "16:00",
           "event": "Powrót do bazy"
         }
       ],

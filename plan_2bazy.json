@@ -161,6 +161,16 @@
           "src": "images/firenze.jpg",
           "alt": "Katedra Santa Maria del Fiore o zachodzie słońca, widok z Piazzale Michelangelo",
           "credit": "Dllu / Wikimedia Commons (CC BY-SA 4.0)"
+        },
+        "pisa": {
+          "src": "images/pisa.jpg",
+          "alt": "Piazza dei Miracoli w Pizie z lotu ptaka — Krzywa Wieża, Duomo i Battistero",
+          "credit": "Arne Müseler / Wikimedia Commons / CC BY-SA 3.0 de"
+        },
+        "lucca": {
+          "src": "images/lucca.jpg",
+          "alt": "Piazza dell'Anfiteatro w Lukce — owalny plac na miejscu rzymskiego amfiteatru",
+          "credit": "Ingo Mehling / Wikimedia Commons / CC BY-SA 4.0"
         }
       }
     },
@@ -250,20 +260,20 @@
           "days": "13–17.09"
         },
         {
-          "label": "Castiglione di G.",
+          "label": "Lucca",
           "coords": [
-            44.155,
-            10.394
+            43.843,
+            10.5079
           ],
-          "type": "attraction"
+          "type": "popular"
         },
         {
-          "label": "Orecchiella",
+          "label": "Piza",
           "coords": [
-            44.19,
-            10.39
+            43.7229,
+            10.3966
           ],
-          "type": "nature"
+          "type": "popular"
         },
         {
           "label": "Grotta del Vento",
@@ -1156,8 +1166,39 @@
         "Pociąg Lucca→Pisa Centrale: ~30 min, ~41 kursów/dzień (co 20–30 min), bilet ~€3,50/os. Regionale bez rezerwacji miejsca — kup w automacie lub w aplikacji Trenitalia. Z Pisa Centrale na Piazza dei Miracoli ~20 min pieszo lub autobusem LAM Rossa.",
         "Da Giulio in Pelleria nieczynne w niedziele — 15.09 to wtorek, więc otwarte; mimo to zadzwoń (0583 55948) i zarezerwuj stolik na porę lunchu, bo miejsce jest oblegane przez lokalnych."
       ],
-      "narrative": "PLACEHOLDER",
-      "web_research": [],
+      "narrative": "Dziś zamiast gór — dwa miasta, i po raz drugi w całym planie oddajemy licznik kilometrów kolei. Ruszamy o 8:00 autem z Bargi w dół doliny Serchio; po ok. 40 minutach zostawiamy samochód na parkingu poza murami Lukki i dalej idziemy już tylko pieszo i pociągiem. Lucca to jedyne miasto we Włoszech, które zachowało kompletny renesansowy pierścień murów — dziś to szeroka, wysadzana platanami promenada biegnąca 4,2 km wokół całego starego miasta, po której lucchesi spacerują i jeżdżą na rowerach jak po parku zawieszonym nad dachami. Schodzimy z murów na Piazza dell'Anfiteatro — owalny plac dokładnie na fundamentach rzymskiego amfiteatru, którego kształt kamienice powtórzyły dom po domu. Kto ma siłę, wchodzi na Torre Guinigi (€8), średniowieczną wieżę z ogrodem dębów ostrolistnych rosnących 45 metrów nad ziemią — jeden z najdziwniejszych i najładniejszych widoków w Toskanii. Zaglądamy jeszcze do Duomo di San Martino po Volto Santo i nagrobek Ilarii del Carretto, kupujemy cantucci przy Via Fillungo, i po lunchu (tordelli lucchesi w Trattoria da Giulio) łapiemy pociąg — 30 minut i jesteśmy w Pizie. Ze stacji ~20 minut pieszo i wychodzimy na Piazza dei Miracoli: zielony dywan trawy, a na nim biały marmur Duomo, Battistero i słynna Krzywa Wieża, pochylona o cztery stopnie i wciąż stojąca po ośmiu wiekach. Wejście na szczyt (€20, 251 stopni) trzeba mieć zarezerwowane w slocie z wyprzedzeniem — ale nawet z dołu plac robi wrażenie, którego zdjęcia nie oddają. To turystyczny, tłoczny dzień, jak Florencja — świadomy wyjątek od reguły, bo tych dwóch miast po prostu nie sposób pominąć, będąc tak blisko. Wieczorem tą samą drogą wracamy: pociąg do Lukki, auto, dolina Serchio i baza w Bardze ok. 19:30.",
+      "web_research": [
+        {
+          "topic": "Krzywa Wieża — bilety i rezerwacja",
+          "summary": "Wejście tylko w slotach czasowych co ~30 min (grupy ~30 os.), 251 stopni bez windy, dzieci <8 lat nie wchodzą. Bilet €20 (zawiera wstęp do katedry). Bilet łączony całej Piazza dei Miracoli (Wieża + Duomo + Battistero + Camposanto + Museo delle Sinopie) €27. Rezerwacja online na opapisa.it, sloty otwierane do ~20 dni naprzód — w sezonie wykupują się szybko, rezerwuj z wyprzedzeniem.",
+          "source": "https://www.opapisa.it/en/tickets/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Piazza dei Miracoli — godziny",
+          "summary": "Zabytki placu czynne we wrześniu ok. 9:00–20:00 (dokładny kalendarz sezonowy na opapisa.it). Katedra: wstęp bezpłatny, ale wymaga bezpłatnego biletu czasowego z kasy/automatu. Sam plac i zdjęcia z zewnątrz — bezpłatne i dostępne cały czas. Realnie na plac wystarczą 2–3 h.",
+          "source": "https://www.opapisa.it/en/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Pociąg Lucca → Pisa Centrale",
+          "summary": "Regionale, bezpośrednie, ~25–30 min, ok. 30 kursów/dobę, bilet ~€3–4/os. Bez obowiązkowej rezerwacji miejsca. Ze stacji Pisa Centrale na Piazza dei Miracoli ~20 min pieszo albo autobusem LAM Rossa. Bilety kasuj przed wejściem do pociągu (automat/aplikacja).",
+          "source": "https://www.trenitalia.com",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Dojazd Barga → Lucca i parking",
+          "summary": "Autem ~37 km / ~40 min doliną Serchio (SS12/SR445). Parkuj POZA murami Lukki (np. Parcheggio Carducci, Palatucci, Cittadella) — całe centro storico to ZTL z kamerami. Alternatywa bez auta: pociąg Fornaci di Barga → Lucca ~44 min, ale rzadszy i z przesiadką logiki dnia — wygodniej autem do Lukki, dalej koleją do Pizy.",
+          "source": "https://www.comune.lucca.it",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Lucca — mury i Torre Guinigi",
+          "summary": "Mury renesansowe (XVI–XVII w.): kompletna pętla 4,2 km, dziś promenada dla pieszych i rowerzystów, wstęp wolny; wypożyczalnie rowerów przy murach ~€3–4/h, okrążenie 20–25 min. Torre Guinigi: wieża z 7 dębami ostrolistnymi na szczycie (~45 m), bilet €8 (ulg. €6), godziny sezonowe (do 20.IX zwykle 10:00–19:30). Piazza dell'Anfiteatro — zawsze dostępna.",
+          "source": "https://www.turismo.lucca.it",
+          "checked": "2026-07"
+        }
+      ],
       "opening_hours": {
         "lucca_mura": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie — spacer lub rower.",
         "torre_guinigi": "Codziennie (do 20.IX) 10:00–19:30. Bilet €8 (ulg. €6). Zamknięte 25 grudnia.",
@@ -1256,7 +1297,7 @@
       "daily_km_estimate": 75,
       "crowd_tip": "Piazza dei Miracoli w Pizie jest zatłoczona praktycznie cały dzień w sezonie — jak Florencja, to świadomy kompromis (plan zwykle omija tłumy, ale Krzywa Wieża jest tego warta). Strategia: Lucca rano (spokojniejsza i kameralna), Piza po południu ze slotem na Wieżę zarezerwowanym z wyprzedzeniem. Na samym placu tłum jest nieunikniony, ale mury Lukki i owalna Piazza dell'Anfiteatro dają oddech.",
       "warning": "Krzywa Wieża wymaga rezerwacji slotu godzinowego z wyprzedzeniem (opapisa.it) — bez tego można obejrzeć plac, Duomo i zrobić zdjęcia, ale nie wejść na wieżę. Piazza dei Miracoli i (w mniejszym stopniu) Lucca to najbardziej turystyczne punkty całego wyjazdu — spodziewaj się tłumów, zwłaszcza w porze południowej pod Wieżą. Dzień oparty na rozkładzie pociągów Lucca↔Pisa — sprawdź aktualne godziny Trenitalia bliżej wyjazdu.",
-      "summary": "Świadomy dzień z tłumem, ale spokojny rytm: auto do Lukki, potem pociąg do Pizy. Lucca — jedyny we Włoszech nienaruszony pierścień murów renesansowych (~4,2 km, dziś promenada), Piazza dell'Anfiteatro (plac na rzucie rzymskiego amfiteatru) i Torre Guinigi (45 m, ogród dębów ostrolistnych na szczycie). Piza — Piazza dei Miracoli (plac cudów): Krzywa Wieża (~4° pochylenia, 251 stopni, tylko ze slotem), Duomo, Battistero (baptysterium) i Camposanto."
+      "summary": "Świadomy dzień z tłumem, ale w spokojnym rytmie: autem do Lukki (renesansowe mury, Piazza dell'Anfiteatro, Torre Guinigi), potem pociągiem do Pizy na Piazza dei Miracoli i Krzywą Wieżę."
     },
     {
       "date": "16.09 (śr)",
@@ -3565,8 +3606,8 @@
         "id": "attractions",
         "name": "Atrakcje i wejściówki",
         "icon": "🎟️",
-        "per_person_min": 73,
-        "per_person_max": 149,
+        "per_person_min": 88,
+        "per_person_max": 192,
         "note": "Większość miejsc bezpłatna lub z symbolicznym wstępem",
         "items": [
           {
@@ -3598,14 +3639,20 @@
             "detail": "Grotta del Vento (€11–16), Rocca ×2 (€8), Palazzo Piccolomini (€7), terme opcjonalnie",
             "per_person_min": 0,
             "per_person_max": 30
+          },
+          {
+            "label": "Piza + Lucca — pociąg + Krzywa Wieża + Torre Guinigi",
+            "detail": "Pociąg dolina→Lucca→Piza w obie strony ~€15/os; Krzywa Wieża €20/os (opcja); Torre Guinigi €8/os (opcja). Sam plac i mury — bezpłatne.",
+            "per_person_min": 15,
+            "per_person_max": 43
           }
         ]
       }
     ],
-    "total_per_person_min": 812,
-    "total_per_person_max": 1218,
-    "total_4persons_min": 3248,
-    "total_4persons_max": 4872,
+    "total_per_person_min": 827,
+    "total_per_person_max": 1261,
+    "total_4persons_min": 3308,
+    "total_4persons_max": 5044,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
@@ -3799,6 +3846,13 @@
             "detail": "Brunelleschi Pass ze slotem godzinowym na kopułę — kup online na duomo.firenze.it z wyprzedzeniem (sloty na wrzesień znikają szybko). Bez tego wciąż można zwiedzić plac, Battistero z zewnątrz i pozostałe zabytki, ale nie wejść na kopułę.",
             "deadline": "min. 2-3 tygodnie przed 23.09",
             "priority": "medium"
+          },
+          {
+            "id": "krzywa-wieza",
+            "label": "Rezerwacja Krzywej Wieży — Piza (15.09)",
+            "detail": "Wejście na Krzywą Wieżę tylko w slocie czasowym — kup online na opapisa.it z wyprzedzeniem (sloty otwierane ~20 dni naprzód, w sezonie znikają szybko). €20/os lub €27 combo z całą Piazza dei Miracoli. Bez tego wciąż zobaczysz plac, katedrę i zdjęcia z zewnątrz.",
+            "deadline": "gdy otworzą slot ~20 dni przed 15.09",
+            "priority": "medium"
           }
         ]
       },
@@ -3824,7 +3878,7 @@
           {
             "id": "budget",
             "label": "Ustalić budżet grupowy",
-            "detail": "Szacunkowy koszt: €812–1218/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
+            "detail": "Szacunkowy koszt: €827–1261/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
             "deadline": "2–4 tygodnie przed wyjazdem",
             "priority": "medium"
           }

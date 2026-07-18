@@ -11,7 +11,7 @@ Notatka robocza (nie część strony) do szybkiej oceny "czy da się to jeszcze 
 | Cel | Auto | Pociąg | Werdykt |
 |---|---|---|---|
 | [[Lucca]] | ~35–40 min | z Fornaci di Barga: 44 min do Lucki (przesiadka) | brama do reszty regionu |
-| [[Piza]] | ~1h04 (56 km, SS12 bezpośrednio) | przez Luccę (35 min + ~25 min) — podobny czas | możliwe jako osobny dzień z Bargi, kosztem dnia 4 |
+| [[Piza]] | ~1h04 (56 km, SS12 bezpośrednio) | Fornaci di Barga → Lucca 44 min + Lucca → Pisa Centrale **~25–30 min** (Regionale, ~30 kursów/dobę, ~€3–4/os) | możliwe jako osobny dzień z Bargi, kosztem dnia 4 |
 | [[Florencja]] | nie dotyczy (za daleko, zły kierunek pociągów) | Lucca → Firenze SMN: ~1h33, bardzo częste (co 20–30 min), pierwszy 5:05, ostatni 22:31 | technicznie możliwe z Bargi, ale w obecnym planie robimy to z Chianti (bliżej) |
 
 ## Z Bazy 2 (Chianti / Castelnuovo Berardenga, coords 43.365, 11.513)

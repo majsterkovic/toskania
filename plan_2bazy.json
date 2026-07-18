@@ -614,7 +614,7 @@
           "event": "Kufstein — hotel, parking Innenstadt lub hotelowy"
         }
       ],
-      "summary": "Poznań → Kufstein: dwa dni tranzytu przez Niemcy i Austrię, nocleg w tyrolskim miasteczku pod Alpami."
+      "summary": "Pierwszy dzień drogi do Toskanii: Poznań → Niemcy → Austria, nocleg w Kufstein (tyrolskie miasteczko u stóp Alp)."
     },
     {
       "date": "13.09 (nd)",
@@ -868,7 +868,7 @@
         ],
         "tip": "Przy noclegu Mologno: parkuj przy agriturismo. Wieczorny spacer do Barga Vecchia: auto zostaje w Mologno lub Porta Reale"
       },
-      "summary": "Kufstein → Barga przez przełęcz Brenner — wjazd do Toskanii i zameldowanie w Garfagnanie."
+      "summary": "Drugi dzień tranzytu: Kufstein → przełęcz Brenner (Brennero) → Toskania. Zameldowanie w Bargze, w dolinie Garfagnana (górska dolina rzeki Serchio)."
     },
     {
       "date": "14.09 (pn)",
@@ -882,7 +882,7 @@
       "drive_limit_min": 30,
       "attractions": [
         {
-          "name": "Barga — stare miasto i Duomo",
+          "name": "Barga — stare miasto i Duomo di San Cristoforo (romańska katedra św. Krzysztofa)",
           "drive_min": 0,
           "description": "Jedno z najpiękniejszych niedocenionych borghi Toskanii. Romański Duomo di San Cristoforo (XI w.) z pulpitem marmurowym Guido Bigarelli (~1240) i widokiem na Alpy Apuańskie. Moneta €2 na oświetlenie wnętrza.",
           "type": "medieval",
@@ -897,7 +897,7 @@
           "entry_fee": "Wejście bezpłatne (Duomo: moneta €2 na oświetlenie)"
         },
         {
-          "name": "Treppignana via il Ciocco — las dębowo-kasztanowy",
+          "name": "Treppignana via il Ciocco — spacer lasem dębowo-kasztanowym",
           "drive_min": 15,
           "description": "Szlak 3,2 km (1–1,5 h) przez gęste lasy dębów bezszypułkowych (Quercus petraea) i kasztanów w Tenuta Il Ciocco. Widoki na dolinę Serchio i Barga Vecchia.",
           "type": "nature",
@@ -912,7 +912,7 @@
           "entry_fee": "Bezpłatny — teren leśny publiczny"
         },
         {
-          "name": "Grotta del Vento — Fornovolasco",
+          "name": "Grotta del Vento (jaskinia wiatru) — Fornovolasco",
           "drive_min": 20,
           "description": "4570 m zbadanych jaskiń krasowych w Alpach Apuańskich. 3 itinerari (1–3 h). Po wizycie spacer przez bukowe i dębowe lasy.",
           "type": "nature",
@@ -1087,214 +1087,176 @@
         }
       ],
       "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: tłumy w weekendy lipiec–sierpień, wrzesień znacznie spokojniej. Rezerwacja wymagana online.",
-      "summary": "Barga: taras widokowy przy Duomo, leśny spacer do Treppignany i jaskinia Grotta del Vento."
+      "summary": "Pierwszy dzień w Garfagnanie: Barga (średniowieczne borgo) z Duomo di San Cristoforo (romańska katedra i taras widokowy), spacer lasem dębowo-kasztanowym do Treppignany oraz Grotta del Vento (jaskinia wiatru w Alpach Apuańskich)."
     },
     {
       "date": "15.09 (wt)",
       "day_num": 4,
-      "type": "tuscany",
-      "label": "TOSKANIA · DZIEŃ 2",
-      "title": "Średniowieczne mury i puszcza Orecchiella",
-      "image": "orecchiella",
+      "type": "tuscany_popular",
+      "label": "TOSKANIA · DZIEŃ 2 ★ POPULARNY",
+      "title": "Lucca i Piza — mury i Krzywa Wieża",
+      "image": "pisa",
+      "image2": "lucca",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 30,
+      "drive_limit_min": 45,
       "attractions": [
         {
-          "name": "Castiglione di Garfagnana",
-          "drive_min": 20,
-          "description": "Kompletnie zachowane mury miejskie z XIII w. (cerchia 1371, torrioni Orologio/Brunella/San Michele), most Spinetta Malaspina XIII w., Rocca z panoramą na Garfagnanę. Turystów praktycznie brak.",
-          "type": "medieval",
-          "image_key": "castiglione",
-          "gps_hint": "Castiglione di Garfagnana LU — parking Porta Inferi (26 miejsc, Via Soccorso)",
+          "name": "Lucca — mury renesansowe, Piazza dell'Anfiteatro (plac amfiteatru), Torre Guinigi (wieża z dębami), Duomo di San Martino (katedra)",
+          "description": "Kameralne, spokojne miasto w pełni otoczone nienaruszonym pierścieniem renesansowych murów (1544–1650, ~4,2 km) — jedynymi we Włoszech zachowanymi w całości. Owalna Piazza dell'Anfiteatro powstała na rzucie rzymskiego amfiteatru, Torre Guinigi (45 m) nosi na szczycie kępę dębów ostrolistnych, a romański Duomo di San Martino kryje Volto Santo i grobowiec Ilarii del Carretto.",
+          "type": "cultural",
+          "image_key": "lucca",
+          "gps_hint": "Lucca — parking POZA murami: Parcheggio Palatucci lub Carducci (Porta San Pietro), 5–10 min pieszo do centrum. NIE wjeżdżać w mury (ZTL).",
           "coords": [
-            44.1553,
-            10.3936
+            43.843,
+            10.5079
           ],
-          "duration_h": 1.0,
-          "opening_hours": "Codziennie 10:00–18:00 (latem do 19:00). Rocca (zamek Castiglione): bilet €4. Mury i centro storico: wstęp wolny.",
-          "entry_fee": "Rocca: €4 | Mury i centro: bezpłatne"
+          "opening_hours": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie. Torre Guinigi: codz. (do 20.IX) 10:00–19:30, bilet €8 (ulg. €6). Piazza dell'Anfiteatro: zawsze dostępna. Duomo di San Martino: nawa ~bezpłatna, Volto Santo/zakrystia €3–9.",
+          "ticket_price": "Mury i Piazza dell'Anfiteatro: bezpłatne. Torre Guinigi: €8/os (ulg. €6). Bilet łączony Guinigi + Torre delle Ore + Orto Botanico: €14 (ważny 2 dni).",
+          "duration_h": 3.0
         },
         {
-          "name": "Riserva Naturale Orecchiella — Sentiero 'Intorno al Monte Orecchiella'",
-          "drive_min": 28,
-          "description": "Park Orecchiella: pętla ~3 km (1 h, łatwy) przez łąki i las mieszany z dębem burgundzkim (750–1100 m). We wrześniu możliwość spotkania jeleni (ruja).",
-          "type": "nature",
-          "image_key": "orecchiella",
-          "gps_hint": "Centro Visitatori Orecchiella, Località Laghetti 6, 55038 San Romano in Garfagnana LU",
+          "name": "Piza — Piazza dei Miracoli (plac cudów): Krzywa Wieża, Duomo (katedra), Battistero (baptysterium), Camposanto (cmentarz)",
+          "description": "Piazza dei Miracoli — jeden z najsłynniejszych placów świata: Krzywa Wieża (dzwonnica katedry, 251 stopni, pochylona o blisko 4°), romański Duomo, okrągły Battistero o wyjątkowej akustyce i monumentalny Camposanto. Turystyczne i zatłoczone — jak Florencja, świadomy wyjątek od reszty planu.",
+          "type": "popular",
+          "image_key": "pisa",
+          "gps_hint": "Piazza dei Miracoli, Pisa — dojazd pociągiem z Lukki; ~20 min pieszo od Pisa Centrale lub bus LAM Rossa.",
           "coords": [
-            44.1906,
-            10.3912
+            43.7229,
+            10.3966
           ],
-          "duration_h": 2.0,
-          "opening_hours": "Teren otwarty całą dobę. Centro visitatori: pon–pt 9:00–13:00, sob–nd 10:00–17:00 (VI–IX). Wstęp bezpłatny.",
-          "entry_fee": "Bezpłatny (park narodowy)"
-        },
-        {
-          "name": "Castelnuovo di Garfagnana",
-          "drive_min": 25,
-          "description": "Stolica doliny z Rocca Ariostesca (Ariosto regent 1522–25) i średniowiecznymi murami. Farro della Garfagnana IGP w sklepach specjalistycznych.",
-          "type": "medieval",
-          "image_key": "castelnuovo",
-          "gps_hint": "Castelnuovo di Garfagnana LU — parking Piazzale Europa",
-          "coords": [
-            44.1048,
-            10.4077
-          ],
-          "duration_h": 1.0,
-          "opening_hours": "Rocca Ariostesca: wt–nd 10:00–12:30, 15:00–18:30. Bilet €4. Piazza Ariosto: zawsze dostępna. Targ czwartkowy 8:00–13:00.",
-          "entry_fee": "Rocca Ariostesca: €4 | Piazza i centro: bezpłatne"
+          "opening_hours": "Zabytki (wrzesień): ok. 9:00–20:00 — sprawdź dokładny kalendarz na opapisa.it. Krzywa Wieża: wejścia w slotach co 30 min (grupy ~30 os.), 251 stopni bez windy, dzieci <8 lat nie mogą wchodzić. Katedra: wstęp bezpłatny z biletem czasowym.",
+          "ticket_price": "Krzywa Wieża: €20/os (zawiera wejście do katedry). Bilet łączony Piazza dei Miracoli (Wieża + Duomo + Battistero + Camposanto + Museo delle Sinopie): €27/os. Sam plac i zdjęcia z zewnątrz: bezpłatne.",
+          "duration_h": 3.0
         }
       ],
       "oak_forest": {
-        "spot": "Riserva Naturale Orecchiella",
-        "species": "Quercus cerris (dąb burgundzki)",
-        "note": "Granica między buczyną (>1200 m) a dębowo-kasztanowym lasem mieszanym (750–1100 m) — klasyczny toskański las apeniński.",
-        "gps_hint": "Centro Visitatori — sentiero „Intorno al Monte Orecchiella” (3 km) przez strefę dębową"
+        "spot": "Torre Guinigi — ogród na szczycie wieży (Lucca)",
+        "species": "Quercus ilex (dąb ostrolistny / leccio)",
+        "note": "Na szczycie 45-metrowej Torre Guinigi rośnie od stuleci kępa dębów ostrolistnych (lecci) — jeden z najsłynniejszych 'wiszących ogrodów' Europy i nietypowe spotkanie z dębem dla Mariusza: tym razem 45 m nad ziemią, ponad dachami Lukki.",
+        "gps_hint": "Torre Guinigi, Via Sant'Andrea, Lucca — 230 stopni na szczyt"
       },
       "food": {
-        "place": "Trattoria da Carlino — Castelnuovo di Garfagnana",
-        "address": "Via Garibaldi 15, 55032 Castelnuovo di Garfagnana",
+        "place": "Trattoria da Giulio in Pelleria — Lucca",
+        "address": "Via delle Conce 45, 55100 Lucca",
         "dishes": [
-          "minestra di farro (zupa z orkiszem IGP)",
-          "trota garfagnina alla griglia"
+          "tordelli lucchesi al ragù (pierożki z mięsem w sosie mięsnym)",
+          "zuppa di farro (zupa orkiszowa)",
+          "baccalà po lukkańsku (dorsz)",
+          "rostinciana i domowe desery"
         ],
-        "note": "Albergo-ristorante w centrum historycznym Castelnuovo. Kultowe miejsce wśród lokalnych — terrazza z widokiem na dolinę.",
-        "price": "~€12–16/os"
+        "note": "Rodzinna trattoria działająca od 1945 r. w dzielnicy Pelleria, w sercu murów Lukki — klasyczna kuchnia lucchese bez turystycznych sztuczek, kultowa wśród mieszkańców. Nieczynna w niedziele (15.09 to wtorek — otwarte). Warto zarezerwować stolik: tel. 0583 55948.",
+        "price": "~€12–18/os",
+        "gps_hint": "Via delle Conce 45 — wewnątrz murów, dojście pieszo od parkingu Palatucci / Porta San Pietro"
       },
       "practical_tips": [
-        "Castiglione (9:00) → Orecchiella szlak (10:30) → lunch Castelnuovo (13:00) → powrót do Barga",
-        "Orecchiella 15.09 (wt): szlaki OTWARTE, centrum muzeum ZAMKNIĘTE — planuj bez muzeum"
+        "TRASA (polecana opcja): auto z Bargi do Lukki (~37 km, ~40 min) i parking POZA murami — Parcheggio Palatucci lub Carducci przy Porta San Pietro (~€0,50–1/h), auto zostaje na cały dzień. Stamtąd pociąg Lucca→Pisa. Powód: przesiadka tylko na odcinku Lucca↔Piza (gdzie parking i ZTL w Pizie są uciążliwe), auto blisko bazy, a poranek w Lucce zwiedzamy pieszo prosto od parkingu. Alternatywa 'pociąg całą drogę' (auto na stacji Fornaci di Barga → pociąg do Lukki 44 min → Piza) jest wykonalna, ale to dłuższy i mniej elastyczny dojazd — dlatego polecamy auto do Lukki.",
+        "Krzywa Wieża: wejście na szczyt TYLKO ze slotem godzinowym (co 30 min, grupy ~30 os., 251 stopni bez windy) — rezerwuj online z wyprzedzeniem na opapisa.it; w sezonie i w weekendy sloty znikają w kilka godzin. Dzieci poniżej 8 lat nie mogą wchodzić na wieżę.",
+        "Lucca: mury (4,2 km) można obejść pieszo (~1 h) lub przejechać wypożyczonym rowerem — najlepszy sposób na poznanie miasta z góry, w cieniu drzew. Wstęp bezpłatny, otwarte całą dobę.",
+        "Pociąg Lucca→Pisa Centrale: ~30 min, ~41 kursów/dzień (co 20–30 min), bilet ~€3,50/os. Regionale bez rezerwacji miejsca — kup w automacie lub w aplikacji Trenitalia. Z Pisa Centrale na Piazza dei Miracoli ~20 min pieszo lub autobusem LAM Rossa.",
+        "Da Giulio in Pelleria nieczynne w niedziele — 15.09 to wtorek, więc otwarte; mimo to zadzwoń (0583 55948) i zarezerwuj stolik na porę lunchu, bo miejsce jest oblegane przez lokalnych."
       ],
-      "narrative": "Z bazy wyjeżdżamy o 9:00, powietrze jeszcze pachnie rosą schodzącą z traw, ok. 20 minut na północ i jesteśmy w Castiglione di Garfagnana — miasteczku, które kompletnie zachowało swój średniowieczny pierścień murów z XIII wieku. Parkujemy przy Porta Inferi (26 miejsc, Via Soccorso) i idziemy pieszo wzdłuż umocnień — zero tłumów, tylko echo własnych kroków po kamieniu (ok. 1 godzina). Stamtąd kolejne 28 minut i wjeżdżamy w zupełnie inny świat — rezerwat Orecchiella, rozciągnięty w paśmie dębów burgundzkich na granicy z buczyną. Idziemy pętlą 3 km (1–1,5 h) — we wrześniu to okres rui jeleni, więc każdy szelest w poszyciu każe nastawić uszu. Tego dnia (wtorek) centrum wizytorskie parku jest zamknięte, ale szlaki i wybiegi dla zwierząt działają bez ograniczeń. Na lunch, przed 13:00, zjeżdżamy do Castelnuovo di Garfagnana, stolicy doliny — w da Carlino (Via Garibaldi 15) czeka minestra di farro IGP z lokalnego orkiszu albo trota garfagnina prosto z grilla. Po jedzeniu spacer przy Rocca Ariostesca i wzdłuż murów miasta, którym zarządzał niegdyś sam Ludovico Ariosto jako regent (1522–25) — dziś wtorek, więc słynny czwartkowy targ z farro i serami śpi, ale samo miasto i tak warte jest spaceru bez pośpiechu. Powrót do bazy zajmuje jeszcze chwilę, docieramy ok. 17:00, ze wspomnieniem chłodnego cienia lasu na języku.",
-      "web_research": [
-        {
-          "topic": "Mercato Castelnuovo",
-          "summary": "Targ tygodniowy w Castelnuovo di Garfagnana to CZWARTEK (giovedì), 8:00–13:00 — Piazza delle Erbe, via Vittorio Emanuele, via Farini, via Garibaldi. 15.09 (wt) = brak targu. Alternatywa wtorkowa: mercato Piazza al Serchio (Piazza Giovanni XXIII, ~20 min od Barga).",
-          "source": "https://www.eventiesagre.it/Mercatini_Filiera+Corta/21184575_Mercato+Settimanale+Di+Castelnuovo+Di+Garfagnana.html",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Mercato wtorkowy Piazza al Serchio + farro IGP",
-          "summary": "Mercato settimanale ogni martedì in Piazza Giovanni XXIII, Piazza al Serchio — produkty lokalne Garfagnany. Farro della Garfagnana IGP dostępny też w sklepach Castelnuovo i u Consorzio (Via Enrico Fermi 25).",
-          "source": "https://www.italia-mia.it/toscana/lucca/piazza-al-serchio/mercato.asp",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Parco Orecchiella — orario wrzesień 2026",
-          "summary": "Centro Visitatori: wrzesień codziennie 10–18 do nd 14.09, potem sob–nd 10–18. Sentieristica i recinti faunistici ZAWSZE dostępne bezpłatnie. Muzea: €2 dorosły. Info: 0583 619098.",
-          "source": "https://orecchiella.com/contatti-prenotazioni/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Szlaki Orecchiella",
-          "summary": "Sentiero CAI 587 NIE istnieje w Garfagnanie (to szlak Cinque Terre/Bergamo). W Orecchiella: Sentieri della Domenica (np. „Intorno al Monte Orecchiella” 3 km/1 h, łatwy) oraz CAI 62, 64, 66. Recinti faunistici i szlaki zawsze bezpłatne.",
-          "source": "https://orecchiella.com/sentieri-liberi/sentieri-domenica/intorno-al-monte-orecchiella/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Castiglione — mury XIII w. i parking Porta Inferi",
-          "summary": "Mury miejskie z XIII w. (cerchia 1371, torrioni), most Spinetta Malaspina XIII w. Parking Porta Inferi: 26 miejsc auto przy murach (Via Soccorso) — inauguracja 2022, darmowy. ~17 km / ~20 min od Barga.",
-          "source": "https://www.lanazione.it/lucca/cronaca/castiglione-inaugura-il-parcheggio-b9ff5c3e",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Castelnuovo — mury XIII w. i Rocca Ariostesca",
-          "summary": "Castrum Novum od VII w.; Lucca przejęła miasto pod koniec XIII w. Mury rozbudowane przez Castruccio Castracani (1324, most na Serchio). Rocca Ariostesca (XII–XIV w.) — dziś ratusz i muzeum archeologiczne. Mury otaczają najstarszą część miasta.",
-          "source": "https://www.mondimedievali.net/castelli/toscana/lucca/castelnuovo.htm",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Trattoria da Carlino — Castelnuovo",
-          "summary": "Via Garibaldi 15, Castelnuovo di Garfagnana (NIE Castiglione, NIE Via Vittorio Emanuele). Pranzo 12:00–15:00, cena 19:00–22:00. Tel. 0583 644270. Specjalności: minestra di farro IGP, trota garfagnina, risotto cacio e pepe. Zimą zamknięte w poniedziałki.",
-          "source": "https://www.vetrina.toscana.it/attivita/ristorante-da-carlino/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Parking Orecchiella — Centro Visitatori",
-          "summary": "Darmowy parking przy Centro Visitatori, Località Laghetti 6, San Romano. Droga SP przez Villa Collemandina/Corfino — kręta, ~28 min od Barga. Start sentiero „Intorno al Monte Orecchiella”.",
-          "source": "https://orecchiella.com/",
-          "checked": "2026-07"
-        }
-      ],
-      "image2": "castelnuovo",
+      "narrative": "PLACEHOLDER",
+      "web_research": [],
       "opening_hours": {
-        "orecchiella_centro": "Wrzesień do nd 14.09: codzi. 10–18; od 15.09: sob–nd 10–18. Sentieri i recinti: zawsze",
-        "castelnuovo_mercato": "CZWARTEK 8:00–13:00 (Piazza delle Erbe + via V.Emanuele/Farini/Garibaldi) — nie wtorek!",
-        "piazza_al_serchio_mercato": "WTOREK — Piazza Giovanni XXIII (~20 min od Barga)",
-        "da_carlino": "Pranzo 12:00–15:00, cena 19:00–22:00 (zimą zamknięte pon)"
+        "lucca_mura": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie — spacer lub rower.",
+        "torre_guinigi": "Codziennie (do 20.IX) 10:00–19:30. Bilet €8 (ulg. €6). Zamknięte 25 grudnia.",
+        "duomo_san_martino": "Duomo di San Martino: nawa ~bezpłatna; Volto Santo, zakrystia (grobowiec Ilarii) i muzeum — bilety €3–9.",
+        "pisa_miracoli": "Piazza dei Miracoli, zabytki (wrzesień): ok. 9:00–20:00 — sprawdź kalendarz na opapisa.it. Krzywa Wieża: sloty co 30 min, rezerwacja obowiązkowa.",
+        "da_giulio": "Trattoria da Giulio in Pelleria: pranzo ~12:00–14:30, cena ~19:30–22:00. Nieczynne w niedziele (15.09 = wtorek, otwarte)."
       },
       "parking": {
-        "destination": "Trasa Castiglione → Orecchiella → Castelnuovo",
+        "destination": "Lucca (auto na cały dzień) → pociąg do Pizy",
         "options": [
           {
-            "name": "Castiglione — Porta Inferi",
+            "name": "Lucca — Parcheggio Palatucci",
             "type": "public",
-            "price": "gratis",
-            "gps_hint": "Via Soccorso 3, Castiglione di Garfagnana LU",
-            "note": "26 miejsc przy murach — nowy parking 2022, tuż przy centrum historycznym"
+            "price": "~€0,50–1/h",
+            "gps_hint": "Parcheggio Palatucci, poza murami przy Porta San Pietro (płd. strona Lukki)",
+            "note": "Duży parking naziemny tuż przy murach, ~10 min pieszo do centrum. Wypożyczalnia rowerów obok. Auto zostaje na cały dzień."
           },
           {
-            "name": "Orecchiella — Centro Visitatori",
-            "type": "attraction",
-            "price": "gratis",
-            "gps_hint": "Località Laghetti 6, 55038 San Romano in Garfagnana",
-            "note": "Start sentiero „Intorno al Monte Orecchiella” — parking przy muzeum"
+            "name": "Lucca — Parcheggio Carducci",
+            "type": "public",
+            "price": "~€1–1,50/h",
+            "gps_hint": "Viale Carducci, przy Porta San Pietro, Lucca",
+            "note": "Alternatywa bliżej Porta San Pietro — dogodny wjazd od strony Bargi/S12, poza ZTL."
           },
           {
-            "name": "Castelnuovo — Piazzale Europa",
-            "type": "public",
-            "price": "gratis / niski",
-            "gps_hint": "Piazzale Europa, Castelnuovo di Garfagnana",
-            "note": "Duży parking, 5 min pieszo do centrum i Da Carlino (Via Garibaldi)"
+            "name": "Pisa — parking niepotrzebny",
+            "type": "info",
+            "price": "—",
+            "gps_hint": "Pizę zwiedzamy z pociągu — auto zostaje w Lucce",
+            "note": "Świadomie unikamy parkowania i ZTL w Pizie: z Pisa Centrale na Piazza dei Miracoli dochodzimy pieszo lub busem LAM Rossa."
           }
         ],
-        "tip": "3 parkingi w ciągu dnia — nie musisz wracać do Bazy między punktami (wszystko ≤30 min jazdy od Barga)"
+        "tip": "Zostaw auto w Lucce (poza murami) na cały dzień i przesiądź się na pociąg do Pizy — parkowanie w Pizie i wjazd w tłok pod Wieżą są uciążliwe, a pociąg Lucca↔Pisa jeździ co 20–30 min."
       },
       "fuel_stops": [
         {
-          "name": "ENI Castelnuovo di Garfagnana",
-          "location": "Via Roma / SS445, Castelnuovo",
-          "note": "Tankuj po lunchu w Castelnuovo — przed powrotem do bazy w Barga."
+          "name": "Q8 / ENI w dolinie Serchio (Fornaci di Barga)",
+          "location": "SS12 / Fornaci di Barga, w drodze Barga → Lucca",
+          "note": "Zatankuj po drodze do Lukki lub przy powrocie do bazy — w dolinie Serchio przy SS12 kilka stacji."
         }
       ],
-      "daily_km_estimate": 50,
       "eta_timeline": [
         {
-          "time": "09:30",
-          "event": "Wyjazd z bazy do Castiglione di Garfagnana (25 min)"
+          "time": "08:00",
+          "event": "Wyjazd z bazy Barga do Lukki (~37 km, ~40 min)"
         },
         {
-          "time": "10:00",
-          "event": "Castiglione — Rocca medievale, mury i brama San Pietro"
+          "time": "08:45",
+          "event": "Parking poza murami Lukki (Palatucci / Carducci) — auto zostaje na cały dzień"
+        },
+        {
+          "time": "09:00",
+          "event": "Lucca — spacer po renesansowych murach i Piazza dell'Anfiteatro"
+        },
+        {
+          "time": "10:15",
+          "event": "Torre Guinigi (dęby na szczycie) i Duomo di San Martino"
         },
         {
           "time": "11:30",
-          "event": "Wyjazd do Orecchiella (15 min)"
+          "event": "Via Fillungo — kawa, cantucci, kameralne uliczki"
         },
         {
-          "time": "11:45",
-          "event": "Riserva Orecchiella — szlak przez las, centrum przyrodnicze"
+          "time": "12:30",
+          "event": "Lunch — Trattoria da Giulio in Pelleria (tordelli lucchesi)"
         },
         {
-          "time": "13:30",
-          "event": "Picnic przy strumieniu lub powrót do Castelnuovo"
+          "time": "13:45",
+          "event": "Stacja Lucca → pociąg Lucca–Pisa Centrale (~30 min, kursy co 20–30 min)"
         },
         {
           "time": "14:30",
-          "event": "Castelnuovo di Garfagnana — Rocca Ariostesca i centro storico"
+          "event": "Pisa Centrale → Piazza dei Miracoli (~20 min pieszo lub bus LAM Rossa)"
         },
         {
-          "time": "16:00",
-          "event": "Mercato (jeśli środa lub czwartek) lub enoteka lokalna"
+          "time": "15:00",
+          "event": "Piazza dei Miracoli — Krzywa Wieża (slot rezerwowany), Duomo, Battistero, Camposanto"
         },
         {
-          "time": "17:00",
-          "event": "Powrót do bazy"
+          "time": "17:30",
+          "event": "Powrót na Pisa Centrale"
+        },
+        {
+          "time": "18:00",
+          "event": "Pociąg Pisa → Lucca (~30 min)"
+        },
+        {
+          "time": "18:40",
+          "event": "Odbiór auta w Lucce"
+        },
+        {
+          "time": "19:30",
+          "event": "Powrót do bazy Barga"
         }
       ],
-      "crowd_tip": "Castiglione i Orecchiella: turystyka lokalna, prawie bez obcokrajowców. Orecchiella pełna w weekendy letnie — przyjdź rano. Castelnuovo: czwartkowy targ przyciąga mieszkańców regionu.",
-      "summary": "Średniowieczne mury Castiglione di Garfagnana i rezerwat Orecchiella z dębami i jeleniami."
+      "daily_km_estimate": 75,
+      "crowd_tip": "Piazza dei Miracoli w Pizie jest zatłoczona praktycznie cały dzień w sezonie — jak Florencja, to świadomy kompromis (plan zwykle omija tłumy, ale Krzywa Wieża jest tego warta). Strategia: Lucca rano (spokojniejsza i kameralna), Piza po południu ze slotem na Wieżę zarezerwowanym z wyprzedzeniem. Na samym placu tłum jest nieunikniony, ale mury Lukki i owalna Piazza dell'Anfiteatro dają oddech.",
+      "warning": "Krzywa Wieża wymaga rezerwacji slotu godzinowego z wyprzedzeniem (opapisa.it) — bez tego można obejrzeć plac, Duomo i zrobić zdjęcia, ale nie wejść na wieżę. Piazza dei Miracoli i (w mniejszym stopniu) Lucca to najbardziej turystyczne punkty całego wyjazdu — spodziewaj się tłumów, zwłaszcza w porze południowej pod Wieżą. Dzień oparty na rozkładzie pociągów Lucca↔Pisa — sprawdź aktualne godziny Trenitalia bliżej wyjazdu.",
+      "summary": "Dzień miastem pociągiem: Lucca (renesansowe mury, Piazza dell'Anfiteatro — plac na rzucie rzymskiego amfiteatru, Torre Guinigi — wieża z dębami) i Piza — Piazza dei Miracoli (plac cudów: Krzywa Wieża, Duomo, Battistero — baptysterium)."
     },
     {
       "date": "16.09 (śr)",
@@ -1309,7 +1271,7 @@
       "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta pt–nd). Panorama 360° i mury dostępne bezpłatnie.",
       "attractions": [
         {
-          "name": "Fortezza delle Verrucole — spacer zewnętrzny",
+          "name": "Fortezza delle Verrucole (forteca) — spacer zewnętrzny",
           "drive_min": 18,
           "description": "16.09 to środa — forteca zamknięta (otwarta pt–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich.",
           "type": "medieval",
@@ -1324,7 +1286,7 @@
           "entry_fee": "Z przewodnikiem: €8 (6–18 lat: €5) | częściowy bez tour: €4 | Zewnątrz/widok: bezpłatny"
         },
         {
-          "name": "Lago di Vagli",
+          "name": "Lago di Vagli (jezioro z zatopioną wioską Fabbriche di Careggine)",
           "drive_min": 25,
           "description": "Sztuczne jezioro z zatopionym w 1953 r. miasteczkiem Fabbriche di Careggine. Spacer po tamie i okolicznych wzgórzach.",
           "type": "nature",
@@ -1339,7 +1301,7 @@
           "entry_fee": "Bezpłatny dostęp"
         },
         {
-          "name": "Gorfigliano",
+          "name": "Gorfigliano (mikrowioska z romańskim kościołem)",
           "drive_min": 20,
           "description": "Mikrowioska z romańskim kościołem, kilkadziesiąt mieszkańców. Przykład autentycznego borgo bez renowacji turystycznej.",
           "type": "medieval",
@@ -1504,21 +1466,21 @@
         }
       ],
       "crowd_tip": "Vagli: cisza. Fortezza Verrucole: otwarta pt–nd wrzesień, w tygodniu możesz mieć fortecę dla siebie. Gorfigliano: prawie bez turystów.",
-      "summary": "Jezioro Vagli z zatopioną wioską pod wodą, forteca Verrucole i cicha wioska Gorfigliano."
+      "summary": "Górska pętla Garfagnany: Fortezza delle Verrucole (forteca z panoramą doliny — w środę tylko z zewnątrz), Lago di Vagli (jezioro z zatopioną wioską Fabbriche di Careggine) i Gorfigliano (cicha mikrowioska z romańskim kościołem)."
     },
     {
       "date": "17.09 (czw)",
       "day_num": 6,
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 4",
-      "title": "Ponte del Diavolo i termy Bagni di Lucca",
+      "title": "Ponte del Diavolo (most diabelski) i termy Bagni di Lucca",
       "image": "ponte-diavolo",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
       "drive_limit_min": 25,
       "attractions": [
         {
-          "name": "Ponte della Maddalena / Ponte del Diavolo",
+          "name": "Ponte della Maddalena / Ponte del Diavolo (most gotycki nazywany mostem diabelskim)",
           "drive_min": 22,
           "description": "Gotycki most z XIII w. przy Borgo a Mozzano o asymetrycznych łukach, legenda o diable. Mgliste Apeniny odbite w rzece Serchio — piękne rano. Dostęp bezpłatny 24h.",
           "type": "medieval",
@@ -1533,7 +1495,7 @@
           "entry_fee": "Bezpłatny — most publiczny"
         },
         {
-          "name": "Bagni di Lucca — terme i Ponte delle Catene",
+          "name": "Bagni di Lucca — termy i Ponte delle Catene (most łańcuchowy)",
           "drive_min": 20,
           "description": "Miasteczko z epoki romantyzmu: kasyno (najstarsze we Włoszech!), neogotycki English Church, most łańcuchowy Nottolini. Byron, Shelley i Browningowie tu odpoczywali. Bagno Bernabò (Ponte a Serraglio) — termy w marmurowych wannach XIX-wiecznych (rezerwacja).",
           "type": "cultural",
@@ -1548,7 +1510,7 @@
           "entry_fee": "Terme wstęp: od €15 (rezerwacja) | Spacer: bezpłatny"
         },
         {
-          "name": "Pieve di Careggine",
+          "name": "Pieve di Careggine (romański kościół parafialny nad Lago di Vagli)",
           "drive_min": 22,
           "description": "Piękna romańska pieve z XI w. na wzgórzu nad Lago di Vagli — odmienny kąt widoku niż przy tamie. Wioska z ~200 mieszkańcami, zero turystów.",
           "type": "medieval",
@@ -1698,7 +1660,7 @@
         }
       ],
       "crowd_tip": "Ponte del Diavolo: kolejki na zdjęcia w weekendy, spokojnie rano (<10:00). Bagni di Lucca: kurort bez masowej turystyki — elegancka cisza. Vagli/Pieve di Careggine: wyłącznie lokalni.",
-      "summary": "Ponte del Diavolo nad Serchio i termy w Bagni di Lucca — ostatni dzień w Garfagnanie."
+      "summary": "Ostatni dzień w Garfagnanie: Ponte della Maddalena / Ponte del Diavolo (gotycki most nazywany mostem diabelskim) nad Serchio, termy i Ponte delle Catene (most łańcuchowy) w Bagni di Lucca oraz Pieve di Careggine (romański kościół parafialny nad jeziorem)."
     },
     {
       "date": "18.09 (pt)",
@@ -1717,7 +1679,7 @@
       "drive_limit_min": 0,
       "attractions": [
         {
-          "name": "Pistoia — gotycki przystanek na trasie",
+          "name": "Pistoia — Piazza del Duomo (plac katedralny, gotycka katedra)",
           "type": "cultural",
           "description": "Miasteczko między Lucca a Florencją, 5 min zjazdu z A11. Piazza del Duomo: gotycka katedra z XIV w. z Capella del Tau i Srebrnym Ołtarzem Jakuba, Battistero, Palazzo del Comune. Spacer 45–60 min, bez kolejek. Obiad tuż obok.",
           "coords": [
@@ -1840,7 +1802,7 @@
           "note": "Zatankuj przy dotarciu do bazy — stacji mało na wiejskich drogach Chianti."
         }
       ],
-      "summary": "Przejazd do Chianti, z krótkim przystankiem w Pistoi po drodze."
+      "summary": "Przejazd z Garfagnany do Chianti (Castelnuovo Berardenga): po drodze krótki przystanek w Pistoi — Piazza del Duomo (plac katedralny z gotycką katedrą)."
     },
     {
       "date": "19.09 (sob)",
@@ -1856,7 +1818,7 @@
       "crowd_tip": "SOBOTA 19.09 — najgorszy dzień tygodnia w Sienie. Wyjazd 7:00, parking Santa Caterina lub Stadio-Fortezza. Campo o 7:30 prawie sam. Tłumy od 10:00. Powrót do bazy przed 14:00.",
       "attractions": [
         {
-          "name": "Piazza del Campo — o świcie",
+          "name": "Piazza del Campo (główny plac Sieny) — o świcie",
           "drive_min": 39,
           "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
           "type": "popular",
@@ -1871,7 +1833,7 @@
           "duration_h": 1.5
         },
         {
-          "name": "Duomo di Siena + Libreria Piccolomini",
+          "name": "Duomo di Siena (katedra) + Libreria Piccolomini (biblioteka z freskami)",
           "drive_min": 39,
           "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki.",
           "type": "popular",
@@ -1886,7 +1848,7 @@
           "duration_h": 2.0
         },
         {
-          "name": "Spacer przez kontrade",
+          "name": "Spacer przez kontrade (historyczne dzielnice-klany Sieny)",
           "drive_min": 39,
           "description": "11:00–12:00. Oca (Via dei Termini → Fontebranda) i Drago (Piazza Matteotti → Via del Paradiso). Autentyczne dzielnice zamiast turystycznych tras.",
           "type": "cultural",
@@ -2037,7 +1999,7 @@
         "note": "Narodowa enoteka włoska — 1500+ win, Brunello, Chianti Classico, Morellino, Nobile. Po obiedzie u Papei: Piazza del Mercato → Fortezza (12 min pieszo). Daj sobie 45 min. Zweryfikuj godziny przed wizytą (wt–sob 12:00–20:00 w sezonie).",
         "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
       },
-      "summary": "Siena o świcie — Piazza del Campo bez tłumów, Duomo, kontrady i lunch w centrum."
+      "summary": "Siena o świcie, zanim przyjdą tłumy: Piazza del Campo (główny plac w kształcie muszli), Duomo di Siena (katedra) z Libreria Piccolomini (biblioteka z freskami) i spacer przez kontrade (historyczne dzielnice-klany)."
     },
     {
       "date": "20.09 (nd)",
@@ -2051,7 +2013,7 @@
       "drive_limit_min": 25,
       "attractions": [
         {
-          "name": "Castello di Brolio",
+          "name": "Castello di Brolio (zamek Ricasoli — kolebka Chianti Classico)",
           "drive_min": 20,
           "description": "Zamek rodziny Ricasoli od 1141 — tu ustalono recepturę Chianti Classico. Bastioni, giardini, cappella, Collezione Ricasoli. 1200 ha własności (240 ha winnic). Bilet giardini €7,50 z degustacją 1 wina.",
           "type": "medieval",
@@ -2066,7 +2028,7 @@
           "duration_h": 1.5
         },
         {
-          "name": "Badia a Coltibuono",
+          "name": "Badia a Coltibuono (opactwo benedyktyńskie)",
           "drive_min": 20,
           "description": "Opactwo benedyktyńskie z 1051 r. — jeden z najlepiej zachowanych kompleksów monastycznych Chianti. Ogród ziołowy, restauracja, degustacja win Coltibuono. Sprzedaż oliwy i wina.",
           "type": "cultural",
@@ -2081,7 +2043,7 @@
           "duration_h": 2.0
         },
         {
-          "name": "Radda in Chianti",
+          "name": "Radda in Chianti (średniowieczne borgo, dawna stolica Ligi Chianti)",
           "drive_min": 22,
           "description": "Średniowieczne borgo (530 m n.p.m.), dawna stolica Ligi Chianti (1384). Piazza Ferrucci z Palazzo del Podestà (XIV w.), Casa del Chianti Classico. Mało turystów względem Greve.",
           "type": "medieval",
@@ -2223,21 +2185,21 @@
       ],
       "daily_km_estimate": 43,
       "crowd_tip": "Castello di Brolio: otwieraj o 10:00, tłumy od 11:00. Badia a Coltibuono: wino i abbey — rezerwacja degustacji obowiązkowa. Radda in Chianti: popularna, przyjdź przed obiadem lub po 17:00.",
-      "summary": "Zamki Chianti: Castello di Brolio, opactwo Coltibuono i wieczorny spacer po Radda in Chianti."
+      "summary": "Klasyczne Chianti: Castello di Brolio (zamek rodziny Ricasoli, kolebka Chianti Classico), Badia a Coltibuono (opactwo benedyktyńskie) i wieczorny spacer po Radda in Chianti (średniowieczne borgo, dawna stolica Ligi Chianti)."
     },
     {
       "date": "21.09 (pn)",
       "day_num": 10,
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 8",
-      "title": "Crete Senesi — abbazia i gliniaste wzgórza",
+      "title": "Crete Senesi (gliniaste wzgórza) — opactwo i krajobraz",
       "image": "monte-oliveto",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
       "drive_limit_min": 61,
       "attractions": [
         {
-          "name": "Monte Oliveto Maggiore",
+          "name": "Abbazia di Monte Oliveto Maggiore (opactwo z freskami św. Benedykta)",
           "drive_min": 61,
           "description": "Benedyktyńska abbazia z XIV w. w krajobrazie Crete Senesi. Chiostro Grande: 35 lunet z cyklem życia św. Benedykta — Luca Signorelli (8 scen) i Il Sodoma (26 scen, 1505–1508). Poniedziałek: otwarte.",
           "type": "cultural",
@@ -2252,7 +2214,7 @@
           "duration_h": 1.5
         },
         {
-          "name": "Bosco della Ragnaia — San Giovanni d'Asso",
+          "name": "Bosco della Ragnaia (ogród filozoficzny) — San Giovanni d'Asso",
           "drive_min": 26,
           "description": "Giardino filosofico Sheppard Craige (od 1996) w dawnym lesie leccio z XVIII w. Altare dello Scetticismo, Centro dell'Universo. Ingresso libero mar–nov, alba–tramonto. ~15 min od Monte Oliveto.",
           "type": "nature",
@@ -2267,7 +2229,7 @@
           "duration_h": 1.0
         },
         {
-          "name": "Asciano — Crete Senesi",
+          "name": "Asciano — Crete Senesi (gliniaste wzgórza, biancane)",
           "drive_min": 18,
           "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez biancane (białe gliniane wzgórza). Museo d'Arte Sacra w Palazzo Corboli — w poniedziałki zamknięte.",
           "type": "cultural",
@@ -2410,7 +2372,7 @@
       "daily_km_estimate": 84,
       "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto.",
       "warning": "Plan napięty — audyt czasowy wykazał deficyt ~44 min. Bosco della Ragnaia jest opcjonalne: pomiń je, jeśli Monte Oliveto Maggiore się przeciągnie.",
-      "summary": "Crete Senesi: freski w opactwie Monte Oliveto Maggiore i gliniaste wzgórza koło Asciano."
+      "summary": "Crete Senesi (gliniaste, księżycowe wzgórza na południe od Sieny): Abbazia di Monte Oliveto Maggiore (opactwo z freskami życia św. Benedykta), Bosco della Ragnaia (ogród filozoficzny w lesie) i Asciano z biancane (białe gliniane pagórki)."
     },
     {
       "date": "22.09 (wt)",
@@ -2425,7 +2387,7 @@
       "warning": "22.09 to najdłuższy dzień jazdy w całym planie i jedyny, gdzie cele leżą 70–85 min od bazy (reszta ≤61 min). Realnie ok. 3,5 h za kierownicą (base→Pienza 71 min, powrót Montalcino→baza 82 min — zweryfikowane OSRM). Kolejność ułożona tak, by minimalizować jazdę i złapać Pienzę wcześnie rano, gdy jest pusta. UWAGA: Palazzo Piccolomini jest we wtorki ZAMKNIĘTY, więc Pienza to dziś spacer po mieście i tarasy, bez wnętrza pałacu. Wrzesień = żniwa: uważaj na wolne traktory na SP2/SP53. Zostaw bufor — nie planuj nic po powrocie.",
       "attractions": [
         {
-          "name": "Pienza — idealne miasto Piusa II",
+          "name": "Pienza — renesansowe miasto-utopia Piusa II",
           "drive_min": 71,
           "description": "Renesansowe miasto-utopia zaprojektowane przez Bernarda Rosselliniego (1459–1462). Piazza Pio II — Duomo, Palazzo Piccolomini, panorama Val d'Orcia. Pecorino di Pienza DOP — kup w sklepach na Corso Rossellino.",
           "type": "medieval",
@@ -2440,7 +2402,7 @@
           "duration_h": 2.0
         },
         {
-          "name": "Bagno Vignoni — piazza termalna",
+          "name": "Bagno Vignoni — Piazza delle Sorgenti (plac z basenem termalnym)",
           "drive_min": 21,
           "description": "Unikalna wioska z XVI-wiecznym basenem termalnym pośrodku placu. Kąpiel w basenie na Piazza delle Sorgenti NIEDOZWOLONA, ale Parco dei Mulini poniżej (bezpłatny). Wrzesień: woda ciepła, mało turystów.",
           "type": "nature",
@@ -2455,7 +2417,7 @@
           "duration_h": 1.5
         },
         {
-          "name": "Montalcino — forteca Brunello",
+          "name": "Montalcino — forteca i Brunello di Montalcino (słynne wino DOCG)",
           "drive_min": 28,
           "description": "Forteca z XIV w. z panoramą 360°. Kolebka Brunello di Montalcino DOCG — najtańsze degustacje w winiarniach Fortezza lub na Piazza del Popolo. Enoteca La Fortezza (w fortecy).",
           "type": "cultural",
@@ -2602,7 +2564,7 @@
       ],
       "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
       "daily_km_estimate": 146,
-      "summary": "Val d'Orcia z bazy w Chianti (najdłuższy dzień jazdy): Pienza rano, termalne Bagno Vignoni i degustacja Brunello w Montalcino."
+      "summary": "Najdłuższy dzień jazdy z Chianti: Val d'Orcia (dolina Orcia, krajobraz UNESCO) — Pienza (renesansowe miasto-utopia Piusa II), Bagno Vignoni (wioska z termalnym basenem na placu) i Montalcino (forteca oraz degustacja Brunello)."
     },
     {
       "date": "23.09 (śr)",
@@ -2616,7 +2578,7 @@
       "drive_limit_min": 25,
       "attractions": [
         {
-          "name": "Piazza del Duomo — Katedra, Kopuła, Battistero, Campanile",
+          "name": "Piazza del Duomo — katedra Santa Maria del Fiore, kopuła Brunelleschiego, Battistero (baptysterium), Campanile (dzwonnica)",
           "description": "Santa Maria del Fiore, kopuła Brunelleschiego (pierwsza taka konstrukcja od czasów antycznego Rzymu), Campanile di Giotto i Battistero z brązowymi Wrotami Raju Ghibertiego. Kopuła wymaga rezerwacji slotu z wyprzedzeniem.",
           "type": "popular",
           "image_key": "firenze",
@@ -2630,7 +2592,7 @@
           "duration_h": 1.75
         },
         {
-          "name": "Piazza della Signoria — Loggia dei Lanzi i Palazzo Vecchio",
+          "name": "Piazza della Signoria — Loggia dei Lanzi (plenerowa galeria rzeźb) i Palazzo Vecchio (ratusz)",
           "description": "Loggia dei Lanzi to darmowa, plenerowa galeria rzeźb (m.in. Perseusz Celliniego, Porwanie Sabinek) — jedna z niewielu atrakcji Florencji bez kolejki i bez biletu. Palazzo Vecchio zwiedzamy tylko z zewnątrz.",
           "type": "cultural",
           "image_key": "firenze",
@@ -2644,7 +2606,7 @@
           "duration_h": 1.0
         },
         {
-          "name": "Ponte Vecchio i Oltrarno",
+          "name": "Ponte Vecchio (most złotników) i Oltrarno (dzielnica za Arno)",
           "description": "Średniowieczny most z warsztatami złotników zawieszonymi nad Arno — jedyny most Florencji, którego Niemcy nie wysadzili w 1944 r. Po drugiej stronie rzeki, w Oltrarno, tłum wyraźnie rzednie.",
           "type": "popular",
           "image_key": "firenze",
@@ -2778,7 +2740,7 @@
       "daily_km_estimate": 50,
       "crowd_tip": "To jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Duomo, Ponte Vecchio i Piazza della Signoria są zatłoczone praktycznie cały dzień w sezonie. Jedyna realna strategia: przyjechać najwcześniej jak się da (pociąg ok. 8:00), zobaczyć Piazza del Duomo przed 10:00, zanim zjadą się grupy z autokarów, i zaakceptować, że popołudnie na Ponte Vecchio i tak będzie ścisk.",
       "warning": "Uffizi nie jest częścią tego dnia — wymagałoby rezerwacji z 1–2-miesięcznym wyprzedzeniem (od czerwca), co nie mieści się w planowaniu z bieżącym wyprzedzeniem. Kopuła Duomo też wymaga rezerwacji slotu online — zrób to z wyprzedzeniem, miejsca znikają szybko. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia bliżej wyjazdu.",
-      "summary": "Florencja pociągiem z Sieny — Duomo, Ponte Vecchio i Mercato Centrale, jedyny dzień z tłumami."
+      "summary": "Jedyny świadomy dzień z tłumami: Florencja pociągiem z Sieny — Piazza del Duomo (katedra Santa Maria del Fiore, kopuła Brunelleschiego, baptysterium, dzwonnica), Piazza della Signoria (plac z Palazzo Vecchio) oraz Ponte Vecchio (średniowieczny most złotników) i Oltrarno (dzielnica za Arno)."
     },
     {
       "date": "24.09 (czw)",
@@ -2975,7 +2937,7 @@
           "event": "Wasserburg am Inn — hotel, spacer Altstadt, kolacja Paulaner"
         }
       ],
-      "summary": "Powrót w stronę Niemiec — Chianti → Wasserburg am Inn przez Alpy i Brenner."
+      "summary": "Start powrotu: Chianti → Alpy → Brenner → Wasserburg am Inn (miasteczko nad Innem w Bawarii)."
     },
     {
       "date": "25.09 (pt)",
@@ -3163,7 +3125,7 @@
           "event": "Obiad i odpoczynek — ostatni nocleg w drodze powrotnej"
         }
       ],
-      "summary": "Krótki, spokojny odcinek Wasserburg → Hof, z lunchem nad jeziorem po drodze."
+      "summary": "Spokojny odcinek przez Bawarię: Wasserburg am Inn → Hof (Saale), z lunchem nad jeziorem po drodze."
     },
     {
       "date": "26.09 (sob)",
@@ -3307,7 +3269,7 @@
           "event": "Poznań — dom 🏠"
         }
       ],
-      "summary": "Ostatni odcinek do Poznania — powrót do domu z zapasem czasowym przed buforem."
+      "summary": "Ostatni odcinek drogi: Hof (Saale) → Poznań, z zapasem czasu przed dniem buforowym."
     },
     {
       "date": "27.09 (nd)",
@@ -3317,7 +3279,7 @@
       "title": "Dzień rezerwowy — już w Poznaniu",
       "note": "Deadline powrotu. Przy planowym harmonogramie jesteś w domu od 26.09. Ten dzień to margines bezpieczeństwa na opóźnienia, pogodę lub dodatkowy postój.",
       "base_id": null,
-      "summary": "Dzień rezerwowy w Poznaniu, na wypadek opóźnień."
+      "summary": "Dzień rezerwowy już w Poznaniu — zapas na wypadek opóźnień w drodze powrotnej."
     }
   ],
   "practical_info": {

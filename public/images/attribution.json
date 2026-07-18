@@ -280,6 +280,24 @@
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "description": "The Florence Cathedral seen from Piazzale Michelangelo just before sunset."
+    },
+    "pisa.jpg": {
+      "place": "Piza — Piazza dei Miracoli",
+      "wikimedia_title": "File:Italy - Pisa - Cathedral Square.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Italy_-_Pisa_-_Cathedral_Square.jpg",
+      "author": "Arne Müseler",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "description": "Piazza dei Miracoli w Pizie z lotu ptaka — Krzywa Wieża (Torre pendente), Duomo i Battistero"
+    },
+    "lucca.jpg": {
+      "place": "Lucca — Piazza dell'Anfiteatro",
+      "wikimedia_title": "File:Lucca - Piazza Anfiteatro View.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lucca_-_Piazza_Anfiteatro_View.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Piazza dell'Anfiteatro w Lukce — owalny plac na miejscu rzymskiego amfiteatru"
     }
   }
 }

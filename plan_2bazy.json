@@ -1851,13 +1851,13 @@
       "image": "siena",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 25,
+      "drive_limit_min": 39,
       "popular": true,
       "crowd_tip": "SOBOTA 19.09 — najgorszy dzień tygodnia w Sienie. Wyjazd 7:00, parking Santa Caterina lub Stadio-Fortezza. Campo o 7:30 prawie sam. Tłumy od 10:00. Powrót do bazy przed 14:00.",
       "attractions": [
         {
           "name": "Piazza del Campo — o świcie",
-          "drive_min": 25,
+          "drive_min": 39,
           "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
           "type": "popular",
           "image_key": "siena",
@@ -1872,7 +1872,7 @@
         },
         {
           "name": "Duomo di Siena + Libreria Piccolomini",
-          "drive_min": 25,
+          "drive_min": 39,
           "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki.",
           "type": "popular",
           "image_key": "siena",
@@ -1887,7 +1887,7 @@
         },
         {
           "name": "Spacer przez kontrade",
-          "drive_min": 25,
+          "drive_min": 39,
           "description": "11:00–12:00. Oca (Via dei Termini → Fontebranda) i Drago (Piazza Matteotti → Via del Paradiso). Autentyczne dzielnice zamiast turystycznych tras.",
           "type": "cultural",
           "image_key": "siena",
@@ -1921,7 +1921,7 @@
         "Parking: Santa Caterina (schody ruchome, bliżej Duomo) — €2/h",
         "OPA SI PASS kup online wieczorem wcześniej — skip kolejki, wejdź tuż po 10:00"
       ],
-      "narrative": "Wyjeżdżamy z bazy o 7:00 — sobota, ale o tej porze Chianti jeszcze śpi, a do Sieny mamy tylko ok. 20 km i 25 minut jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą wprost pod mury, albo przy Stadio-Fortezza. Piazza del Campo o 7:30 należy właściwie tylko do nas — słońce dopiero wschodzi, ktoś zamiata próg kawiarni, cisza, w której słychać własne kroki po charakterystycznym wachlarzowatym bruku. To ten sam plac, na którym za kilka godzin będzie tłoczno jak na Palio, ale teraz Fonte Gaia szumi tylko dla nas. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16 w sezonie odkrytej podłogi mozaikowej) pozwala ominąć kolejkę, a w środku Libreria Piccolomini olśniewa złoconymi freskami Pinturicchia, które nie wyblakły przez pięćset lat. Ok. 11:00 spacer przez kontrady Oca i Drago — boczne uliczki z chorągiewkami bractw rywalizujących w Palio, gdy tłumy od 10:00 zaczynają zalewać Campo. Lunch w Antica Trattoria Papei (Piazza del Mercato 6, rezerwacja) — wśród sieneńczyków jedzących tu od pokoleń. Po obiedzie opcjonalnie degustacja w Enoteca Italiana (Fortezza Medicea, 12 minut pieszo, 45 minut) — narodowa enoteka z winami z całych Włoch, w tym miejscowym Chianti Classico. Z parkingu wyjeżdżamy ok. 15:00, zanim popołudniowy szczyt zamieni uliczki w korek turystów, w bazie jesteśmy ok. 16:00 — reszta popołudnia znów należy tylko do nas.",
+      "narrative": "Wyjeżdżamy z bazy o 7:00 — sobota, ale o tej porze Chianti jeszcze śpi, a do Sieny mamy ok. 24 km i 40 minut jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą wprost pod mury, albo przy Stadio-Fortezza. Piazza del Campo o 7:30 należy właściwie tylko do nas — słońce dopiero wschodzi, ktoś zamiata próg kawiarni, cisza, w której słychać własne kroki po charakterystycznym wachlarzowatym bruku. To ten sam plac, na którym za kilka godzin będzie tłoczno jak na Palio, ale teraz Fonte Gaia szumi tylko dla nas. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16 w sezonie odkrytej podłogi mozaikowej) pozwala ominąć kolejkę, a w środku Libreria Piccolomini olśniewa złoconymi freskami Pinturicchia, które nie wyblakły przez pięćset lat. Ok. 11:00 spacer przez kontrady Oca i Drago — boczne uliczki z chorągiewkami bractw rywalizujących w Palio, gdy tłumy od 10:00 zaczynają zalewać Campo. Lunch w Antica Trattoria Papei (Piazza del Mercato 6, rezerwacja) — wśród sieneńczyków jedzących tu od pokoleń. Po obiedzie opcjonalnie degustacja w Enoteca Italiana (Fortezza Medicea, 12 minut pieszo, 45 minut) — narodowa enoteka z winami z całych Włoch, w tym miejscowym Chianti Classico. Z parkingu wyjeżdżamy ok. 15:00, zanim popołudniowy szczyt zamieni uliczki w korek turystów, w bazie jesteśmy ok. 15:45 — reszta popołudnia znów należy tylko do nas.",
       "web_research": [
         {
           "topic": "Siena o 7:30 — bez tłumów",
@@ -1989,14 +1989,14 @@
       "eta_timeline": [
         {
           "time": "07:00",
-          "event": "Wyjazd z bazy (~20 km, 25 min do Sieny)"
+          "event": "Wyjazd z bazy (~24 km, 39 min do Sieny)"
         },
         {
-          "time": "07:25",
+          "time": "07:40",
           "event": "Parking Santa Caterina lub Stadio-Fortezza"
         },
         {
-          "time": "07:30",
+          "time": "07:45",
           "event": "Piazza del Campo — Fontana Gaia bez tłumów"
         },
         {
@@ -2024,11 +2024,11 @@
           "event": "Wyjazd z parkingu — przed popołudniowym szczytem"
         },
         {
-          "time": "16:00",
+          "time": "15:40",
           "event": "Powrót do bazy"
         }
       ],
-      "daily_km_estimate": 47,
+      "daily_km_estimate": 48,
       "wine_tasting": {
         "place": "Enoteca Italiana — Fortezza Medicea",
         "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
@@ -2234,11 +2234,11 @@
       "image": "monte-oliveto",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 35,
+      "drive_limit_min": 61,
       "attractions": [
         {
           "name": "Monte Oliveto Maggiore",
-          "drive_min": 28,
+          "drive_min": 61,
           "description": "Benedyktyńska abbazia z XIV w. w krajobrazie Crete Senesi. Chiostro Grande: 35 lunet z cyklem życia św. Benedykta — Luca Signorelli (8 scen) i Il Sodoma (26 scen, 1505–1508). Poniedziałek: otwarte.",
           "type": "cultural",
           "image_key": "monte-oliveto",
@@ -2253,7 +2253,7 @@
         },
         {
           "name": "Bosco della Ragnaia — San Giovanni d'Asso",
-          "drive_min": 30,
+          "drive_min": 26,
           "description": "Giardino filosofico Sheppard Craige (od 1996) w dawnym lesie leccio z XVIII w. Altare dello Scetticismo, Centro dell'Universo. Ingresso libero mar–nov, alba–tramonto. ~15 min od Monte Oliveto.",
           "type": "nature",
           "image_key": "asciano",
@@ -2268,7 +2268,7 @@
         },
         {
           "name": "Asciano — Crete Senesi",
-          "drive_min": 24,
+          "drive_min": 18,
           "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez biancane (białe gliniane wzgórza). Museo d'Arte Sacra w Palazzo Corboli — w poniedziałki zamknięte.",
           "type": "cultural",
           "image_key": "asciano",
@@ -2306,7 +2306,7 @@
         "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma, 2h) → 11:30 opcjonalnie Bosco Ragnaia (30–45 min) → 12:30 Asciano → 13:00 lunch La Tombolina → popołudnie Crete Senesi",
         "Bilet Monte Oliveto poniedziałek: €7 (Vivaticket €6) — bibl. €4 pn–cz"
       ],
-      "narrative": "Wyjeżdżamy o 9:00 w stronę zupełnie innego krajobrazu — 28 minut do Abbazia Monte Oliveto Maggiore, otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5–2h). Plan dnia jest napięty, więc kolejny przystanek jest opcjonalny: jeśli starczy czasu, 15 minut dalej czeka Bosco della Ragnaia w San Giovanni d'Asso — filozoficzny ogród założony w dawnym lesie leccio, cichy i pusty, wstęp wolny; w razie poślizgu pomijamy go bez żalu. Dalej do Asciano, serca Crete Senesi, na lunch w Osteria La Tombolina (Via Mameli 11). Muzeum w Asciano jest dziś, w poniedziałek, zamknięte, więc popołudnie spędzamy inaczej — spacerem po biancane, białych glinianych wzgórzach pociętych erozją jak księżycowy krajobraz, gdzie nie rośnie prawie nic poza kępami traw, i po sennych uliczkach miasteczka, gdzie okiennice już się domykają na sjestę. Wracamy do bazy ok. 17:30, z butami pokrytymi jasnym pyłem Crete.",
+      "narrative": "Wyjeżdżamy o 9:00 w stronę zupełnie innego krajobrazu — ok. godzinę (61 min) do Abbazia Monte Oliveto Maggiore, otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5–2h). Plan dnia jest napięty, więc kolejny przystanek jest opcjonalny: jeśli starczy czasu, 26 minut dalej czeka Bosco della Ragnaia w San Giovanni d'Asso — filozoficzny ogród założony w dawnym lesie leccio, cichy i pusty, wstęp wolny; w razie poślizgu pomijamy go bez żalu. Dalej do Asciano, serca Crete Senesi, na lunch w Osteria La Tombolina (Via Mameli 11). Muzeum w Asciano jest dziś, w poniedziałek, zamknięte, więc popołudnie spędzamy inaczej — spacerem po biancane, białych glinianych wzgórzach pociętych erozją jak księżycowy krajobraz, gdzie nie rośnie prawie nic poza kępami traw, i po sennych uliczkach miasteczka, gdzie okiennice już się domykają na sjestę. Wracamy do bazy ok. 17:30, z butami pokrytymi jasnym pyłem Crete.",
       "web_research": [
         {
           "topic": "Monte Oliveto Maggiore — orari",
@@ -2375,24 +2375,24 @@
       },
       "eta_timeline": [
         {
-          "time": "09:00",
-          "event": "Wyjazd z bazy Chianti (28 min do Monte Oliveto)"
+          "time": "08:45",
+          "event": "Wyjazd z bazy Chianti (61 min do Monte Oliveto — dłużej niż się wydaje)"
         },
         {
-          "time": "09:30",
-          "event": "Monte Oliveto Maggiore — otwiera 9:30, krużganki z freskami"
-        },
-        {
-          "time": "11:15",
-          "event": "Wyjazd do Bosco della Ragnaia (12 km, 15 min)"
+          "time": "09:46",
+          "event": "Monte Oliveto Maggiore — krużganki z freskami Signorellego i Sodomy"
         },
         {
           "time": "11:30",
+          "event": "Wyjazd do Bosco della Ragnaia (13 km, 26 min)"
+        },
+        {
+          "time": "11:56",
           "event": "Bosco della Ragnaia — ogród filozoficzny, wstęp wolny"
         },
         {
-          "time": "12:30",
-          "event": "Wyjazd do Asciano (8 km, 12 min)"
+          "time": "12:40",
+          "event": "Wyjazd do Asciano (6 km, 18 min)"
         },
         {
           "time": "13:00",
@@ -2400,14 +2400,14 @@
         },
         {
           "time": "14:30",
-          "event": "Asciano — Museo d'Arte Sacra + widok na Crete"
+          "event": "Asciano — biancane i spacer po Crete (muzeum pn. zamknięte)"
         },
         {
-          "time": "16:30",
-          "event": "Powrót do bazy"
+          "time": "16:15",
+          "event": "Powrót do bazy (41 min z Asciano)"
         }
       ],
-      "daily_km_estimate": 52,
+      "daily_km_estimate": 84,
       "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto.",
       "warning": "Plan napięty — audyt czasowy wykazał deficyt ~44 min. Bosco della Ragnaia jest opcjonalne: pomiń je, jeśli Monte Oliveto Maggiore się przeciągnie.",
       "summary": "Crete Senesi: freski w opactwie Monte Oliveto Maggiore i gliniaste wzgórza koło Asciano."
@@ -2421,12 +2421,27 @@
       "image": "bagno-vignoni",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 50,
-      "warning": "22.09: najdłuższy i najbardziej napięty dzień jazdy w całym planie — jedyny dzień z drive_limit_min: 50 (pozostałe dni ≤35 min). Sam plan oznacza te cele jako niewygodne z bazy Chianti (patrz variants.base2_options: Pienza/Montalcino/Bagno Vignoni — „ok\": false). To ok. 2,5 h czystej jazdy w ciągu dnia i praktycznie zero marginesu — uważaj na wolne traktory żniwne na SP2/SP53 (wrzesień = zbiory, patrz practical_tips). Zostaw bufor: nie planuj nic po powrocie do bazy, powrót może się przesunąć.",
+      "drive_limit_min": 82,
+      "warning": "22.09 to najdłuższy dzień jazdy w całym planie i jedyny, gdzie cele leżą 70–85 min od bazy (reszta ≤61 min). Realnie ok. 3,5 h za kierownicą (base→Pienza 71 min, powrót Montalcino→baza 82 min — zweryfikowane OSRM). Kolejność ułożona tak, by minimalizować jazdę i złapać Pienzę wcześnie rano, gdy jest pusta. UWAGA: Palazzo Piccolomini jest we wtorki ZAMKNIĘTY, więc Pienza to dziś spacer po mieście i tarasy, bez wnętrza pałacu. Wrzesień = żniwa: uważaj na wolne traktory na SP2/SP53. Zostaw bufor — nie planuj nic po powrocie.",
       "attractions": [
         {
+          "name": "Pienza — idealne miasto Piusa II",
+          "drive_min": 71,
+          "description": "Renesansowe miasto-utopia zaprojektowane przez Bernarda Rosselliniego (1459–1462). Piazza Pio II — Duomo, Palazzo Piccolomini, panorama Val d'Orcia. Pecorino di Pienza DOP — kup w sklepach na Corso Rossellino.",
+          "type": "medieval",
+          "gps_hint": "Pienza SI — parking poza centro storico (ZTL)",
+          "coords": [
+            43.0762,
+            11.6781
+          ],
+          "image_key": "pienza",
+          "opening_hours": "Palazzo Piccolomini: ZAMKNIĘTY we wtorki — a 22.09 to wtorek! (sezon pn/śr–nd 10:30–17:00, kasa do 16:30). Cattedrale, Piazza Pio II i tarasy nad Val d'Orcia: dostępne codziennie.",
+          "ticket_price": "Palazzo Piccolomini: €7 — ale we wtorek zamknięty, więc dziś Pienza to spacer po mieście (bezpłatny). Katedra: bezpłatna.",
+          "duration_h": 2.0
+        },
+        {
           "name": "Bagno Vignoni — piazza termalna",
-          "drive_min": 45,
+          "drive_min": 21,
           "description": "Unikalna wioska z XVI-wiecznym basenem termalnym pośrodku placu. Kąpiel w basenie na Piazza delle Sorgenti NIEDOZWOLONA, ale Parco dei Mulini poniżej (bezpłatny). Wrzesień: woda ciepła, mało turystów.",
           "type": "nature",
           "gps_hint": "Bagno Vignoni SI — parking poza wsią, 5 min pieszo",
@@ -2440,23 +2455,8 @@
           "duration_h": 1.5
         },
         {
-          "name": "Pienza — idealne miasto Piusa II",
-          "drive_min": 45,
-          "description": "Renesansowe miasto-utopia zaprojektowane przez Bernarda Rosselliniego (1459–1462). Piazza Pio II — Duomo, Palazzo Piccolomini, panorama Val d'Orcia. Pecorino di Pienza DOP — kup w sklepach na Corso Rossellino.",
-          "type": "medieval",
-          "gps_hint": "Pienza SI — parking poza centro storico (ZTL)",
-          "coords": [
-            43.0762,
-            11.6781
-          ],
-          "image_key": "pienza",
-          "opening_hours": "Palazzo Piccolomini: Wt–Nd 10:00–18:30. Cattedrale: codziennie 10:00–18:00.",
-          "ticket_price": "Palazzo Piccolomini: €7. Katedra: bezpłatna.",
-          "duration_h": 2.0
-        },
-        {
           "name": "Montalcino — forteca Brunello",
-          "drive_min": 40,
+          "drive_min": 28,
           "description": "Forteca z XIV w. z panoramą 360°. Kolebka Brunello di Montalcino DOCG — najtańsze degustacje w winiarniach Fortezza lub na Piazza del Popolo. Enoteca La Fortezza (w fortecy).",
           "type": "cultural",
           "gps_hint": "Montalcino SI — parking przy Via Aldo Moro",
@@ -2494,7 +2494,7 @@
         "Timeline: Bagno Vignoni (9:00, 1h) → Pienza (10:30, 2h) → lunch Latte di Luna / Pienza (12:30) → Montalcino (14:30, 1,5h) → powrót ~17:00",
         "Dojazd: z Castelnuovo B. — Bagno Vignoni ~45–60 min (SP2/SP53, wrzesień = zbiory, traktory). Wyjazd przed 8:00."
       ],
-      "narrative": "Wyjazd o 8:00 — najdłuższa, najbardziej napięta trasa z bazy w Chianti, praktycznie bez marginesu (SP2/SP53, wrzesień to czas zbiorów, więc uważamy na traktory wolno sunące poboczem). Ok. 45 minut do Bagno Vignoni. Piazza delle Sorgenti o 9:00: gorące źródła wypełniają centralny basen pośrodku placu, para unosi się w porannym świetle jak z kadru filmu — kąpiel na samym placu jest zakazana, ale Parco dei Mulini poniżej jest darmowy i całkiem legalny, więc kto chce zanurzyć stopy w cieplej wodzie, ma ku temu okazję. Ok. 10:30 wyjazd (20 minut) do Pienzy — idealnego miasta Piusa II, zaprojektowanego jako renesansowa utopia przez Bernarda Rosselliniego: Duomo, Palazzo Piccolomini z widokiem na całą Val d'Orcia, a na Corso Rossellino witryny uginające się od kręgów pecorino di Pienza, którego zapach czuć jeszcze przed wejściem do sklepu. Lunch w Trattoria Latte di Luna (Via San Carlo 2). Po lunchu 25 minut do Montalcino: Fortezza z panoramą 360° (€4) rozciągającą się na winnice, z których rodzi się Brunello, i degustacja w Enoteca La Fortezza (kieliszek €8–15) — czerwone wino o smaku ciemnych owoców i lekkiej cierpkości, które trzeba tu spróbować choćby raz. Powrót zajmuje ok. godzinę — nic nie planujemy po przyjeździe, dzień i tak już wypełniony, może się jeszcze przesunąć.",
+      "narrative": "Najdłuższy wypad całego wyjazdu — Val d'Orcia leży realnie 70–85 minut od bazy w Chianti, więc ruszamy o 8:00 i układamy dzień tak, żeby jak najmniej kluczyć. Najpierw, po ok. 71 minutach przez Crete i SP2, docieramy do Pienzy — o tej porze miasto należy jeszcze do nas. Pienza to renesansowe marzenie papieża Piusa II, który w XV wieku kazał przebudować rodzinne Corsignano w „idealne miasto\": regularna Piazza Pio II, katedra i tarasy, z których Val d'Orcia rozlewa się aż po Monte Amiata. Jest jednak haczyk — Palazzo Piccolomini, zwykły cel numer jeden, we wtorki jest zamknięty, a dziś właśnie wtorek; nie tracimy więc na niego czasu, tylko chłoniemy miasto, katedrę i pecorino di Pienza wprost z serowarni przy Corso Rossellino. Stąd tylko 21 minut do Bagno Vignoni, gdzie zamiast rynku jest wielki termalny basen — para unosi się nad wodą pośrodku placu, a my jemy obiad w trattorii tuż obok (kąpiel na samym placu jest zakazana, ale darmowe Parco dei Mulini poniżej pozwala zamoczyć nogi w ciepłych strumieniach). Po południu 28 minut na zachód do Montalcino — miasta Brunello. Wspinamy się na Fortezzę (€4) po widok 360° na całą dolinę, a potem w Enoteca La Fortezza, wbudowanej w mury twierdzy, degustujemy to, co uczyniło Montalcino sławnym: Brunello di Montalcino DOCG, wino, które dojrzewa w beczce latami. Powrót do bazy zajmuje jeszcze 82 minuty, więc w Chianti jesteśmy ok. 17:30 — i świadomie nie planujemy już nic na wieczór, bo to był dzień z pełnym bakiem wrażeń i pełnym licznikiem kilometrów.",
       "web_research": [
         {
           "topic": "Bagno Vignoni — piazza termalna",
@@ -2556,49 +2556,53 @@
       },
       "eta_timeline": [
         {
-          "time": "08:30",
-          "event": "Wyjazd z bazy Chianti (45 min do Bagno Vignoni)"
+          "time": "08:00",
+          "event": "Wyjazd z bazy Chianti (71 min do Pienzy — najdłuższy dojazd w całym planie)"
         },
         {
           "time": "09:15",
-          "event": "Bagno Vignoni — Piazza delle Sorgenti (parking SS2, 400 m)"
+          "event": "Pienza — puste o tej porze miasto, Piazza Pio II i tarasy nad Val d'Orcia"
         },
         {
-          "time": "10:30",
-          "event": "Wyjazd do Pienzy (15 km, 20 min)"
+          "time": "10:00",
+          "event": "Duomo, Corso Rossellino, pecorino di Pienza (Palazzo Piccolomini zamknięty — wtorek)"
         },
         {
-          "time": "11:00",
-          "event": "Pienza — parking Madonna delle Grazie (300 m od bramy)"
+          "time": "11:15",
+          "event": "Wyjazd do Bagno Vignoni (14 km, 21 min)"
         },
         {
-          "time": "12:30",
-          "event": "Obiad Trattoria Latte di Luna (Via San Carlo 2-4)"
+          "time": "11:36",
+          "event": "Bagno Vignoni — Piazza delle Sorgenti, para nad termalnym basenem"
+        },
+        {
+          "time": "12:45",
+          "event": "Obiad przy placu (np. Osteria del Leone / La Parata)"
         },
         {
           "time": "14:00",
-          "event": "Wyjazd do Montalcino (22 km, 25 min)"
+          "event": "Wyjazd do Montalcino (20 km, 28 min)"
         },
         {
           "time": "14:30",
-          "event": "Montalcino — Fortezza, mury (€4), widok na Val d'Orcia"
+          "event": "Montalcino — Fortezza (€4), widok 360° na Val d'Orcia"
         },
         {
-          "time": "15:30",
-          "event": "Enoteca La Fortezza — degustacja Brunello DOCG"
+          "time": "15:15",
+          "event": "Enoteca La Fortezza — degustacja Brunello di Montalcino DOCG"
         },
         {
-          "time": "16:30",
-          "event": "Wyjazd z Montalcino do bazy Chianti (60 km)"
+          "time": "16:10",
+          "event": "Wyjazd z Montalcino do bazy Chianti (55 km, 82 min)"
         },
         {
           "time": "17:30",
-          "event": "Powrót do bazy"
+          "event": "Powrót do bazy — nie planujemy już nic na wieczór"
         }
       ],
       "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
-      "daily_km_estimate": 140,
-      "summary": "Val d'Orcia: Bagno Vignoni, renesansowa Pienza i degustacja Brunello w Montalcino."
+      "daily_km_estimate": 146,
+      "summary": "Val d'Orcia z bazy w Chianti (najdłuższy dzień jazdy): Pienza rano, termalne Bagno Vignoni i degustacja Brunello w Montalcino."
     },
     {
       "date": "23.09 (śr)",

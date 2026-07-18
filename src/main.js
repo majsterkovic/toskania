@@ -1,6 +1,5 @@
-import plan3 from '../plan.json';
 import plan2 from '../plan_2bazy.json';
-import { renderApp, renderVariantsSection, initDayNav, initGallery } from './render.js';
+import { renderApp, initDayNav, initGallery } from './render.js';
 import { initAllMaps, destroyAllMaps, swapMapTiles } from './maps.js';
 import { initWeather } from './weather.js';
 import './style.css';
@@ -14,7 +13,7 @@ import './style.css';
   }
 })();
 
-let currentPlan = plan3;
+const currentPlan = plan2;
 
 function initScrollReveal() {
   if (!('IntersectionObserver' in window)) return;
@@ -73,7 +72,6 @@ function mount(plan) {
   app.innerHTML = renderApp(plan);
   initDayNav();
   initGallery();
-  initVariantsToggle();
   initTodo();
   initThemeToggle();
   const weatherLocs = (plan.bases || [])
@@ -97,20 +95,6 @@ function mount(plan) {
     };
     requestAnimationFrame(() => setTimeout(initMaps, 50));
   }
-}
-
-function initVariantsToggle() {
-  document.querySelectorAll('[data-plan-toggle]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const target = btn.dataset.planToggle;
-      currentPlan = target === '2bazy' ? plan2 : plan3;
-      mount(currentPlan);
-      requestAnimationFrame(() => {
-        const variantsSection = document.getElementById('warianty');
-        if (variantsSection) variantsSection.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  });
 }
 
 mount(currentPlan);

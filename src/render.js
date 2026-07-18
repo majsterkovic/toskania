@@ -81,7 +81,6 @@ function renderSiteNav() {
     <nav class="site-nav" id="site-nav" aria-label="Nawigacja strony">
       <a class="site-nav__brand" href="#start">Toskania</a>
       <div class="site-nav__links">
-        <a href="#warianty">Warianty</a>
         <a href="#mapa">Mapa</a>
         <a href="#bazy">Bazy</a>
         <a href="#dni">Harmonogram</a>
@@ -904,93 +903,12 @@ function renderPractical(info) {
   `;
 }
 
-export function renderVariantsSection(variants, currentPlanId) {
-  if (!variants) return '';
-
-  const { base2_options = [], base_count_options = [] } = variants;
-
-  function distRow(d) {
-    return `
-      <li class="variant-dist ${d.ok ? 'ok' : 'over'}">
-        <span class="variant-dist__place">${esc(d.place)}</span>
-        <span class="variant-dist__time">${d.drive_min} min</span>
-        <span class="variant-dist__icon">${d.ok ? '✓' : '✗'}</span>
-      </li>
-    `;
-  }
-
-  function base2Card(opt) {
-    const current = opt.is_current ? ' variant-card--current' : '';
-    return `
-      <article class="variant-card${current}">
-        ${opt.is_current ? '<span class="variant-badge">obecny plan</span>' : ''}
-        <h4 class="variant-card__title">${esc(opt.label)}</h4>
-        <p class="variant-card__sub">${esc(opt.subtitle)}</p>
-        <ul class="variant-dists">
-          ${opt.distances.map(distRow).join('')}
-        </ul>
-        <ul class="variant-pros">${opt.pros.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>
-        <ul class="variant-cons">${opt.cons.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
-        <p class="variant-best">${esc(opt.best_for)}</p>
-      </article>
-    `;
-  }
-
-  function baseCountCard(opt) {
-    const isCurrent = opt.is_current;
-    const planId = opt.id;
-    const current = isCurrent ? ' variant-card--current' : '';
-    return `
-      <article class="variant-card${current}">
-        ${isCurrent ? '<span class="variant-badge">obecny plan</span>' : ''}
-        <h4 class="variant-card__title">${esc(opt.label)}</h4>
-        <p class="variant-card__sub">${esc(opt.nights_label)}</p>
-        <p class="variant-card__summary">${esc(opt.summary)}</p>
-        <ul class="variant-pros">${opt.pros.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>
-        <ul class="variant-cons">${opt.cons.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
-        ${!isCurrent ? `
-          <button type="button" class="variant-switch-btn" data-plan-toggle="${esc(planId)}">
-            Pokaż harmonogram — ${esc(opt.label)}
-          </button>
-        ` : `
-          <button type="button" class="variant-switch-btn variant-switch-btn--active" disabled>
-            Wyświetlony plan: ${esc(opt.label)}
-          </button>
-        `}
-      </article>
-    `;
-  }
-
-  return `
-    <section class="section section--variants" id="warianty">
-      <h2 class="section-title">Warianty — wybierzcie razem</h2>
-      <p class="section-lead">Dwa pytania do decyzji grupowej. Wybierz opcję i przeładuj harmonogram.</p>
-
-      <div class="variants-block">
-        <h3 class="variants-block__title">Pytanie 1: Ile baz noclegowych?</h3>
-        <div class="variants-grid">
-          ${base_count_options.map(baseCountCard).join('')}
-        </div>
-      </div>
-
-      <div class="variants-block">
-        <h3 class="variants-block__title">Pytanie 2: Gdzie Baza 2 (środkowa Toskania)?</h3>
-        <p class="variants-block__note">Niezależnie od liczby baz — wybór lokalizacji środkowej zmienia zasięg atrakcji:</p>
-        <div class="variants-grid">
-          ${base2_options.map(base2Card).join('')}
-        </div>
-      </div>
-    </section>
-  `;
-}
-
 export function renderApp(plan) {
   const images = plan.meta?.images ?? plan.images;
   return `
     ${renderSiteNav()}
     <div class="page">
       ${renderHeader(plan.meta, images)}
-      ${renderVariantsSection(plan.variants)}
       ${renderInteractiveMap(plan.days)}
       <section class="section section--maps" id="mapy">
         <h2 class="section-title">Mapa trasy</h2>

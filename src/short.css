@@ -1,0 +1,102 @@
+/* ── Strona /short — skompresowany przegląd dni ── */
+
+body.short-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem var(--page-pad) 4rem;
+}
+
+.short-header {
+  margin-bottom: 2rem;
+}
+
+.short-header__back {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+}
+.short-header__back:hover { color: var(--terracotta); }
+
+.short-header__title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--ink);
+  margin: 0 0 0.35rem;
+}
+
+.short-header__sub {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.short-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.short-day {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--transit);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+}
+
+.short-day--tuscany,
+.short-day--tuscany_popular { border-left-color: var(--base1); }
+.short-day--tuscany_transfer { border-left-color: var(--base2); }
+.short-day--transit { border-left-color: var(--transit); }
+.short-day--buffer { border-left-color: var(--stone-dark); opacity: 0.85; }
+
+.short-day__meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+
+.short-day__num {
+  font-weight: 700;
+  color: var(--oro);
+}
+
+.short-day__title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.3rem;
+}
+
+.short-day__base {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--terracotta);
+  margin-bottom: 0.3rem;
+}
+
+.short-day__summary {
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .short-header__title { font-size: 1.5rem; }
+}

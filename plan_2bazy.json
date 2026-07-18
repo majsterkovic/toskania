@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Toskania 2026 — wariant 2 bazy",
+    "title": "Toskania 2026",
     "subtitle": "Podróż samochodowa Poznań → Toskania → Poznań",
     "dates": "12–27 września 2026",
     "duration_days": 15,
@@ -613,7 +613,8 @@
           "time": "16:00",
           "event": "Kufstein — hotel, parking Innenstadt lub hotelowy"
         }
-      ]
+      ],
+      "summary": "Poznań → Kufstein: dwa dni tranzytu przez Niemcy i Austrię, nocleg w tyrolskim miasteczku pod Alpami."
     },
     {
       "date": "13.09 (nd)",
@@ -866,7 +867,8 @@
           }
         ],
         "tip": "Przy noclegu Mologno: parkuj przy agriturismo. Wieczorny spacer do Barga Vecchia: auto zostaje w Mologno lub Porta Reale"
-      }
+      },
+      "summary": "Kufstein → Barga przez przełęcz Brenner — wjazd do Toskanii i zameldowanie w Garfagnanie."
     },
     {
       "date": "14.09 (pn)",
@@ -1084,7 +1086,8 @@
           "event": "Powrót do bazy"
         }
       ],
-      "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: tłumy w weekendy lipiec–sierpień, wrzesień znacznie spokojniej. Rezerwacja wymagana online."
+      "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: tłumy w weekendy lipiec–sierpień, wrzesień znacznie spokojniej. Rezerwacja wymagana online.",
+      "summary": "Barga: taras widokowy przy Duomo, leśny spacer do Treppignany i jaskinia Grotta del Vento."
     },
     {
       "date": "15.09 (wt)",
@@ -1290,7 +1293,8 @@
           "event": "Powrót do bazy"
         }
       ],
-      "crowd_tip": "Castiglione i Orecchiella: turystyka lokalna, prawie bez obcokrajowców. Orecchiella pełna w weekendy letnie — przyjdź rano. Castelnuovo: czwartkowy targ przyciąga mieszkańców regionu."
+      "crowd_tip": "Castiglione i Orecchiella: turystyka lokalna, prawie bez obcokrajowców. Orecchiella pełna w weekendy letnie — przyjdź rano. Castelnuovo: czwartkowy targ przyciąga mieszkańców regionu.",
+      "summary": "Średniowieczne mury Castiglione di Garfagnana i rezerwat Orecchiella z dębami i jeleniami."
     },
     {
       "date": "16.09 (śr)",
@@ -1499,7 +1503,8 @@
           "event": "Powrót do bazy"
         }
       ],
-      "crowd_tip": "Vagli: cisza. Fortezza Verrucole: otwarta pt–nd wrzesień, w tygodniu możesz mieć fortecę dla siebie. Gorfigliano: prawie bez turystów."
+      "crowd_tip": "Vagli: cisza. Fortezza Verrucole: otwarta pt–nd wrzesień, w tygodniu możesz mieć fortecę dla siebie. Gorfigliano: prawie bez turystów.",
+      "summary": "Jezioro Vagli z zatopioną wioską pod wodą, forteca Verrucole i cicha wioska Gorfigliano."
     },
     {
       "date": "17.09 (czw)",
@@ -1692,7 +1697,8 @@
           "event": "Powrót do bazy"
         }
       ],
-      "crowd_tip": "Ponte del Diavolo: kolejki na zdjęcia w weekendy, spokojnie rano (<10:00). Bagni di Lucca: kurort bez masowej turystyki — elegancka cisza. Vagli/Pieve di Careggine: wyłącznie lokalni."
+      "crowd_tip": "Ponte del Diavolo: kolejki na zdjęcia w weekendy, spokojnie rano (<10:00). Bagni di Lucca: kurort bez masowej turystyki — elegancka cisza. Vagli/Pieve di Careggine: wyłącznie lokalni.",
+      "summary": "Ponte del Diavolo nad Serchio i termy w Bagni di Lucca — ostatni dzień w Garfagnanie."
     },
     {
       "date": "18.09 (pt)",
@@ -1833,7 +1839,8 @@
           "location": "SP408, Chianti",
           "note": "Zatankuj przy dotarciu do bazy — stacji mało na wiejskich drogach Chianti."
         }
-      ]
+      ],
+      "summary": "Przejazd do Chianti, z krótkim przystankiem w Pistoi po drodze."
     },
     {
       "date": "19.09 (sob)",
@@ -2029,7 +2036,8 @@
         "price": "od €3/kieliszek; butelki od €12",
         "note": "Narodowa enoteka włoska — 1500+ win, Brunello, Chianti Classico, Morellino, Nobile. Po obiedzie u Papei: Piazza del Mercato → Fortezza (12 min pieszo). Daj sobie 45 min. Zweryfikuj godziny przed wizytą (wt–sob 12:00–20:00 w sezonie).",
         "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
-      }
+      },
+      "summary": "Siena o świcie — Piazza del Campo bez tłumów, Duomo, kontrady i lunch w centrum."
     },
     {
       "date": "20.09 (nd)",
@@ -2214,7 +2222,8 @@
         }
       ],
       "daily_km_estimate": 43,
-      "crowd_tip": "Castello di Brolio: otwieraj o 10:00, tłumy od 11:00. Badia a Coltibuono: wino i abbey — rezerwacja degustacji obowiązkowa. Radda in Chianti: popularna, przyjdź przed obiadem lub po 17:00."
+      "crowd_tip": "Castello di Brolio: otwieraj o 10:00, tłumy od 11:00. Badia a Coltibuono: wino i abbey — rezerwacja degustacji obowiązkowa. Radda in Chianti: popularna, przyjdź przed obiadem lub po 17:00.",
+      "summary": "Zamki Chianti: Castello di Brolio, opactwo Coltibuono i wieczorny spacer po Radda in Chianti."
     },
     {
       "date": "21.09 (pn)",
@@ -2400,7 +2409,8 @@
       ],
       "daily_km_estimate": 52,
       "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto.",
-      "warning": "Plan napięty — audyt czasowy wykazał deficyt ~44 min. Bosco della Ragnaia jest opcjonalne: pomiń je, jeśli Monte Oliveto Maggiore się przeciągnie."
+      "warning": "Plan napięty — audyt czasowy wykazał deficyt ~44 min. Bosco della Ragnaia jest opcjonalne: pomiń je, jeśli Monte Oliveto Maggiore się przeciągnie.",
+      "summary": "Crete Senesi: freski w opactwie Monte Oliveto Maggiore i gliniaste wzgórza koło Asciano."
     },
     {
       "date": "22.09 (wt)",
@@ -2587,7 +2597,8 @@
         }
       ],
       "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
-      "daily_km_estimate": 140
+      "daily_km_estimate": 140,
+      "summary": "Val d'Orcia: Bagno Vignoni, renesansowa Pienza i degustacja Brunello w Montalcino."
     },
     {
       "date": "23.09 (śr)",
@@ -2762,7 +2773,8 @@
       ],
       "daily_km_estimate": 50,
       "crowd_tip": "To jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Duomo, Ponte Vecchio i Piazza della Signoria są zatłoczone praktycznie cały dzień w sezonie. Jedyna realna strategia: przyjechać najwcześniej jak się da (pociąg ok. 8:00), zobaczyć Piazza del Duomo przed 10:00, zanim zjadą się grupy z autokarów, i zaakceptować, że popołudnie na Ponte Vecchio i tak będzie ścisk.",
-      "warning": "Uffizi nie jest częścią tego dnia — wymagałoby rezerwacji z 1–2-miesięcznym wyprzedzeniem (od czerwca), co nie mieści się w planowaniu z bieżącym wyprzedzeniem. Kopuła Duomo też wymaga rezerwacji slotu online — zrób to z wyprzedzeniem, miejsca znikają szybko. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia bliżej wyjazdu."
+      "warning": "Uffizi nie jest częścią tego dnia — wymagałoby rezerwacji z 1–2-miesięcznym wyprzedzeniem (od czerwca), co nie mieści się w planowaniu z bieżącym wyprzedzeniem. Kopuła Duomo też wymaga rezerwacji slotu online — zrób to z wyprzedzeniem, miejsca znikają szybko. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia bliżej wyjazdu.",
+      "summary": "Florencja pociągiem z Sieny — Duomo, Ponte Vecchio i Mercato Centrale, jedyny dzień z tłumami."
     },
     {
       "date": "24.09 (czw)",
@@ -2958,7 +2970,8 @@
           "time": "16:00",
           "event": "Wasserburg am Inn — hotel, spacer Altstadt, kolacja Paulaner"
         }
-      ]
+      ],
+      "summary": "Powrót w stronę Niemiec — Chianti → Wasserburg am Inn przez Alpy i Brenner."
     },
     {
       "date": "25.09 (pt)",
@@ -3145,7 +3158,8 @@
           "time": "13:00",
           "event": "Obiad i odpoczynek — ostatni nocleg w drodze powrotnej"
         }
-      ]
+      ],
+      "summary": "Krótki, spokojny odcinek Wasserburg → Hof, z lunchem nad jeziorem po drodze."
     },
     {
       "date": "26.09 (sob)",
@@ -3288,7 +3302,8 @@
           "time": "13:30",
           "event": "Poznań — dom 🏠"
         }
-      ]
+      ],
+      "summary": "Ostatni odcinek do Poznania — powrót do domu z zapasem czasowym przed buforem."
     },
     {
       "date": "27.09 (nd)",
@@ -3297,7 +3312,8 @@
       "label": "BUFOR",
       "title": "Dzień rezerwowy — już w Poznaniu",
       "note": "Deadline powrotu. Przy planowym harmonogramie jesteś w domu od 26.09. Ten dzień to margines bezpieczeństwa na opóźnienia, pogodę lub dodatkowy postój.",
-      "base_id": null
+      "base_id": null,
+      "summary": "Dzień rezerwowy w Poznaniu, na wypadek opóźnień."
     }
   ],
   "practical_info": {

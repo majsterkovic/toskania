@@ -89,6 +89,7 @@ function renderSiteNav() {
         <a href="#pogoda">Pogoda</a>
         <a href="#todo">Todo</a>
         <a href="#info">Info</a>
+        <a href="short/">Skrót</a>
       </div>
       <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Przełącz tryb ciemny/jasny">◑</button>
     </nav>

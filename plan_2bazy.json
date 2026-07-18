@@ -157,20 +157,10 @@
           "alt": "Katedra San Zeno i dzwonnica na Piazza del Duomo w Pistoi",
           "credit": "Gianni Careddu / Wikimedia Commons (CC BY-SA 4.0)"
         },
-        "monteriggioni": {
-          "src": "images/monteriggioni.jpg",
-          "alt": "Średniowieczne mury obronne Monteriggioni na wzgórzu, w tle pole słoneczników",
-          "credit": "Diego Baglieri / Wikimedia Commons (CC BY-SA 4.0)"
-        },
-        "murlo": {
-          "src": "images/murlo.jpg",
-          "alt": "Wejście do Antiquarium di Poggio Civitate, muzeum etruskiego w zamku w Murlo",
-          "credit": "Flo Sorg / Wikimedia Commons (CC0)"
-        },
-        "foresta_tocchi": {
-          "src": "images/foresta-tocchi.jpg",
-          "alt": "Zalesione wzgórza Riserva Naturale di Tocchi z widokiem na osadę Tocchi",
-          "credit": "LigaDue / Wikimedia Commons (CC BY-SA 4.0)"
+        "firenze": {
+          "src": "images/firenze.jpg",
+          "alt": "Katedra Santa Maria del Fiore o zachodzie słońca, widok z Piazzale Michelangelo",
+          "credit": "Dllu / Wikimedia Commons (CC BY-SA 4.0)"
         }
       }
     },
@@ -349,10 +339,10 @@
           "type": "attraction"
         },
         {
-          "label": "Monteriggioni",
+          "label": "Florencja",
           "coords": [
-            43.389,
-            11.219
+            43.7731,
+            11.256
           ],
           "type": "attraction"
         }
@@ -2602,163 +2592,177 @@
     {
       "date": "23.09 (śr)",
       "day_num": 12,
-      "type": "tuscany",
-      "label": "TOSKANIA · DZIEŃ 10 (OSTATNI)",
-      "title": "Monteriggioni, Murlo i dębowy las Tocchi",
-      "image": "monteriggioni",
+      "type": "tuscany_popular",
+      "label": "TOSKANIA · DZIEŃ 10 (OSTATNI) ★ POPULARNY",
+      "title": "Florencja — jeden dzień z tłumem, świadomie",
+      "image": "firenze",
       "base_id": "base2",
       "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 35,
+      "drive_limit_min": 25,
       "attractions": [
         {
-          "name": "Monteriggioni — mury Dantego",
-          "drive_min": 30,
-          "description": "Doskonale zachowane mury obronne z 1213 r. — 14 wież, pełny obwód zachowany. Dante opisał je w Boskiej Komedii (Inf. XXXI). Wolny wstęp na teren, wejście na mury €3,50. Wrzesień: małe tłumy.",
-          "type": "medieval",
-          "gps_hint": "Monteriggioni SI — parking przy Piazzale Cavour",
+          "name": "Piazza del Duomo — Katedra, Kopuła, Battistero, Campanile",
+          "description": "Santa Maria del Fiore, kopuła Brunelleschiego (pierwsza taka konstrukcja od czasów antycznego Rzymu), Campanile di Giotto i Battistero z brązowymi Wrotami Raju Ghibertiego. Kopuła wymaga rezerwacji slotu z wyprzedzeniem.",
+          "type": "popular",
+          "image_key": "firenze",
+          "gps_hint": "Piazza del Duomo, Firenze",
           "coords": [
-            43.3892,
-            11.2192
+            43.7731,
+            11.256
           ],
-          "opening_hours": "Mury: lis–lut 10:00–13:30, 14:00–17:00. Mar–paź: 9:30–19:30.",
-          "ticket_price": "Mury: €3,50. Piazza: bezpłatna.",
-          "duration_h": 1.0,
-          "image_key": "monteriggioni"
+          "opening_hours": "Battistero/Campanile/Museo/Santa Reparata: codz. 9:00–19:30 (kasy do 19:45). Kopuła: 8:15–19:30, rezerwacja obowiązkowa.",
+          "ticket_price": "Brunelleschi Pass (wszystkie zabytki placu, ważny 3 dni): €30/os, 7–14 lat €12. Sama katedra (nawa): bezpłatna.",
+          "duration_h": 1.75
         },
         {
-          "name": "Murlo — muzeum etruskie Antiquarium",
-          "drive_min": 25,
-          "description": "Małe borgo z wyjątkowym muzeum etruskim — znaleziska z VII–VI w. p.n.e. ze świątyni Poggio Civitate (jedyna taka in situ w Toskanii). Centrum wsi zachowane w niemal nienaruszonym średniowiecznym kształcie.",
+          "name": "Piazza della Signoria — Loggia dei Lanzi i Palazzo Vecchio",
+          "description": "Loggia dei Lanzi to darmowa, plenerowa galeria rzeźb (m.in. Perseusz Celliniego, Porwanie Sabinek) — jedna z niewielu atrakcji Florencji bez kolejki i bez biletu. Palazzo Vecchio zwiedzamy tylko z zewnątrz.",
           "type": "cultural",
-          "gps_hint": "Murlo SI — Antiquarium di Poggio Civitate, Piazza Martiri di Niccioleta",
+          "image_key": "firenze",
+          "gps_hint": "Piazza della Signoria, Firenze",
           "coords": [
-            43.1738,
-            11.3813
+            43.7696,
+            11.2558
           ],
-          "opening_hours": "Antiquarium: Wt–Nd 10:00–13:00, 14:30–17:30.",
-          "ticket_price": "Antiquarium Etrusco: €4",
-          "duration_h": 1.0,
-          "image_key": "murlo"
+          "opening_hours": "Plac i Loggia: całodobowo, bezpłatnie. Museo di Palazzo Vecchio: sprawdź aktualne godziny na museicivicifiorentini.comune.fi.it (w tym planie zwiedzamy z zewnątrz).",
+          "ticket_price": "Plac, Loggia: bezpłatne. Palazzo Vecchio (muzeum, opcjonalnie): ok. €12,50/os.",
+          "duration_h": 1.0
         },
         {
-          "name": "Foresta di Tocchi — las dębowy Quercus cerris",
-          "drive_min": 25,
-          "description": "Stary las dębowy między Murlo a Buonconvento — Quercus cerris dominuje. Spacer przez leśne ścieżki przy Podere Tocchi. Cichy zakątek bez turystów.",
-          "type": "nature",
-          "gps_hint": "Tocchi, 53016 Murlo SI — ścieżki przy Podere Tocchi",
+          "name": "Ponte Vecchio i Oltrarno",
+          "description": "Średniowieczny most z warsztatami złotników zawieszonymi nad Arno — jedyny most Florencji, którego Niemcy nie wysadzili w 1944 r. Po drugiej stronie rzeki, w Oltrarno, tłum wyraźnie rzednie.",
+          "type": "popular",
+          "image_key": "firenze",
+          "gps_hint": "Ponte Vecchio, Firenze",
           "coords": [
-            43.142,
-            11.3505
+            43.768,
+            11.2531
           ],
-          "opening_hours": "Las dostępny całą dobę.",
-          "ticket_price": "Bezpłatny",
-          "duration_h": 0.75,
-          "image_key": "foresta_tocchi"
+          "opening_hours": "Most publiczny — całodobowo, bezpłatnie.",
+          "ticket_price": "Bezpłatny (most i spacer po Oltrarno)",
+          "duration_h": 1.5
         }
       ],
-      "oak_forest": {
-        "spot": "Foresta di Tocchi — między Murlo a Buonconvento",
-        "species": "Quercus cerris (dąb burgundzki), dominujący",
-        "note": "Wstęp swobodny tylko drogami szutrowymi (strade bianche). Wędrowanie po lesie poza oznaczonymi drogami wymaga zezwolenia — kontakt przed wyjazdem: rgpbio.it lub comune.monticiano.si.it",
-        "gps_hint": "SP541 Murlo–Buonconvento — cartello Tocchi. Parking przy dukcie leśnym, sentiero wśród cerro."
-      },
       "food": {
-        "place": "Il Pozzo — Monteriggioni",
-        "address": "Piazza Roma 2, 53035 Monteriggioni SI",
+        "place": "Mercato Centrale Firenze — piano superiore",
+        "address": "Piazza del Mercato Centrale 4, 50123 Firenze",
         "dishes": [
-          "pici al ragù toscano",
-          "tagliata di chianina",
-          "ribollita",
-          "Chianti Classico riserva"
+          "lampredotto (florencka kanapka z żołądka wołowego)",
+          "pasta fresca na wagę z kilkunastu straganów",
+          "bistecca alla fiorentina (na kawałki, do podziału)",
+          "gelato artigianale na deser"
         ],
-        "note": "Restauracja w centrum Monteriggioni — widok na wieże. Rezerwacja zalecana: +39 0577 304127. Kolacja pożegnalna w Toskanii.",
-        "price": "~€25–40/os",
-        "phone": "+39 0577 304127",
-        "opening_hours": "Śr–Pn 12:30–14:00, 19:30–21:30. Wt zamkn.",
-        "gps_hint": "Piazza Roma 2 — wewnątrz murów Monteriggioni, przez bramę miejską"
+        "note": "Hala targowa nad parterowym targiem spożywczym z 1874 r. — bez rezerwacji, każdy wybiera co innego, idealne dla rodziny z różnymi gustami. Piano superiore czynne codziennie 9:00–24:00.",
+        "price": "~€12–20/os",
+        "gps_hint": "Piazza del Mercato Centrale 4 — wejście od Via dell'Ariento lub Via Sant'Antonino"
       },
       "practical_tips": [
-        "Monteriggioni (9:00–11:00) → Las Tocchi (11:30–13:00) → Murlo + Antiquarium (13:30) → kolacja Il Pozzo 19:00",
-        "Ostatni dzień Toskanii: zaplanuj kolację — Il Pozzo to jedna z lepszych restauracji okolicy"
+        "Kup bilet kolejowy Siena→Firenze wcześniej online (Trenitalia) lub w automacie na stacji — regionale nie wymaga rezerwacji miejsca, ale sprawdź aktualny rozkład przed wyjazdem",
+        "Kopuła Duomo: rezerwacja slotu obowiązkowa — zrób to online z wyprzedzeniem (duomo.firenze.it), miejsca znikają szybko nawet poza szczytem sezonu",
+        "Uffizi NIE jest w tym planie — we wrześniu wymaga rezerwacji z 1–2-miesięcznym wyprzedzeniem (sprzedaż otwiera się na kwartał do przodu, miesiąc przed terminem)",
+        "Samochód zostaje na parkingu w Sienie na cały dzień — jedyny dzień całej wyprawy bez jazdy po Toskanii",
+        "Wygodne buty — dzień to głównie chodzenie po florenckim bruku i kocich łbach"
       ],
-      "narrative": "Ostatni dzień toskański, bez zapasu czasowego — jeśli zabraknie czasu, Murlo można ograniczyć do samego Antiquarium. Wyjeżdżamy o 9:30 — 30 minut do Monteriggioni, parking przy Piazzale Cavour. Krąg XIV-wiecznych murów z 14 wieżami stoi tu kompletny od 1213 roku — to właśnie te baszty Dante porównał do gigantów otaczających studnię w Piekle (XXXI pieśń). Spacer wzdłuż murów, opcjonalnie wejście na galerię (€3,50) i widok na całe miasteczko zamknięte w kamiennym pierścieniu jak w innej epoce. Potem 25 minut do Murlo: Antiquarium Poggio Civitate — jedyne w Toskanii muzeum etruskie in situ, gdzie znaleziska z VII–VI w. p.n.e. leżą dosłownie tam, gdzie je odkopano (bilet €4, wt–nd 10:00–13:00 i 15:00–18:00, dziś środa więc otwarte), a samo Murlo zachowało się w niemal nienaruszonym średniowiecznym kształcie. Wracamy do Monteriggioni na lunch w Il Pozzo (Piazza Roma 2). Popołudnie należy do lasu — Foresta di Tocchi, szutrowe drogi wśród dominujących dębów cerro, wstęp swobodny, cisza przerywana tylko szumem liści i odgłosem własnych kroków na żwirze. Wracamy do bazy ok. 16:30–17:00. Wieczorem trzeba spakować bagaże — jutro wyjazd o 7:00 i pożegnanie z Toskanią.",
+      "narrative": "Ten dzień jest inny niż wszystkie poprzednie — celowo. Cała ta podróż budowana była wokół unikania tłumów: wczesne pobudki, boczne uliczki, dni powszednie zamiast weekendów. Ale jest miejsce, którego nie da się zobaczyć bez tłumu, bo tłum jest częścią jego natury, i to miejsce jest warte tego kompromisu. Wyjeżdżamy z bazy o 7:00, dwadzieścia kilka minut do Sieny, zostawiamy auto na cały dzień na parkingu przy stacji i po raz jedyny w całej podróży przesiadamy się na tory — dziś prowadzi nas rozkład jazdy, nie licznik kilometrów. Pociąg regionale sunie przez Val d'Elsa, krajobraz za oknem zmienia się z tarasowych winnic w przedmieścia, aż w końcu, około 9:20, wjeżdżamy na Firenze Santa Maria Novella. Piazza del Duomo wita ścianą marmuru w trzech kolorach i tłumem, który tu jest po prostu stałym stanem rzeczy — kopuła Brunelleschiego, pierwsza taka konstrukcja od czasów antycznego Rzymu, nadal uznawana za cud inżynierii, obok Campanile di Giotto, a przy wejściu Battistero z brązowymi Wrotami Raju Ghibertiego, które podobno nawet Michał Anioł nazwał godnymi bramy do nieba. Stąd wąska Via dei Calzaiuoli, zawsze pełna, prowadzi na Piazza della Signoria — pod Loggią dei Lanzi stoją posągi, które można oglądać za darmo i bez pośpiechu (Perseusz Celliniego, Porwanie Sabinek), a wieża Palazzo Vecchio wciąż rządzi panoramą jak osiemset lat temu. Lunch w Mercato Centrale — hala targowa pełna straganów, gdzie każdy z rodziny może zjeść coś innego, bez rezerwacji i bez czekania. Popołudnie należy do Ponte Vecchio: złotnicy w witrynach wiszących nad Arno, tłum gęstnieje z każdym krokiem na moście, ale widok na rzekę i Ponte Santa Trinita w tle wynagradza przepychanki. Po drugiej stronie, w Oltrarno, robi się nagle ciszej — kilka kroków wystarczy, by uciec z tłumu, choć dziś to tylko chwila oddechu, nie cel sam w sobie. Wieczorem ta sama droga w drugą stronę — pociąg, Siena, samochód, baza — i świadomość, że jeden dzień kompromisu wart był tego widoku na kopułę o zachodzącym słońcu.",
       "web_research": [
         {
-          "topic": "Monteriggioni — mury Dantego",
-          "summary": "Mury XIV w., 14 wież, obwód 570 m. Wstęp na wały €3,50, 9:30–19:30 (wrzesień). Dante Piekło XXXI: Montereggion di torri si corona. Parking gratuito Parcheggio Centrale 200 m od bramy. Tłumy 10–14; po 16 spokojnie.",
-          "checked": "2026-06",
-          "source": "https://www.monteriggioniturismo.it"
+          "topic": "Brunelleschi Pass — Duomo di Firenze",
+          "summary": "Bilet łączony (Battistero, Campanile di Giotto, Cupola, Museo dell'Opera del Duomo, Santa Reparata) ważny 3 dni kalendarzowe od wybranej daty. Cena €30 (ulgowy 7–14 lat: €12). Cupola wymaga rezerwacji slotu godzinowego przy zakupie — w wysokim sezonie sloty szybko się wyczerpują. Pozostałe zabytki: codz. 9:00–19:30 (kasa do 19:45), zamknięte pierwszy wtorek miesiąca (nie dotyczy 23.09 — środa).",
+          "source": "https://duomo.firenze.it/it/720/brunelleschi-pass",
+          "checked": "2026-07"
         },
         {
-          "topic": "Murlo — Antiquarium Etrusco (Środa: otwarte)",
-          "summary": "Museo Etrusco di Murlo (Castello di Murlo): €3, wt–nd 10–13 i 15–18. 23.09 (Środa) = OTWARTE. Kolekcja z Poggio Civitate VII–VI w. p.n.e. (jedyny etrusk. pałac arystokratyczny). Parking bezpłatny przy wejciu do wsi.",
-          "checked": "2026-06",
-          "source": "https://www.museomurlo.it"
+          "topic": "Mercato Centrale Firenze — godziny",
+          "summary": "Piano superiore (food hall, ponad 20 straganów): czynne codziennie 9:00–24:00. Parter (historyczny targ spożywczy z 1874 r.): pn–pt 7:00–15:00, sobota 7:00–17:00, niedziela zamknięte.",
+          "source": "https://www.mercatocentrale.it/firenze/info/",
+          "checked": "2026-07"
         },
         {
-          "topic": "Foresta di Tocchi — las dębowy",
-          "summary": "Quercus cerris (dąb burgundzki) i cerro. SIC Natura 2000, SP541. Wolny wstęp, parking przy drodze. Szlaki nieoznakowane — GPS potrzebny. Wrzesień: pełna zieleN przed jesiennym przebarwieniem. Grzyby (prywatne tereny — sprawdzć tablice).",
-          "checked": "2026-06"
+          "topic": "Pociąg Siena → Firenze S.M.N.",
+          "summary": "Połączenie regionale, bezpośrednie, ~1h20–1h40 (linia Siena–Empoli–Firenze, nie szybka kolej). Ok. 24 kursy dziennie, częstotliwość co 60–90 minut, pierwszy ok. 5:43, ostatni ok. 21:40 (z Sieny). Bilet ok. €10/os w jedną stronę, bez obowiązkowej rezerwacji miejsca.",
+          "source": "https://www.e656.net/orario/collegamenti/siena/firenze_santa_maria_novella.html",
+          "checked": "2026-07"
         },
         {
-          "topic": "Trasa Siena → Monteriggioni → Murlo",
-          "summary": "Z Castelnuovo Berardenga: A1 Firenze → Monteriggioni zjazd (8 km). Murlo: SP2 → SP73bis → SP146, ~35 km od Monteriggioni, 45 min. Tocchi: 5 km za Murlo kier. Vescovado. Paliwo: Siena centrum lub SP2 stacja.",
-          "checked": "2026-06"
-        },
-        {
-          "topic": "Osteria La Buca delle Fate — Monteriggioni",
-          "summary": "Via 1 Maggio 2, Monteriggioni. Cucina senese. Otwarte 12:00–15:00 i 19:00–21:30. 23.09 (śr.) — lunch OK. Pappardelle al cinghiale, ribollita. Tel. 0577 304127. Alternatywa: Il Pozzo (droższy, Piazza Roma).",
-          "checked": "2026-06"
+          "topic": "Uffizi — dlaczego pomijamy w tym planie",
+          "summary": "Bilety na Galerię Uffizi sprzedawane są kwartalnie, z otwarciem sprzedaży miesiąc przed terminem — dla września trzeba rezerwować już w czerwcu. Od Wielkanocy do września to szczyt sezonu, dostępność znika bardzo szybko. Przy planowaniu z krótszym wyprzedzeniem nie mieści się to w harmonogramie, dlatego Uffizi nie jest częścią podstawowego planu tego dnia.",
+          "source": "https://www.visitflorence.com/it/cosa-vedere-a-firenze/prenotazione-musei-firenze.html",
+          "checked": "2026-07"
         }
       ],
       "opening_hours": {
-        "monteriggioni_mury": "Codz. 9:30–19:30 (wrzesień). Ostatnie wejście 19:00. Wstęp €3,50.",
-        "murlo_antiquarium": "Wt–Nd 10:00–13:00 i 15:00–18:00. 23.09 śr = otwarte.",
-        "tocchi_las": "Wolny dostęp o każdej porze (las publiczny)."
+        "duomo_complex": "Battistero, Campanile, Museo dell'Opera, Santa Reparata: codz. 9:00–19:30 (kasy do 19:45). Kopuła: 8:15–19:30, rezerwacja slotu obowiązkowa.",
+        "palazzo_vecchio": "Zwiedzamy tylko z zewnątrz i Loggię dei Lanzi (bezpłatna, całodobowa) — godziny muzeum sprawdź na museicivicifiorentini.comune.fi.it, jeśli chcecie wejść do środka.",
+        "mercato_centrale": "Piano superiore: codz. 9:00–24:00. Parter (targ spożywczy): pn–pt 7:00–15:00, sb 7:00–17:00, nd zamknięte.",
+        "ponte_vecchio": "Most publiczny, dostępny całą dobę."
       },
       "parking": {
-        "monteriggioni": "Parcheggio Centrale — 200 m od bramy, bezpłatny.",
-        "murlo": "Parking bezpłatny przy wejściu do wsi Murlo.",
-        "tocchi": "Parking przy SP541 — kilka miejsc przy leśnym dukcie."
+        "siena_stacja": "Parcheggio Stazione (Piazzale Rosselli) lub Parcheggio Il Duomo — zostaw auto na cały dzień, ok. €15–20/doba. 5 min pieszo do peronów."
       },
+      "fuel_stops": [
+        {
+          "name": "IP / Q8 Castelnuovo Berardenga",
+          "location": "BAZA 2 — Chianti Senese",
+          "note": "Krótki dzień jazdy (tylko Chianti↔Siena) — zatankuj przy okazji, jeśli bak niski."
+        }
+      ],
       "eta_timeline": [
         {
-          "time": "09:30",
-          "event": "Wyjazd z bazy Chianti (30 min do Monteriggioni)"
+          "time": "07:00",
+          "event": "Wyjazd z bazy Chianti do Sieny (~20 km, 25 min)"
         },
         {
-          "time": "10:00",
-          "event": "Monteriggioni — parking centralne, spacer po murach"
+          "time": "07:25",
+          "event": "Parking przy stacji w Sienie — auto zostaje na cały dzień"
+        },
+        {
+          "time": "07:57",
+          "event": "Pociąg regionale Siena → Firenze S.M.N. (sprawdź aktualny rozkład, ~1h20–1h40)"
+        },
+        {
+          "time": "09:20",
+          "event": "Przyjazd Firenze Santa Maria Novella"
+        },
+        {
+          "time": "09:30",
+          "event": "Piazza del Duomo — Battistero, Campanile, fasada katedry"
         },
         {
           "time": "11:15",
-          "event": "Wyjazd do Murlo (25 min)"
+          "event": "Spacer Via dei Calzaiuoli → Piazza della Signoria, Loggia dei Lanzi"
         },
         {
-          "time": "11:45",
-          "event": "Murlo Antiquarium Etrusco (otwiera 10:00, bilet €4)"
+          "time": "12:15",
+          "event": "Lunch w Mercato Centrale (San Lorenzo)"
         },
         {
-          "time": "13:00",
-          "event": "Obiad Il Pozzo — Monteriggioni (powrót, 25 min)"
+          "time": "13:45",
+          "event": "Ponte Vecchio i spacer po Oltrarno"
         },
         {
-          "time": "14:30",
-          "event": "Wyjazd do Foresta di Tocchi (25 min od Murlo)"
+          "time": "15:15",
+          "event": "Czas wolny — lody, Piazza della Repubblica"
         },
         {
-          "time": "15:00",
-          "event": "Las dębowy Tocchi — cisza i brak turystów"
+          "time": "16:40",
+          "event": "Powrót na stację Firenze S.M.N."
         },
         {
-          "time": "16:30",
-          "event": "Powrót do bazy — ostatni wieczór toskański"
+          "time": "17:03",
+          "event": "Pociąg powrotny Firenze → Siena (sprawdź rozkład)"
+        },
+        {
+          "time": "18:30",
+          "event": "Przyjazd do Sieny, odbiór samochodu"
+        },
+        {
+          "time": "19:00",
+          "event": "Powrót do bazy Chianti"
         }
       ],
-      "daily_km_estimate": 52,
-      "crowd_tip": "Monteriggioni: tłumy 10:00–12:00 i 14:00–16:00 (wycieczki). Przyjedź przed 10:00 lub po 16:30. Murlo: muzeum etruskie bez kolejek. Tocchi: las bez turystów.",
-      "warning": "Dzień bez zapasu czasowego. Monteriggioni (~35 min od bazy) można alternatywnie dokleić do popołudnia dnia sieneńskiego, albo skrócić Murlo do samego Antiquarium.",
-      "image2": "foresta_tocchi"
+      "daily_km_estimate": 50,
+      "crowd_tip": "To jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Duomo, Ponte Vecchio i Piazza della Signoria są zatłoczone praktycznie cały dzień w sezonie. Jedyna realna strategia: przyjechać najwcześniej jak się da (pociąg ok. 8:00), zobaczyć Piazza del Duomo przed 10:00, zanim zjadą się grupy z autokarów, i zaakceptować, że popołudnie na Ponte Vecchio i tak będzie ścisk.",
+      "warning": "Uffizi nie jest częścią tego dnia — wymagałoby rezerwacji z 1–2-miesięcznym wyprzedzeniem (od czerwca), co nie mieści się w planowaniu z bieżącym wyprzedzeniem. Kopuła Duomo też wymaga rezerwacji slotu online — zrób to z wyprzedzeniem, miejsca znikają szybko. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia bliżej wyjazdu."
     },
     {
       "date": "24.09 (czw)",
@@ -3309,17 +3313,19 @@
     "vendemmia": "Wrzesień = winobranie w Chianti — w agriturismo możliwy udział w zbiorach",
     "ztl_warning": "Centra większości toskańskich borghi mają ZTL (strefa ruchu ograniczonego) — parkuj poza murami",
     "crowd_avoidance": {
-      "popular_days": 1,
+      "popular_days": 2,
       "popular_places": [
-        "Siena (19.09)"
+        "Siena (19.09)",
+        "Florencja (23.09) — świadomy wyjątek"
       ],
       "tips": [
         "Siena: tylko poranek, wyjazd przed 14:00",
         "Pienza (22.09): przyjedź przed 9:30 — wtorek spokojniejszy niż weekend",
-        "Unikaj Florencji, Pizy i San Gimignano — poza planem celowo"
+        "Florencja (23.09): jedyny dzień, gdzie świadomie rezygnujemy z zasady unikania tłumów — przyjedź najwcześniej się da, zobacz Duomo przed 10:00",
+        "Poza tym jednym dniem plan nadal unika Pizy i San Gimignano — zbyt daleko, żeby dokleić do istniejących dni bez rezygnacji z czegoś innego"
       ]
     },
-    "plan_note": "Wariant 2 bazy: rezygnacja z Maremmy (Pitigliano, Saturnia, Sorano) na rzecz głębszego poznania Chianti i Val d'Orcia. Zysk: mniej transferów, więcej czasu w każdej bazie. Strata: brak etruskich via cave, Saturnii termalnej i maremmańskiej kuchni."
+    "plan_note": "Wariant 2 bazy: rezygnacja z Maremmy (Pitigliano, Saturnia, Sorano) na rzecz głębszego poznania Chianti i Val d'Orcia. Zysk: mniej transferów, więcej czasu w każdej bazie. Strata: brak etruskich via cave, Saturnii termalnej i maremmańskiej kuchni. Jeden dzień (23.09) świadomie łamie zasadę unikania tłumów — pociągiem z Sieny do Florencji, bo to jedyne miejsce w promieniu zasięgu tego planu, którego nie da się zobaczyć bez tłumu, a warto."
   },
   "variants": {
     "base2_options": [
@@ -3577,8 +3583,8 @@
         "id": "attractions",
         "name": "Atrakcje i wejściówki",
         "icon": "🎟️",
-        "per_person_min": 57,
-        "per_person_max": 103,
+        "per_person_min": 73,
+        "per_person_max": 149,
         "note": "Większość miejsc bezpłatna lub z symbolicznym wstępem",
         "items": [
           {
@@ -3588,10 +3594,10 @@
             "per_person_max": 16
           },
           {
-            "label": "Monteriggioni — mury obronne",
-            "detail": "€3,50/os",
-            "per_person_min": 4,
-            "per_person_max": 4
+            "label": "Florencja — pociąg Siena↔Firenze + wstęp Duomo (opcjonalnie)",
+            "detail": "Pociąg regionale w obie strony ~€20/os. Brunelleschi Pass (Duomo/Kopuła/Battistero/Campanile) opcjonalnie €30/os (7-14 lat: €12) — sama katedra i place bezpłatne.",
+            "per_person_min": 20,
+            "per_person_max": 50
           },
           {
             "label": "Montalcino — degustacja wina (Enoteca Fortezza)",
@@ -3614,10 +3620,10 @@
         ]
       }
     ],
-    "total_per_person_min": 796,
-    "total_per_person_max": 1172,
-    "total_4persons_min": 3184,
-    "total_4persons_max": 4688,
+    "total_per_person_min": 812,
+    "total_per_person_max": 1218,
+    "total_4persons_min": 3248,
+    "total_4persons_max": 4872,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
@@ -3702,7 +3708,7 @@
           {
             "id": "kleszcze",
             "label": "Kleszcze — Toskania (ryzyko umiarkowane)",
-            "detail": "W lasach dębowych (Garfagnana, Foresta di Tocchi) są kleszcze. Zabrać repelent DEET/Icaridin, sprawdzać ciało po spacerach leśnych. Borelia i TBE w Toskanii — ryzyko niskie, ale realne.",
+            "detail": "W lasach dębowych (Garfagnana, Orecchiella) są kleszcze. Zabrać repelent DEET/Icaridin, sprawdzać ciało po spacerach leśnych. Borelia i TBE w Toskanii — ryzyko niskie, ale realne.",
             "deadline": "przed wyjazdem",
             "priority": "medium"
           },
@@ -3804,6 +3810,13 @@
             "detail": "Winiarnia Barone Ricasoli — degustacje i zwiedzanie zamku. Rezerwacja zalecana (szczególnie w sezonie zbiorów). ricasoli.it. Dostępne opcje Chianti Classico Gran Selezione.",
             "deadline": "1–2 tygodnie przed wizytą",
             "priority": "low"
+          },
+          {
+            "id": "duomo-firenze",
+            "label": "Rezerwacja Kopuły Duomo — Florencja (23.09)",
+            "detail": "Brunelleschi Pass ze slotem godzinowym na kopułę — kup online na duomo.firenze.it z wyprzedzeniem (sloty na wrzesień znikają szybko). Bez tego wciąż można zwiedzić plac, Battistero z zewnątrz i pozostałe zabytki, ale nie wejść na kopułę.",
+            "deadline": "min. 2-3 tygodnie przed 23.09",
+            "priority": "medium"
           }
         ]
       },
@@ -3829,7 +3842,7 @@
           {
             "id": "budget",
             "label": "Ustalić budżet grupowy",
-            "detail": "Szacunkowy koszt: €796–1172/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
+            "detail": "Szacunkowy koszt: €812–1218/os (noclegi, jedzenie, atrakcje, lokalne paliwo) + paliwo na trasę. Warto ustalić wspólną kasę grupową lub aplikację do podziału kosztów (Splitwise).",
             "deadline": "2–4 tygodnie przed wyjazdem",
             "priority": "medium"
           }
@@ -3850,7 +3863,7 @@
           {
             "id": "deby",
             "label": "Lista do obserwacji dębów (dla Mariusza)",
-            "detail": "Gatunki do wypatrywania: Quercus cerris (dąb burgundzki — Foresta di Tocchi), Quercus pubescens (dąb omszony — Crete Senesi i Chianti), Quercus ilex (ostrokrzew — zbocza Chianti). Zabrać lornetkę, notes, aparat.",
+            "detail": "Gatunki do wypatrywania: Quercus cerris (dąb burgundzki — Orecchiella, Garfagnana), Quercus pubescens (dąb omszony — Crete Senesi i Chianti), Quercus ilex (ostrokrzew — zbocza Chianti). Zabrać lornetkę, notes, aparat.",
             "deadline": "przed wyjazdem",
             "priority": "low"
           },

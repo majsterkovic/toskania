@@ -272,32 +272,14 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "description": "Piazza del Duomo in Pistoia, Tuscany, Italy, with the cathedral of San Zeno and its bell tower."
     },
-    "monteriggioni.jpg": {
-      "place": "Monteriggioni",
-      "wikimedia_title": "File:Monteriggioni - veduta 01.jpg",
-      "source_url": "https://commons.wikimedia.org/wiki/File:Monteriggioni_-_veduta_01.jpg",
-      "author": "Diego Baglieri",
+    "firenze.jpg": {
+      "place": "Firenze — Duomo (Santa Maria del Fiore)",
+      "wikimedia_title": "File:Florence Cathedral seen from Piazzale Michelangelo dllu.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Florence_Cathedral_seen_from_Piazzale_Michelangelo_dllu.jpg",
+      "author": "Dllu",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "description": "View of the walled medieval town of Monteriggioni (province of Siena, Tuscany) on its hilltop, with a sunflower field in the foreground. Submitted for Wiki Loves Monuments 2020."
-    },
-    "murlo.jpg": {
-      "place": "Murlo",
-      "wikimedia_title": "File:PoggioCivitateAntiquariumMurlo_01.jpg",
-      "source_url": "https://commons.wikimedia.org/wiki/File:PoggioCivitateAntiquariumMurlo_01.jpg",
-      "author": "Flo Sorg",
-      "license": "CC0 1.0",
-      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "description": "Door to the Poggio Civitate Antiquarium (Etruscan museum housed in the castle of Murlo), view from the south."
-    },
-    "foresta-tocchi.jpg": {
-      "place": "Riserva Naturale di Tocchi",
-      "wikimedia_title": "File:TocchiCastelloPanorama.jpg",
-      "source_url": "https://commons.wikimedia.org/wiki/File:TocchiCastelloPanorama.jpg",
-      "author": "LigaDue",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "description": "Panoramic view of the hamlet of Tocchi (Monticiano, province of Siena, Tuscany), surrounded by the dense oak/mixed woodland of the Riserva Naturale di Tocchi nature reserve."
+      "description": "The Florence Cathedral seen from Piazzale Michelangelo just before sunset."
     }
   }
 }

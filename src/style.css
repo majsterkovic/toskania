@@ -718,15 +718,17 @@ html.dark .research-count {
   font-size: 1.02rem;
   line-height: 1.75;
   color: var(--ink);
-  padding: 0.85rem 1.15rem;
-  border-left: 3px solid var(--day-accent, var(--cipresso));
-  background: color-mix(in srgb, var(--day-accent, var(--cipresso)) 5%, var(--card-bg));
-  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--day-accent, var(--cipresso));
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   margin: 0;
 }
 
 html.dark .day-narrative {
-  background: color-mix(in srgb, var(--day-accent, var(--cipresso)) 12%, var(--card-bg));
+  background: var(--card-bg);
 }
 
 .day-block h4 {
@@ -781,21 +783,26 @@ html.dark .day-narrative {
   text-decoration: underline;
 }
 
-.day-block--food {
-  padding: 0.85rem 0.85rem 0.85rem 1.1rem;
-  border-left: 2px solid var(--oro);
-  background: rgba(168, 136, 60, 0.04);
+.day-block {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--block-accent, var(--oro));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.1rem 1.25rem;
+  transition: var(--transition-card);
 }
 
-.day-block--food .block-label {
-  color: var(--oro);
+.day-block:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.day-block--food {
+  --block-accent: var(--oro);
 }
 
 .day-block--practical {
-  background: linear-gradient(135deg, rgba(184, 92, 56, 0.05), rgba(92, 107, 69, 0.04));
-  border-radius: 8px;
-  padding: 0.85rem;
-  border: 1px solid rgba(184, 92, 56, 0.12);
+  --block-accent: var(--terracotta);
 }
 
 .day-block--research {
@@ -973,10 +980,7 @@ html.dark .day-narrative {
 /* Special blocks */
 
 .oak-block {
-  background: var(--cream-deep);
-  border-radius: 8px;
-  padding: 0.85rem;
-  border-left: 3px solid var(--olive);
+  --block-accent: var(--olive);
 }
 
 .transfer-block {
@@ -985,10 +989,7 @@ html.dark .day-narrative {
 }
 
 .crowd-tip {
-  background: linear-gradient(135deg, #fdf6e8, #f8ede0);
-  border-radius: 8px;
-  padding: 0.85rem;
-  border: 1px solid rgba(184, 92, 56, 0.15);
+  --block-accent: var(--oro);
 }
 
 .buffer-note {
@@ -997,20 +998,21 @@ html.dark .day-narrative {
   font-family: var(--font-sans);
   font-size: 0.93rem;
   line-height: 1.6;
-  padding: 0.75rem 1rem;
-  background: var(--cream-deep);
-  border-radius: 6px;
-  border-left: 3px solid var(--stone-dark);
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--stone-dark);
+  box-shadow: var(--shadow);
 }
 
 html.dark .buffer-note {
-  background: rgba(30, 60, 44, 0.5);
+  background: var(--card-bg);
   border-left-color: var(--stone-dark);
 }
 
 .ztl-warning {
-  border-left: 3px solid var(--terracotta);
-  padding-left: 0.85rem;
+  border-left: 4px solid var(--terracotta);
 }
 
 /* Research */
@@ -1522,6 +1524,10 @@ body.lightbox-open {
     max-width: 1060px;
   }
 
+  .page--mapa {
+    max-width: 1280px;
+  }
+
   .hero {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
@@ -1631,7 +1637,15 @@ body.lightbox-open {
   padding: 0.6rem 1rem 0;
 }
 
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  font-family: var(--font-sans) !important;
+}
+
 .leaflet-map {
+  position: relative;
+  overflow: hidden;
   height: 340px;
   width: 100%;
   background: var(--stone);
@@ -2105,6 +2119,7 @@ body.lightbox-open {
   border: none;
   flex: 1 1 auto;
   min-width: 0;
+  width: 100%;
 }
 
 .imap-panel {
@@ -3025,13 +3040,7 @@ html.dark .route-wp--end   { color: var(--terracotta-light); }
 /* ── Wine tasting block ── */
 
 .day-block--wine {
-  border-left-color: var(--oro);
-  background: linear-gradient(135deg, rgba(168, 136, 60, 0.06), rgba(92, 107, 69, 0.04));
-}
-
-html.dark .day-block--wine {
-  background: linear-gradient(135deg, rgba(201, 168, 76, 0.09), rgba(92, 107, 69, 0.05));
-  border-left-color: var(--oro-light);
+  --block-accent: var(--terracotta-light);
 }
 
 /* ── ETA timeline (collapsible) ── */
@@ -3039,7 +3048,7 @@ html.dark .day-block--wine {
 .eta-list {
   list-style: none;
   padding: 0;
-  margin: 0.65rem 0 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -3048,9 +3057,9 @@ html.dark .day-block--wine {
 .eta-row {
   display: flex;
   gap: 0.75rem;
-  padding: 0.3rem 0;
+  padding: 0.4rem 0;
   border-bottom: 1px solid var(--border);
-  font-size: 0.83rem;
+  font-size: 0.85rem;
   font-family: var(--font-sans);
   align-items: baseline;
 }
@@ -3076,67 +3085,99 @@ html.dark .eta-time { color: var(--oro-light); }
 
 details.collapse-block,
 details.oh-block,
-details.eta-block {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+details.eta-block,
+details.research-item {
   background: var(--card-bg);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--block-accent, var(--stone-dark));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition-card);
   overflow: hidden;
-  margin-bottom: 0.85rem;
+  padding: 0;
+}
+
+details.eta-block {
+  --block-accent: var(--cipresso);
+}
+
+details.research-item {
+  --block-accent: var(--muted);
 }
 
 details.collapse-block[open],
 details.oh-block[open],
-details.eta-block[open] {
-  border-color: var(--oro);
-  box-shadow: var(--shadow);
+details.eta-block[open],
+details.research-item[open] {
+  box-shadow: var(--shadow-hover);
 }
 
 .oh-summary,
-.collapse-summary {
+.collapse-summary,
+.research-item__summary {
   cursor: pointer;
   user-select: none;
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
+  justify-content: space-between;
+  padding: 0.85rem 1.15rem;
   font-family: var(--font-sans);
   font-size: 0.82rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--ink);
   background: var(--cream-deep);
-  transition: background 0.15s ease, color 0.15s ease;
+  border-bottom: 1px solid transparent;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+details[open] > .oh-summary,
+details[open] > .collapse-summary,
+details[open] > .research-item__summary {
+  border-bottom-color: var(--border);
+  background: color-mix(in srgb, var(--oro) 8%, var(--cream-deep));
 }
 
 .oh-summary::-webkit-details-marker,
-.collapse-summary::-webkit-details-marker {
+.collapse-summary::-webkit-details-marker,
+.research-item__summary::-webkit-details-marker {
   display: none;
 }
 
 .oh-summary::before,
-.collapse-summary::before {
-  content: '▸';
-  font-size: 0.8rem;
-  color: var(--terracotta);
-  transition: transform 0.2s ease;
+.collapse-summary::before,
+.research-item__summary::before {
+  content: none;
 }
 
-details[open] > .oh-summary::before,
-details[open] > .collapse-summary::before {
+.oh-summary::after,
+.collapse-summary::after,
+.research-item__summary::after {
+  content: '▸';
+  font-size: 0.9rem;
+  color: var(--terracotta);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-left: 0.5rem;
+}
+
+details[open] > .oh-summary::after,
+details[open] > .collapse-summary::after,
+details[open] > .research-item__summary::after {
   transform: rotate(90deg);
 }
 
 .oh-summary:hover,
-.collapse-summary:hover {
+.collapse-summary:hover,
+.research-item__summary:hover {
   background: color-mix(in srgb, var(--oro) 12%, var(--cream-deep));
   color: var(--terracotta-deep);
 }
 
-.collapse-body {
-  padding: 0.85rem 1rem 1rem;
+.collapse-body,
+.research-item__body {
+  padding: 1.1rem 1.25rem;
 }
 
 .oh-list {

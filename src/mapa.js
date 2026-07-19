@@ -11,7 +11,7 @@ import './style.css';
 })();
 
 const app = document.getElementById('app');
-app.innerHTML = renderSiteNav('mapa') + `<div class="page">${renderInteractiveMap(plan.days)}</div>` + renderSiteFooter();
+app.innerHTML = renderSiteNav('mapa') + `<div class="page page--mapa">${renderInteractiveMap(plan.days)}</div>` + renderSiteFooter();
 initChrome();
 
 (function whenLeaflet() {

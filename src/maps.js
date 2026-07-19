@@ -16,11 +16,27 @@ function activeTileUrl() { return isDarkMode() ? DARK_TILE : VOYAGER_TILE; }
 const _maps = [];
 
 export function destroyAllMaps() {
-  _maps.forEach(({ map }) => { try { map.remove(); } catch (_) {} });
+  _maps.forEach(({ map, ro }) => {
+    if (ro) try { ro.disconnect(); } catch (_) {}
+    try { map.remove(); } catch (_) {}
+  });
   _maps.length = 0;
 }
 
-function registerMap(entry) { _maps.push(entry); return entry; }
+function registerMap(entry) {
+  _maps.push(entry);
+  if (entry.map && entry.map.getContainer()) {
+    const container = entry.map.getContainer();
+    if (window.ResizeObserver) {
+      const ro = new ResizeObserver(() => {
+        try { entry.map.invalidateSize(); } catch (_) {}
+      });
+      ro.observe(container);
+      entry.ro = ro;
+    }
+  }
+  return entry;
+}
 
 /** Call after toggling html.dark to swap tile layers on all initialised maps */
 export function swapMapTiles() {
@@ -223,6 +239,9 @@ export function initDayMap(containerId, base, attractions) {
     });
   }
 
+  setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 150);
+  setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 450);
+
   return map;
 }
 
@@ -289,6 +308,8 @@ export function initBaseMaps(plan) {
 
     if (pts.length === 1) map.setView(pts[0], 11);
     else if (pts.length > 1) map.fitBounds(L.latLngBounds(pts), { padding: [26, 26] });
+
+    setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 150);
 
     const legEl = document.getElementById(`basemap-legend-${baseId}`);
     if (legEl) {
@@ -509,6 +530,14 @@ export function initInteractiveMap(containerId, plan) {
   });
 
   updatePanel('all');
+
+  setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 150);
+  setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 450);
+
+  window.addEventListener('resize', () => {
+    try { map.invalidateSize(); } catch (_) {}
+  });
+
   return map;
 }
 

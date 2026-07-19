@@ -3158,7 +3158,7 @@ html.dark .research-item {
 
 .timeline {
   position: relative;
-  max-width: 780px;
+  max-width: 880px;
   margin: 0 auto;
   padding: 1.25rem 1.15rem 4rem;
 }
@@ -3292,6 +3292,17 @@ a.tl-row:focus-visible {
   line-height: 1.3;
   color: var(--ink);
 }
+.tl-row__desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
 .tl-row__sub {
   display: block;
   font-size: 0.85rem;
@@ -3415,7 +3426,7 @@ a.tl-row:hover .tl-row__chev { opacity: 1; transform: translateX(2px); }
 }
 
 /* ══ Strona dnia (#/dzien-N) ══ */
-.page--day { max-width: 780px; margin: 0 auto; padding: 1.25rem var(--page-pad) 3rem; }
+.page--day { max-width: 900px; margin: 0 auto; padding: 1.25rem var(--page-pad) 3rem; }
 .daypage-back {
   display: inline-block;
   font-family: var(--font-sans);

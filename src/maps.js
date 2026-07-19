@@ -71,40 +71,6 @@ function makeIcon(type) {
 }
 
 /**
- * Mapa przeglądowa całej trasy (Poznań → Toskania → Poznań)
- */
-export function initRouteOverviewMap(containerId, mapConfig) {
-  if (!window.L) return;
-  const el = document.getElementById(containerId);
-  if (!el || !mapConfig?.route_overview?.length) return;
-
-  const map = window.L.map(el, { zoomControl: true, scrollWheelZoom: false });
-  window.L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
-  registerMap({ map, type: 'route' });
-
-  const points = mapConfig.route_overview;
-  const latLngs = points.map(p => p.coords);
-
-  // Linia trasy (tam + powrót jako jedna pętla)
-  window.L.polyline(latLngs, {
-    color: '#b85c38',
-    weight: 2.5,
-    opacity: 0.7,
-    dashArray: '6 4',
-  }).addTo(map);
-
-  // Markery
-  points.forEach(p => {
-    window.L.marker(p.coords, { icon: makeIcon(p.type) })
-      .bindPopup(`<strong>${p.label}</strong>`, { maxWidth: 180 })
-      .addTo(map);
-  });
-
-  map.fitBounds(window.L.latLngBounds(latLngs), { padding: [24, 24] });
-  return map;
-}
-
-/**
  * Pobiera trasę drogową z OSRM z cache'owaniem w localStorage.
  * waypointsLatLon: [[lat, lon], [lat, lon], ...]
  * Zwraca Promise<{ route: [[lat,lon],...], distanceKm: number }> lub null przy błędzie.
@@ -596,61 +562,3 @@ function makePinIcon(color, r, isBase) {
   });
 }
 
-/**
- * Inicjalizuje mapy przeglądowe natychmiast, a mini mapy dnia leniwie —
- * dopiero po zakończeniu animacji scroll-reveal karty (opacity:0→1, 0.4s).
- * Dzięki temu Leaflet zawsze dostaje kontener o prawidłowych wymiarach
- * i nie potrzebuje invalidateSize.
- */
-export function initAllMaps(plan) {
-  if (!window.L) return;
-
-  const basesById = {};
-  (plan.bases || []).forEach(b => { basesById[b.id] = b; });
-
-  // Mapy przeglądowe są poza animowanymi kartami — init od razu
-  initInteractiveMap('map-tuscany-interactive', plan);
-  initRouteOverviewMap('map-route-overview', plan.meta?.map_config);
-
-  // Mini mapy dnia: leniwa inicjalizacja — dopiero gdy karta staje się widoczna
-  (plan.days || []).forEach(day => {
-    if (!day.day_num) return;
-    const mapId = `map-day-${day.day_num}`;
-    const mapEl = document.getElementById(mapId);
-    if (!mapEl) return;
-    const card = mapEl.closest('.day-card');
-
-    function doInit() {
-      initDayMap(mapId, basesById[day.base_id], day.attractions);
-    }
-
-    // Karta bez scroll-reveal: init natychmiast
-    if (!card || !card.classList.contains('reveal')) {
-      setTimeout(doInit, 50);
-      return;
-    }
-
-    // Karta już widoczna gdy initAllMaps odpali (np. góra strony):
-    // czekamy 450ms na ewentualne resztki animacji
-    if (card.classList.contains('is-visible')) {
-      setTimeout(doInit, 450);
-      return;
-    }
-
-    // Czekamy na dodanie is-visible przez scroll-reveal, potem init po transition (0.4s)
-    const mo = new MutationObserver(() => {
-      if (card.classList.contains('is-visible')) {
-        mo.disconnect();
-        setTimeout(doInit, 420);
-      }
-    });
-    mo.observe(card, { attributes: true, attributeFilter: ['class'] });
-
-    // Zabezpieczenie przed race condition: is-visible mogło być dodane między
-    // sprawdzeniem wyżej a ustawieniem MutationObserver
-    if (card.classList.contains('is-visible')) {
-      mo.disconnect();
-      setTimeout(doInit, 450);
-    }
-  });
-}

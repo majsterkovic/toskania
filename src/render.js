@@ -156,77 +156,11 @@ export function renderInteractiveMap(days) {
   `;
 }
 
-function renderBases(bases, images) {
-  const cards = bases
-    .map((base, i) => {
-      const colorVar = `--base${i + 1}`;
-      const placeImg = resolvePlaceImage(images, base.image);
-      const imgHtml = placeImg ? renderImg(placeImg, 'base-card__img') : '';
-
-      return `
-        <article class="base-card" style="--accent: var(${colorVar})">
-          ${imgHtml}
-          <div class="base-card__body">
-            <p class="base-label">${esc(base.label)}</p>
-            <h3>${esc(base.name)}</h3>
-            <p class="base-region">${esc(base.region)} · ${esc(base.nights)}</p>
-            <p class="base-desc">${esc(base.description)}</p>
-            <p class="base-accommodation"><strong>Nocleg:</strong> ${esc(base.accommodation)}</p>
-            <p class="base-tip">→ ${esc(base.booking_tip)}</p>
-            ${base.gps_hint ? `<p class="base-gps muted">📍 ${esc(base.gps_hint)}</p>` : ''}
-          </div>
-        </article>
-      `;
-    })
-    .join('');
-
-  const regionNames = bases.map(b => b.region?.split('·')[0].trim()).filter(Boolean);
-  const lead = regionNames.length > 1
-    ? `${regionNames.slice(0, -1).join(', ')} i ${regionNames.at(-1)} — po 3–6 noce w każdej.`
-    : `${regionNames[0]} — baza wypadowa.`;
-
-  return `
-    <section class="section" id="bazy">
-      <h2 class="section-title">Bazy noclegowe</h2>
-      <p class="section-lead">${esc(lead)}</p>
-      <div class="bases-grid">${cards}</div>
-    </section>
-  `;
-}
-
 function driveLevel(km) {
   if (!km) return null;
   if (km >= 60) return 'high';
   if (km >= 40) return 'medium';
   return 'low';
-}
-
-const FEASIBILITY_DAY_TYPES = new Set(['tuscany', 'tuscany_transfer', 'tuscany_popular']);
-
-/** Placeholder wypełniany asynchronicznie przez maps.js po policzeniu realnej trasy z OSRM */
-function renderFeasibilityPlaceholder(day) {
-  if (!FEASIBILITY_DAY_TYPES.has(day.type) || !day.eta_timeline?.length || day.day_num == null) return '';
-  return `<span class="feasibility-badge feasibility-badge--pending" id="feas-${day.day_num}" title="Liczę realny czas jazdy (OSRM)…">⏳ licząc zapas</span>`;
-}
-
-function renderDayNav(days) {
-  const chips = activeDays(days)
-    .map((day) => {
-      const isPobyt = day.type === 'tuscany' || day.type === 'tuscany_popular';
-      const km = isPobyt ? day.daily_km_estimate : null;
-      const level = driveLevel(km);
-      const kmBadge = km ? `<span class="day-chip__km" data-drive="${level}">~${km}km</span>` : '';
-      return `
-        <a href="#dzien-${day.day_num}" class="day-chip" data-day="${day.day_num}" style="--chip-accent: ${dayAccent(day)}">
-          <span class="day-chip__num">${day.day_num}</span>
-          <span class="day-chip__date">${esc(shortDate(day.date))}</span>
-          ${kmBadge}
-        </a>
-      `;
-    })
-    .join('');
-
-  return `<nav class="day-nav" id="day-nav" aria-label="Nawigacja po dniach">${chips}</nav>`;
 }
 
 // Zwijana sekcja (domyślnie zamknięta) — dla treści referencyjnej, którą
@@ -607,86 +541,6 @@ function renderDayBody(day, images) {
   return narrativeHtml + (day.type === 'transit' ? renderTransit(day, images) : renderTuscany(day, images));
 }
 
-function renderDay(day, images, bases) {
-  const accent = dayAccent(day);
-
-  if (day.type === 'buffer') {
-    return `
-      <article class="day-card day-card--buffer" id="bufor" style="--day-accent: ${accent}">
-        <div class="day-card__inner">
-          <div class="day-card-header">
-            <span class="day-date">${esc(day.date)}</span>
-            <span class="day-label">${esc(day.label)}</span>
-          </div>
-          <h3 class="day-title">${esc(day.title)}</h3>
-          <div class="day-body">${renderBuffer(day)}</div>
-        </div>
-      </article>
-    `;
-  }
-
-  const body = renderDayBody(day, images);
-
-  const popularClass = day.popular ? ' day-card--popular' : '';
-  const typeClass = ` day-card--${day.type}`;
-
-  const base = bases?.find((b) => b.id === day.base_id);
-  const thumbKey = day.image || base?.image;
-  const placeImg = thumbKey ? resolvePlaceImage(images, thumbKey) : null;
-  const placeImg2 = day.image2 ? resolvePlaceImage(images, day.image2) : null;
-  const thumbHtml = placeImg2
-    ? `<div class="day-card__thumbs">${renderImg(placeImg, 'day-card__thumb')}${renderImg(placeImg2, 'day-card__thumb')}</div>`
-    : placeImg ? renderImg(placeImg, 'day-card__thumb') : '';
-
-  const hasMiniMap = (day.type === 'tuscany' || day.type === 'tuscany_transfer') && day.base_id;
-  const miniMap = hasMiniMap
-    ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini" aria-label="Mini mapa dnia ${day.day_num}"></div>`
-    : '';
-  const warning = day.warning
-    ? `<div class="day-warning">${esc(day.warning)}</div>`
-    : '';
-
-  return `
-    <article
-      class="day-card${popularClass}${typeClass}"
-      id="dzien-${day.day_num}"
-      data-day="${day.day_num}"
-      style="--day-accent: ${accent}"
-    >
-      ${thumbHtml}
-      <div class="day-card__inner">
-        <div class="day-card-header">
-          <span class="day-date">${esc(day.date)}</span>
-          <span class="day-label">${esc(day.label)}</span>
-          ${(() => {
-            const isPobyt = day.type === 'tuscany' || day.type === 'tuscany_popular';
-            const km = isPobyt ? day.daily_km_estimate : null;
-            const level = driveLevel(km);
-            return km ? `<span class="day-drive-badge" data-drive="${level}" title="Szacowany dzienny przejazd samochodem">🚗 ~${km} km</span>` : '';
-          })()}
-          ${renderFeasibilityPlaceholder(day)}
-        </div>
-        <h3 class="day-title">${esc(day.title)}</h3>
-        ${warning}
-        ${miniMap}
-        <div class="day-body">${body}</div>
-      </div>
-    </article>
-  `;
-}
-
-function renderDays(days, images, bases) {
-  const cards = days.map((d) => renderDay(d, images, bases)).join('');
-  const baseWord = bases?.length === 2 ? 'dwie bazy toskańskie' : 'trzy bazy toskańskie';
-  return `
-    <section class="section" id="dni">
-      <h2 class="section-title">Harmonogram</h2>
-      <p class="section-lead">15 dni aktywnej podróży — tranzyt, ${baseWord} i powrót.</p>
-      <div class="days-list">${cards}</div>
-    </section>
-  `;
-}
-
 export function renderGallery(images) {
   const places = images?.places;
   if (!places || !Object.keys(places).length) return '';
@@ -906,10 +760,17 @@ function dayDateParts(dateStr) {
   return { d: m ? m[1] : (dateStr || ''), wd: m && m[2] ? m[2] : '' };
 }
 
+function trimText(text, max = 155) {
+  if (!text) return '';
+  const t = String(text).trim();
+  if (t.length <= max) return t;
+  return t.slice(0, max).replace(/\s+\S*$/, '') + '…';
+}
+
 function timelineMarkers(day) {
   const marks = [];
-  if (/popular$/.test(day.type) || day.crowd_tip) {
-    marks.push('<span class="tl-mark tl-mark--crowd" title="Popularne / tłumy">★ tłumy</span>');
+  if (/popular$/.test(day.type)) {
+    marks.push('<span class="tl-mark tl-mark--crowd" title="Popularne / spodziewane tłumy">★ tłumy</span>');
   }
   let drive = '';
   if (day.type === 'transit' && day.drive_h) drive = day.drive_h;
@@ -936,6 +797,7 @@ function timelineRow(day) {
       ${dateHtml}
       <span class="tl-row__main">
         <span class="tl-row__title">${esc(day.title)}</span>
+        ${day.summary ? `<span class="tl-row__desc">${esc(trimText(day.summary, 155))}</span>` : ''}
         <span class="tl-row__markers">${timelineMarkers(day)}</span>
       </span>
       <span class="tl-row__chev" aria-hidden="true">›</span>

@@ -8,12 +8,12 @@
     "participants_note": "Plan prywatny — wariant 2 baz",
     "route_summary": {
       "outbound_km": "~1570 km w 2 dni (Poznań → Kufstein → Barga)",
-      "return_km": "~1560 km w 3 dni (Chianti → Wasserburg → Hof → Poznań)",
-      "total_km": "~3130 km",
-      "tuscany_days": 10,
+      "return_km": "~1530 km w 2 dni (Chianti → Kufstein → Poznań)",
+      "total_km": "~3100 km",
+      "tuscany_days": 11,
       "tuscany_bases": 2,
       "transit_nights_outbound": 1,
-      "transit_nights_return": 2
+      "transit_nights_return": 1
     },
     "images": {
       "hero": {
@@ -394,8 +394,8 @@
       "image": "chianti",
       "label": "BAZA 2",
       "region": "Chianti Senese · Siena",
-      "nights": "18–23 wrz (6 nocy)",
-      "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny. Wariant 2-bazowy: 6 nocy — więcej czasu na Crete Senesi, Val d'Orcia i lasy dębowe.",
+      "nights": "18–24 wrz (7 nocy)",
+      "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny. Wariant 2-bazowy: 7 nocy — więcej czasu na Crete Senesi, Val d'Orcia i lasy dębowe.",
       "color": "amber",
       "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
       "booking_tip": "Szukaj z własną produkcją wina i oliwek — Vagliagli lub Monti in Chianti",

@@ -225,22 +225,6 @@
           "type": "base"
         },
         {
-          "label": "Wasserburg am Inn",
-          "coords": [
-            47.999,
-            12.22
-          ],
-          "type": "transit_night"
-        },
-        {
-          "label": "Hof (Saale)",
-          "coords": [
-            50.315,
-            11.92
-          ],
-          "type": "transit_night"
-        },
-        {
           "label": "Poznań (powrót)",
           "coords": [
             52.406,
@@ -355,10 +339,26 @@
             11.256
           ],
           "type": "attraction"
+        },
+        {
+          "label": "San Gimignano",
+          "coords": [
+            43.4677,
+            11.0431
+          ],
+          "type": "popular"
+        },
+        {
+          "label": "Monteriggioni",
+          "coords": [
+            43.3906,
+            11.2233
+          ],
+          "type": "attraction"
         }
       ]
     },
-    "last_enriched": "2026-07-03T17:45:58.831Z"
+    "last_enriched": "2026-07-19"
   },
   "bases": [
     {
@@ -2613,7 +2613,7 @@
       "date": "23.09 (śr)",
       "day_num": 12,
       "type": "tuscany_popular",
-      "label": "TOSKANIA · DZIEŃ 10 (OSTATNI) ★ POPULARNY",
+      "label": "TOSKANIA · DZIEŃ 10 ★ POPULARNY",
       "title": "Florencja — jeden dzień z tłumem, świadomie",
       "image": "firenze",
       "base_id": "base2",
@@ -2788,15 +2788,206 @@
     {
       "date": "24.09 (czw)",
       "day_num": 13,
+      "type": "tuscany",
+      "label": "TOSKANIA · DZIEŃ 11 (OSTATNI)",
+      "title": "San Gimignano i Monteriggioni — wieże i mury na pożegnanie",
+      "image": "san-gimignano",
+      "image2": "monteriggioni",
+      "base_id": "base2",
+      "base_label": "BAZA 2 — Chianti Senese",
+      "popular": false,
+      "crowd_tip": "San Gimignano to magnes na autokary — ale w czwartek (dzień powszedni) i wcześnie rano jest znośnie. Wyjazd z bazy 8:15, na miejscu ~9:30, gdy pierwsze grupy dopiero się schodzą. Parkuj poza murami (P1 Giubileo lub P2 Montemaggio) — całe centro to strefa ruchu ograniczonego. Torre Grossa i Collegiata zwiedzaj przed 11:00, potem miasto zapełnia się grupami. Popołudnie w maleńkim Monteriggioni jest już zupełnie spokojne.",
+      "attractions": [
+        {
+          "name": "San Gimignano — Piazza della Cisterna i Torre Grossa (panorama wież)",
+          "drive_min": 77,
+          "description": "„Średniowieczny Manhattan\" — z 72 wież rodowych przetrwało 14, i to one tworzą sylwetkę widoczną z daleka nad winnicami. Sercem miasta jest trójkątna Piazza della Cisterna z zabytkową studnią, tuż obok Piazza del Duomo. Na Torre Grossa (54 m, najwyższa) można wejść — to jedyna wieża dostępna dla zwiedzających, ze szczytu rozciąga się widok na całą Val d'Elsa. Wejście przez Palazzo Comunale (Musei Civici) z salą Dantego i pinakoteką.",
+          "type": "medieval",
+          "image_key": "san-gimignano",
+          "gps_hint": "Piazza della Cisterna / Palazzo Comunale, 53037 San Gimignano SI",
+          "coords": [
+            43.4677,
+            11.0431
+          ],
+          "opening_hours": "Torre Grossa / Musei Civici: codz. ok. 10:00–19:30 (sezon). 24.09 czw = otwarte.",
+          "ticket_price": "Torre Grossa + Musei Civici: €9. Bilet łączony z muzeami miejskimi: €13.",
+          "duration_h": 2.0
+        },
+        {
+          "name": "Collegiata di Santa Maria Assunta (Duomo) — freski Ghirlandaia i Gozzolego",
+          "drive_min": 1,
+          "description": "Romańska kolegiata z XII w. — z zewnątrz surowa, w środku pokryta od podłogi po sklepienia freskami. Ściany opowiadają Stary i Nowy Testament (Bartolo di Fredi, Lippo Memmi), a w Cappella di Santa Fina — cykl Domenica Ghirlandaia (1475). Jedno z najpełniejszych wnętrz freskowych w Toskanii, często pomijane w biegu między wieżami.",
+          "type": "religijna",
+          "image_key": "san-gimignano",
+          "gps_hint": "Piazza del Duomo, 53037 San Gimignano SI",
+          "coords": [
+            43.4679,
+            11.0429
+          ],
+          "opening_hours": "Pn–pt 10:00–19:30, sob do 17:00, nd 12:30–19:30 (sezon). 24.09 czw = otwarte.",
+          "ticket_price": "€5 (z Museo d'Arte Sacra €7). Audioprzewodnik w cenie.",
+          "duration_h": 0.75
+        },
+        {
+          "name": "Monteriggioni — kompletny pierścień murów (w drodze powrotnej)",
+          "drive_min": 36,
+          "description": "Maleńkie borgo, które Dante wspomniał w „Boskiej Komedii\" — 14 wież na okrągłym pierścieniu murów z 1214 r., zachowanym w całości. Wewnątrz właściwie jeden plac (Piazza Roma) z kościołem i kilka uliczek; całość obejdzie się w 30 minut. Można wejść na camminamenti — fragmenty chodnika obronnego na murach, z widokiem na Montagnolę Senese. Idealny, cichy przystanek między San Gimignano a bazą.",
+          "type": "medieval",
+          "image_key": "monteriggioni",
+          "gps_hint": "Piazza Roma, 53035 Monteriggioni SI — parking poniżej murów",
+          "coords": [
+            43.3906,
+            11.2233
+          ],
+          "opening_hours": "Camminamenti sulle Mura: codz. ok. 9:30–19:30 (sezon). Borgo dostępne całą dobę.",
+          "ticket_price": "Mury (camminamenti) + 2 muzea: €5. Samo borgo: bezpłatne.",
+          "duration_h": 1.0
+        }
+      ],
+      "oak_forest": {
+        "spot": "Montagnola Senese — querceti wokół Monteriggioni",
+        "species": "Quercus pubescens (roverella), Q. ilex (leccio), Q. cerris (cerro)",
+        "note": "Monteriggioni leży na skraju Montagnoli Senese — zalesionego wapiennego grzbietu porośniętego dębem omszałym i ostrolistnym oraz kasztanem. We wrześniu rejon znany z borowików i truflowych lasów. Krótkie ścieżki wychodzą wprost spod murów borgo (Via Francigena).",
+        "gps_hint": "Sentieri wokół Monteriggioni — odcinek Via Francigena, spod parkingu przy murach."
+      },
+      "food": {
+        "place": "San Gimignano — Vernaccia, szafran i lody Dondoli",
+        "address": "Gelateria Dondoli: Piazza della Cisterna 4; enoteki wzdłuż Via San Giovanni",
+        "dishes": [
+          "Vernaccia di San Gimignano DOCG (białe wino)",
+          "pici al zafferano (z miejscowym szafranem)",
+          "cinghiale / salumi toscani",
+          "gelato Dondoli (mistrz świata — crema di Santa Fina, Vernaccia sorbet)"
+        ],
+        "note": "San Gimignano słynie z dwóch rzeczy: białej Vernaccii (pierwsze włoskie DOCG dla wina, 1966) i szafranu uprawianego tu od średniowiecza. Lody u Dondolego (dwukrotny mistrz świata) na Piazza della Cisterna to instytucja — kolejka idzie szybko. W Monteriggioni: proste osterie na Piazza Roma.",
+        "price": "~€15–25/os (lunch), lody €3"
+      },
+      "wine_tasting": {
+        "place": "Vernaccia di San Gimignano — Wine Experience (Rocca di Montestaffoli)",
+        "address": "Via di Montestaffoli, 53037 San Gimignano SI (przy Rocca)",
+        "time": "Czynne codz. ok. 11:30–18:30 (sezon). Bez rezerwacji — degustacja przy barze.",
+        "price": "Wstęp do muzeum bezpłatny; degustacja Vernaccii od ~€5–12 (kieliszki wg wyboru)",
+        "note": "Muzeum wina prowadzone przez konsorcjum Vernaccii, na wzgórzu Rocca di Montestaffoli z jednym z najlepszych widoków na miasto. Degustacja miejscowych Vernacci (i czerwonych San Gimignano Rosso) w cenie kilku euro za kieliszek — świetne pożegnanie z toskańskim winem przed drogą do domu.",
+        "gps_hint": "Rocca di Montestaffoli — najwyższy punkt San Gimignano, 5 min pieszo od Piazza del Duomo."
+      },
+      "practical_tips": [
+        "San Gimignano (9:30–12:30, Torre Grossa + Collegiata + Vernaccia) → lunch/lody → Monteriggioni (14:15) → baza ~16:00.",
+        "Parking poza murami: P1 Giubileo lub P2 Montemaggio (~€2/h), stąd 5 min pieszo przez Porta San Giovanni. Centro to ZTL.",
+        "Torre Grossa: 218 stopni, brak windy — wejście przed 11:00, zanim zrobi się tłok na wąskich schodach.",
+        "To ostatni pełny dzień w Toskanii — zaplanuj zakupy (Vernaccia, oliwa, szafran, pecorino) na drogę powrotną.",
+        "Monteriggioni: parkuj na dole (Parcheggio Monteriggioni), do bramy podejście 5 min pod górę."
+      ],
+      "narrative": "Ostatni pełny dzień w Toskanii spędzamy tak, jak większość poprzednich — wyjeżdżamy z bazy o 8:15 i po niespełna półtorej godziny (ok. 77 min drogą przez Colle di Val d'Elsa) wyrasta przed nami sylwetka San Gimignano: kamienne wieże sterczące nad winnicami jak średniowieczny Manhattan. Z siedemdziesięciu dwóch wież rodowych, którymi patrycjusze prześcigali się w prestiżu, przetrwało czternaście — i to one robią z tego miasteczka jedno z najbardziej rozpoznawalnych miejsc regionu. Parkujemy poza murami (P1 Giubileo), wchodzimy przez Porta San Giovanni przed dziewiątą trzydzieści, zanim autokary rozładują pierwsze grupy. Główną osią jest Via San Giovanni prowadząca na trójkątną Piazza della Cisterna ze starą studnią, a stąd krok do Piazza del Duomo. Wchodzimy do Collegiaty — z zewnątrz surowej, w środku pokrytej od podłogi po sklepienia freskami Ghirlandaia i Gozzolego — a potem na Torre Grossa (54 m, 218 stopni), jedyną wieżę dostępną do wejścia, ze szczytu której cała Val d'Elsa leży jak na dłoni. Przed południem, gdy uliczki zaczynają się zapełniać, mamy już to, po co przyjechaliśmy: lody u Dondolego na Piazza della Cisterna (dwukrotny mistrz świata, kolejka idzie szybko) i degustacja Vernaccii — pierwszego włoskiego wina z certyfikatem DOCG — na wzgórzu Rocca di Montestaffoli, z najlepszym widokiem na miasto. Po lunchu ruszamy w stronę bazy, ale po drodze (36 min) zatrzymujemy się w Monteriggioni: maleńkim borgo, które Dante uwiecznił w „Boskiej Komedii\", zamkniętym w kompletnym pierścieniu murów z czternastoma wieżami. Całe miasteczko to właściwie jeden plac i kilka uliczek — obchodzimy je w pół godziny, wchodzimy na fragment chodnika obronnego, i to spokojne, ciche miejsce jest idealnym pożegnaniem z Toskanią. Do bazy wracamy ok. 16:00 — zostaje wieczór na spakowanie walizek (Vernaccia, oliwa, szafran, pecorino) przed jutrzejszą drogą w stronę domu.",
+      "web_research": [
+        {
+          "topic": "San Gimignano — Torre Grossa i Musei Civici",
+          "summary": "Torre Grossa (54 m, jedyna dostępna wieża) + Palazzo Comunale/Pinacoteca: bilet €9, łączony z Museo Archeologico i Galleria d'Arte Moderna €13. Sezon: codz. ~10:00–19:30 (ostatnie wejście 30 min wcześniej). Czwartek 24.09 = otwarte. 218 stopni, bez windy.",
+          "source": "https://www.sangimignanomusei.it/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Collegiata di Santa Maria Assunta — orari",
+          "summary": "Romańska kolegiata z freskami Bartola di Fredi, Lippa Memmiego i Ghirlandaia (Cappella di Santa Fina). Pn–pt 10:00–19:30, sob do 17:00, nd 12:30–19:30 (sezon). Bilet €5 (z Museo d'Arte Sacra €7). 24.09 czw = otwarte. Wstęp z zakrytymi ramionami.",
+          "source": "https://www.duomosangimignano.it/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Dojazd Chianti (Castelnuovo B.) → San Gimignano",
+          "summary": "~65 km, ok. 77 min (OSRM) przez SS429/Poggibonsi → Colle di Val d'Elsa → SP1 San Gimignano. Brak sensownej kolei. Parking poza murami: P1 Giubileo, P2 Montemaggio, P3 Bagnaia (~€2/h). Centro storico = ZTL.",
+          "source": "https://www.sangimignano.com/en/useful-info/how-to-reach-san-gimignano/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Vernaccia di San Gimignano — degustacja",
+          "summary": "Pierwsze włoskie wino DOC (1966), potem DOCG — jedyne białe DOCG Toskanii. Vernaccia di San Gimignano Wine Experience przy Rocca di Montestaffoli: wstęp bezpłatny, degustacja od ~€5/kieliszek, codz. ~11:30–18:30. Prowadzone przez Consorzio.",
+          "source": "https://www.vernaccia.it/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Monteriggioni — mury i dojazd",
+          "summary": "Borgo w kompletnym pierścieniu murów z 1214 r. (14 wież), wspomniane przez Dantego (Piekło XXXI). Camminamenti sulle Mura + 2 muzea: €5, codz. ~9:30–19:30 (sezon). Z San Gimignano ~28 km/36 min, do bazy Chianti ~40 km/51 min. Parking poniżej murów, podejście 5 min. Odcinek Via Francigena.",
+          "source": "https://www.monteriggioniturismo.it/",
+          "checked": "2026-07"
+        }
+      ],
+      "opening_hours": {
+        "torre_grossa": "Musei Civici / Torre Grossa: codz. ~10:00–19:30 (sezon). 24.09 czw = otwarte.",
+        "collegiata": "Pn–pt 10:00–19:30, sob do 17:00, nd 12:30–19:30. 24.09 czw = otwarte.",
+        "vernaccia_experience": "Rocca di Montestaffoli: codz. ~11:30–18:30 (sezon). Degustacja od €5.",
+        "monteriggioni_mura": "Camminamenti sulle Mura: codz. ~9:30–19:30 (sezon). Borgo 24h.",
+        "dondoli_gelateria": "Gelateria Dondoli (Piazza della Cisterna): codz. ~9:00–22:00 (sezon)."
+      },
+      "parking": {
+        "san_gimignano": "P1 Giubileo / P2 Montemaggio / P3 Bagnaia — poza murami, ~€2/h. 5 min pieszo do Porta San Giovanni. Centro = ZTL.",
+        "monteriggioni": "Parcheggio Monteriggioni poniżej murów — podejście 5 min pod górę do Porta Franca / Porta Romea.",
+        "tip": "Nigdzie nie wjeżdżaj w mury — oba miasteczka to ZTL z kamerami. Parkuj na dedykowanych parkingach na obrzeżach."
+      },
+      "fuel_stops": [
+        {
+          "name": "Stacja przed wyjazdem (Castelnuovo B. / SS408)",
+          "location": "okolice bazy Chianti",
+          "note": "Pełny bak rano — jutro długi dzień powrotu przez Brenner."
+        },
+        {
+          "name": "Poggibonsi / Colle di Val d'Elsa (SS429)",
+          "location": "na trasie do San Gimignano",
+          "road": "SS429",
+          "note": "Stacje po drodze, taniej niż w San Gimignano."
+        }
+      ],
+      "eta_timeline": [
+        {
+          "time": "08:15",
+          "event": "Wyjazd z bazy Chianti (~77 min do San Gimignano przez Colle di Val d'Elsa)"
+        },
+        {
+          "time": "09:30",
+          "event": "San Gimignano — parking P1 Giubileo, wejście Porta San Giovanni przed tłumami"
+        },
+        {
+          "time": "10:00",
+          "event": "Piazza della Cisterna → Collegiata (freski Ghirlandaia) → Torre Grossa (panorama)"
+        },
+        {
+          "time": "12:00",
+          "event": "Vernaccia — degustacja przy Rocca di Montestaffoli, lody Dondoli"
+        },
+        {
+          "time": "13:00",
+          "event": "Lunch w San Gimignano, ostatnie zakupy (wino, szafran, pecorino)"
+        },
+        {
+          "time": "13:45",
+          "event": "Wyjazd do Monteriggioni (~36 min)"
+        },
+        {
+          "time": "14:30",
+          "event": "Monteriggioni — spacer po murach (camminamenti), Piazza Roma"
+        },
+        {
+          "time": "15:45",
+          "event": "Powrót do bazy Chianti (~51 min)"
+        },
+        {
+          "time": "16:45",
+          "event": "Baza — ostatni wieczór w Toskanii, pakowanie przed drogą do domu"
+        }
+      ],
+      "daily_km_estimate": 133,
+      "summary": "Ostatni dzień w Toskanii: San Gimignano — „średniowieczny Manhattan\" z 14 ocalałych wież (Torre Grossa, freski Collegiaty, degustacja Vernaccii, lody Dondoli), a w drodze powrotnej Monteriggioni — maleńkie borgo Dantego w kompletnym pierścieniu murów z 1214 r."
+    },
+    {
+      "date": "25.09 (pt)",
+      "day_num": 14,
       "type": "transit",
-      "label": "TRANZYT ← BAWARIA",
-      "title": "Chianti → Wasserburg am Inn",
-      "image": "wasserburg",
-      "drive_km": 710,
+      "label": "TRANZYT ← ALPY",
+      "title": "Chianti → Kufstein (Tyrol)",
+      "image": "kufstein",
+      "drive_km": 609,
       "drive_h": "7–7,5 h",
       "base_id": null,
       "depart": "7:30 rano z Castelnuovo Berardenga / Vagliagli",
-      "route": "Vagliagli → SS408/SP9 → A1 Firenze-Sud (lub Valdarno) → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → A13 AT (Streckenmaut) → A12 Inntal → Rosenheim → B304 → Wasserburg am Inn",
+      "route": "Vagliagli → SS408/SP9 → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → A13 AT (Streckenmaut) → A12 Inntal → Kufstein (Tyrol)",
       "attractions": [],
       "food": {
         "place": "Bolonia lub Modena (postój autostradowy A1)",
@@ -2810,33 +3001,43 @@
         "price": "~€10–15"
       },
       "accommodation": {
-        "place": "Wasserburg am Inn — nocleg tranzytowy (Bawaria)",
-        "note": "Malownicze miasto na zakolu Innu, ~45 km od Monachium. Wieczorny spacer Altstadt (15 min). ⚠️ Szukaj Wasserburg am Inn (83512), NIE Wasserburg am Bodensee.",
-        "price": "€45–75/noc",
+        "place": "Kufstein (Tyrol — nocleg tranzytowy, jak w drodze tam)",
+        "note": "Wracamy do tego samego miasteczka nad Innem u stóp Alp, w którym nocowaliśmy pierwszej nocy podróży (12.09). Festung Kufstein widoczna z centrum, noclegi tańsze niż w Innsbrucku. Przyjazd ok. 16:00 — zostaje czas na spacer i kolację przed ostatnim, długim odcinkiem do Poznania.",
+        "price": "€55–90/noc",
+        "booking_tip": "Te same hotele co przy nocy 1 — direct booking bywa tańsze w mniejszych pensjonatach.",
+        "gps_hint": "Naviguj: Kufstein, Tirol, Austria",
         "options": [
           {
-            "name": "Hotel & Gasthaus Huberwirt am Kellerberg",
-            "type": "Gasthof",
-            "address": "Salzburgerstr. 25, 83512 Wasserburg am Inn",
-            "price": "od €46/noc",
-            "parking": "bezpłatny prywatny",
-            "url": "https://www.preiswert-uebernachten.de/wasserburg/hotel-gasthaus-huberwirt-am-kellerberg/6917"
+            "name": "Hotel Andreas Hofer",
+            "type": "Hotel",
+            "address": "Giessenbach 1, 6330 Kufstein",
+            "price": "€65–90/noc",
+            "parking": "bezpłatny (własny parking)",
+            "note": "Spokojne położenie, rodzinna atmosfera, 10 min do centrum"
           },
           {
-            "name": "Hotel Gasthof Paulanerstuben",
-            "type": "Gasthof",
-            "address": "Marienplatz 14, 83512 Wasserburg am Inn",
-            "price": "od €58/noc",
-            "parking": "bezpłatny dla gości",
-            "url": "https://www.paulanerstuben-wasserburg.de/"
+            "name": "Gasthof Auracher Löchl",
+            "type": "Historyczny Gasthof",
+            "address": "Römerstraße 3, 6330 Kufstein",
+            "price": "€85–120/noc",
+            "parking": "Parkhaus Kufstein Innenstadt (3 min pieszo, €12/noc)",
+            "note": "Legendarny Gasthof nad Innem z 1410 roku — wyjątkowa lokalizacja"
           },
           {
-            "name": "Das Fletzinger",
-            "type": "Boutique-Hotel",
-            "address": "Inn-Ufer, 83512 Wasserburg am Inn",
-            "price": "od €62/noc",
-            "parking": "na zapytanie",
-            "url": "https://fletzinger.de/"
+            "name": "Hotel Alpenrose",
+            "type": "Hotel",
+            "address": "Stadtplatz Kufstein",
+            "price": "€70–95/noc",
+            "parking": "parking publiczny w pobliżu",
+            "note": "Centralne położenie, widok na Festung"
+          },
+          {
+            "name": "Pension Gästehaus Inntal",
+            "type": "Pension",
+            "address": "okolice Kufstein",
+            "price": "€55–70/noc",
+            "parking": "bezpłatny",
+            "note": "Tańsza opcja budżetowa po tej stronie granicy"
           }
         ]
       },
@@ -2851,7 +3052,7 @@
           "segment": "Firenze → Bologna (obwodnica FI)",
           "road": "A1 Variante di Valico",
           "km": "~105",
-          "note": "NIE zjeżdżaj do centro Firenze — ZTL aktywna czwartek 7:30–20:00"
+          "note": "NIE zjeżdżaj do centro Firenze — ZTL aktywna piątek 7:30–20:00"
         },
         {
           "segment": "Bologna → Modena",
@@ -2866,17 +3067,17 @@
           "note": "Pedaggio A22 Modena–Brennero: ~€22,80 klasa A"
         },
         {
-          "segment": "Brenner → Wasserburg am Inn",
-          "road": "A13 AT → A12 Inntal → Rosenheim → B304",
-          "km": "~145",
-          "note": "A13 Streckenmaut €12,50 (2. przejazd) + 1-dniowa winieta AT na 24.09 (€9,60) na A12 Inntal. B304 do Wasserburg ~25 km od Rosenheim"
+          "segment": "Brenner → Kufstein",
+          "road": "A13 AT → A12 Inntal",
+          "km": "~110",
+          "note": "A13 Streckenmaut €12,50 + 1-dniowa winieta AT na 25.09 (~€9,60) na A12 Inntal. Kufstein tuż przy granicy AT/DE."
         }
       ],
       "practical_tips": [
-        "Wyjazd 7:00 z Chianti → Wasserburg ~17:00–18:00 (z 2 postojami po 20–30 min).",
-        "24.09 to CZWARTEK: ZTL Firenze aktywna 7:30–20:00 — zostań na A1 Variante di Valico.",
-        "Trasa z Chianti krótsza niż z Pitigliano (~710 km vs 770 km) — bufor ~30 min.",
-        "Nocleg: Huberwirt od €46 (parking gratis) lub Paulanerstuben Marienplatz 14."
+        "Wyjazd 7:30 z Chianti → Kufstein ~16:00 (z 2 postojami po 20–30 min). Dzień o ~1 h krótszy niż dawny odcinek do Wasserburga.",
+        "25.09 to PIĄTEK: ZTL Firenze aktywna 7:30–20:00 — zostań na A1 Variante di Valico.",
+        "Winieta 10-dniowa z drogi tam (start 13.09) już WYGASŁA — na A12 Inntal potrzebna nowa 1-dniowa winieta AT (~€9,60) + osobno Streckenmaut A13 Brenner (€12,50).",
+        "Kufstein: parkuj przy hotelu lub Parkhaus Innenstadt. Te same hotele co pierwszej nocy podróży."
       ],
       "fuel_stops": [
         {
@@ -2897,59 +3098,78 @@
           "location": "A22/A13 przy granicy IT/AT",
           "road": "A22/A13",
           "hours": "24h",
-          "note": "Kawa + krótki postój przed zjazdem do Niemiec."
+          "note": "Kawa + krótki postój przed zjazdem do Austrii."
         },
         {
-          "name": "Tankowanie Niemcy (przed Wasserburg)",
-          "location": "B304 lub stacja przy Rosenheim",
-          "road": "B304",
-          "note": "Zatankuj w DE — tańsze niż Austria i Włochy."
+          "name": "Tankowanie przed Kufstein (dolina Inn)",
+          "location": "A12 Inntal, okolice Innsbrucku",
+          "road": "A12",
+          "note": "Zatankuj przed granicą — w Niemczech (jutro) taniej, ale bak przyda się na wieczór."
         }
       ],
-      "narrative": "Wyjeżdżamy o 7:30 z Chianti — ostatnie spojrzenie na wzgórza pokryte porannym oparem, zanim SR2 poprowadzi nas przez SR2bis do Firenze Sud i wjazdu na A1 (ok. 45 minut). A1 na północ jest o tej porze jeszcze spokojna; Variante di Valico omija centrum Florencji łukiem wysoko nad doliną — dziś czwartek, ZTL aktywna 7:30–20:00, więc i tak zostajemy na autostradzie, żadnych pokus, by skręcić do miasta. Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni włoski espresso przy barze, zanim krajobraz zacznie się zmieniać z powrotem w alpejski. Odcinek A22 Modena–Brennero koło Werony bywa zatłoczony w szczycie — możliwe +30 minut, więc nie ma co się spieszyć. Na A13 Streckenmaut Brenner (€12,50, płatne przy bramkach, osobno od winiety) i przejazd przez sam przełęcz, gdzie temperatura zauważalnie spada. Dalej A12 Inntal i B304 do Wasserburga — jesteśmy ok. 16:00–17:00, słońce chyli się już nisko nad dachami miasteczka. Wieczorny spacer wzdłuż zakola Innu po starej części miasta, kolorowe kamienice odbijają się w wodzie, a po dwóch tygodniach w Toskanii ten spokojny bawarski rytm działa niemal kojąco.",
+      "narrative": "Ruszamy powoli w stronę domu — ale najpierw ostatni raz przez Alpy. Wyjeżdżamy o 7:30 z Chianti, ostatnie spojrzenie na wzgórza pokryte porannym oparem, zanim SS222 poprowadzi nas do Firenze Sud i wjazdu na A1 (ok. 45 minut). A1 na północ jest o tej porze jeszcze spokojna; Variante di Valico omija centrum Florencji łukiem wysoko nad doliną — dziś piątek, ZTL aktywna 7:30–20:00, więc zostajemy na autostradzie. Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni włoski espresso przy barze, zanim krajobraz zacznie się z powrotem zmieniać w alpejski. Odcinek A22 Modena–Brennero koło Werony bywa zatłoczony w szczycie, więc nie ma co się spieszyć. Na A13 Streckenmaut Brenner (€12,50, osobno od winiety — uwaga, ta z drogi tam już wygasła, potrzebna nowa 1-dniowa) i przejazd przez sam przełęcz, gdzie temperatura zauważalnie spada. Dalej A12 Inntal i po ~110 km od Brennera jesteśmy w Kufstein ok. 16:00 — w tym samym miasteczku nad Innem, w którym spaliśmy pierwszej nocy podróży, u stóp Alp, z twierdzą wyrastającą wprost ze skały. To o godzinę krótszy dzień niż dawny przejazd aż do Wasserburga, więc zostaje czas na spokojny wieczorny spacer po starówce i kolację w oberży. Jutro ostatni, najdłuższy odcinek — prosto do Poznania.",
       "web_research": [
         {
-          "topic": "Trasa Castelnuovo Berardenga → Wasserburg am Inn",
-          "summary": "SP408 → Siena (obwodnica) → A1 Firenze → Brennero A22 → Innsbruck → A12 → Rosenheim → B15/B304 Wasserburg. ~750 km, ok. 8h (bez postojów). Wyjazd 7:00 = Wasserburg ok. 16–17. Postoj: okolice Rovereto (A22) lub Bolzano.",
-          "checked": "2026-06"
+          "topic": "ZTL Firenze — tranzyt piątek 25.09",
+          "summary": "ZTL centro storico aktywna pn–pt 7:30–20:00. Tranzyt: A1 Variante di Valico przez Impruneta — bez wjazdu do città. Jedź autostradą, nie przez miasto.",
+          "source": "https://www.comune.fi.it/pagina/zona-traffico-limitato",
+          "checked": "2026-07"
         },
         {
-          "topic": "ZTL Firenze — tranzyt czwartek 24.09",
-          "summary": "ZTL centro storico aktywna pn–pt 7:30–20:00. Tranzyt przez Firenze: A1 obwodnica przez Impruneta — bez wjazdu do città. Kamera przy Porta Romana — jedź autostradą, nie przez miasto.",
-          "checked": "2026-06"
+          "topic": "A22 pedaggio Modena–Brenner 2026",
+          "summary": "Cała trasa A22 Modena–Brenner: €22,80 klasa A (Modena–Verona €6,20, Verona–Trento €6,50, Trento–Brennero €10,10). System zamknięty: bilet przy wjeździe, płatność przy wyjeździe. Karta/Telepass.",
+          "source": "https://www.autobrennero.it/en/",
+          "checked": "2026-07"
         },
         {
-          "topic": "A22 pedaggio Brenner–Modena 2026",
-          "summary": "Cała trasa A22 Brenner–Modena: €22,80 klasa A. Odcinki: Modena–Verona €6,20, Verona–Trento €6,50, Trento–Brennero €10,10. Płatność kartą, Telepass. Gotówka na zapas.",
-          "checked": "2026-06"
+          "topic": "A13 Brenner Streckenmaut + nowa winieta AT (powrót)",
+          "summary": "A13 (AT) Brennersee–Innsbruck: Streckenmaut €12,50 osobno od winiety. UWAGA: e-winieta 10-dniowa z 13.09 wygasła 22.09 — na A12 Inntal potrzebna nowa (1-dniowa ~€9,60 lub 10-dniowa €12,80), kup na shop.asfinag.at przed wjazdem.",
+          "source": "https://www.asfinag.at/en/toll/section-toll/",
+          "checked": "2026-07"
         },
         {
-          "topic": "A13 Brenner Sondermaut Austria",
-          "summary": "A13 (AT) od granicy do Innsbruck: Streckenmaut ~€12,50 osobno od winiety. Po A12 do Kufstein+A93 do Rosenheim. Korek Lueg przed południem czwartek — wyjazd przed 8.",
-          "checked": "2026-06"
+          "topic": "Most Lueg A13 — korki Brenner (piątek)",
+          "summary": "Od 2025 jeden pas/kierunek na moście Lueg (remont do ~2030). ASFINAG otwiera 2. pas w sezonie prawie codziennie. Piątkowe popołudnia = wzmożony ruch na północ — wyjazd rano daje bufor. Kalendarz: asfinag.at/a13.",
+          "source": "https://www.asfinag.at/en/construction-maintenance/construction-projects/a-13-brenner-motorway-lueg-bridge/",
+          "checked": "2026-07"
         },
         {
-          "topic": "Noclegi Wasserburg am Inn",
-          "summary": "Huberwirt Kellerberg (Salzburgerstr. 25, od €46, parking gratis), Paulanerstuben (Marienplatz 14, od €58), Hotel Fletzinger (Inn-ufer, od €62). Wasserburg: Altstadt na półwyspie rzeki Inn, XIV–XV w. Parkhaus Kellerstr. gratis do 4h.",
-          "checked": "2026-06"
+          "topic": "Noclegi Kufstein (nocleg powrotny = ten sam co w drodze tam)",
+          "summary": "Hotel Andreas Hofer (Giessenbach 1, parking gratis, €65–90), Gasthof Auracher Löchl (Römerstraße 3, nad Innem, 1410 r., €85–120), Hotel Alpenrose (Stadtplatz, widok na Festung), Pension Inntal (budżetowo €55–70). Kufstein: starówka nad Innem u stóp Festung, 40 km od Innsbrucku.",
+          "source": "https://www.kufstein.com/en/",
+          "checked": "2026-07"
         }
       ],
       "opening_hours": {
-        "sr2_firenze": "pn–nd 24/7 — trasa SR222/A1 przez Firenze Impruneta. ZTL Firenze aktywna 7:30–20:00 pn–pt; sob 7:30–16:00. Korzystaj z obwodnicy.",
-        "huberwirt_checkin": "Recepcja standardowo 14:00–20:00",
-        "das_wasserburg_hotel": "Self-check-in 24h, parking gratis lub garaż €8/dzień",
+        "sr222_firenze": "Trasa SS222/A1 przez Firenze Impruneta — 24/7. ZTL Firenze aktywna 7:30–20:00 pn–pt. Korzystaj z obwodnicy A1.",
         "bologna_lunch": "Autogrill Bologna Borgo Panigale / Modena Nord: 24h na A1",
-        "wasserburg_altstadt": "Restauracje Altstadt: 11:30–22:00. Wieczorny spacer po murach nad Innem."
+        "kufstein_altstadt": "Restauracje Altstadt: 11:30–22:00. Wieczorny spacer nad Innem pod Festung.",
+        "hotel_checkin": "Recepcje hoteli Kufstein: zwykle 14:00–20:00 — przy przyjeździe ~16:00 bez problemu."
       },
       "parking": {
-        "wasserburg_altstadt": "Parkhaus Kellerstraße / Überfuhrstraße: do 4h gratis, potem €2,50/dzień. W Altstadt (ulice) osobne strefy — lepiej parkuj przy hotelu.",
-        "tip": "Większość Gasthöfe ma bezpłatny parking — Huberwirt, Paulanerstuben, Staudham. Wieczorny spacer nad Innem — 10 min pieszo z noclegu.",
-        "hotel": "Huberwirt / Paulanerstuben / Staudham: bezpłatny parking na miejscu."
+        "destination": "Kufstein — nocleg tranzytowy",
+        "options": [
+          {
+            "name": "Parking hotelu — priorytet",
+            "type": "hotel",
+            "price": "gratis lub wliczony",
+            "gps_hint": "Kufstein, Tirol, Austria",
+            "note": "Wybieraj hotele z własnym parkingiem (Andreas Hofer, Pension Inntal)"
+          },
+          {
+            "name": "Parkhaus Kufstein Innenstadt",
+            "type": "garaż",
+            "price": "~€12–14/noc",
+            "gps_hint": "Stadtpark, 6330 Kufstein",
+            "note": "24h, 2 min pieszo do centrum i historycznych hoteli"
+          }
+        ],
+        "tip": "Jeśli hotel bez parkingu — Parkhaus Kufstein Innenstadt, 2 min pieszo do centrum."
       },
       "eta_timeline": [
         {
           "time": "07:30",
-          "event": "Wyjazd z bazy Chianti (SR222/A1 Firenze-Sud, ~50 km)"
+          "event": "Wyjazd z bazy Chianti (SS222/A1 Firenze-Sud, ~50 km)"
         },
         {
           "time": "08:30",
@@ -2969,350 +3189,169 @@
         },
         {
           "time": "14:30",
-          "event": "Innsbruck bypass — A12 Inntal (1-dniowa winieta AT na 24.09)"
-        },
-        {
-          "time": "15:30",
-          "event": "Rosenheim — zjazd B304 do Wasserburg (25 km)"
+          "event": "Innsbruck bypass — A12 Inntal (nowa 1-dniowa winieta AT na 25.09)"
         },
         {
           "time": "16:00",
-          "event": "Wasserburg am Inn — hotel, spacer Altstadt, kolacja Paulaner"
+          "event": "Kufstein — hotel (jak pierwszej nocy), spacer Altstadt, kolacja"
         }
       ],
-      "summary": "Start powrotu (~7:00–7:30): Chianti → A1 na północ (omijając ZTL Florencji Variante di Valico) → Alpy → Brenner → Wasserburg am Inn — bawarskie miasteczko na zakolu rzeki Inn."
-    },
-    {
-      "date": "25.09 (pt)",
-      "day_num": 14,
-      "type": "transit",
-      "label": "TRANZYT ← FRANKONIA",
-      "title": "Wasserburg am Inn → Hof (Saale)",
-      "image": "hof",
-      "drive_km": 380,
-      "drive_h": "4–4,5 h",
-      "base_id": null,
-      "depart": "8:00 rano z Wasserburg",
-      "route": "Wasserburg am Inn → B304/A94 → A99 → A8 west (München-Ost) → A9 north → Nürnberg → A9 north → zjazd Hof-Nord/Hof-West/Naila-Selbitz → Hof (Saale)",
-      "attractions": [],
-      "food": {
-        "place": "Restaurant Franconia am See (Himmelkron) lub Serways Nürnberg-Feucht",
-        "address": "Frankenring 1, 95502 Himmelkron",
-        "dishes": [
-          "fränkische Spezialitäten",
-          "pizza i pasta"
-        ],
-        "note": "Restaurant Franconia am See leży bezpośrednio przy A9 w Himmelkron — kuchnia frankońsko-włoska, taras nad jeziorem.",
-        "price": "~€10–16"
-      },
-      "accommodation": {
-        "place": "Hof (Saale) lub okolice — nocleg tranzytowy",
-        "note": "Krótszy dzień (~4 h jazdy). Szukaj Pension/Gasthof przy zjeździe A9/A72.",
-        "price": "€40–55/noc",
-        "options": [
-          {
-            "name": "Quality Hotel Hof",
-            "type": "Hotel 3*",
-            "address": "Ernst-Reuter-Strasse 137, 95030 Hof",
-            "price": "€55–80/noc",
-            "parking": "duży bezpłatny plac"
-          },
-          {
-            "name": "Hotel Central Hof",
-            "type": "Hotel 4*",
-            "address": "Kulmbacher Straße 2, 95030 Hof",
-            "price": "€60–85/noc",
-            "parking": "bezpłatny"
-          },
-          {
-            "name": "Fränkischer Hof Rehau",
-            "type": "Hotel 3*",
-            "address": "Sofienstraße 19, 95111 Rehau",
-            "price": "€55–75/noc",
-            "parking": "bezpłatny"
-          }
-        ]
-      },
-      "route_segments": [
-        {
-          "segment": "Wasserburg → Monachium (A8)",
-          "road": "B304 → A94/A99 → A8",
-          "km": "~60",
-          "note": "~50–60 min. Unikaj centrum Monachium."
-        },
-        {
-          "segment": "Monachium → Nürnberg",
-          "road": "A8 → A9 north",
-          "km": "~170",
-          "note": "Główny odcinek — ~2 h."
-        },
-        {
-          "segment": "Nürnberg → Hof",
-          "road": "A9 north",
-          "km": "~120",
-          "note": "Lunch: Franconia am See (Himmelkron)."
-        }
-      ],
-      "practical_tips": [
-        "Krótszy dzień (~4 h) — wyjazd 8:00, przyjazd Hof ok. 12:00–13:00.",
-        "Lunch: Restaurant Franconia am See (Himmelkron, A9) — frankońsko-włoska kuchnia nad jeziorem.",
-        "Jutro finał do Poznania — wcześnie spać, wyjazd 7:00."
-      ],
-      "fuel_stops": [
-        {
-          "name": "Raststätte Irschenberg / Holzkirchen",
-          "location": "A8 km ~90",
-          "note": "Postój przed Monachium — mniej ruchu niż w mieście. A8 zatłoczona."
-        },
-        {
-          "name": "Restaurant Franconia am See",
-          "location": "A9 Himmelkron (Frankenring 1)",
-          "note": "Lunch — kuchnia frankońsko-włoska nad jeziorem. ~30–45 min. Nie Raststätte!"
-        }
-      ],
-      "narrative": "Najkrótszy dzień jazdy w całej podróży — 380 km, ok. 4–4,5 godziny, więc rano nikt się nie spieszy, śniadanie można zjeść spokojnie, bez patrzenia na zegarek. Wyjeżdżamy o 8:00: B304 do A94/A99, obwodnicą Monachium na A8, potem A9 na północ przez Norymbergę. Ruch o tej porze jeszcze niewielki, krajobraz Bawarii przesuwa się za oknem spokojnie, łagodne wzgórza, gdzieniegdzie wieża kościoła nad dachówkami wioski — zupełnie inny rytm niż pośpiech ostatnich dni w Toskanii. Na lunch zjeżdżamy przy Himmelkron (A9) do Restaurant Franconia am See — kuchnia frankońsko-włoska na tarasie nad jeziorem, przyjemna odmiana od zwykłego Raststätte, można usiąść na chwilę dłużej i popatrzeć na wodę. Do Hof (Saale) docieramy ok. 12:30–13:00 — zameldowanie w hotelu tuż przy zjeździe z A9 (Quality Hotel lub Central Hof, bezpłatny parking), więc bagaże znikają z auta zaskakująco szybko. Całe popołudnie zostaje wolne — czas na odpoczynek, krótki spacer po niewielkim, cichym miasteczku, gdzie sklepy zamykają się wcześnie, i wcześniejszą kolację, zanim zapadnie zmrok. Jutro czeka nas ostatni, długi odcinek do Poznania, wyjazd już o 7:00 — dziś więc warto się porządnie wyspać, bo to naprawdę ostatnia taka okazja przed powrotem do codzienności.",
-      "web_research": [
-        {
-          "topic": "Trasa A8/A9 Wasserburg → Hof",
-          "summary": "B304→A99→A8 west (München-Ost)→A9 north przez Nürnberg: ~380 km, 4–4,5 h. Wasserburg nie leży przy autostradzie (B304/B15) — dojazd do A8 ~60 km. A8 zatłoczona (Irschenberg). A9 Nürnberg–Hof ~120 km.",
-          "source": "https://maps.adac.de/routenplaner/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "A8 — odcinek południowy",
-          "summary": "A8 (497 km): Karlsruhe–Stuttgart–Ulm–Monachium–Salzburg. Wąskie odcinki (Irschenberg, Aichelberg) — częste korki. Postój Raststätte Irschenberg/Holzkirchen zamiast centrum Monachium.",
-          "source": "https://en.wikipedia.org/wiki/Bundesautobahn_8",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "A9 — Nürnberg → Hof",
-          "summary": "A9 (530 km): Berlin–Leipzig–Nürnberg–Ingolstadt–Monachium. Odcinek Nürnberg–Hof ~120 km, ~1h 10 min. Zjazdy: Hof-Nord, Hof-West (B15), Naila, Selbitz. B15 łączy Hof–Rehau–Wasserburg.",
-          "source": "https://planroute.de/bundesautobahn/a9/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Noclegi Hof (Saale) — Pension",
-          "summary": "32 pensiony w Hof od €30/noc (średnia €47). Popularne: Landgasthof Grüne Linde (Wölbattendorf), Hotel Deutsches Haus Garni (centrum €50–80). Quality Hotel i Central Hof — parking gratis.",
-          "source": "https://www.preiswert-uebernachten.de/hotel-pensionen/hof/5924",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Fränkischer Hof Rehau — alternatywa",
-          "summary": "Sofienstr. 19, 95111 Rehau. Hotel 3* przy A93 (zjazd Rehau-Süd 1,7 km). 25 pokoi, parking gratis, śniadanie regionalne. Tańsza opcja 25 km od Hof, B15 do centrum.",
-          "source": "https://fraenkischer-hof-rehau.de/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Naila/Selbitz — tańsze pensiony",
-          "summary": "Naila w Fichtelgebirge — pensiony €40–55/noc. Zjazd A9 Naila/Selbitz bliżej niż centrum Hof. Atrakcje: Döbraberg (794 m), ruiny zamku Lichtenberg.",
-          "source": "https://trek.zone/pl/niemcy/miejsca/284821/naila",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Restaurant Franconia am See (Gasthof Franconia)",
-          "summary": "Frankenring 1, 95502 Himmelkron — restauracja przy A9 (nie Raststätte). Kuchnia frankońsko-włoska, taras nad jeziorem. Obok Fichtelgebirgshof (nocleg).",
-          "source": "https://pizzeria-restaurant-franconia-am-see.de/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Serways Nürnberg-Feucht — lunch alternatywa",
-          "summary": "Raststätte Nürnberg-Feucht Ost i West na A9 (90537 Feucht). Otwarte 24h. Bliżej Nürnberg niż Himmelkron — szybszy postój tranzytowy.",
-          "source": "https://www.serways.de/standorte/nuernberg-feucht-ost/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Fichtelgebirgshof przy A9",
-          "summary": "Bezpośrednio przy A9 Himmelkron. 150 darmowych miejsc parkingowych. Od €50/noc, 36 pokoi. Obok Restaurant Franconia am See.",
-          "source": "https://www.hrs.de/de/hotel/62065",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "A9 Baustellen Nürnberg–Hof",
-          "summary": "Sprawdź aktualne roboty na autobahn.de i verkehr.de przed wyjazdem. Odcinek Nürnberg–Hof często remontowany (3–4 pasy, ale ograniczenia prędkości).",
-          "source": "https://de.wikivoyage.org/wiki/Bundesautobahn_9",
-          "checked": "2026-07"
-        }
-      ],
-      "opening_hours": {
-        "quality_hotel_hof": "Recepcja 24h, sauna od 14:00",
-        "hotel_central_hof": "Check-in od 15:00, parking gratis (Freiheitshalle obok jeśli pełny)",
-        "fraenkischer_hof_rehau": "Check-in od 13:00, parking gratis",
-        "franconia_am_see": "Restauracja przy A9 Himmelkron — sprawdź godziny na franconia-restaurant.de",
-        "nuernberg_feucht": "Serways Raststätte Nürnberg-Feucht Ost/West — 24h"
-      },
-      "parking": {
-        "hof_hotels": "Quality Hotel Hof i Hotel Central Hof — bezpłatny parking na miejscu (duży plac).",
-        "pension_tip": "Szukaj Pension przy zjeździe A9 — tańsze niż centrum Hof.",
-        "alternatives": "Rehau (Fränkischer Hof, parking gratis), Naila/Selbitz — €40–50/noc, 10–15 km od A9.",
-        "hof": "Pension przy zjeździe A9 (Hof-Nord/West/Naila) — parking gratis. Centrum Hof: płatny."
-      },
-      "eta_timeline": [
-        {
-          "time": "08:00",
-          "event": "Wyjazd z Wasserburga (B304 → A8 Richtung München)"
-        },
-        {
-          "time": "09:00",
-          "event": "Monachium Tangenziale (A8/A9 north) — wczesna pora, mały ruch"
-        },
-        {
-          "time": "10:30",
-          "event": "Norymberga (A9 north) — opcjonalnie: Autoraststätte tankowanie"
-        },
-        {
-          "time": "12:30",
-          "event": "Hof (Saale) — zjazd A9, hotel przy autostradzie"
-        },
-        {
-          "time": "13:00",
-          "event": "Obiad i odpoczynek — ostatni nocleg w drodze powrotnej"
-        }
-      ],
-      "summary": "Najkrótszy dzień jazdy (~380 km, 4–4,5 h): Wasserburg am Inn → A9 na północ → Hof (Saale). Spokojne tempo, lunch nad jeziorem po drodze (np. Himmelkron / Franconia am See)."
+      "summary": "Powrót przez Alpy (~7 h): Chianti → A1 na północ (omijając ZTL Florencji Variante di Valico) → Brenner → Kufstein — nocujemy w tym samym tyrolskim miasteczku nad Innem, co pierwszej nocy podróży, u stóp Alp."
     },
     {
       "date": "26.09 (sob)",
       "day_num": 15,
       "type": "transit",
       "label": "TRANZYT ← POZNAŃ",
-      "title": "Hof (Saale) → Poznań (dotarcie do domu)",
-      "drive_km": 470,
-      "drive_h": "5–5,5 h",
+      "title": "Kufstein → Poznań (dotarcie do domu)",
+      "image": "poznan",
+      "drive_km": 917,
+      "drive_h": "9–10 h",
       "base_id": null,
-      "depart": "7:00–7:30 rano z Hof",
-      "route": "Hof (Saale) → A72 north → Kreuz Chemnitz (A4) → A4 west → Drezno obwodnica → B97/Cottbus → A15 → Frankfurt (Oder) → A2 east → Świecko → Poznań",
-      "arrival": "ok. 13:30–15:00 w Poznaniu",
-      "attractions": [],
-      "food": {
-        "place": "Raststätte Sachsen lub kanapki z poprzedniego wieczoru",
-        "address": null,
-        "dishes": [],
-        "note": "Krótszy finałowy etap — lunch na trasie lub po dotarciu do Poznania.",
-        "price": null
-      },
-      "practical_tips": [
-        "Wyjazd 7:00–7:30 z Hof — dotarcie Poznań ok. 13:30–15:00.",
-        "A4 Ohorn–Salzenforst: do października 2026 jeden pas kier. Drezno — sprawdź autobahn.de rano.",
-        "Granica Świecko (A2) — A2 PL: ~138 zł na videotolling.",
-        "Dotarcie 26.09 = 1 dzień marginesu przed deadline 27.09."
-      ],
-      "fuel_stops": [
-        {
-          "name": "Tankowanie przed wyjazdem Hof",
-          "location": "Hof / A72 wjazd",
-          "note": "Pełny bak przed długim odcinkiem A4."
-        },
-        {
-          "name": "Postój A4/A13",
-          "location": "Raststätte Sachsen lub Cottbus",
-          "note": "Krótki postój — kanapki lub Raststätte. ~20 min."
-        },
-        {
-          "name": "Tankowanie przed granicą PL",
-          "location": "A2 przed Świeckiem lub tuż po",
-          "note": "Ostatnie tankowanie w DE często tańsze."
-        }
-      ],
+      "depart": "6:30–7:00 rano z Kufstein",
+      "route": "Kufstein → A93 north → A8 (München-Ost) → A9 north → Nürnberg → Berliner Ring A10 → A12 → Świecko (granica DE/PL) → A2 east → Poznań",
       "route_segments": [
         {
-          "segment": "Hof → Chemnitz",
-          "road": "A72",
-          "km": "~90",
-          "note": "A72 łączy Hof z A4 przy Dreznie."
+          "segment": "Kufstein → Monachium",
+          "road": "A93 north → A8",
+          "km": "~85",
+          "note": "Odcinek granica AT–Kufstein-Süd bezwinietowy; jadąc na północ winieta AT niepotrzebna"
         },
         {
-          "segment": "Chemnitz → Drezno",
-          "road": "A4 west",
-          "km": "~80",
-          "note": "Obwodnica Drezna — nie centrum. Uwaga na baustellen Saksonia."
+          "segment": "Monachium → Norymberga",
+          "road": "A9 north",
+          "km": "~165",
+          "note": "Tankowanie w DE — taniej niż w AT/PL. Ruch sobotni lżejszy niż w tygodniu."
         },
         {
-          "segment": "Drezno → Frankfurt (Oder)",
-          "road": "A4 → A13 → A15",
-          "km": "~145",
-          "note": "Przejście graniczne A15 → A2."
+          "segment": "Norymberga → Berlin (obwodnica)",
+          "road": "A9 north",
+          "km": "~430",
+          "note": "Raststätte Frankenwald (most nad A9, km 254) — dobry postój na lunch"
         },
         {
-          "segment": "Frankfurt (Oder) → Poznań",
-          "road": "A2 east",
-          "km": "~150",
-          "note": "Świecko — granica PL/DE. Opłata AW ~138 zł. Dotarcie ~13:00–14:30."
+          "segment": "Berlin → Świecko (granica)",
+          "road": "A10 Berliner Ring → A12",
+          "km": "~115",
+          "note": "Obwodnicą A10 omijaj centrum Berlina, dalej A12 na wschód do granicy"
+        },
+        {
+          "segment": "Świecko → Poznań",
+          "road": "A2",
+          "km": "~175",
+          "note": "Videotolling AWSA Świecko–Konin (~138 zł). W domu ok. 16:00–17:00"
         }
       ],
-      "image": "poznan",
-      "narrative": "Ostatni odcinek — 470 km, sobotni poranek, ale w głowie już tylko dom. Wyjeżdżamy o 7:00–7:30: A72 z Hof do Chemnitz, tam wjazd na A4 na wschód przez Saksonię, gdzie mgła jeszcze leży w dolinach. Warto sprawdzić autobahn.de przy śniadaniu — na A4 między Ohorn a Salzenforst do końca października 2026 trwa remont (1 pas w kierunku Drezna, możliwe +30–45 minut), więc lepiej wiedzieć o tym zawczasu niż zdziwić się w korku tuż przed granicą. Drezno omijamy obwodnicą A4, dalej A13 przez Cottbus i A15 do Frankfurtu nad Odrą — krajobraz robi się coraz bardziej znajomy, sosnowe lasy Brandenburgii zaczynają przypominać te po polskiej stronie granicy, a rozmowy w aucie mimowolnie zbaczają na to, co pierwsze zrobimy w domu. Przez Świecko (opłata AW ~138 zł) wjeżdżamy do Polski i A2 prosto do Poznania — w domu ok. 13:30–15:00, z bagażnikiem pełnym wina, oliwy i pecorino, i głową pełną obrazów kamiennych borgo, winnic Chianti i porannej mgły nad Serchio sprzed dwóch tygodni. Zostaje jeszcze cały dzień marginesu przed deadline powrotu 27.09 — czas, żeby powoli, bez pośpiechu, wrócić do rzeczywistości i rozpakować walizki pachnące jeszcze toskańskim latem.",
+      "attractions": [],
+      "food": {
+        "place": "Raststätte Frankenwald (most nad A9) lub Nürnberg-Feucht",
+        "address": "A9 km ~254 Berg-Rudolphstein (Frankenwald) lub 90537 Feucht",
+        "dishes": [],
+        "note": "Ostatni dzień tranzytowy — lunch na autostradzie. Frankenwald = ikoniczne Brückenrasthaus nad A9, ta sama trasa co w drodze tam (odwrócona).",
+        "price": "~€8–12"
+      },
+      "accommodation": {
+        "place": "Dom — Poznań",
+        "note": "Meta podróży. W domu ok. 16:00–17:00 (start 6:30–7:00, ~9 h jazdy + 2 postoje). 27.09 zostaje jako dzień buforowy.",
+        "price": "—"
+      },
+      "practical_tips": [
+        "Najdłuższy dzień powrotu (917 km, ~9 h) — wyjazd 6:30–7:00, żeby być w domu przed wieczorem.",
+        "Winieta AT niepotrzebna: odcinek Kufstein-Süd → granica DE jest bezwinietowy przy jeździe na północ.",
+        "Tankuj w Niemczech przed Polską — paliwo tańsze. Frankenwald Ost (A9 km 254) = dobry postój lunchowy.",
+        "Trasa = dokładne lustro dnia 1 (A9/A10/A2), z pominięciem Drezna/A4 — bez remontu Ohorn–Salzenforst.",
+        "Świecko: opłata videotolling A2 (~138 zł). W domu ok. 16:00–17:00."
+      ],
+      "parking": {
+        "destination": "Dom — Poznań",
+        "options": [],
+        "tip": "Koniec trasy — rozładunek w domu. Bagażnik pełen wina, oliwy, szafranu i pecorino."
+      },
+      "fuel_stops": [
+        {
+          "name": "Eni/OMV dolina Inn (przed wyjazdem)",
+          "location": "A12/A93 okolice Kufstein",
+          "road": "A93",
+          "hours": "6–22",
+          "note": "Uzupełnij rano; dalej tankuj już w Niemczech."
+        },
+        {
+          "name": "Raststätte Frankenwald Ost",
+          "location": "A9 km 254, Berg-Rudolphstein",
+          "road": "A9",
+          "hours": "24/7",
+          "note": "Aral, McDonald's — postój lunchowy i tankowanie w DE (taniej niż PL)."
+        },
+        {
+          "name": "Orlen/Shell przy A2 Świecko",
+          "location": "A2, po stronie PL za granicą",
+          "road": "A2",
+          "hours": "24h",
+          "note": "Ostatnie tankowanie / kawa przed Poznaniem."
+        }
+      ],
+      "narrative": "Ostatni odcinek — najdłuższy, ale w głowie już tylko dom. Wyjeżdżamy z Kufstein wcześnie, ok. 6:30–7:00 w sobotni poranek, gdy dolina Inn jeszcze śpi. Krótki skok A93 na północ mija granicę austriacko-niemiecką (odcinek Kufstein-Süd → granica jest bezwinietowy, więc bez zatrzymywania), potem A8 obwodnicą Monachium i A9 prosto na północ — tą samą trasą, którą dwa tygodnie temu jechaliśmy w drugą stronę, tylko teraz krajobraz przewija się od Alp ku równinom. Ok. 11:00 postój na lunch w Raststätte Frankenwald Ost — charakterystyczny most zawieszony nad samą autostradą, ten sam, przy którym zatrzymaliśmy się pierwszego dnia; tu też warto nabić bak, bo paliwo w Niemczech jest tańsze niż w Polsce. Dalej A9 do Berlina, obwodnicą A10 omijamy centrum, i A12 prowadzi nas na wschód, ku granicy — sosnowe lasy Brandenburgii coraz bardziej przypominają te po polskiej stronie, a rozmowy w aucie mimowolnie schodzą na to, co pierwsze zrobimy w domu. Przez Świecko (opłata AW ~138 zł) wjeżdżamy do Polski, A2 prosto do Poznania — w domu ok. 16:00–17:00, z bagażnikiem pełnym wina, oliwy, szafranu i pecorino, i głową pełną obrazów kamiennych borgo, wież San Gimignano i porannej mgły nad toskańskimi winnicami. Zostaje jeszcze cały 27.09 jako margines przed końcem urlopu — czas, żeby powoli wrócić do rzeczywistości i rozpakować walizki pachnące jeszcze toskańskim wrześniem. Świadomie wybraliśmy trasę A9/A10/A2 — lustro drogi tam — omijając Drezno i remont na A4, przez który jechaliśmy dawnym, dłuższym wariantem powrotu.",
       "web_research": [
         {
-          "topic": "Trasa Hof → Poznań",
-          "summary": "A72 → A4 (Drezno) → A13 (Cottbus) → A15 → granica → A2 Świecko → Poznań. ~470 km, 5–5,5 h bez utrudnień; z A4 Baustelle 6–7 h.",
-          "source": "https://fromto.travel/en/germany/poland/ba-hof/wiecie",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "A4 Baustelle Ohorn–Salzenforst 2026",
-          "summary": "23.04–30.10.2026: remont 9,2 km A4 kier. Drezno. 3 pasy kier. Görlitz, 1 pas kier. Drezno. Sperry zjazdów Uhyst i Burkau w różnych terminach. +30–45 min.",
-          "source": "https://www.autobahn.de/betrieb-verkehr/verkehrsmeldung/a4-fahrbahnerneuerung-zwischen-den-anschlussstellen-ohorn-und-salzenforst-richtungsfahrbahn-dresden-aachen",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Opłaty A2 Polska 2026",
-          "summary": "Odcinek Świecko–Konin Modła: ~138 zł dla auta osobowego. Videotolling bez zatrzymania. A2 kontynuacja niemieckiej A12.",
-          "source": "https://conadrogach.pl/haslo-drogowe/a2-swiecko-nowy-tomysl-konin/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "A72 Hof–Chemnitz",
-          "summary": "A72 łączy Hof (od A9) z Chemnitz i A4. Odcinek do Lipska w budowie — dla trasy na wschód wystarczy do Kreuz Chemnitz/A4.",
-          "source": "https://conadrogach.pl/mapa-samochodowa/niemcy/autostrada-a72/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Trasa Hof → Poznań A72/A4/A2",
-          "summary": "Hof → A72 → Chemnitz → A4 → Drezno → Frankfurt/Oder → A2 → Świecko → Poznań. ~470 km, 5–5,5 h.",
-          "source": "https://conadrogach.pl/mapa-samochodowa/niemcy/autostrada-a72/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "A4 Baustellen Saksonia",
-          "summary": "Roboty drogowe częste na A4 Drezno–Frankfurt. Sprawdź rano na autobahn.de.",
+          "topic": "Trasa powrotna Kufstein → Poznań (lustro dnia 1)",
+          "summary": "~917 km, ~9 h (OSRM) przez A93/A8 Monachium → A9 Nürnberg → A10 Berliner Ring → A12 → Świecko → A2. Ta sama oś co w drodze tam (odwrócona), z pominięciem Drezna/A4 — bez remontu Ohorn–Salzenforst na A4.",
           "source": "https://www.autobahn.de/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Winieta AT przy wyjeździe z Kufstein",
+          "summary": "Jadąc z Kufstein na północ do Niemiec, odcinek Kufstein-Süd → granica (Kiefersfelden) jest bezwinietowy (Korridor Vignettenfrei). Nowa winieta AT niepotrzebna — wykorzystana została na dniu powrotnym 1 (25.09) przy przejeździe A12/A13 Brenner.",
+          "source": "https://www.asfinag.at/en/toll/toll-sticker/vignette-free-sections/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Opłaty A2 PL (Świecko–Konin) 2026",
+          "summary": "Odcinek koncesyjny AWSA: ~129–138 PLN Świecko–Konin (kat. 1). Videotolling — bez bramek, płatność online/aplikacja. Konin–Stryków bezpłatny dla aut <3,5 t.",
+          "source": "https://www.autostrada-a2.pl/en/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Raststätte A9 (Frankenwald, Feucht) — postój",
+          "summary": "Serways Frankenwald Ost/West (km 254, most nad A9), Nürnberg-Feucht Ost (km 385) — 24/7, Aral/OMV, McDonald's, ładowarki EV. Frankenwald = najlepszy postój lunchowy na trasie (jak w drodze tam).",
+          "source": "https://www.serways.de/standorte/frankenwald-ost/",
           "checked": "2026-07"
         }
       ],
       "opening_hours": {
-        "raststaette_sachsen": "24/7",
-        "border_swiecko": "A2 Świecko: 24h. Videotolling PL od Konin."
-      },
-      "parking": {
-        "arrival": "Dotarcie do domu — brak noclegu. Lunch na trasie lub w Poznaniu."
+        "raststaette_a9": "24/7 (Frankenwald Ost, Nürnberg-Feucht)",
+        "swiecko_toll": "Videotolling A2 — bez bramek, płatność online/aplikacja"
       },
       "eta_timeline": [
         {
-          "time": "07:00",
-          "event": "Wyjazd z Hof (A72 → A4 kierunek Drezno)"
+          "time": "06:45",
+          "event": "Wyjazd z Kufstein (A93 na północ, granica AT/DE bezwinietowa)"
         },
         {
-          "time": "08:30",
-          "event": "Chemnitz → Drezno (A4) — UWAGA: roboty do X 2026 (1 pas)"
+          "time": "07:30",
+          "event": "Monachium — A8 → A9 na północ"
         },
         {
-          "time": "10:00",
-          "event": "Cottbus (A13) — opcjonalnie: ostatni stop w DE"
+          "time": "09:00",
+          "event": "Norymberga (A9) — bez zjazdu, dalej na północ"
         },
         {
           "time": "11:00",
-          "event": "A15 → A12 Frankfurt (Oder) — granica PL/DE Świecko"
+          "event": "Postój Frankenwald Ost (A9 km 254) — lunch i tank DE"
         },
         {
-          "time": "11:30",
-          "event": "Wjazd do PL — A2 Świecko (videotoll ~138 zł)"
+          "time": "13:00",
+          "event": "Obwodnica Berlina (A10 ring, zjazd na A12 wschód)"
         },
         {
-          "time": "13:30",
-          "event": "Poznań — dom 🏠"
+          "time": "14:30",
+          "event": "Świecko — granica DE/PL (A12 → A2), videotolling"
+        },
+        {
+          "time": "16:30",
+          "event": "Poznań — dom. Koniec podróży (27.09 = dzień buforowy)"
         }
       ],
-      "summary": "Ostatni odcinek (~470 km): Hof → A72/A4 przez Saksonię → Polska → Poznań. Sobotni wyjazd rano, w planie zapas czasu przed dniem buforowym (warto sprawdzić utrudnienia na A4)."
+      "summary": "Ostatni, najdłuższy odcinek (~917 km, ~9 h): Kufstein → A9 przez Norymbergę → Berlin → Świecko → Poznań. Trasa to lustro dnia 1 (A9/A10/A2), z pominięciem Drezna i remontu na A4. W domu ok. 16:00–17:00, przed dniem buforowym 27.09."
     },
     {
       "date": "27.09 (nd)",
@@ -3499,7 +3538,7 @@
         "icon": "🏨",
         "per_person_min": 425,
         "per_person_max": 623,
-        "note": "2 pokoje dwuosobowe, ceny za pokój za noc",
+        "note": "14 nocy: 1× Kufstein (tam) + 5× Barga + 7× Chianti + 1× Kufstein (powrót). Powrót skrócony do 2 dni — jedna noc tranzytowa zamiast dwóch — a zaoszczędzona noc przeznaczona na dodatkowy dzień w bazie Chianti (San Gimignano). Łączna liczba nocy bez zmian.",
         "items": [
           {
             "label": "Kufstein (Tyrol) — 1 noc (tranzyt tam)",
@@ -3608,8 +3647,8 @@
         "id": "attractions",
         "name": "Atrakcje i wejściówki",
         "icon": "🎟️",
-        "per_person_min": 88,
-        "per_person_max": 192,
+        "per_person_min": 93,
+        "per_person_max": 216,
         "note": "Większość miejsc bezpłatna lub z symbolicznym wstępem",
         "items": [
           {
@@ -3647,14 +3686,20 @@
             "detail": "Pociąg dolina→Lucca→Piza w obie strony ~€15/os; Krzywa Wieża €20/os (opcja); Torre Guinigi €8/os (opcja). Sam plac i mury — bezpłatne.",
             "per_person_min": 15,
             "per_person_max": 43
+          },
+          {
+            "label": "San Gimignano + Monteriggioni (Torre Grossa, Collegiata, mury, Vernaccia)",
+            "detail": "Torre Grossa + Musei Civici €9/os; Collegiata €5/os; mury Monteriggioni €5/os; degustacja Vernaccii od €5. Same miasteczka i widoki — bezpłatne.",
+            "per_person_min": 5,
+            "per_person_max": 24
           }
         ]
       }
     ],
-    "total_per_person_min": 827,
-    "total_per_person_max": 1261,
-    "total_4persons_min": 3308,
-    "total_4persons_max": 5044,
+    "total_per_person_min": 832,
+    "total_per_person_max": 1285,
+    "total_4persons_min": 3328,
+    "total_4persons_max": 5140,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",

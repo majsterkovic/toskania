@@ -3060,6 +3060,37 @@ html.dark .eta-time { color: var(--oro-light); }
   transform: rotate(90deg);
 }
 
+/* ── Zwijane sekcje referencyjne (kulinaria, las, logistyka) ── */
+
+.collapse-summary {
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0;
+}
+
+.collapse-summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapse-summary::before {
+  content: '▸';
+  font-size: 0.7rem;
+  color: var(--muted);
+  transition: transform 0.15s;
+}
+
+.collapse-block[open] .collapse-summary::before {
+  transform: rotate(90deg);
+}
+
+.collapse-block[open] .collapse-body {
+  margin-top: 0.65rem;
+}
+
 .oh-list {
   list-style: none;
   padding: 0;

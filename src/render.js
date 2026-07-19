@@ -249,6 +249,20 @@ function renderDayNav(days) {
   return `<nav class="day-nav" id="day-nav" aria-label="Nawigacja po dniach">${chips}</nav>`;
 }
 
+// Zwijana sekcja (domyślnie zamknięta) — dla treści referencyjnej, którą
+// czyta się dopiero na miejscu (kulinaria, las, logistyka). Kręgosłup dnia
+// (atrakcje, crowd tip, ostrzeżenie) zostaje zawsze widoczny.
+function collapsibleBlock(label, innerHtml, extraClass = '') {
+  if (!innerHtml) return '';
+  const cls = ['day-block', 'collapse-block', extraClass].filter(Boolean).join(' ');
+  return `
+    <details class="${cls}">
+      <summary class="block-label collapse-summary">${esc(label)}</summary>
+      <div class="collapse-body">${innerHtml}</div>
+    </details>
+  `;
+}
+
 function renderFood(food) {
   if (!food) return '';
   const dishes =
@@ -275,20 +289,18 @@ function renderFood(food) {
     ? `<p class="food-gps muted">📍 ${esc(food.gps_hint)}</p>`
     : '';
 
-  return `
-    <div class="day-block day-block--food">
-      <h4 class="block-label">Kulinaria</h4>
-      <p class="food-place"><strong>${esc(food.place)}</strong></p>
-      ${food.address ? `<p class="muted">${esc(food.address)}</p>` : ''}
-      ${food.phone ? `<p class="food-phone muted">📞 <a href="tel:${esc(food.phone)}">${esc(food.phone)}</a></p>` : ''}
-      ${food.opening_hours ? `<p class="food-hours muted">🕐 ${esc(food.opening_hours)}</p>` : ''}
-      ${dishes}
-      ${food.note ? `<p>${esc(food.note)}</p>` : ''}
-      ${food.price ? `<p class="price">${esc(food.price)}</p>` : ''}
-      ${gpsHtml}
-      ${optionsHtml}
-    </div>
+  const inner = `
+    <p class="food-place"><strong>${esc(food.place)}</strong></p>
+    ${food.address ? `<p class="muted">${esc(food.address)}</p>` : ''}
+    ${food.phone ? `<p class="food-phone muted">📞 <a href="tel:${esc(food.phone)}">${esc(food.phone)}</a></p>` : ''}
+    ${food.opening_hours ? `<p class="food-hours muted">🕐 ${esc(food.opening_hours)}</p>` : ''}
+    ${dishes}
+    ${food.note ? `<p>${esc(food.note)}</p>` : ''}
+    ${food.price ? `<p class="price">${esc(food.price)}</p>` : ''}
+    ${gpsHtml}
+    ${optionsHtml}
   `;
+  return collapsibleBlock('Kulinaria', inner, 'day-block--food');
 }
 
 function renderAccommodation(acc) {
@@ -354,15 +366,13 @@ function renderAttractions(attractions, images) {
 
 function renderOakForest(oak) {
   if (!oak) return '';
-  return `
-    <div class="day-block oak-block">
-      <h4 class="block-label">Las dębowy</h4>
-      <p><strong>${esc(oak.spot)}</strong></p>
-      <p class="muted">${esc(oak.species)}</p>
-      <p>${esc(oak.note)}</p>
-      ${oak.gps_hint ? `<p class="logistics-gps">📍 ${esc(oak.gps_hint)}</p>` : ''}
-    </div>
+  const inner = `
+    <p><strong>${esc(oak.spot)}</strong></p>
+    <p class="muted">${esc(oak.species)}</p>
+    <p>${esc(oak.note)}</p>
+    ${oak.gps_hint ? `<p class="logistics-gps">📍 ${esc(oak.gps_hint)}</p>` : ''}
   `;
+  return collapsibleBlock('Las dębowy', inner, 'oak-block');
 }
 
 function renderWineTasting(wt) {
@@ -424,12 +434,8 @@ function renderLogistics(day) {
   if (!allTips.length && !allLogistics.length) return '';
   const tipItems = allTips.map((t) => `<li class="logistics-tip">${t}</li>`).join('');
   const logItems = allLogistics.map((t) => `<li>${t}</li>`).join('');
-  return `
-    <div class="day-block day-block--practical">
-      <h4 class="block-label">Logistyka i wskazówki</h4>
-      <ul class="tips-list">${tipItems}${logItems}</ul>
-    </div>
-  `;
+  const inner = `<ul class="tips-list">${tipItems}${logItems}</ul>`;
+  return collapsibleBlock('Logistyka i wskazówki', inner, 'day-block--practical');
 }
 
 function renderRouteSegments(segments) {

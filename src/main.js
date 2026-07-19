@@ -1,100 +1,59 @@
 import plan2 from '../plan_2bazy.json';
-import { renderApp, initDayNav, initGallery } from './render.js';
-import { initAllMaps, destroyAllMaps, swapMapTiles } from './maps.js';
-import { initWeather } from './weather.js';
+import { renderTimeline, renderDayPage } from './render.js';
+import { renderSiteNav, initChrome } from './site.js';
+import { initBaseMaps, initDayMap, destroyAllMaps } from './maps.js';
 import './style.css';
 
-// Apply theme before first paint to prevent FOUC
+// Motyw przed pierwszym malowaniem (bez FOUC)
 (function () {
   const saved = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (saved === 'dark' || (!saved && prefersDark)) {
-    document.documentElement.classList.add('dark');
-  }
+  if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
 })();
 
-const currentPlan = plan2;
+const plan = plan2;
+const app = document.getElementById('app');
+let lastDayNum = null;
 
-function initScrollReveal() {
-  if (!('IntersectionObserver' in window)) return;
-  const cards = document.querySelectorAll('.day-card');
-  cards.forEach((el) => el.classList.add('reveal'));
-  const obs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-visible');
-          obs.unobserve(e.target);
-        }
-      });
-    },
-    { threshold: 0.05 }
-  );
-  cards.forEach((el) => obs.observe(el));
+function parseHash() {
+  const m = /^#\/?dzien-(\d+)/.exec(location.hash || '');
+  return m ? parseInt(m[1], 10) : null;
 }
 
-function initThemeToggle() {
-  const btn = document.getElementById('theme-toggle');
-  if (!btn) return;
-  const isDark = document.documentElement.classList.contains('dark');
-  btn.textContent = isDark ? '☀' : '◑';
-  btn.title = isDark ? 'Włącz tryb jasny' : 'Włącz tryb ciemny';
-  btn.addEventListener('click', () => {
-    const nowDark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', nowDark ? 'dark' : 'light');
-    btn.textContent = nowDark ? '☀' : '◑';
-    btn.title = nowDark ? 'Włącz tryb jasny' : 'Włącz tryb ciemny';
-    swapMapTiles();
-  });
+function whenLeaflet(fn) {
+  if (window.L) fn();
+  else setTimeout(() => whenLeaflet(fn), 100);
 }
 
-function initTodo() {
-  const STORAGE_KEY = 'todo-done-toskania-2026';
-  let done = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
-
-  document.querySelectorAll('.todo-check').forEach((cb) => {
-    const id = cb.dataset.todoId;
-    if (done.has(id)) {
-      cb.checked = true;
-      cb.closest('.todo-item').classList.add('is-done');
-    }
-    cb.addEventListener('change', () => {
-      if (cb.checked) done.add(id); else done.delete(id);
-      cb.closest('.todo-item').classList.toggle('is-done', cb.checked);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify([...done]));
-    });
-  });
-}
-
-function mount(plan) {
-  destroyAllMaps();
-  const app = document.getElementById('app');
-  app.innerHTML = renderApp(plan);
-  initDayNav();
-  initGallery();
-  initTodo();
-  initThemeToggle();
-  const weatherLocs = (plan.bases || [])
-    .filter(b => Array.isArray(b.coords) && b.coords.length === 2)
-    .map(b => ({
-      id: b.id,
-      name: (b.region || b.name).split('·')[0].trim(),
-      sub: b.name,
-      lat: b.coords[0],
-      lon: b.coords[1],
-    }));
-  initWeather('weather-container', weatherLocs.length ? weatherLocs : undefined);
-  requestAnimationFrame(initScrollReveal);
-  if (typeof window !== 'undefined') {
-    const initMaps = () => {
-      if (window.L) {
-        initAllMaps(plan);
-      } else {
-        setTimeout(initMaps, 100);
-      }
-    };
-    requestAnimationFrame(() => setTimeout(initMaps, 50));
+function renderDayView(dayNum) {
+  const day = plan.days.find((d) => d.day_num === dayNum);
+  if (!day) { location.hash = ''; return; }
+  lastDayNum = dayNum;
+  app.innerHTML = renderSiteNav('plan') + renderDayPage(day, plan.meta.images, plan.bases, plan.days);
+  initChrome();
+  window.scrollTo(0, 0);
+  if (day.base_id) {
+    const base = plan.bases.find((b) => b.id === day.base_id);
+    whenLeaflet(() => initDayMap(`map-day-${dayNum}`, base, day.attractions));
   }
 }
 
-mount(currentPlan);
+function renderTimelineView() {
+  app.innerHTML = renderSiteNav('plan') + renderTimeline(plan);
+  initChrome();
+  whenLeaflet(() => initBaseMaps(plan));
+  if (lastDayNum != null) {
+    const row = app.querySelector(`a.tl-row[href="#/dzien-${lastDayNum}"]`);
+    if (row) requestAnimationFrame(() => row.scrollIntoView({ block: 'center' }));
+  }
+}
+
+function renderView() {
+  destroyAllMaps();
+  const dayNum = parseHash();
+  if (dayNum != null) renderDayView(dayNum);
+  else renderTimelineView();
+}
+
+window.addEventListener('hashchange', renderView);
+renderView();

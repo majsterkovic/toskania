@@ -76,26 +76,6 @@ function activeDays(days) {
   return days.filter((d) => d.day_num != null);
 }
 
-function renderSiteNav() {
-  return `
-    <nav class="site-nav" id="site-nav" aria-label="Nawigacja strony">
-      <a class="site-nav__brand" href="#start">Toskania</a>
-      <div class="site-nav__links">
-        <a href="#mapa">Mapa</a>
-        <a href="#bazy">Bazy</a>
-        <a href="#dni">Harmonogram</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#koszty">Koszty</a>
-        <a href="#pogoda">Pogoda</a>
-        <a href="#todo">Todo</a>
-        <a href="#info">Info</a>
-        <a href="short/">Skrót</a>
-      </div>
-      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Przełącz tryb ciemny/jasny">◑</button>
-    </nav>
-  `;
-}
-
 function renderHeader(meta, images) {
   const hero = images?.hero;
   const heroImg = hero ? renderImg({ src: imgSrc(hero.src), alt: hero.alt, credit: hero.credit }, 'hero__figure', 'eager') : '';
@@ -135,7 +115,7 @@ function renderHeader(meta, images) {
   `;
 }
 
-function renderInteractiveMap(days) {
+export function renderInteractiveMap(days) {
   const tuscanyDays = days.filter(d =>
     ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null
   );
@@ -620,6 +600,13 @@ function renderBuffer(day) {
   return `<p class="buffer-note">${esc(day.note)}</p>`;
 }
 
+/** Ciało dnia: narracja + bloki (transit / tuscany / buffer). Współdzielone przez kartę i stronę dnia. */
+function renderDayBody(day, images) {
+  if (day.type === 'buffer') return renderBuffer(day);
+  const narrativeHtml = day.narrative ? `<p class="day-narrative">${esc(day.narrative)}</p>` : '';
+  return narrativeHtml + (day.type === 'transit' ? renderTransit(day, images) : renderTuscany(day, images));
+}
+
 function renderDay(day, images, bases) {
   const accent = dayAccent(day);
 
@@ -638,12 +625,7 @@ function renderDay(day, images, bases) {
     `;
   }
 
-  const narrativeHtml = day.narrative
-    ? `<p class="day-narrative">${esc(day.narrative)}</p>`
-    : '';
-
-  const body =
-    narrativeHtml + (day.type === 'transit' ? renderTransit(day, images) : renderTuscany(day, images));
+  const body = renderDayBody(day, images);
 
   const popularClass = day.popular ? ' day-card--popular' : '';
   const typeClass = ` day-card--${day.type}`;
@@ -705,7 +687,7 @@ function renderDays(days, images, bases) {
   `;
 }
 
-function renderGallery(images) {
+export function renderGallery(images) {
   const places = images?.places;
   if (!places || !Object.keys(places).length) return '';
 
@@ -747,7 +729,7 @@ function renderGallery(images) {
   `;
 }
 
-function renderCosts(costs) {
+export function renderCosts(costs) {
   if (!costs) return '';
 
   const categories = costs.categories
@@ -817,7 +799,7 @@ function renderCosts(costs) {
   `;
 }
 
-function renderTodo(todo) {
+export function renderTodo(todo) {
   if (!todo?.categories?.length) return '';
 
   const PRIORITY_LABEL = { high: 'pilne', medium: 'warto', low: 'opcjonalnie' };
@@ -868,7 +850,7 @@ function fmtClimateKey(key) {
   return CLIMATE_LABELS[key] || key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-function renderPractical(info) {
+export function renderPractical(info) {
   const climate = Object.entries(info.climate || {})
     .map(([region, desc]) => `<li><strong>${esc(fmtClimateKey(region))}:</strong> ${esc(desc)}</li>`)
     .join('');
@@ -910,39 +892,146 @@ function renderPractical(info) {
   `;
 }
 
-export function renderApp(plan) {
-  const images = plan.meta?.images ?? plan.images;
+function renderFooter(meta) {
   return `
-    ${renderSiteNav()}
-    <div class="page">
+    <footer class="footer">
+      <p>Toskania 2026 · ${esc(meta.dates)}</p>
+      <p class="footer__credit">Mapy: <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">© OpenStreetMap</a> · Zdjęcia: Wikimedia Commons</p>
+    </footer>
+  `;
+}
+
+function dayDateParts(dateStr) {
+  const m = /^(\S+)\s*(?:\(([^)]+)\))?/.exec(dateStr || '');
+  return { d: m ? m[1] : (dateStr || ''), wd: m && m[2] ? m[2] : '' };
+}
+
+function timelineMarkers(day) {
+  const marks = [];
+  if (/popular$/.test(day.type) || day.crowd_tip) {
+    marks.push('<span class="tl-mark tl-mark--crowd" title="Popularne / tłumy">★ tłumy</span>');
+  }
+  let drive = '';
+  if (day.type === 'transit' && day.drive_h) drive = day.drive_h;
+  else if ((day.type === 'tuscany' || day.type === 'tuscany_popular') && day.daily_km_estimate) drive = `${day.daily_km_estimate} km`;
+  if (drive) marks.push(`<span class="tl-mark tl-mark--drive" title="Przejazd">🚗 ~${esc(drive)}</span>`);
+  return marks.join('');
+}
+
+function timelineRow(day) {
+  const { d, wd } = dayDateParts(day.date);
+  const dateHtml = `<span class="tl-row__date"><span class="tl-row__d">${esc(d)}</span><span class="tl-row__wd">${esc(wd)}</span></span>`;
+  if (day.type === 'buffer') {
+    return `
+      <div class="tl-row tl-row--buffer reveal" style="--accent: ${dayAccent(day)}">
+        ${dateHtml}
+        <span class="tl-row__main">
+          <span class="tl-row__title">${esc(day.title)}</span>
+          <span class="tl-row__sub">${esc(day.note || '')}</span>
+        </span>
+      </div>`;
+  }
+  return `
+    <a class="tl-row reveal" href="#/dzien-${day.day_num}" style="--accent: ${dayAccent(day)}">
+      ${dateHtml}
+      <span class="tl-row__main">
+        <span class="tl-row__title">${esc(day.title)}</span>
+        <span class="tl-row__markers">${timelineMarkers(day)}</span>
+      </span>
+      <span class="tl-row__chev" aria-hidden="true">›</span>
+    </a>`;
+}
+
+function groupPhases(days) {
+  const phases = [
+    { key: 'dojazd', eyebrow: 'Etap I', label: 'Dojazd', sub: 'Poznań → Toskania', days: [] },
+    { key: 'base1', eyebrow: 'Etap II', label: 'Garfagnana', sub: 'Baza 1 · Barga', baseId: 'base1', mapIndex: 1, days: [] },
+    { key: 'base2', eyebrow: 'Etap III', label: 'Chianti Senese', sub: 'Baza 2 · Castelnuovo B.', baseId: 'base2', mapIndex: 2, days: [] },
+    { key: 'powrot', eyebrow: 'Etap IV', label: 'Powrót', sub: 'Toskania → Poznań', days: [] },
+  ];
+  let seenBase2 = false;
+  days.forEach((day) => {
+    if (day.base_id === 'base1') phases[1].days.push(day);
+    else if (day.base_id === 'base2' || day.type === 'tuscany_transfer') { phases[2].days.push(day); seenBase2 = true; }
+    else if (day.type === 'transit' && phases[1].days.length === 0 && !seenBase2) phases[0].days.push(day);
+    else phases[3].days.push(day);
+  });
+  return phases;
+}
+
+export function renderTimeline(plan) {
+  const images = plan.meta?.images ?? plan.images;
+  const phases = groupPhases(plan.days);
+  const timelineHtml = phases.map((phase) => {
+    const rows = phase.days.map(timelineRow).join('');
+    const baseMap = phase.baseId
+      ? `<div class="tl-basemap">
+           <div id="map-base-${phase.mapIndex}" class="leaflet-map leaflet-map--base" aria-label="Mapa bazy: ${esc(phase.label)}"></div>
+           <div class="tl-basemap__legend" id="basemap-legend-${phase.baseId}"></div>
+         </div>`
+      : '';
+    return `
+      <section class="tl-phase tl-phase--${phase.key}">
+        <header class="tl-phase__head">
+          <span class="tl-phase__eyebrow">${esc(phase.eyebrow)}</span>
+          <h2 class="tl-phase__label">${esc(phase.label)}</h2>
+          <span class="tl-phase__sub">${esc(phase.sub)}</span>
+        </header>
+        ${baseMap}
+        <div class="tl-rows">${rows}</div>
+      </section>`;
+  }).join('');
+
+  return `
+    <div class="page page--timeline">
       ${renderHeader(plan.meta, images)}
-      ${renderInteractiveMap(plan.days)}
-      <section class="section section--maps" id="mapy">
-        <h2 class="section-title">Mapa trasy</h2>
-        <div class="maps-row maps-row--single">
-          <div class="map-card">
-            <h3 class="map-card__title">Cała trasa — Poznań → Toskania → Poznań</h3>
-            <div id="map-route-overview" class="leaflet-map" aria-label="Mapa trasy Poznań–Toskania–Poznań"></div>
-          </div>
+      <div class="timeline">${timelineHtml}</div>
+      ${renderFooter(plan.meta)}
+    </div>
+  `;
+}
+
+export function renderDayPage(day, images, bases, days) {
+  const base = bases?.find((b) => b.id === day.base_id);
+  const thumbKey = day.image || base?.image;
+  const placeImg = thumbKey ? resolvePlaceImage(images, thumbKey) : null;
+  const hero = placeImg ? renderImg(placeImg, 'daypage__hero', 'eager') : '';
+  const { d, wd } = dayDateParts(day.date);
+
+  const list = activeDays(days || []);
+  const idx = list.findIndex((x) => x.day_num === day.day_num);
+  const prev = idx > 0 ? list[idx - 1] : null;
+  const next = idx >= 0 && idx < list.length - 1 ? list[idx + 1] : null;
+  const navLink = (target, dir, label) =>
+    target
+      ? `<a class="daypage-nav__link daypage-nav__link--${dir}" href="#/dzien-${target.day_num}"><span class="daypage-nav__dir">${label}</span><span class="daypage-nav__t">${esc(target.title)}</span></a>`
+      : `<span class="daypage-nav__link is-disabled"><span class="daypage-nav__dir">${label}</span></span>`;
+
+  const hasMiniMap = (day.type === 'tuscany' || day.type === 'tuscany_popular' || day.type === 'tuscany_transfer') && day.base_id;
+  const miniMap = hasMiniMap
+    ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini" aria-label="Mapa dnia ${day.day_num}"></div>`
+    : '';
+  const warning = day.warning ? `<div class="day-warning">${esc(day.warning)}</div>` : '';
+
+  return `
+    <div class="page page--day" style="--day-accent: ${dayAccent(day)}">
+      <a class="daypage-back" href="#/">← Plan</a>
+      <article class="daypage day-card--${day.type}">
+        ${hero}
+        <div class="daypage__head">
+          <span class="day-date">${esc(d)} <span class="daypage__wd">${esc(wd)}</span></span>
+          <span class="day-label">${esc(day.label)}</span>
         </div>
-      </section>
-      ${renderBases(plan.bases, images)}
-      <div class="schedule-wrap">
-        ${renderDayNav(plan.days)}
-        ${renderDays(plan.days, images, plan.bases)}
-      </div>
-      ${renderGallery(images)}
-      ${renderCosts(plan.costs)}
-      <section class="section" id="pogoda">
-        <h2 class="section-title">Pogoda we wrześniu</h2>
-        <div id="weather-container"></div>
-      </section>
-      ${renderTodo(plan.todo)}
-      ${renderPractical(plan.practical_info)}
-      <footer class="footer">
-        <p>Toskania 2026 · ${esc(plan.meta.dates)}</p>
-        <p class="footer__credit">Mapy: <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">© OpenStreetMap</a> · Zdjęcia: Wikimedia Commons</p>
-      </footer>
+        <h1 class="daypage__title">${esc(day.title)}</h1>
+        ${warning}
+        ${miniMap}
+        <div class="day-body">${renderDayBody(day, images)}</div>
+      </article>
+      <nav class="daypage-nav" aria-label="Nawigacja między dniami">
+        ${navLink(prev, 'prev', '‹ Poprzedni')}
+        ${navLink(next, 'next', 'Następny ›')}
+      </nav>
+      ${renderFooter({ dates: '12–27 września 2026' })}
     </div>
   `;
 }

@@ -3150,3 +3150,316 @@ html.dark .research-item {
   background: var(--stone);
   border-color: var(--border);
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   TIMELINE — nowa strona główna (oś kartograficzna + stacje faz)
+   Sygnatura: złota (--oro) oś-trasa łącząca stacje faz podróży.
+   ══════════════════════════════════════════════════════════════════ */
+
+.timeline {
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.25rem 1.15rem 4rem;
+}
+
+/* złota oś kartograficzna — ciągła pionowa linia po lewej */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: calc(1.15rem + 8px);
+  top: 2.25rem;
+  bottom: 3.5rem;
+  width: 2px;
+  background: var(--oro);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.tl-phase {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0.75rem;
+}
+
+/* nagłówek fazy = "stacja" na osi */
+.tl-phase__head {
+  position: relative;
+  padding: 1.4rem 0 0.65rem 2.1rem;
+}
+.tl-phase__head::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: calc(1.4rem + 0.55em);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2.5px solid var(--oro);
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 4px var(--cream);
+}
+.tl-phase__eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--oro);
+  font-weight: 600;
+}
+.tl-phase__label {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.85rem;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0.1rem 0 0.05rem;
+}
+.tl-phase__sub {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+/* wiersze dni */
+.tl-rows { position: relative; }
+
+.tl-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.4rem 1fr auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.8rem 0.7rem 2.1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+/* węzeł dnia na osi */
+.tl-row::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent, var(--muted));
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 3.5px var(--cream);
+  transition: transform 0.18s ease;
+}
+a.tl-row:hover {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  transform: translateX(2px);
+}
+a.tl-row:hover::before { transform: translate(-50%, -50%) scale(1.35); }
+a.tl-row:focus-visible {
+  outline: 2px solid var(--oro);
+  outline-offset: 2px;
+}
+
+.tl-row__date {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.tl-row__d {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.tl-row__wd {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.tl-row__main { min-width: 0; }
+.tl-row__title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.06rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.tl-row__sub {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+.tl-row__markers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.3rem;
+}
+.tl-mark {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.tl-mark--crowd {
+  color: var(--terracotta-deep);
+  background: rgba(184, 92, 56, 0.12);
+}
+.tl-mark--drive {
+  color: var(--muted);
+  background: var(--stone);
+}
+.tl-row__chev {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  color: var(--oro);
+  opacity: 0.5;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+a.tl-row:hover .tl-row__chev { opacity: 1; transform: translateX(2px); }
+
+.tl-row--buffer {
+  grid-template-columns: 3.4rem 1fr;
+  opacity: 0.8;
+}
+.tl-row--buffer::before {
+  background: var(--cream);
+  border: 1.5px dashed var(--muted);
+  box-shadow: 0 0 0 3.5px var(--cream);
+}
+
+/* mapa bazy w nagłówku fazy */
+.tl-basemap {
+  margin: 0.25rem 0 1.1rem 2.1rem;
+}
+.leaflet-map--base {
+  height: 260px;
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.tl-basemap__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  margin-top: 0.6rem;
+}
+.bm-leg {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-sans);
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+.bm-leg__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
+}
+
+/* reveal wierszy */
+.reveal { opacity: 0; transform: translateY(8px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ══ Strona dnia (#/dzien-N) ══ */
+.page--day { max-width: 780px; margin: 0 auto; padding: 1.25rem var(--page-pad) 3rem; }
+.daypage-back {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--oro);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: transform 0.15s ease;
+}
+.daypage-back:hover { transform: translateX(-3px); }
+.daypage {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--day-accent, var(--oro));
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.daypage__hero { margin: 0; }
+.daypage__hero img { width: 100%; height: clamp(200px, 34vw, 340px); object-fit: cover; display: block; }
+.daypage__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  padding: 1.1rem 1.3rem 0;
+}
+.daypage__head .day-date { font-family: var(--font-sans); font-weight: 600; color: var(--ink); }
+.daypage__wd { color: var(--muted); font-weight: 500; text-transform: uppercase; font-size: 0.8em; letter-spacing: 0.06em; }
+.daypage__title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.7rem, 4.5vw, 2.4rem);
+  line-height: 1.12;
+  color: var(--ink);
+  padding: 0.2rem 1.3rem 0.4rem;
+}
+.daypage .day-body { padding: 0 1.3rem 1.4rem; }
+.daypage .leaflet-map--mini { margin: 0.5rem 1.3rem; width: auto; }
+
+/* nawigacja prev/next */
+.daypage-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+.daypage-nav__link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  text-decoration: none;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+.daypage-nav__link--next { text-align: right; }
+.daypage-nav__link:hover { border-color: var(--oro); transform: translateY(-2px); }
+.daypage-nav__link.is-disabled { opacity: 0.4; pointer-events: none; }
+.daypage-nav__dir { font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--oro); }
+.daypage-nav__t { font-family: var(--font-serif); font-size: 0.92rem; color: var(--ink); }
+
+/* nawigacja serwisu — aktywna pozycja */
+.site-nav__links a.is-active { color: var(--oro-light); }
+.site-nav__links a.is-active::after {
+  content: '';
+  display: block;
+  height: 1.5px;
+  background: var(--oro);
+  margin-top: 1px;
+}
+
+@media (max-width: 560px) {
+  .tl-row { grid-template-columns: 2.9rem 1fr auto; padding-left: 1.9rem; }
+  .tl-phase__label { font-size: 1.55rem; }
+  .daypage-nav { grid-template-columns: 1fr; }
+}

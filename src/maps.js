@@ -266,6 +266,76 @@ const BASE_ACCENT = {
   base3: '#8f3f28',
 };
 
+function escapeHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// Paleta per-dzień do map baz — atrakcje danego dnia w osobnym kolorze (harmonijna z paletą toskańską)
+const DAY_PALETTE = ['#b85c38', '#5c6b45', '#c4860a', '#4a6b8a', '#8f3f28', '#2e4f3e', '#a8883c'];
+
+/**
+ * Mapy baz na timeline: baza w kolorze głównym (duży pin), atrakcje wg dnia (kolor z palety) + legenda.
+ */
+export function initBaseMaps(plan) {
+  if (!window.L) return;
+  const L = window.L;
+  const specs = [
+    { baseId: 'base1', mapId: 'map-base-1', main: '#5c6b45' },
+    { baseId: 'base2', mapId: 'map-base-2', main: '#b85c38' },
+  ];
+  specs.forEach(({ baseId, mapId, main }) => {
+    const el = document.getElementById(mapId);
+    if (!el) return;
+    const base = (plan.bases || []).find((b) => b.id === baseId);
+    const days = (plan.days || []).filter(
+      (d) => d.base_id === baseId && Array.isArray(d.attractions) && d.attractions.some((a) => a.coords)
+    );
+
+    const map = L.map(el, { zoomControl: false, scrollWheelZoom: false, attributionControl: false });
+    L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+    registerMap({ map, type: 'base' });
+
+    const pts = [];
+    if (base?.coords) {
+      L.marker(base.coords, { icon: makePinIcon(main, 13, true) })
+        .bindPopup(`<strong>${escapeHtml(base.name)}</strong><br><em>baza noclegowa</em>`, { maxWidth: 200 })
+        .addTo(map);
+      pts.push(base.coords);
+    }
+
+    const legend = [];
+    days.forEach((day, i) => {
+      const color = DAY_PALETTE[i % DAY_PALETTE.length];
+      const atts = (day.attractions || []).filter((a) => a.coords);
+      if (!atts.length) return;
+      legend.push({ color, num: day.day_num, title: day.title });
+      atts.forEach((a) => {
+        pts.push(a.coords);
+        L.marker(a.coords, { icon: makePinIcon(color, 8, false) })
+          .bindPopup(
+            `<strong>${escapeHtml(a.name)}</strong><br><span style="color:${color};font-weight:600">Dzień ${day.day_num}</span>`,
+            { maxWidth: 200 }
+          )
+          .addTo(map);
+      });
+    });
+
+    if (pts.length === 1) map.setView(pts[0], 11);
+    else if (pts.length > 1) map.fitBounds(L.latLngBounds(pts), { padding: [26, 26] });
+
+    const legEl = document.getElementById(`basemap-legend-${baseId}`);
+    if (legEl) {
+      legEl.innerHTML = legend
+        .map(
+          (l) =>
+            `<span class="bm-leg"><span class="bm-leg__dot" style="background:${l.color}"></span><span class="bm-leg__t">D${l.num} · ${escapeHtml(l.title)}</span></span>`
+        )
+        .join('');
+    }
+  });
+}
+
 const TYPE_COLOR = {
   nature: '#5c6b45',
   popular: '#c4860a',

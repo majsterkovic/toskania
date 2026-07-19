@@ -41,4 +41,21 @@ Baza w Chianti (północ) jest realnie **daleko od południa** (Crete Senesi, Va
 
 - **Florencja** — najlepszy dostęp z Chianti (przez Sienę), stąd wdrożona tam, nie z Bargi.
 - **Piza** — ✅ **WYBRANA** (2026-07). W parze z [[Lucca|Lucką]], dojazd pociągiem z doliny Bargi, kosztem dnia 4 (Castiglione + Orecchiella). Powody: dojazd bez auta, dwa miejsca za cenę jednego (Lucca dotąd tylko mijana), blok Bargi ma luźniejszy dzień do poświęcenia niż napięty blok Chianti. Do wdrożenia — patrz [[decyzje-otwarte]].
-- **San Gimignano** — ❌ **ODRZUCONE**. Za daleko (55 min z Chianti, bez kolei), wymagałby własnego dnia kosztem cięcia w i tak napiętym bloku Chianti. Przegrał z Pizą.
+- **San Gimignano** — ✅ **WDROŻONE** (2026-07-19) jako nowy **D13 (24.09)** wraz z [[Monteriggioni]], po skróceniu powrotu z 3 do 2 dni (zwolnił się dzień). OSRM: ~77 min z bazy (nie 55, jak wcześniej sądzono), San Gim → Monteriggioni 36 min. Wcześniej odrzucone tylko z braku dnia — ten powód zniknął.
+
+## Optymalność lokalizacji bazy 2 — centroid ważony (OSRM, 2026-07-19)
+
+Cele dni bazy 2 (D8 Chianti, D9 Crete, D10 Val d'Orcia, D11 Siena + D12 pociąg do Florencji z Sieny [waga ×2], D13 San Gimignano). **Centroid ważony celów ≈ 43,300 / 11,384 — tuż na pd-wsch od Sieny.** Obecna baza jest w pn-wsch rogu, daleko od niego.
+
+| Baza (kandydat) | Suma waż. 1-way | Śr./dzień |
+|---|---|---|
+| Centroid / Siena SE (Pianella, Ponte a Bozzone) | 213–214 min | ~36 min |
+| Monteroni d'Arbia | 221 min | 37 min |
+| Buonconvento | 252 min | 42 min |
+| Asciano (Crete) | 264 min | 44 min |
+| **Castelnuovo B. (obecny pin)** | 308 min | 51 min |
+| **Vagliagli / Monti in Chianti (agriturismo z notatki)** | 398 min | 66 min |
+
+Najboleśniejsze dni (1-way): Val d'Orcia 100 min z Vagliagli / 74 z Castelnuovo / 20 z Buonconvento; Crete 86/55/11; Siena 57/39/20.
+
+**Wniosek:** baza jest przesunięta na północ względem środka ciężkości — leży idealnie tylko pod dzień Chianti (D8, bo *jest* w Chianti), płaci na południu (Val d'Orcia, Crete = najdłuższe dni). **Rekomendacja (scenariusz 2):** zostać w Chianti Senese, ale wybrać agriturismo na **południowym skraju** (Castelnuovo B. / Pianella / Ponte a Bozzone), nie na północy (Vagliagli/Monti) — połowa oszczędności centroidu (66 → ~40–51 min/dzień) przy zerowej utracie klimatu winnic. Maks. skrócenie = Siena SE/Monteroni (~36 min/dzień), ale kosztem „chianti-w-winnicach". Baza 1 (Barga) — dobrze położona dla klastra Garfagnany (wszystko ≤40 min), bez zmian.

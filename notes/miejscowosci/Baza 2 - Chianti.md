@@ -6,13 +6,14 @@ tags: [toskania, baza]
 
 Dni 7–15 (18.09–26.09.2026, wyjazd 26.09). Agriturismo w okolicach Vagliagli/Monti in Chianti.
 
-## Dni programu
+## Dni programu (po rotacji weekendowej, 2026-07)
 - D7: transfer Barga → Chianti (przystanek Pistoia)
-- D8: [[Siena]] — pełny dzień
-- D9: Brolio + Badia a Coltibuono + Radda in Chianti
-- D10: Monte Oliveto Maggiore + Bosco della Ragnaia (opcja) + Asciano
-- D11: Bagno Vignoni + Pienza + Montalcino
-- D12: **[[Florencja]]** — zamiast Monteriggioni/Murlo/Foresta di Tocchi (zmiana wdrożona)
+- D8 (sob 19.09): Brolio + Badia a Coltibuono + Radda in Chianti (zamki i wino Chianti)
+- D9 (nd 20.09): Monte Oliveto Maggiore + Asciano (Crete Senesi)
+- D10 (pn 21.09): Pienza + Bagno Vignoni + Montalcino (Val d'Orcia)
+- D11 (wt 22.09): [[Siena]] — o świcie przed tłumami
+- D12 (śr 23.09): **[[Florencja]]** — pociągiem z Sieny (zamiast Monteriggioni/Murlo/Foresta di Tocchi)
+- D13 (czw 24.09): [[San Gimignano]] + [[Monteriggioni]] — dołożone po skróceniu powrotu do 2 dni (2026-07-19)
 
-## Dostępność
-Zob. [[odleglosci]] — najlepszy punkt wypadowy do [[Siena|Sieny]] i stąd do [[Florencja|Florencji]]. [[San Gimignano]] w zasięgu, ale zbyt daleko na doklejenie.
+## Dostępność i optymalność
+Zob. [[odleglosci]] — najlepszy punkt wypadowy do [[Siena|Sieny]] i stąd do [[Florencja|Florencji]]. **Analiza centroidu ważonego (2026-07-19):** baza przesunięta na północ względem środka ciężkości atrakcji (centroid ≈ Siena SE). Leży idealnie tylko pod dzień Chianti; płaci na południu (Val d'Orcia, Crete). Rekomendacja: przy wyborze agriturismo celować w **południowy skraj Chianti Senese** (Castelnuovo B. / Pianella / Ponte a Bozzone), nie północny (Vagliagli/Monti) — patrz tabela w [[odleglosci]].

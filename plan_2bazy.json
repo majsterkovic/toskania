@@ -47,16 +47,6 @@
           "alt": "Grotta del Vento, Fornovolasco",
           "credit": "Wikimedia Commons · qwesy qwesy"
         },
-        "verrucole": {
-          "src": "images/verrucole.jpg",
-          "alt": "Fortezza delle Verrucole",
-          "credit": "Wikimedia Commons · Davide Papalini"
-        },
-        "vagli": {
-          "src": "images/vagli.jpg",
-          "alt": "Lago di Vagli",
-          "credit": "Wikimedia Commons · Davide Papalini"
-        },
         "ponte-diavolo": {
           "src": "images/ponte-diavolo.jpg",
           "alt": "Ponte del Diavolo, Borgo a Mozzano",
@@ -111,11 +101,6 @@
           "src": "images/kufstein.jpg",
           "alt": "Widok z Festung Kufstein — miasteczko nad Innem i Alpy bawarskie",
           "credit": "Dnalor 01 / Wikimedia Commons (CC BY-SA 3.0 at)"
-        },
-        "gorfigliano": {
-          "src": "images/gorfigliano.jpg",
-          "alt": "Gorfigliano — średniowieczna wioska w Garfagnanie",
-          "credit": "Antiedipo / CC BY-SA 3.0"
         },
         "poznan": {
           "src": "images/poznan.jpg",
@@ -181,6 +166,11 @@
           "src": "images/monteriggioni.jpg",
           "alt": "Monteriggioni z lotu ptaka — kompletny pierścień murów obronnych z 1214 r. z 14 wieżami",
           "credit": "Maurizio Moro5153 / Wikimedia Commons / CC BY-SA 4.0"
+        },
+        "il-ciocco-valley": {
+          "src": "images/il-ciocco-valley.jpg",
+          "alt": "Panorama doliny Serchio i Alp Apuańskich znad Il Ciocco, w pobliżu Bargi",
+          "credit": "Spike / Wikimedia Commons / CC BY-SA 4.0"
         }
       }
     },
@@ -245,10 +235,10 @@
       ],
       "tuscany_overview": [
         {
-          "label": "Barga (BAZA 1)",
+          "label": "Barga / Ponte all'Ania (BAZA 1)",
           "coords": [
-            44.073,
-            10.483
+            44.0398,
+            10.4932
           ],
           "type": "base",
           "days": "13–17.09"
@@ -278,10 +268,10 @@
           "type": "attraction"
         },
         {
-          "label": "Lago di Vagli",
+          "label": "Il Ciocco",
           "coords": [
-            44.134,
-            10.338
+            44.0797,
+            10.4483
           ],
           "type": "nature"
         },
@@ -373,19 +363,19 @@
   "bases": [
     {
       "id": "base1",
-      "name": "Barga (Garfagnana)",
+      "name": "Casa vacanze Rosa (Ponte all'Ania, k. Barga)",
       "image": "barga",
       "label": "BAZA 1",
       "region": "Garfagnana · Lucca",
       "nights": "13–17 wrz (5 nocy)",
-      "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3.",
+      "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3. Dom leży niżej w dolinie (Ponte all'Ania) — bliżej Lukki i Bagni di Lucca, wciąż blisko szlaków Il Ciocco.",
       "color": "emerald",
-      "accommodation": "Agriturismo lub B&B w Barga lub okolicach (Mologno, Loppia, Albiano). Ceny: €60–90/noc z śniadaniem.",
-      "booking_tip": "Szukaj: agriturismo barga garfagnana — wioska Mologno 5 km od centrum, cisza, las",
-      "gps_hint": "Naviguj: Barga LU lub Mologno LU — unikaj centrum (ZTL)",
+      "accommodation": "Casa vacanze Rosa — dom na wyłączność, 3 sypialnie, 1 łazienka, 110 m², basen. Via Nazionale 29, 55051 Barga (frazione Ponte all'Ania / Fornaci di Barga). Ocena 9,8 (5 opinii). Gospodarz prywatny. ~540 zł/noc za cały dom.",
+      "booking_tip": "POTWIERDZONE (booking.com) — przed rezerwacją dopytaj gospodarza wprost o bezpłatny parking (nie było jawnej plakietki w ofercie). Lokalizacja niżej w dolinie niż Mologno: bliżej Lukki/Pizy i mostu diabelskiego, minimalnie dalej od centrum Bargi (7 min).",
+      "gps_hint": "Naviguj: Via Nazionale 29, 55051 Barga LU (Ponte all'Ania) — parking przy domu",
       "coords": [
-        44.073,
-        10.483
+        44.0398,
+        10.4932
       ]
     },
     {
@@ -1314,210 +1304,110 @@
       "day_num": 5,
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 3",
-      "title": "Jezioro, forteca i ukryte wioski",
-      "image": "verrucole",
+      "title": "Il Ciocco — szlak przez las kasztanowy nad Bargą",
+      "image": "il-ciocco-valley",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 35,
-      "warning": "16.09 (środa): Fortezza delle Verrucole — zwiedzanie zewnętrzne, wejście do fortecy niedostępne (otwarta pt–nd). Panorama 360° i mury dostępne bezpłatnie.",
+      "drive_limit_min": 8,
       "attractions": [
         {
-          "name": "Fortezza delle Verrucole (forteca) — spacer zewnętrzny",
-          "drive_min": 35,
-          "description": "16.09 to środa — forteca zamknięta (otwarta pt–nd od 15.09). Spacer zewnętrzny bezpłatny: mury, panorama 360° doliny Serchio i Alp Apuańskich.",
-          "type": "medieval",
-          "image_key": "verrucole",
-          "gps_hint": "Fortezza delle Verrucole, San Romano in Garfagnana LU",
-          "coords": [
-            44.1433,
-            10.4681
-          ],
-          "duration_h": 0.5,
-          "opening_hours": "Czerwiec–sierpień: codziennie. Wrzesień (od 15.09): pt–nd 10:30–18:30. Wstęp z przewodnikiem €8 (6–18 lat €5), częściowy €4. Spacer zewnętrzny/widok: zawsze. WhatsApp: 379 2415958.",
-          "entry_fee": "Z przewodnikiem: €8 (6–18 lat: €5) | częściowy bez tour: €4 | Zewnątrz/widok: bezpłatny"
-        },
-        {
-          "name": "Lago di Vagli (jezioro z zatopioną wioską Fabbriche di Careggine)",
-          "drive_min": 29,
-          "description": "Sztuczne jezioro z zatopionym w 1953 r. miasteczkiem Fabbriche di Careggine. Spacer po tamie i okolicznych wzgórzach.",
+          "name": "Szlak Il Ciocco — Barga (przez las kasztanowy)",
+          "drive_min": 7,
+          "description": "Umiarkowany szlak pieszy (tam i z powrotem) ~8 km, ~360 m przewyższenia, 2,5–3 h — startuje tuż przy resorcie Il Ciocco (600 ha własnych dróg i ścieżek), prowadzi przez jeden z najbardziej cenionych lasów kasztanowych Toskanii, mijając małe wsie, z Bargą Vecchia jako tłem widocznym przez większość trasy. Odcinki umiarkowanie strome, miejscami śliska skała — przydadzą się kijki trekkingowe i solidne buty; część ścieżki bywa lekko zarośnięta, więc długie spodnie są wskazane.",
           "type": "nature",
-          "image_key": "vagli",
-          "gps_hint": "Diga del Lago di Vagli, 55030 Vagli Sotto LU — parking przy tamie",
+          "image_key": "il-ciocco-valley",
+          "gps_hint": "Parking Il Ciocco / Castelvecchio Pascoli, przy resorcie Renaissance Tuscany Il Ciocco",
           "coords": [
-            44.1383,
-            10.3452
+            44.0797,
+            10.4483
           ],
-          "duration_h": 1.5,
-          "opening_hours": "Teren otwarty całą dobę, wstęp bezpłatny. W 2026 jezioro pełne — ruiny zatopionej wsi NIE są widoczne (opróżnienie planowane na 2027).",
-          "entry_fee": "Bezpłatny dostęp"
-        },
-        {
-          "name": "Gorfigliano (mikrowioska z romańskim kościołem)",
-          "drive_min": 17,
-          "description": "Mikrowioska z romańskim kościołem, kilkadziesiąt mieszkańców. Przykład autentycznego borgo bez renowacji turystycznej.",
-          "type": "medieval",
-          "gps_hint": "Gorfigliano, 55034 Minucciano LU",
-          "coords": [
-            44.0773,
-            10.3497
-          ],
-          "image_key": "gorfigliano",
-          "duration_h": 0.5,
-          "opening_hours": "Wioska dostępna całą dobę. Kamieniołomy prywatne — obserwacja z zewnątrz.",
-          "entry_fee": "Bezpłatny"
+          "opening_hours": "Szlak dostępny całą dobę, bez opłat i rezerwacji.",
+          "ticket_price": "Bezpłatny.",
+          "duration_h": 3.0
         }
       ],
       "oak_forest": {
-        "spot": "Wzgórza wokół Lago di Vagli",
-        "species": "Quercus cerris, Q. petraea",
-        "note": "Mieszane lasy dębowo-kasztanowe na zboczach jeziora — spacer bezpłatny, bez oznakowania turystycznego.",
-        "gps_hint": "Ścieżki od tamy w kierunku Careggine — las na wschodnim brzegu"
+        "spot": "Las kasztanowy Il Ciocco",
+        "species": "Castanea sativa (kasztan jadalny), miejscami Quercus cerris, Q. pubescens",
+        "note": "Jeden z najbardziej cenionych lasów kasztanowych Toskanii — całą trasę szlaku prowadzi gęsty starodrzew kasztanowy, chłodny nawet w środku dnia, z prześwitami na dolinę Serchio.",
+        "gps_hint": "Cała trasa szlaku Il Ciocco–Barga biegnie przez ten las."
       },
       "food": {
-        "place": "Ristorante Bar Radicchi — Vagli Sotto",
-        "address": "Via Pietro Pieroni 2/4, 55030 Vagli Sotto LU (~25 min od Barga)",
+        "place": "Lekki lunch po szlaku — Barga lub taras przy Casa vacanze Rosa",
+        "address": "Barga centro (7 min od bazy) lub kanapki/prowiant wzięty na szlak",
         "dishes": [
-          "cucina casalinga garfagnina",
-          "fagioli di Sorana IGP",
-          "tortelli z doliny Serchio"
+          "panino z lokalnym pecorino",
+          "focaccia",
+          "owoce"
         ],
-        "note": "Taras i ogród z widokiem na jezioro. Potwierdź pranzo tel. 0583 995237.",
-        "price": "~€15–25/os"
+        "note": "Po 3-godzinnym trekkingu lżejszy posiłek niż zwykle — reszta popołudnia zostaje wolna, idealna na odpoczynek przy basenie w bazie.",
+        "price": "~€8–15/os"
       },
       "practical_tips": [
-        "16.09 środa: Fortezza Verrucole — zwiedzanie zewnętrzne (wejście wewnątrz pt–nd); panorama 360° dostępna bezpłatnie",
-        "Vagli: parking przy tamie zapełnia się w południe — jedź tam rano (9:00)"
+        "Zabierz kijki trekkingowe — odcinki śliskiej skały, szczególnie po deszczu.",
+        "Solidne buty trekkingowe + długie spodnie (miejscami ścieżka lekko zarośnięta).",
+        "Weź wodę na 3 h marszu — na trasie brak punktów z wodą pitną.",
+        "Resort Il Ciocco ma 42 km własnych dróg/ścieżek — jeśli ktoś z rodziny woli krótszy wariant, na miejscu jest z czego wybierać.",
+        "Popołudnie celowo zostawione wolne (basen w bazie) — to i tak realny wysiłek fizyczny na pół dnia."
       ],
-      "narrative": "Wyjeżdżamy o 9:00 samochodem, 18 minut na wschód do Fortezzy delle Verrucole — 16.09 to środa, więc dostępny jest tylko spacer zewnętrzny (wejście do wnętrza dopiero od piątku do niedzieli), ale mury i panorama 360° na dolinę Serchio i Alpy Apuańskie same w sobie są warte tego niewielkiego objazdu — stąd widać niemal całą trasę, którą przejechaliśmy przez ostatnie dni (ok. 1 godzina). Potem 25 minut na zachód do Lago di Vagli: parking przy tamie, przyjeżdżamy przed 11:00, zanim miejsca się zapełnią. Jezioro rozlewa się między zboczami jak wielkie zielononiebieskie lustro — sztuczny zbiornik z 1953 roku, pod którym śpi zatopiona wioska Fabbriche di Careggine. W 2026 poziom wody jest wysoki, więc ruiny nie są widoczne (opróżnienie zbiornika planowane dopiero na 2027), ale spacer wzdłuż brzegu i po koronie tamy, z wiatrem znad wody, ma w sobie coś nieoczywistego — świadomość, że pod stopami leży całe miasteczko. Przerwa w Bar Radicchi w Vagli Sotto, z tarasu widok na jezioro. Kilka minut dalej (ok. 10 min) Gorfigliano: mikroskopijna górska wioska, gdzie czas płynie wyraźnie wolniej — romański kościółek Chiesa Vecchia stoi w ciszy przerywanej tylko szczekaniem psa gdzieś za murem, turystów tu praktycznie nie ma. Z powrotem do bazy docieramy ok. 17:00, ze zmęczeniem, które przychodzi po dniu spędzonym głównie na świeżym powietrzu.",
+      "narrative": "Zamiast kolejnego dnia za kierownicą — dziś prawdziwy szlak, dosłownie za rogiem. Wyjeżdżamy z bazy o 9:00, 7 minut jazdy do Il Ciocco — rozległego terenu resortowego z 600 hektarami własnych dróg i ścieżek, ale trasa, którą wybieramy, prowadzi dalej, do samej Bargi. Szlak Il Ciocco–Barga to ~8 km w obie strony i ok. 360 m przewyższenia — 2,5 do 3 godzin umiarkowanego marszu przez jeden z najpiękniejszych lasów kasztanowych Toskanii. Ścieżka wije się w cieniu starych kasztanowców, mija małe, senne przysiółki, a przez większość trasy nad drzewami majaczy sylwetka Bargi Vecchia — patrzymy na miasto, które zwiedzaliśmy kilka dni temu, z zupełnie innej perspektywy. Kilka odcinków jest stromych i śliskich (kamienista skała), więc idzie się bez pośpiechu, z kijkami w dłoniach. Nie ma tu tłumów, biletów ani godzin otwarcia — tylko las, cisza przerywana śpiewem ptaków i od czasu do czasu szczekaniem psa gdzieś we wsi. Wracamy do bazy wczesnym popołudniem, zmęczeni fizycznie, ale bez zmęczenia autem — reszta dnia to basen przy Casa vacanze Rosa i zasłużony odpoczynek przed kolejnym dniem zwiedzania.",
       "web_research": [
         {
-          "topic": "Fortezza Verrucole — KRYTYCZNE: 16.09 to środa",
-          "summary": "We wrześniu forteca otwarta pt–nd (od 15.09). 16.09.2026 (środa) = ZAMKNIĘTA. Alternatywa: spacer do fortecy z zewnątrz (widok 360° bezpłatny) lub przesuń wizytę na piątek/sobotę. Tel/WhatsApp: 379 2415958.",
-          "source": "https://tuscanyplanet.com/en/verrucole-castle/",
+          "topic": "Szlak Il Ciocco — Barga (trasa, trudność, czas)",
+          "summary": "Trasa tam i z powrotem ~4,9 mil (~7,9 km), przewyższenie ~1177 ft (~360 m), 2,5–3 h, trudność umiarkowana. Odcinki stromej, śliskiej skały — kijki trekkingowe pomagają; miejscami ścieżka zarośnięta — długie spodnie wskazane. Prowadzi przez gęsty las kasztanowy, mija małe wioski, przez większość trasy widoczna Barga Vecchia.",
+          "source": "https://www.alltrails.com/trail/italy/tuscany/il-ciocco-barga",
           "checked": "2026-07"
         },
         {
-          "topic": "Cennik Verrucole 2026",
-          "summary": "Wstęp z przewodnikiem: €8 dorosły, €5 (6–18 lat). Wstęp częściowy (bez muzeum): €4. Rezerwacja via WhatsApp +39 379 2415958 (9–19). Wizyta ~1 h.",
-          "source": "https://www.fortezzaverrucolearcheopark.it/it/informazioni.html",
+          "topic": "Resort Il Ciocco — sieć szlaków",
+          "summary": "Renaissance Tuscany Il Ciocco Resort & Spa leży na terenie 600 ha z ponad 42 km dróg i ścieżek w dolinie Serchio — szeroki wybór krótszych/łatwiejszych wariantów, gdyby pełna trasa do Bargi okazała się za długa dla części rodziny.",
+          "source": "https://ciocco.it/en",
           "checked": "2026-07"
         },
         {
-          "topic": "Lago di Vagli — poziom wody wrzesień 2026",
-          "summary": "Planowane oprożnienie i odsłonięcie Fabbriche di Careggine: lato 2027 (nie 2026). We wrześniu 2026 jezioro pełne — ruiny niewidoczne. Spacer po tamie i wzgórzach nadal warto.",
-          "source": "https://www.lanazione.it/lucca/cronaca/nel-2027-lo-svaso-del-lago-di-vagli-ma-servono-parcheggi-e-strade-xlieyh3n",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Parking Lago di Vagli",
-          "summary": "Darmowy parking przy Vagli Sotto (przed wsią). Przy tamie (Diga del Lago di Vagli) — parking przy SP, 2 min pieszo. Latem zapełnia się ~12:30 — przyjedź rano lub po 15:00.",
-          "source": "https://evendo.com/locations/italy/lucca/attraction/lago-di-vagli",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Agriturismo Il Corniolo — weryfikacja lokalizacji",
-          "summary": "Il Corniolo (agriturismoilcorniolo.it) leży w Castiglione di Garfagnana (Loc. Le Prade 25), NIE w Vagli Sotto/Careggine. Alternatywa lunch przy Vagli: Ristorante Bar Radicchi (taras nad jeziorem) lub La Ceragetta (Isola Santa, 25 min).",
-          "source": "https://agriturismoilcorniolo.it/it/il-corniolo-si-presenta",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Ristorante Bar Radicchi — lunch przy Vagli",
-          "summary": "Via Pietro Pieroni 2/4, Vagli Sotto. Cucina casalinga garfagnina, taras widok na jezioro. Tel. 0583 995237. Środa typowo 10–22 (Sluurpy) — potwierdź pranzo telefonicznie.",
-          "source": "https://www.ristoranteradicchi.com/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Gorfigliano — Chiesa Vecchia i muzeum",
-          "summary": "Chiesa SS. Giusto e Clemente (1706–1720, styl romanico) na ruinach zamku longobardskiego. Odbudowana przez wolontariuszy 1983–2011. Obok: Museo dell'Identità dell'Alta Garfagnana Olimpio Cammelli. Panorama na Lago di Gramolazzo.",
-          "source": "https://fondoambiente.it/luoghi/chiesa-vecchia-di-gorfigliano-e-museo-dell-alta-garfagnana",
+          "topic": "Dojazd baza (Casa vacanze Rosa) → Il Ciocco",
+          "summary": "OSRM: ~3,5–4 km, ~6–8 min jazdy — praktycznie zerowa logistyka, dzień bez długiej jazdy.",
+          "source": "OSRM router.project-osrm.org",
           "checked": "2026-07"
         }
       ],
-      "image2": "vagli",
       "opening_hours": {
-        "verrucole": "Wrzesień (od 15.09): pt–nd 10:30–18:30. 16.09 (środa) = ZAMKNIĘTE. Tour co ~1h, ostatnie wejście 1h przed zamknięciem. 18–20.09: dostęp częściowy (bez tour).",
-        "lago_vagli": "Tam i parking: całą dobę (bezpłatny)",
-        "bar_radicchi_vagli": "Typowo 10–22 (środa otwarty). Pranzo — potwierdź tel. 0583 995237",
-        "gorfigliano_chiesa": "Brak stałych godzin — spontanicznie lub po uzgodnieniu z parafią"
+        "szlak_il_ciocco": "Dostępny całą dobę, cały rok, bez opłat."
       },
       "parking": {
-        "destination": "Verrucole → Lago di Vagli → Gorfigliano",
-        "options": [
-          {
-            "name": "Verrucole — parking u podnóża",
-            "type": "public",
-            "price": "gratis",
-            "gps_hint": "Frazione Verrucole, San Romano in Garfagnana — sterrato, 12 m autobus OK",
-            "note": "Ample parking u podnóża fortecy, 5–10 min pieszo pod górę od kościoła San Lorenzo"
-          },
-          {
-            "name": "Diga del Lago di Vagli",
-            "type": "attraction",
-            "price": "gratis",
-            "gps_hint": "55030 Vagli Sotto LU",
-            "note": "Parking przy tamie — start spaceru, widok na jezioro"
-          },
-          {
-            "name": "Vagli Sotto — parking centralny",
-            "type": "public",
-            "price": "gratis",
-            "gps_hint": "Vagli Sotto",
-            "note": "Mały — latem pełny od 12:30, backup: ulica główna"
-          },
-          {
-            "name": "Gorfigliano — przy Chiesa Vecchia",
-            "type": "public",
-            "price": "gratis",
-            "gps_hint": "55034 Minucciano LU",
-            "note": "Kilka miejsc na wzgórzu przy kościele — widok panoramiczny"
-          }
-        ],
-        "tip": "Verrucole rano (8:30) → Vagli lunch (13:00) → Gorfigliano popołudnie — pętla zgodna z drive ≤30 min"
+        "il_ciocco": "Parking przy Il Ciocco / Castelvecchio Pascoli — bezpłatny, przy wjeździe do resortu.",
+        "tip": "Zostaw auto przy Il Ciocco na cały czas trekkingu — szlak jest pętlą tam-i-z-powrotem do Bargi."
       },
-      "fuel_stops": [
-        {
-          "name": "IP Gallicano / Castelnuovo",
-          "location": "SS445 dolina Serchio",
-          "note": "Zatankuj rano przed wyjazdem w góry — przy Vagli stacji brak."
-        }
-      ],
-      "daily_km_estimate": 95,
+      "fuel_stops": [],
+      "daily_km_estimate": 15,
       "eta_timeline": [
         {
           "time": "09:00",
-          "event": "Wyjazd z bazy do Fortezzy delle Verrucole (35 min)"
+          "event": "Wyjazd z bazy do Il Ciocco (7 min)"
         },
         {
-          "time": "09:35",
-          "event": "Fortezza delle Verrucole — spacer zewnętrzny, mury i panorama 360° (środa: wnętrze niedostępne)"
+          "time": "09:15",
+          "event": "Start szlaku Il Ciocco–Barga, las kasztanowy"
         },
         {
-          "time": "10:30",
-          "event": "Wyjazd do Lago di Vagli (29 min)"
+          "time": "11:30",
+          "event": "Punkt zwrotny — widoki na Bargę Vecchia, krótki odpoczynek"
         },
         {
-          "time": "11:00",
-          "event": "Lago di Vagli — spacer przy tamie i wzgórzach (ruiny wsi niewidoczne w 2026)"
+          "time": "12:15",
+          "event": "Powrót szlakiem do Il Ciocco"
         },
         {
-          "time": "12:00",
-          "event": "Obiad w Bar Radicchi (Vagli Sotto)"
+          "time": "12:30",
+          "event": "Lekki lunch (Barga lub baza)"
         },
         {
           "time": "13:30",
-          "event": "Wyjazd do Gorfigliano (10 min)"
-        },
-        {
-          "time": "13:45",
-          "event": "Gorfigliano — cicha górska wioska, kamieniołomy marmuru"
-        },
-        {
-          "time": "15:00",
-          "event": "Powrót do bazy"
+          "event": "Powrót do bazy — popołudnie przy basenie"
         }
       ],
-      "crowd_tip": "Vagli: cisza. Fortezza Verrucole: otwarta pt–nd wrzesień, w tygodniu możesz mieć fortecę dla siebie. Gorfigliano: prawie bez turystów.",
-      "summary": "Górska pętla po dolinie Garfagnana. Najpierw odrestaurowana średniowieczna forteca (Fortezza delle Verrucole) z panoramą 360° na dolinę — w środę wchodzimy tylko na dziedziniec i taras. Dalej jezioro Vagli, sztuczny zbiornik, pod którym od 1953 r. spoczywa zatopiona wioska Fabbriche di Careggine (jej ruiny widać tylko przy opróżnieniu tamy — w 2026 jezioro jest pełne). Na koniec Gorfigliano — cicha górska wioska z romańskim kościołem, bez turystycznego lukru."
+      "crowd_tip": "Szlak rzadko uczęszczany poza sezonem urlopowym — realna szansa na ciszę i pusty las.",
+      "summary": "Dzień bez samochodu: szlak Il Ciocco–Barga (~8 km, 2,5–3 h) przez gęsty las kasztanowy, z widokami na Bargę Vecchia i dolinę Serchio. Start 7 minut od bazy, popołudnie wolne na basen."
     },
     {
       "date": "17.09 (czw)",

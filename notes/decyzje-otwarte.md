@@ -11,8 +11,12 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `plan_2bazy.json`.
 - **Zrealizowane**: dzień 4 = auto Barga→Lucca (~40 min, parking poza murami) → mury/Piazza dell'Anfiteatro/Torre Guinigi/Duomo San Martino → pociąg Lucca→Pisa (~30 min) → Piazza dei Miracoli + Krzywa Wieża (slot €20, rezerwacja opapisa.it) → powrót. Zastąpił Castiglione di Garfagnana + Orecchiella.
 - Koszty: +€15–43/os (pociąg + wieże), budżet planu → €827–1261/os. Todo: rezerwacja slotu Wieży.
 
-## 2. San Gimignano — ❌ ODRZUCONE
-- Za daleko (55 min z [[Baza 2 - Chianti]], bez sensownej kolei), własny dzień = cięcie w napiętym bloku Chianti. Przegrał z [[Piza|Pizą]].
+## Baza 1 — nocleg potwierdzony + D5 zmieniony (2026-07-19) — ✅ WDROŻONE
+- **Nocleg**: Casa vacanze Rosa, Via Nazionale 29, 55051 Barga (Ponte all'Ania). Szczegóły w [[Baza 1 - Barga]].
+- **D5** (16.09): Verrucole+Vagli+Gorfigliano → **szlak Il Ciocco–Barga**. Powód: Verrucole otwarta tylko pt–nd (blok Bargi pon–czw, nie da się przesunąć); Vagli — zatopiona wioska niewidoczna w 2026 (jezioro pełne, opróżnienie 2027). Zamiennik: 7 min od bazy, ~8km/2,5–3h, las kasztanowy, widok na Bargę.
+
+## 2. San Gimignano — ✅ WDROŻONE (D13, 24.09) — patrz sekcja „Już zdecydowane" niżej
+- Pierwotnie odrzucone (55 min z [[Baza 2 - Chianti]], własny dzień = cięcie w napiętym bloku Chianti), ale po skróceniu powrotu z 3 do 2 dni (2026-07-19) zwolnił się dzień — powód odrzucenia zniknął. OSRM: realnie ~77 min (nie 55), z [[Monteriggioni]] po drodze.
 
 ## 3. Relokacja bazy 2 — DECYZJA OTWARTA (research 2026-07-19)
 Analiza OSRM: obecna baza (Chianti, zwł. przy Vagliagli) przesunięta na północ względem środka ciężkości atrakcji. 3 propozycje w [[Baza 2 - kandydaci relokacji]]:

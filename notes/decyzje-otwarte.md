@@ -11,13 +11,10 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `plan_2bazy.json`.
 - **Zrealizowane**: dzień 4 = auto Barga→Lucca (~40 min, parking poza murami) → mury/Piazza dell'Anfiteatro/Torre Guinigi/Duomo San Martino → pociąg Lucca→Pisa (~30 min) → Piazza dei Miracoli + Krzywa Wieża (slot €20, rezerwacja opapisa.it) → powrót. Zastąpił Castiglione di Garfagnana + Orecchiella.
 - Koszty: +€15–43/os (pociąg + wieże), budżet planu → €827–1261/os. Todo: rezerwacja slotu Wieży.
 
-## Baza 1 — D5 zmieniony (2026-07-19) — ✅ WDROŻONE
-- **D5** (16.09): Verrucole+Vagli+Gorfigliano → **szlak Il Ciocco–Barga**. Powód: Verrucole otwarta tylko pt–nd (blok Bargi pon–czw, nie da się przesunąć); Vagli — zatopiona wioska niewidoczna w 2026 (jezioro pełne, opróżnienie 2027). Zamiennik: 7 min od bazy, ~8km/2,5–3h, las kasztanowy, widok na Bargę.
+## Baza 1 — D5 = pętla Monte Forato (2026-07-19) — ✅ WDROŻONE
+- **D5** (16.09): Verrucole+Vagli+Gorfigliano → (przejściowo Il Ciocco) → **finalnie pętla Monte Forato** (naturalny łuk skalny, Fornovolasco, 24 min, 12km/~5h lub 3,5h skrócony, oficjalnie „medium" bez via ferrata). Powód zmiany z Verrucole/Vagli: forteca otwarta tylko pt–nd (nie do przesunięcia w kalendarzu pon–czw); Vagli — zatopiona wioska niewidoczna w 2026. D5 był już „dniem na trasę", więc nie trzeba było poświęcać D3/D6 ani dodawać nowego dnia — po prostu podmieniono treść dnia. Na miejscu zapisane 3 warianty trasy do wyboru (Forato/Palodina/Prato Fiorito). Wieczór: wybór Piazza Arringo (Barga, zachód słońca, widok na łuk z daleka) lub Sommocolonia. Pełne dane w [[Baza 1 - Barga]].
 - **Nocleg**: strona pokazuje generyczny pin „Barga" — nocleg NIE potwierdzony. Czołowy kandydat: Casa vacanze Rosa (Ponte all'Ania). Szczegóły w [[Baza 1 - Barga]].
 - **Pieve Fosciana** rozważana i odrzucona jako alternatywa bazy (201 vs 125 min sumy dojazdów) — szczegóły w [[Baza 1 - Barga]].
-
-## Prawdziwa trasa górska w bloku Bargi — DECYZJA OTWARTA (research 2026-07-19)
-Kandydaci: Monte Palodina (5h, 650m, „medium", 20 min dojazdu) lub Monte Prato Fiorito (3h42, 676m, „difficult"/stromo, ~23–35 min dojazdu). Pełne dane w [[Baza 1 - Barga]]. Nierozstrzygnięte: który szlak i który dzień/slot poświęcić (D3 traci Grotta del Vento, D6 traci Bagni di Lucca, lub dodać cały nowy dzień — przesuwa kalendarz reszty planu o 1 dzień).
 
 ## 2. San Gimignano — ✅ WDROŻONE (D13, 24.09) — patrz sekcja „Już zdecydowane" niżej
 - Pierwotnie odrzucone (55 min z [[Baza 2 - Chianti]], własny dzień = cięcie w napiętym bloku Chianti), ale po skróceniu powrotu z 3 do 2 dni (2026-07-19) zwolnił się dzień — powód odrzucenia zniknął. OSRM: realnie ~77 min (nie 55), z [[Monteriggioni]] po drodze.

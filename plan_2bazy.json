@@ -167,10 +167,10 @@
           "alt": "Monteriggioni z lotu ptaka — kompletny pierścień murów obronnych z 1214 r. z 14 wieżami",
           "credit": "Maurizio Moro5153 / Wikimedia Commons / CC BY-SA 4.0"
         },
-        "il-ciocco-valley": {
-          "src": "images/il-ciocco-valley.jpg",
-          "alt": "Panorama doliny Serchio i Alp Apuańskich znad Il Ciocco, w pobliżu Bargi",
-          "credit": "Spike / Wikimedia Commons / CC BY-SA 4.0"
+        "monte-forato": {
+          "src": "images/monte-forato.jpg",
+          "alt": "Naturalny łuk skalny Monte Forato w Alpach Apuańskich",
+          "credit": "Sailko / Wikimedia Commons / CC BY 3.0"
         }
       }
     },
@@ -268,10 +268,10 @@
           "type": "attraction"
         },
         {
-          "label": "Il Ciocco",
+          "label": "Monte Forato",
           "coords": [
-            44.0797,
-            10.4483
+            44.0282,
+            10.3577
           ],
           "type": "nature"
         },
@@ -1304,110 +1304,134 @@
       "day_num": 5,
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 3",
-      "title": "Il Ciocco — szlak przez las kasztanowy nad Bargą",
-      "image": "il-ciocco-valley",
+      "title": "Monte Forato — naturalny łuk skalny w Alpach Apuańskich",
+      "image": "monte-forato",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 8,
+      "drive_limit_min": 24,
       "attractions": [
         {
-          "name": "Szlak Il Ciocco — Barga (przez las kasztanowy)",
-          "drive_min": 7,
-          "description": "Umiarkowany szlak pieszy (tam i z powrotem) ~8 km, ~360 m przewyższenia, 2,5–3 h — startuje tuż przy resorcie Il Ciocco (600 ha własnych dróg i ścieżek), prowadzi przez jeden z najbardziej cenionych lasów kasztanowych Toskanii, mijając małe wsie, z Bargą Vecchia jako tłem widocznym przez większość trasy. Odcinki umiarkowanie strome, miejscami śliska skała — przydadzą się kijki trekkingowe i solidne buty; część ścieżki bywa lekko zarośnięta, więc długie spodnie są wskazane.",
+          "name": "Pętla Monte Forato (naturalny łuk skalny) — z Fornovolasco",
+          "drive_min": 24,
+          "description": "Prawdziwa górska wycieczka, ale bez wspinaczki: pętla z Fornovolasco (ta sama wieś co Grotta del Vento) prowadzi szlakiem CAI nr 6 do przełęczy Foce di Petrosciana (mija jaskinię Tana che Urla i źródło), dalej grzbietem CAI 110 aż do naturalnego łuku skalnego Monte Forato (1223 m) — jednego z największych naturalnych łuków we Włoszech (rozpiętość 32 m, do 25 m wysokości nad przełęczą, między dwoma szczytami 1223 i 1209 m). Trasa dochodzi do łuku BEZ odcinka wyposażonego (via ferrata) — oficjalnie oceniana jako 'medium' (E — turystyczna, znakowana CAI), trudność biorą na siebie ci, którzy chcą iść dalej grzbietem. Pełna pętla (powrót przez CAI 130): 12 km, ~700 m przewyższenia, ~5 h. Wariant krótszy — zejście przez CAI 12 z powrotem do CAI 6 — skraca trasę do ok. 3,5 h, wciąż z widokiem na łuk.",
           "type": "nature",
-          "image_key": "il-ciocco-valley",
-          "gps_hint": "Parking Il Ciocco / Castelvecchio Pascoli, przy resorcie Renaissance Tuscany Il Ciocco",
+          "image_key": "monte-forato",
+          "gps_hint": "Parking we wsi Fornovolasco, Fabbriche di Vergemoli LU",
           "coords": [
-            44.0797,
-            10.4483
+            44.0282,
+            10.3577
           ],
-          "opening_hours": "Szlak dostępny całą dobę, bez opłat i rezerwacji.",
+          "opening_hours": "Szlak dostępny całą dobę, cały rok, bez opłat.",
           "ticket_price": "Bezpłatny.",
-          "duration_h": 3.0
+          "duration_h": 4.0
         }
       ],
       "oak_forest": {
-        "spot": "Las kasztanowy Il Ciocco",
-        "species": "Castanea sativa (kasztan jadalny), miejscami Quercus cerris, Q. pubescens",
-        "note": "Jeden z najbardziej cenionych lasów kasztanowych Toskanii — całą trasę szlaku prowadzi gęsty starodrzew kasztanowy, chłodny nawet w środku dnia, z prześwitami na dolinę Serchio.",
-        "gps_hint": "Cała trasa szlaku Il Ciocco–Barga biegnie przez ten las."
+        "spot": "Lasy zboczy Foce di Petrosciana",
+        "species": "Fagus sylvatica (buk), Castanea sativa (kasztan) niżej, roślinność wysokogórska wyżej",
+        "note": "Dolna część szlaku (do Foce di Petrosciana) prowadzi przez bukowo-kasztanowy las Apuan; powyżej przełęczy drzewa ustępują skalistym grzbietom i widokom na łuk.",
+        "gps_hint": "CAI nr 6, Fornovolasco → Foce di Petrosciana."
       },
       "food": {
-        "place": "Lekki lunch po szlaku — Barga lub taras przy Casa vacanze Rosa",
-        "address": "Barga centro (7 min od bazy) lub kanapki/prowiant wzięty na szlak",
+        "place": "Prowiant na szlak + lunch w Fornovolasco po zejściu",
+        "address": "Fornovolasco, Fabbriche di Vergemoli LU",
         "dishes": [
-          "panino z lokalnym pecorino",
-          "focaccia",
-          "owoce"
+          "kanapki/panino na szlak",
+          "owoce, batony energetyczne",
+          "po zejściu: prosta trattoria we wsi"
         ],
-        "note": "Po 3-godzinnym trekkingu lżejszy posiłek niż zwykle — reszta popołudnia zostaje wolna, idealna na odpoczynek przy basenie w bazie.",
+        "note": "To dzień na cały prowiant w plecaku (5 h trasy, brak punktów z jedzeniem na szlaku) — lżejszy posiłek w Fornovolasco dopiero po powrocie z trasy.",
         "price": "~€8–15/os"
       },
       "practical_tips": [
-        "Zabierz kijki trekkingowe — odcinki śliskiej skały, szczególnie po deszczu.",
-        "Solidne buty trekkingowe + długie spodnie (miejscami ścieżka lekko zarośnięta).",
-        "Weź wodę na 3 h marszu — na trasie brak punktów z wodą pitną.",
-        "Resort Il Ciocco ma 42 km własnych dróg/ścieżek — jeśli ktoś z rodziny woli krótszy wariant, na miejscu jest z czego wybierać.",
-        "Popołudnie celowo zostawione wolne (basen w bazie) — to i tak realny wysiłek fizyczny na pół dnia."
+        "Solidne buty trekkingowe (obowiązkowo — kamienisty grzbiet) + kijki trekkingowe.",
+        "Zabierz min. 1,5–2 l wody/os — na szlaku brak źródeł pitnej wody poza jednym przy Foce di Petrosciana.",
+        "Wariant krótszy (~3,5h, CAI 12) dla mniej wprawionych — wciąż dociera do łuku, tylko inny powrót.",
+        "NIE kontynuuj grzbietem za łuk w stronę Pania della Croce — tam zaczyna się odcinek wyposażony (via ferrata), wymaga uprzęży i doświadczenia.",
+        "Wyjazd wcześnie (8:00) — 5h trasy plus dojazd to pełny dzień; zostaw bufor na powolniejsze tempo z dziećmi.",
+        "3 warianty trasy na dziś (do wyboru w zależności od formy/pogody): ① Monte Forato (wybrany, opisany wyżej) — 12 km/~5h (lub 3,5h skrócony), 700 m, „medium\", 24 min dojazdu, najbardziej widowiskowy (naturalny łuk skalny). ② Monte Palodina (Sentiero del Lupo) — 13 km/5h, 650 m, „medium\", 20 min dojazdu (Vallico di Sotto), łagodniejszy technicznie, szlak edukacyjny o wilkach, panorama 360° ze szczytu 1171 m. ③ Monte Prato Fiorito (Alta Via dei Pastori) — 7,8 km/3h42 (najkrótszy), 676 m, oceniany „difficult\" (stromizna, nie technika), ~25–35 min dojazdu, panorama 360° ze szczytu 1293 m.",
+        "Wieczór: po dniu na szlaku odpoczynek jest priorytetem (basen o tej porze we wrześniu bywa chłodny) — ok. 2h przerwy w bazie, a potem do wyboru na miejscu: (a) Piazza Arringo w Bardze (~7 min) — najsłynniejszy punkt widokowy regionu przy Duomo, skąd widać całe pasmo Alp Apuańskich z łukiem Monte Forato, który zwiedzaliście rano; (b) Sommocolonia (15 min) — cicha wioska na grzbiecie z historią z II wojny światowej (pomnik żołnierzy Buffalo), inny, spokojniejszy nastrój. Oba bezwysiłkowe, ~30–45 min w obie strony."
       ],
-      "narrative": "Zamiast kolejnego dnia za kierownicą — dziś prawdziwy szlak, dosłownie za rogiem. Wyjeżdżamy z bazy o 9:00, 7 minut jazdy do Il Ciocco — rozległego terenu resortowego z 600 hektarami własnych dróg i ścieżek, ale trasa, którą wybieramy, prowadzi dalej, do samej Bargi. Szlak Il Ciocco–Barga to ~8 km w obie strony i ok. 360 m przewyższenia — 2,5 do 3 godzin umiarkowanego marszu przez jeden z najpiękniejszych lasów kasztanowych Toskanii. Ścieżka wije się w cieniu starych kasztanowców, mija małe, senne przysiółki, a przez większość trasy nad drzewami majaczy sylwetka Bargi Vecchia — patrzymy na miasto, które zwiedzaliśmy kilka dni temu, z zupełnie innej perspektywy. Kilka odcinków jest stromych i śliskich (kamienista skała), więc idzie się bez pośpiechu, z kijkami w dłoniach. Nie ma tu tłumów, biletów ani godzin otwarcia — tylko las, cisza przerywana śpiewem ptaków i od czasu do czasu szczekaniem psa gdzieś we wsi. Wracamy do bazy wczesnym popołudniem, zmęczeni fizycznie, ale bez zmęczenia autem — reszta dnia to basen przy Casa vacanze Rosa i zasłużony odpoczynek przed kolejnym dniem zwiedzania.",
+      "narrative": "Dziś prawdziwa górska wyprawa — ale taka, która nie wymaga sprzętu alpejskiego. Wyjeżdżamy z bazy o 8:00, 24 minuty do Fornovolasco, tej samej wioski, w której kilka dni temu byliśmy w Grotta del Vento. Stąd szlakiem CAI nr 6 ruszamy w górę, mijając jaskinię Tana che Urla i leśne źródło, przez bukowo-kasztanowy las aż do przełęczy Foce di Petrosciana (ok. 1,5 h). Dalej grzbietem CAI 110, gdzie drzewa ustępują skale, a przed nami powoli wyłania się cel: naturalny łuk skalny Monte Forato — wyrzeźbiony przez wodę i wiatr w wapiennej skale, rozpięty na 32 metrach między dwoma szczytami (1223 i 1209 m), jeden z największych takich łuków we Włoszech. Docieramy do niego bez potrzeby wspinaczki czy uprzęży — cała trasa aż tutaj jest oficjalnie oceniana jako środkowo trudna, znakowana szlakiem turystycznym CAI. Stajemy dosłownie w cieniu łuku, z widokiem na całą dolinę Serchio po jednej stronie i poszarpane szczyty Apuan po drugiej — to jeden z najbardziej widowiskowych widoków całego wyjazdu. Nie idziemy dalej grzbietem w stronę Pania della Croce — tam zaczyna się odcinek wyposażony, wymagający uprzęży i doświadczenia, zupełnie inna liga. Powrót do Fornovolasco zajmuje kolejne 1,5–2 h (pełna pętla przez CAI 130, ok. 5 h w sumie, lub krótszy wariant przez CAI 12, ok. 3,5 h). Po zejściu prosty lunch we wsi i powrót do bazy — nogi zmęczone, więc kilka godzin odpoczynku w spokoju (basen o tej porze roku wieczorem bywa chłodny, więc dziś odpuszczamy). Gdy zrobi się chłodniej, do wyboru bezwysiłkowy wypad: Piazza Arringo w Bardze (7 min) — najsłynniejszy punkt widokowy regionu przy katedrze, skąd o zachodzie słońca widać całe pasmo Alp Apuańskich razem z łukiem Monte Forato, pod którym staliście kilka godzin wcześniej — albo Sommocolonia (15 min), cicha wioska na grzbiecie z własną, spokojniejszą historią z czasów II wojny światowej. Dzień kończy się z jednym z tych widoków, które zostają w pamięci na długo — i to podwójnie, bo widzimy łuk z bliska rano, a całe pasmo z daleka wieczorem.",
       "web_research": [
         {
-          "topic": "Szlak Il Ciocco — Barga (trasa, trudność, czas)",
-          "summary": "Trasa tam i z powrotem ~4,9 mil (~7,9 km), przewyższenie ~1177 ft (~360 m), 2,5–3 h, trudność umiarkowana. Odcinki stromej, śliskiej skały — kijki trekkingowe pomagają; miejscami ścieżka zarośnięta — długie spodnie wskazane. Prowadzi przez gęsty las kasztanowy, mija małe wioski, przez większość trasy widoczna Barga Vecchia.",
-          "source": "https://www.alltrails.com/trail/italy/tuscany/il-ciocco-barga",
+          "topic": "Pętla Monte Forato z Fornovolasco — oficjalne dane",
+          "summary": "Pełna pętla: 12 km, 700 m przewyższenia, ~5 h, poziom trudności 'medium' (turystyczna, bez via ferrata/sprzętu alpejskiego). Start: Fornovolasco (parking we wsi). Trasa: CAI 6 do Foce di Petrosciana (mija jaskinię Tana che Urla), CAI 110 grzbietem do łuku (1223 m), zejście CAI 131 (do podnóża Pania della Croce) lub powrót CAI 130. Wariant krótszy ~3,5 h przez CAI 12.",
+          "source": "https://turismo.garfagnana.eu/en/hikes/monte-forato-loop/",
           "checked": "2026-07"
         },
         {
-          "topic": "Resort Il Ciocco — sieć szlaków",
-          "summary": "Renaissance Tuscany Il Ciocco Resort & Spa leży na terenie 600 ha z ponad 42 km dróg i ścieżek w dolinie Serchio — szeroki wybór krótszych/łatwiejszych wariantów, gdyby pełna trasa do Bargi okazała się za długa dla części rodziny.",
-          "source": "https://ciocco.it/en",
+          "topic": "Naturalny łuk Monte Forato — wymiary i dostęp",
+          "summary": "Łuk uformowany erozją wodno-wietrzną w wapieniu: rozpiętość 32 m, do 25 m wysokości nad przełęczą — jeden z największych naturalnych łuków we Włoszech. Dwa szczyty po bokach: 1223 m i 1209 m. Dojście do samego łuku leśną ścieżką omija odcinek wyposażony (via ferrata) — ten zaczyna się dopiero przy próbie kontynuacji grzbietem w stronę Pania della Croce.",
+          "source": "https://framor.com/viaggi/europa/italia/toscana/monte-forato-apuane/",
           "checked": "2026-07"
         },
         {
-          "topic": "Dojazd baza (Casa vacanze Rosa) → Il Ciocco",
-          "summary": "OSRM: ~3,5–4 km, ~6–8 min jazdy — praktycznie zerowa logistyka, dzień bez długiej jazdy.",
+          "topic": "Dojazd baza (Barga) → Fornovolasco",
+          "summary": "OSRM: ~15 km, ~24 min — ta sama trasa/wieś co Grotta del Vento (D3).",
           "source": "OSRM router.project-osrm.org",
           "checked": "2026-07"
         }
       ],
       "opening_hours": {
-        "szlak_il_ciocco": "Dostępny całą dobę, cały rok, bez opłat."
+        "szlak_monte_forato": "Dostępny całą dobę, cały rok, bez opłat i rezerwacji."
       },
       "parking": {
-        "il_ciocco": "Parking przy Il Ciocco / Castelvecchio Pascoli — bezpłatny, przy wjeździe do resortu.",
-        "tip": "Zostaw auto przy Il Ciocco na cały czas trekkingu — szlak jest pętlą tam-i-z-powrotem do Bargi."
+        "fornovolasco": "Parking we wsi Fornovolasco — bezpłatny, przy wjeździe (to samo miejsce co przy Grotta del Vento).",
+        "tip": "Zostaw auto w Fornovolasco na cały czas pętli — trasa wraca do tego samego punktu."
       },
-      "fuel_stops": [],
-      "daily_km_estimate": 15,
+      "fuel_stops": [
+        {
+          "name": "Stacja przed wyjazdem",
+          "location": "okolice Bargi",
+          "note": "Zatankuj rano — w Fornovolasco stacji brak."
+        }
+      ],
+      "daily_km_estimate": 30,
       "eta_timeline": [
         {
-          "time": "09:00",
-          "event": "Wyjazd z bazy do Il Ciocco (7 min)"
+          "time": "08:00",
+          "event": "Wyjazd z bazy do Fornovolasco (24 min)"
         },
         {
-          "time": "09:15",
-          "event": "Start szlaku Il Ciocco–Barga, las kasztanowy"
+          "time": "08:30",
+          "event": "Start pętli — CAI 6 w górę, mija Tana che Urla"
         },
         {
-          "time": "11:30",
-          "event": "Punkt zwrotny — widoki na Bargę Vecchia, krótki odpoczynek"
+          "time": "10:00",
+          "event": "Foce di Petrosciana — krótki odpoczynek, dalej grzbietem CAI 110"
         },
         {
-          "time": "12:15",
-          "event": "Powrót szlakiem do Il Ciocco"
+          "time": "11:15",
+          "event": "Naturalny łuk Monte Forato (1223 m) — widok, zdjęcia, drugie śniadanie"
         },
         {
-          "time": "12:30",
-          "event": "Lekki lunch (Barga lub baza)"
+          "time": "12:00",
+          "event": "Powrót pętlą (CAI 130) lub krótszym wariantem (CAI 12)"
         },
         {
           "time": "13:30",
-          "event": "Powrót do bazy — popołudnie przy basenie"
+          "event": "Fornovolasco — koniec pętli (wariant krótszy) / ok. 14:00 (pełna pętla)"
+        },
+        {
+          "time": "14:00",
+          "event": "Lekki lunch we wsi, powrót do bazy"
+        },
+        {
+          "time": "15:00",
+          "event": "Powrót do bazy — odpoczynek (prysznic, nogi w górę, bez basenu — wieczorem chłodno)"
+        },
+        {
+          "time": "18:30",
+          "event": "Do wyboru: Piazza Arringo w Bardze (7 min, zachód słońca nad Alpami z łukiem Monte Forato) lub Sommocolonia (15 min, cicha wioska, historia z II wojny)"
+        },
+        {
+          "time": "19:30",
+          "event": "Powrót do bazy, kolacja"
         }
       ],
-      "crowd_tip": "Szlak rzadko uczęszczany poza sezonem urlopowym — realna szansa na ciszę i pusty las.",
-      "summary": "Dzień bez samochodu: szlak Il Ciocco–Barga (~8 km, 2,5–3 h) przez gęsty las kasztanowy, z widokami na Bargę Vecchia i dolinę Serchio. Start 7 minut od bazy, popołudnie wolne na basen."
+      "crowd_tip": "Popularny szlak wśród wprawnych turystów, ale rzadko zatłoczony — wczesny start (8:00) daje ciszę i chłodniejszą temperaturę na podejściu.",
+      "summary": "Prawdziwa górska wycieczka bez wspinaczki: pętla z Fornovolasco (5 h, wariant krótszy 3,5 h) do naturalnego łuku skalnego Monte Forato — jednego z największych we Włoszech (rozpiętość 32 m), z widokiem na Alpy Apuańskie i dolinę Serchio. Wieczorem, po odpoczynku, do wyboru: zachód słońca z Piazza Arringo w Bardze lub spacer po Sommocolonii."
     },
     {
       "date": "17.09 (czw)",

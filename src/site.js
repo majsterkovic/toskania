@@ -29,6 +29,34 @@ export function renderSiteNav(active = 'plan') {
   `;
 }
 
+/** Wspólna stopka stron pobocznych. */
+export function renderSiteFooter() {
+  return `
+    <footer class="footer">
+      <p>Toskania 2026 · 12–27 września 2026</p>
+      <p class="footer__credit">Mapy: <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">© OpenStreetMap</a> · Zdjęcia: Wikimedia Commons</p>
+    </footer>
+  `;
+}
+
+/** Checkboxy todo z zapisem w localStorage (strona Praktyczne). */
+export function initTodo() {
+  const STORAGE_KEY = 'todo-done-toskania-2026';
+  const done = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+  document.querySelectorAll('.todo-check').forEach((cb) => {
+    const id = cb.dataset.todoId;
+    if (done.has(id)) {
+      cb.checked = true;
+      cb.closest('.todo-item')?.classList.add('is-done');
+    }
+    cb.addEventListener('change', () => {
+      if (cb.checked) done.add(id); else done.delete(id);
+      cb.closest('.todo-item')?.classList.toggle('is-done', cb.checked);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify([...done]));
+    });
+  });
+}
+
 /** Motyw jasny/ciemny — przycisk w nawigacji. */
 export function initThemeToggle() {
   const btn = document.getElementById('theme-toggle');

@@ -959,15 +959,32 @@ function groupPhases(days) {
   return phases;
 }
 
+function renderBaseInfo(base) {
+  if (!base) return '';
+  return `
+    <div class="tl-baseinfo">
+      <p class="tl-baseinfo__label">${esc(base.label)}${base.region ? ` · ${esc(base.region)}` : ''}</p>
+      <h3 class="tl-baseinfo__name">${esc(base.name)}</h3>
+      ${base.nights ? `<p class="tl-baseinfo__nights">${esc(base.nights)}</p>` : ''}
+      ${base.accommodation ? `<p class="tl-baseinfo__acc"><strong>Nocleg:</strong> ${esc(base.accommodation)}</p>` : ''}
+      ${base.booking_tip ? `<p class="tl-baseinfo__tip">→ ${esc(base.booking_tip)}</p>` : ''}
+      ${base.gps_hint ? `<p class="tl-baseinfo__gps muted">📍 ${esc(base.gps_hint)}</p>` : ''}
+    </div>`;
+}
+
 export function renderTimeline(plan) {
   const images = plan.meta?.images ?? plan.images;
   const phases = groupPhases(plan.days);
   const timelineHtml = phases.map((phase) => {
     const rows = phase.days.map(timelineRow).join('');
+    const base = phase.baseId ? (plan.bases || []).find((b) => b.id === phase.baseId) : null;
     const baseMap = phase.baseId
       ? `<div class="tl-basemap">
-           <div id="map-base-${phase.mapIndex}" class="leaflet-map leaflet-map--base" aria-label="Mapa bazy: ${esc(phase.label)}"></div>
-           <div class="tl-basemap__legend" id="basemap-legend-${phase.baseId}"></div>
+           <div class="tl-basemap__map">
+             <div id="map-base-${phase.mapIndex}" class="leaflet-map leaflet-map--base" aria-label="Mapa bazy: ${esc(phase.label)}"></div>
+             <div class="tl-basemap__legend" id="basemap-legend-${phase.baseId}"></div>
+           </div>
+           ${renderBaseInfo(base)}
          </div>`
       : '';
     return `

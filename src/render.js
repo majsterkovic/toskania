@@ -953,8 +953,10 @@ export function initGallery() {
   const img = lightbox.querySelector('.lightbox__img');
   const caption = lightbox.querySelector('.lightbox__caption');
   const closeBtn = lightbox.querySelector('.lightbox__close');
+  let lastActiveElement = null;
 
-  function open(src, alt) {
+  function open(src, alt, triggerEl) {
+    lastActiveElement = triggerEl || document.activeElement;
     img.src = src;
     img.alt = alt;
     caption.textContent = alt;
@@ -969,11 +971,14 @@ export function initGallery() {
     lightbox.setAttribute('aria-hidden', 'true');
     document.body.classList.remove('lightbox-open');
     img.src = '';
+    if (lastActiveElement && typeof lastActiveElement.focus === 'function') {
+      lastActiveElement.focus();
+    }
   }
 
   document.querySelectorAll('.gallery-item').forEach((item) => {
     item.addEventListener('click', () => {
-      open(item.dataset.src, item.dataset.alt);
+      open(item.dataset.src, item.dataset.alt, item);
     });
   });
 

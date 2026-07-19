@@ -1,4 +1,5 @@
 import plan from '../plan_2bazy.json';
+import { renderSiteNav, renderSiteFooter, initChrome } from './site.js';
 import './style.css';
 import './short.css';
 
@@ -53,14 +54,19 @@ function render(plan) {
   const subtitle = plan.meta?.subtitle || '';
   const rows = (plan.days || []).map(dayItem).join('');
 
-  app.innerHTML = `
-    <header class="short-header">
-      <a class="short-header__back" href="../">← Pełny plan</a>
-      <h1 class="short-header__title">${esc(title)} — skrót</h1>
-      ${subtitle ? `<p class="short-header__sub">${esc(subtitle)}</p>` : ''}
-    </header>
-    <ol class="short-list">${rows}</ol>
-  `;
+  app.innerHTML =
+    renderSiteNav('short') +
+    `<main class="short-page-container">
+      <header class="short-header">
+        <a class="short-header__back" href="../">← Pełny plan</a>
+        <h1 class="short-header__title">${esc(title)} — skrót</h1>
+        ${subtitle ? `<p class="short-header__sub">${esc(subtitle)}</p>` : ''}
+      </header>
+      <ol class="short-list">${rows}</ol>
+    </main>` +
+    renderSiteFooter();
+
+  initChrome();
 }
 
 render(plan);

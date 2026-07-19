@@ -1,6 +1,11 @@
 /* ── Strona /short — skompresowany przegląd dni ── */
 
 body.short-page {
+  margin: 0;
+  padding: 0;
+}
+
+.short-page-container {
   max-width: 720px;
   margin: 0 auto;
   padding: 1.5rem var(--page-pad) 4rem;

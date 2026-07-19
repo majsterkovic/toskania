@@ -6,12 +6,21 @@ tags: [toskania, baza]
 
 Dni 3–6 (13/14.09–17.09.2026), 5 nocy.
 
-## Nocleg — NIE potwierdzony, pin generyczny (2026-07-19, decyzja zmieniona)
-Strona pokazuje generyczny pin „Barga (Garfagnana)" (coords 44.073, 10.483) — **bez konkretnego adresu**, dopóki nocleg nie jest faktycznie zarezerwowany. Decyzja: różnice kilku minut dojazdu między kandydatami w obrębie Bargi nie mają znaczenia dla planu, więc nie ma sensu wiązać strony z niepotwierdzoną rezerwacją (fałszywa precyzja).
+## Nocleg — ✅ POTWIERDZONA REZERWACJA (2026-07-19)
+**SR445 della Garfagnana 33, frazione Arsenale, 55051 Barga LU.** Coords: 44.06753328816146, 10.455154915330162. Przy głównej drodze doliną Serchio (SR445), ~6 min od centrum Bargi. Strona pokazuje te dokładne współrzędne jako pin bazy 1.
 
-**Czołowy kandydat do rezerwacji: Casa vacanze Rosa** — Via Nazionale 29, 55051 Barga (frazione Ponte all'Ania / Fornaci di Barga), coords 44.0398, 10.4932. Dom na wyłączność, 3 sypialnie, 1 łazienka, 110 m², basen. Booking.com: 9,8/10 (5 opinii), gospodarz prywatny, ~540 zł/noc za cały dom (4–5 os). Leży niżej w dolinie niż generyczny pin — nieco bliżej Lukki/Pizy i Ponte del Diavolo/Bagni di Lucca, kosztem ~3 min dalej do centrum Bargi (różnica bez znaczenia). **Do zweryfikowania przy rezerwacji:** oferta nie miała jawnej plakietki „bezpłatny parking" — dopytać gospodarza wprost (jedziemy autem).
+**Zweryfikowane czasy dojazdu (OSRM) z tej dokładnej lokalizacji** — bardzo dobre położenie, praktycznie identyczne lub lepsze niż wcześniej zakładany generyczny pin:
+- Barga (Duomo): 6 min, Treppignana: 3 min, Grotta del Vento/Fornovolasco: 21 min (D3)
+- Monte Forato/Fornovolasco: 21 min (D5)
+- Ponte del Diavolo: 17 min, Bagni di Lucca: 21 min, Pieve di Careggine: **28 min** (D6 — istotna korekta, stara wartość 47 min była zawyżona)
+- Lucca (D4, dzień pociągu): 43 min
+- Sommocolonia: 10 min
 
-**Pieve Fosciana — ❌ ODRZUCONE jako alternatywa bazy** (2026-07-19): suma czasów dojazdu do celów bloku Bargi 201 min vs 125 min z okolic Ponte all'Ania/Bargi — wyraźnie gorzej (leży wyżej w dolinie, dalej od Lukki/Ponte del Diavolo/Bagni di Lucca). Wygrywa tylko dojazdem do Castelnuovo di Garfagnana (nie jest to punkt na trasie).
+Wszystkie `drive_min` w D3/D5/D6 zaktualizowane w JSON na te dokładne wartości.
+
+**Historia kandydatów (już nieaktualne, zarezerwowano Arsenale):**
+- Casa vacanze Rosa (Via Nazionale 29, Ponte all'Ania) — był czołowym kandydatem, ostatecznie nie wybrany.
+- **Pieve Fosciana — ❌ ODRZUCONE** jako alternatywa bazy: suma czasów dojazdu 201 min vs 125 min z okolic Bargi — wyraźnie gorzej (leży wyżej w dolinie, dalej od Lukki/Ponte del Diavolo/Bagni di Lucca).
 
 ## Dni programu (po korekcie 2026-07-19)
 - D3: Barga (Duomo, Treppignana, Grotta del Vento)

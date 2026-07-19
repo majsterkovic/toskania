@@ -13,7 +13,7 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `plan_2bazy.json`.
 
 ## Baza 1 — D5 = pętla Monte Forato (2026-07-19) — ✅ WDROŻONE
 - **D5** (16.09): Verrucole+Vagli+Gorfigliano → (przejściowo Il Ciocco) → **finalnie pętla Monte Forato** (naturalny łuk skalny, Fornovolasco, 24 min, 12km/~5h lub 3,5h skrócony, oficjalnie „medium" bez via ferrata). Powód zmiany z Verrucole/Vagli: forteca otwarta tylko pt–nd (nie do przesunięcia w kalendarzu pon–czw); Vagli — zatopiona wioska niewidoczna w 2026. D5 był już „dniem na trasę", więc nie trzeba było poświęcać D3/D6 ani dodawać nowego dnia — po prostu podmieniono treść dnia. Na miejscu zapisane 3 warianty trasy do wyboru (Forato/Palodina/Prato Fiorito). Wieczór: wybór Piazza Arringo (Barga, zachód słońca, widok na łuk z daleka) lub Sommocolonia. Pełne dane w [[Baza 1 - Barga]].
-- **Nocleg**: strona pokazuje generyczny pin „Barga" — nocleg NIE potwierdzony. Czołowy kandydat: Casa vacanze Rosa (Ponte all'Ania). Szczegóły w [[Baza 1 - Barga]].
+- **Nocleg** — ✅ POTWIERDZONA REZERWACJA (2026-07-19): SR445 della Garfagnana 33, Arsenale, Barga (coords 44.06753, 10.45515). Wszystkie `drive_min` w D3/D5/D6 przeliczone OSRM-em na dokładne wartości z tego adresu (istotna korekta: Pieve di Careggine 47→28 min). Szczegóły w [[Baza 1 - Barga]].
 - **Pieve Fosciana** rozważana i odrzucona jako alternatywa bazy (201 vs 125 min sumy dojazdów) — szczegóły w [[Baza 1 - Barga]].
 
 ## 2. San Gimignano — ✅ WDROŻONE (D13, 24.09) — patrz sekcja „Już zdecydowane" niżej

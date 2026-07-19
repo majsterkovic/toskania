@@ -211,8 +211,8 @@
         {
           "label": "Barga — BAZA 1",
           "coords": [
-            44.073,
-            10.483
+            44.06753328816146,
+            10.455154915330162
           ],
           "type": "base"
         },
@@ -237,8 +237,8 @@
         {
           "label": "Barga (BAZA 1)",
           "coords": [
-            44.073,
-            10.483
+            44.06753328816146,
+            10.455154915330162
           ],
           "type": "base",
           "days": "13–17.09"
@@ -363,19 +363,19 @@
   "bases": [
     {
       "id": "base1",
-      "name": "Barga (Garfagnana)",
+      "name": "Barga — Arsenale (Strada Regionale 445)",
       "image": "barga",
       "label": "BAZA 1",
       "region": "Garfagnana · Lucca",
       "nights": "13–17 wrz (5 nocy)",
       "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3.",
       "color": "emerald",
-      "accommodation": "Agriturismo lub dom wakacyjny w okolicach Bargi (Ponte all'Ania, Mologno, Fornaci di Barga). Ceny: €60–120/noc za cały obiekt (4–5 os).",
-      "booking_tip": "Czołowy kandydat (do potwierdzenia przy rezerwacji): Casa vacanze Rosa, Via Nazionale 29 (Ponte all'Ania) — 9,8/10, basen, ~540 zł/noc za cały dom. Dopytać o bezpłatny parking.",
-      "gps_hint": "Naviguj: Barga LU — unikaj centrum (ZTL)",
+      "accommodation": "POTWIERDZONA REZERWACJA — SR445 della Garfagnana 33, frazione Arsenale, 55051 Barga LU. Przy głównej drodze doliną Serchio, ~6 min od centrum Bargi.",
+      "booking_tip": "Zarezerwowane — bez dalszych działań. Lokalizacja bardzo dobrze skomunikowana z całym blokiem Bargi (patrz czasy dojazdu w poszczególnych dniach).",
+      "gps_hint": "Naviguj: SR445 della Garfagnana 33, Arsenale, 55051 Barga LU (coords 44.06753328816146, 10.455154915330162)",
       "coords": [
-        44.073,
-        10.483
+        44.06753328816146,
+        10.455154915330162
       ]
     },
     {
@@ -893,7 +893,7 @@
       "attractions": [
         {
           "name": "Barga — stare miasto i Duomo di San Cristoforo (romańska katedra św. Krzysztofa)",
-          "drive_min": 0,
+          "drive_min": 6,
           "description": "Jedno z najpiękniejszych niedocenionych borghi Toskanii. Romański Duomo di San Cristoforo (XI w.) z pulpitem marmurowym Guido Bigarelli (~1240) i widokiem na Alpy Apuańskie. Moneta €2 na oświetlenie wnętrza.",
           "type": "medieval",
           "image_key": "barga",
@@ -908,7 +908,7 @@
         },
         {
           "name": "Treppignana via il Ciocco — spacer lasem dębowo-kasztanowym",
-          "drive_min": 15,
+          "drive_min": 3,
           "description": "Szlak 3,2 km (1–1,5 h) przez gęste lasy dębów bezszypułkowych (Quercus petraea) i kasztanów w Tenuta Il Ciocco. Widoki na dolinę Serchio i Barga Vecchia.",
           "type": "nature",
           "image_key": "barga",
@@ -923,7 +923,7 @@
         },
         {
           "name": "Grotta del Vento (jaskinia wiatru) — Fornovolasco",
-          "drive_min": 20,
+          "drive_min": 21,
           "description": "4570 m zbadanych jaskiń krasowych w Alpach Apuańskich. 3 itinerari (1–3 h). Po wizycie spacer przez bukowe i dębowe lasy.",
           "type": "nature",
           "image_key": "grotta-vento",
@@ -1308,11 +1308,11 @@
       "image": "monte-forato",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 24,
+      "drive_limit_min": 21,
       "attractions": [
         {
           "name": "Pętla Monte Forato (naturalny łuk skalny) — z Fornovolasco",
-          "drive_min": 24,
+          "drive_min": 21,
           "description": "Prawdziwa górska wycieczka, ale bez wspinaczki: pętla z Fornovolasco (ta sama wieś co Grotta del Vento) prowadzi szlakiem CAI nr 6 do przełęczy Foce di Petrosciana (mija jaskinię Tana che Urla i źródło), dalej grzbietem CAI 110 aż do naturalnego łuku skalnego Monte Forato (1223 m) — jednego z największych naturalnych łuków we Włoszech (rozpiętość 32 m, do 25 m wysokości nad przełęczą, między dwoma szczytami 1223 i 1209 m). Trasa dochodzi do łuku BEZ odcinka wyposażonego (via ferrata) — oficjalnie oceniana jako 'medium' (E — turystyczna, znakowana CAI), trudność biorą na siebie ci, którzy chcą iść dalej grzbietem. Pełna pętla (powrót przez CAI 130): 12 km, ~700 m przewyższenia, ~5 h. Wariant krótszy — zejście przez CAI 12 z powrotem do CAI 6 — skraca trasę do ok. 3,5 h, wciąż z widokiem na łuk.",
           "type": "nature",
           "image_key": "monte-forato",
@@ -1349,10 +1349,10 @@
         "Wariant krótszy (~3,5h, CAI 12) dla mniej wprawionych — wciąż dociera do łuku, tylko inny powrót.",
         "NIE kontynuuj grzbietem za łuk w stronę Pania della Croce — tam zaczyna się odcinek wyposażony (via ferrata), wymaga uprzęży i doświadczenia.",
         "Wyjazd wcześnie (8:00) — 5h trasy plus dojazd to pełny dzień; zostaw bufor na powolniejsze tempo z dziećmi.",
-        "3 warianty trasy na dziś (do wyboru w zależności od formy/pogody): ① Monte Forato (wybrany, opisany wyżej) — 12 km/~5h (lub 3,5h skrócony), 700 m, „medium\", 24 min dojazdu, najbardziej widowiskowy (naturalny łuk skalny). ② Monte Palodina (Sentiero del Lupo) — 13 km/5h, 650 m, „medium\", 20 min dojazdu (Vallico di Sotto), łagodniejszy technicznie, szlak edukacyjny o wilkach, panorama 360° ze szczytu 1171 m. ③ Monte Prato Fiorito (Alta Via dei Pastori) — 7,8 km/3h42 (najkrótszy), 676 m, oceniany „difficult\" (stromizna, nie technika), ~25–35 min dojazdu, panorama 360° ze szczytu 1293 m.",
+        "3 warianty trasy na dziś (do wyboru w zależności od formy/pogody): ① Monte Forato (wybrany, opisany wyżej) — 12 km/~5h (lub 3,5h skrócony), 700 m, „medium\", 21 min dojazdu, najbardziej widowiskowy (naturalny łuk skalny). ② Monte Palodina (Sentiero del Lupo) — 13 km/5h, 650 m, „medium\", 20 min dojazdu (Vallico di Sotto), łagodniejszy technicznie, szlak edukacyjny o wilkach, panorama 360° ze szczytu 1171 m. ③ Monte Prato Fiorito (Alta Via dei Pastori) — 7,8 km/3h42 (najkrótszy), 676 m, oceniany „difficult\" (stromizna, nie technika), ~25–35 min dojazdu, panorama 360° ze szczytu 1293 m.",
         "Wieczór: po dniu na szlaku odpoczynek jest priorytetem (basen o tej porze we wrześniu bywa chłodny) — ok. 2h przerwy w bazie, a potem do wyboru na miejscu: (a) Piazza Arringo w Bardze (~7 min) — najsłynniejszy punkt widokowy regionu przy Duomo, skąd widać całe pasmo Alp Apuańskich z łukiem Monte Forato, który zwiedzaliście rano; (b) Sommocolonia (15 min) — cicha wioska na grzbiecie z historią z II wojny światowej (pomnik żołnierzy Buffalo), inny, spokojniejszy nastrój. Oba bezwysiłkowe, ~30–45 min w obie strony."
       ],
-      "narrative": "Dziś prawdziwa górska wyprawa — ale taka, która nie wymaga sprzętu alpejskiego. Wyjeżdżamy z bazy o 8:00, 24 minuty do Fornovolasco, tej samej wioski, w której kilka dni temu byliśmy w Grotta del Vento. Stąd szlakiem CAI nr 6 ruszamy w górę, mijając jaskinię Tana che Urla i leśne źródło, przez bukowo-kasztanowy las aż do przełęczy Foce di Petrosciana (ok. 1,5 h). Dalej grzbietem CAI 110, gdzie drzewa ustępują skale, a przed nami powoli wyłania się cel: naturalny łuk skalny Monte Forato — wyrzeźbiony przez wodę i wiatr w wapiennej skale, rozpięty na 32 metrach między dwoma szczytami (1223 i 1209 m), jeden z największych takich łuków we Włoszech. Docieramy do niego bez potrzeby wspinaczki czy uprzęży — cała trasa aż tutaj jest oficjalnie oceniana jako środkowo trudna, znakowana szlakiem turystycznym CAI. Stajemy dosłownie w cieniu łuku, z widokiem na całą dolinę Serchio po jednej stronie i poszarpane szczyty Apuan po drugiej — to jeden z najbardziej widowiskowych widoków całego wyjazdu. Nie idziemy dalej grzbietem w stronę Pania della Croce — tam zaczyna się odcinek wyposażony, wymagający uprzęży i doświadczenia, zupełnie inna liga. Powrót do Fornovolasco zajmuje kolejne 1,5–2 h (pełna pętla przez CAI 130, ok. 5 h w sumie, lub krótszy wariant przez CAI 12, ok. 3,5 h). Po zejściu prosty lunch we wsi i powrót do bazy — nogi zmęczone, więc kilka godzin odpoczynku w spokoju (basen o tej porze roku wieczorem bywa chłodny, więc dziś odpuszczamy). Gdy zrobi się chłodniej, do wyboru bezwysiłkowy wypad: Piazza Arringo w Bardze (7 min) — najsłynniejszy punkt widokowy regionu przy katedrze, skąd o zachodzie słońca widać całe pasmo Alp Apuańskich razem z łukiem Monte Forato, pod którym staliście kilka godzin wcześniej — albo Sommocolonia (15 min), cicha wioska na grzbiecie z własną, spokojniejszą historią z czasów II wojny światowej. Dzień kończy się z jednym z tych widoków, które zostają w pamięci na długo — i to podwójnie, bo widzimy łuk z bliska rano, a całe pasmo z daleka wieczorem.",
+      "narrative": "Dziś prawdziwa górska wyprawa — ale taka, która nie wymaga sprzętu alpejskiego. Wyjeżdżamy z bazy o 8:00, 21 minut do Fornovolasco, tej samej wioski, w której kilka dni temu byliśmy w Grotta del Vento. Stąd szlakiem CAI nr 6 ruszamy w górę, mijając jaskinię Tana che Urla i leśne źródło, przez bukowo-kasztanowy las aż do przełęczy Foce di Petrosciana (ok. 1,5 h). Dalej grzbietem CAI 110, gdzie drzewa ustępują skale, a przed nami powoli wyłania się cel: naturalny łuk skalny Monte Forato — wyrzeźbiony przez wodę i wiatr w wapiennej skale, rozpięty na 32 metrach między dwoma szczytami (1223 i 1209 m), jeden z największych takich łuków we Włoszech. Docieramy do niego bez potrzeby wspinaczki czy uprzęży — cała trasa aż tutaj jest oficjalnie oceniana jako środkowo trudna, znakowana szlakiem turystycznym CAI. Stajemy dosłownie w cieniu łuku, z widokiem na całą dolinę Serchio po jednej stronie i poszarpane szczyty Apuan po drugiej — to jeden z najbardziej widowiskowych widoków całego wyjazdu. Nie idziemy dalej grzbietem w stronę Pania della Croce — tam zaczyna się odcinek wyposażony, wymagający uprzęży i doświadczenia, zupełnie inna liga. Powrót do Fornovolasco zajmuje kolejne 1,5–2 h (pełna pętla przez CAI 130, ok. 5 h w sumie, lub krótszy wariant przez CAI 12, ok. 3,5 h). Po zejściu prosty lunch we wsi i powrót do bazy — nogi zmęczone, więc kilka godzin odpoczynku w spokoju (basen o tej porze roku wieczorem bywa chłodny, więc dziś odpuszczamy). Gdy zrobi się chłodniej, do wyboru bezwysiłkowy wypad: Piazza Arringo w Bardze (7 min) — najsłynniejszy punkt widokowy regionu przy katedrze, skąd o zachodzie słońca widać całe pasmo Alp Apuańskich razem z łukiem Monte Forato, pod którym staliście kilka godzin wcześniej — albo Sommocolonia (15 min), cicha wioska na grzbiecie z własną, spokojniejszą historią z czasów II wojny światowej. Dzień kończy się z jednym z tych widoków, które zostają w pamięci na długo — i to podwójnie, bo widzimy łuk z bliska rano, a całe pasmo z daleka wieczorem.",
       "web_research": [
         {
           "topic": "Pętla Monte Forato z Fornovolasco — oficjalne dane",
@@ -1368,7 +1368,7 @@
         },
         {
           "topic": "Dojazd baza (Barga) → Fornovolasco",
-          "summary": "OSRM: ~15 km, ~24 min — ta sama trasa/wieś co Grotta del Vento (D3).",
+          "summary": "OSRM: ~15 km, ~21 min — ta sama trasa/wieś co Grotta del Vento (D3).",
           "source": "OSRM router.project-osrm.org",
           "checked": "2026-07"
         }
@@ -1387,11 +1387,11 @@
           "note": "Zatankuj rano — w Fornovolasco stacji brak."
         }
       ],
-      "daily_km_estimate": 30,
+      "daily_km_estimate": 24,
       "eta_timeline": [
         {
           "time": "08:00",
-          "event": "Wyjazd z bazy do Fornovolasco (24 min)"
+          "event": "Wyjazd z bazy do Fornovolasco (21 min)"
         },
         {
           "time": "08:30",
@@ -1442,7 +1442,7 @@
       "image": "ponte-diavolo",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 47,
+      "drive_limit_min": 28,
       "attractions": [
         {
           "name": "Ponte della Maddalena / Ponte del Diavolo (most gotycki nazywany mostem diabelskim)",
@@ -1476,7 +1476,7 @@
         },
         {
           "name": "Pieve di Careggine (romański kościół parafialny nad Lago di Vagli)",
-          "drive_min": 47,
+          "drive_min": 28,
           "description": "Piękna romańska pieve z XI w. na wzgórzu nad Lago di Vagli — odmienny kąt widoku niż przy tamie. Wioska z ~200 mieszkańcami, zero turystów.",
           "type": "medieval",
           "image_key": "vagli",
@@ -1585,7 +1585,7 @@
           "note": "Opcjonalny postój na A11 — kawa przed Sieną."
         }
       ],
-      "daily_km_estimate": 77,
+      "daily_km_estimate": 73,
       "eta_timeline": [
         {
           "time": "09:00",
@@ -1609,7 +1609,7 @@
         },
         {
           "time": "13:30",
-          "event": "Wyjazd do Pieve di Careggine (47 min)"
+          "event": "Wyjazd do Pieve di Careggine (28 min)"
         },
         {
           "time": "14:17",

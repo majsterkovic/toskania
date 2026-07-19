@@ -14,7 +14,15 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `plan_2bazy.json`.
 ## 2. San Gimignano — ❌ ODRZUCONE
 - Za daleko (55 min z [[Baza 2 - Chianti]], bez sensownej kolei), własny dzień = cięcie w napiętym bloku Chianti. Przegrał z [[Piza|Pizą]].
 
+## 3. Relokacja bazy 2 — DECYZJA OTWARTA (research 2026-07-19)
+Analiza OSRM: obecna baza (Chianti, zwł. przy Vagliagli) przesunięta na północ względem środka ciężkości atrakcji. 3 propozycje w [[Baza 2 - kandydaci relokacji]]:
+- **A. Siena SE (Taverne/Isola d'Arbia)** — 40 min/dzień, najbliżej wszystkiego, 17 min do Sieny.
+- **B. Buonconvento** — 44 min/dzień, król południa (Val d'Orcia/Montalcino/Crete <40 min), ale Chianti/San Gimignano daleko; wymaga rewizji kolejności dni.
+- **C. Południowy skraj Chianti Classico (Castelnuovo B./Ponte a Bozzone)** — 45 min/dzień, trzyma klimat winnic, „obecny plan zrobiony dobrze" (byle nie Vagliagli, 73 min/dzień).
+Czeka na wybór użytkownika. Zmiana nie rusza listy atrakcji, tylko dojazdy (wariant B → też kolejność dni).
+
 ## Już zdecydowane i wdrożone
+- ✅ **Powrót 3→2 dni** (2026-07-19): nocleg Kufstein (jak w drodze tam); zwolniony dzień → D13 [[San Gimignano]] + [[Monteriggioni]] (24.09).
 - ✅ Florencja zamiast dnia 12 (Monteriggioni/Murlo/Foresta di Tocchi) — [[Florencja]]
 - ✅ Wariant 2-bazowy jako jedyny prezentowany plan (przełącznik 2/3 bazy usunięty)
 - ✅ **Korekta czasów jazdy OSRM** (2026-07): D8 Siena 25→39 min, D10 Monte Oliveto 28→61 min — patrz [[odleglosci]]

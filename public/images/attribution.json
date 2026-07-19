@@ -298,6 +298,20 @@
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
       "description": "Piazza dell'Anfiteatro w Lukce — owalny plac na miejscu rzymskiego amfiteatru"
+    },
+    "san-gimignano": {
+      "file": "san-gimignano.jpg",
+      "source_title": "File:Panorama San Gimignano.jpg",
+      "author": "WikiRomaWiki",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Panorama_San_Gimignano.jpg"
+    },
+    "monteriggioni": {
+      "file": "monteriggioni.jpg",
+      "source_title": "File:Monteriggioni dall'alto.jpg",
+      "author": "Maurizio Moro5153",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Monteriggioni_dall'alto.jpg"
     }
   }
 }

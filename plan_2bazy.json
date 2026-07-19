@@ -171,6 +171,16 @@
           "src": "images/lucca.jpg",
           "alt": "Piazza dell'Anfiteatro w Lukce — owalny plac na miejscu rzymskiego amfiteatru",
           "credit": "Ingo Mehling / Wikimedia Commons / CC BY-SA 4.0"
+        },
+        "san-gimignano": {
+          "src": "images/san-gimignano.jpg",
+          "alt": "Panorama San Gimignano — średniowieczne wieże rodowe nad toskańskimi winnicami",
+          "credit": "WikiRomaWiki / Wikimedia Commons / CC BY-SA 4.0"
+        },
+        "monteriggioni": {
+          "src": "images/monteriggioni.jpg",
+          "alt": "Monteriggioni z lotu ptaka — kompletny pierścień murów obronnych z 1214 r. z 14 wieżami",
+          "credit": "Maurizio Moro5153 / Wikimedia Commons / CC BY-SA 4.0"
         }
       }
     },

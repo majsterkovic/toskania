@@ -235,10 +235,10 @@
       ],
       "tuscany_overview": [
         {
-          "label": "Barga / Ponte all'Ania (BAZA 1)",
+          "label": "Barga (BAZA 1)",
           "coords": [
-            44.0398,
-            10.4932
+            44.073,
+            10.483
           ],
           "type": "base",
           "days": "13–17.09"
@@ -363,19 +363,19 @@
   "bases": [
     {
       "id": "base1",
-      "name": "Casa vacanze Rosa (Ponte all'Ania, k. Barga)",
+      "name": "Barga (Garfagnana)",
       "image": "barga",
       "label": "BAZA 1",
       "region": "Garfagnana · Lucca",
       "nights": "13–17 wrz (5 nocy)",
-      "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3. Dom leży niżej w dolinie (Ponte all'Ania) — bliżej Lukki i Bagni di Lucca, wciąż blisko szlaków Il Ciocco.",
+      "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3.",
       "color": "emerald",
-      "accommodation": "Casa vacanze Rosa — dom na wyłączność, 3 sypialnie, 1 łazienka, 110 m², basen. Via Nazionale 29, 55051 Barga (frazione Ponte all'Ania / Fornaci di Barga). Ocena 9,8 (5 opinii). Gospodarz prywatny. ~540 zł/noc za cały dom.",
-      "booking_tip": "POTWIERDZONE (booking.com) — przed rezerwacją dopytaj gospodarza wprost o bezpłatny parking (nie było jawnej plakietki w ofercie). Lokalizacja niżej w dolinie niż Mologno: bliżej Lukki/Pizy i mostu diabelskiego, minimalnie dalej od centrum Bargi (7 min).",
-      "gps_hint": "Naviguj: Via Nazionale 29, 55051 Barga LU (Ponte all'Ania) — parking przy domu",
+      "accommodation": "Agriturismo lub dom wakacyjny w okolicach Bargi (Ponte all'Ania, Mologno, Fornaci di Barga). Ceny: €60–120/noc za cały obiekt (4–5 os).",
+      "booking_tip": "Czołowy kandydat (do potwierdzenia przy rezerwacji): Casa vacanze Rosa, Via Nazionale 29 (Ponte all'Ania) — 9,8/10, basen, ~540 zł/noc za cały dom. Dopytać o bezpłatny parking.",
+      "gps_hint": "Naviguj: Barga LU — unikaj centrum (ZTL)",
       "coords": [
-        44.0398,
-        10.4932
+        44.073,
+        10.483
       ]
     },
     {

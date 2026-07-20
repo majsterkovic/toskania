@@ -65,5 +65,21 @@ Macierz OSRM (`/table`, czasy 1-way) z 9 realnych kandydatów na bazę do **wszy
 - Buonconvento / Val d'Orcia base: discovertuscany.com, agriturismo.it, toscana.info.
 - Porównanie regionów (Chianti vs Val d'Orcia): toscana.info, classicvillavacations.com, Rick Steves forum.
 
-## Status
-DECYZJA OTWARTA — czeka na wybór użytkownika. Zob. [[decyzje-otwarte]]. Zmiana bazy nie zmienia listy atrakcji, tylko czasy dojazdu (i ewentualnie kolejność dni, jeśli wariant B).
+## Status — ✅ ZDECYDOWANE (2026-07-20): Murlo (nie A/B/C powyżej)
+Użytkownik samodzielnie znalazł i zarezerwował **La Nobiltà del Tempo, Via Alcide De Gasperi 10/12, 53016 Murlo SI** (Val di Merse) — inny wybór niż 3 propozycje badane wyżej. Coords: 43.1595, 11.3158.
+
+**Realny efekt (OSRM, 2026-07-20) — zaskakująco dobry poza jednym dniem:**
+| Dzień | Stary Castelnuovo B. | Nowy Murlo | Różnica |
+|---|---|---|---|
+| D8 Chianti | 98 min (1,6h) | 152 min (2,5h) | **+54 min gorzej** |
+| D9 Crete Senesi | 146 min (2,4h) | 129 min (2,1h) | -17 min lepiej |
+| D10 Val d'Orcia | 203 min (3,4h) | 174 min (2,9h) | **-29 min lepiej** |
+| D13 San Gimignano | 170 min (2,8h) | 156 min (2,6h) | -14 min lepiej |
+| D7 transfer (Barga→baza) | 183km/164min | 195km/167min | +3 min, bez znaczenia |
+| D14 transit (baza→Kufstein) | 634km/437min | 647km/440min | +3 min, bez znaczenia |
+
+Murlo leży na płd-zach od Sieny (Val di Merse) — bliżej centrum klastra Crete/Val d'Orcia/San Gimignano niż Castelnuovo B. (Chianti, płn-wsch od Sieny), kosztem jedynego dnia stricte chiantowego (D8), który stał się teraz najdłuższym dniem jazdy w bloku bazy 2 (dodano ostrzeżenie w D8, złagodzono/zaktualizowano stare ostrzeżenie w D10, które przestało być prawdziwe).
+
+**Wdrożone w planie:** `bases[1]` (coords, adres, nocleg potwierdzony), piny mapy, `drive_min`/`daily_km_estimate`/narracja/eta_timeline dla D7–D14, `base_label` we wszystkich dniach, zdjęcie bazy (murlo.jpg, Wikimedia CC BY-SA 4.0), etykieta fazy timeline (zrefaktoryzowana na dynamiczną — czyta z `bases[]`, nie zaszyta na sztywno w kodzie).
+
+**Uwaga do rezerwacji:** ocena jakości obiektu wg samego Booking to 3/5 mimo wysokiej oceny gości (9,0, ale tylko 1 opinia) — warto zweryfikować standard na miejscu.

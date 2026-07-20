@@ -171,6 +171,11 @@
           "src": "images/monte-forato.jpg",
           "alt": "Naturalny łuk skalny Monte Forato w Alpach Apuańskich",
           "credit": "Sailko / Wikimedia Commons / CC BY 3.0"
+        },
+        "murlo": {
+          "src": "images/murlo.jpg",
+          "alt": "Panorama Murlo — miasteczko w Val di Merse, na południowy zachód od Sieny",
+          "credit": "Mongolo1984 / Wikimedia Commons / CC BY-SA 4.0"
         }
       }
     },
@@ -217,10 +222,10 @@
           "type": "base"
         },
         {
-          "label": "Castelnuovo Berardenga — BAZA 2",
+          "label": "Murlo — BAZA 2",
           "coords": [
-            43.365,
-            11.513
+            43.1595,
+            11.3158
           ],
           "type": "base"
         },
@@ -284,10 +289,10 @@
           "type": "attraction"
         },
         {
-          "label": "Castelnuovo B. (BAZA 2)",
+          "label": "Murlo (BAZA 2)",
           "coords": [
-            43.365,
-            11.513
+            43.1595,
+            11.3158
           ],
           "type": "base",
           "days": "18–23.09"
@@ -380,19 +385,19 @@
     },
     {
       "id": "base2",
-      "name": "k. Castelnuovo Berardenga",
-      "image": "chianti",
+      "name": "La Nobiltà del Tempo (Murlo)",
+      "image": "murlo",
       "label": "BAZA 2",
-      "region": "Chianti Senese · Siena",
+      "region": "Val di Merse · Siena",
       "nights": "18–24 wrz (7 nocy)",
-      "description": "Wzgórza Chianti, cyprysy, dębowe gaje, 25 minut od centrum Sieny. Wariant 2-bazowy: 7 nocy — więcej czasu na Crete Senesi, Val d'Orcia i lasy dębowe.",
+      "description": "Wzgórza na południowy zachód od Sieny (Val di Merse), 33 min od centrum. Wariant 2-bazowy: 7 nocy — więcej czasu na Crete Senesi, Val d'Orcia i lasy dębowe. Ta lokalizacja jest bliżej Crete Senesi i Val d'Orcia niż klasyczne Chianti, kosztem dłuższego dojazdu do zamków Chianti Classico (D8).",
       "color": "amber",
-      "accommodation": "Agriturismo w Chianti Senese. Obszary: Monti in Chianti, Vagliagli, Bossi. Ceny: €70–100/noc.",
-      "booking_tip": "Szukaj z własną produkcją wina i oliwek — Vagliagli lub Monti in Chianti",
-      "gps_hint": "Naviguj: Castelnuovo Berardenga SI lub Vagliagli SI — poza ZTL wsi",
+      "accommodation": "POTWIERDZONA REZERWACJA — La Nobiltà del Tempo, Via Alcide De Gasperi 10/12, 53016 Murlo SI. Dom na wyłączność, 3 sypialnie, 5 łóżek, 3 łazienki, 110 m², bezpłatny parking prywatny. Ocena 9,0/10 (1 opinia) — uwaga: ocena jakości Booking 3/5, warto zweryfikować standard na miejscu.",
+      "booking_tip": "Zarezerwowane — bez dalszych działań.",
+      "gps_hint": "Naviguj: Via Alcide De Gasperi 10/12, 53016 Murlo SI (coords 43.1595, 11.3158)",
       "coords": [
-        43.365,
-        11.513
+        43.1595,
+        11.3158
       ]
     }
   ],
@@ -1638,8 +1643,8 @@
       "next_base_id": "base2",
       "base_label": "BAZA 1 → BAZA 2",
       "transfer_km": 195,
-      "transfer_h": "2 h 15 min",
-      "transfer_route": "Barga → SS12 south → Borgo a Mozzano → Capannori → A11 (Firenze-Mare) → Siena Superstrada → Castelnuovo Berardenga / Vagliagli",
+      "transfer_h": "2 h 45 min",
+      "transfer_route": "Barga → SS12 south → Borgo a Mozzano → Capannori → A11 (Firenze-Mare) → Siena Superstrada → tangenziale Siena → SS223 Siena-Grosseto → Murlo",
       "transfer_depart": "ok. 10:00–11:00 (wcześniejszy wyjazd niż w wersji 3-bazowej — most był już w dniu 6)",
       "drive_limit_min": 0,
       "attractions": [
@@ -1669,26 +1674,15 @@
         "price": "~€10–18/os"
       },
       "accommodation": {
-        "place": "BAZA 2 — k. Castelnuovo Berardenga",
-        "note": "Przyjazd ok. 13:30–14:30 (wcześniej niż w 3-bazowym, bo wyjazd o 10:00). Check-in w agriturismo typowo 14:00–19:00.",
+        "place": "BAZA 2 — Murlo (Val di Merse)",
+        "note": "Przyjazd ok. 14:00–15:00 (Murlo leży nieco dalej od Siena Superstrada niż dawny plan). Check-in typowo 15:00–18:00.",
         "price": "€70–100/noc",
         "options": [
           {
-            "name": "Agriturismo Amina, Winery & Hiking",
-            "area": "Vagliagli (Loc. Corsignano)",
-            "address": "SP 102 di Vagliagli, 53019 Vagliagli SI",
-            "note": "Winnica, basen, śniadanie, 5 min od centrum Vagliagli, 15 min od Sieny."
-          },
-          {
-            "name": "Agriturismo Le Macie",
-            "area": "Vagliagli",
-            "address": "Strada Provinciale 9 n. 54, 53019 Vagliagli SI",
-            "note": "Apartamenty z kuchnią, basen sezonowy, restauracja."
-          },
-          {
-            "name": "Fattoria di Corsignano",
-            "area": "k. Vagliagli",
-            "note": "Ekologiczny agriturismo, basen, restauracja, degustacje wina."
+            "name": "La Nobiltà del Tempo (POTWIERDZONA REZERWACJA)",
+            "area": "Murlo (Poggio Brucoli/Casciano)",
+            "address": "Via Alcide De Gasperi 10/12, 53016 Murlo SI",
+            "note": "Dom na wyłączność, 3 sypialnie, 5 łóżek, 3 łazienki, 110 m², bezpłatny parking prywatny."
           }
         ]
       },
@@ -1703,24 +1697,24 @@
           "segment": "A11 → Siena Superstrada",
           "road": "A11/E70",
           "km": "~110",
-          "note": "Superstrada Siena-Bettolle, zjazd Castelnuovo Berardenga"
+          "note": "Superstrada Siena-Bettolle, tangenziale Siena, kierunek SS223 Grosseto"
         },
         {
-          "segment": "Siena Sud → BAZA 2 (Vagliagli)",
-          "road": "SP408/SS326/SP102",
-          "km": "~25",
-          "note": "Kręte drogi do agriturismo. ETA 13:30–14:30."
+          "segment": "Siena (tangenziale) → BAZA 2 (Murlo)",
+          "road": "SS223 Siena-Grosseto → lokalne drogi Val di Merse",
+          "km": "~20",
+          "note": "SS223 w kierunku Grosseto, zjazd na Murlo. ETA 14:00–15:00."
         }
       ],
       "practical_tips": [
         "Wyjazd wcześniejszy (10:00) niż w 3-bazowym — most i Bagni di Lucca były dzień wcześniej",
-        "Przyjazd ~13:30 — check-in od 14:00, popołudnie pierwsze poznanie okolicy Chianti"
+        "Przyjazd ~14:00–15:00 — check-in od 15:00, popołudnie pierwsze poznanie Val di Merse"
       ],
-      "narrative": "Baza 1 oddana przed 10:00 — ostatnie spojrzenie na kasztanowy las Mologno, potem spokojny wyjazd o 10:00–10:30, bez pośpiechu: most i termy Bagni di Lucca były już wczoraj, dziś liczy się tylko droga. SS12 na południe do Borgo a Mozzano (30 min), przez Lucca i wjazd na A11 — autostradę Firenze–Mare, którą pokonaliśmy w drugą stronę pięć dni temu, tym razem w kierunku wschodnim. Przez Pistoię i Prato na zachodnią obwodnicę Florencji, gdzie w oddali majaczy kopuła Duomo, choć dziś nie mamy czasu się zatrzymywać — miasto zostawiamy na inny wyjazd. Dalej Superstrada Siena–Bettolle (SR2) prowadzi na południe, krajobraz zmienia się z równin Arno na faliste wzgórza — pierwsze zapowiedzi Chianti. Postój obiadowy w Pistoi — Trattoria La Limonaia (Via di Gello 9/A) albo, gdy czas goni, Autogrill Montecatini Est. Zjazd Castelnuovo Berardenga, potem kręte SP102 wije się już wśród winnic, gdzie słońce we wrześniowe popołudnie kładzie długie cienie na rzędach krzewów. ETA do agriturismo 13:30–14:30. Popołudnie należy do pierwszego poznania okolicy — Chianti Senese wita nas spacerem po wzgórzach, zapachem rozgrzanej ziemi i cyprysów, a wieczorem, kto ma ochotę, może zejść do najbliższej cantiny na degustację pierwszego kieliszka Chianti Classico w nowej bazie.",
+      "narrative": "Baza 1 oddana przed 10:00 — ostatnie spojrzenie na kasztanowy las Mologno, potem spokojny wyjazd o 10:00–10:30, bez pośpiechu: most i termy Bagni di Lucca były już wczoraj, dziś liczy się tylko droga. SS12 na południe do Borgo a Mozzano (30 min), przez Lucca i wjazd na A11 — autostradę Firenze–Mare, którą pokonaliśmy w drugą stronę pięć dni temu, tym razem w kierunku wschodnim. Przez Pistoię i Prato na zachodnią obwodnicę Florencji, gdzie w oddali majaczy kopuła Duomo, choć dziś nie mamy czasu się zatrzymywać — miasto zostawiamy na inny wyjazd. Dalej Superstrada Siena–Bettolle (SR2) prowadzi na południe, krajobraz zmienia się z równin Arno na faliste wzgórza — pierwsze zapowiedzi Toskanii sieneńskiej. Postój obiadowy w Pistoi — Trattoria La Limonaia (Via di Gello 9/A) albo, gdy czas goni, Autogrill Montecatini Est. Objeżdżamy Sienę tangenzialą, potem SS223 w kierunku Grosseto i zjazd na Murlo — lokalne drogi wiją się już wśród wzgórz Val di Merse, gdzie słońce we wrześniowe popołudnie kładzie długie cienie na rzędach krzewów. ETA do Murlo 14:00–15:00. Popołudnie należy do pierwszego poznania okolicy — Val di Merse wita nas spacerem po wzgórzach i zapachem rozgrzanej ziemi, wyraźnie ciszej i mniej turystycznie niż w Chianti, z którego korzystaliśmy wcześniej podczas dnia D8.",
       "web_research": [
         {
-          "topic": "Trasa Barga → Castelnuovo Berardenga",
-          "summary": "SS445/SS12 → Borgo a Mozzano → Bagni di Lucca → Capannori → A11 (Firenze-Mare) → FI-PI-LI → A1 Firenze Sud → Siena Nord → SP408. ~195 km, 2h30 bez postojów. Postój Pistoia: zjazd Pistoia Ovest.",
+          "topic": "Trasa Barga → Murlo (Val di Merse)",
+          "summary": "SS445/SS12 → Borgo a Mozzano → Capannori → A11 (Firenze-Mare) → Siena Superstrada → tangenziale Siena → SS223 kierunek Grosseto → Murlo. ~195 km, 2h45 bez postojów (OSRM zweryfikowane 2026-07). Postój Pistoia: zjazd Pistoia Ovest.",
           "checked": "2026-06",
           "source": "https://www.viamichelin.it"
         },
@@ -1741,9 +1735,15 @@
           "checked": "2026-06"
         },
         {
-          "topic": "Agriturismo Vagliagli — BAZA 2",
-          "summary": "Vagliagli: XIII-w. borgo, południowy Chianti. Agriturismo Amistat (B&B + parking), Relais Villabella (pool), Casa Vacanze Il Pozzo. Dojazd: SP408 od Siena Nord, 12 km. Sklepik z winem Chianti Classico przy wjezdzie do wsi.",
+          "topic": "Murlo — Val di Merse (BAZA 2)",
+          "summary": "Murlo: gmina w Val di Merse, na płd-zach od Sieny. Frazioni Poggio Brucoli/Casciano, Vescovado (siedziba gminy), Lupompesi. Krajobraz cichszy i mniej turystyczny niż Chianti. Dojazd: SS223 Siena-Grosseto, ~27 km / ~33 min od centrum Sieny.",
           "checked": "2026-06"
+        },
+        {
+          "topic": "Murlo — dojazd i lokalizacja",
+          "summary": "Frazione Poggio Brucoli/Casciano, gmina Murlo (Val di Merse). Dojazd z Siena Superstrada: tangenziale Siena, dalej SS223 Siena-Grosseto (główna droga regionu), zjazd lokalny do Murlo. ~33 min / 27 km od centrum Sieny.",
+          "source": "OSRM router.project-osrm.org",
+          "checked": "2026-07"
         }
       ],
       "opening_hours": {
@@ -1753,7 +1753,7 @@
       },
       "parking": {
         "pistoia": "Piazzale Verdi (gratis, 10 min do centrum). Lub Piazza San Francesco (€1,50/h). ZTL 8–13 i 15–20 pn–sb.",
-        "base2_agriturismo": "Parkuj na terenie agriturismo — nie w centrum Castelnuovo Berardenga. Naviguj: Vagliagli SI."
+        "base2_agriturismo": "Parkuj przy domu — bezpłatny parking prywatny na miejscu. Naviguj: Via Alcide De Gasperi 10/12, Murlo SI."
       },
       "fuel_stops": [
         {
@@ -1762,12 +1762,12 @@
           "note": "Ostatnia stacja przed autostradą A11 Firenze-Mare."
         },
         {
-          "name": "IP Castelnuovo Berardenga",
-          "location": "SP408, Chianti",
-          "note": "Zatankuj przy dotarciu do bazy — stacji mało na wiejskich drogach Chianti."
+          "name": "Stacja przy SS223 (kierunek Murlo)",
+          "location": "SS223 Siena-Grosseto",
+          "note": "Zatankuj przy zjeździe z tangenziali Siena — stacji mało na lokalnych drogach Val di Merse."
         }
       ],
-      "summary": "Dzień przeprowadzki: wymeldowanie z Garfagnany i przejazd do drugiej bazy w krainie Chianti (okolice Castelnuovo Berardenga). Po drodze krótki postój w mieście Pistoia — na placu katedralnym (Piazza del Duomo) z gotycką katedrą, baptysterium i średniowiecznym ratuszem, zaledwie 5 minut zjazdu od autostrady."
+      "summary": "Dzień przeprowadzki: wymeldowanie z Garfagnany i przejazd do drugiej bazy w Murlo (Val di Merse, na południowy zachód od Sieny). Po drodze krótki postój w mieście Pistoia — na placu katedralnym (Piazza del Duomo) z gotycką katedrą, baptysterium i średniowiecznym ratuszem, zaledwie 5 minut zjazdu od autostrady."
     },
     {
       "date": "19.09 (sob)",
@@ -1777,12 +1777,12 @@
       "title": "Zamki i wino Chianti",
       "image": "brolio",
       "base_id": "base2",
-      "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 25,
+      "base_label": "BAZA 2 — Murlo (Val di Merse)",
+      "drive_limit_min": 49,
       "attractions": [
         {
           "name": "Castello di Brolio (zamek Ricasoli — kolebka Chianti Classico)",
-          "drive_min": 20,
+          "drive_min": 49,
           "description": "Zamek rodziny Ricasoli od 1141 — tu ustalono recepturę Chianti Classico. Bastioni, giardini, cappella, Collezione Ricasoli. 1200 ha własności (240 ha winnic). Bilet giardini €7,50 z degustacją 1 wina.",
           "type": "medieval",
           "image_key": "brolio",
@@ -1847,11 +1847,12 @@
         "opening_hours": "Śr–Pn 12:30–14:30, 19:30–21:30. Wt zamkn."
       },
       "practical_tips": [
-        "Brolio (10:00–12:00, giardini + querceti) → Badia a Coltibuono (~12:30, ogród i sklep) → lunch w Radda in Chianti → spacer po Radda popołudnie",
+        "Wyjazd 8:30 (nie 9:30!) — Brolio (10:00–12:00) → Badia a Coltibuono (~12:30) → lunch w Radda in Chianti → spacer po Radda popołudnie",
         "Vendemmia (wrzesień): winiarnie mogą mieć skrócone godziny — sprawdź przed wyjazdem",
-        "Sobota — winnice bywają zajęte: degustacje w Brolio/Coltibuono rezerwuj z wyprzedzeniem."
+        "Sobota — winnice bywają zajęte: degustacje w Brolio/Coltibuono rezerwuj z wyprzedzeniem.",
+        "Dzień z najdłuższym dojazdem w bloku Murlo (~2,5 h za kierownicą łącznie) — zjazd na SP408/SP484 od strony Sieny, nie licz na skróty."
       ],
-      "narrative": "Wyjeżdżamy o 9:30, powietrze już się rozgrzewa, cykady zaczynają swój koncert — 20 minut do Castello di Brolio, otwiera o 10:00. Zamek rodu Ricasoli stoi na tym wzgórzu od 1141 roku, a to właśnie tu, w XIX wieku, baron Bettino Ricasoli ustalił recepturę Chianti Classico, którą świat zna do dziś. Bilet (€7,50) otwiera ogrody, bastiony i kaplicę, w cenie jedna degustacja wina — stoimy potem na murach z kieliszkiem sangiovese, patrząc na 240 hektarów winnic rozlanych po wzgórzach aż po horyzont. Wokół murów nieformalna pętla 2–3 km przez querceti — dęby omszałe upałem, cień i zapach rozgrzanej żywicy. Ok. 12:00 wyjazd do Badia a Coltibuono (10 minut) — benedyktyńskie opactwo z 1051 roku, jeden z najlepiej zachowanych klasztornych kompleksów Chianti: krótki spacer po ogrodzie ziołowym, sklep z winem i oliwą pachnący drewnem starych beczek; pełna degustacja (€25–35, slot 15:00) tylko dla chętnych, którzy mają jeszcze czas. Lunch w Radda in Chianti — Osteria Il Rifugio del Chianti (Via Roma 6), okno pranzo 12:30–14:30, więc nie zwlekamy z wyjazdem z opactwa. Po lunchu spacer po Piazza Ferrucci i Palazzo del Podestà — dawnej stolicy Ligi Chianti z 1384 roku, kamienne uliczki bez tłumów, jakie zalewają dziś Greve. Wracamy do bazy ok. 17:00, gdy słońce zaczyna już złocić rzędy winorośli.",
+      "narrative": "Wyjeżdżamy o 8:30, powietrze jeszcze chłodne, cykady dopiero się rozgrzewają — 49 minut do Castello di Brolio (baza w Murlo leży daleko od Chianti, to dziś najdłuższy dojazd bloku), otwiera o 10:00. Zamek rodu Ricasoli stoi na tym wzgórzu od 1141 roku, a to właśnie tu, w XIX wieku, baron Bettino Ricasoli ustalił recepturę Chianti Classico, którą świat zna do dziś. Bilet (€7,50) otwiera ogrody, bastiony i kaplicę, w cenie jedna degustacja wina — stoimy potem na murach z kieliszkiem sangiovese, patrząc na 240 hektarów winnic rozlanych po wzgórzach aż po horyzont. Wokół murów nieformalna pętla 2–3 km przez querceti — dęby omszałe upałem, cień i zapach rozgrzanej żywicy. Ok. 12:00 wyjazd do Badia a Coltibuono (10 minut) — benedyktyńskie opactwo z 1051 roku, jeden z najlepiej zachowanych klasztornych kompleksów Chianti: krótki spacer po ogrodzie ziołowym, sklep z winem i oliwą pachnący drewnem starych beczek; pełna degustacja (€25–35, slot 15:00) tylko dla chętnych, którzy mają jeszcze czas. Lunch w Radda in Chianti — Osteria Il Rifugio del Chianti (Via Roma 6), okno pranzo 12:30–14:30, więc nie zwlekamy z wyjazdem z opactwa. Po lunchu spacer po Piazza Ferrucci i Palazzo del Podestà — dawnej stolicy Ligi Chianti z 1384 roku, kamienne uliczki bez tłumów, jakie zalewają dziś Greve. Powrót do bazy zajmuje teraz 67 minut z Raddy, więc w Murlo jesteśmy dopiero ok. 18:15 — słońce już zachodzi nad winnicami, gdy wjeżdżamy na podwórko.",
       "web_research": [
         {
           "topic": "Castello di Brolio — orari 2026",
@@ -1884,8 +1885,8 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Dojazd z Castelnuovo Berardenga",
-          "summary": "Brolio: ~13 km, ~20–25 min (SP7 → SP484). Radda: ~22 min. Badia a Passignano: ~25 min. Wszystkie punkty dnia ≤30 min od Bazy 2.",
+          "topic": "Dojazd z Murlo (Val di Merse)",
+          "summary": "Brolio: ~44 km, ~49 min (SS223 → tangenziale Siena → SP408). Znacznie dalej niż z dawnego Chianti (~13 km/20 min) — Murlo lezy po przeciwnej stronie Sieny.",
           "source": "https://www.ricasoli.com/wp-content/uploads/2018/04/RICASOLI_INDICAZIONI_STRADALI_ENG.pdf",
           "checked": "2026-07"
         },
@@ -1924,11 +1925,11 @@
       },
       "eta_timeline": [
         {
-          "time": "09:00",
-          "event": "Wyjazd z bazy Chianti (20 min do Brolio)"
+          "time": "08:30",
+          "event": "Wyjazd z bazy do Castello di Brolio (49 min — najdłuższy dojazd bloku Murlo)"
         },
         {
-          "time": "09:25",
+          "time": "09:19",
           "event": "Castello di Brolio — otwiera 10:00 (park przy bramie)"
         },
         {
@@ -1948,13 +1949,14 @@
           "event": "Spacer po Radda — mury, wino enoteka lokalna"
         },
         {
-          "time": "17:00",
-          "event": "Powrót do bazy"
+          "time": "18:15",
+          "event": "Powrót do bazy (67 min z Raddy)"
         }
       ],
-      "daily_km_estimate": 43,
+      "daily_km_estimate": 134,
       "crowd_tip": "Castello di Brolio: otwieraj o 10:00, tłumy od 11:00. Badia a Coltibuono: wino i abbey — rezerwacja degustacji obowiązkowa. Radda in Chianti: popularna, przyjdź przed obiadem lub po 17:00.",
-      "summary": "Klasyczny dzień w krainie Chianti, wśród winnic i cyprysów. Zamek rodu Ricasoli (Castello di Brolio, istnieje od 1141 r.) — to tutaj w XIX w. spisano „recepturę\" słynnego czerwonego wina Chianti Classico. Dalej benedyktyńskie opactwo z XI w. (Badia a Coltibuono) z ogrodem ziołowym i degustacją win. Na wieczór miasteczko Radda in Chianti — średniowieczne, na wzgórzu (530 m n.p.m.), dawna stolica związku miast Chianti."
+      "summary": "Klasyczny dzień w krainie Chianti, wśród winnic i cyprysów. Zamek rodu Ricasoli (Castello di Brolio, istnieje od 1141 r.) — to tutaj w XIX w. spisano „recepturę\" słynnego czerwonego wina Chianti Classico. Dalej benedyktyńskie opactwo z XI w. (Badia a Coltibuono) z ogrodem ziołowym i degustacją win. Na wieczór miasteczko Radda in Chianti — średniowieczne, na wzgórzu (530 m n.p.m.), dawna stolica związku miast Chianti.",
+      "warning": "Baza w Murlo jest dobrze polozona dla Crete Senesi i Val d'Orcia, ale DALEKO od Chianti — ten dzien to teraz najdluzszy dojazd w bloku bazy 2: 49 min do Brolio, 67 min powrotu z Raddy (pelna petla ~2,5 h za kierownica, bylo ~1,6 h). Wyjazd wczesniej (8:30) niz w oryginalnym planie, zeby zdazyc na otwarcie Brolio o 10:00 bez posiechu."
     },
     {
       "date": "20.09 (nd)",
@@ -1964,12 +1966,12 @@
       "title": "Crete Senesi (gliniaste wzgórza) — opactwo i krajobraz",
       "image": "monte-oliveto",
       "base_id": "base2",
-      "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 61,
+      "base_label": "BAZA 2 — Murlo (Val di Merse)",
+      "drive_limit_min": 36,
       "attractions": [
         {
           "name": "Abbazia di Monte Oliveto Maggiore (opactwo z freskami św. Benedykta)",
-          "drive_min": 61,
+          "drive_min": 36,
           "description": "Benedyktyńska abbazia z XIV w. w krajobrazie Crete Senesi. Chiostro Grande: 35 lunet z cyklem życia św. Benedykta — Luca Signorelli (8 scen) i Il Sodoma (26 scen, 1505–1508). Niedziela: otwarte (o 11:00 msza z chorałem — freski w Chiostro Grande zwiedzaj wcześniej).",
           "type": "cultural",
           "image_key": "monte-oliveto",
@@ -2037,7 +2039,7 @@
         "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma, 2h) → 11:30 opcjonalnie Bosco Ragnaia (30–45 min) → 12:30 Asciano → 13:00 lunch La Tombolina → popołudnie Crete Senesi",
         "Bilet Monte Oliveto: €7 (Vivaticket €6). Niedziela: msza z chorałem 11:00 — freski w Chiostro Grande zwiedzaj 9:30–11:00."
       ],
-      "narrative": "Wyjeżdżamy o 9:00 w stronę zupełnie innego krajobrazu — ok. godzinę (61 min) do Abbazia Monte Oliveto Maggiore, otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5–2h; w niedzielę o 11:00 msza z chorałem gregoriańskim — freski oglądamy wcześniej). Plan dnia jest napięty, więc kolejny przystanek jest opcjonalny: jeśli starczy czasu, 26 minut dalej czeka Bosco della Ragnaia w San Giovanni d'Asso — filozoficzny ogród założony w dawnym lesie leccio, cichy i pusty, wstęp wolny; w razie poślizgu pomijamy go bez żalu. Dalej do Asciano, serca Crete Senesi, na lunch w Osteria La Tombolina (Via Mameli 11). Muzeum d'Arte Sacra w Palazzo Corboli jest dziś, w niedzielę, otwarte, więc po drodze zaglądamy do środka, a resztę popołudnia spędzamy na spacerze po biancane, białych glinianych wzgórzach pociętych erozją jak księżycowy krajobraz, gdzie nie rośnie prawie nic poza kępami traw, i po sennych uliczkach miasteczka, gdzie okiennice już się domykają na sjestę. Wracamy do bazy ok. 17:30, z butami pokrytymi jasnym pyłem Crete.",
+      "narrative": "Wyjeżdżamy o 8:50 w stronę zupełnie innego krajobrazu — z Murlo to już tylko 36 minut do Abbazia Monte Oliveto Maggiore (baza jest tu bliżej niż była w Chianti), otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5–2h; w niedzielę o 11:00 msza z chorałem gregoriańskim — freski oglądamy wcześniej). Plan dnia jest napięty, więc kolejny przystanek jest opcjonalny: jeśli starczy czasu, 26 minut dalej czeka Bosco della Ragnaia w San Giovanni d'Asso — filozoficzny ogród założony w dawnym lesie leccio, cichy i pusty, wstęp wolny; w razie poślizgu pomijamy go bez żalu. Dalej do Asciano, serca Crete Senesi, na lunch w Osteria La Tombolina (Via Mameli 11). Muzeum d'Arte Sacra w Palazzo Corboli jest dziś, w niedzielę, otwarte, więc po drodze zaglądamy do środka, a resztę popołudnia spędzamy na spacerze po biancane, białych glinianych wzgórzach pociętych erozją jak księżycowy krajobraz, gdzie nie rośnie prawie nic poza kępami traw, i po sennych uliczkach miasteczka, gdzie okiennice już się domykają na sjestę. Powrót do bazy zajmuje 49 minut z Asciano, więc jesteśmy ok. 17:15, z butami pokrytymi jasnym pyłem Crete.",
       "web_research": [
         {
           "topic": "Monte Oliveto Maggiore — orari",
@@ -2106,8 +2108,8 @@
       },
       "eta_timeline": [
         {
-          "time": "08:45",
-          "event": "Wyjazd z bazy Chianti (61 min do Monte Oliveto — dłużej niż się wydaje)"
+          "time": "08:50",
+          "event": "Wyjazd z bazy (36 min do Monte Oliveto — bliżej niż z dawnego Chianti)"
         },
         {
           "time": "09:46",
@@ -2135,12 +2137,12 @@
         },
         {
           "time": "16:15",
-          "event": "Powrót do bazy (41 min z Asciano)"
+          "event": "Powrót do bazy (49 min z Asciano)"
         }
       ],
-      "daily_km_estimate": 84,
+      "daily_km_estimate": 76,
       "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto.",
-      "warning": "Plan napięty — audyt czasowy wykazał deficyt ~44 min. Bosco della Ragnaia jest opcjonalne: pomiń je, jeśli Monte Oliveto Maggiore się przeciągnie.",
+      "warning": "Z bazy w Murlo ten dzień jest LŻEJSZY niż był z Chianti (dojazd do Monte Oliveto skrócony o 25 min: 61→36 min) — dawny deficyt czasowy w dużej mierze zniknął. Bosco della Ragnaia zostaje opcjonalne, ale teraz bardziej z wyboru niż z konieczności.",
       "summary": "Zupełnie inny krajobraz — Crete Senesi, gliniaste, niemal „księżycowe\" wzgórza na południe od Sieny. Głównym punktem jest ceglane opactwo ukryte wśród cyprysów (Abbazia di Monte Oliveto Maggiore) z zachwycającym cyklem renesansowych fresków o życiu św. Benedykta. Opcjonalnie „ogród filozoficzny\" schowany w dębowym lesie (Bosco della Ragnaia). Po drodze miasteczko Asciano i charakterystyczne białe gliniane pagórki (tzw. biancane)."
     },
     {
@@ -2151,13 +2153,13 @@
       "title": "Val d'Orcia — Pienza, Bagno Vignoni i Brunello",
       "image": "bagno-vignoni",
       "base_id": "base2",
-      "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 82,
-      "warning": "21.09 (poniedziałek) to najdłuższy dzień jazdy w całym planie i jedyny, gdzie cele leżą 70–85 min od bazy (reszta ≤61 min). Realnie ok. 3,5 h za kierownicą (base→Pienza 71 min, powrót Montalcino→baza 82 min — zweryfikowane OSRM). Kolejność ułożona tak, by minimalizować jazdę i złapać Pienzę wcześnie rano. Plus dnia powszedniego: Pienza jest spokojniejsza niż w weekend, a Palazzo Piccolomini — zamknięte we wtorki — w poniedziałek jest OTWARTE, więc wchodzimy do środka. Wrzesień = żniwa: uważaj na wolne traktory na SP2/SP53. Zostaw bufor — nie planuj nic po powrocie.",
+      "base_label": "BAZA 2 — Murlo (Val di Merse)",
+      "drive_limit_min": 69,
+      "warning": "Z bazy w Murlo ten dzień jest KRÓTSZY niż z dawnego Chianti: baza→Pienza 69 min (bez zmian), ale powrót Montalcino→baza spadł z 82 do 56 min — cała pętla to teraz ok. 2,9 h za kierownicą zamiast 3,4 h. Nadal to solidny dzień (Pienza jest wciąż najdalszym pojedynczym celem), ale to już NIE jest najdłuższy dzień jazdy w planie — patrz D8 (Chianti), który z tej bazy wypada dłużej. Kolejność wciąż ułożona tak, by złapać Pienzę wcześnie rano. Plus dnia powszedniego: Pienza jest spokojniejsza niż w weekend, a Palazzo Piccolomini — zamknięte we wtorki — w poniedziałek jest OTWARTE, więc wchodzimy do środka. Wrzesień = żniwa: uważaj na wolne traktory na SP2/SP53.",
       "attractions": [
         {
           "name": "Pienza — renesansowe miasto-utopia Piusa II",
-          "drive_min": 71,
+          "drive_min": 69,
           "description": "Renesansowe miasto-utopia zaprojektowane przez Bernarda Rosselliniego (1459–1462). Piazza Pio II — Duomo, Palazzo Piccolomini, panorama Val d'Orcia. Pecorino di Pienza DOP — kup w sklepach na Corso Rossellino.",
           "type": "medieval",
           "gps_hint": "Pienza SI — parking poza centro storico (ZTL)",
@@ -2223,9 +2225,9 @@
       },
       "practical_tips": [
         "Timeline: Bagno Vignoni (9:00, 1h) → Pienza (10:30, 2h) → lunch Latte di Luna / Pienza (12:30) → Montalcino (14:30, 1,5h) → powrót ~17:00",
-        "Dojazd: z Castelnuovo B. — Bagno Vignoni ~45–60 min (SP2/SP53, wrzesień = zbiory, traktory). Wyjazd przed 8:00."
+        "Dojazd: z Murlo — Pienza ~69 min (SP2/SP53, wrzesień = zbiory, traktory). Wyjazd przed 8:00. Ta baza jest bliżej Val d'Orcia niż dawne Chianti."
       ],
-      "narrative": "Najdłuższy wypad całego wyjazdu — Val d'Orcia leży realnie 70–85 minut od bazy w Chianti, więc ruszamy o 8:00 i układamy dzień tak, żeby jak najmniej kluczyć. Najpierw, po ok. 71 minutach przez Crete i SP2, docieramy do Pienzy — o tej porze miasto należy jeszcze do nas. Pienza to renesansowe marzenie papieża Piusa II, który w XV wieku kazał przebudować rodzinne Corsignano w „idealne miasto\": regularna Piazza Pio II, katedra i tarasy, z których Val d'Orcia rozlewa się aż po Monte Amiata. Mamy szczęście co do dnia tygodnia: Palazzo Piccolomini, letnia rezydencja papieża Piusa II, we wtorki jest zamknięty — ale dziś poniedziałek, więc wchodzimy do środka, na renesansowe komnaty i wiszący ogród z lodżią, z której rozciąga się widok na całą dolinę. Do tego katedra i pecorino di Pienza wprost z serowarni przy Corso Rossellino, a że to powszedni dzień, miasto jest spokojniejsze niż w weekend. Stąd tylko 21 minut do Bagno Vignoni, gdzie zamiast rynku jest wielki termalny basen — para unosi się nad wodą pośrodku placu, a my jemy obiad w trattorii tuż obok (kąpiel na samym placu jest zakazana, ale darmowe Parco dei Mulini poniżej pozwala zamoczyć nogi w ciepłych strumieniach). Po południu 28 minut na zachód do Montalcino — miasta Brunello. Wspinamy się na Fortezzę (€4) po widok 360° na całą dolinę, a potem w Enoteca La Fortezza, wbudowanej w mury twierdzy, degustujemy to, co uczyniło Montalcino sławnym: Brunello di Montalcino DOCG, wino, które dojrzewa w beczce latami. Powrót do bazy zajmuje jeszcze 82 minuty, więc w Chianti jesteśmy ok. 17:30 — i świadomie nie planujemy już nic na wieczór, bo to był dzień z pełnym bakiem wrażeń i pełnym licznikiem kilometrów.",
+      "narrative": "Val d'Orcia leży realnie ok. 70 minut od bazy w Murlo, więc ruszamy o 8:00 i układamy dzień tak, żeby jak najmniej kluczyć. Najpierw, po ok. 69 minutach przez Crete i SP2, docieramy do Pienzy — o tej porze miasto należy jeszcze do nas. Pienza to renesansowe marzenie papieża Piusa II, który w XV wieku kazał przebudować rodzinne Corsignano w „idealne miasto\": regularna Piazza Pio II, katedra i tarasy, z których Val d'Orcia rozlewa się aż po Monte Amiata. Mamy szczęście co do dnia tygodnia: Palazzo Piccolomini, letnia rezydencja papieża Piusa II, we wtorki jest zamknięty — ale dziś poniedziałek, więc wchodzimy do środka, na renesansowe komnaty i wiszący ogród z lodżią, z której rozciąga się widok na całą dolinę. Do tego katedra i pecorino di Pienza wprost z serowarni przy Corso Rossellino, a że to powszedni dzień, miasto jest spokojniejsze niż w weekend. Stąd tylko 21 minut do Bagno Vignoni, gdzie zamiast rynku jest wielki termalny basen — para unosi się nad wodą pośrodku placu, a my jemy obiad w trattorii tuż obok (kąpiel na samym placu jest zakazana, ale darmowe Parco dei Mulini poniżej pozwala zamoczyć nogi w ciepłych strumieniach). Po południu 28 minut na zachód do Montalcino — miasta Brunello. Wspinamy się na Fortezzę (€4) po widok 360° na całą dolinę, a potem w Enoteca La Fortezza, wbudowanej w mury twierdzy, degustujemy to, co uczyniło Montalcino sławnym: Brunello di Montalcino DOCG, wino, które dojrzewa w beczce latami. Powrót do bazy zajmuje jeszcze 56 minut (krócej niż z dawnego Chianti), więc w Murlo jesteśmy ok. 17:00 — i świadomie nie planujemy już nic na wieczór, bo to był dzień z pełnym bakiem wrażeń i pełnym licznikiem kilometrów.",
       "web_research": [
         {
           "topic": "Bagno Vignoni — piazza termalna",
@@ -2250,7 +2252,7 @@
         },
         {
           "topic": "Trasa z Chianti do Val d'Orcia",
-          "summary": "Z Castelnuovo Berardenga/Vagliagli → SP484 → Siena (obwodnica) → SS2 Cassia → Torrenieri. Lub: SP146 → Pienza bezpośrednio. Całość ~70–85 km, 1h20–1h40. Tankowanie przed Sieną.",
+          "summary": "Z Murlo → SS223 Siena → tangenziale → SS2 Cassia → Torrenieri → Pienza. Całość ~48 km, ~69 min. Krócej niż z dawnego Chianti (71 min) — Murlo lezy blizej Val d'Orcia.",
           "checked": "2026-06"
         },
         {
@@ -2288,7 +2290,7 @@
       "eta_timeline": [
         {
           "time": "08:00",
-          "event": "Wyjazd z bazy Chianti (71 min do Pienzy — najdłuższy dojazd w całym planie)"
+          "event": "Wyjazd z bazy Chianti (69 min do Pienzy)"
         },
         {
           "time": "09:15",
@@ -2323,17 +2325,17 @@
           "event": "Enoteca La Fortezza — degustacja Brunello di Montalcino DOCG"
         },
         {
-          "time": "16:10",
-          "event": "Wyjazd z Montalcino do bazy Chianti (55 km, 82 min)"
+          "time": "14:50",
+          "event": "Wyjazd z Montalcino do bazy (35 km, 56 min — krócej niż z dawnego Chianti)"
         },
         {
-          "time": "17:30",
-          "event": "Powrót do bazy — nie planujemy już nic na wieczór"
+          "time": "15:46",
+          "event": "Powrót do bazy — dzień krótszy niż był z Chianti, zostaje więcej czasu na wieczór"
         }
       ],
       "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
-      "daily_km_estimate": 146,
-      "summary": "Najdłuższy dzień za kierownicą (ok. 70–85 min w jedną stronę), za to w najpiękniejszej dolinie regionu — Val d'Orcia, krajobrazie wpisanym na listę UNESCO. Pienza — renesansowe „miasto idealne\" zaprojektowane dla papieża Piusa II, słynne z sera pecorino i widoku na dolinę. Bagno Vignoni — wioska, której rynek zajmuje zabytkowy basen termalny zamiast placu. Na koniec Montalcino — twierdza z rozległą panoramą i degustacja słynnego czerwonego wina Brunello."
+      "daily_km_estimate": 116,
+      "summary": "Solidny dzień za kierownicą (ok. 69 min w jedną stronę, krócej niż z dawnego Chianti), za to w najpiękniejszej dolinie regionu — Val d'Orcia, krajobrazie wpisanym na listę UNESCO. Pienza — renesansowe „miasto idealne\" zaprojektowane dla papieża Piusa II, słynne z sera pecorino i widoku na dolinę. Bagno Vignoni — wioska, której rynek zajmuje zabytkowy basen termalny zamiast placu. Na koniec Montalcino — twierdza z rozległą panoramą i degustacja słynnego czerwonego wina Brunello."
     },
     {
       "date": "22.09 (wt)",
@@ -2343,14 +2345,14 @@
       "title": "Siena — o świcie przed tłumami",
       "image": "siena",
       "base_id": "base2",
-      "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 39,
+      "base_label": "BAZA 2 — Murlo (Val di Merse)",
+      "drive_limit_min": 33,
       "popular": true,
-      "crowd_tip": "WTOREK 22.09 — dzień powszedni, znacznie mniej tłumów niż w sobotę. Wyjazd 7:00, parking Santa Caterina lub Stadio-Fortezza. Campo o 7:30 jeszcze prawie puste. Tłumy narastają od 10:00 (wycieczki), ale w powszedni dzień są wyraźnie mniejsze. Powrót do bazy przed 14:00.",
+      "crowd_tip": "WTOREK 22.09 — dzień powszedni, znacznie mniej tłumów niż w sobotę. Wyjazd 7:00 (33 min z Murlo), parking Santa Caterina lub Stadio-Fortezza. Campo o 7:30 jeszcze prawie puste. Tłumy narastają od 10:00 (wycieczki), ale w powszedni dzień są wyraźnie mniejsze. Powrót do bazy przed 14:00.",
       "attractions": [
         {
           "name": "Piazza del Campo (główny plac Sieny) — o świcie",
-          "drive_min": 39,
+          "drive_min": 33,
           "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
           "type": "popular",
           "image_key": "siena",
@@ -2365,7 +2367,7 @@
         },
         {
           "name": "Duomo di Siena (katedra) + Libreria Piccolomini (biblioteka z freskami)",
-          "drive_min": 39,
+          "drive_min": 33,
           "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki.",
           "type": "popular",
           "image_key": "siena",
@@ -2380,7 +2382,7 @@
         },
         {
           "name": "Spacer przez kontrade (historyczne dzielnice-klany Sieny)",
-          "drive_min": 39,
+          "drive_min": 33,
           "description": "11:00–12:00. Oca (Via dei Termini → Fontebranda) i Drago (Piazza Matteotti → Via del Paradiso). Autentyczne dzielnice zamiast turystycznych tras.",
           "type": "cultural",
           "image_key": "siena",
@@ -2415,7 +2417,7 @@
         "OPA SI PASS kup online wieczorem wcześniej — skip kolejki, wejdź tuż po 10:00",
         "Bonus wtorku: tour „Il Clavigero del Duomo — per primi in Cattedrale\" (wt–pt, 7:30–9:00, maks. 18 os., rezerwacja operaduomo.siena.it) — wejście do katedry przed wszystkimi, idealne pod strategię świtu."
       ],
-      "narrative": "Wyjeżdżamy z bazy o 7:00 — wtorek, a o tej porze Chianti jeszcze śpi, a do Sieny mamy ok. 24 km i 40 minut jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą wprost pod mury, albo przy Stadio-Fortezza. Piazza del Campo o 7:30 należy właściwie tylko do nas — słońce dopiero wschodzi, ktoś zamiata próg kawiarni, cisza, w której słychać własne kroki po charakterystycznym wachlarzowatym bruku. To ten sam plac, na którym za kilka godzin będzie tłoczno jak na Palio, ale teraz Fonte Gaia szumi tylko dla nas. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16 w sezonie odkrytej podłogi mozaikowej) pozwala ominąć kolejkę, a w środku Libreria Piccolomini olśniewa złoconymi freskami Pinturicchia, które nie wyblakły przez pięćset lat. Ok. 11:00 spacer przez kontrady Oca i Drago — boczne uliczki z chorągiewkami bractw rywalizujących w Palio, gdy tłumy od 10:00 zaczynają zalewać Campo. Lunch w Antica Trattoria Papei (Piazza del Mercato 6, rezerwacja) — wśród sieneńczyków jedzących tu od pokoleń. Po obiedzie opcjonalnie degustacja w Enoteca Italiana (Fortezza Medicea, 12 minut pieszo, 45 minut) — narodowa enoteka z winami z całych Włoch, w tym miejscowym Chianti Classico. Z parkingu wyjeżdżamy ok. 15:00, zanim popołudniowy szczyt zamieni uliczki w korek turystów, w bazie jesteśmy ok. 15:45 — reszta popołudnia znów należy tylko do nas.",
+      "narrative": "Wyjeżdżamy z bazy o 7:00 — wtorek, a o tej porze Chianti jeszcze śpi, a do Sieny mamy ok. 27 km i 33 minuty jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą wprost pod mury, albo przy Stadio-Fortezza. Piazza del Campo o 7:30 należy właściwie tylko do nas — słońce dopiero wschodzi, ktoś zamiata próg kawiarni, cisza, w której słychać własne kroki po charakterystycznym wachlarzowatym bruku. To ten sam plac, na którym za kilka godzin będzie tłoczno jak na Palio, ale teraz Fonte Gaia szumi tylko dla nas. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16 w sezonie odkrytej podłogi mozaikowej) pozwala ominąć kolejkę, a w środku Libreria Piccolomini olśniewa złoconymi freskami Pinturicchia, które nie wyblakły przez pięćset lat. Ok. 11:00 spacer przez kontrady Oca i Drago — boczne uliczki z chorągiewkami bractw rywalizujących w Palio, gdy tłumy od 10:00 zaczynają zalewać Campo. Lunch w Antica Trattoria Papei (Piazza del Mercato 6, rezerwacja) — wśród sieneńczyków jedzących tu od pokoleń. Po obiedzie opcjonalnie degustacja w Enoteca Italiana (Fortezza Medicea, 12 minut pieszo, 45 minut) — narodowa enoteka z winami z całych Włoch, w tym miejscowym Chianti Classico. Z parkingu wyjeżdżamy ok. 15:00, zanim popołudniowy szczyt zamieni uliczki w korek turystów, w bazie jesteśmy ok. 15:45 — reszta popołudnia znów należy tylko do nas.",
       "web_research": [
         {
           "topic": "Siena o 7:30 — bez tłumów",
@@ -2471,19 +2473,19 @@
         "san_domenico_note": "Nie ma osobnego parkingu „San Domenico” — chodzi o wyjście Stadio-Fortezza od strony stadionu lub parking Santa Caterina (schody przy San Domenico).",
         "ztl": "Centrum Siena = ZTL z kamerami. Mandaty €80–150. Samochód zostaw na parkingu.",
         "cost_estimate": "~€8–10 za 4h poranną wizytę (€2/h × 4h)",
-        "wyjazd_tip": "Wtorek 7:00 wyjazd → parking 7:20 → Campo 7:30 pieszo. Wyjazd z parkingu przed 14:00."
+        "wyjazd_tip": "Wtorek 7:00 wyjazd → parking 7:33 → Campo 7:40 pieszo. Wyjazd z parkingu przed 14:00."
       },
       "fuel_stops": [
         {
-          "name": "IP / Q8 Castelnuovo Berardenga",
-          "location": "BAZA 2 — Chianti Senese",
-          "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót, stacja przy SP408."
+          "name": "Stacja w Murlo lub przy SS223",
+          "location": "BAZA 2 — Murlo (Val di Merse)",
+          "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót."
         }
       ],
       "eta_timeline": [
         {
-          "time": "07:00",
-          "event": "Wyjazd z bazy (~24 km, 39 min do Sieny)"
+          "time": "07:33",
+          "event": "Parking Santa Caterina lub Stadio-Fortezza"
         },
         {
           "time": "07:40",
@@ -2522,7 +2524,7 @@
           "event": "Powrót do bazy"
         }
       ],
-      "daily_km_estimate": 48,
+      "daily_km_estimate": 54,
       "wine_tasting": {
         "place": "Enoteca Italiana — Fortezza Medicea",
         "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
@@ -2541,8 +2543,8 @@
       "title": "Florencja — jeden dzień z tłumem, świadomie",
       "image": "firenze",
       "base_id": "base2",
-      "base_label": "BAZA 2 — Chianti Senese",
-      "drive_limit_min": 25,
+      "base_label": "BAZA 2 — Murlo (Val di Merse)",
+      "drive_limit_min": 33,
       "attractions": [
         {
           "name": "Piazza del Duomo — katedra Santa Maria del Fiore, kopuła Brunelleschiego, Battistero (baptysterium), Campanile (dzwonnica)",
@@ -2607,7 +2609,7 @@
         "Samochód zostaje na parkingu w Sienie na cały dzień — jedyny dzień całej wyprawy bez jazdy po Toskanii",
         "Wygodne buty — dzień to głównie chodzenie po florenckim bruku i kocich łbach"
       ],
-      "narrative": "Ten dzień jest inny niż wszystkie poprzednie — celowo. Cała ta podróż budowana była wokół unikania tłumów: wczesne pobudki, boczne uliczki, dni powszednie zamiast weekendów. Ale jest miejsce, którego nie da się zobaczyć bez tłumu, bo tłum jest częścią jego natury, i to miejsce jest warte tego kompromisu. Wyjeżdżamy z bazy o 7:00, dwadzieścia kilka minut do Sieny, zostawiamy auto na cały dzień na parkingu przy stacji i po raz jedyny w całej podróży przesiadamy się na tory — dziś prowadzi nas rozkład jazdy, nie licznik kilometrów. Pociąg regionale sunie przez Val d'Elsa, krajobraz za oknem zmienia się z tarasowych winnic w przedmieścia, aż w końcu, około 9:20, wjeżdżamy na Firenze Santa Maria Novella. Piazza del Duomo wita ścianą marmuru w trzech kolorach i tłumem, który tu jest po prostu stałym stanem rzeczy — kopuła Brunelleschiego, pierwsza taka konstrukcja od czasów antycznego Rzymu, nadal uznawana za cud inżynierii, obok Campanile di Giotto, a przy wejściu Battistero z brązowymi Wrotami Raju Ghibertiego, które podobno nawet Michał Anioł nazwał godnymi bramy do nieba. Stąd wąska Via dei Calzaiuoli, zawsze pełna, prowadzi na Piazza della Signoria — pod Loggią dei Lanzi stoją posągi, które można oglądać za darmo i bez pośpiechu (Perseusz Celliniego, Porwanie Sabinek), a wieża Palazzo Vecchio wciąż rządzi panoramą jak osiemset lat temu. Lunch w Mercato Centrale — hala targowa pełna straganów, gdzie każdy z rodziny może zjeść coś innego, bez rezerwacji i bez czekania. Popołudnie należy do Ponte Vecchio: złotnicy w witrynach wiszących nad Arno, tłum gęstnieje z każdym krokiem na moście, ale widok na rzekę i Ponte Santa Trinita w tle wynagradza przepychanki. Po drugiej stronie, w Oltrarno, robi się nagle ciszej — kilka kroków wystarczy, by uciec z tłumu, choć dziś to tylko chwila oddechu, nie cel sam w sobie. Wieczorem ta sama droga w drugą stronę — pociąg, Siena, samochód, baza — i świadomość, że jeden dzień kompromisu wart był tego widoku na kopułę o zachodzącym słońcu.",
+      "narrative": "Ten dzień jest inny niż wszystkie poprzednie — celowo. Cała ta podróż budowana była wokół unikania tłumów: wczesne pobudki, boczne uliczki, dni powszednie zamiast weekendów. Ale jest miejsce, którego nie da się zobaczyć bez tłumu, bo tłum jest częścią jego natury, i to miejsce jest warte tego kompromisu. Wyjeżdżamy z bazy o 6:50, 33 minuty do Sieny, zostawiamy auto na cały dzień na parkingu przy stacji i po raz jedyny w całej podróży przesiadamy się na tory — dziś prowadzi nas rozkład jazdy, nie licznik kilometrów. Pociąg regionale sunie przez Val d'Elsa, krajobraz za oknem zmienia się z tarasowych winnic w przedmieścia, aż w końcu, około 9:20, wjeżdżamy na Firenze Santa Maria Novella. Piazza del Duomo wita ścianą marmuru w trzech kolorach i tłumem, który tu jest po prostu stałym stanem rzeczy — kopuła Brunelleschiego, pierwsza taka konstrukcja od czasów antycznego Rzymu, nadal uznawana za cud inżynierii, obok Campanile di Giotto, a przy wejściu Battistero z brązowymi Wrotami Raju Ghibertiego, które podobno nawet Michał Anioł nazwał godnymi bramy do nieba. Stąd wąska Via dei Calzaiuoli, zawsze pełna, prowadzi na Piazza della Signoria — pod Loggią dei Lanzi stoją posągi, które można oglądać za darmo i bez pośpiechu (Perseusz Celliniego, Porwanie Sabinek), a wieża Palazzo Vecchio wciąż rządzi panoramą jak osiemset lat temu. Lunch w Mercato Centrale — hala targowa pełna straganów, gdzie każdy z rodziny może zjeść coś innego, bez rezerwacji i bez czekania. Popołudnie należy do Ponte Vecchio: złotnicy w witrynach wiszących nad Arno, tłum gęstnieje z każdym krokiem na moście, ale widok na rzekę i Ponte Santa Trinita w tle wynagradza przepychanki. Po drugiej stronie, w Oltrarno, robi się nagle ciszej — kilka kroków wystarczy, by uciec z tłumu, choć dziś to tylko chwila oddechu, nie cel sam w sobie. Wieczorem ta sama droga w drugą stronę — pociąg, Siena, samochód, baza — i świadomość, że jeden dzień kompromisu wart był tego widoku na kopułę o zachodzącym słońcu.",
       "web_research": [
         {
           "topic": "Brunelleschi Pass — Duomo di Firenze",
@@ -2645,18 +2647,18 @@
       },
       "fuel_stops": [
         {
-          "name": "IP / Q8 Castelnuovo Berardenga",
-          "location": "BAZA 2 — Chianti Senese",
-          "note": "Krótki dzień jazdy (tylko Chianti↔Siena) — zatankuj przy okazji, jeśli bak niski."
+          "name": "Stacja w Murlo lub przy SS223",
+          "location": "BAZA 2 — Murlo (Val di Merse)",
+          "note": "Krótki dzień jazdy (tylko Murlo↔Siena) — zatankuj przy okazji, jeśli bak niski."
         }
       ],
       "eta_timeline": [
         {
-          "time": "07:00",
-          "event": "Wyjazd z bazy Chianti do Sieny (~20 km, 25 min)"
+          "time": "06:50",
+          "event": "Wyjazd z bazy do Sieny (~27 km, 33 min)"
         },
         {
-          "time": "07:25",
+          "time": "07:23",
           "event": "Parking przy stacji w Sienie — auto zostaje na cały dzień"
         },
         {
@@ -2704,7 +2706,7 @@
           "event": "Powrót do bazy Chianti"
         }
       ],
-      "daily_km_estimate": 50,
+      "daily_km_estimate": 54,
       "crowd_tip": "To jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Duomo, Ponte Vecchio i Piazza della Signoria są zatłoczone praktycznie cały dzień w sezonie. Jedyna realna strategia: przyjechać najwcześniej jak się da (pociąg ok. 8:00), zobaczyć Piazza del Duomo przed 10:00, zanim zjadą się grupy z autokarów, i zaakceptować, że popołudnie na Ponte Vecchio i tak będzie ścisk.",
       "warning": "Uffizi nie jest częścią tego dnia — wymagałoby rezerwacji z 1–2-miesięcznym wyprzedzeniem (od czerwca), co nie mieści się w planowaniu z bieżącym wyprzedzeniem. Kopuła Duomo też wymaga rezerwacji slotu online — zrób to z wyprzedzeniem, miejsca znikają szybko. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia bliżej wyjazdu.",
       "summary": "Jedyny świadomie „tłumny\" dzień — Florencja, dokąd jedziemy wygodnie pociągiem z Sieny. Plac katedralny z bazyliką Santa Maria del Fiore i słynną renesansową kopułą Brunelleschiego, baptysterium ze złoconymi „Wrotami Raju\" i dzwonnica Giotta. Dalej główny plac miejski (Piazza della Signoria) z dawnym ratuszem i plenerową galerią rzeźb, most złotników nad rzeką Arno (Ponte Vecchio) i spacer po rzemieślniczej dzielnicy za rzeką (Oltrarno)."
@@ -2718,13 +2720,13 @@
       "image": "san-gimignano",
       "image2": "monteriggioni",
       "base_id": "base2",
-      "base_label": "BAZA 2 — Chianti Senese",
+      "base_label": "BAZA 2 — Murlo (Val di Merse)",
       "popular": false,
       "crowd_tip": "San Gimignano to magnes na autokary — ale w czwartek (dzień powszedni) i wcześnie rano jest znośnie. Wyjazd z bazy 8:15, na miejscu ~9:30, gdy pierwsze grupy dopiero się schodzą. Parkuj poza murami (P1 Giubileo lub P2 Montemaggio) — całe centro to strefa ruchu ograniczonego. Torre Grossa i Collegiata zwiedzaj przed 11:00, potem miasto zapełnia się grupami. Popołudnie w maleńkim Monteriggioni jest już zupełnie spokojne.",
       "attractions": [
         {
           "name": "San Gimignano — Piazza della Cisterna i Torre Grossa (panorama wież)",
-          "drive_min": 77,
+          "drive_min": 71,
           "description": "„Średniowieczny Manhattan\" — z 72 wież rodowych przetrwało 14, i to one tworzą sylwetkę widoczną z daleka nad winnicami. Sercem miasta jest trójkątna Piazza della Cisterna z zabytkową studnią, tuż obok Piazza del Duomo. Na Torre Grossa (54 m, najwyższa) można wejść — to jedyna wieża dostępna dla zwiedzających, ze szczytu rozciąga się widok na całą Val d'Elsa. Wejście przez Palazzo Comunale (Musei Civici) z salą Dantego i pinakoteką.",
           "type": "medieval",
           "image_key": "san-gimignano",
@@ -2801,7 +2803,7 @@
         "To ostatni pełny dzień w Toskanii — zaplanuj zakupy (Vernaccia, oliwa, szafran, pecorino) na drogę powrotną.",
         "Monteriggioni: parkuj na dole (Parcheggio Monteriggioni), do bramy podejście 5 min pod górę."
       ],
-      "narrative": "Ostatni pełny dzień w Toskanii spędzamy tak, jak większość poprzednich — wyjeżdżamy z bazy o 8:15 i po niespełna półtorej godziny (ok. 77 min drogą przez Colle di Val d'Elsa) wyrasta przed nami sylwetka San Gimignano: kamienne wieże sterczące nad winnicami jak średniowieczny Manhattan. Z siedemdziesięciu dwóch wież rodowych, którymi patrycjusze prześcigali się w prestiżu, przetrwało czternaście — i to one robią z tego miasteczka jedno z najbardziej rozpoznawalnych miejsc regionu. Parkujemy poza murami (P1 Giubileo), wchodzimy przez Porta San Giovanni przed dziewiątą trzydzieści, zanim autokary rozładują pierwsze grupy. Główną osią jest Via San Giovanni prowadząca na trójkątną Piazza della Cisterna ze starą studnią, a stąd krok do Piazza del Duomo. Wchodzimy do Collegiaty — z zewnątrz surowej, w środku pokrytej od podłogi po sklepienia freskami Ghirlandaia i Gozzolego — a potem na Torre Grossa (54 m, 218 stopni), jedyną wieżę dostępną do wejścia, ze szczytu której cała Val d'Elsa leży jak na dłoni. Przed południem, gdy uliczki zaczynają się zapełniać, mamy już to, po co przyjechaliśmy: lody u Dondolego na Piazza della Cisterna (dwukrotny mistrz świata, kolejka idzie szybko) i degustacja Vernaccii — pierwszego włoskiego wina z certyfikatem DOCG — na wzgórzu Rocca di Montestaffoli, z najlepszym widokiem na miasto. Po lunchu ruszamy w stronę bazy, ale po drodze (36 min) zatrzymujemy się w Monteriggioni: maleńkim borgo, które Dante uwiecznił w „Boskiej Komedii\", zamkniętym w kompletnym pierścieniu murów z czternastoma wieżami. Całe miasteczko to właściwie jeden plac i kilka uliczek — obchodzimy je w pół godziny, wchodzimy na fragment chodnika obronnego, i to spokojne, ciche miejsce jest idealnym pożegnaniem z Toskanią. Do bazy wracamy ok. 16:00 — zostaje wieczór na spakowanie walizek (Vernaccia, oliwa, szafran, pecorino) przed jutrzejszą drogą w stronę domu.",
+      "narrative": "Ostatni pełny dzień w Toskanii spędzamy tak, jak większość poprzednich — wyjeżdżamy z bazy o 8:15 i po niespełna półtorej godziny (ok. 77 min drogą przez Colle di Val d'Elsa) wyrasta przed nami sylwetka San Gimignano (71 min z Murlo, minimalnie szybciej niż z dawnego Chianti): kamienne wieże sterczące nad winnicami jak średniowieczny Manhattan. Z siedemdziesięciu dwóch wież rodowych, którymi patrycjusze prześcigali się w prestiżu, przetrwało czternaście — i to one robią z tego miasteczka jedno z najbardziej rozpoznawalnych miejsc regionu. Parkujemy poza murami (P1 Giubileo), wchodzimy przez Porta San Giovanni przed dziewiątą trzydzieści, zanim autokary rozładują pierwsze grupy. Główną osią jest Via San Giovanni prowadząca na trójkątną Piazza della Cisterna ze starą studnią, a stąd krok do Piazza del Duomo. Wchodzimy do Collegiaty — z zewnątrz surowej, w środku pokrytej od podłogi po sklepienia freskami Ghirlandaia i Gozzolego — a potem na Torre Grossa (54 m, 218 stopni), jedyną wieżę dostępną do wejścia, ze szczytu której cała Val d'Elsa leży jak na dłoni. Przed południem, gdy uliczki zaczynają się zapełniać, mamy już to, po co przyjechaliśmy: lody u Dondolego na Piazza della Cisterna (dwukrotny mistrz świata, kolejka idzie szybko) i degustacja Vernaccii — pierwszego włoskiego wina z certyfikatem DOCG — na wzgórzu Rocca di Montestaffoli, z najlepszym widokiem na miasto. Po lunchu ruszamy w stronę bazy, ale po drodze (36 min) zatrzymujemy się w Monteriggioni: maleńkim borgo, które Dante uwiecznił w „Boskiej Komedii\", zamkniętym w kompletnym pierścieniu murów z czternastoma wieżami. Całe miasteczko to właściwie jeden plac i kilka uliczek — obchodzimy je w pół godziny, wchodzimy na fragment chodnika obronnego, i to spokojne, ciche miejsce jest idealnym pożegnaniem z Toskanią. Powrót z Monteriggioni do bazy w Murlo zajmuje teraz 49 minut (było 51) — do bazy wracamy ok. 16:00, zostaje wieczór na spakowanie walizek (Vernaccia, oliwa, szafran, pecorino) przed jutrzejszą drogą w stronę domu.",
       "web_research": [
         {
           "topic": "San Gimignano — Torre Grossa i Musei Civici",
@@ -2816,8 +2818,8 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Dojazd Chianti (Castelnuovo B.) → San Gimignano",
-          "summary": "~65 km, ok. 77 min (OSRM) przez SS429/Poggibonsi → Colle di Val d'Elsa → SP1 San Gimignano. Brak sensownej kolei. Parking poza murami: P1 Giubileo, P2 Montemaggio, P3 Bagnaia (~€2/h). Centro storico = ZTL.",
+          "topic": "Dojazd Murlo → San Gimignano",
+          "summary": "OSRM: ~68 km, ~71 min przez SS223/Siena/SP1. Minimalnie szybciej niż z dawnego Chianti (77 min).",
           "source": "https://www.sangimignano.com/en/useful-info/how-to-reach-san-gimignano/",
           "checked": "2026-07"
         },
@@ -2848,9 +2850,9 @@
       },
       "fuel_stops": [
         {
-          "name": "Stacja przed wyjazdem (Castelnuovo B. / SS408)",
-          "location": "okolice bazy Chianti",
-          "note": "Pełny bak rano — jutro długi dzień powrotu przez Brenner."
+          "name": "Stacja przed wyjazdem (Murlo / SS223)",
+          "location": "okolice Murlo",
+          "note": "Zatankuj rano — jutro długi dzień powrotu przez Brenner."
         },
         {
           "name": "Poggibonsi / Colle di Val d'Elsa (SS429)",
@@ -2862,7 +2864,7 @@
       "eta_timeline": [
         {
           "time": "08:15",
-          "event": "Wyjazd z bazy Chianti (~77 min do San Gimignano przez Colle di Val d'Elsa)"
+          "event": "Wyjazd z bazy Chianti (~71 min do San Gimignano przez Colle di Val d'Elsa)"
         },
         {
           "time": "09:30",
@@ -2897,8 +2899,9 @@
           "event": "Baza — ostatni wieczór w Toskanii, pakowanie przed drogą do domu"
         }
       ],
-      "daily_km_estimate": 133,
-      "summary": "Ostatni dzień w Toskanii. San Gimignano — miasteczko najeżone średniowiecznymi wieżami (zwane „średniowiecznym Manhattanem\"), z których do dziś stoi 14; wchodzimy na najwyższą (Torre Grossa), oglądamy freski w kolegiacie i próbujemy miejscowego białego wina Vernaccia oraz nagradzanych lodów. W drodze powrotnej Monteriggioni — maleńkie miasteczko zamknięte w całości w kamiennym pierścieniu murów z 1214 r., wspomniane przez Dantego w „Boskiej Komedii\"."
+      "daily_km_estimate": 139,
+      "summary": "Ostatni dzień w Toskanii. San Gimignano — miasteczko najeżone średniowiecznymi wieżami (zwane „średniowiecznym Manhattanem\"), z których do dziś stoi 14; wchodzimy na najwyższą (Torre Grossa), oglądamy freski w kolegiacie i próbujemy miejscowego białego wina Vernaccia oraz nagradzanych lodów. W drodze powrotnej Monteriggioni — maleńkie miasteczko zamknięte w całości w kamiennym pierścieniu murów z 1214 r., wspomniane przez Dantego w „Boskiej Komedii\".",
+      "drive_limit_min": 71
     },
     {
       "date": "25.09 (pt)",
@@ -2907,11 +2910,11 @@
       "label": "TRANZYT ← ALPY",
       "title": "Chianti → Kufstein (Tyrol)",
       "image": "kufstein",
-      "drive_km": 609,
-      "drive_h": "7–7,5 h",
+      "drive_km": 647,
+      "drive_h": "7,5–8 h",
       "base_id": null,
-      "depart": "7:30 rano z Castelnuovo Berardenga / Vagliagli",
-      "route": "Vagliagli → SS408/SP9 → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → A13 AT (Streckenmaut) → A12 Inntal → Kufstein (Tyrol)",
+      "depart": "7:30 rano z Murlo (Val di Merse)",
+      "route": "Murlo → SS223 Siena → tangenziale Siena → Siena Superstrada → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → A13 AT (Streckenmaut) → A12 Inntal → Kufstein (Tyrol)",
       "attractions": [],
       "food": {
         "place": "Bolonia lub Modena (postój autostradowy A1)",
@@ -2967,10 +2970,10 @@
       },
       "route_segments": [
         {
-          "segment": "Chianti (Vagliagli) → A1 Firenze-Sud",
-          "road": "SP9 → SS408 → SS222 → A1",
-          "km": "~50",
-          "note": "Z Vagliagli: SS222 Chiantigiana lub SP9 → A1 wjazd Firenze-Sud/Incisa. ~50 min."
+          "segment": "Murlo → A1 Firenze-Sud",
+          "road": "SS223 → tangenziale Siena → Siena Superstrada → A1",
+          "km": "~65",
+          "note": "Z Murlo: SS223 do Sieny, tangenziale, dalej Superstrada Siena-Firenze do A1. ~65 min (dłużej niż z Chianti — Murlo leży po drugiej stronie Sieny)."
         },
         {
           "segment": "Firenze → Bologna (obwodnica FI)",
@@ -2998,7 +3001,7 @@
         }
       ],
       "practical_tips": [
-        "Wyjazd 7:30 z Chianti → Kufstein ~16:00 (z 2 postojami po 20–30 min). Dzień o ~1 h krótszy niż dawny odcinek do Wasserburga.",
+        "Wyjazd 7:15 z Murlo → Kufstein ~16:00 (z 2 postojami po 20–30 min). Murlo leży dalej od A1 niż dawne Chianti — stąd wcześniejszy start.",
         "25.09 to PIĄTEK: ZTL Firenze aktywna 7:30–20:00 — zostań na A1 Variante di Valico.",
         "Winieta 10-dniowa z drogi tam (start 13.09) już WYGASŁA — na A12 Inntal potrzebna nowa 1-dniowa winieta AT (~€9,60) + osobno Streckenmaut A13 Brenner (€12,50).",
         "Kufstein: parkuj przy hotelu lub Parkhaus Innenstadt. Te same hotele co pierwszej nocy podróży."
@@ -3006,7 +3009,7 @@
       "fuel_stops": [
         {
           "name": "Stacja przed wyjazdem Chianti",
-          "location": "SP484 lub SS2 okolice Castelnuovo Berardenga",
+          "location": "SS223 lub tangenziale Siena",
           "road": "lokalna",
           "note": "Pełny bak — autostradowe stacje włoskie droższe."
         },
@@ -3031,7 +3034,7 @@
           "note": "Zatankuj przed granicą — w Niemczech (jutro) taniej, ale bak przyda się na wieczór."
         }
       ],
-      "narrative": "Ruszamy powoli w stronę domu — ale najpierw ostatni raz przez Alpy. Wyjeżdżamy o 7:30 z Chianti, ostatnie spojrzenie na wzgórza pokryte porannym oparem, zanim SS222 poprowadzi nas do Firenze Sud i wjazdu na A1 (ok. 45 minut). A1 na północ jest o tej porze jeszcze spokojna; Variante di Valico omija centrum Florencji łukiem wysoko nad doliną — dziś piątek, ZTL aktywna 7:30–20:00, więc zostajemy na autostradzie. Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni włoski espresso przy barze, zanim krajobraz zacznie się z powrotem zmieniać w alpejski. Odcinek A22 Modena–Brennero koło Werony bywa zatłoczony w szczycie, więc nie ma co się spieszyć. Na A13 Streckenmaut Brenner (€12,50, osobno od winiety — uwaga, ta z drogi tam już wygasła, potrzebna nowa 1-dniowa) i przejazd przez sam przełęcz, gdzie temperatura zauważalnie spada. Dalej A12 Inntal i po ~110 km od Brennera jesteśmy w Kufstein ok. 16:00 — w tym samym miasteczku nad Innem, w którym spaliśmy pierwszej nocy podróży, u stóp Alp, z twierdzą wyrastającą wprost ze skały. To o godzinę krótszy dzień niż dawny przejazd aż do Wasserburga, więc zostaje czas na spokojny wieczorny spacer po starówce i kolację w oberży. Jutro ostatni, najdłuższy odcinek — prosto do Poznania.",
+      "narrative": "Ruszamy powoli w stronę domu — ale najpierw ostatni raz przez Alpy. Wyjeżdżamy o 7:15 z Murlo (nieco wcześniej niż z Chianti — dojazd do A1 jest teraz dłuższy), ostatnie spojrzenie na wzgórza Val di Merse pokryte porannym oparem, zanim SS223 i tangenziale Sieny poprowadzą nas do Firenze Sud i wjazdu na A1 (ok. 65 minut). A1 na północ jest o tej porze jeszcze spokojna; Variante di Valico omija centrum Florencji łukiem wysoko nad doliną — dziś piątek, ZTL aktywna 7:30–20:00, więc zostajemy na autostradzie. Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni włoski espresso przy barze, zanim krajobraz zacznie się z powrotem zmieniać w alpejski. Odcinek A22 Modena–Brennero koło Werony bywa zatłoczony w szczycie, więc nie ma co się spieszyć. Na A13 Streckenmaut Brenner (€12,50, osobno od winiety — uwaga, ta z drogi tam już wygasła, potrzebna nowa 1-dniowa) i przejazd przez sam przełęcz, gdzie temperatura zauważalnie spada. Dalej A12 Inntal i po ~110 km od Brennera jesteśmy w Kufstein ok. 16:00 — w tym samym miasteczku nad Innem, w którym spaliśmy pierwszej nocy podróży, u stóp Alp, z twierdzą wyrastającą wprost ze skały. To wciąż wyraźnie krótszy dzień niż dawny przejazd aż do Wasserburga, więc zostaje czas na spokojny wieczorny spacer po starówce i kolację w oberży. Jutro ostatni, najdłuższy odcinek — prosto do Poznania.",
       "web_research": [
         {
           "topic": "ZTL Firenze — tranzyt piątek 25.09",
@@ -3092,11 +3095,11 @@
       },
       "eta_timeline": [
         {
-          "time": "07:30",
-          "event": "Wyjazd z bazy Chianti (SS222/A1 Firenze-Sud, ~50 km)"
+          "time": "07:15",
+          "event": "Wyjazd z bazy Murlo (SS223 → tangenziale Siena → A1 Firenze-Sud, ~65 km)"
         },
         {
-          "time": "08:30",
+          "time": "08:20",
           "event": "Firenze-Sud wjazd A1 — uwaga ZTL aktywna, trzymaj autostradę"
         },
         {
@@ -3319,8 +3322,8 @@
     "base2_options": [
       {
         "id": "chianti",
-        "label": "Chianti Senese",
-        "subtitle": "k. Castelnuovo Berardenga",
+        "label": "Chianti Senese (nieaktualne, patrz Murlo)",
+        "subtitle": "Murlo (Val di Merse) — nieaktualne, patrz bases[1]",
         "is_current": true,
         "distances": [
           {
@@ -3477,7 +3480,7 @@
             "per_person_max": 225
           },
           {
-            "label": "Baza 2 — Chianti / Castelnuovo Berardenga — 6 nocy",
+            "label": "Baza 2 — Murlo (Val di Merse) — 7 nocy",
             "detail": "€70–100/pokój",
             "per_person_min": 210,
             "per_person_max": 300
@@ -3786,7 +3789,7 @@
           {
             "id": "noclegi-baza2",
             "label": "Nocleg Baza 2 — Chianti (6 nocy, ok. 18–23.09)",
-            "detail": "Agriturismo lub B&B w okolicach Castelnuovo Berardenga. Chianti bardzo popularny — rezerwować z wyprzedzeniem. Budżet €70–100/pokój/noc × 2 pokoje.",
+            "detail": "Murlo (Val di Merse) — POTWIERDZONE: La Nobiltà del Tempo, Via Alcide De Gasperi 10/12, 53016 Murlo SI. Budżet €70–100/pokój/noc × 2 pokoje.",
             "deadline": "PILNIE — maj–czerwiec minął, rezerwuj teraz!",
             "priority": "high"
           },

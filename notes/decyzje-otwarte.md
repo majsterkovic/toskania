@@ -19,12 +19,8 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `plan_2bazy.json`.
 ## 2. San Gimignano — ✅ WDROŻONE (D13, 24.09) — patrz sekcja „Już zdecydowane" niżej
 - Pierwotnie odrzucone (55 min z [[Baza 2 - Chianti]], własny dzień = cięcie w napiętym bloku Chianti), ale po skróceniu powrotu z 3 do 2 dni (2026-07-19) zwolnił się dzień — powód odrzucenia zniknął. OSRM: realnie ~77 min (nie 55), z [[Monteriggioni]] po drodze.
 
-## 3. Relokacja bazy 2 — DECYZJA OTWARTA (research 2026-07-19)
-Analiza OSRM: obecna baza (Chianti, zwł. przy Vagliagli) przesunięta na północ względem środka ciężkości atrakcji. 3 propozycje w [[Baza 2 - kandydaci relokacji]]:
-- **A. Siena SE (Taverne/Isola d'Arbia)** — 40 min/dzień, najbliżej wszystkiego, 17 min do Sieny.
-- **B. Buonconvento** — 44 min/dzień, król południa (Val d'Orcia/Montalcino/Crete <40 min), ale Chianti/San Gimignano daleko; wymaga rewizji kolejności dni.
-- **C. Południowy skraj Chianti Classico (Castelnuovo B./Ponte a Bozzone)** — 45 min/dzień, trzyma klimat winnic, „obecny plan zrobiony dobrze" (byle nie Vagliagli, 73 min/dzień).
-Czeka na wybór użytkownika. Zmiana nie rusza listy atrakcji, tylko dojazdy (wariant B → też kolejność dni).
+## 3. Relokacja bazy 2 — ✅ ZDECYDOWANE I WDROŻONE (2026-07-20): Murlo
+Research (2026-07-19) dał 3 propozycje (A. Siena SE, B. Buonconvento, C. płd. skraj Chianti — szczegóły w [[Baza 2 - kandydaci relokacji]]), ale użytkownik samodzielnie znalazł i zarezerwował **inny** obiekt: La Nobiltà del Tempo w **Murlo** (Val di Merse, coords 43.1595/11.3158). Efekt OSRM: D9/D10/D13 się POPRAWIAJĄ (Val d'Orcia -29 min!), tylko D8 (Chianti) wyraźnie się pogarsza (+54 min, teraz najdłuższy dzień jazdy bloku). D7/D14 (transfery) prawie bez zmian. Pełne dane i wdrożenie w [[Baza 2 - kandydaci relokacji]].
 
 ## Już zdecydowane i wdrożone
 - ✅ **Powrót 3→2 dni** (2026-07-19): nocleg Kufstein (jak w drodze tam); zwolniony dzień → D13 [[San Gimignano]] + [[Monteriggioni]] (24.09).

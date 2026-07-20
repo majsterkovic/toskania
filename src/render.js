@@ -807,8 +807,8 @@ function timelineRow(day) {
 function groupPhases(days) {
   const phases = [
     { key: 'dojazd', eyebrow: 'Etap I', label: 'Dojazd', sub: 'Poznań → Toskania', days: [] },
-    { key: 'base1', eyebrow: 'Etap II', label: 'Garfagnana', sub: 'Baza 1 · Barga', baseId: 'base1', mapIndex: 1, days: [] },
-    { key: 'base2', eyebrow: 'Etap III', label: 'Chianti Senese', sub: 'Baza 2 · Castelnuovo B.', baseId: 'base2', mapIndex: 2, days: [] },
+    { key: 'base1', eyebrow: 'Etap II', baseId: 'base1', mapIndex: 1, days: [] },
+    { key: 'base2', eyebrow: 'Etap III', baseId: 'base2', mapIndex: 2, days: [] },
     { key: 'powrot', eyebrow: 'Etap IV', label: 'Powrót', sub: 'Toskania → Poznań', days: [] },
   ];
   let seenBase2 = false;
@@ -840,6 +840,10 @@ export function renderTimeline(plan) {
   const timelineHtml = phases.map((phase) => {
     const rows = phase.days.map(timelineRow).join('');
     const base = phase.baseId ? (plan.bases || []).find((b) => b.id === phase.baseId) : null;
+    if (base) {
+      phase.label = base.region ? base.region.split('·')[0].trim() : base.name;
+      phase.sub = `${base.label} · ${base.name}`;
+    }
     const baseMap = phase.baseId
       ? `<div class="tl-basemap">
            <div class="tl-basemap__map">

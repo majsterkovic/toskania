@@ -211,11 +211,14 @@ export function initDayMap(containerId, base, attractions) {
     ).addTo(map);
   }
 
-  if (latLngs.length === 1) {
-    map.setView(latLngs[0], 12);
-  } else if (latLngs.length > 1) {
-    map.fitBounds(window.L.latLngBounds(latLngs), { padding: [28, 28] });
+  function fitDayView() {
+    if (latLngs.length === 1) {
+      map.setView(latLngs[0], 12);
+    } else if (latLngs.length > 1) {
+      map.fitBounds(window.L.latLngBounds(latLngs), { padding: [28, 28] });
+    }
   }
+  fitDayView();
 
   // Async: pobierz trasę drogową + km (z cache lub OSRM)
   if (base?.coords && atts.length > 0) {
@@ -239,8 +242,11 @@ export function initDayMap(containerId, base, attractions) {
     });
   }
 
-  setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 150);
-  setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 450);
+  // Kontener mini-mapy dnia moze miec 0px wysokosci tuz po wstawieniu HTML
+  // (przed layoutem przegladarki) - invalidateSize() samo nie przelicza
+  // fitBounds/setView, wiec robimy to ponownie po naprawieniu rozmiaru.
+  setTimeout(() => { try { map.invalidateSize(); fitDayView(); } catch (_) {} }, 150);
+  setTimeout(() => { try { map.invalidateSize(); fitDayView(); } catch (_) {} }, 450);
 
   return map;
 }
@@ -306,10 +312,16 @@ export function initBaseMaps(plan) {
       });
     });
 
-    if (pts.length === 1) map.setView(pts[0], 11);
-    else if (pts.length > 1) map.fitBounds(L.latLngBounds(pts), { padding: [26, 26] });
+    function fitBaseView() {
+      if (pts.length === 1) map.setView(pts[0], 11);
+      else if (pts.length > 1) map.fitBounds(L.latLngBounds(pts), { padding: [26, 26] });
+    }
+    fitBaseView();
 
-    setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 150);
+    // Kontener moze miec 0px wysokosci tuz po wstawieniu HTML (przed layoutem
+    // przegladarki) - invalidateSize() samo nie przelicza fitBounds/setView.
+    setTimeout(() => { try { map.invalidateSize(); fitBaseView(); } catch (_) {} }, 150);
+    setTimeout(() => { try { map.invalidateSize(); fitBaseView(); } catch (_) {} }, 450);
 
     const legEl = document.getElementById(`basemap-legend-${baseId}`);
     if (legEl) {
@@ -496,24 +508,33 @@ export function initInteractiveMap(containerId, plan) {
 
   // ── Filter wiring ──────────────────────────────────────────
   const filterBtns = document.querySelectorAll('[data-imap-day]');
+  let currentView = 'all';
+
+  function fitCurrentView() {
+    if (currentView === 'all') {
+      if (allLatLngs.length) map.fitBounds(L.latLngBounds(allLatLngs), { padding: [36, 36] });
+      return;
+    }
+    const group = layerGroups[currentView];
+    if (!group) return;
+    const lls = [];
+    group.eachLayer(l => { if (l.getLatLng) lls.push(l.getLatLng()); });
+    if (lls.length === 1) map.setView(lls[0], 13);
+    else if (lls.length > 1) map.fitBounds(L.latLngBounds(lls), { padding: [52, 52] });
+  }
 
   function showDay(dayNum) {
+    currentView = dayNum;
     Object.values(layerGroups).forEach(g => map.removeLayer(g));
     map.removeLayer(allGroup);
 
     if (dayNum === 'all') {
       allGroup.addTo(map);
-      if (allLatLngs.length) map.fitBounds(L.latLngBounds(allLatLngs), { padding: [36, 36] });
     } else {
       const group = layerGroups[dayNum];
-      if (group) {
-        group.addTo(map);
-        const lls = [];
-        group.eachLayer(l => { if (l.getLatLng) lls.push(l.getLatLng()); });
-        if (lls.length === 1) map.setView(lls[0], 13);
-        else if (lls.length > 1) map.fitBounds(L.latLngBounds(lls), { padding: [52, 52] });
-      }
+      if (group) group.addTo(map);
     }
+    fitCurrentView();
 
     filterBtns.forEach(btn => {
       btn.classList.toggle('map-filter--active', btn.dataset.imapDay === String(dayNum));
@@ -531,8 +552,14 @@ export function initInteractiveMap(containerId, plan) {
 
   updatePanel('all');
 
-  setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 150);
-  setTimeout(() => { try { map.invalidateSize(); } catch (_) {} }, 450);
+  // Kontener moze miec 0px wysokosci w momencie pierwszego fitBounds (tuz po
+  // wstawieniu HTML, przed layoutem przegladarki) - Leaflet wtedy liczy zoom
+  // do (prawie) zerowego viewportu i ląduje na maxZoom, z markerami tysiace
+  // pikseli poza kadrem. invalidateSize() samo tego nie naprawia (nie
+  // przelicza ponownie fitBounds/setView), wiec po kazdym invalidateSize
+  // ponownie dopasowujemy widok do aktualnie wybranego dnia.
+  setTimeout(() => { try { map.invalidateSize(); fitCurrentView(); } catch (_) {} }, 150);
+  setTimeout(() => { try { map.invalidateSize(); fitCurrentView(); } catch (_) {} }, 450);
 
   window.addEventListener('resize', () => {
     try { map.invalidateSize(); } catch (_) {}

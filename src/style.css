@@ -1644,8 +1644,12 @@ body.lightbox-open {
 }
 
 .leaflet-container {
-  width: 100% !important;
-  height: 100% !important;
+  /* BEZ !important na width/height: ta klasa laduje na tym samym elemencie
+     co .leaflet-map/.leaflet-map--big (Leaflet dokleja ja do przekazanego
+     kontenera, nie tworzy zagniezdzonego dziecka). !important tutaj
+     nadpisywalo jawna wysokosc z .leaflet-map--big (np. 380px) na "100%
+     rodzica" - a .imap-wrap (flex, bez wlasnej ustalonej wysokosci) dawalo
+     w tym przez okrezne odniesienie efektywnie 0px. */
   font-family: var(--font-sans) !important;
 }
 

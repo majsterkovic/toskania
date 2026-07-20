@@ -313,7 +313,7 @@ function renderOpeningHours(day) {
   return `
     <details class="day-block oh-block">
       <summary class="block-label oh-summary">Godziny otwarcia</summary>
-      <ul class="oh-list">${rows}</ul>
+      <div class="collapse-body"><ul class="oh-list">${rows}</ul></div>
     </details>
   `;
 }
@@ -463,7 +463,7 @@ function renderEtaTimeline(etaList, openByDefault = false) {
   return `
     <details class="day-block eta-block"${openByDefault ? ' open' : ''}>
       <summary class="block-label oh-summary">Harmonogram godzinowy</summary>
-      <ul class="eta-list">${rows}</ul>
+      <div class="collapse-body"><ul class="eta-list">${rows}</ul></div>
     </details>
   `;
 }

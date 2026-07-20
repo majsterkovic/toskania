@@ -397,13 +397,23 @@ export function initInteractiveMap(containerId, plan) {
     layerGroups[day.day_num] = group;
 
     const base = basesById[day.base_id];
+    const destBase = day.next_base_id ? basesById[day.next_base_id] : null;
+    const isTransfer = destBase?.coords && destBase.id !== base?.id;
     const accentColor = BASE_ACCENT[day.base_id] || '#9a8f82';
     const atts = (day.attractions || []).filter(a => a.coords);
 
     // Base marker for this day
     if (base?.coords) {
       L.marker(base.coords, { icon: makePinIcon(accentColor, 20, true) })
-        .bindPopup(`<b>${base.name}</b><br><span style="opacity:.7;font-size:.85em">baza · Dzień ${day.day_num}</span>`)
+        .bindPopup(`<b>${base.name}</b><br><span style="opacity:.7;font-size:.85em">${isTransfer ? 'baza — start' : 'baza'} · Dzień ${day.day_num}</span>`)
+        .addTo(group);
+    }
+
+    // Dzień transferu: pokaż też nową bazę (koniec trasy) tym samym stylem
+    if (isTransfer) {
+      const destColor = BASE_ACCENT[destBase.id] || '#9a8f82';
+      L.marker(destBase.coords, { icon: makePinIcon(destColor, 20, true) })
+        .bindPopup(`<b>${destBase.name}</b><br><span style="opacity:.7;font-size:.85em">baza — cel · Dzień ${day.day_num}</span>`)
         .addTo(group);
     }
 
@@ -427,9 +437,13 @@ export function initInteractiveMap(containerId, plan) {
         .addTo(allGroup);
     });
 
+    if (isTransfer) routeCoords.push(destBase.coords);
+
     // Route polyline: prosta linia jako fallback, zastąpiona trasą drogową z OSRM
     let dayPolyline = null;
-    const roundTripCoords = base?.coords ? [...routeCoords, base.coords] : routeCoords;
+    // Dzień zwykły: pętla base → atrakcje → base. Dzień transferu: routeCoords
+    // już kończy się na destBase (jednokierunkowo), nie domykamy pętli.
+    const roundTripCoords = isTransfer ? routeCoords : (base?.coords ? [...routeCoords, base.coords] : routeCoords);
     if (routeCoords.length > 1) {
       dayPolyline = L.polyline(routeCoords, {
         color: accentColor, weight: 2, opacity: 0.45, dashArray: '7 5',
@@ -464,6 +478,7 @@ export function initInteractiveMap(containerId, plan) {
     }
     const day = tuscanyDays.find(d => d.day_num === dayNum);
     const base = day ? basesById[day.base_id] : null;
+    const destBase = day?.next_base_id ? basesById[day.next_base_id] : null;
     if (!day) { panel.innerHTML = ''; return; }
 
     const atts = (day.attractions || []).filter(a => a.coords);
@@ -509,7 +524,7 @@ export function initInteractiveMap(containerId, plan) {
         <div class="imap-panel__day">Dzień ${day.day_num}</div>
         <div class="imap-panel__date">${day.date || ''}</div>
         <div class="imap-panel__title">${day.title || ''}</div>
-        ${base ? `<div class="imap-panel__base">📍 ${base.name}</div>` : ''}
+        ${base ? `<div class="imap-panel__base">📍 ${base.name}${destBase && destBase.id !== base.id ? ` → ${destBase.name}` : ''}</div>` : ''}
         ${kmHtml}
       </div>
       <ul class="imap-att-list">${attItems || '<li class="imap-att imap-att--empty">Brak atrakcji z współrzędnymi</li>'}</ul>

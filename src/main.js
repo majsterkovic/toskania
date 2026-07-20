@@ -34,7 +34,8 @@ function renderDayView(dayNum) {
   window.scrollTo(0, 0);
   if (day.base_id) {
     const base = plan.bases.find((b) => b.id === day.base_id);
-    whenLeaflet(() => initDayMap(`map-day-${dayNum}`, base, day.attractions));
+    const destBase = day.next_base_id ? plan.bases.find((b) => b.id === day.next_base_id) : null;
+    whenLeaflet(() => initDayMap(`map-day-${dayNum}`, base, day.attractions, destBase));
   }
 }
 

@@ -174,9 +174,9 @@ function updateFeasibilityBadge(dayNum, result) {
 }
 
 /**
- * Mini mapa dnia — baza + atrakcje dnia
+ * Mini mapa dnia — baza + atrakcje dnia (+ opcjonalnie nowa baza w dniu transferu)
  */
-export function initDayMap(containerId, base, attractions) {
+export function initDayMap(containerId, base, attractions, destBase) {
   if (!window.L) return;
   const el = document.getElementById(containerId);
   if (!el) return;
@@ -187,10 +187,11 @@ export function initDayMap(containerId, base, attractions) {
 
   const latLngs = [];
   const atts = (attractions || []).filter(a => a.coords);
+  const isTransfer = destBase?.coords && (destBase.id !== base?.id);
 
   if (base?.coords) {
     window.L.marker(base.coords, { icon: makeIcon('base') })
-      .bindPopup(`<strong>${base.name}</strong><br><em>baza</em>`, { maxWidth: 160 })
+      .bindPopup(`<strong>${base.name}</strong><br><em>${isTransfer ? 'baza — start' : 'baza'}</em>`, { maxWidth: 160 })
       .addTo(map);
     latLngs.push(base.coords);
   }
@@ -202,11 +203,18 @@ export function initDayMap(containerId, base, attractions) {
       .addTo(map);
   });
 
+  if (isTransfer) {
+    window.L.marker(destBase.coords, { icon: makeIcon('base') })
+      .bindPopup(`<strong>${destBase.name}</strong><br><em>baza — cel</em>`, { maxWidth: 160 })
+      .addTo(map);
+    latLngs.push(destBase.coords);
+  }
+
   // Fallback: prosta linia (zastąpiona trasą drogową gdy OSRM odpowie)
   let routeLayer = null;
-  if (base?.coords && latLngs.length > 1) {
+  if (latLngs.length > 1) {
     routeLayer = window.L.polyline(
-      [base.coords, ...latLngs.slice(1)],
+      latLngs,
       { color: '#9a8f82', weight: 1.5, dashArray: '4 3', opacity: 0.4 }
     ).addTo(map);
   }
@@ -221,9 +229,12 @@ export function initDayMap(containerId, base, attractions) {
   fitDayView();
 
   // Async: pobierz trasę drogową + km (z cache lub OSRM)
-  if (base?.coords && atts.length > 0) {
-    // Round trip: base → attractions → base
-    const waypoints = [base.coords, ...atts.map(a => a.coords), base.coords];
+  if (base?.coords && (atts.length > 0 || isTransfer)) {
+    // Dzień transferu: trasa jednokierunkowa base → attractions → nowa baza.
+    // Zwykły dzień: pętla base → attractions → base (powrót do tej samej bazy).
+    const waypoints = isTransfer
+      ? [base.coords, ...atts.map(a => a.coords), destBase.coords]
+      : [base.coords, ...atts.map(a => a.coords), base.coords];
     fetchOSRMRoute(waypoints).then(result => {
       if (!result || !map._container) return;
       const { route, distanceKm } = result;

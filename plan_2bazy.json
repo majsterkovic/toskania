@@ -7,7 +7,7 @@
     "calendar_days": "12.09 (sob) – 26.09 (sob) = 15 dni aktywnej podróży; 27.09 (nd) = bufor/deadline powrotu",
     "participants_note": "Plan prywatny — wariant 2 baz",
     "route_summary": {
-      "outbound_km": "~1570 km w 2 dni (Poznań → Kufstein → Barga)",
+      "outbound_km": "~1580 km w 2 dni (Poznań → Unterhaching → Barga)",
       "return_km": "~1530 km w 2 dni (Chianti → Kufstein → Poznań)",
       "total_km": "~3100 km",
       "tuscany_days": 11,
@@ -198,10 +198,10 @@
           "type": "transit"
         },
         {
-          "label": "Kufstein (Tyrol)",
+          "label": "Unterhaching (Monachium)",
           "coords": [
-            47.583,
-            12.166
+            48.057,
+            11.606
           ],
           "type": "transit_night"
         },
@@ -403,9 +403,9 @@
   ],
   "transit_stops": {
     "outbound": {
-      "night_1": "Kufstein (Tyrol, Austria) — 40 km od Innsbrucku, u stóp Alp, nad Innem. Festung Kufstein, klimatyczne centrum, hotele €55–90/noc",
-      "image": "wasserburg",
-      "gps_hint": "Naviguj: Kufstein, Tirol, Austria"
+      "night_1": "Unterhaching (Monachium, Niemcy) — Hotel Fresh Inn, Grünwalderweg 20d. POTWIERDZONA REZERWACJA (5 dorosłych, 2 apartamenty).",
+      "image": "kufstein",
+      "gps_hint": "Naviguj: Grünwalderweg 20d, 82008 Unterhaching"
     },
     "return": {
       "night_1": "Wasserburg am Inn (Bawaria) — malownicze miasto na zakolu Innu, 45 km od Monachium, Gasthof €45–65/noc",
@@ -421,13 +421,13 @@
       "day_num": 1,
       "type": "transit",
       "label": "TRANZYT → NIEMCY",
-      "title": "Poznań → Kufstein (Tyrol)",
+      "title": "Poznań → Unterhaching (Monachium)",
       "image": "kufstein",
-      "drive_km": 1010,
-      "drive_h": "10–11 h",
+      "drive_km": 935,
+      "drive_h": "9,5–10 h",
       "base_id": null,
       "depart": "6:00–7:00 rano z Poznania",
-      "route": "A2 west (Świecko) → A12 → Berliner Ring A10 → A9 south → Nürnberg → Monachium → A8 → A93 south → Kufstein (Tyrol, Austria)",
+      "route": "A2 west (Świecko) → A12 → Berliner Ring A10 → A9 south → Nürnberg → Monachium → Unterhaching (Bawaria)",
       "route_segments": [
         {
           "segment": "Poznań → Świecko (granica PL/DE)",
@@ -454,10 +454,10 @@
           "note": "Ostatnie tankowanie w DE przed Austrią"
         },
         {
-          "segment": "Monachium → Kufstein (Austria)",
-          "road": "A8 east → A93 south",
-          "km": "~85",
-          "note": "Wjazd do Austrii — odcinek granica–Kufstein-Süd bezwinietowy; w dniu 1 winieta niepotrzebna"
+          "segment": "Monachium → Unterhaching (Bawaria)",
+          "road": "A8/A995 south",
+          "km": "~15",
+          "note": "Przedmieście na południe od Monachium — skraca najdłuższy dzień trasy o ~85 km względem noclegu w Kufstein"
         }
       ],
       "attractions": [],
@@ -469,71 +469,30 @@
         "price": "~€8–12"
       },
       "accommodation": {
-        "place": "Kufstein (Tyrol — nocleg tranzytowy)",
-        "note": "Klimatyczne miasteczko nad Innem u stóp Alp, 40 km od Innsbrucku. Festung Kufstein widoczna z centrum — idealne miejsce na nocleg tranzytowy przed Brennerem.",
-        "price": "€55–90/noc",
-        "booking_tip": "Booking lub direct — polecane hotele poniżej. Direct booking bywa tańsze w mniejszych pensjonatach.",
-        "gps_hint": "Naviguj: Kufstein, Tirol, Austria",
-        "options": [
-          {
-            "name": "Hotel Andreas Hofer",
-            "type": "Hotel",
-            "address": "Giessenbach 1, 6330 Kufstein",
-            "price": "€65–90/noc",
-            "parking": "bezpłatny (własny parking)",
-            "note": "Spokojne położenie, rodzinna atmosfera, 10 min do centrum"
-          },
-          {
-            "name": "Gasthof Auracher Löchl",
-            "type": "Historyczny Gasthof",
-            "address": "Römerstraße 3, 6330 Kufstein",
-            "price": "€85–120/noc",
-            "parking": "Parkhaus Kufstein Innenstadt (3 min pieszo, €12/noc)",
-            "note": "Legendarny Gasthof nad Innem z 1410 roku — wyjątkowa lokalizacja"
-          },
-          {
-            "name": "Hotel Alpenrose",
-            "type": "Hotel",
-            "address": "Stadtplatz Kufstein",
-            "price": "€70–95/noc",
-            "parking": "parking publiczny w pobliżu",
-            "note": "Centralne położenie, widok na Festung"
-          },
-          {
-            "name": "Pension Gästehaus Inntal",
-            "type": "Pension",
-            "address": "okolice Kufstein",
-            "price": "€55–70/noc",
-            "parking": "bezpłatny",
-            "note": "Tańsza opcja budżetowa po tej stronie granicy"
-          }
-        ]
+        "place": "Hotel Fresh Inn — Unterhaching (Monachium)",
+        "note": "POTWIERDZONA REZERWACJA — Grünwalderweg 20d, 82008 Unterhaching. 5 dorosłych, 2 apartamenty. Zameldowanie 15:00–22:00, wymeldowanie 06:00–11:00. Skraca najdłuższy dzień trasy (Poznań–Kufstein) o ~85 km, resztę odcinka do Kufsteinu jedziemy rano dnia 2.",
+        "price": "cena do uzupełnienia (potwierdzona rezerwacja)",
+        "booking_tip": "Zarezerwowane — bez dalszych działań.",
+        "gps_hint": "Naviguj: Grünwalderweg 20d, 82008 Unterhaching (coords 48.0569, 11.6057)"
       },
       "practical_tips": [
-        "Kup e-winietę AT online przed wyjazdem — €12,80, start 12.09",
+        "Kup e-winietę AT online przed wyjazdem — €12,80, start 13.09 (dzień 2, pierwszy wjazd na austriacką autostradę)",
         "Tankuj w Niemczech przed Austrią — benzyna tańsza (~€0.15–0.20/L różnica)",
         "Frankenwald Ost (A9 km 254) — jedyna mostowa Raststätte w Niemczech, dobry postój na lunch",
-        "Kufstein: parkuj przy hotelu lub Parkhaus Innenstadt — stare miasto bez wjazdu"
+        "Unterhaching: hotel ma własny parking — bez szukania miejsca wieczorem"
       ],
       "parking": {
-        "destination": "Kufstein — nocleg tranzytowy",
+        "destination": "Unterhaching — nocleg tranzytowy",
         "options": [
           {
-            "name": "Parking hotelu — priorytet",
+            "name": "Parking hotelu Fresh Inn",
             "type": "hotel",
             "price": "gratis lub wliczony",
-            "gps_hint": "Kufstein, Tirol, Austria",
-            "note": "Wybieraj hotele z własnym parkingiem (Andreas Hofer, Pension Inntal)"
-          },
-          {
-            "name": "Parkhaus Kufstein Innenstadt",
-            "type": "garaż",
-            "price": "~€12–14/noc",
-            "gps_hint": "Stadtpark, 6330 Kufstein",
-            "note": "24h, 2 min pieszo do centrum i historycznych hoteli"
+            "gps_hint": "Grünwalderweg 20d, 82008 Unterhaching",
+            "note": "Potwierdzona rezerwacja — parking przy hotelu"
           }
         ],
-        "tip": "Jeśli hotel bez parkingu — zapytaj o bliski parking przy check-in"
+        "tip": "Hotel na przedmieściu, bez ograniczeń typu ZTL czy stara zabudowa"
       },
       "fuel_stops": [
         {
@@ -549,16 +508,9 @@
           "road": "A9",
           "hours": "24/7",
           "note": "Aral, McDonald's — dobry postój lunchowy ~700 km od startu"
-        },
-        {
-          "name": "Raststätte München-Nord lub Holzkirchen",
-          "location": "A9/A8 okolice Monachium",
-          "road": "A9 → A8",
-          "hours": "24/7",
-          "note": "Ostatnie tankowanie w Niemczech przed Austrią — paliwo tańsze niż w AT"
         }
       ],
-      "narrative": "Budzik dzwoni jeszcze przed świtem — wyjeżdżamy z Poznania ok. 5:30–6:00, sobota, ulice puste, ciężarówek na trasie wyraźnie mniej niż w tygodniu. Przez Świecko na A12 w kierunku Berlina, obwodnicą A10 omijamy centrum, dalej A9 na południe — kilometry mijają w rytmie kawy z termosu i planów na najbliższe dwa tygodnie. Ok. 11:00 postój na lunch w Raststätte Frankenwald Ost — charakterystyczny most zawieszony nad samą autostradą, jedna z niewielu takich konstrukcji w Niemczech, więc nawet przerwa na kanapkę ma tu coś z atrakcji. To też dobre miejsce na tankowanie: paliwo w Niemczech wyraźnie tańsze niż w Austrii, więc warto nabić bak do pełna. Dalej A9 przez Norymbergę i Monachium, krajobraz robi się coraz bardziej pofałdowany. Za Monachium A8, potem A93 doliną Inn na południe — granica austriacka ok. 15:30, e-winieta już aktywna, więc bez zatrzymywania się przy bramkach. Kufstein leży tuż za granicą, na miejscu ok. 16:00, gdy słońce jest jeszcze wysoko, ale światło zaczyna nabierać tego miodowego, popołudniowego odcienia. Małe tyrolskie miasto wyrasta wprost ze skały nad Innem, urokliwa starówka kryje się w cieniu twierdzy, a noclegi są tu wyraźnie tańsze niż w pobliskim Innsbrucku. Kolacja w oberży i wcześnie spać — jutro czeka nas spokojny dzień przez Brenner, prosto w stronę Toskanii.",
+      "narrative": "Budzik dzwoni jeszcze przed świtem — wyjeżdżamy z Poznania ok. 5:30–6:00, sobota, ulice puste, ciężarówek na trasie wyraźnie mniej niż w tygodniu. Przez Świecko na A12 w kierunku Berlina, obwodnicą A10 omijamy centrum, dalej A9 na południe — kilometry mijają w rytmie kawy z termosu i planów na najbliższe dwa tygodnie. Ok. 11:00 postój na lunch w Raststätte Frankenwald Ost — charakterystyczny most zawieszony nad samą autostradą, jedna z niewielu takich konstrukcji w Niemczech, więc nawet przerwa na kanapkę ma tu coś z atrakcji. To też dobre miejsce na tankowanie: paliwo w Niemczech wyraźnie tańsze niż w Austrii, więc warto nabić bak do pełna. Dalej A9 przez Norymbergę i Monachium, krajobraz robi się coraz bardziej pofałdowany. Unterhaching leży tuż za południową granicą miasta — na miejscu ok. 15:30–16:00, bez wjeżdżania w monachijski ruch. Hotel Fresh Inn to zwykły, wygodny nocleg tranzytowy — kolacja w pobliżu i wcześnie spać, bo jutro czeka jeszcze kawałek Niemiec, Brenner i Toskania.",
       "web_research": [
         {
           "topic": "E-winieta Austria 10-dniowa",
@@ -618,31 +570,27 @@
         },
         {
           "time": "14:30",
-          "event": "Monachium Ost — A8 kierunek Salzburg"
+          "event": "Monachium — zjazd A8/A995 kierunek Unterhaching"
         },
         {
           "time": "15:30",
-          "event": "Granica AT (Kiefersfelden) — e-winieta aktywna"
-        },
-        {
-          "time": "16:00",
-          "event": "Kufstein — hotel, parking Innenstadt lub hotelowy"
+          "event": "Unterhaching — Hotel Fresh Inn, parking hotelowy"
         }
       ],
-      "summary": "Pierwszy dzień drogi do Toskanii (~start 5:30–6:00): Poznań → Niemcy (A12/A10/A9) → Austria. Nocleg w Kufstein — tyrolskie miasteczko u stóp Alp, tuż przed przełęczą Brenner."
+      "summary": "Pierwszy dzień drogi do Toskanii (~start 5:30–6:00): Poznań → Niemcy (A12/A10/A9) → Unterhaching (Monachium). Nocleg tranzytowy tuż pod Monachium — o ~85 km krócej niż dawny nocleg w Kufstein, reszta Austrii i Brenner zostają na dzień 2."
     },
     {
       "date": "13.09 (nd)",
       "day_num": 2,
       "type": "transit",
       "label": "TRANZYT → TOSKANIA",
-      "title": "Kufstein → Barga (Garfagnana)",
+      "title": "Unterhaching → Barga (Garfagnana)",
       "image": "barga",
-      "drive_km": 560,
-      "drive_h": "7–7,5 h",
+      "drive_km": 645,
+      "drive_h": "8–8,5 h",
       "base_id": "base1",
-      "depart": "7:00 rano z Kufstein",
-      "route": "A12 Inntal → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
+      "depart": "6:30 rano z Unterhaching",
+      "route": "A995/A8 → Kufstein (Austria) → A12 Inntal → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
       "attractions": [],
       "food": {
         "place": "Rovereto Sud (A22) — pierwszy wybór",
@@ -684,10 +632,16 @@
       },
       "route_segments": [
         {
+          "segment": "Unterhaching → Kufstein (Austria)",
+          "road": "A995 → A8 → A93 south",
+          "km": "~83",
+          "note": "Ostatnie tankowanie w DE przed Austrią (okolice Holzkirchen). Wjazd do Austrii — odcinek granica–Kufstein-Süd bezwinietowy."
+        },
+        {
           "segment": "Kufstein → Innsbruck",
           "road": "A12 Inntal",
           "km": "~90",
-          "note": "1-dniowa winieta AT na 13.09 (€9,60) — kup online przed wyjazdem z Kufstein"
+          "note": "1-dniowa winieta AT na 13.09 (€9,60) — kup online przed wyjazdem"
         },
         {
           "segment": "Innsbruck → Brenner",
@@ -727,6 +681,13 @@
       ],
       "fuel_stops": [
         {
+          "name": "Raststätte München-Nord lub Holzkirchen",
+          "location": "A995/A8 okolice Monachium, przed Kufstein",
+          "road": "A995 → A8",
+          "hours": "24/7",
+          "note": "Ostatnie tankowanie w Niemczech przed Austrią — paliwo tańsze niż w AT"
+        },
+        {
           "name": "Eni/OMV Kufstein / Innsbruck area",
           "location": "A12/A93, okolice Innsbrucku",
           "road": "A12",
@@ -748,7 +709,7 @@
           "note": "Ostatnie tankowanie w dolinie przed podjazdem do Barga/Mologno"
         }
       ],
-      "narrative": "Wyjeżdżamy z Kufstein o 7:00 — niedzielny poranek, na trasie prawie pusto. A12 Inntal do Innsbrucku (~90 km), stamtąd A13 przez Brenner (Streckenmaut €12,50, ~35 km) do Włoch — o tej porze w niedzielę na moście Lueg prawie bez kolejek, prawdziwy ruch powrotny z Alp rusza dopiero później. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, tarasowe winnice zastępują alpejskie łąki, po prawej jeszcze przez chwilę majaczą poszarpane granie Dolomitów. Ok. 10:00 wczesny lunch w Rovereto Sud (Tre Pini) — zjazd tuż przy autostradzie, szybka obsługa, duży parking; do Werony celowo nie zbaczamy, żeby nie tracić czasu w tamtejszym ZTL. Dalej A22 mija Weronę i Mantovę bez zjazdu do centrów, potem po Modenie A1 Variante di Valico prowadzi wysoko nad doliną i łukiem omija Florencję, a A11 kieruje nas już w stronę morza, aż do zjazdu Lucca Est. Ostatnie ~50 km to zupełnie inny rytm jazdy — dolina Serchio, wąska górska droga SR445 wśród kasztanowców, zakręt za zakrętem, coraz bardziej zielono i cicho, tylko od czasu do czasu mija nas traktor. Do agriturismo w Mologno docieramy ok. 15:00–15:30 — popołudniowe słońce sączy się przez liście, w powietrzu unosi się zapach suchej ziemi. Reszta dnia wolna, bagaże można rozpakować bez pośpiechu — Toskania właśnie się zaczyna.",
+      "narrative": "Wyjeżdżamy z Unterhaching o 6:30 — niedzielny poranek, na trasie prawie pusto. Krótki odcinek A995/A8/A93 doliną Inn (~83 km) prowadzi do Kufstein, gdzie tankujemy do pełna po niemieckich cenach tuż przed granicą. A12 Inntal do Innsbrucku (~90 km), stamtąd A13 przez Brenner (Streckenmaut €12,50, ~35 km) do Włoch — o tej porze w niedzielę na moście Lueg prawie bez kolejek, prawdziwy ruch powrotny z Alp rusza dopiero później. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, tarasowe winnice zastępują alpejskie łąki, po prawej jeszcze przez chwilę majaczą poszarpane granie Dolomitów. Ok. 10:00 wczesny lunch w Rovereto Sud (Tre Pini) — zjazd tuż przy autostradzie, szybka obsługa, duży parking; do Werony celowo nie zbaczamy, żeby nie tracić czasu w tamtejszym ZTL. Dalej A22 mija Weronę i Mantovę bez zjazdu do centrów, potem po Modenie A1 Variante di Valico prowadzi wysoko nad doliną i łukiem omija Florencję, a A11 kieruje nas już w stronę morza, aż do zjazdu Lucca Est. Ostatnie ~50 km to zupełnie inny rytm jazdy — dolina Serchio, wąska górska droga SR445 wśród kasztanowców, zakręt za zakrętem, coraz bardziej zielono i cicho, tylko od czasu do czasu mija nas traktor. Do agriturismo w Mologno docieramy ok. 15:00–15:30 — popołudniowe słońce sączy się przez liście, w powietrzu unosi się zapach suchej ziemi. Reszta dnia wolna, bagaże można rozpakować bez pośpiechu — Toskania właśnie się zaczyna.",
       "web_research": [
         {
           "topic": "Streckenmaut A13 Brenner (AT) 2026",
@@ -801,39 +762,43 @@
       ],
       "eta_timeline": [
         {
-          "time": "07:00",
-          "event": "Wyjazd z Kufstein (A12 Inntal)"
+          "time": "06:30",
+          "event": "Wyjazd z Unterhaching (A995/A8 kierunek Kufstein)"
         },
         {
-          "time": "07:45",
+          "time": "07:20",
+          "event": "Kufstein — ostatnie tankowanie w DE, wjazd na A12 Inntal"
+        },
+        {
+          "time": "08:05",
           "event": "Innsbruck → wjazd na A13 Brenner"
         },
         {
-          "time": "08:15",
+          "time": "08:35",
           "event": "A13 Brenner (możliwy korek Lueg)"
         },
         {
-          "time": "09:10",
+          "time": "09:30",
           "event": "Bolzano — A22 na południe"
         },
         {
-          "time": "10:00",
+          "time": "10:20",
           "event": "Wczesny lunch Rovereto Sud (Tre Pini)"
         },
         {
-          "time": "10:45",
+          "time": "11:05",
           "event": "Dalej A22 na południe (Verona, Mantova)"
         },
         {
-          "time": "12:35",
+          "time": "12:55",
           "event": "Koniec A22 (Campogalliano) → A1 Variante di Valico"
         },
         {
-          "time": "14:15",
+          "time": "14:35",
           "event": "Zjazd Lucca Est → SS12/SR445"
         },
         {
-          "time": "15:15",
+          "time": "15:35",
           "event": "Przyjazd Mologno / Barga — check-in"
         }
       ],
@@ -883,7 +848,7 @@
         ],
         "tip": "Przy noclegu Mologno: parkuj przy agriturismo. Wieczorny spacer do Barga Vecchia: auto zostaje w Mologno lub Porta Reale"
       },
-      "summary": "Drugi dzień tranzytu: Kufstein → A13 przez przełęcz Brenner/Brennero (opłata odcinkowa) → Toskania. Zameldowanie w Bargze, w dolinie Garfagnana — górskiej dolinie rzeki Serchio między Alpami Apuańskimi a Apeninami."
+      "summary": "Drugi dzień tranzytu: Unterhaching → Kufstein → A13 przez przełęcz Brenner/Brennero (opłata odcinkowa) → Toskania. Zameldowanie w Bargze, w dolinie Garfagnana — górskiej dolinie rzeki Serchio między Alpami Apuańskimi a Apeninami."
     },
     {
       "date": "14.09 (pn)",
@@ -3464,11 +3429,11 @@
         "icon": "🏨",
         "per_person_min": 316,
         "per_person_max": 342,
-        "note": "14 nocy: 1× Kufstein (tam) + 5× Barga + 7× Murlo + 1× Kufstein (powrót). Powrót skrócony do 2 dni — jedna noc tranzytowa zamiast dwóch — a zaoszczędzona noc przeznaczona na dodatkowy dzień w bazie 2 (San Gimignano). Łączna liczba nocy bez zmian. Baza 1 i Baza 2 to kwoty z potwierdzonych rezerwacji, reszta to szacunki.",
+        "note": "14 nocy: 1× Unterhaching (tam) + 5× Barga + 7× Murlo + 1× Kufstein (powrót). Powrót skrócony do 2 dni — jedna noc tranzytowa zamiast dwóch — a zaoszczędzona noc przeznaczona na dodatkowy dzień w bazie 2 (San Gimignano). Łączna liczba nocy bez zmian. Baza 1 i Baza 2 to kwoty z potwierdzonych rezerwacji, reszta to szacunki.",
         "items": [
           {
-            "label": "Kufstein (Tyrol) — 1 noc (tranzyt tam)",
-            "detail": "€45–65/pokój, ~2 pokoje na 5 osób",
+            "label": "Unterhaching (Monachium) — 1 noc (tranzyt tam)",
+            "detail": "POTWIERDZONA REZERWACJA (Hotel Fresh Inn, 2 apartamenty) — cena do uzupełnienia, szacunek jak dawny Kufstein",
             "per_person_min": 18,
             "per_person_max": 26
           },
@@ -3794,9 +3759,9 @@
           },
           {
             "id": "noclegi-tranzyt",
-            "label": "Noclegi tranzytowe (Kufstein, Wasserburg, Hof)",
-            "detail": "Hotele tranzytowe — mniej krytyczne, można rezerwować 4–8 tygodni przed. Booking.com wystarczy. Kufstein (Tyrol) — klimatyczne miasteczko nad Innem.",
-            "deadline": "lipiec 2026 — zarezerwuj teraz! Kufstein szczególnie.",
+            "label": "Noclegi tranzytowe — pozostałe (Kufstein powrót)",
+            "detail": "Unterhaching (tam, Hotel Fresh Inn) już POTWIERDZONY. Kufstein na powrót (25.09) wciąż do zarezerwowania — Booking.com wystarczy.",
+            "deadline": "lipiec 2026 — zarezerwuj teraz!",
             "priority": "medium"
           },
           {

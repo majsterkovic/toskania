@@ -1,6 +1,6 @@
 # Toskania 2026 — plan wycieczki
 
-Statyczna strona (Vite + Leaflet) prezentująca plan wycieczki samochodowej rodziny 4-osobowej po Toskanii, 12–27.09.2026. Dane trasy/dni/atrakcji żyją w `plan_2bazy.json` (ładowany przez `src/main.js`), renderowane przez `src/render.js` do `#app`.
+Statyczna strona (Vite + Leaflet) prezentująca plan wycieczki samochodowej grupy 5-osobowej po Toskanii, 12–27.09.2026. Dane trasy/dni/atrakcji żyją w `plan_2bazy.json` (ładowany przez `src/main.js`), renderowane przez `src/render.js` do `#app`.
 
 **Decyzja: wariant 2-bazowy (Barga/Garfagnana → Chianti/Castelnuovo Berardenga) jest jedynym prezentowanym planem.** `plan.json` (stary wariant 3-bazowy) nie jest już importowany ani przełączalny na stronie — historia w git, nie w UI.
 

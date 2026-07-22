@@ -3,4 +3,5 @@ dist/
 .DS_Store
 public/images/*.webp
 screenshots/
+notes/grupa-prywatne.md
 

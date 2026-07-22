@@ -3455,47 +3455,46 @@
     ]
   },
   "costs": {
-    "persons": 4,
-    "rooms": 2,
-    "note": "Szacunki dla 4 dorosłych, 2 pokoje dwuosobowe. Paliwo na tranzyt Poznań↔Toskania nie jest uwzględnione (zależy od samochodu i podziału kosztów).",
+    "persons": 5,
+    "note": "Szacunki dla grupy 5-osobowej. Noclegi w Bazie 1 i Bazie 2 to potwierdzone rezerwacje (kwoty rzeczywiste), reszta to szacunki. Paliwo na tranzyt Poznań↔Toskania nie jest uwzględnione (zależy od samochodu i podziału kosztów).",
     "categories": [
       {
         "id": "accommodation",
         "name": "Noclegi",
         "icon": "🏨",
-        "per_person_min": 425,
-        "per_person_max": 623,
-        "note": "14 nocy: 1× Kufstein (tam) + 5× Barga + 7× Chianti + 1× Kufstein (powrót). Powrót skrócony do 2 dni — jedna noc tranzytowa zamiast dwóch — a zaoszczędzona noc przeznaczona na dodatkowy dzień w bazie Chianti (San Gimignano). Łączna liczba nocy bez zmian.",
+        "per_person_min": 316,
+        "per_person_max": 342,
+        "note": "14 nocy: 1× Kufstein (tam) + 5× Barga + 7× Murlo + 1× Kufstein (powrót). Powrót skrócony do 2 dni — jedna noc tranzytowa zamiast dwóch — a zaoszczędzona noc przeznaczona na dodatkowy dzień w bazie 2 (San Gimignano). Łączna liczba nocy bez zmian. Baza 1 i Baza 2 to kwoty z potwierdzonych rezerwacji, reszta to szacunki.",
         "items": [
           {
             "label": "Kufstein (Tyrol) — 1 noc (tranzyt tam)",
-            "detail": "€45–65/pokój",
-            "per_person_min": 23,
-            "per_person_max": 33
+            "detail": "€45–65/pokój, ~2 pokoje na 5 osób",
+            "per_person_min": 18,
+            "per_person_max": 26
           },
           {
             "label": "Baza 1 — Garfagnana / Barga — 5 nocy",
-            "detail": "€60–90/pokój",
-            "per_person_min": 150,
-            "per_person_max": 225
+            "detail": "€688,75 razem (potwierdzona rezerwacja)",
+            "per_person_min": 138,
+            "per_person_max": 138
           },
           {
             "label": "Baza 2 — Murlo (Val di Merse) — 7 nocy",
-            "detail": "€70–100/pokój",
-            "per_person_min": 210,
-            "per_person_max": 300
+            "detail": "€630 razem (potwierdzona rezerwacja)",
+            "per_person_min": 126,
+            "per_person_max": 126
           },
           {
             "label": "Wasserburg am Inn — 1 noc (tranzyt powrót)",
-            "detail": "€45–75/pokój",
-            "per_person_min": 22,
-            "per_person_max": 37
+            "detail": "€45–75/pokój, ~2 pokoje na 5 osób",
+            "per_person_min": 18,
+            "per_person_max": 30
           },
           {
             "label": "Hof an der Saale — 1 noc (tranzyt powrót)",
-            "detail": "€40–55/pokój",
-            "per_person_min": 20,
-            "per_person_max": 28
+            "detail": "€40–55/pokój, ~2 pokoje na 5 osób",
+            "per_person_min": 16,
+            "per_person_max": 22
           }
         ]
       },
@@ -3503,15 +3502,15 @@
         "id": "fuel",
         "name": "Paliwo",
         "icon": "⛽",
-        "per_person_min": 21,
-        "per_person_max": 25,
+        "per_person_min": 17,
+        "per_person_max": 20,
         "note": "~710 km po Toskanii (bazy ↔ atrakcje + transfery między bazami), 7L/100km. Paliwo na tranzyt Poznań↔Toskania nie uwzględnione.",
         "items": [
           {
             "label": "Przejazdy lokalne w Toskanii (~710 km)",
             "detail": "~€85–100 / auto, diesel ~€1.85/L",
-            "per_person_min": 21,
-            "per_person_max": 25
+            "per_person_min": 17,
+            "per_person_max": 20
           }
         ]
       },
@@ -3519,32 +3518,32 @@
         "id": "tolls",
         "name": "Autostrady i winiety",
         "icon": "🛣️",
-        "per_person_min": 43,
-        "per_person_max": 46,
+        "per_person_min": 35,
+        "per_person_max": 37,
         "items": [
           {
             "label": "Winieta Austria (2× 1-dniowa)",
             "detail": "2× €9,60 = €19,20 / auto — na 13.09 i 24.09 (10-dniowa nie obejmuje powrotu; dojazd do Kufstein 12.09 bezwinietowy) — asfinag.at",
-            "per_person_min": 5,
-            "per_person_max": 5
+            "per_person_min": 4,
+            "per_person_max": 4
           },
           {
             "label": "A13 Brenner Streckenmaut (Austria, 2× przejazd)",
             "detail": "2× €12,50 = €25 / auto — shop.asfinag.at (Streckenabschnitt A13). Płatna osobno od winiety.",
-            "per_person_min": 6,
-            "per_person_max": 6
+            "per_person_min": 5,
+            "per_person_max": 5
           },
           {
             "label": "Autostrady Włochy (A1, A11, lokalne)",
             "detail": "~€65–75 / auto w obie strony (sama A22 Modena–Brennero ~€23/kierunek + A1/A11)",
-            "per_person_min": 16,
-            "per_person_max": 19
+            "per_person_min": 13,
+            "per_person_max": 15
           },
           {
             "label": "Autostrada A2 Polska (Świecko–Konin, tam i z powrotem)",
             "detail": "~276 zł / auto (≈€65) — videotolling bez zatrzymania",
-            "per_person_min": 16,
-            "per_person_max": 16
+            "per_person_min": 13,
+            "per_person_max": 13
           }
         ]
       },
@@ -3623,10 +3622,10 @@
         ]
       }
     ],
-    "total_per_person_min": 832,
-    "total_per_person_max": 1285,
-    "total_4persons_min": 3328,
-    "total_4persons_max": 5140,
+    "total_per_person_min": 711,
+    "total_per_person_max": 990,
+    "total_group_min": 3555,
+    "total_group_max": 4950,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",

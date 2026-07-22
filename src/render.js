@@ -643,7 +643,7 @@ export function renderCosts(costs) {
         <div class="costs-summary-divider"></div>
         <div class="costs-summary-item">
           <span class="costs-summary-label">Razem ${costs.persons} osoby</span>
-          <span class="costs-summary-value">€${costs.total_4persons_min}–${costs.total_4persons_max}</span>
+          <span class="costs-summary-value">€${costs.total_group_min}–${costs.total_group_max}</span>
         </div>
       </div>
 

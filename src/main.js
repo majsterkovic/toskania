@@ -29,7 +29,7 @@ function renderDayView(dayNum) {
   const day = plan.days.find((d) => d.day_num === dayNum);
   if (!day) { location.hash = ''; return; }
   lastDayNum = dayNum;
-  app.innerHTML = renderSiteNav('plan') + renderDayPage(day, plan.meta.images, plan.bases, plan.days);
+  app.innerHTML = renderSiteNav('plan') + renderDayPage(day, plan.meta.images, plan.bases, plan.days, plan.todo);
   initChrome();
   window.scrollTo(0, 0);
   if (day.type === 'transit' && day.route_points?.length) {

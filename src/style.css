@@ -1682,6 +1682,34 @@ body.lightbox-open {
   line-height: 1.5;
 }
 
+.day-booking {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.6rem 0.85rem;
+  background: rgba(196, 134, 10, 0.1);
+  border-left: 3px solid var(--oro);
+  border-radius: 0 6px 6px 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.day-booking__icon {
+  color: var(--oro);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+.day-booking__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.day-booking__list li + li {
+  margin-top: 0.2rem;
+}
+
 /* ── Footer ── */
 
 .footer__credit {
@@ -2640,6 +2668,9 @@ html.dark .day-warning {
   border-left-color: var(--oro);
   color: var(--oro-light);
 }
+html.dark .day-booking {
+  background: rgba(168, 136, 60, 0.1);
+}
 
 /* Theme toggle button */
 .theme-toggle {
@@ -3416,6 +3447,10 @@ a.tl-row:focus-visible {
 .tl-mark--drive {
   color: var(--muted);
   background: var(--stone);
+}
+.tl-mark--booking {
+  color: var(--oro);
+  background: rgba(196, 134, 10, 0.14);
 }
 .tl-row__chev {
   font-family: var(--font-sans);

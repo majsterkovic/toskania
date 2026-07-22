@@ -3859,28 +3859,48 @@
             "label": "Siena — Opera del Duomo (opcja rezerwacji)",
             "detail": "Wstęp do kompleksu Duomo di Siena (OPA SI Pass) można kupić online na operaduomo.siena.it. Cena ok. €20/os. Wrzesień — kolejki mniejsze niż latem, ale warto zarezerwować.",
             "deadline": "1–2 tygodnie przed wizytą",
-            "priority": "medium"
+            "priority": "medium",
+            "day_num": 11
           },
           {
             "id": "brolio-wino",
             "label": "Castello di Brolio — degustacja winiarni (opcja)",
             "detail": "Winiarnia Barone Ricasoli — degustacje i zwiedzanie zamku. Rezerwacja zalecana (szczególnie w sezonie zbiorów). ricasoli.it. Dostępne opcje Chianti Classico Gran Selezione.",
             "deadline": "1–2 tygodnie przed wizytą",
-            "priority": "low"
+            "priority": "low",
+            "day_num": 8
           },
           {
             "id": "duomo-firenze",
             "label": "Rezerwacja Kopuły Duomo — Florencja (23.09)",
             "detail": "Brunelleschi Pass ze slotem godzinowym na kopułę — kup online na duomo.firenze.it z wyprzedzeniem (sloty na wrzesień znikają szybko). Bez tego wciąż można zwiedzić plac, Battistero z zewnątrz i pozostałe zabytki, ale nie wejść na kopułę.",
             "deadline": "min. 2-3 tygodnie przed 23.09",
-            "priority": "medium"
+            "priority": "medium",
+            "day_num": 12
           },
           {
             "id": "krzywa-wieza",
             "label": "Rezerwacja Krzywej Wieży — Piza (15.09)",
             "detail": "Wejście na Krzywą Wieżę tylko w slocie czasowym — kup online na opapisa.it z wyprzedzeniem (sloty otwierane ~20 dni naprzód, w sezonie znikają szybko). €20/os lub €27 combo z całą Piazza dei Miracoli. Bez tego wciąż zobaczysz plac, katedrę i zdjęcia z zewnątrz.",
             "deadline": "gdy otworzą slot ~20 dni przed 15.09",
-            "priority": "medium"
+            "priority": "medium",
+            "day_num": 4
+          },
+          {
+            "id": "grotta-vento",
+            "label": "Rezerwacja Grotta del Vento — Fornovolasco (14.09)",
+            "detail": "Tour godzinowy (16:00) wymaga rezerwacji — grottadelvento.com. Sloty It.3 (€25, 10/14) też wymagają rezerwacji z wyprzedzeniem.",
+            "deadline": "1–2 tygodnie przed 14.09",
+            "priority": "medium",
+            "day_num": 3
+          },
+          {
+            "id": "badia-coltibuono",
+            "label": "Rezerwacja degustacji — Badia a Coltibuono (19.09)",
+            "detail": "Degustacja win Chianti Classico DOCG (4 wina, €25–35/os) wymaga rezerwacji z wyprzedzeniem. Restauracja Al Focolare też wymaga rezerwacji na obiad. Tel. 0577 744832.",
+            "deadline": "1–2 tygodnie przed 19.09",
+            "priority": "medium",
+            "day_num": 8
           }
         ]
       },

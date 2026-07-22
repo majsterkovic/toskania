@@ -768,10 +768,26 @@ function trimText(text, max = 155) {
   return t.slice(0, max).replace(/\s+\S*$/, '') + '…';
 }
 
-function timelineMarkers(day) {
+/** day_num -> [{label, detail}] z plan.todo (rezerwacje/bilety powiązane z konkretnym dniem) */
+export function bookingsByDay(todo) {
+  const map = {};
+  (todo?.categories || []).forEach((cat) => {
+    (cat.items || []).forEach((item) => {
+      if (item.day_num == null) return;
+      (map[item.day_num] ||= []).push(item);
+    });
+  });
+  return map;
+}
+
+function timelineMarkers(day, bookings) {
   const marks = [];
   if (/popular$/.test(day.type)) {
     marks.push('<span class="tl-mark tl-mark--crowd" title="Popularne / spodziewane tłumy">★ tłumy</span>');
+  }
+  if (bookings?.length) {
+    const titleText = bookings.map((b) => b.label).join(' · ');
+    marks.push(`<span class="tl-mark tl-mark--booking" title="${esc(titleText)}">● rezerwacja</span>`);
   }
   let drive = '';
   if (day.type === 'transit' && day.drive_h) drive = day.drive_h;
@@ -780,7 +796,7 @@ function timelineMarkers(day) {
   return marks.join('');
 }
 
-function timelineRow(day) {
+function timelineRow(day, bookings) {
   const { d, wd } = dayDateParts(day.date);
   const dateHtml = `<span class="tl-row__date"><span class="tl-row__d">${esc(d)}</span><span class="tl-row__wd">${esc(wd)}</span></span>`;
   if (day.type === 'buffer') {
@@ -799,7 +815,7 @@ function timelineRow(day) {
       <span class="tl-row__main">
         <span class="tl-row__title">${esc(day.title)}</span>
         ${day.summary ? `<span class="tl-row__desc">${esc(trimText(day.summary, 155))}</span>` : ''}
-        <span class="tl-row__markers">${timelineMarkers(day)}</span>
+        <span class="tl-row__markers">${timelineMarkers(day, bookings)}</span>
       </span>
       <span class="tl-row__chev" aria-hidden="true">›</span>
     </a>`;
@@ -838,8 +854,9 @@ function renderBaseInfo(base) {
 export function renderTimeline(plan) {
   const images = plan.meta?.images ?? plan.images;
   const phases = groupPhases(plan.days);
+  const bookings = bookingsByDay(plan.todo);
   const timelineHtml = phases.map((phase) => {
-    const rows = phase.days.map(timelineRow).join('');
+    const rows = phase.days.map((day) => timelineRow(day, bookings[day.day_num])).join('');
     const base = phase.baseId ? (plan.bases || []).find((b) => b.id === phase.baseId) : null;
     if (base) {
       phase.label = base.region ? base.region.split('·')[0].trim() : base.name;
@@ -875,7 +892,7 @@ export function renderTimeline(plan) {
   `;
 }
 
-export function renderDayPage(day, images, bases, days) {
+export function renderDayPage(day, images, bases, days, todo) {
   const base = bases?.find((b) => b.id === day.base_id);
   const thumbKey = day.image || base?.image;
   const placeImg = thumbKey ? resolvePlaceImage(images, thumbKey) : null;
@@ -898,6 +915,15 @@ export function renderDayPage(day, images, bases, days) {
     ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini" aria-label="Mapa dnia ${day.day_num}"></div>`
     : '';
   const warning = day.warning ? `<div class="day-warning">${esc(day.warning)}</div>` : '';
+  const dayBookings = bookingsByDay(todo)[day.day_num];
+  const bookingBanner = dayBookings?.length
+    ? `<div class="day-booking">
+        <span class="day-booking__icon">●</span>
+        <ul class="day-booking__list">
+          ${dayBookings.map((b) => `<li><strong>${esc(b.label)}</strong>${b.deadline ? ` — ${esc(b.deadline)}` : ''}</li>`).join('')}
+        </ul>
+      </div>`
+    : '';
 
   return `
     <div class="page page--day" style="--day-accent: ${dayAccent(day)}">
@@ -910,6 +936,7 @@ export function renderDayPage(day, images, bases, days) {
         </div>
         <h1 class="daypage__title">${esc(day.title)}</h1>
         ${warning}
+        ${bookingBanner}
         ${miniMap}
         <div class="day-body">${renderDayBody(day, images)}</div>
       </article>

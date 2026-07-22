@@ -3,17 +3,17 @@
     "title": "Toskania 2026",
     "subtitle": "Podróż samochodowa Poznań → Toskania → Poznań",
     "dates": "12–27 września 2026",
-    "duration_days": 15,
-    "calendar_days": "12.09 (sob) – 26.09 (sob) = 15 dni aktywnej podróży; 27.09 (nd) = bufor/deadline powrotu",
+    "duration_days": 16,
+    "calendar_days": "12.09 (sob) – 27.09 (nd) = 16 dni aktywnej podróży, powrót rozłożony na 3 dni (Murlo → Telves → Hof → Poznań)",
     "participants_note": "Plan prywatny — wariant 2 baz",
     "route_summary": {
       "outbound_km": "~1580 km w 2 dni (Poznań → Unterhaching → Barga)",
-      "return_km": "~1530 km w 2 dni (Chianti → Kufstein → Poznań)",
-      "total_km": "~3100 km",
+      "return_km": "~1580 km w 3 dni (Murlo → Telves → Hof → Poznań)",
+      "total_km": "~3160 km",
       "tuscany_days": 11,
       "tuscany_bases": 2,
       "transit_nights_outbound": 1,
-      "transit_nights_return": 1
+      "transit_nights_return": 2
     },
     "images": {
       "hero": {
@@ -408,11 +408,11 @@
       "gps_hint": "Naviguj: Grünwalderweg 20d, 82008 Unterhaching"
     },
     "return": {
-      "night_1": "Wasserburg am Inn (Bawaria) — malownicze miasto na zakolu Innu, 45 km od Monachium, Gasthof €45–65/noc",
-      "night_1_image": "wasserburg",
-      "night_2": "Hof (Saale) / okolice — Franconia, małe miasto na trasie A9/A72, Pension €40–55/noc",
+      "night_1": "Telves / Racines (Alto Adige, Włochy) — Maurerhof, Val Ridanna. POTWIERDZONA REZERWACJA (5 dorosłych, 1 apartament).",
+      "night_1_image": "kufstein",
+      "night_2": "Hof (Saale), Bawaria — Niemcy, na trasie A9, ok. €60–90/noc",
       "night_2_image": "hof",
-      "gps_hint": "Noc 1: Wasserburg am Inn · Noc 2: Hof (Saale) lub Rehau"
+      "gps_hint": "Noc 1: Telferweg 2, 39040 Racines (Telves) · Noc 2: Hof, Bayern"
     }
   },
   "days": [
@@ -2873,13 +2873,13 @@
       "day_num": 14,
       "type": "transit",
       "label": "TRANZYT ← ALPY",
-      "title": "Chianti → Kufstein (Tyrol)",
+      "title": "Murlo → Telves (Racines, Alto Adige)",
       "image": "kufstein",
-      "drive_km": 647,
-      "drive_h": "7,5–8 h",
+      "drive_km": 527,
+      "drive_h": "6–6,5 h",
       "base_id": null,
       "depart": "7:30 rano z Murlo (Val di Merse)",
-      "route": "Murlo → SS223 Siena → tangenziale Siena → Siena Superstrada → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → A13 AT (Streckenmaut) → A12 Inntal → Kufstein (Tyrol)",
+      "route": "Murlo → SS223 Siena → tangenziale Siena → Siena Superstrada → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → Vipiteno/Sterzing → Telves (Racines, Val Ridanna)",
       "attractions": [],
       "food": {
         "place": "Bolonia lub Modena (postój autostradowy A1)",
@@ -2893,45 +2893,11 @@
         "price": "~€10–15"
       },
       "accommodation": {
-        "place": "Kufstein (Tyrol — nocleg tranzytowy, jak w drodze tam)",
-        "note": "Wracamy do tego samego miasteczka nad Innem u stóp Alp, w którym nocowaliśmy pierwszej nocy podróży (12.09). Festung Kufstein widoczna z centrum, noclegi tańsze niż w Innsbrucku. Przyjazd ok. 16:00 — zostaje czas na spacer i kolację przed ostatnim, długim odcinkiem do Poznania.",
-        "price": "€55–90/noc",
-        "booking_tip": "Te same hotele co przy nocy 1 — direct booking bywa tańsze w mniejszych pensjonatach.",
-        "gps_hint": "Naviguj: Kufstein, Tirol, Austria",
-        "options": [
-          {
-            "name": "Hotel Andreas Hofer",
-            "type": "Hotel",
-            "address": "Giessenbach 1, 6330 Kufstein",
-            "price": "€65–90/noc",
-            "parking": "bezpłatny (własny parking)",
-            "note": "Spokojne położenie, rodzinna atmosfera, 10 min do centrum"
-          },
-          {
-            "name": "Gasthof Auracher Löchl",
-            "type": "Historyczny Gasthof",
-            "address": "Römerstraße 3, 6330 Kufstein",
-            "price": "€85–120/noc",
-            "parking": "Parkhaus Kufstein Innenstadt (3 min pieszo, €12/noc)",
-            "note": "Legendarny Gasthof nad Innem z 1410 roku — wyjątkowa lokalizacja"
-          },
-          {
-            "name": "Hotel Alpenrose",
-            "type": "Hotel",
-            "address": "Stadtplatz Kufstein",
-            "price": "€70–95/noc",
-            "parking": "parking publiczny w pobliżu",
-            "note": "Centralne położenie, widok na Festung"
-          },
-          {
-            "name": "Pension Gästehaus Inntal",
-            "type": "Pension",
-            "address": "okolice Kufstein",
-            "price": "€55–70/noc",
-            "parking": "bezpłatny",
-            "note": "Tańsza opcja budżetowa po tej stronie granicy"
-          }
-        ]
+        "place": "Maurerhof Telves (Racines, Alto Adige)",
+        "note": "POTWIERDZONA REZERWACJA — Telferweg 2, 39040 Racines (Telves), Bolzano. 5 dorosłych, 1 apartament. Zameldowanie 15:00–22:00, wymeldowanie 07:00–11:00 (26.09). Val Ridanna, 8 km od Vipiteno (Sterzing) — spokojna alpejska dolina tuż przy wjeździe na Brenner. Krótki dzień jazdy (527 km zamiast 647 do Kufsteinu) zostawia czas na popołudnie w Vipiteno.",
+        "price": "cena do uzupełnienia (potwierdzona rezerwacja)",
+        "booking_tip": "Zarezerwowane — bez dalszych działań.",
+        "gps_hint": "Naviguj: Telferweg 2, 39040 Racines (Telves), Włochy (coords 46.8946, 11.3784)"
       },
       "route_segments": [
         {
@@ -2953,23 +2919,23 @@
           "note": "Lunch: zjazd Bologna Borgo Panigale lub Modena Nord"
         },
         {
-          "segment": "Modena → Brenner",
+          "segment": "Modena → Vipiteno (Sterzing)",
           "road": "A22 (Verona, Trento, Bolzano)",
-          "km": "~300",
-          "note": "Pedaggio A22 Modena–Brennero: ~€22,80 klasa A"
+          "km": "~307",
+          "note": "Pedaggio A22 Modena–Vipiteno: ~€21 klasa A. Zjazd Vipiteno, przed samym Brennero — dziś zostajemy po włoskiej stronie, bez wjazdu do Austrii."
         },
         {
-          "segment": "Brenner → Kufstein",
-          "road": "A13 AT → A12 Inntal",
-          "km": "~110",
-          "note": "A13 Streckenmaut €12,50 + 1-dniowa winieta AT na 25.09 (~€9,60) na A12 Inntal. Kufstein tuż przy granicy AT/DE."
+          "segment": "Vipiteno → Telves (Racines)",
+          "road": "SP-Racines (Val Ridanna)",
+          "km": "~8",
+          "note": "Krótki podjazd lokalną drogą w boczną dolinę Val Ridanna"
         }
       ],
       "practical_tips": [
-        "Wyjazd 7:15 z Murlo → Kufstein ~16:00 (z 2 postojami po 20–30 min). Murlo leży dalej od A1 niż dawne Chianti — stąd wcześniejszy start.",
+        "Wyjazd 7:15 z Murlo → Telves ~13:30 (z 2 postojami po 20–30 min). Krótki dzień jazdy — zaplanuj popołudnie na Vipiteno lub Val Ridanna.",
         "25.09 to PIĄTEK: ZTL Firenze aktywna 7:30–20:00 — zostań na A1 Variante di Valico.",
-        "Winieta 10-dniowa z drogi tam (start 13.09) już WYGASŁA — na A12 Inntal potrzebna nowa 1-dniowa winieta AT (~€9,60) + osobno Streckenmaut A13 Brenner (€12,50).",
-        "Kufstein: parkuj przy hotelu lub Parkhaus Innenstadt. Te same hotele co pierwszej nocy podróży."
+        "Dziś BEZ Austrii — Telves/Racines leży po włoskiej stronie Brennero, winieta AT i Streckenmaut A13 potrzebne dopiero jutro (26.09).",
+        "Maurerhof: 1 apartament na 5 osób — potwierdź z gospodarzem szczegóły przed przyjazdem (email/telefon z rezerwacji)."
       ],
       "fuel_stops": [
         {
@@ -2986,20 +2952,14 @@
           "note": "Ostatni włoski postój. ~30 min."
         },
         {
-          "name": "Area servizio Brenner / Vipiteno",
-          "location": "A22/A13 przy granicy IT/AT",
-          "road": "A22/A13",
+          "name": "Area di servizio Vipiteno (A22)",
+          "location": "A22 zjazd Vipiteno/Sterzing",
+          "road": "A22",
           "hours": "24h",
-          "note": "Kawa + krótki postój przed zjazdem do Austrii."
-        },
-        {
-          "name": "Tankowanie przed Kufstein (dolina Inn)",
-          "location": "A12 Inntal, okolice Innsbrucku",
-          "road": "A12",
-          "note": "Zatankuj przed granicą — w Niemczech (jutro) taniej, ale bak przyda się na wieczór."
+          "note": "Tankowanie przed jutrzejszym wjazdem do Austrii — we Włoszech zwykle taniej niż w AT."
         }
       ],
-      "narrative": "Ruszamy powoli w stronę domu — ale najpierw ostatni raz przez Alpy. Wyjeżdżamy o 7:15 z Murlo (nieco wcześniej niż z Chianti — dojazd do A1 jest teraz dłuższy), ostatnie spojrzenie na wzgórza Val di Merse pokryte porannym oparem, zanim SS223 i tangenziale Sieny poprowadzą nas do Firenze Sud i wjazdu na A1 (ok. 65 minut). A1 na północ jest o tej porze jeszcze spokojna; Variante di Valico omija centrum Florencji łukiem wysoko nad doliną — dziś piątek, ZTL aktywna 7:30–20:00, więc zostajemy na autostradzie. Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni włoski espresso przy barze, zanim krajobraz zacznie się z powrotem zmieniać w alpejski. Odcinek A22 Modena–Brennero koło Werony bywa zatłoczony w szczycie, więc nie ma co się spieszyć. Na A13 Streckenmaut Brenner (€12,50, osobno od winiety — uwaga, ta z drogi tam już wygasła, potrzebna nowa 1-dniowa) i przejazd przez sam przełęcz, gdzie temperatura zauważalnie spada. Dalej A12 Inntal i po ~110 km od Brennera jesteśmy w Kufstein ok. 16:00 — w tym samym miasteczku nad Innem, w którym spaliśmy pierwszej nocy podróży, u stóp Alp, z twierdzą wyrastającą wprost ze skały. To wciąż wyraźnie krótszy dzień niż dawny przejazd aż do Wasserburga, więc zostaje czas na spokojny wieczorny spacer po starówce i kolację w oberży. Jutro ostatni, najdłuższy odcinek — prosto do Poznania.",
+      "narrative": "Ruszamy powoli w stronę domu — ale to jeszcze nie dzień na Alpy, tylko krótki, spokojny przejazd. Wyjeżdżamy o 7:15 z Murlo, ostatnie spojrzenie na wzgórza Val di Merse pokryte porannym oparem, zanim SS223 i tangenziale Sieny poprowadzą nas do Firenze Sud i wjazdu na A1 (ok. 65 minut). A1 na północ jest o tej porze jeszcze spokojna; Variante di Valico omija centrum Florencji łukiem wysoko nad doliną — dziś piątek, ZTL aktywna 7:30–20:00, więc zostajemy na autostradzie. Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni na razie włoski espresso przy barze, zanim krajobraz zacznie się z powrotem zmieniać w alpejski. Odcinek A22 Modena–Bolzano koło Werony bywa zatłoczony w szczycie, więc nie ma co się spieszyć. Zamiast jechać aż do Brennero, zjeżdżamy w Vipiteno (Sterzing) — urokliwe miasteczko z kolorowymi kamienicami i wieżą Zwölferturm — i krótką lokalną drogą wjeżdżamy w boczną dolinę Val Ridanna, do Telves. Na miejscu już ok. 13:30, więc zostaje całe popołudnie: spacer po Vipiteno, albo dalej w głąb doliny, w stronę dawnych kopalni srebra Val Ridanna — powietrze tu jest wyraźnie chłodniejsze i bardziej alpejskie niż w Toskanii. Wieczorem kolacja w oberży przy Maurerhof i wcześnie spać — jutro dłuższy odcinek przez Brenner i kawał Niemiec, do Hof.",
       "web_research": [
         {
           "topic": "ZTL Firenze — tranzyt piątek 25.09",
@@ -3014,49 +2974,30 @@
           "checked": "2026-07"
         },
         {
-          "topic": "A13 Brenner Streckenmaut + nowa winieta AT (powrót)",
-          "summary": "A13 (AT) Brennersee–Innsbruck: Streckenmaut €12,50 osobno od winiety. UWAGA: e-winieta 10-dniowa z 13.09 wygasła 22.09 — na A12 Inntal potrzebna nowa (1-dniowa ~€9,60 lub 10-dniowa €12,80), kup na shop.asfinag.at przed wjazdem.",
-          "source": "https://www.asfinag.at/en/toll/section-toll/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Most Lueg A13 — korki Brenner (piątek)",
-          "summary": "Od 2025 jeden pas/kierunek na moście Lueg (remont do ~2030). ASFINAG otwiera 2. pas w sezonie prawie codziennie. Piątkowe popołudnia = wzmożony ruch na północ — wyjazd rano daje bufor. Kalendarz: asfinag.at/a13.",
-          "source": "https://www.asfinag.at/en/construction-maintenance/construction-projects/a-13-brenner-motorway-lueg-bridge/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Noclegi Kufstein (nocleg powrotny = ten sam co w drodze tam)",
-          "summary": "Hotel Andreas Hofer (Giessenbach 1, parking gratis, €65–90), Gasthof Auracher Löchl (Römerstraße 3, nad Innem, 1410 r., €85–120), Hotel Alpenrose (Stadtplatz, widok na Festung), Pension Inntal (budżetowo €55–70). Kufstein: starówka nad Innem u stóp Festung, 40 km od Innsbrucku.",
-          "source": "https://www.kufstein.com/en/",
+          "topic": "Vipiteno / Val Ridanna (Racines) — nocleg powrotny",
+          "summary": "Vipiteno (Sterzing): historyczne centrum z wieżą Zwölferturm, 8 km od Racines/Telves. Val Ridanna: alpejska boczna dolina, dawne kopalnie srebra (Bergbaumuseum Ridnaun-Schneeberg). Dobre miejsce na krótki odpoczynek przed dłuższym dniem przez Brenner.",
+          "source": "https://www.racines.info/",
           "checked": "2026-07"
         }
       ],
       "opening_hours": {
         "sr222_firenze": "Trasa SS222/A1 przez Firenze Impruneta — 24/7. ZTL Firenze aktywna 7:30–20:00 pn–pt. Korzystaj z obwodnicy A1.",
         "bologna_lunch": "Autogrill Bologna Borgo Panigale / Modena Nord: 24h na A1",
-        "kufstein_altstadt": "Restauracje Altstadt: 11:30–22:00. Wieczorny spacer nad Innem pod Festung.",
-        "hotel_checkin": "Recepcje hoteli Kufstein: zwykle 14:00–20:00 — przy przyjeździe ~16:00 bez problemu."
+        "vipiteno_centro": "Sklepy/kawiarnie Vipiteno: zwykle 9:00–19:00, piątek bez zmian.",
+        "hotel_checkin": "Maurerhof Telves: zameldowanie 15:00–22:00 — przy przyjeździe ~13:30 poczekaj lub zostaw bagaż i idź zwiedzać."
       },
       "parking": {
-        "destination": "Kufstein — nocleg tranzytowy",
+        "destination": "Telves (Racines) — nocleg tranzytowy",
         "options": [
           {
-            "name": "Parking hotelu — priorytet",
+            "name": "Parking przy Maurerhof",
             "type": "hotel",
             "price": "gratis lub wliczony",
-            "gps_hint": "Kufstein, Tirol, Austria",
-            "note": "Wybieraj hotele z własnym parkingiem (Andreas Hofer, Pension Inntal)"
-          },
-          {
-            "name": "Parkhaus Kufstein Innenstadt",
-            "type": "garaż",
-            "price": "~€12–14/noc",
-            "gps_hint": "Stadtpark, 6330 Kufstein",
-            "note": "24h, 2 min pieszo do centrum i historycznych hoteli"
+            "gps_hint": "Telferweg 2, 39040 Racines (Telves)",
+            "note": "Potwierdzona rezerwacja — parking na miejscu"
           }
         ],
-        "tip": "Jeśli hotel bez parkingu — Parkhaus Kufstein Innenstadt, 2 min pieszo do centrum."
+        "tip": "Vipiteno ma płatny parking przy centrum (niebieskie strefy) — na krótki spacer wystarczy."
       },
       "eta_timeline": [
         {
@@ -3077,32 +3018,44 @@
         },
         {
           "time": "13:00",
-          "event": "Brennero/Brenner — wjazd na A13 (Streckenmaut €12,50)"
+          "event": "Zjazd Vipiteno (Sterzing) z A22"
         },
         {
-          "time": "14:30",
-          "event": "Innsbruck bypass — A12 Inntal (nowa 1-dniowa winieta AT na 25.09)"
+          "time": "13:30",
+          "event": "Telves (Racines) — Maurerhof, zostawienie bagażu"
         },
         {
-          "time": "16:00",
-          "event": "Kufstein — hotel (jak pierwszej nocy), spacer Altstadt, kolacja"
+          "time": "popołudnie",
+          "event": "Spacer po Vipiteno lub Val Ridanna — wolny czas przed jutrzejszym długim odcinkiem"
         }
       ],
-      "summary": "Powrót przez Alpy (ok. 7 h): z Chianti autostradą na północ (obwodnicą omijamy centrum Florencji objęte zakazem wjazdu), przez alpejską przełęcz Brenner, aż do Kufstein — nocujemy w tym samym tyrolskim miasteczku nad rzeką Inn, co pierwszej nocy podróży."
+      "summary": "Krótki dzień jazdy z Murlo (527 km, ok. 6 h) do Telves (Racines) w Alto Adige — jeszcze po włoskiej stronie Brennero. Popołudnie wolne na Vipiteno lub Val Ridanna przed jutrzejszym dłuższym odcinkiem przez Brenner i kawałek Niemiec do Hof."
     },
     {
       "date": "26.09 (sob)",
       "day_num": 15,
       "type": "transit",
-      "label": "TRANZYT ← POZNAŃ",
-      "title": "Kufstein → Poznań (dotarcie do domu)",
-      "image": "poznan",
-      "drive_km": 917,
-      "drive_h": "9–10 h",
+      "label": "TRANZYT ← ALPY/NIEMCY",
+      "title": "Telves → Hof (Bawaria)",
+      "image": "hof",
+      "drive_km": 505,
+      "drive_h": "6–6,5 h",
       "base_id": null,
-      "depart": "6:30–7:00 rano z Kufstein",
-      "route": "Kufstein → A93 north → A8 (München-Ost) → A9 north → Nürnberg → Berliner Ring A10 → A12 → Świecko (granica DE/PL) → A2 east → Poznań",
+      "depart": "7:30 rano z Telves (Racines)",
+      "route": "Telves → Vipiteno → A22 Brennero → A13 AT (Streckenmaut) → Innsbruck → A12 Inntal → Kufstein → A93/A8 Monachium → A9 north → Norymberga → Bayreuth → Hof (Bawaria)",
       "route_segments": [
+        {
+          "segment": "Telves → Brennero (granica IT/AT)",
+          "road": "SP-Racines → A22",
+          "km": "~30",
+          "note": "Krótki wyjazd z doliny do Vipiteno, potem A22 do przełęczy"
+        },
+        {
+          "segment": "Brennero → Kufstein",
+          "road": "A13 AT (Streckenmaut) → A12 Inntal",
+          "km": "~110",
+          "note": "A13 Streckenmaut €12,50 + 1-dniowa winieta AT na 26.09 (~€9,60) na A12 Inntal"
+        },
         {
           "segment": "Kufstein → Monachium",
           "road": "A93 north → A8",
@@ -3113,46 +3066,197 @@
           "segment": "Monachium → Norymberga",
           "road": "A9 north",
           "km": "~165",
-          "note": "Tankowanie w DE — taniej niż w AT/PL. Ruch sobotni lżejszy niż w tygodniu."
+          "note": "Tankowanie w DE — taniej niż w AT/PL"
         },
         {
-          "segment": "Norymberga → Berlin (obwodnica)",
+          "segment": "Norymberga → Hof",
           "road": "A9 north",
-          "km": "~430",
-          "note": "Raststätte Frankenwald (most nad A9, km 254) — dobry postój na lunch"
+          "km": "~115",
+          "note": "Ostatni odcinek dnia, Bayreuth po drodze"
+        }
+      ],
+      "attractions": [],
+      "food": {
+        "place": "Area di servizio Vipiteno lub Autogrill Brennero",
+        "address": "A22, przed granicą IT/AT",
+        "dishes": [],
+        "note": "Krótki postój przed Brennero — ostatnie włoskie espresso na tym wyjeździe.",
+        "price": "~€5–10"
+      },
+      "accommodation": {
+        "place": "Hof (Saale), Bawaria — nocleg tranzytowy",
+        "note": "Niemal dokładnie w połowie drogi Telves–Poznań (505 km / 547 km) — najbardziej wyrównany podział ostatniego odcinka. Małe bawarskie miasto na trasie A9, wystarczy na nocleg i szybki spacer.",
+        "price": "€60–90/noc",
+        "booking_tip": "Do zarezerwowania — Booking.com wystarczy, mniej krytyczne niż bazy.",
+        "gps_hint": "Naviguj: Hof, Bayern, Niemcy",
+        "options": [
+          {
+            "name": "Dormero Hotel Hof",
+            "type": "Hotel",
+            "address": "Kreuzsteinstraße, 95028 Hof",
+            "price": "€70–90/noc",
+            "parking": "parking hotelowy",
+            "note": "Centralne położenie w Hof, standard sieciowy"
+          },
+          {
+            "name": "Brauereigasthof Falter",
+            "type": "Gasthof",
+            "address": "Hirschberger Straße 6, 95030 Hof-Unterkotzau",
+            "price": "€60–80/noc",
+            "parking": "bezpłatny na miejscu",
+            "note": "Tradycyjny gasthof z własnym browarem, rodzinna atmosfera"
+          }
+        ]
+      },
+      "practical_tips": [
+        "Dziś wjazd do Austrii — kup 1-dniową e-winietę AT (€9,60) na 26.09 przed wjazdem na A12/A13.",
+        "Streckenmaut A13 Brenner (€12,50) osobno od winiety — shop.asfinag.at.",
+        "Dzień wyraźnie krótszy niż dawny przejazd do Poznania (505 km vs 917 km) — więcej marginesu na postoje.",
+        "Hof: zarezerwuj nocleg z wyprzedzeniem (lipiec/sierpień) — patrz TODO."
+      ],
+      "parking": {
+        "destination": "Hof — nocleg tranzytowy",
+        "options": [
+          {
+            "name": "Parking hotelu — priorytet",
+            "type": "hotel",
+            "price": "gratis lub wliczony",
+            "gps_hint": "Hof, Bayern, Niemcy",
+            "note": "Oba polecane hotele (Dormero, Falter) mają własny parking"
+          }
+        ],
+        "tip": "Małe miasto — parking przy hotelu wystarczy na całą wizytę."
+      },
+      "fuel_stops": [
+        {
+          "name": "Area di servizio Vipiteno (A22)",
+          "location": "A22 przed Brennero",
+          "road": "A22",
+          "hours": "24h",
+          "note": "Ostatnie tankowanie we Włoszech — taniej niż w Austrii."
+        },
+        {
+          "name": "Eni/OMV dolina Inn (Kufstein/Innsbruck)",
+          "location": "A12/A93 okolice Kufstein",
+          "road": "A12",
+          "hours": "6–22",
+          "note": "Uzupełnij przed granicą DE — dalej tankuj już w Niemczech."
+        },
+        {
+          "name": "Raststätte okolice Norymbergi/Bayreuth",
+          "location": "A9, przed Hof",
+          "road": "A9",
+          "hours": "24/7",
+          "note": "Ostatnie tankowanie przed noclegiem w Hof."
+        }
+      ],
+      "narrative": "Dziś dłuższy dzień, ale wciąż wyraźnie krótszy niż dawny maraton do Poznania. Z Telves krótki zjazd do Vipiteno i wjazd na A22 w stronę Brennero — po ok. 30 km granica z Austrią, gdzie aktywujemy nową 1-dniową e-winietę. A13 Streckenmaut i przełęcz Brenner, gdzie robi się zauważalnie chłodniej, potem A12 Inntal do Kufstein — tego samego miasteczka, które mijaliśmy tydzień wcześniej, tym razem bez postoju. Za granicą niemiecką A93/A8 obwodnicą Monachium i A9 prosto na północ, przez Norymbergę w stronę Bayreuth — krajobraz robi się coraz bardziej frankoński, łagodne wzgórza zamiast alpejskich szczytów. Do Hof docieramy późnym popołudniem — małe bawarskie miasto na Saale, wystarczy na kolację i spokojny nocleg przed ostatnim, znacznie krótszym odcinkiem do domu.",
+      "web_research": [
+        {
+          "topic": "Trasa Telves → Hof przez Brenner i Norymbergę",
+          "summary": "~505 km, ~5,5 h (OSRM) przez A22 Brennero → A13 AT → A12 Inntal → A93/A8 Monachium → A9 Norymberga–Bayreuth–Hof. Niemal dokładnie w połowie drogi do Poznania (547 km pozostaje).",
+          "source": "https://www.autobahn.de/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Winieta AT i Streckenmaut A13 (dzień powrotny)",
+          "summary": "Nowa e-winieta 1-dniowa (~€9,60) potrzebna na A12 Inntal — poprzednia z drogi tam już wygasła. A13 Brenner Streckenmaut €12,50 osobno, kup na shop.asfinag.at (Section toll / Abschnittsmaut).",
+          "source": "https://www.asfinag.at/en/toll/section-toll/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Noclegi Hof (Saale), Bawaria",
+          "summary": "Dormero Hotel Hof (Kreuzsteinstraße, centrum, sieciowy standard) i Brauereigasthof Falter (Hirschberger Straße 6, Unterkotzau, tradycyjny gasthof z browarem, darmowy parking) — oba z parkingiem, dobre dla grupy w 2 pokojach.",
+          "source": "https://www.booking.com/accommodation/city/de/hof.html",
+          "checked": "2026-07"
+        }
+      ],
+      "opening_hours": {
+        "raststaette_a9": "24/7 (okolice Norymbergi, Bayreuth)",
+        "hof_checkin": "Dormero/Falter: recepcja zwykle 14:00–22:00 — przy przyjeździe późnym popołudniem bez problemu."
+      },
+      "eta_timeline": [
+        {
+          "time": "07:30",
+          "event": "Wyjazd z Telves (SP-Racines → Vipiteno → A22)"
+        },
+        {
+          "time": "08:15",
+          "event": "Brennero — granica IT/AT, aktywna nowa e-winieta"
+        },
+        {
+          "time": "09:15",
+          "event": "Innsbruck bypass — A12 Inntal"
+        },
+        {
+          "time": "10:00",
+          "event": "Kufstein — bez postoju, dalej A93/A8"
+        },
+        {
+          "time": "11:15",
+          "event": "Monachium — A8 → A9 na północ"
+        },
+        {
+          "time": "12:45",
+          "event": "Norymberga (A9) — krótki postój na lunch"
+        },
+        {
+          "time": "14:00",
+          "event": "Hof — hotel, spacer po centrum, kolacja"
+        }
+      ],
+      "summary": "Powrót przez Brenner, Kufstein i Norymbergę do Hof (505 km, ok. 6 h) — niemal dokładnie w połowie drogi Telves–Poznań. Wyraźnie krótszy i spokojniejszy dzień niż dawny bezpośredni przejazd do domu."
+    },
+    {
+      "date": "27.09 (nd)",
+      "day_num": 16,
+      "type": "transit",
+      "label": "TRANZYT → POZNAŃ",
+      "title": "Hof → Poznań (dotarcie do domu)",
+      "image": "poznan",
+      "drive_km": 547,
+      "drive_h": "6,5–7 h",
+      "base_id": null,
+      "depart": "7:30–8:00 rano z Hof",
+      "route": "Hof → A9/A72 → Berliner Ring A10 → A12 → Świecko (granica DE/PL) → A2 east → Poznań",
+      "route_segments": [
+        {
+          "segment": "Hof → Berlin (obwodnica)",
+          "road": "A9/A72 → A10 Berliner Ring",
+          "km": "~260",
+          "note": "Krajobraz Turyngii i Saksonii, potem obwodnica Berlina"
         },
         {
           "segment": "Berlin → Świecko (granica)",
-          "road": "A10 Berliner Ring → A12",
+          "road": "A12",
           "km": "~115",
-          "note": "Obwodnicą A10 omijaj centrum Berlina, dalej A12 na wschód do granicy"
+          "note": "A12 na wschód do granicy PL"
         },
         {
           "segment": "Świecko → Poznań",
           "road": "A2",
           "km": "~175",
-          "note": "Videotolling AWSA Świecko–Konin (~138 zł). W domu ok. 16:00–17:00"
+          "note": "Videotolling AWSA Świecko–Konin (~138 zł)"
         }
       ],
       "attractions": [],
       "food": {
-        "place": "Raststätte Frankenwald (most nad A9) lub Nürnberg-Feucht",
-        "address": "A9 km ~254 Berg-Rudolphstein (Frankenwald) lub 90537 Feucht",
+        "place": "Raststätte na A9/A10 (okolice Lipska lub Berlina)",
+        "address": "A9/A10, Niemcy",
         "dishes": [],
-        "note": "Ostatni dzień tranzytowy — lunch na autostradzie. Frankenwald = ikoniczne Brückenrasthaus nad A9, ta sama trasa co w drodze tam (odwrócona).",
+        "note": "Ostatni dzień tranzytowy — lunch na autostradzie.",
         "price": "~€8–12"
       },
       "accommodation": {
         "place": "Dom — Poznań",
-        "note": "Meta podróży. W domu ok. 16:00–17:00 (start 6:30–7:00, ~9 h jazdy + 2 postoje). 27.09 zostaje jako dzień buforowy.",
+        "note": "Meta podróży. W domu ok. 15:00–16:00 (start 7:30–8:00, ~6,5–7 h jazdy + postoje).",
         "price": "—"
       },
       "practical_tips": [
-        "Najdłuższy dzień powrotu (917 km, ~9 h) — wyjazd 6:30–7:00, żeby być w domu przed wieczorem.",
-        "Winieta AT niepotrzebna: odcinek Kufstein-Süd → granica DE jest bezwinietowy przy jeździe na północ.",
-        "Tankuj w Niemczech przed Polską — paliwo tańsze. Frankenwald Ost (A9 km 254) = dobry postój lunchowy.",
-        "Trasa = dokładne lustro dnia 1 (A9/A10/A2), z pominięciem Drezna/A4 — bez remontu Ohorn–Salzenforst.",
-        "Świecko: opłata videotolling A2 (~138 zł). W domu ok. 16:00–17:00."
+        "Ostatni, wyraźnie krótszy dzień powrotu (547 km, ~6,5–7 h) — bez pośpiechu.",
+        "Winieta AT niepotrzebna — Niemcy nie wymagają winiety na tym odcinku.",
+        "Tankuj w Niemczech przed Polską — paliwo tańsze.",
+        "Świecko: opłata videotolling A2 (~138 zł)."
       ],
       "parking": {
         "destination": "Dom — Poznań",
@@ -3161,18 +3265,10 @@
       },
       "fuel_stops": [
         {
-          "name": "Eni/OMV dolina Inn (przed wyjazdem)",
-          "location": "A12/A93 okolice Kufstein",
-          "road": "A93",
-          "hours": "6–22",
-          "note": "Uzupełnij rano; dalej tankuj już w Niemczech."
-        },
-        {
-          "name": "Raststätte Frankenwald Ost",
-          "location": "A9 km 254, Berg-Rudolphstein",
-          "road": "A9",
-          "hours": "24/7",
-          "note": "Aral, McDonald's — postój lunchowy i tankowanie w DE (taniej niż PL)."
+          "name": "Tankowanie przed wyjazdem z Hof",
+          "location": "Hof, Bayern",
+          "road": "lokalna",
+          "note": "Pełny bak przed ostatnim odcinkiem."
         },
         {
           "name": "Orlen/Shell przy A2 Świecko",
@@ -3182,83 +3278,52 @@
           "note": "Ostatnie tankowanie / kawa przed Poznaniem."
         }
       ],
-      "narrative": "Ostatni odcinek — najdłuższy, ale w głowie już tylko dom. Wyjeżdżamy z Kufstein wcześnie, ok. 6:30–7:00 w sobotni poranek, gdy dolina Inn jeszcze śpi. Krótki skok A93 na północ mija granicę austriacko-niemiecką (odcinek Kufstein-Süd → granica jest bezwinietowy, więc bez zatrzymywania), potem A8 obwodnicą Monachium i A9 prosto na północ — tą samą trasą, którą dwa tygodnie temu jechaliśmy w drugą stronę, tylko teraz krajobraz przewija się od Alp ku równinom. Ok. 11:00 postój na lunch w Raststätte Frankenwald Ost — charakterystyczny most zawieszony nad samą autostradą, ten sam, przy którym zatrzymaliśmy się pierwszego dnia; tu też warto nabić bak, bo paliwo w Niemczech jest tańsze niż w Polsce. Dalej A9 do Berlina, obwodnicą A10 omijamy centrum, i A12 prowadzi nas na wschód, ku granicy — sosnowe lasy Brandenburgii coraz bardziej przypominają te po polskiej stronie, a rozmowy w aucie mimowolnie schodzą na to, co pierwsze zrobimy w domu. Przez Świecko (opłata AW ~138 zł) wjeżdżamy do Polski, A2 prosto do Poznania — w domu ok. 16:00–17:00, z bagażnikiem pełnym wina, oliwy, szafranu i pecorino, i głową pełną obrazów kamiennych borgo, wież San Gimignano i porannej mgły nad toskańskimi winnicami. Zostaje jeszcze cały 27.09 jako margines przed końcem urlopu — czas, żeby powoli wrócić do rzeczywistości i rozpakować walizki pachnące jeszcze toskańskim wrześniem. Świadomie wybraliśmy trasę A9/A10/A2 — lustro drogi tam — omijając Drezno i remont na A4, przez który jechaliśmy dawnym, dłuższym wariantem powrotu.",
+      "narrative": "Ostatni odcinek — i tym razem naprawdę krótki. Wyjeżdżamy z Hof ok. 7:30–8:00, bez pośpiechu, bo do domu zostało tylko ~547 km. A9/A72 prowadzi przez Turyngię i Saksonię, krajobraz robi się coraz bardziej równinny, aż do obwodnicy Berlina (A10), którą omijamy centrum. A12 kieruje nas na wschód, ku granicy — sosnowe lasy Brandenburgii coraz bardziej przypominają te po polskiej stronie. Przez Świecko (opłata AW ~138 zł) wjeżdżamy do Polski, A2 prosto do Poznania — w domu ok. 15:00–16:00, z bagażnikiem pełnym wina, oliwy, szafranu i pecorino, i głową pełną obrazów kamiennych borgo, wież San Gimignano i porannej mgły nad toskańskimi winnicami, a także chłodnego popołudnia w alpejskim Val Ridanna. Rozłożenie powrotu na trzy dni zamiast dwóch — z noclegiem w Telves i Hof — zamieniło jeden wyczerpujący dzień za kierownicą w dwa spokojne.",
       "web_research": [
         {
-          "topic": "Trasa powrotna Kufstein → Poznań (lustro dnia 1)",
-          "summary": "~917 km, ~9 h (OSRM) przez A93/A8 Monachium → A9 Nürnberg → A10 Berliner Ring → A12 → Świecko → A2. Ta sama oś co w drodze tam (odwrócona), z pominięciem Drezna/A4 — bez remontu Ohorn–Salzenforst na A4.",
+          "topic": "Trasa Hof → Poznań",
+          "summary": "~547 km, ~5,5 h (OSRM) przez A9/A72 → A10 Berliner Ring → A12 → Świecko → A2. Bez winiet — sama Polska (A2, videotolling) i Niemcy (bezpłatne autostrady dla osobówek) na tym odcinku.",
           "source": "https://www.autobahn.de/",
           "checked": "2026-07"
         },
         {
-          "topic": "Winieta AT przy wyjeździe z Kufstein",
-          "summary": "Jadąc z Kufstein na północ do Niemiec, odcinek Kufstein-Süd → granica (Kiefersfelden) jest bezwinietowy (Korridor Vignettenfrei). Nowa winieta AT niepotrzebna — wykorzystana została na dniu powrotnym 1 (25.09) przy przejeździe A12/A13 Brenner.",
-          "source": "https://www.asfinag.at/en/toll/toll-sticker/vignette-free-sections/",
-          "checked": "2026-07"
-        },
-        {
           "topic": "Opłaty A2 PL (Świecko–Konin) 2026",
-          "summary": "Odcinek koncesyjny AWSA: ~129–138 PLN Świecko–Konin (kat. 1). Videotolling — bez bramek, płatność online/aplikacja. Konin–Stryków bezpłatny dla aut <3,5 t.",
+          "summary": "Odcinek koncesyjny AWSA: ~129–138 PLN Świecko–Konin (kat. 1). Videotolling — bez bramek, płatność online/aplikacja.",
           "source": "https://www.autostrada-a2.pl/en/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Raststätte A9 (Frankenwald, Feucht) — postój",
-          "summary": "Serways Frankenwald Ost/West (km 254, most nad A9), Nürnberg-Feucht Ost (km 385) — 24/7, Aral/OMV, McDonald's, ładowarki EV. Frankenwald = najlepszy postój lunchowy na trasie (jak w drodze tam).",
-          "source": "https://www.serways.de/standorte/frankenwald-ost/",
           "checked": "2026-07"
         }
       ],
       "opening_hours": {
-        "raststaette_a9": "24/7 (Frankenwald Ost, Nürnberg-Feucht)",
         "swiecko_toll": "Videotolling A2 — bez bramek, płatność online/aplikacja"
       },
       "eta_timeline": [
         {
-          "time": "06:45",
-          "event": "Wyjazd z Kufstein (A93 na północ, granica AT/DE bezwinietowa)"
+          "time": "07:45",
+          "event": "Wyjazd z Hof (A9/A72 na północ)"
         },
         {
-          "time": "07:30",
-          "event": "Monachium — A8 → A9 na północ"
+          "time": "10:00",
+          "event": "Postój na lunch (Turyngia/Saksonia, A9)"
         },
         {
-          "time": "09:00",
-          "event": "Norymberga (A9) — bez zjazdu, dalej na północ"
-        },
-        {
-          "time": "11:00",
-          "event": "Postój Frankenwald Ost (A9 km 254) — lunch i tank DE"
-        },
-        {
-          "time": "13:00",
+          "time": "11:45",
           "event": "Obwodnica Berlina (A10 ring, zjazd na A12 wschód)"
         },
         {
-          "time": "14:30",
+          "time": "13:15",
           "event": "Świecko — granica DE/PL (A12 → A2), videotolling"
         },
         {
-          "time": "16:30",
-          "event": "Poznań — dom. Koniec podróży (27.09 = dzień buforowy)"
+          "time": "15:00",
+          "event": "Poznań — dom. Koniec podróży."
         }
       ],
-      "summary": "Ostatni, najdłuższy odcinek (~917 km, ok. 9 h): z Kufstein autostradami przez Norymbergę i Berlin do przejścia granicznego w Świecku, a stąd do Poznania. Trasa jest lustrzanym odbiciem pierwszego dnia podróży, z pominięciem Drezna. W domu ok. 16:00–17:00 — dzień przed rezerwowym 27.09."
-    },
-    {
-      "date": "27.09 (nd)",
-      "day_num": null,
-      "type": "buffer",
-      "label": "BUFOR",
-      "title": "Dzień rezerwowy — już w Poznaniu",
-      "note": "Deadline powrotu. Przy planowym harmonogramie jesteś w domu od 26.09. Ten dzień to margines bezpieczeństwa na opóźnienia, pogodę lub dodatkowy postój.",
-      "base_id": null,
-      "summary": "Dzień rezerwowy już w Poznaniu — celowy zapas na wypadek opóźnień, korków lub awarii na drodze powrotnej."
+      "summary": "Ostatni, wyraźnie krótszy odcinek (~547 km, ok. 6,5 h): z Hof przez Berlin do przejścia granicznego w Świecku, a stąd do Poznania. Podział powrotu na 3 dni (Murlo→Telves→Hof→Poznań) zamienił jeden 917-kilometrowy maraton w dwa umiarkowane dni jazdy."
     }
   ],
   "practical_info": {
     "vignettes": {
-      "austria": "Potrzebne DWIE winiety: 10-dniowa (€12,80) aktywowana 12/13.09 NIE obejmie powrotu 24.09. Najtaniej 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 24.09), razem €19,20 — asfinag.at. Dojazd do Kufstein 12.09 bez winiety (odcinek granica–Kufstein-Süd bezwinietowy). Dodatkowo A13 Brenner Streckenmaut €12,50 za każdy przejazd (2× = €25) — oddzielnie na shop.asfinag.at.",
+      "austria": "Potrzebne DWIE winiety: 10-dniowa (€12,80) aktywowana 12/13.09 NIE obejmie powrotu 26.09. Najtaniej 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 26.09), razem €19,20 — asfinag.at. Dojazd do Unterhaching 12.09 bez winiety (Austria mijana dopiero 13.09). Dodatkowo A13 Brenner Streckenmaut €12,50 za każdy przejazd (2× = €25) — oddzielnie na shop.asfinag.at.",
       "italy": "Płatne bramki: gotówka lub karta bezpośrednio"
     },
     "climate": {
@@ -3427,9 +3492,9 @@
         "id": "accommodation",
         "name": "Noclegi",
         "icon": "🏨",
-        "per_person_min": 316,
-        "per_person_max": 342,
-        "note": "14 nocy: 1× Unterhaching (tam) + 5× Barga + 7× Murlo + 1× Kufstein (powrót). Powrót skrócony do 2 dni — jedna noc tranzytowa zamiast dwóch — a zaoszczędzona noc przeznaczona na dodatkowy dzień w bazie 2 (San Gimignano). Łączna liczba nocy bez zmian. Baza 1 i Baza 2 to kwoty z potwierdzonych rezerwacji, reszta to szacunki.",
+        "per_person_min": 324,
+        "per_person_max": 356,
+        "note": "15 nocy: 1× Unterhaching (tam) + 5× Barga + 7× Murlo + 1× Telves + 1× Hof (powrót, 3 dni zamiast 2 — patrz notes/decyzje-otwarte.md). Baza 1, Baza 2 i Telves to potwierdzone rezerwacje (Telves bez znanej jeszcze ceny), reszta to szacunki.",
         "items": [
           {
             "label": "Unterhaching (Monachium) — 1 noc (tranzyt tam)",
@@ -3450,16 +3515,16 @@
             "per_person_max": 126
           },
           {
-            "label": "Wasserburg am Inn — 1 noc (tranzyt powrót)",
-            "detail": "€45–75/pokój, ~2 pokoje na 5 osób",
+            "label": "Telves (Racines) — 1 noc (tranzyt powrót)",
+            "detail": "POTWIERDZONA REZERWACJA (Maurerhof, 1 apartament) — cena do uzupełnienia, szacunek przybliżony",
             "per_person_min": 18,
             "per_person_max": 30
           },
           {
-            "label": "Hof an der Saale — 1 noc (tranzyt powrót)",
-            "detail": "€40–55/pokój, ~2 pokoje na 5 osób",
-            "per_person_min": 16,
-            "per_person_max": 22
+            "label": "Hof (Saale) — 1 noc (tranzyt powrót)",
+            "detail": "€60–90/pokój (Dormero Hotel Hof / Brauereigasthof Falter), ~2 pokoje na 5 osób",
+            "per_person_min": 24,
+            "per_person_max": 36
           }
         ]
       },
@@ -3488,7 +3553,7 @@
         "items": [
           {
             "label": "Winieta Austria (2× 1-dniowa)",
-            "detail": "2× €9,60 = €19,20 / auto — na 13.09 i 24.09 (10-dniowa nie obejmuje powrotu; dojazd do Kufstein 12.09 bezwinietowy) — asfinag.at",
+            "detail": "2× €9,60 = €19,20 / auto — na 13.09 i 26.09 (10-dniowa nie obejmuje powrotu; dojazd do Unterhaching 12.09 bezwinietowy) — asfinag.at",
             "per_person_min": 4,
             "per_person_max": 4
           },
@@ -3587,10 +3652,10 @@
         ]
       }
     ],
-    "total_per_person_min": 711,
-    "total_per_person_max": 990,
-    "total_group_min": 3555,
-    "total_group_max": 4950,
+    "total_per_person_min": 719,
+    "total_per_person_max": 1004,
+    "total_group_min": 3595,
+    "total_group_max": 5020,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
@@ -3710,7 +3775,7 @@
           {
             "id": "winieta",
             "label": "Winiety Austria (2×) + Streckenmaut Brenner (2×) — kupić online",
-            "detail": "UWAGA: potrzebne DWIE winiety — 10-dniowa aktywowana 12/13.09 NIE obejmie powrotu 24.09 (rozpiętość podróży = 13 dni). Najtaniej: 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 24.09), razem €19,20. Dojazd do Kufstein 12.09 nie wymaga winiety — odcinek granica–Kufstein-Süd jest bezwinietowy. Kupić online na asfinag.at (e-winieta 1-dniowa ważna od razu). Kara za brak: €120 na miejscu.\n\nOsobno: Streckenmaut A13 Brenner — €12,50 za KAŻDY przejazd (13.09 i 24.09 → 2× = €25). Kupić na shop.asfinag.at → 'Section toll / Abschnittsmaut'. Zielony pas DIGITAL — bez zatrzymania. Łącznie Austria: €19,20 + €25,00 = €44,20 za auto.",
+            "detail": "UWAGA: potrzebne DWIE winiety — 10-dniowa aktywowana 12/13.09 NIE obejmie powrotu 26.09 (rozpiętość podróży = 15 dni). Najtaniej: 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 26.09), razem €19,20. Dojazd do Unterhaching 12.09 nie wymaga winiety — Austria mijana dopiero 13.09. Kupić online na asfinag.at (e-winieta 1-dniowa ważna od razu). Kara za brak: €120 na miejscu.\n\nOsobno: Streckenmaut A13 Brenner — €12,50 za KAŻDY przejazd (13.09 i 26.09 → 2× = €25). Kupić na shop.asfinag.at → 'Section toll / Abschnittsmaut'. Zielony pas DIGITAL — bez zatrzymania. Łącznie Austria: €19,20 + €25,00 = €44,20 za auto.",
             "deadline": "dzień przed przejazdem przez Austrię",
             "priority": "high",
             "url": "https://www.asfinag.at"
@@ -3759,8 +3824,8 @@
           },
           {
             "id": "noclegi-tranzyt",
-            "label": "Noclegi tranzytowe — pozostałe (Kufstein powrót)",
-            "detail": "Unterhaching (tam, Hotel Fresh Inn) już POTWIERDZONY. Kufstein na powrót (25.09) wciąż do zarezerwowania — Booking.com wystarczy.",
+            "label": "Nocleg tranzytowy — Hof (26→27.09)",
+            "detail": "Unterhaching (tam) i Telves/Racines (powrót, 25→26.09) już POTWIERDZONE. Hof (Saale) na noc 26→27.09 wciąż do zarezerwowania — patrz kandydaci: Dormero Hotel Hof lub Brauereigasthof Falter.",
             "deadline": "lipiec 2026 — zarezerwuj teraz!",
             "priority": "medium"
           },

@@ -1,11 +1,11 @@
 ---
-tags: [toskania, miejscowosc, mijane-nie-zwiedzane]
-status: tylko tranzyt
+tags: [toskania, miejscowosc, wdrozone]
+status: wdrożone — D4, 15.09.2026 (razem z Piza)
 ---
 
 # Lucca
 
-Renesansowe mury (dziś ścieżka spacerowa/rowerowa dookoła miasta), Piazza dell'Anfiteatro, Torre Guinigi. **Obecnie tylko mijana** — zjazd "Lucca Est" z A11 pojawia się w trasie D6/D7 (transfer Barga → Chianti), ale miasto nigdy nie jest zwiedzane.
+Renesansowe mury (dziś ścieżka spacerowa/rowerowa dookoła miasta), Piazza dell'Anfiteatro, Torre Guinigi. Zwiedzane pieszo rano D4, przed pociągiem do [[Piza|Pizy]] — zob. decyzja „Piza + Lucca" w [[decyzje-otwarte]].
 
 ## Dostęp z Bazy 1 (Barga)
 - ~35–40 min autem.
@@ -28,3 +28,4 @@ Naturalny kandydat do połączenia z dniem poświęconym [[Piza|Pizie]] — leż
 - **Parking:** zostawić auto **poza murami** — wewnątrz obowiązuje **ZTL** (strefa ograniczonego ruchu, mandaty z kamer). Parkingi przy bramach, m.in. Parcheggio Palatucci / Carducci / Mazzini; stamtąd pieszo w kilka minut do centrum.
 - **Dojazd pociągiem:** ze stacji **Fornaci di Barga → Lucca ~44 min** (Ferrovia Lucca–Aulla), oraz **Lucca ↔ [[Piza|Pisa]] ~25–30 min** — Lucca jest naturalnym węzłem dnia „Lucca + Piza".
 - Centrum jest małe i całkowicie na piechotę/rower; auto w środku niepotrzebne i zabronione.
+- **Zniżka studencka (sprawdzone 2026-07-22):** regulamin gminy Lucca (allegato al regolamento d'uso delle Mura Urbane, comune.lucca.it) wprost wymienia „studenti purché muniti di idonea tessera" jako kategorię ridotto na Torre Guinigi/Torre delle Ore/Orto Botanico — legitymacja studencka/szkolna się liczy, w przeciwieństwie do większości innych płatnych atrakcji w tym planie (Duomo Firenze, Torre di Pisa, Siena OPA — tam zniżki studenckiej brak, zob. [[Florencja]]).

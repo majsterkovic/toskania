@@ -8,8 +8,7 @@ const TRIP_END   = '2026-09-27';
 
 const LOCATIONS = [
   { id: 'base1', name: 'Garfagnana', sub: 'okolice Barga', lat: 44.073, lon: 10.484 },
-  { id: 'base2', name: 'Val d\'Orcia', sub: 'okolice Castiglione d\'Orcia', lat: 43.062, lon: 11.618 },
-  { id: 'base3', name: 'Maremma',   sub: 'okolice Pitigliano', lat: 42.636, lon: 11.669 },
+  { id: 'base2', name: 'Val di Merse', sub: 'okolice Murlo', lat: 43.1595, lon: 11.3158 },
 ];
 
 const WMO_ICON = {

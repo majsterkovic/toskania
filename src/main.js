@@ -1,7 +1,7 @@
 import plan2 from '../plan_2bazy.json';
 import { renderTimeline, renderDayPage } from './render.js';
 import { renderSiteNav, initChrome } from './site.js';
-import { initBaseMaps, initDayMap, destroyAllMaps } from './maps.js';
+import { initBaseMaps, initDayMap, initTransitDayMap, destroyAllMaps } from './maps.js';
 import './style.css';
 
 // Motyw przed pierwszym malowaniem (bez FOUC)
@@ -32,7 +32,9 @@ function renderDayView(dayNum) {
   app.innerHTML = renderSiteNav('plan') + renderDayPage(day, plan.meta.images, plan.bases, plan.days);
   initChrome();
   window.scrollTo(0, 0);
-  if (day.base_id) {
+  if (day.type === 'transit' && day.route_points?.length) {
+    whenLeaflet(() => initTransitDayMap(`map-day-${dayNum}`, day.route_points));
+  } else if (day.base_id) {
     const base = plan.bases.find((b) => b.id === day.base_id);
     const destBase = day.next_base_id ? plan.bases.find((b) => b.id === day.next_base_id) : null;
     whenLeaflet(() => initDayMap(`map-day-${dayNum}`, base, day.attractions, destBase));

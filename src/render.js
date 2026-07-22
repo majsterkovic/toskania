@@ -116,12 +116,13 @@ function renderHeader(meta, images) {
 }
 
 export function renderInteractiveMap(days) {
-  const tuscanyDays = days.filter(d =>
-    ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null
+  const mapDays = days.filter(d =>
+    (['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null) ||
+    (d.type === 'transit' && d.day_num != null && d.route_points?.length > 0)
   );
 
-  const filterBtns = tuscanyDays.map(day => {
-    const km = day.daily_km_estimate;
+  const filterBtns = mapDays.map(day => {
+    const km = day.daily_km_estimate ?? day.drive_km;
     const level = driveLevel(km);
     const kmSpan = km ? `<span class="map-filter__km" data-drive="${level}">~${km}km</span>` : '';
     return `
@@ -890,7 +891,9 @@ export function renderDayPage(day, images, bases, days) {
       ? `<a class="daypage-nav__link daypage-nav__link--${dir}" href="#/dzien-${target.day_num}"><span class="daypage-nav__dir">${label}</span><span class="daypage-nav__t">${esc(target.title)}</span></a>`
       : `<span class="daypage-nav__link is-disabled"><span class="daypage-nav__dir">${label}</span></span>`;
 
-  const hasMiniMap = (day.type === 'tuscany' || day.type === 'tuscany_popular' || day.type === 'tuscany_transfer') && day.base_id;
+  const hasMiniMap =
+    ((day.type === 'tuscany' || day.type === 'tuscany_popular' || day.type === 'tuscany_transfer') && day.base_id) ||
+    (day.type === 'transit' && day.route_points?.length > 0);
   const miniMap = hasMiniMap
     ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini" aria-label="Mapa dnia ${day.day_num}"></div>`
     : '';

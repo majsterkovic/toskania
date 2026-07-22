@@ -426,6 +426,11 @@
       "drive_km": 935,
       "drive_h": "9,5–10 h",
       "base_id": null,
+      "route_points": [
+        { "label": "Poznań", "coords": [52.4066, 16.9252], "kind": "home" },
+        { "label": "Świecko (granica PL/DE)", "coords": [52.352, 14.56], "kind": "transit" },
+        { "label": "Unterhaching — Hotel Fresh Inn", "coords": [48.0569, 11.6057], "kind": "transit_night" }
+      ],
       "depart": "6:00–7:00 rano z Poznania",
       "route": "A2 west (Świecko) → A12 → Berliner Ring A10 → A9 south → Nürnberg → Monachium → Unterhaching (Bawaria)",
       "route_segments": [
@@ -589,6 +594,12 @@
       "drive_km": 645,
       "drive_h": "8–8,5 h",
       "base_id": "base1",
+      "route_points": [
+        { "label": "Unterhaching", "coords": [48.0569, 11.6057], "kind": "transit_night" },
+        { "label": "Kufstein (Tyrol)", "coords": [47.583, 12.166], "kind": "transit" },
+        { "label": "Innsbruck/Brenner", "coords": [47.006, 11.51], "kind": "transit" },
+        { "label": "Barga — BAZA 1", "coords": [44.06753328816146, 10.455154915330162], "kind": "base" }
+      ],
       "depart": "6:30 rano z Unterhaching",
       "route": "A995/A8 → Kufstein (Austria) → A12 Inntal → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
       "attractions": [],
@@ -2878,6 +2889,10 @@
       "drive_km": 527,
       "drive_h": "6–6,5 h",
       "base_id": null,
+      "route_points": [
+        { "label": "Murlo — BAZA 2", "coords": [43.1595, 11.3158], "kind": "base" },
+        { "label": "Telves (Racines) — Maurerhof", "coords": [46.8946283, 11.3784102], "kind": "transit_night" }
+      ],
       "depart": "7:30 rano z Murlo (Val di Merse)",
       "route": "Murlo → SS223 Siena → tangenziale Siena → Siena Superstrada → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → Vipiteno/Sterzing → Telves (Racines, Val Ridanna)",
       "attractions": [],
@@ -3041,6 +3056,11 @@
       "drive_km": 505,
       "drive_h": "6–6,5 h",
       "base_id": null,
+      "route_points": [
+        { "label": "Telves (Racines)", "coords": [46.8946283, 11.3784102], "kind": "transit_night" },
+        { "label": "Brennero / Kufstein", "coords": [47.583, 12.166], "kind": "transit" },
+        { "label": "Hof (Saale)", "coords": [50.3187507, 11.9162992], "kind": "transit_night" }
+      ],
       "depart": "7:30 rano z Telves (Racines)",
       "route": "Telves → Vipiteno → A22 Brennero → A13 AT (Streckenmaut) → Innsbruck → A12 Inntal → Kufstein → A93/A8 Monachium → A9 north → Norymberga → Bayreuth → Hof (Bawaria)",
       "route_segments": [
@@ -3217,6 +3237,11 @@
       "drive_km": 547,
       "drive_h": "6,5–7 h",
       "base_id": null,
+      "route_points": [
+        { "label": "Hof (Saale)", "coords": [50.3187507, 11.9162992], "kind": "transit_night" },
+        { "label": "Świecko (granica DE/PL)", "coords": [52.352, 14.56], "kind": "transit" },
+        { "label": "Poznań — dom", "coords": [52.4066, 16.9252], "kind": "home" }
+      ],
       "depart": "7:30–8:00 rano z Hof",
       "route": "Hof → A9/A72 → Berliner Ring A10 → A12 → Świecko (granica DE/PL) → A2 east → Poznań",
       "route_segments": [

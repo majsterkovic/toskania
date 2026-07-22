@@ -262,6 +262,65 @@ export function initDayMap(containerId, base, attractions, destBase) {
   return map;
 }
 
+/**
+ * Mini mapa dnia tranzytowego — uporządkowana lista punktów trasy (miasta,
+ * granice, noclegi), połączona trasą drogową z OSRM. Brak koncepcji
+ * "bazy/atrakcji" — to jednokierunkowa trasa przejazdowa.
+ */
+export function initTransitDayMap(containerId, points) {
+  if (!window.L) return;
+  const el = document.getElementById(containerId);
+  if (!el) return;
+
+  const pts = (points || []).filter((p) => p.coords);
+  if (!pts.length) return;
+
+  const map = window.L.map(el, { zoomControl: false, scrollWheelZoom: false });
+  window.L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  registerMap({ map, type: 'day' });
+
+  const latLngs = pts.map((p) => p.coords);
+  pts.forEach((p) => {
+    window.L.marker(p.coords, { icon: makeIcon(p.kind || 'transit') })
+      .bindPopup(`<strong>${p.label}</strong>`, { maxWidth: 180 })
+      .addTo(map);
+  });
+
+  let routeLayer = null;
+  if (latLngs.length > 1) {
+    routeLayer = window.L.polyline(latLngs, { color: '#9a8f82', weight: 1.5, dashArray: '4 3', opacity: 0.4 }).addTo(map);
+  }
+
+  function fitView() {
+    if (latLngs.length === 1) map.setView(latLngs[0], 9);
+    else map.fitBounds(window.L.latLngBounds(latLngs), { padding: [28, 28] });
+  }
+  fitView();
+
+  if (latLngs.length > 1) {
+    fetchOSRMRoute(latLngs).then((result) => {
+      if (!result || !map._container) return;
+      const { route, distanceKm } = result;
+      if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
+      window.L.polyline(route, { color: '#9a8f82', weight: 2.5, opacity: 0.75 }).addTo(map);
+      if (distanceKm > 0) {
+        const kmCtrl = window.L.control({ position: 'bottomleft' });
+        kmCtrl.onAdd = () => {
+          const div = window.L.DomUtil.create('div', 'map-km-badge');
+          div.innerHTML = `🚗 ${distanceKm} km`;
+          return div;
+        };
+        kmCtrl.addTo(map);
+      }
+    });
+  }
+
+  setTimeout(() => { try { map.invalidateSize(); fitView(); } catch (_) {} }, 150);
+  setTimeout(() => { try { map.invalidateSize(); fitView(); } catch (_) {} }, 450);
+
+  return map;
+}
+
 const BASE_ACCENT = {
   base1: '#5c6b45',
   base2: '#b85c38',
@@ -370,8 +429,9 @@ export function initInteractiveMap(containerId, plan) {
   L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
   registerMap({ map, type: 'interactive' });
 
-  const tuscanyDays = (plan.days || []).filter(d =>
-    ['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null
+  const mapDays = (plan.days || []).filter(d =>
+    (['tuscany', 'tuscany_transfer', 'tuscany_popular'].includes(d.type) && d.day_num != null) ||
+    (d.type === 'transit' && d.day_num != null && d.route_points?.length > 0)
   );
 
   const basesById = {};
@@ -392,9 +452,43 @@ export function initInteractiveMap(containerId, plan) {
     allLatLngs.push(base.coords);
   });
 
-  tuscanyDays.forEach(day => {
+  mapDays.forEach(day => {
     const group = L.layerGroup();
     layerGroups[day.day_num] = group;
+
+    if (day.type === 'transit') {
+      // Punkty tranzytowe (Poznań, Unterhaching, Hof...) leżą daleko poza Toskanią —
+      // celowo NIE trafiają do allLatLngs/allGroup, żeby domyślny widok "Wszystkie"
+      // został wyzoomowany na Toskanię, a nie na całą Europę. Widoczne tylko po
+      // wybraniu konkretnego dnia tranzytowego z filtra.
+      const pts = day.route_points.filter(p => p.coords);
+      const routeCoords = pts.map(p => p.coords);
+
+      pts.forEach((p, idx) => {
+        const color = ICON_COLORS[p.kind] || '#9a8f82';
+        const num = idx + 1;
+
+        L.marker(p.coords, { icon: makeNumberedIcon(num, color) })
+          .bindPopup(`<strong>${p.label}</strong><br><span style="opacity:.7;font-size:.85em">Dzień ${day.day_num}</span>`, { maxWidth: 220 })
+          .addTo(group);
+      });
+
+      let dayPolyline = null;
+      if (routeCoords.length > 1) {
+        dayPolyline = L.polyline(routeCoords, {
+          color: '#9a8f82', weight: 2, opacity: 0.45, dashArray: '7 5',
+        }).addTo(group);
+
+        fetchOSRMRoute(routeCoords).then(result => {
+          if (!result || !map._container) return;
+          const { route, distanceKm } = result;
+          if (dayPolyline) { group.removeLayer(dayPolyline); dayPolyline = null; }
+          L.polyline(route, { color: '#9a8f82', weight: 2.5, opacity: 0.8 }).addTo(group);
+          if (distanceKm > 0) layerGroups[day.day_num]._distanceKm = distanceKm;
+        });
+      }
+      return;
+    }
 
     const base = basesById[day.base_id];
     const destBase = day.next_base_id ? basesById[day.next_base_id] : null;
@@ -476,10 +570,48 @@ export function initInteractiveMap(containerId, plan) {
       panel.innerHTML = `<div class="imap-panel__placeholder"><span class="imap-panel__hint">Wszystkie dni</span><p>Wybierz konkretny dzień żeby zobaczyć numerowaną trasę i szczegóły.</p></div>`;
       return;
     }
-    const day = tuscanyDays.find(d => d.day_num === dayNum);
-    const base = day ? basesById[day.base_id] : null;
-    const destBase = day?.next_base_id ? basesById[day.next_base_id] : null;
+    const day = mapDays.find(d => d.day_num === dayNum);
     if (!day) { panel.innerHTML = ''; return; }
+
+    if (day.type === 'transit') {
+      const pts = (day.route_points || []).filter(p => p.coords);
+      const routeItems = pts.map((p, idx) => {
+        const color = ICON_COLORS[p.kind] || '#9a8f82';
+        return `
+          <li class="imap-att">
+            <div class="imap-att__num" style="background:${color}">${idx + 1}</div>
+            <div class="imap-att__body">
+              <div class="imap-att__name">${p.label}</div>
+            </div>
+          </li>`;
+      }).join('');
+
+      const distKm = layerGroups[day.day_num]?._distanceKm ?? day.drive_km;
+      const kmHtml = distKm ? `<div class="imap-panel__km">🚗 ${distKm} km${day.drive_h ? ` · ${day.drive_h}` : ''}</div>` : '';
+      const foodHtml = day.food?.place ? `
+        <div class="imap-panel__food">
+          <span class="imap-panel__food-icon">🍽</span>
+          <div>
+            <div class="imap-panel__food-name">${day.food.place}</div>
+            ${day.food.price ? `<div class="imap-panel__food-price">${day.food.price}</div>` : ''}
+          </div>
+        </div>` : '';
+
+      panel.innerHTML = `
+        <div class="imap-panel__head">
+          <div class="imap-panel__day">Dzień ${day.day_num}</div>
+          <div class="imap-panel__date">${day.date || ''}</div>
+          <div class="imap-panel__title">${day.title || ''}</div>
+          ${kmHtml}
+        </div>
+        <ul class="imap-att-list">${routeItems || '<li class="imap-att imap-att--empty">Brak punktów trasy</li>'}</ul>
+        ${foodHtml}
+      `;
+      return;
+    }
+
+    const base = basesById[day.base_id];
+    const destBase = day?.next_base_id ? basesById[day.next_base_id] : null;
 
     const atts = (day.attractions || []).filter(a => a.coords);
     const accentColor = BASE_ACCENT[day.base_id] || '#9a8f82';

@@ -3697,17 +3697,9 @@
         "icon": "📋",
         "items": [
           {
-            "id": "ekuz-mariusz",
-            "label": "EKUZ — Mariusz (uczeń do 26 lat)",
-            "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) uprawnia do bezpłatnej pomocy medycznej w UE. Jako uczeń do 26 lat wyrabiasz bezpłatnie przez NFZ: eWUŚ online na pacjent.gov.pl lub osobiście w oddziale NFZ. Ważna 1–2 lata. Nie zastępuje ubezpieczenia turystycznego — pokrywa tylko nagłą pomoc medyczną.",
-            "deadline": "18 lipca – 1 sierpnia 2026 (6–8 tyg. przed wyjazdem)",
-            "priority": "high",
-            "url": "https://pacjent.gov.pl"
-          },
-          {
-            "id": "ekuz-dziewczyna",
-            "label": "EKUZ — dziewczyna (studentka do 26 lat)",
-            "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) — tak samo jak Mariusz. Jako studentka do 26 lat uprawniona do EKUZ bezpłatnie. Wyrobić przez pacjent.gov.pl lub NFZ. Sprawdzić czy nie jest na ubezpieczeniu rodziców (wtedy wyrobić przez ich NFZ).",
+            "id": "ekuz-mlodzi",
+            "label": "EKUZ — 3 osoby do 26 lat (uczeń/studenci)",
+            "detail": "Europejska Karta Ubezpieczenia Zdrowotnego (EKUZ) uprawnia do bezpłatnej pomocy medycznej w UE. Osoby do 26 lat ucząc się (szkoła lub studia) wyrabiają EKUZ bezpłatnie przez NFZ: eWUŚ online na pacjent.gov.pl lub osobiście w oddziale NFZ. Każda osoba musi mieć własną kartę. Sprawdź, czy student nie jest zgłoszony do ubezpieczenia przez rodziców (wtedy EKUZ wyrabiają oni). Ważna 1–2 lata. Nie zastępuje ubezpieczenia turystycznego — pokrywa tylko nagłą pomoc medyczną.",
             "deadline": "18 lipca – 1 sierpnia 2026 (6–8 tyg. przed wyjazdem)",
             "priority": "high",
             "url": "https://pacjent.gov.pl"
@@ -3730,7 +3722,7 @@
           {
             "id": "ubezpieczenie",
             "label": "Ubezpieczenie turystyczne (all-risk)",
-            "detail": "EKUZ nie pokrywa transportu medycznego, ubezpieczenia bagażu ani OC. Wykup polisę turystyczną dla 4 osób — np. ERGO Hestia, PZU, Allianz. Szukaj opcji z assistance i NNW. Koszt ok. €30–50/os.",
+            "detail": "EKUZ nie pokrywa transportu medycznego, ubezpieczenia bagażu ani OC. Wykup polisę turystyczną dla 5 osób — np. ERGO Hestia, PZU, Allianz. Szukaj opcji z assistance i NNW. Koszt ok. €30–50/os.",
             "deadline": "przed wyjazdem",
             "priority": "high"
           },

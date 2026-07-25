@@ -12,6 +12,7 @@ export default defineConfig({
         mapa: resolve(__dirname, 'mapa/index.html'),
         galeria: resolve(__dirname, 'galeria/index.html'),
         praktyczne: resolve(__dirname, 'praktyczne/index.html'),
+        packing: resolve(__dirname, 'packing/index.html'),
       },
     },
   },

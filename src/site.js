@@ -11,6 +11,7 @@ const NAV_LINKS = [
   ['mapa', 'mapa/', 'Mapa'],
   ['galeria', 'galeria/', 'Galeria'],
   ['praktyczne', 'praktyczne/', 'Praktyczne'],
+  ['packing', 'packing/', 'Pakowanie'],
   ['short', 'short/', 'Skrót'],
 ];
 

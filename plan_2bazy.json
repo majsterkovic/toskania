@@ -427,9 +427,30 @@
       "drive_h": "9,5–10 h",
       "base_id": null,
       "route_points": [
-        { "label": "Poznań", "coords": [52.4066, 16.9252], "kind": "home" },
-        { "label": "Świecko (granica PL/DE)", "coords": [52.352, 14.56], "kind": "transit" },
-        { "label": "Unterhaching — Hotel Fresh Inn", "coords": [48.0569, 11.6057], "kind": "transit_night" }
+        {
+          "label": "Poznań",
+          "coords": [
+            52.4066,
+            16.9252
+          ],
+          "kind": "home"
+        },
+        {
+          "label": "Świecko (granica PL/DE)",
+          "coords": [
+            52.352,
+            14.56
+          ],
+          "kind": "transit"
+        },
+        {
+          "label": "Unterhaching — Hotel Fresh Inn",
+          "coords": [
+            48.0569,
+            11.6057
+          ],
+          "kind": "transit_night"
+        }
       ],
       "depart": "6:00–7:00 rano z Poznania",
       "route": "A2 west (Świecko) → A12 → Berliner Ring A10 → A9 south → Nürnberg → Monachium → Unterhaching (Bawaria)",
@@ -596,10 +617,38 @@
       "drive_h": "8–8,5 h",
       "base_id": "base1",
       "route_points": [
-        { "label": "Unterhaching", "coords": [48.0569, 11.6057], "kind": "transit_night" },
-        { "label": "Kufstein (Tyrol)", "coords": [47.583, 12.166], "kind": "transit" },
-        { "label": "Innsbruck/Brenner", "coords": [47.006, 11.51], "kind": "transit" },
-        { "label": "Barga — BAZA 1", "coords": [44.0398411, 10.4932228], "kind": "base" }
+        {
+          "label": "Unterhaching",
+          "coords": [
+            48.0569,
+            11.6057
+          ],
+          "kind": "transit_night"
+        },
+        {
+          "label": "Kufstein (Tyrol)",
+          "coords": [
+            47.583,
+            12.166
+          ],
+          "kind": "transit"
+        },
+        {
+          "label": "Innsbruck/Brenner",
+          "coords": [
+            47.006,
+            11.51
+          ],
+          "kind": "transit"
+        },
+        {
+          "label": "Barga — BAZA 1",
+          "coords": [
+            44.0398411,
+            10.4932228
+          ],
+          "kind": "base"
+        }
       ],
       "depart": "6:30 rano z Unterhaching",
       "route": "A995/A8 → Kufstein (Austria) → A12 Inntal → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
@@ -2872,8 +2921,22 @@
       "drive_h": "6–6,5 h",
       "base_id": null,
       "route_points": [
-        { "label": "Murlo — BAZA 2", "coords": [43.1595, 11.3158], "kind": "base" },
-        { "label": "Telves (Racines) — Maurerhof", "coords": [46.8946283, 11.3784102], "kind": "transit_night" }
+        {
+          "label": "Murlo — BAZA 2",
+          "coords": [
+            43.1595,
+            11.3158
+          ],
+          "kind": "base"
+        },
+        {
+          "label": "Telves (Racines) — Maurerhof",
+          "coords": [
+            46.8946283,
+            11.3784102
+          ],
+          "kind": "transit_night"
+        }
       ],
       "depart": "7:30 rano z Murlo (Val di Merse)",
       "route": "Murlo → SS223 Siena → tangenziale Siena → Siena Superstrada → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → Vipiteno/Sterzing → Telves (Racines, Val Ridanna)",
@@ -3039,9 +3102,30 @@
       "drive_h": "6–6,5 h",
       "base_id": null,
       "route_points": [
-        { "label": "Telves (Racines)", "coords": [46.8946283, 11.3784102], "kind": "transit_night" },
-        { "label": "Brennero / Kufstein", "coords": [47.583, 12.166], "kind": "transit" },
-        { "label": "Hof (Saale)", "coords": [50.3187507, 11.9162992], "kind": "transit_night" }
+        {
+          "label": "Telves (Racines)",
+          "coords": [
+            46.8946283,
+            11.3784102
+          ],
+          "kind": "transit_night"
+        },
+        {
+          "label": "Brennero / Kufstein",
+          "coords": [
+            47.583,
+            12.166
+          ],
+          "kind": "transit"
+        },
+        {
+          "label": "Hof (Saale)",
+          "coords": [
+            50.3187507,
+            11.9162992
+          ],
+          "kind": "transit_night"
+        }
       ],
       "depart": "7:30 rano z Telves (Racines)",
       "route": "Telves → Vipiteno → A22 Brennero → A13 AT (Streckenmaut) → Innsbruck → A12 Inntal → Kufstein → A93/A8 Monachium → A9 north → Norymberga → Bayreuth → Hof (Bawaria)",
@@ -3220,9 +3304,30 @@
       "drive_h": "6,5–7 h",
       "base_id": null,
       "route_points": [
-        { "label": "Hof (Saale)", "coords": [50.3187507, 11.9162992], "kind": "transit_night" },
-        { "label": "Świecko (granica DE/PL)", "coords": [52.352, 14.56], "kind": "transit" },
-        { "label": "Poznań — dom", "coords": [52.4066, 16.9252], "kind": "home" }
+        {
+          "label": "Hof (Saale)",
+          "coords": [
+            50.3187507,
+            11.9162992
+          ],
+          "kind": "transit_night"
+        },
+        {
+          "label": "Świecko (granica DE/PL)",
+          "coords": [
+            52.352,
+            14.56
+          ],
+          "kind": "transit"
+        },
+        {
+          "label": "Poznań — dom",
+          "coords": [
+            52.4066,
+            16.9252
+          ],
+          "kind": "home"
+        }
       ],
       "depart": "7:30–8:00 rano z Hof",
       "route": "Hof → A9/A72 → Berliner Ring A10 → A12 → Świecko (granica DE/PL) → A2 east → Poznań",
@@ -3973,6 +4078,314 @@
             "detail": "Wrzesień w Toskanii: ok. 10 dni deszczowych w miesiącu, głównie krótkie burze popołudniowe. Sprawdzić prognozę na meteo.it lub Windy.com 7 dni przed wyjazdem.",
             "deadline": "7 dni przed wyjazdem",
             "priority": "low"
+          }
+        ]
+      }
+    ]
+  },
+  "packing_list": {
+    "categories": [
+      {
+        "id": "clothing",
+        "name": "Ubranie",
+        "icon": "👕",
+        "items": [
+          {
+            "item": "T-shirty (5-6 szt.)",
+            "shared": false,
+            "note": "Lekkie, oddychające, wrzesień 22°C dzień"
+          },
+          {
+            "item": "Pary spodni długich (2)",
+            "shared": false,
+            "note": "Lekkie bawełniane, na dnią i wieczory"
+          },
+          {
+            "item": "Krótkie spodnie / szorty (1-2)",
+            "shared": false,
+            "note": "Na gorsze dni"
+          },
+          {
+            "item": "Kurtka / polar",
+            "shared": false,
+            "note": "Wieczory chłodne, gory 10-12°C"
+          },
+          {
+            "item": "Bielizna (7 szt.)",
+            "shared": false,
+            "note": "Wyprać w trasie"
+          },
+          {
+            "item": "Skarpety trekkingowe (4-5 par)",
+            "shared": false,
+            "note": "Dla gór (D3, D5)"
+          },
+          {
+            "item": "Skarpety zwykłe (2-3 pary)",
+            "shared": false,
+            "note": "Na spacery"
+          },
+          {
+            "item": "Biustonosz sportowy",
+            "shared": false,
+            "note": ""
+          },
+          {
+            "item": "Czapka / kapelusz",
+            "shared": false,
+            "note": "Na słońce"
+          },
+          {
+            "item": "Szalik / bandana",
+            "shared": false,
+            "note": "Opcjonalnie, na wiatr"
+          },
+          {
+            "item": "Kurtka przeciwdeszczowa",
+            "shared": false,
+            "note": "Lekka, zwinna — ryzyko małe ale możliwe"
+          }
+        ]
+      },
+      {
+        "id": "footwear",
+        "name": "Obuwie",
+        "icon": "👟",
+        "items": [
+          {
+            "item": "Buty trekkingowe",
+            "shared": false,
+            "note": "Do gór i przechodzenia po kamieniach"
+          },
+          {
+            "item": "Buty wygodne na spacery / turystyka",
+            "shared": false,
+            "note": "Miasta (Barga, Lucca, Siena), mury"
+          },
+          {
+            "item": "Klapki / buty na plażę",
+            "shared": false,
+            "note": "Wieczorny relaks, wyjście do bazy"
+          }
+        ]
+      },
+      {
+        "id": "hygiene",
+        "name": "Higiena i opieka",
+        "icon": "🧴",
+        "items": [
+          {
+            "item": "Szczoteczka zębów + pasta",
+            "shared": false,
+            "note": ""
+          },
+          {
+            "item": "Szampon (mini format)",
+            "shared": false,
+            "note": "Hotele mają mydła, ale dobra mieć swoje"
+          },
+          {
+            "item": "Mydło / żel do mycia",
+            "shared": false,
+            "note": ""
+          },
+          {
+            "item": "Krem do rąk",
+            "shared": false,
+            "note": "Po góralskim chodzeniu"
+          },
+          {
+            "item": "Krem przeciwsłoneczny SPF 30+",
+            "shared": false,
+            "note": "Niezbędny — słońce we Włoszech"
+          },
+          {
+            "item": "Balsam do ust SPF",
+            "shared": false,
+            "note": ""
+          },
+          {
+            "item": "Dezodorant",
+            "shared": false,
+            "note": ""
+          },
+          {
+            "item": "Papier toaletowy / wilgotne chusteczki",
+            "shared": false,
+            "note": "Nie wszystkie toalety w każdego"
+          },
+          {
+            "item": "Tamtam/gąbka higieniczna",
+            "shared": false,
+            "note": ""
+          },
+          {
+            "item": "Okulary (jeśli nosi)",
+            "shared": false,
+            "note": ""
+          },
+          {
+            "item": "Leki osobiste",
+            "shared": false,
+            "note": "Astma, alergii, itp."
+          }
+        ]
+      },
+      {
+        "id": "documents",
+        "name": "Dokumenty",
+        "icon": "📋",
+        "items": [
+          {
+            "item": "Paszport / Dowód osobisty",
+            "shared": false,
+            "note": "Kopia cyfrowa w telefonie"
+          },
+          {
+            "item": "Ubezpieczenie turystyczne",
+            "shared": false,
+            "note": "Dokumenty / potwierdzenie w mailu"
+          },
+          {
+            "item": "Karta płatnicza / gotówka",
+            "shared": false,
+            "note": "Włochy — karty wszędzie, ale małe wioski mogą chcieć cash"
+          }
+        ]
+      },
+      {
+        "id": "electronics",
+        "name": "Elektronika",
+        "icon": "🔌",
+        "items": [
+          {
+            "item": "Telefon + ładowarka",
+            "shared": true,
+            "note": "Bez niego nie przeżyjesz"
+          },
+          {
+            "item": "Przewód USB-C / Lightning",
+            "shared": false,
+            "note": "2-3 szt. na grupę"
+          },
+          {
+            "item": "Power bank",
+            "shared": true,
+            "note": "Jeden na 2 osoby wystarczy"
+          },
+          {
+            "item": "Aparat fotograficzny (jeśli)",
+            "shared": false,
+            "note": "Baterie / karty pamięci"
+          },
+          {
+            "item": "Adapter zasilacza EU (220V → włoskie gniazdka)",
+            "shared": true,
+            "note": "Włoskie gniazdka to typu C / L"
+          },
+          {
+            "item": "Laptop / tablet (opcjonalnie)",
+            "shared": false,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "medicines",
+        "name": "Leki i apteczka",
+        "icon": "💊",
+        "items": [
+          {
+            "item": "Paracetamol / Ibuprofen",
+            "shared": true,
+            "note": "Na bóle głowy, mięśni"
+          },
+          {
+            "item": "Leki na żołądek (np. Potonin, Imodium)",
+            "shared": true,
+            "note": "Włoska kuchnia może nie zgadzać się ze wszystkimi"
+          },
+          {
+            "item": "Bandaże / plastry",
+            "shared": true,
+            "note": "Na pęcherze ze spacerowania"
+          },
+          {
+            "item": "Maść antybiotyczna",
+            "shared": true,
+            "note": "Na oparzenia, zadrapania"
+          },
+          {
+            "item": "Antyseptyk (Betadine, alkohol)",
+            "shared": true,
+            "note": ""
+          },
+          {
+            "item": "Tabletki na kaszel",
+            "shared": true,
+            "note": ""
+          },
+          {
+            "item": "Krople do oczu",
+            "shared": true,
+            "note": "Na suchość od klimatyzacji"
+          },
+          {
+            "item": "Krople do nosa",
+            "shared": true,
+            "note": ""
+          }
+        ]
+      },
+      {
+        "id": "shared",
+        "name": "Rzeczy wspólne (dla grupy 5 osób)",
+        "icon": "👥",
+        "items": [
+          {
+            "item": "Adapter zasilacza EU (220V → włoskie C/L)",
+            "shared": true,
+            "note": "2-3 szt. na grupę"
+          },
+          {
+            "item": "Kable USB",
+            "shared": true,
+            "note": "2-3 szt. na grupę"
+          },
+          {
+            "item": "Power banki",
+            "shared": true,
+            "note": "2 szt. na grupę"
+          },
+          {
+            "item": "Apteczka grupowa (paracetamol, imodium, bandaże, antyseptyk)",
+            "shared": true,
+            "note": "Jedno zestawienie na całą grupę"
+          },
+          {
+            "item": "Narzędzia podstawowe w samochodzie",
+            "shared": true,
+            "note": "Latarka, zestaw śrubokręów, taśma klejąca, gumki"
+          },
+          {
+            "item": "Dokumeny samochodu",
+            "shared": true,
+            "note": "Dowód rejestracyjny, ubezpieczenie, e-winieta Austria (zakupiona)"
+          },
+          {
+            "item": "Papier toaletowy (zapas)",
+            "shared": true,
+            "note": "Dodatkowy, na wszelki wypadek"
+          },
+          {
+            "item": "Torby na śmieci",
+            "shared": true,
+            "note": "5-10 szt."
+          },
+          {
+            "item": "Woda do picia (butelki wielorazowe)",
+            "shared": true,
+            "note": "Każdy po jednej do napełniania"
           }
         ]
       }

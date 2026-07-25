@@ -1,24 +1,12 @@
 import plan from '../plan_2bazy.json';
 import { renderSiteNav, renderSiteFooter, initChrome } from './site.js';
+import { applyStoredTheme } from './theme.js';
+import { esc } from './html.js';
 import './styles/base.css';
 import './styles/nav.css';
 import './short.css';
 
-// Apply theme before first paint to prevent FOUC (mirrors main.js)
-(function () {
-  const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (saved === 'dark' || (!saved && prefersDark)) {
-    document.documentElement.classList.add('dark');
-  }
-})();
-
-function esc(str) {
-  if (str == null) return '';
-  return String(str).replace(/[&<>"']/g, (c) => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
-  }[c]));
-}
+applyStoredTheme();
 
 const TYPE_LABELS = {
   transit: 'Tranzyt',

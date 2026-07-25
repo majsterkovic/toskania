@@ -2,15 +2,12 @@ import plan from '../plan_2bazy.json';
 import { renderCosts, renderTodo, renderPractical } from './render.js';
 import { renderSiteNav, renderSiteFooter, initChrome, initTodo } from './site.js';
 import { initWeather } from './weather.js';
+import { applyStoredTheme } from './theme.js';
 import './styles/base.css';
 import './styles/nav.css';
 import './styles/practical.css';
 
-(function () {
-  const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
-})();
+applyStoredTheme();
 
 const app = document.getElementById('app');
 const weather = `

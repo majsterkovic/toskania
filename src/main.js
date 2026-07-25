@@ -2,6 +2,7 @@ import plan2 from '../plan_2bazy.json';
 import { renderTimeline, renderDayPage } from './render.js';
 import { renderSiteNav, initChrome } from './site.js';
 import { initBaseMaps, initDayMap, initTransitDayMap, destroyAllMaps } from './maps.js';
+import { applyStoredTheme } from './theme.js';
 // Strona planu renderuje oś czasu, strony dni i mapy baz — potrzebuje wszystkiego
 // poza galerią i sekcją praktyczną.
 import './styles/base.css';
@@ -11,11 +12,7 @@ import './styles/day.css';
 import './styles/map.css';
 
 // Motyw przed pierwszym malowaniem (bez FOUC)
-(function () {
-  const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
-})();
+applyStoredTheme();
 
 const plan = plan2;
 const app = document.getElementById('app');

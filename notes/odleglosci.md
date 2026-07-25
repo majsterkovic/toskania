@@ -6,11 +6,11 @@ tags: [toskania, planowanie, referencja]
 
 Notatka robocza (nie część strony) do szybkiej oceny "czy da się to jeszcze dokleić". Aktualny plan: [[Baza 1 - Barga]] (Garfagnana, dni 3–6) → [[Baza 2 - Chianti]] (Castelnuovo Berardenga, dni 7–15). Wariant 3-bazowy (z Val d'Orcia i Pitigliano) porzucony.
 
-## Z Bazy 1 (Barga / Mologno, Garfagnana)
+## Z Bazy 1 (Barga / Ponte all'Ania, Garfagnana — Casa vacanze Rosa, potwierdzona rezerwacja)
 
 | Cel | Auto | Pociąg | Werdykt |
 |---|---|---|---|
-| [[Lucca]] | ~35–40 min | z Fornaci di Barga: 44 min do Lucki (przesiadka) | brama do reszty regionu |
+| [[Lucca]] | ~37 min (31 km) | stacja Fornaci di Barga ~3 min/2 km od bazy, stamtąd 44 min do Lucki (przesiadka) | brama do reszty regionu |
 | [[Piza]] | ~1h04 (56 km, SS12 bezpośrednio) | Fornaci di Barga → Lucca 44 min + Lucca → Pisa Centrale **~25–30 min** (Regionale, ~30 kursów/dobę, ~€3–4/os) | możliwe jako osobny dzień z Bargi, kosztem dnia 4 |
 | [[Florencja]] | nie dotyczy (za daleko, zły kierunek pociągów) | Lucca → Firenze SMN: ~1h33, bardzo częste (co 20–30 min), pierwszy 5:05, ostatni 22:31 | technicznie możliwe z Bargi, ale w obecnym planie robimy to z Chianti (bliżej) |
 

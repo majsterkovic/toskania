@@ -1,3 +1,5 @@
+import { esc } from './html.js';
+
 /**
  * Leaflet.js maps module — Toskania 2026
  * Używa globalnego L (Leaflet ładowany z CDN w index.html)
@@ -144,7 +146,7 @@ export function initDayMap(containerId, base, attractions, destBase) {
 
   if (base?.coords) {
     window.L.marker(base.coords, { icon: makeIcon('base') })
-      .bindPopup(`<strong>${base.name}</strong><br><em>${isTransfer ? 'baza — start' : 'baza'}</em>`, { maxWidth: 160 })
+      .bindPopup(`<strong>${esc(base.name)}</strong><br><em>${isTransfer ? 'baza — start' : 'baza'}</em>`, { maxWidth: 160 })
       .addTo(map);
     latLngs.push(base.coords);
   }
@@ -152,13 +154,13 @@ export function initDayMap(containerId, base, attractions, destBase) {
   atts.forEach(a => {
     latLngs.push(a.coords);
     window.L.marker(a.coords, { icon: makeIcon(a.type === 'nature' ? 'nature' : 'attraction') })
-      .bindPopup(`<strong>${a.name}</strong>${a.drive_min ? `<br><em>${a.drive_min} min od bazy</em>` : ''}`, { maxWidth: 180 })
+      .bindPopup(`<strong>${esc(a.name)}</strong>${a.drive_min ? `<br><em>${a.drive_min} min od bazy</em>` : ''}`, { maxWidth: 180 })
       .addTo(map);
   });
 
   if (isTransfer) {
     window.L.marker(destBase.coords, { icon: makeIcon('base') })
-      .bindPopup(`<strong>${destBase.name}</strong><br><em>baza — cel</em>`, { maxWidth: 160 })
+      .bindPopup(`<strong>${esc(destBase.name)}</strong><br><em>baza — cel</em>`, { maxWidth: 160 })
       .addTo(map);
     latLngs.push(destBase.coords);
   }
@@ -235,7 +237,7 @@ export function initTransitDayMap(containerId, points) {
   const latLngs = pts.map((p) => p.coords);
   pts.forEach((p) => {
     window.L.marker(p.coords, { icon: makeIcon(p.kind || 'transit') })
-      .bindPopup(`<strong>${p.label}</strong>`, { maxWidth: 180 })
+      .bindPopup(`<strong>${esc(p.label)}</strong>`, { maxWidth: 180 })
       .addTo(map);
   });
 
@@ -280,11 +282,6 @@ const BASE_ACCENT = {
   base3: '#8f3f28',
 };
 
-function escapeHtml(s) {
-  return String(s == null ? '' : s)
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
 // Paleta per-dzień do map baz — atrakcje danego dnia w osobnym kolorze (harmonijna z paletą toskańską)
 const DAY_PALETTE = ['#b85c38', '#5c6b45', '#c4860a', '#4a6b8a', '#8f3f28', '#2e4f3e', '#a8883c'];
 
@@ -313,7 +310,7 @@ export function initBaseMaps(plan) {
     const pts = [];
     if (base?.coords) {
       L.marker(base.coords, { icon: makePinIcon(main, 13, true) })
-        .bindPopup(`<strong>${escapeHtml(base.name)}</strong><br><em>baza noclegowa</em>`, { maxWidth: 200 })
+        .bindPopup(`<strong>${esc(base.name)}</strong><br><em>baza noclegowa</em>`, { maxWidth: 200 })
         .addTo(map);
       pts.push(base.coords);
     }
@@ -328,7 +325,7 @@ export function initBaseMaps(plan) {
         pts.push(a.coords);
         L.marker(a.coords, { icon: makePinIcon(color, 8, false) })
           .bindPopup(
-            `<strong>${escapeHtml(a.name)}</strong><br><span style="color:${color};font-weight:600">Dzień ${day.day_num}</span>`,
+            `<strong>${esc(a.name)}</strong><br><span style="color:${color};font-weight:600">Dzień ${day.day_num}</span>`,
             { maxWidth: 200 }
           )
           .addTo(map);
@@ -351,7 +348,7 @@ export function initBaseMaps(plan) {
       legEl.innerHTML = legend
         .map(
           (l) =>
-            `<span class="bm-leg"><span class="bm-leg__dot" style="background:${l.color}"></span><span class="bm-leg__t">D${l.num} · ${escapeHtml(l.title)}</span></span>`
+            `<span class="bm-leg"><span class="bm-leg__dot" style="background:${l.color}"></span><span class="bm-leg__t">D${l.num} · ${esc(l.title)}</span></span>`
         )
         .join('');
     }
@@ -400,7 +397,7 @@ export function initInteractiveMap(containerId, plan) {
     if (!base.coords) return;
     const color = BASE_ACCENT[base.id] || '#b85c38';
     allBaseMarkers[base.id] = L.marker(base.coords, { icon: makePinIcon(color, 20, true) })
-      .bindPopup(`<strong>${base.name}</strong><br><span style="color:${color};font-size:.8em">● baza noclegowa</span>`, { maxWidth: 200 })
+      .bindPopup(`<strong>${esc(base.name)}</strong><br><span style="color:${color};font-size:.8em">● baza noclegowa</span>`, { maxWidth: 200 })
       .addTo(allGroup);
     allLatLngs.push(base.coords);
   });
@@ -422,7 +419,7 @@ export function initInteractiveMap(containerId, plan) {
         const num = idx + 1;
 
         L.marker(p.coords, { icon: makeNumberedIcon(num, color) })
-          .bindPopup(`<strong>${p.label}</strong><br><span style="opacity:.7;font-size:.85em">Dzień ${day.day_num}</span>`, { maxWidth: 220 })
+          .bindPopup(`<strong>${esc(p.label)}</strong><br><span style="opacity:.7;font-size:.85em">Dzień ${day.day_num}</span>`, { maxWidth: 220 })
           .addTo(group);
       });
 
@@ -452,7 +449,7 @@ export function initInteractiveMap(containerId, plan) {
     // Base marker for this day
     if (base?.coords) {
       L.marker(base.coords, { icon: makePinIcon(accentColor, 20, true) })
-        .bindPopup(`<b>${base.name}</b><br><span style="opacity:.7;font-size:.85em">${isTransfer ? 'baza — start' : 'baza'} · Dzień ${day.day_num}</span>`)
+        .bindPopup(`<b>${esc(base.name)}</b><br><span style="opacity:.7;font-size:.85em">${isTransfer ? 'baza — start' : 'baza'} · Dzień ${day.day_num}</span>`)
         .addTo(group);
     }
 
@@ -460,7 +457,7 @@ export function initInteractiveMap(containerId, plan) {
     if (isTransfer) {
       const destColor = BASE_ACCENT[destBase.id] || '#9a8f82';
       L.marker(destBase.coords, { icon: makePinIcon(destColor, 20, true) })
-        .bindPopup(`<b>${destBase.name}</b><br><span style="opacity:.7;font-size:.85em">baza — cel · Dzień ${day.day_num}</span>`)
+        .bindPopup(`<b>${esc(destBase.name)}</b><br><span style="opacity:.7;font-size:.85em">baza — cel · Dzień ${day.day_num}</span>`)
         .addTo(group);
     }
 
@@ -533,7 +530,7 @@ export function initInteractiveMap(containerId, plan) {
           <li class="imap-att">
             <div class="imap-att__num" style="background:${color}">${idx + 1}</div>
             <div class="imap-att__body">
-              <div class="imap-att__name">${p.label}</div>
+              <div class="imap-att__name">${esc(p.label)}</div>
             </div>
           </li>`;
       }).join('');
@@ -544,16 +541,16 @@ export function initInteractiveMap(containerId, plan) {
         <div class="imap-panel__food">
           <span class="imap-panel__food-icon">🍽</span>
           <div>
-            <div class="imap-panel__food-name">${day.food.place}</div>
-            ${day.food.price ? `<div class="imap-panel__food-price">${day.food.price}</div>` : ''}
+            <div class="imap-panel__food-name">${esc(day.food.place)}</div>
+            ${day.food.price ? `<div class="imap-panel__food-price">${esc(day.food.price)}</div>` : ''}
           </div>
         </div>` : '';
 
       panel.innerHTML = `
         <div class="imap-panel__head">
           <div class="imap-panel__day">Dzień ${day.day_num}</div>
-          <div class="imap-panel__date">${day.date || ''}</div>
-          <div class="imap-panel__title">${day.title || ''}</div>
+          <div class="imap-panel__date">${esc(day.date || '')}</div>
+          <div class="imap-panel__title">${esc(day.title || '')}</div>
           ${kmHtml}
         </div>
         <ul class="imap-att-list">${routeItems || '<li class="imap-att imap-att--empty">Brak punktów trasy</li>'}</ul>
@@ -581,12 +578,12 @@ export function initInteractiveMap(containerId, plan) {
         <li class="imap-att">
           <div class="imap-att__num" style="background:${typeColor}">${num}</div>
           <div class="imap-att__body">
-            <div class="imap-att__name">${att.name}</div>
+            <div class="imap-att__name">${esc(att.name)}</div>
             <div class="imap-att__meta">
-              ${typeLabel ? `<span class="imap-att__type">${typeLabel}</span>` : ''}
+              ${typeLabel ? `<span class="imap-att__type">${esc(typeLabel)}</span>` : ''}
               ${modeHtml}
             </div>
-            ${att.description ? `<div class="imap-att__desc">${att.description.slice(0, 110)}${att.description.length > 110 ? '…' : ''}</div>` : ''}
+            ${att.description ? `<div class="imap-att__desc">${esc(att.description.slice(0, 110))}${att.description.length > 110 ? '…' : ''}</div>` : ''}
           </div>
         </li>`;
     }).join('');
@@ -595,8 +592,8 @@ export function initInteractiveMap(containerId, plan) {
       <div class="imap-panel__food">
         <span class="imap-panel__food-icon">🍽</span>
         <div>
-          <div class="imap-panel__food-name">${day.food.place}</div>
-          ${day.food.price ? `<div class="imap-panel__food-price">${day.food.price}</div>` : ''}
+          <div class="imap-panel__food-name">${esc(day.food.place)}</div>
+          ${day.food.price ? `<div class="imap-panel__food-price">${esc(day.food.price)}</div>` : ''}
         </div>
       </div>` : '';
 
@@ -606,9 +603,9 @@ export function initInteractiveMap(containerId, plan) {
     panel.innerHTML = `
       <div class="imap-panel__head">
         <div class="imap-panel__day">Dzień ${day.day_num}</div>
-        <div class="imap-panel__date">${day.date || ''}</div>
-        <div class="imap-panel__title">${day.title || ''}</div>
-        ${base ? `<div class="imap-panel__base">📍 ${base.name}${destBase && destBase.id !== base.id ? ` → ${destBase.name}` : ''}</div>` : ''}
+        <div class="imap-panel__date">${esc(day.date || '')}</div>
+        <div class="imap-panel__title">${esc(day.title || '')}</div>
+        ${base ? `<div class="imap-panel__base">📍 ${esc(base.name)}${destBase && destBase.id !== base.id ? ` → ${esc(destBase.name)}` : ''}</div>` : ''}
         ${kmHtml}
       </div>
       <ul class="imap-att-list">${attItems || '<li class="imap-att imap-att--empty">Brak atrakcji z współrzędnymi</li>'}</ul>
@@ -689,10 +686,10 @@ function buildPopup(att, day, num) {
   const mode = att.drive_min > 0 ? `🚗 ${att.drive_min} min od bazy` : '🚶 pieszo od bazy';
   return `
     <div style="font-family:'Outfit',sans-serif;font-size:0.82rem;min-width:170px">
-      <div style="font-weight:600;font-size:0.9rem;margin-bottom:3px">${numBadge}${att.name}</div>
-      <div style="color:#6b6258;margin-bottom:3px">Dzień ${day.day_num} · ${typeLabel}</div>
+      <div style="font-weight:600;font-size:0.9rem;margin-bottom:3px">${numBadge}${esc(att.name)}</div>
+      <div style="color:#6b6258;margin-bottom:3px">Dzień ${day.day_num} · ${esc(typeLabel)}</div>
       <div style="color:#9a8f82;font-size:0.78rem;margin-bottom:4px">${mode}</div>
-      ${att.description ? `<div style="color:#2a2420;line-height:1.4">${att.description.slice(0, 130)}${att.description.length > 130 ? '…' : ''}</div>` : ''}
+      ${att.description ? `<div style="color:#2a2420;line-height:1.4">${esc(att.description.slice(0, 130))}${att.description.length > 130 ? '…' : ''}</div>` : ''}
     </div>`;
 }
 

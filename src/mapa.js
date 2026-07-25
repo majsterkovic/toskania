@@ -2,15 +2,12 @@ import plan from '../plan_2bazy.json';
 import { renderInteractiveMap } from './render.js';
 import { renderSiteNav, renderSiteFooter, initChrome } from './site.js';
 import { initInteractiveMap } from './maps.js';
+import { applyStoredTheme } from './theme.js';
 import './styles/base.css';
 import './styles/nav.css';
 import './styles/map.css';
 
-(function () {
-  const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
-})();
+applyStoredTheme();
 
 const app = document.getElementById('app');
 app.innerHTML =

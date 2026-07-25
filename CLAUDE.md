@@ -16,6 +16,11 @@ Aktualizuj te notatki przy każdej nowej analizie feasibility, nie zostawiaj odp
 ## Struktura strony / deploy
 
 - Główna strona: `index.html` + `src/main.js` (Vite entry), baza `/toskania/` (`vite.config.js`).
+- **CSS jest podzielony na moduły w `src/styles/`** i importowany przez entry pointy — nie ma jednego `style.css`. Dzięki temu Vite buduje osobny arkusz per strona (`/short` nie pobiera stylów mapy ani kosztów).
+  - `base.css` — reset, tokeny, dark mode, typografia i prymitywy współdzielone (`.page`, `.section`, `.day-block`, `.block-label`, `.tips-list`, `.footer`). Zawsze pierwszy, reszta na nim polega.
+  - `nav.css` (nawigacja, skip-link) · `timeline.css` (plan) · `day.css` (strona dnia) · `map.css` (Leaflet) · `practical.css` (koszty/todo/pogoda) · `gallery.css` (galeria + lightbox) · `short.css` (skrót).
+  - Kolejność importów w entry poincie = kolejność kaskady. Dodając regułę, wybierz moduł wg strony, która jej używa; jeśli używają jej ≥2 różne strony — idzie do `base.css`.
+- Wspólne moduły JS: `src/html.js` (`esc()` — jedyne escapowanie w projekcie), `src/theme.js` (motyw przed pierwszym malowaniem), `src/site.js` (nav/stopka/todo/reveal).
 - Dodatkowe statyczne podstrony (np. `public/audyt.html`) leżą w `public/` i są kopiowane 1:1 do `dist/` — dostępne jako `/toskania/<nazwa>.html`.
 - Deploy: push na `main` → GitHub Actions (`.github/workflows/deploy.yml`) → `npm run build` → GitHub Pages.
 - Obrazy: `public/images/*.jpg` to źródła. `scripts/convert-webp.js` (krok `npm run build`) generuje z nich warianty `.webp` w szerokościach 200/400/800 + pełny (max 1600px) i zapisuje `src/image-manifest.json` z ich wymiarami. Atrybucje w `public/images/attribution.json`.

@@ -15,6 +15,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 
 // Generowany przez scripts/convert-webp.js (krok `npm run build`): { nazwa: {w, h, widths} }
 import IMAGE_MANIFEST from './image-manifest.json';
+import { esc } from './html.js';
 
 /**
  * Atrybut `sizes` per kontekst użycia — musi odpowiadać temu, co robi CSS,
@@ -33,15 +34,6 @@ const IMAGE_ALIASES = {
   'images/asciano.jpg': 'images/asciano-crete.jpg',
   'images/lamone.jpg': 'images/selva-del-lamone.jpg',
 };
-
-function esc(str) {
-  if (str == null) return '';
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
 
 function imgSrc(relativePath) {
   if (!relativePath) return '';

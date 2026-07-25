@@ -368,19 +368,19 @@
   "bases": [
     {
       "id": "base1",
-      "name": "Barga — Arsenale (Strada Regionale 445)",
+      "name": "Barga — Casa vacanze Rosa (Ponte all'Ania)",
       "image": "barga",
       "label": "BAZA 1",
       "region": "Garfagnana · Lucca",
       "nights": "13–17 wrz (5 nocy)",
       "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3.",
       "color": "emerald",
-      "accommodation": "POTWIERDZONA REZERWACJA — SR445 della Garfagnana 33, frazione Arsenale, 55051 Barga LU. Przy głównej drodze doliną Serchio, ~6 min od centrum Bargi.",
+      "accommodation": "POTWIERDZONA REZERWACJA — Casa vacanze Rosa, Via Nazionale 29, Ponte all'Ania, 55051 Barga LU. Doskonała lokalizacja (9/10, 5 opinii gości). ~3 min (2 km) od stacji kolejowej Fornaci di Barga, ~6 min od centrum Bargi.",
       "booking_tip": "Zarezerwowane — bez dalszych działań. Lokalizacja bardzo dobrze skomunikowana z całym blokiem Bargi (patrz czasy dojazdu w poszczególnych dniach).",
-      "gps_hint": "Naviguj: SR445 della Garfagnana 33, Arsenale, 55051 Barga LU (coords 44.06753328816146, 10.455154915330162)",
+      "gps_hint": "Naviguj: Via Nazionale 29, Ponte all'Ania, 55051 Barga LU (coords 44.0398411, 10.4932228)",
       "coords": [
-        44.06753328816146,
-        10.455154915330162
+        44.0398411,
+        10.4932228
       ]
     },
     {
@@ -599,7 +599,7 @@
         { "label": "Unterhaching", "coords": [48.0569, 11.6057], "kind": "transit_night" },
         { "label": "Kufstein (Tyrol)", "coords": [47.583, 12.166], "kind": "transit" },
         { "label": "Innsbruck/Brenner", "coords": [47.006, 11.51], "kind": "transit" },
-        { "label": "Barga — BAZA 1", "coords": [44.06753328816146, 10.455154915330162], "kind": "base" }
+        { "label": "Barga — BAZA 1", "coords": [44.0398411, 10.4932228], "kind": "base" }
       ],
       "depart": "6:30 rano z Unterhaching",
       "route": "A995/A8 → Kufstein (Austria) → A12 Inntal → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
@@ -615,32 +615,11 @@
         "price": "~€10–15"
       },
       "accommodation": {
-        "place": "BAZA 1 — Agriturismo Mologno / Barga (Garfagnana)",
-        "note": "Przyjazd ok. 15:00–15:30. Mologno = frazione Barga, ~5 km od centro, cisza, las kasztanowy.",
-        "price": "€60–90/noc",
-        "options": [
-          {
-            "name": "Agriturismo Il Musaccio",
-            "type": "agriturismo",
-            "address": "Via Pian di Gragno 15, 55051 Barga LU",
-            "price": "€60–90/noc",
-            "parking": "bezpłatny na terenie"
-          },
-          {
-            "name": "Agriturismo PURO",
-            "type": "agriturismo",
-            "address": "Mologno, 55051 Barga LU",
-            "price": "€70–100/noc",
-            "parking": "bezpłatny prywatny"
-          },
-          {
-            "name": "Agriturismo Chioi (Casa Chioi)",
-            "type": "agriturismo",
-            "address": "Mologno, Barga LU",
-            "price": "€60–90/noc",
-            "parking": "na terenie farmy"
-          }
-        ]
+        "place": "BAZA 1 — Casa vacanze Rosa (Ponte all'Ania, Barga)",
+        "note": "POTWIERDZONA REZERWACJA — Via Nazionale 29, Ponte all'Ania, 55051 Barga LU. Przyjazd ok. 15:00–15:30. Doskonała lokalizacja (9/10, 5 opinii gości), ~3 min (2 km) od stacji kolejowej Fornaci di Barga.",
+        "price": "cena do uzupełnienia (potwierdzona rezerwacja)",
+        "booking_tip": "Zarezerwowane — bez dalszych działań.",
+        "gps_hint": "Naviguj: Via Nazionale 29, Ponte all'Ania, 55051 Barga LU (coords 44.0398411, 10.4932228)"
       },
       "route_segments": [
         {
@@ -721,7 +700,7 @@
           "note": "Ostatnie tankowanie w dolinie przed podjazdem do Barga/Mologno"
         }
       ],
-      "narrative": "Wyjeżdżamy z Unterhaching o 6:30 — niedzielny poranek, na trasie prawie pusto. Krótki odcinek A995/A8/A93 doliną Inn (~83 km) prowadzi do Kufstein, gdzie tankujemy do pełna po niemieckich cenach tuż przed granicą. A12 Inntal do Innsbrucku (~90 km), stamtąd A13 przez Brenner (Streckenmaut €12,50, ~35 km) do Włoch — o tej porze w niedzielę na moście Lueg prawie bez kolejek, prawdziwy ruch powrotny z Alp rusza dopiero później. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, tarasowe winnice zastępują alpejskie łąki, po prawej jeszcze przez chwilę majaczą poszarpane granie Dolomitów. Ok. 10:00 wczesny lunch w Rovereto Sud (Tre Pini) — zjazd tuż przy autostradzie, szybka obsługa, duży parking; do Werony celowo nie zbaczamy, żeby nie tracić czasu w tamtejszym ZTL. Dalej A22 mija Weronę i Mantovę bez zjazdu do centrów, potem po Modenie A1 Variante di Valico prowadzi wysoko nad doliną i łukiem omija Florencję, a A11 kieruje nas już w stronę morza, aż do zjazdu Lucca Est. Ostatnie ~50 km to zupełnie inny rytm jazdy — dolina Serchio, wąska górska droga SR445 wśród kasztanowców, zakręt za zakrętem, coraz bardziej zielono i cicho, tylko od czasu do czasu mija nas traktor. Do agriturismo w Mologno docieramy ok. 15:00–15:30 — popołudniowe słońce sączy się przez liście, w powietrzu unosi się zapach suchej ziemi. Reszta dnia wolna, bagaże można rozpakować bez pośpiechu — Toskania właśnie się zaczyna.",
+      "narrative": "Wyjeżdżamy z Unterhaching o 6:30 — niedzielny poranek, na trasie prawie pusto. Krótki odcinek A995/A8/A93 doliną Inn (~83 km) prowadzi do Kufstein, gdzie tankujemy do pełna po niemieckich cenach tuż przed granicą. A12 Inntal do Innsbrucku (~90 km), stamtąd A13 przez Brenner (Streckenmaut €12,50, ~35 km) do Włoch — o tej porze w niedzielę na moście Lueg prawie bez kolejek, prawdziwy ruch powrotny z Alp rusza dopiero później. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, tarasowe winnice zastępują alpejskie łąki, po prawej jeszcze przez chwilę majaczą poszarpane granie Dolomitów. Ok. 10:00 wczesny lunch w Rovereto Sud (Tre Pini) — zjazd tuż przy autostradzie, szybka obsługa, duży parking; do Werony celowo nie zbaczamy, żeby nie tracić czasu w tamtejszym ZTL. Dalej A22 mija Weronę i Mantovę bez zjazdu do centrów, potem po Modenie A1 Variante di Valico prowadzi wysoko nad doliną i łukiem omija Florencję, a A11 kieruje nas już w stronę morza, aż do zjazdu Lucca Est. Ostatnie ~50 km to zupełnie inny rytm jazdy — dolina Serchio, wąska górska droga SR445 wśród kasztanowców, zakręt za zakrętem, coraz bardziej zielono i cicho, tylko od czasu do czasu mija nas traktor. Do Casa vacanze Rosa w Ponte all'Ania docieramy ok. 15:00–15:30 — popołudniowe słońce sączy się przez liście, w powietrzu unosi się zapach suchej ziemi. Reszta dnia wolna, bagaże można rozpakować bez pośpiechu — Toskania właśnie się zaczyna.",
       "web_research": [
         {
           "topic": "Streckenmaut A13 Brenner (AT) 2026",
@@ -766,9 +745,9 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Agriturismo Mologno — BAZA 1",
-          "summary": "Mologno = frazione Barga, 5 km od centro, cisza, kasztanowy las. Polecane: Il Musaccio (Via Pian di Gragno 15, check-in 15:30–18:00, basen), PURO (Mologno, 4 sypialnie), Chioi (farmhouse). Stacja kolejowa Barga-Gallicano na SR445. €60–90/noc ze śniadaniem.",
-          "source": "https://www.booking.com/hotel/it/agriturismo-franca.it.html",
+          "topic": "Casa vacanze Rosa (Ponte all'Ania) — BAZA 1",
+          "summary": "Ponte all'Ania = frazione Fornaci di Barga, tuż przy SR445 nad Serchio, ~3 min/2 km od stacji kolejowej Fornaci di Barga, ~6 min od centrum Bargi. Doskonała lokalizacja wg gości (9/10, 5 opinii). POTWIERDZONA REZERWACJA.",
+          "source": "https://www.booking.com",
           "checked": "2026-07"
         }
       ],
@@ -811,23 +790,23 @@
         },
         {
           "time": "15:35",
-          "event": "Przyjazd Mologno / Barga — check-in"
+          "event": "Przyjazd Ponte all'Ania / Barga — check-in"
         }
       ],
       "opening_hours": {
-        "agriturismo_checkin": "14:00–19:00 (Il Musaccio 15:30–18:00) — zadzwoń z ETA",
+        "casa_rosa_checkin": "godziny do potwierdzenia z gospodarzem — zadzwoń z ETA",
         "a22_toll_booths": "24/7 (automaty + Carte)",
         "tre_pini_lunch": "12:00–15:00 typowo (sprawdź w niedzielę)"
       },
       "parking": {
-        "destination": "Barga — check-in BAZA 1 (Mologno lub centro)",
+        "destination": "Barga — check-in BAZA 1 (Ponte all'Ania lub centro)",
         "options": [
           {
-            "name": "Parking agriturismo Mologno",
+            "name": "Parking Casa vacanze Rosa",
             "type": "hotel",
-            "price": "gratis dla gości",
-            "gps_hint": "Via Pian di Gragno 15 lub Mologno LU",
-            "note": "Preferowany przy noclegu w Mologno — bez ZTL, cisza, las"
+            "price": "do potwierdzenia",
+            "gps_hint": "Via Nazionale 29, Ponte all'Ania, 55051 Barga LU",
+            "note": "Preferowany przy noclegu w Ponte all'Ania — tuż przy SR445, blisko stacji Fornaci di Barga"
           },
           {
             "name": "Parcheggio Porta Reale",
@@ -858,7 +837,7 @@
             "note": "Płaski, szeroki — 5 min pieszo do centro w górę"
           }
         ],
-        "tip": "Przy noclegu Mologno: parkuj przy agriturismo. Wieczorny spacer do Barga Vecchia: auto zostaje w Mologno lub Porta Reale"
+        "tip": "Przy noclegu Ponte all'Ania: parkuj przy Casa vacanze Rosa. Wieczorny spacer do Barga Vecchia: auto zostaje na miejscu lub przy Porta Reale"
       },
       "summary": "Drugi dzień tranzytu: Unterhaching → Kufstein → A13 przez przełęcz Brenner/Brennero (opłata odcinkowa) → Toskania. Zameldowanie w Bargze, w dolinie Garfagnana — górskiej dolinie rzeki Serchio między Alpami Apuańskimi a Apeninami."
     },
@@ -890,7 +869,7 @@
         },
         {
           "name": "Treppignana via il Ciocco — spacer lasem dębowo-kasztanowym",
-          "drive_min": 3,
+          "drive_min": 4,
           "description": "Szlak 3,2 km (1–1,5 h) przez gęste lasy dębów bezszypułkowych (Quercus petraea) i kasztanów w Tenuta Il Ciocco. Widoki na dolinę Serchio i Barga Vecchia.",
           "type": "nature",
           "image_key": "barga",
@@ -905,7 +884,7 @@
         },
         {
           "name": "Grotta del Vento (jaskinia wiatru) — Fornovolasco",
-          "drive_min": 21,
+          "drive_min": 25,
           "description": "4570 m zbadanych jaskiń krasowych w Alpach Apuańskich. 3 itinerari (1–3 h). Po wizycie spacer przez bukowe i dębowe lasy.",
           "type": "nature",
           "image_key": "grotta-vento",
@@ -940,7 +919,7 @@
         "Rano 8:00: Duomo (1 h) → Treppignana–Ciocco (1–1,5 h) — popołudnie Grotta del Vento",
         "Grotta: zarezerwuj Itinerario 2 (2 h, €18) na 15:00 — kurtka obowiązkowa (~10°C)"
       ],
-      "narrative": "Zaczynamy pieszo w Bardze — baza jest ok. 15 minut stąd, więc bez pośpiechu parkujemy przy Porta Reale i idziemy pod górę kamiennymi uliczkami, jeszcze chłodnymi o poranku. Wchodzimy do Duomo di San Cristoforo — romański kościół z XI wieku, gdzie moneta €2 włącza oświetlenie i nagle ożywa marmurowy pulpit Guido Bigarellego z ok. 1240 roku, misternie rzeźbiony w lwy i sceny biblijne. Zaraz obok taras Giardino del Balcone — stąd Barga naprawdę zasługuje na miano kamiennego balkonu: w dole dolina Serchio, na horyzoncie poszarpana linia Alp Apuańskich, jeszcze lekko spowita porannym oparem. Spacer Corso Garibaldi to czysta przyjemność — witryna z pecorino, stragan z miodem, gdzieś pachnie świeżo palona kawa. Ok. 12:30 lunch w Osteria Il Borgo dei Sapori (Via Borgo 1) — pappardelle al cinghiale, necci z ricottą. Po lunchu zmiana rytmu: 15 minut jazdy do Treppignany, gdzie zaczyna się 3,2-kilometrowy szlak przez las dębów bezszypułkowych i starych kasztanowców nad doliną Serchio — cień, szum liści, 1–1,5 godziny spokojnego marszu. Stamtąd dalej do Fornovolasco, gdzie czeka Grotta del Vento — tour o 16:00 (rezerwacja obowiązkowa), w środku stała temperatura ok. 10°C, więc kurtka to konieczność, tym większy kontrast z ciepłym toskańskim popołudniem na zewnątrz. Powrót do bazy ok. 17:30, akurat na kolację przy zachodzącym słońcu.",
+      "narrative": "Zaczynamy pieszo w Bardze — baza jest ok. 6 minut stąd, więc bez pośpiechu parkujemy przy Porta Reale i idziemy pod górę kamiennymi uliczkami, jeszcze chłodnymi o poranku. Wchodzimy do Duomo di San Cristoforo — romański kościół z XI wieku, gdzie moneta €2 włącza oświetlenie i nagle ożywa marmurowy pulpit Guido Bigarellego z ok. 1240 roku, misternie rzeźbiony w lwy i sceny biblijne. Zaraz obok taras Giardino del Balcone — stąd Barga naprawdę zasługuje na miano kamiennego balkonu: w dole dolina Serchio, na horyzoncie poszarpana linia Alp Apuańskich, jeszcze lekko spowita porannym oparem. Spacer Corso Garibaldi to czysta przyjemność — witryna z pecorino, stragan z miodem, gdzieś pachnie świeżo palona kawa. Ok. 12:30 lunch w Osteria Il Borgo dei Sapori (Via Borgo 1) — pappardelle al cinghiale, necci z ricottą. Po lunchu zmiana rytmu: 15 minut jazdy do Treppignany, gdzie zaczyna się 3,2-kilometrowy szlak przez las dębów bezszypułkowych i starych kasztanowców nad doliną Serchio — cień, szum liści, 1–1,5 godziny spokojnego marszu. Stamtąd dalej do Fornovolasco, gdzie czeka Grotta del Vento — tour o 16:00 (rezerwacja obowiązkowa), w środku stała temperatura ok. 10°C, więc kurtka to konieczność, tym większy kontrast z ciepłym toskańskim popołudniem na zewnątrz. Powrót do bazy ok. 17:30, akurat na kolację przy zachodzącym słońcu.",
       "web_research": [
         {
           "topic": "Duomo di San Cristoforo — godziny i atrakcje",
@@ -1039,7 +1018,7 @@
       "eta_timeline": [
         {
           "time": "09:00",
-          "event": "Wyjazd z bazy Garfagnana (~15 min do Barga)"
+          "event": "Wyjazd z bazy Garfagnana (~6 min do Barga)"
         },
         {
           "time": "09:15",
@@ -1291,11 +1270,11 @@
       "image": "monte-forato",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 21,
+      "drive_limit_min": 23,
       "attractions": [
         {
           "name": "Pętla Monte Forato (naturalny łuk skalny) — z Fornovolasco",
-          "drive_min": 21,
+          "drive_min": 23,
           "description": "Prawdziwa górska wycieczka, ale bez wspinaczki: pętla z Fornovolasco (ta sama wieś co Grotta del Vento) prowadzi szlakiem CAI nr 6 do przełęczy Foce di Petrosciana (mija jaskinię Tana che Urla i źródło), dalej grzbietem CAI 110 aż do naturalnego łuku skalnego Monte Forato (1223 m) — jednego z największych naturalnych łuków we Włoszech (rozpiętość 32 m, do 25 m wysokości nad przełęczą, między dwoma szczytami 1223 i 1209 m). Trasa dochodzi do łuku BEZ odcinka wyposażonego (via ferrata) — oficjalnie oceniana jako 'medium' (E — turystyczna, znakowana CAI), trudność biorą na siebie ci, którzy chcą iść dalej grzbietem. Pełna pętla (powrót przez CAI 130): 12 km, ~700 m przewyższenia, ~5 h. Wariant krótszy — zejście przez CAI 12 z powrotem do CAI 6 — skraca trasę do ok. 3,5 h, wciąż z widokiem na łuk.",
           "type": "nature",
           "image_key": "monte-forato",
@@ -1335,7 +1314,7 @@
         "3 warianty trasy na dziś (do wyboru w zależności od formy/pogody): ① Monte Forato (wybrany, opisany wyżej) — 12 km/~5h (lub 3,5h skrócony), 700 m, „medium\", 21 min dojazdu, najbardziej widowiskowy (naturalny łuk skalny). ② Monte Palodina (Sentiero del Lupo) — 13 km/5h, 650 m, „medium\", 20 min dojazdu (Vallico di Sotto), łagodniejszy technicznie, szlak edukacyjny o wilkach, panorama 360° ze szczytu 1171 m. ③ Monte Prato Fiorito (Alta Via dei Pastori) — 7,8 km/3h42 (najkrótszy), 676 m, oceniany „difficult\" (stromizna, nie technika), ~25–35 min dojazdu, panorama 360° ze szczytu 1293 m.",
         "Wieczór: po dniu na szlaku odpoczynek jest priorytetem (basen o tej porze we wrześniu bywa chłodny) — ok. 2h przerwy w bazie, a potem do wyboru na miejscu: (a) Piazza Arringo w Bardze (~7 min) — najsłynniejszy punkt widokowy regionu przy Duomo, skąd widać całe pasmo Alp Apuańskich z łukiem Monte Forato, który zwiedzaliście rano; (b) Sommocolonia (15 min) — cicha wioska na grzbiecie z historią z II wojny światowej (pomnik żołnierzy Buffalo), inny, spokojniejszy nastrój. Oba bezwysiłkowe, ~30–45 min w obie strony."
       ],
-      "narrative": "Dziś prawdziwa górska wyprawa — ale taka, która nie wymaga sprzętu alpejskiego. Wyjeżdżamy z bazy o 8:00, 21 minut do Fornovolasco, tej samej wioski, w której kilka dni temu byliśmy w Grotta del Vento. Stąd szlakiem CAI nr 6 ruszamy w górę, mijając jaskinię Tana che Urla i leśne źródło, przez bukowo-kasztanowy las aż do przełęczy Foce di Petrosciana (ok. 1,5 h). Dalej grzbietem CAI 110, gdzie drzewa ustępują skale, a przed nami powoli wyłania się cel: naturalny łuk skalny Monte Forato — wyrzeźbiony przez wodę i wiatr w wapiennej skale, rozpięty na 32 metrach między dwoma szczytami (1223 i 1209 m), jeden z największych takich łuków we Włoszech. Docieramy do niego bez potrzeby wspinaczki czy uprzęży — cała trasa aż tutaj jest oficjalnie oceniana jako środkowo trudna, znakowana szlakiem turystycznym CAI. Stajemy dosłownie w cieniu łuku, z widokiem na całą dolinę Serchio po jednej stronie i poszarpane szczyty Apuan po drugiej — to jeden z najbardziej widowiskowych widoków całego wyjazdu. Nie idziemy dalej grzbietem w stronę Pania della Croce — tam zaczyna się odcinek wyposażony, wymagający uprzęży i doświadczenia, zupełnie inna liga. Powrót do Fornovolasco zajmuje kolejne 1,5–2 h (pełna pętla przez CAI 130, ok. 5 h w sumie, lub krótszy wariant przez CAI 12, ok. 3,5 h). Po zejściu prosty lunch we wsi i powrót do bazy — nogi zmęczone, więc kilka godzin odpoczynku w spokoju (basen o tej porze roku wieczorem bywa chłodny, więc dziś odpuszczamy). Gdy zrobi się chłodniej, do wyboru bezwysiłkowy wypad: Piazza Arringo w Bardze (7 min) — najsłynniejszy punkt widokowy regionu przy katedrze, skąd o zachodzie słońca widać całe pasmo Alp Apuańskich razem z łukiem Monte Forato, pod którym staliście kilka godzin wcześniej — albo Sommocolonia (15 min), cicha wioska na grzbiecie z własną, spokojniejszą historią z czasów II wojny światowej. Dzień kończy się z jednym z tych widoków, które zostają w pamięci na długo — i to podwójnie, bo widzimy łuk z bliska rano, a całe pasmo z daleka wieczorem.",
+      "narrative": "Dziś prawdziwa górska wyprawa — ale taka, która nie wymaga sprzętu alpejskiego. Wyjeżdżamy z bazy o 8:00, 23 minuty do Fornovolasco, tej samej wioski, w której kilka dni temu byliśmy w Grotta del Vento. Stąd szlakiem CAI nr 6 ruszamy w górę, mijając jaskinię Tana che Urla i leśne źródło, przez bukowo-kasztanowy las aż do przełęczy Foce di Petrosciana (ok. 1,5 h). Dalej grzbietem CAI 110, gdzie drzewa ustępują skale, a przed nami powoli wyłania się cel: naturalny łuk skalny Monte Forato — wyrzeźbiony przez wodę i wiatr w wapiennej skale, rozpięty na 32 metrach między dwoma szczytami (1223 i 1209 m), jeden z największych takich łuków we Włoszech. Docieramy do niego bez potrzeby wspinaczki czy uprzęży — cała trasa aż tutaj jest oficjalnie oceniana jako środkowo trudna, znakowana szlakiem turystycznym CAI. Stajemy dosłownie w cieniu łuku, z widokiem na całą dolinę Serchio po jednej stronie i poszarpane szczyty Apuan po drugiej — to jeden z najbardziej widowiskowych widoków całego wyjazdu. Nie idziemy dalej grzbietem w stronę Pania della Croce — tam zaczyna się odcinek wyposażony, wymagający uprzęży i doświadczenia, zupełnie inna liga. Powrót do Fornovolasco zajmuje kolejne 1,5–2 h (pełna pętla przez CAI 130, ok. 5 h w sumie, lub krótszy wariant przez CAI 12, ok. 3,5 h). Po zejściu prosty lunch we wsi i powrót do bazy — nogi zmęczone, więc kilka godzin odpoczynku w spokoju (basen o tej porze roku wieczorem bywa chłodny, więc dziś odpuszczamy). Gdy zrobi się chłodniej, do wyboru bezwysiłkowy wypad: Piazza Arringo w Bardze (6 min) — najsłynniejszy punkt widokowy regionu przy katedrze, skąd o zachodzie słońca widać całe pasmo Alp Apuańskich razem z łukiem Monte Forato, pod którym staliście kilka godzin wcześniej — albo Sommocolonia (20 min), cicha wioska na grzbiecie z własną, spokojniejszą historią z czasów II wojny światowej. Dzień kończy się z jednym z tych widoków, które zostają w pamięci na długo — i to podwójnie, bo widzimy łuk z bliska rano, a całe pasmo z daleka wieczorem.",
       "web_research": [
         {
           "topic": "Pętla Monte Forato z Fornovolasco — oficjalne dane",
@@ -1374,7 +1353,7 @@
       "eta_timeline": [
         {
           "time": "08:00",
-          "event": "Wyjazd z bazy do Fornovolasco (21 min)"
+          "event": "Wyjazd z bazy do Fornovolasco (23 min)"
         },
         {
           "time": "08:30",
@@ -1425,11 +1404,11 @@
       "image": "ponte-diavolo",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 28,
+      "drive_limit_min": 33,
       "attractions": [
         {
           "name": "Ponte della Maddalena / Ponte del Diavolo (most gotycki nazywany mostem diabelskim)",
-          "drive_min": 22,
+          "drive_min": 12,
           "description": "Gotycki most z XIII w. przy Borgo a Mozzano o asymetrycznych łukach, legenda o diable. Mgliste Apeniny odbite w rzece Serchio — piękne rano. Dostęp bezpłatny 24h.",
           "type": "medieval",
           "image_key": "ponte-diavolo",
@@ -1444,7 +1423,7 @@
         },
         {
           "name": "Bagni di Lucca — termy i Ponte delle Catene (most łańcuchowy)",
-          "drive_min": 20,
+          "drive_min": 15,
           "description": "Miasteczko z epoki romantyzmu: kasyno (najstarsze we Włoszech!), neogotycki English Church, most łańcuchowy Nottolini. Byron, Shelley i Browningowie tu odpoczywali. Bagno Bernabò (Ponte a Serraglio) — termy w marmurowych wannach XIX-wiecznych (rezerwacja).",
           "type": "cultural",
           "image_key": "bagni-lucca",
@@ -1459,7 +1438,7 @@
         },
         {
           "name": "Pieve di Careggine (romański kościół parafialny nad Lago di Vagli)",
-          "drive_min": 28,
+          "drive_min": 33,
           "description": "Piękna romańska pieve z XI w. na wzgórzu nad Lago di Vagli — odmienny kąt widoku niż przy tamie. Wioska z ~200 mieszkańcami, zero turystów.",
           "type": "medieval",
           "image_key": "vagli",
@@ -1494,7 +1473,7 @@
         "Ponte del Diavolo (8:00–9:30) → Bagni di Lucca (10:00–11:30) → Pieve di Careggine (12:00) → lunch Borghesi (13:00) → powrót do bazy",
         "Osteria del Diavolo ZAMKNIĘTA w czwartek (17.09) — lunch w Trattoria Borghesi w Bagni"
       ],
-      "narrative": "Ostatni dzień w Garfagnanie. Wyjeżdżamy o 8:30 — 22 minuty samochodem na południe SS12 do Ponte della Maddalena, powszechniej znanego jako Ponte del Diavolo. Parkujemy przy drodze za darmo, 5 minut pieszo na most — o 9:00 nad Serchio wciąż unosi się poranna mgła, asymetryczne gotyckie łuki odbijają się w wodzie w kompletnej ciszy, zero autokarów o tej porze. Legenda mówi, że most zbudował sam diabeł w zamian za pierwszą duszę, która go przekroczy — sprytny brygadzista podesłał mu świnię, i most stoi do dziś. Potem 15 minut na wschód do Bagni di Lucca: miasteczka, które w XIX wieku było kurortem Byrona i Shelleya, dziś wciąż ma most łańcuchowy Ponte delle Catene i neogotycki angielski kościół, a kto ma ochotę, może się jeszcze zanurzyć w termach Bernabò. Lunch w Trattoria Borghesi (Viale Umberto I 85). Po lunchu jeszcze ok. 30 minut na północ — Pieve di Careggine na wzgórzu nad Lago di Vagli: romańska pieve z XI wieku, ok. 200 mieszkańców, zero turystów, a piękna panorama na jezioro wygląda stąd zupełnie inaczej niż z tamy sprzed dwóch dni. Wracamy do bazy ok. 16:30 — czas spakować bagaże, bo jutro wyruszamy do Chianti, w zupełnie inny rozdział tej podróży.",
+      "narrative": "Ostatni dzień w Garfagnanie. Wyjeżdżamy o 8:30 — 12 minut samochodem na południe SS12 do Ponte della Maddalena, powszechniej znanego jako Ponte del Diavolo. Parkujemy przy drodze za darmo, 5 minut pieszo na most — o 9:00 nad Serchio wciąż unosi się poranna mgła, asymetryczne gotyckie łuki odbijają się w wodzie w kompletnej ciszy, zero autokarów o tej porze. Legenda mówi, że most zbudował sam diabeł w zamian za pierwszą duszę, która go przekroczy — sprytny brygadzista podesłał mu świnię, i most stoi do dziś. Potem 15 minut na wschód do Bagni di Lucca: miasteczka, które w XIX wieku było kurortem Byrona i Shelleya, dziś wciąż ma most łańcuchowy Ponte delle Catene i neogotycki angielski kościół, a kto ma ochotę, może się jeszcze zanurzyć w termach Bernabò. Lunch w Trattoria Borghesi (Viale Umberto I 85). Po lunchu jeszcze ok. 30 minut na północ — Pieve di Careggine na wzgórzu nad Lago di Vagli: romańska pieve z XI wieku, ok. 200 mieszkańców, zero turystów, a piękna panorama na jezioro wygląda stąd zupełnie inaczej niż z tamy sprzed dwóch dni. Wracamy do bazy ok. 16:30 — czas spakować bagaże, bo jutro wyruszamy do Chianti, w zupełnie inny rozdział tej podróży.",
       "web_research": [
         {
           "topic": "Ponte del Diavolo — parking i dostęp",
@@ -1572,7 +1551,7 @@
       "eta_timeline": [
         {
           "time": "09:00",
-          "event": "Wyjazd z bazy do Ponte della Maddalena (20 min)"
+          "event": "Wyjazd z bazy do Ponte della Maddalena (12 min)"
         },
         {
           "time": "09:20",
@@ -1688,7 +1667,7 @@
         "Wyjazd wcześniejszy (10:00) niż w 3-bazowym — most i Bagni di Lucca były dzień wcześniej",
         "Przyjazd ~14:00–15:00 — check-in od 15:00, popołudnie pierwsze poznanie Val di Merse"
       ],
-      "narrative": "Baza 1 oddana przed 10:00 — ostatnie spojrzenie na kasztanowy las Mologno, potem spokojny wyjazd o 10:00–10:30, bez pośpiechu: most i termy Bagni di Lucca były już wczoraj, dziś liczy się tylko droga. SS12 na południe do Borgo a Mozzano (30 min), przez Lucca i wjazd na A11 — autostradę Firenze–Mare, którą pokonaliśmy w drugą stronę pięć dni temu, tym razem w kierunku wschodnim. Przez Pistoię i Prato na zachodnią obwodnicę Florencji, gdzie w oddali majaczy kopuła Duomo, choć dziś nie mamy czasu się zatrzymywać — miasto zostawiamy na inny wyjazd. Dalej Superstrada Siena–Bettolle (SR2) prowadzi na południe, krajobraz zmienia się z równin Arno na faliste wzgórza — pierwsze zapowiedzi Toskanii sieneńskiej. Postój obiadowy w Pistoi — Trattoria La Limonaia (Via di Gello 9/A) albo, gdy czas goni, Autogrill Montecatini Est. Objeżdżamy Sienę tangenzialą, potem SS223 w kierunku Grosseto i zjazd na Murlo — lokalne drogi wiją się już wśród wzgórz Val di Merse, gdzie słońce we wrześniowe popołudnie kładzie długie cienie na rzędach krzewów. ETA do Murlo 14:00–15:00. Popołudnie należy do pierwszego poznania okolicy — Val di Merse wita nas spacerem po wzgórzach i zapachem rozgrzanej ziemi, wyraźnie ciszej i mniej turystycznie niż w Chianti, z którego korzystaliśmy wcześniej podczas dnia D8.",
+      "narrative": "Baza 1 oddana przed 10:00 — ostatnie spojrzenie na dolinę Serchio z Ponte all'Ania, potem spokojny wyjazd o 10:00–10:30, bez pośpiechu: most i termy Bagni di Lucca były już wczoraj, dziś liczy się tylko droga. SS12 na południe do Borgo a Mozzano (30 min), przez Lucca i wjazd na A11 — autostradę Firenze–Mare, którą pokonaliśmy w drugą stronę pięć dni temu, tym razem w kierunku wschodnim. Przez Pistoię i Prato na zachodnią obwodnicę Florencji, gdzie w oddali majaczy kopuła Duomo, choć dziś nie mamy czasu się zatrzymywać — miasto zostawiamy na inny wyjazd. Dalej Superstrada Siena–Bettolle (SR2) prowadzi na południe, krajobraz zmienia się z równin Arno na faliste wzgórza — pierwsze zapowiedzi Toskanii sieneńskiej. Postój obiadowy w Pistoi — Trattoria La Limonaia (Via di Gello 9/A) albo, gdy czas goni, Autogrill Montecatini Est. Objeżdżamy Sienę tangenzialą, potem SS223 w kierunku Grosseto i zjazd na Murlo — lokalne drogi wiją się już wśród wzgórz Val di Merse, gdzie słońce we wrześniowe popołudnie kładzie długie cienie na rzędach krzewów. ETA do Murlo 14:00–15:00. Popołudnie należy do pierwszego poznania okolicy — Val di Merse wita nas spacerem po wzgórzach i zapachem rozgrzanej ziemi, wyraźnie ciszej i mniej turystycznie niż w Chianti, z którego korzystaliśmy wcześniej podczas dnia D8.",
       "web_research": [
         {
           "topic": "Trasa Barga → Murlo (Val di Merse)",

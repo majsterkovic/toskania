@@ -1,6 +1,7 @@
 import plan from '../plan_2bazy.json';
 import { renderSiteNav, renderSiteFooter, initChrome } from './site.js';
-import './style.css';
+import './styles/base.css';
+import './styles/nav.css';
 import './short.css';
 
 // Apply theme before first paint to prevent FOUC (mirrors main.js)
@@ -56,7 +57,7 @@ function render(plan) {
 
   app.innerHTML =
     renderSiteNav('short') +
-    `<main class="short-page-container">
+    `<main class="short-page-container" id="tresc">
       <header class="short-header">
         <a class="short-header__back" href="../">← Pełny plan</a>
         <h1 class="short-header__title">${esc(title)} — skrót</h1>

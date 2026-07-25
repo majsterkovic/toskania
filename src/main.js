@@ -2,7 +2,13 @@ import plan2 from '../plan_2bazy.json';
 import { renderTimeline, renderDayPage } from './render.js';
 import { renderSiteNav, initChrome } from './site.js';
 import { initBaseMaps, initDayMap, initTransitDayMap, destroyAllMaps } from './maps.js';
-import './style.css';
+// Strona planu renderuje oś czasu, strony dni i mapy baz — potrzebuje wszystkiego
+// poza galerią i sekcją praktyczną.
+import './styles/base.css';
+import './styles/nav.css';
+import './styles/timeline.css';
+import './styles/day.css';
+import './styles/map.css';
 
 // Motyw przed pierwszym malowaniem (bez FOUC)
 (function () {

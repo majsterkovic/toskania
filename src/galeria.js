@@ -1,7 +1,9 @@
 import plan from '../plan_2bazy.json';
 import { renderGallery, initGallery } from './render.js';
 import { renderSiteNav, renderSiteFooter, initChrome } from './site.js';
-import './style.css';
+import './styles/base.css';
+import './styles/nav.css';
+import './styles/gallery.css';
 
 (function () {
   const saved = localStorage.getItem('theme');
@@ -11,6 +13,9 @@ import './style.css';
 
 const app = document.getElementById('app');
 const images = plan.meta?.images ?? plan.images;
-app.innerHTML = renderSiteNav('galeria') + `<div class="page">${renderGallery(images)}</div>` + renderSiteFooter();
+app.innerHTML =
+  renderSiteNav('galeria') +
+  `<main class="page" id="tresc">${renderGallery(images)}</main>` +
+  renderSiteFooter();
 initGallery();
 initChrome();

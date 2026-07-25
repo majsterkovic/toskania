@@ -1,0 +1,510 @@
+/**
+ * Strona praktyczna: koszty, lista zadań, pogoda, info.
+ */
+.plan-note {
+  font-size: 0.92rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--cream-deep);
+  border-left: 3px solid var(--oro);
+  border-radius: 0 6px 6px 0;
+  max-width: 60ch;
+}
+html.dark .plan-note {
+  background: rgba(168, 136, 60, 0.08);
+  border-left-color: var(--oro-light);
+}
+.ztl-warning {
+  border-left: 4px solid var(--terracotta);
+}
+/* Practical */
+.practical-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.practical-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+/* ── Tablet: 768px ── */
+
+@media (min-width: 768px) {
+.practical-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* ── Desktop: 1024px ── */
+
+@media (min-width: 1024px) {
+.practical-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── Costs section ─────────────────────────────────────────── */
+.costs-summary-banner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, var(--terracotta) 0%, var(--terracotta-deep) 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(184, 92, 56, 0.25);
+}
+.costs-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.costs-summary-label {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.85;
+}
+.costs-summary-value {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.costs-summary-divider {
+  width: 1px;
+  height: 3rem;
+  background: rgba(255,255,255,0.35);
+}
+.costs-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 720px) {
+.costs-categories { grid-template-columns: 1fr; }
+.costs-summary-banner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+.costs-summary-divider { width: 3rem; height: 1px; }
+}
+
+.costs-category {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+.costs-category__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.costs-category__icon {
+  font-size: 1.1rem;
+}
+.costs-category__name {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  flex: 1;
+}
+.costs-category__subtotal {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--terracotta);
+}
+.costs-per-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+.costs-category__note {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+.costs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  /* `fixed` sprawia, że szerokości kolumn poniżej są wiążące. Przy domyślnym
+     `auto` długie detale i nierozdzielne kwoty rozpychały tabelę ponad 100%,
+     co dawało poziomy scroll całej strony na telefonie. */
+  table-layout: fixed;
+}
+.costs-item td {
+  padding: 0.3rem 0.25rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+.costs-item:last-child td { border-bottom: none; }
+.costs-item__label { width: 46%; line-height: 1.3; }
+.costs-item__detail { width: 30%; font-size: 0.78rem; }
+.costs-item__range {
+  width: 24%;
+  text-align: right;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  white-space: nowrap;
+}
+/* Poniżej ~600px trzy kolumny dają ~100px na "detail" — za mało, żeby zmieścić
+   opis bez łamania słów w środku. Wiersz przechodzi więc w układ dwukolumnowy:
+   nazwa i opis jedno pod drugim, kwota wyrównana do prawej. */
+@media (max-width: 600px) {
+.costs-table,
+.costs-table tbody {
+    display: block;
+  }
+.costs-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 0.75rem;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+.costs-item:last-child { border-bottom: none; }
+.costs-item td {
+    display: block;
+    width: auto;
+    padding: 0;
+    border-bottom: none;
+  }
+.costs-item__label { grid-column: 1; }
+.costs-item__detail { grid-column: 1; }
+.costs-item__range {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+}
+
+.costs-not-included {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-top: 0.5rem;
+}
+/* ── Todo list section ──────────────────────────────────────── */
+.todo-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+.todo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.todo-category {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+.todo-category__title {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cipresso);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.todo-category__icon {
+  font-size: 1rem;
+}
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.todo-item {
+  border-radius: 5px;
+  padding: 0.55rem 0.65rem;
+  background: var(--cream);
+  border-left: 3px solid var(--border);
+  transition: background 0.15s, border-color 0.15s, opacity 0.2s;
+}
+.todo-item--high { border-left-color: var(--terracotta); }
+.todo-item--medium { border-left-color: var(--oro); }
+.todo-item--low { border-left-color: var(--stone-dark); }
+.todo-item.is-done {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+.todo-item__label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+  line-height: 1.4;
+  font-weight: 500;
+}
+.todo-check {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: var(--cipresso);
+  cursor: pointer;
+}
+.todo-item__text {
+  flex: 1;
+  color: var(--ink);
+}
+.todo-item__priority {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--stone-dark);
+  flex-shrink: 0;
+  padding: 0.1rem 0.35rem;
+  background: var(--stone);
+  border-radius: 3px;
+  align-self: flex-start;
+}
+.todo-item--high .todo-item__priority {
+  background: rgba(184, 92, 56, 0.12);
+  color: var(--terracotta-deep);
+}
+.todo-item__deadline {
+  font-size: 0.72rem;
+  color: var(--stone-dark);
+  font-style: italic;
+  margin-top: 0.2rem;
+  margin-left: 1.6rem;
+}
+.todo-item__deadline--overdue {
+  color: var(--terracotta-deep);
+  font-style: normal;
+  font-weight: 600;
+}
+.todo-item__detail {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: 0.3rem;
+  margin-left: 1.6rem;
+  display: none;
+}
+.todo-item:hover .todo-item__detail,
+.todo-item:focus-within .todo-item__detail {
+  display: block;
+}
+.todo-item__link {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--terracotta);
+  text-decoration: none;
+  margin-top: 0.2rem;
+  margin-left: 1.6rem;
+}
+.todo-item__link:hover {
+  text-decoration: underline;
+}
+/* Koszty */
+html.dark .costs-category {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+html.dark .costs-table tr:nth-child(even) {
+  background: rgba(30, 60, 44, 0.5);
+}
+/* Todo */
+html.dark .todo-category {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+html.dark .todo-category__title {
+  color: var(--oro);
+}
+html.dark .todo-check {
+  accent-color: var(--oro);
+}
+html.dark .todo-item {
+  background: var(--stone);
+}
+html.dark .todo-item__priority {
+  background: rgba(30, 60, 44, 0.7);
+  color: var(--stone-dark);
+}
+html.dark .todo-item--high .todo-item__priority {
+  background: rgba(204, 114, 72, 0.18);
+  color: var(--terracotta-light);
+}
+html.dark .todo-item__deadline--overdue {
+  color: var(--terracotta-light);
+}
+/* Practical info */
+html.dark .practical-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+/* ── Weather section ─────────────────────────────────────────── */
+.weather-mode {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--stone-dark);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.weather-loading {
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
+.weather-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--oro);
+}
+.weather-card--error {
+  border-top-color: var(--stone-dark);
+  opacity: 0.6;
+}
+.weather-card__head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+.weather-card__icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.weather-card__name {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+.weather-card__sub {
+  font-size: 0.72rem;
+  color: var(--stone-dark);
+  font-style: italic;
+}
+.weather-card__temps {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  margin-bottom: 0.65rem;
+}
+.weather-card__tmax {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--terracotta);
+  line-height: 1;
+}
+.weather-card__sep {
+  font-size: 1.2rem;
+  color: var(--stone-dark);
+}
+.weather-card__tmin {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--muted);
+  line-height: 1;
+}
+.weather-card__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.weather-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+/* Forecast mode */
+.weather-forecast-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  box-shadow: var(--shadow);
+  border-top: 3px solid var(--oro);
+  grid-column: 1 / -1;
+}
+.fc-days {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-top: 0.75rem;
+  scrollbar-width: thin;
+}
+.fc-day {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem 0.6rem;
+  background: var(--stone);
+  border-radius: 6px;
+  min-width: 64px;
+}
+.fc-day__date {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: var(--stone-dark);
+  text-align: center;
+}
+.fc-day__icon { font-size: 1.1rem; }
+.fc-day__temps {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--ink);
+  display: flex;
+  gap: 0.2rem;
+}
+.fc-day__temps span { color: var(--muted); }
+.fc-day__precip {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: var(--olive);
+}
+/* Dark mode adjustments */
+html.dark .weather-card,
+html.dark .weather-forecast-card { background: var(--card-bg); border-color: var(--border); }
+html.dark .fc-day { background: var(--stone); }

@@ -1,0 +1,150 @@
+/**
+ * Górna nawigacja serwisu, przełącznik motywu, skip-link.
+ */
+/* Widoczny dopiero po sfokusowaniu tabem — pozwala ominąć nawigację. */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  transform: translateY(-120%);
+  padding: 0.6rem 1rem;
+  background: var(--cipresso);
+  color: var(--cream);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-bottom-right-radius: var(--radius);
+  border: 1px solid var(--oro);
+  transition: transform 0.15s ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+/* ── Nawigacja — cipresso (ryzyko estetyczne) ── */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-h);
+  padding: 0 var(--page-pad);
+  background: rgba(28, 51, 41, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--oro);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+.site-nav__brand {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--oro-light);
+  text-decoration: none;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+/* Na mobile brand chowamy żeby linki miały miejsce */
+@media (max-width: 479px) {
+.site-nav__brand {
+    display: none;
+  }
+}
+
+.site-nav__links {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  min-width: 0;
+}
+.site-nav__links::-webkit-scrollbar {
+  display: none;
+}
+.site-nav__links a {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(247, 242, 232, 0.6);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s;
+  padding: 0.2rem 0;
+}
+.site-nav__links a:hover,
+.site-nav__links a:focus-visible {
+  color: var(--cream);
+  outline: none;
+}
+/* ── Desktop: 1024px ── */
+
+@media (min-width: 1024px) {
+.site-nav__links {
+    gap: 1.5rem;
+  }
+.site-nav__links a {
+    font-size: 0.85rem;
+  }
+}
+
+/* ── Print styles ── */
+
+@media print {
+.site-nav,
+.theme-toggle {
+    display: none !important;
+  }
+}
+
+/* Nav: złota linia nabiera wagi w dark mode */
+html.dark .site-nav {
+  border-bottom-width: 2px;
+  border-bottom-color: var(--oro);
+}
+html.dark .site-nav__links a {
+  color: rgba(228, 220, 198, 0.55);
+}
+html.dark .site-nav__links a:hover {
+  color: var(--oro-light, #dfc06a);
+}
+/* Theme toggle button */
+.theme-toggle {
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  background: none;
+  border: 1px solid rgba(247, 242, 232, 0.35);
+  border-radius: 6px;
+  color: rgba(247, 242, 232, 0.85);
+  font-size: 1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+  line-height: 1;
+}
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--oro-light);
+  color: var(--oro-light);
+  background-color: rgba(247, 242, 232, 0.1);
+  outline: none;
+}
+/* nawigacja serwisu — aktywna pozycja */
+.site-nav__links a.is-active { color: var(--oro-light); }
+.site-nav__links a.is-active::after {
+  content: '';
+  display: block;
+  height: 1.5px;
+  background: var(--oro);
+  margin-top: 1px;
+}

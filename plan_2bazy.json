@@ -475,10 +475,11 @@
       },
       "accommodation": {
         "place": "Hotel Fresh Inn — Unterhaching (Monachium)",
-        "note": "POTWIERDZONA REZERWACJA — Grünwalderweg 20d, 82008 Unterhaching. 5 dorosłych, 2 apartamenty. Zameldowanie 15:00–22:00, wymeldowanie 06:00–11:00. Skraca najdłuższy dzień trasy (Poznań–Kufstein) o ~85 km, resztę odcinka do Kufsteinu jedziemy rano dnia 2.",
-        "price": "cena do uzupełnienia (potwierdzona rezerwacja)",
-        "booking_tip": "Zarezerwowane — bez dalszych działań.",
-        "gps_hint": "Naviguj: Grünwalderweg 20d, 82008 Unterhaching (coords 48.0569, 11.6057)"
+        "note": "POTWIERDZONA REZERWACJA — Grünwalderweg 20d, 82008 Unterhaching. 5 dorosłych, 2 apartamenty (3-osobowy + 2-osobowy), każdy z aneksem kuchennym i łazienką. Zameldowanie 15:00–22:00, wymeldowanie 06:00–11:00 — jeśli przyjazd poza godzinami recepcji, zadzwonić wcześniej. Śniadanie nie jest wliczone w cenę.",
+        "price": "€170,85 za 2 apartamenty / 5 osób (1 noc, z VAT)",
+        "booking_tip": "Zarezerwowane — bez dalszych działań. Bezpłatne odwołanie do 1 dnia przed przyjazdem.",
+        "gps_hint": "Naviguj: Grünwalderweg 20d, 82008 Unterhaching (coords 48.0569, 11.6057)",
+        "contact": "+49 89 3070900"
       },
       "practical_tips": [
         "Kup e-winietę AT online przed wyjazdem — €12,80, start 13.09 (dzień 2, pierwszy wjazd na austriacką autostradę)",

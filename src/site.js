@@ -21,6 +21,7 @@ export function renderSiteNav(active = 'plan') {
       `<a href="${BASE}${href}"${key === active ? ' class="is-active" aria-current="page"' : ''}>${label}</a>`
   ).join('');
   return `
+    <a class="skip-link" href="#tresc">Przejdź do treści</a>
     <nav class="site-nav" id="site-nav" aria-label="Nawigacja strony">
       <a class="site-nav__brand" href="${BASE}">Toskania</a>
       <div class="site-nav__links">${links}</div>

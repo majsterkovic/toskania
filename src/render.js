@@ -13,6 +13,19 @@ const ATTRACTION_LABELS = {
 
 const BASE_URL = import.meta.env.BASE_URL;
 
+// Generowany przez scripts/convert-webp.js (krok `npm run build`): { nazwa: {w, h, widths} }
+import IMAGE_MANIFEST from './image-manifest.json';
+
+/**
+ * Atrybut `sizes` per kontekst użycia — musi odpowiadać temu, co robi CSS,
+ * inaczej przeglądarka wybierze wariant za duży (albo za mały).
+ */
+const IMAGE_SIZES = {
+  'hero__figure': '(min-width: 1024px) 640px, 100vw',
+  'daypage__hero': '(min-width: 900px) 860px, 100vw',
+  'attraction-thumb': '96px',
+};
+
 /** Mapowanie ścieżek z plan.json na faktyczne pliki w public/images/ */
 const IMAGE_ALIASES = {
   'images/radda.jpg': 'images/radda-chianti.jpg',
@@ -37,6 +50,33 @@ function imgSrc(relativePath) {
   return `${BASE_URL}${resolved}`;
 }
 
+/** Klucz w image-manifest.json = nazwa pliku bez katalogu i rozszerzenia. */
+function imageKey(src) {
+  const file = src.split('/').pop() || '';
+  return file.replace(/\.[a-z0-9]+$/i, '');
+}
+
+/** Pełny wariant WebP (bez sufiksu szerokości) — używany jako `src` i w lightboxie. */
+function webpSrc(src) {
+  return src.replace(/\.(jpe?g|png)$/i, '.webp');
+}
+
+/**
+ * srcset + intrinsic wymiary dla obrazu. Warianty generuje scripts/convert-webp.js,
+ * a image-manifest.json niesie ich faktyczne szerokości — dzięki temu deskryptory `w`
+ * są prawdziwe, a przeglądarka pobiera 200px miniaturę zamiast pliku 1600px.
+ */
+function imgSources(src) {
+  const meta = IMAGE_MANIFEST[imageKey(src)];
+  const full = webpSrc(src);
+  if (!meta) return { full, srcset: '', width: null, height: null };
+  const base = full.replace(/\.webp$/i, '');
+  const srcset = meta.widths
+    .map((w) => `${w === meta.w ? full : `${base}-${w}.webp`} ${w}w`)
+    .join(', ');
+  return { full, srcset, width: meta.w, height: meta.h };
+}
+
 function resolvePlaceImage(images, key) {
   if (!key || !images?.places?.[key]) return null;
   const place = images.places[key];
@@ -49,12 +89,17 @@ function resolvePlaceImage(images, key) {
 
 function renderImg({ src, alt, credit }, className = 'img', loading = 'lazy') {
   if (!src) return '';
-  const webpSrc = src.replace(/\.(jpe?g|png)$/i, '.webp');
+  const { full, srcset, width, height } = imgSources(src);
+  const sizes = IMAGE_SIZES[className];
+  const dims = width ? ` width="${width}" height="${height}"` : '';
+  const priority = loading === 'eager' ? ' fetchpriority="high"' : '';
   return `
     <figure class="${className}">
       <picture>
-        <source srcset="${esc(webpSrc)}" type="image/webp" />
-        <img src="${esc(src)}" alt="${esc(alt)}" loading="${loading}" decoding="async" />
+        <source
+          type="image/webp"
+          srcset="${esc(srcset || full)}"${sizes ? `\n          sizes="${esc(sizes)}"` : ''} />
+        <img src="${esc(src)}" alt="${esc(alt)}" loading="${loading}" decoding="async"${dims}${priority} />
       </picture>
       ${credit ? `<figcaption class="img-credit">${esc(credit)}</figcaption>` : ''}
     </figure>
@@ -136,7 +181,7 @@ export function renderInteractiveMap(days) {
 
   return `
     <section class="section" id="mapa">
-      <h2 class="section-title">Mapa Toskanii</h2>
+      <h1 class="section-title">Mapa Toskanii</h1>
       <p class="section-lead">Wybierz dzień — markery ponumerowane, linia trasy i lista atrakcji pojawią się obok.</p>
       <div class="imap-filters">
         <button type="button" class="map-filter map-filter--active" data-imap-day="all">
@@ -229,6 +274,7 @@ function renderAccommodation(acc) {
       ${acc.booking_tip ? `<p class="muted">${esc(acc.booking_tip)}</p>` : ''}
       ${acc.price ? `<p class="price">${esc(acc.price)}</p>` : ''}
       ${acc.gps_hint ? `<p class="food-gps muted">📍 ${esc(acc.gps_hint)}</p>` : ''}
+      ${acc.contact ? `<p class="muted">☎ ${esc(acc.contact)}</p>` : ''}
       ${options}
     </div>
   `;
@@ -546,23 +592,29 @@ export function renderGallery(images) {
   const places = images?.places;
   if (!places || !Object.keys(places).length) return '';
 
+  // Kafelek to max ~310px (4 kolumny w kontenerze 1280px) — nie ma powodu
+  // pobierać tu wariantu 1600px; ten idzie dopiero do lightboxa.
+  const GRID_SIZES = '(min-width: 1024px) 310px, (min-width: 768px) 33vw, 50vw';
+
   const items = Object.entries(places)
     .map(([key, place]) => {
       const src = imgSrc(place.src);
-      const webpSrc = src.replace(/\.(jpe?g|png)$/i, '.webp');
+      const { full, srcset, width, height } = imgSources(src);
+      const label = place.alt || key;
+      const dims = width ? ` width="${width}" height="${height}"` : '';
       return `
         <button
           type="button"
           class="gallery-item"
-          data-src="${esc(src)}"
-          data-alt="${esc(place.alt || key)}"
-          aria-label="${esc(place.alt || key)}"
+          data-src="${esc(full)}"
+          data-alt="${esc(label)}"
+          aria-label="Powiększ: ${esc(label)}"
         >
           <picture>
-            <source srcset="${esc(webpSrc)}" type="image/webp" />
-            <img src="${esc(src)}" alt="${esc(place.alt || key)}" loading="lazy" decoding="async" />
+            <source type="image/webp" srcset="${esc(srcset || full)}" sizes="${esc(GRID_SIZES)}" />
+            <img src="${esc(src)}" alt="${esc(label)}" loading="lazy" decoding="async"${dims} />
           </picture>
-          <span class="gallery-item__caption">${esc(place.alt || key)}</span>
+          <span class="gallery-item__caption">${esc(label)}</span>
         </button>
       `;
     })
@@ -570,7 +622,7 @@ export function renderGallery(images) {
 
   return `
     <section class="section" id="galeria">
-      <h2 class="section-title">Galeria miejsc</h2>
+      <h1 class="section-title">Galeria miejsc</h1>
       <p class="section-lead">Miejsca z planu podróży — tranzyty, bazy i atrakcje.</p>
       <div class="gallery-grid">${items}</div>
     </section>
@@ -884,11 +936,11 @@ export function renderTimeline(plan) {
   }).join('');
 
   return `
-    <div class="page page--timeline">
+    <main class="page page--timeline" id="tresc">
       ${renderHeader(plan.meta, images)}
       <div class="timeline">${timelineHtml}</div>
       ${renderFooter(plan.meta)}
-    </div>
+    </main>
   `;
 }
 
@@ -926,7 +978,7 @@ export function renderDayPage(day, images, bases, days, todo) {
     : '';
 
   return `
-    <div class="page page--day" style="--day-accent: ${dayAccent(day)}">
+    <main class="page page--day" id="tresc" style="--day-accent: ${dayAccent(day)}">
       <a class="daypage-back" href="#/">← Plan</a>
       <article class="daypage day-card--${day.type}">
         ${hero}
@@ -945,39 +997,8 @@ export function renderDayPage(day, images, bases, days, todo) {
         ${navLink(next, 'next', 'Następny ›')}
       </nav>
       ${renderFooter({ dates: '12–27 września 2026' })}
-    </div>
+    </main>
   `;
-}
-
-export function initDayNav() {
-  const nav = document.getElementById('day-nav');
-  if (!nav) return;
-
-  const chips = nav.querySelectorAll('.day-chip');
-  const cards = document.querySelectorAll('.day-card[data-day]');
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const dayNum = entry.target.dataset.day;
-          chips.forEach((chip) => {
-            chip.classList.toggle('active', chip.dataset.day === dayNum);
-          });
-        }
-      });
-    },
-    { rootMargin: '-30% 0px -55% 0px', threshold: 0 }
-  );
-
-  cards.forEach((card) => observer.observe(card));
-
-  chips.forEach((chip) => {
-    chip.addEventListener('click', () => {
-      chips.forEach((c) => c.classList.remove('active'));
-      chip.classList.add('active');
-    });
-  });
 }
 
 export function initGallery() {

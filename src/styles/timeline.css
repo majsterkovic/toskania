@@ -1,0 +1,420 @@
+/**
+ * Strona planu: hero, statystyki trasy, oś czasu z etapami.
+ */
+/* Hero */
+.hero {
+  position: relative;
+  margin: 0 calc(-1 * var(--page-pad)) 2rem;
+  overflow: hidden;
+  background: var(--cream-deep);
+}
+.hero__figure {
+  margin: 0;
+  aspect-ratio: 16 / 10;
+  max-height: 280px;
+  overflow: hidden;
+}
+.hero__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: sepia(12%) saturate(108%) brightness(0.97);
+}
+.hero__figure::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(42, 36, 32, 0.15) 0%,
+    rgba(42, 36, 32, 0.55) 100%
+  );
+  pointer-events: none;
+}
+.hero__figure {
+  position: relative;
+}
+.hero__content {
+  padding: 1.5rem var(--page-pad) 2rem;
+  text-align: center;
+}
+.hero:not(:has(.hero__figure img)) .hero__content {
+  padding-top: 2.5rem;
+}
+.hero__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oro);
+  margin-bottom: 0.75rem;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  color: var(--ink);
+}
+.hero-dates {
+  margin-top: 0.5rem;
+  color: var(--terracotta);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.hero-subtitle {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  color: var(--muted);
+}
+.hero-note {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--stone-dark);
+  font-style: italic;
+}
+.route-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--oro);
+}
+.route-stat {
+  text-align: center;
+}
+.route-stat dt {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone-dark);
+  margin-bottom: 0.2rem;
+}
+.route-stat dd {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+/* ── Tablet: 768px ── */
+
+@media (min-width: 768px) {
+.hero__figure {
+    max-height: 420px;
+    aspect-ratio: 21 / 9;
+  }
+.hero h1 {
+    font-size: 3.25rem;
+  }
+.route-stats {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* ── Desktop: 1024px ── */
+
+@media (min-width: 1024px) {
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: stretch;
+    margin-bottom: 3rem;
+  }
+.hero__figure {
+    max-height: none;
+    /* `auto` jest tu celowe: figure to grid item z align-items:stretch, więc
+       wysokość dyktuje sąsiednia kolumna z treścią, a nie obraz — narzucenie
+       proporcji ustalałoby szerokość z tej wysokości i rozpychało kolumnę. */
+    aspect-ratio: auto;
+    min-height: 320px;
+  }
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 2.5rem 2rem;
+  }
+.route-stats {
+    text-align: left;
+  }
+.route-stat {
+    text-align: left;
+  }
+}
+
+/* ── Print styles ── */
+
+@media print {
+.hero {
+    page-break-after: always;
+  }
+}
+
+/* Hero — zielono-ciemna mgła zamiast brązu */
+html.dark .hero__figure::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 23, 16, 0.25) 0%,
+    rgba(11, 23, 16, 0.65) 100%
+  );
+}
+html.dark .hero { background: var(--cream-deep); }
+/* Route stat divider */
+html.dark .route-stats {
+  border-top-color: rgba(168, 136, 60, 0.3);
+}
+/* ══════════════════════════════════════════════════════════════════
+   TIMELINE — nowa strona główna (oś kartograficzna + stacje faz)
+   Sygnatura: złota (--oro) oś-trasa łącząca stacje faz podróży.
+   ══════════════════════════════════════════════════════════════════ */
+.timeline {
+  position: relative;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1.25rem 1.15rem 4rem;
+}
+/* złota oś kartograficzna — ciągła pionowa linia po lewej */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: calc(1.15rem + 8px);
+  top: 2.25rem;
+  bottom: 3.5rem;
+  width: 2px;
+  background: var(--oro);
+  opacity: 0.4;
+  z-index: 0;
+}
+.tl-phase {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0.75rem;
+}
+/* nagłówek fazy = "stacja" na osi */
+.tl-phase__head {
+  position: relative;
+  padding: 1.4rem 0 0.65rem 2.1rem;
+}
+.tl-phase__head::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: calc(1.4rem + 0.55em);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2.5px solid var(--oro);
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 4px var(--cream);
+}
+.tl-phase__eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--oro);
+  font-weight: 600;
+}
+.tl-phase__label {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.85rem;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0.1rem 0 0.05rem;
+}
+.tl-phase__sub {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+/* wiersze dni */
+.tl-rows { position: relative; }
+.tl-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.4rem 1fr auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 0.8rem 0.7rem 2.1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+/* węzeł dnia na osi */
+.tl-row::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent, var(--muted));
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 3.5px var(--cream);
+  transition: transform 0.18s ease;
+}
+a.tl-row:hover {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  transform: translateX(2px);
+}
+a.tl-row:hover::before { transform: translate(-50%, -50%) scale(1.35); }
+a.tl-row:focus-visible {
+  outline: 2px solid var(--oro);
+  outline-offset: 2px;
+}
+.tl-row__date {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.tl-row__d {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.tl-row__wd {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.tl-row__main { min-width: 0; }
+.tl-row__title {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.06rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.tl-row__desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+.tl-row__sub {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+.tl-row__markers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.3rem;
+}
+.tl-mark {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.tl-mark--crowd {
+  color: var(--terracotta-deep);
+  background: rgba(184, 92, 56, 0.12);
+}
+.tl-mark--drive {
+  color: var(--muted);
+  background: var(--stone);
+}
+.tl-mark--booking {
+  color: var(--oro);
+  background: rgba(196, 134, 10, 0.14);
+}
+.tl-row__chev {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  color: var(--oro);
+  opacity: 0.5;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+a.tl-row:hover .tl-row__chev { opacity: 1; transform: translateX(2px); }
+.tl-row--buffer {
+  grid-template-columns: 3.4rem 1fr;
+  opacity: 0.8;
+}
+.tl-row--buffer::before {
+  background: var(--cream);
+  border: 1.5px dashed var(--muted);
+  box-shadow: 0 0 0 3.5px var(--cream);
+}
+/* mapa bazy + info w nagłówku fazy */
+.tl-basemap {
+  margin: 0.25rem 0 1.5rem 2.1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 720px) {
+.tl-basemap { grid-template-columns: 1.35fr 1fr; align-items: start; }
+}
+
+.tl-baseinfo {
+  padding: 0.9rem 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--oro);
+  border-radius: var(--radius);
+}
+.tl-baseinfo__label {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--oro);
+  font-weight: 600;
+}
+.tl-baseinfo__name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0.1rem 0 0.15rem;
+}
+.tl-baseinfo__nights { font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+.tl-baseinfo__acc,
+.tl-baseinfo__tip,
+.tl-baseinfo__gps { font-size: 0.86rem; line-height: 1.45; margin-top: 0.35rem; }
+.tl-baseinfo__tip { color: var(--terracotta-deep); }
+.tl-baseinfo__gps { font-size: 0.78rem; }
+.tl-basemap__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  margin-top: 0.6rem;
+}
+@media (max-width: 560px) {
+.tl-row { grid-template-columns: 2.9rem 1fr auto; padding-left: 1.9rem; }
+.tl-phase__label { font-size: 1.55rem; }
+}
+

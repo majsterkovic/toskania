@@ -9,7 +9,17 @@
     <meta name="theme-color" content="#0b1710" media="(prefers-color-scheme: dark)" />
     <title>Toskania 2026</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="image" href="%BASE_URL%images/hero-tuscany.webp" type="image/webp" fetchpriority="high" />
+    <!-- Preload musi mieć ten sam srcset/sizes co hero renderowany w render.js —
+         zwykły `href` pobrałby pełny wariant i przeglądarka użyłaby go zamiast
+         wybrać mniejszy z srcset, kasując zysk z obrazów responsywnych. -->
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+      imagesrcset="%BASE_URL%images/hero-tuscany-400.webp 400w, %BASE_URL%images/hero-tuscany-800.webp 800w, %BASE_URL%images/hero-tuscany.webp 1280w"
+      imagesizes="(min-width: 1024px) 640px, 100vw"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

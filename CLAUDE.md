@@ -18,4 +18,6 @@ Aktualizuj te notatki przy każdej nowej analizie feasibility, nie zostawiaj odp
 - Główna strona: `index.html` + `src/main.js` (Vite entry), baza `/toskania/` (`vite.config.js`).
 - Dodatkowe statyczne podstrony (np. `public/audyt.html`) leżą w `public/` i są kopiowane 1:1 do `dist/` — dostępne jako `/toskania/<nazwa>.html`.
 - Deploy: push na `main` → GitHub Actions (`.github/workflows/deploy.yml`) → `npm run build` → GitHub Pages.
-- Obrazy: `public/images/*.jpg` + wygenerowany `.webp` (`scripts/convert-webp.js` w `npm run build`), atrybucje w `public/images/attribution.json`.
+- Obrazy: `public/images/*.jpg` to źródła. `scripts/convert-webp.js` (krok `npm run build`) generuje z nich warianty `.webp` w szerokościach 200/400/800 + pełny (max 1600px) i zapisuje `src/image-manifest.json` z ich wymiarami. Atrybucje w `public/images/attribution.json`.
+  - `src/image-manifest.json` jest **generowany, ale commitowany** — `render.js` importuje go w czasie budowania, żeby wstawić prawdziwe deskryptory `w` w `srcset` oraz `width`/`height` (rezerwacja miejsca, CLS=0). Po dodaniu/wymianie zdjęcia uruchom `npm run build` i zacommituj zmieniony manifest.
+  - `sizes` per kontekst siedzi w `IMAGE_SIZES` (`src/render.js`) i w preloadzie hero (`index.html`) — te dwa muszą pozostać zgodne, inaczej preload pobierze inny wariant niż wybierze `<picture>`.

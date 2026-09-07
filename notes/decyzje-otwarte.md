@@ -4,7 +4,7 @@ tags: [toskania, planowanie]
 
 # Decyzje otwarte
 
-Rzeczy ustalone w rozmowie — status wdrożenia w `plan_2bazy.json`.
+Rzeczy ustalone w rozmowie — status wdrożenia w `trip.json`.
 
 ## 1. Piza + Lucca — ✅ WDROŻONE (nowy dzień 4, 15.09)
 - **Wygrała z [[San Gimignano]]**: bliżej i łatwiej dojechać (auto do Lukki + pociąg do Pizy), dwa miejsca za cenę jednego ([[Lucca]] dotąd tylko mijana), a blok Bargi miał słabszy dzień do poświęcenia niż napięty blok Chianti.

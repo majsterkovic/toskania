@@ -1,6 +1,6 @@
 # Toskania 2026 — plan wycieczki
 
-Statyczna strona (Vite + Leaflet) prezentująca plan wycieczki samochodowej grupy 5-osobowej po Toskanii, 12–27.09.2026. Dane trasy/dni/atrakcji żyją w `plan_2bazy.json` (ładowany przez `src/main.js`), renderowane przez `src/render.js` do `#app`.
+Statyczna strona (Vite + Leaflet) prezentująca plan wycieczki samochodowej grupy 5-osobowej po Toskanii, 12–27.09.2026. Dane trasy/dni/atrakcji żyją w `trip.json` (`schema_version: 1`). Knoby silnika (rozmiary obrazków, aliasy plików) w `trip.config.js`. Import treści wyłącznie przez `src/trip.js` — nigdy bezpośrednio z JSON. Renderowane przez `src/render.js` do `#app`.
 
 **Decyzja: wariant 2-bazowy (Barga/Garfagnana → Chianti/Castelnuovo Berardenga) jest jedynym prezentowanym planem.** `plan.json` (stary wariant 3-bazowy) nie jest już importowany ani przełączalny na stronie — historia w git, nie w UI.
 
@@ -22,7 +22,7 @@ Aktualizuj te notatki przy każdej nowej analizie feasibility, nie zostawiaj odp
   - Kolejność importów w entry poincie = kolejność kaskady. Dodając regułę, wybierz moduł wg strony, która jej używa; jeśli używają jej ≥2 różne strony — idzie do `base.css`.
 - Wspólne moduły JS: `src/html.js` (`esc()` — jedyne escapowanie w projekcie), `src/theme.js` (motyw przed pierwszym malowaniem), `src/site.js` (nav/stopka/todo/reveal).
 - Dodatkowe statyczne podstrony (np. `public/audyt.html`) leżą w `public/` i są kopiowane 1:1 do `dist/` — dostępne jako `/toskania/<nazwa>.html`.
-- Deploy: push na `main` → GitHub Actions (`.github/workflows/deploy.yml`) → `npm run build` → GitHub Pages.
+- Deploy: push na `main` → GitHub Actions (`.github/workflows/deploy.yml`) → `npm run build` (walidator `trip.json` + webp + vite) → GitHub Pages.
 - Obrazy: `public/images/*.jpg` to źródła. `scripts/convert-webp.js` (krok `npm run build`) generuje z nich warianty `.webp` w szerokościach 200/400/800 + pełny (max 1600px) i zapisuje `src/image-manifest.json` z ich wymiarami. Atrybucje w `public/images/attribution.json`.
   - `src/image-manifest.json` jest **generowany, ale commitowany** — `render.js` importuje go w czasie budowania, żeby wstawić prawdziwe deskryptory `w` w `srcset` oraz `width`/`height` (rezerwacja miejsca, CLS=0). Po dodaniu/wymianie zdjęcia uruchom `npm run build` i zacommituj zmieniony manifest.
-  - `sizes` per kontekst siedzi w `IMAGE_SIZES` (`src/render.js`) i w preloadzie hero (`index.html`) — te dwa muszą pozostać zgodne, inaczej preload pobierze inny wariant niż wybierze `<picture>`.
+  - `IMAGE_SIZES` żyją w `trip.config.js` (`imageSizes`) i muszą być zgodne z preloadem hero w `index.html` — inaczej preload pobierze inny wariant niż wybierze `<picture>`.

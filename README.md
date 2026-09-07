@@ -15,7 +15,7 @@ npm run preview
 
 ## Edycja
 
-Zmień [`plan.json`](plan.json) i wypchnij na `main` — GitHub Actions automatycznie zbuduje i opublikuje stronę.
+Zmień [`trip.json`](trip.json) i wypchnij na `main` — GitHub Actions automatycznie zbuduje i opublikuje stronę.
 
 ## Deploy
 

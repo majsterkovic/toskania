@@ -1,4 +1,4 @@
-import plan from '../plan_2bazy.json';
+import { trip as plan } from './trip.js';
 import { renderGallery, initGallery } from './render.js';
 import { renderSiteNav, renderSiteFooter, initChrome } from './site.js';
 import { applyStoredTheme } from './theme.js';

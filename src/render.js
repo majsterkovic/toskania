@@ -16,29 +16,12 @@ const BASE_URL = import.meta.env.BASE_URL;
 // Generowany przez scripts/convert-webp.js (krok `npm run build`): { nazwa: {w, h, widths} }
 import IMAGE_MANIFEST from './image-manifest.json';
 import { esc } from './html.js';
-
-/**
- * Atrybut `sizes` per kontekst użycia — musi odpowiadać temu, co robi CSS,
- * inaczej przeglądarka wybierze wariant za duży (albo za mały).
- */
-const IMAGE_SIZES = {
-  'hero__figure': '(min-width: 1024px) 640px, 100vw',
-  'daypage__hero': '(min-width: 900px) 860px, 100vw',
-  'attraction-thumb': '96px',
-};
-
-/** Mapowanie ścieżek z plan.json na faktyczne pliki w public/images/ */
-const IMAGE_ALIASES = {
-  'images/radda.jpg': 'images/radda-chianti.jpg',
-  'images/monte-oliveto.jpg': 'images/monte-oliveto-maggiore.jpg',
-  'images/asciano.jpg': 'images/asciano-crete.jpg',
-  'images/lamone.jpg': 'images/selva-del-lamone.jpg',
-};
+import { config } from './trip.js';
 
 function imgSrc(relativePath) {
   if (!relativePath) return '';
   const path = relativePath.startsWith('/') ? relativePath.slice(1) : relativePath;
-  const resolved = IMAGE_ALIASES[path] || path;
+  const resolved = config.imageAliases[path] || path;
   return `${BASE_URL}${resolved}`;
 }
 
@@ -82,7 +65,7 @@ function resolvePlaceImage(images, key) {
 function renderImg({ src, alt, credit }, className = 'img', loading = 'lazy') {
   if (!src) return '';
   const { full, srcset, width, height } = imgSources(src);
-  const sizes = IMAGE_SIZES[className];
+  const sizes = config.imageSizes[className];
   const dims = width ? ` width="${width}" height="${height}"` : '';
   const priority = loading === 'eager' ? ' fetchpriority="high"' : '';
   return `

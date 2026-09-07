@@ -1,4 +1,4 @@
-import plan2 from '../plan_2bazy.json';
+import { trip as plan } from './trip.js';
 import { renderTimeline, renderDayPage } from './render.js';
 import { renderSiteNav, initChrome } from './site.js';
 import { initBaseMaps, initDayMap, initTransitDayMap, destroyAllMaps } from './maps.js';
@@ -14,7 +14,6 @@ import './styles/map.css';
 // Motyw przed pierwszym malowaniem (bez FOUC)
 applyStoredTheme();
 
-const plan = plan2;
 const app = document.getElementById('app');
 let lastDayNum = null;
 

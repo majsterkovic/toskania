@@ -1,4 +1,4 @@
-import plan from '../plan_2bazy.json';
+import { trip as plan } from './trip.js';
 import { renderCosts, renderTodo, renderPractical } from './render.js';
 import { renderSiteNav, renderSiteFooter, initChrome, initTodo } from './site.js';
 import { initWeather } from './weather.js';

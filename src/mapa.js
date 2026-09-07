@@ -1,4 +1,4 @@
-import plan from '../plan_2bazy.json';
+import { trip as plan } from './trip.js';
 import { renderInteractiveMap } from './render.js';
 import { renderSiteNav, renderSiteFooter, initChrome } from './site.js';
 import { initInteractiveMap } from './maps.js';

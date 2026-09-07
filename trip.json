@@ -1,5 +1,15 @@
 {
   "meta": {
+    "schema_version": 1,
+    "brand": "Toskania",
+    "storage_key": "toskania-2026",
+    "timezone": "Europe/Rome",
+    "start_date": "2026-09-12",
+    "end_date": "2026-09-27",
+    "phase_labels": {
+      "dojazd": { "label": "Dojazd", "sub": "Poznań → Toskania" },
+      "powrot": { "label": "Powrót", "sub": "Toskania → Poznań" }
+    },
     "title": "Toskania 2026",
     "subtitle": "Podróż samochodowa Poznań → Toskania → Poznań",
     "dates": "12–27 września 2026",
@@ -1129,6 +1139,7 @@
             43.843,
             10.5079
           ],
+          "drive_min": 40,
           "opening_hours": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie. Torre Guinigi: codz. (cze–wrz) 9:30–19:30, bilet €8 (ulg. €6,50). Piazza dell'Anfiteatro: zawsze dostępna. Duomo di San Martino: nawa ~bezpłatna, Volto Santo/zakrystia €3–9.",
           "ticket_price": "Mury i Piazza dell'Anfiteatro: bezpłatne. Torre Guinigi: €8/os intero, €6,50 ridotto (studenci z legitymacją, 6–14 lat, powyżej 65 lat, grupy 10+ z przewodnikiem). Bilet łączony Guinigi + Torre delle Ore + Orto Botanico: €14 (ważny 2 dni).",
           "duration_h": 3.0
@@ -1143,6 +1154,8 @@
             43.7229,
             10.3966
           ],
+          "drive_min": null,
+          "drive_min_reason": "pociąg z Lukki",
           "opening_hours": "Zabytki (wrzesień): ok. 9:00–20:00 — sprawdź dokładny kalendarz na opapisa.it. Krzywa Wieża: wejścia w slotach co 30 min (grupy ~30 os.), 251 stopni bez windy, dzieci <8 lat nie mogą wchodzić. Katedra: wstęp bezpłatny z biletem czasowym.",
           "ticket_price": "Krzywa Wieża: €20/os (zawiera wejście do katedry). Bilet łączony Piazza dei Miracoli (Wieża + Duomo + Battistero + Camposanto + Museo delle Sinopie): €27/os. Sam plac i zdjęcia z zewnątrz: bezpłatne.",
           "duration_h": 2.0
@@ -1156,6 +1169,8 @@
             43.8664,
             10.2503
           ],
+          "drive_min": null,
+          "drive_min_reason": "pociąg Lucca–Viareggio (auto zostaje w Lucce)",
           "opening_hours": "Passeggiata, molo i plaża: dostępne bez ograniczeń, bezpłatnie. Zachód słońca 15.09: 19:31 (widno do ~19:55). Zejście do wody: spiaggia libera w Darsenie (południowy skraj miasta) — reszta plaży to we wrześniu jeszcze czynne stabilimenti.",
           "ticket_price": "Bezpłatne. Dojazd: pociąg Piza→Viareggio ~€3/os, powrót Viareggio→Lucca ~€3/os.",
           "duration_h": 2.0
@@ -2614,6 +2629,8 @@
             43.7731,
             11.256
           ],
+          "drive_min": null,
+          "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
           "opening_hours": "Battistero/Campanile/Museo/Santa Reparata: codz. 9:00–19:30 (kasy do 19:45). Kopuła: 8:15–19:30, rezerwacja obowiązkowa.",
           "ticket_price": "Brunelleschi Pass (wszystkie zabytki placu, ważny 3 dni): €30/os, 7–14 lat €12. Sama katedra (nawa): bezpłatna.",
           "duration_h": 1.75
@@ -2628,6 +2645,8 @@
             43.7696,
             11.2558
           ],
+          "drive_min": null,
+          "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
           "opening_hours": "Plac i Loggia: całodobowo, bezpłatnie. Museo di Palazzo Vecchio: sprawdź aktualne godziny na museicivicifiorentini.comune.fi.it (w tym planie zwiedzamy z zewnątrz).",
           "ticket_price": "Plac, Loggia: bezpłatne. Palazzo Vecchio (muzeum, opcjonalnie): ok. €12,50/os.",
           "duration_h": 1.0
@@ -2642,6 +2661,8 @@
             43.768,
             11.2531
           ],
+          "drive_min": null,
+          "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
           "opening_hours": "Most publiczny — całodobowo, bezpłatnie.",
           "ticket_price": "Bezpłatny (most i spacer po Oltrarno)",
           "duration_h": 1.5

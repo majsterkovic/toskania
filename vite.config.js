@@ -13,6 +13,7 @@ export default defineConfig({
         galeria: resolve(__dirname, 'galeria/index.html'),
         praktyczne: resolve(__dirname, 'praktyczne/index.html'),
         packing: resolve(__dirname, 'packing/index.html'),
+        pamiatki: resolve(__dirname, 'pamiatki/index.html'),
       },
     },
   },

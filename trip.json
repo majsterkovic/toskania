@@ -7,8 +7,14 @@
     "start_date": "2026-09-12",
     "end_date": "2026-09-27",
     "phase_labels": {
-      "dojazd": { "label": "Dojazd", "sub": "Poznań → Toskania" },
-      "powrot": { "label": "Powrót", "sub": "Toskania → Poznań" }
+      "dojazd": {
+        "label": "Dojazd",
+        "sub": "Poznań → Toskania"
+      },
+      "powrot": {
+        "label": "Powrót",
+        "sub": "Toskania → Poznań"
+      }
     },
     "title": "Toskania 2026",
     "subtitle": "Podróż samochodowa Poznań → Toskania → Poznań",
@@ -1142,7 +1148,7 @@
           "drive_min": 40,
           "opening_hours": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie. Torre Guinigi: codz. (cze–wrz) 9:30–19:30, bilet €8 (ulg. €6,50). Piazza dell'Anfiteatro: zawsze dostępna. Duomo di San Martino: nawa ~bezpłatna, Volto Santo/zakrystia €3–9.",
           "ticket_price": "Mury i Piazza dell'Anfiteatro: bezpłatne. Torre Guinigi: €8/os intero, €6,50 ridotto (studenci z legitymacją, 6–14 lat, powyżej 65 lat, grupy 10+ z przewodnikiem). Bilet łączony Guinigi + Torre delle Ore + Orto Botanico: €14 (ważny 2 dni).",
-          "duration_h": 3.0
+          "duration_h": 3
         },
         {
           "name": "Piza — Piazza dei Miracoli (plac cudów): Krzywa Wieża, Duomo (katedra), Battistero (baptysterium), Camposanto (cmentarz)",
@@ -1158,7 +1164,7 @@
           "drive_min_reason": "pociąg z Lukki",
           "opening_hours": "Zabytki (wrzesień): ok. 9:00–20:00 — sprawdź dokładny kalendarz na opapisa.it. Krzywa Wieża: wejścia w slotach co 30 min (grupy ~30 os.), 251 stopni bez windy, dzieci <8 lat nie mogą wchodzić. Katedra: wstęp bezpłatny z biletem czasowym.",
           "ticket_price": "Krzywa Wieża: €20/os (zawiera wejście do katedry). Bilet łączony Piazza dei Miracoli (Wieża + Duomo + Battistero + Camposanto + Museo delle Sinopie): €27/os. Sam plac i zdjęcia z zewnątrz: bezpłatne.",
-          "duration_h": 2.0
+          "duration_h": 2
         },
         {
           "name": "Viareggio — Passeggiata (nadmorski deptak Liberty), molo i zachód słońca nad Morzem Tyrreńskim",
@@ -1173,7 +1179,7 @@
           "drive_min_reason": "pociąg Lucca–Viareggio (auto zostaje w Lucce)",
           "opening_hours": "Passeggiata, molo i plaża: dostępne bez ograniczeń, bezpłatnie. Zachód słońca 15.09: 19:31 (widno do ~19:55). Zejście do wody: spiaggia libera w Darsenie (południowy skraj miasta) — reszta plaży to we wrześniu jeszcze czynne stabilimenti.",
           "ticket_price": "Bezpłatne. Dojazd: pociąg Piza→Viareggio ~€3/os, powrót Viareggio→Lucca ~€3/os.",
-          "duration_h": 2.0
+          "duration_h": 2
         }
       ],
       "oak_forest": {
@@ -1401,7 +1407,7 @@
           ],
           "opening_hours": "Szlak dostępny całą dobę, cały rok, bez opłat.",
           "ticket_price": "Bezpłatny.",
-          "duration_h": 4.0
+          "duration_h": 4
         }
       ],
       "oak_forest": {
@@ -1881,7 +1887,7 @@
           ],
           "opening_hours": "Rezerwacja online/tel. — nie ma godzin walk-in.",
           "ticket_price": "Degustacja guidata: €25–40/os.",
-          "duration_h": 2.0
+          "duration_h": 2
         },
         {
           "name": "Radda in Chianti (średniowieczne borgo, dawna stolica Ligi Chianti)",
@@ -1896,7 +1902,7 @@
           ],
           "opening_hours": "Miasteczko dostępne całą dobę.",
           "ticket_price": "Bezpłatne",
-          "duration_h": 1.0
+          "duration_h": 1
         }
       ],
       "oak_forest": {
@@ -2070,7 +2076,7 @@
           ],
           "opening_hours": "Zawsze otwarty (dawn to dusk).",
           "ticket_price": "Bezpłatny",
-          "duration_h": 1.0
+          "duration_h": 1
         },
         {
           "name": "Asciano — Crete Senesi (gliniaste wzgórza, biancane)",
@@ -2243,7 +2249,7 @@
           "image_key": "pienza",
           "opening_hours": "Palazzo Piccolomini: otwarte pn/śr–nd 10:30–17:00 (kasa do 16:30), we wtorki zamknięte — 21.09 to poniedziałek, więc OTWARTE. Cattedrale, Piazza Pio II i tarasy nad Val d'Orcia: dostępne codziennie.",
           "ticket_price": "Palazzo Piccolomini: €7 (21.09 pn — otwarte). Katedra: bezpłatna.",
-          "duration_h": 2.0
+          "duration_h": 2
         },
         {
           "name": "Bagno Vignoni — Piazza delle Sorgenti (plac z basenem termalnym)",
@@ -2451,7 +2457,7 @@
           ],
           "opening_hours": "Śr–Sb 10:30–19:00, Pn–Wt 10:30–17:30, Nd 13:30–17:30.",
           "ticket_price": "OPA SI Pass: €14 (Duomo + Libreria + Battistero). Libreria Piccolomini extra: €4–6.",
-          "duration_h": 2.0
+          "duration_h": 2
         },
         {
           "name": "Spacer przez kontrade (historyczne dzielnice-klany Sieny)",
@@ -2464,7 +2470,7 @@
             43.3183,
             11.3318
           ],
-          "duration_h": 1.0,
+          "duration_h": 1,
           "opening_hours": "Ulice publiczne, brak godzin. Muzea kontrady: na zamówienie grupowe. Osteria kont. otwarta od 12:00."
         }
       ],
@@ -2649,7 +2655,7 @@
           "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
           "opening_hours": "Plac i Loggia: całodobowo, bezpłatnie. Museo di Palazzo Vecchio: sprawdź aktualne godziny na museicivicifiorentini.comune.fi.it (w tym planie zwiedzamy z zewnątrz).",
           "ticket_price": "Plac, Loggia: bezpłatne. Palazzo Vecchio (muzeum, opcjonalnie): ok. €12,50/os.",
-          "duration_h": 1.0
+          "duration_h": 1
         },
         {
           "name": "Ponte Vecchio (most złotników) i Oltrarno (dzielnica za Arno)",
@@ -2816,7 +2822,7 @@
           ],
           "opening_hours": "Torre Grossa / Musei Civici: codz. ok. 10:00–19:30 (sezon). 24.09 czw = otwarte.",
           "ticket_price": "Torre Grossa + Musei Civici: €9. Bilet łączony z muzeami miejskimi: €13.",
-          "duration_h": 2.0
+          "duration_h": 2
         },
         {
           "name": "Collegiata di Santa Maria Assunta (Duomo) — freski Ghirlandaia i Gozzolego",
@@ -2846,7 +2852,7 @@
           ],
           "opening_hours": "Camminamenti sulle Mura: codz. ok. 9:30–19:30 (sezon). Borgo dostępne całą dobę.",
           "ticket_price": "Mury (camminamenti) + 2 muzea: €5. Samo borgo: bezpłatne.",
-          "duration_h": 1.0
+          "duration_h": 1
         }
       ],
       "oak_forest": {
@@ -4348,6 +4354,596 @@
             "note": "Każdy po jednej do napełniania"
           }
         ]
+      }
+    ]
+  },
+  "souvenirs": {
+    "title": "Pamiątki i smaki z Toskanii",
+    "subtitle": "Przewodnik zakupowy i kulinarny dla 5-osobowej grupy",
+    "lead": "Co warto przywieźć do domu z podróży samochodem: regionalne sery pecorino, toskańska kawa specialty i tradycyjne palarnie, wina z odwiedzanych apelacji, wędliny z dzika i świń Cinta Senese, oliwy, słodycze oraz rzemiosło. Odhaczaj na liście rzeczy kupione i zaplanowane — stan zapisuje się w przeglądarce.",
+    "categories": [
+      {
+        "id": "all",
+        "name": "Wszystko",
+        "icon": "✨"
+      },
+      {
+        "id": "cheese",
+        "name": "Sery",
+        "icon": "🧀"
+      },
+      {
+        "id": "coffee",
+        "name": "Kawa",
+        "icon": "☕"
+      },
+      {
+        "id": "wine",
+        "name": "Wina & Alkohole",
+        "icon": "🍷"
+      },
+      {
+        "id": "cured_meat",
+        "name": "Wędliny",
+        "icon": "🥩"
+      },
+      {
+        "id": "olive_oil",
+        "name": "Oliwa",
+        "icon": "🫒"
+      },
+      {
+        "id": "sweets",
+        "name": "Słodycze",
+        "icon": "🍪"
+      },
+      {
+        "id": "pantry",
+        "name": "Spiżarnia",
+        "icon": "🍯"
+      },
+      {
+        "id": "crafts",
+        "name": "Rzemiosło & Skóra",
+        "icon": "👜"
+      }
+    ],
+    "regions": [
+      {
+        "id": "all",
+        "name": "Wszystkie miejsca"
+      },
+      {
+        "id": "base1",
+        "name": "Baza 1: Garfagnana & Lucca (D2–D6)"
+      },
+      {
+        "id": "base2",
+        "name": "Baza 2: Chianti & Val d'Orcia (D7–D11)"
+      },
+      {
+        "id": "firenze",
+        "name": "Florencja (D12)"
+      },
+      {
+        "id": "san_gimignano",
+        "name": "San Gimignano & Piza (D4, D13)"
+      }
+    ],
+    "guides": [
+      {
+        "id": "dictionary",
+        "title": "Mini-słowniczek na zakupy",
+        "icon": "🇮🇹",
+        "items": [
+          {
+            "phrase": "Me lo può mettere sottovuoto, per favore?",
+            "meaning": "Czy może mi to Pan/Pani zapakować próżniowo? (Klucz do bezpiecznego transportu serów i wędlin)"
+          },
+          {
+            "phrase": "Un etto / due etti di...",
+            "meaning": "100g / 200g... (Włosi wędliny i sery ważą na 'etti', 1 etto = 10 dag)"
+          },
+          {
+            "phrase": "Un assaggio, per favore?",
+            "meaning": "Czy mogę spróbować kawałeczek? (W serowarniach i delikatesach to standard przed zakupem)"
+          },
+          {
+            "phrase": "Pelle conciata al vegetale",
+            "meaning": "Skóra garbowana roślinnie (tradycyjny toskański certyfikat jakości wyrobów skórzanych)"
+          },
+          {
+            "phrase": "Una latta d'olio da 3L / 5L",
+            "meaning": "Puszka oliwy 3-litrowa / 5-litrowa (najlepszy format do bagażnika)"
+          }
+        ]
+      },
+      {
+        "id": "markets",
+        "title": "Supermarkety Coop i Conad vs Delikatesy",
+        "icon": "🛒",
+        "items": [
+          {
+            "phrase": "Dział Banco Gastronomia",
+            "meaning": "W toskańskim Coop (Unicoop Firenze) i Conad lada tradycyjna ma doskonały wybór lokalnych serów DOP i wędlin IGP w cenach o 30–50% niższych niż w turystycznych centrach."
+          },
+          {
+            "phrase": "Pakowanie na życzenie",
+            "meaning": "Pracownicy stoiska z wędlinami bez problemu pokroją cały kawałek szynki czy pecorino i zapakują go w zgrzewaną folię próżniową."
+          },
+          {
+            "phrase": "Kiedy wybrać delikatesy / winnicę",
+            "meaning": "Drobne partie win (Riserva, Gran Selezione), sery dojrzewające w liściach orzecha z Pienzy czy oliwę niefiltrowaną bierzcie prosto od producenta (fattoria, caseificio, frantoio)."
+          }
+        ]
+      },
+      {
+        "id": "car_logistics",
+        "title": "Auto to Wasza supermoc — jak przewieźć zakupy",
+        "icon": "🚗",
+        "items": [
+          {
+            "phrase": "Zero limitów płynów",
+            "meaning": "Nie dotyczy Was samolotowe 100 ml — możecie wieźć całe kartony wina, puszki oliwy i słoiki miodu."
+          },
+          {
+            "phrase": "Puszki metalowe (latta)",
+            "meaning": "Oliwę kupujcie w puszkach 3L lub 5L — są tańsze za litr, nie potłuką się w bagażniku i chronią oliwę w 100% przed światłem."
+          },
+          {
+            "phrase": "Torba termiczna z wkładami",
+            "meaning": "Wrzesień bywa ciepły. W apartamentach w Ponte all'Ania (Baza 1) i Murlo (Baza 2) zamroźcie wkłady chłodzące i zabezpieczcie świeższe sery na powrót przez Austrię i Niemcy."
+          },
+          {
+            "phrase": "Wina w kartonach",
+            "meaning": "Kupując w winnicach, proście o kartony po 6 butelek ze styropianową lub tekturową kratownicą — stabilnie leżą na dnie bagażnika pod bagażami."
+          }
+        ]
+      },
+      {
+        "id": "certifications",
+        "title": "Certyfikaty jakości — czego szukać na etykietach",
+        "icon": "🏷️",
+        "items": [
+          {
+            "phrase": "DOP (ChNP)",
+            "meaning": "Denominazione di Origine Protetta — 100% składników i cały proces produkcji w ściśle określonym rejonie Toskanii."
+          },
+          {
+            "phrase": "IGP (ChOG)",
+            "meaning": "Indicazione Geografica Protetta — tradycyjna regionalna receptura (np. Finocchiona IGP, Ricciarelli di Siena IGP)."
+          },
+          {
+            "phrase": "DOCG / Gallo Nero",
+            "meaning": "Najwyższa kategoria win włoskich. Chianti Classico musi mieć czarnego koguta (Gallo Nero) na różowej banderoli na szyjce."
+          },
+          {
+            "phrase": "Vera Pelle Conciata al Vegetale",
+            "meaning": "Znak konsorcjum toskańskich garbarni (charakterystyczna dłoń) — gwarancja naturalnej skóry garbowanej ekstraktami roślinnymi, a nie chromem."
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "pecorino-pienza",
+        "name": "Pecorino di Pienza",
+        "italian_name": "Pecorino di Pienza (Rosso / Cenere / Foglie di noce)",
+        "category": "cheese",
+        "region": "base2",
+        "region_label": "Val d'Orcia (Pienza, D11)",
+        "price": "~€18–28 / kg",
+        "where": "Pienza (sklepiki na Via di Mezzo) lub serowarnie pod miastem (np. Caseificio Cugusi Silvana)",
+        "tip": "Pienza to stolica sera owczego. Wybierzcie wersję w liściach orzecha (foglie di noce), w popiele (sotto cenere) lub rosso (z czerwoną skórką). Zawsze proście o zapakowanie sottovuoto.",
+        "transport": "Sottovuoto (próżniowo) + torba termiczna w bagażniku"
+      },
+      {
+        "id": "pecorino-toscano-dop",
+        "name": "Pecorino Toscano DOP Stagionato",
+        "italian_name": "Pecorino Toscano DOP (dojrzewający)",
+        "category": "cheese",
+        "region": "base2",
+        "region_label": "Toskania centralna / Siena (D10)",
+        "price": "~€16–22 / kg",
+        "where": "Supermarkety Coop/Conad (stoisko z wagą) lub lokalne delikatesy w Sienie i Murlo",
+        "tip": "Twardy owczy ser dojrzewający minimum 4 miesiące. Niezwykle uniwersalny: do tarcia na makaron, z miodem kasztanowym lub do czerwonego wina.",
+        "transport": "Twardy ser — w próżni wytrzyma bez problemu 2-3 miesiące"
+      },
+      {
+        "id": "marzolino-chianti",
+        "name": "Marzolino del Chianti",
+        "italian_name": "Marzolino del Chianti (caglio vegetale)",
+        "category": "cheese",
+        "region": "base2",
+        "region_label": "Wzgórza Chianti (D8)",
+        "price": "~€10–14 za sztukę (~500g)",
+        "where": "Radda in Chianti, Castellina in Chianti, Greve",
+        "tip": "Tradycyjny jajowaty ser owczy ścinany naturalną podpuszczką roślinną z kwiatów karczocha lub dzikiego ostu. Maślany, łagodny, o wyjątkowej historii.",
+        "transport": "Zapakować próżniowo, przewozić w chłodzie"
+      },
+      {
+        "id": "pecorino-garfagnino",
+        "name": "Pecorino Garfagnino & sery górskie",
+        "italian_name": "Formaggio di Fossa / Pecorino della Garfagnana",
+        "category": "cheese",
+        "region": "base1",
+        "region_label": "Garfagnana / Barga (D2–D6)",
+        "price": "~€15–20 / kg",
+        "where": "Barga, Castelnuovo di Garfagnana, lokalne sklepiki w Gallicano",
+        "tip": "Surowszy, intensywny smak ziół z wysokich pastwisk Apeninów i Alp Apuańskich. Warto też spróbować lokalnych świeżych serów kozich (formaggio caprino).",
+        "transport": "Zapakować próżniowo w sklepie"
+      },
+      {
+        "id": "caffe-ditta-artigianale",
+        "name": "Kawa Specialty z Ditta Artigianale",
+        "italian_name": "Ditta Artigianale — Specialty Coffee Florence",
+        "category": "coffee",
+        "region": "firenze",
+        "region_label": "Florencja (D12)",
+        "price": "~€10–16 za paczkę 250g",
+        "where": "Florencja: Via de' Neri 32r lub Via dello Sprone 5r (blisko Ponte Vecchio)",
+        "tip": "Palarnia prowadzona przez Francesco Sanapo (wielokrotnego mistrza Włoch baristów). Florencja to mekka włoskiego specialty — genialne ziarna single origin i blendy pod espresso/filtr.",
+        "transport": "Szczelne oryginalne paczki z wentylem — idealne do bagażu"
+      },
+      {
+        "id": "caffe-manaresi",
+        "name": "Manaresi — złota puszka L'Oro di Firenze",
+        "italian_name": "Caffè Manaresi — L'Oro di Firenze",
+        "category": "coffee",
+        "region": "firenze",
+        "region_label": "Florencja (D12)",
+        "price": "~€6–9 za puszkę 250g",
+        "where": "Delikatesy i kawiarnie we Florencji oraz wybrane sklepy w Toskanii",
+        "tip": "Historyczna florencka palarnia założona w 1898 r. Kultowa złota puszka ozdobiona florencką lilią (Giglio) to elegancki, gotowy prezent z klasycznym ciemnym espresso.",
+        "transport": "Puszka metalowa, bardzo trwała w podróży"
+      },
+      {
+        "id": "caffe-gm-pienza",
+        "name": "Caffè GM — kawa palona drewnem dębowym",
+        "italian_name": "Caffè GM — Torrefazione Artigianale a Legna",
+        "category": "coffee",
+        "region": "base2",
+        "region_label": "Val d'Orcia / Pienza (D11)",
+        "price": "~€6–8 za 250g",
+        "where": "Pienza i delikatesy w miasteczkach doliny Orcia",
+        "tip": "Unikatowa rzemieślnicza palarnia w sercu Val d'Orcia. Kawa wypalana tradycyjną metodą na drewnie dębowym, co nadaje jej głęboki, lekko dymny i czekoladowy profil.",
+        "transport": "Standardowa paczka kawy"
+      },
+      {
+        "id": "bialetti-moka",
+        "name": "Kawiarka Bialetti Moka (edycja włoska)",
+        "italian_name": "Moka Express Bialetti (Tricolore / Brikka)",
+        "category": "coffee",
+        "region": "all",
+        "region_label": "Cała Toskania / supermarkety / AGD",
+        "price": "~€20–35",
+        "where": "Włoskie markety, sklepy z wyposażeniem kuchni we Florencji, Sienie i Lucca",
+        "tip": "Kultowa ośmiokątna kawiarka Alfonso Bialettiego z 1933 r. Do kupienia w kolorach włoskiej flagi (Tricolore) lub model Brikka ze specjalnym zaworkiem wytwarzającym gęstą cremę.",
+        "transport": "Pudełko kartonowe, bezpieczne w bagażniku"
+      },
+      {
+        "id": "chianti-classico-docg",
+        "name": "Chianti Classico DOCG (Gallo Nero)",
+        "italian_name": "Chianti Classico DOCG (Riserva / Gran Selezione)",
+        "category": "wine",
+        "region": "base2",
+        "region_label": "Wzgórza Chianti (D8)",
+        "price": "~€12–25 (Annata / Riserva), wyższe dla Gran Selezione",
+        "where": "Winnice Chianti (np. Castello di Brolio, Radda) lub Enoteca Falorni w Greve in Chianti",
+        "tip": "Szukajcie czarnego koguta (Gallo Nero) na szyjce. Sangiovese z nutami wiśni, fiołków i ziół. Podróżując autem, warto wziąć cały karton (6 butelek) bezpośrednio z winnicy.",
+        "transport": "Karton 6 szt. z kratownicą na spód bagażnika"
+      },
+      {
+        "id": "brunello-rosso-montalcino",
+        "name": "Brunello di Montalcino DOCG & Rosso",
+        "italian_name": "Brunello di Montalcino DOCG / Rosso di Montalcino DOC",
+        "category": "wine",
+        "region": "base2",
+        "region_label": "Montalcino / Val d'Orcia (D11)",
+        "price": "Rosso: ~€12–18, Brunello: ~€35–70+",
+        "where": "Montalcino (enoteki w fortecy i na via Matteotti)",
+        "tip": "Brunello to król włoskich win (100% Sangiovese Grosso, leżakuje latami w dębie) na wielkie okazje. Rosso di Montalcino to ten sam szczep i winiarze, ale młodsze i 3x tańsze na co dzień.",
+        "transport": "Butelki zabezpieczone kartonem, unikać nagrzania auta"
+      },
+      {
+        "id": "vernaccia-san-gimignano",
+        "name": "Vernaccia di San Gimignano DOCG",
+        "italian_name": "Vernaccia di San Gimignano DOCG",
+        "category": "wine",
+        "region": "san_gimignano",
+        "region_label": "San Gimignano (D13)",
+        "price": "~€8–16",
+        "where": "Lokalne enoteki i winnice wokół murów San Gimignano (np. Rocca di Montestaffoli)",
+        "tip": "Najważniejsze toskańskie wino białe — mineralne, chrupkie, z delikatną migdałową goryczką w finiszu. Pierwsze wino we Włoszech, które otrzymało status DOC (wspominał o nim już Dante!).",
+        "transport": "Karton lub pojedyncze butelki w kartonowych tubach"
+      },
+      {
+        "id": "vin-santo-chianti",
+        "name": "Vin Santo del Chianti DOC",
+        "italian_name": "Vin Santo del Chianti DOC",
+        "category": "wine",
+        "region": "base2",
+        "region_label": "Chianti / Siena (D8, D10)",
+        "price": "~€18–35 (butelka 0,375L lub 0,5L)",
+        "where": "Winnice w Chianti oraz dobre delikatesy w Sienie i Pienzy",
+        "tip": "Gęste, bursztynowe wino deserowe wytwarzane ze podsuszanych na matach winogron Trebbiano i Malvasia, starzone latami w małych beczkach caratelli. Pije się z ciastkami cantucci.",
+        "transport": "Poręczne smukłe butelki, łatwe do spakowania"
+      },
+      {
+        "id": "finocchiona-igp",
+        "name": "Finocchiona IGP — salami z dzikim koprem",
+        "italian_name": "Finocchiona IGP toscana",
+        "category": "cured_meat",
+        "region": "all",
+        "region_label": "Cała Toskania (bazy 1 & 2)",
+        "price": "~€18–26 / kg",
+        "where": "Każdy rzeźnik (macelleria), targ miejski oraz stoisko tradycyjne w Coop/Conad",
+        "tip": "Królowa toskańskich wędlin. Grubo mielone salami z nasionami dzikiego kopru włoskiego i winem. Miękkie, aromatyczne i niepodrabialne. Kupujcie w kawałku (trancio) zapakowanym próżniowo.",
+        "transport": "Zgrzane próżniowo sottovuoto — miesiąc trwałości"
+      },
+      {
+        "id": "prosciutto-toscano-dop",
+        "name": "Prosciutto Toscano DOP",
+        "italian_name": "Prosciutto Toscano DOP",
+        "category": "cured_meat",
+        "region": "all",
+        "region_label": "Cała Toskania",
+        "price": "~€28–38 / kg",
+        "where": "Delikatesy, rzeźnicy oraz markety (banco gastronomia)",
+        "tip": "Zupełnie inna niż słodka szynka parmeńska: toskańska dojrzewa z solą morską, pieprzem, czosnkiem, rozmarynem i jałowcem. Wytrawna, wyrazista, idealna do chleba bez soli.",
+        "transport": "Kawałek w próżni sottovuoto"
+      },
+      {
+        "id": "cinta-senese-dop",
+        "name": "Wędliny z Cinta Senese DOP (Guanciale / Capocollo)",
+        "italian_name": "Salumi di Cinta Senese DOP",
+        "category": "cured_meat",
+        "region": "base2",
+        "region_label": "Siena / Crete Senesi / Murlo (D7–D10)",
+        "price": "~€32–48 / kg",
+        "where": "Rzeźnicy w Sienie (np. wokół Piazza del Campo), Murlo i Pienzy",
+        "tip": "Pradawna toskańska rasa czarnych świń z białym pasem, wypasanych w lasach dębowych. Kupcie koniecznie tutejsze Guanciale (do carbonary) lub Capocollo (karkówkę) — słodki, orzechowy tłuszcz.",
+        "transport": "Sottovuoto + torba termiczna w aucie"
+      },
+      {
+        "id": "lardo-di-colonnata-igp",
+        "name": "Lardo di Colonnata IGP",
+        "italian_name": "Lardo di Colonnata IGP",
+        "category": "cured_meat",
+        "region": "base1",
+        "region_label": "Garfagnana / Alpy Apuańskie / Lucca (D2–D6)",
+        "price": "~€22–32 / kg",
+        "where": "Delikatesy w Bardze, Lucca, Castelnuovo di Garfagnana",
+        "tip": "Słonina dojrzewająca w marmurowych wannach w Carrarze w Alpach Apuańskich (tuż obok Bazy 1). Przyprawiona solą, czosnkiem i rozmarynem; pokrojona na gorącą grzankę zamienia się w aksamitny krem.",
+        "transport": "Wymaga szczelnej próżni i chłodnej torby termicznej"
+      },
+      {
+        "id": "salame-di-cinghiale",
+        "name": "Salame di Cinghiale (salami z dzika)",
+        "italian_name": "Salame di Cinghiale toscano",
+        "category": "cured_meat",
+        "region": "base2",
+        "region_label": "Chianti / Siena / San Gimignano",
+        "price": "~€6–10 za małą laskę",
+        "where": "Sklepiki z szyldami z dzikiem w Sienie, Monteriggioni i San Gimignano",
+        "tip": "Gęste, ciemnoczerwone, zwarte salami z dziczyzny z toskańskich lasów. Bardzo trwałe, świetnie znosi podróż i znakomicie sprawdza się jako prezent.",
+        "transport": "Suche salami, bez problemu przetrwa w bagażniku"
+      },
+      {
+        "id": "biroldo-garfagnana",
+        "name": "Biroldo della Garfagnana (Slow Food)",
+        "italian_name": "Biroldo della Garfagnana (Presidio Slow Food)",
+        "category": "cured_meat",
+        "region": "base1",
+        "region_label": "Garfagnana / Barga (D2, D3)",
+        "price": "~€16–22 / kg",
+        "where": "Rzeźnicy w Bardze i Castelnuovo di Garfagnana",
+        "tip": "Prawdziwy unikat z Waszej Bazy 1, wpisany na listę Slow Food: tradycyjna pikantna wędlina podrobowa z orzeszkami pinii, rodzynkami, cynamonem i gałką muszkatołową. Dla smakoszy!",
+        "transport": "Zapakować próżniowo i przewozić w chłodzie"
+      },
+      {
+        "id": "olio-lucca-dop",
+        "name": "Oliwa Lucca DOP (delikatna & zbalansowana)",
+        "italian_name": "Olio Extra Vergine di Oliva Lucca DOP",
+        "category": "olive_oil",
+        "region": "base1",
+        "region_label": "Lucca (D4)",
+        "price": "~€14–22 za butelkę 0,75L",
+        "where": "Delikatesy w Lucca (np. w centrum w obrębie murów) lub tłocznie na wzgórzach lukkeńskich",
+        "tip": "Historycznie uznawana za najdelikatniejszą, najbardziej maślaną i harmonijną oliwę we Włoszech. Nie piecze w gardle tak mocno jak z Chianti — genialna do ryb, sałat i delikatnych warzyw.",
+        "transport": "Ciemna butelka szklana lub mała puszka"
+      },
+      {
+        "id": "olio-chianti-classico-dop",
+        "name": "Chianti Classico DOP / Olio Toscano IGP (puszka 3L/5L)",
+        "italian_name": "Olio Extra Vergine Chianti Classico DOP (Latta 3L/5L)",
+        "category": "olive_oil",
+        "region": "base2",
+        "region_label": "Chianti / Siena / Val d'Orcia (D7–D11)",
+        "price": "~€40–65 za 3L, ~€60–95 za 5L",
+        "where": "Tłocznie (frantoio) w Chianti lub bezpośrednio w winnicach i agroturystykach",
+        "tip": "Wyrazista, trawiasta, karczochowa z przyjemnym pieprznym finiszem w gardle (tzw. pizzico). Zakup puszki 3L lub 5L w podróży autem to najlepsza inwestycja na cały rok.",
+        "transport": "Metalowy kanister (latta) — zero ryzyka stłuczenia, odcina 100% światła"
+      },
+      {
+        "id": "cantucci-di-prato",
+        "name": "Cantucci di Prato (Biscotti Antonio Mattei)",
+        "italian_name": "Biscotti di Prato / Cantuccini alle mandorle",
+        "category": "sweets",
+        "region": "firenze",
+        "region_label": "Florencja (D12) / cała Toskania",
+        "price": "~€6–10 za torebkę",
+        "where": "Lepsze delikatesy we Florencji, Sienie i Lucca; również w marketach",
+        "tip": "Dwukrotnie pieczone chrupkie sucharki z całymi migdałami. Szukajcie oryginału z Prato w kultowej jasnoniebieskiej torebce przewiązanej sznurkiem manufaktury Antonio Mattei (od 1858 r.). Macza się w Vin Santo!",
+        "transport": "Twarde ciastka, bardzo trwałe i odporne na transport"
+      },
+      {
+        "id": "ricciarelli-di-siena-igp",
+        "name": "Ricciarelli di Siena IGP",
+        "italian_name": "Ricciarelli di Siena IGP",
+        "category": "sweets",
+        "region": "base2",
+        "region_label": "Siena (D10)",
+        "price": "~€8–15 za eleganckie pudełko",
+        "where": "Historyczne cukiernie w Sienie (np. wokół Piazza del Campo i Banchi di Sotto)",
+        "tip": "Miękkie, wilgotne ciasteczka migdałowe z białek i cukru pudru. Zupełnie inny świat niż twarde cantucci — rozpływają się w ustach z delikatną nutą marcepanu i pomarańczy.",
+        "transport": "Oryginalne pudełko zabezpiecza delikatne ciastka"
+      },
+      {
+        "id": "panforte-di-siena-igp",
+        "name": "Panforte di Siena IGP (Margherita lub Nero)",
+        "italian_name": "Panforte di Siena IGP",
+        "category": "sweets",
+        "region": "base2",
+        "region_label": "Siena (D10)",
+        "price": "~€8–16 za krążek",
+        "where": "Cukiernie i delikatesy w Sienie (np. Nannini) oraz w Murlo",
+        "tip": "Gęsty, średniowieczny placek miodowo-bakaliowy z migdałami i kandyzowanymi cytrusami. Wersja Margherita jest łagodniejsza z cukrem pudrem; wersja Nero/Panpepato jest ciemna z pieprzem i kakao.",
+        "transport": "Zwarta forma — można przewozić miesiącami"
+      },
+      {
+        "id": "buccellato-di-lucca",
+        "name": "Buccellato di Lucca (Pasticceria Taddeucci)",
+        "italian_name": "Buccellato di Lucca",
+        "category": "sweets",
+        "region": "base1",
+        "region_label": "Lucca (D4)",
+        "price": "~€6–10 za wieniec / bochenek",
+        "where": "Lucca: Pasticceria Taddeucci (Piazza San Michele 34 — lokal działa od 1881 r.)",
+        "tip": "'Chi viene a Lucca e non mangia il buccellato è come non ci fosse stato' (Kto przybył do Lukki i nie zjadł buccellato, jakby w niej nie był). Słodki chlebek z anyżem i rodzynkami. Pyszny na świeżo i podsuszany do kawy.",
+        "transport": "Świeże pieczywo — zjeść w trasie lub w pierwszych dniach po powrocie"
+      },
+      {
+        "id": "farro-garfagnana-igp",
+        "name": "Farro della Garfagnana IGP (antyczny orkisz)",
+        "italian_name": "Farro della Garfagnana IGP",
+        "category": "pantry",
+        "region": "base1",
+        "region_label": "Garfagnana / Barga (D2, D3, D5)",
+        "price": "~€3–5 za paczkę 500g",
+        "where": "Lokalne sklepy w dolinie Serchio: Barga, Ponte all'Ania, Castelnuovo",
+        "tip": "Płaskurka/orkisz uprawiany w dolinie Garfagnana od czasów rzymskich. Nie rozgotowuje się, ma orzechowy posmak. Podstawa słynnej toskańskiej zupy 'Zuppa di farro alla lucchese'.",
+        "transport": "Lekkie, suche paczki — bezproblemowe w bagażniku"
+      },
+      {
+        "id": "farina-di-neccio-dop",
+        "name": "Farina di Neccio DOP (mąka kasztanowa)",
+        "italian_name": "Farina di Neccio della Garfagnana DOP",
+        "category": "pantry",
+        "region": "base1",
+        "region_label": "Garfagnana / Barga (D2, D3)",
+        "price": "~€6–9 za paczkę 500g/1kg",
+        "where": "Sklepy spożywcze i targi w Garfagnanie",
+        "tip": "Mąka ze słodkich kasztanów jadalnych suszonych powoli dymem w kamiennych chatach metati. Naturalnie słodka, bezglutenowa. Niezbędna do upieczenia toskańskiego ciasta Castagnaccio z rozmarynem i orzeszkami pinii.",
+        "transport": "Szczelna torba papierowa/foliowa"
+      },
+      {
+        "id": "funghi-porcini-garfagnana",
+        "name": "Suszone borowiki z Garfagnany (Porcini)",
+        "italian_name": "Funghi Porcini secchi della Garfagnana",
+        "category": "pantry",
+        "region": "base1",
+        "region_label": "Alpy Apuańskie / Garfagnana (D3, D5)",
+        "price": "~€8–16 za torebkę (50g–100g)",
+        "where": "Sklepiki górskie w Fornovolasco, Bardze i Castelnuovo",
+        "tip": "Górskie lasy wokół Bazy 1 to grzybiarski raj Toskanii. Suszone borowiki stąd pachną 10 razy intensywniej niż te z supermarketów. Wystarczy kilka kapeluszy do risotto lub tagliatelle.",
+        "transport": "Lekkie, suche torebki"
+      },
+      {
+        "id": "miele-di-castagno",
+        "name": "Miód kasztanowy (Miele di Castagno)",
+        "italian_name": "Miele di Castagno toscano",
+        "category": "pantry",
+        "region": "base1",
+        "region_label": "Garfagnana / Barga (D2–D6)",
+        "price": "~€7–12 za słoik 500g",
+        "where": "Lokalne pasieki i sklepy z produktami regionalnymi w Garfagnanie",
+        "tip": "Ciemny, bursztynowo-brązowy miód o wytrawnym, lekko gorzkawym i garbnikowym posmaku. W Toskanii podaje się go tradycyjnie z dojrzałym pecorino i orzechami włoskimi.",
+        "transport": "Słoik szklany — owinąć w ubrania lub karton"
+      },
+      {
+        "id": "tartufo-crete-senesi",
+        "name": "Biała trufla z Crete Senesi (masła & kremy)",
+        "italian_name": "Tartufo Bianco delle Crete Senesi",
+        "category": "pantry",
+        "region": "base2",
+        "region_label": "Crete Senesi / Asciano (D9, D10)",
+        "price": "~€8–20 za słoiczek masła lub oliwy truflowej",
+        "where": "San Giovanni d'Asso (stolica toskańskiej trufli tuż obok Murlo), Asciano, Siena",
+        "tip": "Gliniaste pagórki Crete Senesi wokół Waszej Bazy 2 to jedno z najsłynniejszych siedlisk rzadkiej białej trufli (Tuber magnatum). Słoiczek masła truflowego (burro al tartufo) zamienia zwykły makaron w danie restauracyjne.",
+        "transport": "Szczelnie zakręcone słoiczki"
+      },
+      {
+        "id": "zafferano-san-gimignano-dop",
+        "name": "Zafferano di San Gimignano DOP (szafran)",
+        "italian_name": "Zafferano di San Gimignano DOP (in stimmi)",
+        "category": "pantry",
+        "region": "san_gimignano",
+        "region_label": "San Gimignano (D13)",
+        "price": "~€12–22 za fiolkę (0,3g–0,5g)",
+        "where": "Delikatesy i sklepy zielarskie w San Gimignano",
+        "tip": "W średniowieczu wieże San Gimignano budowano za zyski z handlu szafranem. Dziś to certyfikowany skarb DOP. Kupujcie wyłącznie całe nitki (in stimmi), nigdy mielony proszek! Niezwykle intensywny.",
+        "transport": "Miniaturowa fiolka szklana — zmieści się wszędzie"
+      },
+      {
+        "id": "ragu-toscano",
+        "name": "Toskańskie Ragù w słoikach (Cinghiale / Chianina)",
+        "italian_name": "Ragù di Cinghiale / Ragù di Chianina toscano",
+        "category": "pantry",
+        "region": "all",
+        "region_label": "Cała Toskania / Coop / Conad",
+        "price": "~€4–8 za słoik (200–300g)",
+        "where": "Supermarkety Coop/Conad oraz wiejskie masarnie",
+        "tip": "Gotowe, gęste sosy mięsne z dzika (cinghiale), zająca (lepre) lub białego toskańskiego bydła Chianina. W domu wystarczy ugotować makaron pappardelle, dodać odrobinę masła i wymieszać z sosem.",
+        "transport": "Słoiki pasteryzowane — trwałe przez 1-2 lata"
+      },
+      {
+        "id": "skora-florencja",
+        "name": "Galanteria skórzana (pasek / portfel / rękawiczki)",
+        "italian_name": "Pelletteria fiorentina (Pelle conciata al vegetale)",
+        "category": "crafts",
+        "region": "firenze",
+        "region_label": "Florencja (D12)",
+        "price": "Pasek ~€25–45, portfel ~€30–60, torba ~€80–180+",
+        "where": "Florencja: rzemieślnicy w dzielnicy Oltrarno / San Frediano lub Scuola del Cuoio (za kościołem Santa Croce)",
+        "tip": "Toskania to światowe serce garbowania roślinnego (dolina Santa Croce sull'Arno). Unikajcie tanich straganów na Piazza San Lorenzo z chińskim plastikiem. Szukajcie stempla konsorcjum 'Pelle Conciata al Vegetale' (odcisk dłoni). Skórzany pasek dopasują Wam do obwodu w 2 minuty.",
+        "transport": "Lekkie, trwałe, pamiątka na dekady"
+      },
+      {
+        "id": "santa-maria-novella",
+        "name": "Officina Profumo-Farmaceutica di Santa Maria Novella",
+        "italian_name": "Officina Profumo-Farmaceutica di Santa Maria Novella",
+        "category": "crafts",
+        "region": "firenze",
+        "region_label": "Florencja (D12)",
+        "price": "Woski ~€25–30, mydła ~€15–20, wody zapachowe ~€100+",
+        "where": "Florencja: Via della Scala 16 (tuż obok stacji kolejowej SMN)",
+        "tip": "Najstarsza działająca apteka świata (założona przez dominikanów w 1221 r.). Wnętrze wygląda jak muzeum i pałac — warto wejść choćby popatrzeć. Hit na prezent: woski zapachowe 'Tavolette di cera' do szaf (z płatkami róż lub owocami granatu) oraz woda 'Acqua della Regina' stworzona dla Katarzyny Medycejskiej.",
+        "transport": "Eleganckie kartoniki i butelki"
+      },
+      {
+        "id": "drewno-oliwne",
+        "name": "Deska do serów i wędlin z drewna oliwnego (Tagliere)",
+        "italian_name": "Tagliere in legno d'olivo toscano",
+        "category": "crafts",
+        "region": "all",
+        "region_label": "Chianti / Pienza / San Gimignano",
+        "price": "~€15–40 (w zależności od rozmiaru)",
+        "where": "Targi rzemieślnicze, sklepiki w Pienzy, Raddzie i San Gimignano",
+        "tip": "Drewno oliwne jest twarde jak kamień, ma antybakteryjne właściwości i hipnotyzujące, kręte słoje. Każda deska jest niepowtarzalna. W domu będzie idealną bazą pod przywiezione sery i wędliny.",
+        "transport": "Odporne na uderzenia, łatwe w spakowaniu"
+      },
+      {
+        "id": "ceramika-toskanska",
+        "name": "Ceramika toskańska (Majolika)",
+        "italian_name": "Ceramica artigianale toscana",
+        "category": "crafts",
+        "region": "san_gimignano",
+        "region_label": "San Gimignano (D13) / Chianti",
+        "price": "~€12–35 (miseczki na oliwki, dzbanki, patery)",
+        "where": "Warsztaty w San Gimignano, Castellina in Chianti, Montelupo Fiorentino",
+        "tip": "Ręcznie malowane naczynia stołowe z tradycyjnymi motywami dojrzałych cytryn, gałązek oliwnych, słoneczników i cyprysów. Szukajcie sygnatury autora na spodzie naczynia.",
+        "transport": "Owinąć w miękkie ubrania lub ręczniki"
       }
     ]
   }

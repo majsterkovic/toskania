@@ -13,6 +13,7 @@ const NAV_LINKS = [
   ['galeria', 'galeria/', 'Galeria'],
   ['praktyczne', 'praktyczne/', 'Praktyczne'],
   ['packing', 'packing/', 'Pakowanie'],
+  ['pamiatki', 'pamiatki/', 'Pamiątki'],
   ['short', 'short/', 'Skrót'],
 ];
 

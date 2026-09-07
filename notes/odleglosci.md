@@ -31,6 +31,10 @@ Czasy **zweryfikowane OSRM-em** (2026-07) — okazało się, że JSON planu mia�
 ### Wniosek strukturalny (ważne!)
 Baza w Chianti (północ) jest realnie **daleko od południa** (Crete Senesi, Val d'Orcia). Dni D10 (Crete) i D11 (Val d'Orcia) to długie dni z 2,5–3,5 h jazdy. To wrodzona słabość wariantu 2-bazowego — sam plan oznacza te cele jako „ok: false" w `variants.base2_options`. **D11 przebudowany** (2026-07): kolejność Pienza→Bagno Vignoni→Montalcino (pętla 210 min zamiast 230), Palazzo Piccolomini pominięty bo we wtorki zamknięty. Nie dokładać nic więcej na południe z tej bazy.
 
+## Wybrzeże (morze) — z bazy 1 i z punktów dnia 4
+
+Pełna tabela i charakterystyka plaż: [[Morze-Wersylia]]. Skrót: Viareggio 63 min z bazy / **33 min z Lukki**, Lecciona-Marina di Vecchiano 62 / **32 min**, Forte dei Marmi 67 / 36 min. Koleją: **Lucca–Piza–Viareggio to zamknięty trójkąt** (Piza→Viareggio 13–19 min, Viareggio→Lucca 16–26 min, oba ~€3, kursy co 20–30 min) — morze da się dokleić bez cofania się tą samą trasą. Z [[Baza 2 - Chianti|bazy 2 (Murlo)]] morze jest poza zasięgiem (1,5–2 h do Follonicy) — **okno na morze to wyłącznie dni 3–6 (14–17.09)**.
+
 ## Val d'Orcia (nieużywana już baza z wariantu 3-bazowego, tylko dla porównania)
 
 | Cel | Auto | Pociąg |

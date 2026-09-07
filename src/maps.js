@@ -1,7 +1,7 @@
 import { esc } from './html.js';
 
 /**
- * Leaflet.js maps module — Toskania 2026
+ * Leaflet.js maps module — trip maps (Leaflet)
  * Używa globalnego L (Leaflet ładowany z CDN w index.html)
  */
 

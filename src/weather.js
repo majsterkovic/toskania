@@ -3,14 +3,6 @@
  * Bez klucza API, CORS OK
  */
 
-const TRIP_START = '2026-09-12';
-const TRIP_END   = '2026-09-27';
-
-const LOCATIONS = [
-  { id: 'base1', name: 'Garfagnana', sub: 'okolice Barga', lat: 44.073, lon: 10.484 },
-  { id: 'base2', name: 'Val di Merse', sub: 'okolice Murlo', lat: 43.1595, lon: 11.3158 },
-];
-
 const WMO_ICON = {
   0: '☀', 1: '🌤', 2: '⛅', 3: '☁',
   45: '🌫', 48: '🌫',
@@ -27,22 +19,31 @@ function avg(arr) {
 
 function round1(v) { return v != null ? Math.round(v * 10) / 10 : null; }
 
-async function fetchArchive(loc, year) {
-  const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${loc.lat}&longitude=${loc.lon}&start_date=${year}-09-01&end_date=${year}-09-30&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,sunshine_duration&timezone=Europe%2FRome`;
+function monthEndDate(year, month) {
+  const lastDay = new Date(Number(year), Number(month), 0).getDate();
+  return `${year}-${month}-${String(lastDay).padStart(2, '0')}`;
+}
+
+async function fetchArchive(loc, year, month, timezone) {
+  const endDate = monthEndDate(year, month);
+  const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${loc.lat}&longitude=${loc.lon}&start_date=${year}-${month}-01&end_date=${endDate}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,sunshine_duration&timezone=${encodeURIComponent(timezone)}`;
   const r = await fetch(url);
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
 }
 
-async function fetchForecast(loc) {
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode&start_date=${TRIP_START}&end_date=${TRIP_END}&timezone=Europe%2FRome`;
+async function fetchForecast(loc, startDate, endDate, timezone) {
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode&timezone=${encodeURIComponent(timezone)}&start_date=${startDate}&end_date=${endDate}`;
   const r = await fetch(url);
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
 }
 
-async function getClimateNormals(loc) {
-  const [r2022, r2023] = await Promise.all([fetchArchive(loc, 2022), fetchArchive(loc, 2023)]);
+async function getClimateNormals(loc, month, timezone) {
+  const [r2022, r2023] = await Promise.all([
+    fetchArchive(loc, 2022, month, timezone),
+    fetchArchive(loc, 2023, month, timezone),
+  ]);
   const maxTemps  = [...(r2022.daily.temperature_2m_max || []), ...(r2023.daily.temperature_2m_max || [])];
   const minTemps  = [...(r2022.daily.temperature_2m_min || []), ...(r2023.daily.temperature_2m_min || [])];
   const precip    = [...(r2022.daily.precipitation_sum  || []), ...(r2023.daily.precipitation_sum  || [])];
@@ -57,8 +58,8 @@ async function getClimateNormals(loc) {
   };
 }
 
-async function getForecast(loc) {
-  const data = await fetchForecast(loc);
+async function getForecast(loc, startDate, endDate, timezone) {
+  const data = await fetchForecast(loc, startDate, endDate, timezone);
   const d = data.daily;
   return {
     mode: 'forecast',
@@ -71,10 +72,6 @@ async function getForecast(loc) {
       icon: WMO_ICON[d.weathercode[i]] || '⛅',
     })),
   };
-}
-
-function daysUntilTrip() {
-  return Math.floor((new Date(TRIP_START) - new Date()) / 86400000);
 }
 
 function renderNormals(loc, w) {
@@ -122,16 +119,18 @@ function renderError(loc) {
   return `<div class="weather-card weather-card--error"><div class="weather-card__name">${loc.name}</div><p class="weather-card__sub">Brak danych</p></div>`;
 }
 
-export async function initWeather(containerId, locs = LOCATIONS) {
+export async function initWeather(containerId, locs, opts) {
   const el = document.getElementById(containerId);
-  if (!el) return;
-
-  const until = daysUntilTrip();
+  if (!el || !locs?.length) return;
+  const { startDate, endDate, timezone } = opts;
+  const until = Math.floor((new Date(startDate) - new Date()) / 86400000);
   const isForecast = until <= 14;
+  const month = startDate.slice(5, 7);
+  const monthName = new Date(startDate).toLocaleDateString('pl', { month: 'long' });
 
   const label = isForecast
     ? `Prognoza na wyjazd (${until} dni do startu)`
-    : `Klimatologia września (dane historyczne 2022–2023)`;
+    : `Klimatologia ${monthName} (dane historyczne 2022–2023)`;
 
   el.innerHTML = `
     <p class="weather-mode">${label}</p>
@@ -142,7 +141,9 @@ export async function initWeather(containerId, locs = LOCATIONS) {
   await Promise.all(locs.map(async loc => {
     const slot = document.getElementById(`w-${loc.id}`);
     try {
-      const w = isForecast ? await getForecast(loc) : await getClimateNormals(loc);
+      const w = isForecast
+        ? await getForecast(loc, startDate, endDate, timezone)
+        : await getClimateNormals(loc, month, timezone);
       slot.outerHTML = isForecast ? renderForecast(loc, w) : renderNormals(loc, w);
     } catch {
       if (slot) slot.outerHTML = renderError(loc);

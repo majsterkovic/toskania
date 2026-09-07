@@ -11,9 +11,9 @@ applyStoredTheme();
 
 const app = document.getElementById('app');
 app.innerHTML =
-  renderSiteNav('mapa') +
+  renderSiteNav(plan, 'mapa') +
   `<main class="page page--mapa" id="tresc">${renderInteractiveMap(plan.days)}</main>` +
-  renderSiteFooter();
+  renderSiteFooter(plan);
 initChrome();
 
 (function whenLeaflet() {

@@ -82,11 +82,11 @@ function renderStats() {
 }
 
 app.innerHTML = `
-  ${renderSiteNav('packing')}
+  ${renderSiteNav(plan, 'packing')}
   <main class="page" id="tresc">
     <article class="section">
       <h1 class="section-title">📦 Lista do spakowania</h1>
-      <p class="section-lead">Wrzesień 2026, 16 dni Poznań–Toskania–Poznań. Odhaczaj przed wyjazdem — postęp zapisywany w przeglądarce.</p>
+      <p class="section-lead">${esc(plan.meta.dates)}, ${plan.meta.duration_days} dni. Odhaczaj przed wyjazdem — postęp zapisywany w przeglądarce.</p>
 
       ${renderStats()}
 
@@ -95,7 +95,7 @@ app.innerHTML = `
       </div>
     </article>
   </main>
-  ${renderSiteFooter()}
+  ${renderSiteFooter(plan)}
 `;
 
 initChrome();

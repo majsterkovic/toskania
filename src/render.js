@@ -777,7 +777,7 @@ export function renderPractical(info) {
 function renderFooter(meta) {
   return `
     <footer class="footer">
-      <p>Toskania 2026 · ${esc(meta.dates)}</p>
+      <p>${esc(meta.title)} · ${esc(meta.dates)}</p>
       <p class="footer__credit">Mapy: <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">© OpenStreetMap</a> · Zdjęcia: Wikimedia Commons</p>
     </footer>
   `;
@@ -848,12 +848,14 @@ function timelineRow(day, bookings) {
     </a>`;
 }
 
-function groupPhases(days) {
+function groupPhases(days, meta) {
+  const dojazd = meta.phase_labels.dojazd;
+  const powrot = meta.phase_labels.powrot;
   const phases = [
-    { key: 'dojazd', eyebrow: 'Etap I', label: 'Dojazd', sub: 'Poznań → Toskania', days: [] },
+    { key: 'dojazd', eyebrow: 'Etap I', label: dojazd.label, sub: dojazd.sub, days: [] },
     { key: 'base1', eyebrow: 'Etap II', baseId: 'base1', mapIndex: 1, days: [] },
     { key: 'base2', eyebrow: 'Etap III', baseId: 'base2', mapIndex: 2, days: [] },
-    { key: 'powrot', eyebrow: 'Etap IV', label: 'Powrót', sub: 'Toskania → Poznań', days: [] },
+    { key: 'powrot', eyebrow: 'Etap IV', label: powrot.label, sub: powrot.sub, days: [] },
   ];
   let seenBase2 = false;
   days.forEach((day) => {
@@ -880,7 +882,7 @@ function renderBaseInfo(base) {
 
 export function renderTimeline(plan) {
   const images = plan.meta?.images ?? plan.images;
-  const phases = groupPhases(plan.days);
+  const phases = groupPhases(plan.days, plan.meta);
   const bookings = bookingsByDay(plan.todo);
   const timelineHtml = phases.map((phase) => {
     const rows = phase.days.map((day) => timelineRow(day, bookings[day.day_num])).join('');
@@ -919,7 +921,7 @@ export function renderTimeline(plan) {
   `;
 }
 
-export function renderDayPage(day, images, bases, days, todo) {
+export function renderDayPage(day, images, bases, days, todo, meta) {
   const base = bases?.find((b) => b.id === day.base_id);
   const thumbKey = day.image || base?.image;
   const placeImg = thumbKey ? resolvePlaceImage(images, thumbKey) : null;
@@ -971,7 +973,7 @@ export function renderDayPage(day, images, bases, days, todo) {
         ${navLink(prev, 'prev', '‹ Poprzedni')}
         ${navLink(next, 'next', 'Następny ›')}
       </nav>
-      ${renderFooter({ dates: '12–27 września 2026' })}
+      ${renderFooter(meta)}
     </main>
   `;
 }

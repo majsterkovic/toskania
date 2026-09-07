@@ -39,12 +39,12 @@ function dayItem(day) {
 
 function render(plan) {
   const app = document.getElementById('app');
-  const title = plan.meta?.title || 'Toskania 2026';
+  const title = plan.meta.title;
   const subtitle = plan.meta?.subtitle || '';
   const rows = (plan.days || []).map(dayItem).join('');
 
   app.innerHTML =
-    renderSiteNav('short') +
+    renderSiteNav(plan, 'short') +
     `<main class="short-page-container" id="tresc">
       <header class="short-header">
         <a class="short-header__back" href="../">← Pełny plan</a>
@@ -53,7 +53,7 @@ function render(plan) {
       </header>
       <ol class="short-list">${rows}</ol>
     </main>` +
-    renderSiteFooter();
+    renderSiteFooter(plan);
 
   initChrome();
 }

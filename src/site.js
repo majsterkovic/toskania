@@ -3,6 +3,7 @@
  * Współdzielony przez wszystkie strony (Plan, Mapa, Galeria, Praktyczne).
  */
 import { swapMapTiles } from './maps.js';
+import { esc } from './html.js';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -16,7 +17,8 @@ const NAV_LINKS = [
 ];
 
 /** Nawigacja serwisu. `active` = klucz bieżącej strony (plan/mapa/galeria/praktyczne/short). */
-export function renderSiteNav(active = 'plan') {
+export function renderSiteNav(trip, active = 'plan') {
+  const brand = trip?.meta?.brand || trip?.meta?.title || '';
   const links = NAV_LINKS.map(
     ([key, href, label]) =>
       `<a href="${BASE}${href}"${key === active ? ' class="is-active" aria-current="page"' : ''}>${label}</a>`
@@ -24,7 +26,7 @@ export function renderSiteNav(active = 'plan') {
   return `
     <a class="skip-link" href="#tresc">Przejdź do treści</a>
     <nav class="site-nav" id="site-nav" aria-label="Nawigacja strony">
-      <a class="site-nav__brand" href="${BASE}">Toskania</a>
+      <a class="site-nav__brand" href="${BASE}">${esc(brand)}</a>
       <div class="site-nav__links">${links}</div>
       <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Przełącz tryb ciemny/jasny">◑</button>
     </nav>
@@ -32,18 +34,20 @@ export function renderSiteNav(active = 'plan') {
 }
 
 /** Wspólna stopka stron pobocznych. */
-export function renderSiteFooter() {
+export function renderSiteFooter(trip) {
+  const title = trip?.meta?.title || '';
+  const dates = trip?.meta?.dates || '';
   return `
     <footer class="footer">
-      <p>Toskania 2026 · 12–27 września 2026</p>
+      <p>${esc(title)} · ${esc(dates)}</p>
       <p class="footer__credit">Mapy: <a href="https://www.openstreetmap.org" target="_blank" rel="noopener">© OpenStreetMap</a> · Zdjęcia: Wikimedia Commons</p>
     </footer>
   `;
 }
 
 /** Checkboxy todo z zapisem w localStorage (strona Praktyczne). */
-export function initTodo() {
-  const STORAGE_KEY = 'todo-done-toskania-2026';
+export function initTodo(trip) {
+  const STORAGE_KEY = `todo-done-${trip.meta.storage_key}`;
   const done = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
   document.querySelectorAll('.todo-check').forEach((cb) => {
     const id = cb.dataset.todoId;

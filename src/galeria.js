@@ -11,8 +11,8 @@ applyStoredTheme();
 const app = document.getElementById('app');
 const images = plan.meta?.images ?? plan.images;
 app.innerHTML =
-  renderSiteNav('galeria') +
+  renderSiteNav(plan, 'galeria') +
   `<main class="page" id="tresc">${renderGallery(images)}</main>` +
-  renderSiteFooter();
+  renderSiteFooter(plan);
 initGallery();
 initChrome();

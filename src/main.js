@@ -31,7 +31,7 @@ function renderDayView(dayNum) {
   const day = plan.days.find((d) => d.day_num === dayNum);
   if (!day) { location.hash = ''; return; }
   lastDayNum = dayNum;
-  app.innerHTML = renderSiteNav('plan') + renderDayPage(day, plan.meta.images, plan.bases, plan.days, plan.todo);
+  app.innerHTML = renderSiteNav(plan, 'plan') + renderDayPage(day, plan.meta.images, plan.bases, plan.days, plan.todo, plan.meta);
   initChrome();
   window.scrollTo(0, 0);
   if (day.type === 'transit' && day.route_points?.length) {
@@ -44,7 +44,7 @@ function renderDayView(dayNum) {
 }
 
 function renderTimelineView() {
-  app.innerHTML = renderSiteNav('plan') + renderTimeline(plan);
+  app.innerHTML = renderSiteNav(plan, 'plan') + renderTimeline(plan);
   initChrome();
   whenLeaflet(() => initBaseMaps(plan));
   if (lastDayNum != null) {

@@ -4,4 +4,5 @@ dist/
 public/images/*.webp
 screenshots/
 notes/grupa-prywatne.md
+.worktrees/
 

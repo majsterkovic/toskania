@@ -100,12 +100,14 @@ function renderHeader(meta, images) {
   const hero = images?.hero;
   const heroImg = hero ? renderImg({ src: imgSrc(hero.src), alt: hero.alt, credit: hero.credit }, 'hero__figure', 'eager') : '';
   const rs = meta.route_summary;
+  const monthName = new Date(meta.start_date).toLocaleDateString('pl', { month: 'long' });
+  const year = meta.start_date.slice(0, 4);
 
   return `
     <header class="hero" id="start">
       ${heroImg}
       <div class="hero__content">
-        <p class="hero__eyebrow">Podróż samochodowa · wrzesień 2026</p>
+        <p class="hero__eyebrow">Podróż samochodowa · ${esc(monthName)} ${esc(year)}</p>
         <h1>${esc(meta.title)}</h1>
         <p class="hero-dates">${esc(meta.dates)}</p>
         <p class="hero-subtitle">${esc(meta.subtitle)}</p>

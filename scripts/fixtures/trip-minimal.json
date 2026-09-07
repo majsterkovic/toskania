@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "brand": "Test",
+    "storage_key": "test-trip",
+    "timezone": "Europe/Rome",
+    "start_date": "2026-09-12",
+    "end_date": "2026-09-27",
+    "title": "Test",
+    "dates": "12–27 września 2026",
+    "phase_labels": {
+      "dojazd": { "label": "Dojazd", "sub": "A → B" },
+      "powrot": { "label": "Powrót", "sub": "B → A" }
+    },
+    "images": { "hero": { "src": "images/hero.jpg", "alt": "", "credit": "" }, "places": {} }
+  },
+  "bases": [
+    { "id": "base1", "name": "Baza", "coords": [44.0, 10.5] }
+  ],
+  "transit_stops": {},
+  "days": [
+    {
+      "day_num": 1,
+      "type": "transit",
+      "title": "Tam",
+      "base_id": null,
+      "route_points": [{ "label": "Start", "coords": [52.4, 16.9], "kind": "home" }]
+    },
+    {
+      "day_num": 2,
+      "type": "tuscany",
+      "title": "Dzień",
+      "base_id": "base1",
+      "attractions": [
+        { "name": "X", "coords": [44.1, 10.6], "drive_min": 12 }
+      ]
+    }
+  ],
+  "practical_info": {},
+  "costs": {},
+  "todo": {},
+  "packing_list": {}
+}

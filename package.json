@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/convert-webp.js && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test scripts/validate-trip.test.js"
   },
   "devDependencies": {
     "sharp": "^0.35.3",

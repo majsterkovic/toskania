@@ -3872,20 +3872,23 @@
         "items": [
           {
             "id": "noclegi-baza1",
-            "label": "Nocleg Baza 1 — Garfagnana (5 nocy, ok. 13–17.09)",
-            "detail": "Agriturismo w okolicach Barga — rezerwować jak najwcześniej, wrzesień to jeszcze sezon. Booking.com, Airbnb lub bezpośrednio. Budżet €60–90/pokój/noc × 2 pokoje.",
-            "deadline": "PILNIE — maj–czerwiec minął, rezerwuj teraz!",
+            "group": "done",
+            "label": "Nocleg Baza 1 — Garfagnana (5 nocy, 13–17.09) ✅ POTWIERDZONY",
+            "detail": "Casa vacanze Rosa, Via Nazionale 29, Ponte all'Ania, Barga — bez dalszych działań.",
+            "deadline": "zrobione",
             "priority": "high"
           },
           {
             "id": "noclegi-baza2",
-            "label": "Nocleg Baza 2 — Chianti (6 nocy, ok. 18–23.09)",
-            "detail": "Murlo (Val di Merse) — POTWIERDZONE: La Nobiltà del Tempo, Via Alcide De Gasperi 10/12, 53016 Murlo SI. Budżet €70–100/pokój/noc × 2 pokoje.",
-            "deadline": "PILNIE — maj–czerwiec minął, rezerwuj teraz!",
+            "group": "done",
+            "label": "Nocleg Baza 2 — Chianti (6 nocy, 18–23.09) ✅ POTWIERDZONY",
+            "detail": "La Nobiltà del Tempo, Via Alcide De Gasperi 10/12, Murlo — bez dalszych działań.",
+            "deadline": "zrobione",
             "priority": "high"
           },
           {
             "id": "noclegi-tranzyt",
+            "group": "done",
             "label": "Nocleg powrotny — Fischbachau (25→26.09) ✅ POTWIERDZONY",
             "detail": "Pension Oberwirt, Birkensteinstr. 91, 83730 Fischbachau — 5 dorosłych, 1 apartament. Check-in SZTYWNO 15:00–18:00: przed wyjazdem ustal z gospodarzem godzinę przyjazdu (ETA ~17:00). Telves i Hof wypadają — powrót skrócony do 2 dni (26.09 maraton do Poznania).",
             "deadline": "przed wyjazdem — potwierdź ETA z gospodarzem",
@@ -3893,6 +3896,7 @@
           },
           {
             "id": "siena-duomo",
+            "group": "optional",
             "label": "Siena — Opera del Duomo (opcja rezerwacji)",
             "detail": "Wstęp do kompleksu Duomo di Siena (OPA SI Pass) można kupić online na operaduomo.siena.it. Cena ok. €20/os. Wrzesień — kolejki mniejsze niż latem, ale warto zarezerwować.",
             "deadline": "1–2 tygodnie przed wizytą",
@@ -3901,6 +3905,7 @@
           },
           {
             "id": "brolio-wino",
+            "group": "optional",
             "label": "Castello di Brolio — degustacja winiarni (opcja)",
             "detail": "Winiarnia Barone Ricasoli — degustacje i zwiedzanie zamku. Rezerwacja zalecana (szczególnie w sezonie zbiorów). ricasoli.it. Dostępne opcje Chianti Classico Gran Selezione.",
             "deadline": "1–2 tygodnie przed wizytą",
@@ -3909,6 +3914,7 @@
           },
           {
             "id": "duomo-firenze",
+            "group": "required",
             "label": "Rezerwacja Kopuły Duomo — Florencja (23.09)",
             "detail": "Brunelleschi Pass ze slotem godzinowym na kopułę — kup online na duomo.firenze.it z wyprzedzeniem (sloty na wrzesień znikają szybko). Bez tego wciąż można zwiedzić plac, Battistero z zewnątrz i pozostałe zabytki, ale nie wejść na kopułę.",
             "deadline": "min. 2-3 tygodnie przed 23.09",
@@ -3917,6 +3923,7 @@
           },
           {
             "id": "krzywa-wieza",
+            "group": "required",
             "label": "Rezerwacja Krzywej Wieży — Piza (15.09)",
             "detail": "Wejście na Krzywą Wieżę tylko w slocie czasowym — kup online na opapisa.it z wyprzedzeniem (sloty otwierane ~20 dni naprzód, w sezonie znikają szybko). Bierz slot ok. 15:00: harmonogram dnia zakłada zejście z placu o 17:00, żeby zdążyć na pociąg do Viareggio na zachód słońca. €20/os lub €27 combo z całą Piazza dei Miracoli — UWAGA: żadnej ulgi studenckiej ani młodzieżowej, wszyscy płacą tyle samo. Bez wieży wciąż zobaczysz plac, katedrę i zdjęcia z zewnątrz.",
             "deadline": "gdy otworzą slot ~20 dni przed 15.09",
@@ -3925,6 +3932,7 @@
           },
           {
             "id": "trenitalia-xgo",
+            "group": "optional",
             "label": "Rejestracja Trenitalia X-GO — 20% na Regionale dla osób poniżej 30 lat",
             "detail": "Darmowa rejestracja w programie X-GO (aplikacja lub trenitalia.com) daje „Promo Young X-GO”: 20% zniżki na bilety Regionale dla podróżnych poniżej 30 lat, ważne do 30.11.2026. Dotyczy trójki z grupy. Haczyk: bilet trzeba kupić najpóźniej do 23:59 dnia poprzedzającego podróż, pula miejsc na pociąg jest ograniczona, promocja nie łączy się z innymi i nie podlega zwrotowi. Realny zysk: ~€2/os na trójkącie Lucca–Piza–Viareggio (15.09) i ~€4/os na przejeździe Siena↔Florencja (23.09).",
             "deadline": "przed wyjazdem; bilety kupować dzień wcześniej",
@@ -3933,6 +3941,7 @@
           },
           {
             "id": "grotta-vento",
+            "group": "required",
             "label": "Rezerwacja Grotta del Vento — Fornovolasco (14.09)",
             "detail": "Tour godzinowy (16:00) wymaga rezerwacji — grottadelvento.com. Sloty It.3 (€25, 10/14) też wymagają rezerwacji z wyprzedzeniem.",
             "deadline": "1–2 tygodnie przed 14.09",
@@ -3941,6 +3950,7 @@
           },
           {
             "id": "badia-coltibuono",
+            "group": "optional",
             "label": "Rezerwacja degustacji — Badia a Coltibuono (19.09)",
             "detail": "Degustacja win Chianti Classico DOCG (4 wina, €25–35/os) wymaga rezerwacji z wyprzedzeniem. Restauracja Al Focolare też wymaga rezerwacji na obiad. Tel. 0577 744832.",
             "deadline": "1–2 tygodnie przed 19.09",

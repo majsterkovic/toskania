@@ -17,6 +17,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 import IMAGE_MANIFEST from './image-manifest.json';
 import { esc } from './html.js';
 import { config } from './trip.js';
+import { reservationGroups, todoForChecklist } from './reservations.js';
 
 function imgSrc(relativePath) {
   if (!relativePath) return '';
@@ -683,13 +684,10 @@ export function renderCosts(costs) {
   `;
 }
 
-export function renderTodo(todo) {
-  if (!todo?.categories?.length) return '';
+const PRIORITY_LABEL = { high: 'pilne', medium: 'warto', low: 'opcjonalnie' };
 
-  const PRIORITY_LABEL = { high: 'pilne', medium: 'warto', low: 'opcjonalnie' };
-
-  const categories = todo.categories.map((cat) => {
-    const items = cat.items.map((item) => `
+function renderTodoItem(item) {
+  return `
       <li class="todo-item todo-item--${esc(item.priority || 'medium')}" id="todo-${esc(item.id)}">
         <label class="todo-item__label">
           <input type="checkbox" class="todo-check" data-todo-id="${esc(item.id)}" />
@@ -700,7 +698,36 @@ export function renderTodo(todo) {
         ${item.detail ? `<div class="todo-item__detail">${esc(item.detail)}</div>` : ''}
         ${item.url ? `<a class="todo-item__link" href="${esc(item.url)}" target="_blank" rel="noopener">↗ otwórz</a>` : ''}
       </li>
-    `).join('');
+    `;
+}
+
+export function renderReservations(todo) {
+  const groups = reservationGroups(todo);
+  if (!groups.length) return '';
+  const cards = groups
+    .map(
+      (g) => `
+      <div class="todo-category reservations-group reservations-group--${esc(g.id)}">
+        <h3 class="todo-category__title">${esc(g.name)}</h3>
+        <ul class="todo-list">${g.items.map(renderTodoItem).join('')}</ul>
+      </div>`
+    )
+    .join('');
+  return `
+    <section class="section" id="rezerwacje">
+      <h2 class="section-title">Do zarezerwowania</h2>
+      <p class="section-lead">Bilety i sloty z godziną. Noclegi są w „Już zrobione”.</p>
+      <div class="todo-grid">${cards}</div>
+    </section>
+  `;
+}
+
+export function renderTodo(todo) {
+  const checklist = todoForChecklist(todo);
+  if (!checklist?.categories?.length) return '';
+
+  const categories = checklist.categories.map((cat) => {
+    const items = cat.items.map(renderTodoItem).join('');
 
     return `
       <div class="todo-category">

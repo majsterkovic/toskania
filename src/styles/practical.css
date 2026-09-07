@@ -327,6 +327,15 @@ html.dark .plan-note {
 .todo-item__link:hover {
   text-decoration: underline;
 }
+.reservations-group--required {
+  border-color: color-mix(in srgb, var(--terracotta) 45%, var(--border));
+}
+.reservations-group--required .todo-category__title {
+  color: var(--terracotta);
+}
+.reservations-group--done {
+  opacity: 0.78;
+}
 /* Koszty */
 html.dark .costs-category {
   background: var(--card-bg);
@@ -342,6 +351,9 @@ html.dark .todo-category {
 }
 html.dark .todo-category__title {
   color: var(--oro);
+}
+html.dark .reservations-group--required .todo-category__title {
+  color: var(--terracotta);
 }
 html.dark .todo-check {
   accent-color: var(--oro);

@@ -4,16 +4,16 @@
     "subtitle": "Podróż samochodowa Poznań → Toskania → Poznań",
     "dates": "12–27 września 2026",
     "duration_days": 16,
-    "calendar_days": "12.09 (sob) – 27.09 (nd) = 16 dni aktywnej podróży, powrót rozłożony na 3 dni (Murlo → Telves → Hof → Poznań)",
+    "calendar_days": "12.09 (sob) – 26.09 (sob) = 15 dni podróży + 27.09 (nd) dzień buforowy w domu; powrót w 2 dni (Murlo → Fischbachau → Poznań)",
     "participants_note": "Plan prywatny — wariant 2 baz",
     "route_summary": {
       "outbound_km": "~1580 km w 2 dni (Poznań → Unterhaching → Barga)",
-      "return_km": "~1580 km w 3 dni (Murlo → Telves → Hof → Poznań)",
-      "total_km": "~3160 km",
+      "return_km": "~1575 km w 2 dni (Murlo → Fischbachau → Poznań)",
+      "total_km": "~3155 km",
       "tuscany_days": 11,
       "tuscany_bases": 2,
       "transit_nights_outbound": 1,
-      "transit_nights_return": 2
+      "transit_nights_return": 1
     },
     "images": {
       "hero": {
@@ -408,11 +408,9 @@
       "gps_hint": "Naviguj: Grünwalderweg 20d, 82008 Unterhaching"
     },
     "return": {
-      "night_1": "Telves / Racines (Alto Adige, Włochy) — Maurerhof, Val Ridanna. POTWIERDZONA REZERWACJA (5 dorosłych, 1 apartament).",
+      "night_1": "Fischbachau (Bawaria, Niemcy) — Pension Oberwirt, Birkensteinstr. 91. POTWIERDZONA REZERWACJA (5 dorosłych, 1 apartament, 25→26.09).",
       "night_1_image": "kufstein",
-      "night_2": "Hof (Saale), Bawaria — Niemcy, na trasie A9, ok. €60–90/noc",
-      "night_2_image": "hof",
-      "gps_hint": "Noc 1: Telferweg 2, 39040 Racines (Telves) · Noc 2: Hof, Bayern"
+      "gps_hint": "Naviguj: Birkensteinstr. 91, 83730 Fischbachau"
     }
   },
   "days": [
@@ -503,7 +501,7 @@
         "contact": "+49 89 3070900"
       },
       "practical_tips": [
-        "Kup e-winietę AT online przed wyjazdem — €12,80, start 13.09 (dzień 2, pierwszy wjazd na austriacką autostradę)",
+        "Kup 1-dniową e-winietę AT na 13.09 (€9,60) przed wyjazdem — 10-dniowa (€12,80) NIE obejmie powrotu 25.09; drugą 1-dniową kup przed 25.09",
         "Tankuj w Niemczech przed Austrią — benzyna tańsza (~€0.15–0.20/L różnica)",
         "Frankenwald Ost (A9 km 254) — jedyna mostowa Raststätte w Niemczech, dobry postój na lunch",
         "Unterhaching: hotel ma własny parking — bez szukania miejsca wieczorem"
@@ -1114,7 +1112,7 @@
       "day_num": 4,
       "type": "tuscany_popular",
       "label": "TOSKANIA · DZIEŃ 2 ★ POPULARNY",
-      "title": "Lucca i Piza — mury i Krzywa Wieża",
+      "title": "Lucca, Piza i morze — mury, Krzywa Wieża i zachód nad Tyrrenem",
       "image": "pisa",
       "image2": "lucca",
       "base_id": "base1",
@@ -1131,8 +1129,8 @@
             43.843,
             10.5079
           ],
-          "opening_hours": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie. Torre Guinigi: codz. (do 20.IX) 10:00–19:30, bilet €8 (ulg. €6). Piazza dell'Anfiteatro: zawsze dostępna. Duomo di San Martino: nawa ~bezpłatna, Volto Santo/zakrystia €3–9.",
-          "ticket_price": "Mury i Piazza dell'Anfiteatro: bezpłatne. Torre Guinigi: €8/os (ulg. €6). Bilet łączony Guinigi + Torre delle Ore + Orto Botanico: €14 (ważny 2 dni).",
+          "opening_hours": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie. Torre Guinigi: codz. (cze–wrz) 9:30–19:30, bilet €8 (ulg. €6,50). Piazza dell'Anfiteatro: zawsze dostępna. Duomo di San Martino: nawa ~bezpłatna, Volto Santo/zakrystia €3–9.",
+          "ticket_price": "Mury i Piazza dell'Anfiteatro: bezpłatne. Torre Guinigi: €8/os intero, €6,50 ridotto (studenci z legitymacją, 6–14 lat, powyżej 65 lat, grupy 10+ z przewodnikiem). Bilet łączony Guinigi + Torre delle Ore + Orto Botanico: €14 (ważny 2 dni).",
           "duration_h": 3.0
         },
         {
@@ -1147,7 +1145,20 @@
           ],
           "opening_hours": "Zabytki (wrzesień): ok. 9:00–20:00 — sprawdź dokładny kalendarz na opapisa.it. Krzywa Wieża: wejścia w slotach co 30 min (grupy ~30 os.), 251 stopni bez windy, dzieci <8 lat nie mogą wchodzić. Katedra: wstęp bezpłatny z biletem czasowym.",
           "ticket_price": "Krzywa Wieża: €20/os (zawiera wejście do katedry). Bilet łączony Piazza dei Miracoli (Wieża + Duomo + Battistero + Camposanto + Museo delle Sinopie): €27/os. Sam plac i zdjęcia z zewnątrz: bezpłatne.",
-          "duration_h": 3.0
+          "duration_h": 2.0
+        },
+        {
+          "name": "Viareggio — Passeggiata (nadmorski deptak Liberty), molo i zachód słońca nad Morzem Tyrreńskim",
+          "description": "Stolica Wersylii i jedyny punkt całego planu, w którym dotykamy morza. Trzykilometrowa Passeggiata to nadmorski deptak z architekturą Liberty i Art Déco z lat 20. XX w. — wieżyczki w żółto-zielone kafelkowe łuski, kute balustrady, historyczne kawiarnie i lodziarnie. Wybrzeże jest zachodnie, więc słońce zachodzi prosto w wodę, a za plecami stoją marmurowe Alpy Apuańskie — te same, które z Garfagnany oglądamy od drugiej strony. Woda w połowie września ma jeszcze 24–25°C.",
+          "type": "nature",
+          "gps_hint": "Viareggio — ze stacji ~1 km / 12–15 min pieszo do Passeggiaty (Piazza Mazzini). Auto zostaje w Lucce; dojazd i powrót wyłącznie pociągiem.",
+          "coords": [
+            43.8664,
+            10.2503
+          ],
+          "opening_hours": "Passeggiata, molo i plaża: dostępne bez ograniczeń, bezpłatnie. Zachód słońca 15.09: 19:31 (widno do ~19:55). Zejście do wody: spiaggia libera w Darsenie (południowy skraj miasta) — reszta plaży to we wrześniu jeszcze czynne stabilimenti.",
+          "ticket_price": "Bezpłatne. Dojazd: pociąg Piza→Viareggio ~€3/os, powrót Viareggio→Lucca ~€3/os.",
+          "duration_h": 2.0
         }
       ],
       "oak_forest": {
@@ -1175,9 +1186,11 @@
         "Lucca: mury (4,2 km) można obejść pieszo (~1 h) lub przejechać wypożyczonym rowerem — najlepszy sposób na poznanie miasta z góry, w cieniu drzew. Wstęp bezpłatny, otwarte całą dobę.",
         "Pociąg Lucca→Pisa Centrale: ~30 min, ~41 kursów/dzień (co 20–30 min), bilet ~€3,50/os. Regionale bez rezerwacji miejsca — kup w automacie lub w aplikacji Trenitalia. Z Pisa Centrale na Piazza dei Miracoli ~20 min pieszo lub autobusem LAM Rossa.",
         "Da Giulio in Pelleria nieczynne w niedziele — 15.09 to wtorek, więc otwarte; mimo to zadzwoń (0583 55948) i zarezerwuj stolik na porę lunchu, bo miejsce jest oblegane przez lokalnych.",
-        "Weźcie legitymacje studenckie/szkolne — regulamin gminy Lucca (comune.lucca.it) przewiduje bilet ridotto dla „studenti muniti di idonea tessera” na Torre Guinigi / Torre delle Ore / Orto Botanico. Pokażcie legitymację w kasie."
+        "Weźcie legitymacje studenckie/szkolne — regulamin gminy Lucca (comune.lucca.it) przewiduje bilet ridotto dla „studenti muniti di idonea tessera” na Torre Guinigi / Torre delle Ore / Orto Botanico. Pokażcie legitymację w kasie.",
+        "UWAGA cenowa: Krzywa Wieża NIE MA zniżki studenckiej ani młodzieżowej — €20/os dla każdego. Opera della Primaziale Pisana zwalnia/obniża tylko osoby z niepełnosprawnością (z opiekunem, zgłoszenie mailem ≥5 dni wcześniej), dzieci <11 lat (i tak nie mogą wejść na wieżę, limit 8 lat) oraz grupy szkolne od 10 uczniów — nasza piątka pod żaden z tych progów nie podpada. Legitymacje działają w Lucce, nie w Pizie.",
+        "Zniżka kolejowa dla trójki poniżej 30 lat: Trenitalia „Promo Young X-GO” daje **20% na bilety Regionale** po darmowej rejestracji w programie X-GO (aplikacja/strona Trenitalia), ważna do 30.11.2026. Haczyk: bilet trzeba kupić **do 23:59 dnia poprzedzającego podróż**, pula miejsc na pociąg jest ograniczona i nie łączy się z innymi promocjami. Na krótkich odcinkach tego dnia to oszczędność rzędu €2/os, ale ta sama zniżka działa na dłuższym przejeździe Siena↔Florencja (D12), gdzie daje już ~€4/os."
       ],
-      "narrative": "Dziś zamiast gór — dwa miasta, i po raz drugi w całym planie oddajemy licznik kilometrów kolei. Ruszamy o 8:00 autem z Bargi w dół doliny Serchio; po ok. 40 minutach zostawiamy samochód na parkingu poza murami Lukki i dalej idziemy już tylko pieszo i pociągiem. Lucca to jedyne miasto we Włoszech, które zachowało kompletny renesansowy pierścień murów — dziś to szeroka, wysadzana platanami promenada biegnąca 4,2 km wokół całego starego miasta, po której lucchesi spacerują i jeżdżą na rowerach jak po parku zawieszonym nad dachami. Schodzimy z murów na Piazza dell'Anfiteatro — owalny plac dokładnie na fundamentach rzymskiego amfiteatru, którego kształt kamienice powtórzyły dom po domu. Kto ma siłę, wchodzi na Torre Guinigi (€8), średniowieczną wieżę z ogrodem dębów ostrolistnych rosnących 45 metrów nad ziemią — jeden z najdziwniejszych i najładniejszych widoków w Toskanii. Zaglądamy jeszcze do Duomo di San Martino po Volto Santo i nagrobek Ilarii del Carretto, kupujemy cantucci przy Via Fillungo, i po lunchu (tordelli lucchesi w Trattoria da Giulio) łapiemy pociąg — 30 minut i jesteśmy w Pizie. Ze stacji ~20 minut pieszo i wychodzimy na Piazza dei Miracoli: zielony dywan trawy, a na nim biały marmur Duomo, Battistero i słynna Krzywa Wieża, pochylona o cztery stopnie i wciąż stojąca po ośmiu wiekach. Wejście na szczyt (€20, 251 stopni) trzeba mieć zarezerwowane w slocie z wyprzedzeniem — ale nawet z dołu plac robi wrażenie, którego zdjęcia nie oddają. To turystyczny, tłoczny dzień, jak Florencja — świadomy wyjątek od reguły, bo tych dwóch miast po prostu nie sposób pominąć, będąc tak blisko. Wieczorem tą samą drogą wracamy: pociąg do Lukki, auto, dolina Serchio i baza w Bardze ok. 19:30.",
+      "narrative": "Dziś zamiast gór — dwa miasta, i po raz drugi w całym planie oddajemy licznik kilometrów kolei. Ruszamy o 8:00 autem z Bargi w dół doliny Serchio; po ok. 40 minutach zostawiamy samochód na parkingu poza murami Lukki i dalej idziemy już tylko pieszo i pociągiem. Lucca to jedyne miasto we Włoszech, które zachowało kompletny renesansowy pierścień murów — dziś to szeroka, wysadzana platanami promenada biegnąca 4,2 km wokół całego starego miasta, po której lucchesi spacerują i jeżdżą na rowerach jak po parku zawieszonym nad dachami. Schodzimy z murów na Piazza dell'Anfiteatro — owalny plac dokładnie na fundamentach rzymskiego amfiteatru, którego kształt kamienice powtórzyły dom po domu. Kto ma siłę, wchodzi na Torre Guinigi (€8), średniowieczną wieżę z ogrodem dębów ostrolistnych rosnących 45 metrów nad ziemią — jeden z najdziwniejszych i najładniejszych widoków w Toskanii. Zaglądamy jeszcze do Duomo di San Martino po Volto Santo i nagrobek Ilarii del Carretto, kupujemy cantucci przy Via Fillungo, i po lunchu (tordelli lucchesi w Trattoria da Giulio) łapiemy pociąg — 30 minut i jesteśmy w Pizie. Ze stacji ~20 minut pieszo i wychodzimy na Piazza dei Miracoli: zielony dywan trawy, a na nim biały marmur Duomo, Battistero i słynna Krzywa Wieża, pochylona o cztery stopnie i wciąż stojąca po ośmiu wiekach. Wejście na szczyt (€20, 251 stopni) trzeba mieć zarezerwowane w slocie z wyprzedzeniem — ale nawet z dołu plac robi wrażenie, którego zdjęcia nie oddają. To turystyczny, tłoczny dzień, jak Florencja — świadomy wyjątek od reguły, bo tych dwóch miast po prostu nie sposób pominąć, będąc tak blisko. A skoro tor kolejowy biegnie stąd dalej na zachód, domykamy dzień trzecim bokiem trójkąta: kwadrans pociągiem z Pizy i jesteśmy w Viareggio, nad Morzem Tyrreńskim — jedyny raz w całym wyjeździe. Ze stacji kilometr pieszo i wychodzimy na Passeggiatę, trzykilometrowy deptak z kawiarniami w stylu Liberty, kafelkowymi wieżyczkami i kutymi balustradami z lat dwudziestych. Zdejmujemy buty, wchodzimy w wodę (we wrześniu ma jeszcze 24–25 stopni) i czekamy na 19:31, kiedy słońce siada prosto w morze, a za plecami różowieją marmurowe Alpy Apuańskie — te same, które z Garfagnany oglądamy od drugiej strony. Za kolację robi cuoppo smażonych rybek z papierowego rożka i gelato na deptaku. O 20:15 pociąg z Viareggio do Lukki (ostatni tego dnia jedzie dopiero o 22:10, więc nie ma pośpiechu), odbiór auta, dolina Serchio i baza w Bardze ok. 21:30.",
       "web_research": [
         {
           "topic": "Krzywa Wieża — bilety i rezerwacja",
@@ -1205,17 +1218,36 @@
         },
         {
           "topic": "Lucca — mury i Torre Guinigi",
-          "summary": "Mury renesansowe (XVI–XVII w.): kompletna pętla 4,2 km, dziś promenada dla pieszych i rowerzystów, wstęp wolny; wypożyczalnie rowerów przy murach ~€3–4/h, okrążenie 20–25 min. Torre Guinigi: wieża z 7 dębami ostrolistnymi na szczycie (~45 m), bilet €8 (ulg. €6), godziny sezonowe (do 20.IX zwykle 10:00–19:30). Piazza dell'Anfiteatro — zawsze dostępna.",
+          "summary": "Mury renesansowe (XVI–XVII w.): kompletna pętla 4,2 km, dziś promenada dla pieszych i rowerzystów, wstęp wolny; wypożyczalnie rowerów przy murach ~€3–4/h, okrążenie 20–25 min. Torre Guinigi: wieża z 7 dębami ostrolistnymi na szczycie (~45 m), bilet €8 intero / €6,50 ridotto (studenci z legitymacją, 6–14 lat, 65+, grupy 10+), godziny cze–wrz 9:30–19:30. Piazza dell'Anfiteatro — zawsze dostępna.",
           "source": "https://www.turismo.lucca.it",
           "checked": "2026-07"
+        },
+        {
+          "topic": "Morze — trójkąt kolejowy Lucca–Piza–Viareggio",
+          "summary": "Wszystkie trzy boki to częste linie Regionale, więc morze da się dokleić bez cofania tą samą trasą. Lucca→Pisa Centrale ~25–30 min (~€3,50/os, co 20–30 min); Pisa Centrale→Viareggio ~13–19 min (~€3/os, ~48 kursów/dobę, min. 2×/h); Viareggio→Lucca bezpośrednio ~16–26 min (~€3/os). Ostatni pociąg Viareggio→Lucca ok. 22:10 z przyjazdem 22:31 — przy planowanym powrocie o 20:15 zostaje prawie 2 h buforu. Ze stacji Viareggio na Passeggiatę ~1 km / 12–15 min pieszo.",
+          "source": "https://www.trenitalia.com",
+          "checked": "2026-08"
+        },
+        {
+          "topic": "Viareggio — zachód słońca i temperatura wody",
+          "summary": "Zachód słońca w Pizie/Viareggio 15.09.2026 o 19:31, zmierzch cywilny do 19:58 — wybrzeże jest zachodnie, więc słońce zapada prosto w morze, z Alpami Apuańskimi za plecami. Woda: Morze Liguryjskie u wybrzeży Viareggio trzyma 24–25°C do połowy września (sezon kąpielowy VI–X, poniżej 20°C schodzi dopiero jesienią). Płatne stabilimenti w drugiej połowie września zaczynają zamykać; spiaggia libera w Darsenie (płd. skraj miasta) działa zawsze, bez leżaków i często bez ratownika.",
+          "source": "https://www.seatemperature.org/europe/italy/viareggio.htm",
+          "checked": "2026-08"
+        },
+        {
+          "topic": "Bilety: dorośli vs studenci/uczniowie",
+          "summary": "Krzywa Wieża €20/os — BEZ ulgi dla studentów i młodzieży (Opera della Primaziale zniża tylko osoby z niepełnosprawnością z opiekunem oraz grupy szkolne od 10 uczniów; dzieci <8 lat w ogóle nie wchodzą, <11 lat mają darmowy wstęp do pozostałych zabytków). Bilet łączony Piazza dei Miracoli z Wieżą €27/os, bez Wieży ~€11/os (5 zabytków) — czyli Wieża to €20, a cała reszta placu dopłata ~€7. Katedra osobno bezpłatna z biletem czasowym. W Lucce odwrotnie: Torre Guinigi €8 intero / €6,50 ridotto — kategorie ulgowe to studenci z ważną legitymacją, dzieci 6–14 lat, osoby 65+ i grupy od 10 osób z przewodnikiem (regulamin comune.lucca.it), to samo na Torre delle Ore i Orto Botanico. Kolej: Trenitalia „Promo Young X-GO” to 20% na Regionale dla osób poniżej 30 lat po darmowej rejestracji w X-GO (ważne do 30.11.2026), z zastrzeżeniem zakupu do 23:59 dnia poprzedzającego podróż i ograniczonej puli miejsc.",
+          "source": "https://www.opapisa.it/en/informations/benefits/",
+          "checked": "2026-08"
         }
       ],
       "opening_hours": {
         "lucca_mura": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie — spacer lub rower.",
-        "torre_guinigi": "Codziennie (do 20.IX) 10:00–19:30. Bilet €8 (ulg. €6). Zamknięte 25 grudnia.",
+        "torre_guinigi": "Codziennie (do 20.IX) 10:00–19:30. Bilet €8 (ulg. €6,50 z legitymacją). Zamknięte 25 grudnia.",
         "duomo_san_martino": "Duomo di San Martino: nawa ~bezpłatna; Volto Santo, zakrystia (grobowiec Ilarii) i muzeum — bilety €3–9.",
         "pisa_miracoli": "Piazza dei Miracoli, zabytki (wrzesień): ok. 9:00–20:00 — sprawdź kalendarz na opapisa.it. Krzywa Wieża: sloty co 30 min, rezerwacja obowiązkowa.",
-        "da_giulio": "Trattoria da Giulio in Pelleria: pranzo ~12:00–14:30, cena ~19:30–22:00. Nieczynne w niedziele (15.09 = wtorek, otwarte)."
+        "da_giulio": "Trattoria da Giulio in Pelleria: pranzo ~12:00–14:30, cena ~19:30–22:00. Nieczynne w niedziele (15.09 = wtorek, otwarte).",
+        "viareggio": "Passeggiata, molo i plaża — bez ograniczeń, bezpłatnie. Zachód słońca 15.09 o 19:31, widno do ~19:55. Pociągi Piza→Viareggio min. 2×/h; ostatni powrót Viareggio→Lucca ok. 22:10 (przyjazd 22:31)."
       },
       "parking": {
         "destination": "Lucca (auto na cały dzień) → pociąg do Pizy",
@@ -1235,14 +1267,14 @@
             "note": "Alternatywa bliżej Porta San Pietro — dogodny wjazd od strony Bargi/S12, poza ZTL."
           },
           {
-            "name": "Pisa — parking niepotrzebny",
+            "name": "Piza i Viareggio — parking niepotrzebny",
             "type": "info",
             "price": "—",
-            "gps_hint": "Pizę zwiedzamy z pociągu — auto zostaje w Lucce",
-            "note": "Świadomie unikamy parkowania i ZTL w Pizie: z Pisa Centrale na Piazza dei Miracoli dochodzimy pieszo lub busem LAM Rossa."
+            "gps_hint": "Pizę i Viareggio zwiedzamy z pociągu — auto zostaje w Lucce",
+            "note": "Świadomie unikamy parkowania i ZTL w Pizie: z Pisa Centrale na Piazza dei Miracoli dochodzimy pieszo lub busem LAM Rossa. Tak samo w Viareggio — ze stacji ~1 km pieszo na Passeggiatę, bez szukania miejsca w kurorcie."
           }
         ],
-        "tip": "Zostaw auto w Lucce (poza murami) na cały dzień i przesiądź się na pociąg do Pizy — parkowanie w Pizie i wjazd w tłok pod Wieżą są uciążliwe, a pociąg Lucca↔Pisa jeździ co 20–30 min."
+        "tip": "Zostaw auto w Lucce (poza murami) na cały dzień i przesiądź się na pociąg — parkowanie w Pizie i wjazd w tłok pod Wieżą są uciążliwe, a pociąg Lucca↔Pisa jeździ co 20–30 min. Wieczorem wracasz do tego samego auta od strony Viareggio (pociąg bezpośredni ~20–26 min), więc parking w Lucce obsługuje cały trójkąt i nigdzie nie trzeba się cofać."
       },
       "fuel_stops": [
         {
@@ -1286,29 +1318,49 @@
         },
         {
           "time": "15:00",
-          "event": "Piazza dei Miracoli — Krzywa Wieża (slot rezerwowany), Duomo, Battistero, Camposanto"
+          "event": "Piazza dei Miracoli — Krzywa Wieża (slot rezerwowany na 15:00), Duomo, Battistero, Camposanto"
+        },
+        {
+          "time": "17:00",
+          "event": "Wyjście z placu na Pisa Centrale (~20 min pieszo lub bus LAM Rossa)"
         },
         {
           "time": "17:30",
-          "event": "Powrót na Pisa Centrale"
+          "event": "Pociąg Pisa Centrale → Viareggio (~15–20 min, kursy min. 2×/h)"
         },
         {
-          "time": "18:00",
-          "event": "Pociąg Pisa → Lucca (~30 min)"
+          "time": "17:55",
+          "event": "Viareggio — ze stacji ~1 km / 15 min pieszo na Passeggiatę"
         },
         {
-          "time": "18:40",
+          "time": "18:15",
+          "event": "Passeggiata: architektura Liberty, molo, nogi w wodzie (morze ~24–25°C)"
+        },
+        {
+          "time": "19:31",
+          "event": "Zachód słońca prosto w morze — Alpy Apuańskie za plecami"
+        },
+        {
+          "time": "19:50",
+          "event": "Cuoppo (smażone rybki w rożku) i gelato na deptaku, powrót na stację"
+        },
+        {
+          "time": "20:15",
+          "event": "Pociąg Viareggio → Lucca (~20–26 min; ostatni tego dnia 22:10)"
+        },
+        {
+          "time": "20:45",
           "event": "Odbiór auta w Lucce"
         },
         {
-          "time": "19:30",
+          "time": "21:30",
           "event": "Powrót do bazy Barga"
         }
       ],
       "daily_km_estimate": 75,
       "crowd_tip": "Piazza dei Miracoli w Pizie jest zatłoczona praktycznie cały dzień w sezonie — jak Florencja, to świadomy kompromis (plan zwykle omija tłumy, ale Krzywa Wieża jest tego warta). Strategia: Lucca rano (spokojniejsza i kameralna), Piza po południu ze slotem na Wieżę zarezerwowanym z wyprzedzeniem. Na samym placu tłum jest nieunikniony, ale mury Lukki i owalna Piazza dell'Anfiteatro dają oddech.",
-      "warning": "Krzywa Wieża wymaga rezerwacji slotu godzinowego z wyprzedzeniem (opapisa.it) — bez tego można obejrzeć plac, Duomo i zrobić zdjęcia, ale nie wejść na wieżę. Piazza dei Miracoli i (w mniejszym stopniu) Lucca to najbardziej turystyczne punkty całego wyjazdu — spodziewaj się tłumów, zwłaszcza w porze południowej pod Wieżą. Dzień oparty na rozkładzie pociągów Lucca↔Pisa — sprawdź aktualne godziny Trenitalia bliżej wyjazdu.",
-      "summary": "Świadomie „turystyczny\" dzień, ale w spokojnym tempie. Autem jedziemy do Lukki (wł. Lucca) — miasta otoczonego kompletnym renesansowym pierścieniem murów, po których dziś spaceruje się jak po parku; w środku owalny plac wzniesiony na fundamentach rzymskiego amfiteatru (Piazza dell'Anfiteatro) i średniowieczna wieża z drzewami na szczycie (Torre Guinigi). Potem pociągiem do Pizy, na słynny plac katedralny (Piazza dei Miracoli) z pochyloną Krzywą Wieżą."
+      "warning": "Krzywa Wieża wymaga rezerwacji slotu godzinowego z wyprzedzeniem (opapisa.it) — bez tego można obejrzeć plac, Duomo i zrobić zdjęcia, ale nie wejść na wieżę. Piazza dei Miracoli i (w mniejszym stopniu) Lucca to najbardziej turystyczne punkty całego wyjazdu — spodziewaj się tłumów, zwłaszcza w porze południowej pod Wieżą. Dzień oparty na rozkładzie pociągów Lucca↔Pisa↔Viareggio — sprawdź aktualne godziny Trenitalia bliżej wyjazdu. Ostatni pociąg Viareggio→Lucca odjeżdża ok. 22:10 (przyjazd 22:31); planowany powrót o 20:15 daje prawie dwie godziny zapasu, ale nie wolno go przegapić, bo auto stoi w Lucce.",
+      "summary": "Świadomie „turystyczny\" dzień, ale w spokojnym tempie. Autem jedziemy do Lukki (wł. Lucca) — miasta otoczonego kompletnym renesansowym pierścieniem murów, po których dziś spaceruje się jak po parku; w środku owalny plac wzniesiony na fundamentach rzymskiego amfiteatru (Piazza dell'Anfiteatro) i średniowieczna wieża z drzewami na szczycie (Torre Guinigi). Potem pociągiem do Pizy, na słynny plac katedralny (Piazza dei Miracoli) z pochyloną Krzywą Wieżą. Na finał trzeci bok trójkąta kolejowego — kwadrans do Viareggio nad Morzem Tyrreńskim: deptak Liberty, nogi w wodzie i zachód słońca prosto w morze o 19:31. Jedyne spotkanie z morzem w całym planie."
     },
     {
       "date": "16.09 (śr)",
@@ -2915,10 +2967,10 @@
       "day_num": 14,
       "type": "transit",
       "label": "TRANZYT ← ALPY",
-      "title": "Murlo → Telves (Racines, Alto Adige)",
+      "title": "Murlo → Fischbachau (Bawaria)",
       "image": "kufstein",
-      "drive_km": 527,
-      "drive_h": "6–6,5 h",
+      "drive_km": 682,
+      "drive_h": "8–8,5 h",
       "base_id": null,
       "route_points": [
         {
@@ -2930,16 +2982,16 @@
           "kind": "base"
         },
         {
-          "label": "Telves (Racines) — Maurerhof",
+          "label": "Fischbachau — Pension Oberwirt",
           "coords": [
-            46.8946283,
-            11.3784102
+            47.7134046,
+            11.9641105
           ],
           "kind": "transit_night"
         }
       ],
-      "depart": "7:30 rano z Murlo (Val di Merse)",
-      "route": "Murlo → SS223 Siena → tangenziale Siena → Siena Superstrada → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → Vipiteno/Sterzing → Telves (Racines, Val Ridanna)",
+      "depart": "6:30 rano z Murlo (Val di Merse)",
+      "route": "Murlo → SS223 Siena → tangenziale Siena → A1 Firenze-Sud → A1 north → Variante di Valico (obwodnica FI, bez ZTL) → Bologna → Modena → A22 Brennero (Verona, Trento, Bolzano) → A13 AT (Streckenmaut) → Innsbruck → A12 Inntal → Kufstein → A93/A8 → Weyarn → Fischbachau (Bawaria)",
       "attractions": [],
       "food": {
         "place": "Bolonia lub Modena (postój autostradowy A1)",
@@ -2949,22 +3001,22 @@
           "tagliatelle al ragù",
           "caffè"
         ],
-        "note": "Ostatnie włoskie jedzenie — zjazd A1 Bologna Borgo Panigale lub Modena Nord. NIE zjeżdżaj do centrum Florencji — 24.09 czwartek, ZTL aktywna 7:30–20:00.",
+        "note": "Ostatnie włoskie jedzenie — zjazd A1 Bologna Borgo Panigale lub Modena Nord. NIE zjeżdżaj do centrum Florencji — 25.09 piątek, ZTL aktywna 7:30–20:00.",
         "price": "~€10–15"
       },
       "accommodation": {
-        "place": "Maurerhof Telves (Racines, Alto Adige)",
-        "note": "POTWIERDZONA REZERWACJA — Telferweg 2, 39040 Racines (Telves), Bolzano. 5 dorosłych, 1 apartament. Zameldowanie 15:00–22:00, wymeldowanie 07:00–11:00 (26.09). Val Ridanna, 8 km od Vipiteno (Sterzing) — spokojna alpejska dolina tuż przy wjeździe na Brenner. Krótki dzień jazdy (527 km zamiast 647 do Kufsteinu) zostawia czas na popołudnie w Vipiteno.",
+        "place": "Pension Oberwirt — Fischbachau (Bawaria)",
+        "note": "POTWIERDZONA REZERWACJA — Birkensteinstr. 91, 83730 Fischbachau, Niemcy. 5 dorosłych, 1 apartament, 1 noc (25→26.09). Zameldowanie 15:00–18:00 — PRZYJAZD PRZED 18:00 OBOWIĄZKOWO (długi dzień jazdy). Wymeldowanie 07:30–10:00 (26.09). Ustal z gospodarzem godzinę przyjazdu.",
         "price": "cena do uzupełnienia (potwierdzona rezerwacja)",
-        "booking_tip": "Zarezerwowane — bez dalszych działań.",
-        "gps_hint": "Naviguj: Telferweg 2, 39040 Racines (Telves), Włochy (coords 46.8946, 11.3784)"
+        "booking_tip": "Zarezerwowane — przed wyjazdem potwierdź z gospodarzem godzinę przyjazdu (ETA ~17:00).",
+        "gps_hint": "Naviguj: Birkensteinstr. 91, 83730 Fischbachau (coords 47.7134, 11.9641)"
       },
       "route_segments": [
         {
           "segment": "Murlo → A1 Firenze-Sud",
           "road": "SS223 → tangenziale Siena → Siena Superstrada → A1",
           "km": "~65",
-          "note": "Z Murlo: SS223 do Sieny, tangenziale, dalej Superstrada Siena-Firenze do A1. ~65 min (dłużej niż z Chianti — Murlo leży po drugiej stronie Sieny)."
+          "note": "~65 min. Piątek — ZTL Firenze aktywna 7:30–20:00, trzymaj autostradę."
         },
         {
           "segment": "Firenze → Bologna (obwodnica FI)",
@@ -2979,23 +3031,29 @@
           "note": "Lunch: zjazd Bologna Borgo Panigale lub Modena Nord"
         },
         {
-          "segment": "Modena → Vipiteno (Sterzing)",
+          "segment": "Modena → Brennero",
           "road": "A22 (Verona, Trento, Bolzano)",
-          "km": "~307",
-          "note": "Pedaggio A22 Modena–Vipiteno: ~€21 klasa A. Zjazd Vipiteno, przed samym Brennero — dziś zostajemy po włoskiej stronie, bez wjazdu do Austrii."
+          "km": "~305",
+          "note": "Pedaggio A22 Modena–Brenner ~€22,80 klasa A. Ostatnie włoskie espresso przed granicą."
         },
         {
-          "segment": "Vipiteno → Telves (Racines)",
-          "road": "SP-Racines (Val Ridanna)",
-          "km": "~8",
-          "note": "Krótki podjazd lokalną drogą w boczną dolinę Val Ridanna"
+          "segment": "Brennero → Kufstein",
+          "road": "A13 AT (Streckenmaut) → A12 Inntal",
+          "km": "~110",
+          "note": "A13 Streckenmaut €12,50 + 1-dniowa e-winieta AT na 25.09 (~€9,60). Zielony pas DIGITAL."
+        },
+        {
+          "segment": "Kufstein → Fischbachau",
+          "road": "A93 → A8 → Weyarn/Miesbach",
+          "km": "~60",
+          "note": "Zjazd Weyarn, lokalnie do Birkenstein. ETA ~17:00 — zdążyć przed 18:00."
         }
       ],
       "practical_tips": [
-        "Wyjazd 7:15 z Murlo → Telves ~13:30 (z 2 postojami po 20–30 min). Krótki dzień jazdy — zaplanuj popołudnie na Vipiteno lub Val Ridanna.",
+        "Wyjazd 6:30 z Murlo — 682 km / ~8 h czystej jazdy, z postojami 9,5–10 h. Check-in tylko do 18:00, zero marginesu na długie postoje.",
         "25.09 to PIĄTEK: ZTL Firenze aktywna 7:30–20:00 — zostań na A1 Variante di Valico.",
-        "Dziś BEZ Austrii — Telves/Racines leży po włoskiej stronie Brennero, winieta AT i Streckenmaut A13 potrzebne dopiero jutro (26.09).",
-        "Maurerhof: 1 apartament na 5 osób — potwierdź z gospodarzem szczegóły przed przyjazdem (email/telefon z rezerwacji)."
+        "Dziś PRZEJAZD PRZEZ AUSTRIĘ: 1-dniowa e-winieta AT na 25.09 (€9,60) + Streckenmaut A13 Brenner (€12,50) — kup online przed wyjazdem.",
+        "Przed wyjazdem ustal z gospodarzem godzinę przyjazdu (ETA ~17:00) — po 18:00 brak zameldowania."
       ],
       "fuel_stops": [
         {
@@ -3016,10 +3074,10 @@
           "location": "A22 zjazd Vipiteno/Sterzing",
           "road": "A22",
           "hours": "24h",
-          "note": "Tankowanie przed jutrzejszym wjazdem do Austrii — we Włoszech zwykle taniej niż w AT."
+          "note": "Tankowanie przed wjazdem do Austrii — w AT paliwo droższe niż we Włoszech."
         }
       ],
-      "narrative": "Ruszamy powoli w stronę domu — ale to jeszcze nie dzień na Alpy, tylko krótki, spokojny przejazd. Wyjeżdżamy o 7:15 z Murlo, ostatnie spojrzenie na wzgórza Val di Merse pokryte porannym oparem, zanim SS223 i tangenziale Sieny poprowadzą nas do Firenze Sud i wjazdu na A1 (ok. 65 minut). A1 na północ jest o tej porze jeszcze spokojna; Variante di Valico omija centrum Florencji łukiem wysoko nad doliną — dziś piątek, ZTL aktywna 7:30–20:00, więc zostajemy na autostradzie. Postój przy Bolonii lub Modenie ok. 9:30–10:00 — ostatni na razie włoski espresso przy barze, zanim krajobraz zacznie się z powrotem zmieniać w alpejski. Odcinek A22 Modena–Bolzano koło Werony bywa zatłoczony w szczycie, więc nie ma co się spieszyć. Zamiast jechać aż do Brennero, zjeżdżamy w Vipiteno (Sterzing) — urokliwe miasteczko z kolorowymi kamienicami i wieżą Zwölferturm — i krótką lokalną drogą wjeżdżamy w boczną dolinę Val Ridanna, do Telves. Na miejscu już ok. 13:30, więc zostaje całe popołudnie: spacer po Vipiteno, albo dalej w głąb doliny, w stronę dawnych kopalni srebra Val Ridanna — powietrze tu jest wyraźnie chłodniejsze i bardziej alpejskie niż w Toskanii. Wieczorem kolacja w oberży przy Maurerhof i wcześnie spać — jutro dłuższy odcinek przez Brenner i kawał Niemiec, do Hof.",
+      "narrative": "Najdłuższy dzień powrotu — ale z nagrodą na końcu: jutro już dom. Wyjeżdżamy o 6:30 z Murlo, ostatnie spojrzenie na wzgórza Val di Merse, zanim SS223 i tangenziale Sieny poprowadzą nas do Firenze Sud i wjazdu na A1. Piątek, więc ZTL aktywna — zostajemy na Variante di Valico wysoko nad doliną. Krótki postój przy Bolonii (~9:15), lunch w okolicach Trento (~11:30) — ostatnie włoskie espresso, zanim A22 zacznie wspinać się ku Brennero. Granica z Austrią (~13:15): winieta i Streckenmaut załatwione online, więc tylko zielony pas DIGITAL i dalej A13 w dół do Innsbrucku, potem A12 Inntal do Kufstein — tego samego, które mijaliśmy w drodze tam. Za granicą niemiecką A93/A8, zjazd Weyarn i lokalna droga do Birkenstein pod Miesbach. Na miejscu ~17:00 — zdążyć przed sztywnym check-inem do 18:00. Wieczorem kolacja i wcześnie spać: jutro maraton do Poznania.",
       "web_research": [
         {
           "topic": "ZTL Firenze — tranzyt piątek 25.09",
@@ -3034,281 +3092,82 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Vipiteno / Val Ridanna (Racines) — nocleg powrotny",
-          "summary": "Vipiteno (Sterzing): historyczne centrum z wieżą Zwölferturm, 8 km od Racines/Telves. Val Ridanna: alpejska boczna dolina, dawne kopalnie srebra (Bergbaumuseum Ridnaun-Schneeberg). Dobre miejsce na krótki odpoczynek przed dłuższym dniem przez Brenner.",
-          "source": "https://www.racines.info/",
-          "checked": "2026-07"
+          "topic": "A13 Brenner Streckenmaut + e-winieta 1-dniowa (powrót 25.09)",
+          "summary": "A13: €12,50/przejazd (DIGITAL, shop.asfinag.at, ważna od razu). E-winieta 1-dniowa €9,60 na 25.09 (asfinag.at). Na A12/A13 winieta obowiązkowa — poprzednia z drogi tam (13.09) już wygasła.",
+          "source": "https://www.asfinag.at/",
+          "checked": "2026-09"
         }
       ],
       "opening_hours": {
         "sr222_firenze": "Trasa SS222/A1 przez Firenze Impruneta — 24/7. ZTL Firenze aktywna 7:30–20:00 pn–pt. Korzystaj z obwodnicy A1.",
         "bologna_lunch": "Autogrill Bologna Borgo Panigale / Modena Nord: 24h na A1",
-        "vipiteno_centro": "Sklepy/kawiarnie Vipiteno: zwykle 9:00–19:00, piątek bez zmian.",
-        "hotel_checkin": "Maurerhof Telves: zameldowanie 15:00–22:00 — przy przyjeździe ~13:30 poczekaj lub zostaw bagaż i idź zwiedzać."
+        "hotel_checkin": "Pension Oberwirt Fischbachau: zameldowanie 15:00–18:00 (SZTYWNO) — przy ETA ~17:00 potwierdź telefonicznie z gospodarzem; wymeldowanie 26.09 07:30–10:00."
       },
       "parking": {
-        "destination": "Telves (Racines) — nocleg tranzytowy",
+        "destination": "Fischbachau — nocleg tranzytowy",
         "options": [
           {
-            "name": "Parking przy Maurerhof",
+            "name": "Parking przy Pension Oberwirt",
             "type": "hotel",
-            "price": "gratis lub wliczony",
-            "gps_hint": "Telferweg 2, 39040 Racines (Telves)",
-            "note": "Potwierdzona rezerwacja — parking na miejscu"
+            "price": "do potwierdzenia",
+            "gps_hint": "Birkensteinstr. 91, 83730 Fischbachau",
+            "note": "Potwierdzona rezerwacja — dopytaj gospodarza o parking (1 auto / 5 osób)."
           }
         ],
-        "tip": "Vipiteno ma płatny parking przy centrum (niebieskie strefy) — na krótki spacer wystarczy."
+        "tip": "Mała miejscowość pod Miesbach — parkowanie bezproblemowe."
       },
       "eta_timeline": [
         {
-          "time": "07:15",
+          "time": "06:30",
           "event": "Wyjazd z bazy Murlo (SS223 → tangenziale Siena → A1 Firenze-Sud, ~65 km)"
         },
         {
-          "time": "08:20",
-          "event": "Firenze-Sud wjazd A1 — uwaga ZTL aktywna, trzymaj autostradę"
+          "time": "07:35",
+          "event": "Firenze-Sud wjazd A1 — ZTL aktywna, trzymaj autostradę (Variante di Valico)"
         },
         {
-          "time": "09:45",
-          "event": "Bologna — A1/A14 węzeł, tankowanie i krótki postój"
+          "time": "09:15",
+          "event": "Bologna — krótki postój + tankowanie (A1/A14 węzeł)"
         },
         {
           "time": "11:30",
-          "event": "Postój na lunch (Autogrill A22 Trento Nord lub Rovereto)"
+          "event": "Lunch 30 min (Autogrill A22 Trento/Rovereto) — ostatnie włoskie espresso"
         },
         {
-          "time": "13:00",
-          "event": "Zjazd Vipiteno (Sterzing) z A22"
+          "time": "13:15",
+          "event": "Brennero — granica IT/AT (winieta + Streckenmaut aktywne, pas DIGITAL)"
         },
         {
-          "time": "13:30",
-          "event": "Telves (Racines) — Maurerhof, zostawienie bagażu"
+          "time": "14:30",
+          "event": "Kufstein — bez postoju, dalej A93/A8 na północ"
         },
         {
-          "time": "popołudnie",
-          "event": "Spacer po Vipiteno lub Val Ridanna — wolny czas przed jutrzejszym długim odcinkiem"
+          "time": "16:30",
+          "event": "Weyarn — zjazd z A8, lokalnie do Birkenstein/Fischbachau"
+        },
+        {
+          "time": "17:00",
+          "event": "Pension Oberwirt — zameldowanie (SZTYWNO przed 18:00!)"
         }
       ],
-      "summary": "Krótki dzień jazdy z Murlo (527 km, ok. 6 h) do Telves (Racines) w Alto Adige — jeszcze po włoskiej stronie Brennero. Popołudnie wolne na Vipiteno lub Val Ridanna przed jutrzejszym dłuższym odcinkiem przez Brenner i kawałek Niemiec do Hof."
+      "summary": "Długi dzień powrotny z Murlo (682 km, ~8 h czystej jazdy) przez Brenner do Fischbachau w Bawarii — jedyny nocleg w drodze powrotnej. Wyjazd 6:30, przyjazd ~17:00 (check-in tylko do 18:00)."
     },
     {
       "date": "26.09 (sob)",
       "day_num": 15,
       "type": "transit",
-      "label": "TRANZYT ← ALPY/NIEMCY",
-      "title": "Telves → Hof (Bawaria)",
-      "image": "hof",
-      "drive_km": 505,
-      "drive_h": "6–6,5 h",
-      "base_id": null,
-      "route_points": [
-        {
-          "label": "Telves (Racines)",
-          "coords": [
-            46.8946283,
-            11.3784102
-          ],
-          "kind": "transit_night"
-        },
-        {
-          "label": "Brennero / Kufstein",
-          "coords": [
-            47.583,
-            12.166
-          ],
-          "kind": "transit"
-        },
-        {
-          "label": "Hof (Saale)",
-          "coords": [
-            50.3187507,
-            11.9162992
-          ],
-          "kind": "transit_night"
-        }
-      ],
-      "depart": "7:30 rano z Telves (Racines)",
-      "route": "Telves → Vipiteno → A22 Brennero → A13 AT (Streckenmaut) → Innsbruck → A12 Inntal → Kufstein → A93/A8 Monachium → A9 north → Norymberga → Bayreuth → Hof (Bawaria)",
-      "route_segments": [
-        {
-          "segment": "Telves → Brennero (granica IT/AT)",
-          "road": "SP-Racines → A22",
-          "km": "~30",
-          "note": "Krótki wyjazd z doliny do Vipiteno, potem A22 do przełęczy"
-        },
-        {
-          "segment": "Brennero → Kufstein",
-          "road": "A13 AT (Streckenmaut) → A12 Inntal",
-          "km": "~110",
-          "note": "A13 Streckenmaut €12,50 + 1-dniowa winieta AT na 26.09 (~€9,60) na A12 Inntal"
-        },
-        {
-          "segment": "Kufstein → Monachium",
-          "road": "A93 north → A8",
-          "km": "~85",
-          "note": "Odcinek granica AT–Kufstein-Süd bezwinietowy; jadąc na północ winieta AT niepotrzebna"
-        },
-        {
-          "segment": "Monachium → Norymberga",
-          "road": "A9 north",
-          "km": "~165",
-          "note": "Tankowanie w DE — taniej niż w AT/PL"
-        },
-        {
-          "segment": "Norymberga → Hof",
-          "road": "A9 north",
-          "km": "~115",
-          "note": "Ostatni odcinek dnia, Bayreuth po drodze"
-        }
-      ],
-      "attractions": [],
-      "food": {
-        "place": "Area di servizio Vipiteno lub Autogrill Brennero",
-        "address": "A22, przed granicą IT/AT",
-        "dishes": [],
-        "note": "Krótki postój przed Brennero — ostatnie włoskie espresso na tym wyjeździe.",
-        "price": "~€5–10"
-      },
-      "accommodation": {
-        "place": "Hof (Saale), Bawaria — nocleg tranzytowy",
-        "note": "Niemal dokładnie w połowie drogi Telves–Poznań (505 km / 547 km) — najbardziej wyrównany podział ostatniego odcinka. Małe bawarskie miasto na trasie A9, wystarczy na nocleg i szybki spacer.",
-        "price": "€60–90/noc",
-        "booking_tip": "Do zarezerwowania — Booking.com wystarczy, mniej krytyczne niż bazy.",
-        "gps_hint": "Naviguj: Hof, Bayern, Niemcy",
-        "options": [
-          {
-            "name": "Dormero Hotel Hof",
-            "type": "Hotel",
-            "address": "Kreuzsteinstraße, 95028 Hof",
-            "price": "€70–90/noc",
-            "parking": "parking hotelowy",
-            "note": "Centralne położenie w Hof, standard sieciowy"
-          },
-          {
-            "name": "Brauereigasthof Falter",
-            "type": "Gasthof",
-            "address": "Hirschberger Straße 6, 95030 Hof-Unterkotzau",
-            "price": "€60–80/noc",
-            "parking": "bezpłatny na miejscu",
-            "note": "Tradycyjny gasthof z własnym browarem, rodzinna atmosfera"
-          }
-        ]
-      },
-      "practical_tips": [
-        "Dziś wjazd do Austrii — kup 1-dniową e-winietę AT (€9,60) na 26.09 przed wjazdem na A12/A13.",
-        "Streckenmaut A13 Brenner (€12,50) osobno od winiety — shop.asfinag.at.",
-        "Dzień wyraźnie krótszy niż dawny przejazd do Poznania (505 km vs 917 km) — więcej marginesu na postoje.",
-        "Hof: zarezerwuj nocleg z wyprzedzeniem (lipiec/sierpień) — patrz TODO."
-      ],
-      "parking": {
-        "destination": "Hof — nocleg tranzytowy",
-        "options": [
-          {
-            "name": "Parking hotelu — priorytet",
-            "type": "hotel",
-            "price": "gratis lub wliczony",
-            "gps_hint": "Hof, Bayern, Niemcy",
-            "note": "Oba polecane hotele (Dormero, Falter) mają własny parking"
-          }
-        ],
-        "tip": "Małe miasto — parking przy hotelu wystarczy na całą wizytę."
-      },
-      "fuel_stops": [
-        {
-          "name": "Area di servizio Vipiteno (A22)",
-          "location": "A22 przed Brennero",
-          "road": "A22",
-          "hours": "24h",
-          "note": "Ostatnie tankowanie we Włoszech — taniej niż w Austrii."
-        },
-        {
-          "name": "Eni/OMV dolina Inn (Kufstein/Innsbruck)",
-          "location": "A12/A93 okolice Kufstein",
-          "road": "A12",
-          "hours": "6–22",
-          "note": "Uzupełnij przed granicą DE — dalej tankuj już w Niemczech."
-        },
-        {
-          "name": "Raststätte okolice Norymbergi/Bayreuth",
-          "location": "A9, przed Hof",
-          "road": "A9",
-          "hours": "24/7",
-          "note": "Ostatnie tankowanie przed noclegiem w Hof."
-        }
-      ],
-      "narrative": "Dziś dłuższy dzień, ale wciąż wyraźnie krótszy niż dawny maraton do Poznania. Z Telves krótki zjazd do Vipiteno i wjazd na A22 w stronę Brennero — po ok. 30 km granica z Austrią, gdzie aktywujemy nową 1-dniową e-winietę. A13 Streckenmaut i przełęcz Brenner, gdzie robi się zauważalnie chłodniej, potem A12 Inntal do Kufstein — tego samego miasteczka, które mijaliśmy tydzień wcześniej, tym razem bez postoju. Za granicą niemiecką A93/A8 obwodnicą Monachium i A9 prosto na północ, przez Norymbergę w stronę Bayreuth — krajobraz robi się coraz bardziej frankoński, łagodne wzgórza zamiast alpejskich szczytów. Do Hof docieramy późnym popołudniem — małe bawarskie miasto na Saale, wystarczy na kolację i spokojny nocleg przed ostatnim, znacznie krótszym odcinkiem do domu.",
-      "web_research": [
-        {
-          "topic": "Trasa Telves → Hof przez Brenner i Norymbergę",
-          "summary": "~505 km, ~5,5 h (OSRM) przez A22 Brennero → A13 AT → A12 Inntal → A93/A8 Monachium → A9 Norymberga–Bayreuth–Hof. Niemal dokładnie w połowie drogi do Poznania (547 km pozostaje).",
-          "source": "https://www.autobahn.de/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Winieta AT i Streckenmaut A13 (dzień powrotny)",
-          "summary": "Nowa e-winieta 1-dniowa (~€9,60) potrzebna na A12 Inntal — poprzednia z drogi tam już wygasła. A13 Brenner Streckenmaut €12,50 osobno, kup na shop.asfinag.at (Section toll / Abschnittsmaut).",
-          "source": "https://www.asfinag.at/en/toll/section-toll/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Noclegi Hof (Saale), Bawaria",
-          "summary": "Dormero Hotel Hof (Kreuzsteinstraße, centrum, sieciowy standard) i Brauereigasthof Falter (Hirschberger Straße 6, Unterkotzau, tradycyjny gasthof z browarem, darmowy parking) — oba z parkingiem, dobre dla grupy w 2 pokojach.",
-          "source": "https://www.booking.com/accommodation/city/de/hof.html",
-          "checked": "2026-07"
-        }
-      ],
-      "opening_hours": {
-        "raststaette_a9": "24/7 (okolice Norymbergi, Bayreuth)",
-        "hof_checkin": "Dormero/Falter: recepcja zwykle 14:00–22:00 — przy przyjeździe późnym popołudniem bez problemu."
-      },
-      "eta_timeline": [
-        {
-          "time": "07:30",
-          "event": "Wyjazd z Telves (SP-Racines → Vipiteno → A22)"
-        },
-        {
-          "time": "08:15",
-          "event": "Brennero — granica IT/AT, aktywna nowa e-winieta"
-        },
-        {
-          "time": "09:15",
-          "event": "Innsbruck bypass — A12 Inntal"
-        },
-        {
-          "time": "10:00",
-          "event": "Kufstein — bez postoju, dalej A93/A8"
-        },
-        {
-          "time": "11:15",
-          "event": "Monachium — A8 → A9 na północ"
-        },
-        {
-          "time": "12:45",
-          "event": "Norymberga (A9) — krótki postój na lunch"
-        },
-        {
-          "time": "14:00",
-          "event": "Hof — hotel, spacer po centrum, kolacja"
-        }
-      ],
-      "summary": "Powrót przez Brenner, Kufstein i Norymbergę do Hof (505 km, ok. 6 h) — niemal dokładnie w połowie drogi Telves–Poznań. Wyraźnie krótszy i spokojniejszy dzień niż dawny bezpośredni przejazd do domu."
-    },
-    {
-      "date": "27.09 (nd)",
-      "day_num": 16,
-      "type": "transit",
-      "label": "TRANZYT → POZNAŃ",
-      "title": "Hof → Poznań (dotarcie do domu)",
+      "label": "TRANZYT → DOM",
+      "title": "Fischbachau → Poznań (powrót do domu)",
       "image": "poznan",
-      "drive_km": 547,
-      "drive_h": "6,5–7 h",
+      "drive_km": 892,
+      "drive_h": "9–9,5 h",
       "base_id": null,
       "route_points": [
         {
-          "label": "Hof (Saale)",
+          "label": "Fischbachau — Pension Oberwirt",
           "coords": [
-            50.3187507,
-            11.9162992
+            47.7134046,
+            11.9641105
           ],
           "kind": "transit_night"
         },
@@ -3329,58 +3188,78 @@
           "kind": "home"
         }
       ],
-      "depart": "7:30–8:00 rano z Hof",
-      "route": "Hof → A9/A72 → Berliner Ring A10 → A12 → Świecko (granica DE/PL) → A2 east → Poznań",
+      "depart": "7:30 rano z Fischbachau",
+      "route": "Fischbachau → A8 → München → A9 north → Nürnberg → Berlin (obwodnica A10) → A12 → Świecko (granica DE/PL) → A2 east → Poznań",
       "route_segments": [
         {
-          "segment": "Hof → Berlin (obwodnica)",
-          "road": "A9/A72 → A10 Berliner Ring",
-          "km": "~260",
-          "note": "Krajobraz Turyngii i Saksonii, potem obwodnica Berlina"
+          "segment": "Fischbachau → München",
+          "road": "A8",
+          "km": "~60",
+          "note": "Poranny wyjazd z Birkenstein, wjazd na A8"
+        },
+        {
+          "segment": "München → Nürnberg",
+          "road": "A9 north",
+          "km": "~165",
+          "note": "Tankowanie w DE — najtaniej na całej trasie"
+        },
+        {
+          "segment": "Nürnberg → Berlin",
+          "road": "A9 → A10 Berliner Ring",
+          "km": "~380",
+          "note": "Najdłuższy odcinek; lunch max 30 min (Frankenwald/Feucht, znane z drogi tam)"
         },
         {
           "segment": "Berlin → Świecko (granica)",
-          "road": "A12",
+          "road": "A10 → A12",
           "km": "~115",
-          "note": "A12 na wschód do granicy PL"
+          "note": "Obwodnicą A10, potem A12 na wschód do granicy PL"
         },
         {
           "segment": "Świecko → Poznań",
           "road": "A2",
-          "km": "~175",
-          "note": "Videotolling AWSA Świecko–Konin (~138 zł)"
+          "km": "~172",
+          "note": "Videotolling AWSA Świecko–Konin (~138 zł); meta ok. 18:30"
         }
       ],
       "attractions": [],
       "food": {
-        "place": "Raststätte na A9/A10 (okolice Lipska lub Berlina)",
-        "address": "A9/A10, Niemcy",
+        "place": "Raststätte Frankenwald Ost lub Nürnberg-Feucht (A9)",
+        "address": "A9, Niemcy",
         "dishes": [],
-        "note": "Ostatni dzień tranzytowy — lunch na autostradzie.",
+        "note": "Maraton powrotny — lunch na autostradzie, max 30 min postoju. Potem prosto do domu.",
         "price": "~€8–12"
       },
       "accommodation": {
         "place": "Dom — Poznań",
-        "note": "Meta podróży. W domu ok. 15:00–16:00 (start 7:30–8:00, ~6,5–7 h jazdy + postoje).",
+        "note": "Meta podróży 26.09 wieczorem (start 7:30, ~9–9,5 h jazdy + postoje, w domu ok. 18:30). 27.09 zostaje dniem buforowym.",
         "price": "—"
       },
       "practical_tips": [
-        "Ostatni, wyraźnie krótszy dzień powrotu (547 km, ~6,5–7 h) — bez pośpiechu.",
-        "Winieta AT niepotrzebna — Niemcy nie wymagają winiety na tym odcinku.",
-        "Tankuj w Niemczech przed Polską — paliwo tańsze.",
-        "Świecko: opłata videotolling A2 (~138 zł)."
+        "Najdłuższy dzień całego wyjazdu (892 km) — wyjazd 7:30, zero zwiedzania po drodze.",
+        "Winieta AT niepotrzebna — cały dzień w DE (bezpłatne autostrady) + PL.",
+        "Tankuj w Niemczech przed Polską — paliwo tańsze; pełny bak na A9 przed Berlinem.",
+        "Świecko: opłata videotolling A2 (~138 zł) — płatność online/aplikacja.",
+        "Zmiana kierowcy co ~2,5–3 h; po wczorajszych 682 km nie ma marginesu na zmęczenie."
       ],
       "parking": {
         "destination": "Dom — Poznań",
         "options": [],
-        "tip": "Koniec trasy — rozładunek w domu. Bagażnik pełen wina, oliwy, szafranu i pecorino."
+        "tip": "Koniec trasy — rozładunek w domu. Bagażnik pełen wina, oliwy i pecorino."
       },
       "fuel_stops": [
         {
-          "name": "Tankowanie przed wyjazdem z Hof",
-          "location": "Hof, Bayern",
-          "road": "lokalna",
-          "note": "Pełny bak przed ostatnim odcinkiem."
+          "name": "Tankowanie przed wyjazdem z Fischbachau",
+          "location": "Fischbachau/Miesbach lub A8",
+          "road": "lokalna/A8",
+          "note": "Pełny bak na start maratonu."
+        },
+        {
+          "name": "Raststätte Frankenwald Ost",
+          "location": "A9 km 254, Berg-Rudolphstein",
+          "road": "A9",
+          "hours": "24/7",
+          "note": "Aral + lunch — znana z drogi tam (D1)."
         },
         {
           "name": "Orlen/Shell przy A2 Świecko",
@@ -3390,13 +3269,13 @@
           "note": "Ostatnie tankowanie / kawa przed Poznaniem."
         }
       ],
-      "narrative": "Ostatni odcinek — i tym razem naprawdę krótki. Wyjeżdżamy z Hof ok. 7:30–8:00, bez pośpiechu, bo do domu zostało tylko ~547 km. A9/A72 prowadzi przez Turyngię i Saksonię, krajobraz robi się coraz bardziej równinny, aż do obwodnicy Berlina (A10), którą omijamy centrum. A12 kieruje nas na wschód, ku granicy — sosnowe lasy Brandenburgii coraz bardziej przypominają te po polskiej stronie. Przez Świecko (opłata AW ~138 zł) wjeżdżamy do Polski, A2 prosto do Poznania — w domu ok. 15:00–16:00, z bagażnikiem pełnym wina, oliwy, szafranu i pecorino, i głową pełną obrazów kamiennych borgo, wież San Gimignano i porannej mgły nad toskańskimi winnicami, a także chłodnego popołudnia w alpejskim Val Ridanna. Rozłożenie powrotu na trzy dni zamiast dwóch — z noclegiem w Telves i Hof — zamieniło jeden wyczerpujący dzień za kierownicą w dwa spokojne.",
+      "narrative": "Pobudka w Birkenstein, szybkie śniadanie i wymeldowanie — dziś tylko droga, najdłuższa w całym wyjeździe. A8 do Monachium jeszcze pusta w sobotni poranek, potem A9 na północ: Norymberga (~10:00, krótki postój), Frankenwald (~12:30, lunch max 30 min — ten sam most co w drodze tam, dwa tygodnie temu), obwodnica Berlina A10 (~15:00). A12 na wschód, sosnowe lasy Brandenburgii coraz bardziej przypominają te po polskiej stronie. Świecko (~16:30), A2 prosto do Poznania — w domu ok. 18:30, z bagażnikiem pełnym wina, oliwy i pecorino. Dwa dni powrotu (682 + 892 km) to sportowe tempo, ale jutro, w niedzielę, czeka już tylko odpoczynek.",
       "web_research": [
         {
-          "topic": "Trasa Hof → Poznań",
-          "summary": "~547 km, ~5,5 h (OSRM) przez A9/A72 → A10 Berliner Ring → A12 → Świecko → A2. Bez winiet — sama Polska (A2, videotolling) i Niemcy (bezpłatne autostrady dla osobówek) na tym odcinku.",
+          "topic": "Trasa Fischbachau → Poznań",
+          "summary": "~892 km, ~8,8 h (OSRM) przez A8 München → A9 Nürnberg → A10 Berliner Ring → A12 → Świecko → A2. Bez winiet — tylko Niemcy (bezpłatne) i Polska (A2 videotolling).",
           "source": "https://www.autobahn.de/",
-          "checked": "2026-07"
+          "checked": "2026-09"
         },
         {
           "topic": "Opłaty A2 PL (Świecko–Konin) 2026",
@@ -3410,27 +3289,85 @@
       },
       "eta_timeline": [
         {
-          "time": "07:45",
-          "event": "Wyjazd z Hof (A9/A72 na północ)"
+          "time": "07:30",
+          "event": "Wyjazd z Fischbachau (A8 → München)"
         },
         {
           "time": "10:00",
-          "event": "Postój na lunch (Turyngia/Saksonia, A9)"
+          "event": "Nürnberg (A9) — krótki postój + tankowanie"
         },
         {
-          "time": "11:45",
-          "event": "Obwodnica Berlina (A10 ring, zjazd na A12 wschód)"
-        },
-        {
-          "time": "13:15",
-          "event": "Świecko — granica DE/PL (A12 → A2), videotolling"
+          "time": "12:30",
+          "event": "Lunch max 30 min (Frankenwald Ost, A9 km 254)"
         },
         {
           "time": "15:00",
+          "event": "Obwodnica Berlina (A10 ring, zjazd na A12 wschód)"
+        },
+        {
+          "time": "16:30",
+          "event": "Świecko — granica DE/PL (A12 → A2), videotolling"
+        },
+        {
+          "time": "18:30",
           "event": "Poznań — dom. Koniec podróży."
         }
       ],
-      "summary": "Ostatni, wyraźnie krótszy odcinek (~547 km, ok. 6,5 h): z Hof przez Berlin do przejścia granicznego w Świecku, a stąd do Poznania. Podział powrotu na 3 dni (Murlo→Telves→Hof→Poznań) zamienił jeden 917-kilometrowy maraton w dwa umiarkowane dni jazdy."
+      "summary": "Maraton powrotny (~892 km, ~9 h czystej jazdy): Fischbachau → München → Nürnberg → Berlin → Świecko → Poznań. Meta w domu 26.09 wieczorem; 27.09 zostaje dniem buforowym."
+    },
+    {
+      "date": "27.09 (nd)",
+      "day_num": 16,
+      "type": "buffer",
+      "label": "DZIEŃ BUFOROWY",
+      "title": "Dzień w domu (bufor po powrocie)",
+      "image": "poznan",
+      "drive_km": 0,
+      "drive_h": "—",
+      "base_id": null,
+      "route_points": [
+        {
+          "label": "Poznań — dom",
+          "coords": [
+            52.4066,
+            16.9252
+          ],
+          "kind": "home"
+        }
+      ],
+      "depart": "—",
+      "route": "—",
+      "route_segments": [],
+      "attractions": [],
+      "food": {
+        "place": "Dom",
+        "address": "Poznań",
+        "dishes": [],
+        "note": "Odpoczynek po dwóch dniach za kierownicą (682 + 892 km).",
+        "price": "—"
+      },
+      "accommodation": {
+        "place": "Dom — Poznań",
+        "note": "Meta osiągnięta 26.09 wieczorem. Niedziela wolna — odpoczynek po dwóch dniach za kierownicą.",
+        "price": "—"
+      },
+      "practical_tips": [
+        "Odpoczynek, pranie, rozpakowanie. Bufor na wypadek obsuwy powrotu (korki, awaria)."
+      ],
+      "parking": {
+        "destination": "Dom — Poznań",
+        "options": [],
+        "tip": "Koniec podróży."
+      },
+      "fuel_stops": [],
+      "narrative": "Niedziela w domu. Bez budzika, bez autostrady — dzień zapasowy, który tym razem nie musiał ratować planu.",
+      "web_research": [],
+      "opening_hours": {},
+      "eta_timeline": [],
+      "summary": "Dzień buforowy w domu po powrocie 26.09 (powrót skrócony do 2 dni: Murlo → Fischbachau → Poznań).",
+      "note": "Powrót skrócony do 2 dni — meta w Poznaniu 26.09 wieczorem. Niedziela 27.09 wolna: odpoczynek i bufor na wypadek obsuwy na trasie.",
+      "drive_limit_min": 0,
+      "daily_km_estimate": 0
     }
   ],
   "practical_info": {
@@ -3598,15 +3535,15 @@
   },
   "costs": {
     "persons": 5,
-    "note": "Szacunki dla grupy 5-osobowej. Noclegi w Bazie 1 i Bazie 2 to potwierdzone rezerwacje (kwoty rzeczywiste), reszta to szacunki. Paliwo na tranzyt Poznań↔Toskania nie jest uwzględnione (zależy od samochodu i podziału kosztów).",
+    "note": "Szacunki dla grupy 5-osobowej. Noclegi w Bazie 1, Bazie 2 i Fischbachau to potwierdzone rezerwacje (Fischbachau bez znanej jeszcze ceny), reszta to szacunki. Paliwo na tranzyt Poznań↔Toskania nie jest uwzględnione (zależy od samochodu i podziału kosztów).",
     "categories": [
       {
         "id": "accommodation",
         "name": "Noclegi",
         "icon": "🏨",
-        "per_person_min": 324,
-        "per_person_max": 356,
-        "note": "15 nocy: 1× Unterhaching (tam) + 5× Barga + 7× Murlo + 1× Telves + 1× Hof (powrót, 3 dni zamiast 2 — patrz notes/decyzje-otwarte.md). Baza 1, Baza 2 i Telves to potwierdzone rezerwacje (Telves bez znanej jeszcze ceny), reszta to szacunki.",
+        "per_person_min": 306,
+        "per_person_max": 326,
+        "note": "14 nocy: 1× Unterhaching (tam) + 5× Barga + 7× Murlo + 1× Fischbachau (powrót skrócony do 2 dni zamiast 3 — patrz notes/decyzje-otwarte.md). Baza 1, Baza 2 i Fischbachau to potwierdzone rezerwacje (Fischbachau bez znanej jeszcze ceny), reszta to szacunki.",
         "items": [
           {
             "label": "Unterhaching (Monachium) — 1 noc (tranzyt tam)",
@@ -3627,14 +3564,8 @@
             "per_person_max": 126
           },
           {
-            "label": "Telves (Racines) — 1 noc (tranzyt powrót)",
-            "detail": "POTWIERDZONA REZERWACJA (Maurerhof, 1 apartament) — cena do uzupełnienia, szacunek przybliżony",
-            "per_person_min": 18,
-            "per_person_max": 30
-          },
-          {
-            "label": "Hof (Saale) — 1 noc (tranzyt powrót)",
-            "detail": "€60–90/pokój (Dormero Hotel Hof / Brauereigasthof Falter), ~2 pokoje na 5 osób",
+            "label": "Fischbachau (Bawaria) — 1 noc (tranzyt powrót)",
+            "detail": "POTWIERDZONA REZERWACJA (Pension Oberwirt, 1 apartament) — cena do uzupełnienia, szacunek przybliżony",
             "per_person_min": 24,
             "per_person_max": 36
           }
@@ -3665,7 +3596,7 @@
         "items": [
           {
             "label": "Winieta Austria (2× 1-dniowa)",
-            "detail": "2× €9,60 = €19,20 / auto — na 13.09 i 26.09 (10-dniowa nie obejmuje powrotu; dojazd do Unterhaching 12.09 bezwinietowy) — asfinag.at",
+            "detail": "2× €9,60 = €19,20 / auto — na 13.09 i 25.09 (10-dniowa nie obejmuje powrotu; dojazd do Unterhaching 12.09 bezwinietowy) — asfinag.at",
             "per_person_min": 4,
             "per_person_max": 4
           },
@@ -3693,15 +3624,15 @@
         "id": "food",
         "name": "Jedzenie",
         "icon": "🍽️",
-        "per_person_min": 250,
-        "per_person_max": 375,
+        "per_person_min": 240,
+        "per_person_max": 360,
         "note": "Śniadania w bazie lub bar (~€4–6), lunch trattoria ~€14–20, kolacja ~€18–25",
         "items": [
           {
-            "label": "Dni tranzytowe — 5 dni (Autogrill, supermarket, bistro)",
+            "label": "Dni tranzytowe — 4 dni (Autogrill, supermarket, bistro)",
             "detail": "€10–15/os/dzień",
-            "per_person_min": 50,
-            "per_person_max": 75
+            "per_person_min": 40,
+            "per_person_max": 60
           },
           {
             "label": "Toskania — 10 dni (trattorie, osterie, ryneczki)",
@@ -3750,8 +3681,8 @@
             "per_person_max": 30
           },
           {
-            "label": "Piza + Lucca — pociąg + Krzywa Wieża + Torre Guinigi",
-            "detail": "Pociąg dolina→Lucca→Piza w obie strony ~€15/os; Krzywa Wieża €20/os (opcja); Torre Guinigi €8/os (opcja). Sam plac i mury — bezpłatne.",
+            "label": "Piza + Lucca + Viareggio — pociągi + Krzywa Wieża + Torre Guinigi",
+            "detail": "Trójkąt kolejowy Lucca→Piza→Viareggio→Lucca ~€10/os (3 odcinki Regionale po ~€3–3,50; osoby poniżej 30 lat −20% z Trenitalia X-GO). Krzywa Wieża €20/os (opcja, BEZ ulgi studenckiej); bilet łączony całego placu z Wieżą €27/os, bez Wieży ~€11/os. Torre Guinigi €8/os intero, €6,50 ridotto za legitymacją studencką (opcja). Mury Lukki, plac w Pizie i morze w Viareggio — bezpłatne.",
             "per_person_min": 15,
             "per_person_max": 43
           },
@@ -3764,10 +3695,10 @@
         ]
       }
     ],
-    "total_per_person_min": 719,
-    "total_per_person_max": 1004,
-    "total_group_min": 3595,
-    "total_group_max": 5020,
+    "total_per_person_min": 691,
+    "total_per_person_max": 959,
+    "total_group_min": 3455,
+    "total_group_max": 4795,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
@@ -3879,7 +3810,7 @@
           {
             "id": "winieta",
             "label": "Winiety Austria (2×) + Streckenmaut Brenner (2×) — kupić online",
-            "detail": "UWAGA: potrzebne DWIE winiety — 10-dniowa aktywowana 12/13.09 NIE obejmie powrotu 26.09 (rozpiętość podróży = 15 dni). Najtaniej: 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 26.09), razem €19,20. Dojazd do Unterhaching 12.09 nie wymaga winiety — Austria mijana dopiero 13.09. Kupić online na asfinag.at (e-winieta 1-dniowa ważna od razu). Kara za brak: €120 na miejscu.\n\nOsobno: Streckenmaut A13 Brenner — €12,50 za KAŻDY przejazd (13.09 i 26.09 → 2× = €25). Kupić na shop.asfinag.at → 'Section toll / Abschnittsmaut'. Zielony pas DIGITAL — bez zatrzymania. Łącznie Austria: €19,20 + €25,00 = €44,20 za auto.",
+            "detail": "UWAGA: potrzebne DWIE winiety — 10-dniowa aktywowana 12/13.09 NIE obejmie powrotu 25.09 (rozpiętość podróży = 15 dni). Najtaniej: 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 25.09), razem €19,20. Dojazd do Unterhaching 12.09 nie wymaga winiety — Austria mijana dopiero 13.09. Kupić online na asfinag.at (e-winieta 1-dniowa ważna od razu). Kara za brak: €120 na miejscu.\n\nOsobno: Streckenmaut A13 Brenner — €12,50 za KAŻDY przejazd (13.09 i 25.09 → 2× = €25). Kupić na shop.asfinag.at → 'Section toll / Abschnittsmaut'. Zielony pas DIGITAL — bez zatrzymania. Łącznie Austria: €19,20 + €25,00 = €44,20 za auto.",
             "deadline": "dzień przed przejazdem przez Austrię",
             "priority": "high",
             "url": "https://www.asfinag.at"
@@ -3928,10 +3859,10 @@
           },
           {
             "id": "noclegi-tranzyt",
-            "label": "Nocleg tranzytowy — Hof (26→27.09)",
-            "detail": "Unterhaching (tam) i Telves/Racines (powrót, 25→26.09) już POTWIERDZONE. Hof (Saale) na noc 26→27.09 wciąż do zarezerwowania — patrz kandydaci: Dormero Hotel Hof lub Brauereigasthof Falter.",
-            "deadline": "lipiec 2026 — zarezerwuj teraz!",
-            "priority": "medium"
+            "label": "Nocleg powrotny — Fischbachau (25→26.09) ✅ POTWIERDZONY",
+            "detail": "Pension Oberwirt, Birkensteinstr. 91, 83730 Fischbachau — 5 dorosłych, 1 apartament. Check-in SZTYWNO 15:00–18:00: przed wyjazdem ustal z gospodarzem godzinę przyjazdu (ETA ~17:00). Telves i Hof wypadają — powrót skrócony do 2 dni (26.09 maraton do Poznania).",
+            "deadline": "przed wyjazdem — potwierdź ETA z gospodarzem",
+            "priority": "high"
           },
           {
             "id": "siena-duomo",
@@ -3960,9 +3891,17 @@
           {
             "id": "krzywa-wieza",
             "label": "Rezerwacja Krzywej Wieży — Piza (15.09)",
-            "detail": "Wejście na Krzywą Wieżę tylko w slocie czasowym — kup online na opapisa.it z wyprzedzeniem (sloty otwierane ~20 dni naprzód, w sezonie znikają szybko). €20/os lub €27 combo z całą Piazza dei Miracoli. Bez tego wciąż zobaczysz plac, katedrę i zdjęcia z zewnątrz.",
+            "detail": "Wejście na Krzywą Wieżę tylko w slocie czasowym — kup online na opapisa.it z wyprzedzeniem (sloty otwierane ~20 dni naprzód, w sezonie znikają szybko). Bierz slot ok. 15:00: harmonogram dnia zakłada zejście z placu o 17:00, żeby zdążyć na pociąg do Viareggio na zachód słońca. €20/os lub €27 combo z całą Piazza dei Miracoli — UWAGA: żadnej ulgi studenckiej ani młodzieżowej, wszyscy płacą tyle samo. Bez wieży wciąż zobaczysz plac, katedrę i zdjęcia z zewnątrz.",
             "deadline": "gdy otworzą slot ~20 dni przed 15.09",
             "priority": "medium",
+            "day_num": 4
+          },
+          {
+            "id": "trenitalia-xgo",
+            "label": "Rejestracja Trenitalia X-GO — 20% na Regionale dla osób poniżej 30 lat",
+            "detail": "Darmowa rejestracja w programie X-GO (aplikacja lub trenitalia.com) daje „Promo Young X-GO”: 20% zniżki na bilety Regionale dla podróżnych poniżej 30 lat, ważne do 30.11.2026. Dotyczy trójki z grupy. Haczyk: bilet trzeba kupić najpóźniej do 23:59 dnia poprzedzającego podróż, pula miejsc na pociąg jest ograniczona, promocja nie łączy się z innymi i nie podlega zwrotowi. Realny zysk: ~€2/os na trójkącie Lucca–Piza–Viareggio (15.09) i ~€4/os na przejeździe Siena↔Florencja (23.09).",
+            "deadline": "przed wyjazdem; bilety kupować dzień wcześniej",
+            "priority": "low",
             "day_num": 4
           },
           {

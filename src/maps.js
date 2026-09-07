@@ -5,14 +5,15 @@ import { esc } from './html.js';
  * Używa globalnego L (Leaflet ładowany z CDN w index.html)
  */
 
-const OSM_ATTR   = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-const CARTO_ATTR = '© <a href="https://carto.com/attributions">CARTO</a>, ' + OSM_ATTR;
+const OSM_ATTR = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-const VOYAGER_TILE = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-const DARK_TILE    = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+/** OSM.de — no API key. Dark theme is CSS invert on `.leaflet-tile-pane`. */
+const OSM_TILE = 'https://tile.openstreetmap.de/{z}/{x}/{y}.png';
+const OSM_TILE_OPTS = { attribution: OSM_ATTR, maxZoom: 19 };
 
-function isDarkMode() { return document.documentElement.classList.contains('dark'); }
-function activeTileUrl() { return isDarkMode() ? DARK_TILE : VOYAGER_TILE; }
+function addBasemap(map) {
+  return window.L.tileLayer(OSM_TILE, OSM_TILE_OPTS).addTo(map);
+}
 
 // Registry of active Leaflet map instances — rebuilt on every mount
 const _maps = [];
@@ -41,16 +42,8 @@ function registerMap(entry) {
   return entry;
 }
 
-/** Call after toggling html.dark to swap tile layers on all initialised maps */
-export function swapMapTiles() {
-  const tileUrl = activeTileUrl();
-  _maps.forEach(({ map }) => {
-    map.eachLayer(layer => {
-      if (layer instanceof window.L.TileLayer) map.removeLayer(layer);
-    });
-    window.L.tileLayer(tileUrl, { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
-  });
-}
+/** Theme toggle hook — dark basemap is CSS on `.leaflet-tile-pane`, no reload. */
+export function swapMapTiles() {}
 
 const ICON_COLORS = {
   home: '#5c6b45',
@@ -137,7 +130,7 @@ export function initDayMap(containerId, base, attractions, destBase) {
   if (!el) return;
 
   const map = window.L.map(el, { zoomControl: false, scrollWheelZoom: false });
-  window.L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  addBasemap(map);
   registerMap({ map, type: 'day' });
 
   const latLngs = [];
@@ -231,7 +224,7 @@ export function initTransitDayMap(containerId, points) {
   if (!pts.length) return;
 
   const map = window.L.map(el, { zoomControl: false, scrollWheelZoom: false });
-  window.L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  addBasemap(map);
   registerMap({ map, type: 'day' });
 
   const latLngs = pts.map((p) => p.coords);
@@ -304,7 +297,7 @@ export function initBaseMaps(plan) {
     );
 
     const map = L.map(el, { zoomControl: false, scrollWheelZoom: false, attributionControl: false });
-    L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+    addBasemap(map);
     registerMap({ map, type: 'base' });
 
     const pts = [];
@@ -376,7 +369,7 @@ export function initInteractiveMap(containerId, plan) {
   const panel = document.getElementById('imap-panel');
 
   const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, tap: false });
-  L.tileLayer(activeTileUrl(), { attribution: CARTO_ATTR, maxZoom: 18, subdomains: 'abcd' }).addTo(map);
+  addBasemap(map);
   const entry = registerMap({ map, type: 'interactive' });
 
   const mapDays = (plan.days || []).filter(d =>

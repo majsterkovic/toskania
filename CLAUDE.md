@@ -2,7 +2,7 @@
 
 Statyczna strona (Vite + Leaflet) prezentująca plan wycieczki samochodowej grupy 5-osobowej po Toskanii, 12–27.09.2026. Dane trasy/dni/atrakcji żyją w `trip.json` (`schema_version: 1`). Knoby silnika (rozmiary obrazków, aliasy plików) w `trip.config.js`. Import treści wyłącznie przez `src/trip.js` — nigdy bezpośrednio z JSON. Renderowane przez `src/render.js` do `#app`.
 
-**Decyzja: wariant 2-bazowy (Barga/Garfagnana → Chianti/Castelnuovo Berardenga) jest jedynym prezentowanym planem.** `plan.json` (stary wariant 3-bazowy) nie jest już importowany ani przełączalny na stronie — historia w git, nie w UI.
+**Decyzja: wariant 2-bazowy (Barga/Garfagnana → Val di Merse/Murlo) jest jedynym planem.** Stary wariant 3-bazowy (`plan.json`) oraz powiązane z nim skrypty pomocnicze zostały usunięte z repozytorium — historia pozostaje w git.
 
 ## `notes/` — baza referencyjna (nie część strony)
 

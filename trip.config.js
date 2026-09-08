@@ -9,6 +9,5 @@ export default {
     'images/radda.jpg': 'images/radda-chianti.jpg',
     'images/monte-oliveto.jpg': 'images/monte-oliveto-maggiore.jpg',
     'images/asciano.jpg': 'images/asciano-crete.jpg',
-    'images/lamone.jpg': 'images/selva-del-lamone.jpg',
   },
 };

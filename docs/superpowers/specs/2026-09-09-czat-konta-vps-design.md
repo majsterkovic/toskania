@@ -59,6 +59,12 @@ grupy nie ma żadnej drogi do tej wiedzy.
 | D8 | Model główny **płatny i tani**, darmowy jako fallback | `docs/08-routing-llm.md` w `vps-as-a-code`: małe/darmowe modele gubią format function-calling i agent się zacina. Nasz czat jest łańcuchem narzędziowym, więc to najgorsze miejsce na oszczędność. Przy limitach per osoba sufit kosztu jest twardy. |
 | D9 | Wzorzec deployu **`karpacz`/`gieldowo`**, nie Caddy | Spec z 06.09 zakładał Caddy + rsync + symlink release'ów. Realna infrastruktura to Cloudflare Tunnel (TLS terminuje Cloudflare), obraz w GHCR i `docker compose` sterowany z repo `infra`. Caddy byłby trzecim frontem przed dwoma istniejącymi. |
 
+> **Aktualizacja 2026-09-09:** D8 uznane za nieaktualne, nadpisane decyzją D1
+> w `2026-09-09-czat-agent-router-writer-design.md` — czat toskanii zostaje
+> na modelach free-only (glimmer primary / gemma fallback), nie płatny
+> primary. Uzasadnienie i pełny kontekst dryfu wobec produkcji: patrz ten
+> dokument, sekcja "Kontekst: dryf między D8 a produkcją".
+
 **Odrzucone warianty logowania** (D5), żeby nie wracały:
 
 - *Konta na sztywno w repo* — `majsterkovic/toskania` jest **publiczne**, a dodatkowo

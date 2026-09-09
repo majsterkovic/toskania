@@ -1,0 +1,46 @@
+# Wlasny stos toskania -- wzorem gieldowo/kwatermistrz (github.com/majsterkovic/
+# kwatermistrz/docker-compose.yml), NIE serwis wewnatrz `infra`. `infra` daje
+# tylko wspolna siec `edge` (przez ktora dogadac sie musi cloudflared) i
+# encrypted sekrety w swoim repo (secrets.toskania.enc.yaml) -- poza tym ten
+# projekt compose jest w pelni samodzielny, wlaczajac wlasny deploy.yml,
+# ktory buduje obraz i odrazu go tu wdraza.
+#
+# Repo toskania jest PUBLICZNE, wiec w odroznieniu od kwatermistrza obraz
+# ciagniemy z GHCR bez logowania (wzorem karpacz) -- deploy.yml nie robi
+# `docker login` przed `docker compose pull`.
+#
+# IMAGE_TAG wstrzykiwany przez deploy.yml jako zmienna srodowiskowa powloki
+# (sha-<commit>, nie `:latest` -- kazdy deploy dostaje unikalny tag, wiec
+# `docker compose up -d` sam wykrywa zmiane obrazu i podmienia kontener,
+# bez potrzeby `--force-recreate`) -- domyslny fallback `:latest` istnieje
+# wylacznie dla recznego `docker compose up` na tej maszynie, bez CI.
+services:
+  toskania:
+    image: ghcr.io/majsterkovic/toskania:${IMAGE_TAG:-latest}
+    container_name: toskania
+    restart: unless-stopped
+    mem_limit: 256m
+    networks:
+      - edge
+    environment:
+      # Wstrzykiwane przez `sops exec-env` w deploy.yml
+      # (secrets.toskania.enc.yaml z repo `infra` -- ZERO kopii sekretow
+      # w tym repo, patrz komentarz w deploy.yml).
+      - CHAT_MODEL=${TOSKANIA_CHAT_MODEL}
+      - CHAT_MODEL_FALLBACK=${TOSKANIA_CHAT_MODEL_FALLBACK}
+      - LITELLM_BASE_URL=http://litellm:4000/v1
+      - LITELLM_API_KEY=${TOSKANIA_LITELLM_KEY}
+      - SESSION_SECRET=${TOSKANIA_SESSION_SECRET}
+      - CHAT_PASSPHRASE=${TOSKANIA_CHAT_PASSPHRASE}
+      - DAILY_TOKEN_BUDGET_PER_USER=${TOSKANIA_BUDGET_PER_USER}
+      - DAILY_TOKEN_BUDGET_GLOBAL=${TOSKANIA_BUDGET_GLOBAL}
+    volumes:
+      # Baza SQLite (uzytkownicy, sesje, wiadomosci, limity) -- musi przetrwac
+      # redeploy kontenera. Sciezka bezwzgledna, poza checkoutem repo na VPS
+      # (/home/docker-deploy/toskania), zeby `git reset --hard` w deploy.yml
+      # nigdy jej nie dotknal.
+      - /home/docker-deploy/toskania-data:/data
+
+networks:
+  edge:
+    external: true

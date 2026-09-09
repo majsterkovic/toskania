@@ -10,10 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,9 +25,17 @@ jobs:
         with:
           path: dist
 
+  # `concurrency` przeniesione tu z gory pliku (wczesniej na poziomie calego
+  # workflow) -- odkad doszly joby `image`/`deploy-vps`, top-level grupa
+  # "pages" objelaby tez SSH-deploy na VPS: kolejny szybki push przerwalby
+  # `docker compose up` w polowie (`cancel-in-progress: true`). Pages i
+  # VPS dostaja teraz osobne grupy.
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -39,6 +43,22 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
 
+  # Pull-based, self-contained deploy -- wzorem gieldowo/kwatermistrz
+  # (github.com/majsterkovic/kwatermistrz/.github/workflows/deploy.yml):
+  # jeden job buduje obraz i go od razu wdraza przez SSH, w tym samym
+  # uruchomieniu, wiec efemeryczny `secrets.GITHUB_TOKEN` starcza do
+  # zalogowania sie do GHCR na push -- ZERO recznie tworzonego PAT-a.
+  #
+  # Poprzednia wersja tego joba konczyla sie `gh workflow run deploy.yml
+  # --repo majsterkovic/infra` z sekretem INFRA_DEPLOY_PAT, ktorego nikt
+  # recznie nie zalozyl (`gh secret list` pokazywal pusto) -- krok padal
+  # z "set the GH_TOKEN environment variable", a nowy obraz czekal w GHCR
+  # bez wdrozenia. Zastapione tym plikiem 2026-09-09.
+  #
+  # `infra` (osobne repo) daje tylko: wspolna siec `edge` (zeby cloudflared
+  # dosiegnal ten kontener) i encrypted sekrety (secrets.toskania.enc.yaml)
+  # -- ten workflow czyta je z checkoutu `infra` juz obecnego na VPS pod
+  # /home/docker-deploy/infra.
   image:
     runs-on: ubuntu-latest
     permissions:
@@ -46,6 +66,12 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
       - uses: docker/setup-buildx-action@v3
       - uses: docker/login-action@v3
         with:
@@ -59,7 +85,82 @@ jobs:
           tags: |
             ghcr.io/majsterkovic/toskania:latest
             ghcr.io/majsterkovic/toskania:sha-${{ github.sha }}
-      - name: Trigger infra deploy
+
+  deploy-vps:
+    name: Deploy to VPS
+    needs: image
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-toskania-vps
+      cancel-in-progress: false
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
         env:
-          GH_TOKEN: ${{ secrets.INFRA_DEPLOY_PAT }}
-        run: gh workflow run deploy.yml --repo majsterkovic/infra
+          IMAGE_TAG: sha-${{ github.sha }}
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22022
+          envs: IMAGE_TAG
+          script: |
+            set -euo pipefail
+            INFRA_DIR=/home/docker-deploy/infra
+            APP_DIR=/home/docker-deploy/toskania
+            # Hardkodowane, NIE zmienna z gory pliku -- ten skrypt biegnie
+            # przez SSH na VPS, a `envs:` powyzej przepuszcza tylko IMAGE_TAG.
+            IMAGE=ghcr.io/majsterkovic/toskania
+
+            # Checkout tego repo na VPS -- osobny od ~/repos/toskania (ktory
+            # infra/deploy.yml moze klonowac dla wiedzy Hermesa); tu compose
+            # faktycznie odpala kontener. Repo publiczne -- zwykly `git clone`
+            # bez zadnego tokenu.
+            if [ ! -d "$APP_DIR/.git" ]; then
+              git clone https://github.com/majsterkovic/toskania.git "$APP_DIR"
+            fi
+            cd "$APP_DIR"
+            git fetch origin
+            git reset --hard origin/main
+
+            # Stan trwaly (SQLite: uzytkownicy, sesje, wiadomosci) -- zyje
+            # poza repo, docker stworzylby go jako root przy pierwszym
+            # bind-mouncie inaczej.
+            mkdir -p ~/toskania-data
+
+            # Migracja jednorazowa: kontener `toskania` mogl juz istniec z
+            # POPRZEDNIEGO projektu compose (serwis wewnatrz `infra`, przed
+            # 2026-09-09). `container_name: toskania` w obu projektach
+            # wskazuje ta sama nazwe -- Docker odmowi utworzenia drugiego
+            # kontenera pod zajeta nazwa, jesli ten istniejacy nie nalezy do
+            # TEGO projektu compose (etykieta com.docker.compose.project).
+            # Usuwamy go tylko wtedy, gdy faktycznie nalezy do innego/braku
+            # projektu -- bezpieczne do uruchamiania przy kazdym kolejnym
+            # deployu (po pierwszym razie warunek juz nigdy nie zajdzie).
+            if docker inspect toskania >/dev/null 2>&1; then
+              OWNER=$(docker inspect -f '{{ index .Config.Labels "com.docker.compose.project" }}' toskania 2>/dev/null || true)
+              if [ "$OWNER" != "toskania" ]; then
+                echo "usuwam kontener toskania z poprzedniego projektu compose (${OWNER:-brak etykiety})"
+                docker rm -f toskania
+              fi
+            fi
+
+            export IMAGE_TAG
+            # Obraz publiczny -- pull bez `docker login`, wzorem karpacz.
+            sops exec-env "$INFRA_DIR/secrets.toskania.enc.yaml" \
+              'docker compose pull --quiet && docker compose up -d --remove-orphans'
+
+            docker image prune -f
+
+            # Retencja obrazow sha-* -- ten repo taguje per-commit (obok
+            # `:latest`), wiec bez tego kroku kazdy deploy zostawialby stary
+            # obraz na zawsze (wzorem gieldowo/kwatermistrz).
+            KEEP=3
+            docker images --format '{{.CreatedAt}}\t{{.Repository}}:{{.Tag}}' \
+              | grep -F "${IMAGE}:sha-" \
+              | sort -r \
+              | tail -n +$((KEEP + 1)) \
+              | cut -f2 \
+              | while read -r IMG; do
+                  docker rmi "$IMG" >/dev/null 2>&1 && echo "usunieto stary obraz: $IMG" || true
+                done

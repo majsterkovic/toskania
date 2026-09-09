@@ -249,6 +249,7 @@ function renderAccommodation(acc) {
       <h4 class="block-label">Nocleg</h4>
       <p><strong>${esc(acc.place)}</strong></p>
       ${acc.note ? `<p>${esc(acc.note)}</p>` : ''}
+      ${acc.local_shop ? `<p class="acc-shop">🥩 <strong>Sklep w okolicy (~10 min autem):</strong> ${esc(acc.local_shop)}</p>` : ''}
       ${acc.booking_tip ? `<p class="muted">${esc(acc.booking_tip)}</p>` : ''}
       ${acc.price ? `<p class="price">${esc(acc.price)}</p>` : ''}
       ${acc.gps_hint ? `<p class="food-gps muted">📍 ${esc(acc.gps_hint)}</p>` : ''}
@@ -268,9 +269,11 @@ function renderAttractions(attractions, images) {
       const placeImg = resolvePlaceImage(images, imgKey);
       const thumb = placeImg ? renderImg(placeImg, 'attraction-thumb') : '';
       const ticketPrice = a.entry_fee || a.ticket_price;
+      const bookingUrl = a.url || a.booking_url;
       const metaItems = [
         a.opening_hours ? `🕐 ${esc(a.opening_hours)}` : '',
         ticketPrice ? `🎟 ${esc(ticketPrice)}` : '',
+        bookingUrl ? `↗ <a href="${esc(bookingUrl)}" target="_blank" rel="noopener noreferrer" class="attraction-link">Rezerwacja online</a>` : '',
         a.parking_price ? `🅿 ${esc(a.parking_price)}` : '',
         a.duration_h ? `⏱ ok. ${a.duration_h}h` : '',
         a.gps_hint ? `📍 ${esc(a.gps_hint)}` : '',
@@ -836,14 +839,34 @@ export function bookingsByDay(todo) {
   return map;
 }
 
+const SHORT_BOOKING_NAMES = {
+  'grotta-vento': 'Grotta del Vento',
+  'krzywa-wieza': 'Krzywa Wieża',
+  'duomo-firenze': 'Kopuła Duomo',
+  'uffizi-firenze': 'Galeria Uffizi',
+  'siena-duomo': 'Siena Duomo',
+  'brolio-wino': 'Castello di Brolio',
+  'badia-coltibuono': 'Badia a Coltibuono',
+  'trenitalia-xgo': 'Trenitalia X-GO',
+};
+
 function timelineMarkers(day, bookings) {
   const marks = [];
+  const req = (bookings || []).filter((b) => b.group === 'required');
+  const opt = (bookings || []).filter((b) => b.group !== 'required');
+
+  if (req.length) {
+    const names = req.map((b) => SHORT_BOOKING_NAMES[b.id] || b.label).join(', ');
+    const titleText = req.map((b) => b.label).join(' · ');
+    marks.push(`<span class="tl-mark tl-mark--booking-required" title="${esc(titleText)}">🔴 Rezerwacja: <strong>${esc(names)}</strong></span>`);
+  }
+  if (opt.length) {
+    const names = opt.map((b) => SHORT_BOOKING_NAMES[b.id] || b.label).join(', ');
+    const titleText = opt.map((b) => b.label).join(' · ');
+    marks.push(`<span class="tl-mark tl-mark--booking-opt" title="${esc(titleText)}">📅 Rezerwacja: ${esc(names)}</span>`);
+  }
   if (/popular$/.test(day.type)) {
     marks.push('<span class="tl-mark tl-mark--crowd" title="Popularne / spodziewane tłumy">★ tłumy</span>');
-  }
-  if (bookings?.length) {
-    const titleText = bookings.map((b) => b.label).join(' · ');
-    marks.push(`<span class="tl-mark tl-mark--booking" title="${esc(titleText)}">● rezerwacja</span>`);
   }
   let drive = '';
   if (day.type === 'transit' && day.drive_h) drive = day.drive_h;
@@ -865,11 +888,26 @@ function timelineRow(day, bookings) {
         </span>
       </div>`;
   }
+  const reqBookings = (bookings || []).filter((b) => b.group === 'required');
+  const hasReqBooking = reqBookings.length > 0;
+  const reqLabels = reqBookings.map((b) => SHORT_BOOKING_NAMES[b.id] || b.label).join(', ');
+  const titleBadge = hasReqBooking
+    ? `<span class="tl-badge tl-badge--booking-required" title="Wymagana rezerwacja z wyprzedzeniem: ${esc(reqLabels)}">🔴 REZERWACJA</span>`
+    : '';
+  const rowClasses = [
+    'tl-row',
+    'reveal',
+    hasReqBooking ? 'tl-row--booking-required' : '',
+  ].filter(Boolean).join(' ');
+
   return `
-    <a class="tl-row reveal" href="#/dzien-${day.day_num}" style="--accent: ${dayAccent(day)}">
+    <a class="${rowClasses}" href="#/dzien-${day.day_num}" style="--accent: ${dayAccent(day)}">
       ${dateHtml}
       <span class="tl-row__main">
-        <span class="tl-row__title">${esc(day.title)}</span>
+        <span class="tl-row__head">
+          <span class="tl-row__title">${esc(day.title)}</span>
+          ${titleBadge}
+        </span>
         ${day.summary ? `<span class="tl-row__desc">${esc(trimText(day.summary, 155))}</span>` : ''}
         <span class="tl-row__markers">${timelineMarkers(day, bookings)}</span>
       </span>
@@ -904,6 +942,7 @@ function renderBaseInfo(base) {
       <h3 class="tl-baseinfo__name">${esc(base.name)}</h3>
       ${base.nights ? `<p class="tl-baseinfo__nights">${esc(base.nights)}</p>` : ''}
       ${base.accommodation ? `<p class="tl-baseinfo__acc"><strong>Nocleg:</strong> ${esc(base.accommodation)}</p>` : ''}
+      ${base.local_shop ? `<p class="tl-baseinfo__acc">🥩 <strong>Sklep w okolicy (~10 min autem):</strong> ${esc(base.local_shop)}</p>` : ''}
       ${base.booking_tip ? `<p class="tl-baseinfo__tip">→ ${esc(base.booking_tip)}</p>` : ''}
       ${base.gps_hint ? `<p class="tl-baseinfo__gps muted">📍 ${esc(base.gps_hint)}</p>` : ''}
     </div>`;
@@ -974,11 +1013,17 @@ export function renderDayPage(day, images, bases, days, todo, meta) {
     : '';
   const warning = day.warning ? `<div class="day-warning">${esc(day.warning)}</div>` : '';
   const dayBookings = bookingsByDay(todo)[day.day_num];
+  const hasReqBooking = dayBookings?.some((b) => b.group === 'required');
   const bookingBanner = dayBookings?.length
-    ? `<div class="day-booking">
-        <span class="day-booking__icon">●</span>
+    ? `<div class="day-booking${hasReqBooking ? ' day-booking--required' : ''}">
+        <span class="day-booking__icon">${hasReqBooking ? '🔴' : '●'}</span>
         <ul class="day-booking__list">
-          ${dayBookings.map((b) => `<li><strong>${esc(b.label)}</strong>${b.deadline ? ` — ${esc(b.deadline)}` : ''}</li>`).join('')}
+          ${dayBookings
+            .map(
+              (b) =>
+                `<li>${b.group === 'required' ? '<span class="day-booking__badge">WYMAGANA REZERWACJA</span> ' : ''}<strong>${esc(b.label)}</strong>${b.deadline ? ` — ${esc(b.deadline)}` : ''}${b.url ? ` · <a class="day-booking__link" href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">↗ rezerwuj online</a>` : ''}</li>`
+            )
+            .join('')}
         </ul>
       </div>`
     : '';

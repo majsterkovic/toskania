@@ -105,3 +105,29 @@ body.short-page {
 @media (max-width: 600px) {
   .short-header__title { font-size: 1.5rem; }
 }
+
+.short-day--booking-required {
+  border-left-color: #dc2626 !important;
+  background: rgba(220, 38, 38, 0.025);
+}
+.short-booking-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  background: #dc2626;
+  color: #ffffff;
+  margin-left: auto;
+  box-shadow: 0 1px 3px rgba(220, 38, 38, 0.35);
+}
+html.dark .short-day--booking-required {
+  background: rgba(239, 68, 68, 0.06);
+  border-left-color: #ef4444 !important;
+}
+html.dark .short-booking-badge {
+  background: #ef4444;
+}

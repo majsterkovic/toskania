@@ -1,5 +1,6 @@
 import { trip as plan } from './trip.js';
 import { renderSiteNav, renderSiteFooter, initChrome } from './site.js';
+import { bookingsByDay } from './render.js';
 import { applyStoredTheme } from './theme.js';
 import { esc } from './html.js';
 import './styles/base.css';
@@ -16,19 +17,25 @@ const TYPE_LABELS = {
   buffer: 'Bufor',
 };
 
-function dayItem(day) {
+function dayItem(day, bookings) {
   const isBuffer = day.day_num == null;
   const typeLabel = TYPE_LABELS[day.type] || day.type;
   const dayBadge = isBuffer ? '' : `<span class="short-day__num">D${day.day_num}</span>`;
   const baseLabel = day.base_label
     ? `<span class="short-day__base">${esc(day.base_label)}</span>`
     : '';
+  const dayB = day.day_num != null && bookings ? bookings[day.day_num] : null;
+  const hasReq = dayB?.some((b) => b.group === 'required');
+  const reqBadge = hasReq
+    ? `<span class="short-booking-badge">🔴 Wymagana rezerwacja</span>`
+    : '';
   return `
-    <li class="short-day short-day--${esc(day.type)}">
+    <li class="short-day short-day--${esc(day.type)}${hasReq ? ' short-day--booking-required' : ''}">
       <div class="short-day__meta">
         ${dayBadge}
         <span class="short-day__date">${esc(day.date)}</span>
         <span class="short-day__type">${esc(typeLabel)}</span>
+        ${reqBadge}
       </div>
       <h2 class="short-day__title">${esc(day.title)}</h2>
       ${baseLabel}
@@ -41,7 +48,8 @@ function render(plan) {
   const app = document.getElementById('app');
   const title = plan.meta.title;
   const subtitle = plan.meta?.subtitle || '';
-  const rows = (plan.days || []).map(dayItem).join('');
+  const bookings = bookingsByDay(plan.todo);
+  const rows = (plan.days || []).map((d) => dayItem(d, bookings)).join('');
 
   app.innerHTML =
     renderSiteNav(plan, 'short') +

@@ -147,7 +147,7 @@ export function initDayMap(containerId, base, attractions, destBase) {
   atts.forEach(a => {
     latLngs.push(a.coords);
     window.L.marker(a.coords, { icon: makeIcon(a.type === 'nature' ? 'nature' : 'attraction') })
-      .bindPopup(`<strong>${esc(a.name)}</strong>${a.drive_min ? `<br><em>${a.drive_min} min od bazy</em>` : ''}`, { maxWidth: 180 })
+      .bindPopup(`<strong>${esc(a.name)}</strong>${a.drive_min ? `<br><em>${a.drive_min} min od bazy</em>` : ''}${a.url ? `<br><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer" style="color:#c85a32;font-size:0.8rem">↗ Rezerwacja online</a>` : ''}`, { maxWidth: 180 })
       .addTo(map);
   });
 
@@ -677,12 +677,14 @@ function buildPopup(att, day, num) {
   const typeLabel = TYPE_LABEL[att.type] || att.type || '';
   const numBadge = num != null ? `<span style="display:inline-block;background:${TYPE_COLOR[att.type]||'#9a8f82'};color:#fff;border-radius:50%;width:18px;height:18px;text-align:center;line-height:18px;font-size:0.72rem;font-weight:700;margin-right:4px">${num}</span>` : '';
   const mode = att.drive_min > 0 ? `🚗 ${att.drive_min} min od bazy` : '🚶 pieszo od bazy';
+  const bookingLink = att.url ? `<div style="margin-top:6px"><a href="${esc(att.url)}" target="_blank" rel="noopener noreferrer" style="color:#c85a32;text-decoration:underline;font-size:0.78rem">↗ Rezerwacja online</a></div>` : '';
   return `
     <div style="font-family:'Outfit',sans-serif;font-size:0.82rem;min-width:170px">
       <div style="font-weight:600;font-size:0.9rem;margin-bottom:3px">${numBadge}${esc(att.name)}</div>
       <div style="color:#6b6258;margin-bottom:3px">Dzień ${day.day_num} · ${esc(typeLabel)}</div>
       <div style="color:#9a8f82;font-size:0.78rem;margin-bottom:4px">${mode}</div>
       ${att.description ? `<div style="color:#2a2420;line-height:1.4">${esc(att.description.slice(0, 130))}${att.description.length > 130 ? '…' : ''}</div>` : ''}
+      ${bookingLink}
     </div>`;
 }
 

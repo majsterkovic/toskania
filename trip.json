@@ -392,6 +392,7 @@
       "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3.",
       "color": "emerald",
       "accommodation": "POTWIERDZONA REZERWACJA — Casa vacanze Rosa, Via Nazionale 29, Ponte all'Ania, 55051 Barga LU. Doskonała lokalizacja (9/10, 5 opinii gości). ~3 min (2 km) od stacji kolejowej Fornaci di Barga, ~6 min od centrum Bargi.",
+      "local_shop": "Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga, tel. 0583 723112) — tradycyjny sklep z wędlinami i specjałami. Co warto kupić i zjeść: wyroby z czarnej świni (maiale nero / cinta senese), pecorino, dojrzewającą pancettę oraz toskański miód kasztanowy.",
       "booking_tip": "Zarezerwowane — bez dalszych działań. Lokalizacja bardzo dobrze skomunikowana z całym blokiem Bargi (patrz czasy dojazdu w poszczególnych dniach).",
       "gps_hint": "Naviguj: Via Nazionale 29, Ponte all'Ania, 55051 Barga LU (coords 44.0398411, 10.4932228)",
       "coords": [
@@ -680,6 +681,7 @@
       "accommodation": {
         "place": "BAZA 1 — Casa vacanze Rosa (Ponte all'Ania, Barga)",
         "note": "POTWIERDZONA REZERWACJA — Via Nazionale 29, Ponte all'Ania, 55051 Barga LU. Przyjazd ok. 15:00–15:30. Doskonała lokalizacja (9/10, 5 opinii gości), ~3 min (2 km) od stacji kolejowej Fornaci di Barga.",
+        "local_shop": "Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga, tel. 0583 723112) — tradycyjny rzeźnik i delikatesy Garfagnany. Co warto kupić i zjeść: wyroby z czarnej świni (cinta senese / maiale nero), lokalne pecorino, dojrzewającą pancettę oraz toskański miód kasztanowy.",
         "price": "€688,75 razem za 5 nocy / 5 osób (potwierdzona rezerwacja)",
         "booking_tip": "Zarezerwowane — bez dalszych działań.",
         "gps_hint": "Naviguj: Via Nazionale 29, Ponte all'Ania, 55051 Barga LU (coords 44.0398411, 10.4932228)"
@@ -811,6 +813,12 @@
           "topic": "Casa vacanze Rosa (Ponte all'Ania) — BAZA 1",
           "summary": "Ponte all'Ania = frazione Fornaci di Barga, tuż przy SR445 nad Serchio, ~3 min/2 km od stacji kolejowej Fornaci di Barga, ~6 min od centrum Bargi. Doskonała lokalizacja wg gości (9/10, 5 opinii). POTWIERDZONA REZERWACJA.",
           "source": "https://www.booking.com",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Sklep mięsno-wędliniarski: Macelleria Angelini (Barga)",
+          "summary": "10 min autem z bazy: Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, 55051 Barga LU, tel. 0583 723112). Historyczny rzeźnik i delikatesy Garfagnany. Co kupić i zjeść: wyroby z czarnej świni (cinta senese / maiale nero), pecorino, pancetta, lokalny miód kasztanowy. Czynne pn–sb 8:00–13:00 i 16:00–19:00 (śr popołudniu i nd zamknięte).",
+          "source": "https://www.giornaledibarga.it",
           "checked": "2026-07"
         }
       ],
@@ -957,8 +965,9 @@
             10.3576
           ],
           "duration_h": 1.5,
-          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Bilety: tour 1h €11, 2h €16, 3h €24. Rezerwacja obowiązkowa: grottadelvento.com",
-          "entry_fee": "Tour 1h: €11 | 2h: €16 | 3h: €24 — rezerwacja: grottadelvento.com"
+          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Bilety: tour 1h €11, 2h €16, 3h €24. Rezerwacja: grottadelvento.com/book-now/",
+          "entry_fee": "Tour 1h: €11 | 2h: €16 | 3h: €24 — rezerwacja: grottadelvento.com/book-now/",
+          "url": "https://grottadelvento.com/book-now/"
         }
       ],
       "oak_forest": {
@@ -980,15 +989,28 @@
       },
       "practical_tips": [
         "Rano 8:00: Duomo (1 h) → Treppignana–Ciocco (1–1,5 h) — popołudnie Grotta del Vento",
-        "Grotta: zarezerwuj Itinerario 2 (2 h, €18) na 15:00 — kurtka obowiązkowa (~10°C)"
+        "Grotta: zarezerwuj Itinerario 2 (2 h, €18) na 15:00 — kurtka obowiązkowa (~10°C). Rezerwacja online: grottadelvento.com/book-now/",
+        "Zakupy lokalne (~10 min od noclegu): Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga) — wyroby z czarnej świni, pecorino, pancetta i toskański miód kasztanowy (czynne 8:00–13:00 i 16:00–19:00, śr po południu i nd zamkn.)"
       ],
       "narrative": "Zaczynamy pieszo w Bardze — baza jest ok. 6 minut stąd, więc bez pośpiechu parkujemy przy Porta Reale i idziemy pod górę kamiennymi uliczkami, jeszcze chłodnymi o poranku. Wchodzimy do Duomo di San Cristoforo — romański kościół z XI wieku, gdzie moneta €2 włącza oświetlenie i nagle ożywa marmurowy pulpit Guido Bigarellego z ok. 1240 roku, misternie rzeźbiony w lwy i sceny biblijne. Zaraz obok taras Giardino del Balcone — stąd Barga naprawdę zasługuje na miano kamiennego balkonu: w dole dolina Serchio, na horyzoncie poszarpana linia Alp Apuańskich, jeszcze lekko spowita porannym oparem. Spacer Corso Garibaldi to czysta przyjemność — witryna z pecorino, stragan z miodem, gdzieś pachnie świeżo palona kawa. Ok. 12:30 lunch w Osteria Il Borgo dei Sapori (Via Borgo 1) — pappardelle al cinghiale, necci z ricottą. Po lunchu zmiana rytmu: 15 minut jazdy do Treppignany, gdzie zaczyna się 3,2-kilometrowy szlak przez las dębów bezszypułkowych i starych kasztanowców nad doliną Serchio — cień, szum liści, 1–1,5 godziny spokojnego marszu. Stamtąd dalej do Fornovolasco, gdzie czeka Grotta del Vento — tour o 16:00 (rezerwacja obowiązkowa), w środku stała temperatura ok. 10°C, więc kurtka to konieczność, tym większy kontrast z ciepłym toskańskim popołudniem na zewnątrz. Powrót do bazy ok. 17:30, akurat na kolację przy zachodzącym słońcu.",
       "web_research": [
+        {
+          "topic": "Macelleria Angelini di Martinelli Davide (delikatesy i wędliny w Bardze)",
+          "summary": "Via Antonio Mordini 10, 55051 Barga (~10 min autem z bazy w Ponte all'Ania). Wybitny tradycyjny sklep mięsno-wędliniarski. Specjalności: wyroby z czarnej świni (cinta senese / maiale nero), pecorino, pancetta, miód kasztanowy. Czynne pn–sb 8:00–13:00 i 16:00–19:00 (śr popołudniu i nd nieczynne). Tel. 0583 723112.",
+          "source": "https://www.giornaledibarga.it",
+          "checked": "2026-07"
+        },
         {
           "topic": "Duomo di San Cristoforo — godziny i atrakcje",
           "summary": "Codziennie 08:00–18:00 (Via del Duomo 1). Romański kościół z pulpitem marmurowym Guido Bigarelli (~1240), lwami i scenami biblijnych. Moneta €2 włącza oświetlenie wnętrza. Taras z widokiem na Apuan Alps. Tel. 0583 723031.",
           "source": "https://www.visittuscany.com/it/attrazioni/il-duomo-di-san-cristoforo-a-barga/",
           "checked": "2026-07"
+        },
+        {
+          "topic": "Grotta del Vento — rezerwacja biletów online (Book Now)",
+          "summary": "Oficjalny system rezerwacji biletów online do Grotta del Vento: wybór trasy (Itinerario 1, 2 lub 3), terminu i godziny zwiedzania.",
+          "source": "https://grottadelvento.com/book-now/",
+          "checked": "2026-09"
         },
         {
           "topic": "Grotta del Vento — orario estivo wrzesień",
@@ -1164,6 +1186,7 @@
           "drive_min_reason": "pociąg z Lukki",
           "opening_hours": "Zabytki (wrzesień): ok. 9:00–20:00 — sprawdź dokładny kalendarz na opapisa.it. Krzywa Wieża: wejścia w slotach co 30 min (grupy ~30 os.), 251 stopni bez windy, dzieci <8 lat nie mogą wchodzić. Katedra: wstęp bezpłatny z biletem czasowym.",
           "ticket_price": "Krzywa Wieża: €20/os (zawiera wejście do katedry). Bilet łączony Piazza dei Miracoli (Wieża + Duomo + Battistero + Camposanto + Museo delle Sinopie): €27/os. Sam plac i zdjęcia z zewnątrz: bezpłatne.",
+          "url": "https://www.opapisa.it/en/tickets/",
           "duration_h": 2
         },
         {
@@ -2626,8 +2649,8 @@
       "drive_limit_min": 33,
       "attractions": [
         {
-          "name": "Piazza del Duomo — katedra Santa Maria del Fiore, kopuła Brunelleschiego, Battistero (baptysterium), Campanile (dzwonnica)",
-          "description": "Santa Maria del Fiore, kopuła Brunelleschiego (pierwsza taka konstrukcja od czasów antycznego Rzymu), Campanile di Giotto i Battistero z brązowymi Wrotami Raju Ghibertiego. Kopuła wymaga rezerwacji slotu z wyprzedzeniem.",
+          "name": "Piazza del Duomo — fasada Santa Maria del Fiore, kopuła Brunelleschiego, Battistero i Campanile (z zewnątrz + darmowa nawa katedry)",
+          "description": "Plac katedralny podziwiany z zewnątrz: trójkolorowe marmury fasady Santa Maria del Fiore, rewolucyjna kopuła Brunelleschiego, dzwonnica Giotta i Battistero ze słynnymi brązowymi Wrotami Raju Ghibertiego. Płatne wejście na kopułę pomijamy (brak wolnych slotów) — zamiast tego bezpłatnie wchodzimy do wnętrza nawy głównej katedry (wstęp wolny, widok na sklepienie kopuły od dołu).",
           "type": "popular",
           "image_key": "firenze",
           "gps_hint": "Piazza del Duomo, Firenze",
@@ -2637,13 +2660,14 @@
           ],
           "drive_min": null,
           "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
-          "opening_hours": "Battistero/Campanile/Museo/Santa Reparata: codz. 9:00–19:30 (kasy do 19:45). Kopuła: 8:15–19:30, rezerwacja obowiązkowa.",
-          "ticket_price": "Brunelleschi Pass (wszystkie zabytki placu, ważny 3 dni): €30/os, 7–14 lat €12. Sama katedra (nawa): bezpłatna.",
-          "duration_h": 1.75
+          "opening_hours": "Plac i fasady: całodobowo. Nawa katedry (wstęp wolny): pn–sb 10:15–15:45 (w niedziele i święta niedostępna dla turystów). Wymagany strój zakrywający ramiona i kolana.",
+          "ticket_price": "Bezpłatnie (plac, fasady, Wrota Raju i nawa katedry są darmowe; płatne wejścia na wieże/kopułę pomijamy)",
+          "url": "https://duomo.firenze.it/en/home",
+          "duration_h": 1.25
         },
         {
           "name": "Piazza della Signoria — Loggia dei Lanzi (plenerowa galeria rzeźb) i Palazzo Vecchio (ratusz)",
-          "description": "Loggia dei Lanzi to darmowa, plenerowa galeria rzeźb (m.in. Perseusz Celliniego, Porwanie Sabinek) — jedna z niewielu atrakcji Florencji bez kolejki i bez biletu. Palazzo Vecchio zwiedzamy tylko z zewnątrz.",
+          "description": "Loggia dei Lanzi to darmowa, plenerowa galeria rzeźb (m.in. Perseusz Celliniego, Porwanie Sabinek) — jedna z niewielu atrakcji Florencji bez kolejki i bez biletu. Palazzo Vecchio zwiedzamy z zewnątrz oraz wchodzimy na darmowy, renesansowy dziedziniec Michelozza.",
           "type": "cultural",
           "image_key": "firenze",
           "gps_hint": "Piazza della Signoria, Firenze",
@@ -2653,13 +2677,30 @@
           ],
           "drive_min": null,
           "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
-          "opening_hours": "Plac i Loggia: całodobowo, bezpłatnie. Museo di Palazzo Vecchio: sprawdź aktualne godziny na museicivicifiorentini.comune.fi.it (w tym planie zwiedzamy z zewnątrz).",
-          "ticket_price": "Plac, Loggia: bezpłatne. Palazzo Vecchio (muzeum, opcjonalnie): ok. €12,50/os.",
-          "duration_h": 1
+          "opening_hours": "Plac i Loggia: całodobowo, bezpłatnie. Dziedziniec Michelozza (Palazzo Vecchio): bezpłatnie w godzinach otwarcia urzędu/muzeum.",
+          "ticket_price": "Bezpłatne (plac, Loggia i dziedziniec)",
+          "duration_h": 0.75
+        },
+        {
+          "name": "Galleria degli Uffizi — arcydzieła renesansu: „Narodziny Wenus” Botticellego, Leonardo, Michał Anioł",
+          "description": "Jedna z najsłynniejszych galerii sztuki na świecie. To tutaj znajdują się sale Sandro Botticellego z ikonicznym obrazem „Narodziny Wenus” (Wenus na muszli) oraz „Wiosną” (Primavera), a także arcydzieła Leonarda da Vinci, Michała Anioła (Doni Tondo), Rafaela i Caravaggia. Wymagana wcześniejsza rezerwacja slotu godzinowego online.",
+          "type": "cultural",
+          "image_key": "firenze",
+          "gps_hint": "Piazzale degli Uffizi 6, Firenze",
+          "coords": [
+            43.7678,
+            11.2553
+          ],
+          "drive_min": null,
+          "drive_min_reason": "pociąg Siena–Firenze (wejście z Piazza della Signoria)",
+          "opening_hours": "Wtorek–niedziela 8:15–18:30 (ostatnie wejście 17:30, poniedziałki nieczynne). Wymagana rezerwacja slotu godzinowego online.",
+          "ticket_price": "Bilet normalny: €25 + €4 rezerwacja; bilet ulgowy dla obywateli UE 18–25 lat (trójka w grupie): tylko €2 + €4 rezerwacja; do 18 lat: bezpłatnie.",
+          "url": "https://tickets.uffizi.it/event/D43F5443-D676-F857-0904-0199CA8D9B74?lang=en",
+          "duration_h": 2.25
         },
         {
           "name": "Ponte Vecchio (most złotników) i Oltrarno (dzielnica za Arno)",
-          "description": "Średniowieczny most z warsztatami złotników zawieszonymi nad Arno — jedyny most Florencji, którego Niemcy nie wysadzili w 1944 r. Po drugiej stronie rzeki, w Oltrarno, tłum wyraźnie rzednie.",
+          "description": "Średniowieczny most z warsztatami złotników zawieszonymi nad Arno — tuż obok wyjścia z Uffizi. Po drugiej stronie rzeki, w Oltrarno, tłum wyraźnie rzednie; można bezpłatnie zajrzeć do kościoła Santa Felicita z Kaplicą Capponi (arcydzieło Pontorma).",
           "type": "popular",
           "image_key": "firenze",
           "gps_hint": "Ponte Vecchio, Firenze",
@@ -2668,39 +2709,54 @@
             11.2531
           ],
           "drive_min": null,
-          "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
-          "opening_hours": "Most publiczny — całodobowo, bezpłatnie.",
+          "drive_min_reason": "pociąg Siena–Firenze (spacer od Uffizi nad rzeką Arno)",
+          "opening_hours": "Most publiczny i ulice — całodobowo, bezpłatnie.",
           "ticket_price": "Bezpłatny (most i spacer po Oltrarno)",
-          "duration_h": 1.5
+          "duration_h": 1.25
         }
       ],
       "food": {
-        "place": "Mercato Centrale Firenze — piano superiore",
-        "address": "Piazza del Mercato Centrale 4, 50123 Firenze",
+        "place": "Mercato Centrale Firenze lub okolice Uffizi / Oltrarno",
+        "address": "Piazza del Mercato Centrale 4 lub Via dei Neri (obok Uffizi)",
         "dishes": [
           "lampredotto (florencka kanapka z żołądka wołowego)",
-          "pasta fresca na wagę z kilkunastu straganów",
+          "panini z toskańskimi wędlinami i pecorino (np. All'Antico Vinaio przy Uffizi)",
+          "pasta fresca na wagę z kilkunastu straganów w hali targowej",
           "bistecca alla fiorentina (na kawałki, do podziału)",
           "gelato artigianale na deser"
         ],
-        "note": "Hala targowa nad parterowym targiem spożywczym z 1874 r. — bez rezerwacji, każdy wybiera co innego, idealne dla rodziny z różnymi gustami. Piano superiore czynne codziennie 9:00–24:00.",
-        "price": "~€12–20/os",
-        "gps_hint": "Piazza del Mercato Centrale 4 — wejście od Via dell'Ariento lub Via Sant'Antonino"
+        "note": "Elastyczny lunch w zależności od tempa: Mercato Centrale (piano superiore, 9:00–24:00 bez rezerwacji) albo legendarne florenckie panini na Via dei Neri (tuż za rogiem Uffizi) lub klimatyczna osteria w Oltrarno zaraz za Ponte Vecchio.",
+        "price": "~€10–20/os",
+        "gps_hint": "Piazza del Mercato Centrale 4 lub Via dei Neri 65/r"
       },
       "practical_tips": [
         "Kup bilet kolejowy Siena→Firenze wcześniej online (Trenitalia) lub w automacie na stacji — regionale nie wymaga rezerwacji miejsca, ale sprawdź aktualny rozkład przed wyjazdem",
-        "Kopuła Duomo: rezerwacja slotu obowiązkowa — zrób to online z wyprzedzeniem (duomo.firenze.it), miejsca znikają szybko nawet poza szczytem sezonu",
-        "Uffizi NIE jest w tym planie — we wrześniu wymaga rezerwacji z 1–2-miesięcznym wyprzedzeniem (sprzedaż otwiera się na kwartał do przodu, miesiąc przed terminem)",
+        "Galeria Uffizi: kup bilet online na tickets.uffizi.it (GLI UFFIZI - INGRESSO) na 23.09 na ok. 11:30. Obywatele UE 18–25 lat płacą tylko €2 (+€4 rezerwacja), dorośli €25 (+€4). Koniecznie weź dowody tożsamości potwierdzające wiek!",
+        "Piazza del Duomo bezpłatnie: z zewnątrz fasada, dzwonnica i Wrota Raju. Wstęp do wnętrza nawy katedry jest bezpłatny (pn–sb 10:15–15:45, wymagane zakryte ramiona i kolana; kolejka do bramek ~20–40 min)",
+        "Ponte Vecchio to darmowy most miejski — nie wymaga żadnych biletów, spaceruje się po nim w drodze do Oltrarno",
+        "Opcjonalne muzea (dla chętnych, zamiast lub obok Uffizi): (1) Galleria dell'Accademia (oryginalny 5-metrowy Dawid Michała Anioła, zwiedzanie 45 min) — dorośli €16+€4 rezerwacja, UE 18–25 lat: €2+€4, wymaga slotu; (2) Museo Nazionale del Bargello (rzeźba: zmysłowy Dawid Donatella, wczesny Michał Anioł, bez kolejek i tłumów, 3 min od Signorii) — €10 / UE 18–25: €2; (3) Cappelle Medicee (rzeźby Michała Anioła: Dzień i Noc w San Lorenzo) — €9 / UE 18–25: €2; (4) Museo Galileo (teleskopy Galileusza, astrolabia, tuż za Uffizi nad Arno) — €13 / studenci i młodzież: €7.",
         "Samochód zostaje na parkingu w Sienie na cały dzień — jedyny dzień całej wyprawy bez jazdy po Toskanii",
-        "Wygodne buty — dzień to głównie chodzenie po florenckim bruku i kocich łbach"
+        "Wygodne buty — dzień to sporo chodzenia po bruku i salach muzealnych"
       ],
-      "narrative": "Ten dzień jest inny niż wszystkie poprzednie — celowo. Cała ta podróż budowana była wokół unikania tłumów: wczesne pobudki, boczne uliczki, dni powszednie zamiast weekendów. Ale jest miejsce, którego nie da się zobaczyć bez tłumu, bo tłum jest częścią jego natury, i to miejsce jest warte tego kompromisu. Wyjeżdżamy z bazy o 6:50, 33 minuty do Sieny, zostawiamy auto na cały dzień na parkingu przy stacji i po raz jedyny w całej podróży przesiadamy się na tory — dziś prowadzi nas rozkład jazdy, nie licznik kilometrów. Pociąg regionale sunie przez Val d'Elsa, krajobraz za oknem zmienia się z tarasowych winnic w przedmieścia, aż w końcu, około 9:20, wjeżdżamy na Firenze Santa Maria Novella. Piazza del Duomo wita ścianą marmuru w trzech kolorach i tłumem, który tu jest po prostu stałym stanem rzeczy — kopuła Brunelleschiego, pierwsza taka konstrukcja od czasów antycznego Rzymu, nadal uznawana za cud inżynierii, obok Campanile di Giotto, a przy wejściu Battistero z brązowymi Wrotami Raju Ghibertiego, które podobno nawet Michał Anioł nazwał godnymi bramy do nieba. Stąd wąska Via dei Calzaiuoli, zawsze pełna, prowadzi na Piazza della Signoria — pod Loggią dei Lanzi stoją posągi, które można oglądać za darmo i bez pośpiechu (Perseusz Celliniego, Porwanie Sabinek), a wieża Palazzo Vecchio wciąż rządzi panoramą jak osiemset lat temu. Lunch w Mercato Centrale — hala targowa pełna straganów, gdzie każdy z rodziny może zjeść coś innego, bez rezerwacji i bez czekania. Popołudnie należy do Ponte Vecchio: złotnicy w witrynach wiszących nad Arno, tłum gęstnieje z każdym krokiem na moście, ale widok na rzekę i Ponte Santa Trinita w tle wynagradza przepychanki. Po drugiej stronie, w Oltrarno, robi się nagle ciszej — kilka kroków wystarczy, by uciec z tłumu, choć dziś to tylko chwila oddechu, nie cel sam w sobie. Wieczorem ta sama droga w drugą stronę — pociąg, Siena, samochód, baza — i świadomość, że jeden dzień kompromisu wart był tego widoku na kopułę o zachodzącym słońcu.",
+      "narrative": "Ten dzień jest inny niż wszystkie poprzednie — celowo. Cała ta podróż budowana była wokół unikania tłumów: wczesne pobudki, boczne uliczki, dni powszednie zamiast weekendów. Ale jest miejsce, którego nie da się zobaczyć bez tłumu, bo tłum jest częścią jego natury, i to miejsce jest warte tego kompromisu. Wyjeżdżamy z bazy o 6:50, 33 minuty do Sieny, zostawiamy auto na cały dzień na parkingu przy stacji i po raz jedyny w całej podróży przesiadamy się na tory — dziś prowadzi nas rozkład jazdy, nie licznik kilometrów. Pociąg regionale sunie przez Val d'Elsa, krajobraz za oknem zmienia się z tarasowych winnic w przedmieścia, aż w końcu, około 9:20, wjeżdżamy na Firenze Santa Maria Novella. Piazza del Duomo wita ścianą marmuru w trzech kolorach i tłumem, który tu jest po prostu stałym stanem rzeczy — kopuła Brunelleschiego, pierwsza taka konstrukcja od czasów antycznego Rzymu, nadal uznawana za cud inżynierii, obok Campanile di Giotto, a przy wejściu Battistero z brązowymi Wrotami Raju Ghibertiego, które podobno nawet Michał Anioł nazwał godnymi bramy do nieba. Stąd wąska Via dei Calzaiuoli, zawsze pełna, prowadzi na Piazza della Signoria — pod Loggią dei Lanzi stoją posągi, które można oglądać za darmo i bez pośpiechu (Perseusz Celliniego, Porwanie Sabinek), a wieża Palazzo Vecchio wciąż rządzi panoramą jak osiemset lat temu. Tuż obok wkraczamy do Galerii Uffizi na spotkanie z wielką sztuką renesansu — ikonicznymi „Narodzinami Wenus” i „Wiosną” Botticellego, arcydziełami Leonarda i rzeźbami Medyceuszy. Po muzeum czas na florencki lunch, a popołudnie należy do Ponte Vecchio: złotnicy w witrynach wiszących nad Arno, tłum gęstnieje z każdym krokiem na moście, ale widok na rzekę i Ponte Santa Trinita w tle wynagradza przepychanki. Po drugiej stronie, w Oltrarno, robi się nagle ciszej — kilka kroków wystarczy, by uciec z tłumu, choć dziś to tylko chwila oddechu, nie cel sam w sobie. Wieczorem ta sama droga w drugą stronę — pociąg, Siena, samochód, baza — i świadomość, że jeden dzień kompromisu wart był tego widoku na kopułę o zachodzącym słońcu.",
       "web_research": [
         {
-          "topic": "Brunelleschi Pass — Duomo di Firenze",
-          "summary": "Bilet łączony (Battistero, Campanile di Giotto, Cupola, Museo dell'Opera del Duomo, Santa Reparata) ważny 3 dni kalendarzowe od wybranej daty. Cena €30 (ulgowy 7–14 lat: €12). Cupola wymaga rezerwacji slotu godzinowego przy zakupie — w wysokim sezonie sloty szybko się wyczerpują. Pozostałe zabytki: codz. 9:00–19:30 (kasa do 19:45), zamknięte pierwszy wtorek miesiąca (nie dotyczy 23.09 — środa).",
-          "source": "https://duomo.firenze.it/it/720/brunelleschi-pass",
-          "checked": "2026-07"
+          "topic": "Galleria degli Uffizi — bilety i arcydzieła Botticellego",
+          "summary": "Jedna z najważniejszych galerii sztuki na świecie. Sale Botticellego (10–14) z obrazami „Narodziny Wenus” (Nascita di Venere) i „Wiosna” (Primavera). Bilet normalny (sezon): €25 + €4 rezerwacja online. Zniżka dla obywateli UE w wieku 18–25 lat: tylko €2 + €4 opłaty rezerwacyjnej (dotyczy trójki studentów/młodych w grupie!). Młodzież <18 lat: bezpłatnie. Zakup oficjalny: tickets.uffizi.it.",
+          "source": "https://tickets.uffizi.it/event/D43F5443-D676-F857-0904-0199CA8D9B74?lang=en",
+          "checked": "2026-09"
+        },
+        {
+          "topic": "Alternatywne muzea we Florencji — propozycje i cennik",
+          "summary": "Opcje dla chętnych obok lub zamiast Uffizi: 1) Galleria dell'Accademia: oryginalny Dawid Michała Anioła + Jeńcy, zwiedzanie 45–60 min, bilet €16 + €4 rezerwacja (UE 18–25: €2 + €4), slot obowiązkowy; 2) Museo Nazionale del Bargello: arcydzieła rzeźby renesansowej (Dawid Donatella, wczesny Michał Anioł), brak kolejek i tłumów, 3 min od Piazza della Signoria, bilet €10 (UE 18–25: €2); 3) Cappelle Medicee: rzeźby Michała Anioła (Dzień, Noc, Jutrzenka, Zmierzch) w San Lorenzo przy targu Mercato Centrale, bilet €9 (UE 18–25: €2); 4) Museo Galileo: historia nauki, oryginalne teleskopy Galileusza, astrolabia Medyceuszy, 50 m od wyjścia z Uffizi nad Arno, bilet €13 (studenci/młodzież do 25 lat: €7).",
+          "source": "https://www.barym.it",
+          "checked": "2026-09"
+        },
+        {
+          "topic": "Piazza del Duomo i katedra — wariant bezpłatny",
+          "summary": "Bilety na kopułę Brunelleschiego wyprzedane — plac zwiedzamy z zewnątrz (fasada, bryła kopuły, dzwonnica Giotta i brązowe Wrota Raju Ghibertiego na Baptysterium). Wstęp do wnętrza katedry (nawa główna) jest całkowicie darmowy pn–sb 10:15–15:45 (nie wymaga biletu ani rezerwacji, obowiązuje kolejka do kontroli bezpieczeństwa oraz strój z zakrytymi ramionami i kolanami). Ze środka widać od dołu freski na kopule.",
+          "source": "https://duomo.firenze.it/it",
+          "checked": "2026-09"
         },
         {
           "topic": "Mercato Centrale Firenze — godziny",
@@ -2713,17 +2769,13 @@
           "summary": "Połączenie regionale, bezpośrednie, ~1h20–1h40 (linia Siena–Empoli–Firenze, nie szybka kolej). Ok. 24 kursy dziennie, częstotliwość co 60–90 minut, pierwszy ok. 5:43, ostatni ok. 21:40 (z Sieny). Bilet ok. €10/os w jedną stronę, bez obowiązkowej rezerwacji miejsca.",
           "source": "https://www.e656.net/orario/collegamenti/siena/firenze_santa_maria_novella.html",
           "checked": "2026-07"
-        },
-        {
-          "topic": "Uffizi — dlaczego pomijamy w tym planie",
-          "summary": "Bilety na Galerię Uffizi sprzedawane są kwartalnie, z otwarciem sprzedaży miesiąc przed terminem — dla września trzeba rezerwować już w czerwcu. Od Wielkanocy do września to szczyt sezonu, dostępność znika bardzo szybko. Przy planowaniu z krótszym wyprzedzeniem nie mieści się to w harmonogramie, dlatego Uffizi nie jest częścią podstawowego planu tego dnia.",
-          "source": "https://www.visitflorence.com/it/cosa-vedere-a-firenze/prenotazione-musei-firenze.html",
-          "checked": "2026-07"
         }
       ],
       "opening_hours": {
-        "duomo_complex": "Battistero, Campanile, Museo dell'Opera, Santa Reparata: codz. 9:00–19:30 (kasy do 19:45). Kopuła: 8:15–19:30, rezerwacja slotu obowiązkowa.",
-        "palazzo_vecchio": "Zwiedzamy tylko z zewnątrz i Loggię dei Lanzi (bezpłatna, całodobowa) — godziny muzeum sprawdź na museicivicifiorentini.comune.fi.it, jeśli chcecie wejść do środka.",
+        "duomo_complex": "Plac, fasady i Wrota Raju: całodobowo. Nawa katedry (wstęp wolny): pn–sb 10:15–15:45 (w niedziele i święta niedostępna dla turystów). Wymagany strój zakrywający ramiona i kolana.",
+        "uffizi": "Wtorek–niedziela 8:15–18:30 (ostatnie wejście 17:30, poniedziałki nieczynne). Wymagana wcześniejsza rezerwacja slotu godzinowego online na tickets.uffizi.it.",
+        "opcjonalne_muzea": "Accademia: wt–nd 8:15–18:50 (wymagana rezerwacja). Bargello: śr–pn 8:15–13:50. Cappelle Medicee: śr–pn 8:15–18:50. Museo Galileo: codz. 9:30–18:00 (wtorki do 13:00).",
+        "palazzo_vecchio": "Zwiedzamy z zewnątrz i Loggię dei Lanzi (bezpłatna, całodobowa); pierwszy dziedziniec (Cortile di Michelozzo) bezpłatny w godzinach otwarcia ratusza.",
         "mercato_centrale": "Piano superiore: codz. 9:00–24:00. Parter (targ spożywczy): pn–pt 7:00–15:00, sb 7:00–17:00, nd zamknięte.",
         "ponte_vecchio": "Most publiczny, dostępny całą dobę."
       },
@@ -2756,27 +2808,31 @@
         },
         {
           "time": "09:30",
-          "event": "Piazza del Duomo — Battistero, Campanile, fasada katedry"
+          "event": "Piazza del Duomo — fasady, dzwonnica Giotta, Wrota Raju i nawa katedry (wstęp wolny)"
         },
         {
-          "time": "11:15",
-          "event": "Spacer Via dei Calzaiuoli → Piazza della Signoria, Loggia dei Lanzi"
+          "time": "10:45",
+          "event": "Spacer Via dei Calzaiuoli → Piazza della Signoria, Loggia dei Lanzi i dziedziniec Palazzo Vecchio"
         },
         {
-          "time": "12:15",
-          "event": "Lunch w Mercato Centrale (San Lorenzo)"
+          "time": "11:30",
+          "event": "Galleria degli Uffizi — arcydzieła renesansu: „Narodziny Wenus” i „Wiosna” Botticellego (~2–2,5 h)"
         },
         {
-          "time": "13:45",
-          "event": "Ponte Vecchio i spacer po Oltrarno"
+          "time": "14:00",
+          "event": "Lunch: Mercato Centrale lub panini / trattoria przy Via dei Neri obok Uffizi"
         },
         {
-          "time": "15:15",
-          "event": "Czas wolny — lody, Piazza della Repubblica"
+          "time": "15:00",
+          "event": "Ponte Vecchio i spacer po Oltrarno (kościół Santa Felicita — Pontormo bezpłatnie)"
         },
         {
-          "time": "16:40",
-          "event": "Powrót na stację Firenze S.M.N."
+          "time": "16:15",
+          "event": "Powrót ku stacji — czas wolny na lody i Piazza della Repubblica"
+        },
+        {
+          "time": "16:45",
+          "event": "Stacja Firenze S.M.N."
         },
         {
           "time": "17:03",
@@ -2793,8 +2849,8 @@
       ],
       "daily_km_estimate": 54,
       "crowd_tip": "To jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Duomo, Ponte Vecchio i Piazza della Signoria są zatłoczone praktycznie cały dzień w sezonie. Jedyna realna strategia: przyjechać najwcześniej jak się da (pociąg ok. 8:00), zobaczyć Piazza del Duomo przed 10:00, zanim zjadą się grupy z autokarów, i zaakceptować, że popołudnie na Ponte Vecchio i tak będzie ścisk.",
-      "warning": "Uffizi nie jest częścią tego dnia — wymagałoby rezerwacji z 1–2-miesięcznym wyprzedzeniem (od czerwca), co nie mieści się w planowaniu z bieżącym wyprzedzeniem. Kopuła Duomo też wymaga rezerwacji slotu online — zrób to z wyprzedzeniem, miejsca znikają szybko. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia bliżej wyjazdu.",
-      "summary": "Jedyny świadomie „tłumny\" dzień — Florencja, dokąd jedziemy wygodnie pociągiem z Sieny. Plac katedralny z bazyliką Santa Maria del Fiore i słynną renesansową kopułą Brunelleschiego, baptysterium ze złoconymi „Wrotami Raju\" i dzwonnica Giotta. Dalej główny plac miejski (Piazza della Signoria) z dawnym ratuszem i plenerową galerią rzeźb, most złotników nad rzeką Arno (Ponte Vecchio) i spacer po rzemieślniczej dzielnicy za rzeką (Oltrarno)."
+      "warning": "Wizyta w Galerii Uffizi wymaga wcześniejszego zakupu biletu ze slotem godzinowym online (tickets.uffizi.it). Młodzież UE 18–25 lat musi mieć przy sobie dowody tożsamości do biletu ulgowego za €2. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia przed wyjazdem.",
+      "summary": "Jedyny świadomie „tłumny\" dzień — Florencja, dokąd jedziemy wygodnie pociągiem z Sieny. Plac katedralny z bazyliką Santa Maria del Fiore i słynną renesansową kopułą Brunelleschiego, baptysterium ze złoconymi „Wrotami Raju\" i dzwonnica Giotta (oglądane z zewnątrz i bezpłatne wnętrze nawy). Dalej Piazza della Signoria z plenerową galerią rzeźb, wizyta w Galerii Uffizi ze słynnymi „Narodzinami Wenus” Botticellego, most złotników nad rzeką Arno (Ponte Vecchio) i spacer po rzemieślniczej dzielnicy za rzeką (Oltrarno)."
     },
     {
       "date": "24.09 (czw)",
@@ -3673,8 +3729,8 @@
         "id": "attractions",
         "name": "Atrakcje i wejściówki",
         "icon": "🎟️",
-        "per_person_min": 93,
-        "per_person_max": 216,
+        "per_person_min": 99,
+        "per_person_max": 215,
         "note": "Większość miejsc bezpłatna lub z symbolicznym wstępem",
         "items": [
           {
@@ -3684,10 +3740,10 @@
             "per_person_max": 16
           },
           {
-            "label": "Florencja — pociąg Siena↔Firenze + wstęp Duomo (opcjonalnie)",
-            "detail": "Pociąg regionale w obie strony ~€20/os. Brunelleschi Pass (Duomo/Kopuła/Battistero/Campanile) opcjonalnie €30/os (7-14 lat: €12) — sama katedra i place bezpłatne.",
-            "per_person_min": 20,
-            "per_person_max": 50
+            "label": "Florencja — pociąg Siena↔Firenze + Galeria Uffizi",
+            "detail": "Pociąg regionale w obie strony ~€20/os. Galeria Uffizi: dorośli €25 + €4 rezerwacja = €29/os; młodzież UE 18–25 lat (trójka w grupie) ulgowy €2 + €4 rezerwacja = €6/os (łącznie €76 na 5 osób, średnio ~€15/os). Pozostałe punkty (Duomo z zewnątrz, Signoria, Ponte Vecchio) bezpłatne.",
+            "per_person_min": 26,
+            "per_person_max": 49
           },
           {
             "label": "Montalcino — degustacja wina (Enoteca Fortezza)",
@@ -3913,13 +3969,14 @@
             "day_num": 8
           },
           {
-            "id": "duomo-firenze",
+            "id": "uffizi-firenze",
             "group": "required",
-            "label": "Rezerwacja Kopuły Duomo — Florencja (23.09)",
-            "detail": "Brunelleschi Pass ze slotem godzinowym na kopułę — kup online na duomo.firenze.it z wyprzedzeniem (sloty na wrzesień znikają szybko). Bez tego wciąż można zwiedzić plac, Battistero z zewnątrz i pozostałe zabytki, ale nie wejść na kopułę.",
-            "deadline": "min. 2-3 tygodnie przed 23.09",
-            "priority": "medium",
-            "day_num": 12
+            "label": "Rezerwacja Galerii Uffizi — Florencja (23.09)",
+            "detail": "Kup online na tickets.uffizi.it (GLI UFFIZI - INGRESSO) na 23.09, zalecany slot ok. 11:30. To tutaj wisi słynny obraz „Narodziny Wenus” (Wenus na muszli) oraz „Wiosna” Botticellego. Wybierz odpowiednio: bilet normalny (€25 + €4) dla dorosłych oraz bilet ulgowy Ridotto (€2 + €4) dla osób w wieku 18–25 lat (obywatele UE z dowodem/paszportem).",
+            "deadline": "jak najszybciej (sloty na wrzesień szybko znikają)",
+            "priority": "high",
+            "day_num": 12,
+            "url": "https://tickets.uffizi.it/event/D43F5443-D676-F857-0904-0199CA8D9B74?lang=en"
           },
           {
             "id": "krzywa-wieza",
@@ -3928,7 +3985,8 @@
             "detail": "Wejście na Krzywą Wieżę tylko w slocie czasowym — kup online na opapisa.it z wyprzedzeniem (sloty otwierane ~20 dni naprzód, w sezonie znikają szybko). Bierz slot ok. 15:00: harmonogram dnia zakłada zejście z placu o 17:00, żeby zdążyć na pociąg do Viareggio na zachód słońca. €20/os lub €27 combo z całą Piazza dei Miracoli — UWAGA: żadnej ulgi studenckiej ani młodzieżowej, wszyscy płacą tyle samo. Bez wieży wciąż zobaczysz plac, katedrę i zdjęcia z zewnątrz.",
             "deadline": "gdy otworzą slot ~20 dni przed 15.09",
             "priority": "medium",
-            "day_num": 4
+            "day_num": 4,
+            "url": "https://www.opapisa.it/en/tickets/"
           },
           {
             "id": "trenitalia-xgo",
@@ -3943,10 +4001,11 @@
             "id": "grotta-vento",
             "group": "required",
             "label": "Rezerwacja Grotta del Vento — Fornovolasco (14.09)",
-            "detail": "Tour godzinowy (16:00) wymaga rezerwacji — grottadelvento.com. Sloty It.3 (€25, 10/14) też wymagają rezerwacji z wyprzedzeniem.",
+            "detail": "Tour godzinowy (16:00) wymaga rezerwacji — grottadelvento.com/book-now/. Sloty It.3 (€25, 10/14) też wymagają rezerwacji z wyprzedzeniem.",
             "deadline": "1–2 tygodnie przed 14.09",
             "priority": "medium",
-            "day_num": 3
+            "day_num": 3,
+            "url": "https://grottadelvento.com/book-now/"
           },
           {
             "id": "badia-coltibuono",
@@ -4579,7 +4638,7 @@
         "region": "base1",
         "region_label": "Garfagnana / Barga (D2–D6)",
         "price": "~€15–20 / kg",
-        "where": "Barga, Castelnuovo di Garfagnana, lokalne sklepiki w Gallicano",
+        "where": "Barga (np. Macelleria Angelini di Martinelli Davide, Via Antonio Mordini 10), Castelnuovo di Garfagnana, lokalne sklepiki w Gallicano",
         "tip": "Surowszy, intensywny smak ziół z wysokich pastwisk Apeninów i Alp Apuańskich. Warto też spróbować lokalnych świeżych serów kozich (formaggio caprino).",
         "transport": "Zapakować próżniowo w sklepie"
       },
@@ -4705,14 +4764,14 @@
       },
       {
         "id": "cinta-senese-dop",
-        "name": "Wędliny z Cinta Senese DOP (Guanciale / Capocollo)",
-        "italian_name": "Salumi di Cinta Senese DOP",
+        "name": "Wędliny z czarnej świni / Cinta Senese DOP (Pancetta / Guanciale / Capocollo)",
+        "italian_name": "Salumi di Cinta Senese DOP e Maiale Nero",
         "category": "cured_meat",
-        "region": "base2",
-        "region_label": "Siena / Crete Senesi / Murlo (D7–D10)",
+        "region": "all",
+        "region_label": "Baza 1 (Barga) & Baza 2 (Siena / Murlo)",
         "price": "~€32–48 / kg",
-        "where": "Rzeźnicy w Sienie (np. wokół Piazza del Campo), Murlo i Pienzy",
-        "tip": "Pradawna toskańska rasa czarnych świń z białym pasem, wypasanych w lasach dębowych. Kupcie koniecznie tutejsze Guanciale (do carbonary) lub Capocollo (karkówkę) — słodki, orzechowy tłuszcz.",
+        "where": "Barga (Macelleria Angelini di Martinelli Davide, Via Antonio Mordini 10 — ~10 min od noclegu), rzeźnicy w Sienie, Murlo i Pienzy",
+        "tip": "Pradawna toskańska rasa czarnych świń. Kupcie koniecznie tradycyjne wyroby: dojrzewającą pancettę, guanciale lub capocollo — słodki, orzechowy tłuszcz o niesamowitej głębi smaku.",
         "transport": "Sottovuoto + torba termiczna w aucie"
       },
       {
@@ -4867,7 +4926,7 @@
         "region": "base1",
         "region_label": "Garfagnana / Barga (D2–D6)",
         "price": "~€7–12 za słoik 500g",
-        "where": "Lokalne pasieki i sklepy z produktami regionalnymi w Garfagnanie",
+        "where": "Lokalne pasieki i sklepy w Garfagnanie (np. Macelleria Angelini di Martinelli Davide w Bardze)",
         "tip": "Ciemny, bursztynowo-brązowy miód o wytrawnym, lekko gorzkawym i garbnikowym posmaku. W Toskanii podaje się go tradycyjnie z dojrzałym pecorino i orzechami włoskimi.",
         "transport": "Słoik szklany — owinąć w ubrania lub karton"
       },

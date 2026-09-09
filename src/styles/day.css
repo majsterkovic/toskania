@@ -127,6 +127,14 @@ html.dark .research-count {
   color: var(--muted);
   line-height: 1.4;
 }
+.attraction-link {
+  color: var(--terracotta);
+  text-decoration: none;
+  font-weight: 500;
+}
+.attraction-link:hover {
+  text-decoration: underline;
+}
 .attraction p {
   font-size: 1rem;
 }
@@ -406,6 +414,11 @@ html.dark .transit-stats {
 html.dark .route-wp--start { color: var(--oro-light); }
 html.dark .route-wp--end { color: var(--terracotta-light); }
 /* Accommodation cards grid */
+.acc-shop {
+  margin-top: 0.4rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
 .acc-cards {
   display: grid;
   gap: 0.65rem;

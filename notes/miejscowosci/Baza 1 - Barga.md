@@ -19,12 +19,21 @@ Dni 3–6 (13/14.09–17.09.2026), 5 nocy.
 
 Wszystkie `drive_min` w D3/D5/D6 zaktualizowane w JSON na te dokładne wartości (były policzone z błędnego adresu Arsenale, patrz historia niżej).
 
+### Sklep z wędlinami i specjałami przy noclegu (~10 min autem)
+- **Macelleria Angelini di Martinelli Davide** (Via Antonio Mordini 10, 55051 Barga LU, tel. 0583 723112) — tradycyjny, historyczny sklep mięsno-wędliniarski z najwyższej półki prowadzony przez Davide Martinelli. Samochodem ~10 minut z Casa vacanze Rosa (Ponte all'Ania).
+  - **Co warto kupić i zjeść:**
+    - **Wyroby z czarnej świni** (*maiale nero / cinta senese* — tradycyjne wędliny, szynki, salami o głębokim, orzechowym smaku)
+    - **Pecorino** (lokalny ser owczy z Garfagnany — wersje świeże i dojrzewające stagionato)
+    - **Pancetta** (tradycyjny toskański boczek dojrzewający, aromatyczny i kruchy)
+    - **Miód kasztanowy** (*miele di castagno* — ciemny, lekko wytrawny miód ze starych gajów kasztanowych doliny Serchio, klasyczny dodatek do deski pecorino)
+  - Godziny otwarcia: pon, wt, czw, pt, sob: 08:00–13:00 i 16:00–19:00; śr: 08:00–13:00 (śr po południu i niedziela nieczynne).
+
 **Historia — jak doszło do pomyłki:** 19.07.2026 w notatkach oznaczono jako potwierdzoną rezerwację adres SR445 della Garfagnana 33, frazione Arsenale (44.06753, 10.45515), a Casa vacanze Rosa opisano jako "czołowego kandydata, ostatecznie nie wybranego". To był błąd — realna rezerwacja (potwierdzenie Booking.com) to Casa vacanze Rosa w Ponte all'Ania, kilka km na południe od Arsenale. Skorygowano 2026-07-25 na podstawie przesłanego przez użytkownika potwierdzenia rezerwacji.
 
 - **Pieve Fosciana — ❌ ODRZUCONE** jako alternatywa bazy: suma czasów dojazdu 201 min vs 125 min z okolic Bargi — wyraźnie gorzej (leży wyżej w dolinie, dalej od Lukki/Ponte del Diavolo/Bagni di Lucca). Ta ocena była liczona względem generycznego pinu Bargi, nie zmienia się istotnie po korekcie na Ponte all'Ania.
 
 ## Dni programu (po korekcie 2026-07-19, adres skorygowany 2026-07-25)
-- D3: Barga (Duomo, Treppignana, Grotta del Vento)
+- D3: Barga (Duomo, Treppignana, Grotta del Vento — rezerwacja: https://grottadelvento.com/book-now/)
 - D4: [[Lucca]] + [[Piza]] (mury, Krzywa Wieża) — pociągiem z Lukki
 - D5: **Pętla Monte Forato** (naturalny łuk skalny, Fornovolasco) — zastąpił Verrucole+Vagli+Gorfigliano (i przejściowo Il Ciocco), zob. niżej
 - D6: Ponte del Diavolo (Ponte della Maddalena) + Bagni di Lucca + Pieve di Careggine

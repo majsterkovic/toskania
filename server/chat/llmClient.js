@@ -37,12 +37,12 @@ export function createLlmClient({ baseUrl, apiKey, model, fallbackModel }) {
     async chat(messages, tools) {
       try {
         const res = await callWithTimeout({ baseUrl, apiKey, model, messages, tools });
-        res.model_used = model;
+        res.model_used = res.model ?? model;
         return res;
       } catch (err) {
         if (!fallbackModel) throw err;
         const res = await callWithTimeout({ baseUrl, apiKey, model: fallbackModel, messages, tools });
-        res.model_used = fallbackModel;
+        res.model_used = res.model ?? fallbackModel;
         return res;
       }
     },

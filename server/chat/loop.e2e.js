@@ -11,7 +11,7 @@ import { runChatLoop } from './loop.js';
 const toolRegistry = buildToolRegistry({ trip, distanceMatrix });
 const today = todayIso();
 const routerSystemPrompt = buildRouterSystemPrompt({ trip, toolRegistry, today });
-const writerSystemPrompt = buildWriterSystemPrompt({ trip, today });
+const writerSystemPrompt = buildWriterSystemPrompt({ trip, toolRegistry, today });
 
 const routerClient = createLlmClient({
   baseUrl: process.env.LITELLM_BASE_URL,
@@ -23,8 +23,8 @@ const routerClient = createLlmClient({
 const writerClient = createLlmClient({
   baseUrl: process.env.LITELLM_BASE_URL,
   apiKey: process.env.LITELLM_API_KEY,
-  model: process.env.CHAT_MODEL_WRITER ?? process.env.CHAT_MODEL,
-  fallbackModel: process.env.CHAT_MODEL_WRITER_FALLBACK ?? process.env.CHAT_MODEL_FALLBACK,
+  model: process.env.CHAT_MODEL_WRITER || process.env.CHAT_MODEL,
+  fallbackModel: process.env.CHAT_MODEL_WRITER_FALLBACK || process.env.CHAT_MODEL_FALLBACK,
 });
 
 async function ask(question) {

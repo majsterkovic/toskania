@@ -32,7 +32,7 @@ export function registerChatRoute(app, db, { toolRegistry, trip, routerClient, w
 
     const today = todayIso();
     const routerSystemPrompt = buildRouterSystemPrompt({ trip, toolRegistry, today });
-    const writerSystemPrompt = buildWriterSystemPrompt({ trip, today });
+    const writerSystemPrompt = buildWriterSystemPrompt({ trip, toolRegistry, today });
 
     const wantsSse = (req.headers.accept ?? '').includes('text/event-stream');
 

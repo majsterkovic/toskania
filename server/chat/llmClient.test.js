@@ -35,6 +35,21 @@ test('createLlmClient: przy błędzie modelu głównego próbuje fallback', asyn
   mock.restoreAll();
 });
 
+test('createLlmClient: gdy odpowiedź niesie własne pole model (fallback LiteLLM), model_used bierze je zamiast żądanego', async () => {
+  mock.method(globalThis, 'fetch', async () => ({
+    ok: true,
+    json: async () => ({
+      model: 'actually-served-model',
+      choices: [{ message: { role: 'assistant', content: 'ok' } }],
+      usage: { prompt_tokens: 1, completion_tokens: 1 },
+    }),
+  }));
+  const client = createLlmClient({ baseUrl: 'http://litellm:4000/v1', apiKey: 'k', model: 'deepseek-v4-flash' });
+  const res = await client.chat([{ role: 'user', content: 'hej' }], []);
+  assert.equal(res.model_used, 'actually-served-model');
+  mock.restoreAll();
+});
+
 test('createLlmClient: bez narzędzi (rola writer) nie wysyła tools ani tool_choice w body', async () => {
   const fetchMock = mock.method(globalThis, 'fetch', async () => ({
     ok: true,

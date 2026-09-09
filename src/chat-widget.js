@@ -1,5 +1,14 @@
 import { esc } from './html.js';
 
+const DAY_LINK_RE = /\[([^\]]+)\]\(#\/dzien-(\d+)\)/g;
+
+// Escapuje tekst, potem podmienia jedyny format linku jaki produkuje writer
+// ([tekst](#/dzien-<n>)) na prawdziwy <a>. Bezpieczne: podmiana działa na
+// JUŻ zescapowanym tekście, `\d+` w href nie może wstrzyknąć atrybutów.
+function renderAssistantHtml(text) {
+  return esc(text).replace(DAY_LINK_RE, (_, label, day) => `<a href="#/dzien-${day}">${label}</a>`);
+}
+
 export function mountChatWidget() {
   if (document.getElementById('chat-widget')) return;
   const el = document.createElement('div');
@@ -169,7 +178,7 @@ function wireForm(root) {
       const contentType = res.headers.get('content-type') ?? '';
       if (!contentType.includes('text/event-stream') || !res.body?.getReader) {
         const { content } = await res.json();
-        pending.innerHTML = `<strong>Asystent:</strong> ${esc(content)}`;
+        pending.innerHTML = `<strong>Asystent:</strong> ${renderAssistantHtml(content)}`;
         return;
       }
       let statusLine = '';
@@ -178,7 +187,7 @@ function wireForm(root) {
           statusLine = `szukam w planie (${esc(data.tool)}…)`;
           pending.innerHTML = `<strong>Asystent:</strong> ${statusLine}`;
         } else if (event === 'content') {
-          pending.innerHTML = `<strong>Asystent:</strong> ${esc(data.content)}`;
+          pending.innerHTML = `<strong>Asystent:</strong> ${renderAssistantHtml(data.content)}`;
         } else if (event === 'error') {
           pending.innerHTML = `<strong>Asystent:</strong> ${esc('Asystent niedostępny, plan działa normalnie.')}`;
         }

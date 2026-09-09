@@ -16,8 +16,8 @@ const routerClient = createLlmClient({
 const writerClient = createLlmClient({
   baseUrl: process.env.LITELLM_BASE_URL,
   apiKey: process.env.LITELLM_API_KEY,
-  model: process.env.CHAT_MODEL_WRITER ?? process.env.CHAT_MODEL,
-  fallbackModel: process.env.CHAT_MODEL_WRITER_FALLBACK ?? process.env.CHAT_MODEL_FALLBACK,
+  model: process.env.CHAT_MODEL_WRITER || process.env.CHAT_MODEL,
+  fallbackModel: process.env.CHAT_MODEL_WRITER_FALLBACK || process.env.CHAT_MODEL_FALLBACK,
 });
 
 const app = await buildApp({

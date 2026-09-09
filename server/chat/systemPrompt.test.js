@@ -24,10 +24,17 @@ test('buildRouterSystemPrompt: wymienia searchFood wśród dostępnych narzędzi
 });
 
 test('buildWriterSystemPrompt: instruuje pisanie po polsku, link #/dzien-<n> i dzisiejszą datę', () => {
-  const prompt = buildWriterSystemPrompt({ trip, today: '2026-09-15' });
+  const toolRegistry = buildToolRegistry({ trip, distanceMatrix });
+  const prompt = buildWriterSystemPrompt({ trip, toolRegistry, today: '2026-09-15' });
   assert.match(prompt, /PO POLSKU/);
   assert.match(prompt, /#\/dzien-<n>/);
   assert.match(prompt, /2026-09-15/);
+});
+
+test('buildWriterSystemPrompt: zawiera spis dni (toc), tak jak router (C1)', () => {
+  const toolRegistry = buildToolRegistry({ trip, distanceMatrix });
+  const prompt = buildWriterSystemPrompt({ trip, toolRegistry, today: '2026-09-15' });
+  assert.match(prompt, /Dojazd/);
 });
 
 test('todayIso: zwraca datę w formacie YYYY-MM-DD', () => {

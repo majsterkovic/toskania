@@ -26,7 +26,7 @@ export async function buildApp(opts = {}) {
   registerGateRoute(app, { passphrase: opts.passphrase ?? process.env.CHAT_PASSPHRASE });
   registerWhoRoute(app, db);
   registerMeRoute(app, db);
-  if (opts.toolRegistry && opts.routerClient && opts.writerClient) {
+  if (opts.toolRegistry && opts.routerClient && opts.writerClient && opts.trip) {
     registerChatRoute(app, db, {
       toolRegistry: opts.toolRegistry,
       trip: opts.trip,

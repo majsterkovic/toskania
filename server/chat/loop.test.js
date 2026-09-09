@@ -176,6 +176,62 @@ test('runChatLoop: krzywy JSON w argumentach narzędzia nie wywala requestu, wra
   assert.equal(call, 2);
 });
 
+test('runChatLoop: narzędzie rzucające przy wykonaniu (poprawny JSON, zły kształt) nie wywala requestu, wraca tool_execution_failed', async () => {
+  let call = 0;
+  const throwingToolRegistry = {
+    searchFood: {
+      description: 'test',
+      parameters: { type: 'object', properties: {}, required: [] },
+      execute: () => { throw new TypeError('args.query is undefined'); },
+    },
+  };
+  const routerClient = {
+    chat: async (messages) => {
+      call += 1;
+      if (call === 1) {
+        return {
+          choices: [{ message: { role: 'assistant', content: null, tool_calls: [{ id: 't1', function: { name: 'searchFood', arguments: '{"q":"pizza"}' } }] } }],
+          usage: {},
+        };
+      }
+      const toolMsg = messages.find((m) => m.role === 'tool');
+      assert.deepEqual(JSON.parse(toolMsg.content), { error: 'tool_execution_failed' });
+      return { choices: [{ message: { role: 'assistant', content: null } }], usage: {} };
+    },
+  };
+  const writerClient = writerReturning('ok');
+  const result = await runChatLoop({
+    routerClient, writerClient, toolRegistry: throwingToolRegistry,
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'x',
+  });
+  assert.equal(result.content, 'ok');
+  assert.equal(call, 2);
+});
+
+test('runChatLoop: pusta/null treść od writera traktowana jak porażka writera, wraca do lastRouterContent', async () => {
+  let routerCall = 0;
+  const routerClient = {
+    chat: async () => {
+      routerCall += 1;
+      if (routerCall === 1) {
+        return {
+          choices: [{ message: { role: 'assistant', content: null, tool_calls: [{ id: 't1', function: { name: 'getDay', arguments: '{}' } }] } }],
+          usage: {},
+        };
+      }
+      return { choices: [{ message: { role: 'assistant', content: 'Awaryjna odpowiedź routera.' } }], usage: {} };
+    },
+  };
+  const writerClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: null } }], usage: {} }) };
+  const result = await runChatLoop({
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'hej',
+  });
+  assert.equal(result.content, 'Awaryjna odpowiedź routera.');
+});
+
 test('runChatLoop: zbiera model_used z routera i writera do result.models', async () => {
   const routerClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: 'x' } }], usage: {}, model_used: 'router-m' }) };
   const writerClient = writerReturning('ok', { model_used: 'writer-m' });

@@ -44,7 +44,7 @@ async function main() {
   const toolRegistry = buildToolRegistry({ trip, distanceMatrix });
   const today = todayIso();
   const routerSystemPrompt = buildRouterSystemPrompt({ trip, toolRegistry, today });
-  const writerSystemPrompt = buildWriterSystemPrompt({ trip, today });
+  const writerSystemPrompt = buildWriterSystemPrompt({ trip, toolRegistry, today });
 
   for (const combo of COMBINATIONS) {
     console.log(`\n=== ${combo.label} ===`);

@@ -57,13 +57,20 @@ export async function runChatLoop({
         await onToolCall?.(call.function.name, errorResult);
         continue;
       }
-      const result = tool ? await tool.execute(args) : { error: 'unknown_tool' };
+      let result;
+      try {
+        result = tool ? await tool.execute(args) : { error: 'unknown_tool' };
+      } catch {
+        result = { error: 'tool_execution_failed' };
+      }
       messages.push({ role: 'tool', tool_call_id: call.id, content: JSON.stringify(result) });
       await onToolCall?.(call.function.name, result);
     }
   }
 
   if (!routerDone) throw new Error('chat_loop_max_iterations');
+
+  if (Date.now() > deadline) throw new Error('chat_loop_timeout');
 
   const writerMessages = [
     { role: 'system', content: writerSystemPrompt },
@@ -78,9 +85,11 @@ export async function runChatLoop({
       usage.completion_tokens += writerResponse.usage.completion_tokens ?? 0;
     }
     const writerMsg = writerResponse.choices[0].message;
+    if (!writerMsg.content) throw new Error('writer_empty_response');
     messages.push(writerMsg);
     return { content: writerMsg.content, usage, messages, models };
-  } catch {
+  } catch (err) {
+    console.error(`[chat] writer phase failed: ${err.message}`);
     if (lastRouterContent) {
       return { content: lastRouterContent, usage, messages, models };
     }

@@ -1,4 +1,10 @@
-const CALL_TIMEOUT_MS = 15000;
+// Podniesione 2026-09-09 z 15000 -> 30000 po zywym tescie na VPS:
+// glimmer (model rozumujacy) potrzebuje ~7-10s na trywialny prompt przez
+// wewnetrzny reasoning_content, wiec realny prompt z pelnym system promptem
+// (spis dni + narzedzia) latwo przekraczal stary limit i byl abortowany
+// zanim model zdazyl odpowiedziec. Patrz docs/superpowers/specs
+// 2026-09-09-czat-agent-router-writer-design.md, D7.
+const CALL_TIMEOUT_MS = 30000;
 
 async function callOnce({ baseUrl, apiKey, model, messages, tools, signal }) {
   const body = { model, messages };

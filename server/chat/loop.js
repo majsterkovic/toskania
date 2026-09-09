@@ -1,5 +1,11 @@
 const ROUTER_MAX_ITERATIONS = 5;
-const TOTAL_TIMEOUT_MS = 18000;
+// Podniesione 2026-09-09 z 18000 -> 60000 razem z CALL_TIMEOUT_MS w
+// llmClient.js: zywy test na VPS pokazal, ze sam router+writer na
+// najprostszym prompcie zajmowal ~19s (juz nad starym limitem), zanim
+// doszlo do jakiegokolwiek wywolania narzedzia. 60s daje miejsce na kilka
+// iteracji routera przy realnej latencji modeli rozumujacych z darmowego
+// tieru NIM.
+const TOTAL_TIMEOUT_MS = 60000;
 
 export async function runChatLoop({
   routerClient, writerClient, toolRegistry,

@@ -12,19 +12,76 @@ function fakeToolRegistry() {
   };
 }
 
-test('runChatLoop: bez tool_calls zwraca treść od razu', async () => {
-  const llmClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: 'Cześć!' } }], usage: { prompt_tokens: 5, completion_tokens: 3 } }) };
+function writerReturning(content, extra = {}) {
+  return {
+    chat: async () => ({
+      choices: [{ message: { role: 'assistant', content } }],
+      usage: { prompt_tokens: 4, completion_tokens: 2 },
+      model_used: 'writer-model',
+      ...extra,
+    }),
+  };
+}
+
+test('runChatLoop: router bez tool_calls -> writer komponuje treść od razu', async () => {
+  const routerClient = { chat: async () => ({
+    choices: [{ message: { role: 'assistant', content: 'surowy szkic routera' } }],
+    usage: { prompt_tokens: 5, completion_tokens: 3 },
+    model_used: 'router-model',
+  }) };
+  const writerClient = writerReturning('Cześć!');
   const result = await runChatLoop({
-    llmClient, toolRegistry: fakeToolRegistry(), systemPrompt: 'sys', history: [], userMessage: 'hej',
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'hej',
   });
   assert.equal(result.content, 'Cześć!');
-  assert.deepEqual(result.usage, { prompt_tokens: 5, completion_tokens: 3 });
+  assert.deepEqual(result.usage, { prompt_tokens: 9, completion_tokens: 5 });
+  assert.deepEqual(result.models, ['router-model', 'writer-model']);
 });
 
-test('runChatLoop: wykonuje tool_call i wraca do modelu z wynikiem', async () => {
+test('runChatLoop: D3 -- content routera z ostatniej iteracji nie trafia do writera', async () => {
+  const routerClient = { chat: async () => ({
+    choices: [{ message: { role: 'assistant', content: 'surowy szkic routera, ktory nie powinien przeciekac' } }],
+    usage: {},
+  }) };
+  let writerMessagesSeen;
+  const writerClient = { chat: async (messages) => {
+    writerMessagesSeen = messages;
+    return { choices: [{ message: { role: 'assistant', content: 'Czysta odpowiedź.' } }], usage: {} };
+  } };
+  const result = await runChatLoop({
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'hej',
+  });
+  assert.equal(result.content, 'Czysta odpowiedź.');
+  const hasLeakedRouterDraft = writerMessagesSeen.some((m) => m.content?.includes('nie powinien przeciekac'));
+  assert.equal(hasLeakedRouterDraft, false);
+});
+
+test('runChatLoop: writer nie dostaje narzędzi (drugi argument chat() jest undefined)', async () => {
+  const routerClient = { chat: async () => ({
+    choices: [{ message: { role: 'assistant', content: 'ok' } }],
+    usage: {},
+  }) };
+  let writerToolsArg = 'nieustawione';
+  const writerClient = { chat: async (_messages, tools) => {
+    writerToolsArg = tools;
+    return { choices: [{ message: { role: 'assistant', content: 'Odpowiedź.' } }], usage: {} };
+  } };
+  await runChatLoop({
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'hej',
+  });
+  assert.equal(writerToolsArg, undefined);
+});
+
+test('runChatLoop: wykonuje tool_call routera, ślad trafia do writera', async () => {
   let call = 0;
-  const llmClient = {
-    chat: async (messages) => {
+  const routerClient = {
+    chat: async () => {
       call += 1;
       if (call === 1) {
         return {
@@ -32,35 +89,45 @@ test('runChatLoop: wykonuje tool_call i wraca do modelu z wynikiem', async () =>
           usage: { prompt_tokens: 10, completion_tokens: 5 },
         };
       }
-      const toolMsg = messages.find((m) => m.role === 'tool');
-      assert.equal(JSON.parse(toolMsg.content).title, 'Chianti');
-      return { choices: [{ message: { role: 'assistant', content: 'Dzień 8 to Chianti.' } }], usage: { prompt_tokens: 20, completion_tokens: 8 } };
+      return { choices: [{ message: { role: 'assistant', content: null } }], usage: { prompt_tokens: 4, completion_tokens: 1 } };
     },
   };
+  let writerMessagesSeen;
+  const writerClient = { chat: async (messages) => {
+    writerMessagesSeen = messages;
+    return { choices: [{ message: { role: 'assistant', content: 'Dzień 8 to Chianti.' } }], usage: { prompt_tokens: 20, completion_tokens: 8 } };
+  } };
   const result = await runChatLoop({
-    llmClient, toolRegistry: fakeToolRegistry(), systemPrompt: 'sys', history: [], userMessage: 'co 19.09?',
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'co 19.09?',
   });
   assert.equal(result.content, 'Dzień 8 to Chianti.');
-  assert.equal(result.usage.prompt_tokens, 30);
-  assert.equal(call, 2);
+  const toolMsg = writerMessagesSeen.find((m) => m.role === 'tool');
+  assert.equal(JSON.parse(toolMsg.content).title, 'Chianti');
 });
 
-test('runChatLoop: po 5 iteracjach bez odpowiedzi końcowej rzuca chat_loop_max_iterations', async () => {
-  const llmClient = {
+test('runChatLoop: po 5 iteracjach routera bez odpowiedzi końcowej rzuca chat_loop_max_iterations', async () => {
+  const routerClient = {
     chat: async () => ({
       choices: [{ message: { role: 'assistant', content: null, tool_calls: [{ id: 't', function: { name: 'getDay', arguments: '{}' } }] } }],
       usage: {},
     }),
   };
+  const writerClient = { chat: async () => { throw new Error('writer nie powinien być wołany'); } };
   await assert.rejects(
-    runChatLoop({ llmClient, toolRegistry: fakeToolRegistry(), systemPrompt: 'sys', history: [], userMessage: 'x' }),
+    runChatLoop({
+      routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+      routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+      history: [], userMessage: 'x',
+    }),
     /chat_loop_max_iterations/
   );
 });
 
-test('runChatLoop: nieznane narzędzie nie wywala pętli, wraca error do modelu', async () => {
+test('runChatLoop: nieznane narzędzie nie wywala pętli, wraca error do routera', async () => {
   let call = 0;
-  const llmClient = {
+  const routerClient = {
     chat: async (messages) => {
       call += 1;
       if (call === 1) {
@@ -71,19 +138,75 @@ test('runChatLoop: nieznane narzędzie nie wywala pętli, wraca error do modelu'
       }
       const toolMsg = messages.find((m) => m.role === 'tool');
       assert.deepEqual(JSON.parse(toolMsg.content), { error: 'unknown_tool' });
-      return { choices: [{ message: { role: 'assistant', content: 'ok' } }], usage: {} };
+      return { choices: [{ message: { role: 'assistant', content: null } }], usage: {} };
     },
   };
+  const writerClient = writerReturning('ok');
   const result = await runChatLoop({
-    llmClient, toolRegistry: fakeToolRegistry(), systemPrompt: 'sys', history: [], userMessage: 'x',
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'x',
   });
   assert.equal(result.content, 'ok');
 });
 
-test('runChatLoop: zbiera model_used z odpowiedzi LLM do result.models', async () => {
-  const llmClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: 'ok' } }], usage: {}, model_used: 'm1' }) };
+test('runChatLoop: krzywy JSON w argumentach narzędzia nie wywala requestu, wraca invalid_tool_arguments', async () => {
+  let call = 0;
+  const routerClient = {
+    chat: async (messages) => {
+      call += 1;
+      if (call === 1) {
+        return {
+          choices: [{ message: { role: 'assistant', content: null, tool_calls: [{ id: 't1', function: { name: 'getDay', arguments: '{niepoprawny json' } }] } }],
+          usage: {},
+        };
+      }
+      const toolMsg = messages.find((m) => m.role === 'tool');
+      assert.deepEqual(JSON.parse(toolMsg.content), { error: 'invalid_tool_arguments' });
+      return { choices: [{ message: { role: 'assistant', content: null } }], usage: {} };
+    },
+  };
+  const writerClient = writerReturning('ok');
   const result = await runChatLoop({
-    llmClient, toolRegistry: fakeToolRegistry(), systemPrompt: 'sys', history: [], userMessage: 'hej',
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'x',
   });
-  assert.deepEqual(result.models, ['m1']);
+  assert.equal(result.content, 'ok');
+  assert.equal(call, 2);
+});
+
+test('runChatLoop: zbiera model_used z routera i writera do result.models', async () => {
+  const routerClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: 'x' } }], usage: {}, model_used: 'router-m' }) };
+  const writerClient = writerReturning('ok', { model_used: 'writer-m' });
+  const result = await runChatLoop({
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'hej',
+  });
+  assert.deepEqual(result.models, ['router-m', 'writer-m']);
+});
+
+test('runChatLoop: gdy writer zawiedzie, wraca do ostatniego content routera (awaryjnie, mimo D3)', async () => {
+  const routerClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: 'Awaryjna odpowiedź routera.' } }], usage: {} }) };
+  const writerClient = { chat: async () => { throw new Error('llm_http_503'); } };
+  const result = await runChatLoop({
+    routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+    routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+    history: [], userMessage: 'hej',
+  });
+  assert.equal(result.content, 'Awaryjna odpowiedź routera.');
+});
+
+test('runChatLoop: gdy writer zawiedzie i router nie miał treści, rzuca assistant_unavailable', async () => {
+  const routerClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: null } }], usage: {} }) };
+  const writerClient = { chat: async () => { throw new Error('llm_http_503'); } };
+  await assert.rejects(
+    runChatLoop({
+      routerClient, writerClient, toolRegistry: fakeToolRegistry(),
+      routerSystemPrompt: 'sys-router', writerSystemPrompt: 'sys-writer',
+      history: [], userMessage: 'hej',
+    }),
+    /assistant_unavailable/
+  );
 });

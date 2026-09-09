@@ -4,21 +4,34 @@ import assert from 'node:assert/strict';
 import trip from '../../trip.json' with { type: 'json' };
 import distanceMatrix from '../../src/distance-matrix.json' with { type: 'json' };
 import { buildToolRegistry } from '../tools/index.js';
-import { buildSystemPrompt } from './systemPrompt.js';
+import { buildRouterSystemPrompt, buildWriterSystemPrompt, todayIso } from './systemPrompt.js';
 import { createLlmClient } from './llmClient.js';
 import { runChatLoop } from './loop.js';
 
 const toolRegistry = buildToolRegistry({ trip, distanceMatrix });
-const systemPrompt = buildSystemPrompt({ trip, toolRegistry });
-const llmClient = createLlmClient({
+const today = todayIso();
+const routerSystemPrompt = buildRouterSystemPrompt({ trip, toolRegistry, today });
+const writerSystemPrompt = buildWriterSystemPrompt({ trip, today });
+
+const routerClient = createLlmClient({
   baseUrl: process.env.LITELLM_BASE_URL,
   apiKey: process.env.LITELLM_API_KEY,
   model: process.env.CHAT_MODEL,
   fallbackModel: process.env.CHAT_MODEL_FALLBACK,
 });
 
+const writerClient = createLlmClient({
+  baseUrl: process.env.LITELLM_BASE_URL,
+  apiKey: process.env.LITELLM_API_KEY,
+  model: process.env.CHAT_MODEL_WRITER ?? process.env.CHAT_MODEL,
+  fallbackModel: process.env.CHAT_MODEL_WRITER_FALLBACK ?? process.env.CHAT_MODEL_FALLBACK,
+});
+
 async function ask(question) {
-  const result = await runChatLoop({ llmClient, toolRegistry, systemPrompt, history: [], userMessage: question });
+  const result = await runChatLoop({
+    routerClient, writerClient, toolRegistry, routerSystemPrompt, writerSystemPrompt,
+    history: [], userMessage: question,
+  });
   return result.content;
 }
 
@@ -70,4 +83,14 @@ test('e2e: pytanie wieloetapowe (dzień + godziny) wykonuje więcej niż jedną 
 test('e2e: pytanie po polsku z literówką w dacie nadal trafia właściwy dzień', async () => {
   const answer = await ask('co bedziemy robic dnia dziewietnastego wrzesnia');
   assert.match(answer, /Chianti|Brolio/i);
+});
+
+test('e2e: pytanie o restaurację/jedzenie zwraca konkretne miejsce z trip.json (D4, searchFood)', async () => {
+  const answer = await ask('Gdzie zjemy w Chianti, dzień 8?');
+  assert.match(answer, /Rifugio|Chianti|osteria/i);
+});
+
+test('e2e: odpowiedź o konkretnym dniu zawiera link w formacie #/dzien-<n> (D5)', async () => {
+  const answer = await ask('Co robimy 19.09? Podaj proszę też link do strony tego dnia.');
+  assert.match(answer, /#\/dzien-8/);
 });

@@ -3,6 +3,7 @@ import fastifyCookie from '@fastify/cookie';
 import fastifyStatic from '@fastify/static';
 import fastifyRateLimit from '@fastify/rate-limit';
 import { openDb } from './db/index.js';
+import { registerGateRoute } from './auth/gate.js';
 
 export async function buildApp(opts = {}) {
   const app = Fastify({ logger: opts.logger ?? false });
@@ -19,6 +20,7 @@ export async function buildApp(opts = {}) {
   }
 
   app.get('/healthz', async () => ({ ok: true }));
+  registerGateRoute(app, { passphrase: opts.passphrase ?? process.env.CHAT_PASSPHRASE });
 
   app.addHook('onClose', (instance, done) => {
     db.close();

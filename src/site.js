@@ -4,6 +4,7 @@
  */
 import { swapMapTiles } from './maps.js';
 import { esc } from './html.js';
+import './styles/chat.css';
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -107,4 +108,5 @@ export function initScrollReveal(selector = '.reveal') {
 export function initChrome(revealSelector = '.reveal') {
   initThemeToggle();
   requestAnimationFrame(() => initScrollReveal(revealSelector));
+  import('./chat-widget.js').then(({ mountChatWidget }) => mountChatWidget());
 }

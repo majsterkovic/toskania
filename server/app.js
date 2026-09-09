@@ -6,6 +6,7 @@ import { openDb } from './db/index.js';
 import { registerGateRoute } from './auth/gate.js';
 import { registerWhoRoute } from './auth/who.js';
 import { registerChatRoute } from './routes/chat.js';
+import { registerMeRoute } from './routes/me.js';
 
 export async function buildApp(opts = {}) {
   const app = Fastify({ logger: opts.logger ?? false });
@@ -24,6 +25,7 @@ export async function buildApp(opts = {}) {
   app.get('/healthz', async () => ({ ok: true }));
   registerGateRoute(app, { passphrase: opts.passphrase ?? process.env.CHAT_PASSPHRASE });
   registerWhoRoute(app, db);
+  registerMeRoute(app, db);
   if (opts.toolRegistry && opts.llmClient) {
     registerChatRoute(app, db, {
       toolRegistry: opts.toolRegistry,

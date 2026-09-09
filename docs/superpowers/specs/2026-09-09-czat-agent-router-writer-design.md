@@ -51,7 +51,8 @@ tym dokumentem.
   to, co D1/D3 starają się ograniczyć, nie mnożyć; (c) YAGNI — brak
   konkretnego zapotrzebowania, tylko hipoteza. Zamiast tego: gdy odpowiedź
   writera dotyczy konkretnego dnia, dokleja zwykły markdown-link do
-  istniejącej strony `/dzien/<n>`.
+  istniejącej strony (rzeczywisty format hash-route SPA, patrz
+  `src/render.js`: `#/dzien-<n>`, nie `/dzien/<n>`).
 - **D6** — przypisanie modeli do ról (który z {glimmer, gemma} jako router,
   który jako writer) ustalane empirycznie przez mały eval (§5), nie
   zgadywane z góry.
@@ -74,7 +75,7 @@ user_message
 [faza WRITER]  (writer_model, BEZ tools, jedno wywołanie)
   messages = [user_message, ...ślad tool_calls/wyników z fazy router]
   system prompt: buildWriterSystemPrompt (nowy)
-  → finalna odpowiedź do usera (+ ew. link /dzien/<n>)
+  → finalna odpowiedź do usera (+ ew. link #/dzien-<n>)
 ```
 
 ## Komponenty do zmiany
@@ -82,7 +83,7 @@ user_message
 | Plik | Zmiana |
 |---|---|
 | `server/chat/loop.js` | rozbicie `runChatLoop` na fazę router + fazę writer; `MAX_TOOL_ITERATIONS` dotyczy tylko fazy router; **fix**: `JSON.parse(call.function.arguments || '{}')` (dziś linia 39) owinąć w try/catch — bez tego krzywy JSON od darmowego modelu wywala cały request zamiast zdegradować się do `{error: 'invalid_tool_arguments'}` |
-| `server/chat/systemPrompt.js` | split: `buildRouterSystemPrompt` (dzisiejsza treść) + `buildWriterSystemPrompt` (nowy — "sformułuj PO POLSKU na podstawie danych narzędzi poniżej; nic nie zgaduj; jeśli dotyczy dnia, dodaj link `/dzien/<n>`"); oba dostają dzisiejszą datę (D4) |
+| `server/chat/systemPrompt.js` | split: `buildRouterSystemPrompt` (dzisiejsza treść) + `buildWriterSystemPrompt` (nowy — "sformułuj PO POLSKU na podstawie danych narzędzi poniżej; nic nie zgaduj; jeśli dotyczy dnia, dodaj link `#/dzien-<n>`"); oba dostają dzisiejszą datę (D4) |
 | `server/chat/llmClient.js` | bez zmian w kształcie (`createLlmClient` już generyczny) — instancjonowany 2x w `server/index.js` (router/writer) |
 | `server/index.js` | dwie instancje `createLlmClient`: `routerClient` (`CHAT_MODEL`/`CHAT_MODEL_FALLBACK`, jak dziś) i `writerClient` (`CHAT_MODEL_WRITER`/`CHAT_MODEL_WRITER_FALLBACK`, domyślnie = router's gdy env brak) |
 | `server/tools/searchFood.js` **(nowy)** | search po `day.food` (`place`/`dishes`/`price`), rejestrowany w `buildToolRegistry` (`server/tools/index.js`) |

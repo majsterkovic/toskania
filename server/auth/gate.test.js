@@ -46,3 +46,10 @@ test('POST /api/auth/gate: rate limit liczy po CF-Connecting-IP, nie po req.ip',
   assert.equal(otherIp.statusCode, 200, 'inny CF-Connecting-IP nie powinien być zablokowany');
   await app.close();
 });
+
+test('POST /api/auth/gate: hasło z białymi znakami na końcach przechodzi (trim)', async () => {
+  const app = await appWithPassphrase();
+  const res = await app.inject({ method: 'POST', url: '/api/auth/gate', payload: { password: '  oliwa-cyprys-42 ' } });
+  assert.equal(res.statusCode, 200);
+  await app.close();
+});

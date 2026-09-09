@@ -55,7 +55,7 @@ function wireToggle(root) {
 
 function wireGate(root) {
   root.querySelector('#chat-gate-submit').addEventListener('click', async () => {
-    const password = root.querySelector('#chat-password').value;
+    const password = root.querySelector('#chat-password').value.trim();
     const res = await fetch('/api/auth/gate', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
@@ -63,6 +63,9 @@ function wireGate(root) {
     });
     const errorEl = root.querySelector('#chat-gate-error');
     if (!res.ok) {
+      errorEl.textContent = res.status === 429
+        ? 'Za dużo prób, poczekaj 15 minut.'
+        : 'Złe hasło, spróbuj ponownie.';
       errorEl.hidden = false;
       return;
     }

@@ -14,7 +14,7 @@ export function registerGateRoute(app, { passphrase }) {
       },
     },
   }, async (req, reply) => {
-    const password = req.body?.password ?? '';
+    const password = (req.body?.password ?? '').trim();
     if (!passphrase || password !== passphrase) {
       reply.code(401);
       return { error: 'wrong_password' };

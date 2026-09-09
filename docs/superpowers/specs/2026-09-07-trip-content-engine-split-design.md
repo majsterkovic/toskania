@@ -5,6 +5,9 @@ Status: do realizacji **po freeze** (nie wcześniej niż 2026-09-28)
 Hosting tej zmiany: **wyłącznie GitHub Pages** (`base: '/toskania/'`, workflow bez zmian)
 
 Zastępuje wycinek „schema + silnik” ze speca `2026-09-06-vps-trip-framework.md`.
+> **Notka 2026-09-09:** tamten spec został usunięty (nie pasował do realnej infrastruktury —
+> zakładał Caddy i rsync zamiast Cloudflare Tunnel i GHCR). Historia w commicie `f48d819`;
+> jego następcą jest [`2026-09-09-czat-konta-vps-design.md`](2026-09-09-czat-konta-vps-design.md).
 **Poza zakresem (kolejne plastry):** VPS, Cloudflare Tunnel, PWA, LiteLLM/czat, MCP, `trips/` monorepo, `npm run new-trip`, drugi trip.
 
 ## 1. Cel

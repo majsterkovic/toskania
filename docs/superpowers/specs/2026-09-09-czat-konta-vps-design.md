@@ -1,10 +1,10 @@
-# Spec: czat z planem, konta uczestników, hosting na `toskania.hybiak.eu`
+# Spec: czat z planem, dostęp dla uczestników, hosting na `toskania.hybiak.eu`
 
 Data: 2026-09-09
 Status: projekt do akceptacji
 Zastępuje: `2026-09-06-vps-trip-framework.md` wraz z planem — **usunięty** w tym samym
 commicie, bo opisywał infrastrukturę, której nie mamy (Caddy, rsync, `/srv/www`, symlinki
-release'ów) i wykluczał to, czego dziś chcemy (konta, bazę danych). Historia zostaje
+release'ów) i wykluczał to, czego dziś chcemy (czat, bazę danych). Historia zostaje
 w gicie, commit `f48d819`. Wszystko, co z tamtego dokumentu nadal obowiązuje, przeniesione
 tutaj: zasada jednej implementacji kontraktu (§4), 10 pytań kontrolnych (§12), uwaga
 o priorytecie PWA (§13) i roadmapa frameworka (§17).
@@ -24,7 +24,7 @@ Buduje na: [`2026-09-07-trip-content-engine-split-design.md`](2026-09-07-trip-co
 Dać **pięciorgu uczestnikom wycieczki** czat, który odpowiada na pytania o plan
 na podstawie `trip.json`, dostępny z telefonu pod jednym adresem, bez Claude Code
 i bez Telegrama. Przy okazji przenieść hosting z GitHub Pages na VPS, bo czat
-z logowaniem wymaga backendu i jednego originu.
+za bramką wymaga backendu i jednego originu.
 
 Powód wyjściowy: autor planował i odpytywał wycieczkę przez Claude Code. W trasie
 ma tylko telefon. Hermes na Telegramie rozwiązuje to **dla jednej osoby** — reszta
@@ -53,11 +53,27 @@ grupy nie ma żadnej drogi do tej wiedzy.
 | D2 | **Function calling**, nie RAG | Plan jest mały i strukturalny (16 dni, 61 punktów). Spis treści mieści się w prompcie systemowym, getter dowozi resztę. Embedding gubi to, że „dzień 5 *jest* dniem 5" — przy pytaniu o czwartek getter po dacie jest dokładny, podobieństwo tylko prawdopodobne. |
 | D3 | Narzędzia jako **czyste funkcje**; MCP to cienki adapter, nie fundament | Przy jednym kliencie (własny czat) MCP byłby protokołem i granicą procesu tam, gdzie wystarcza wywołanie funkcji. Adapter (~30 linii) zostawia otwartą drogę dla Hermesa i Claude Desktop bez przepisywania czegokolwiek, a testy piszemy na funkcjach — milisekundy zamiast handshake'u. |
 | D4 | Plan **read-only**, źródłem prawdy zostaje git | Walidator z builda dalej rządzi, strona i baza nie mogą się rozjechać. Baza trzyma wyłącznie warstwę osobistą. |
-| D5 | **5 kont imiennych**, zakładanych ręcznie | Limit per osoba (jeden ciekawski nie zjada budżetu reszcie) i personalizacja. Rejestracja, reset hasła i weryfikacja mailem odpadają — grupa jest znana z imienia. |
+| D5 | **Jedno wspólne hasło** na bramce + **zadeklarowana tożsamość** (wybór imienia z listy) | Plan nie jest tajemnicą, więc bramka broni budżetu LLM przed obcymi, a nie treści przed grupą. Skoro nikt z piątki nie ma motywu podszywać się pod teścia, uwierzytelnienie i tożsamość można rozdzielić: jeden łatwy sekret na wejściu, imię wybierane samodzielnie. Limit per osoba i personalizacja zostają. Kluczowe: odzyskanie dostępu (wyczyszczone ciasteczka, nowy telefon) nie wymaga administratora — wystarczy wpisać to samo słowo. |
 | D6 | **Jeden origin** na `toskania.hybiak.eu`, bez mirrora na Pages | Ciasteczko sesyjne `SameSite=Lax` bez CORS-a, bez preflightów, bez ITP w Safari. Logowanie robi się nudne, a nudne to dobrze. |
 | D7 | **Macierz odległości liczona przy buildzie** | `router.project-osrm.org` to serwer demo bez SLA. Z przeglądarki ruch rozkłada się na wiele IP; z backendu zbiega się w jedno IP datacenter i prosi o throttling — akurat wtedy, gdy jesteś w trasie. Prekalkulacja przenosi awarię z Toskanii do CI. |
 | D8 | Model główny **płatny i tani**, darmowy jako fallback | `docs/08-routing-llm.md` w `vps-as-a-code`: małe/darmowe modele gubią format function-calling i agent się zacina. Nasz czat jest łańcuchem narzędziowym, więc to najgorsze miejsce na oszczędność. Przy limitach per osoba sufit kosztu jest twardy. |
 | D9 | Wzorzec deployu **`karpacz`/`gieldowo`**, nie Caddy | Spec z 06.09 zakładał Caddy + rsync + symlink release'ów. Realna infrastruktura to Cloudflare Tunnel (TLS terminuje Cloudflare), obraz w GHCR i `docker compose` sterowany z repo `infra`. Caddy byłby trzecim frontem przed dwoma istniejącymi. |
+
+**Odrzucone warianty logowania** (D5), żeby nie wracały:
+
+- *Konta na sztywno w repo* — `majsterkovic/toskania` jest **publiczne**, a dodatkowo
+  figuruje w `infra/repos.txt`, więc jest sklonowane na VPS i czytelne dla Hermesa
+  osiągalnego z Telegrama. Hasło w tym repo to hasło opublikowane.
+- *Jednorazowe linki zapraszające* — link kliknięty w Messengerze otwiera się
+  w przeglądarce wbudowanej w komunikator; ciasteczko zostaje w jej piaskownicy,
+  a token jest już zużyty. Osoba otwiera stronę w Chrome i nie jest zalogowana.
+  Awaria jest cicha, a naprawić ją może tylko administrator — z telefonu, w trasie.
+- *Rejestracja mailem* — wysyłka poczty to osobna usługa, nowy sekret, SPF/DKIM
+  i problem dostarczalności. Link logowania w spamie jest gorszy niż brak logowania.
+- *Sign in with Google* — wymaga projektu w Google Cloud (darmowego, ale jednak),
+  zwraca `client_secret` do SOPS, wymusza konto Google u każdego uczestnika,
+  a w trybie „Testing" grozi ekranem „Google nie zweryfikowało tej aplikacji" —
+  najbardziej odstraszającym elementem całej trójki dla osoby nietechnicznej.
 
 ## 4. Architektura
 
@@ -65,7 +81,8 @@ grupy nie ma żadnej drogi do tej wiedzy.
 toskania.hybiak.eu  (cloudflared → kontener `toskania` w sieci `edge`, bez portów na hoście)
   │
   ├─ /                     statyk z `dist/` (Vite build, base '/')
-  ├─ /api/auth/login       cookie sesyjne, SameSite=Lax, HttpOnly, Secure
+  ├─ /api/auth/gate        wspólne hasło → krótkie cookie `gate` (15 min)
+  ├─ /api/auth/who         GET: lista imion (za bramką) · POST: wybór → sesja 90 dni
   ├─ /api/chat             SSE, pętla function-calling → LiteLLM
   ├─ /api/me               profil + stan limitu
   └─ /healthz              healthcheck pod beszel
@@ -129,15 +146,18 @@ Plik na bind mouncie `~/toskania-data/app.db` (wzorem `~/hermes-data`), tworzony
 deploy przed `up -d`, żeby Docker nie założył go jako root.
 
 ```sql
-users     (id, login, display_name, password_hash, daily_token_budget, created_at)
+users     (id, display_name, daily_token_budget, created_at)               -- UNIQUE(display_name)
 sessions  (id, user_id, expires_at, user_agent, created_at)
 messages  (id, user_id, conversation_id, role, content, tool_calls_json, created_at)
 usage     (id, user_id, day, prompt_tokens, completion_tokens, requests)   -- UNIQUE(user_id, day)
 checks    (user_id, item_key, checked_at)                                  -- plaster 5
 ```
 
-- Hasła: `argon2id`. Konta zakładane **skryptem** (`npm run seed-users`) z haseł
-  wstrzykniętych z SOPS — nie ma ekranu rejestracji ani resetu.
+- **Brak `login` i `password_hash`.** Jedyny sekret to wspólne hasło bramki i żyje
+  w env (SOPS), nigdy w bazie. Nie ma czego wykraść ani resetować.
+- `users` **startuje pusta i zapełnia się sama**: po przejściu bramki widać listę
+  istniejących imion oraz pole „to ktoś nowy". Dopisanie osoby nie wymaga skryptu,
+  sekretu ani deployu — a imiona uczestników nie trafiają do publicznego repo.
 - `messages` służy historii i debugowaniu jakości odpowiedzi. Retencja: 90 dni, cron.
 - `usage` jest źródłem prawdy dla limitu; sprawdzane **przed** wywołaniem LLM.
 
@@ -161,14 +181,35 @@ POST /api/chat  { conversation_id?, message }   → SSE
   w kółko. Po przekroczeniu: odpowiedź częściowa plus komunikat, nigdy cisza.
 - **Timeout 30 s** na całe żądanie, 15 s na pojedyncze wywołanie LLM.
 
-## 9. Konta, sesje, limity
+## 9. Bramka, tożsamość, sesje, limity
 
-- `POST /api/auth/login {login, password}` → ciasteczko `HttpOnly; Secure; SameSite=Lax`,
-  ważne 30 dni (wyjazd trwa 16 — nikt nie ma się logować w trasie drugi raz).
-- Brak rejestracji, brak resetu hasła, brak „zapomniałem". Nowe konto = skrypt + deploy.
+**Bramka obejmuje wyłącznie `/api/chat` i `/api/auth/who`.** Strona z planem zostaje
+publiczna, tak jak dziś na Pages — chronimy budżet LLM, nie treść (D5). Osoba bez hasła
+widzi pełny plan i zamknięty widget czatu; to również warunek kryterium 4 (§15), gdzie
+plan ma działać, gdy czat nie działa.
+
+Dwa kroki, bo sama lista imion jest już informacją i ma siedzieć za bramką.
+
+1. `POST /api/auth/gate {passphrase}` — porównanie w **stałym czasie** z `CHAT_PASSPHRASE`.
+   Sukces daje krótkie (15 min) ciasteczko `gate`.
+2. `GET /api/auth/who` (wymaga `gate`) — lista `display_name` z `users`.
+3. `POST /api/auth/who {user_id}` albo `{new_name}` — zakłada wiersz, jeśli trzeba,
+   i wymienia `gate` na sesję: `HttpOnly; Secure; SameSite=Lax`, **90 dni**.
+
+- **Hasło nie może być słowem z domeny.** `toskania` to pierwsze zgadnięcie. Trzy człony,
+  np. `oliwa-cyprys-42`; wpisywane raz na 90 dni, więc długość nie uwiera.
+- **Rate limit bramki: 5 prób / 15 min / IP.** To jedyna realna obrona przed zgadywaniem
+  wspólnego hasła. **Uwaga: za Cloudflare Tunnel `req.ip` to adres `cloudflared`,
+  nie klienta** — bez czytania `CF-Connecting-IP` jedna osoba myląca hasło zablokuje
+  całą grupę. To pułapka, nie detal.
+- Tożsamość jest **zadeklarowana, nie uwierzytelniona**: ktoś zza bramki może kliknąć
+  cudze imię. Świadome — służy limitowi per osoba i personalizacji, nie ochronie.
 - Limit: `daily_token_budget` per użytkownik + **globalny dzienny sufit** na wypadek,
   gdyby limity per osoba zawiodły. Oba w env, oba sprawdzane przed wywołaniem LLM.
-- Rate limit `10 żądań / min / sesję` — obrona przed pętlą w kliencie, nie przed człowiekiem.
+- Rate limit czatu `10 żądań / min / sesję` — obrona przed pętlą w kliencie, nie przed człowiekiem.
+- **Odebranie dostępu = wymiana hasła**, i dotyka wszystkich naraz. To cena wspólnego
+  sekretu (D5). Istniejące sesje wymianę **przeżywają**, więc rotacja nie wyrzuca grupy
+  w trasie; żeby wyrzuciła, trzeba wymienić także `SESSION_SECRET`.
 
 ## 10. Deploy — wzorzec `karpacz`/`gieldowo`
 
@@ -198,6 +239,7 @@ POST /api/chat  { conversation_id?, message }   → SSE
        - LITELLM_BASE_URL=http://litellm:4000/v1
        - LITELLM_API_KEY=${TOSKANIA_LITELLM_KEY}
        - SESSION_SECRET=${TOSKANIA_SESSION_SECRET}
+       - CHAT_PASSPHRASE=${TOSKANIA_CHAT_PASSPHRASE}
        - DAILY_TOKEN_BUDGET_PER_USER=${TOSKANIA_BUDGET_PER_USER}
        - DAILY_TOKEN_BUDGET_GLOBAL=${TOSKANIA_BUDGET_GLOBAL}
      volumes:
@@ -210,8 +252,8 @@ POST /api/chat  { conversation_id?, message }   → SSE
    - hostname: toskania.hybiak.eu
      service: http://toskania:3000
    ```
-3. `secrets.toskania.enc.yaml` (SOPS) — klucz LiteLLM, sekret sesji, hasła startowe
-   piątki użytkowników. Wchodzą przez `environment:`, nie `env_file` — na dysku
+3. `secrets.toskania.enc.yaml` (SOPS) — trzy pozycje: klucz LiteLLM, sekret sesji,
+   wspólne hasło bramki. Żadnych haseł per osoba. Wchodzą przez `environment:`, nie `env_file` — na dysku
    serwera nie ma plaintextu (wzorzec z punktu D roadmapy `vps-as-a-code`).
 4. `deploy.yml` — `mkdir -p ~/toskania-data` przed `up -d` (Docker inaczej założy
    katalog jako root) i objęcie nowego pliku sekretów zagnieżdżonym `sops exec-env`.
@@ -239,7 +281,9 @@ wszystkich URL-i zasobów i preloadu hero w `index.html` — osobny, sprawdzalny
 - **Narzędzia** (`node --test`, jak dziś): `getDay(8)` zwraca to samo, co render dnia 8;
   `route()` zgadza się z macierzą; `openingHours()` zwraca `null` dla brakujących danych.
 - **Walidator**: rozszerzony o obecność i spójność `distance-matrix.json` z `trip.json`.
-- **Auth**: logowanie, wygasła sesja, przekroczony limit — trzy ścieżki, trzy testy.
+- **Auth**: złe hasło, wyczerpany rate limit bramki, wygasła sesja, przekroczony limit
+  tokenów. Osobno: `POST /api/auth/who` bez ciasteczka `gate` musi dawać 401 — inaczej
+  lista imion wycieka przed bramkę.
 - **Czat, 10 pytań kontrolnych** (przechodzi ze speca 06.09): daty, godziny i ceny
   muszą pochodzić z JSON-a. To jedyny test, który wymaga żywego LLM-a — oznaczony
   jako e2e, poza rutynowym CI, wzorem `@pytest.mark.e2e` w `gieldowo`.
@@ -247,7 +291,8 @@ wszystkich URL-i zasobów i preloadu hero w `index.html` — osobny, sprawdzalny
 ## 13. Poza zakresem (świadomie)
 
 - Edycja planu z poziomu strony (D4).
-- Rejestracja, reset hasła, role, uprawnienia (D5).
+- Hasła per osoba, rejestracja, reset, role, uprawnienia (D5).
+- Ochrona przed podszyciem się w obrębie grupy — tożsamość jest zadeklarowana (§9).
 - RAG, embeddingi, baza wektorowa (D2).
 - Self-hosted OSRM — publiczny endpoint plus prekalkulacja wystarczają (D7).
 - Integracja z Hermesem — plaster 4, opcjonalny.
@@ -261,16 +306,16 @@ wszystkich URL-i zasobów i preloadu hero w `index.html` — osobny, sprawdzalny
 | # | Plaster | Zawartość | Dowozi |
 |---|---|---|---|
 | 1 | Rdzeń narzędzi | `server/tools/` + `build-distance-matrix.js` + testy + `AGENTS.md` | funkcje z testami, zero HTTP i LLM-a |
-| 2 | Backend czatu + konta | Fastify, SQLite, auth, limity, pętla LiteLLM | czat działa przez `curl` |
+| 2 | Backend czatu + tożsamość | Fastify, SQLite, bramka + wybór imienia, limity, pętla LiteLLM | czat działa przez `curl` |
 | 3 | Frontend + cutover | widget czatu, `base: '/'`, obraz GHCR, compose, ingress, DNS | uczestnicy realnie korzystają |
 | 4 | *(opc.)* Adapter MCP | te same funkcje po MCP | Hermes i Claude Desktop wracają do gry |
-| 5 | *(opc.)* Warstwa osobista | `checks` — todo i pakowanie per osoba | personalizacja, po którą były konta |
+| 5 | *(opc.)* Warstwa osobista | `checks` — todo i pakowanie per osoba | personalizacja, po którą była tożsamość |
 
 ## 15. Kryteria akceptacji
 
 1. `npm test` i walidator przechodzą; `distance-matrix.json` zgodny z `trip.json`.
 2. `toskania.hybiak.eu` serwuje stronę wizualnie identyczną z dzisiejszą wersją z Pages.
-3. Piątka uczestników loguje się własnym kontem i dostaje odpowiedź na
+3. Piątka uczestników wchodzi wspólnym hasłem, wybiera swoje imię i dostaje odpowiedź na
    „co robimy 19.09?" z danymi z D8 (Chianti, Brolio/Radda) — data i godziny z JSON-a.
 4. Przekroczenie limitu daje 429, a strona z planem działa dalej.
 5. Awaria LiteLLM nie wywraca strony — czat degraduje się z komunikatem.
@@ -286,6 +331,9 @@ wszystkich URL-i zasobów i preloadu hero w `index.html` — osobny, sprawdzalny
    jako „⚠️ do weryfikacji" — nazwy modeli zmieniają się szybciej niż dokumentacja).
 5. Czy repo `toskania` ma zostać publiczne po cutoverze (dziś jest, bo Pages).
    Publiczny obraz w GHCR = deploy bez `docker login`, wzorem `karpacz`.
+6. Czy `CF-Connecting-IP` dociera przez tunel do kontenera — od tego zależy, czy rate
+   limit bramki działa per osoba, czy blokuje całą grupę naraz (§9). Sprawdzić na
+   `karpacz`/`gieldowo` **przed** pisaniem limitera, nie po.
 
 ## 17. Po tym specu — ekstrakcja frameworka (przeniesione z usuniętego speca 06.09)
 

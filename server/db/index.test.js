@@ -35,3 +35,16 @@ test('openDb: checks ma PRIMARY KEY (user_id, item_key)', () => {
   db.prepare('INSERT INTO checks (user_id, item_key, checked_at) VALUES (?, ?, ?)').run(userId, 'paszport', '2026-09-10');
   assert.throws(() => db.prepare('INSERT INTO checks (user_id, item_key, checked_at) VALUES (?, ?, ?)').run(userId, 'paszport', '2026-09-11'));
 });
+
+test('openDb: tworzy brakujące katalogi dla ścieżki plikowej', async () => {
+  const { mkdtempSync, existsSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const { join } = await import('node:path');
+  const dir = mkdtempSync(join(tmpdir(), 'toskania-db-'));
+  const { openDb: open } = await import('./index.js');
+  const nested = join(dir, 'nie', 'ma', 'app.db');
+  const db = open(nested);
+  assert.ok(existsSync(nested));
+  db.prepare('INSERT INTO users (display_name) VALUES (?)').run('X');
+  db.close();
+});

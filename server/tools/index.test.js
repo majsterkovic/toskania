@@ -19,6 +19,13 @@ const trip = {
         { name: 'Castello di Brolio', coords: [43.47, 11.48], opening_hours: '10:00–18:00', description: 'Zamek i winnica.' },
       ],
       opening_hours: { castello_di_brolio: '10:00–18:00, zamknięte poniedziałki' },
+      food: {
+        place: 'Osteria Il Rifugio del Chianti',
+        address: 'Via Roma 6, 53017 Radda in Chianti SI',
+        dishes: ['pici al ragù toscano', 'tagliata di manzo'],
+        note: 'Lokalna osteria w centrum Raddy.',
+        price: '~€18–28/os',
+      },
     },
   ],
   costs: { total_eur: 5000 },
@@ -108,4 +115,26 @@ test('todo: zwraca todo z trip.json bez zmian', () => {
 
 test('packing: zwraca packing_list z trip.json bez zmian', () => {
   assert.deepEqual(tools.packing.execute({}), trip.packing_list);
+});
+
+test('searchFood: trafia frazę w nazwie miejsca, zwraca day_num i pełny obiekt food', () => {
+  const hits = tools.searchFood.execute({ query: 'Rifugio' });
+  assert.equal(hits.length, 1);
+  assert.equal(hits[0].day_num, 8);
+  assert.equal(hits[0].food.place, 'Osteria Il Rifugio del Chianti');
+});
+
+test('searchFood: trafia frazę w liście dishes', () => {
+  const hits = tools.searchFood.execute({ query: 'tagliata' });
+  assert.equal(hits.length, 1);
+  assert.equal(hits[0].day_num, 8);
+});
+
+test('searchFood: dzień bez pola food jest pomijany, nie rzuca', () => {
+  const hits = tools.searchFood.execute({ query: 'jazda' });
+  assert.deepEqual(hits, []);
+});
+
+test('searchFood: brak trafień zwraca pustą listę', () => {
+  assert.deepEqual(tools.searchFood.execute({ query: 'sushi' }), []);
 });

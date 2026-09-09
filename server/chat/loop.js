@@ -1,7 +1,7 @@
 const MAX_TOOL_ITERATIONS = 5;
 const TOTAL_TIMEOUT_MS = 30000;
 
-export async function runChatLoop({ llmClient, toolRegistry, systemPrompt, history, userMessage }) {
+export async function runChatLoop({ llmClient, toolRegistry, systemPrompt, history, userMessage, onToolCall }) {
   const messages = [
     { role: 'system', content: systemPrompt },
     ...history,
@@ -37,6 +37,7 @@ export async function runChatLoop({ llmClient, toolRegistry, systemPrompt, histo
         ? await tool.execute(JSON.parse(call.function.arguments || '{}'))
         : { error: 'unknown_tool' };
       messages.push({ role: 'tool', tool_call_id: call.id, content: JSON.stringify(result) });
+      await onToolCall?.(call.function.name, result);
     }
   }
   throw new Error('chat_loop_max_iterations');

@@ -5,6 +5,7 @@ import fastifyRateLimit from '@fastify/rate-limit';
 import { openDb } from './db/index.js';
 import { registerGateRoute } from './auth/gate.js';
 import { registerWhoRoute } from './auth/who.js';
+import { registerChatRoute } from './routes/chat.js';
 
 export async function buildApp(opts = {}) {
   const app = Fastify({ logger: opts.logger ?? false });
@@ -23,6 +24,17 @@ export async function buildApp(opts = {}) {
   app.get('/healthz', async () => ({ ok: true }));
   registerGateRoute(app, { passphrase: opts.passphrase ?? process.env.CHAT_PASSPHRASE });
   registerWhoRoute(app, db);
+  if (opts.toolRegistry && opts.llmClient) {
+    registerChatRoute(app, db, {
+      toolRegistry: opts.toolRegistry,
+      llmClient: opts.llmClient,
+      systemPrompt: opts.systemPrompt,
+      budgets: opts.budgets ?? {
+        perUserLimit: Number(process.env.DAILY_TOKEN_BUDGET_PER_USER ?? 50000),
+        globalLimit: Number(process.env.DAILY_TOKEN_BUDGET_GLOBAL ?? 200000),
+      },
+    });
+  }
 
   app.addHook('onClose', (instance, done) => {
     db.close();

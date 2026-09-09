@@ -116,6 +116,43 @@ Istniejące `server/chat/loop.test.js` i `loop.e2e.js` wymagają aktualizacji
 pod nową dwufazową strukturę (asercje na to, że writer nie dostaje `tools`,
 że content routera z ostatniej iteracji nie przecieka do odpowiedzi).
 
+### Rozstrzygnięcie D6 (2026-09-09/10, eval na żywym VPS)
+
+`scripts/eval-chat-roles.js` odpalony na produkcyjnym VPS przez oba warianty
+przypisania ról. Wynik jednoznaczny:
+
+- **gemma-router + glimmer-writer**: 4/4 promptów padło timeoutem. Gemma w
+  roli routera musi odpowiadać szybko i wielokrotnie (kolejne iteracje) —
+  przy jej realnej latencji (zmierzone bezpośrednio: 30-95 s na trywialny
+  prompt, konsekwentnie, nie cold start) to fatalne.
+- **glimmer-router + gemma-writer**: 3/4 promptów dało pełną, poprawną
+  polską odpowiedź z realnymi danymi z `trip.json`. W 2 z tych 3 przypadków
+  sam writer (gemma) też oberwał timeoutem, ale zadziałał fallback do
+  `lastRouterContent` (patrz "Obsługa błędów" wyżej) i user i tak dostał
+  dobrą odpowiedź — bo glimmer jako router już produkuje gotową,
+  sformatowaną prozę, nie tylko sygnały do narzędzi.
+
+**Decyzja: glimmer w obu rolach (router i writer), gemma poza automatycznym
+łańcuchem.** Writer jako osobny model dawał minimalną wartość dodaną wobec
+tego, co glimmer-router już zwracał, a gemma niemal nigdy nie kończyła się
+sukcesem w praktyce. `CHAT_MODEL_FALLBACK` (`nvidia-deepseek-v4-flash-0731`)
+zostaje wspólnym fallbackiem dla obu ról — `TOSKANIA_CHAT_MODEL_WRITER`/
+`_WRITER_FALLBACK` w sekretach albo zostają nieustawione (aplikacyjny `||`
+fallback na `CHAT_MODEL`/`CHAT_MODEL_FALLBACK` już to zapewnia od commita
+`c642632`), albo operator ustawia je explicite na te same wartości dla
+jasności.
+
+Przy okazji evala odkryto, że D7's pierwotny budżet (~18 s) był nierealny
+dla modeli rozumujących na darmowym tierze NIM — glimmer sam potrzebuje
+~7-10 s reasoning na trywialny prompt. Podniesiono do 30 s/call, 60 s/tura
+(commit `862d7a0`), zweryfikowane ponownym evalem po redeployu.
+
+Osobno zaobserwowano: prompt bez pokrycia w danych ("O której otwiera się
+Koloseum w Rzymie?") skończył się `chat_loop_max_iterations` zamiast
+odpowiedzią "nie mam tej informacji" — router się zapętlił zamiast
+rozpoznać brak danych i zakończyć. Nie naprawione w ramach tego evalu,
+zanotowane jako odrębna usterka do zbadania.
+
 ## Poza zakresem (odrzucone / odłożone)
 
 - **A2UI / generative UI** — odrzucone, patrz D5.

@@ -34,3 +34,16 @@ test('createLlmClient: przy błędzie modelu głównego próbuje fallback', asyn
   assert.equal(call, 2);
   mock.restoreAll();
 });
+
+test('createLlmClient: bez narzędzi (rola writer) nie wysyła tools ani tool_choice w body', async () => {
+  const fetchMock = mock.method(globalThis, 'fetch', async () => ({
+    ok: true,
+    json: async () => ({ choices: [{ message: { role: 'assistant', content: 'ok' } }], usage: {} }),
+  }));
+  const client = createLlmClient({ baseUrl: 'http://litellm:4000/v1', apiKey: 'k', model: 'nvidia-gemma-4-31b-it' });
+  await client.chat([{ role: 'user', content: 'hej' }]);
+  const body = JSON.parse(fetchMock.mock.calls[0].arguments[1].body);
+  assert.equal('tools' in body, false);
+  assert.equal('tool_choice' in body, false);
+  mock.restoreAll();
+});

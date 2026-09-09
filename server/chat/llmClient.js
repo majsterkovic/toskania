@@ -1,10 +1,15 @@
 const CALL_TIMEOUT_MS = 15000;
 
 async function callOnce({ baseUrl, apiKey, model, messages, tools, signal }) {
+  const body = { model, messages };
+  if (tools && tools.length > 0) {
+    body.tools = tools;
+    body.tool_choice = 'auto';
+  }
   const res = await fetch(`${baseUrl}/chat/completions`, {
     method: 'POST',
     headers: { 'content-type': 'application/json', authorization: `Bearer ${apiKey}` },
-    body: JSON.stringify({ model, messages, tools, tool_choice: 'auto' }),
+    body: JSON.stringify(body),
     signal,
   });
   if (!res.ok) throw new Error(`llm_http_${res.status}`);

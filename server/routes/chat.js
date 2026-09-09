@@ -1,12 +1,13 @@
 import { requireSession } from '../auth/session.js';
 import { budgetExceeded, recordUsage } from '../db/usage.js';
 import { runChatLoop } from '../chat/loop.js';
+import { buildRouterSystemPrompt, buildWriterSystemPrompt, todayIso } from '../chat/systemPrompt.js';
 
 function sseSend(raw, event, data) {
   raw.write(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`);
 }
 
-export function registerChatRoute(app, db, { toolRegistry, llmClient, systemPrompt, budgets }) {
+export function registerChatRoute(app, db, { toolRegistry, trip, routerClient, writerClient, budgets }) {
   app.post('/api/chat', {
     preHandler: requireSession,
     config: {
@@ -29,12 +30,16 @@ export function registerChatRoute(app, db, { toolRegistry, llmClient, systemProm
     db.prepare("INSERT INTO messages (user_id, conversation_id, role, content) VALUES (?, ?, 'user', ?)")
       .run(req.user.id, conversationId, userMessage);
 
+    const today = todayIso();
+    const routerSystemPrompt = buildRouterSystemPrompt({ trip, toolRegistry, today });
+    const writerSystemPrompt = buildWriterSystemPrompt({ trip, today });
+
     const wantsSse = (req.headers.accept ?? '').includes('text/event-stream');
 
     try {
       if (!wantsSse) {
         const result = await runChatLoop({
-          llmClient, toolRegistry, systemPrompt,
+          routerClient, writerClient, toolRegistry, routerSystemPrompt, writerSystemPrompt,
           history: req.body?.history ?? [],
           userMessage,
         });
@@ -54,7 +59,7 @@ export function registerChatRoute(app, db, { toolRegistry, llmClient, systemProm
       });
       try {
         const result = await runChatLoop({
-          llmClient, toolRegistry, systemPrompt,
+          routerClient, writerClient, toolRegistry, routerSystemPrompt, writerSystemPrompt,
           history: req.body?.history ?? [],
           userMessage,
           onToolCall: (name) => sseSend(raw, 'status', { tool: name }),

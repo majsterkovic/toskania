@@ -26,11 +26,12 @@ export async function buildApp(opts = {}) {
   registerGateRoute(app, { passphrase: opts.passphrase ?? process.env.CHAT_PASSPHRASE });
   registerWhoRoute(app, db);
   registerMeRoute(app, db);
-  if (opts.toolRegistry && opts.llmClient) {
+  if (opts.toolRegistry && opts.routerClient && opts.writerClient) {
     registerChatRoute(app, db, {
       toolRegistry: opts.toolRegistry,
-      llmClient: opts.llmClient,
-      systemPrompt: opts.systemPrompt,
+      trip: opts.trip,
+      routerClient: opts.routerClient,
+      writerClient: opts.writerClient,
       budgets: opts.budgets ?? {
         perUserLimit: Number(process.env.DAILY_TOKEN_BUDGET_PER_USER ?? 50000),
         globalLimit: Number(process.env.DAILY_TOKEN_BUDGET_GLOBAL ?? 200000),

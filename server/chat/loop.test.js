@@ -79,3 +79,11 @@ test('runChatLoop: nieznane narzędzie nie wywala pętli, wraca error do modelu'
   });
   assert.equal(result.content, 'ok');
 });
+
+test('runChatLoop: zbiera model_used z odpowiedzi LLM do result.models', async () => {
+  const llmClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: 'ok' } }], usage: {}, model_used: 'm1' }) };
+  const result = await runChatLoop({
+    llmClient, toolRegistry: fakeToolRegistry(), systemPrompt: 'sys', history: [], userMessage: 'hej',
+  });
+  assert.deepEqual(result.models, ['m1']);
+});

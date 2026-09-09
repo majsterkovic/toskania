@@ -27,11 +27,12 @@ test('POST /api/chat bez sesji daje 401', async () => {
 });
 
 test('POST /api/chat z sesją zwraca odpowiedź modelu i zapisuje ją do messages + usage', async () => {
-  const llmClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: 'Dzień 8 to Chianti.' } }], usage: { prompt_tokens: 10, completion_tokens: 5 } }) };
+  const llmClient = { chat: async () => ({ choices: [{ message: { role: 'assistant', content: 'Dzień 8 to Chianti.' } }], usage: { prompt_tokens: 10, completion_tokens: 5 }, model_used: 'test-model' }) };
   const { app, sessionCookie } = await loggedInApp({ llmClient });
   const res = await app.inject({ method: 'POST', url: '/api/chat', cookies: { session: sessionCookie.value }, payload: { message: 'co 19.09?' } });
   assert.equal(res.statusCode, 200);
   assert.match(res.body, /Chianti/);
+  assert.deepEqual(res.json().models, ['test-model']);
   const msgCount = app.db.prepare("SELECT COUNT(*) as n FROM messages WHERE role = 'assistant'").get().n;
   assert.equal(msgCount, 1);
   const usage = app.db.prepare('SELECT prompt_tokens, completion_tokens FROM usage').get();

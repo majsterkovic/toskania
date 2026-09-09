@@ -31,10 +31,14 @@ export function createLlmClient({ baseUrl, apiKey, model, fallbackModel }) {
   return {
     async chat(messages, tools) {
       try {
-        return await callWithTimeout({ baseUrl, apiKey, model, messages, tools });
+        const res = await callWithTimeout({ baseUrl, apiKey, model, messages, tools });
+        res.model_used = model;
+        return res;
       } catch (err) {
         if (!fallbackModel) throw err;
-        return await callWithTimeout({ baseUrl, apiKey, model: fallbackModel, messages, tools });
+        const res = await callWithTimeout({ baseUrl, apiKey, model: fallbackModel, messages, tools });
+        res.model_used = fallbackModel;
+        return res;
       }
     },
   };

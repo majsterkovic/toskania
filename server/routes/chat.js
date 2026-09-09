@@ -41,7 +41,8 @@ export function registerChatRoute(app, db, { toolRegistry, llmClient, systemProm
         recordUsage(db, req.user.id, result.usage.prompt_tokens, result.usage.completion_tokens);
         db.prepare("INSERT INTO messages (user_id, conversation_id, role, content) VALUES (?, ?, 'assistant', ?)")
           .run(req.user.id, conversationId, result.content);
-        return { content: result.content };
+        req.log.info({ user: req.user.displayName, models: result.models, usage: result.usage }, 'chat completed');
+        return { content: result.content, models: result.models };
       }
 
       reply.hijack();
@@ -61,8 +62,9 @@ export function registerChatRoute(app, db, { toolRegistry, llmClient, systemProm
         recordUsage(db, req.user.id, result.usage.prompt_tokens, result.usage.completion_tokens);
         db.prepare("INSERT INTO messages (user_id, conversation_id, role, content) VALUES (?, ?, 'assistant', ?)")
           .run(req.user.id, conversationId, result.content);
+        req.log.info({ user: req.user.displayName, models: result.models, usage: result.usage }, 'chat completed');
         sseSend(raw, 'content', { content: result.content });
-        sseSend(raw, 'done', { usage: result.usage });
+        sseSend(raw, 'done', { usage: result.usage, models: result.models });
       } catch (err) {
         sseSend(raw, 'error', { error: 'assistant_unavailable', detail: err.message });
       }

@@ -14,11 +14,13 @@ export async function runChatLoop({ llmClient, toolRegistry, systemPrompt, histo
 
   const deadline = Date.now() + TOTAL_TIMEOUT_MS;
   const usage = { prompt_tokens: 0, completion_tokens: 0 };
+  const models = [];
 
   for (let i = 0; i < MAX_TOOL_ITERATIONS; i++) {
     if (Date.now() > deadline) throw new Error('chat_loop_timeout');
 
     const response = await llmClient.chat(messages, toolDefs);
+    if (response.model_used) models.push(response.model_used);
     const choice = response.choices[0];
     if (response.usage) {
       usage.prompt_tokens += response.usage.prompt_tokens ?? 0;
@@ -28,7 +30,7 @@ export async function runChatLoop({ llmClient, toolRegistry, systemPrompt, histo
     messages.push(msg);
 
     if (!msg.tool_calls || msg.tool_calls.length === 0) {
-      return { content: msg.content, usage, messages };
+      return { content: msg.content, usage, messages, models };
     }
 
     for (const call of msg.tool_calls) {

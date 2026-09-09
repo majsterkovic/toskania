@@ -10,6 +10,7 @@ test('createLlmClient: woła model główny, zwraca JSON odpowiedzi', async () =
   const client = createLlmClient({ baseUrl: 'http://litellm:4000/v1', apiKey: 'k', model: 'deepseek-v4-flash' });
   const res = await client.chat([{ role: 'user', content: 'hej' }], []);
   assert.equal(res.choices[0].message.content, 'ok');
+  assert.equal(res.model_used, 'deepseek-v4-flash');
   assert.match(fetchMock.mock.calls[0].arguments[0], /\/chat\/completions$/);
   mock.restoreAll();
 });
@@ -29,6 +30,7 @@ test('createLlmClient: przy błędzie modelu głównego próbuje fallback', asyn
   const client = createLlmClient({ baseUrl: 'http://litellm:4000/v1', apiKey: 'k', model: 'deepseek-v4-flash', fallbackModel: 'deepseek-v4-pro-free' });
   const res = await client.chat([{ role: 'user', content: 'hej' }], []);
   assert.equal(res.choices[0].message.content, 'fallback ok');
+  assert.equal(res.model_used, 'deepseek-v4-pro-free');
   assert.equal(call, 2);
   mock.restoreAll();
 });

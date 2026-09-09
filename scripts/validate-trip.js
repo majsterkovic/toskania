@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { collectPoints } from './build-distance-matrix.js';
 
 const META_REQUIRED = [
   'schema_version', 'brand', 'storage_key', 'timezone',
@@ -13,7 +14,7 @@ function isCoords(v) {
   return Array.isArray(v) && v.length === 2 && v.every((n) => typeof n === 'number' && Number.isFinite(n));
 }
 
-export function validateTrip(trip, config) {
+export function validateTrip(trip, config, distanceMatrix) {
   const errors = [];
   const err = (m) => errors.push(m);
 
@@ -81,13 +82,22 @@ export function validateTrip(trip, config) {
     }
   }
 
+  if (distanceMatrix) {
+    const expectedIds = new Set(collectPoints(trip).map((p) => p.id));
+    const actualIds = new Set((distanceMatrix.points ?? []).map((p) => p.id));
+    if (expectedIds.size !== actualIds.size || [...expectedIds].some((id) => !actualIds.has(id))) {
+      err('distance-matrix.json niezgodny z trip.json — uruchom `node scripts/build-distance-matrix.js`');
+    }
+  }
+
   return { ok: errors.length === 0, errors };
 }
 
 async function main() {
   const trip = JSON.parse(await readFile(resolve('trip.json'), 'utf8'));
   const { default: config } = await import(pathToFileURL(resolve('trip.config.js')).href);
-  const r = validateTrip(trip, config);
+  const distanceMatrix = JSON.parse(await readFile(resolve('src/distance-matrix.json'), 'utf8'));
+  const r = validateTrip(trip, config, distanceMatrix);
   if (!r.ok) {
     console.error(r.errors.map((e) => `• ${e}`).join('\n'));
     process.exit(1);

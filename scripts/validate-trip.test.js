@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateTrip } from './validate-trip.js';
+import { collectPoints } from './build-distance-matrix.js';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const minimal = JSON.parse(readFileSync(join(root, 'fixtures/trip-minimal.json'), 'utf8'));
@@ -68,4 +69,19 @@ test('missing imageSizes key fails', () => {
   const r = validateTrip(minimal, { ...config, imageSizes: {} });
   assert.equal(r.ok, false);
   assert.match(r.errors.join('\n'), /imageSizes/);
+});
+
+test('validateTrip: distance-matrix.json niezgodny z trip.json daje błąd', () => {
+  const trip = structuredClone(minimal);
+  const badMatrix = { points: [{ id: 'nieistniejący', name: 'X', lat: 0, lon: 0 }] };
+  const { ok, errors } = validateTrip(trip, config, badMatrix);
+  assert.equal(ok, false);
+  assert.match(errors.join('\n'), /distance-matrix/);
+});
+
+test('validateTrip: distance-matrix.json zgodny z trip.json przechodzi', () => {
+  const trip = structuredClone(minimal);
+  const matrix = { points: collectPoints(trip) };
+  const { ok } = validateTrip(trip, config, matrix);
+  assert.equal(ok, true);
 });

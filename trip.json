@@ -600,16 +600,10 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Noclegi Neustadt an der Donau",
-          "summary": "Gasthof Gigl (Herzog-Ludwig-Str. 6): parking wewnętrzny gratis, check-in 15:00–21:00, rezerwacja poza 21:00 wymaga kontaktu. Hotel Pflügler (Schwaig, Hauptstr. 14): parking gratis, 5 km od centrum.",
-          "source": "https://www.gigl.de/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Kelheim jako alternatywa",
-          "summary": "Malownicze miasto nad Dunajem, 15 km od Neustadt. Parking P4 Donauvorland: płatny kwie–paź (€1/2h), zimą gratis. Altstadt 1 min pieszo od P4.",
-          "source": "https://tourismus.kelheim.de/adressen/parkplatz-p4-donauvorland/",
-          "checked": "2026-07"
+          "topic": "Unterhaching (Hotel Fresh Inn) — dojazd tranzytowy i strefa ekologiczna",
+          "summary": "Hotel Fresh Inn położony jest przy Grünwalderweg 20d na południowym przedmieściu Monachium (Unterhaching), tuż przy autostradzie A995 (zjazd Unterhaching-Nord). Zapewnia to bezkolizyjny dojazd obwodnicą A99/A995 bez konieczności wjazdu do Umweltzone (strefy niskiej emisji) w centrum Monachium. Bezpłatny parking hotelowy na miejscu.",
+          "source": "https://www.fresh-inn.de/",
+          "checked": "2026-09"
         },
         {
           "topic": "MOP-y na trasie A72 i A9 (Vogtland, Fränkische Schweiz, Feucht)",
@@ -619,8 +613,8 @@
         }
       ],
       "opening_hours": {
-        "gasthof_gigl_checkin": "15:00–21:00 (po 21:00 kontakt telefoniczny)",
-        "raststaette_a9": "24/7"
+        "hotel_fresh_inn_checkin": "15:00–22:00 (wymeldowanie 06:00–11:00; po 22:00 kontakt tel. +49 89 3070900)",
+        "raststaette_a72_a9": "24/7"
       },
       "eta_timeline": [
         {
@@ -837,7 +831,7 @@
         },
         {
           "topic": "Werona — obwodnica tranzytowa",
-          "summary": "Na trasie Neustadt→Barga: zostań na A22 południe — nie wjeżdżaj do centro storico (ZTL, korki). Werona Nord = węzeł A22; kontynuacja do Mantovy/Campogalliano. Lunch lepiej w Rovereto (wcześniej na trasie).",
+          "summary": "Na trasie Unterhaching→Barga: zostań na A22 południe — nie wjeżdżaj do centro storico (ZTL, korki). Werona Nord = węzeł A22; kontynuacja do Mantovy/Campogalliano. Lunch lepiej w Rovereto (wcześniej na trasie).",
           "source": "https://www.autobrennero.it/en/",
           "checked": "2026-07"
         },

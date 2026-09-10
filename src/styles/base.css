@@ -365,6 +365,20 @@ body {
 .day-booking__list li + li {
   margin-top: 0.2rem;
 }
+.day-booking__row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.booking-check {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: var(--cipresso);
+  cursor: pointer;
+}
 .day-booking--required {
   border-left: 4px solid #dc2626;
   background: rgba(220, 38, 38, 0.08);

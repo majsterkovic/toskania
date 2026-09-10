@@ -923,10 +923,11 @@ const SHORT_BOOKING_NAMES = {
   'trenitalia-xgo': 'Trenitalia X-GO',
 };
 
-function timelineMarkers(day, bookings) {
+function timelineMarkers(day, bookings, doneSet) {
+  const pending = withoutDone(bookings, doneSet);
   const marks = [];
-  const req = (bookings || []).filter((b) => b.group === 'required');
-  const opt = (bookings || []).filter((b) => b.group !== 'required');
+  const req = pending.filter((b) => b.group === 'required');
+  const opt = pending.filter((b) => b.group !== 'required');
 
   if (req.length) {
     const names = req.map((b) => SHORT_BOOKING_NAMES[b.id] || b.label).join(', ');
@@ -948,7 +949,7 @@ function timelineMarkers(day, bookings) {
   return marks.join('');
 }
 
-function timelineRow(day, bookings) {
+function timelineRow(day, bookings, doneSet) {
   const { d, wd } = dayDateParts(day.date);
   const dateHtml = `<span class="tl-row__date"><span class="tl-row__d">${esc(d)}</span><span class="tl-row__wd">${esc(wd)}</span></span>`;
   if (day.type === 'buffer') {
@@ -961,12 +962,9 @@ function timelineRow(day, bookings) {
         </span>
       </div>`;
   }
-  const reqBookings = (bookings || []).filter((b) => b.group === 'required');
-  const hasReqBooking = reqBookings.length > 0;
-  const reqLabels = reqBookings.map((b) => SHORT_BOOKING_NAMES[b.id] || b.label).join(', ');
-  const titleBadge = hasReqBooking
-    ? `<span class="tl-badge tl-badge--booking-required" title="Wymagana rezerwacja z wyprzedzeniem: ${esc(reqLabels)}">🔴 REZERWACJA</span>`
-    : '';
+  // Jeden sygnał rezerwacji: marker z nazwami pod spodem (titleBadge usunięty
+  // jako duplikat). Czerwone podświetlenie wiersza gaśnie po odhaczeniu.
+  const hasReqBooking = withoutDone(bookings, doneSet).some((b) => b.group === 'required');
   const rowClasses = [
     'tl-row',
     'reveal',
@@ -979,10 +977,9 @@ function timelineRow(day, bookings) {
       <span class="tl-row__main">
         <span class="tl-row__head">
           <span class="tl-row__title">${esc(day.title)}</span>
-          ${titleBadge}
         </span>
         ${day.summary ? `<span class="tl-row__desc">${esc(trimText(day.summary, 155))}</span>` : ''}
-        <span class="tl-row__markers">${timelineMarkers(day, bookings)}</span>
+        <span class="tl-row__markers">${timelineMarkers(day, bookings, doneSet)}</span>
       </span>
       <span class="tl-row__chev" aria-hidden="true">›</span>
     </a>`;
@@ -1050,8 +1047,9 @@ export function renderTimeline(plan) {
   const images = plan.meta?.images ?? plan.images;
   const phases = groupPhases(plan.days, plan.meta);
   const bookings = bookingsByDay(plan.todo);
+  const doneSet = getDoneIds(doneStorageKey(plan));
   const timelineHtml = phases.map((phase) => {
-    const rows = phase.days.map((day) => timelineRow(day, bookings[day.day_num])).join('');
+    const rows = phase.days.map((day) => timelineRow(day, bookings[day.day_num], doneSet)).join('');
     const base = phase.baseId ? (plan.bases || []).find((b) => b.id === phase.baseId) : null;
     if (base) {
       phase.label = base.region ? base.region.split('·')[0].trim() : base.name;
@@ -1113,7 +1111,8 @@ export function renderDayPage(day, images, bases, days, todo, meta) {
     ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini" aria-label="Mapa dnia ${day.day_num}"></div>`
     : '';
   const warning = day.warning ? `<div class="day-warning">${esc(day.warning)}</div>` : '';
-  const dayBookings = bookingsByDay(todo)[day.day_num];
+  const doneSet = getDoneIds(doneStorageKey({ meta }));
+  const dayBookings = withoutDone(bookingsByDay(todo)[day.day_num], doneSet);
   const hasReqBooking = dayBookings?.some((b) => b.group === 'required');
   const bookingBanner = dayBookings?.length
     ? `<div class="day-booking${hasReqBooking ? ' day-booking--required' : ''}">
@@ -1122,7 +1121,7 @@ export function renderDayPage(day, images, bases, days, todo, meta) {
           ${dayBookings
             .map(
               (b) =>
-                `<li>${b.group === 'required' ? '<span class="day-booking__badge">WYMAGANA REZERWACJA</span> ' : ''}<strong>${esc(b.label)}</strong>${b.deadline ? ` — ${esc(b.deadline)}` : ''}${b.url ? ` · <a class="day-booking__link" href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">↗ rezerwuj online</a>` : ''}</li>`
+                `<li><label class="day-booking__row"><input type="checkbox" class="booking-check" data-booking-id="${esc(b.id)}" title="Oznacz jako zrobione" /><span>${b.group === 'required' ? '<span class="day-booking__badge">WYMAGANA REZERWACJA</span> ' : ''}<strong>${esc(b.label)}</strong>${b.deadline ? ` — ${esc(b.deadline)}` : ''}${b.url ? ` · <a class="day-booking__link" href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">↗ rezerwuj online</a>` : ''}</span></label></li>`
             )
             .join('')}
         </ul>

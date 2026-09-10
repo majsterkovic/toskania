@@ -1,23 +1,37 @@
 /**
- * Zakładka Bazy: pełne karty noclegowe (adres, sklep, GPS).
+ * Zakładka Bazy: taby, sekcje karty (pobyt / nocleg / okolica), mapka.
  */
-.bases-grid {
-  display: grid;
-  gap: 1.5rem;
+.base-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+  flex-wrap: wrap;
 }
-@media (min-width: 900px) {
-  .bases-grid {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-  }
+.base-tab {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--muted);
+  cursor: pointer;
 }
-
+.base-tab.is-active {
+  background: var(--terracotta);
+  border-color: var(--terracotta);
+  color: #fff;
+}
 .base-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.25rem 1.5rem 1.5rem;
   box-shadow: var(--shadow);
+}
+.base-card[hidden] {
+  display: none;
 }
 .base-card__eyebrow {
   font-family: var(--font-sans);
@@ -35,32 +49,99 @@
   line-height: 1.2;
   color: var(--ink);
 }
-.base-card__nights {
-  margin-top: 0.3rem;
-  font-weight: 600;
-  color: var(--terracotta);
-}
 .base-card__desc {
-  margin-top: 0.75rem;
+  margin-top: 0.6rem;
   color: var(--muted);
   line-height: 1.55;
 }
-.base-card__row {
-  margin-top: 0.75rem;
+.base-blocks {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.1rem;
+}
+@media (min-width: 768px) {
+  .base-blocks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.base-block {
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem 1rem;
+}
+.base-block__title {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cipresso);
+  margin-bottom: 0.5rem;
+}
+.base-block__term {
+  font-weight: 700;
+  color: var(--terracotta);
+}
+.base-block__label {
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.base-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+.base-chip {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+}
+.base-chip:hover {
+  border-color: var(--terracotta);
+  color: var(--terracotta);
+}
+.base-block__addr {
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.base-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.6rem 0;
+  flex-wrap: wrap;
+}
+.base-btn {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--terracotta);
+  background: var(--terracotta);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.base-btn--link {
+  background: transparent;
+  color: var(--terracotta);
+}
+.base-block__row {
+  margin-top: 0.55rem;
+  font-size: 0.88rem;
   line-height: 1.55;
   color: var(--ink);
 }
-.base-card__tip {
-  color: var(--muted);
-}
-.base-card__maps {
-  margin-top: 0.9rem;
-}
-.base-card__maps a {
-  color: var(--terracotta);
-  font-weight: 600;
-  text-decoration: none;
-}
-.base-card__maps a:hover {
-  text-decoration: underline;
+#base-map {
+  margin-top: 1.25rem;
 }

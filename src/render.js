@@ -1012,33 +1012,68 @@ function renderBaseInfo(base) {
     </div>`;
 }
 
-/** Pełna karta bazy na zakładkę Bazy (adres, sklep, GPS, tip). */
-export function renderBaseCard(base) {
+/** Dni spędzone z danej bazy (bez dnia transferu między bazami). */
+function baseDays(days, baseId) {
+  return (days || []).filter(
+    (d) => d.day_num != null && d.base_id === baseId && d.type !== 'tuscany_transfer'
+  );
+}
+
+function renderBasePanel(base, days) {
   if (!base) return '';
   const mapsUrl = Array.isArray(base.coords) && base.coords.length === 2
     ? `https://www.google.com/maps/search/?api=1&query=${base.coords[0]},${base.coords[1]}`
     : '';
+  const chips = baseDays(days, base.id)
+    .map((d) => `<a class="base-chip" href="${BASE_URL}#/dzien-${d.day_num}" title="${esc(d.title)}">D${d.day_num}</a>`)
+    .join('');
   return `
-    <article class="base-card" id="baza-${esc(base.id)}">
+    <article class="base-card" id="panel-${esc(base.id)}" role="tabpanel" hidden>
       <p class="base-card__eyebrow">${esc(base.label)}${base.region ? ` · ${esc(base.region)}` : ''}</p>
       <h2 class="base-card__name">${esc(base.name)}</h2>
-      ${base.nights ? `<p class="base-card__nights">${esc(base.nights)}</p>` : ''}
       ${base.description ? `<p class="base-card__desc">${esc(base.description)}</p>` : ''}
-      ${base.accommodation ? `<p class="base-card__row"><strong>Nocleg:</strong> ${esc(base.accommodation)}</p>` : ''}
-      ${base.local_shop ? `<p class="base-card__row">🥩 <strong>Sklep w okolicy (~10 min autem):</strong> ${esc(base.local_shop)}</p>` : ''}
-      ${base.booking_tip ? `<p class="base-card__row base-card__tip">→ ${esc(base.booking_tip)}</p>` : ''}
-      ${base.gps_hint ? `<p class="base-card__row muted">📍 ${esc(base.gps_hint)}</p>` : ''}
-      ${mapsUrl ? `<p class="base-card__maps"><a href="${esc(mapsUrl)}" target="_blank" rel="noopener">Otwórz w Mapach Google ↗</a></p>` : ''}
+      <div class="base-blocks">
+        <section class="base-block">
+          <h3 class="base-block__title">Pobyt</h3>
+          ${base.nights ? `<p class="base-block__term">${esc(base.nights)}</p>` : ''}
+          ${chips ? `<p class="base-block__label">Dni z tej bazy:</p><div class="base-chips">${chips}</div>` : ''}
+        </section>
+        <section class="base-block">
+          <h3 class="base-block__title">Nocleg</h3>
+          ${base.address ? `<p class="base-block__addr">${esc(base.address)}</p>` : ''}
+          <div class="base-actions">
+            ${base.address ? `<button type="button" class="base-btn" data-copy-addr="${esc(base.address)}">Kopiuj adres</button>` : ''}
+            ${mapsUrl ? `<a class="base-btn base-btn--link" href="${esc(mapsUrl)}" target="_blank" rel="noopener">Mapy Google ↗</a>` : ''}
+          </div>
+          ${base.accommodation ? `<p class="base-block__row">${esc(base.accommodation)}</p>` : ''}
+          ${base.booking_tip ? `<p class="base-block__row muted">→ ${esc(base.booking_tip)}</p>` : ''}
+        </section>
+        ${base.local_shop ? `
+        <section class="base-block">
+          <h3 class="base-block__title">Sklep w okolicy</h3>
+          <p class="base-block__row">🥩 ${esc(base.local_shop)}</p>
+        </section>` : ''}
+      </div>
     </article>`;
 }
 
-export function renderBases(bases) {
-  const cards = (bases || []).map(renderBaseCard).join('');
+export function renderBases(bases, days) {
+  const list = bases || [];
+  const tabs = list
+    .map(
+      (b, i) => `
+      <button type="button" role="tab" class="base-tab" data-base-tab="${esc(b.id)}"
+        data-lat="${b.coords?.[0] ?? ''}" data-lon="${b.coords?.[1] ?? ''}" data-name="${esc(b.name)}"
+        aria-selected="${i === 0 ? 'true' : 'false'}">${esc(b.label)} · ${esc((b.region || '').split('·')[0].trim())}</button>`
+    )
+    .join('');
   return `
     <section class="section" id="bazy">
       <h1 class="section-title">Bazy noclegowe</h1>
-      <p class="section-lead">Adresy, sklepy w okolicy i nawigacja — wszystko o noclegach w jednym miejscu.</p>
-      <div class="bases-grid">${cards}</div>
+      <p class="section-lead">Wybierz bazę — adres do skopiowania, dni, sklep i mapa.</p>
+      <div class="base-tabs" role="tablist">${tabs}</div>
+      <div class="base-panels">${list.map((b) => renderBasePanel(b, days)).join('')}</div>
+      <div id="base-map" class="leaflet-map leaflet-map--base" aria-label="Mapa okolicy bazy"></div>
     </section>
   `;
 }

@@ -619,7 +619,14 @@
           "event": "Unterhaching — Hotel Fresh Inn, parking hotelowy"
         }
       ],
-      "summary": "Pierwszy dzień drogi do Toskanii (~start 5:30–6:00): Poznań → Niemcy (A12/A10/A9) → Unterhaching (Monachium). Nocleg tranzytowy tuż pod Monachium — o ~85 km krócej niż dawny nocleg w Kufstein, reszta Austrii i Brenner zostają na dzień 2."
+      "summary": "Pierwszy dzień drogi do Toskanii (~start 5:30–6:00): Poznań → Niemcy (A12/A10/A9) → Unterhaching (Monachium). Nocleg tranzytowy tuż pod Monachium — o ~85 km krócej niż dawny nocleg w Kufstein, reszta Austrii i Brenner zostają na dzień 2.",
+      "weather": {
+        "label": "Unterhaching (nocleg)",
+        "coords": [
+          48.0569,
+          11.6057
+        ]
+      }
     },
     {
       "date": "13.09 (nd)",
@@ -910,7 +917,14 @@
         ],
         "tip": "Przy noclegu Ponte all'Ania: parkuj przy Casa vacanze Rosa. Wieczorny spacer do Barga Vecchia: auto zostaje na miejscu lub przy Porta Reale"
       },
-      "summary": "Drugi dzień tranzytu: Unterhaching → Kufstein → A13 przez przełęcz Brenner/Brennero (opłata odcinkowa) → Toskania. Zameldowanie w Bargze, w dolinie Garfagnana — górskiej dolinie rzeki Serchio między Alpami Apuańskimi a Apeninami."
+      "summary": "Drugi dzień tranzytu: Unterhaching → Kufstein → A13 przez przełęcz Brenner/Brennero (opłata odcinkowa) → Toskania. Zameldowanie w Bargze, w dolinie Garfagnana — górskiej dolinie rzeki Serchio między Alpami Apuańskimi a Apeninami.",
+      "weather": {
+        "label": "Barga (baza)",
+        "coords": [
+          44.0398411,
+          10.4932228
+        ]
+      }
     },
     {
       "date": "14.09 (pn)",
@@ -1143,7 +1157,14 @@
         }
       ],
       "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: tłumy w weekendy lipiec–sierpień, wrzesień znacznie spokojniej. Rezerwacja wymagana online.",
-      "summary": "Spokojny pierwszy dzień w górskiej dolinie Garfagnana. Rano zwiedzamy miasteczko Barga — średniowieczne, kamienne, z romańską katedrą św. Krzysztofa (Duomo di San Cristoforo, XI w.) i tarasem widokowym na skaliste Alpy Apuańskie. Stąd ok. 3 km spacerem przez las dębowo-kasztanowy do przysiółka Treppignana. Po południu jaskinia „wiatru\" (Grotta del Vento) w wiosce Fornovolasco — stała temperatura ok. 10°C, zwiedzanie ok. 2 godzin."
+      "summary": "Spokojny pierwszy dzień w górskiej dolinie Garfagnana. Rano zwiedzamy miasteczko Barga — średniowieczne, kamienne, z romańską katedrą św. Krzysztofa (Duomo di San Cristoforo, XI w.) i tarasem widokowym na skaliste Alpy Apuańskie. Stąd ok. 3 km spacerem przez las dębowo-kasztanowy do przysiółka Treppignana. Po południu jaskinia „wiatru\" (Grotta del Vento) w wiosce Fornovolasco — stała temperatura ok. 10°C, zwiedzanie ok. 2 godzin.",
+      "weather": {
+        "label": "Barga / Garfagnana",
+        "coords": [
+          44.0733,
+          10.4836
+        ]
+      }
     },
     {
       "date": "15.09 (wt)",
@@ -1404,7 +1425,14 @@
       "daily_km_estimate": 75,
       "crowd_tip": "Piazza dei Miracoli w Pizie jest zatłoczona praktycznie cały dzień w sezonie — jak Florencja, to świadomy kompromis (plan zwykle omija tłumy, ale Krzywa Wieża jest tego warta). Strategia: Lucca rano (spokojniejsza i kameralna), Piza po południu ze slotem na Wieżę zarezerwowanym z wyprzedzeniem. Na samym placu tłum jest nieunikniony, ale mury Lukki i owalna Piazza dell'Anfiteatro dają oddech.",
       "warning": "Krzywa Wieża wymaga rezerwacji slotu godzinowego z wyprzedzeniem (opapisa.it) — bez tego można obejrzeć plac, Duomo i zrobić zdjęcia, ale nie wejść na wieżę. Piazza dei Miracoli i (w mniejszym stopniu) Lucca to najbardziej turystyczne punkty całego wyjazdu — spodziewaj się tłumów, zwłaszcza w porze południowej pod Wieżą. Dzień oparty na rozkładzie pociągów Lucca↔Pisa↔Viareggio — sprawdź aktualne godziny Trenitalia bliżej wyjazdu. Ostatni pociąg Viareggio→Lucca odjeżdża ok. 22:10 (przyjazd 22:31); planowany powrót o 20:15 daje prawie dwie godziny zapasu, ale nie wolno go przegapić, bo auto stoi w Lucce.",
-      "summary": "Świadomie „turystyczny\" dzień, ale w spokojnym tempie. Autem jedziemy do Lukki (wł. Lucca) — miasta otoczonego kompletnym renesansowym pierścieniem murów, po których dziś spaceruje się jak po parku; w środku owalny plac wzniesiony na fundamentach rzymskiego amfiteatru (Piazza dell'Anfiteatro) i średniowieczna wieża z drzewami na szczycie (Torre Guinigi). Potem pociągiem do Pizy, na słynny plac katedralny (Piazza dei Miracoli) z pochyloną Krzywą Wieżą. Na finał trzeci bok trójkąta kolejowego — kwadrans do Viareggio nad Morzem Tyrreńskim: deptak Liberty, nogi w wodzie i zachód słońca prosto w morze o 19:31. Jedyne spotkanie z morzem w całym planie."
+      "summary": "Świadomie „turystyczny\" dzień, ale w spokojnym tempie. Autem jedziemy do Lukki (wł. Lucca) — miasta otoczonego kompletnym renesansowym pierścieniem murów, po których dziś spaceruje się jak po parku; w środku owalny plac wzniesiony na fundamentach rzymskiego amfiteatru (Piazza dell'Anfiteatro) i średniowieczna wieża z drzewami na szczycie (Torre Guinigi). Potem pociągiem do Pizy, na słynny plac katedralny (Piazza dei Miracoli) z pochyloną Krzywą Wieżą. Na finał trzeci bok trójkąta kolejowego — kwadrans do Viareggio nad Morzem Tyrreńskim: deptak Liberty, nogi w wodzie i zachód słońca prosto w morze o 19:31. Jedyne spotkanie z morzem w całym planie.",
+      "weather": {
+        "label": "Piza (i Lucca)",
+        "coords": [
+          43.7229,
+          10.3966
+        ]
+      }
     },
     {
       "date": "16.09 (śr)",
@@ -1538,7 +1566,14 @@
         }
       ],
       "crowd_tip": "Popularny szlak wśród wprawnych turystów, ale rzadko zatłoczony — wczesny start (8:00) daje ciszę i chłodniejszą temperaturę na podejściu.",
-      "summary": "Prawdziwa górska wycieczka bez wspinaczki: pętla z Fornovolasco (5 h, wariant krótszy 3,5 h) do naturalnego łuku skalnego Monte Forato — jednego z największych we Włoszech (rozpiętość 32 m), z widokiem na Alpy Apuańskie i dolinę Serchio. Wieczorem, po odpoczynku, do wyboru: zachód słońca z Piazza Arringo w Bardze lub spacer po Sommocolonii."
+      "summary": "Prawdziwa górska wycieczka bez wspinaczki: pętla z Fornovolasco (5 h, wariant krótszy 3,5 h) do naturalnego łuku skalnego Monte Forato — jednego z największych we Włoszech (rozpiętość 32 m), z widokiem na Alpy Apuańskie i dolinę Serchio. Wieczorem, po odpoczynku, do wyboru: zachód słońca z Piazza Arringo w Bardze lub spacer po Sommocolonii.",
+      "weather": {
+        "label": "Monte Forato",
+        "coords": [
+          44.0282,
+          10.3577
+        ]
+      }
     },
     {
       "date": "17.09 (czw)",
@@ -1732,7 +1767,14 @@
         }
       ],
       "crowd_tip": "Ponte del Diavolo: kolejki na zdjęcia w weekendy, spokojnie rano (<10:00). Bagni di Lucca: kurort bez masowej turystyki — elegancka cisza. Vagli/Pieve di Careggine: wyłącznie lokalni.",
-      "summary": "Ostatni dzień w Garfagnanie. Rano gotycki most o nierównych łukach (Ponte della Maddalena, zwany „mostem diabła\") nad rzeką Serchio — według legendy zbudował go diabeł w jedną noc w zamian za pierwszą duszę, jaka przejdzie na drugą stronę; mieszkańcy przechytrzyli go, przepuszczając psa. Potem uzdrowiskowe miasteczko Bagni di Lucca (kąpielisko termalne, niegdyś ulubione przez poetów Byrona i Shelleya) z zabytkowym mostem łańcuchowym. Na koniec romański kościółek na wzgórzu nad jeziorem (Pieve di Careggine)."
+      "summary": "Ostatni dzień w Garfagnanie. Rano gotycki most o nierównych łukach (Ponte della Maddalena, zwany „mostem diabła\") nad rzeką Serchio — według legendy zbudował go diabeł w jedną noc w zamian za pierwszą duszę, jaka przejdzie na drugą stronę; mieszkańcy przechytrzyli go, przepuszczając psa. Potem uzdrowiskowe miasteczko Bagni di Lucca (kąpielisko termalne, niegdyś ulubione przez poetów Byrona i Shelleya) z zabytkowym mostem łańcuchowym. Na koniec romański kościółek na wzgórzu nad jeziorem (Pieve di Careggine).",
+      "weather": {
+        "label": "Bagni di Lucca",
+        "coords": [
+          44.0065,
+          10.5873
+        ]
+      }
     },
     {
       "date": "18.09 (pt)",
@@ -1869,7 +1911,14 @@
           "note": "Zatankuj przy zjeździe z tangenziali Siena — stacji mało na lokalnych drogach Val di Merse."
         }
       ],
-      "summary": "Dzień przeprowadzki: wymeldowanie z Garfagnany i przejazd do drugiej bazy w Murlo (Val di Merse, na południowy zachód od Sieny). Po drodze krótki postój w mieście Pistoia — na placu katedralnym (Piazza del Duomo) z gotycką katedrą, baptysterium i średniowiecznym ratuszem, zaledwie 5 minut zjazdu od autostrady."
+      "summary": "Dzień przeprowadzki: wymeldowanie z Garfagnany i przejazd do drugiej bazy w Murlo (Val di Merse, na południowy zachód od Sieny). Po drodze krótki postój w mieście Pistoia — na placu katedralnym (Piazza del Duomo) z gotycką katedrą, baptysterium i średniowiecznym ratuszem, zaledwie 5 minut zjazdu od autostrady.",
+      "weather": {
+        "label": "Murlo (baza)",
+        "coords": [
+          43.1595,
+          11.3158
+        ]
+      }
     },
     {
       "date": "19.09 (sob)",
@@ -2058,7 +2107,14 @@
       "daily_km_estimate": 134,
       "crowd_tip": "Castello di Brolio: otwieraj o 10:00, tłumy od 11:00. Badia a Coltibuono: wino i abbey — rezerwacja degustacji obowiązkowa. Radda in Chianti: popularna, przyjdź przed obiadem lub po 17:00.",
       "summary": "Klasyczny dzień w krainie Chianti, wśród winnic i cyprysów. Zamek rodu Ricasoli (Castello di Brolio, istnieje od 1141 r.) — to tutaj w XIX w. spisano „recepturę\" słynnego czerwonego wina Chianti Classico. Dalej benedyktyńskie opactwo z XI w. (Badia a Coltibuono) z ogrodem ziołowym i degustacją win. Na wieczór miasteczko Radda in Chianti — średniowieczne, na wzgórzu (530 m n.p.m.), dawna stolica związku miast Chianti.",
-      "warning": "Baza w Murlo jest dobrze polozona dla Crete Senesi i Val d'Orcia, ale DALEKO od Chianti — ten dzien to teraz najdluzszy dojazd w bloku bazy 2: 49 min do Brolio, 67 min powrotu z Raddy (pelna petla ~2,5 h za kierownica, bylo ~1,6 h). Wyjazd wczesniej (8:30) niz w oryginalnym planie, zeby zdazyc na otwarcie Brolio o 10:00 bez posiechu."
+      "warning": "Baza w Murlo jest dobrze polozona dla Crete Senesi i Val d'Orcia, ale DALEKO od Chianti — ten dzien to teraz najdluzszy dojazd w bloku bazy 2: 49 min do Brolio, 67 min powrotu z Raddy (pelna petla ~2,5 h za kierownica, bylo ~1,6 h). Wyjazd wczesniej (8:30) niz w oryginalnym planie, zeby zdazyc na otwarcie Brolio o 10:00 bez posiechu.",
+      "weather": {
+        "label": "Radda in Chianti",
+        "coords": [
+          43.4835,
+          11.3673
+        ]
+      }
     },
     {
       "date": "20.09 (nd)",
@@ -2245,7 +2301,14 @@
       "daily_km_estimate": 76,
       "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto.",
       "warning": "Z bazy w Murlo ten dzień jest LŻEJSZY niż był z Chianti (dojazd do Monte Oliveto skrócony o 25 min: 61→36 min) — dawny deficyt czasowy w dużej mierze zniknął. Bosco della Ragnaia zostaje opcjonalne, ale teraz bardziej z wyboru niż z konieczności.",
-      "summary": "Zupełnie inny krajobraz — Crete Senesi, gliniaste, niemal „księżycowe\" wzgórza na południe od Sieny. Głównym punktem jest ceglane opactwo ukryte wśród cyprysów (Abbazia di Monte Oliveto Maggiore) z zachwycającym cyklem renesansowych fresków o życiu św. Benedykta. Opcjonalnie „ogród filozoficzny\" schowany w dębowym lesie (Bosco della Ragnaia). Po drodze miasteczko Asciano i charakterystyczne białe gliniane pagórki (tzw. biancane)."
+      "summary": "Zupełnie inny krajobraz — Crete Senesi, gliniaste, niemal „księżycowe\" wzgórza na południe od Sieny. Głównym punktem jest ceglane opactwo ukryte wśród cyprysów (Abbazia di Monte Oliveto Maggiore) z zachwycającym cyklem renesansowych fresków o życiu św. Benedykta. Opcjonalnie „ogród filozoficzny\" schowany w dębowym lesie (Bosco della Ragnaia). Po drodze miasteczko Asciano i charakterystyczne białe gliniane pagórki (tzw. biancane).",
+      "weather": {
+        "label": "Asciano / Crete Senesi",
+        "coords": [
+          43.2343,
+          11.5621
+        ]
+      }
     },
     {
       "date": "21.09 (pn)",
@@ -2437,7 +2500,14 @@
       ],
       "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
       "daily_km_estimate": 116,
-      "summary": "Solidny dzień za kierownicą (ok. 69 min w jedną stronę, krócej niż z dawnego Chianti), za to w najpiękniejszej dolinie regionu — Val d'Orcia, krajobrazie wpisanym na listę UNESCO. Pienza — renesansowe „miasto idealne\" zaprojektowane dla papieża Piusa II, słynne z sera pecorino i widoku na dolinę. Bagno Vignoni — wioska, której rynek zajmuje zabytkowy basen termalny zamiast placu. Na koniec Montalcino — twierdza z rozległą panoramą i degustacja słynnego czerwonego wina Brunello."
+      "summary": "Solidny dzień za kierownicą (ok. 69 min w jedną stronę, krócej niż z dawnego Chianti), za to w najpiękniejszej dolinie regionu — Val d'Orcia, krajobrazie wpisanym na listę UNESCO. Pienza — renesansowe „miasto idealne\" zaprojektowane dla papieża Piusa II, słynne z sera pecorino i widoku na dolinę. Bagno Vignoni — wioska, której rynek zajmuje zabytkowy basen termalny zamiast placu. Na koniec Montalcino — twierdza z rozległą panoramą i degustacja słynnego czerwonego wina Brunello.",
+      "weather": {
+        "label": "Pienza / Val d Orcia",
+        "coords": [
+          43.0762,
+          11.6781
+        ]
+      }
     },
     {
       "date": "22.09 (wt)",
@@ -2635,7 +2705,14 @@
         "note": "Narodowa enoteka włoska — 1500+ win, Brunello, Chianti Classico, Morellino, Nobile. Po obiedzie u Papei: Piazza del Mercato → Fortezza (12 min pieszo). Daj sobie 45 min. Zweryfikuj godziny przed wizytą (wt–sob 12:00–20:00 w sezonie).",
         "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
       },
-      "summary": "Siena o świcie, zanim nadejdą tłumy (wyjazd ok. 7:00). Najpierw muszlowaty, ceglany rynek (Piazza del Campo) z ratuszem i marmurową fontanną, potem katedra (Duomo) z bogato zdobioną biblioteką i — wyjątkowo we wrześniu 2026 — odsłoniętą na ten czas mozaikową posadzką. Na koniec spacer po historycznych dzielnicach-klanach (contrade), z dala od głównego szlaku turystów."
+      "summary": "Siena o świcie, zanim nadejdą tłumy (wyjazd ok. 7:00). Najpierw muszlowaty, ceglany rynek (Piazza del Campo) z ratuszem i marmurową fontanną, potem katedra (Duomo) z bogato zdobioną biblioteką i — wyjątkowo we wrześniu 2026 — odsłoniętą na ten czas mozaikową posadzką. Na koniec spacer po historycznych dzielnicach-klanach (contrade), z dala od głównego szlaku turystów.",
+      "weather": {
+        "label": "Siena",
+        "coords": [
+          43.3183,
+          11.3318
+        ]
+      }
     },
     {
       "date": "23.09 (śr)",
@@ -2850,7 +2927,14 @@
       "daily_km_estimate": 54,
       "crowd_tip": "To jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Duomo, Ponte Vecchio i Piazza della Signoria są zatłoczone praktycznie cały dzień w sezonie. Jedyna realna strategia: przyjechać najwcześniej jak się da (pociąg ok. 8:00), zobaczyć Piazza del Duomo przed 10:00, zanim zjadą się grupy z autokarów, i zaakceptować, że popołudnie na Ponte Vecchio i tak będzie ścisk.",
       "warning": "Wizyta w Galerii Uffizi wymaga wcześniejszego zakupu biletu ze slotem godzinowym online (tickets.uffizi.it). Młodzież UE 18–25 lat musi mieć przy sobie dowody tożsamości do biletu ulgowego za €2. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia przed wyjazdem.",
-      "summary": "Jedyny świadomie „tłumny\" dzień — Florencja, dokąd jedziemy wygodnie pociągiem z Sieny. Plac katedralny z bazyliką Santa Maria del Fiore i słynną renesansową kopułą Brunelleschiego, baptysterium ze złoconymi „Wrotami Raju\" i dzwonnica Giotta (oglądane z zewnątrz i bezpłatne wnętrze nawy). Dalej Piazza della Signoria z plenerową galerią rzeźb, wizyta w Galerii Uffizi ze słynnymi „Narodzinami Wenus” Botticellego, most złotników nad rzeką Arno (Ponte Vecchio) i spacer po rzemieślniczej dzielnicy za rzeką (Oltrarno)."
+      "summary": "Jedyny świadomie „tłumny\" dzień — Florencja, dokąd jedziemy wygodnie pociągiem z Sieny. Plac katedralny z bazyliką Santa Maria del Fiore i słynną renesansową kopułą Brunelleschiego, baptysterium ze złoconymi „Wrotami Raju\" i dzwonnica Giotta (oglądane z zewnątrz i bezpłatne wnętrze nawy). Dalej Piazza della Signoria z plenerową galerią rzeźb, wizyta w Galerii Uffizi ze słynnymi „Narodzinami Wenus” Botticellego, most złotników nad rzeką Arno (Ponte Vecchio) i spacer po rzemieślniczej dzielnicy za rzeką (Oltrarno).",
+      "weather": {
+        "label": "Florencja",
+        "coords": [
+          43.7731,
+          11.256
+        ]
+      }
     },
     {
       "date": "24.09 (czw)",
@@ -3043,7 +3127,14 @@
       ],
       "daily_km_estimate": 139,
       "summary": "Ostatni dzień w Toskanii. San Gimignano — miasteczko najeżone średniowiecznymi wieżami (zwane „średniowiecznym Manhattanem\"), z których do dziś stoi 14; wchodzimy na najwyższą (Torre Grossa), oglądamy freski w kolegiacie i próbujemy miejscowego białego wina Vernaccia oraz nagradzanych lodów. W drodze powrotnej Monteriggioni — maleńkie miasteczko zamknięte w całości w kamiennym pierścieniu murów z 1214 r., wspomniane przez Dantego w „Boskiej Komedii\".",
-      "drive_limit_min": 71
+      "drive_limit_min": 71,
+      "weather": {
+        "label": "San Gimignano",
+        "coords": [
+          43.4677,
+          11.0431
+        ]
+      }
     },
     {
       "date": "25.09 (pt)",
@@ -3233,7 +3324,14 @@
           "event": "Pension Oberwirt — zameldowanie (SZTYWNO przed 18:00!)"
         }
       ],
-      "summary": "Długi dzień powrotny z Murlo (682 km, ~8 h czystej jazdy) przez Brenner do Fischbachau w Bawarii — jedyny nocleg w drodze powrotnej. Wyjazd 6:30, przyjazd ~17:00 (check-in tylko do 18:00)."
+      "summary": "Długi dzień powrotny z Murlo (682 km, ~8 h czystej jazdy) przez Brenner do Fischbachau w Bawarii — jedyny nocleg w drodze powrotnej. Wyjazd 6:30, przyjazd ~17:00 (check-in tylko do 18:00).",
+      "weather": {
+        "label": "Fischbachau (nocleg)",
+        "coords": [
+          47.7134046,
+          11.9641105
+        ]
+      }
     },
     {
       "date": "26.09 (sob)",
@@ -3396,7 +3494,14 @@
           "event": "Poznań — dom. Koniec podróży."
         }
       ],
-      "summary": "Maraton powrotny (~892 km, ~9 h czystej jazdy): Fischbachau → München → Nürnberg → Berlin → Świecko → Poznań. Meta w domu 26.09 wieczorem; 27.09 zostaje dniem buforowym."
+      "summary": "Maraton powrotny (~892 km, ~9 h czystej jazdy): Fischbachau → München → Nürnberg → Berlin → Świecko → Poznań. Meta w domu 26.09 wieczorem; 27.09 zostaje dniem buforowym.",
+      "weather": {
+        "label": "Poznan (dom)",
+        "coords": [
+          52.4066,
+          16.9252
+        ]
+      }
     },
     {
       "date": "27.09 (nd)",

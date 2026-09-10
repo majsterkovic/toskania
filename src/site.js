@@ -13,6 +13,7 @@ const NAV_LINKS = [
   ['plan', '', 'Plan'],
   ['bazy', 'bazy/', 'Bazy'],
   ['mapa', 'mapa/', 'Mapa'],
+  ['pogoda', 'pogoda/', 'Pogoda'],
   ['praktyczne', 'praktyczne/', 'Praktyczne'],
   ['packing', 'packing/', 'Pakowanie'],
   ['pamiatki', 'pamiatki/', 'Pamiątki'],

@@ -3,7 +3,7 @@
  * Bez klucza API, CORS OK
  */
 
-const WMO_ICON = {
+export const WMO_ICON = {
   0: '☀', 1: '🌤', 2: '⛅', 3: '☁',
   45: '🌫', 48: '🌫',
   51: '🌦', 53: '🌦', 55: '🌧',
@@ -18,6 +18,25 @@ function avg(arr) {
 }
 
 function round1(v) { return v != null ? Math.round(v * 10) / 10 : null; }
+
+function isoDay(d) {
+  return d.toISOString().slice(0, 10);
+}
+
+/**
+ * Open-Meteo zwraca prognozę max ~16 dni naprzód (praktycznie +15).
+ * Koniec wyjazdu (27.09) wystaje poza to okno, a API na za długi zakres
+ * odpowiada błędem na CAŁE zapytanie — więc przycinamy, inaczej leci
+ * "Brak danych" dla wszystkich lokalizacji.
+ */
+function clampForecastRange(startDate, endDate) {
+  const max = new Date();
+  max.setDate(max.getDate() + 15);
+  const maxStr = isoDay(max);
+  const start = startDate > maxStr ? maxStr : startDate;
+  const end = endDate > maxStr ? maxStr : endDate;
+  return start <= end ? { start, end } : null;
+}
 
 function monthEndDate(year, month) {
   const lastDay = new Date(Number(year), Number(month), 0).getDate();
@@ -124,12 +143,17 @@ export async function initWeather(containerId, locs, opts) {
   if (!el || !locs?.length) return;
   const { startDate, endDate, timezone } = opts;
   const until = Math.floor((new Date(startDate) - new Date()) / 86400000);
-  const isForecast = until <= 14;
+  const range = clampForecastRange(startDate, endDate);
+  // Prognoza ma sens tylko gdy choć część wyjazdu łapie się w okno API;
+  // inaczej (za wcześnie / dawno po) pokazujemy klimatologię.
+  const isForecast = until <= 14 && range !== null;
   const month = startDate.slice(5, 7);
   const monthName = new Date(startDate).toLocaleDateString('pl', { month: 'long' });
 
   const label = isForecast
-    ? `Prognoza na wyjazd (${until} dni do startu)`
+    ? (until >= 0
+        ? `Prognoza na wyjazd (${until} dni do startu)`
+        : 'Prognoza na teraz (wyjazd w trakcie)')
     : `Klimatologia ${monthName} (dane historyczne 2022–2023)`;
 
   el.innerHTML = `
@@ -142,7 +166,7 @@ export async function initWeather(containerId, locs, opts) {
     const slot = document.getElementById(`w-${loc.id}`);
     try {
       const w = isForecast
-        ? await getForecast(loc, startDate, endDate, timezone)
+        ? await getForecast(loc, range.start, range.end, timezone)
         : await getClimateNormals(loc, month, timezone);
       slot.outerHTML = isForecast ? renderForecast(loc, w) : renderNormals(loc, w);
     } catch {

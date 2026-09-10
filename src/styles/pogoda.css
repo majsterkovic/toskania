@@ -1,0 +1,127 @@
+/**
+ * Zakładka Pogoda: karty dni z próbkami godzinowymi.
+ */
+.wx-list {
+  display: grid;
+  gap: 1.25rem;
+}
+.wx-day {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+.wx-day__date {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--oro);
+}
+.wx-day__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-top: 0.15rem;
+}
+.wx-day__place {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.wx-summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 0.75rem 0 0.6rem;
+  flex-wrap: wrap;
+}
+.wx-summary__temps {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.wx-verdict {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: var(--cream-deep);
+  color: var(--muted);
+}
+.wx-verdict.is-dry {
+  background: rgba(22, 101, 52, 0.12);
+  color: #166534;
+}
+.wx-verdict.is-maybe {
+  background: rgba(196, 134, 10, 0.15);
+  color: #7d5a0f;
+}
+.wx-verdict.is-rain {
+  background: rgba(220, 38, 38, 0.12);
+  color: #b91c1c;
+}
+.wx-hours {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0.35rem;
+  overflow-x: auto;
+}
+.wx-hour {
+  text-align: center;
+  background: var(--cream);
+  border-radius: 8px;
+  padding: 0.45rem 0.2rem;
+  min-width: 3.4rem;
+}
+.wx-hour__h {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--stone-dark);
+}
+.wx-hour__icon {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.wx-hour__t {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.wx-hour__p {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.wx-hour__p.is-wet {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+.wx-loading,
+.wx-out {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.wx-sources {
+  margin-top: 1.5rem;
+}
+.wx-sources a {
+  color: var(--terracotta);
+  font-weight: 600;
+  text-decoration: none;
+}
+.wx-sources a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 560px) {
+  .wx-hours {
+    grid-template-columns: repeat(9, 3.4rem);
+    justify-content: start;
+  }
+}

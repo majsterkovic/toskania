@@ -1,7 +1,7 @@
 import { trip as plan } from './trip.js';
 import { renderTimeline, renderDayPage } from './render.js';
 import { renderSiteNav, initChrome } from './site.js';
-import { doneStorageKey, setDoneId } from './done.js';
+import { doneStorageKey, defaultDoneIds, setDoneId } from './done.js';
 import { initBaseMaps, initDayMap, initTransitDayMap, destroyAllMaps } from './maps.js';
 import { applyStoredTheme } from './theme.js';
 // Strona planu renderuje oś czasu, strony dni i mapy baz — potrzebuje wszystkiego
@@ -48,9 +48,10 @@ function renderDayView(dayNum) {
 /** Odhaczanie rezerwacji wprost na stronie dnia — ten sam klucz co Praktyczne. */
 function initBookingToggles() {
   const key = doneStorageKey(plan);
+  const defaults = defaultDoneIds(plan.todo);
   app.querySelectorAll('.booking-check').forEach((cb) => {
     cb.addEventListener('change', () => {
-      setDoneId(key, cb.dataset.bookingId, cb.checked);
+      setDoneId(key, cb.dataset.bookingId, cb.checked, defaults.has(cb.dataset.bookingId));
       const y = window.scrollY;
       renderView();
       window.scrollTo(0, y);

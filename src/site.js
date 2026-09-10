@@ -4,7 +4,7 @@
  */
 import { swapMapTiles } from './maps.js';
 import { esc } from './html.js';
-import { doneStorageKey, getDoneIds, setDoneId } from './done.js';
+import { doneStorageKey, getEffectiveDoneIds, defaultDoneIds, setDoneId } from './done.js';
 import './styles/chat.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -53,7 +53,8 @@ export function renderSiteFooter(trip) {
 /** Checkboxy todo z zapisem w localStorage (strona Praktyczne). */
 export function initTodo(trip) {
   const storageKey = doneStorageKey(trip);
-  const done = getDoneIds(storageKey);
+  const done = getEffectiveDoneIds(trip.todo, storageKey);
+  const defaults = defaultDoneIds(trip.todo);
   document.querySelectorAll('.todo-check').forEach((cb) => {
     const id = cb.dataset.todoId;
     if (done.has(id)) {
@@ -61,7 +62,7 @@ export function initTodo(trip) {
       cb.closest('.todo-item')?.classList.add('is-done');
     }
     cb.addEventListener('change', () => {
-      setDoneId(storageKey, id, cb.checked);
+      setDoneId(storageKey, id, cb.checked, defaults.has(id));
       cb.closest('.todo-item')?.classList.toggle('is-done', cb.checked);
     });
   });

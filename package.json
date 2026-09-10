@@ -8,7 +8,7 @@
     "build": "node scripts/validate-trip.js && node scripts/build-distance-matrix.js && node scripts/convert-webp.js && vite build",
     "preview": "vite preview",
     "start": "node server/index.js",
-    "test": "node --test scripts/validate-trip.test.js scripts/maps-tiles.test.js scripts/reservations.test.js scripts/build-distance-matrix.test.js server/**/*.test.js",
+    "test": "node --test scripts/validate-trip.test.js scripts/maps-tiles.test.js scripts/reservations.test.js scripts/done.test.js scripts/build-distance-matrix.test.js server/**/*.test.js",
     "test:e2e": "node --test server/chat/loop.e2e.js"
   },
   "devDependencies": {

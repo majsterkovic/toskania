@@ -38,3 +38,18 @@ test('empty todo yields no reservation groups', () => {
   assert.deepEqual(reservationGroups({ categories: [] }), []);
   assert.deepEqual(reservationGroups(null), []);
 });
+
+test('reservationGroups with state: checked move to done, unchecked default to optional', () => {
+  const groups = reservationGroups(todo, new Set(['pisa', 'hotel']));
+  const byId = Object.fromEntries(groups.map((g) => [g.id, g.items.map((i) => i.id)]));
+  assert.deepEqual(byId.required, ['grotta']);
+  assert.deepEqual(byId.optional, ['siena', 'loose']);
+  assert.deepEqual(byId.done, ['pisa', 'hotel']);
+});
+
+test('reservationGroups with state: unchecked default-done falls back to optional', () => {
+  const groups = reservationGroups(todo, new Set());
+  const byId = Object.fromEntries(groups.map((g) => [g.id, g.items.map((i) => i.id)]));
+  assert.deepEqual(byId.done ?? [], []);
+  assert.deepEqual(byId.optional, ['siena', 'hotel', 'loose']);
+});

@@ -9,11 +9,20 @@ export function reservationCategory(todo) {
   return (todo?.categories || []).find((c) => c.id === 'rezerwacje') || null;
 }
 
-export function reservationGroups(todo) {
+export function reservationGroups(todo, effectiveDone = null) {
   const items = reservationCategory(todo)?.items || [];
   const buckets = { required: [], optional: [], done: [] };
   for (const item of items) {
-    const key = buckets[item.group] ? item.group : 'optional';
+    let key;
+    if (effectiveDone?.has(item.id)) {
+      key = 'done';
+    } else if (item.group === 'done') {
+      // Bez stanu (testy, inne wywołania): legacy — grupa done jak dawniej.
+      // Ze stanem: odhaczony default ląduje w "Warto", nie w "Już zrobione".
+      key = effectiveDone ? 'optional' : 'done';
+    } else {
+      key = buckets[item.group] ? item.group : 'optional';
+    }
     buckets[key].push(item);
   }
   for (const id of GROUP_ORDER) {

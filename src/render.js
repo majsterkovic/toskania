@@ -68,7 +68,7 @@ import IMAGE_MANIFEST from './image-manifest.json';
 import { esc } from './html.js';
 import { config } from './trip.js';
 import { reservationGroups, todoForChecklist } from './reservations.js';
-import { doneStorageKey, getDoneIds, withoutDone } from './done.js';
+import { doneStorageKey, getEffectiveDoneIds, withoutDone } from './done.js';
 
 function imgSrc(relativePath) {
   if (!relativePath) return '';
@@ -761,11 +761,11 @@ export function renderCosts(costs) {
 
 const PRIORITY_LABEL = { high: 'pilne', medium: 'warto', low: 'opcjonalnie' };
 
-function renderTodoItem(item) {
+function renderTodoItem(item, checked = false) {
   return `
       <li class="todo-item todo-item--${esc(item.priority || 'medium')}" id="todo-${esc(item.id)}">
         <label class="todo-item__label">
-          <input type="checkbox" class="todo-check" data-todo-id="${esc(item.id)}" />
+          <input type="checkbox" class="todo-check" data-todo-id="${esc(item.id)}"${checked ? ' checked' : ''} />
           <span class="todo-item__text">${esc(item.label)}</span>
           <span class="todo-item__priority">${esc(PRIORITY_LABEL[item.priority] || '')}</span>
         </label>
@@ -776,15 +776,16 @@ function renderTodoItem(item) {
     `;
 }
 
-export function renderReservations(todo) {
-  const groups = reservationGroups(todo);
+export function renderReservations(todo, storageKey = null) {
+  const effective = storageKey ? getEffectiveDoneIds(todo, storageKey) : null;
+  const groups = reservationGroups(todo, effective);
   if (!groups.length) return '';
   const cards = groups
     .map(
       (g) => `
       <div class="todo-category reservations-group reservations-group--${esc(g.id)}">
         <h3 class="todo-category__title">${esc(g.name)}</h3>
-        <ul class="todo-list">${g.items.map(renderTodoItem).join('')}</ul>
+        <ul class="todo-list">${g.items.map((item) => renderTodoItem(item, effective?.has(item.id) ?? false)).join('')}</ul>
       </div>`
     )
     .join('');
@@ -802,7 +803,7 @@ export function renderTodo(todo) {
   if (!checklist?.categories?.length) return '';
 
   const categories = checklist.categories.map((cat) => {
-    const items = cat.items.map(renderTodoItem).join('');
+    const items = cat.items.map((item) => renderTodoItem(item)).join('');
 
     return `
       <div class="todo-category">
@@ -1081,7 +1082,7 @@ export function renderTimeline(plan) {
   const images = plan.meta?.images ?? plan.images;
   const phases = groupPhases(plan.days, plan.meta);
   const bookings = bookingsByDay(plan.todo);
-  const doneSet = getDoneIds(doneStorageKey(plan));
+  const doneSet = getEffectiveDoneIds(plan.todo, doneStorageKey(plan));
   const timelineHtml = phases.map((phase) => {
     const rows = phase.days.map((day) => timelineRow(day, bookings[day.day_num], doneSet)).join('');
     const base = phase.baseId ? (plan.bases || []).find((b) => b.id === phase.baseId) : null;
@@ -1145,7 +1146,7 @@ export function renderDayPage(day, images, bases, days, todo, meta) {
     ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini" aria-label="Mapa dnia ${day.day_num}"></div>`
     : '';
   const warning = day.warning ? `<div class="day-warning">${esc(day.warning)}</div>` : '';
-  const doneSet = getDoneIds(doneStorageKey({ meta }));
+  const doneSet = getEffectiveDoneIds(todo, doneStorageKey({ meta }));
   const dayBookings = withoutDone(bookingsByDay(todo)[day.day_num], doneSet);
   const hasReqBooking = dayBookings?.some((b) => b.group === 'required');
   const bookingBanner = dayBookings?.length

@@ -1,6 +1,7 @@
 import { trip as plan } from './trip.js';
 import { renderCosts, renderReservations, renderTodo, renderPractical } from './render.js';
 import { renderSiteNav, renderSiteFooter, initChrome, initTodo } from './site.js';
+import { doneStorageKey } from './done.js';
 import { applyStoredTheme } from './theme.js';
 import { esc } from './html.js';
 import './styles/base.css';
@@ -17,7 +18,7 @@ app.innerHTML =
   renderSiteNav(plan, 'praktyczne') +
   `<main class="page" id="tresc">
     <h1 class="visually-hidden">Informacje praktyczne — ${esc(plan.meta.title)}</h1>
-    ${renderReservations(plan.todo)}${renderCosts(plan.costs)}${renderTodo(plan.todo)}${renderPractical(plan.practical_info)}
+    ${renderReservations(plan.todo, doneStorageKey(plan))}${renderCosts(plan.costs)}${renderTodo(plan.todo)}${renderPractical(plan.practical_info)}
   </main>` +
   renderSiteFooter(plan);
 

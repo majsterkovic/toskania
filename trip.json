@@ -1136,9 +1136,29 @@
           "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Trasa Itinerario 1 wyrusza co pełną godzinę (m.in. 15:00). Bilety: €11/os. Rezerwacja online: grottadelvento.com/book-now/",
           "entry_fee": "Itinerario 1 (1h): €11/os — rezerwacja online: grottadelvento.com/book-now/",
           "url": "https://grottadelvento.com/book-now/"
+        },
+        {
+          "name": "Treppignana via il Ciocco — spacer lasem dębowo-kasztanowym (opcja dla chętnych / z Tatą)",
+          "drive_min": 8,
+          "description": "Szlak 3,2 km (1–1,5 h) przez gęste lasy dębów bezszypułkowych (Quercus petraea) i kasztanów w Tenuta Il Ciocco. Widoki na dolinę Serchio i Barga Vecchia. Świetna popołudniowa trasa dla chętnych (np. spacer z Tatą), gdy Mama odpoczywa w ogrodzie bazy.",
+          "type": "nature",
+          "image_key": "barga",
+          "gps_hint": "Treppignana, 55051 Barga LU",
+          "coords": [
+            44.058,
+            10.463
+          ],
+          "duration_h": 1.2,
+          "opening_hours": "Teren leśny otwarty całą dobę, wstęp bezpłatny.",
+          "entry_fee": "Bezpłatny — teren leśny publiczny"
         }
       ],
-      "oak_forest": null,
+      "oak_forest": {
+        "spot": "Treppignana — Tenuta Il Ciocco",
+        "species": "Quercus petraea (dąb bezszypułkowy), Castanea sativa (kasztan jadalny)",
+        "note": "Gęsty las mieszany dębowo-kasztanowy na stokach nad doliną Serchio — typowy krajobraz Garfagnany. Opcjonalny spacer dla chętnych (np. z Tatą), zaledwie ~8 min autem od bazy.",
+        "gps_hint": "Treppignana LU — szlak via il Ciocco, 3,2 km, ~8 min jazdy od bazy"
+      },
       "food": {
         "place": "Osteria Il Borgo dei Sapori — Barga",
         "address": "Via Borgo 1, 55051 Barga LU",
@@ -1151,12 +1171,13 @@
         "price": "~€9–15/piatto, ~€25–35/os z winem"
       },
       "practical_tips": [
-        "Harmonogram dnia: spokojny wyjazd z bazy o 9:30 (baza tuż obok, ~6–8 min). 10:00–12:30 Barga i Duomo, 12:30–14:00 wygodny obiad na siedząco w Osteria Il Borgo dei Sapori, 15:00 zwiedzanie Grotta del Vento, powrót do bazy już o 17:00 w pełnym świetle dziennym.",
+        "Harmonogram dnia: spokojny wyjazd z bazy o 9:30 (baza tuż obok, ~6–8 min). 10:00–12:30 Barga i Duomo, 12:30–14:00 wygodny obiad na siedząco w Osteria Il Borgo dei Sapori, 15:00 zwiedzanie Grotta del Vento, a o 17:00 powrót do bazy.",
         "Wskazówka dla mamy w Bardze (brak podchodzenia pod górę): wjedźcie autem pod górę w okolicę Via del Sasso / Porta Macchiaia tuż pod Duomo di San Cristoforo i wysadźcie mamę na samej górze. Zwiedzanie katedry i tarasu Giardino del Balcone oraz późniejsze zejście do centrum na kawę i obiad odbywa się wyłącznie w dół łagodnymi uliczkami.",
         "Grotta del Vento — wybierzcie Itinerario 1 (1 h, €11/os) na godz. 15:00: trasa jest w pełni utwardzona, płaska, wyposażona w bezpieczne poręcze i pozbawiona męczących stromych schodów (w przeciwieństwie do trasy 2 i 3). Parking tuż przy kasach. W jaskini panuje stała temperatura ok. 10°C — koniecznie zabierzcie ciepłe bluzy/kurtki. Rezerwacja online: grottadelvento.com/book-now/",
+        "Spacer leśny w Treppignana (3,2 km — opcja z Tatą): szlak dębowo-kasztanowy nie przepada! Mama po jaskini zostaje w bazie w Ponte all'Ania (taras, ogród, basen), a chętni (np. Ty z Tatą) mogą wyskoczyć na godzinny leśny spacer o 17:15 w złotej godzinie (Treppignana to tylko 8 min autem od bazy).",
         "Zakupy lokalne przed obiadem (~11:30): Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga) — wyroby z czarnej świni (cinta senese), pecorino, pancetta i toskański miód kasztanowy (czynne 8:00–13:00 i 16:00–19:00, śr po południu i nd zamkn.)."
       ],
-      "narrative": "Dzień rozpoczynamy bez pośpiechu — po spokojnym śniadaniu w bazie wyjeżdżamy o 9:30, bo do Barga mamy zaledwie 6–8 minut drogi. Aby zaoszczędzić mamie stromego podejścia pod górę, wjeżdżamy autem w górną część miasteczka (w okolice Porta Macchiaia / Via del Sasso) tuż pod romański Duomo di San Cristoforo z XI wieku. Wrzucenie monety €2 włącza ciepłe oświetlenie wnętrza, odsłaniając kunsztowny pulpit marmurowy Guido Bigarellego z ok. 1240 roku z rzeźbionymi lwami. Tuż obok rozciąga się taras Giardino del Balcone — kamienny balkon z przepiękną panoramą na dolinę Serchio i postrzępione grzbiety Alp Apuańskich w porannym świetle. Stąd idziemy już wyłącznie w dół łagodnymi, brukowanymi uliczkami przez Piazza Angelio i Corso Garibaldi — zaglądamy do tradycyjnej Macelleria Angelini po lokalne pecorino i toskańskie przysmaki, siadamy na spokojną kawę. O 12:30 czeka na nas obiad w Osteria Il Borgo dei Sapori przy Via Borgo 1 — wygodnie przy stoliku, z wybornymi lokalnymi pappardelle al cinghiale i naleśnikami necci z ricottą (żadnych leśnych pikników na stojąco). O 14:00 ruszamy widokową, spokojną drogą wzdłuż potoku Turrite w kierunku Fornovolasco (~25 min). Auto zostawiamy na parkingu tuż obok kas biletowych, zakładamy ciepłe bluzy (w środku panuje stała temperatura ok. 10°C) i o 15:00 rozpoczynamy zwiedzanie Grotta del Vento trasą Itinerario 1. To 1-godzinna, niezwykle komfortowa i płaska ścieżka z poręczami, bez uciążliwych stromych schodów czy męczących podejść, prezentująca spektakularne formacje naciekowe i stalaktyty. Po wyjściu na ciepłe popołudniowe słońce zjeżdżamy z powrotem do bazy ok. 17:00 — bez pośpiechu, w pełnym dziennym świetle i ponad dwie godziny przed zachodem słońca, z poczuciem idealnie zbalansowanego, niemęczącego dnia.",
+      "narrative": "Dzień rozpoczynamy bez pośpiechu — po spokojnym śniadaniu w bazie wyjeżdżamy o 9:30, bo do Barga mamy zaledwie 6–8 minut drogi. Aby zaoszczędzić mamie stromego podejścia pod górę, wjeżdżamy autem w górną część miasteczka (w okolice Porta Macchiaia / Via del Sasso) tuż pod romański Duomo di San Cristoforo z XI wieku. Wrzucenie monety €2 włącza ciepłe oświetlenie wnętrza, odsłaniając kunsztowny pulpit marmurowy Guido Bigarellego z ok. 1240 roku z rzeźbionymi lwami. Tuż obok rozciąga się taras Giardino del Balcone — kamienny balkon z przepiękną panoramą na dolinę Serchio i postrzępione grzbiety Alp Apuańskich w porannym świetle. Stąd idziemy już wyłącznie w dół łagodnymi, brukowanymi uliczkami przez Piazza Angelio i Corso Garibaldi — zaglądamy do tradycyjnej Macelleria Angelini po lokalne pecorino i toskańskie przysmaki, siadamy na spokojną kawę. O 12:30 czeka na nas obiad w Osteria Il Borgo dei Sapori przy Via Borgo 1 — wygodnie przy stoliku, z wybornymi lokalnymi pappardelle al cinghiale i naleśnikami necci z ricottą (żadnych leśnych pikników na stojąco). O 14:00 ruszamy widokową, spokojną drogą wzdłuż potoku Turrite w kierunku Fornovolasco (~25 min). Auto zostawiamy na parkingu tuż obok kas biletowych, zakładamy ciepłe bluzy (w środku panuje stała temperatura ok. 10°C) i o 15:00 rozpoczynamy zwiedzanie Grotta del Vento trasą Itinerario 1. To 1-godzinna, niezwykle komfortowa i płaska ścieżka z poręczami, bez uciążliwych stromych schodów czy męczących podejść, prezentująca spektakularne formacje naciekowe i stalaktyty. Po wyjściu na ciepłe popołudniowe słońce zjeżdżamy z powrotem do bazy ok. 17:00 — Mama zostaje na relaks w ogrodzie przy basenie, a chętni (np. Ty z Tatą) mogą podjechać 8 minut autem do Treppignany na 3,2-kilometrową pętlę przez las dębów i starych kasztanowców w złotej godzinie przed zachodem słońca.",
       "web_research": [
         {
           "topic": "Macelleria Angelini di Martinelli Davide (delikatesy i wędliny w Bardze)",
@@ -1186,6 +1207,12 @@
           "topic": "Temperatura i regulamin jaskini",
           "summary": "Stała ~10°C — ciepła bluza lub kurtka obowiązkowa. Trasa Itinerario 1 jest utwardzona i wyposażona w poręcze. Zakaz: plecaki wielkogabarytowe, parasole, kijki trekkingowe, zwierzęta.",
           "source": "https://grottadelvento.com/it/orari-biglietteria/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Lasy dębowe Garfagnana — Treppignana / Il Ciocco",
+          "summary": "Garfagnana = lasy dębowe i kasztanowe między Apuanami a Apeninami. Treppignana–Ciocco: gęsty las Quercus petraea + castagni, ptaki, widoki na dolinę. Wrzesień idealny (16–24°C). Z bazy to tylko ~8 min jazdy.",
+          "source": "https://www.alltrails.com/it-it/italy/tuscany/barga/forest",
           "checked": "2026-07"
         },
         {
@@ -1239,6 +1266,13 @@
             "note": "Parking bezpośrednio przy biglietteria jaskini, ~25 min jazdy od Barga"
           },
           {
+            "name": "Treppignana — parking",
+            "type": "public",
+            "price": "bezpłatny",
+            "gps_hint": "Treppignana, 55051 Barga LU",
+            "note": "Start szlaku leśnego dębowo-kasztanowego via il Ciocco — ~8 min jazdy od bazy w Ponte all'Ania"
+          },
+          {
             "name": "Piazzale Matteotti",
             "type": "public",
             "price": "płatny",
@@ -1257,7 +1291,7 @@
           "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym"
         }
       ],
-      "daily_km_estimate": 42,
+      "daily_km_estimate": 48,
       "eta_timeline": [
         {
           "time": "09:30",
@@ -1297,11 +1331,19 @@
         },
         {
           "time": "17:00",
-          "event": "Powrót do bazy — czas na relaks w ogrodzie w pełnym świetle dziennym (zachód słońca o 19:20)"
+          "event": "Powrót do bazy — Mama odpoczywa w ogrodzie / przy basenie apartamentu"
+        },
+        {
+          "time": "17:15",
+          "event": "Opcja dla chętnych (np. spacer z Tatą): Treppignana / Il Ciocco (szlak 3,2 km przez las dębów i kasztanów, 8 min z bazy)"
+        },
+        {
+          "time": "18:30",
+          "event": "Wszyscy razem w bazie — toskańska kolacja i relaks (zachód słońca o 19:20)"
         }
       ],
       "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: we wrześniu znacznie spokojniej niż w wakacje, ale rezerwacja online na godzinę 15:00 (Itinerario 1) jest zalecana.",
-      "summary": "Komfortowy, łagodny pierwszy dzień w dolinie Garfagnana, skrojony z myślą o wygodzie i tempie całej grupy. Rano zwiedzamy urokliwą Bardzę — wjazd pod samą romańską katedrę Duomo di San Cristoforo (XI w.) z tarasem Giardino del Balcone na Alpy Apuańskie pozwala uniknąć wspinaczki pieszej, schodząc jedynie w dół ku kawiarniom i delikatesom. Po spokojnym obiedzie w Osteria Il Borgo dei Sapori jedziemy pod Grotta del Vento na 1-godzinną, łatwą i płaską trasę Itinerario 1 (10°C) z parkingiem tuż pod kasami. Powrót do bazy już o 17:00, w pełnym świetle dziennym.",
+      "summary": "Komfortowy, łagodny pierwszy dzień w dolinie Garfagnana, doskonale łączący wspólne atrakcje ze swobodą odpoczynku. Rano zwiedzamy urokliwą Bardzę — wjazd pod samą katedrę Duomo di San Cristoforo (XI w.) z tarasem Giardino del Balcone pozwala uniknąć wspinaczki pieszej, schodząc jedynie w dół ku kawiarniom i delikatesom. Po spokojnym obiedzie w Osteria Il Borgo dei Sapori jedziemy pod Grotta del Vento na 1-godzinną, bezpieczną i płaską trasę Itinerario 1 (10°C) z parkingiem tuż pod kasami. Po powrocie do bazy o 17:00 Mama relaksuje się w apartamencie, a chętni (np. z Tatą) mogą wyskoczyć na 3,2-kilometrowy leśny szlak w Treppignanie w złotej godzinie.",
       "weather": {
         "label": "Barga / Garfagnana",
         "coords": [

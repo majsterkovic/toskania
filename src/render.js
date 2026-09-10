@@ -1145,8 +1145,20 @@ export function renderDayPage(day, images, bases, days, todo, meta) {
   const miniMap = hasMiniMap
     ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini${day.type === 'transit' ? ' leaflet-map--transit' : ''}" aria-label="Mapa dnia ${day.day_num}"></div>`
     : '';
-  const tollLegend = day.toll_sections?.length
-    ? `<div class="map-legend-toll"><span class="map-legend-toll__icon">!</span><span><strong>Odcinek płatny</strong> <span class="map-legend-toll__line" aria-hidden="true"></span> ${esc(day.toll_sections.map((s) => `${s.name} (${s.cost})`).join(', '))}</span></div>`
+  const hasFoodStops = day.food?.options?.some((o) => Array.isArray(o.coords) && o.coords.length === 2);
+  const legendParts = [];
+  if (day.toll_sections?.length) {
+    legendParts.push(
+      `<span class="map-legend-part"><span class="map-legend-toll__icon">!</span><span><strong>Odcinek płatny</strong> <span class="map-legend-toll__line" aria-hidden="true"></span> ${esc(day.toll_sections.map((s) => `${s.name} (${s.cost})`).join(', '))}</span></span>`
+    );
+  }
+  if (hasFoodStops) {
+    legendParts.push(
+      `<span class="map-legend-part"><span class="map-legend-food__icon">🍽️</span><span><strong>Postoje kulinarne</strong> (kliknij na mapie)</span></span>`
+    );
+  }
+  const tollLegend = legendParts.length
+    ? `<div class="map-legend-toll">${legendParts.join('<span class="map-legend-toll__sep" aria-hidden="true">·</span>')}</div>`
     : '';
   const warning = day.warning ? `<div class="day-warning">${esc(day.warning)}</div>` : '';
   const doneSet = getEffectiveDoneIds(todo, doneStorageKey({ meta }));

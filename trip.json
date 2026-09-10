@@ -488,7 +488,7 @@
           "note": "Płatny odcinek koncesyjny A2 (system biletowy). Pobierz bilet na bramce w Nowym Tomyślu, opłata przy zjeździe na S3 w Jordanowie (karta / telefon / gotówka)."
         }
       ],
-      "depart": "6:00 rano z Tarnowa Podgórnego",
+      "depart": "8:00 rano z Tarnowa Podgórnego (wyspany kierowca!)",
       "route": "A2 (węzeł Buk) → Jordanowo → DW276 (Krosno Odrz.) → DK32 (Gubin) → B97/B169 → A13 → A4 → A72 (Chemnitz) → A9 south (Nürnberg) → A99/A995 → Unterhaching",
       "route_segments": [
         {
@@ -530,11 +530,59 @@
       ],
       "attractions": [],
       "food": {
-        "place": "Raststätte Vogtland (A72) lub Fränkische Schweiz / Nürnberg-Feucht (A9)",
-        "address": "A72 Pirk (Vogtland) lub A9 Pegnitz (Fränkische Schweiz) / 90537 Feucht",
-        "dishes": [],
-        "note": "Dzień tranzytowy — lunch na autostradzie. Raststätte Vogtland przy A72 przed połączeniem z A9 lub Fränkische Schweiz / Nürnberg-Feucht na A9.",
-        "price": "~€8–12"
+        "place": "Autohof Berg (Bergstuben) lub Frankenfarm Himmelkron (A9)",
+        "address": "Theodor-Heuss-Str. 4, 95180 Berg (A9 zjazd 32) lub Bernecker Str. 40, 95502 Himmelkron (A9 zjazd 39)",
+        "dishes": [
+          "Fränkische Bratwürste (lokalne kiełbaski frankońskie z kapustą)",
+          "Gulaschsuppe (domowa zupa gulaszowa)",
+          "Currywurst z frytkami",
+          "Leberkäsesemmel (ciepła pieczeń bawarska w chrupiącej bułce)",
+          "Bawarski sznycel / pieczeń wieprzowa (kolacja w Unterhaching)"
+        ],
+        "note": "Sprawdzone punkty gastronomiczne tuż przy trasie (300–800 m od zjazdów) zamiast drogiego fast foodu na MOP-ie. Frankonia słynie z obfitych porcji i bardzo uczciwych cen (dobre ciepłe danie w cenie lub taniej niż zestaw McMenu).",
+        "price": "~€4,50–14 (lunch) / ~€14–22 (kolacja)",
+        "options": [
+          {
+            "name": "Autohof Berg — restauracja „Bergstuben” (Rekomendowany obiad)",
+            "type": "Obiad · Kuchnia frankońska",
+            "address": "Theodor-Heuss-Str. 4, 95180 Berg (A9 zjazd 32 Berg/Bad Steben, 300 m od węzła)",
+            "coords": [50.3662, 11.7828],
+            "note": "Idealna pora na obiad (~11:30–12:00, 5,5 h od startu). Ciepła kuchnia od 11:00. Prawdziwe domowe jedzenie w cenie McMenu: domowa zupa gulaszowa 4,50 €, kiełbaski frankońskie z kapustą 7,50 €, currywurst z frytkami 9,90 €, stek z karkówki 13,90 €. Stacja Shell z tańszym paliwem.",
+            "price": "€4,50–13,90"
+          },
+          {
+            "name": "Frankenfarm Himmelkron (Kultowa gospoda rolnicza)",
+            "type": "Obiad / Lada masarska",
+            "address": "Bernecker Str. 40, 95502 Himmelkron (A9 zjazd 39 Bad Berneck/Himmelkron)",
+            "coords": [50.0543, 11.6021],
+            "note": "Ok. 35 km dalej na południe (~12:00–12:30). Słynna frankońska gospoda z własną masarnią tuż przy rondzie zjazdowym. Zarówno ciepłe dania restauracyjne (Schäufele, pieczenie 12–16 €), jak i szybka lada z ciepłymi bułkami z pieczenią lub kiełbasą za 3,50–4,50 €.",
+            "price": "€3,50–16,00"
+          },
+          {
+            "name": "Metzgerei / Edeka Münchberg (Patent za grosze: Heiße Theke)",
+            "type": "Ciepła lada masarska",
+            "address": "Bayreuther Str. 6, 95213 Münchberg (A9 zjazd 35 Münchberg-Süd, 800 m od zjazdu)",
+            "coords": [50.1882, 11.7915],
+            "note": "Niemiecki patent na tani i pożywny posiłek: gorąca pieczeń bawarska w chrupiącej bułce (Leberkäsesemmel) za 2,50–3,50 €, kotlet w bułce (Schnitzelsemmel) za 3,80 €. Tanie zakupy napojów i owoców na dalszą drogę.",
+            "price": "€2,50–4,50"
+          },
+          {
+            "name": "Piekarnia & Kawiarnia Gubin (Śniadanie / Kawa PL)",
+            "type": "Śniadanie w Polsce",
+            "address": "ul. Kresowa, 66-620 Gubin (DK32 przed mostem granicznym)",
+            "coords": [51.9535, 14.717],
+            "note": "Postój ok. 7:30–7:45 rano. Świeże pieczywo, drożdżówki, kanapki i kawa przed wjazdem do Niemiec — wielokrotnie taniej niż na niemieckich MOP-ach.",
+            "price": "10–18 zł (~€2,50–4)"
+          },
+          {
+            "name": "Wirtshaus Kammerlohr (Unterhaching — Kolacja)",
+            "type": "Kolacja bawarska",
+            "address": "Hauptstraße 15, 82008 Unterhaching (1,2 km od hotelu Fresh Inn)",
+            "coords": [48.0625, 11.6165],
+            "note": "Tradycyjna bawarska gospoda z ogródkiem piwnym (Biergarten) w Unterhaching. Sznycle, pieczeń wieprzowa (Schweinebraten), knedle i bawarskie piwo na zakończenie dnia.",
+            "price": "€14–22"
+          }
+        ]
       },
       "accommodation": {
         "place": "Hotel Fresh Inn — Unterhaching (Monachium)",
@@ -546,7 +594,7 @@
       },
       "practical_tips": [
         "Kup 1-dniową e-winietę AT na 13.09 (€9,60) przed wyjazdem — 10-dniowa (€12,80) NIE obejmie powrotu 25.09; drugą 1-dniową kup przed 25.09",
-        "Tankuj w Niemczech przed Austrią — benzyna tańsza (~€0.15–0.20/L różnica)",
+        "Tankuj na Autohofie (np. Berg lub Münchberg) zamiast na MOP-ie przy samej autostradzie — paliwo tańsze o 20–30 centów/litr",
         "Trasa przez A72 i A9 omija obwodnicę Berlina i pozwala zaoszczędzić na opłacie A2 (zjazd w Jordanowie)",
         "Unterhaching: hotel ma własny parking — bez szukania miejsca wieczorem"
       ],
@@ -572,14 +620,14 @@
           "note": "Ostatnie tanie tankowanie w PL przed wjazdem do Niemiec"
         },
         {
-          "name": "Raststätte Vogtland (A72) lub Fränkische Schweiz (A9)",
-          "location": "A72 (Pirk) / A9 (Pegnitz)",
-          "road": "A72 / A9",
+          "name": "Autohof Berg (Shell / Autohof A9 zjazd 32)",
+          "location": "A9 zjazd 32 (Berg / Bad Steben)",
+          "road": "A9",
           "hours": "24/7",
-          "note": "Dobre punkty na postój, kawę i dotankowanie na niemieckiej autostradzie"
+          "note": "Stacja 300 m od węzła — paliwo tańsze o ~20–30 centów na litrze niż na MOP-ach autostradowych, świetny punkt na obiad w Bergstuben"
         }
       ],
-      "narrative": "Budzik dzwoni jeszcze przed świtem — wyjeżdżamy z Tarnowa Podgórnego ok. 5:30–6:00 w sobotni poranek. Zamiast zatłoczonej obwodnicy Berlina wybieramy krótszą kilometrowo trasę przez południowo-zachodnią Polskę i Saksonię: z A2 zjeżdżamy na węźle Jordanowo, mijamy Krosno Odrzańskie i przekraczamy granicę w Gubinie. Przez Dolne Łużyce i okolice Cottbus docieramy do autostrady A13 w stronę Drezna, a dalej autostradą A4 odbijamy na A72 przez Chemnitz i malowniczą Saksonię. Na wysokości Hof łączymy się z autostradą A9 — ok. 11:30–12:00 pora na obiad i kawę na MOP-ie (np. Raststätte Vogtland lub Fränkische Schweiz). Popołudniu suniemy A9 na południe obok Norymbergi i Ingolstadt. Do Unterhaching pod Monachium docieramy ok. 15:30–16:00 wschodnią obwodnicą A99/A995, bez wjeżdżania w miejski ruch. Hotel Fresh Inn to wygodny nocleg tranzytowy z prywatnym parkingiem — szybka kolacja w okolicy i wcześnie spać, bo jutro ruszamy przez Alpy prosto do Toskanii.",
+      "narrative": "Sobotni poranek zaczynamy bez pośpiechu — kierowca wysypia się po całym tygodniu, pakujemy bagaże i ruszamy z Tarnowa Podgórnego o godz. 8:00. Zamiast zatłoczonej obwodnicy Berlina wybieramy spokojniejszą trasę przez południowo-zachodnią Polskę i Saksonię: z A2 zjeżdżamy na węźle Jordanowo, mijamy Krosno Odrzańskie i o 10:00 przekraczamy granicę w Gubinie, gdzie robimy krótki postój na tanie tankowanie w PL i świeże drożdżówki/kawę z polskiej piekarni. Dalej przez Dolne Łużyce i autostrady A13/A4/A72 przez Chemnitz docieramy do Bawarii. Na obiad zjeżdżamy idealnie w porze obiadowej (ok. 13:45–14:00) tuż obok autostrady na Autohof Berg (do gospody Bergstuben) lub Frankenfarm w Himmelkron — jemy prawdziwe, świeże domowe dania w cenie niższej niż zestaw w przydrożnym McDonald'sie i tankujemy tańsze paliwo. Popołudniu suniemy A9 na południe obok Norymbergi i Ingolstadt. Do hotelu Fresh Inn w Unterhaching pod Monachium docieramy ok. 18:15 wschodnią obwodnicą A99/A995 bez wjeżdżania w miejski ruch. Po zameldowaniu idziemy na zasłużoną kolację w Unterhaching (np. w tradycyjnym bawarskim Wirtshaus Kammerlohr) i wcześnie kładziemy się spać przed jutrzejszą trasą przez Alpy do Toskanii.",
       "web_research": [
         {
           "topic": "Alternatywy trasy do Monachium: przez Drezno (A72/A9) vs przez Berlin (A12/A10/A9)",
@@ -606,51 +654,55 @@
           "checked": "2026-09"
         },
         {
-          "topic": "MOP-y na trasie A72 i A9 (Vogtland, Fränkische Schweiz, Feucht)",
-          "summary": "Raststätte Vogtland Nord/Süd przy A72 (km ~140, stacja Total, restauracja) oraz na A9 Fränkische Schweiz (Pegnitz) i Nürnberg-Feucht (km 385) — wszystkie 24/7, stacje paliw, gastronomia.",
-          "source": "https://www.serways.de/",
+          "topic": "Tanie i sprawdzone jedzenie przy A9 (Autohof Berg, Frankenfarm, Heiße Theke)",
+          "summary": "Alternatywy dla drogiego McDonald'sa na MOP-ach: (1) Autohof Berg (zjazd 32 A9) — restauracja Bergstuben, tradycyjna kuchnia frankońska, zupy 4,50 €, kiełbaski 7,50 €, currywurst 9,90 €, steki 13,90 €; paliwo tańsze o 20–30 centów. (2) Frankenfarm Himmelkron (zjazd 39 A9) — gospoda z własną masarnią tuż przy rondzie zjazdowym, ciepłe dania i bułki z pieczenią za 3,50–4,50 €. (3) Edeka/Kaufland Münchberg — ciepła lada rzeźnicka (Heiße Theke): gorący Leberkäse w bułce za ~2,50–3,50 €.",
+          "source": "https://autohof-berg.eu/",
           "checked": "2026-09"
         }
       ],
       "opening_hours": {
         "hotel_fresh_inn_checkin": "15:00–22:00 (wymeldowanie 06:00–11:00; po 22:00 kontakt tel. +49 89 3070900)",
-        "raststaette_a72_a9": "24/7"
+        "autohof_berg_bergstuben": "11:00–22:00 (ciepła kuchnia codziennie od 11:00)"
       },
       "eta_timeline": [
         {
-          "time": "05:30",
-          "event": "Wyjazd z Tarnowa Podgórnego (DW307 → wjazd na A2 węzeł Buk)"
+          "time": "08:00",
+          "event": "Wyjazd z Tarnowa Podgórnego (kierowca wyspany! DW307 → wjazd na A2 węzeł Buk)"
         },
         {
-          "time": "06:30",
+          "time": "09:00",
           "event": "Węzeł Jordanowo — zjazd z A2 na S3 / DW276 (kierunek Krosno Odrz.)"
         },
         {
-          "time": "07:30",
-          "event": "Gubin / Guben — granica PL/DE (ostatnie tankowanie w PL, wjazd na B97)"
+          "time": "10:00",
+          "event": "Gubin / Guben — granica PL/DE (ostatnie tanie tankowanie w PL, kawa i drożdżówki w polskiej piekarni)"
         },
         {
-          "time": "08:45",
+          "time": "11:15",
           "event": "Schwarzheide — wjazd na autostradę A13 w stronę Drezna"
         },
         {
-          "time": "09:45",
+          "time": "12:15",
           "event": "Węzeł Dresden-Nord / A4 → Kreuz Chemnitz (wjazd na A72)"
         },
         {
-          "time": "11:30",
-          "event": "Postój na obiad i tankowanie (A72 Raststätte Vogtland lub A9)"
+          "time": "13:45",
+          "event": "Postój na obiad i tańsze tankowanie: Autohof Berg (restauracja Bergstuben, zupa 4,50 €, kiełbaski 7,50 €) lub Frankenfarm Himmelkron (A9)"
         },
         {
-          "time": "13:30",
-          "event": "Norymberga (A9/A6 węzeł Nürnberg) — kontynuacja A9 na południe"
+          "time": "16:00",
+          "event": "Norymberga (A9/A6 węzeł Nürnberg) — kontynuacja A9 na południe przez Bawarię"
         },
         {
-          "time": "15:30",
-          "event": "Unterhaching (Monachium) — Hotel Fresh Inn, parking hotelowy"
+          "time": "18:15",
+          "event": "Unterhaching (Monachium) — Hotel Fresh Inn, parking hotelowy, bezstresowe zameldowanie"
+        },
+        {
+          "time": "19:00",
+          "event": "Kolacja po trasie (np. tradycyjna bawarska gospoda Wirtshaus Kammerlohr w Unterhaching)"
         }
       ],
-      "summary": "Pierwszy dzień drogi do Toskanii: Tarnowo Podgórne → Gubin → Saksonia (A13/A4/A72) → A9 (Norymberga) → Unterhaching (Monachium). Trasa przez Dolne Łużyce i Saksonię omija obwodnicę Berlina i droższy odcinek A2 do Świecka (~785 km, ~8,5–9 h czystej jazdy).",
+      "summary": "Pierwszy dzień drogi do Toskanii: spokojny start o 8:00 z Tarnowa Podgórnego (wyspany kierowca!) → Gubin (10:00) → Saksonia (A13/A4/A72) → obiad na Autohofie w Bawarii (13:45) → A9 → Unterhaching (Monachium, przyjazd ~18:15). Trasa omija obwodnicę Berlina i droższy odcinek A2 do Świecka (~785 km, ~8,5–9 h czystej jazdy + postoje).",
       "weather": {
         "label": "Unterhaching (nocleg)",
         "coords": [

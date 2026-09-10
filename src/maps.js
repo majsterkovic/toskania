@@ -152,6 +152,9 @@ export function initDayMap(containerId, base, attractions, destBase) {
   if (!el) return;
 
   const map = window.L.map(el, { zoomControl: false, scrollWheelZoom: false });
+  window.L.control.zoom({ position: 'topright' }).addTo(map);
+  map.on('click', () => map.scrollWheelZoom.enable());
+  map.on('mouseout', () => map.scrollWheelZoom.disable());
   addBasemap(map);
   registerMap({ map, type: 'day' });
 
@@ -254,6 +257,23 @@ function makeTollIcon() {
   });
 }
 
+function makeFoodIcon() {
+  const size = 28;
+  const r = 14;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size + 7}" viewBox="0 0 ${size} ${size + 7}">
+    <circle cx="${r}" cy="${r}" r="${r - 1}" fill="#c4860a" stroke="#ffffff" stroke-width="2"/>
+    <text x="${r}" y="${r + 4}" text-anchor="middle" font-size="13">🍽️</text>
+    <line x1="${r}" y1="${size - 1}" x2="${r}" y2="${size + 6}" stroke="#c4860a" stroke-width="2"/>
+  </svg>`;
+  return window.L.divIcon({
+    html: svg,
+    className: 'food-marker-icon',
+    iconSize: [size, size + 7],
+    iconAnchor: [r, size + 7],
+    popupAnchor: [0, -(size + 7)],
+  });
+}
+
 function addTollLayers(target, tollSections) {
   if (!window.L || !tollSections?.length) return;
 
@@ -268,13 +288,13 @@ function addTollLayers(target, tollSections) {
         `<div style="font-weight:700;color:#d9534f;font-size:0.92rem;margin-bottom:3px">⚠️ Odcinek płatny A2</div>` +
         `<div style="font-weight:600;margin-bottom:2px">${esc(ts.name)}</div>` +
         (ts.cost ? `<div style="color:#e67e22;font-weight:700;margin:3px 0">Opłata: ${esc(ts.cost)}</div>` : '') +
-        (ts.note ? `<div style="font-size:0.78rem;color:#555;line-height:1.35;margin-top:4px">${esc(ts.note)}</div>` : '') +
+        (ts.note ? `<div style="font-size:0.78rem;color:#666;line-height:1.3">${esc(ts.note)}</div>` : '') +
         `</div>`,
         { maxWidth: 220 }
       )
       .addTo(target);
 
-    // Linia odcinka płatnego w wyróżniającym się kolorze (pomarańczowy #e67e22)
+    // Wyróżniony pomarańczowy odcinek płatny na trasie (dociągnięty do drogi przez OSRM)
     fetchOSRMRoute(ts.coords).then((res) => {
       const lineCoords = res?.route || ts.coords;
       const poly = window.L.polyline(lineCoords, {
@@ -309,7 +329,8 @@ export function initTransitDayMap(containerId, points, day) {
   const pts = (points || []).filter((p) => p.coords);
   if (!pts.length) return;
 
-  const map = window.L.map(el, { zoomControl: true, scrollWheelZoom: false });
+  const map = window.L.map(el, { zoomControl: false, scrollWheelZoom: false });
+  window.L.control.zoom({ position: 'topright' }).addTo(map);
   map.on('click', () => map.scrollWheelZoom.enable());
   map.on('mouseout', () => map.scrollWheelZoom.disable());
   addBasemap(map);
@@ -319,6 +340,25 @@ export function initTransitDayMap(containerId, points, day) {
   pts.forEach((p) => {
     window.L.marker(p.coords, { icon: makeIcon(p.kind || 'transit') })
       .bindPopup(`<strong>${esc(p.label)}</strong>`, { maxWidth: 180 })
+      .addTo(map);
+  });
+
+  // Punkty gastronomiczne po trasie
+  const foodStops = (day?.food?.options || []).filter(
+    (o) => Array.isArray(o.coords) && o.coords.length === 2
+  );
+  foodStops.forEach((f) => {
+    window.L.marker(f.coords, { icon: makeFoodIcon(), zIndexOffset: 450 })
+      .bindPopup(
+        `<div class="map-popup-food">` +
+          `<strong>🍽️ ${esc(f.name)}</strong>` +
+          (f.type ? `<br><span class="map-food-badge">${esc(f.type)}</span>` : '') +
+          (f.price ? `<br><span class="map-food-price">Cena: <strong>${esc(f.price)}</strong></span>` : '') +
+          (f.note ? `<p class="map-food-note">${esc(f.note)}</p>` : '') +
+          (f.address ? `<small class="muted">📍 ${esc(f.address)}</small>` : '') +
+        `</div>`,
+        { maxWidth: 240 }
+      )
       .addTo(map);
   });
 

@@ -1333,8 +1333,8 @@
           "duration_h": 3
         },
         {
-          "name": "Piza — Piazza dei Miracoli (plac cudów): Krzywa Wieża, Duomo (katedra), Battistero (baptysterium), Camposanto (cmentarz)",
-          "description": "Piazza dei Miracoli — jeden z najsłynniejszych placów świata: Krzywa Wieża (dzwonnica katedry, 251 stopni, pochylona o blisko 4°), romański Duomo, okrągły Battistero o wyjątkowej akustyce i monumentalny Camposanto. Turystyczne i zatłoczone — jak Florencja, świadomy wyjątek od reszty planu.",
+          "name": "Piza — Piazza dei Miracoli (plac cudów): Krzywa Wieża (z zewnątrz), Duomo (katedra), Battistero (baptysterium), Camposanto (cmentarz)",
+          "description": "Piazza dei Miracoli — jeden z najsłynniejszych placów świata: Krzywa Wieża (dzwonnica katedry o pochyleniu blisko 4°, oglądana z zewnątrz na zielonym dywanie trawnika), romański Duomo Santa Maria Assunta (wspaniałe wnętrze z amboną Giovanniego Pisano), okrągły Battistero i monumentalny Camposanto. Oglądanie wieży z zewnątrz pozwala w pełni docenić jej niezwykłe pochylenie bez stania w kolejkach, presji slotu czasowego i 251 wąskich stopni.",
           "type": "popular",
           "image_key": "pisa",
           "gps_hint": "Piazza dei Miracoli, Pisa — dojazd pociągiem z Lukki; ~20 min pieszo od Pisa Centrale lub bus LAM Rossa.",
@@ -1344,10 +1344,10 @@
           ],
           "drive_min": null,
           "drive_min_reason": "pociąg z Lukki",
-          "opening_hours": "Zabytki (wrzesień): ok. 9:00–20:00 — sprawdź dokładny kalendarz na opapisa.it. Krzywa Wieża: wejścia w slotach co 30 min (grupy ~30 os.), 251 stopni bez windy, dzieci <8 lat nie mogą wchodzić. Katedra: wstęp bezpłatny z biletem czasowym.",
-          "ticket_price": "Krzywa Wieża: €20/os (zawiera wejście do katedry). Bilet łączony Piazza dei Miracoli (Wieża + Duomo + Battistero + Camposanto + Museo delle Sinopie): €27/os. Sam plac i zdjęcia z zewnątrz: bezpłatne.",
-          "url": "https://www.opapisa.it/en/tickets/",
-          "duration_h": 2
+          "opening_hours": "Plac i widok na Wieżę: dostępne całą dobę, bezpłatnie. Katedra (Duomo): wstęp bezpłatny z darmowym biletem czasowym z kasy/automatu na miejscu. Pozostałe obiekty (Battistero, Camposanto): ~9:00–20:00 (bilety płatne na miejscu).",
+          "ticket_price": "Bezpłatne z zewnątrz. Sam plac, Krzywa Wieża i zdjęcia: 0 €. Wnętrze katedry (Duomo): bezpłatne (darmowa wejściówka). Opcjonalne wejście do wnętrza Battistero / Camposanto: ~€7/os. (Wspinaczka na Wieżę €20 pominięta — 100 € oszczędności w grupie).",
+          "url": "https://www.opapisa.it/en/",
+          "duration_h": 1.5
         },
         {
           "name": "Viareggio — Passeggiata (nadmorski deptak Liberty), molo i zachód słońca nad Morzem Tyrreńskim",
@@ -1385,16 +1385,16 @@
         "gps_hint": "Via delle Conce 45 — wewnątrz murów, dojście pieszo od parkingu Palatucci / Porta San Pietro"
       },
       "practical_tips": [
-        "TRASA (polecana opcja): auto z Bargi do Lukki (~37 km, ~40 min) i parking POZA murami — Parcheggio Palatucci lub Carducci przy Porta San Pietro (~€0,50–1/h), auto zostaje na cały dzień. Stamtąd pociąg Lucca→Pisa. Powód: przesiadka tylko na odcinku Lucca↔Piza (gdzie parking i ZTL w Pizie są uciążliwe), auto blisko bazy, a poranek w Lucce zwiedzamy pieszo prosto od parkingu. Alternatywa 'pociąg całą drogę' (auto na stacji Fornaci di Barga → pociąg do Lukki 44 min → Piza) jest wykonalna, ale to dłuższy i mniej elastyczny dojazd — dlatego polecamy auto do Lukki.",
-        "Krzywa Wieża: wejście na szczyt TYLKO ze slotem godzinowym (co 30 min, grupy ~30 os., 251 stopni bez windy) — rezerwuj online z wyprzedzeniem na opapisa.it; w sezonie i w weekendy sloty znikają w kilka godzin. Dzieci poniżej 8 lat nie mogą wchodzić na wieżę.",
+        "TRASA (polecana opcja): auto z Bargi do Lukki (~37 km, ~40 min) i parking POZA murami — Parcheggio Palatucci lub Carducci przy Porta San Pietro (~€0,50–1/h), auto zostaje na cały dzień. Stamtąd pociąg Lucca→Pisa. Powód: przesiadka tylko na odcinku Lucca↔Piza (gdzie parking i ZTL w Pizie są uciążliwe), auto blisko bazy, a poranek w Lucce zwiedzamy pieszo prosto od parkingu. Pociągi tworzą z Viareggio wygodny trójkąt, więc nigdzie nie trzeba się cofać.",
+        "Krzywa Wieża z zewnątrz: wstęp na Piazza dei Miracoli jest całkowicie bezpłatny i to właśnie z perspektywy placu i zielonego trawnika pochylenie wieży robi największe wrażenie. Wnętrze Duomo jest bezpłatne (darmowy bilet czasowy z kasy na miejscu). Dzięki rezygnacji z wspinaczki zaoszczędzacie 100 € w grupie i macie pełną swobodę bez pośpiechu i bez sztywnego slotu.",
         "Lucca: mury (4,2 km) można obejść pieszo (~1 h) lub przejechać wypożyczonym rowerem — najlepszy sposób na poznanie miasta z góry, w cieniu drzew. Wstęp bezpłatny, otwarte całą dobę.",
-        "Pociąg Lucca→Pisa Centrale: ~30 min, ~41 kursów/dzień (co 20–30 min), bilet ~€3,50/os. Regionale bez rezerwacji miejsca — kup w automacie lub w aplikacji Trenitalia. Z Pisa Centrale na Piazza dei Miracoli ~20 min pieszo lub autobusem LAM Rossa.",
-        "Da Giulio in Pelleria nieczynne w niedziele — 15.09 to wtorek, więc otwarte; mimo to zadzwoń (0583 55948) i zarezerwuj stolik na porę lunchu, bo miejsce jest oblegane przez lokalnych.",
-        "Weźcie legitymacje studenckie/szkolne — regulamin gminy Lucca (comune.lucca.it) przewiduje bilet ridotto dla „studenti muniti di idonea tessera” na Torre Guinigi / Torre delle Ore / Orto Botanico. Pokażcie legitymację w kasie.",
-        "UWAGA cenowa: Krzywa Wieża NIE MA zniżki studenckiej ani młodzieżowej — €20/os dla każdego. Opera della Primaziale Pisana zwalnia/obniża tylko osoby z niepełnosprawnością (z opiekunem, zgłoszenie mailem ≥5 dni wcześniej), dzieci <11 lat (i tak nie mogą wejść na wieżę, limit 8 lat) oraz grupy szkolne od 10 uczniów — nasza piątka pod żaden z tych progów nie podpada. Legitymacje działają w Lucce, nie w Pizie.",
-        "Zniżka kolejowa dla trójki poniżej 30 lat: Trenitalia „Promo Young X-GO” daje **20% na bilety Regionale** po darmowej rejestracji w programie X-GO (aplikacja/strona Trenitalia), ważna do 30.11.2026. Haczyk: bilet trzeba kupić **do 23:59 dnia poprzedzającego podróż**, pula miejsc na pociąg jest ograniczona i nie łączy się z innymi promocjami. Na krótkich odcinkach tego dnia to oszczędność rzędu €2/os, ale ta sama zniżka działa na dłuższym przejeździe Siena↔Florencja (D12), gdzie daje już ~€4/os."
+        "Pociągi co 30 minut (pełna elastyczność!): zarówno z Lukki do Pizy, jak i z Pizy do Viareggio pociągi Regionale jeżdżą regularnie co około pół godziny przez cały dzień. Godziny z planu (16:42 Lucca ➔ 17:08 Pisa S. Rossore oraz 19:02 Pisa S. Rossore ➔ 19:12 Viareggio) to idealny wariant bazowy, ale jeśli skończycie wcześniej lub później — po prostu wsiadacie w kolejny pociąg za 30 minut bez żadnych dopłat.",
+        "Stacja Pisa S. Rossore (game-changer!): wysiadamy na stacji Pisa San Rossore, a NIE na Pisa Centrale! San Rossore leży zaledwie 500 m (6 minut spaceru) od Piazza dei Miracoli i Krzywej Wieży — zero autobusów miejskich i zero tramwajów. Po zwiedzaniu wracacie te same 500 m na San Rossore i stamtąd jedziecie prosto do Viareggio (10 min jazdy!).",
+        "Da Giulio in Pelleria nieczynne w niedziele — 15.09 to wtorek, więc otwarte; mimo to zadzwoń (0583 55948) i zarezerwuj stolik na porę lunchu (~12:30/12:45), bo miejsce jest oblegane przez lokalnych.",
+        "Weźcie legitymacje studenckie/szkolne — regulamin gminy Lucca (comune.lucca.it) przewiduje bilet ridotto dla „studenti muniti di idonea tessera” na Torre Guinigi / Torre delle Ore / Orto Botanico (€6,50 zamiast €8). Pokażcie legitymację w kasie.",
+        "Zniżka kolejowa dla trójki poniżej 30 lat: Trenitalia „Promo Young X-GO” daje **20% na bilety Regionale** po darmowej rejestracji w programie X-GO (aplikacja/strona Trenitalia), ważna do 30.11.2026. Haczyk: bilet trzeba kupić **do 23:59 dnia poprzedzającego podróż**, pula miejsc na pociąg jest ograniczona i nie łączy się z innymi promocjami. Na krótkich odcinkach tego dnia to oszczędność rzędu €2/os, a ta sama zniżka działa na dłuższym przejeździe Siena↔Florencja (D12)."
       ],
-      "narrative": "Dziś zamiast gór — dwa miasta, i po raz drugi w całym planie oddajemy licznik kilometrów kolei. Ruszamy o 8:00 autem z Bargi w dół doliny Serchio; po ok. 40 minutach zostawiamy samochód na parkingu poza murami Lukki i dalej idziemy już tylko pieszo i pociągiem. Lucca to jedyne miasto we Włoszech, które zachowało kompletny renesansowy pierścień murów — dziś to szeroka, wysadzana platanami promenada biegnąca 4,2 km wokół całego starego miasta, po której lucchesi spacerują i jeżdżą na rowerach jak po parku zawieszonym nad dachami. Schodzimy z murów na Piazza dell'Anfiteatro — owalny plac dokładnie na fundamentach rzymskiego amfiteatru, którego kształt kamienice powtórzyły dom po domu. Kto ma siłę, wchodzi na Torre Guinigi (€8), średniowieczną wieżę z ogrodem dębów ostrolistnych rosnących 45 metrów nad ziemią — jeden z najdziwniejszych i najładniejszych widoków w Toskanii. Zaglądamy jeszcze do Duomo di San Martino po Volto Santo i nagrobek Ilarii del Carretto, kupujemy cantucci przy Via Fillungo, i po lunchu (tordelli lucchesi w Trattoria da Giulio) łapiemy pociąg — 30 minut i jesteśmy w Pizie. Ze stacji ~20 minut pieszo i wychodzimy na Piazza dei Miracoli: zielony dywan trawy, a na nim biały marmur Duomo, Battistero i słynna Krzywa Wieża, pochylona o cztery stopnie i wciąż stojąca po ośmiu wiekach. Wejście na szczyt (€20, 251 stopni) trzeba mieć zarezerwowane w slocie z wyprzedzeniem — ale nawet z dołu plac robi wrażenie, którego zdjęcia nie oddają. To turystyczny, tłoczny dzień, jak Florencja — świadomy wyjątek od reguły, bo tych dwóch miast po prostu nie sposób pominąć, będąc tak blisko. A skoro tor kolejowy biegnie stąd dalej na zachód, domykamy dzień trzecim bokiem trójkąta: kwadrans pociągiem z Pizy i jesteśmy w Viareggio, nad Morzem Tyrreńskim — jedyny raz w całym wyjeździe. Ze stacji kilometr pieszo i wychodzimy na Passeggiatę, trzykilometrowy deptak z kawiarniami w stylu Liberty, kafelkowymi wieżyczkami i kutymi balustradami z lat dwudziestych. Zdejmujemy buty, wchodzimy w wodę (we wrześniu ma jeszcze 24–25 stopni) i czekamy na 19:31, kiedy słońce siada prosto w morze, a za plecami różowieją marmurowe Alpy Apuańskie — te same, które z Garfagnany oglądamy od drugiej strony. Za kolację robi cuoppo smażonych rybek z papierowego rożka i gelato na deptaku. O 20:15 pociąg z Viareggio do Lukki (ostatni tego dnia jedzie dopiero o 22:10, więc nie ma pośpiechu), odbiór auta, dolina Serchio i baza w Bardze ok. 21:30.",
+      "narrative": "Dziś zamiast gór — dwa miasta, i po raz drugi w całym planie oddajemy licznik kilometrów kolei. Ruszamy o 8:30 autem z Bargi w dół doliny Serchio; po ok. 40 minutach zostawiamy samochód na parkingu poza murami Lukki i dalej idziemy już tylko pieszo i pociągiem. Lucca to jedyne miasto we Włoszech, które zachowało kompletny renesansowy pierścień murów — dziś to szeroka, wysadzana platanami promenada biegnąca 4,2 km wokół całego starego miasta, po której lucchesi spacerują i jeżdżą na rowerach jak po parku zawieszonym nad dachami. Schodzimy z murów na Piazza dell'Anfiteatro — owalny plac dokładnie na fundamentach rzymskiego amfiteatru, którego kształt kamienice powtórzyły dom po domu. Wchodzimy na Torre Guinigi (€6,50 ulg. / €8 norm.), średniowieczną wieżę z ogrodem dębów ostrolistnych rosnących 45 metrów nad ziemią — jeden z najdziwniejszych i najładniejszych widoków w Toskanii. Zaglądamy jeszcze do Duomo di San Martino po Volto Santo i nagrobek Ilarii del Carretto, spacerujemy Via Fillungo, i idziemy na niespieszny lunch (tordelli lucchesi w Trattoria da Giulio). Popołudnie w Lucce to czas na lody i relaks, a o 16:42 łapiemy pociąg REG 18586 — po zaledwie 26 minutach wysiadamy na stacji Pisa San Rossore, leżącej zaledwie 500 metrów od Krzywej Wieży (bez żadnych miejskich autobusów czy tramwajów!). Wychodzimy na Piazza dei Miracoli: zielony dywan trawy, a na nim biały marmur Duomo, Battistero i słynna Krzywa Wieża, pochylona o cztery stopnie i wciąż stojąca po ośmiu wiekach. Oglądamy ją z zewnątrz na trawniku — to z tej perspektywy jej pochylenie robi największe wrażenie, a my nie tracimy czasu ani 100 € na wspinaczkę i sztywne sloty; zaglądamy za to bezpłatnie do wnętrza Katedry. O 19:02 z tej samej stacji San Rossore łapiemy pociąg REG 2296 — błyskawiczne 10 minut i jesteśmy w Viareggio nad Morzem Tyrreńskim. Ze stacji kilometr pieszo na Passeggiatę z kawiarniami w stylu Liberty i molo. Zdejmujemy buty, wchodzimy w wodę (we wrześniu ma jeszcze 24–25 stopni) i czekamy na 19:31, kiedy słońce siada prosto w morze, a za plecami różowieją marmurowe Alpy Apuańskie. Za kolację robi cuoppo smażonych rybek z papierowego rożka i gelato na deptaku. O 20:45 pociąg z Viareggio bezpośrednio do Lukki (ostatni tego dnia jedzie o 22:10, więc mamy duży bufor), odbiór auta i powrót doliną Serchio do bazy w Bardze ok. 22:00.",
       "web_research": [
         {
           "topic": "Krzywa Wieża — bilety i rezerwacja",
@@ -1409,10 +1409,10 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Pociąg Lucca → Pisa Centrale",
-          "summary": "Regionale, bezpośrednie, ~25–30 min, ok. 30 kursów/dobę, bilet ~€3–4/os. Bez obowiązkowej rezerwacji miejsca. Ze stacji Pisa Centrale na Piazza dei Miracoli ~20 min pieszo albo autobusem LAM Rossa. Bilety kasuj przed wejściem do pociągu (automat/aplikacja).",
+          "topic": "Pociąg Lucca → Pisa San Rossore",
+          "summary": "Pociąg REG 18586: odjazd Lucca 16:42, przyjazd Pisa S. Rossore 17:08 (26 min, bilet ~€3,70). Stacja Pisa San Rossore leży tylko 500 m (6 min pieszo) od Piazza dei Miracoli — omija konieczność jazdy do Pisa Centrale i zbędne autobusy/tramwaje.",
           "source": "https://www.trenitalia.com",
-          "checked": "2026-07"
+          "checked": "2026-09"
         },
         {
           "topic": "Dojazd Barga → Lucca i parking",
@@ -1489,84 +1489,88 @@
       ],
       "eta_timeline": [
         {
-          "time": "08:00",
+          "time": "08:30",
           "event": "Wyjazd z bazy Barga do Lukki (~37 km, ~40 min)"
         },
         {
-          "time": "08:45",
+          "time": "09:15",
           "event": "Parking poza murami Lukki (Palatucci / Carducci) — auto zostaje na cały dzień"
         },
         {
-          "time": "09:00",
-          "event": "Lucca — spacer po renesansowych murach i Piazza dell'Anfiteatro"
+          "time": "09:30",
+          "event": "Lucca — spacer po renesansowych murach i owalnej Piazza dell'Anfiteatro"
         },
         {
-          "time": "10:15",
-          "event": "Torre Guinigi (dęby na szczycie) i Duomo di San Martino"
+          "time": "10:45",
+          "event": "Torre Guinigi (wejście na wieżę z dębami na szczycie) i Duomo di San Martino"
         },
         {
-          "time": "11:30",
-          "event": "Via Fillungo — kawa, cantucci, kameralne uliczki"
+          "time": "11:45",
+          "event": "Via Fillungo — kawa, cantucci, kameralne zaułki"
         },
         {
-          "time": "12:30",
-          "event": "Lunch — Trattoria da Giulio in Pelleria (tordelli lucchesi)"
+          "time": "12:45",
+          "event": "Lunch — Trattoria da Giulio in Pelleria (tordelli lucchesi, zuppa di farro)"
         },
         {
-          "time": "13:45",
-          "event": "Stacja Lucca → pociąg Lucca–Pisa Centrale (~30 min, kursy co 20–30 min)"
+          "time": "14:15",
+          "event": "Lucca — popołudniowy relaks, lody, spacer lub wypożyczenie rowerów na mury"
         },
         {
-          "time": "14:30",
-          "event": "Pisa Centrale → Piazza dei Miracoli (~20 min pieszo lub bus LAM Rossa)"
+          "time": "16:25",
+          "event": "Spacer ze starego miasta na stację Lucca (~10–12 min)"
         },
         {
-          "time": "15:00",
-          "event": "Piazza dei Miracoli — Krzywa Wieża (slot rezerwowany na 15:00), Duomo, Battistero, Camposanto"
+          "time": "16:42",
+          "event": "Pociąg REG 18586: Lucca (16:42) ➔ Pisa S. Rossore (17:08, 26 min) — wysiadka pod samą Wieżą!"
         },
         {
-          "time": "17:00",
-          "event": "Wyjście z placu na Pisa Centrale (~20 min pieszo lub bus LAM Rossa)"
+          "time": "17:08",
+          "event": "Pisa S. Rossore — spacer 500 m (6 min) prosto na Piazza dei Miracoli (bez autobusów i tramwajów)"
         },
         {
-          "time": "17:30",
-          "event": "Pociąg Pisa Centrale → Viareggio (~15–20 min, kursy min. 2×/h)"
+          "time": "17:15",
+          "event": "Piazza dei Miracoli — Krzywa Wieża (z trawnika), bezpłatne wnętrze Duomo, Baptysterium, espresso"
         },
         {
-          "time": "17:55",
-          "event": "Viareggio — ze stacji ~1 km / 15 min pieszo na Passeggiatę"
+          "time": "18:50",
+          "event": "Spacer powrotny 500 m na stację Pisa S. Rossore"
         },
         {
-          "time": "18:15",
-          "event": "Passeggiata: architektura Liberty, molo, nogi w wodzie (morze ~24–25°C)"
+          "time": "19:02",
+          "event": "Pociąg REG 2296: Pisa S. Rossore (19:02) ➔ Viareggio (19:12, błyskawiczne 10 min jazdy!)"
+        },
+        {
+          "time": "19:12",
+          "event": "Viareggio — ze stacji ~1 km / 12 min pieszo na Passeggiatę i plażę"
         },
         {
           "time": "19:31",
-          "event": "Zachód słońca prosto w morze — Alpy Apuańskie za plecami"
+          "event": "Zachód słońca prosto w fale Morza Tyrreńskiego (Alpy Apuańskie za plecami)"
         },
         {
-          "time": "19:50",
-          "event": "Cuoppo (smażone rybki w rożku) i gelato na deptaku, powrót na stację"
-        },
-        {
-          "time": "20:15",
-          "event": "Pociąg Viareggio → Lucca (~20–26 min; ostatni tego dnia 22:10)"
+          "time": "19:45",
+          "event": "Street food na deptaku Liberty: cuoppo (smażone rybki i owoce morza w rożku) i gelato"
         },
         {
           "time": "20:45",
-          "event": "Odbiór auta w Lucce"
+          "event": "Pociąg powrotny Viareggio ➔ Lucca bezpośrednio (~20 min; rezerwa: ostatni o 22:10)"
         },
         {
-          "time": "21:30",
+          "time": "21:15",
+          "event": "Odbiór auta z parkingu w Lucce"
+        },
+        {
+          "time": "22:00",
           "event": "Powrót do bazy Barga"
         }
       ],
       "daily_km_estimate": 62,
       "km_lock": true,
       "km_note": "Tylko auto Barga↔Lucca (pętla OSRM 62 km); Piza i Viareggio pociągiem — skrypt km:refresh celowo pomija.",
-      "crowd_tip": "Piazza dei Miracoli w Pizie jest zatłoczona praktycznie cały dzień w sezonie — jak Florencja, to świadomy kompromis (plan zwykle omija tłumy, ale Krzywa Wieża jest tego warta). Strategia: Lucca rano (spokojniejsza i kameralna), Piza po południu ze slotem na Wieżę zarezerwowanym z wyprzedzeniem. Na samym placu tłum jest nieunikniony, ale mury Lukki i owalna Piazza dell'Anfiteatro dają oddech.",
-      "warning": "Krzywa Wieża wymaga rezerwacji slotu godzinowego z wyprzedzeniem (opapisa.it) — bez tego można obejrzeć plac, Duomo i zrobić zdjęcia, ale nie wejść na wieżę. Piazza dei Miracoli i (w mniejszym stopniu) Lucca to najbardziej turystyczne punkty całego wyjazdu — spodziewaj się tłumów, zwłaszcza w porze południowej pod Wieżą. Dzień oparty na rozkładzie pociągów Lucca↔Pisa↔Viareggio — sprawdź aktualne godziny Trenitalia bliżej wyjazdu. Ostatni pociąg Viareggio→Lucca odjeżdża ok. 22:10 (przyjazd 22:31); planowany powrót o 20:15 daje prawie dwie godziny zapasu, ale nie wolno go przegapić, bo auto stoi w Lucce.",
-      "summary": "Świadomie „turystyczny\" dzień, ale w spokojnym tempie. Autem jedziemy do Lukki (wł. Lucca) — miasta otoczonego kompletnym renesansowym pierścieniem murów, po których dziś spaceruje się jak po parku; w środku owalny plac wzniesiony na fundamentach rzymskiego amfiteatru (Piazza dell'Anfiteatro) i średniowieczna wieża z drzewami na szczycie (Torre Guinigi). Potem pociągiem do Pizy, na słynny plac katedralny (Piazza dei Miracoli) z pochyloną Krzywą Wieżą. Na finał trzeci bok trójkąta kolejowego — kwadrans do Viareggio nad Morzem Tyrreńskim: deptak Liberty, nogi w wodzie i zachód słońca prosto w morze o 19:31. Jedyne spotkanie z morzem w całym planie.",
+      "crowd_tip": "Piazza dei Miracoli w Pizie jest popularnym punktem — dzięki oglądaniu Krzywej Wieży z zewnątrz unikacie kolejek, sztywnych slotów i tłoku na wąskich schodach wieży. Lucca rano jest kameralna i spokojna, a wieczór w Viareggio nad morzem pozwala zrelaksować się po całym dniu.",
+      "warning": "Piazza dei Miracoli i Lucca to popularne punkty — spodziewaj się innych turystów, ale dzięki oglądaniu Krzywej Wieży z zewnątrz nie ma presji sztywnego slotu i stania w kolejce (wstęp na plac wolny, a do katedry Duomo z darmowym biletem czasowym). Dzień oparty na rozkładzie pociągów Lucca↔Pisa↔Viareggio — pociągi jeżdżą często (co 20–30 min). Ostatni bezpośredni powrót Viareggio→Lucca odjeżdża ok. 22:10 (przyjazd 22:31); planowany powrót o 20:30 daje ponad półtorej godziny buforu, ale nie wolno go przegapić, bo auto stoi w Lucce.",
+      "summary": "Świadomie „miejski\" dzień w relaksującym tempie. Autem jedziemy o 8:30 do Lukki (wł. Lucca) — miasta otoczonego kompletnym renesansowym pierścieniem murów; w środku owalny plac na rzymskim amfiteatrze (Piazza dell'Anfiteatro) i wieża z rosnącymi dębami (Torre Guinigi). Potem pociągiem do Pizy na słynną Piazza dei Miracoli: oglądamy Krzywą Wieżę z perspektywy zielonego trawnika (gdzie jej pochyłość robi największe wrażenie) i zaglądamy do romańskiego Duomo. Na finał trzeci bok trójkąta kolejowego — kwadrans pociągiem do Viareggio nad Morzem Tyrreńskim: deptak Liberty, moczenie nóg w wodzie i zachód słońca prosto w morze o 19:31.",
       "weather": {
         "label": "Piza (i Lucca)",
         "coords": [
@@ -4013,10 +4017,10 @@
             "per_person_max": 30
           },
           {
-            "label": "Piza + Lucca + Viareggio — pociągi + Krzywa Wieża + Torre Guinigi",
-            "detail": "Trójkąt kolejowy Lucca→Piza→Viareggio→Lucca ~€10/os (3 odcinki Regionale po ~€3–3,50; osoby poniżej 30 lat −20% z Trenitalia X-GO). Krzywa Wieża €20/os (opcja, BEZ ulgi studenckiej); bilet łączony całego placu z Wieżą €27/os, bez Wieży ~€11/os. Torre Guinigi €8/os intero, €6,50 ridotto za legitymacją studencką (opcja). Mury Lukki, plac w Pizie i morze w Viareggio — bezpłatne.",
+            "label": "Piza + Lucca + Viareggio — pociągi + Torre Guinigi",
+            "detail": "Trójkąt kolejowy Lucca→Piza→Viareggio→Lucca ~€10/os (3 odcinki Regionale po ~€3–3,70; osoby poniżej 30 lat −20% z Trenitalia X-GO). Torre Guinigi €8/os intero, €6,50 ridotto za legitymacją studencką (opcja). Krzywa Wieża oglądana z zewnątrz, plac, katedra Duomo i morze w Viareggio — bezpłatne.",
             "per_person_min": 15,
-            "per_person_max": 43
+            "per_person_max": 18
           },
           {
             "label": "San Gimignano + Monteriggioni (Torre Grossa, Collegiata, mury, Vernaccia)",
@@ -4028,9 +4032,9 @@
       }
     ],
     "total_per_person_min": 691,
-    "total_per_person_max": 959,
+    "total_per_person_max": 934,
     "total_group_min": 3455,
-    "total_group_max": 4795,
+    "total_group_max": 4670,
     "not_included": [
       "Bilety promowe / tunele (nie dotyczy tej trasy)",
       "Ubezpieczenie podróżne (zalecane ok. €30–50/os)",
@@ -4226,16 +4230,6 @@
             "priority": "high",
             "day_num": 12,
             "url": "https://tickets.uffizi.it/event/D43F5443-D676-F857-0904-0199CA8D9B74?lang=en"
-          },
-          {
-            "id": "krzywa-wieza",
-            "group": "required",
-            "label": "Rezerwacja Krzywej Wieży — Piza (15.09)",
-            "detail": "Wejście na Krzywą Wieżę tylko w slocie czasowym — kup online na opapisa.it z wyprzedzeniem (sloty otwierane ~20 dni naprzód, w sezonie znikają szybko). Bierz slot ok. 15:00: harmonogram dnia zakłada zejście z placu o 17:00, żeby zdążyć na pociąg do Viareggio na zachód słońca. €20/os lub €27 combo z całą Piazza dei Miracoli — UWAGA: żadnej ulgi studenckiej ani młodzieżowej, wszyscy płacą tyle samo. Bez wieży wciąż zobaczysz plac, katedrę i zdjęcia z zewnątrz.",
-            "deadline": "gdy otworzą slot ~20 dni przed 15.09",
-            "priority": "medium",
-            "day_num": 4,
-            "url": "https://www.opapisa.it/en/tickets/"
           },
           {
             "id": "trenitalia-xgo",

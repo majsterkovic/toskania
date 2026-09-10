@@ -52,7 +52,8 @@ Czyli: w €27 sama Wieża to €20, a cała reszta placu jest dopłatą ok. €
 
 ## Praktyczne
 
-- **Dojazd pociągiem z [[Lucca|Lukki]]:** ~**25–30 min**, Regionale, ok. 30 kursów/dobę, bilet ~€3–4/os. Ze stacji Pisa Centrale na Piazza dei Miracoli ~20 min pieszo (albo autobus LAM Rossa / bus „Navetta").
-- **Tłumy i naciągacze:** plac to jeden z najbardziej obleganych punktów Toskanii. Uwaga na ulicznych sprzedawców (bransoletki, selfie-sticki, „darmowe" pamiątki wciskane do ręki) — grzeczna, stanowcza odmowa. Najspokojniej rano tuż po otwarciu albo późnym popołudniem.
-- **Ile czasu:** realnie **2–3 h** na sam plac (bez wejścia na Wieżę ~2 h; z wejściem na Wieżę doliczyć slot + kolejkę). Reszta miasta (Piazza dei Cavalieri, Borgo Stretto, nabrzeża Arno) to opcjonalny dodatek na kolejną 1–2 h.
-- Rezerwacja slotu na Wieżę **przed wyjazdem** jest kluczowa — bez niej łatwo trafić na „wyprzedane na dziś".
+- **Dojazd pociągiem z [[Lucca|Lukki]]:** pociąg REG 18586 (16:42 ➔ 17:08, 26 min) — pociągi kursują **regularnie co ok. 30 minut** przez cały dzień! Wysiadamy na stacji **Pisa San Rossore** (stację przed Pisa Centrale!). Ze stacji San Rossore pod samą Krzywą Wieżę i Piazza dei Miracoli jest **tylko 500 m (6 minut spaceru)**. Zero autobusów, zero tramwajów.
+- **Kolejny odcinek do [[Morze-Wersylia|Viareggio]]:** z tej samej stacji **Pisa San Rossore** pociąg REG 2296 (19:02 ➔ 19:12) jedzie do Viareggio w **zaledwie 10 minut** (tu również pociągi kursują co ok. 15–30 minut).
+- **Krzywa Wieża z zewnątrz:** zrezygnowano ze wspinaczki (€20/os) — oglądana z zewnątrz na zielonym dywanie trawnika robi największe wrażenie architektoniczne, a grupa oszczędza €100 i zyskuje pełną swobodę czasową (bez stania w kolejkach do kontroli i bez sztywnego slotu). Wnętrze Duomo bezpłatne (darmowy bilet czasowy na miejscu).
+- **Tłumy i naciągacze:** plac to jeden z najbardziej obleganych punktów Toskanii. Uwaga na ulicznych sprzedawców (bransoletki, selfie-sticki, „darmowe" pamiątki wciskane do ręki) — grzeczna, stanowcza odmowa.
+- **Ile czasu:** ok. **1,5 h** na placu w zupełności wystarcza na spokojne zdjęcia, obejrzenie Wieży, Duomo, Baptysterium i espresso przed pociągiem do Viareggio.

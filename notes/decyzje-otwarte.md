@@ -8,8 +8,8 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `trip.json`.
 
 ## 1. Piza + Lucca — ✅ WDROŻONE (nowy dzień 4, 15.09)
 - **Wygrała z [[San Gimignano]]**: bliżej i łatwiej dojechać (auto do Lukki + pociąg do Pizy), dwa miejsca za cenę jednego ([[Lucca]] dotąd tylko mijana), a blok Bargi miał słabszy dzień do poświęcenia niż napięty blok Chianti.
-- **Zrealizowane**: dzień 4 = auto Barga→Lucca (~40 min, parking poza murami) → mury/Piazza dell'Anfiteatro/Torre Guinigi/Duomo San Martino → pociąg Lucca→Pisa (~30 min) → Piazza dei Miracoli + Krzywa Wieża (slot €20, rezerwacja opapisa.it) → powrót. Zastąpił Castiglione di Garfagnana + Orecchiella.
-- Koszty: +€15–43/os (pociąg + wieże), budżet planu → €827–1261/os. Todo: rezerwacja slotu Wieży.
+- **Zrealizowane**: dzień 4 = auto Barga→Lucca (wyjazd 8:30, ~40 min, parking poza murami) → mury/Piazza dell'Anfiteatro/Torre Guinigi/Duomo San Martino → lunch Da Giulio → pociąg Lucca→Pisa (~30 min) → Piazza dei Miracoli + Krzywa Wieża (z zewnątrz na trawniku, bezpłatnie + Duomo wewnątrz gratis) → pociąg do Viareggio (morze, zachód słońca) → powrót pociągiem Viareggio→Lucca → auto do Bargi. Zastąpił Castiglione di Garfagnana + Orecchiella.
+- Koszty: pociągi (~€8–10/os) + Torre Guinigi (€6,50–8/os). Rezygnacja ze wspinaczki na Wieżę (€20/os) oszczędza €100 w grupie i zdejmuje presję sztywnego slotu czasowego.
 
 ## Baza 1 — D5 = pętla Monte Forato (2026-07-19) — ✅ WDROŻONE
 - **D5** (16.09): Verrucole+Vagli+Gorfigliano → (przejściowo Il Ciocco) → **finalnie pętla Monte Forato** (naturalny łuk skalny, Fornovolasco, 23 min, 12km/~5h lub 3,5h skrócony, oficjalnie „medium" bez via ferrata). Powód zmiany z Verrucole/Vagli: forteca otwarta tylko pt–nd (nie do przesunięcia w kalendarzu pon–czw); Vagli — zatopiona wioska niewidoczna w 2026. D5 był już „dniem na trasę", więc nie trzeba było poświęcać D3/D6 ani dodawać nowego dnia — po prostu podmieniono treść dnia. Na miejscu zapisane 3 warianty trasy do wyboru (Forato/Palodina/Prato Fiorito). Wieczór: wybór Piazza Arringo (Barga, zachód słońca, widok na łuk z daleka) lub Sommocolonia. Pełne dane w [[Baza 1 - Barga]].

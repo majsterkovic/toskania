@@ -372,9 +372,68 @@ html.dark .map-toll-badge {
   vertical-align: middle;
   margin: 0 4px;
 }
+/* ── Leaflet Popups (Light & Dark Theme) ── */
+.leaflet-popup-content-wrapper {
+  background: var(--card-bg, #ffffff) !important;
+  color: var(--ink, #2a2420) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--border, #d9cfc0) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22) !important;
+  padding: 0 !important;
+}
+.leaflet-popup-tip {
+  background: var(--card-bg, #ffffff) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+.leaflet-popup-content {
+  margin: 10px 14px !important;
+  line-height: 1.4 !important;
+  font-family: var(--font-sans, system-ui, sans-serif) !important;
+  color: var(--ink, #2a2420) !important;
+}
+.leaflet-container a.leaflet-popup-close-button {
+  top: 6px !important;
+  right: 6px !important;
+  padding: 0 !important;
+  width: 20px !important;
+  height: 20px !important;
+  line-height: 20px !important;
+  text-align: center !important;
+  color: var(--stone-dark, #9a8f82) !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  border-radius: 50% !important;
+  transition: background 0.15s ease, color 0.15s ease !important;
+}
+.leaflet-container a.leaflet-popup-close-button:hover {
+  background: var(--stone, #e8e0d4) !important;
+  color: var(--ink, #2a2420) !important;
+}
+
+/* Dark mode: Leaflet popup */
+html.dark .leaflet-popup-content-wrapper {
+  background: #1a3228 !important;
+  color: #e4dcc6 !important;
+  border: 1px solid rgba(201, 168, 76, 0.4) !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.7) !important;
+}
+html.dark .leaflet-popup-tip {
+  background: #1a3228 !important;
+}
+html.dark .leaflet-popup-content {
+  color: #e4dcc6 !important;
+}
+html.dark .leaflet-container a.leaflet-popup-close-button {
+  color: #8da88d !important;
+}
+html.dark .leaflet-container a.leaflet-popup-close-button:hover {
+  background: #1e3c2c !important;
+  color: #dfc06a !important;
+}
+
 /* Food marker pin & popup */
 .food-marker-icon {
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.35));
   transition: transform 0.15s ease;
   cursor: pointer;
 }
@@ -382,10 +441,22 @@ html.dark .map-toll-badge {
   transform: scale(1.18);
 }
 .map-popup-food {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans, system-ui, sans-serif);
   font-size: 0.82rem;
   line-height: 1.35;
   color: var(--ink);
+  min-width: 190px;
+}
+.map-food-title {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 3px;
+  line-height: 1.25;
+}
+html.dark .map-food-title {
+  color: #f7f2e8;
 }
 .map-food-badge {
   display: inline-block;
@@ -395,23 +466,88 @@ html.dark .map-toll-badge {
   letter-spacing: 0.04em;
   background: rgba(196, 134, 10, 0.15);
   color: #925805;
-  padding: 1px 6px;
-  border-radius: 3px;
-  margin: 3px 0 2px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin: 2px 0 4px;
 }
 html.dark .map-food-badge {
-  background: rgba(196, 134, 10, 0.25);
-  color: #eab308;
+  background: rgba(201, 168, 76, 0.22);
+  color: #dfc06a;
+  border: 1px solid rgba(201, 168, 76, 0.35);
 }
 .map-food-price {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
+  font-weight: 600;
   color: var(--terracotta);
+  margin: 3px 0;
+}
+html.dark .map-food-price {
+  color: #e0895a;
 }
 .map-food-note {
-  margin: 4px 0 3px;
-  font-size: 0.75rem;
+  margin: 5px 0 4px;
+  font-size: 0.77rem;
+  color: var(--muted);
+  line-height: 1.38;
+}
+html.dark .map-food-note {
+  color: #c0d8c0;
+}
+.map-food-addr {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--stone-dark);
+  line-height: 1.3;
+  margin-top: 5px;
+  border-top: 1px solid var(--border);
+  padding-top: 4px;
+}
+html.dark .map-food-addr {
+  color: #8da88d;
+  border-top-color: rgba(168, 136, 60, 0.25);
+}
+
+/* Toll popup specifics */
+.map-popup-toll {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: var(--ink);
+  min-width: 190px;
+}
+.map-popup-toll__title {
+  font-weight: 700;
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+}
+html.dark .map-popup-toll__title {
+  color: #ff6b6b;
+}
+.map-popup-toll__name {
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: var(--ink);
+}
+html.dark .map-popup-toll__name {
+  color: #f7f2e8;
+}
+.map-popup-toll__cost {
+  color: #e67e22;
+  font-weight: 700;
+  margin: 3px 0;
+}
+html.dark .map-popup-toll__cost {
+  color: #f39c12;
+}
+.map-popup-toll__note {
+  font-size: 0.76rem;
   color: var(--muted);
   line-height: 1.35;
+  margin-top: 4px;
+}
+html.dark .map-popup-toll__note {
+  color: #c0d8c0;
 }
 /* Attraction list */
 .imap-att-list {

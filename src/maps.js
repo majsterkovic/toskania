@@ -284,11 +284,11 @@ function addTollLayers(target, tollSections) {
     const markerCoords = ts.marker_coords || ts.coords[0];
     window.L.marker(markerCoords, { icon: makeTollIcon(), zIndexOffset: 500 })
       .bindPopup(
-        `<div style="font-family:'Outfit',sans-serif;font-size:0.85rem;min-width:190px">` +
-        `<div style="font-weight:700;color:#d9534f;font-size:0.92rem;margin-bottom:3px">⚠️ Odcinek płatny A2</div>` +
-        `<div style="font-weight:600;margin-bottom:2px">${esc(ts.name)}</div>` +
-        (ts.cost ? `<div style="color:#e67e22;font-weight:700;margin:3px 0">Opłata: ${esc(ts.cost)}</div>` : '') +
-        (ts.note ? `<div style="font-size:0.78rem;color:#666;line-height:1.3">${esc(ts.note)}</div>` : '') +
+        `<div class="map-popup-toll">` +
+          `<div class="map-popup-toll__title">⚠️ Odcinek płatny A2</div>` +
+          `<div class="map-popup-toll__name">${esc(ts.name)}</div>` +
+          (ts.cost ? `<div class="map-popup-toll__cost">Opłata: ${esc(ts.cost)}</div>` : '') +
+          (ts.note ? `<div class="map-popup-toll__note">${esc(ts.note)}</div>` : '') +
         `</div>`,
         { maxWidth: 220 }
       )
@@ -306,10 +306,10 @@ function addTollLayers(target, tollSections) {
       }).addTo(target);
 
       poly.bindPopup(
-        `<div style="font-family:'Outfit',sans-serif;font-size:0.85rem">` +
-        `<strong style="color:#d9534f">⚠️ Odcinek płatny: ${esc(ts.name)}</strong>` +
-        (ts.cost ? `<br><b style="color:#e67e22">Opłata: ${esc(ts.cost)}</b>` : '') +
-        (ts.note ? `<div style="font-size:0.78rem;color:#555;margin-top:3px">${esc(ts.note)}</div>` : '') +
+        `<div class="map-popup-toll">` +
+          `<div class="map-popup-toll__title">⚠️ Odcinek płatny: ${esc(ts.name)}</div>` +
+          (ts.cost ? `<div class="map-popup-toll__cost">Opłata: ${esc(ts.cost)}</div>` : '') +
+          (ts.note ? `<div class="map-popup-toll__note">${esc(ts.note)}</div>` : '') +
         `</div>`
       );
     });
@@ -351,11 +351,11 @@ export function initTransitDayMap(containerId, points, day) {
     window.L.marker(f.coords, { icon: makeFoodIcon(), zIndexOffset: 450 })
       .bindPopup(
         `<div class="map-popup-food">` +
-          `<strong>🍽️ ${esc(f.name)}</strong>` +
-          (f.type ? `<br><span class="map-food-badge">${esc(f.type)}</span>` : '') +
-          (f.price ? `<br><span class="map-food-price">Cena: <strong>${esc(f.price)}</strong></span>` : '') +
+          `<strong class="map-food-title">🍽️ ${esc(f.name)}</strong>` +
+          (f.type ? `<span class="map-food-badge">${esc(f.type)}</span>` : '') +
+          (f.price ? `<div class="map-food-price">Cena: <strong>${esc(f.price)}</strong></div>` : '') +
           (f.note ? `<p class="map-food-note">${esc(f.note)}</p>` : '') +
-          (f.address ? `<small class="muted">📍 ${esc(f.address)}</small>` : '') +
+          (f.address ? `<div class="map-food-addr">📍 ${esc(f.address)}</div>` : '') +
         `</div>`,
         { maxWidth: 240 }
       )

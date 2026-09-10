@@ -556,6 +556,25 @@ export function initInteractiveMap(containerId, plan) {
           .addTo(group);
       });
 
+      // Punkty gastronomiczne po trasie tranzytowej
+      const foodStops = (day?.food?.options || []).filter(
+        (o) => Array.isArray(o.coords) && o.coords.length === 2
+      );
+      foodStops.forEach((f) => {
+        L.marker(f.coords, { icon: makeFoodIcon(), zIndexOffset: 450 })
+          .bindPopup(
+            `<div class="map-popup-food">` +
+              `<strong class="map-food-title">🍽️ ${esc(f.name)}</strong>` +
+              (f.type ? `<span class="map-food-badge">${esc(f.type)}</span>` : '') +
+              (f.price ? `<div class="map-food-price">Cena: <strong>${esc(f.price)}</strong></div>` : '') +
+              (f.note ? `<p class="map-food-note">${esc(f.note)}</p>` : '') +
+              (f.address ? `<div class="map-food-addr">📍 ${esc(f.address)}</div>` : '') +
+            `</div>`,
+            { maxWidth: 240 }
+          )
+          .addTo(group);
+      });
+
       let dayPolyline = null;
       if (routeCoords.length > 1) {
         dayPolyline = L.polyline(routeCoords, {

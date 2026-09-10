@@ -728,8 +728,8 @@
       "label": "TRANZYT → TOSKANIA",
       "title": "Unterhaching → Barga (Garfagnana)",
       "image": "barga",
-      "drive_km": 634,
-      "drive_h": "8–8,5 h",
+      "drive_km": 649,
+      "drive_h": "8–8,5 h (w tym zjazd nad Gardę)",
       "base_id": "base1",
       "route_points": [
         {
@@ -757,6 +757,14 @@
           "kind": "transit"
         },
         {
+          "label": "Lazise (Lago di Garda)",
+          "coords": [
+            45.5052,
+            10.7323
+          ],
+          "kind": "transit"
+        },
+        {
           "label": "Barga — BAZA 1",
           "coords": [
             44.0398411,
@@ -765,22 +773,75 @@
           "kind": "base"
         }
       ],
-      "depart": "6:30 rano z Unterhaching",
-      "route": "A995/A8 → Kufstein (Austria) → A12 Inntal → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → A22 południe → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
+      "depart": "8:00 rano z Unterhaching",
+      "route": "A995/A8 → Kufstein (Austria) → A12 Inntal → Innsbruck → A13 Brenner (Streckenmaut €12,50) → A22 Autostrada del Brennero → Bolzano → Trento → zjazd Affi / Lago di Garda Sud → Lazise (obiad nad jeziorem Garda) → powrót na A22 (Affi) → A1 Variante di Valico → A11 Firenze-Mare → Lucca Est → SS12 → SR445 Garfagnana → Barga",
       "attractions": [],
       "food": {
-        "place": "Rovereto Sud (A22) — pierwszy wybór",
-        "address": "Ristorante Tre Pini: Via Stazione 14, 38068 Rovereto TN",
-        "dishes": [
-          "pizza",
-          "menu del giorno"
+        "place": "Trattoria Pizzeria \"Dal Baffo\" (Lazise, Lago di Garda)",
+        "address": "Vicolo Gafforini 12, 37017 Lazise VR",
+        "coords": [
+          45.5052,
+          10.7323
         ],
-        "note": "Zjazd A22 Rovereto Sud — Tre Pini: duży parking, szybka obsługa (~€10–15).",
-        "price": "~€10–15"
+        "dishes": [
+          "Pizza Margherita / Prosciutto (6,50–9,50 €)",
+          "Spaghetti alla carbonara / Bigoli al ragù di cinghiale (9,00–11,00 €)",
+          "Fritto misto di lago / trota con verdure (12,00–14,00 €)"
+        ],
+        "note": "Rekomendowany przystanek obiadowy nad jeziorem Garda (4,5 ⭐ / 1580+ opinii na Google Maps). 150 m od zabytkowego portu weneckiego i promenady. Piec opalany drewnem, tradycyjna chrupiąca pizza w budżecie ~7–10 €, świeże pasty. Czynne w niedzielę w porze lunchu (12:00–14:30). Parkowanie tuż poza murami (Parcheggio Marra / Mura, 1,50–2 €/h, bez wjazdu w ZTL).",
+        "price": "~€7–12 za danie (pizza 6,50–9,50 €, pasta 9–11 €)",
+        "gps_hint": "Vicolo Gafforini 12, 37017 Lazise VR (parkuj: Parcheggio Marra, Via Pra del Principe)",
+        "opening_hours": "12:00–14:30, 18:30–22:30 (nd czynne)",
+        "options": [
+          {
+            "name": "Trattoria Pizzeria \"Dal Baffo\" (Główny wybór — Lazise)",
+            "type": "Pizzeria / Trattoria · Jezioro Garda",
+            "address": "Vicolo Gafforini 12, 37017 Lazise VR (150 m od portu)",
+            "coords": [
+              45.5052,
+              10.7323
+            ],
+            "note": "4,5 ⭐ (1580+ opinii). Piec opalany drewnem, Margherita 6,50 €, pizze klasyczne 7,50–9,50 €, makarony 9–11 €. Po obiedzie krótki spacer nad nabrzeże Gardy. Parkowanie: Parcheggio Marra poza ZTL.",
+            "price": "€6,50–11,00"
+          },
+          {
+            "name": "Pizzeria Bardolino (Alternatywa nad jeziorem — Bardolino)",
+            "type": "Pizzeria · Jezioro Garda",
+            "address": "Via Fosse 27, 37011 Bardolino VR (150 m od brzegu)",
+            "coords": [
+              45.5484,
+              10.7208
+            ],
+            "note": "4,7 ⭐ (1500+ opinii). Rewelacyjna pizza w Bardolino (5 km na północ od Lazise). Margherita 6,50 €, Diavola/Capricciosa 8,00–9,50 €, makarony 8,50–10 €. Szybka obsługa, parking przy Via Santa Cristina.",
+            "price": "€6,50–10,00"
+          },
+          {
+            "name": "L'Hostaria (Ekspresowa opcja tuż przy węźle A22 Affi)",
+            "type": "Trattoria / Pizzeria · Węzeł A22 Affi",
+            "address": "Località Canove 1, 37010 Affi VR (1 min od zjazdu A22)",
+            "coords": [
+              45.5539,
+              10.7818
+            ],
+            "note": "4,4 ⭐ (1400+ opinii). Jeśli jest ciasno z czasem i rezygnujecie z wjazdu do miasteczka nad wodę: 1 km od bramki autostrady A22, własny bezpłatny parking. Pizze 5,00–8,50 €, domowe canederli 7 €, bigoli 8 €.",
+            "price": "€5,00–9,00"
+          },
+          {
+            "name": "Ristorante Pizzeria Tre Pini (Rovereto Sud — backup na północy)",
+            "type": "Pizzeria / Restauracja tranzytowa",
+            "address": "Via Stazione 14, 38068 Rovereto TN (300 m od A22)",
+            "coords": [
+              45.8679,
+              11.0118
+            ],
+            "note": "4,5 ⭐ (2000+ opinii). 300 m od zjazdu Rovereto Sud na A22. Duży bezpłatny parking, pizza z pieca 5,50–9,50 €, menu obiadowe. Idealne, gdy zrobicie postój jeszcze przed Weroną i Gardą.",
+            "price": "€6,00–11,00"
+          }
+        ]
       },
       "accommodation": {
         "place": "BAZA 1 — Casa vacanze Rosa (Ponte all'Ania, Barga)",
-        "note": "POTWIERDZONA REZERWACJA — Via Nazionale 29, Ponte all'Ania, 55051 Barga LU. Przyjazd ok. 15:00–15:30. Doskonała lokalizacja (9/10, 5 opinii gości), ~3 min (2 km) od stacji kolejowej Fornaci di Barga.",
+        "note": "POTWIERDZONA REZERWACJA — Via Nazionale 29, Ponte all'Ania, 55051 Barga LU. Przyjazd ok. 18:15–18:30 (w sam raz przed zmrokiem). Doskonała lokalizacja (9/10, 5 opinii gości), ~3 min (2 km) od stacji kolejowej Fornaci di Barga.",
         "local_shop": "Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga, tel. 0583 723112) — tradycyjny rzeźnik i delikatesy Garfagnany. Co warto kupić i zjeść: wyroby z czarnej świni (cinta senese / maiale nero), lokalne pecorino, dojrzewającą pancettę oraz toskański miód kasztanowy.",
         "price": "€688,75 razem za 5 nocy / 5 osób (potwierdzona rezerwacja)",
         "booking_tip": "Zarezerwowane — bez dalszych działań.",
@@ -791,81 +852,75 @@
           "segment": "Unterhaching → Kufstein (Austria)",
           "road": "A995 → A8 → A93 south",
           "km": "~83",
-          "note": "Ostatnie tankowanie w DE przed Austrią (okolice Holzkirchen). Wjazd do Austrii — odcinek granica–Kufstein-Süd bezwinietowy."
+          "note": "Start 8:00. Ostatnie tankowanie w DE przed granicą (Kiefersfelden/Holzkirchen). Wjazd do Austrii — odcinek granica–Kufstein-Süd bezpłatny."
         },
         {
           "segment": "Kufstein → Innsbruck",
           "road": "A12 Inntal",
           "km": "~90",
-          "note": "1-dniowa winieta AT na 13.09 (€9,60) — kup online przed wyjazdem"
+          "note": "1-dniowa winieta AT na 13.09 (€9,60) — kup online przed wyjazdem."
         },
         {
           "segment": "Innsbruck → Brenner",
           "road": "A13 Sondermaut",
           "km": "~35",
-          "note": "Streckenmaut €12,50"
+          "note": "Streckenmaut €12,50 (zielone pasy Digital bez zatrzymania)."
         },
         {
-          "segment": "Brenner → Rovereto",
-          "road": "A22",
-          "km": "~120",
-          "note": "Wczesny lunch: Rovereto Sud (~10:00)"
+          "segment": "Brenner → Lago di Garda (Lazise / Affi)",
+          "road": "A22 → zjazd Affi / Lago di Garda Sud → SP31",
+          "km": "~187",
+          "note": "Malowniczy zjazd z Alp przez Bolzano i Trydent wprost nad jezioro Garda. Zjazd Affi ok. 12:45, obiad w Lazise (Dal Baffo) 13:00–14:15."
         },
         {
-          "segment": "Rovereto → Modena",
+          "segment": "Lago di Garda (Affi) → Modena",
           "road": "A22",
-          "km": "~130",
-          "note": "Bez zjazdu do centro Verona (ZTL)"
+          "km": "~104",
+          "note": "Powrót na A22 węzłem Affi. Pomiń wjazd do centrum Werony (ZTL)."
         },
         {
           "segment": "Modena → Lucca",
           "road": "A1 Variante di Valico → A11 Firenze-Mare",
           "km": "~150",
-          "note": "Zjazd Lucca Est"
+          "note": "Zjazd Lucca Est ok. 17:35."
         },
         {
-          "segment": "Lucca → Barga",
-          "road": "SS12 → SR445 → SP7",
+          "segment": "Lucca → Barga (Ponte all'Ania)",
+          "road": "SS12 → SR445",
           "km": "~50",
-          "note": "Kręte odcinki, ~45–60 min"
+          "note": "Dolina rzeki Serchio, kręte odcinki, ~45–50 min. Przyjazd na miejsce ok. 18:25."
         }
       ],
       "practical_tips": [
-        "Kup Streckenmaut A13 Brenner online (€12,50)",
-        "Lunch ~13:00 przy Rovereto Sud (Tre Pini) — nie trać czasu na Weronę",
-        "SR445: po minięciu Castelnuovo zadzwoń do agriturismo (+30 min ETA)"
+        "Kup Streckenmaut A13 Brenner online (€12,50) — wjazd zielonym pasem bez kolejki",
+        "Lunch ~13:00–14:15 w Lazise nad Gardą (Dal Baffo) lub ekspresowo w Affi (L'Hostaria)",
+        "W Lazise parkuj na Parcheggio Marra / Mura (poza murami, bez ryzyka ZTL)",
+        "SR445: po minięciu Borgo a Mozzano zadzwoń do gospodarza w Ponte all'Ania (+25 min ETA)"
       ],
       "fuel_stops": [
         {
-          "name": "Raststätte München-Nord lub Holzkirchen",
-          "location": "A995/A8 okolice Monachium, przed Kufstein",
-          "road": "A995 → A8",
+          "name": "Shell / Aral Kiefersfelden lub Holzkirchen",
+          "location": "A93 tuż przed granicą z Austrią (Kiefersfelden)",
+          "road": "A93",
           "hours": "24/7",
-          "note": "Ostatnie tankowanie w Niemczech przed Austrią — paliwo tańsze niż w AT"
+          "note": "Ostatnie tankowanie w Niemczech przed Austrią — paliwo tańsze niż na A12/A13 w Tyrolu"
         },
         {
-          "name": "Eni/OMV Kufstein / Innsbruck area",
-          "location": "A12/A93, okolice Innsbrucku",
-          "road": "A12",
-          "hours": "6–22",
-          "note": "Uzupełnienie przed A13 Brennerem — w Austrii drożej niż w DE"
+          "name": "Eni / IP przy zjeździe A22 Affi / Lago di Garda Sud",
+          "location": "SP31 / Via San Pieretto, Affi",
+          "road": "A22 exit Affi",
+          "hours": "7–20 (self 24/7)",
+          "note": "Zjazd na obiad do Lazise — stacje poza autostradą tańsze o 20–30 centów/l"
         },
         {
-          "name": "IP/Eni przy zjeździe A22 Rovereto Sud",
-          "location": "SS240, Rovereto",
-          "road": "A22 exit",
-          "hours": "7–20",
-          "note": "Postój obiadowy Tre Pini + tankowanie — poza bramką autostradową"
-        },
-        {
-          "name": "Q8/Eni Castelnuovo di Garfagnana",
-          "location": "SR445, Castelnuovo",
+          "name": "Q8 / Eni Castelnuovo di Garfagnana / Fornaci",
+          "location": "SR445, Fornaci di Barga",
           "road": "SR445",
           "hours": "7–20",
-          "note": "Ostatnie tankowanie w dolinie przed podjazdem do Barga/Mologno"
+          "note": "Ostatnie tankowanie w dolinie tuż przed bazą w Ponte all'Ania"
         }
       ],
-      "narrative": "Wyjeżdżamy z Unterhaching o 6:30 — niedzielny poranek, na trasie prawie pusto. Krótki odcinek A995/A8/A93 doliną Inn (~83 km) prowadzi do Kufstein, gdzie tankujemy do pełna po niemieckich cenach tuż przed granicą. A12 Inntal do Innsbrucku (~90 km), stamtąd A13 przez Brenner (Streckenmaut €12,50, ~35 km) do Włoch — o tej porze w niedzielę na moście Lueg prawie bez kolejek, prawdziwy ruch powrotny z Alp rusza dopiero później. Za Brennerem A22 przez Bolzano i Trento — krajobraz zmienia się dramatycznie, tarasowe winnice zastępują alpejskie łąki, po prawej jeszcze przez chwilę majaczą poszarpane granie Dolomitów. Ok. 10:00 wczesny lunch w Rovereto Sud (Tre Pini) — zjazd tuż przy autostradzie, szybka obsługa, duży parking; do Werony celowo nie zbaczamy, żeby nie tracić czasu w tamtejszym ZTL. Dalej A22 mija Weronę i Mantovę bez zjazdu do centrów, potem po Modenie A1 Variante di Valico prowadzi wysoko nad doliną i łukiem omija Florencję, a A11 kieruje nas już w stronę morza, aż do zjazdu Lucca Est. Ostatnie ~50 km to zupełnie inny rytm jazdy — dolina Serchio, wąska górska droga SR445 wśród kasztanowców, zakręt za zakrętem, coraz bardziej zielono i cicho, tylko od czasu do czasu mija nas traktor. Do Casa vacanze Rosa w Ponte all'Ania docieramy ok. 15:00–15:30 — popołudniowe słońce sączy się przez liście, w powietrzu unosi się zapach suchej ziemi. Reszta dnia wolna, bagaże można rozpakować bez pośpiechu — Toskania właśnie się zaczyna.",
+      "narrative": "Wyjeżdżamy z Unterhaching o 8:00 — wyspani i po spokojnym śniadaniu. Krótki odcinek A995/A8/A93 doliną Inn (~83 km) prowadzi w stronę Kufstein; tuż przed granicą z Austrią w Kiefersfelden tankujemy do pełna po niemieckich stawkach. Następnie A12 Inntal do Innsbrucku (~90 km) i A13 przez Przełęcz Brenner (Streckenmaut €12,50, ~35 km) prosto do Włoch. Za Brennerem wjeżdżamy na słynną A22 Autostrada del Brennero — alpejskie szczyty ustępują miejsca tarasowym winnicom Południowego Tyrolu i doliny Adygi, mijamy Bolzano oraz Trydent. Ok. 12:45 zjeżdżamy węzłem Affi / Lago di Garda Sud w stronę jeziora Garda — o 13:00 meldujemy się w urokliwym Lazise na zasłużony obiad w Trattoria Pizzeria \"Dal Baffo\". Wypiekana w piecu opalanym drewnem chrupiąca pizza za 7–10 € lub świeży makaron, a po posiłku krótki spacer nabrzeżem z widokiem na błękitne wody Gardy i weneckie mury obronne. Po 14:15 wracamy na A22 i mijamy Weronę oraz Mantuę bez zbaczania do zakorkowanych centrów. Za Modeną wjeżdżamy na A1 Variante di Valico, przecinając Apeniny, by autostradą A11 Firenze-Mare skierować się w stronę zjazdu Lucca Est. Ostatnie 50 km to klimatyczna dolina rzeki Serchio — górska trasa SR445 wije się wśród kasztanowych lasów Garfagnany. Do bazy w Ponte all'Ania (Casa vacanze Rosa) docieramy ok. 18:25, w sam raz przed zachodem słońca, by odebrać klucze, rozpakować się bez pośpiechu i wznieść pierwszy toskański toast.",
       "web_research": [
         {
           "topic": "Streckenmaut A13 Brenner (AT) 2026",
@@ -886,14 +941,14 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Postój obiadowy Rovereto Sud (A22)",
-          "summary": "Zjazd Rovereto Sud/Lago di Garda Sud → Tre Pini (Via Stazione 14, 300 m od zjazdu, parking, pizza €10–15). Moja Ristorante Borgo Sacco (10 min, zamk. pon). Area Nogaredo Est na A22 = 24/7 autogrill między Rovereto Sud a Nord — tylko awaryjnie.",
-          "source": "https://www.ristorante3pini.it/",
-          "checked": "2026-07"
+          "topic": "Postój obiadowy Lago di Garda — Lazise & Affi (A22)",
+          "summary": "Zjazd Affi / Lago di Garda Sud → Lazise (6 km, ~8 min). Trattoria Pizzeria Dal Baffo (Vicolo Gafforini 12, 150 m od portu weneckiego, pizza 6,50–9,50 €, makarony 9–11 €, piec na drewno, 4,5 ⭐). Parkowanie: Parcheggio Marra / Mura (1,50–2 €/h) poza ZTL. Alternatywa ekspresowa: L'Hostaria w Affi (1 km od bramki A22, darmowy parking, pizza 5–8,50 €).",
+          "source": "https://www.comune.lazise.vr.it",
+          "checked": "2026-09"
         },
         {
           "topic": "Werona — obwodnica tranzytowa",
-          "summary": "Na trasie Unterhaching→Barga: zostań na A22 południe — nie wjeżdżaj do centro storico (ZTL, korki). Werona Nord = węzeł A22; kontynuacja do Mantovy/Campogalliano. Lunch lepiej w Rovereto (wcześniej na trasie).",
+          "summary": "Na trasie Unterhaching→Barga: zostań na A22 południe — nie wjeżdżaj do centro storico (ZTL, korki). Werona Nord = węzeł A22; kontynuacja do Mantovy/Campogalliano. Lunch w Lazise nad Gardą (wcześniej, przy zjeździe Affi).",
           "source": "https://www.autobrennero.it/en/",
           "checked": "2026-07"
         },
@@ -924,58 +979,74 @@
       ],
       "eta_timeline": [
         {
-          "time": "06:30",
-          "event": "Wyjazd z Unterhaching (A995/A8 kierunek Kufstein)"
+          "time": "08:00",
+          "event": "Wyjazd z Unterhaching po śniadaniu (A995/A8 → A93)"
         },
         {
-          "time": "07:20",
-          "event": "Kufstein — ostatnie tankowanie w DE, wjazd na A12 Inntal"
+          "time": "08:55",
+          "event": "Kiefersfelden — tankowanie w DE tuż przed granicą z AT"
         },
         {
-          "time": "08:05",
-          "event": "Innsbruck → wjazd na A13 Brenner"
+          "time": "09:45",
+          "event": "Innsbruck → wjazd na A13 Brenner (Streckenmaut)"
         },
         {
-          "time": "08:35",
-          "event": "A13 Brenner (możliwy korek Lueg)"
+          "time": "10:30",
+          "event": "Przełęcz Brenner / Brennero — wjazd do Włoch na A22"
         },
         {
-          "time": "09:30",
-          "event": "Bolzano — A22 na południe"
+          "time": "11:20",
+          "event": "Bolzano — dolina Adygi, winnice Południowego Tyrolu"
         },
         {
-          "time": "10:20",
-          "event": "Wczesny lunch Rovereto Sud (Tre Pini)"
+          "time": "12:10",
+          "event": "Trento — kontynuacja A22 na południe"
         },
         {
-          "time": "11:05",
-          "event": "Dalej A22 na południe (Verona, Mantova)"
+          "time": "12:45",
+          "event": "Zjazd Affi / Lago di Garda Sud → dojazd do Lazise (6 km)"
         },
         {
-          "time": "12:55",
-          "event": "Koniec A22 (Campogalliano) → A1 Variante di Valico"
+          "time": "13:00",
+          "event": "Obiad w Lazise: Dal Baffo + krótki spacer nad jeziorem Garda"
         },
         {
-          "time": "14:35",
-          "event": "Zjazd Lucca Est → SS12/SR445"
+          "time": "14:15",
+          "event": "Wyjazd z Lazise, powrót na A22 przez węzeł Affi"
         },
         {
-          "time": "15:35",
-          "event": "Przyjazd Ponte all'Ania / Barga — check-in"
+          "time": "15:30",
+          "event": "Koniec A22 (Campogalliano/Modena) → A1 Variante di Valico"
+        },
+        {
+          "time": "17:35",
+          "event": "Zjazd Lucca Est → SS12 / SR445 Garfagnana"
+        },
+        {
+          "time": "18:25",
+          "event": "Przyjazd Ponte all'Ania / Barga (Casa vacanze Rosa) — check-in"
         }
       ],
       "opening_hours": {
-        "casa_rosa_checkin": "godziny do potwierdzenia z gospodarzem — zadzwoń z ETA",
-        "a22_toll_booths": "24/7 (automaty + Carte)",
-        "tre_pini_lunch": "12:00–15:00 typowo (sprawdź w niedzielę)"
+        "casa_rosa_checkin": "od 15:00 do 20:00 (zadzwoń po minięciu Borgo a Mozzano z ETA ~18:25)",
+        "a22_toll_booths": "24/7 (automaty + Carte / Telepass)",
+        "dal_baffo_lunch": "12:00–14:30 w niedziele (kuchnia zamyka ok. 14:15)",
+        "lhostaria_lunch": "12:00–15:00 w niedziele (Affi)"
       },
       "parking": {
-        "destination": "Barga — check-in BAZA 1 (Ponte all'Ania lub centro)",
+        "destination": "Barga — check-in BAZA 1 (Ponte all'Ania) oraz postój Lazise (Garda)",
         "options": [
+          {
+            "name": "Parcheggio Marra / Mura (Lazise — postój obiadowy)",
+            "type": "public",
+            "price": "~€1,50–2,00/h",
+            "gps_hint": "Via Pra del Principe / Via San Zeno, 37017 Lazise VR",
+            "note": "Tuż przy murach miejskich Lazise, poza strefą ZTL. 3 min pieszo do restauracji Dal Baffo i 4 min na promenadę jeziora Garda."
+          },
           {
             "name": "Parking Casa vacanze Rosa",
             "type": "hotel",
-            "price": "do potwierdzenia",
+            "price": "w cenie rezerwacji (prywatny)",
             "gps_hint": "Via Nazionale 29, Ponte all'Ania, 55051 Barga LU",
             "note": "Preferowany przy noclegu w Ponte all'Ania — tuż przy SR445, blisko stacji Fornaci di Barga"
           },
@@ -1008,9 +1079,9 @@
             "note": "Płaski, szeroki — 5 min pieszo do centro w górę"
           }
         ],
-        "tip": "Przy noclegu Ponte all'Ania: parkuj przy Casa vacanze Rosa. Wieczorny spacer do Barga Vecchia: auto zostaje na miejscu lub przy Porta Reale"
+        "tip": "Podczas obiadu w Lazise parkuj na Parcheggio Marra przed murami (nie wjeżdżaj za bramę — ZTL). W Ponte all'Ania auto zostaje na prywatnym parkingu bazy."
       },
-      "summary": "Drugi dzień tranzytu: Unterhaching → Kufstein → A13 przez przełęcz Brenner/Brennero (opłata odcinkowa) → Toskania. Zameldowanie w Bargze, w dolinie Garfagnana — górskiej dolinie rzeki Serchio między Alpami Apuańskimi a Apeninami.",
+      "summary": "Drugi dzień podróży do Toskanii: wyjazd o 8:00 z Unterhaching → Kufstein → A13 Brenner (Streckenmaut) → A22 przez Alpy → postój obiadowy nad jeziorem Garda w Lazise (Dal Baffo, pizza z pieca) → A22/A1/A11 do Lukki → malownicza dolina Garfagnana (SR445). Przyjazd do bazy w Ponte all'Ania ok. 18:25 przed zachodem słońca.",
       "weather": {
         "label": "Barga (baza)",
         "coords": [
@@ -1041,29 +1112,14 @@
             44.0733,
             10.4836
           ],
-          "duration_h": 1.5,
+          "duration_h": 2.5,
           "opening_hours": "Duomo San Cristoforo: codziennie 8:00–18:00. Wejście bezpłatne.",
           "entry_fee": "Wejście bezpłatne (Duomo: moneta €2 na oświetlenie)"
         },
         {
-          "name": "Treppignana via il Ciocco — spacer lasem dębowo-kasztanowym",
-          "drive_min": 4,
-          "description": "Szlak 3,2 km (1–1,5 h) przez gęste lasy dębów bezszypułkowych (Quercus petraea) i kasztanów w Tenuta Il Ciocco. Widoki na dolinę Serchio i Barga Vecchia.",
-          "type": "nature",
-          "image_key": "barga",
-          "gps_hint": "Treppignana, 55051 Barga LU",
-          "coords": [
-            44.058,
-            10.463
-          ],
-          "duration_h": 1.5,
-          "opening_hours": "Teren leśny otwarty całą dobę, wstęp bezpłatny.",
-          "entry_fee": "Bezpłatny — teren leśny publiczny"
-        },
-        {
-          "name": "Grotta del Vento (jaskinia wiatru) — Fornovolasco",
+          "name": "Grotta del Vento (jaskinia wiatru) — Fornovolasco (Itinerario 1)",
           "drive_min": 25,
-          "description": "4570 m zbadanych jaskiń krasowych w Alpach Apuańskich. 3 itinerari (1–3 h). Po wizycie spacer przez bukowe i dębowe lasy.",
+          "description": "Jedna z najpiękniejszych jaskiń krasowych w Europie w Parku Alp Apuańskich. Dla grupy (w tym seniorów) optymalna jest trasa Itinerario 1 (1 godzina): bezpieczna, całkowicie płaska betonowa ścieżka z poręczami, bez uciążliwych schodów i podejść. Wewnątrz stała temperatura ok. 10°C (konieczna cieplejsza bluza lub kurtka).",
           "type": "nature",
           "image_key": "grotta-vento",
           "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Fornovolasco, 55020 Vergemoli LU",
@@ -1071,18 +1127,13 @@
             44.0342,
             10.3576
           ],
-          "duration_h": 1.5,
-          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Bilety: tour 1h €11, 2h €16, 3h €24. Rezerwacja: grottadelvento.com/book-now/",
-          "entry_fee": "Tour 1h: €11 | 2h: €16 | 3h: €24 — rezerwacja: grottadelvento.com/book-now/",
+          "duration_h": 1.0,
+          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Trasa Itinerario 1 wyrusza co pełną godzinę (m.in. 15:00). Bilety: €11/os. Rezerwacja online: grottadelvento.com/book-now/",
+          "entry_fee": "Itinerario 1 (1h): €11/os — rezerwacja online: grottadelvento.com/book-now/",
           "url": "https://grottadelvento.com/book-now/"
         }
       ],
-      "oak_forest": {
-        "spot": "Treppignana — Tenuta Il Ciocco",
-        "species": "Quercus petraea (dąb bezszypułkowy), Castanea sativa (kasztan jadalny)",
-        "note": "Gęsty las mieszany dębowo-kasztanowy na stokach nad doliną Serchio — typowy krajobraz Garfagnany.",
-        "gps_hint": "Treppignana LU — szlak via il Ciocco, 3,2 km, ~15 min jazdy od Barga"
-      },
+      "oak_forest": null,
       "food": {
         "place": "Osteria Il Borgo dei Sapori — Barga",
         "address": "Via Borgo 1, 55051 Barga LU",
@@ -1091,15 +1142,16 @@
           "necci con ricotta (naleśniki kasztanowe)",
           "castagnaccio"
         ],
-        "note": "Toskańska kuchnia z lokalnymi składnikami Garfagnany.",
+        "note": "Toskańska kuchnia z lokalnymi składnikami Garfagnany. Spokojny obiad przy stoliku po porannym zwiedzaniu Bargi.",
         "price": "~€9–15/piatto, ~€25–35/os z winem"
       },
       "practical_tips": [
-        "Rano 8:00: Duomo (1 h) → Treppignana–Ciocco (1–1,5 h) — popołudnie Grotta del Vento",
-        "Grotta: zarezerwuj Itinerario 2 (2 h, €18) na 15:00 — kurtka obowiązkowa (~10°C). Rezerwacja online: grottadelvento.com/book-now/",
-        "Zakupy lokalne (~10 min od noclegu): Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga) — wyroby z czarnej świni, pecorino, pancetta i toskański miód kasztanowy (czynne 8:00–13:00 i 16:00–19:00, śr po południu i nd zamkn.)"
+        "Harmonogram dnia: spokojny wyjazd z bazy o 9:30 (baza tuż obok, ~6–8 min). 10:00–12:30 Barga i Duomo, 12:30–14:00 wygodny obiad na siedząco w Osteria Il Borgo dei Sapori, 15:00 zwiedzanie Grotta del Vento, powrót do bazy już o 17:00 w pełnym świetle dziennym.",
+        "Wskazówka dla mamy w Bardze (brak podchodzenia pod górę): wjedźcie autem pod górę w okolicę Via del Sasso / Porta Macchiaia tuż pod Duomo di San Cristoforo i wysadźcie mamę na samej górze. Zwiedzanie katedry i tarasu Giardino del Balcone oraz późniejsze zejście do centrum na kawę i obiad odbywa się wyłącznie w dół łagodnymi uliczkami.",
+        "Grotta del Vento — wybierzcie Itinerario 1 (1 h, €11/os) na godz. 15:00: trasa jest w pełni utwardzona, płaska, wyposażona w bezpieczne poręcze i pozbawiona męczących stromych schodów (w przeciwieństwie do trasy 2 i 3). Parking tuż przy kasach. W jaskini panuje stała temperatura ok. 10°C — koniecznie zabierzcie ciepłe bluzy/kurtki. Rezerwacja online: grottadelvento.com/book-now/",
+        "Zakupy lokalne przed obiadem (~11:30): Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga) — wyroby z czarnej świni (cinta senese), pecorino, pancetta i toskański miód kasztanowy (czynne 8:00–13:00 i 16:00–19:00, śr po południu i nd zamkn.)."
       ],
-      "narrative": "Zaczynamy pieszo w Bardze — baza jest ok. 6 minut stąd, więc bez pośpiechu parkujemy przy Porta Reale i idziemy pod górę kamiennymi uliczkami, jeszcze chłodnymi o poranku. Wchodzimy do Duomo di San Cristoforo — romański kościół z XI wieku, gdzie moneta €2 włącza oświetlenie i nagle ożywa marmurowy pulpit Guido Bigarellego z ok. 1240 roku, misternie rzeźbiony w lwy i sceny biblijne. Zaraz obok taras Giardino del Balcone — stąd Barga naprawdę zasługuje na miano kamiennego balkonu: w dole dolina Serchio, na horyzoncie poszarpana linia Alp Apuańskich, jeszcze lekko spowita porannym oparem. Spacer Corso Garibaldi to czysta przyjemność — witryna z pecorino, stragan z miodem, gdzieś pachnie świeżo palona kawa. Ok. 12:30 lunch w Osteria Il Borgo dei Sapori (Via Borgo 1) — pappardelle al cinghiale, necci z ricottą. Po lunchu zmiana rytmu: 15 minut jazdy do Treppignany, gdzie zaczyna się 3,2-kilometrowy szlak przez las dębów bezszypułkowych i starych kasztanowców nad doliną Serchio — cień, szum liści, 1–1,5 godziny spokojnego marszu. Stamtąd dalej do Fornovolasco, gdzie czeka Grotta del Vento — tour o 16:00 (rezerwacja obowiązkowa), w środku stała temperatura ok. 10°C, więc kurtka to konieczność, tym większy kontrast z ciepłym toskańskim popołudniem na zewnątrz. Powrót do bazy ok. 17:30, akurat na kolację przy zachodzącym słońcu.",
+      "narrative": "Dzień rozpoczynamy bez pośpiechu — po spokojnym śniadaniu w bazie wyjeżdżamy o 9:30, bo do Barga mamy zaledwie 6–8 minut drogi. Aby zaoszczędzić mamie stromego podejścia pod górę, wjeżdżamy autem w górną część miasteczka (w okolice Porta Macchiaia / Via del Sasso) tuż pod romański Duomo di San Cristoforo z XI wieku. Wrzucenie monety €2 włącza ciepłe oświetlenie wnętrza, odsłaniając kunsztowny pulpit marmurowy Guido Bigarellego z ok. 1240 roku z rzeźbionymi lwami. Tuż obok rozciąga się taras Giardino del Balcone — kamienny balkon z przepiękną panoramą na dolinę Serchio i postrzępione grzbiety Alp Apuańskich w porannym świetle. Stąd idziemy już wyłącznie w dół łagodnymi, brukowanymi uliczkami przez Piazza Angelio i Corso Garibaldi — zaglądamy do tradycyjnej Macelleria Angelini po lokalne pecorino i toskańskie przysmaki, siadamy na spokojną kawę. O 12:30 czeka na nas obiad w Osteria Il Borgo dei Sapori przy Via Borgo 1 — wygodnie przy stoliku, z wybornymi lokalnymi pappardelle al cinghiale i naleśnikami necci z ricottą (żadnych leśnych pikników na stojąco). O 14:00 ruszamy widokową, spokojną drogą wzdłuż potoku Turrite w kierunku Fornovolasco (~25 min). Auto zostawiamy na parkingu tuż obok kas biletowych, zakładamy ciepłe bluzy (w środku panuje stała temperatura ok. 10°C) i o 15:00 rozpoczynamy zwiedzanie Grotta del Vento trasą Itinerario 1. To 1-godzinna, niezwykle komfortowa i płaska ścieżka z poręczami, bez uciążliwych stromych schodów czy męczących podejść, prezentująca spektakularne formacje naciekowe i stalaktyty. Po wyjściu na ciepłe popołudniowe słońce zjeżdżamy z powrotem do bazy ok. 17:00 — bez pośpiechu, w pełnym dziennym świetle i ponad dwie godziny przed zachodem słońca, z poczuciem idealnie zbalansowanego, niemęczącego dnia.",
       "web_research": [
         {
           "topic": "Macelleria Angelini di Martinelli Davide (delikatesy i wędliny w Bardze)",
@@ -1115,44 +1167,38 @@
         },
         {
           "topic": "Grotta del Vento — rezerwacja biletów online (Book Now)",
-          "summary": "Oficjalny system rezerwacji biletów online do Grotta del Vento: wybór trasy (Itinerario 1, 2 lub 3), terminu i godziny zwiedzania.",
+          "summary": "Oficjalny system rezerwacji biletów online do Grotta del Vento: wybór trasy Itinerario 1 (1h, €11, płaska trasa z poręczami), terminu i godziny zwiedzania (15:00).",
           "source": "https://grottadelvento.com/book-now/",
           "checked": "2026-09"
         },
         {
           "topic": "Grotta del Vento — orario estivo wrzesień",
-          "summary": "Otwarte cały rok (25.12 wył.). Lato (1.04–2.11): It.1 €10 co godz. 10–18; It.2 €18 o 11/15/17; It.3 €25 o 10/14 (rezerwacja!). Ridotto: CAI, dzieci 4–10. Check-in w biglietterii. Tel. 0583 722024 (10–19).",
+          "summary": "Otwarte cały rok (25.12 wył.). Lato (1.04–2.11): It.1 €11 co godz. 10–18; It.2 €18 o 11/15/17; It.3 €25 o 10/14 (rezerwacja!). Check-in w biglietterii. Tel. 0583 722024 (10–19).",
           "source": "https://grottadelvento.com/it/orari-biglietteria/",
           "checked": "2026-07"
         },
         {
           "topic": "Temperatura i regulamin jaskini",
-          "summary": "Stała ~10°C — kurtka obowiązkowa. Zakaz: plecaki, parasole, kijki, zwierzęta. Zdjęcia tylko w postojach w drodze tam, nie w drodze powrotnej.",
+          "summary": "Stała ~10°C — ciepła bluza lub kurtka obowiązkowa. Trasa Itinerario 1 jest utwardzona i wyposażona w poręcze. Zakaz: plecaki wielkogabarytowe, parasole, kijki trekkingowe, zwierzęta.",
           "source": "https://grottadelvento.com/it/orari-biglietteria/",
           "checked": "2026-07"
         },
         {
-          "topic": "Korekta szlaku — CAI 108 vs lokalne trasy",
-          "summary": "CAI 108 (Apuan) = Foce delle Porchette → Le Scalette (catene!) → Palagnana — anello Monte Croce ~8 h, start Cardoso (~25 min od Barga). „Anello di Barga od Porta Reale” nie istnieje. Lokalnie: Treppignana–Ciocco (3,2 km, 1–1,5 h, dęby) lub CAI B1 (14 km, 4 h, Giardino).",
-          "source": "https://www.caicarrara.it/commissioni/commissioni-territorio/commissione-sentieri/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Lasy dębowe Garfagnana",
-          "summary": "Garfagnana = lasy dębowe i kasztanowe między Apuanami a Apeninami. Treppignana–Ciocco: gęsty las Quercus petraea + castagni, scoiattoli, picchio verde. Wrzesień idealny (16–24°C).",
-          "source": "https://www.alltrails.com/it-it/italy/tuscany/barga/forest",
-          "checked": "2026-07"
+          "topic": "Dostępność i logistyka w Bardze dla seniorów",
+          "summary": "Barga leży na wzgórzu i spacer od dolnego parkingu pod Duomo oznacza strome podejście. Najlepsza taktyka: wjechać autem w górną część (Via del Sasso / w pobliże Duomo i Porta Macchiaia), wysadzić pasażerów na szczycie i schodzić wyłącznie w dół ku Piazza Angelio i restauracjom.",
+          "source": "https://www.visittuscany.com",
+          "checked": "2026-09"
         },
         {
           "topic": "Parking Barga centrum",
-          "summary": "ZTL w Barga Vecchia — kamery, mandaty automatyczne. Parcheggio Porta Reale (Via Bellavista) gratis, 5 min pieszo. Backup: Piazzale Matteotti (płatny), Viale Cesare Biondi 44 (gratis, 900 m).",
+          "summary": "ZTL w Barga Vecchia — kamery. Podjazd pod Duomo / Porta Macchiaia pozwala na drop-off na samej górze. Na dłuższy postój: Parcheggio Porta Reale (Via Bellavista, gratis) lub Piazzale Matteotti.",
           "source": "https://www.informagiovani-italia.com/where-to-park-in-barga.htm",
           "checked": "2026-07"
         },
         {
-          "topic": "Restauracja — korekta nazwy",
-          "summary": "„Osteria dei Vecchi Sapori” = Mediolan (Via Carmagnola 3). W Barga: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121, ~€9/piatto, pranzo 12–15) lub L'Osteria (Piazza Angelio 13, €20–30, rezerwacja).",
-          "source": "https://www.osteriavecchisapori.com/",
+          "topic": "Restauracja — Osteria Il Borgo dei Sapori",
+          "summary": "W Barga: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121, ~€9–15/piatto, pranzo 12:00–15:00) — doskonałe dania z dziczyzny i mąki kasztanowej, stoliki wewnątrz i na zewnątrz. Alternatywa: L'Osteria (Piazza Angelio 13, tel. 0583 711200).",
+          "source": "https://www.osteriaborgo.it/",
           "checked": "2026-07"
         }
       ],
@@ -1167,35 +1213,35 @@
         "destination": "Barga — dzień wypadowy z bazy",
         "options": [
           {
+            "name": "Parcheggio Porta Macchiaia / Via del Sasso (górny podjazd)",
+            "type": "public",
+            "price": "bezpłatny",
+            "gps_hint": "Via del Sasso / Via del Duomo, 55051 Barga",
+            "note": "Kluczowy dla mamy: wjazd na sam szczyt borgo, wysadzenie pasażerów tuż przy Duomo (zero wspinaczki pieszej pod górę)"
+          },
+          {
             "name": "Parcheggio Porta Reale",
             "type": "public",
             "price": "bezpłatny",
             "gps_hint": "Via Bellavista / Via del Sasso, 55051 Barga",
-            "note": "Wejście do Barga Vecchia i start dnia — zostaw auto tu na cały dzień"
-          },
-          {
-            "name": "Treppignana — parking",
-            "type": "public",
-            "price": "bezpłatny (sprawdź przy borgo)",
-            "gps_hint": "Treppignana, 55051 Barga LU",
-            "note": "Start szlaku dębowego via il Ciocco — ~15 min jazdy od Porta Reale"
+            "note": "Główny parking u stóp Barga Vecchia — wygodny do zaparkowania auta po wysadzeniu pasażerów na górze"
           },
           {
             "name": "Grotta del Vento — parking",
             "type": "attraction",
             "price": "gratis",
             "gps_hint": "via Grotta del Vento 1, Fornovolasco, 55020 Vergemoli LU",
-            "note": "Parking przy biglietteria, ~20 min jazdy od Barga"
+            "note": "Parking bezpośrednio przy biglietteria jaskini, ~25 min jazdy od Barga"
           },
           {
             "name": "Piazzale Matteotti",
             "type": "public",
             "price": "płatny",
             "gps_hint": "Dolna Barga",
-            "note": "Backup gdy Porta Reale pełny (weekend)"
+            "note": "Backup gdy Porta Reale pełny"
           }
         ],
-        "tip": "Porta Reale na poranek (Duomo + lunch) → popołudniu 20 min do Grotta del Vento"
+        "tip": "Wjazd pod górę na Via del Sasso / Porta Macchiaia, wysadzenie mamy przy Duomo, a kierowca parkuje przy Porta Reale lub na górze. Po obiedzie ok. 25 min jazdy pod samą Grotta del Vento (parking tuż przy kasach)."
       },
       "fuel_stops": [
         {
@@ -1206,51 +1252,51 @@
           "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym"
         }
       ],
-      "daily_km_estimate": 46,
+      "daily_km_estimate": 42,
       "eta_timeline": [
         {
-          "time": "09:00",
-          "event": "Wyjazd z bazy Garfagnana (~6 min do Barga)"
-        },
-        {
-          "time": "09:15",
-          "event": "Barga — parking Porta Reale (gratuito), wejście pieszo"
-        },
-        {
           "time": "09:30",
-          "event": "Duomo San Cristoforo — moneta €2 włącza oświetlenie"
+          "event": "Wyjazd z bazy Garfagnana do Barga (~6–8 min)"
         },
         {
-          "time": "10:30",
-          "event": "Giardino del Balcone — taras widokowy na Garfagnanę"
+          "time": "09:45",
+          "event": "Barga — wjazd na górę (Via del Sasso / Duomo), wysadzenie mamy przy wejściu (bez podejścia pod górę)"
         },
         {
-          "time": "11:15",
-          "event": "Spacer Corso Garibaldi — kawiarnia, pecorino, miód"
+          "time": "10:00",
+          "event": "Duomo di San Cristoforo (XI w., ambona Bigarellego, moneta €2) i taras Giardino del Balcone"
+        },
+        {
+          "time": "11:00",
+          "event": "Łagodne zejście w dół starówki do Piazza Angelio — czas na kawę, lody i zakupy w Macelleria Angelini"
         },
         {
           "time": "12:30",
-          "event": "Obiad w Barga lub powrót (piknik w lesie)"
+          "event": "Obiad w Osteria Il Borgo dei Sapori (pappardelle al cinghiale, necci z ricottą) — obiad przy stoliku"
         },
         {
           "time": "14:00",
-          "event": "Treppignana — parking dolina, szlak leśny (dęby i kasztany)"
+          "event": "Przejazd malowniczą doliną Turrite do Grotta del Vento (~25 min)"
         },
         {
-          "time": "15:30",
-          "event": "Wyjazd do Grotta del Vento (25 min)"
+          "time": "14:30",
+          "event": "Przyjazd pod Grotta del Vento — parking przy kasach, odebranie biletów, cieplejsze okrycia"
         },
         {
-          "time": "16:00",
-          "event": "Grotta del Vento — tour 1h (rezerwacja wymagana!)"
+          "time": "15:00",
+          "event": "Grotta del Vento — zwiedzanie Itinerario 1 (1h, trasa płaska z poręczami, temp. 10°C, bilet €11)"
         },
         {
-          "time": "17:30",
-          "event": "Powrót do bazy"
+          "time": "16:30",
+          "event": "Zbiórka i spokojny powrót do bazy w Ponte all'Ania (~25 min)"
+        },
+        {
+          "time": "17:00",
+          "event": "Powrót do bazy — czas na relaks w ogrodzie w pełnym świetle dziennym (zachód słońca o 19:20)"
         }
       ],
-      "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: tłumy w weekendy lipiec–sierpień, wrzesień znacznie spokojniej. Rezerwacja wymagana online.",
-      "summary": "Spokojny pierwszy dzień w górskiej dolinie Garfagnana. Rano zwiedzamy miasteczko Barga — średniowieczne, kamienne, z romańską katedrą św. Krzysztofa (Duomo di San Cristoforo, XI w.) i tarasem widokowym na skaliste Alpy Apuańskie. Stąd ok. 3 km spacerem przez las dębowo-kasztanowy do przysiółka Treppignana. Po południu jaskinia „wiatru\" (Grotta del Vento) w wiosce Fornovolasco — stała temperatura ok. 10°C, zwiedzanie ok. 2 godzin.",
+      "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: we wrześniu znacznie spokojniej niż w wakacje, ale rezerwacja online na godzinę 15:00 (Itinerario 1) jest zalecana.",
+      "summary": "Komfortowy, łagodny pierwszy dzień w dolinie Garfagnana, skrojony z myślą o wygodzie i tempie całej grupy. Rano zwiedzamy urokliwą Bardzę — wjazd pod samą romańską katedrę Duomo di San Cristoforo (XI w.) z tarasem Giardino del Balcone na Alpy Apuańskie pozwala uniknąć wspinaczki pieszej, schodząc jedynie w dół ku kawiarniom i delikatesom. Po spokojnym obiedzie w Osteria Il Borgo dei Sapori jedziemy pod Grotta del Vento na 1-godzinną, łatwą i płaską trasę Itinerario 1 (10°C) z parkingiem tuż pod kasami. Powrót do bazy już o 17:00, w pełnym świetle dziennym.",
       "weather": {
         "label": "Barga / Garfagnana",
         "coords": [
@@ -4204,7 +4250,7 @@
             "id": "grotta-vento",
             "group": "required",
             "label": "Rezerwacja Grotta del Vento — Fornovolasco (14.09)",
-            "detail": "Tour godzinowy (16:00) wymaga rezerwacji — grottadelvento.com/book-now/. Sloty It.3 (€25, 10/14) też wymagają rezerwacji z wyprzedzeniem.",
+            "detail": "Tour 1h (Itinerario 1, godz. 15:00, €11/os) — trasa płaska z poręczami, bez uciążliwych schodów, komfortowa dla seniorów. Rezerwacja: grottadelvento.com/book-now/.",
             "deadline": "1–2 tygodnie przed 14.09",
             "priority": "medium",
             "day_num": 3,

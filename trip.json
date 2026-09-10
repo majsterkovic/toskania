@@ -530,48 +530,57 @@
       ],
       "attractions": [],
       "food": {
-        "place": "Autohof Berg (Bergstuben) lub Frankenfarm Himmelkron (A9)",
-        "address": "Theodor-Heuss-Str. 4, 95180 Berg (A9 zjazd 32) lub Bernecker Str. 40, 95502 Himmelkron (A9 zjazd 39)",
+        "place": "Autohof Berg (Bergstuben) lub Edeka Renner (Münchberg) / Frankenfarm (A9)",
+        "address": "Theodor-Heuss-Str. 4, 95180 Berg (A9 zjazd 32) lub Sparnecker Str. 84, 95213 Münchberg (A9 zjazd 35)",
         "dishes": [
-          "Fränkische Bratwürste (lokalne kiełbaski frankońskie z kapustą)",
-          "Gulaschsuppe (domowa zupa gulaszowa)",
-          "Currywurst z frytkami",
-          "Leberkäsesemmel (ciepła pieczeń bawarska w chrupiącej bułce)",
-          "Bawarski sznycel / pieczeń wieprzowa (kolacja w Unterhaching)"
+          "Großer Salatteller mit Rindfleischstreifen (świeża sałata z grillowaną wołowiną, 9,90 € — lekkostrawne!)",
+          "Rinderkraftbrühe / Tagessuppe (klarowny gorący bulion nawadniający, 4,50 €)",
+          "Wietnamska zupa Pho Bo (gorący wywar z imbirem, makaronem ryżowym i ziołami, 8,50–10,50 €)",
+          "Salad-bar samoobsługowy & świeże owoce w kubkach (Edeka Renner, ~2,50–6 €)",
+          "Fränkische Bratwürste / Currywurst z frytkami (opcje tradycyjne, 7,50–9,90 €)",
+          "Zanderfilet (sandacz z ziemniakami) lub Schweinebraten (kolacja Unterhaching, 14–22 €)"
         ],
-        "note": "Sprawdzone punkty gastronomiczne tuż przy trasie (300–800 m od zjazdów) zamiast drogiego fast foodu na MOP-ie. Frankonia słynie z obfitych porcji i bardzo uczciwych cen (dobre ciepłe danie w cenie lub taniej niż zestaw McMenu).",
-        "price": "~€4,50–14 (lunch) / ~€14–22 (kolacja)",
+        "note": "Sprawdzone i zweryfikowane punkty gastronomiczne 300–800 m od zjazdów z A9/A72. Szczególny nacisk na lekkostrawne dania dla kierowcy (świeże sałaty z grillowanym mięsem, gorące buliony, zupa Pho, salad-bar z owocami) — zero uczucia ciężkości i senności za kółkiem, a ceny niższe niż fast food na autostradzie.",
+        "price": "~€4,50–12 (lunch) / ~€14–22 (kolacja)",
         "options": [
           {
-            "name": "Autohof Berg — restauracja „Bergstuben” (Rekomendowany obiad)",
-            "type": "Obiad · Kuchnia frankońska",
+            "name": "Autohof Berg — restauracja „Bergstuben” (Rekomendowany lekki obiad)",
+            "type": "Lekki obiad · Kuchnia frankońska",
             "address": "Theodor-Heuss-Str. 4, 95180 Berg (A9 zjazd 32 Berg/Bad Steben, 300 m od węzła)",
             "coords": [50.3662, 11.7828],
-            "note": "Idealna pora na obiad (~11:30–12:00, 5,5 h od startu). Ciepła kuchnia od 11:00. Prawdziwe domowe jedzenie w cenie McMenu: domowa zupa gulaszowa 4,50 €, kiełbaski frankońskie z kapustą 7,50 €, currywurst z frytkami 9,90 €, stek z karkówki 13,90 €. Stacja Shell z tańszym paliwem.",
+            "note": "Zweryfikowane menu na autohof-berg.eu. Idealne lekkostrawne pozycje dla kierowcy: Großer Salatteller z grillowanymi paskami wołowiny (9,90 €), gorący klarowny bulion/Tagessuppe (4,50 €), Mozzarella-Salat (8,90 €) lub tradycyjne kiełbaski (7,50 €). Stacja Shell z tańszym paliwem o ~25 centów.",
             "price": "€4,50–13,90"
           },
           {
-            "name": "Frankenfarm Himmelkron (Kultowa gospoda rolnicza)",
-            "type": "Obiad / Lada masarska",
-            "address": "Bernecker Str. 40, 95502 Himmelkron (A9 zjazd 39 Bad Berneck/Himmelkron)",
-            "coords": [50.0543, 11.6021],
-            "note": "Ok. 35 km dalej na południe (~12:00–12:30). Słynna frankońska gospoda z własną masarnią tuż przy rondzie zjazdowym. Zarówno ciepłe dania restauracyjne (Schäufele, pieczenie 12–16 €), jak i szybka lada z ciepłymi bułkami z pieczenią lub kiełbasą za 3,50–4,50 €.",
-            "price": "€3,50–16,00"
+            "name": "EDEKA Renner Münchberg (Superlekki Salad-Bar & Owoce)",
+            "type": "Salad-bar · Świeże owoce · Ekspres",
+            "address": "Sparnecker Str. 84, 95213 Münchberg (A9 zjazd 35 Münchberg-Süd, 800 m od zjazdu)",
+            "coords": [50.1878, 11.7925],
+            "note": "Zweryfikowany market w Münchberg. Idealne na szybki i lekki postój (15 min): samoobsługowy salad-bar na wagę (świeże warzywa, jajko, feta, oliwki, pestki ~4–6 €), świeżo krojone owoce w kubkach (arbuz, melon, ananas ~2,50 €), świeżo wyciskany sok z pomarańczy oraz ciepłe Fleischkäsebrötchen (2,49 €).",
+            "price": "€2,49–6,00"
           },
           {
-            "name": "EDEKA Renner Münchberg (Patent za grosze: Heiße Theke)",
-            "type": "Ciepła lada masarska",
-            "address": "Sparnecker Str. 84, 95213 Münchberg (A9 zjazd 35 Münchberg-Süd)",
-            "coords": [50.1878, 11.7925],
-            "note": "Niemiecki patent na pożywny posiłek w trasie: ciepła lada masarska (Heiße Theke) z ciepłym Fleischkäsebrötchen / Leberkäse za 2,49 €, ciepłe kotlety (Schnitzelbrötchen) za ~3,80 € i domowy Mittagstisch. Tanie zakupy napojów i owoców na dalszą drogę.",
-            "price": "€2,49–4,50"
+            "name": "Pho Saigon — Plauen (Regenerująca zupa Pho przy A72)",
+            "type": "Kuchnia wietnamska · Lekka zupa Pho",
+            "address": "Klostermarkt 4, 08523 Plauen (A72 zjazd Plauen-Ost)",
+            "coords": [50.495, 12.138],
+            "note": "Genialna opcja regeneracyjna dla kierowcy przy A72: gorąca miska klarownego wywaru wołowego Pho Bo z imbirem, makaronem ryżowym, ziołami i sokiem z limonki (8,50–10,50 €) lub Bun Bo. Zero ciężkiego tłuszczu, nawodnienie i naturalne pobudzenie bez senności.",
+            "price": "€8,50–11,00"
+          },
+          {
+            "name": "Frankenfarm Himmelkron (Gospodarstwo rolne & Drób)",
+            "type": "Gospodarstwo rolne · Świeży drób",
+            "address": "Bernecker Str. 40, 95502 Himmelkron (A9 zjazd 39 Bad Berneck/Himmelkron)",
+            "coords": [50.0543, 11.6021],
+            "note": "Własny chów drobiu i masarnia tuż przy rondzie zjazdowym A9. Buliony drobiowe, drób z warzywami oraz stoisko z produktami regionalnymi.",
+            "price": "€3,50–16,00"
           },
           {
             "name": "Piekarnia & Kawiarnia Gubin (Śniadanie / Kawa PL)",
             "type": "Śniadanie w Polsce",
             "address": "ul. Kresowa, 66-620 Gubin (DK32 przed mostem granicznym)",
             "coords": [51.9535, 14.717],
-            "note": "Postój ok. 10:00 rano. Świeże pieczywo, drożdżówki, kanapki i kawa przed wjazdem do Niemiec — wielokrotnie taniej niż na niemieckich MOP-ach.",
+            "note": "Postój ok. 10:00 rano. Świeże pieczywo, kanapki, kawa i tanie tankowanie w PL przed wjazdem do Niemiec — wielokrotnie taniej niż na niemieckich stacjach.",
             "price": "10–18 zł (~€2,50–4)"
           },
           {
@@ -579,7 +588,7 @@
             "type": "Kolacja bawarska",
             "address": "Hauptstraße 51, 82008 Unterhaching (1,2 km od hotelu Fresh Inn)",
             "coords": [48.0617, 11.6185],
-            "note": "Tradycyjna bawarska gospoda z ogródkiem piwnym (Biergarten) w centrum Unterhaching. Pieczeń wieprzowa (Schweinebraten) w sosie z ciemnego piwa z knedlami i surówką z boczkiem, Burschenschnitzel, Käsespätzle i Kaiserschmarrn na deser.",
+            "note": "Tradycyjna bawarska gospoda z ogródkiem piwnym (Biergarten) w centrum Unterhaching. Po odstawieniu auta: Zanderfilet (sandacz z ziemniakami i sałatką), Käsespätzle z sałatką lub klasyczny Schweinebraten w sosie piwnym.",
             "price": "€14–22"
           }
         ]
@@ -593,6 +602,7 @@
         "contact": "+49 89 3070900"
       },
       "practical_tips": [
+        "Jedzenie w trasie dla kierowcy: wybieraj lekkostrawne posiłki (sałata z grillowaną wołowiną na Autohof Berg za 9,90 €, gorący bulion lub salad-bar z owocami w Edece w Münchberg) zamiast ciężkich tłustych dań — zero senności i zjazdu energetycznego za kółkiem",
         "Kup 1-dniową e-winietę AT na 13.09 (€9,60) przed wyjazdem — 10-dniowa (€12,80) NIE obejmie powrotu 25.09; drugą 1-dniową kup przed 25.09",
         "Tankuj na Autohofie (np. Berg lub Münchberg) zamiast na MOP-ie przy samej autostradzie — paliwo tańsze o 20–30 centów/litr",
         "Trasa przez A72 i A9 omija obwodnicę Berlina i pozwala zaoszczędzić na opłacie A2 (zjazd w Jordanowie)",
@@ -654,8 +664,8 @@
           "checked": "2026-09"
         },
         {
-          "topic": "Tanie i sprawdzone jedzenie przy A9 (Autohof Berg, Frankenfarm, Heiße Theke)",
-          "summary": "Alternatywy dla drogiego McDonald'sa na MOP-ach: (1) Autohof Berg (zjazd 32 A9) — restauracja Bergstuben, tradycyjna kuchnia frankońska, zupy 4,50 €, kiełbaski 7,50 €, currywurst 9,90 €, steki 13,90 €; paliwo tańsze o 20–30 centów. (2) Frankenfarm Himmelkron (zjazd 39 A9) — gospoda z własną masarnią tuż przy rondzie zjazdowym, ciepłe dania i bułki z pieczenią za 3,50–4,50 €. (3) Edeka/Kaufland Münchberg — ciepła lada rzeźnicka (Heiße Theke): gorący Leberkäse w bułce za ~2,50–3,50 €.",
+          "topic": "Tanie, zweryfikowane i lekkostrawne jedzenie przy A72/A9 (Bergstuben, Edeka, Pho Saigon, Kammerloher)",
+          "summary": "Oficjalnie zweryfikowane alternatywy dla drogiego McDonald'sa i ciężkostrawnych dań: (1) Autohof Berg (zjazd 32 A9, autohof-berg.eu) — restauracja Bergstuben: lekki Großer Salatteller z grillowaną wołowiną (9,90 €), gorący klarowny bulion wołowy/Tagessuppe (4,50 €), Mozzarella-Salat (8,90 €) lub kiełbaski (7,50 €); tańsze paliwo Shell o 25 centów/l. (2) EDEKA Renner Münchberg (zjazd 35 A9, edeka.de) — samoobsługowy salad-bar na wagę (4–6 €), świeżo krojone owoce w kubkach (2,50 €), świeży sok z pomarańczy i ciepły Fleischkäse (2,49 €). (3) Pho Saigon Plauen (zjazd Plauen-Ost A72) — gorący, klarowny wywar wołowy Pho Bo z imbirem, makaronem ryżowym i ziołami (8,50–10,50 €) — świetna regeneracja dla kierowcy bez uczucia ciężkości. (4) Wirtshaus Kammerloher Unterhaching (Hauptstr. 51) — sandacz z ziemniakami, Käsespätzle lub pieczeń wieprzowa po dotarciu na miejsce.",
           "source": "https://autohof-berg.eu/",
           "checked": "2026-09"
         }

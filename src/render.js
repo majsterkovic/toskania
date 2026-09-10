@@ -4,6 +4,56 @@ const BASE_COLORS = {
   base3: 'var(--terracotta-deep)',
 };
 
+// Etykiety i akcenty 4 etapów podróży (oś czasu + odznaka na stronie dnia).
+// --olive-light zamiast --olive: w dark mode zwykłe --olive ma za niski
+// kontrast na (prawie czarnym) tle (ten sam problem rozwiązuje już .oak-block).
+const PHASE_EYEBROWS = { dojazd: 'Etap I', base1: 'Etap II', base2: 'Etap III', powrot: 'Etap IV' };
+const PHASE_ACCENTS = {
+  dojazd: 'var(--stone-dark)',
+  base1: 'var(--olive-light)',
+  base2: 'var(--terracotta)',
+  powrot: 'var(--stone-dark)',
+};
+
+/**
+ * Jedyne źródło prawdy dla przypisania dnia do etapu — używane zarówno przez
+ * groupPhases (oś czasu) jak i dayPhaseInfo (odznaka na stronie dnia), żeby
+ * obie klasyfikacje nigdy się nie rozjechały.
+ */
+function classifyDayPhases(days) {
+  const map = new Map();
+  let seenBase1 = false;
+  let seenBase2 = false;
+  days.forEach((day) => {
+    let key;
+    if (day.base_id === 'base1') {
+      key = 'base1';
+      seenBase1 = true;
+    } else if (day.base_id === 'base2' || day.type === 'tuscany_transfer') {
+      key = 'base2';
+      seenBase2 = true;
+    } else if (day.type === 'transit' && !seenBase1 && !seenBase2) {
+      key = 'dojazd';
+    } else {
+      key = 'powrot';
+    }
+    map.set(day.day_num, key);
+  });
+  return map;
+}
+
+/** Etap + etykieta bazy/kierunku dla odznagi na stronie dnia. */
+function dayPhaseInfo(day, days, meta, bases) {
+  const key = classifyDayPhases(days).get(day.day_num);
+  const eyebrow = PHASE_EYEBROWS[key];
+  const accent = PHASE_ACCENTS[key];
+  if (key === 'dojazd') return { eyebrow, label: meta.phase_labels.dojazd.label, accent };
+  if (key === 'powrot') return { eyebrow, label: meta.phase_labels.powrot.label, accent };
+  const base = (bases || []).find((b) => b.id === key);
+  const label = base ? (base.region ? base.region.split('·')[0].trim() : base.name) : '';
+  return { eyebrow, label, accent };
+}
+
 const ATTRACTION_LABELS = {
   medieval: 'średniowiecze',
   nature: 'natura',
@@ -190,12 +240,26 @@ function driveLevel(km) {
 // Zwijana sekcja (domyślnie zamknięta) — dla treści referencyjnej, którą
 // czyta się dopiero na miejscu (kulinaria, las, logistyka). Kręgosłup dnia
 // (atrakcje, crowd tip, ostrzeżenie) zostaje zawsze widoczny.
-function collapsibleBlock(label, innerHtml, extraClass = '') {
+// Treść <summary> współdzielona przez wszystkie zwijane bloki: ikona + etykieta,
+// a pod spodem jednolinijkowa zajawka widoczna tylko gdy panel jest zwinięty
+// (ukrywana przez CSS na details[open]) — ten sam wzorzec co .research-item__preview.
+function collapseSummaryInner(label, icon, teaser) {
+  const iconHtml = icon ? `<span class="collapse-summary__icon" aria-hidden="true">${icon}</span>` : '';
+  const teaserHtml = teaser ? `<span class="collapse-summary__teaser">${esc(teaser)}</span>` : '';
+  return `
+    <span class="collapse-summary__inner">
+      <span class="collapse-summary__text">${iconHtml}${esc(label)}</span>
+      ${teaserHtml}
+    </span>
+  `;
+}
+
+function collapsibleBlock(label, innerHtml, extraClass = '', { icon = '', teaser = '' } = {}) {
   if (!innerHtml) return '';
   const cls = ['day-block', 'collapse-block', extraClass].filter(Boolean).join(' ');
   return `
     <details class="${cls}">
-      <summary class="block-label collapse-summary">${esc(label)}</summary>
+      <summary class="block-label collapse-summary">${collapseSummaryInner(label, icon, teaser)}</summary>
       <div class="collapse-body">${innerHtml}</div>
     </details>
   `;
@@ -238,7 +302,7 @@ function renderFood(food) {
     ${gpsHtml}
     ${optionsHtml}
   `;
-  return collapsibleBlock('Kulinaria', inner, 'day-block--food');
+  return collapsibleBlock('Kulinaria', inner, 'day-block--food', { icon: '🍽️', teaser: food.place });
 }
 
 function renderAccommodation(acc) {
@@ -314,7 +378,7 @@ function renderOakForest(oak) {
     <p>${esc(oak.note)}</p>
     ${oak.gps_hint ? `<p class="logistics-gps">📍 ${esc(oak.gps_hint)}</p>` : ''}
   `;
-  return collapsibleBlock('Las dębowy', inner, 'oak-block');
+  return collapsibleBlock('Las dębowy', inner, 'oak-block', { icon: '🌳', teaser: oak.spot });
 }
 
 function renderWineTasting(wt) {
@@ -334,13 +398,16 @@ function renderWineTasting(wt) {
 
 function renderOpeningHours(day) {
   const hours = day.opening_hours;
-  if (!hours || !Object.keys(hours).length) return '';
-  const rows = Object.entries(hours).map(([k, v]) =>
+  const entries = hours ? Object.entries(hours) : [];
+  if (!entries.length) return '';
+  const rows = entries.map(([k, v]) =>
     `<li><span class="oh-key">${esc(k.replace(/_/g, ' '))}</span> <span class="oh-val">${esc(v)}</span></li>`
   ).join('');
+  const [firstKey, firstVal] = entries[0];
+  const teaser = `${firstKey.replace(/_/g, ' ')}: ${firstVal}`;
   return `
     <details class="day-block oh-block">
-      <summary class="block-label oh-summary">Godziny otwarcia</summary>
+      <summary class="block-label oh-summary">${collapseSummaryInner('Godziny otwarcia', '🕐', teaser)}</summary>
       <div class="collapse-body"><ul class="oh-list">${rows}</ul></div>
     </details>
   `;
@@ -377,7 +444,7 @@ function renderLogistics(day) {
   const tipItems = allTips.map((t) => `<li class="logistics-tip">${t}</li>`).join('');
   const logItems = allLogistics.map((t) => `<li>${t}</li>`).join('');
   const inner = `<ul class="tips-list">${tipItems}${logItems}</ul>`;
-  return collapsibleBlock('Logistyka i wskazówki', inner, 'day-block--practical');
+  return collapsibleBlock('Logistyka i wskazówki', inner, 'day-block--practical', { icon: '🧭', teaser: tips[0] || '' });
 }
 
 function renderRouteSegments(segments) {
@@ -477,7 +544,11 @@ function renderWebResearch(webResearch) {
   }).join('');
   return `
     <details class="day-block collapse-block day-block--research">
-      <summary class="block-label collapse-summary">Research <span class="research-count">${webResearch.length}</span></summary>
+      <summary class="block-label collapse-summary">
+        <span class="collapse-summary__inner">
+          <span class="collapse-summary__text"><span class="collapse-summary__icon" aria-hidden="true">🔎</span>Research <span class="research-count">${webResearch.length}</span></span>
+        </span>
+      </summary>
       <div class="collapse-body"><div class="research-list">${items}</div></div>
     </details>
   `;
@@ -488,9 +559,10 @@ function renderEtaTimeline(etaList, openByDefault = false) {
   const rows = etaList.map(item =>
     `<li class="eta-row"><span class="eta-time">${esc(item.time)}</span><span class="eta-event">${esc(item.event)}</span></li>`
   ).join('');
+  const teaser = `${etaList[0].time} · ${etaList[0].event}`;
   return `
     <details class="day-block eta-block"${openByDefault ? ' open' : ''}>
-      <summary class="block-label oh-summary">Harmonogram godzinowy</summary>
+      <summary class="block-label oh-summary">${collapseSummaryInner('Harmonogram godzinowy', '⏱️', teaser)}</summary>
       <div class="collapse-body"><ul class="eta-list">${rows}</ul></div>
     </details>
   `;
@@ -918,20 +990,15 @@ function timelineRow(day, bookings) {
 function groupPhases(days, meta) {
   const dojazd = meta.phase_labels.dojazd;
   const powrot = meta.phase_labels.powrot;
-  const phases = [
-    { key: 'dojazd', eyebrow: 'Etap I', label: dojazd.label, sub: dojazd.sub, days: [] },
-    { key: 'base1', eyebrow: 'Etap II', baseId: 'base1', mapIndex: 1, days: [] },
-    { key: 'base2', eyebrow: 'Etap III', baseId: 'base2', mapIndex: 2, days: [] },
-    { key: 'powrot', eyebrow: 'Etap IV', label: powrot.label, sub: powrot.sub, days: [] },
-  ];
-  let seenBase2 = false;
-  days.forEach((day) => {
-    if (day.base_id === 'base1') phases[1].days.push(day);
-    else if (day.base_id === 'base2' || day.type === 'tuscany_transfer') { phases[2].days.push(day); seenBase2 = true; }
-    else if (day.type === 'transit' && phases[1].days.length === 0 && !seenBase2) phases[0].days.push(day);
-    else phases[3].days.push(day);
-  });
-  return phases;
+  const phases = {
+    dojazd: { key: 'dojazd', eyebrow: PHASE_EYEBROWS.dojazd, label: dojazd.label, sub: dojazd.sub, days: [] },
+    base1: { key: 'base1', eyebrow: PHASE_EYEBROWS.base1, baseId: 'base1', mapIndex: 1, days: [] },
+    base2: { key: 'base2', eyebrow: PHASE_EYEBROWS.base2, baseId: 'base2', mapIndex: 2, days: [] },
+    powrot: { key: 'powrot', eyebrow: PHASE_EYEBROWS.powrot, label: powrot.label, sub: powrot.sub, days: [] },
+  };
+  const dayPhase = classifyDayPhases(days);
+  days.forEach((day) => phases[dayPhase.get(day.day_num)].days.push(day));
+  return [phases.dojazd, phases.base1, phases.base2, phases.powrot];
 }
 
 function renderBaseInfo(base) {
@@ -991,6 +1058,9 @@ export function renderTimeline(plan) {
 
 export function renderDayPage(day, images, bases, days, todo, meta) {
   const base = bases?.find((b) => b.id === day.base_id);
+  // days nieprzefiltrowane (surowe plan.days) — ta sama sekwencja co w groupPhases,
+  // żeby klasyfikacja etapu nigdy się nie rozjechała z osią czasu.
+  const phase = dayPhaseInfo(day, days || [], meta, bases);
   const thumbKey = day.image || base?.image;
   const placeImg = thumbKey ? resolvePlaceImage(images, thumbKey) : null;
   const hero = placeImg ? renderImg(placeImg, 'daypage__hero', 'eager') : '';
@@ -1035,6 +1105,7 @@ export function renderDayPage(day, images, bases, days, todo, meta) {
         ${hero}
         <div class="daypage__head">
           <span class="day-date">${esc(d)} <span class="daypage__wd">${esc(wd)}</span></span>
+          <span class="phase-badge" style="--phase-accent: ${phase.accent}">${esc(phase.eyebrow)} · ${esc(phase.label)}</span>
           <span class="day-label">${esc(day.label)}</span>
         </div>
         <h1 class="daypage__title">${esc(day.title)}</h1>

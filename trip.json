@@ -559,27 +559,27 @@
             "price": "€3,50–16,00"
           },
           {
-            "name": "Metzgerei / Edeka Münchberg (Patent za grosze: Heiße Theke)",
+            "name": "EDEKA Renner Münchberg (Patent za grosze: Heiße Theke)",
             "type": "Ciepła lada masarska",
-            "address": "Bayreuther Str. 6, 95213 Münchberg (A9 zjazd 35 Münchberg-Süd, 800 m od zjazdu)",
-            "coords": [50.1882, 11.7915],
-            "note": "Niemiecki patent na tani i pożywny posiłek: gorąca pieczeń bawarska w chrupiącej bułce (Leberkäsesemmel) za 2,50–3,50 €, kotlet w bułce (Schnitzelsemmel) za 3,80 €. Tanie zakupy napojów i owoców na dalszą drogę.",
-            "price": "€2,50–4,50"
+            "address": "Sparnecker Str. 84, 95213 Münchberg (A9 zjazd 35 Münchberg-Süd)",
+            "coords": [50.1878, 11.7925],
+            "note": "Niemiecki patent na pożywny posiłek w trasie: ciepła lada masarska (Heiße Theke) z ciepłym Fleischkäsebrötchen / Leberkäse za 2,49 €, ciepłe kotlety (Schnitzelbrötchen) za ~3,80 € i domowy Mittagstisch. Tanie zakupy napojów i owoców na dalszą drogę.",
+            "price": "€2,49–4,50"
           },
           {
             "name": "Piekarnia & Kawiarnia Gubin (Śniadanie / Kawa PL)",
             "type": "Śniadanie w Polsce",
             "address": "ul. Kresowa, 66-620 Gubin (DK32 przed mostem granicznym)",
             "coords": [51.9535, 14.717],
-            "note": "Postój ok. 7:30–7:45 rano. Świeże pieczywo, drożdżówki, kanapki i kawa przed wjazdem do Niemiec — wielokrotnie taniej niż na niemieckich MOP-ach.",
+            "note": "Postój ok. 10:00 rano. Świeże pieczywo, drożdżówki, kanapki i kawa przed wjazdem do Niemiec — wielokrotnie taniej niż na niemieckich MOP-ach.",
             "price": "10–18 zł (~€2,50–4)"
           },
           {
-            "name": "Wirtshaus Kammerlohr (Unterhaching — Kolacja)",
+            "name": "Wirtshaus Kammerloher (Unterhaching — Kolacja)",
             "type": "Kolacja bawarska",
-            "address": "Hauptstraße 15, 82008 Unterhaching (1,2 km od hotelu Fresh Inn)",
-            "coords": [48.0625, 11.6165],
-            "note": "Tradycyjna bawarska gospoda z ogródkiem piwnym (Biergarten) w Unterhaching. Sznycle, pieczeń wieprzowa (Schweinebraten), knedle i bawarskie piwo na zakończenie dnia.",
+            "address": "Hauptstraße 51, 82008 Unterhaching (1,2 km od hotelu Fresh Inn)",
+            "coords": [48.0617, 11.6185],
+            "note": "Tradycyjna bawarska gospoda z ogródkiem piwnym (Biergarten) w centrum Unterhaching. Pieczeń wieprzowa (Schweinebraten) w sosie z ciemnego piwa z knedlami i surówką z boczkiem, Burschenschnitzel, Käsespätzle i Kaiserschmarrn na deser.",
             "price": "€14–22"
           }
         ]

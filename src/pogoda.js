@@ -29,27 +29,41 @@ function locKey(coords) {
 async function fetchHourly(lat, lon, start, end) {
   const url =
     `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
-    `&hourly=temperature_2m,precipitation_probability,weathercode` +
+    `&hourly=temperature_2m,precipitation_probability,precipitation,weathercode` +
     `&timezone=${encodeURIComponent(TRIP_TZ)}&start_date=${start}&end_date=${end}`;
   const r = await fetch(url);
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
 }
 
-function rainVerdict(maxPrecip) {
-  if (maxPrecip == null) return { cls: '', text: 'Brak danych o deszczu' };
-  if (maxPrecip >= 60) return { cls: 'is-rain', text: `Deszcz prawie pewny (do ${maxPrecip}%)` };
-  if (maxPrecip >= 30) return { cls: 'is-maybe', text: `Możliwy deszcz (do ${maxPrecip}%)` };
-  return { cls: 'is-dry', text: 'Bez deszczu' };
+function fmtMm(v) {
+  return String(Math.round(v * 10) / 10).replace('.', ',') + ' mm';
+}
+
+function rainVerdict(maxProb, totalMm) {
+  if (maxProb != null) {
+    if (maxProb >= 60) return { cls: 'is-rain', text: `Deszcz prawie pewny (do ${maxProb}%)` };
+    if (maxProb >= 30) return { cls: 'is-maybe', text: `Możliwy deszcz (do ${maxProb}%)` };
+    return { cls: 'is-dry', text: 'Bez deszczu' };
+  }
+  // Niektóre modele nie liczą prawdopodobieństwa — wtedy suma opadów w mm.
+  if (totalMm != null) {
+    if (totalMm >= 2) return { cls: 'is-rain', text: `Deszcz prawie pewny (${fmtMm(totalMm)})` };
+    if (totalMm >= 0.3) return { cls: 'is-maybe', text: `Możliwy deszcz (${fmtMm(totalMm)})` };
+    return { cls: 'is-dry', text: 'Bez deszczu' };
+  }
+  return { cls: '', text: 'Brak danych o deszczu' };
 }
 
 function renderHourSample(h) {
+  const wet = (h.prob ?? 0) >= 30 || (h.mm ?? 0) > 0.2;
+  const p = h.prob != null ? h.prob + '%' : (h.mm != null ? fmtMm(h.mm) : '—');
   return `
     <div class="wx-hour">
       <div class="wx-hour__h">${h.hour}:00</div>
       <div class="wx-hour__icon">${h.icon}</div>
       <div class="wx-hour__t">${h.temp}°</div>
-      <div class="wx-hour__p${h.precip >= 30 ? ' is-wet' : ''}">${h.precip != null ? h.precip + '%' : '—'}</div>
+      <div class="wx-hour__p${wet ? ' is-wet' : ''}">${p}</div>
     </div>`;
 }
 
@@ -133,7 +147,8 @@ export async function initPogoda(days, startIso, endIso) {
       samples.push({
         hour,
         temp: Math.round(h.temperature_2m[i]),
-        precip: h.precipitation_probability?.[i],
+        prob: h.precipitation_probability?.[i],
+        mm: h.precipitation?.[i],
         icon: WMO_ICON[h.weathercode?.[i]] || '⛅',
       });
     });
@@ -142,8 +157,12 @@ export async function initPogoda(days, startIso, endIso) {
       continue;
     }
     const temps = samples.map((s) => s.temp);
-    const precips = samples.map((s) => s.precip).filter((v) => v != null);
-    const verdict = rainVerdict(precips.length ? Math.max(...precips) : null);
+    const probs = samples.map((s) => s.prob).filter((v) => v != null);
+    const mms = samples.map((s) => s.mm).filter((v) => v != null);
+    const verdict = rainVerdict(
+      probs.length ? Math.max(...probs) : null,
+      mms.length ? mms.reduce((a, b) => a + b, 0) : null
+    );
     body.innerHTML = `
       <div class="wx-summary">
         <span class="wx-summary__temps">${Math.min(...temps)}° / ${Math.max(...temps)}°</span>

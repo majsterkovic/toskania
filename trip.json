@@ -17,11 +17,11 @@
       }
     },
     "title": "Toskania 2026",
-    "subtitle": "Podróż samochodowa Poznań → Toskania → Poznań",
+    "subtitle": "Najpierw Garfagnana i Alpy Apuańskie, potem Siena, Chianti i Val d'Orcia — z dwóch baz: Bargi i Murlo.",
+    "eyebrow": "12–27 września 2026 · 5 osób · autem z Poznania",
     "dates": "12–27 września 2026",
     "duration_days": 16,
     "calendar_days": "12.09 (sob) – 26.09 (sob) = 15 dni podróży + 27.09 (nd) dzień buforowy w domu; powrót w 2 dni (Murlo → Fischbachau → Poznań)",
-    "participants_note": "Plan prywatny — wariant 2 baz",
     "route_summary": {
       "outbound_km": "~1580 km w 2 dni (Poznań → Unterhaching → Barga)",
       "return_km": "~1575 km w 2 dni (Murlo → Fischbachau → Poznań)",
@@ -4154,41 +4154,6 @@
         ]
       },
       {
-        "id": "pakowanie",
-        "name": "Pakowanie",
-        "icon": "🎒",
-        "items": [
-          {
-            "id": "buty",
-            "label": "Solidne buty do chodzenia",
-            "detail": "Niezbędne do Garfagnany (szlaki leśne, Orecchiella), Sieny (bruk) i Crete Senesi. Buty turystyczne lub trekingowe z dobrą podeszwą. Nie sandały.",
-            "deadline": "przed wyjazdem",
-            "priority": "high"
-          },
-          {
-            "id": "deby",
-            "label": "Lista do obserwacji dębów (dla Mariusza)",
-            "detail": "Gatunki do wypatrywania: Quercus cerris (dąb burgundzki — Orecchiella, Garfagnana), Quercus pubescens (dąb omszony — Crete Senesi i Chianti), Quercus ilex (ostrokrzew — zbocza Chianti). Zabrać lornetkę, notes, aparat.",
-            "deadline": "przed wyjazdem",
-            "priority": "low"
-          },
-          {
-            "id": "adapter",
-            "label": "Adapter — nie potrzebny",
-            "detail": "Włochy używają wtyczek typu F (Schuko) i L. Polskie wtyczki Schuko (okrągłe 2-bolcowe) pasują do gniazdek typu F. Adapter może być potrzebny tylko do gniazdek typu L (3 bolce w linii) — w starszych budynkach.",
-            "deadline": "sprawdzić",
-            "priority": "low"
-          },
-          {
-            "id": "ubrania",
-            "label": "Ubrania — wrzesień w Toskanii",
-            "detail": "Temperatura: 18–28°C w dzień, 12–16°C wieczorem. Zabrać: lekkie warstwy, jeden sweter/bluza na wieczory, nakrycie głowy, okulary słoneczne. Do kościołów: zakryć ramiona i kolana (chusta/spodnie).",
-            "deadline": "przed wyjazdem",
-            "priority": "medium"
-          }
-        ]
-      },
-      {
         "id": "aplikacje",
         "name": "Aplikacje i narzędzia cyfrowe",
         "icon": "📱",
@@ -4220,314 +4185,179 @@
             "detail": "Wrzesień w Toskanii: ok. 10 dni deszczowych w miesiącu, głównie krótkie burze popołudniowe. Sprawdzić prognozę na meteo.it lub Windy.com 7 dni przed wyjazdem.",
             "deadline": "7 dni przed wyjazdem",
             "priority": "low"
+          },
+          {
+            "id": "deby",
+            "label": "Lista do obserwacji dębów (dla Mariusza)",
+            "detail": "Gatunki do wypatrywania: Quercus cerris (dąb burgundzki — Orecchiella, Garfagnana), Quercus pubescens (dąb omszony — Crete Senesi i Chianti), Quercus ilex (ostrokrzew — zbocza Chianti). Zabrać lornetkę, notes, aparat.",
+            "deadline": "przed wyjazdem",
+            "priority": "low"
           }
         ]
       }
     ]
   },
   "packing_list": {
+    "title": "Pakowanie",
+    "note": "Nie lista ubrań i nie checklista per osoba — tylko rzeczy wspólne, o których piątka łatwo zapomina. Odhaczaj przy pakowaniu samochodu; stan zostaje w tej przeglądarce.",
     "categories": [
       {
-        "id": "clothing",
-        "name": "Ubranie",
-        "icon": "👕",
+        "id": "baza",
+        "name": "Do bazy",
+        "icon": "🏠",
         "items": [
           {
-            "item": "T-shirty (5-6 szt.)",
-            "shared": false,
-            "note": "Lekkie, oddychające, wrzesień 22°C dzień"
-          },
-          {
-            "item": "Pary spodni długich (2)",
-            "shared": false,
-            "note": "Lekkie bawełniane, na dnią i wieczory"
-          },
-          {
-            "item": "Krótkie spodnie / szorty (1-2)",
-            "shared": false,
-            "note": "Na gorsze dni"
-          },
-          {
-            "item": "Kurtka / polar",
-            "shared": false,
-            "note": "Wieczory chłodne, gory 10-12°C"
-          },
-          {
-            "item": "Bielizna (7 szt.)",
-            "shared": false,
-            "note": "Wyprać w trasie"
-          },
-          {
-            "item": "Skarpety trekkingowe (4-5 par)",
-            "shared": false,
-            "note": "Dla gór (D3, D5)"
-          },
-          {
-            "item": "Skarpety zwykłe (2-3 pary)",
-            "shared": false,
-            "note": "Na spacery"
-          },
-          {
-            "item": "Biustonosz sportowy",
-            "shared": false,
-            "note": ""
-          },
-          {
-            "item": "Czapka / kapelusz",
-            "shared": false,
-            "note": "Na słońce"
-          },
-          {
-            "item": "Szalik / bandana",
-            "shared": false,
-            "note": "Opcjonalnie, na wiatr"
-          },
-          {
-            "item": "Kurtka przeciwdeszczowa",
-            "shared": false,
-            "note": "Lekka, zwinna — ryzyko małe ale możliwe"
-          }
-        ]
-      },
-      {
-        "id": "footwear",
-        "name": "Obuwie",
-        "icon": "👟",
-        "items": [
-          {
-            "item": "Buty trekkingowe",
-            "shared": false,
-            "note": "Do gór i przechodzenia po kamieniach"
-          },
-          {
-            "item": "Buty wygodne na spacery / turystyka",
-            "shared": false,
-            "note": "Miasta (Barga, Lucca, Siena), mury"
-          },
-          {
-            "item": "Klapki / buty na plażę",
-            "shared": false,
-            "note": "Wieczorny relaks, wyjście do bazy"
-          }
-        ]
-      },
-      {
-        "id": "hygiene",
-        "name": "Higiena i opieka",
-        "icon": "🧴",
-        "items": [
-          {
-            "item": "Szczoteczka zębów + pasta",
-            "shared": false,
-            "note": ""
-          },
-          {
-            "item": "Szampon (mini format)",
-            "shared": false,
-            "note": "Hotele mają mydła, ale dobra mieć swoje"
-          },
-          {
-            "item": "Mydło / żel do mycia",
-            "shared": false,
-            "note": ""
-          },
-          {
-            "item": "Krem do rąk",
-            "shared": false,
-            "note": "Po góralskim chodzeniu"
-          },
-          {
-            "item": "Krem przeciwsłoneczny SPF 30+",
-            "shared": false,
-            "note": "Niezbędny — słońce we Włoszech"
-          },
-          {
-            "item": "Balsam do ust SPF",
-            "shared": false,
-            "note": ""
-          },
-          {
-            "item": "Dezodorant",
-            "shared": false,
-            "note": ""
-          },
-          {
-            "item": "Papier toaletowy / wilgotne chusteczki",
-            "shared": false,
-            "note": "Nie wszystkie toalety w każdego"
-          },
-          {
-            "item": "Tamtam/gąbka higieniczna",
-            "shared": false,
-            "note": ""
-          },
-          {
-            "item": "Okulary (jeśli nosi)",
-            "shared": false,
-            "note": ""
-          },
-          {
-            "item": "Leki osobiste",
-            "shared": false,
-            "note": "Astma, alergii, itp."
-          }
-        ]
-      },
-      {
-        "id": "documents",
-        "name": "Dokumenty",
-        "icon": "📋",
-        "items": [
-          {
-            "item": "Paszport / Dowód osobisty",
-            "shared": false,
-            "note": "Kopia cyfrowa w telefonie"
-          },
-          {
-            "item": "Ubezpieczenie turystyczne",
-            "shared": false,
-            "note": "Dokumenty / potwierdzenie w mailu"
-          },
-          {
-            "item": "Karta płatnicza / gotówka",
-            "shared": false,
-            "note": "Włochy — karty wszędzie, ale małe wioski mogą chcieć cash"
-          }
-        ]
-      },
-      {
-        "id": "electronics",
-        "name": "Elektronika",
-        "icon": "🔌",
-        "items": [
-          {
-            "item": "Telefon + ładowarka",
+            "id": "worki-smieci",
+            "item": "Worki na śmieci (rolka)",
             "shared": true,
-            "note": "Bez niego nie przeżyjesz"
+            "note": "5–10 szt. na dwa tygodnie, dwa apartamenty."
           },
           {
-            "item": "Przewód USB-C / Lightning",
-            "shared": false,
-            "note": "2-3 szt. na grupę"
-          },
-          {
-            "item": "Power bank",
+            "id": "reczniki",
+            "item": "Ręczniki",
             "shared": true,
-            "note": "Jeden na 2 osoby wystarczy"
+            "note": "Kąpielowe (sprawdzić, czy bazy dają swoje) plus jeden kuchenny."
           },
           {
-            "item": "Aparat fotograficzny (jeśli)",
-            "shared": false,
-            "note": "Baterie / karty pamięci"
-          },
-          {
-            "item": "Adapter zasilacza EU (220V → włoskie gniazdka)",
+            "id": "papier",
+            "item": "Papier toaletowy (zapas)",
             "shared": true,
-            "note": "Włoskie gniazdka to typu C / L"
+            "note": "Jedna rolka zapasowa do auta i do bazy."
           },
           {
-            "item": "Laptop / tablet (opcjonalnie)",
-            "shared": false,
-            "note": ""
+            "id": "naczynia",
+            "item": "Płyn do naczyń i gąbka",
+            "shared": true,
+            "note": "Casa vacanze zwykle ma kuchnię, rzadko chemię."
+          },
+          {
+            "id": "pranie",
+            "item": "Środek do prania",
+            "shared": true,
+            "note": "5 osób × 2 tygodnie — kapsułki albo mały płyn."
+          },
+          {
+            "id": "korkociag",
+            "item": "Korkociąg / otwieracz",
+            "shared": true,
+            "note": "Wino z Chianti i Montalcino nie otworzy się samo."
+          },
+          {
+            "id": "strunowe",
+            "item": "Woreczki strunowe / folia",
+            "shared": true,
+            "note": "Jedzenie w aucie i sery / wędliny do domu."
           }
         ]
       },
       {
-        "id": "medicines",
-        "name": "Leki i apteczka",
+        "id": "apteczka",
+        "name": "Apteczka grupowa",
         "icon": "💊",
         "items": [
           {
-            "item": "Paracetamol / Ibuprofen",
+            "id": "przeciwbolowe",
+            "item": "Paracetamol / ibuprofen",
             "shared": true,
-            "note": "Na bóle głowy, mięśni"
+            "note": "Bóle głowy, mięśni po szlaku i bruku."
           },
           {
-            "item": "Leki na żołądek (np. Potonin, Imodium)",
+            "id": "zoładek",
+            "item": "Lek na biegunkę (Imodium / Smecta)",
             "shared": true,
-            "note": "Włoska kuchnia może nie zgadzać się ze wszystkimi"
+            "note": "Jedno opakowanie na grupę."
           },
           {
-            "item": "Bandaże / plastry",
+            "id": "plastry",
+            "item": "Plastry i bandaż",
             "shared": true,
-            "note": "Na pęcherze ze spacerowania"
+            "note": "Pęcherze ze spacerów, zadrapania."
           },
           {
-            "item": "Maść antybiotyczna",
+            "id": "antyseptyk",
+            "item": "Antyseptyk",
             "shared": true,
-            "note": "Na oparzenia, zadrapania"
+            "note": "Płyn albo chusteczki odkażające."
           },
           {
-            "item": "Antyseptyk (Betadine, alkohol)",
+            "id": "kleszcze",
+            "item": "Repelent na kleszcze",
             "shared": true,
-            "note": ""
+            "note": "Garfagnana / Orecchiella — lasy dębowe."
           },
           {
-            "item": "Tabletki na kaszel",
+            "id": "spf",
+            "item": "Krem SPF 50+",
             "shared": true,
-            "note": ""
+            "note": "Jeden duży na grupę. Crete Senesi i Val d'Orcia bez cienia."
           },
           {
-            "item": "Krople do oczu",
+            "id": "leki-stale",
+            "item": "Przypomnienie: każdy swoje leki stałe",
             "shared": true,
-            "note": "Na suchość od klimatyzacji"
-          },
-          {
-            "item": "Krople do nosa",
-            "shared": true,
-            "note": ""
+            "note": "To jedyna rzecz osobista na tej liście — zapas na cały wyjazd."
           }
         ]
       },
       {
-        "id": "shared",
-        "name": "Rzeczy wspólne (dla grupy 5 osób)",
-        "icon": "👥",
+        "id": "prad",
+        "name": "Prąd i kable",
+        "icon": "🔌",
         "items": [
           {
-            "item": "Adapter zasilacza EU (220V → włoskie C/L)",
+            "id": "listwa",
+            "item": "Listwa / przedłużacz",
             "shared": true,
-            "note": "2-3 szt. na grupę"
+            "note": "Pięć telefonów, mało gniazdek w apartamencie."
           },
           {
-            "item": "Kable USB",
+            "id": "adapter-l",
+            "item": "Adapter typu L (1–2 szt.)",
             "shared": true,
-            "note": "2-3 szt. na grupę"
+            "note": "Polskie Schuko wchodzi w typ F. Typ L (3 bolce w linii) bywa w starszych budynkach."
           },
           {
-            "item": "Power banki",
+            "id": "powerbank",
+            "item": "Powerbanki (2 na grupę)",
             "shared": true,
-            "note": "2 szt. na grupę"
+            "note": "Dni bez zasięgu w Garfagnanie i długie pętle."
           },
           {
-            "item": "Apteczka grupowa (paracetamol, imodium, bandaże, antyseptyk)",
+            "id": "kable",
+            "item": "Zapasowe kable USB-C (2–3)",
             "shared": true,
-            "note": "Jedno zestawienie na całą grupę"
+            "note": "Jeden zawsze zostaje w aucie."
           },
           {
-            "item": "Narzędzia podstawowe w samochodzie",
+            "id": "ladowarka-auto",
+            "item": "Ładowarka USB do samochodu",
             "shared": true,
-            "note": "Latarka, zestaw śrubokręów, taśma klejąca, gumki"
+            "note": "Dni transferowe 8–10 h za kierownicą."
+          }
+        ]
+      },
+      {
+        "id": "auto",
+        "name": "W aucie",
+        "icon": "🚗",
+        "items": [
+          {
+            "id": "butelki",
+            "item": "Butelki wielorazowe",
+            "shared": true,
+            "note": "Każdy swoją; napełniać, nie kupować plastiku co dzień."
           },
           {
-            "item": "Dokumeny samochodu",
+            "id": "chusteczki",
+            "item": "Chusteczki / mokre chusteczki",
             "shared": true,
-            "note": "Dowód rejestracyjny, ubezpieczenie, e-winieta Austria (zakupiona)"
+            "note": "Toalety przy autostradzie i pikniki."
           },
           {
-            "item": "Papier toaletowy (zapas)",
+            "id": "latarka",
+            "item": "Latarka",
             "shared": true,
-            "note": "Dodatkowy, na wszelki wypadek"
-          },
-          {
-            "item": "Torby na śmieci",
-            "shared": true,
-            "note": "5-10 szt."
-          },
-          {
-            "item": "Woda do picia (butelki wielorazowe)",
-            "shared": true,
-            "note": "Każdy po jednej do napełniania"
+            "note": "Auto + wieczór przy bazie."
           }
         ]
       }

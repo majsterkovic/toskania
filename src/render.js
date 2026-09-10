@@ -154,33 +154,32 @@ function renderHeader(meta, images) {
   const rs = meta.route_summary;
   const monthName = new Date(meta.start_date).toLocaleDateString('pl', { month: 'long' });
   const year = meta.start_date.slice(0, 4);
+  const eyebrow = meta.eyebrow || `Podróż samochodowa · ${monthName} ${year}`;
 
   return `
     <header class="hero" id="start">
       ${heroImg}
       <div class="hero__content">
-        <p class="hero__eyebrow">Podróż samochodowa · ${esc(monthName)} ${esc(year)}</p>
+        <p class="hero__eyebrow">${esc(eyebrow)}</p>
         <h1>${esc(meta.title)}</h1>
-        <p class="hero-dates">${esc(meta.dates)}</p>
         <p class="hero-subtitle">${esc(meta.subtitle)}</p>
-        ${meta.participants_note ? `<p class="hero-note">${esc(meta.participants_note)}</p>` : ''}
         ${rs ? `
           <dl class="route-stats">
             <div class="route-stat">
-              <dt>Łącznie</dt>
-              <dd>${esc(rs.total_km)}</dd>
+              <dt>Wyjazd</dt>
+              <dd>${meta.duration_days} dni</dd>
             </div>
             <div class="route-stat">
               <dt>Toskania</dt>
-              <dd>${rs.tuscany_days} dni · ${rs.tuscany_bases} bazy</dd>
+              <dd>${rs.tuscany_days} dni</dd>
             </div>
             <div class="route-stat">
-              <dt>Wyjazd</dt>
-              <dd>${esc(rs.outbound_km)}</dd>
+              <dt>Bazy</dt>
+              <dd>${rs.tuscany_bases}</dd>
             </div>
             <div class="route-stat">
-              <dt>Powrót</dt>
-              <dd>${esc(rs.return_km)}</dd>
+              <dt>Za kółkiem</dt>
+              <dd>${esc(rs.total_km)}</dd>
             </div>
           </dl>
         ` : ''}

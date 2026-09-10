@@ -192,6 +192,11 @@
           "src": "images/murlo.jpg",
           "alt": "Panorama Murlo — miasteczko w Val di Merse, na południowy zachód od Sieny",
           "credit": "Mongolo1984 / Wikimedia Commons / CC BY-SA 4.0"
+        },
+        "viareggio": {
+          "src": "images/viareggio.jpg",
+          "alt": "Plaża w Viareggio o zachodzie słońca nad Morzem Tyrreńskim",
+          "credit": "Marco Ponsi / Wikimedia Commons / CC BY-SA 4.0"
         }
       }
     },
@@ -1353,6 +1358,7 @@
           "name": "Viareggio — Passeggiata (nadmorski deptak Liberty), molo i zachód słońca nad Morzem Tyrreńskim",
           "description": "Stolica Wersylii i jedyny punkt całego planu, w którym dotykamy morza. Trzykilometrowa Passeggiata to nadmorski deptak z architekturą Liberty i Art Déco z lat 20. XX w. — wieżyczki w żółto-zielone kafelkowe łuski, kute balustrady, historyczne kawiarnie i lodziarnie. Wybrzeże jest zachodnie, więc słońce zachodzi prosto w wodę, a za plecami stoją marmurowe Alpy Apuańskie — te same, które z Garfagnany oglądamy od drugiej strony. Woda w połowie września ma jeszcze 24–25°C.",
           "type": "nature",
+          "image_key": "viareggio",
           "gps_hint": "Viareggio — ze stacji ~1 km / 12–15 min pieszo do Passeggiaty (Piazza Mazzini). Auto zostaje w Lucce; dojazd i powrót wyłącznie pociągiem.",
           "coords": [
             43.8664,

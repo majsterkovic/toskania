@@ -16,7 +16,7 @@ export function todoTool(trip) {
 
 export function packingTool(trip) {
   return {
-    description: 'Lista pakowania z trip.json.',
+    description: 'Wspólna lista pakowania grupy (nie ubrania osobiste) z trip.json: apteczka, rzeczy do bazy, kable, auto.',
     parameters: { type: 'object', properties: {}, required: [] },
     execute: () => trip.packing_list,
   };

@@ -22,11 +22,6 @@ function saveChecked() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...checkedIds]));
 }
 
-function getCategoryName(catId) {
-  const cat = souvenirsData.categories?.find((c) => c.id === catId);
-  return cat ? `${cat.icon} ${cat.name}` : catId;
-}
-
 function getFilteredItems() {
   return (souvenirsData.items || []).filter((item) => {
     if (activeCategory !== 'all' && item.category !== activeCategory) return false;
@@ -45,56 +40,50 @@ function getFilteredItems() {
   });
 }
 
-function renderItemCard(item) {
+function categoryOrder() {
+  return (souvenirsData.categories || []).filter((c) => c.id !== 'all');
+}
+
+function groupFilteredItems(items) {
+  const groups = categoryOrder().map((cat) => ({
+    cat,
+    items: items.filter((item) => item.category === cat.id),
+  }));
+  const known = new Set(groups.map((g) => g.cat.id));
+  const leftover = items.filter((item) => !known.has(item.category));
+  if (leftover.length) {
+    groups.push({
+      cat: { id: 'inne', name: 'Inne', icon: '✨' },
+      items: leftover,
+    });
+  }
+  return groups.filter((g) => g.items.length);
+}
+
+function renderItem(item) {
   const isChecked = checkedIds.has(item.id);
-  const catName = getCategoryName(item.category);
   return `
-    <article class="souvenir-card ${isChecked ? 'souvenir-card--checked' : ''}" data-item-id="${esc(item.id)}">
-      <div class="souvenir-card__header">
-        <div class="souvenir-card__badges">
-          <span class="souvenir-badge souvenir-badge--cat">${esc(catName)}</span>
-          <span class="souvenir-badge souvenir-badge--region">${esc(item.region_label || item.region)}</span>
-        </div>
-        <label class="souvenir-check-label" title="${isChecked ? 'Oznacz jako niekupione' : 'Oznacz jako kupione / spakowane'}">
-          <input
-            type="checkbox"
-            class="souvenir-checkbox"
-            data-item-id="${esc(item.id)}"
-            ${isChecked ? 'checked' : ''}
-            aria-label="Kupione: ${esc(item.name)}"
-          />
-        </label>
-      </div>
-
-      <div class="souvenir-card__titles">
-        <h3 class="souvenir-card__name">${esc(item.name)}</h3>
-        ${item.italian_name ? `<p class="souvenir-card__italian">${esc(item.italian_name)}</p>` : ''}
-      </div>
-
-      <div class="souvenir-card__price-row">
-        <span class="souvenir-card__price">${esc(item.price)}</span>
-        <span class="souvenir-card__status">✓ Kupione / Spakowane</span>
-      </div>
-
-      <div class="souvenir-card__details">
-        <div class="souvenir-card__row">
-          <span class="souvenir-card__icon">📍</span>
-          <div class="souvenir-card__text">
-            <strong>Gdzie:</strong> ${esc(item.where)}
-          </div>
-        </div>
-        <div class="souvenir-card__row">
-          <span class="souvenir-card__icon">💡</span>
-          <div class="souvenir-card__text">
-            <strong>Wskazówka:</strong> ${esc(item.tip)}
-          </div>
-        </div>
-        <div class="souvenir-card__transport">
-          <span class="souvenir-card__icon">🚗</span>
-          <span>${esc(item.transport)}</span>
-        </div>
-      </div>
-    </article>
+    <li class="souvenir-item${isChecked ? ' souvenir-item--checked' : ''}">
+      <label>
+        <input
+          type="checkbox"
+          class="souvenir-checkbox"
+          data-item-id="${esc(item.id)}"
+          ${isChecked ? 'checked' : ''}
+          aria-label="Kupione: ${esc(item.name)}"
+        />
+        <span class="souvenir-item__name">${esc(item.name)}</span>
+      </label>
+      ${item.italian_name ? `<p class="souvenir-item__italian">${esc(item.italian_name)}</p>` : ''}
+      ${
+        item.price || item.region_label
+          ? `<p class="souvenir-item__meta">${item.price ? `<span class="souvenir-item__price">${esc(item.price)}</span>` : ''}${item.region_label ? `<span class="souvenir-item__region">${esc(item.region_label)}</span>` : ''}</p>`
+          : ''
+      }
+      ${item.where ? `<p class="souvenir-item__note"><span>Gdzie</span> ${esc(item.where)}</p>` : ''}
+      ${item.tip ? `<p class="souvenir-item__note"><span>Wskazówka</span> ${esc(item.tip)}</p>` : ''}
+      ${item.transport ? `<p class="souvenir-item__note"><span>Transport</span> ${esc(item.transport)}</p>` : ''}
+    </li>
   `;
 }
 
@@ -112,21 +101,33 @@ function updateStatsUI() {
 }
 
 function renderItemsGrid() {
-  const container = document.getElementById('souvenirs-grid');
+  const container = document.getElementById('souvenirs-lists');
   if (!container) return;
 
   const items = getFilteredItems();
   if (!items.length) {
     container.innerHTML = `
       <div class="souvenirs-empty">
-        <div class="souvenirs-empty__icon">🔍</div>
         <p class="souvenirs-empty__text">Brak pamiątek spełniających wybrane kryteria.</p>
       </div>
     `;
     return;
   }
 
-  container.innerHTML = items.map(renderItemCard).join('');
+  container.innerHTML = groupFilteredItems(items)
+    .map(
+      ({ cat, items: groupItems }) => `
+      <section class="souvenir-group" id="souvenir-group-${esc(cat.id)}">
+        <h2 class="souvenir-group__title">
+          <span class="souvenir-group__icon">${esc(cat.icon || '')}</span>
+          ${esc(cat.name)}
+          <span class="souvenir-group__count">${groupItems.length}</span>
+        </h2>
+        <ul class="souvenir-list">${groupItems.map(renderItem).join('')}</ul>
+      </section>
+    `,
+    )
+    .join('');
   attachCheckboxListeners();
 }
 
@@ -143,9 +144,9 @@ function attachCheckboxListeners() {
       }
       saveChecked();
 
-      const card = e.target.closest('.souvenir-card');
-      if (card) {
-        card.classList.toggle('souvenir-card--checked', checked);
+      const row = e.target.closest('.souvenir-item');
+      if (row) {
+        row.classList.toggle('souvenir-item--checked', checked);
       }
 
       updateStatsUI();
@@ -210,7 +211,7 @@ function init() {
     ${renderSiteNav(plan, 'pamiatki')}
     <main class="page" id="tresc">
       <article class="section">
-        <h1 class="section-title">🛍️ ${esc(title)}</h1>
+        <h1 class="section-title">${esc(title)}</h1>
         <p class="section-lead">${esc(lead)}</p>
 
         <div class="souvenirs-container">
@@ -249,7 +250,7 @@ function init() {
             </div>
           </div>
 
-          <div class="souvenirs-grid" id="souvenirs-grid"></div>
+          <div class="souvenirs-groups" id="souvenirs-lists"></div>
         </div>
 
         ${renderGuides(souvenirsData.guides)}

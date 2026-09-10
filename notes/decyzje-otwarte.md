@@ -45,3 +45,14 @@ Użytkownik samodzielnie zarezerwował Hotel Fresh Inn w Unterhaching (pod Monac
 
 ## 5. Powrót 3→2 dni: Murlo → Fischbachau → Poznań — ✅ ZDECYDOWANE I WDROŻONE (2026-09-06)
 Użytkownik zarezerwował Pension Oberwirt w Fischbachau (Birkensteinstr. 91, 83730 Fischbachau, Bawaria — 5 dorosłych, 1 apartament) na noc 25→26.09 (check-in SZTYWNO 15:00–18:00, check-out 07:30–10:00). To JEDYNY nocleg powrotny: Telves (Maurerhof) i Hof wypadają z planu. Nowy podział: D14 Murlo→Fischbachau (682 km / ~8 h, OSRM 2026-09; wyjazd 6:30, ETA ~17:00 — styk z check-inem do 18:00, wcześniej ustalić ETA z gospodarzem), D15 Fischbachau→Poznań (~892 km / ~9 h, maraton, meta ~18:30 26.09), D16 (27.09) wraca do roli dnia buforowego w domu. Austria (winieta 1-dniowa + Streckenmaut A13) przesunięta z 26.09 na 25.09 (D14); D15 w całości DE+PL, bez winiety. Koszty: Telves+Hof wypadają, wchodzi Fischbachau (cena do uzupełnienia) — suma €691–959/os. Wcześniejszy wariant 3-dniowy (Murlo→Telves→Hof→Poznań, 2026-07-22) — historia w git.
+
+### Omijanie A12 przez Garmisch-Partenkirchen — raczej nie (OSRM 2026-09-10)
+
+Cel: zaoszczędzić e-winietę A12 (€9,60), jadąc Unterhaching → Garmisch → Mittenwald → Scharnitz (B177, bez winiety) → Innsbruck, potem i tak A13 Brenner (€12,50 zostaje).
+
+| Odcinek | A12 | Garmisch | Różnica |
+|---|---|---|---|
+| Unterhaching → Innsbruck (tam, 13.09) | 157 km / 109 min | 151 km / 126 min | **+17 min** (w realu bliżej +25–30 min: B2, niedzielni turyści) |
+| Brenner → Fischbachau (powrót, 25.09) | 146 km / 124 min | 183 km / 171 min | **+47 min, +38 km** — Garmisch jest na zachód, Fischbachau na wschód |
+
+Garmisch omija **tylko winietę**, nie Streckenmaut. Na D2 (już 8–8,5 h) €9,60 nie warte pół godziny w 5 osób. Na D14 twardy check-in do 18:00, ETA ~17:00 — extra ~50 min zjada cały bufor. **Rekomendacja: jechać A12+A13 w obie strony.**

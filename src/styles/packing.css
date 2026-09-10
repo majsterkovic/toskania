@@ -118,18 +118,6 @@
   color: var(--text-secondary);
 }
 
-.packing-item__badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  background: var(--terracotta);
-  color: white;
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
 .packing-item__note {
   font-size: 0.85rem;
   color: var(--text-secondary);

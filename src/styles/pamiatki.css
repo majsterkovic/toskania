@@ -213,218 +213,168 @@ html.dark .souvenir-cat-btn.is-active {
   font-weight: 600;
 }
 
-/* ── Grid produktów ─────────────────────────────────────────────── */
-.souvenirs-grid {
+/* ── Listy per grupa ─────────────────────────────────────────────── */
+.souvenirs-groups {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
-@media (min-width: 680px) {
-  .souvenirs-grid {
+@media (min-width: 860px) {
+  .souvenirs-groups {
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
   }
 }
 
-@media (min-width: 1100px) {
-  .souvenirs-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* ── Karta produktu ──────────────────────────────────────────────── */
-.souvenir-card {
+.souvenir-group {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.25rem;
+  padding: 1.25rem 1.4rem 1.4rem;
   box-shadow: var(--shadow);
+}
+
+.souvenir-group__title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.souvenir-group__icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.souvenir-group__count {
+  margin-left: auto;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--cream-deep);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+}
+
+html.dark .souvenir-group__count {
+  background: var(--stone);
+}
+
+.souvenir-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
-  transition: var(--transition-card), border-color 0.2s;
-  position: relative;
+  gap: 1rem;
 }
 
-.souvenir-card:hover {
-  box-shadow: var(--shadow-hover);
-  border-color: var(--oro-light);
-}
-
-.souvenir-card--checked {
-  border-color: var(--olive-light);
-  background: rgba(92, 107, 69, 0.04);
-}
-
-html.dark .souvenir-card--checked {
-  background: rgba(92, 107, 69, 0.12);
-  border-color: var(--olive);
-}
-
-.souvenir-card__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.75rem;
-}
-
-.souvenir-card__badges {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.souvenir-badge {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-}
-
-.souvenir-badge--cat {
-  background: var(--cream-deep);
-  color: var(--terracotta-deep);
-  border: 1px solid rgba(184, 92, 56, 0.2);
-}
-
-html.dark .souvenir-badge--cat {
-  background: rgba(184, 92, 56, 0.18);
-  color: var(--terracotta-light);
-}
-
-.souvenir-badge--region {
-  background: var(--cream-deep);
-  color: var(--olive);
-  border: 1px solid rgba(92, 107, 69, 0.2);
-}
-
-html.dark .souvenir-badge--region {
-  background: rgba(92, 107, 69, 0.18);
-  color: var(--olive-light);
-}
-
-/* Stylizowany checkbox */
-.souvenir-check-label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-  flex-shrink: 0;
-}
-
-.souvenir-checkbox {
-  width: 1.25rem;
-  height: 1.25rem;
-  accent-color: var(--olive);
-  cursor: pointer;
-}
-
-.souvenir-card__titles {
+.souvenir-item {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  transition: opacity 0.2s;
 }
 
-.souvenir-card__name {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
+.souvenir-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.souvenir-item--checked {
+  opacity: 0.55;
+}
+
+.souvenir-item label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.souvenir-checkbox {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  cursor: pointer;
+  accent-color: var(--olive);
+}
+
+.souvenir-item__name {
+  font-family: var(--font-sans);
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.25;
   color: var(--ink);
-  margin: 0;
+  line-height: 1.35;
 }
 
-.souvenir-card__italian {
+.souvenir-item--checked .souvenir-item__name {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.souvenir-item__italian,
+.souvenir-item__meta,
+.souvenir-item__note {
+  margin: 0 0 0 1.8rem;
+  line-height: 1.45;
+}
+
+.souvenir-item__italian {
   font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-style: italic;
   color: var(--muted);
 }
 
-.souvenir-card__price-row {
+.souvenir-item__meta {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem;
-  border-bottom: 1px dashed var(--border);
-  padding-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
 }
 
-.souvenir-card__price {
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
+.souvenir-item__price {
   font-weight: 600;
   color: var(--terracotta);
 }
 
-html.dark .souvenir-card__price {
+html.dark .souvenir-item__price {
   color: var(--terracotta-light);
 }
 
-.souvenir-card__status {
-  font-family: var(--font-sans);
-  font-size: 0.76rem;
-  font-weight: 600;
+.souvenir-item__region {
   color: var(--olive);
-  opacity: 0;
-  transition: opacity 0.2s;
 }
 
-.souvenir-card--checked .souvenir-card__status {
-  opacity: 1;
+html.dark .souvenir-item__region {
+  color: var(--olive-light);
 }
 
-.souvenir-card__details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  font-size: 0.92rem;
-  line-height: 1.55;
+.souvenir-item__note {
+  font-size: 0.88rem;
   color: var(--ink);
-  flex-grow: 1;
 }
 
-.souvenir-card__row {
-  display: flex;
-  gap: 0.45rem;
-}
-
-.souvenir-card__icon {
-  flex-shrink: 0;
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-.souvenir-card__text strong {
+.souvenir-item__note span {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
-  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 600;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--stone-dark);
-  display: inline-block;
   margin-right: 0.3rem;
-}
-
-.souvenir-card__transport {
-  background: var(--cream-deep);
-  border-radius: 6px;
-  padding: 0.4rem 0.65rem;
-  font-family: var(--font-sans);
-  font-size: 0.82rem;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-top: auto;
-}
-
-html.dark .souvenir-card__transport {
-  background: var(--stone);
-  color: var(--muted);
 }
 
 .souvenirs-empty {
@@ -434,11 +384,6 @@ html.dark .souvenir-card__transport {
   border: 1px dashed var(--border);
   border-radius: var(--radius);
   grid-column: 1 / -1;
-}
-
-.souvenirs-empty__icon {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .souvenirs-empty__text {

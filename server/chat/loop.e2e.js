@@ -67,7 +67,7 @@ test('e2e: pytanie o odległość między dwoma punktami zgadza się z macierzą
 
 test('e2e: pytanie "co spakować" zwraca listę z packing_list', async () => {
   const answer = await ask('Co muszę spakować?');
-  assert.match(answer, /paszport|dokument/i);
+  assert.match(answer, /ręcznik|śmieci|apteczk|adapter|listw|powerbank/i);
 });
 
 test('e2e: pytanie o ostatni dzień podaje datę końcową 27.09', async () => {

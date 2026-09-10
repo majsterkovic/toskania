@@ -8,90 +8,122 @@ import './styles/packing.css';
 
 applyStoredTheme();
 
+const STORAGE_PREFIX = 'packing:';
 const app = document.getElementById('app');
+const packingList = plan.packing_list;
 
-function renderPackingList(packingList) {
-  if (!packingList || !packingList.categories) return '';
+function itemId(cat, item, idx) {
+  return item.id || `${cat.id}-${idx}`;
+}
 
-  const HTML = packingList.categories.map(cat => {
-    const itemsHtml = cat.items.map((item, idx) => {
-      const itemId = `${cat.id}-${idx}`;
-      const isChecked = localStorage.getItem(`packing:${itemId}`) === '1';
-      return `
-        <li class="packing-item ${isChecked ? 'packing-item--checked' : ''}">
+function isPacked(id) {
+  return localStorage.getItem(STORAGE_PREFIX + id) === '1';
+}
+
+function setPacked(id, packed) {
+  if (packed) localStorage.setItem(STORAGE_PREFIX + id, '1');
+  else localStorage.removeItem(STORAGE_PREFIX + id);
+}
+
+function clearPacked() {
+  const keys = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key && key.startsWith(STORAGE_PREFIX)) keys.push(key);
+  }
+  keys.forEach((key) => localStorage.removeItem(key));
+}
+
+function allItemIds(list) {
+  return (list?.categories || []).flatMap((cat) =>
+    (cat.items || []).map((item, idx) => itemId(cat, item, idx)),
+  );
+}
+
+function countPacked(list) {
+  const ids = allItemIds(list);
+  const checked = ids.filter(isPacked).length;
+  const total = ids.length;
+  const percent = total > 0 ? Math.round((checked / total) * 100) : 0;
+  return { checked, total, percent };
+}
+
+function renderPackingList(list) {
+  if (!list?.categories?.length) return '';
+
+  return list.categories
+    .map((cat) => {
+      const itemsHtml = (cat.items || [])
+        .map((item, idx) => {
+          const id = itemId(cat, item, idx);
+          const checked = isPacked(id);
+          return `
+        <li class="packing-item${checked ? ' packing-item--checked' : ''}">
           <label>
             <input
               type="checkbox"
               class="packing-checkbox"
-              data-item-id="${itemId}"
-              ${isChecked ? 'checked' : ''}
+              data-item-id="${esc(id)}"
+              ${checked ? 'checked' : ''}
             />
             <span class="packing-item__name">${esc(item.item)}</span>
-            ${item.shared ? '<span class="packing-item__badge">wspólne</span>' : ''}
           </label>
           ${item.note ? `<p class="packing-item__note">${esc(item.note)}</p>` : ''}
         </li>
       `;
-    }).join('');
+        })
+        .join('');
 
-    return `
+      return `
       <section class="packing-category">
-        <h3 class="packing-category__title">
-          <span class="packing-category__icon">${cat.icon}</span>
+        <h2 class="packing-category__title">
+          <span class="packing-category__icon">${esc(cat.icon || '')}</span>
           ${esc(cat.name)}
-        </h3>
+        </h2>
         <ul class="packing-list">${itemsHtml}</ul>
       </section>
     `;
-  }).join('');
-
-  return HTML;
+    })
+    .join('');
 }
 
-function initPackingCheckboxes() {
-  const checkboxes = document.querySelectorAll('.packing-checkbox');
-  checkboxes.forEach(cb => {
-    cb.addEventListener('change', (e) => {
-      const itemId = e.target.dataset.itemId;
-      const isChecked = e.target.checked;
-      if (isChecked) {
-        localStorage.setItem(`packing:${itemId}`, '1');
-      } else {
-        localStorage.removeItem(`packing:${itemId}`);
-      }
-      e.target.closest('.packing-item').classList.toggle('packing-item--checked', isChecked);
-    });
-  });
-}
-
-function renderStats() {
-  const checkboxes = document.querySelectorAll('.packing-checkbox');
-  const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
-  const total = checkboxes.length;
-  const percent = total > 0 ? Math.round((checked / total) * 100) : 0;
-
+function renderStats(list) {
+  const { checked, total, percent } = countPacked(list);
   return `
     <div class="packing-stats">
       <div class="packing-stats__progress">
         <div class="packing-stats__bar" style="width: ${percent}%"></div>
       </div>
       <p class="packing-stats__text">${checked} z ${total} rzeczy spakowane (${percent}%)</p>
-      <button class="packing-stats__reset" type="button">Wyczyść listę</button>
+      <button class="packing-stats__reset" type="button">Wyczyść odhaczenia</button>
     </div>
   `;
 }
+
+function refreshStats(list) {
+  const { checked, total, percent } = countPacked(list);
+  const bar = document.querySelector('.packing-stats__bar');
+  const text = document.querySelector('.packing-stats__text');
+  if (bar) bar.style.width = `${percent}%`;
+  if (text) text.textContent = `${checked} z ${total} rzeczy spakowane (${percent}%)`;
+}
+
+const title = packingList?.title || 'Pakowanie';
+const lead =
+  packingList?.note ||
+  'Rzeczy wspólne, o których grupa łatwo zapomina. Odhaczaj przy pakowaniu samochodu.';
 
 app.innerHTML = `
   ${renderSiteNav(plan, 'packing')}
   <main class="page" id="tresc">
     <article class="section">
-      <h1 class="section-title">📦 Lista do spakowania</h1>
-      <p class="section-lead">${esc(plan.meta.dates)}, ${plan.meta.duration_days} dni. Odhaczaj przed wyjazdem — postęp zapisywany w przeglądarce.</p>
+      <h1 class="section-title">${esc(title)}</h1>
+      <p class="section-lead">${esc(lead)}</p>
 
-      ${renderStats()}
+      ${renderStats(packingList)}
 
       <div class="packing-container">
-        ${renderPackingList(plan.packing_list)}
+        ${renderPackingList(packingList)}
       </div>
     </article>
   </main>
@@ -99,27 +131,18 @@ app.innerHTML = `
 `;
 
 initChrome();
-initPackingCheckboxes();
 
-// Odśwież stats po każdym change
-document.querySelectorAll('.packing-checkbox').forEach(cb => {
-  cb.addEventListener('change', () => {
-    const statsSection = document.querySelector('.packing-stats');
-    statsSection.innerHTML = renderStats().replace('<div class="packing-stats">', '').replace('</div>', '').trim();
-    initPackingResetButton();
+document.querySelectorAll('.packing-checkbox').forEach((cb) => {
+  cb.addEventListener('change', (e) => {
+    const id = e.target.dataset.itemId;
+    setPacked(id, e.target.checked);
+    e.target.closest('.packing-item')?.classList.toggle('packing-item--checked', e.target.checked);
+    refreshStats(packingList);
   });
 });
 
-function initPackingResetButton() {
-  const resetBtn = document.querySelector('.packing-stats__reset');
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => {
-      if (confirm('Wyczyścić listę? (Odznaczysz wszystko)')) {
-        localStorage.clear();
-        location.reload();
-      }
-    });
-  }
-}
-
-initPackingResetButton();
+document.querySelector('.packing-stats__reset')?.addEventListener('click', () => {
+  if (!confirm('Odznaczyć wszystkie rzeczy na liście?')) return;
+  clearPacked();
+  location.reload();
+});

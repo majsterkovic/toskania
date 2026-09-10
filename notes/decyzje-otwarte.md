@@ -8,7 +8,7 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `trip.json`.
 
 ## 1. Piza + Lucca — ✅ WDROŻONE (nowy dzień 4, 15.09)
 - **Wygrała z [[San Gimignano]]**: bliżej i łatwiej dojechać (auto do Lukki + pociąg do Pizy), dwa miejsca za cenę jednego ([[Lucca]] dotąd tylko mijana), a blok Bargi miał słabszy dzień do poświęcenia niż napięty blok Chianti.
-- **Zrealizowane**: dzień 4 = auto Barga→Lucca (wyjazd 8:30, ~40 min, parking poza murami) → mury/Piazza dell'Anfiteatro/Torre Guinigi/Duomo San Martino → lunch Da Giulio → pociąg Lucca→Pisa (~30 min) → Piazza dei Miracoli + Krzywa Wieża (z zewnątrz na trawniku, bezpłatnie + Duomo wewnątrz gratis) → pociąg do Viareggio (morze, zachód słońca) → powrót pociągiem Viareggio→Lucca → auto do Bargi. Zastąpił Castiglione di Garfagnana + Orecchiella.
+- **Zrealizowane**: dzień 4 = auto Barga→Lucca (wyjazd 9:20, ~40 min, parking poza murami) → mury/Piazza dell'Anfiteatro/Torre Guinigi/Duomo San Martino → lunch Da Giulio (13:00) → pociąg Lucca→Pisa S. Rossore (16:42) → Piazza dei Miracoli + Krzywa Wieża (z zewnątrz na trawniku, bezpłatnie + Duomo wewnątrz gratis) → pociąg do Viareggio (19:02, morze, zachód słońca) → powrót pociągiem Viareggio→Lucca → auto do Bargi. Zastąpił Castiglione di Garfagnana + Orecchiella.
 - Koszty: pociągi (~€8–10/os) + Torre Guinigi (€6,50–8/os). Rezygnacja ze wspinaczki na Wieżę (€20/os) oszczędza €100 w grupie i zdejmuje presję sztywnego slotu czasowego.
 
 ## Baza 1 — D5 = pętla Monte Forato (2026-07-19) — ✅ WDROŻONE

@@ -90,6 +90,28 @@ function makeIcon(type) {
 const OSRM_BASE = 'https://router.project-osrm.org/route/v1/driving';
 const OSRM_CACHE_KEY_PREFIX = 'osrm_v3_'; // v3: cache now also carries durationMin — bump to drop stale v2 entries
 
+/** Progi kolorów jak driveLevel() w render.js — jeden zestaw reguł. */
+function driveLevel(km) {
+  if (!km) return null;
+  if (km >= 60) return 'high';
+  if (km >= 40) return 'medium';
+  return 'low';
+}
+
+/**
+ * Opcja A (jedno źródło prawdy): kafelek startuje z cache (trip.json),
+ * a gdy live OSRM odpowie — aktualizuje się razem z panelem.
+ */
+function updateTileKm(dayNum, distKm) {
+  if (!(distKm > 0)) return;
+  const km = Math.round(distKm);
+  const el = document.querySelector(`#mapa [data-imap-day="${dayNum}"] .map-filter__km`);
+  if (!el) return;
+  el.textContent = `~${km}km`;
+  const level = driveLevel(km);
+  if (level) el.dataset.drive = level;
+}
+
 async function fetchOSRMRoute(waypointsLatLon) {
   if (!waypointsLatLon || waypointsLatLon.length < 2) return null;
   const roundedKey = waypointsLatLon.map(([lat, lon]) => `${lat.toFixed(4)},${lon.toFixed(4)}`).join(';');
@@ -428,6 +450,7 @@ export function initInteractiveMap(containerId, plan) {
           if (dayPolyline) { group.removeLayer(dayPolyline); dayPolyline = null; }
           L.polyline(route, { color: '#9a8f82', weight: 2.5, opacity: 0.8 }).addTo(group);
           if (distanceKm > 0) layerGroups[day.day_num]._distanceKm = distanceKm;
+          updateTileKm(day.day_num, distanceKm);
         });
       }
       return;
@@ -493,6 +516,7 @@ export function initInteractiveMap(containerId, plan) {
         L.polyline(route, { color: accentColor, weight: 2.5, opacity: 0.8 }).addTo(group);
         // Store distanceKm for panel display
         if (distanceKm > 0) layerGroups[day.day_num]._distanceKm = distanceKm;
+        updateTileKm(day.day_num, distanceKm);
       });
     }
   });

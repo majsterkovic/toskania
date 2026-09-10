@@ -440,7 +440,7 @@
       "label": "TRANZYT → NIEMCY",
       "title": "Poznań → Unterhaching (Monachium)",
       "image": "kufstein",
-      "drive_km": 935,
+      "drive_km": 850,
       "drive_h": "9,5–10 h",
       "base_id": null,
       "route_points": [
@@ -637,7 +637,7 @@
       "label": "TRANZYT → TOSKANIA",
       "title": "Unterhaching → Barga (Garfagnana)",
       "image": "barga",
-      "drive_km": 645,
+      "drive_km": 634,
       "drive_h": "8–8,5 h",
       "base_id": "base1",
       "route_points": [
@@ -1115,7 +1115,7 @@
           "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym"
         }
       ],
-      "daily_km_estimate": 41,
+      "daily_km_estimate": 46,
       "eta_timeline": [
         {
           "time": "09:00",
@@ -1424,7 +1424,9 @@
           "event": "Powrót do bazy Barga"
         }
       ],
-      "daily_km_estimate": 75,
+      "daily_km_estimate": 62,
+      "km_lock": true,
+      "km_note": "Tylko auto Barga↔Lucca (pętla OSRM 62 km); Piza i Viareggio pociągiem — skrypt km:refresh celowo pomija.",
       "crowd_tip": "Piazza dei Miracoli w Pizie jest zatłoczona praktycznie cały dzień w sezonie — jak Florencja, to świadomy kompromis (plan zwykle omija tłumy, ale Krzywa Wieża jest tego warta). Strategia: Lucca rano (spokojniejsza i kameralna), Piza po południu ze slotem na Wieżę zarezerwowanym z wyprzedzeniem. Na samym placu tłum jest nieunikniony, ale mury Lukki i owalna Piazza dell'Anfiteatro dają oddech.",
       "warning": "Krzywa Wieża wymaga rezerwacji slotu godzinowego z wyprzedzeniem (opapisa.it) — bez tego można obejrzeć plac, Duomo i zrobić zdjęcia, ale nie wejść na wieżę. Piazza dei Miracoli i (w mniejszym stopniu) Lucca to najbardziej turystyczne punkty całego wyjazdu — spodziewaj się tłumów, zwłaszcza w porze południowej pod Wieżą. Dzień oparty na rozkładzie pociągów Lucca↔Pisa↔Viareggio — sprawdź aktualne godziny Trenitalia bliżej wyjazdu. Ostatni pociąg Viareggio→Lucca odjeżdża ok. 22:10 (przyjazd 22:31); planowany powrót o 20:15 daje prawie dwie godziny zapasu, ale nie wolno go przegapić, bo auto stoi w Lucce.",
       "summary": "Świadomie „turystyczny\" dzień, ale w spokojnym tempie. Autem jedziemy do Lukki (wł. Lucca) — miasta otoczonego kompletnym renesansowym pierścieniem murów, po których dziś spaceruje się jak po parku; w środku owalny plac wzniesiony na fundamentach rzymskiego amfiteatru (Piazza dell'Anfiteatro) i średniowieczna wieża z drzewami na szczycie (Torre Guinigi). Potem pociągiem do Pizy, na słynny plac katedralny (Piazza dei Miracoli) z pochyloną Krzywą Wieżą. Na finał trzeci bok trójkąta kolejowego — kwadrans do Viareggio nad Morzem Tyrreńskim: deptak Liberty, nogi w wodzie i zachód słońca prosto w morze o 19:31. Jedyne spotkanie z morzem w całym planie.",
@@ -1524,7 +1526,7 @@
           "note": "Zatankuj rano — w Fornovolasco stacji brak."
         }
       ],
-      "daily_km_estimate": 24,
+      "daily_km_estimate": 31,
       "eta_timeline": [
         {
           "time": "08:00",
@@ -1729,7 +1731,7 @@
           "note": "Opcjonalny postój na A11 — kawa przed Sieną."
         }
       ],
-      "daily_km_estimate": 73,
+      "daily_km_estimate": 72,
       "eta_timeline": [
         {
           "time": "09:00",
@@ -1920,7 +1922,8 @@
           43.1595,
           11.3158
         ]
-      }
+      },
+      "daily_km_estimate": 196
     },
     {
       "date": "19.09 (sob)",
@@ -2106,7 +2109,7 @@
           "event": "Powrót do bazy (67 min z Raddy)"
         }
       ],
-      "daily_km_estimate": 134,
+      "daily_km_estimate": 135,
       "crowd_tip": "Castello di Brolio: otwieraj o 10:00, tłumy od 11:00. Badia a Coltibuono: wino i abbey — rezerwacja degustacji obowiązkowa. Radda in Chianti: popularna, przyjdź przed obiadem lub po 17:00.",
       "summary": "Klasyczny dzień w krainie Chianti, wśród winnic i cyprysów. Zamek rodu Ricasoli (Castello di Brolio, istnieje od 1141 r.) — to tutaj w XIX w. spisano „recepturę\" słynnego czerwonego wina Chianti Classico. Dalej benedyktyńskie opactwo z XI w. (Badia a Coltibuono) z ogrodem ziołowym i degustacją win. Na wieczór miasteczko Radda in Chianti — średniowieczne, na wzgórzu (530 m n.p.m.), dawna stolica związku miast Chianti.",
       "warning": "Baza w Murlo jest dobrze polozona dla Crete Senesi i Val d'Orcia, ale DALEKO od Chianti — ten dzien to teraz najdluzszy dojazd w bloku bazy 2: 49 min do Brolio, 67 min powrotu z Raddy (pelna petla ~2,5 h za kierownica, bylo ~1,6 h). Wyjazd wczesniej (8:30) niz w oryginalnym planie, zeby zdazyc na otwarcie Brolio o 10:00 bez posiechu.",
@@ -2300,7 +2303,7 @@
           "event": "Powrót do bazy (49 min z Asciano)"
         }
       ],
-      "daily_km_estimate": 76,
+      "daily_km_estimate": 79,
       "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto.",
       "warning": "Z bazy w Murlo ten dzień jest LŻEJSZY niż był z Chianti (dojazd do Monte Oliveto skrócony o 25 min: 61→36 min) — dawny deficyt czasowy w dużej mierze zniknął. Bosco della Ragnaia zostaje opcjonalne, ale teraz bardziej z wyboru niż z konieczności.",
       "summary": "Zupełnie inny krajobraz — Crete Senesi, gliniaste, niemal „księżycowe\" wzgórza na południe od Sieny. Głównym punktem jest ceglane opactwo ukryte wśród cyprysów (Abbazia di Monte Oliveto Maggiore) z zachwycającym cyklem renesansowych fresków o życiu św. Benedykta. Opcjonalnie „ogród filozoficzny\" schowany w dębowym lesie (Bosco della Ragnaia). Po drodze miasteczko Asciano i charakterystyczne białe gliniane pagórki (tzw. biancane).",
@@ -2501,7 +2504,7 @@
         }
       ],
       "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
-      "daily_km_estimate": 116,
+      "daily_km_estimate": 118,
       "summary": "Solidny dzień za kierownicą (ok. 69 min w jedną stronę, krócej niż z dawnego Chianti), za to w najpiękniejszej dolinie regionu — Val d'Orcia, krajobrazie wpisanym na listę UNESCO. Pienza — renesansowe „miasto idealne\" zaprojektowane dla papieża Piusa II, słynne z sera pecorino i widoku na dolinę. Bagno Vignoni — wioska, której rynek zajmuje zabytkowy basen termalny zamiast placu. Na koniec Montalcino — twierdza z rozległą panoramą i degustacja słynnego czerwonego wina Brunello.",
       "weather": {
         "label": "Pienza / Val d Orcia",
@@ -2698,7 +2701,7 @@
           "event": "Powrót do bazy"
         }
       ],
-      "daily_km_estimate": 54,
+      "daily_km_estimate": 57,
       "wine_tasting": {
         "place": "Enoteca Italiana — Fortezza Medicea",
         "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
@@ -2926,7 +2929,9 @@
           "event": "Powrót do bazy Chianti"
         }
       ],
-      "daily_km_estimate": 54,
+      "daily_km_estimate": 56,
+      "km_lock": true,
+      "km_note": "Tylko auto Murlo↔Siena (pętla OSRM 56 km, parking + pociąg do Florencji); skrypt km:refresh celowo pomija.",
       "crowd_tip": "To jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Duomo, Ponte Vecchio i Piazza della Signoria są zatłoczone praktycznie cały dzień w sezonie. Jedyna realna strategia: przyjechać najwcześniej jak się da (pociąg ok. 8:00), zobaczyć Piazza del Duomo przed 10:00, zanim zjadą się grupy z autokarów, i zaakceptować, że popołudnie na Ponte Vecchio i tak będzie ścisk.",
       "warning": "Wizyta w Galerii Uffizi wymaga wcześniejszego zakupu biletu ze slotem godzinowym online (tickets.uffizi.it). Młodzież UE 18–25 lat musi mieć przy sobie dowody tożsamości do biletu ulgowego za €2. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia przed wyjazdem.",
       "summary": "Jedyny świadomie „tłumny\" dzień — Florencja, dokąd jedziemy wygodnie pociągiem z Sieny. Plac katedralny z bazyliką Santa Maria del Fiore i słynną renesansową kopułą Brunelleschiego, baptysterium ze złoconymi „Wrotami Raju\" i dzwonnica Giotta (oglądane z zewnątrz i bezpłatne wnętrze nawy). Dalej Piazza della Signoria z plenerową galerią rzeźb, wizyta w Galerii Uffizi ze słynnymi „Narodzinami Wenus” Botticellego, most złotników nad rzeką Arno (Ponte Vecchio) i spacer po rzemieślniczej dzielnicy za rzeką (Oltrarno).",
@@ -3342,7 +3347,7 @@
       "label": "TRANZYT → DOM",
       "title": "Fischbachau → Poznań (powrót do domu)",
       "image": "poznan",
-      "drive_km": 892,
+      "drive_km": 897,
       "drive_h": "9–9,5 h",
       "base_id": null,
       "route_points": [
@@ -3562,7 +3567,7 @@
   ],
   "practical_info": {
     "vignettes": {
-      "austria": "Potrzebne DWIE winiety: 10-dniowa (€12,80) aktywowana 12/13.09 NIE obejmie powrotu 26.09. Najtaniej 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 26.09), razem €19,20 — asfinag.at. Dojazd do Unterhaching 12.09 bez winiety (Austria mijana dopiero 13.09). Dodatkowo A13 Brenner Streckenmaut €12,50 za każdy przejazd (2× = €25) — oddzielnie na shop.asfinag.at.",
+      "austria": "Potrzebne DWIE winiety: 10-dniowa (€12,80) aktywowana 12/13.09 NIE obejmie powrotu 25.09. Najtaniej 2× e-winieta 1-dniowa po €9,60 (na 13.09 i na 25.09), razem €19,20 — asfinag.at. Dojazd do Unterhaching 12.09 bez winiety (Austria mijana dopiero 13.09). Dodatkowo A13 Brenner Streckenmaut €12,50 za każdy przejazd (2× = €25) — oddzielnie na shop.asfinag.at.",
       "italy": "Płatne bramki: gotówka lub karta bezpośrednio"
     },
     "climate": {

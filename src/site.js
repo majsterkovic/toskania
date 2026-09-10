@@ -4,18 +4,20 @@
  */
 import { swapMapTiles } from './maps.js';
 import { esc } from './html.js';
+import { doneStorageKey, getDoneIds, setDoneId } from './done.js';
 import './styles/chat.css';
 
 const BASE = import.meta.env.BASE_URL;
 
 const NAV_LINKS = [
   ['plan', '', 'Plan'],
+  ['bazy', 'bazy/', 'Bazy'],
   ['mapa', 'mapa/', 'Mapa'],
-  ['galeria', 'galeria/', 'Galeria'],
   ['praktyczne', 'praktyczne/', 'Praktyczne'],
   ['packing', 'packing/', 'Pakowanie'],
   ['pamiatki', 'pamiatki/', 'Pamiątki'],
   ['short', 'short/', 'Skrót'],
+  ['galeria', 'galeria/', 'Galeria'],
 ];
 
 /** Nawigacja serwisu. `active` = klucz bieżącej strony (plan/mapa/galeria/praktyczne/short). */
@@ -49,8 +51,8 @@ export function renderSiteFooter(trip) {
 
 /** Checkboxy todo z zapisem w localStorage (strona Praktyczne). */
 export function initTodo(trip) {
-  const STORAGE_KEY = `todo-done-${trip.meta.storage_key}`;
-  const done = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+  const storageKey = doneStorageKey(trip);
+  const done = getDoneIds(storageKey);
   document.querySelectorAll('.todo-check').forEach((cb) => {
     const id = cb.dataset.todoId;
     if (done.has(id)) {
@@ -58,9 +60,8 @@ export function initTodo(trip) {
       cb.closest('.todo-item')?.classList.add('is-done');
     }
     cb.addEventListener('change', () => {
-      if (cb.checked) done.add(id); else done.delete(id);
+      setDoneId(storageKey, id, cb.checked);
       cb.closest('.todo-item')?.classList.toggle('is-done', cb.checked);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify([...done]));
     });
   });
 }

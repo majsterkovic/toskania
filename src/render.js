@@ -68,6 +68,7 @@ import IMAGE_MANIFEST from './image-manifest.json';
 import { esc } from './html.js';
 import { config } from './trip.js';
 import { reservationGroups, todoForChecklist } from './reservations.js';
+import { doneStorageKey, getDoneIds, withoutDone } from './done.js';
 
 function imgSrc(relativePath) {
   if (!relativePath) return '';
@@ -1003,16 +1004,46 @@ function groupPhases(days, meta) {
 
 function renderBaseInfo(base) {
   if (!base) return '';
+  // Na osi czasu tylko skrót — pełny opis noclegu (adres, sklep, GPS)
+  // mieszka na osobnej zakładce Bazy.
   return `
     <div class="tl-baseinfo">
       <p class="tl-baseinfo__label">${esc(base.label)}${base.region ? ` · ${esc(base.region)}` : ''}</p>
       <h3 class="tl-baseinfo__name">${esc(base.name)}</h3>
       ${base.nights ? `<p class="tl-baseinfo__nights">${esc(base.nights)}</p>` : ''}
-      ${base.accommodation ? `<p class="tl-baseinfo__acc"><strong>Nocleg:</strong> ${esc(base.accommodation)}</p>` : ''}
-      ${base.local_shop ? `<p class="tl-baseinfo__acc">🥩 <strong>Sklep w okolicy (~10 min autem):</strong> ${esc(base.local_shop)}</p>` : ''}
-      ${base.booking_tip ? `<p class="tl-baseinfo__tip">→ ${esc(base.booking_tip)}</p>` : ''}
-      ${base.gps_hint ? `<p class="tl-baseinfo__gps muted">📍 ${esc(base.gps_hint)}</p>` : ''}
+      <p class="tl-baseinfo__more"><a href="${BASE_URL}bazy/">Szczegóły noclegu →</a></p>
     </div>`;
+}
+
+/** Pełna karta bazy na zakładkę Bazy (adres, sklep, GPS, tip). */
+export function renderBaseCard(base) {
+  if (!base) return '';
+  const mapsUrl = Array.isArray(base.coords) && base.coords.length === 2
+    ? `https://www.google.com/maps/search/?api=1&query=${base.coords[0]},${base.coords[1]}`
+    : '';
+  return `
+    <article class="base-card" id="baza-${esc(base.id)}">
+      <p class="base-card__eyebrow">${esc(base.label)}${base.region ? ` · ${esc(base.region)}` : ''}</p>
+      <h2 class="base-card__name">${esc(base.name)}</h2>
+      ${base.nights ? `<p class="base-card__nights">${esc(base.nights)}</p>` : ''}
+      ${base.description ? `<p class="base-card__desc">${esc(base.description)}</p>` : ''}
+      ${base.accommodation ? `<p class="base-card__row"><strong>Nocleg:</strong> ${esc(base.accommodation)}</p>` : ''}
+      ${base.local_shop ? `<p class="base-card__row">🥩 <strong>Sklep w okolicy (~10 min autem):</strong> ${esc(base.local_shop)}</p>` : ''}
+      ${base.booking_tip ? `<p class="base-card__row base-card__tip">→ ${esc(base.booking_tip)}</p>` : ''}
+      ${base.gps_hint ? `<p class="base-card__row muted">📍 ${esc(base.gps_hint)}</p>` : ''}
+      ${mapsUrl ? `<p class="base-card__maps"><a href="${esc(mapsUrl)}" target="_blank" rel="noopener">Otwórz w Mapach Google ↗</a></p>` : ''}
+    </article>`;
+}
+
+export function renderBases(bases) {
+  const cards = (bases || []).map(renderBaseCard).join('');
+  return `
+    <section class="section" id="bazy">
+      <h1 class="section-title">Bazy noclegowe</h1>
+      <p class="section-lead">Adresy, sklepy w okolicy i nawigacja — wszystko o noclegach w jednym miejscu.</p>
+      <div class="bases-grid">${cards}</div>
+    </section>
+  `;
 }
 
 export function renderTimeline(plan) {

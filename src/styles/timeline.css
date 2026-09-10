@@ -451,6 +451,13 @@ a.tl-row:hover .tl-row__chev { opacity: 1; transform: translateX(2px); }
 .tl-baseinfo__gps { font-size: 0.86rem; line-height: 1.45; margin-top: 0.35rem; }
 .tl-baseinfo__tip { color: var(--terracotta-deep); }
 .tl-baseinfo__gps { font-size: 0.78rem; }
+.tl-baseinfo__more { margin-top: 0.6rem; }
+.tl-baseinfo__more a {
+  color: var(--terracotta);
+  font-weight: 600;
+  text-decoration: none;
+}
+.tl-baseinfo__more a:hover { text-decoration: underline; }
 .tl-basemap__legend {
   display: flex;
   flex-wrap: wrap;

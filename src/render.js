@@ -212,7 +212,7 @@ export function renderInteractiveMap(days) {
       <h1 class="section-title">Mapa Toskanii</h1>
       <p class="section-lead">Wybierz dzień — markery ponumerowane, linia trasy i lista atrakcji pojawią się obok.</p>
       <div class="imap-filters">
-        <button type="button" class="map-filter map-filter--active" data-imap-day="all">
+        <button type="button" class="map-filter map-filter--all map-filter--active" data-imap-day="all">
           <span class="map-filter__num">Wszystkie</span>
         </button>
         ${filterBtns}

@@ -54,7 +54,9 @@ html.dark .leaflet-tile-pane {
   flex-direction: column;
   align-items: center;
   gap: 0.05rem;
-  padding: 0.4rem 0.75rem;
+  width: 4.5rem;
+  flex: 0 0 auto;
+  padding: 0.4rem 0.25rem;
   font-family: var(--font-sans);
   font-size: 0.8rem;
   border: 1px solid var(--border);
@@ -105,6 +107,38 @@ html.dark .leaflet-tile-pane {
 }
 .map-filter--active .map-filter__km {
   color: rgba(255, 255, 255, 0.75);
+}
+.map-filter--all {
+  width: auto;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+/* ── Panel: nawigacja ‹ dzień › ─────────────────────────────── */
+.imap-panel__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.35rem;
+}
+.imap-navbtn {
+  width: 1.9rem;
+  height: 1.9rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.imap-navbtn:hover:not(:disabled) {
+  border-color: var(--oro);
+  color: var(--terracotta);
+}
+.imap-navbtn:disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 /* ── Interactive map: wrap + panel ──────────────────────────── */
 .imap-wrap {

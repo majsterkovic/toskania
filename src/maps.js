@@ -506,6 +506,30 @@ export function initInteractiveMap(containerId, plan) {
   if (allLatLngs.length) map.fitBounds(L.latLngBounds(allLatLngs), { padding: [36, 36] });
 
   // ── Panel update ──────────────────────────────────────────
+  /** Poprzedni/następny dzień z listy mapDays (null na krańcach). */
+  function dayNav(dayNum) {
+    const idx = mapDays.findIndex(d => d.day_num === dayNum);
+    if (idx < 0) return { prev: null, next: null };
+    return {
+      prev: idx > 0 ? mapDays[idx - 1].day_num : null,
+      next: idx < mapDays.length - 1 ? mapDays[idx + 1].day_num : null,
+    };
+  }
+
+  function dayNavHtml(dayNum) {
+    const { prev, next } = dayNav(dayNum);
+    const btn = (target, dir, label) =>
+      target != null
+        ? `<button type="button" class="imap-navbtn" data-imap-day="${target}" aria-label="${label}">${dir}</button>`
+        : `<button type="button" class="imap-navbtn" disabled aria-hidden="true">${dir}</button>`;
+    return `
+      <div class="imap-panel__nav">
+        ${btn(prev, '‹', 'Poprzedni dzień')}
+        <span class="imap-panel__day">Dzień ${dayNum}</span>
+        ${btn(next, '›', 'Następny dzień')}
+      </div>`;
+  }
+
   function updatePanel(dayNum) {
     if (!panel) return;
     if (dayNum === 'all') {
@@ -539,9 +563,9 @@ export function initInteractiveMap(containerId, plan) {
           </div>
         </div>` : '';
 
-      panel.innerHTML = `
+        panel.innerHTML = `
         <div class="imap-panel__head">
-          <div class="imap-panel__day">Dzień ${day.day_num}</div>
+          ${dayNavHtml(day.day_num)}
           <div class="imap-panel__date">${esc(day.date || '')}</div>
           <div class="imap-panel__title">${esc(day.title || '')}</div>
           ${kmHtml}
@@ -595,7 +619,7 @@ export function initInteractiveMap(containerId, plan) {
 
     panel.innerHTML = `
       <div class="imap-panel__head">
-        <div class="imap-panel__day">Dzień ${day.day_num}</div>
+        ${dayNavHtml(day.day_num)}
         <div class="imap-panel__date">${esc(day.date || '')}</div>
         <div class="imap-panel__title">${esc(day.title || '')}</div>
         ${base ? `<div class="imap-panel__base">📍 ${esc(base.name)}${destBase && destBase.id !== base.id ? ` → ${esc(destBase.name)}` : ''}</div>` : ''}
@@ -606,8 +630,7 @@ export function initInteractiveMap(containerId, plan) {
     `;
   }
 
-  // ── Filter wiring ──────────────────────────────────────────
-  const filterBtns = document.querySelectorAll('[data-imap-day]');
+  // ── Filter wiring (delegacja: strzałki ‹ › w panelu dokładane są dynamicznie) ──
   let currentView = 'all';
 
   function fitCurrentView() {
@@ -636,19 +659,25 @@ export function initInteractiveMap(containerId, plan) {
     }
     fitCurrentView();
 
-    filterBtns.forEach(btn => {
-      btn.classList.toggle('map-filter--active', btn.dataset.imapDay === String(dayNum));
+    document.querySelectorAll('#mapa [data-imap-day]').forEach(btn => {
+      btn.classList.toggle(
+        'map-filter--active',
+        btn.matches('.map-filter') && btn.dataset.imapDay === String(dayNum)
+      );
     });
 
     updatePanel(dayNum);
   }
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+  if (!document.documentElement.dataset.imapWired) {
+    document.documentElement.dataset.imapWired = '1';
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('#mapa [data-imap-day]');
+      if (!btn || btn.disabled) return;
       const val = btn.dataset.imapDay;
       showDay(val === 'all' ? 'all' : Number(val));
     });
-  });
+  }
 
   updatePanel('all');
 

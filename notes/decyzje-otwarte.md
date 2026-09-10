@@ -56,3 +56,12 @@ Cel: zaoszczędzić e-winietę A12 (€9,60), jadąc Unterhaching → Garmisch �
 | Brenner → Fischbachau (powrót, 25.09) | 146 km / 124 min | 183 km / 171 min | **+47 min, +38 km** — Garmisch jest na zachód, Fischbachau na wschód |
 
 Garmisch omija **tylko winietę**, nie Streckenmaut. Na D2 (już 8–8,5 h) €9,60 nie warte pół godziny w 5 osób. Na D14 twardy check-in do 18:00, ETA ~17:00 — extra ~50 min zjada cały bufor. **Rekomendacja: jechać A12+A13 w obie strony.**
+
+## 7. Dzień 1: Trasa Tarnowo Podgórne → Unterhaching przez A72 i A9 — ✅ ZDECYDOWANE I WDROŻONE (2026-09-10)
+
+Użytkownik wybrał trasę omijającą obwodnicę Berlina i granicę w Świecku (wariant Google Maps przez A72 i A9):
+- **Trasa**: Tarnowo Podgórne → DW307 → A2 (węzeł Buk) → węzeł Jordanowo → DW276 (Krosno Odrzańskie) → DK32 (Gubin / Guben) → B97/B169 (Cottbus/Schwarzheide) → A13 → A4 → A72 (Chemnitz) → A9 south (Norymberga, Ingolstadt) → A99/A995 → Unterhaching (Hotel Fresh Inn).
+- **Parametry**: ~785 km (774 km do Monachium centrum), ~8,5–9 h czystej jazdy (vs 807 km / 8h 20 min przez Berlin).
+- **Korzyści**: Omija ryzyko zatorów na Berliner Ring (A10) i kontrole federalne w Świecku; niższa opłata za A2 w Polsce (zjazd w Jordanowie).
+- **Logistyka**: Obiad/kawa w rejonie Vogtland (A72) lub Fränkische Schweiz (A9); tankowanie przed granicą w Gubinie (DK32).
+

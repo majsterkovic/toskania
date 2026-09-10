@@ -23,9 +23,9 @@
     "duration_days": 16,
     "calendar_days": "12.09 (sob) – 26.09 (sob) = 15 dni podróży + 27.09 (nd) dzień buforowy w domu; powrót w 2 dni (Murlo → Fischbachau → Poznań)",
     "route_summary": {
-      "outbound_km": "~1580 km w 2 dni (Poznań → Unterhaching → Barga)",
+      "outbound_km": "~1430 km w 2 dni (Tarnowo Podgórne → Unterhaching → Barga)",
       "return_km": "~1575 km w 2 dni (Murlo → Fischbachau → Poznań)",
-      "total_km": "~3155 km",
+      "total_km": "~3005 km",
       "tuscany_days": 11,
       "tuscany_bases": 2,
       "transit_nights_outbound": 1,
@@ -438,25 +438,33 @@
       "day_num": 1,
       "type": "transit",
       "label": "TRANZYT → NIEMCY",
-      "title": "Poznań → Unterhaching (Monachium)",
+      "title": "Tarnowo Podgórne → Unterhaching (Monachium)",
       "image": "kufstein",
-      "drive_km": 850,
-      "drive_h": "9,5–10 h",
+      "drive_km": 785,
+      "drive_h": "8,5–9 h",
       "base_id": null,
       "route_points": [
         {
-          "label": "Poznań",
+          "label": "Tarnowo Podgórne",
           "coords": [
-            52.4066,
-            16.9252
+            52.4626,
+            16.6734
           ],
           "kind": "home"
         },
         {
-          "label": "Świecko (granica PL/DE)",
+          "label": "Gubin / Guben (granica PL/DE)",
           "coords": [
-            52.352,
-            14.56
+            51.953,
+            14.717
+          ],
+          "kind": "transit"
+        },
+        {
+          "label": "Chemnitz — węzeł A4 / A72",
+          "coords": [
+            50.846,
+            12.853
           ],
           "kind": "transit"
         },
@@ -469,46 +477,63 @@
           "kind": "transit_night"
         }
       ],
-      "depart": "6:00–7:00 rano z Poznania",
-      "route": "A2 west (Świecko) → A12 → Berliner Ring A10 → A9 south → Nürnberg → Monachium → Unterhaching (Bawaria)",
+      "toll_sections": [
+        {
+          "name": "A2: Nowy Tomyśl ➔ Jordanowo",
+          "cost": "~7 zł",
+          "coords": [
+            [52.3337, 16.1264],
+            [52.2968, 15.5393]
+          ],
+          "note": "Płatny odcinek koncesyjny A2 (system biletowy). Pobierz bilet na bramce w Nowym Tomyślu, opłata przy zjeździe na S3 w Jordanowie (karta / telefon / gotówka)."
+        }
+      ],
+      "depart": "6:00 rano z Tarnowa Podgórnego",
+      "route": "A2 (węzeł Buk) → Jordanowo → DW276 (Krosno Odrz.) → DK32 (Gubin) → B97/B169 → A13 → A4 → A72 (Chemnitz) → A9 south (Nürnberg) → A99/A995 → Unterhaching",
       "route_segments": [
         {
-          "segment": "Poznań → Świecko (granica PL/DE)",
-          "road": "A2",
-          "km": "~175",
-          "note": "Videotolling AWSA Świecko–Konin ~138 zł"
+          "segment": "Tarnowo Podgórne → Niepruszewo (węzeł Buk) → Jordanowo",
+          "road": "DW307 → A2",
+          "km": "~95",
+          "note": "Węzeł Buk omija PPO Gołuski (odcinek Buk–Nowy Tomyśl bezpłatny). Odcinek Nowy Tomyśl–Jordanowo jest PŁATNY (~7 zł biletowy). Zjazd na S3 w Jordanowie."
         },
         {
-          "segment": "Świecko → Berlin (obwodnica)",
-          "road": "A12 → A10 Berliner Ring",
-          "km": "~115",
-          "note": "Unikaj centrum Berlina — A10 pełna obwodnica"
+          "segment": "Jordanowo → Krosno Odrzańskie → Gubin / Guben",
+          "road": "S3 → DW276 → DK32",
+          "km": "~85",
+          "note": "Przejazd przez Krosno Odrzańskie do granicy PL/DE w Gubinie (most na Nysie Łużyckiej)"
         },
         {
-          "segment": "Berlin → Norymberga",
-          "road": "A9 south",
-          "km": "~430",
-          "note": "Raststätte Frankenwald (most) ok. km 254"
+          "segment": "Guben → Cottbus (Chociebuż) → Schwarzheide",
+          "road": "B97 → A15 → B169",
+          "km": "~95",
+          "note": "Dolne Łużyce, droga B169 przez Senftenberg do węzła Schwarzheide na autostradzie A13"
         },
         {
-          "segment": "Norymberga → Monachium",
-          "road": "A9 south",
-          "km": "~165",
-          "note": "Ostatnie tankowanie w DE przed Austrią"
+          "segment": "Schwarzheide → Drezno (A4) → Chemnitz (A72)",
+          "road": "A13 → A4 → A72",
+          "km": "~150",
+          "note": "A13 na południe w stronę Drezna, przejście na A4 i na węźle Kreuz Chemnitz wjazd na A72"
         },
         {
-          "segment": "Monachium → Unterhaching (Bawaria)",
-          "road": "A8/A995 south",
-          "km": "~15",
-          "note": "Przedmieście na południe od Monachium — skraca najdłuższy dzień trasy o ~85 km względem noclegu w Kufstein"
+          "segment": "Chemnitz → Hof → Norymberga → Monachium (A9)",
+          "road": "A72 → A9 south",
+          "km": "~330",
+          "note": "Połączenie z A9 na Dreieck Bayerisches Vogtland; A9 na południe przez Frankonię obok Norymbergi i Ingolstadt"
+        },
+        {
+          "segment": "A9 → Unterhaching (Monachium)",
+          "road": "A99 / A995",
+          "km": "~30",
+          "note": "Wschodnia obwodnica Monachium (A99) i zjazd A995 prosto do hotelu w Unterhaching, omijając centrum"
         }
       ],
       "attractions": [],
       "food": {
-        "place": "Raststätte Frankenwald (most) lub Nürnberg-Feucht (A9)",
-        "address": "A9 km ~244 Rudolphstein (Frankenwald) lub 90537 Feucht (Nürnberg-Feucht West)",
+        "place": "Raststätte Vogtland (A72) lub Fränkische Schweiz / Nürnberg-Feucht (A9)",
+        "address": "A72 Pirk (Vogtland) lub A9 Pegnitz (Fränkische Schweiz) / 90537 Feucht",
         "dishes": [],
-        "note": "Dzień tranzytowy — lunch na autostradzie. Frankenwald = ikoniczne Brückenrasthaus nad A9.",
+        "note": "Dzień tranzytowy — lunch na autostradzie. Raststätte Vogtland przy A72 przed połączeniem z A9 lub Fränkische Schweiz / Nürnberg-Feucht na A9.",
         "price": "~€8–12"
       },
       "accommodation": {
@@ -522,7 +547,7 @@
       "practical_tips": [
         "Kup 1-dniową e-winietę AT na 13.09 (€9,60) przed wyjazdem — 10-dniowa (€12,80) NIE obejmie powrotu 25.09; drugą 1-dniową kup przed 25.09",
         "Tankuj w Niemczech przed Austrią — benzyna tańsza (~€0.15–0.20/L różnica)",
-        "Frankenwald Ost (A9 km 254) — jedyna mostowa Raststätte w Niemczech, dobry postój na lunch",
+        "Trasa przez A72 i A9 omija obwodnicę Berlina i pozwala zaoszczędzić na opłacie A2 (zjazd w Jordanowie)",
         "Unterhaching: hotel ma własny parking — bez szukania miejsca wieczorem"
       ],
       "parking": {
@@ -540,32 +565,38 @@
       },
       "fuel_stops": [
         {
-          "name": "Orlen / Shell przy A2 Świecko",
-          "location": "A2 km ~10 PL, przed granicą",
-          "road": "A2",
+          "name": "Stacja paliw przed granicą w Gubinie (DK32)",
+          "location": "Gubin / DK32 (przed przejściem granicznym)",
+          "road": "DK32",
           "hours": "24h",
-          "note": "Ostatnie tanie tankowanie w PL przed DE"
+          "note": "Ostatnie tanie tankowanie w PL przed wjazdem do Niemiec"
         },
         {
-          "name": "Raststätte Frankenwald Ost",
-          "location": "A9 km 254, Berg-Rudolphstein",
-          "road": "A9",
+          "name": "Raststätte Vogtland (A72) lub Fränkische Schweiz (A9)",
+          "location": "A72 (Pirk) / A9 (Pegnitz)",
+          "road": "A72 / A9",
           "hours": "24/7",
-          "note": "Aral, McDonald's — dobry postój lunchowy ~700 km od startu"
+          "note": "Dobre punkty na postój, kawę i dotankowanie na niemieckiej autostradzie"
         }
       ],
-      "narrative": "Budzik dzwoni jeszcze przed świtem — wyjeżdżamy z Poznania ok. 5:30–6:00, sobota, ulice puste, ciężarówek na trasie wyraźnie mniej niż w tygodniu. Przez Świecko na A12 w kierunku Berlina, obwodnicą A10 omijamy centrum, dalej A9 na południe — kilometry mijają w rytmie kawy z termosu i planów na najbliższe dwa tygodnie. Ok. 11:00 postój na lunch w Raststätte Frankenwald Ost — charakterystyczny most zawieszony nad samą autostradą, jedna z niewielu takich konstrukcji w Niemczech, więc nawet przerwa na kanapkę ma tu coś z atrakcji. To też dobre miejsce na tankowanie: paliwo w Niemczech wyraźnie tańsze niż w Austrii, więc warto nabić bak do pełna. Dalej A9 przez Norymbergę i Monachium, krajobraz robi się coraz bardziej pofałdowany. Unterhaching leży tuż za południową granicą miasta — na miejscu ok. 15:30–16:00, bez wjeżdżania w monachijski ruch. Hotel Fresh Inn to zwykły, wygodny nocleg tranzytowy — kolacja w pobliżu i wcześnie spać, bo jutro czeka jeszcze kawałek Niemiec, Brenner i Toskania.",
+      "narrative": "Budzik dzwoni jeszcze przed świtem — wyjeżdżamy z Tarnowa Podgórnego ok. 5:30–6:00 w sobotni poranek. Zamiast zatłoczonej obwodnicy Berlina wybieramy krótszą kilometrowo trasę przez południowo-zachodnią Polskę i Saksonię: z A2 zjeżdżamy na węźle Jordanowo, mijamy Krosno Odrzańskie i przekraczamy granicę w Gubinie. Przez Dolne Łużyce i okolice Cottbus docieramy do autostrady A13 w stronę Drezna, a dalej autostradą A4 odbijamy na A72 przez Chemnitz i malowniczą Saksonię. Na wysokości Hof łączymy się z autostradą A9 — ok. 11:30–12:00 pora na obiad i kawę na MOP-ie (np. Raststätte Vogtland lub Fränkische Schweiz). Popołudniu suniemy A9 na południe obok Norymbergi i Ingolstadt. Do Unterhaching pod Monachium docieramy ok. 15:30–16:00 wschodnią obwodnicą A99/A995, bez wjeżdżania w miejski ruch. Hotel Fresh Inn to wygodny nocleg tranzytowy z prywatnym parkingiem — szybka kolacja w okolicy i wcześnie spać, bo jutro ruszamy przez Alpy prosto do Toskanii.",
       "web_research": [
+        {
+          "topic": "Alternatywy trasy do Monachium: przez Drezno (A72/A9) vs przez Berlin (A12/A10/A9)",
+          "summary": "Porównanie dwóch głównych korytarzy z Tarnowa Podgórnego: (1) Wariant Drezno/Saksonia (wybrany w planie): 774 km do centrum Monachium (~785 km do Unterhaching), ~8h 45 min. Przebieg: A2 (Buk) → Jordanowo → DW276 (Krosno Odrz.) → DK32 (Gubin) → B97/B169 → A13 → A4 (obok Drezna) → A72 (Chemnitz) → A9 (Norymberga) → Unterhaching. O 33 km krótszy, omija korki na Berliner Ringu (A10) i kontrole policji na granicy w Świecku; niższa opłata A2 (~7 zł). Minus: ~160 km dróg jednojezdniowych w PL i DE. (2) Wariant Berlin (klasyczny): 807 km, ~8h 20 min. 100% autostrady (A2 → Świecko → A12 → A10 ring → A9). Szybszy i jednostajny, ale ryzyko zatorów na A10 i opłata A2 18 zł (z Buku) lub 58 zł (z Poznania). Rekomendacja: wariant przez Saksonię jest pewniejszy w sobotnie poranki i omija roboty drogowe.",
+          "source": "https://www.google.com/maps/",
+          "checked": "2026-09"
+        },
+        {
+          "topic": "Opłaty na A2 (Tarnowo/Buk – Jordanowo) i brak Autopay na zachód od Nowego Tomyśla",
+          "summary": "Zasady opłat na trasie wyjazdowej: (1) Wjazd w Buku: wyjeżdżając z Tarnowa Podgórnego przez DW307 na węzeł Buk omijamy Punkt Poboru Opłat Gołuski (oszczędność 41 zł!). Odcinek Buk → Nowy Tomyśl jest bezpłatny. (2) Odcinek płatny Nowy Tomyśl → Jordanowo: w Nowym Tomyślu wjeżdżamy w system zamknięty – pobiera się bilet papierowy z automatu na bramce. Przy zjeździe na węźle Jordanowo (S3) płaci się ok. 7 zł zbliżeniowo kartą/telefonem lub gotówką (do Świecka byłoby 18 zł). (3) Brak videotollingu: na zachód od Nowego Tomyśla aplikacja Autopay NIE działa (kamery videotollingu są tylko na odcinku Poznań–Konin). Państwowy e-TOLL również nie obowiązuje. Płatność wyłącznie tradycyjna przy szlabanie. (4) Niemcy: autostrady A12/A10/A13/A4/A72/A9 dla aut osobowych są w 100% bezpłatne.",
+          "source": "https://www.autostrada-a2.pl/",
+          "checked": "2026-09"
+        },
         {
           "topic": "E-winieta Austria 10-dniowa",
           "summary": "€12,80 dla auta do 3,5 t na shop.asfinag.at — natychmiastowa aktywacja. Kup przed wyjazdem z Polski; data startu = 13.09 (dzień 2, pierwszy wjazd na autostradę AT).",
           "source": "https://shop.asfinag.at/en/toll-products/digital-vignette/10-day-vignette-car/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Opłaty A2 PL (Świecko–Konin)",
-          "summary": "Odcinek koncesyjny AWSA: ~129 PLN za cały Świecko–Konin (kat. 1). Od 11.03.2026 nowe stawki segmentowe Nowy Tomyśl–Konin: 40 PLN/50 km × 3. Konin–Stryków bezpłatny dla aut <3,5 t.",
-          "source": "https://www.autostrada-a2.pl/en/news/change-of-toll-rates-for-a2-motorway-in-nowy-tomysl-konin-section-2/",
           "checked": "2026-07"
         },
         {
@@ -581,10 +612,10 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Raststätte A9 (Frankenwald, Feucht, Köschinger Forst)",
-          "summary": "Serways: Frankenwald Ost/West (km 254, most), Nürnberg-Feucht Ost (km 385), Köschinger Forst Ost (km 450) — wszystkie 24/7, stacje Aral/OMV, McDonald's, ładowarki EV.",
-          "source": "https://www.serways.de/standorte/frankenwald-ost/",
-          "checked": "2026-07"
+          "topic": "MOP-y na trasie A72 i A9 (Vogtland, Fränkische Schweiz, Feucht)",
+          "summary": "Raststätte Vogtland Nord/Süd przy A72 (km ~140, stacja Total, restauracja) oraz na A9 Fränkische Schweiz (Pegnitz) i Nürnberg-Feucht (km 385) — wszystkie 24/7, stacje paliw, gastronomia.",
+          "source": "https://www.serways.de/",
+          "checked": "2026-09"
         }
       ],
       "opening_hours": {
@@ -594,34 +625,38 @@
       "eta_timeline": [
         {
           "time": "05:30",
-          "event": "Wyjazd z Poznania (autostrada A2 kierunek Świecko)"
+          "event": "Wyjazd z Tarnowa Podgórnego (DW307 → wjazd na A2 węzeł Buk)"
+        },
+        {
+          "time": "06:30",
+          "event": "Węzeł Jordanowo — zjazd z A2 na S3 / DW276 (kierunek Krosno Odrz.)"
         },
         {
           "time": "07:30",
-          "event": "Świecko — przejście graniczne PL/DE (A2 → A12)"
+          "event": "Gubin / Guben — granica PL/DE (ostatnie tankowanie w PL, wjazd na B97)"
         },
         {
-          "time": "08:30",
-          "event": "Obwodnica Berlina (A10 ring, zjazd na A9 południe)"
+          "time": "08:45",
+          "event": "Schwarzheide — wjazd na autostradę A13 w stronę Drezna"
         },
         {
-          "time": "11:00",
-          "event": "Postój Frankenwald Ost (A9, km 254) — lunch i tank DE"
+          "time": "09:45",
+          "event": "Węzeł Dresden-Nord / A4 → Kreuz Chemnitz (wjazd na A72)"
+        },
+        {
+          "time": "11:30",
+          "event": "Postój na obiad i tankowanie (A72 Raststätte Vogtland lub A9)"
         },
         {
           "time": "13:30",
-          "event": "Norymberga (A9/A6 węzeł Nürnberg) — bez zjazdu"
-        },
-        {
-          "time": "14:30",
-          "event": "Monachium — zjazd A8/A995 kierunek Unterhaching"
+          "event": "Norymberga (A9/A6 węzeł Nürnberg) — kontynuacja A9 na południe"
         },
         {
           "time": "15:30",
-          "event": "Unterhaching — Hotel Fresh Inn, parking hotelowy"
+          "event": "Unterhaching (Monachium) — Hotel Fresh Inn, parking hotelowy"
         }
       ],
-      "summary": "Pierwszy dzień drogi do Toskanii (~start 5:30–6:00): Poznań → Niemcy (A12/A10/A9) → Unterhaching (Monachium). Nocleg tranzytowy tuż pod Monachium — o ~85 km krócej niż dawny nocleg w Kufstein, reszta Austrii i Brenner zostają na dzień 2.",
+      "summary": "Pierwszy dzień drogi do Toskanii: Tarnowo Podgórne → Gubin → Saksonia (A13/A4/A72) → A9 (Norymberga) → Unterhaching (Monachium). Trasa przez Dolne Łużyce i Saksonię omija obwodnicę Berlina i droższy odcinek A2 do Świecka (~785 km, ~8,5–9 h czystej jazdy).",
       "weather": {
         "label": "Unterhaching (nocleg)",
         "coords": [

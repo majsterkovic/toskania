@@ -36,7 +36,7 @@ function renderDayView(dayNum) {
   initChrome();
   window.scrollTo(0, 0);
   if (day.type === 'transit' && day.route_points?.length) {
-    whenLeaflet(() => initTransitDayMap(`map-day-${dayNum}`, day.route_points));
+    whenLeaflet(() => initTransitDayMap(`map-day-${dayNum}`, day.route_points, day));
   } else if (day.base_id) {
     const base = plan.bases.find((b) => b.id === day.base_id);
     const destBase = day.next_base_id ? plan.bases.find((b) => b.id === day.next_base_id) : null;

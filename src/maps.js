@@ -237,7 +237,71 @@ export function initDayMap(containerId, base, attractions, destBase) {
  * granice, noclegi), połączona trasą drogową z OSRM. Brak koncepcji
  * "bazy/atrakcji" — to jednokierunkowa trasa przejazdowa.
  */
-export function initTransitDayMap(containerId, points) {
+function makeTollIcon() {
+  const size = 26;
+  const r = 13;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size + 7}" viewBox="0 0 ${size} ${size + 7}">
+    <circle cx="${r}" cy="${r}" r="${r - 1}" fill="#e67e22" stroke="#fff" stroke-width="2"/>
+    <text x="${r}" y="${r + 4}" text-anchor="middle" fill="#fff" font-family="'Outfit',sans-serif" font-size="14" font-weight="900">!</text>
+    <line x1="${r}" y1="${size - 1}" x2="${r}" y2="${size + 6}" stroke="#e67e22" stroke-width="2"/>
+  </svg>`;
+  return window.L.divIcon({
+    html: svg,
+    className: 'toll-marker-icon',
+    iconSize: [size, size + 7],
+    iconAnchor: [r, size + 7],
+    popupAnchor: [0, -(size + 7)],
+  });
+}
+
+function addTollLayers(target, tollSections) {
+  if (!window.L || !tollSections?.length) return;
+
+  tollSections.forEach((ts) => {
+    if (!ts.coords || ts.coords.length < 2) return;
+
+    // Marker z wykrzyknikiem na bramkach wjazdowych na płatny odcinek
+    const markerCoords = ts.marker_coords || ts.coords[0];
+    window.L.marker(markerCoords, { icon: makeTollIcon(), zIndexOffset: 500 })
+      .bindPopup(
+        `<div style="font-family:'Outfit',sans-serif;font-size:0.85rem;min-width:190px">` +
+        `<div style="font-weight:700;color:#d9534f;font-size:0.92rem;margin-bottom:3px">⚠️ Odcinek płatny A2</div>` +
+        `<div style="font-weight:600;margin-bottom:2px">${esc(ts.name)}</div>` +
+        (ts.cost ? `<div style="color:#e67e22;font-weight:700;margin:3px 0">Opłata: ${esc(ts.cost)}</div>` : '') +
+        (ts.note ? `<div style="font-size:0.78rem;color:#555;line-height:1.35;margin-top:4px">${esc(ts.note)}</div>` : '') +
+        `</div>`,
+        { maxWidth: 220 }
+      )
+      .addTo(target);
+
+    // Linia odcinka płatnego w wyróżniającym się kolorze (pomarańczowy #e67e22)
+    fetchOSRMRoute(ts.coords).then((res) => {
+      const lineCoords = res?.route || ts.coords;
+      const poly = window.L.polyline(lineCoords, {
+        color: '#e67e22',
+        weight: 4.5,
+        opacity: 0.95,
+        lineCap: 'round',
+        lineJoin: 'round',
+      }).addTo(target);
+
+      poly.bindPopup(
+        `<div style="font-family:'Outfit',sans-serif;font-size:0.85rem">` +
+        `<strong style="color:#d9534f">⚠️ Odcinek płatny: ${esc(ts.name)}</strong>` +
+        (ts.cost ? `<br><b style="color:#e67e22">Opłata: ${esc(ts.cost)}</b>` : '') +
+        (ts.note ? `<div style="font-size:0.78rem;color:#555;margin-top:3px">${esc(ts.note)}</div>` : '') +
+        `</div>`
+      );
+    });
+  });
+}
+
+/**
+ * Mini mapa dnia tranzytowego — uporządkowana lista punktów trasy (miasta,
+ * granice, noclegi), połączona trasą drogową z OSRM. Brak koncepcji
+ * "bazy/atrakcji" — to jednokierunkowa trasa przejazdowa.
+ */
+export function initTransitDayMap(containerId, points, day) {
   if (!window.L) return;
   const el = document.getElementById(containerId);
   if (!el) return;
@@ -245,7 +309,9 @@ export function initTransitDayMap(containerId, points) {
   const pts = (points || []).filter((p) => p.coords);
   if (!pts.length) return;
 
-  const map = window.L.map(el, { zoomControl: false, scrollWheelZoom: false });
+  const map = window.L.map(el, { zoomControl: true, scrollWheelZoom: false });
+  map.on('click', () => map.scrollWheelZoom.enable());
+  map.on('mouseout', () => map.scrollWheelZoom.disable());
   addBasemap(map);
   registerMap({ map, type: 'day' });
 
@@ -282,7 +348,19 @@ export function initTransitDayMap(containerId, points) {
         };
         kmCtrl.addTo(map);
       }
+      if (day?.toll_sections?.length) {
+        const tollCtrl = window.L.control({ position: 'bottomleft' });
+        tollCtrl.onAdd = () => {
+          const div = window.L.DomUtil.create('div', 'map-km-badge map-toll-badge');
+          div.innerHTML = `⚠️ Odcinek płatny: A2 (~7 zł)`;
+          return div;
+        };
+        tollCtrl.addTo(map);
+        addTollLayers(map, day.toll_sections);
+      }
     });
+  } else if (day?.toll_sections?.length) {
+    addTollLayers(map, day.toll_sections);
   }
 
   setTimeout(() => { try { map.invalidateSize(); fitView(); } catch (_) {} }, 150);
@@ -451,6 +529,9 @@ export function initInteractiveMap(containerId, plan) {
           L.polyline(route, { color: '#9a8f82', weight: 2.5, opacity: 0.8 }).addTo(group);
           if (distanceKm > 0) layerGroups[day.day_num]._distanceKm = distanceKm;
           updateTileKm(day.day_num, distanceKm);
+          if (day.toll_sections?.length) {
+            addTollLayers(group, day.toll_sections);
+          }
         });
       }
       return;
@@ -578,6 +659,9 @@ export function initInteractiveMap(containerId, plan) {
 
       const distKm = layerGroups[day.day_num]?._distanceKm ?? day.drive_km;
       const kmHtml = distKm ? `<div class="imap-panel__km">🚗 ${distKm} km${day.drive_h ? ` · ${day.drive_h}` : ''}</div>` : '';
+      const tollHtml = day.toll_sections?.length
+        ? `<div class="imap-panel__toll" style="display:flex;align-items:center;gap:6px;font-size:0.75rem;background:rgba(230,126,34,0.12);color:#d35400;padding:4px 8px;border-radius:6px;margin:6px 0;font-weight:600"><span style="background:#e67e22;color:#fff;border-radius:50%;width:16px;height:16px;display:inline-flex;align-items:center;justify-content:center;font-size:0.7rem;line-height:1">!</span> Odcinek płatny: ${esc(day.toll_sections.map(s => `${s.name} (${s.cost})`).join(', '))}</div>`
+        : '';
       const foodHtml = day.food?.place ? `
         <div class="imap-panel__food">
           <span class="imap-panel__food-icon">🍽</span>
@@ -593,6 +677,7 @@ export function initInteractiveMap(containerId, plan) {
           <div class="imap-panel__date">${esc(day.date || '')}</div>
           <div class="imap-panel__title">${esc(day.title || '')}</div>
           ${kmHtml}
+          ${tollHtml}
         </div>
         <ul class="imap-att-list">${routeItems || '<li class="imap-att imap-att--empty">Brak punktów trasy</li>'}</ul>
         ${foodHtml}

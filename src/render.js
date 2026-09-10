@@ -1143,7 +1143,10 @@ export function renderDayPage(day, images, bases, days, todo, meta) {
     ((day.type === 'tuscany' || day.type === 'tuscany_popular' || day.type === 'tuscany_transfer') && day.base_id) ||
     (day.type === 'transit' && day.route_points?.length > 0);
   const miniMap = hasMiniMap
-    ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini" aria-label="Mapa dnia ${day.day_num}"></div>`
+    ? `<div id="map-day-${day.day_num}" class="leaflet-map leaflet-map--mini${day.type === 'transit' ? ' leaflet-map--transit' : ''}" aria-label="Mapa dnia ${day.day_num}"></div>`
+    : '';
+  const tollLegend = day.toll_sections?.length
+    ? `<div class="map-legend-toll"><span class="map-legend-toll__icon">!</span><span><strong>Odcinek płatny</strong> <span class="map-legend-toll__line" aria-hidden="true"></span> ${esc(day.toll_sections.map((s) => `${s.name} (${s.cost})`).join(', '))}</span></div>`
     : '';
   const warning = day.warning ? `<div class="day-warning">${esc(day.warning)}</div>` : '';
   const doneSet = getEffectiveDoneIds(todo, doneStorageKey({ meta }));
@@ -1177,6 +1180,7 @@ export function renderDayPage(day, images, bases, days, todo, meta) {
         ${warning}
         ${bookingBanner}
         ${miniMap}
+        ${tollLegend}
         <div class="day-body">${renderDayBody(day, images)}</div>
       </article>
       <nav class="daypage-nav" aria-label="Nawigacja między dniami">

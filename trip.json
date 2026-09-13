@@ -1440,7 +1440,7 @@
           ],
           "drive_min": null,
           "drive_min_reason": "pociąg Lucca–Viareggio (auto zostaje w Lucce)",
-          "opening_hours": "Passeggiata, molo i plaża: dostępne bez ograniczeń, bezpłatnie. Zachód słońca 15.09: 19:31 (widno do ~19:55). Zejście do wody: spiaggia libera w Darsenie (południowy skraj miasta) — reszta plaży to we wrześniu jeszcze czynne stabilimenti.",
+          "opening_hours": "Passeggiata, molo i plaża: dostępne bez ograniczeń, bezpłatnie. Zachód słońca 16.09: 19:29 (widno do ~19:55). Zejście do wody: spiaggia libera w Darsenie (południowy skraj miasta) — reszta plaży to we wrześniu jeszcze czynne stabilimenti.",
           "ticket_price": "Bezpłatne. Dojazd: pociąg Piza→Viareggio ~€3/os, powrót Viareggio→Lucca ~€3/os.",
           "duration_h": 2
         }
@@ -1460,7 +1460,7 @@
           "baccalà po lukkańsku (dorsz)",
           "rostinciana i domowe desery"
         ],
-        "note": "Rodzinna trattoria działająca od 1945 r. w dzielnicy Pelleria, w sercu murów Lukki — klasyczna kuchnia lucchese bez turystycznych sztuczek, kultowa wśród mieszkańców. Nieczynna w niedziele (15.09 to wtorek — otwarte). Warto zarezerwować stolik: tel. 0583 55948.",
+        "note": "Rodzinna trattoria działająca od 1945 r. w dzielnicy Pelleria, w sercu murów Lukki — klasyczna kuchnia lucchese bez turystycznych sztuczek, kultowa wśród mieszkańców. Nieczynna w niedziele (16.09 to środa — otwarte). Warto zarezerwować stolik: tel. 0583 55948.",
         "price": "~€12–18/os",
         "gps_hint": "Via delle Conce 45 — wewnątrz murów, dojście pieszo od parkingu Palatucci / Porta San Pietro"
       },
@@ -1512,7 +1512,7 @@
         },
         {
           "topic": "Viareggio — zachód słońca i temperatura wody",
-          "summary": "Zachód słońca w Pizie/Viareggio 15.09.2026 o 19:31, zmierzch cywilny do 19:58 — wybrzeże jest zachodnie, więc słońce zapada prosto w morze, z Alpami Apuańskimi za plecami. Woda: Morze Liguryjskie u wybrzeży Viareggio trzyma 24–25°C do połowy września (sezon kąpielowy VI–X, poniżej 20°C schodzi dopiero jesienią). Płatne stabilimenti w drugiej połowie września zaczynają zamykać; spiaggia libera w Darsenie (płd. skraj miasta) działa zawsze, bez leżaków i często bez ratownika.",
+          "summary": "Zachód słońca w Pizie/Viareggio 16.09.2026 o 19:29, zmierzch cywilny do 19:55 — wybrzeże jest zachodnie, więc słońce zapada prosto w morze, z Alpami Apuańskimi za plecami. Woda: Morze Liguryjskie u wybrzeży Viareggio trzyma 24–25°C do połowy września (sezon kąpielowy VI–X, poniżej 20°C schodzi dopiero jesienią). Płatne stabilimenti w drugiej połowie września zaczynają zamykać; spiaggia libera w Darsenie (płd. skraj miasta) działa zawsze, bez leżaków i często bez ratownika.",
           "source": "https://www.seatemperature.org/europe/italy/viareggio.htm",
           "checked": "2026-08"
         },
@@ -1528,8 +1528,8 @@
         "torre_guinigi": "Codziennie (do 20.IX) 10:00–19:30. Bilet €8 (ulg. €6,50 z legitymacją). Zamknięte 25 grudnia.",
         "duomo_san_martino": "Duomo di San Martino: nawa ~bezpłatna; Volto Santo, zakrystia (grobowiec Ilarii) i muzeum — bilety €3–9.",
         "pisa_miracoli": "Piazza dei Miracoli, zabytki (wrzesień): ok. 9:00–20:00 — sprawdź kalendarz na opapisa.it. Krzywa Wieża: sloty co 30 min, rezerwacja obowiązkowa.",
-        "da_giulio": "Trattoria da Giulio in Pelleria: pranzo ~12:00–14:30, cena ~19:30–22:00. Nieczynne w niedziele (15.09 = wtorek, otwarte).",
-        "viareggio": "Passeggiata, molo i plaża — bez ograniczeń, bezpłatnie. Zachód słońca 15.09 o 19:31, widno do ~19:55. Pociągi Piza→Viareggio min. 2×/h; ostatni powrót Viareggio→Lucca ok. 22:10 (przyjazd 22:31)."
+        "da_giulio": "Trattoria da Giulio in Pelleria: pranzo ~12:00–14:30, cena ~19:30–22:00. Nieczynne w niedziele (16.09 = środa, otwarte).",
+        "viareggio": "Passeggiata, molo i plaża — bez ograniczeń, bezpłatnie. Zachód słońca 16.09 o 19:29, widno do ~19:55. Pociągi Piza→Viareggio min. 2×/h; ostatni powrót Viareggio→Lucca ok. 22:10 (przyjazd 22:31)."
       },
       "parking": {
         "destination": "Lucca (auto na cały dzień) → pociąg do Pizy",
@@ -4129,19 +4129,19 @@
             "id": "trenitalia-xgo",
             "group": "optional",
             "label": "Rejestracja Trenitalia X-GO — 20% na Regionale dla osób poniżej 30 lat",
-            "detail": "Darmowa rejestracja w programie X-GO (aplikacja lub trenitalia.com) daje „Promo Young X-GO”: 20% zniżki na bilety Regionale dla podróżnych poniżej 30 lat, ważne do 30.11.2026. Dotyczy trójki z grupy. Haczyk: bilet trzeba kupić najpóźniej do 23:59 dnia poprzedzającego podróż, pula miejsc na pociąg jest ograniczona, promocja nie łączy się z innymi i nie podlega zwrotowi. Realny zysk: ~€2/os na trójkącie Lucca–Piza–Viareggio (15.09) i ~€4/os na przejeździe Siena↔Florencja (23.09).",
+            "detail": "Darmowa rejestracja w programie X-GO (aplikacja lub trenitalia.com) daje „Promo Young X-GO”: 20% zniżki na bilety Regionale dla podróżnych poniżej 30 lat, ważne do 30.11.2026. Dotyczy trójki z grupy. Haczyk: bilet trzeba kupić najpóźniej do 23:59 dnia poprzedzającego podróż, pula miejsc na pociąg jest ograniczona, promocja nie łączy się z innymi i nie podlega zwrotowi. Realny zysk: ~€2/os na trójkącie Lucca–Piza–Viareggio (16.09) i ~€4/os na przejeździe Siena↔Florencja (23.09).",
             "deadline": "przed wyjazdem; bilety kupować dzień wcześniej",
             "priority": "low",
-            "day_num": 4
+            "day_num": 5
           },
           {
             "id": "grotta-vento",
             "group": "required",
-            "label": "Rezerwacja Grotta del Vento — Fornovolasco (14.09)",
-            "detail": "Tour 1h (Itinerario 1, godz. 15:00, €11/os) — trasa płaska z poręczami, bez uciążliwych schodów, komfortowa dla seniorów. Rezerwacja: grottadelvento.com/book-now/.",
-            "deadline": "1–2 tygodnie przed 14.09",
+            "label": "Rezerwacja Grotta del Vento — Fornovolasco (17.09)",
+            "detail": "Tour 1h (Itinerario 1, godz. 12:00, €11/os) — trasa płaska z poręczami, bez uciążliwych schodów, komfortowa dla seniorów. Rezerwacja: grottadelvento.com/book-now/.",
+            "deadline": "1–2 tygodnie przed 17.09",
             "priority": "medium",
-            "day_num": 3,
+            "day_num": 6,
             "url": "https://grottadelvento.com/book-now/"
           },
           {

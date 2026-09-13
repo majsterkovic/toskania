@@ -63,5 +63,5 @@ Użytkownik wybrał trasę omijającą obwodnicę Berlina i granicę w Świecku 
 - **Trasa**: Tarnowo Podgórne → DW307 → A2 (węzeł Buk) → węzeł Jordanowo → DW276 (Krosno Odrzańskie) → DK32 (Gubin / Guben) → B97/B169 (Cottbus/Schwarzheide) → A13 → A4 → A72 (Chemnitz) → A9 south (Norymberga, Ingolstadt) → A99/A995 → Unterhaching (Hotel Fresh Inn).
 - **Parametry**: ~785 km (774 km do Monachium centrum), ~8,5–9 h czystej jazdy (vs 807 km / 8h 20 min przez Berlin).
 - **Korzyści**: Omija ryzyko zatorów na Berliner Ring (A10) i kontrole federalne w Świecku; niższa opłata za A2 w Polsce (zjazd w Jordanowie).
-- **Logistyka**: Obiad/kawa w rejonie Vogtland (A72) lub Fränkische Schweiz (A9); tankowanie przed granicą w Gubinie (DK32).
+- **Logistyka**: Obiad zrealizowany w Biergartenie Waldschänke Brückkanal (Am Brückkanal 3, Schwarzenbruck pod Norymbergą); tankowanie przed granicą w Gubinie (DK32); późna kolacja w restauracji azjatyckiej Pak Choi (Eschenstraße 42, Taufkirchen obok hotelu Fresh Inn).
 

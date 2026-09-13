@@ -487,8 +487,14 @@
           "name": "A2: Nowy Tomyśl ➔ Jordanowo",
           "cost": "~7 zł",
           "coords": [
-            [52.3337, 16.1264],
-            [52.2968, 15.5393]
+            [
+              52.3337,
+              16.1264
+            ],
+            [
+              52.2968,
+              15.5393
+            ]
           ],
           "note": "Płatny odcinek koncesyjny A2 (system biletowy). Pobierz bilet na bramce w Nowym Tomyślu, opłata przy zjeździe na S3 w Jordanowie (karta / telefon / gotówka)."
         }
@@ -550,7 +556,10 @@
             "name": "Biergarten Waldschänke Brückkanal (Obiad w trasie)",
             "type": "Kuchnia frankońska · Biergarten · Waldschänke",
             "address": "Am Brückkanal 3, 90537 Schwarzenbruck",
-            "coords": [49.3546, 11.207],
+            "coords": [
+              49.3546,
+              11.207
+            ],
             "note": "Klimatyczny bawarsko-frankoński ogródek piwny w lesie tuż przy akwedukcie kanału Ludwika nad wąwozem Schwarzachklamm. Wygodny zjazd z A9 na węźle Feucht. Prawdziwy relaks w naturze w połowie drogi.",
             "price": "€8–16"
           },
@@ -558,7 +567,10 @@
             "name": "Piekarnia & Kawiarnia Gubin (Śniadanie / Kawa PL)",
             "type": "Śniadanie w Polsce",
             "address": "ul. Kresowa, 66-620 Gubin (DK32 przed mostem granicznym)",
-            "coords": [51.9535, 14.717],
+            "coords": [
+              51.9535,
+              14.717
+            ],
             "note": "Postój ok. 10:00 rano. Świeże pieczywo, kanapki, kawa i tanie tankowanie w PL przed wjazdem do Niemiec — wielokrotnie taniej niż na niemieckich stacjach.",
             "price": "10–18 zł (~€2,50–4)"
           },
@@ -566,7 +578,10 @@
             "name": "Pak Choi Restaurant (Opcjonalna późna kolacja koło hotelu)",
             "type": "Kuchnia azjatycka / wietnamska (opcja dla części grupy)",
             "address": "Eschenstraße 42, 82024 Taufkirchen",
-            "coords": [48.0515, 11.6072],
+            "coords": [
+              48.0515,
+              11.6072
+            ],
             "note": "Opcjonalny wypad na późną kolację dla chętnych po zameldowaniu w hotelu (~900 m od Fresh Inn, poniżej 10 minut pieszo). Ciepłe, rozgrzewające dania z woka, zupy i sushi bez konieczności ruszania auta.",
             "price": "€10–20"
           }
@@ -1042,11 +1057,12 @@
       "day_num": 3,
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 1",
-      "title": "Kamienny balkon nad Garfagnaną",
+      "title": "Kamienny balkon nad Garfagnaną i most diabelski",
       "image": "barga",
+      "image2": "ponte-diavolo",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 30,
+      "drive_limit_min": 15,
       "attractions": [
         {
           "name": "Barga — stare miasto i Duomo di San Cristoforo (romańska katedra św. Krzysztofa)",
@@ -1064,20 +1080,19 @@
           "entry_fee": "Wejście bezpłatne (Duomo: moneta €2 na oświetlenie)"
         },
         {
-          "name": "Grotta del Vento (jaskinia wiatru) — Fornovolasco (Itinerario 1)",
-          "drive_min": 25,
-          "description": "Jedna z najpiękniejszych jaskiń krasowych w Europie w Parku Alp Apuańskich. Dla grupy (w tym seniorów) optymalna jest trasa Itinerario 1 (1 godzina): bezpieczna, całkowicie płaska betonowa ścieżka z poręczami, bez uciążliwych schodów i podejść. Wewnątrz stała temperatura ok. 10°C (konieczna cieplejsza bluza lub kurtka).",
-          "type": "nature",
-          "image_key": "grotta-vento",
-          "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Fornovolasco, 55020 Vergemoli LU",
+          "name": "Ponte della Maddalena / Ponte del Diavolo (most gotycki nazywany mostem diabelskim)",
+          "drive_min": 12,
+          "description": "Gotycki most z XIII w. przy Borgo a Mozzano o asymetrycznych łukach, legenda o diable. Mgliste Apeniny odbite w rzece Serchio — piękne rano. Dostęp bezpłatny 24h.",
+          "type": "medieval",
+          "image_key": "ponte-diavolo",
+          "gps_hint": "Ponte del Diavolo, Borgo a Mozzano LU — parking przy SP2",
           "coords": [
-            44.0342,
-            10.3576
+            43.9857,
+            10.5519
           ],
-          "duration_h": 1.0,
-          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Trasa Itinerario 1 wyrusza co pełną godzinę (m.in. 15:00). Bilety: €11/os. Rezerwacja online: grottadelvento.com/book-now/",
-          "entry_fee": "Itinerario 1 (1h): €11/os — rezerwacja online: grottadelvento.com/book-now/",
-          "url": "https://grottadelvento.com/book-now/"
+          "duration_h": 0.75,
+          "opening_hours": "Most: zawsze dostępny, wstęp bezpłatny. Parking SS12 (gratuito).",
+          "entry_fee": "Bezpłatny — most publiczny"
         },
         {
           "name": "Treppignana via il Ciocco — spacer lasem dębowo-kasztanowym (opcja dla chętnych / z Tatą)",
@@ -1113,13 +1128,13 @@
         "price": "~€9–15/piatto, ~€25–35/os z winem"
       },
       "practical_tips": [
-        "Harmonogram dnia: spokojny wyjazd z bazy o 9:30 (baza tuż obok, ~6–8 min). 10:00–12:30 Barga i Duomo, 12:30–14:00 wygodny obiad na siedząco w Osteria Il Borgo dei Sapori, 15:00 zwiedzanie Grotta del Vento, a o 17:00 powrót do bazy.",
+        "Harmonogram dnia: spokojny start o 9:30 (baza tuż obok, ~6 min). 10:00–12:30 Barga i Duomo, 12:30–14:00 wygodny obiad na siedząco w Osteria Il Borgo dei Sapori, 14:30 Ponte del Diavolo (tylko 12 min łatwej drogi SS12), a od 16:00 relaks w bazie.",
         "Wskazówka dla mamy w Bardze (brak podchodzenia pod górę): wjedźcie autem pod górę w okolicę Via del Sasso / Porta Macchiaia tuż pod Duomo di San Cristoforo i wysadźcie mamę na samej górze. Zwiedzanie katedry i tarasu Giardino del Balcone oraz późniejsze zejście do centrum na kawę i obiad odbywa się wyłącznie w dół łagodnymi uliczkami.",
-        "Grotta del Vento — wybierzcie Itinerario 1 (1 h, €11/os) na godz. 15:00: trasa jest w pełni utwardzona, płaska, wyposażona w bezpieczne poręcze i pozbawiona męczących stromych schodów (w przeciwieństwie do trasy 2 i 3). Parking tuż przy kasach. W jaskini panuje stała temperatura ok. 10°C — koniecznie zabierzcie ciepłe bluzy/kurtki. Rezerwacja online: grottadelvento.com/book-now/",
-        "Spacer leśny w Treppignana (3,2 km — opcja z Tatą): szlak dębowo-kasztanowy nie przepada! Mama po jaskini zostaje w bazie w Ponte all'Ania (taras, ogród, basen), a chętni (np. Ty z Tatą) mogą wyskoczyć na godzinny leśny spacer o 17:15 w złotej godzinie (Treppignana to tylko 8 min autem od bazy).",
-        "Zakupy lokalne przed obiadem (~11:30): Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga) — wyroby z czarnej świni (cinta senese), pecorino, pancetta i toskański miód kasztanowy (czynne 8:00–13:00 i 16:00–19:00, śr po południu i nd zamkn.)."
+        "Ponte del Diavolo: parking bezpłatny tuż przy moście przy drodze SS12. Po południu słońce pięknie oświetla asymetryczny wysoki łuk mostu.",
+        "Spacer leśny w Treppignana (3,2 km — opcja z Tatą): Mama po powrocie do bazy odpoczywa w ogrodzie / przy basenie, a chętni mogą wyskoczyć na godzinny leśny spacer o 17:15 w złotej godzinie (Treppignana to tylko 8 min z bazy).",
+        "Zakupy lokalne przed obiadem (~11:30): Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga) — wyroby z czarnej świni (cinta senese), pecorino, pancetta i toskański miód kasztanowy (czynne pn 8:00–13:00 i 16:00–19:00)."
       ],
-      "narrative": "Dzień rozpoczynamy bez pośpiechu — po spokojnym śniadaniu w bazie wyjeżdżamy o 9:30, bo do Barga mamy zaledwie 6–8 minut drogi. Aby zaoszczędzić mamie stromego podejścia pod górę, wjeżdżamy autem w górną część miasteczka (w okolice Porta Macchiaia / Via del Sasso) tuż pod romański Duomo di San Cristoforo z XI wieku. Wrzucenie monety €2 włącza ciepłe oświetlenie wnętrza, odsłaniając kunsztowny pulpit marmurowy Guido Bigarellego z ok. 1240 roku z rzeźbionymi lwami. Tuż obok rozciąga się taras Giardino del Balcone — kamienny balkon z przepiękną panoramą na dolinę Serchio i postrzępione grzbiety Alp Apuańskich w porannym świetle. Stąd idziemy już wyłącznie w dół łagodnymi, brukowanymi uliczkami przez Piazza Angelio i Corso Garibaldi — zaglądamy do tradycyjnej Macelleria Angelini po lokalne pecorino i toskańskie przysmaki, siadamy na spokojną kawę. O 12:30 czeka na nas obiad w Osteria Il Borgo dei Sapori przy Via Borgo 1 — wygodnie przy stoliku, z wybornymi lokalnymi pappardelle al cinghiale i naleśnikami necci z ricottą (żadnych leśnych pikników na stojąco). O 14:00 ruszamy widokową, spokojną drogą wzdłuż potoku Turrite w kierunku Fornovolasco (~25 min). Auto zostawiamy na parkingu tuż obok kas biletowych, zakładamy ciepłe bluzy (w środku panuje stała temperatura ok. 10°C) i o 15:00 rozpoczynamy zwiedzanie Grotta del Vento trasą Itinerario 1. To 1-godzinna, niezwykle komfortowa i płaska ścieżka z poręczami, bez uciążliwych stromych schodów czy męczących podejść, prezentująca spektakularne formacje naciekowe i stalaktyty. Po wyjściu na ciepłe popołudniowe słońce zjeżdżamy z powrotem do bazy ok. 17:00 — Mama zostaje na relaks w ogrodzie przy basenie, a chętni (np. Ty z Tatą) mogą podjechać 8 minut autem do Treppignany na 3,2-kilometrową pętlę przez las dębów i starych kasztanowców w złotej godzinie przed zachodem słońca.",
+      "narrative": "Dzień po długiej trasie tranzytowej rozpoczynamy bez pośpiechu — po spokojnym śniadaniu w bazie wyjeżdżamy o 9:30, bo do Barga mamy zaledwie 6–8 minut drogi. Aby zaoszczędzić mamie stromego podejścia pod górę, wjeżdżamy autem w górną część miasteczka (w okolice Porta Macchiaia / Via del Sasso) tuż pod romański Duomo di San Cristoforo z XI wieku. Wrzucenie monety €2 włącza ciepłe oświetlenie wnętrza, odsłaniając kunsztowny pulpit marmurowy Guido Bigarellego z ok. 1240 roku z rzeźbionymi lwami. Tuż obok rozciąga się taras Giardino del Balcone — kamienny balkon z przepiękną panoramą na dolinę Serchio i postrzępione grzbiety Alp Apuańskich w porannym świetle. Stąd idziemy już wyłącznie w dół łagodnymi, brukowanymi uliczkami przez Piazza Angelio i Corso Garibaldi — zaglądamy do tradycyjnej Macelleria Angelini po lokalne pecorino i toskańskie przysmaki, siadamy na spokojną kawę. O 12:30 czeka na nas obiad w Osteria Il Borgo dei Sapori przy Via Borgo 1 — wygodnie przy stoliku, z wybornymi lokalnymi pappardelle al cinghiale i naleśnikami necci z ricottą. Po obiedzie, ok. 14:15, zjeżdżamy zaledwie 12 minut szeroką, prostą drogą SS12 w dół rzeki Serchio do Borgo a Mozzano, gdzie w popołudniowym słońcu podziwiamy spektakularny gotycki Ponte della Maddalena (Ponte del Diavolo). Wracamy do bazy już ok. 16:00 — kierowca i cała grupa mają pełne popołudnie na odpoczynek w ogrodzie i regenerację sił, a chętni (np. Ty z Tatą) mogą wyskoczyć na godzinny spacer dębowo-kasztanowy w Treppignanie.",
       "web_research": [
         {
           "topic": "Macelleria Angelini di Martinelli Davide (delikatesy i wędliny w Bardze)",
@@ -1134,27 +1149,9 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Grotta del Vento — rezerwacja biletów online (Book Now)",
-          "summary": "Oficjalny system rezerwacji biletów online do Grotta del Vento: wybór trasy Itinerario 1 (1h, €11, płaska trasa z poręczami), terminu i godziny zwiedzania (15:00).",
-          "source": "https://grottadelvento.com/book-now/",
-          "checked": "2026-09"
-        },
-        {
-          "topic": "Grotta del Vento — orario estivo wrzesień",
-          "summary": "Otwarte cały rok (25.12 wył.). Lato (1.04–2.11): It.1 €11 co godz. 10–18; It.2 €18 o 11/15/17; It.3 €25 o 10/14 (rezerwacja!). Check-in w biglietterii. Tel. 0583 722024 (10–19).",
-          "source": "https://grottadelvento.com/it/orari-biglietteria/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Temperatura i regulamin jaskini",
-          "summary": "Stała ~10°C — ciepła bluza lub kurtka obowiązkowa. Trasa Itinerario 1 jest utwardzona i wyposażona w poręcze. Zakaz: plecaki wielkogabarytowe, parasole, kijki trekkingowe, zwierzęta.",
-          "source": "https://grottadelvento.com/it/orari-biglietteria/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Lasy dębowe Garfagnana — Treppignana / Il Ciocco",
-          "summary": "Garfagnana = lasy dębowe i kasztanowe między Apuanami a Apeninami. Treppignana–Ciocco: gęsty las Quercus petraea + castagni, ptaki, widoki na dolinę. Wrzesień idealny (16–24°C). Z bazy to tylko ~8 min jazdy.",
-          "source": "https://www.alltrails.com/it-it/italy/tuscany/barga/forest",
+          "topic": "Terme Bagni di Lucca — stato 2026",
+          "summary": "Hotel Terme Bagni di Lucca: piscina aperta, stabilimento termale principale chiuso. Bernabò (Ponte a Serraglio) operativo.",
+          "source": "https://www.terme-bagnidilucca.it/",
           "checked": "2026-07"
         },
         {
@@ -1164,80 +1161,27 @@
           "checked": "2026-09"
         },
         {
-          "topic": "Parking Barga centrum",
-          "summary": "ZTL w Barga Vecchia — kamery. Podjazd pod Duomo / Porta Macchiaia pozwala na drop-off na samej górze. Na dłuższy postój: Parcheggio Porta Reale (Via Bellavista, gratis) lub Piazzale Matteotti.",
-          "source": "https://www.informagiovani-italia.com/where-to-park-in-barga.htm",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Restauracja — Osteria Il Borgo dei Sapori",
-          "summary": "W Barga: Osteria Il Borgo dei Sapori (Via Borgo 1, tel. 0583 724121, ~€9–15/piatto, pranzo 12:00–15:00) — doskonałe dania z dziczyzny i mąki kasztanowej, stoliki wewnątrz i na zewnątrz. Alternatywa: L'Osteria (Piazza Angelio 13, tel. 0583 711200).",
-          "source": "https://www.osteriaborgo.it/",
+          "topic": "Temperatura i regulamin jaskini",
+          "summary": "Stała ~10°C — ciepła bluza lub kurtka obowiązkowa. Trasa Itinerario 1 jest utwardzona i wyposażona w poręcze. Zakaz: plecaki wielkogabarytowe, parasole, kijki trekkingowe, zwierzęta.",
+          "source": "https://grottadelvento.com/it/orari-biglietteria/",
           "checked": "2026-07"
         }
       ],
-      "image2": "castiglione",
       "opening_hours": {
-        "duomo_barga": "Codziennie 08:00–18:00 (Via del Duomo 1). Msze nd. ~11:15.",
-        "grotta_del_vento": "Cały rok (25.12 wył.). Lato: It.1 co godz. 10–18; It.2 11/15/17; It.3 10/14.",
-        "osteria_borgo_sapori": "Pranzo 12:00–15:00, cena 19:00–23:00 (sprawdź dzień zamknięcia)",
-        "l_osteria_barga": "11:30–15:30, 18:30–22:30 — Piazza Angelio 13, rezerwacja zalecana"
+        "duomo_di_san_cristoforo": "Codziennie 08:00–18:00 (Via del Duomo 1).",
+        "macelleria_angelini": "Pn 8:00–13:00 i 16:00–19:00.",
+        "osteria_il_borgo_dei_sapori": "12:00–15:00 na lunch.",
+        "ponte_del_diavolo": "Dostęp 24h, wstęp bezpłatny."
       },
       "parking": {
-        "destination": "Barga — dzień wypadowy z bazy",
-        "options": [
-          {
-            "name": "Parcheggio Porta Macchiaia / Via del Sasso (górny podjazd)",
-            "type": "public",
-            "price": "bezpłatny",
-            "gps_hint": "Via del Sasso / Via del Duomo, 55051 Barga",
-            "note": "Kluczowy dla mamy: wjazd na sam szczyt borgo, wysadzenie pasażerów tuż przy Duomo (zero wspinaczki pieszej pod górę)"
-          },
-          {
-            "name": "Parcheggio Porta Reale",
-            "type": "public",
-            "price": "bezpłatny",
-            "gps_hint": "Via Bellavista / Via del Sasso, 55051 Barga",
-            "note": "Główny parking u stóp Barga Vecchia — wygodny do zaparkowania auta po wysadzeniu pasażerów na górze"
-          },
-          {
-            "name": "Grotta del Vento — parking",
-            "type": "attraction",
-            "price": "gratis",
-            "gps_hint": "via Grotta del Vento 1, Fornovolasco, 55020 Vergemoli LU",
-            "note": "Parking bezpośrednio przy biglietteria jaskini, ~25 min jazdy od Barga"
-          },
-          {
-            "name": "Treppignana — parking",
-            "type": "public",
-            "price": "bezpłatny",
-            "gps_hint": "Treppignana, 55051 Barga LU",
-            "note": "Start szlaku leśnego dębowo-kasztanowego via il Ciocco — ~8 min jazdy od bazy w Ponte all'Ania"
-          },
-          {
-            "name": "Piazzale Matteotti",
-            "type": "public",
-            "price": "płatny",
-            "gps_hint": "Dolna Barga",
-            "note": "Backup gdy Porta Reale pełny"
-          }
-        ],
-        "tip": "Wjazd pod górę na Via del Sasso / Porta Macchiaia, wysadzenie mamy przy Duomo, a kierowca parkuje przy Porta Reale lub na górze. Po obiedzie ok. 25 min jazdy pod samą Grotta del Vento (parking tuż przy kasach)."
+        "barga": "Wjazd pod Duomo / Porta Macchiaia na wysadzenie pasażerów; Parcheggio Porta Reale lub Piazzale Matteotti.",
+        "ponte_diavolo": "Parcheggio al Ponte del Diavolo — bezpłatny, 24h, przy SS12 tuż przy moście."
       },
-      "fuel_stops": [
-        {
-          "name": "IP Castelnuovo di Garfagnana",
-          "location": "Via Roma / SS445",
-          "road": "SS445",
-          "hours": "7–20",
-          "note": "Najbliższa stacja od Barga (~25 min) — nie potrzebna w dniu lokalnym"
-        }
-      ],
-      "daily_km_estimate": 48,
+      "daily_km_estimate": 28,
       "eta_timeline": [
         {
           "time": "09:30",
-          "event": "Wyjazd z bazy Garfagnana do Barga (~6–8 min)"
+          "event": "Wyjazd z bazy do Barga (~6–8 min)"
         },
         {
           "time": "09:45",
@@ -1256,24 +1200,20 @@
           "event": "Obiad w Osteria Il Borgo dei Sapori (pappardelle al cinghiale, necci z ricottą) — obiad przy stoliku"
         },
         {
-          "time": "14:00",
-          "event": "Przejazd malowniczą doliną Turrite do Grotta del Vento (~25 min)"
+          "time": "14:15",
+          "event": "Zjazd w dół doliny Serchio prostą drogą SS12 do Borgo a Mozzano (~12 min)"
         },
         {
           "time": "14:30",
-          "event": "Przyjazd pod Grotta del Vento — parking przy kasach, odebranie biletów, cieplejsze okrycia"
+          "event": "Ponte della Maddalena / Ponte del Diavolo — gotycki most o asymetrycznych łukach, spacer i zdjęcia w słońcu"
         },
         {
-          "time": "15:00",
-          "event": "Grotta del Vento — zwiedzanie Itinerario 1 (1h, trasa płaska z poręczami, temp. 10°C, bilet €11)"
+          "time": "15:30",
+          "event": "Spokojny powrót do bazy w Ponte all'Ania (~12 min)"
         },
         {
-          "time": "16:30",
-          "event": "Zbiórka i spokojny powrót do bazy w Ponte all'Ania (~25 min)"
-        },
-        {
-          "time": "17:00",
-          "event": "Powrót do bazy — Mama odpoczywa w ogrodzie / przy basenie apartamentu"
+          "time": "16:00",
+          "event": "Powrót do bazy — Mama odpoczywa w ogrodzie / przy basenie apartamentu, kawa na tarasie"
         },
         {
           "time": "17:15",
@@ -1281,11 +1221,11 @@
         },
         {
           "time": "18:30",
-          "event": "Wszyscy razem w bazie — toskańska kolacja i relaks (zachód słońca o 19:20)"
+          "event": "Wszyscy razem w bazie — toskańska kolacja i relaks (kierowca w 100% zregenerowany!)"
         }
       ],
-      "crowd_tip": "Barga spokojne przez cały rok — brak masowej turystyki. Grotta del Vento: we wrześniu znacznie spokojniej niż w wakacje, ale rezerwacja online na godzinę 15:00 (Itinerario 1) jest zalecana.",
-      "summary": "Komfortowy, łagodny pierwszy dzień w dolinie Garfagnana, doskonale łączący wspólne atrakcje ze swobodą odpoczynku. Rano zwiedzamy urokliwą Bardzę — wjazd pod samą katedrę Duomo di San Cristoforo (XI w.) z tarasem Giardino del Balcone pozwala uniknąć wspinaczki pieszej, schodząc jedynie w dół ku kawiarniom i delikatesom. Po spokojnym obiedzie w Osteria Il Borgo dei Sapori jedziemy pod Grotta del Vento na 1-godzinną, bezpieczną i płaską trasę Itinerario 1 (10°C) z parkingiem tuż pod kasami. Po powrocie do bazy o 17:00 Mama relaksuje się w apartamencie, a chętni (np. z Tatą) mogą wyskoczyć na 3,2-kilometrowy leśny szlak w Treppignanie w złotej godzinie.",
+      "crowd_tip": "Barga spokojne rano. Ponte del Diavolo po południu znacznie mniej zatłoczone niż w weekendy.",
+      "summary": "Komfortowy, łagodny pierwszy dzień w dolinie Garfagnana, dedykowany pełnej regeneracji po trudach tranzytu. Rano zwiedzamy urokliwą Bardzę — wjazd pod samą katedrę Duomo di San Cristoforo (XI w.) z tarasem Giardino del Balcone pozwala uniknąć wspinaczki pieszej, schodząc jedynie w dół ku kawiarniom i delikatesom. Po spokojnym obiedzie w Osteria Il Borgo dei Sapori zjeżdżamy szeroką drogą SS12 (zaledwie 12 min) do Borgo a Mozzano, by zobaczyć słynny gotycki Most Diabelski (Ponte della Maddalena). Od 16:00 pełen relaks w bazie w ogrodzie, a chętni (np. z Tatą) mogą wyskoczyć na krótki spacer leśny w Treppignanie.",
       "weather": {
         "label": "Barga / Garfagnana",
         "coords": [
@@ -1297,8 +1237,149 @@
     {
       "date": "15.09 (wt)",
       "day_num": 4,
+      "type": "tuscany",
+      "label": "TOSKANIA · DZIEŃ 2",
+      "title": "Monte Forato — naturalny łuk skalny w Alpach Apuańskich",
+      "image": "monte-forato",
+      "base_id": "base1",
+      "base_label": "BAZA 1 — Barga",
+      "drive_limit_min": 23,
+      "attractions": [
+        {
+          "name": "Pętla Monte Forato (naturalny łuk skalny) — z Fornovolasco",
+          "drive_min": 23,
+          "description": "Prawdziwa górska wycieczka, ale bez wspinaczki: pętla z Fornovolasco (ta sama wieś co Grotta del Vento) prowadzi szlakiem CAI nr 6 do przełęczy Foce di Petrosciana (mija jaskinię Tana che Urla i źródło), dalej grzbietem CAI 110 aż do naturalnego łuku skalnego Monte Forato (1223 m) — jednego z największych naturalnych łuków we Włoszech (rozpiętość 32 m, do 25 m wysokości nad przełęczą, między dwoma szczytami 1223 i 1209 m). Trasa dochodzi do łuku BEZ odcinka wyposażonego (via ferrata) — oficjalnie oceniana jako 'medium' (E — turystyczna, znakowana CAI), trudność biorą na siebie ci, którzy chcą iść dalej grzbietem. Pełna pętla (powrót przez CAI 130): 12 km, ~700 m przewyższenia, ~5 h. Wariant krótszy — zejście przez CAI 12 z powrotem do CAI 6 — skraca trasę do ok. 3,5 h, wciąż z widokiem na łuk.",
+          "type": "nature",
+          "image_key": "monte-forato",
+          "gps_hint": "Parking we wsi Fornovolasco, Fabbriche di Vergemoli LU",
+          "coords": [
+            44.0282,
+            10.3577
+          ],
+          "opening_hours": "Szlak dostępny całą dobę, cały rok, bez opłat.",
+          "ticket_price": "Bezpłatny.",
+          "duration_h": 4
+        }
+      ],
+      "oak_forest": {
+        "spot": "Lasy zboczy Foce di Petrosciana",
+        "species": "Fagus sylvatica (buk), Castanea sativa (kasztan) niżej, roślinność wysokogórska wyżej",
+        "note": "Dolna część szlaku (do Foce di Petrosciana) prowadzi przez bukowo-kasztanowy las Apuan; powyżej przełęczy drzewa ustępują skalistym grzbietom i widokom na łuk.",
+        "gps_hint": "CAI nr 6, Fornovolasco → Foce di Petrosciana."
+      },
+      "food": {
+        "place": "Prowiant na szlak + lunch w Fornovolasco po zejściu",
+        "address": "Fornovolasco, Fabbriche di Vergemoli LU",
+        "dishes": [
+          "kanapki/panino na szlak",
+          "owoce, batony energetyczne",
+          "po zejściu: prosta trattoria we wsi"
+        ],
+        "note": "To dzień na cały prowiant w plecaku (5 h trasy, brak punktów z jedzeniem na szlaku) — lżejszy posiłek w Fornovolasco dopiero po powrocie z trasy.",
+        "price": "~€8–15/os"
+      },
+      "practical_tips": [
+        "Solidne buty trekkingowe (obowiązkowo — kamienisty grzbiet) + kijki trekkingowe.",
+        "Zabierz min. 1,5–2 l wody/os — na szlaku brak źródeł pitnej wody poza jednym przy Foce di Petrosciana.",
+        "Wariant krótszy (~3,5h, CAI 12) dla mniej wprawionych — wciąż dociera do łuku, tylko inny powrót.",
+        "NIE kontynuuj grzbietem za łuk w stronę Pania della Croce — tam zaczyna się odcinek wyposażony (via ferrata), wymaga uprzęży i doświadczenia.",
+        "Ucieczka przed upałem: we wtorek w miastach panuje skwar (prawie 30°C), podczas gdy szlak z Fornovolasco biegnie w orzeźwiającym cieniu lasu kasztanowego przy 0% ryzyka deszczu.",
+        "Dla Mamy i odpoczywających: leniwy dzień w ogrodzie bazy w Ponte all'Ania (basen, leżaki, książka) bez męczącego chodzenia w miejskim słońcu.",
+        "Wieczór: powrót do bazy ok. 15:00, relaks i wczesny sen przed środowym całodniowym wyjazdem do Lukki i Pizy."
+      ],
+      "narrative": "Dziś prawdziwa górska wyprawa w Alpy Apuańskie — idealnie wpasowana w bezdeszczowy wtorek i chroniąca przed upałem, który panuje dziś na nizinach (w miastach dochodzi do 30°C). Podczas gdy Mama i osoby szukające wytchnienia spędzają leniwy dzień w ogrodzie bazy przy basenie, piechurzy ruszają o 8:00 rano do Fornovolasco (23 min). Szlakiem CAI nr 6 idziemy w górę przez bukowo-kasztanowy las, mijając jaskinię Tana che Urla i leśne źródło, aż do przełęczy Foce di Petrosciana. Dalej grzbietem CAI 110 dochodzimy do spektakularnego celu: naturalnego łuku skalnego Monte Forato — 32-metrowego okna skalnego zawieszonego na wysokości 1223 m n.p.m. z oszałamiającym widokiem na grań Apuan i morze. Schodzimy do Fornovolasco na prosty lunch i wracamy do bazy ok. 15:00 na zasłużony odpoczynek. Wieczór to regeneracja sił i wczesny sen przed jutrzejszym wyjazdem do Lukki i Pizy.",
+      "web_research": [
+        {
+          "topic": "Pętla Monte Forato z Fornovolasco — oficjalne dane",
+          "summary": "Pełna pętla: 12 km, 700 m przewyższenia, ~5 h, poziom trudności 'medium' (turystyczna, bez via ferrata/sprzętu alpejskiego). Start: Fornovolasco (parking we wsi). Trasa: CAI 6 do Foce di Petrosciana (mija jaskinię Tana che Urla), CAI 110 grzbietem do łuku (1223 m), zejście CAI 131 (do podnóża Pania della Croce) lub powrót CAI 130. Wariant krótszy ~3,5 h przez CAI 12.",
+          "source": "https://turismo.garfagnana.eu/en/hikes/monte-forato-loop/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Naturalny łuk Monte Forato — wymiary i dostęp",
+          "summary": "Łuk uformowany erozją wodno-wietrzną w wapieniu: rozpiętość 32 m, do 25 m wysokości nad przełęczą — jeden z największych naturalnych łuków we Włoszech. Dwa szczyty po bokach: 1223 m i 1209 m. Dojście do samego łuku leśną ścieżką omija odcinek wyposażony (via ferrata) — ten zaczyna się dopiero przy próbie kontynuacji grzbietem w stronę Pania della Croce.",
+          "source": "https://framor.com/viaggi/europa/italia/toscana/monte-forato-apuane/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Dojazd baza (Barga) → Fornovolasco",
+          "summary": "OSRM: ~15 km, ~21 min — ta sama trasa/wieś co Grotta del Vento (D3).",
+          "source": "OSRM router.project-osrm.org",
+          "checked": "2026-07"
+        }
+      ],
+      "opening_hours": {
+        "szlak_monte_forato": "Dostępny całą dobę, cały rok, bez opłat i rezerwacji."
+      },
+      "parking": {
+        "fornovolasco": "Parking we wsi Fornovolasco — bezpłatny, przy wjeździe (to samo miejsce co przy Grotta del Vento).",
+        "tip": "Zostaw auto w Fornovolasco na cały czas pętli — trasa wraca do tego samego punktu."
+      },
+      "fuel_stops": [
+        {
+          "name": "Stacja przed wyjazdem",
+          "location": "okolice Bargi",
+          "note": "Zatankuj rano — w Fornovolasco stacji brak."
+        }
+      ],
+      "daily_km_estimate": 31,
+      "eta_timeline": [
+        {
+          "time": "08:00",
+          "event": "Wyjazd z bazy do Fornovolasco (23 min)"
+        },
+        {
+          "time": "08:30",
+          "event": "Start pętli — CAI 6 w górę, mija Tana che Urla"
+        },
+        {
+          "time": "10:00",
+          "event": "Foce di Petrosciana — krótki odpoczynek, dalej grzbietem CAI 110"
+        },
+        {
+          "time": "11:15",
+          "event": "Naturalny łuk Monte Forato (1223 m) — widok, zdjęcia, drugie śniadanie"
+        },
+        {
+          "time": "12:00",
+          "event": "Powrót pętlą (CAI 130) lub krótszym wariantem (CAI 12)"
+        },
+        {
+          "time": "13:30",
+          "event": "Fornovolasco — koniec pętli (wariant krótszy) / ok. 14:00 (pełna pętla)"
+        },
+        {
+          "time": "14:00",
+          "event": "Lekki lunch we wsi, powrót do bazy"
+        },
+        {
+          "time": "15:00",
+          "event": "Powrót do bazy — odpoczynek (prysznic, nogi w górę, bez basenu — wieczorem chłodno)"
+        },
+        {
+          "time": "18:30",
+          "event": "Do wyboru: Piazza Arringo w Bardze (7 min, zachód słońca nad Alpami z łukiem Monte Forato) lub Sommocolonia (15 min, cicha wioska, historia z II wojny)"
+        },
+        {
+          "time": "19:30",
+          "event": "Powrót do bazy, kolacja"
+        }
+      ],
+      "crowd_tip": "Popularny szlak wśród wprawnych turystów, ale rzadko zatłoczony — wczesny start (8:00) daje ciszę i chłodniejszą temperaturę na podejściu.",
+      "summary": "Prawdziwa górska wycieczka bez wspinaczki: pętla z Fornovolasco (5 h, wariant krótszy 3,5 h) do naturalnego łuku skalnego Monte Forato — jednego z największych we Włoszech (rozpiętość 32 m), z widokiem na Alpy Apuańskie i dolinę Serchio. Doskonałe wykorzystanie bezdeszczowej pogody i ucieczka przed upałem nizin, podczas gdy reszta grupy odpoczywa w ogrodzie bazy.",
+      "weather": {
+        "label": "Monte Forato",
+        "coords": [
+          44.0282,
+          10.3577
+        ]
+      }
+    },
+    {
+      "date": "16.09 (śr)",
+      "day_num": 5,
       "type": "tuscany_popular",
-      "label": "TOSKANIA · DZIEŃ 2 ★ POPULARNY",
+      "label": "TOSKANIA · DZIEŃ 3 ★ POPULARNY",
       "title": "Lucca, Piza i morze — mury, Krzywa Wieża i zachód nad Tyrrenem",
       "image": "pisa",
       "image2": "lucca",
@@ -1375,16 +1456,14 @@
         "gps_hint": "Via delle Conce 45 — wewnątrz murów, dojście pieszo od parkingu Palatucci / Porta San Pietro"
       },
       "practical_tips": [
-        "TRASA (polecana opcja): auto z Bargi do Lukki (~37 km, ~40 min) i parking POZA murami — Parcheggio Palatucci lub Carducci przy Porta San Pietro (~€0,50–1/h), auto zostaje na cały dzień. Stamtąd pociąg Lucca→Pisa. Powód: przesiadka tylko na odcinku Lucca↔Piza (gdzie parking i ZTL w Pizie są uciążliwe), auto blisko bazy, a poranek w Lucce zwiedzamy pieszo prosto od parkingu. Pociągi tworzą z Viareggio wygodny trójkąt, więc nigdzie nie trzeba się cofać.",
-        "Krzywa Wieża z zewnątrz: wstęp na Piazza dei Miracoli jest całkowicie bezpłatny i to właśnie z perspektywy placu i zielonego trawnika pochylenie wieży robi największe wrażenie. Wnętrze Duomo jest bezpłatne (darmowy bilet czasowy z kasy na miejscu). Dzięki rezygnacji z wspinaczki zaoszczędzacie 100 € w grupie i macie pełną swobodę bez pośpiechu i bez sztywnego slotu.",
-        "Lucca: mury (4,2 km) można obejść pieszo (~1 h) lub przejechać wypożyczonym rowerem — najlepszy sposób na poznanie miasta z góry, w cieniu drzew. Wstęp bezpłatny, otwarte całą dobę.",
-        "Pociągi co 30 minut (pełna elastyczność!): zarówno z Lukki do Pizy, jak i z Pizy do Viareggio pociągi Regionale jeżdżą regularnie co około pół godziny przez cały dzień. Godziny z planu (16:42 Lucca ➔ 17:08 Pisa S. Rossore oraz 19:02 Pisa S. Rossore ➔ 19:12 Viareggio) to idealny wariant bazowy, ale jeśli skończycie wcześniej lub później — po prostu wsiadacie w kolejny pociąg za 30 minut bez żadnych dopłat.",
-        "Stacja Pisa S. Rossore (game-changer!): wysiadamy na stacji Pisa San Rossore, a NIE na Pisa Centrale! San Rossore leży zaledwie 500 m (6 minut spaceru) od Piazza dei Miracoli i Krzywej Wieży — zero autobusów miejskich i zero tramwajów. Po zwiedzaniu wracacie te same 500 m na San Rossore i stamtąd jedziecie prosto do Viareggio (10 min jazdy!).",
-        "Da Giulio in Pelleria nieczynne w niedziele — 15.09 to wtorek, więc otwarte; mimo to zadzwoń (0583 55948) i zarezerwuj stolik na porę lunchu (~13:00), bo miejsce jest oblegane przez lokalnych.",
-        "Weźcie legitymacje studenckie/szkolne — regulamin gminy Lucca (comune.lucca.it) przewiduje bilet ridotto dla „studenti muniti di idonea tessera” na Torre Guinigi / Torre delle Ore / Orto Botanico (€6,50 zamiast €8). Pokażcie legitymację w kasie.",
-        "Zniżka kolejowa dla trójki poniżej 30 lat: Trenitalia „Promo Young X-GO” daje **20% na bilety Regionale** po darmowej rejestracji w programie X-GO (aplikacja/strona Trenitalia), ważna do 30.11.2026. Haczyk: bilet trzeba kupić **do 23:59 dnia poprzedzającego podróż**, pula miejsc na pociąg jest ograniczona i nie łączy się z innymi promocjami. Na krótkich odcinkach tego dnia to oszczędność rzędu €2/os, a ta sama zniżka działa na dłuższym przejeździe Siena↔Florencja (D12)."
+        "Idealne okno pogodowe: w środę upał z wtorku odpuszcza, temperatura w Lucce i Pizie spada z 30°C do przyjemnych 27,8°C przy zerowym ryzyku opadów.",
+        "Mama wczoraj odpoczywała w bazie, więc wkracza w ten dzień wypoczęta — spacer po koronie renesansowych murów Lukki jest w 100% płaski, zadrzewiony i komfortowy.",
+        "Trattoria da Giulio in Pelleria: w środę otwarta na lunch (12:00–14:30), tradycyjne tordelli lucchesi.",
+        "Trójkąt kolejowy: Lucca ➔ Piza (26 min) ➔ Viareggio (10 min) ➔ powrót bezpośrednio Viareggio ➔ Lucca (~20 min). Bilet po ~€3–3,70/odcinek.",
+        "Zachód słońca w Viareggio: słońce zachodzi o 19:29 prosto w fale Morza Tyrreńskiego, a woda ma przyjemne 24°C.",
+        "Brak presji wstawania rano: następnego dnia (czwartek) jest lekki dzień z jaskinią i brak wczesnej pobudki, więc powrót do bazy o 22:00 nie zaburza rytmu."
       ],
-      "narrative": "Dziś zamiast gór — dwa miasta, i po raz drugi w całym planie oddajemy licznik kilometrów kolei. Ruszamy o 9:20 autem z Bargi w dół doliny Serchio (spokojny, leniwy poranek na tarasie bazy); po ok. 40 minutach zostawiamy samochód na parkingu poza murami Lukki i dalej idziemy już tylko pieszo i pociągiem. Lucca to jedyne miasto we Włoszech, które zachowało kompletny renesansowy pierścień murów — dziś to szeroka, wysadzana platanami promenada biegnąca 4,2 km wokół całego starego miasta, po której lucchesi spacerują i jeżdżą na rowerach jak po parku zawieszonym nad dachami. Schodzimy z murów na Piazza dell'Anfiteatro — owalny plac dokładnie na fundamentach rzymskiego amfiteatru, którego kształt kamienice powtórzyły dom po domu. Wchodzimy na Torre Guinigi (€6,50 ulg. / €8 norm.), średniowieczną wieżę z ogrodem dębów ostrolistnych rosnących 45 metrów nad ziemią — jeden z najdziwniejszych i najładniejszych widoków w Toskanii. Zaglądamy jeszcze do Duomo di San Martino po Volto Santo i nagrobek Ilarii del Carretto, spacerujemy Via Fillungo, i idziemy na niespieszny lunch (tordelli lucchesi w Trattoria da Giulio o 13:00). Popołudnie w Lucce to czas na lody i relaks, a o 16:42 łapiemy pociąg REG 18586 — po zaledwie 26 minutach wysiadamy na stacji Pisa San Rossore, leżącej zaledwie 500 metrów od Krzywej Wieży (bez żadnych miejskich autobusów czy tramwajów!). Wychodzimy na Piazza dei Miracoli: zielony dywan trawy, a na nim biały marmur Duomo, Battistero i słynna Krzywa Wieża, pochylona o cztery stopnie i wciąż stojąca po ośmiu wiekach. Oglądamy ją z zewnątrz na trawniku — to z tej perspektywy jej pochylenie robi największe wrażenie, a my nie tracimy czasu ani 100 € na wspinaczkę i sztywne sloty; zaglądamy za to bezpłatnie do wnętrza Katedry. O 19:02 z tej samej stacji San Rossore łapiemy pociąg REG 2296 — błyskawiczne 10 minut i jesteśmy w Viareggio nad Morzem Tyrreńskim. Ze stacji kilometr pieszo na Passeggiatę z kawiarniami w stylu Liberty i molo. Zdejmujemy buty, wchodzimy w wodę (we wrześniu ma jeszcze 24–25 stopni) i czekamy na 19:31, kiedy słońce siada prosto w morze, a za plecami różowieją marmurowe Alpy Apuańskie. Za kolację robi cuoppo smażonych rybek z papierowego rożka i gelato na deptaku. O 20:45 pociąg z Viareggio bezpośrednio do Lukki (ostatni tego dnia jedzie o 22:10, więc mamy duży bufor), odbiór auta i powrót doliną Serchio do bazy w Bardze ok. 22:00.",
+      "narrative": "Świadomie „miejski\" dzień w relaksującym tempie i w doskonałym oknie pogodowym — po wczorajszym upale dziś temperatura w Lucce i Pizie spada do 27,8°C. Ruszamy o 8:30 autem z Bargi do Lukki (ok. 40 min), auto zostawiamy poza murami i dalej poruszamy się pieszo i koleją. Lucca to miasto otoczone nienaruszonym renesansowym pierścieniem murów (4,2 km szerokiej, zadrzewionej promenady) — schodzimy na owalną Piazza dell'Anfiteatro i wchodzimy na Torre Guinigi z dębami rosnącymi na szczycie. O 13:00 tradycyjny obiad w Trattoria da Giulio in Pelleria. O 16:42 pociąg do Pizy — stacja Pisa San Rossore leży 500 m od Krzywej Wieży i Piazza dei Miracoli. Oglądamy wieżę z perspektywy zielonego trawnika bez kolejek i zaglądamy do katedry Duomo. O 19:02 łapiemy pociąg do Viareggio nad Morzem Tyrreńskim: deptak Liberty, moczenie nóg w ciepłym morzu i spektakularny zachód słońca o 19:29 z różowiejącymi Alpami Apuańskimi w tle. Kolacja street food (cuoppo rybne) i o 20:45 pociąg powrotny do Lukki, skąd autem wracamy do bazy ok. 22:00.",
       "web_research": [
         {
           "topic": "Krzywa Wieża — bilety i rezerwacja",
@@ -1560,7 +1639,7 @@
       "km_note": "Tylko auto Barga↔Lucca (pętla OSRM 62 km); Piza i Viareggio pociągiem — skrypt km:refresh celowo pomija.",
       "crowd_tip": "Piazza dei Miracoli w Pizie jest popularnym punktem — dzięki oglądaniu Krzywej Wieży z zewnątrz unikacie kolejek, sztywnych slotów i tłoku na wąskich schodach wieży. Lucca rano jest kameralna i spokojna, a wieczór w Viareggio nad morzem pozwala zrelaksować się po całym dniu.",
       "warning": "Piazza dei Miracoli i Lucca to popularne punkty — spodziewaj się innych turystów, ale dzięki oglądaniu Krzywej Wieży z zewnątrz nie ma presji sztywnego slotu i stania w kolejce (wstęp na plac wolny, a do katedry Duomo z darmowym biletem czasowym). Dzień oparty na rozkładzie pociągów Lucca↔Pisa↔Viareggio — pociągi jeżdżą często (co 20–30 min). Ostatni bezpośredni powrót Viareggio→Lucca odjeżdża ok. 22:10 (przyjazd 22:31); planowany powrót o 20:30 daje ponad półtorej godziny buforu, ale nie wolno go przegapić, bo auto stoi w Lucce.",
-      "summary": "Świadomie „miejski\" dzień w relaksującym tempie. Autem jedziemy o 8:30 do Lukki (wł. Lucca) — miasta otoczonego kompletnym renesansowym pierścieniem murów; w środku owalny plac na rzymskim amfiteatrze (Piazza dell'Anfiteatro) i wieża z rosnącymi dębami (Torre Guinigi). Potem pociągiem do Pizy na słynną Piazza dei Miracoli: oglądamy Krzywą Wieżę z perspektywy zielonego trawnika (gdzie jej pochyłość robi największe wrażenie) i zaglądamy do romańskiego Duomo. Na finał trzeci bok trójkąta kolejowego — kwadrans pociągiem do Viareggio nad Morzem Tyrreńskim: deptak Liberty, moczenie nóg w wodzie i zachód słońca prosto w morze o 19:31.",
+      "summary": "Świadomie „miejski\" dzień w relaksującym tempie i w optymalnej temperaturze (27,8°C). Autem jedziemy o 8:30 do Lukki — miasta otoczonego kompletnym renesansowym pierścieniem murów; w środku owalny plac na rzymskim amfiteatrze (Piazza dell'Anfiteatro) i wieża z rosnącymi dębami (Torre Guinigi). Potem pociągiem do Pizy na słynną Piazza dei Miracoli: oglądamy Krzywą Wieżę z perspektywy zielonego trawnika i zaglądamy do romańskiego Duomo. Na finał kwadrans pociągiem do Viareggio nad Morzem Tyrreńskim: deptak Liberty, moczenie stóp w wodzie i zachód słońca prosto w morze o 19:29.",
       "weather": {
         "label": "Piza (i Lucca)",
         "coords": [
@@ -1570,171 +1649,32 @@
       }
     },
     {
-      "date": "16.09 (śr)",
-      "day_num": 5,
-      "type": "tuscany",
-      "label": "TOSKANIA · DZIEŃ 3",
-      "title": "Monte Forato — naturalny łuk skalny w Alpach Apuańskich",
-      "image": "monte-forato",
-      "base_id": "base1",
-      "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 23,
-      "attractions": [
-        {
-          "name": "Pętla Monte Forato (naturalny łuk skalny) — z Fornovolasco",
-          "drive_min": 23,
-          "description": "Prawdziwa górska wycieczka, ale bez wspinaczki: pętla z Fornovolasco (ta sama wieś co Grotta del Vento) prowadzi szlakiem CAI nr 6 do przełęczy Foce di Petrosciana (mija jaskinię Tana che Urla i źródło), dalej grzbietem CAI 110 aż do naturalnego łuku skalnego Monte Forato (1223 m) — jednego z największych naturalnych łuków we Włoszech (rozpiętość 32 m, do 25 m wysokości nad przełęczą, między dwoma szczytami 1223 i 1209 m). Trasa dochodzi do łuku BEZ odcinka wyposażonego (via ferrata) — oficjalnie oceniana jako 'medium' (E — turystyczna, znakowana CAI), trudność biorą na siebie ci, którzy chcą iść dalej grzbietem. Pełna pętla (powrót przez CAI 130): 12 km, ~700 m przewyższenia, ~5 h. Wariant krótszy — zejście przez CAI 12 z powrotem do CAI 6 — skraca trasę do ok. 3,5 h, wciąż z widokiem na łuk.",
-          "type": "nature",
-          "image_key": "monte-forato",
-          "gps_hint": "Parking we wsi Fornovolasco, Fabbriche di Vergemoli LU",
-          "coords": [
-            44.0282,
-            10.3577
-          ],
-          "opening_hours": "Szlak dostępny całą dobę, cały rok, bez opłat.",
-          "ticket_price": "Bezpłatny.",
-          "duration_h": 4
-        }
-      ],
-      "oak_forest": {
-        "spot": "Lasy zboczy Foce di Petrosciana",
-        "species": "Fagus sylvatica (buk), Castanea sativa (kasztan) niżej, roślinność wysokogórska wyżej",
-        "note": "Dolna część szlaku (do Foce di Petrosciana) prowadzi przez bukowo-kasztanowy las Apuan; powyżej przełęczy drzewa ustępują skalistym grzbietom i widokom na łuk.",
-        "gps_hint": "CAI nr 6, Fornovolasco → Foce di Petrosciana."
-      },
-      "food": {
-        "place": "Prowiant na szlak + lunch w Fornovolasco po zejściu",
-        "address": "Fornovolasco, Fabbriche di Vergemoli LU",
-        "dishes": [
-          "kanapki/panino na szlak",
-          "owoce, batony energetyczne",
-          "po zejściu: prosta trattoria we wsi"
-        ],
-        "note": "To dzień na cały prowiant w plecaku (5 h trasy, brak punktów z jedzeniem na szlaku) — lżejszy posiłek w Fornovolasco dopiero po powrocie z trasy.",
-        "price": "~€8–15/os"
-      },
-      "practical_tips": [
-        "Solidne buty trekkingowe (obowiązkowo — kamienisty grzbiet) + kijki trekkingowe.",
-        "Zabierz min. 1,5–2 l wody/os — na szlaku brak źródeł pitnej wody poza jednym przy Foce di Petrosciana.",
-        "Wariant krótszy (~3,5h, CAI 12) dla mniej wprawionych — wciąż dociera do łuku, tylko inny powrót.",
-        "NIE kontynuuj grzbietem za łuk w stronę Pania della Croce — tam zaczyna się odcinek wyposażony (via ferrata), wymaga uprzęży i doświadczenia.",
-        "Wyjazd wcześnie (8:00) — 5h trasy plus dojazd to pełny dzień; zostaw bufor na powolniejsze tempo z dziećmi.",
-        "3 warianty trasy na dziś (do wyboru w zależności od formy/pogody): ① Monte Forato (wybrany, opisany wyżej) — 12 km/~5h (lub 3,5h skrócony), 700 m, „medium\", 21 min dojazdu, najbardziej widowiskowy (naturalny łuk skalny). ② Monte Palodina (Sentiero del Lupo) — 13 km/5h, 650 m, „medium\", 20 min dojazdu (Vallico di Sotto), łagodniejszy technicznie, szlak edukacyjny o wilkach, panorama 360° ze szczytu 1171 m. ③ Monte Prato Fiorito (Alta Via dei Pastori) — 7,8 km/3h42 (najkrótszy), 676 m, oceniany „difficult\" (stromizna, nie technika), ~25–35 min dojazdu, panorama 360° ze szczytu 1293 m.",
-        "Wieczór: po dniu na szlaku odpoczynek jest priorytetem (basen o tej porze we wrześniu bywa chłodny) — ok. 2h przerwy w bazie, a potem do wyboru na miejscu: (a) Piazza Arringo w Bardze (~7 min) — najsłynniejszy punkt widokowy regionu przy Duomo, skąd widać całe pasmo Alp Apuańskich z łukiem Monte Forato, który zwiedzaliście rano; (b) Sommocolonia (15 min) — cicha wioska na grzbiecie z historią z II wojny światowej (pomnik żołnierzy Buffalo), inny, spokojniejszy nastrój. Oba bezwysiłkowe, ~30–45 min w obie strony."
-      ],
-      "narrative": "Dziś prawdziwa górska wyprawa — ale taka, która nie wymaga sprzętu alpejskiego. Wyjeżdżamy z bazy o 8:00, 23 minuty do Fornovolasco, tej samej wioski, w której kilka dni temu byliśmy w Grotta del Vento. Stąd szlakiem CAI nr 6 ruszamy w górę, mijając jaskinię Tana che Urla i leśne źródło, przez bukowo-kasztanowy las aż do przełęczy Foce di Petrosciana (ok. 1,5 h). Dalej grzbietem CAI 110, gdzie drzewa ustępują skale, a przed nami powoli wyłania się cel: naturalny łuk skalny Monte Forato — wyrzeźbiony przez wodę i wiatr w wapiennej skale, rozpięty na 32 metrach między dwoma szczytami (1223 i 1209 m), jeden z największych takich łuków we Włoszech. Docieramy do niego bez potrzeby wspinaczki czy uprzęży — cała trasa aż tutaj jest oficjalnie oceniana jako środkowo trudna, znakowana szlakiem turystycznym CAI. Stajemy dosłownie w cieniu łuku, z widokiem na całą dolinę Serchio po jednej stronie i poszarpane szczyty Apuan po drugiej — to jeden z najbardziej widowiskowych widoków całego wyjazdu. Nie idziemy dalej grzbietem w stronę Pania della Croce — tam zaczyna się odcinek wyposażony, wymagający uprzęży i doświadczenia, zupełnie inna liga. Powrót do Fornovolasco zajmuje kolejne 1,5–2 h (pełna pętla przez CAI 130, ok. 5 h w sumie, lub krótszy wariant przez CAI 12, ok. 3,5 h). Po zejściu prosty lunch we wsi i powrót do bazy — nogi zmęczone, więc kilka godzin odpoczynku w spokoju (basen o tej porze roku wieczorem bywa chłodny, więc dziś odpuszczamy). Gdy zrobi się chłodniej, do wyboru bezwysiłkowy wypad: Piazza Arringo w Bardze (6 min) — najsłynniejszy punkt widokowy regionu przy katedrze, skąd o zachodzie słońca widać całe pasmo Alp Apuańskich razem z łukiem Monte Forato, pod którym staliście kilka godzin wcześniej — albo Sommocolonia (20 min), cicha wioska na grzbiecie z własną, spokojniejszą historią z czasów II wojny światowej. Dzień kończy się z jednym z tych widoków, które zostają w pamięci na długo — i to podwójnie, bo widzimy łuk z bliska rano, a całe pasmo z daleka wieczorem.",
-      "web_research": [
-        {
-          "topic": "Pętla Monte Forato z Fornovolasco — oficjalne dane",
-          "summary": "Pełna pętla: 12 km, 700 m przewyższenia, ~5 h, poziom trudności 'medium' (turystyczna, bez via ferrata/sprzętu alpejskiego). Start: Fornovolasco (parking we wsi). Trasa: CAI 6 do Foce di Petrosciana (mija jaskinię Tana che Urla), CAI 110 grzbietem do łuku (1223 m), zejście CAI 131 (do podnóża Pania della Croce) lub powrót CAI 130. Wariant krótszy ~3,5 h przez CAI 12.",
-          "source": "https://turismo.garfagnana.eu/en/hikes/monte-forato-loop/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Naturalny łuk Monte Forato — wymiary i dostęp",
-          "summary": "Łuk uformowany erozją wodno-wietrzną w wapieniu: rozpiętość 32 m, do 25 m wysokości nad przełęczą — jeden z największych naturalnych łuków we Włoszech. Dwa szczyty po bokach: 1223 m i 1209 m. Dojście do samego łuku leśną ścieżką omija odcinek wyposażony (via ferrata) — ten zaczyna się dopiero przy próbie kontynuacji grzbietem w stronę Pania della Croce.",
-          "source": "https://framor.com/viaggi/europa/italia/toscana/monte-forato-apuane/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Dojazd baza (Barga) → Fornovolasco",
-          "summary": "OSRM: ~15 km, ~21 min — ta sama trasa/wieś co Grotta del Vento (D3).",
-          "source": "OSRM router.project-osrm.org",
-          "checked": "2026-07"
-        }
-      ],
-      "opening_hours": {
-        "szlak_monte_forato": "Dostępny całą dobę, cały rok, bez opłat i rezerwacji."
-      },
-      "parking": {
-        "fornovolasco": "Parking we wsi Fornovolasco — bezpłatny, przy wjeździe (to samo miejsce co przy Grotta del Vento).",
-        "tip": "Zostaw auto w Fornovolasco na cały czas pętli — trasa wraca do tego samego punktu."
-      },
-      "fuel_stops": [
-        {
-          "name": "Stacja przed wyjazdem",
-          "location": "okolice Bargi",
-          "note": "Zatankuj rano — w Fornovolasco stacji brak."
-        }
-      ],
-      "daily_km_estimate": 31,
-      "eta_timeline": [
-        {
-          "time": "08:00",
-          "event": "Wyjazd z bazy do Fornovolasco (23 min)"
-        },
-        {
-          "time": "08:30",
-          "event": "Start pętli — CAI 6 w górę, mija Tana che Urla"
-        },
-        {
-          "time": "10:00",
-          "event": "Foce di Petrosciana — krótki odpoczynek, dalej grzbietem CAI 110"
-        },
-        {
-          "time": "11:15",
-          "event": "Naturalny łuk Monte Forato (1223 m) — widok, zdjęcia, drugie śniadanie"
-        },
-        {
-          "time": "12:00",
-          "event": "Powrót pętlą (CAI 130) lub krótszym wariantem (CAI 12)"
-        },
-        {
-          "time": "13:30",
-          "event": "Fornovolasco — koniec pętli (wariant krótszy) / ok. 14:00 (pełna pętla)"
-        },
-        {
-          "time": "14:00",
-          "event": "Lekki lunch we wsi, powrót do bazy"
-        },
-        {
-          "time": "15:00",
-          "event": "Powrót do bazy — odpoczynek (prysznic, nogi w górę, bez basenu — wieczorem chłodno)"
-        },
-        {
-          "time": "18:30",
-          "event": "Do wyboru: Piazza Arringo w Bardze (7 min, zachód słońca nad Alpami z łukiem Monte Forato) lub Sommocolonia (15 min, cicha wioska, historia z II wojny)"
-        },
-        {
-          "time": "19:30",
-          "event": "Powrót do bazy, kolacja"
-        }
-      ],
-      "crowd_tip": "Popularny szlak wśród wprawnych turystów, ale rzadko zatłoczony — wczesny start (8:00) daje ciszę i chłodniejszą temperaturę na podejściu.",
-      "summary": "Prawdziwa górska wycieczka bez wspinaczki: pętla z Fornovolasco (5 h, wariant krótszy 3,5 h) do naturalnego łuku skalnego Monte Forato — jednego z największych we Włoszech (rozpiętość 32 m), z widokiem na Alpy Apuańskie i dolinę Serchio. Wieczorem, po odpoczynku, do wyboru: zachód słońca z Piazza Arringo w Bardze lub spacer po Sommocolonii.",
-      "weather": {
-        "label": "Monte Forato",
-        "coords": [
-          44.0282,
-          10.3577
-        ]
-      }
-    },
-    {
       "date": "17.09 (czw)",
       "day_num": 6,
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 4",
-      "title": "Ponte del Diavolo (most diabelski) i termy Bagni di Lucca",
-      "image": "ponte-diavolo",
+      "title": "Grotta del Vento i termy Bagni di Lucca",
+      "image": "grotta-vento",
+      "image2": "bagni-lucca",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 33,
+      "drive_limit_min": 25,
       "attractions": [
         {
-          "name": "Ponte della Maddalena / Ponte del Diavolo (most gotycki nazywany mostem diabelskim)",
-          "drive_min": 12,
-          "description": "Gotycki most z XIII w. przy Borgo a Mozzano o asymetrycznych łukach, legenda o diable. Mgliste Apeniny odbite w rzece Serchio — piękne rano. Dostęp bezpłatny 24h.",
-          "type": "medieval",
-          "image_key": "ponte-diavolo",
-          "gps_hint": "Ponte del Diavolo, Borgo a Mozzano LU — parking przy SP2",
+          "name": "Grotta del Vento (jaskinia wiatru) — Fornovolasco (Itinerario 1)",
+          "drive_min": 25,
+          "description": "Jedna z najpiękniejszych jaskiń krasowych w Europie w Parku Alp Apuańskich. Dla grupy (w tym seniorów) optymalna jest trasa Itinerario 1 (1 godzina): bezpieczna, całkowicie płaska betonowa ścieżka z poręczami, bez uciążliwych schodów i podejść. Wewnątrz stała temperatura ok. 10°C (konieczna cieplejsza bluza lub kurtka).",
+          "type": "nature",
+          "image_key": "grotta-vento",
+          "gps_hint": "Grotta del Vento, via Grotta del Vento 1, Fornovolasco, 55020 Vergemoli LU",
           "coords": [
-            43.9857,
-            10.5519
+            44.0342,
+            10.3576
           ],
-          "duration_h": 0.75,
-          "opening_hours": "Most: zawsze dostępny, wstęp bezpłatny. Parking SS12 (gratuito).",
-          "entry_fee": "Bezpłatny — most publiczny"
+          "duration_h": 1.0,
+          "opening_hours": "Apr–Oct: pon–pt 10:00–18:00, sob–nd 10:00–19:00. Trasa Itinerario 1 wyrusza co pełną godzinę (m.in. 15:00). Bilety: €11/os. Rezerwacja online: grottadelvento.com/book-now/",
+          "entry_fee": "Itinerario 1 (1h): €11/os — rezerwacja online: grottadelvento.com/book-now/",
+          "url": "https://grottadelvento.com/book-now/"
         },
         {
           "name": "Bagni di Lucca — termy i Ponte delle Catene (most łańcuchowy)",
@@ -1750,68 +1690,44 @@
           "duration_h": 1.5,
           "opening_hours": "Casino Reale: wt–nd 10:00–13:00, 15:30–18:30. Terme: tel. 0583 87038. Piazza e ville: zawsze dostępne.",
           "entry_fee": "Terme wstęp: od €15 (rezerwacja) | Spacer: bezpłatny"
-        },
-        {
-          "name": "Pieve di Careggine (romański kościół parafialny nad Lago di Vagli)",
-          "drive_min": 33,
-          "description": "Piękna romańska pieve z XI w. na wzgórzu nad Lago di Vagli — odmienny kąt widoku niż przy tamie. Wioska z ~200 mieszkańcami, zero turystów.",
-          "type": "medieval",
-          "image_key": "vagli",
-          "gps_hint": "Careggine LU — parcheggio Piazza Gramsci",
-          "coords": [
-            44.1263,
-            10.3509
-          ],
-          "duration_h": 0.5,
-          "opening_hours": "Kościół dostępny całą dobę (widok zewnętrzny z SS445/Vagli). Gdy poziom wody niski — możliwy dostęp przez most.",
-          "entry_fee": "Bezpłatny — widok z zewnątrz"
         }
       ],
       "oak_forest": {
-        "spot": "Las wzdłuż doliny Serchio — okolice Borgo a Mozzano",
+        "spot": "Las wzdłuż rzeki Lima — okolice Bagni di Lucca",
         "species": "Quercus cerris, Q. petraea",
-        "note": "Lasy dębowe na stokach nad Serchio między Barga a Borgo a Mozzano — wrzesień: złote przebarwienia liści.",
-        "gps_hint": "SS12 — lasy wzdłuż doliny Serchio między Piazza al Serchio a Borgo a Mozzano. Najlepiej: zjazd Fornoli, 5 min pieszo wzdłuż rzeki."
+        "note": "Lasy dębowe na stokach doliny rzeki Lima wokół uzdrowiska Bagni di Lucca.",
+        "gps_hint": "Bagni di Lucca — okolice Ponte delle Catene."
       },
       "food": {
-        "place": "Trattoria Borghesi — Bagni di Lucca",
-        "address": "Viale Umberto I 85, 55022 Bagni di Lucca LU",
+        "place": "Gospoda Fornovolasco / Trattoria Borghesi — Bagni di Lucca",
+        "address": "Fornovolasco / Viale Umberto I 85, Bagni di Lucca",
         "dishes": [
           "tordelli lucchesi",
-          "zuppa di farro",
-          "castagnaccio"
+          "polenta z grzybami leśnymi",
+          "zuppa di farro"
         ],
-        "note": "Rodzinna trattoria w Bagni di Lucca. Czwartek 17.09 otwarte 7:00–20:00. Wczesny lunch (~12:30). Tel. +39 0583 805919.",
+        "note": "Ciepły, rozgrzewający obiad po wyjściu z jaskini w górskiej gospodzie lub rodzinna kuchnia w Bagni di Lucca.",
         "price": "~€12–18/os"
       },
       "practical_tips": [
-        "Ponte del Diavolo (8:00–9:30) → Bagni di Lucca (10:00–11:30) → Pieve di Careggine (12:00) → lunch Borghesi (13:00) → powrót do bazy",
-        "Osteria del Diavolo ZAMKNIĘTA w czwartek (17.09) — lunch w Trattoria Borghesi w Bagni"
+        "Strategia deszczowa: w czwartek rano i koło południa prognozowane są przelotne opady (50–60%) — wizyta w Grotta del Vento pozwala w 100% zignorować deszcz (pod ziemią jest sucho i 10°C).",
+        "Brak porannego pośpiechu: po powrocie z Viareggio w środę o 22:00, w czwartek śpimy do 9:00, leniwe śniadanie i wyjazd dopiero o 10:45 na wejście do jaskini o 12:00.",
+        "W jaskini panuje stała temperatura 10°C — zabierzcie cieplejsze bluzy lub polary.",
+        "Po południu (od 14:30) deszcz ustępuje — idealna pora na spokojną kawę i spacer po eleganckim Bagni di Lucca oraz zabytkowym moście łańcuchowym Ponte delle Catene.",
+        "Wczesny powrót do bazy ok. 17:30 pozwala na spokojne spakowanie bagaży przed piątkową przeprowadzką do Murlo (Baza 2)."
       ],
-      "narrative": "Ostatni dzień w Garfagnanie. Wyjeżdżamy o 8:30 — 12 minut samochodem na południe SS12 do Ponte della Maddalena, powszechniej znanego jako Ponte del Diavolo. Parkujemy przy drodze za darmo, 5 minut pieszo na most — o 9:00 nad Serchio wciąż unosi się poranna mgła, asymetryczne gotyckie łuki odbijają się w wodzie w kompletnej ciszy, zero autokarów o tej porze. Legenda mówi, że most zbudował sam diabeł w zamian za pierwszą duszę, która go przekroczy — sprytny brygadzista podesłał mu świnię, i most stoi do dziś. Potem 15 minut na wschód do Bagni di Lucca: miasteczka, które w XIX wieku było kurortem Byrona i Shelleya, dziś wciąż ma most łańcuchowy Ponte delle Catene i neogotycki angielski kościół, a kto ma ochotę, może się jeszcze zanurzyć w termach Bernabò. Lunch w Trattoria Borghesi (Viale Umberto I 85). Po lunchu jeszcze ok. 30 minut na północ — Pieve di Careggine na wzgórzu nad Lago di Vagli: romańska pieve z XI wieku, ok. 200 mieszkańców, zero turystów, a piękna panorama na jezioro wygląda stąd zupełnie inaczej niż z tamy sprzed dwóch dni. Wracamy do bazy ok. 16:30 — czas spakować bagaże, bo jutro wyruszamy do Chianti, w zupełnie inny rozdział tej podróży.",
+      "narrative": "Ostatni dzień w Garfagnanie zaprojektowany jako perfekcyjna odpowiedź na pogodę. Po wczorajszym powrocie z morza nie nastawiamy budzików — spokojne śniadanie jemy do 9:30. Rano, gdy na zewnątrz siąpi deszcz, ruszamy o 10:45 do Fornovolasco, by o 12:00 wejść pod ziemię do spektakularnej Grotta del Vento. Trasa Itinerario 1 jest w 100% bezpieczna, sucha, płaska i oświetlona, chroniąc nas przed kaprysami aury. Po wyjściu z jaskini zjadamy rozgrzewający lunch w górskiej gospodzie we wsi (polenta z grzybami, gorąca zupa orkiszowa). Po 14:30 chmury ustępują — zjeżdżamy do romantycznego uzdrowiska Bagni di Lucca: oglądamy zabytkowy most łańcuchowy Ponte delle Catene, XIX-wieczne Casino Reale i pijemy kawę w zdrojowym parku. Wracamy do bazy ok. 17:30 — mamy mnóstwo czasu na spokojny wieczór i spakowanie walizek przed jutrzejszą podróżą do drugiej bazy w Murlo.",
       "web_research": [
         {
-          "topic": "Ponte del Diavolo — parking i dostęp",
-          "summary": "Parking gratuito 24h przy SS12, obie strony. Most pedonale — 5 min. Tre osterie accanto al ponte.",
-          "source": "https://www.viaggieritratti.it/ponte-del-diavolo-di-borgo-a-mozzano/",
-          "checked": "2026-07"
+          "topic": "Grotta del Vento — rezerwacja biletów online (Book Now)",
+          "summary": "Oficjalny system rezerwacji biletów online do Grotta del Vento: wybór trasy Itinerario 1 (1h, €11, płaska trasa z poręczami), terminu i godziny zwiedzania (15:00).",
+          "source": "https://grottadelvento.com/book-now/",
+          "checked": "2026-09"
         },
         {
-          "topic": "Bagno Bernabò Bagni di Lucca",
-          "summary": "Terme storiche (Elisa Bonaparte 1810). Aperto 9–18 tutti i giorni. Bagno romano in marmo. Tel. 331 171 9014.",
-          "source": "https://bellabagnidilucca.com/2025/09/23/a-roman-bath-at-bernabo-spa/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Terme Bagni di Lucca — stato 2026",
-          "summary": "Hotel Terme Bagni di Lucca: piscina aperta, stabilimento termale principale chiuso. Bernabò (Ponte a Serraglio) operativo.",
-          "source": "https://www.terme-bagnidilucca.it/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Ponte della Maddalena — historia i dostęp",
-          "summary": "Most z ok. 1080–1100 (Matylda Toskańska), przebudowa Castruccio Castracani ok. 1300. Największy łuk 37,8 m. Nazwa od oratorium św. Magdaleny (ok. 1500). Legenda: diabeł zbudował most, brygadzista oszukał go świnią. Modyfikacja 1898 (kolej Garfagnana). Dostęp pieszy 24h bezpłatnie. Parking przy SS12. Stacja Borgo a Mozzano ~2 km.",
-          "source": "https://en.wikipedia.org/wiki/Ponte_della_Maddalena",
+          "topic": "Grotta del Vento — orario estivo wrzesień",
+          "summary": "Otwarte cały rok (25.12 wył.). Lato (1.04–2.11): It.1 €11 co godz. 10–18; It.2 €18 o 11/15/17; It.3 €25 o 10/14 (rezerwacja!). Check-in w biglietterii. Tel. 0583 722024 (10–19).",
+          "source": "https://grottadelvento.com/it/orari-biglietteria/",
           "checked": "2026-07"
         },
         {
@@ -1825,33 +1741,16 @@
           "summary": "Założenie z 1810 (Eliza Baciocchi, siostra Napoleona), odnowione 2006. Wanny marmurowe XIX w., basen ośmiokątny, grota parowa, fangoterapia. Wody siarczanowo-wodorowęglanowo-wapniowe (54°C). Via Bagni Caldi, Ponte a Serraglio. Rezerwacja zalecana.",
           "source": "https://termebagnobernabo.it/en/",
           "checked": "2026-07"
-        },
-        {
-          "topic": "Bagni di Lucca — kontekst historyczny",
-          "summary": "Źródła znane od czasów rzymskich, rozkwit w XIX w. („Szwajcaria Toskanii”). Byron, Shelley, Browningowie, Paganini odwiedzali kurort. Ponte delle Catene (Nottolini) — jeden z najstarszych mostów żelaznych. Casinò = najstarsze kasyno Włoch (dziś muzeum).",
-          "source": "https://www.visittuscany.com/en/towns-and-villages/bagni-di-lucca/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Trattoria da Giulio — Lucca, nie Bagni",
-          "summary": "Via delle Conce 45/47, 55100 Lucca (Pelleria). Od 1945, kuchnia lucchese: farro, tordelli, cioncia, baccalà. Pn–Sb 12:00–14:30 / 19:00–22:30, nd zamknięte. We wrześniu otwarte w niedziele na lunch. Tel. +39 0583 55948. OFF-ROUTE — wymaga detouru przez ZTL Lucca.",
-          "source": "https://www.trattoriadagiulio.it/",
-          "checked": "2026-07"
         }
       ],
-      "image2": "bagni-lucca",
       "opening_hours": {
-        "ponte_del_diavolo": "Dostęp 24h (obiekt na zewnątrz). Najlepsze światło: 8:00–10:00 rano — mgła nad Serchio.",
-        "casino_bagni_lucca": "Regio Casinò (Ponte a Serraglio) — muzeum, nie aktywne kasyno. Wizyty: sprawdź infopoint +39 0583 805745.",
-        "trattoria_borghesi": "Wt–Sb 7:00–20:00 (czwartek 17.09 OK). Nd i Pn zamknięte.",
-        "osteria_del_diavolo": "10:30–17:30, ZAMKNIĘTE w czwartek — nie planuj na dzień 6 (17.09)!",
-        "bagni_bernabo_spa": "Bagno Bernabò: Pn–Nd 9:00–18:00. Tel. +39 331 171 9014. Rezerwacja zalecana.",
-        "casino_bagni": "Casinò di Bagni di Lucca — muzeum (najstarsze kasyno Włoch, nieaktywne) — 10:00–18:00 sezon.",
-        "trattoria_da_giulio": "Via delle Conce 45/47, LUCCA (NIE Bagni). Pn–Sb 12:00–14:30 / 19:00–22:30, nd zamknięte. We wrześniu otwarte w niedziele na lunch. Tel. +39 0583 55948. OFF-ROUTE — nie na trasie transferu."
+        "grotta_del_vento": "10:00–18:00 (wejście Itinerario 1 o godz. 12:00).",
+        "casino_bagni": "Regio Casinò (Ponte a Serraglio) — muzeum, 10:00–13:00 i 15:30–18:30 (czwartek czynne).",
+        "ponte_delle_catene": "Dostępne 24h, wstęp wolny."
       },
       "parking": {
-        "ponte_diavolo": "Parcheggio al Ponte del Diavolo — bezpłatny, 24h, przy SS12 tuż przy moście (strona wschodnia). Most pieszy — 5–15 min spacer. Stacja FS Borgo a Mozzano ~2 km.",
-        "bagni_lucca": "Parking przy Ponte delle Catene lub centrum — strefy płatne. Terme Bernabò: Via Bagni Caldi 36 — kilka miejsc parkingowych."
+        "grotta_vento": "Parking bezpośrednio pod kasami biletowymi w Fornovolasco.",
+        "bagni_lucca": "Parking przy Ponte delle Catene lub w centrum Bagni di Lucca."
       },
       "fuel_stops": [
         {
@@ -1862,47 +1761,43 @@
           "note": "Opcjonalny postój na A11 — kawa przed Sieną."
         }
       ],
-      "daily_km_estimate": 72,
+      "daily_km_estimate": 48,
       "eta_timeline": [
         {
-          "time": "09:00",
-          "event": "Wyjazd z bazy do Ponte della Maddalena (12 min)"
+          "time": "10:45",
+          "event": "Spokojny wyjazd z bazy (po wyspaniu się!) w stronę doliny Turrite (~25 min)"
         },
         {
-          "time": "09:20",
-          "event": "Ponte del Diavolo — spacer po moście, legenda o Matussalemme"
-        },
-        {
-          "time": "10:15",
-          "event": "Wyjazd do Bagni di Lucca (8 km, 15 min)"
-        },
-        {
-          "time": "10:30",
-          "event": "Bagni di Lucca — Casino Reale, terme historyczne, park"
+          "time": "11:30",
+          "event": "Przyjazd pod Grotta del Vento — parking przy kasach, cieplejsze bluzy"
         },
         {
           "time": "12:00",
-          "event": "Obiad Osteria Ponte a Serraglio lub Circolo Ufficiali"
+          "event": "Grotta del Vento — zwiedzanie Itinerario 1 (1h, trasa płaska z poręczami, temp. 10°C, bilet €11)"
         },
         {
-          "time": "13:30",
-          "event": "Wyjazd do Pieve di Careggine (28 min)"
+          "time": "13:15",
+          "event": "Obiad w tradycyjnej górskiej gospodzie w Fornovolasco (lokalna polenta, grzyby, makarony)"
         },
         {
-          "time": "14:17",
-          "event": "Pieve di Careggine — romańska pieve na wzgórzu nad Lago di Vagli"
+          "time": "14:45",
+          "event": "Przejazd do Bagni di Lucca (deszcz ustępuje!)"
         },
         {
-          "time": "15:05",
-          "event": "Spacer po wiosce Careggine (~200 mieszkańców)"
+          "time": "15:15",
+          "event": "Bagni di Lucca — most łańcuchowy Ponte delle Catene, Casino Reale (muzeum), popołudniowa kawa"
         },
         {
-          "time": "16:00",
-          "event": "Powrót do bazy"
+          "time": "17:00",
+          "event": "Powrót do bazy w Ponte all'Ania (~15 min)"
+        },
+        {
+          "time": "17:30",
+          "event": "Relaks w bazie i spokojne pakowanie walizek przed piątkową zmianą bazy do Murlo"
         }
       ],
-      "crowd_tip": "Ponte del Diavolo: kolejki na zdjęcia w weekendy, spokojnie rano (<10:00). Bagni di Lucca: kurort bez masowej turystyki — elegancka cisza. Vagli/Pieve di Careggine: wyłącznie lokalni.",
-      "summary": "Ostatni dzień w Garfagnanie. Rano gotycki most o nierównych łukach (Ponte della Maddalena, zwany „mostem diabła\") nad rzeką Serchio — według legendy zbudował go diabeł w jedną noc w zamian za pierwszą duszę, jaka przejdzie na drugą stronę; mieszkańcy przechytrzyli go, przepuszczając psa. Potem uzdrowiskowe miasteczko Bagni di Lucca (kąpielisko termalne, niegdyś ulubione przez poetów Byrona i Shelleya) z zabytkowym mostem łańcuchowym. Na koniec romański kościółek na wzgórzu nad jeziorem (Pieve di Careggine).",
+      "crowd_tip": "Grotta del Vento w czwartek we wrześniu spokojna. Bagni di Lucca — brak tłumów turystów.",
+      "summary": "Ostatni dzień w Garfagnanie zaprojektowany jako perfekcyjna odpowiedź na pogodę. Rano, gdy na zewnątrz pada deszcz, kryjemy się pod ziemią w spektakularnej jaskini Grotta del Vento (płaska, 1-godzinna trasa Itinerario 1 w stałej temperaturze 10°C). Po rozgrzewającym obiadzie w górskiej gospodzie w Fornovolasco, gdy opady ustępują, zjeżdżamy do romantycznego uzdrowiska Bagni di Lucca na popołudniowy spacer przy moście łańcuchowym Ponte delle Catene i kawę. Wczesny powrót o 17:30 pozwala bez pośpiechu spakować walizki przed jutrzejszą podróżą na południe Toskanii.",
       "weather": {
         "label": "Bagni di Lucca",
         "coords": [

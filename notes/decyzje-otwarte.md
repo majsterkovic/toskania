@@ -65,3 +65,22 @@ Użytkownik wybrał trasę omijającą obwodnicę Berlina i granicę w Świecku 
 - **Korzyści**: Omija ryzyko zatorów na Berliner Ring (A10) i kontrole federalne w Świecku; niższa opłata za A2 w Polsce (zjazd w Jordanowie).
 - **Logistyka**: Obiad zrealizowany w Biergartenie Waldschänke Brückkanal (Am Brückkanal 3, Schwarzenbruck pod Norymbergą); tankowanie przed granicą w Gubinie (DK32); późna kolacja w restauracji azjatyckiej Pak Choi (Eschenstraße 42, Taufkirchen obok hotelu Fresh Inn).
 
+## 8. Optymalizacja pogoda & zmęczenie w Bazie 1 (Dni 3–6) — ✅ ZDECYDOWANE I WDROŻONE (2026-09-13)
+
+Na podstawie aktualnych prognoz pogody (Open-Meteo) oraz zmęczenia kierowcy krętymi drogami wjazdowymi w góry w D2, zmieniono układ i kolejność dni 3–6:
+- **D3 (pn 14.09) — Barga & Ponte del Diavolo (Dzień regeneracyjny)**:
+  - *Kierowca/trasa*: minimum jazdy (tylko 6 min do Bargi i 12 min płaską SS12 do Ponte del Diavolo).
+  - *Mama*: wysadzenie na samej górze pod Duomo, zejście w dół zabytkowymi uliczkami (zero wspinaczki).
+  - *Punkty*: Duomo, panoramiczny punkt widokowy, zakupy w Macelleria Angelini, obiad w *Osteria Il Borgo dei Sapori*, most Ponte del Diavolo, popołudnie relaks w ogrodzie w bazie (opcjonalny spacer pod stary dąb Treppignana).
+- **D4 (wt 15.09) — Pętla Monte Forato (Alpy Apuańskie)**:
+  - *Pogoda*: wtorek to najgorętszy dzień na nizinach (~30°C w Lukce/Pizie). W górach i w cieniu bukowego lasu panują idealne warunki (18–22°C, 0% deszczu).
+  - *Grupa*: wariant trekkingowy dla piechurów (pętla z Fornovolasco), a dla Mamy bezstresowy dzień odpoczynku i relaksu w ogrodzie w Ponte all'Ania.
+  - *Wieczór*: punkt widokowy Piazza Arringo w Bardze na zachód słońca nad Monte Forato.
+- **D5 (śr 16.09) — Lucca + Piza + Viareggio (★ POPULARNY)**:
+  - *Pogoda*: spadek temperatury do przyjemnych 27.8°C (znacznie znośniej na bruku w Lukce i na trawniku w Pizie).
+  - *Zmęczenie*: trójkąt kolejowy Lucca–Pisa–Viareggio–Lucca eliminuje jazdę autem. Obiad w otwartej w środy *Trattoria da Giulio in Pelleria*. Finał o zachodzie słońca nad morzem w Viareggio.
+  - Brak kolizji z regułą „dwóch ciężkich dni pod rząd” (poprzedzony spokojnym wieczorem, a kolejny dzień z późną pobudką).
+- **D6 (czw 17.09) — Grotta del Vento & Bagni di Lucca (Dzień deszczowy)**:
+  - *Pogoda*: czwartek przynosi 50–60% prawdopodobieństwa opadów rano i wczesnym popołudniem.
+  - *Działanie*: rano brak pośpiechu (późna pobudka po długiej środzie). Wizyta w Grotta del Vento w czasie deszczu (pod ziemią stałe 10°C, pełna ochrona przed aurą). Gdy po południu front ustępuje, zjazd do Bagni di Lucca (Casino Reale, Ponte delle Catene, spacer wzdłuż Lima/Serchio).
+

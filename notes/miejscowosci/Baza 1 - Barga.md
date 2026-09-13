@@ -32,11 +32,11 @@ Wszystkie `drive_min` w D3/D5/D6 zaktualizowane w JSON na te dokładne wartości
 
 - **Pieve Fosciana — ❌ ODRZUCONE** jako alternatywa bazy: suma czasów dojazdu 201 min vs 125 min z okolic Bargi — wyraźnie gorzej (leży wyżej w dolinie, dalej od Lukki/Ponte del Diavolo/Bagni di Lucca). Ta ocena była liczona względem generycznego pinu Bargi, nie zmienia się istotnie po korekcie na Ponte all'Ania.
 
-## Dni programu (po korekcie 2026-07-19, adres skorygowany 2026-07-25)
-- D3: Barga (Duomo, Treppignana, Grotta del Vento — rezerwacja: https://grottadelvento.com/book-now/)
-- D4: [[Lucca]] + [[Piza]] (mury, Krzywa Wieża) — pociągiem z Lukki
-- D5: **Pętla Monte Forato** (naturalny łuk skalny, Fornovolasco) — zastąpił Verrucole+Vagli+Gorfigliano (i przejściowo Il Ciocco), zob. niżej
-- D6: Ponte del Diavolo (Ponte della Maddalena) + Bagni di Lucca + Pieve di Careggine
+## Dni programu (po optymalizacji pogodowej 2026-09-13)
+- D3 (pn 14.09): Barga (Duomo z drop-offem na górze, spacer w dół, Macelleria Angelini, obiad Osteria Il Borgo dei Sapori) + Ponte del Diavolo (Borgo a Mozzano) + popołudniowy odpoczynek w ogrodzie bazy (regeneracja po krętej trasie wjazdowej)
+- D4 (wt 15.09): **Pętla Monte Forato** (Alpy Apuańskie, Fornovolasco) — sucho (0% deszczu), cień lasu bukowego/kasztanowego chroni przed upałem 30°C na nizinach; Mama relaks w ogrodzie w bazie
+- D5 (śr 16.09): [[Lucca]] + [[Piza]] + [[Viareggio]] (mury, Krzywa Wieża, zachód nad morzem) — pociągiem z Lukki, ochłodzenie do 27.8°C, obiad w Da Giulio
+- D6 (czw 17.09): **Grotta del Vento** (naturalna ochrona pod ziemią 10°C przed deszczem 50–60% zapowiadanym rano/w południe) + **Bagni di Lucca** (Casino Reale, Ponte delle Catene) po południu po ustaniu opadów
 
 ## D5 — historia zmian (2026-07-19)
 Pierwotny D5 (Verrucole + Lago di Vagli + Gorfigliano) miał dwa nierozwiązywalne problemy:

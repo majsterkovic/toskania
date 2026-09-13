@@ -71,7 +71,7 @@ Na podstawie aktualnych prognoz pogody (Open-Meteo) oraz zmęczenia kierowcy kr�
 - **D3 (pn 14.09) — Barga & Ponte del Diavolo (Dzień regeneracyjny)**:
   - *Kierowca/trasa*: minimum jazdy (tylko 6 min do Bargi i 12 min płaską SS12 do Ponte del Diavolo).
   - *Mama*: wysadzenie na samej górze pod Duomo, zejście w dół zabytkowymi uliczkami (zero wspinaczki).
-  - *Punkty*: Duomo, panoramiczny punkt widokowy, zakupy w Macelleria Angelini, obiad w *Osteria Il Borgo dei Sapori*, most Ponte del Diavolo, popołudnie relaks w ogrodzie w bazie (opcjonalny spacer pod stary dąb Treppignana).
+  - *Punkty*: Duomo, panoramiczny punkt widokowy, zakupy w Macelleria Angelini, obiad w *Osteria Il Borgo dei Sapori*, most Ponte del Diavolo, zakupy zaopatrzeniowe do bazy w Conad (Fornaci di Barga), popołudnie relaks w ogrodzie w bazie (opcjonalny spacer pod stary dąb Treppignana).
 - **D4 (wt 15.09) — Pętla Monte Forato (Alpy Apuańskie)**:
   - *Pogoda*: wtorek to najgorętszy dzień na nizinach (~30°C w Lukce/Pizie). W górach i w cieniu bukowego lasu panują idealne warunki (18–22°C, 0% deszczu).
   - *Grupa*: wariant trekkingowy dla piechurów (pętla z Fornovolasco), a dla Mamy bezstresowy dzień odpoczynku i relaksu w ogrodzie w Ponte all'Ania.

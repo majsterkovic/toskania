@@ -19,7 +19,7 @@ Dni 3–6 (13/14.09–17.09.2026), 5 nocy.
 
 Wszystkie `drive_min` w D3/D5/D6 zaktualizowane w JSON na te dokładne wartości (były policzone z błędnego adresu Arsenale, patrz historia niżej).
 
-### Sklep z wędlinami i specjałami przy noclegu (~10 min autem)
+### Sklepy i zakupy przy noclegu
 - **Macelleria Angelini di Martinelli Davide** (Via Antonio Mordini 10, 55051 Barga LU, tel. 0583 723112) — tradycyjny, historyczny sklep mięsno-wędliniarski z najwyższej półki prowadzony przez Davide Martinelli. Samochodem ~10 minut z Casa vacanze Rosa (Ponte all'Ania).
   - **Co warto kupić i zjeść:**
     - **Wyroby z czarnej świni** (*maiale nero / cinta senese* — tradycyjne wędliny, szynki, salami o głębokim, orzechowym smaku)
@@ -27,13 +27,14 @@ Wszystkie `drive_min` w D3/D5/D6 zaktualizowane w JSON na te dokładne wartości
     - **Pancetta** (tradycyjny toskański boczek dojrzewający, aromatyczny i kruchy)
     - **Miód kasztanowy** (*miele di castagno* — ciemny, lekko wytrawny miód ze starych gajów kasztanowych doliny Serchio, klasyczny dodatek do deski pecorino)
   - Godziny otwarcia: pon, wt, czw, pt, sob: 08:00–13:00 i 16:00–19:00; śr: 08:00–13:00 (śr po południu i niedziela nieczynne).
+- **Supermarket Conad — Fornaci di Barga** (Via Risorgimento 12, 55052 Fornaci di Barga LU) — ~2 km / 3 min autem od bazy. Główne zaopatrzenie apartamentu: woda mineralna, pieczywo, mleko, owoce, toskańskie wina, sery i wędliny. Czynne pn–sb 08:00–20:00 ciągle (bez przerw sjestowych), duży parking.
 
 **Historia — jak doszło do pomyłki:** 19.07.2026 w notatkach oznaczono jako potwierdzoną rezerwację adres SR445 della Garfagnana 33, frazione Arsenale (44.06753, 10.45515), a Casa vacanze Rosa opisano jako "czołowego kandydata, ostatecznie nie wybranego". To był błąd — realna rezerwacja (potwierdzenie Booking.com) to Casa vacanze Rosa w Ponte all'Ania, kilka km na południe od Arsenale. Skorygowano 2026-07-25 na podstawie przesłanego przez użytkownika potwierdzenia rezerwacji.
 
 - **Pieve Fosciana — ❌ ODRZUCONE** jako alternatywa bazy: suma czasów dojazdu 201 min vs 125 min z okolic Bargi — wyraźnie gorzej (leży wyżej w dolinie, dalej od Lukki/Ponte del Diavolo/Bagni di Lucca). Ta ocena była liczona względem generycznego pinu Bargi, nie zmienia się istotnie po korekcie na Ponte all'Ania.
 
 ## Dni programu (po optymalizacji pogodowej 2026-09-13)
-- D3 (pn 14.09): Barga (Duomo z drop-offem na górze, spacer w dół, Macelleria Angelini, obiad Osteria Il Borgo dei Sapori) + Ponte del Diavolo (Borgo a Mozzano) + popołudniowy odpoczynek w ogrodzie bazy (regeneracja po krętej trasie wjazdowej)
+- D3 (pn 14.09): Barga (Duomo z drop-offem na górze, spacer w dół, delikatesy Macelleria Angelini, obiad Osteria Il Borgo dei Sapori) + Ponte del Diavolo (Borgo a Mozzano) + zaopatrzenie bazy w supermarkecie Conad w Fornaci di Barga + popołudniowy odpoczynek w ogrodzie bazy (regeneracja po krętej trasie wjazdowej)
 - D4 (wt 15.09): **Pętla Monte Forato** (Alpy Apuańskie, Fornovolasco) — sucho (0% deszczu), cień lasu bukowego/kasztanowego chroni przed upałem 30°C na nizinach; Mama relaks w ogrodzie w bazie
 - D5 (śr 16.09): [[Lucca]] + [[Piza]] + [[Viareggio]] (mury, Krzywa Wieża, zachód nad morzem) — pociągiem z Lukki, ochłodzenie do 27.8°C, obiad w Da Giulio
 - D6 (czw 17.09): **Grotta del Vento** (naturalna ochrona pod ziemią 10°C przed deszczem 50–60% zapowiadanym rano/w południe) + **Bagni di Lucca** (Casino Reale, Ponte delle Catene) po południu po ustaniu opadów

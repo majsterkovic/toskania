@@ -6,16 +6,16 @@ tags: [toskania, baza]
 
 Dni 3–6 (13/14.09–17.09.2026), 5 nocy.
 
-## Nocleg — ✅ POTWIERDZONA REZERWACJA: Casa vacanze Rosa (2026-07-25, sprostowanie po błędnym zapisie "Arsenale" z 2026-07-19)
-**Via Nazionale 29, Ponte all'Ania (frazione Fornaci di Barga), 55051 Barga LU.** Coords: 44.0398411, 10.4932228. Doskonała lokalizacja wg gości (9/10, 5 opinii). Tuż przy SR445 nad Serchio, ~3 min/2 km od stacji kolejowej Fornaci di Barga, ~6 min od centrum Bargi.
+## Nocleg — ✅ POTWIERDZONA REZERWACJA: Casa vacanze Rosa (Mologno)
+**Via Nazionale 29, 55051 Mologno LU.** Coords: 44.0677643, 10.4549746. Doskonała lokalizacja wg gości (9/10, 5 opinii). Położona zaledwie **250 metrów (3 minuty pieszo!) od stacji kolejowej Barga - Gallicano** ([Google Maps](https://maps.app.goo.gl/uK3qT)), tuż przy SR445, ~6 min od historycznego centrum Bargi.
 
-**Zweryfikowane czasy dojazdu (OSRM) z tej dokładnej lokalizacji:**
-- Barga (Duomo): 6 min, Treppignana: 4 min, Grotta del Vento/Fornovolasco: 25 min (D3)
-- Monte Forato/Fornovolasco: 23 min (D5)
-- Ponte del Diavolo: 12 min, Bagni di Lucca: 15 min, Pieve di Careggine: 33 min (D6)
-- Lucca (D4, dzień pociągu — mury): 37 min / 31 km
+**Zweryfikowane czasy dojazdu (OSRM) i dojścia z tej dokładnej lokalizacji:**
+- **Stacja Barga - Gallicano:** 3 min / 250 m pieszo — dosłownie parę kroków od drzwi apartamentu!
+- Barga (Duomo): 6 min, Treppignana: 5 min, Grotta del Vento/Fornovolasco: 24 min (D3)
+- Monte Forato/Fornovolasco: 22 min (D4)
+- Ponte del Diavolo: 14 min, Bagni di Lucca: 17 min, Pieve di Careggine: 30 min (D6)
+- Lucca (dzień pociągu D5 — mury): pociąg bezpośredni REG z peronu 250 m od domu!
 - Sommocolonia: 20 min
-- Stacja Fornaci di Barga (alternatywa "pociąg całą drogę" do Lukki/Pizy): 3 min/2 km — bardzo blisko
 
 Wszystkie `drive_min` w D3/D5/D6 zaktualizowane w JSON na te dokładne wartości (były policzone z błędnego adresu Arsenale, patrz historia niżej).
 
@@ -28,6 +28,7 @@ Wszystkie `drive_min` w D3/D5/D6 zaktualizowane w JSON na te dokładne wartości
     - **Miód kasztanowy** (*miele di castagno* — ciemny, lekko wytrawny miód ze starych gajów kasztanowych doliny Serchio, klasyczny dodatek do deski pecorino)
   - Godziny otwarcia: pon, wt, czw, pt, sob: 08:00–13:00 i 16:00–19:00; śr: 08:00–13:00 (śr po południu i niedziela nieczynne).
 - **Supermarket Conad — Fornaci di Barga** (Via Risorgimento 12, 55052 Fornaci di Barga LU) — ~2 km / 3 min autem od bazy. Główne zaopatrzenie apartamentu: woda mineralna, pieczywo, mleko, owoce, toskańskie wina, sery i wędliny. Czynne pn–sb 08:00–20:00 ciągle (bez przerw sjestowych), duży parking.
+- **Bar Pizzeria La Stazione — Mologno** (Via della Stazione 1, 55051 Mologno LU, tel. 0583 710123) — bar i pizzeria tuż przy stacji kolejowej Barga-Gallicano, zaledwie ~300 m spacerem (4 min) od noclegu przy Via Nazionale 29. Pizze klasyczne z pieca, pizza in teglia, focaccie na miejscu i na wynos. Sprawdzony posiłek obiadowy po 8-godzinnej wyprawie w D4 (15.09).
 
 **Historia — jak doszło do pomyłki:** 19.07.2026 w notatkach oznaczono jako potwierdzoną rezerwację adres SR445 della Garfagnana 33, frazione Arsenale (44.06753, 10.45515), a Casa vacanze Rosa opisano jako "czołowego kandydata, ostatecznie nie wybranego". To był błąd — realna rezerwacja (potwierdzenie Booking.com) to Casa vacanze Rosa w Ponte all'Ania, kilka km na południe od Arsenale. Skorygowano 2026-07-25 na podstawie przesłanego przez użytkownika potwierdzenia rezerwacji.
 
@@ -35,8 +36,8 @@ Wszystkie `drive_min` w D3/D5/D6 zaktualizowane w JSON na te dokładne wartości
 
 ## Dni programu (po optymalizacji pogodowej 2026-09-13)
 - D3 (pn 14.09): Barga (Duomo z drop-offem na górze, spacer w dół, delikatesy Macelleria Angelini, obiad Osteria Il Borgo dei Sapori) + Ponte del Diavolo (Borgo a Mozzano) + zaopatrzenie bazy w supermarkecie Conad w Fornaci di Barga + popołudniowy odpoczynek w ogrodzie bazy (regeneracja po krętej trasie wjazdowej)
-- D4 (wt 15.09): **Pętla Monte Forato** (Alpy Apuańskie, Fornovolasco) — sucho (0% deszczu), cień lasu bukowego/kasztanowego chroni przed upałem 30°C na nizinach; Mama relaks w ogrodzie w bazie
-- D5 (śr 16.09): [[Lucca]] + [[Piza]] + [[Viareggio]] (mury, Krzywa Wieża, zachód nad morzem) — pociągiem z Lukki, ochłodzenie do 27.8°C, obiad w Da Giulio
+- D4 (wt 15.09): **Pętla Monte Forato** (Alpy Apuańskie, Fornovolasco) — sucho (0% deszczu), cień lasu bukowego/kasztanowego chroni przed upałem 30°C na nizinach; Mama relaks w ogrodzie w bazie; po powrocie obiad: pizza w Bar La Stazione w Mologno (~300 m od bazy)
+- D5 (śr 16.09): [[Lucca]] + [[Piza]] + [[Viareggio]] (mury, Krzywa Wieża, zachód nad morzem) — pociągiem bezpośrednio z Barga-Gallicano (REG 19159, 08:50), ochłodzenie do 27.8°C, obiad w Da Giulio
 - D6 (czw 17.09): **Grotta del Vento** (naturalna ochrona pod ziemią 10°C przed deszczem 50–60% zapowiadanym rano/w południe) + **Bagni di Lucca** (Casino Reale, Ponte delle Catene) po południu po ustaniu opadów
 
 ## D5 — historia zmian (2026-07-19)
@@ -46,7 +47,9 @@ Pierwotny D5 (Verrucole + Lago di Vagli + Gorfigliano) miał dwa nierozwiązywal
 
 Etap 1 zamiennika: szlak Il Ciocco–Barga (7 min od bazy, ~8km/2,5–3h, las kasztanowy) — **zastąpiony ostatecznie** (patrz niżej), bo użytkownik chciał czegoś bardziej „górskiego i widowiskowego".
 
-**Finalne rozwiązanie: pętla Monte Forato z Fornovolasco** (ta sama wieś co Grotta del Vento, 25 min od bazy) — naturalny łuk skalny w wapiennej skale (rozpiętość 32 m, jeden z największych we Włoszech), 1223 m n.p.m. Trasa CAI 6 → Foce di Petrosciana → CAI 110 grzbietem do łuku — **oficjalnie „medium", BEZ via ferrata/sprzętu alpejskiego** (trudność zaczyna się dopiero przy próbie kontynuacji grzbietem do Pania della Croce, czego explicite unikamy). Pełna pętla 12 km/700m/~5h (powrót CAI 130) lub wariant krótszy ~3,5h (CAI 12). To właściwa odpowiedź na „nie ciężka ale widowiskowa" — spektakularny cel (przejście przez/pod łukiem) bez ryzyka technicznego.
+**Finalne rozwiązanie: pętla Monte Forato z Fornovolasco** (ta sama wieś co Grotta del Vento, 23 min od bazy) — naturalny łuk skalny w wapiennej skale (rozpiętość 32 m, jeden z największych we Włoszech), 1223 m n.p.m. Trasa CAI 6 → Foce di Petrosciana → CAI 110 grzbietem do łuku — **oficjalnie „medium", BEZ via ferrata/sprzętu alpejskiego**.
+- **Ostatecznie zrealizowana trasa (2026-09-15)**: pętla z Fornovolasco (parking 491 m) szlakiem CAI 6 do Foce di Petrosciana (1150 m) → szlak CAI 110 grzbietem do łuku Monte Forato (1223–1260 m) → bezpośrednie zejście łącznikiem do szlaku CAI 130 i powrót zboczami Costa Pulita i La Carpineta prosto do wsi. Parametry GPS (Mapy.cz / GPX): **9,3 km dystansu**, **+816 m / -815 m przewyższenia**.
+  - **Kluczowa lekcja terenowa z 15.09**: Mapy.cz szacują trasę na ~4 h, co w terenie Alp Apuańskich jest złudne. Bardzo strome podejście korytem potoku i lasem (CAI 6), kamienista grań (CAI 110) oraz techniczne, sypiące się piargi na zejściu (CAI 130) sprawiły, że **rzeczywisty czas marszu z odpoczynkami wyniósł ok. 8 godzin**. Zostawienie Mamy w ogrodzie bazy było najlepszą możliwą decyzją. Zapis trasy zachowany w `public/gpx/monte-forato.gpx`.
 
 ## Wieczorna trasa w góry (2026-07-19)
 Barga leży między **Alpami Apuańskimi** (Alpi Apuane) a **Apeninami** — góry są tuż obok (choć to nie Alpy właściwe). Opcje na wieczór/złotą godzinę:

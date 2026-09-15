@@ -389,21 +389,21 @@
   "bases": [
     {
       "id": "base1",
-      "name": "Barga — Casa vacanze Rosa (Ponte all'Ania)",
+      "name": "Barga — Casa vacanze Rosa (Mologno)",
       "image": "barga",
       "label": "BAZA 1",
       "region": "Garfagnana · Lucca",
       "nights": "13–17 wrz (5 nocy)",
       "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3.",
       "color": "emerald",
-      "accommodation": "POTWIERDZONA REZERWACJA — Casa vacanze Rosa, Via Nazionale 29, Ponte all'Ania, 55051 Barga LU. Doskonała lokalizacja (9/10, 5 opinii gości). ~3 min (2 km) od stacji kolejowej Fornaci di Barga, ~6 min od centrum Bargi.",
+      "accommodation": "POTWIERDZONA REZERWACJA — Casa vacanze Rosa, Via Nazionale 29, 55051 Mologno LU. Doskonała lokalizacja (9/10, 5 opinii gości). Zaledwie 250 m (3 min pieszo!) od stacji kolejowej Barga - Gallicano, ~6 min od centrum Bargi.",
       "local_shop": "Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga, tel. 0583 723112) — tradycyjny sklep z wędlinami i specjałami. Co warto kupić i zjeść: wyroby z czarnej świni (maiale nero / cinta senese), pecorino, dojrzewającą pancettę oraz toskański miód kasztanowy.",
       "booking_tip": "Zarezerwowane — bez dalszych działań. Lokalizacja bardzo dobrze skomunikowana z całym blokiem Bargi (patrz czasy dojazdu w poszczególnych dniach).",
-      "gps_hint": "Naviguj: Via Nazionale 29, Ponte all'Ania, 55051 Barga LU (coords 44.0398411, 10.4932228)",
-      "address": "Via Nazionale 29, Ponte all'Ania, 55051 Barga LU",
+      "gps_hint": "Naviguj: Via Nazionale 29, 55051 Mologno LU (coords 44.0677643, 10.4549746)",
+      "address": "Via Nazionale 29, 55051 Mologno LU",
       "coords": [
-        44.0398411,
-        10.4932228
+        44.0677643,
+        10.4549746
       ]
     },
     {
@@ -802,12 +802,12 @@
         ]
       },
       "accommodation": {
-        "place": "BAZA 1 — Casa vacanze Rosa (Ponte all'Ania, Barga)",
-        "note": "POTWIERDZONA REZERWACJA — Via Nazionale 29, Ponte all'Ania, 55051 Barga LU. Przyjazd ok. 18:15–18:30 (w sam raz przed zmrokiem). Doskonała lokalizacja (9/10, 5 opinii gości), ~3 min (2 km) od stacji kolejowej Fornaci di Barga.",
+        "place": "BAZA 1 — Casa vacanze Rosa (Mologno, Barga)",
+        "note": "POTWIERDZONA REZERWACJA — Via Nazionale 29, 55051 Mologno LU. Przyjazd ok. 18:15–18:30 (w sam raz przed zmrokiem). Doskonała lokalizacja (9/10, 5 opinii gości), zaledwie 250 m (3 min pieszo!) od stacji kolejowej Barga - Gallicano.",
         "local_shop": "Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga, tel. 0583 723112) — tradycyjny rzeźnik i delikatesy Garfagnany. Co warto kupić i zjeść: wyroby z czarnej świni (cinta senese / maiale nero), lokalne pecorino, dojrzewającą pancettę oraz toskański miód kasztanowy.",
         "price": "€688,75 razem za 5 nocy / 5 osób (potwierdzona rezerwacja)",
         "booking_tip": "Zarezerwowane — bez dalszych działań.",
-        "gps_hint": "Naviguj: Via Nazionale 29, Ponte all'Ania, 55051 Barga LU (coords 44.0398411, 10.4932228)"
+        "gps_hint": "Naviguj: Via Nazionale 29, 55051 Mologno LU (coords 44.0677643, 10.4549746)"
       },
       "route_segments": [
         {
@@ -1257,7 +1257,7 @@
         {
           "name": "Pętla Monte Forato (naturalny łuk skalny) — z Fornovolasco",
           "drive_min": 23,
-          "description": "Prawdziwa górska wycieczka, ale bez wspinaczki: pętla z Fornovolasco (ta sama wieś co Grotta del Vento) prowadzi szlakiem CAI nr 6 do przełęczy Foce di Petrosciana (mija jaskinię Tana che Urla i źródło), dalej grzbietem CAI 110 aż do naturalnego łuku skalnego Monte Forato (1223 m) — jednego z największych naturalnych łuków we Włoszech (rozpiętość 32 m, do 25 m wysokości nad przełęczą, między dwoma szczytami 1223 i 1209 m). Trasa dochodzi do łuku BEZ odcinka wyposażonego (via ferrata) — oficjalnie oceniana jako 'medium' (E — turystyczna, znakowana CAI), trudność biorą na siebie ci, którzy chcą iść dalej grzbietem. Pełna pętla (powrót przez CAI 130): 12 km, ~700 m przewyższenia, ~5 h. Wariant krótszy — zejście przez CAI 12 z powrotem do CAI 6 — skraca trasę do ok. 3,5 h, wciąż z widokiem na łuk.",
+          "description": "Zrealizowana górska wyprawa pętlą z Fornovolasco (parking 491 m): podejście szlakiem CAI 6 doliną potoku Turrite di Gallicana przez cienisty las bukowo-kasztanowy (obok jaskini Tana che Urla i leśnego źródła Chiesaccia) na przełęcz Foce di Petrosciana (1150 m). Dalej grzbietem szlakiem CAI 110 ze spektakularną panoramą na grań Alp Apuańskich i morze aż pod potężny naturalny łuk skalny Monte Forato (1223 m n.p.m., kulminacja ścieżki ok. 1260 m) — jeden z największych naturalnych łuków we Włoszech (rozpiętość 32 m, do 25 m wysokości okna skalnego). Zejście: bezpośrednim łącznikiem w dół ze zbocza do szlaku CAI 130 i powrót zboczami Costa Pulita i La Carpineta prosto do Fornovolasco. Parametry GPS: 9,3 km dystansu, +816 m sumy podejść / -815 m zejść. RZECZYWISTOŚĆ TERENOWA: aplikacje mapowe (Mapy.cz) szacują tę pętlę na teoretyczne ~4 h, ale w surowym, stromym i kamienistym terenie Alp Apuańskich (wapienne piargi, śliskie rumosze, forsowne podejście i wymagające wolnego, ostrożnego kroku zejście CAI 130) wraz z postojami trasa zajęła w realu ok. 8 godzin!",
           "type": "nature",
           "image_key": "monte-forato",
           "gps_hint": "Parking we wsi Fornovolasco, Fabbriche di Vergemoli LU",
@@ -1267,7 +1267,7 @@
           ],
           "opening_hours": "Szlak dostępny całą dobę, cały rok, bez opłat.",
           "ticket_price": "Bezpłatny.",
-          "duration_h": 4
+          "duration_h": 8
         }
       ],
       "oak_forest": {
@@ -1277,32 +1277,49 @@
         "gps_hint": "CAI nr 6, Fornovolasco → Foce di Petrosciana."
       },
       "food": {
-        "place": "Prowiant na szlak + lunch w Fornovolasco po zejściu",
-        "address": "Fornovolasco, Fabbriche di Vergemoli LU",
+        "place": "Bar Pizzeria La Stazione (Mologno)",
+        "address": "Via della Stazione 1, 55051 Mologno LU",
+        "phone": "0583 710123",
         "dishes": [
-          "kanapki/panino na szlak",
-          "owoce, batony energetyczne",
-          "po zejściu: prosta trattoria we wsi"
+          "pizza klasyczna z pieca",
+          "pizza in teglia",
+          "focaccia toskańska, calzone"
         ],
-        "note": "To dzień na cały prowiant w plecaku (5 h trasy, brak punktów z jedzeniem na szlaku) — lżejszy posiłek w Fornovolasco dopiero po powrocie z trasy.",
-        "price": "~€8–15/os"
+        "note": "Zrealizowany obiad po powrocie z górskiej trasy na Monte Forato (oraz w ciągu dnia dla Mamy odpoczywającej w bazie) — lokalna pizza w Barze La Stazione w Mologno tuż obok stacji kolejowej Barga-Gallicano, zaledwie ~300 m spacerem (4 min) od noclegu przy Via Nazionale.",
+        "price": "~€7–12/os",
+        "gps_hint": "Via della Stazione 1, 55051 Mologno LU (~300 m pieszo od bazy)",
+        "coords": [
+          44.0685,
+          10.4523
+        ],
+        "url": "https://www.google.com/maps/dir/Via+Nazionale,+29,+55051+Mologno+LU/Bar+La+Stazione,+Via+della+Stazione,+1,+55051+Mologno+LU/@44.0679716,10.4525434,311m/data=!3m3!1e3!4b1!5s0x12d57ab2607da81d:0xe0c5f06900567c73!4m14!4m13!1m5!1m1!1s0x12d57ab3bd304abf:0xc157d93e99e24ffe!2m2!1d10.4549746!2d44.0677643!1m5!1m1!1s0x12d57ab25c8e8551:0xbc5eb29db5165aa4!2m2!1d10.4523186!2d44.0684808!3e2",
+        "opening_hours": "Codziennie (bar od rana, pizzeria na obiad i kolację, na miejscu i na wynos)"
       },
       "practical_tips": [
-        "Solidne buty trekkingowe (obowiązkowo — kamienisty grzbiet) + kijki trekkingowe.",
-        "Zabierz min. 1,5–2 l wody/os — na szlaku brak źródeł pitnej wody poza jednym przy Foce di Petrosciana.",
-        "Wariant krótszy (~3,5h, CAI 12) dla mniej wprawionych — wciąż dociera do łuku, tylko inny powrót.",
+        "⚠️ UWAGA na szacunki czasowe aplikacji (Mapy.cz/Komoot): algorytmy zakładają gładki szlak i podają teoretyczne ~4 h, ale Alpy Apuańskie to bardzo stromy, kamienisty i wyczerpujący teren wapienny (duże nachylenie na CAI 6, nierówny grzbiet CAI 110 oraz śliskie, luźne piargi na zejściu CAI 130, gdzie każdy krok wymaga skupienia). Realny czas pętli z odpoczynkami to ok. 7–8 godzin!",
+        "Przebyta pętla: 9,3 km, +816 m / -815 m przewyższenia, ~8 h w terenie (CAI 6 → Foce di Petrosciana → grań CAI 110 → łuk Monte Forato → bezpośrednie zejście CAI 130 do Fornovolasco).",
+        "Solidne buty trekkingowe i kijki trekkingowe absolutnie obowiązkowe — bez nich zejście CAI 130 po luźnym rumoszu jest mordercze dla kolan i grozi poślizgiem.",
+        "Zapas wody: przy 8 godzinach w górach 1,5 l to absolutne minimum — bezpieczniej zabrać 2–2,5 l na osobę (jedyne źródło na trasie jest przy Foce di Petrosciana).",
+        "Zejście CAI 130 bezpośrednio od łuku sprowadza z powrotem do wsi bez nadkładania drogi przez Foce di Valli.",
         "NIE kontynuuj grzbietem za łuk w stronę Pania della Croce — tam zaczyna się odcinek wyposażony (via ferrata), wymaga uprzęży i doświadczenia.",
         "Ucieczka przed upałem: we wtorek w miastach panuje skwar (prawie 30°C), podczas gdy szlak z Fornovolasco biegnie w orzeźwiającym cieniu lasu kasztanowego przy 0% ryzyka deszczu.",
-        "Dla Mamy i odpoczywających: leniwy dzień w ogrodzie bazy w Ponte all'Ania (basen, leżaki, książka) bez męczącego chodzenia w miejskim słońcu.",
-        "Wieczór: powrót do bazy ok. 15:00, relaks i wczesny sen przed środowym całodniowym wyjazdem do Lukki i Pizy."
+        "Dla Mamy i odpoczywających: leniwy dzień w ogrodzie bazy (basen, leżaki, książka) okazał się doskonałą decyzją — 8 h kamienistego trekkingu byłoby dla niej zbyt forsowne.",
+        "Obiad po 8 h w górach: pizza w Bar La Stazione w Mologno (Via della Stazione 1, tuż przy stacji Barga-Gallicano) — zaledwie ~300 m (4 min spacerem) od bazy, bezstresowy wybór po wyczerpującym trekkingu bez konieczności jazdy autem.",
+        "Wieczór po 8 h w górach: powrót do bazy, gorący prysznic, regeneracja nóg i wczesny sen przed środowym całodniowym wyjazdem kolejowym do Lukki i Pizy."
       ],
-      "narrative": "Dziś prawdziwa górska wyprawa w Alpy Apuańskie — idealnie wpasowana w bezdeszczowy wtorek i chroniąca przed upałem, który panuje dziś na nizinach (w miastach dochodzi do 30°C). Podczas gdy Mama i osoby szukające wytchnienia spędzają leniwy dzień w ogrodzie bazy przy basenie, piechurzy ruszają o 8:00 rano do Fornovolasco (23 min). Szlakiem CAI nr 6 idziemy w górę przez bukowo-kasztanowy las, mijając jaskinię Tana che Urla i leśne źródło, aż do przełęczy Foce di Petrosciana. Dalej grzbietem CAI 110 dochodzimy do spektakularnego celu: naturalnego łuku skalnego Monte Forato — 32-metrowego okna skalnego zawieszonego na wysokości 1223 m n.p.m. z oszałamiającym widokiem na grań Apuan i morze. Schodzimy do Fornovolasco na prosty lunch i wracamy do bazy ok. 15:00 na zasłużony odpoczynek. Wieczór to regeneracja sił i wczesny sen przed jutrzejszym wyjazdem do Lukki i Pizy.",
+      "narrative": "Dziś prawdziwa, wymagająca wyprawa w Alpy Apuańskie, która brutalnie zweryfikowała optymistyczne szacunki aplikacji mapowych. Podczas gdy Mapy.cz prognozowały lajtowe 4 godziny na 9,3 km, surowy teren Apuanów — strome wapienne podejście szlakiem CAI 6 przez las do Foce di Petrosciana (+660 m w pionie), kamienista graniowa ścieżka CAI 110 oraz techniczne, osypujące się pod butami zejście szlakiem CAI 130 po piargach Costa Pulita — zajął w rzeczywistości blisko 8 godzin marszu i postojów. Widoki spod 32-metrowego skalnego łuku Monte Forato na grań i lśniące w słońcu morze wynagrodziły jednak każdy wylany pot. Mama spędzająca ten czas w ciszy ogrodu przy basenie w bazie miała idealny, bezstresowy dzień — zabranie jej na ten szlak byłoby błędem. Po zejściu do Fornovolasco i powrocie do bazy zregenerowaliśmy siły pod gorącym prysznicem, a na zasłużony obiad zjedliśmy wyborną pizzę w Barze La Stazione w Mologno — zaledwie 300 metrów spacerem od noclegu, tuż przy stacji kolejowej. Wieczór mija pod znakiem odpoczynku i wczesnego snu przed jutrzejszym wyjazdem do Lukki, Pizy i nad morze.",
       "web_research": [
         {
-          "topic": "Pętla Monte Forato z Fornovolasco — oficjalne dane",
-          "summary": "Pełna pętla: 12 km, 700 m przewyższenia, ~5 h, poziom trudności 'medium' (turystyczna, bez via ferrata/sprzętu alpejskiego). Start: Fornovolasco (parking we wsi). Trasa: CAI 6 do Foce di Petrosciana (mija jaskinię Tana che Urla), CAI 110 grzbietem do łuku (1223 m), zejście CAI 131 (do podnóża Pania della Croce) lub powrót CAI 130. Wariant krótszy ~3,5 h przez CAI 12.",
-          "source": "https://turismo.garfagnana.eu/en/hikes/monte-forato-loop/",
-          "checked": "2026-07"
+          "topic": "Obiad po trasie: Bar La Stazione (Mologno)",
+          "summary": "Via della Stazione 1, 55051 Mologno LU (tel. 0583 710123). Bar i pizzeria tuż obok stacji kolejowej Barga-Gallicano, zaledwie ~300 m pieszo (4 min) od naszej bazy przy Via Nazionale 29. Tradycyjna pizza z pieca, pizza in teglia i focaccia na miejscu oraz na wynos — wygodny i zasłużony posiłek regeneracyjny po 8 godzinach w Alpach Apuańskich bez konieczności wsiadania za kółko.",
+          "source": "https://www.google.com/maps/dir/Via+Nazionale,+29,+55051+Mologno+LU/Bar+La+Stazione,+Via+della+Stazione,+1,+55051+Mologno+LU/@44.0679716,10.4525434,311m/data=!3m3!1e3!4b1!5s0x12d57ab2607da81d:0xe0c5f06900567c73!4m14!4m13!1m5!1m1!1s0x12d57ab3bd304abf:0xc157d93e99e24ffe!2m2!1d10.4549746!2d44.0677643!1m5!1m1!1s0x12d57ab25c8e8551:0xbc5eb29db5165aa4!2m2!1d10.4523186!2d44.0684808!3e2",
+          "checked": "2026-09-15"
+        },
+        {
+          "topic": "Zrealizowana trasa: pętla Monte Forato (Mapy.cz)",
+          "summary": "Ostatecznie przebyta pętla: 9,3 km dystansu, +816 m podejść, -815 m zejść, min. 491 m, max. 1260 m n.p.m. WAŻNE: algorytmy mapowe szacują tę trasę na ~4 h, co w terenie Alp Apuańskich jest mocno zaniżone — przez duże nachylenie, kamienisty szlak, luźne piargi na zejściu CAI 130 i postoje rzeczywisty czas wyniósł ok. 8 godzin. Przebieg: Fornovolasco (parking) → szlak CAI 6 (przez las, Tana che Urla) → przełęcz Foce di Petrosciana (1150 m) → szlak CAI 110 grzbietem → łuk skalny Arco di Monte Forato → łącznik w dół do szlaku CAI 130 → zejście zboczami Costa Pulita i La Carpineta do Fornovolasco. Bez via ferraty i bez obchodzenia przez Foce di Valli.",
+          "source": "https://mapy.com/pl/turisticka?planovani-trasy&rc=9YYqBwvZGwcjEc8YepdjLukYJgTr&rs=osm&rs=osm&rs=osm&rs=osm&ri=1192890081&ri=1244367879&ri=11828554&ri=1279037605&mrp=%7B%22c%22%3A132%2C%22dt%22%3A%22%22%2C%22d%22%3Atrue%7D&xc=%5B%5D&rut=1&rbf=alf&x=10.3439431&y=44.0216506&z=14",
+          "checked": "2026-09-15"
         },
         {
           "topic": "Naturalny łuk Monte Forato — wymiary i dostęp",
@@ -1318,6 +1335,7 @@
         }
       ],
       "opening_hours": {
+        "bar_la_stazione_mologno": "Codziennie (bar, przekąski, pizza z pieca na obiad i kolację).",
         "szlak_monte_forato": "Dostępny całą dobę, cały rok, bez opłat i rezerwacji."
       },
       "parking": {
@@ -1334,48 +1352,48 @@
       "daily_km_estimate": 31,
       "eta_timeline": [
         {
-          "time": "08:00",
+          "time": "08:30",
           "event": "Wyjazd z bazy do Fornovolasco (23 min)"
         },
         {
-          "time": "08:30",
-          "event": "Start pętli — CAI 6 w górę, mija Tana che Urla"
+          "time": "09:00",
+          "event": "Start pętli z parkingu Fornovolasco (491 m) — szlak CAI 6 w górę przez las, mija Tana che Urla i źródło Chiesaccia"
         },
         {
-          "time": "10:00",
-          "event": "Foce di Petrosciana — krótki odpoczynek, dalej grzbietem CAI 110"
-        },
-        {
-          "time": "11:15",
-          "event": "Naturalny łuk Monte Forato (1223 m) — widok, zdjęcia, drugie śniadanie"
-        },
-        {
-          "time": "12:00",
-          "event": "Powrót pętlą (CAI 130) lub krótszym wariantem (CAI 12)"
+          "time": "11:45",
+          "event": "Foce di Petrosciana (1150 m, 3,9 km) — odpoczynek na przełęczy po forsownym podejściu (+660 m), wejście na grzbiet CAI 110"
         },
         {
           "time": "13:30",
-          "event": "Fornovolasco — koniec pętli (wariant krótszy) / ok. 14:00 (pełna pętla)"
+          "event": "Naturalny łuk Monte Forato (1223–1260 m, 5,6 km) — spektakularna panorama Alp Apuańskich i morza, zdjęcia pod 32-metrowym oknem skalnym, posiłek regeneracyjny"
         },
         {
-          "time": "14:00",
-          "event": "Lekki lunch we wsi, powrót do bazy"
+          "time": "14:15",
+          "event": "Rozpoczęcie technicznego i stromego zejścia łącznikiem do szlaku CAI 130 (luźne piargi, wolne i ostrożne schodzenie zboczami Costa Pulita i La Carpineta)"
         },
         {
-          "time": "15:00",
-          "event": "Powrót do bazy — odpoczynek (prysznic, nogi w górę, bez basenu — wieczorem chłodno)"
+          "time": "17:00",
+          "event": "Fornovolasco (9,3 km, 492 m) — zamknięcie pętli na parkingu po ~8 godzinach wyprawy"
         },
         {
-          "time": "18:30",
-          "event": "Do wyboru: Piazza Arringo w Bardze (7 min, zachód słońca nad Alpami z łukiem Monte Forato) lub Sommocolonia (15 min, cicha wioska, historia z II wojny)"
+          "time": "17:30",
+          "event": "Zejście do auta i krótki powrót malowniczą trasą do doliny Serchio (~23 min)"
         },
         {
-          "time": "19:30",
-          "event": "Powrót do bazy, kolacja"
+          "time": "18:00",
+          "event": "Powrót do bazy — odpoczynek, gorący prysznic, regeneracja obolałych nóg"
+        },
+        {
+          "time": "19:00",
+          "event": "Zasłużony obiad / kolacja: pizza w Barze La Stazione w Mologno (Via della Stazione 1) — krótki spacer 300 m od bazy, regeneracyjny posiłek dla całej grupy"
+        },
+        {
+          "time": "20:30",
+          "event": "Spokojny wieczór w bazie, odpoczynek i wczesny sen przed środowym wyjazdem kolejowym do Lukki, Pizy i Viareggio"
         }
       ],
       "crowd_tip": "Popularny szlak wśród wprawnych turystów, ale rzadko zatłoczony — wczesny start (8:00) daje ciszę i chłodniejszą temperaturę na podejściu.",
-      "summary": "Prawdziwa górska wycieczka bez wspinaczki: pętla z Fornovolasco (5 h, wariant krótszy 3,5 h) do naturalnego łuku skalnego Monte Forato — jednego z największych we Włoszech (rozpiętość 32 m), z widokiem na Alpy Apuańskie i dolinę Serchio. Doskonałe wykorzystanie bezdeszczowej pogody i ucieczka przed upałem nizin, podczas gdy reszta grupy odpoczywa w ogrodzie bazy.",
+      "summary": "Prawdziwa, surowa górska wyprawa w Alpy Apuańskie: zrealizowana pętla z Fornovolasco (9,3 km, +816 m / -815 m) do naturalnego łuku Monte Forato (rozpiętość 32 m, wysokość ponad 1200 m n.p.m.). W przeciwieństwie do optymistycznych szacunków Mapy.cz (~4 h), wymagający wapienny teren (kamienie, stromizna CAI 6 i luźne piargi na zejściu CAI 130) sprawił, że przejście pętli z postojami zajęło realnie ok. 8 godzin. Spektakularne widoki na morze i grań, po powrocie do bazy zasłużony obiad z pizzą w Barze La Stazione w Mologno (~300 m pieszo), a wieczorem pełna regeneracja przed jutrzejszym dniem w miastach.",
       "weather": {
         "label": "Monte Forato",
         "coords": [
@@ -1394,29 +1412,31 @@
       "image2": "lucca",
       "base_id": "base1",
       "base_label": "BAZA 1 — Barga",
-      "drive_limit_min": 45,
+      "drive_limit_min": 10,
       "attractions": [
         {
           "name": "Lucca — mury renesansowe, Piazza dell'Anfiteatro (plac amfiteatru), Torre Guinigi (wieża z dębami), Duomo di San Martino (katedra)",
           "description": "Kameralne, spokojne miasto w pełni otoczone nienaruszonym pierścieniem renesansowych murów (1544–1650, ~4,2 km) — jedynymi we Włoszech zachowanymi w całości. Owalna Piazza dell'Anfiteatro powstała na rzucie rzymskiego amfiteatru, Torre Guinigi (45 m) nosi na szczycie kępę dębów ostrolistnych, a romański Duomo di San Martino kryje Volto Santo i grobowiec Ilarii del Carretto.",
           "type": "cultural",
           "image_key": "lucca",
-          "gps_hint": "Lucca — parking POZA murami: Parcheggio Palatucci lub Carducci (Porta San Pietro), 5–10 min pieszo do centrum. NIE wjeżdżać w mury (ZTL).",
+          "gps_hint": "Lucca — dojazd pociągiem REG 19159 (Barga-Gallicano 08:50 ➔ Lucca 09:34). Na stację Barga-Gallicano idziemy pieszo z apartamentu (zaledwie 250 m, 3 min) — auto cały dzień odpoczywa pod domem. Z dworca Lucca przez Porta San Pietro na mury to tylko 3 min pieszo.",
           "coords": [
             43.843,
             10.5079
           ],
-          "drive_min": 40,
+          "drive_min": null,
+          "drive_min_reason": "pociąg ze stacji Barga-Gallicano (REG 19159: 08:50 ➔ 09:34)",
           "opening_hours": "Mury urbane (pętla 4,2 km): dostępne całą dobę, bezpłatnie. Torre Guinigi: codz. (cze–wrz) 9:30–19:30, bilet €8 (ulg. €6,50). Piazza dell'Anfiteatro: zawsze dostępna. Duomo di San Martino: nawa ~bezpłatna, Volto Santo/zakrystia €3–9.",
           "ticket_price": "Mury i Piazza dell'Anfiteatro: bezpłatne. Torre Guinigi: €8/os intero, €6,50 ridotto (studenci z legitymacją, 6–14 lat, powyżej 65 lat, grupy 10+ z przewodnikiem). Bilet łączony Guinigi + Torre delle Ore + Orto Botanico: €14 (ważny 2 dni).",
+          "url": "https://maps.app.goo.gl/kY3MGagqui5CFvna6",
           "duration_h": 3
         },
         {
-          "name": "Piza — Piazza dei Miracoli (plac cudów): Krzywa Wieża (z zewnątrz), Duomo (katedra), Battistero (baptysterium), Camposanto (cmentarz)",
-          "description": "Piazza dei Miracoli — jeden z najsłynniejszych placów świata: Krzywa Wieża (dzwonnica katedry o pochyleniu blisko 4°, oglądana z zewnątrz na zielonym dywanie trawnika), romański Duomo Santa Maria Assunta (wspaniałe wnętrze z amboną Giovanniego Pisano), okrągły Battistero i monumentalny Camposanto. Oglądanie wieży z zewnątrz pozwala w pełni docenić jej niezwykłe pochylenie bez stania w kolejkach, presji slotu czasowego i 251 wąskich stopni.",
+          "name": "Piza — Piazza dei Miracoli (Krzywa Wieża, Katedra, Baptysterium) oraz spacer przez Borgo Stretto i Lungarni",
+          "description": "Piazza dei Miracoli — jeden z najsłynniejszych placów świata: Krzywa Wieża (dzwonnica o pochyleniu blisko 4°, oglądana z zewnątrz na zielonym dywanie trawnika), romański Duomo Santa Maria Assunta, okrągły Battistero i Camposanto. Opcjonalny, malowniczy spacer z północy na południe (~2,2 km, 100% płasko): przez Piazza dei Cavalieri (Palazzo della Carovana), pod średniowiecznymi arkadami Borgo Stretto, przez most Ponte di Mezzo z widokiem na kolorowe kamienice bulwarów Lungarni oraz zaułek Via San Martino prosto na dworzec Pisa Centrale (obok muralu Tuttomondo Keitha Haringa).",
           "type": "popular",
           "image_key": "pisa",
-          "gps_hint": "Piazza dei Miracoli, Pisa — dojazd pociągiem z Lukki; ~20 min pieszo od Pisa Centrale lub bus LAM Rossa.",
+          "gps_hint": "Piazza dei Miracoli, Pisa — wejście 500 m ze stacji Pisa S. Rossore; wyjazd do Viareggio ze stacji Pisa Centrale (lub S. Rossore).",
           "coords": [
             43.7229,
             10.3966
@@ -1425,8 +1445,8 @@
           "drive_min_reason": "pociąg z Lukki",
           "opening_hours": "Plac i widok na Wieżę: dostępne całą dobę, bezpłatnie. Katedra (Duomo): wstęp bezpłatny z darmowym biletem czasowym z kasy/automatu na miejscu. Pozostałe obiekty (Battistero, Camposanto): ~9:00–20:00 (bilety płatne na miejscu).",
           "ticket_price": "Bezpłatne z zewnątrz. Sam plac, Krzywa Wieża i zdjęcia: 0 €. Wnętrze katedry (Duomo): bezpłatne (darmowa wejściówka). Opcjonalne wejście do wnętrza Battistero / Camposanto: ~€7/os. (Wspinaczka na Wieżę €20 pominięta — 100 € oszczędności w grupie).",
-          "url": "https://www.opapisa.it/en/",
-          "duration_h": 1.5
+          "url": "https://www.google.com/maps/dir/Pisa+S.+Rossore,+56122+Pisa+PI/Baptysterium+San+Giovanni+w+Pizie,+Piazza+del+Duomo,+56126+Pisa+PI/Krzywa+Wie%C5%BCa+w+Pizie,+Piazza+del+Duomo,+56126+Pisa+PI/Katedra+w+Pizie,+Piazza+del+Duomo,+56126+Pisa+PI/Via+Guglielmo+Oberdan,+56127+Pisa+PI/Borgo+Stretto,+Pisa+PI/Via+S.+Martino,+56125+Pisa+PI/Lungarno+Mediceo,+Pisa+PI/Pisa+Centrale,+Piazza+della+Stazione,+56125+Pisa+PI/@43.7166577,10.3863688,2504m/data=!3m3!1e3!4b1!5s0x12d59109e684e9f7:0x95214dbaea914a6d!4m56!4m55!1m5!1m1!1s0x12d5910ebd9379fd:0x48497c39ce81a384!2m2!1d10.3879392!2d43.7239438!1m5!1m1!1s0x12d59109c293209d:0x492d1c2f5325f0d0!2m2!1d10.3941347!2d43.7233163!1m5!1m1!1s0x12d591a6c44e88cd:0x32eca9b1d554fc03!2m2!1d10.396597!2d43.722952!1m5!1m1!1s0x12d591a75ee2ab3f:0x4b36a82a6d1281e1!2m2!1d10.3959106!2d43.7233518!1m5!1m1!1s0x12d591a24cbc4a4f:0x2a95c80c66338cdd!2m2!1d10.402109!2d43.7186463!1m5!1m1!1s0x12d591a26f1ccd39:0xb458333afb24f5e9!2m2!1d10.4022415!2d43.7174351!1m5!1m1!1s0x12d59199bf4adf17:0x9bcedb87f2facd21!2m2!1d10.403417!2d43.7139548!1m5!1m1!1s0x12d591982284a2d3:0x512672e3a368547b!2m2!1d10.4055212!2d43.7152406!1m5!1m1!1s0x12d5919cee976919:0xe7e65ce35fbcf669!2m2!1d10.3984678!2d43.7084616!3e2",
+          "duration_h": 2
         },
         {
           "name": "Viareggio — Passeggiata (nadmorski deptak Liberty), molo i zachód słońca nad Morzem Tyrreńskim",
@@ -1452,28 +1472,93 @@
         "gps_hint": "Torre Guinigi, Via Sant'Andrea, Lucca — 230 stopni na szczyt"
       },
       "food": {
-        "place": "Trattoria da Giulio in Pelleria — Lucca",
-        "address": "Via delle Conce 45, 55100 Lucca",
+        "place": "Trattoria da Giulio in Pelleria / Pizzeria SUD / Forno Giusti — Lucca",
+        "address": "Lucca centro storico (różne opcje wewnątrz murów)",
         "dishes": [
           "tordelli lucchesi al ragù (pierożki z mięsem w sosie mięsnym)",
           "zuppa di farro (zupa orkiszowa)",
           "baccalà po lukkańsku (dorsz)",
-          "rostinciana i domowe desery"
+          "rostinciana i domowe desery",
+          "pizza neapolitańska na lunch (Pizzeria SUD)",
+          "focaccia lucchese na wagę, cecina i pieczywo z pieca parowego (Forno Giusti)",
+          "buccellato di Lucca i torta coi becchi (Antica Pasticceria Taddeucci)",
+          "torta co' bischeri, budino di riso i castagnaccio (pizańskie tradycje cukiernicze)"
         ],
-        "note": "Rodzinna trattoria działająca od 1945 r. w dzielnicy Pelleria, w sercu murów Lukki — klasyczna kuchnia lucchese bez turystycznych sztuczek, kultowa wśród mieszkańców. Nieczynna w niedziele (16.09 to środa — otwarte). Warto zarezerwować stolik: tel. 0583 55948.",
-        "price": "~€12–18/os",
-        "gps_hint": "Via delle Conce 45 — wewnątrz murów, dojście pieszo od parkingu Palatucci / Porta San Pietro"
+        "note": "Elastyczny wybór na obiad i cukiernictwo w Lukce: (1) Trattoria da Giulio in Pelleria — kultowy toskański obiad od 1945 r. (tordelli ~8,50 €, obiad ~12–16 €/os); (2) Pizzeria SUD — wybitna pizza neapolitańska (8–13 €); (3) Forno Giusti — historyczna piekarnia od 1910 r. z ciepłą focaccią na wagę (~2–4 €); (4) Antica Pasticceria Taddeucci (od 1881 r.) — obowiązkowy punkt cukierniczy na buccellato i torta coi becchi.",
+        "price": "~€8–16/os (zasiadany obiad) / ~€2–5/os (piekarnia Giusti / Taddeucci)",
+        "gps_hint": "Wszystkie lokale wewnątrz murów Lukki (zob. opcje w szczegółach)",
+        "options": [
+          {
+            "name": "Trattoria da Giulio in Pelleria (Główna rekomendacja obiadowa)",
+            "type": "Kuchnia toskańska · Trattoria lucchese (od 1945)",
+            "address": "Via delle Conce 45, 55100 Lucca",
+            "coords": [
+              43.8465,
+              10.5015
+            ],
+            "note": "Kultowa instytucja Lukki od 1945 r. w cichej dzielnicy rzemieślniczej Pelleria (400 m od Palazzo Pfanner). Wzorcowe tordelli lucchesi al ragù (~8,50 €), zuppa di farro (~8 €), dania mięsne 9,50–12 €. Spokojna toskańska sjesta.",
+            "price": "€12–16"
+          },
+          {
+            "name": "Pizzeria SUD (Pizza neapolitańska na lunch)",
+            "type": "Pizzeria · Slow Food",
+            "address": "Via San Giorgio 50, 55100 Lucca",
+            "coords": [
+              43.84647,
+              10.50545
+            ],
+            "note": "Świetna opcja, jeśli grupa ma ochotę na pizzę w porze lunchu (otwarta od 12:30). Prawdziwa pizza neapolitańska na puszystym cieście z pieca, certyfikowane składniki, 2 min od amfiteatru.",
+            "price": "€8–13"
+          },
+          {
+            "name": "Forno a Vapore Amedeo Giusti (Historyczna piekarnia)",
+            "type": "Historyczna piekarnia od 1910 · Focacceria · Street food",
+            "address": "Via Santa Chiara 2, 55100 Lucca",
+            "coords": [
+              43.8435,
+              10.5032
+            ],
+            "note": "Najstarsza i najbardziej znana piekarnia w Lukce (od 1910 r.) z zabytkowym piecem parowym. Słynie z najlepszej w mieście, ciepłej i chrupiącej toskańskiej focacci na wagę (z oliwkami, pomidorkami, rozmarynem), ceciny i pieczywa.",
+            "price": "€2–5"
+          },
+          {
+            "name": "Antica Pasticceria Taddeucci (Obowiązkowy przystanek cukierniczy)",
+            "type": "Historyczna cukiernia od 1881 · Pasticceria storica",
+            "address": "Piazza San Michele 34, 55100 Lucca",
+            "coords": [
+              43.84299,
+              10.50319
+            ],
+            "note": "Święte miejsce włoskiego cukiernictwa: twórcy oryginalnego Buccellato di Lucca (1881 r.) z anyżem i rodzynkami oraz Torta coi becchi (tradycyjna tarta z boćwiną, bakaliami i orzeszkami piniowymi w koronce z ciasta). Absolutny obowiązek dla każdego miłośnika wypieków.",
+            "price": "€3–8"
+          }
+        ]
       },
       "practical_tips": [
         "Idealne okno pogodowe: w środę upał z wtorku odpuszcza, temperatura w Lucce i Pizie spada z 30°C do przyjemnych 27,8°C przy zerowym ryzyku opadów.",
-        "Mama wczoraj odpoczywała w bazie, więc wkracza w ten dzień wypoczęta — spacer po koronie renesansowych murów Lukki jest w 100% płaski, zadrzewiony i komfortowy.",
+        "Komfort poruszania się: po wczorajszym górskim trekkingu ten dzień jest w 100% płaski — spacer po koronie renesansowych murów Lukki jest szeroki, zadrzewiony i ocieniony.",
+        "Trasa piesza w Lucce (~2,6 km, 100% płasko): dworzec ➔ Porta San Pietro ➔ Piazza Napoleone ➔ San Michele in Foro & Taddeucci ➔ Via Fillungo ➔ Piazza dell'Anfiteatro ➔ Basilica di San Frediano ➔ Palazzo Pfanner ➔ Torre Guinigi. Optymalizacja trasy: Palazzo Pfanner leży tuż za San Frediano (150 m) — warto zajrzeć tam od razu, by nie robić zbędnego powrotnego zygzaka.",
+        "Dzień w 100% kolejowy i bezstresowy: rano krótki 3-minutowy spacer (250 m) z apartamentu na stację Barga-Gallicano, a stamtąd pociąg REG 19159 (08:50 ➔ 09:34) prosto pod mury Lukki. Samochód cały dzień stoi bezpiecznie pod domem!",
         "Trattoria da Giulio in Pelleria: w środę otwarta na lunch (12:00–14:30), tradycyjne tordelli lucchesi.",
-        "Trójkąt kolejowy: Lucca ➔ Piza (26 min) ➔ Viareggio (10 min) ➔ powrót bezpośrednio Viareggio ➔ Lucca (~20 min). Bilet po ~€3–3,70/odcinek.",
-        "Zachód słońca w Viareggio: słońce zachodzi o 19:29 prosto w fale Morza Tyrreńskiego, a woda ma przyjemne 24°C.",
-        "Brak presji wstawania rano: następnego dnia (czwartek) jest lekki dzień z jaskinią i brak wczesnej pobudki, więc powrót do bazy o 22:00 nie zaburza rytmu."
+        "Trójkąt kolejowy: Lucca ➔ Piza (26 min) ➔ Viareggio (10 min) ➔ powrót Viareggio ➔ Lucca (~20 min) ➔ Barga-Gallicano (49 min). Dwa warianty wyjazdu z Lukki: wcześniejszy REG 18494 (15:42 ➔ 16:08) daje więcej czasu w Pizie i spokojny spacer na Pisa Centrale; późniejszy REG 18586 (16:42 ➔ 17:08) przy dłuższym obiedzie.",
+        "Żelazna godzina powrotu: optymalny szybki powrót to pociąg z Viareggio o 20:10 (REG 18535 ➔ Lucca 20:27, przesiadka na REG 19218 o 20:53 ➔ Barga-Gallicano 21:42), co pozwala być w łóżku o 21:45 (tylko 250 m spaceru ze stacji!). Bezpieczny fallback przy dłuższym spacerze to kurs o 20:50 (z Lukki 21:46 ➔ Barga 22:30).",
+        "Piza — estetyka uliczek i logistyka pociągu: uliczki Pizy (Borgo Stretto, Via San Martino) nie są jaskrawe jak na weneckim Burano, lecz reprezentują klasyczną toskańską paletę (ochra, terakota, siena, patynowany kamień). Pop-artowe nasycenie kolorów ma jedynie mural Tuttomondo Keitha Haringa. Pociąg do Viareggio REG 19374 rusza o 18:34 z Pisa Centrale (staje też o 18:40 na Pisa S. Rossore) i dociera do Viareggio o 18:53 — aż 36 minut przed zachodem słońca.",
+        "Zachód słońca w Viareggio: słońce zachodzi o 19:29 prosto w fale Morza Tyrreńskiego, a woda ma przyjemne 24°C."
       ],
-      "narrative": "Świadomie „miejski\" dzień w relaksującym tempie i w doskonałym oknie pogodowym — po wczorajszym upale dziś temperatura w Lucce i Pizie spada do 27,8°C. Ruszamy o 8:30 autem z Bargi do Lukki (ok. 40 min), auto zostawiamy poza murami i dalej poruszamy się pieszo i koleją. Lucca to miasto otoczone nienaruszonym renesansowym pierścieniem murów (4,2 km szerokiej, zadrzewionej promenady) — schodzimy na owalną Piazza dell'Anfiteatro i wchodzimy na Torre Guinigi z dębami rosnącymi na szczycie. O 13:00 tradycyjny obiad w Trattoria da Giulio in Pelleria. O 16:42 pociąg do Pizy — stacja Pisa San Rossore leży 500 m od Krzywej Wieży i Piazza dei Miracoli. Oglądamy wieżę z perspektywy zielonego trawnika bez kolejek i zaglądamy do katedry Duomo. O 19:02 łapiemy pociąg do Viareggio nad Morzem Tyrreńskim: deptak Liberty, moczenie nóg w ciepłym morzu i spektakularny zachód słońca o 19:29 z różowiejącymi Alpami Apuańskimi w tle. Kolacja street food (cuoppo rybne) i o 20:45 pociąg powrotny do Lukki, skąd autem wracamy do bazy ok. 22:00.",
+      "narrative": "Świadomie miejski i całkowicie wolny od stresu za kółkiem dzień — po wczorajszej 8-godzinnej wyprawie na Monte Forato kierowca odpoczywa od górskich serpentyn. Rano wychodzimy z apartamentu na krótki spacer (zaledwie 250 metrów, 3 minuty!) na stację Barga-Gallicano i o 08:50 wsiadamy w pociąg Regionale 19159, który o 09:34 dowozi nas pod same renesansowe mury Lukki (Porta San Pietro to 3 min pieszo z peronu). Wchodzimy do miasta przez Porta San Pietro na Piazza Napoleone, a na Piazza San Michele robimy obowiązkowy przystanek w historycznej Antica Pasticceria Taddeucci (od 1881 r.) na degustację słynnego anyżowego Buccellato di Lucca i niezwykłej Torta coi becchi (kruchej tarty z boćwiną i piniolami). Spacerujemy klimatycznym deptakiem Via Fillungo na owalną Piazza dell'Anfiteatro, podziwiamy złotą mozaikę Bazyliki San Frediano i odpoczywamy w barokowym ogrodzie Palazzo Pfanner. O 12:45 zasiadamy na obiad w Trattoria da Giulio in Pelleria (wzorcowe tordelli lucchesi al ragù). Po obiedzie spacer pod Torre Guinigi z dębami rosnącymi na szczycie i pociąg do Pizy o 15:42 (REG 18494) — wysiadamy na Pisa San Rossore 500 m od Krzywej Wieży i Piazza dei Miracoli. Oglądamy wieżę z perspektywy zielonego trawnika bez kolejek i zaglądamy do katedry Duomo. Następnie spacer przez urokliwe arkady Borgo Stretto i Lungarni na dworzec Pisa Centrale, skąd o 18:34 pociąg REG 19374 wiezie nas do Viareggio nad Morzem Tyrreńskim: deptak Liberty, moczenie nóg w ciepłym morzu i spektakularny zachód słońca o 19:29 z różowiejącymi Alpami Apuańskimi w tle. Kolacja street food (cuoppo rybne) i o 20:10 szybki pociąg REG 18535 do Lukki (20:27), gdzie po 26 min przesiadki wsiadamy w pociąg REG 19218 o 20:53 do Barga-Gallicano (21:42). Ze stacji idziemy zaledwie 250 metrów i już o 21:45 jesteśmy w apartamencie (aż 50 minut wcześniej niż poprzedni plan!). W rezerwie pozostaje późniejszy kurs z Viareggio o 20:50 (z Lukki 21:46 ➔ Barga 22:30).",
       "web_research": [
+        {
+          "topic": "Cukiernictwo w Lukce — Buccellato i Torta coi becchi",
+          "summary": "Dwa historyczne filary toskańskiego cukiernictwa w Lukce: (1) Buccellato di Lucca — drożdżowy słodki wypiek z anyżem i rodzynkami glazurowany cukrem i jajkiem; kanoniczna receptura od 1881 r. stworzona przez Jacopo Taddeucciego w Antica Pasticceria Taddeucci na Piazza San Michele; (2) Torta coi becchi (Torta d'erbi) — tarta z ciasta kruchego z ręcznie formowanymi trójkątnymi 'dzióbkami' (becchi) i słodkim nadzieniem z liści boćwiny (bietole), orzeszków piniowych, rodzynek, kandyzowanej skórki cytrusowej, cynamonu i likieru; rzadki relikt renesansowej kuchni łączącej zieleninę ze słodyczą.",
+          "source": "https://www.buccellatotaddeucci.it",
+          "checked": "2026-09"
+        },
+        {
+          "topic": "Cukiernictwo w Pizie — Torta co' bischeri, budino di riso i castagnaccio",
+          "summary": "Trzy filary pizańskiego cukiernictwa: (1) Torta co' bischeri — tradycyjna tarta z kruchego ciasta z charakterystycznymi trójkątnymi ząbkami (bischeri — jak kołki w instrumentach), wypełniona ugotowanym ryżem, ciemną czekoladą, rodzynkami, kandyzowanymi owocami, likierem (Strega/Sambuca) i orzeszkami piniowymi z parku San Rossore; (2) Budino di riso — małe kruche babeczki z kremowym budyniem ryżowo-waniliowo-cytrynowym, toskański klasyk do espresso; (3) Castagnaccio — tradycyjne gęste ciasto z mąki kasztanowej z rozmarynem, oliwą, orzeszkami piniowymi i rodzynkami.",
+          "source": "https://www.visittuscany.com",
+          "checked": "2026-09"
+        },
         {
           "topic": "Krzywa Wieża — bilety i rezerwacja",
           "summary": "Wejście tylko w slotach czasowych co ~30 min (grupy ~30 os.), 251 stopni bez windy, dzieci <8 lat nie wchodzą. Bilet €20 (zawiera wstęp do katedry). Bilet łączony całej Piazza dei Miracoli (Wieża + Duomo + Battistero + Camposanto + Museo delle Sinopie) €27. Rezerwacja online na opapisa.it, sloty otwierane do ~20 dni naprzód — w sezonie wykupują się szybko, rezerwuj z wyprzedzeniem.",
@@ -1488,7 +1573,7 @@
         },
         {
           "topic": "Pociąg Lucca → Pisa San Rossore",
-          "summary": "Pociąg REG 18586: odjazd Lucca 16:42, przyjazd Pisa S. Rossore 17:08 (26 min, bilet ~€3,70). Stacja Pisa San Rossore leży tylko 500 m (6 min pieszo) od Piazza dei Miracoli — omija konieczność jazdy do Pisa Centrale i zbędne autobusy/tramwaje.",
+          "summary": "Pociągi bezpośrednie Regionale jeżdżą co ok. 30–60 min: wcześniejszy REG 18494 (15:42 ➔ 16:08) oraz standardowy REG 18586 (16:42 ➔ 17:08). Czas jazdy to 26 min, bilet ~€3,70–3,90. Stacja Pisa San Rossore leży tylko 500 m (6 min pieszo) od Piazza dei Miracoli — omija konieczność jazdy do Pisa Centrale i zbędne autobusy/tramwaje.",
           "source": "https://www.trenitalia.com",
           "checked": "2026-09"
         },
@@ -1532,123 +1617,130 @@
         "viareggio": "Passeggiata, molo i plaża — bez ograniczeń, bezpłatnie. Zachód słońca 16.09 o 19:29, widno do ~19:55. Pociągi Piza→Viareggio min. 2×/h; ostatni powrót Viareggio→Lucca ok. 22:10 (przyjazd 22:31)."
       },
       "parking": {
-        "destination": "Lucca (auto na cały dzień) → pociąg do Pizy",
+        "destination": "Stacja Barga-Gallicano (auto na darmowym parkingu) ➔ cała trasa w 100% koleją",
         "options": [
           {
-            "name": "Lucca — Parcheggio Palatucci",
-            "type": "public",
-            "price": "~€0,50–1/h",
-            "gps_hint": "Parcheggio Palatucci, poza murami przy Porta San Pietro (płd. strona Lukki)",
-            "note": "Duży parking naziemny tuż przy murach, ~10 min pieszo do centrum. Wypożyczalnia rowerów obok. Auto zostaje na cały dzień."
+            "name": "Stacja Barga-Gallicano — parking kolejowy (Mologno)",
+            "type": "free",
+            "price": "bezpłatny",
+            "gps_hint": "Piazza della Stazione, Mologno / Barga-Gallicano (~2,5 km od bazy Ponte all'Ania)",
+            "note": "Darmowy parking przy samej stacji kolejowej. Podjazd rano autem zajmuje 3-4 minuty, a po powrocie późnym wieczorem pozwala natychmiast wrócić do bazy bez nocnego marszu poboczem."
           },
           {
-            "name": "Lucca — Parcheggio Carducci",
-            "type": "public",
-            "price": "~€1–1,50/h",
-            "gps_hint": "Viale Carducci, przy Porta San Pietro, Lucca",
-            "note": "Alternatywa bliżej Porta San Pietro — dogodny wjazd od strony Bargi/S12, poza ZTL."
-          },
-          {
-            "name": "Piza i Viareggio — parking niepotrzebny",
+            "name": "Lucca, Piza i Viareggio — parking zbędny (100% kolej)",
             "type": "info",
             "price": "—",
-            "gps_hint": "Pizę i Viareggio zwiedzamy z pociągu — auto zostaje w Lucce",
-            "note": "Świadomie unikamy parkowania i ZTL w Pizie: z Pisa Centrale na Piazza dei Miracoli dochodzimy pieszo lub busem LAM Rossa. Tak samo w Viareggio — ze stacji ~1 km pieszo na Passeggiatę, bez szukania miejsca w kurorcie."
+            "gps_hint": "Wszystkie miasta obsługiwane pociągami Trenitalia",
+            "note": "Zero stresu o ZTL, strefy parkowania i wąskie uliczki. Wszystkie stacje (Lucca, Pisa San Rossore, Viareggio) leżą w bezpośrednim zasięgu spacerowym atrakcji."
           }
         ],
-        "tip": "Zostaw auto w Lucce (poza murami) na cały dzień i przesiądź się na pociąg — parkowanie w Pizie i wjazd w tłok pod Wieżą są uciążliwe, a pociąg Lucca↔Pisa jeździ co 20–30 min. Wieczorem wracasz do tego samego auta od strony Viareggio (pociąg bezpośredni ~20–26 min), więc parking w Lucce obsługuje cały trójkąt i nigdzie nie trzeba się cofać."
+        "tip": "Darmowy parking przy stacji Barga-Gallicano eliminuje konieczność wjazdu autem do Lukki. Pamiętaj o powrocie: ostatni pociąg z Lukki do Barga-Gallicano odjeżdża o 21:46!"
       },
-      "fuel_stops": [
-        {
-          "name": "Q8 / ENI w dolinie Serchio (Fornaci di Barga)",
-          "location": "SS12 / Fornaci di Barga, w drodze Barga → Lucca",
-          "note": "Zatankuj po drodze do Lukki lub przy powrocie do bazy — w dolinie Serchio przy SS12 kilka stacji."
-        }
-      ],
+      "fuel_stops": [],
       "eta_timeline": [
         {
-          "time": "09:20",
-          "event": "Wyjazd z bazy Barga do Lukki (~37 km, ~40 min) — spokojny poranek i wyspany kierowca"
+          "time": "08:40",
+          "event": "Krótki spacer z apartamentu na stację Barga-Gallicano (zaledwie 250 m, 3 min pieszo!) — samochód odpoczywa pod domem, cały dzień w 100% bez auta!"
         },
         {
-          "time": "10:05",
-          "event": "Parking poza murami Lukki (Palatucci / Carducci) — auto zostaje na cały dzień"
+          "time": "08:50",
+          "event": "Pociąg REG 19159: Barga-Gallicano (08:50) ➔ Lucca (09:34, 44 min) — malownicza trasa wzdłuż doliny Serchio, pełen relaks dla kierowcy"
         },
         {
-          "time": "10:20",
-          "event": "Lucca — spacer po renesansowych murach i owalnej Piazza dell'Anfiteatro"
+          "time": "09:35",
+          "event": "Lucca — wyjście z dworca (Viale Cavour 15), 3 min płaskiego spaceru przez Porta San Pietro w obręb renesansowych murów"
         },
         {
-          "time": "11:30",
-          "event": "Torre Guinigi (wejście na wieżę z dębami na szczycie) i Duomo di San Martino"
+          "time": "09:50",
+          "event": "Piazza Napoleone — spacer przez reprezentacyjny plac książęcy pod cienistymi platanami"
         },
         {
-          "time": "12:30",
-          "event": "Via Fillungo — spacer, kawa, cantucci, kameralne zaułki"
+          "time": "10:15",
+          "event": "Piazza San Michele & Antica Pasticceria Taddeucci (od 1881 r.) — obowiązkowy punkt cukierniczy (oryginalne Buccellato z anyżem i Torta coi becchi z boćwiną do kawy); podziwianie fasady kościoła San Michele in Foro"
         },
         {
-          "time": "13:00",
-          "event": "Lunch — Trattoria da Giulio in Pelleria (spokojny, tradycyjny obiad lucchese: tordelli, farro)"
+          "time": "11:00",
+          "event": "Via Fillungo ➔ Piazza dell'Anfiteatro — spacer głównym deptakiem do owalnego placu na rzucie rzymskiego amfiteatru"
         },
         {
-          "time": "14:45",
-          "event": "Lucca — poobiedni relaks, lody, spacer lub wypożyczenie rowerów na mury"
+          "time": "11:45",
+          "event": "Basilica di San Frediano (złota mozaika) i Palazzo Pfanner (tuż obok: barokowy ogród z fontannami i rzeźbami, chwila odpoczynku na ławeczkach)"
         },
         {
-          "time": "16:25",
-          "event": "Spacer ze starego miasta na stację Lucca (~10–12 min)"
+          "time": "12:45",
+          "event": "Obiad / Slot restauracyjny — Trattoria da Giulio in Pelleria (tradycyjny toskański obiad lucchese: tordelli, farro; 400 m od Palazzo Pfanner) lub w centrum: Pizzeria SUD (pizza neapolitańska) / Forno Giusti"
         },
         {
-          "time": "16:42",
-          "event": "Pociąg REG 18586: Lucca (16:42) ➔ Pisa S. Rossore (17:08, 26 min) — wysiadka pod samą Wieżą!"
+          "time": "14:15",
+          "event": "Torre Guinigi (oglądanie wieży z dębami na szczycie z dołu lub wejście na górę dla chętnych) oraz spacer zaułkami w stronę Duomo di San Martino"
         },
         {
-          "time": "17:08",
-          "event": "Pisa S. Rossore — spacer 500 m (6 min) prosto na Piazza dei Miracoli (bez autobusów i tramwajów)"
+          "time": "15:15",
+          "event": "Spokojny, w 100% płaski powrót przez Porta San Pietro na stację kolejową w Lucce"
         },
         {
-          "time": "17:15",
-          "event": "Piazza dei Miracoli — Krzywa Wieża (z trawnika), bezpłatne wnętrze Duomo, Baptysterium, espresso"
+          "time": "15:42",
+          "event": "Pociąg REG 18494: Lucca (15:42) ➔ Pisa S. Rossore (16:08, 26 min) — optymalny kurs dający 2h 25 min w Pizie i spokojny zachód słońca"
         },
         {
-          "time": "18:50",
-          "event": "Spacer powrotny 500 m na stację Pisa S. Rossore"
+          "time": "16:15",
+          "event": "Piazza dei Miracoli — Krzywa Wieża (z perspektywy trawnika), bezpłatne wnętrze Duomo, Baptysterium"
         },
         {
-          "time": "19:02",
-          "event": "Pociąg REG 2296: Pisa S. Rossore (19:02) ➔ Viareggio (19:12, błyskawiczne 10 min jazdy!)"
+          "time": "17:05",
+          "event": "Malowniczy spacer Północ ➔ Południe: Piazza dei Cavalieri ➔ arkady Borgo Stretto (kawa i ciastko) ➔ Lungarno Mediceo ➔ Via San Martino ➔ mural Tuttomondo Keitha Haringa"
         },
         {
-          "time": "19:12",
-          "event": "Viareggio — ze stacji ~1 km / 12 min pieszo na Passeggiatę i plażę"
+          "time": "18:25",
+          "event": "Dojście do dworca Pisa Centrale (150 m od muralu Tuttomondo) na peron pociągu REG 19374 do Viareggio"
         },
         {
-          "time": "19:31",
-          "event": "Zachód słońca prosto w fale Morza Tyrreńskiego (Alpy Apuańskie za plecami)"
+          "time": "18:34",
+          "event": "Pociąg REG 19374: odjazd z dworca Pisa Centrale o 18:34 (zatrzymuje się też o 18:40 na Pisa S. Rossore) ➔ przyjazd do Viareggio o 18:53 (aż 36 min przed zachodem!)"
         },
         {
-          "time": "19:45",
-          "event": "Street food na deptaku Liberty: cuoppo (smażone rybki i owoce morza w rożku) i gelato"
+          "time": "18:55",
+          "event": "Viareggio — spokojny płaski spacer 1 km ulicą Via Mazzini na plażę (Piazza Mazzini) i nadmorski deptak"
         },
         {
-          "time": "20:45",
-          "event": "Pociąg powrotny Viareggio ➔ Lucca bezpośrednio (~20 min; rezerwa: ostatni o 22:10)"
+          "time": "19:15",
+          "event": "Zachód słońca nad Morzem Tyrreńskim (19:29) — widok na zachodzące w wodę słońce i różowiejące Alpy Apuańskie za plecami, spacer po molo, moczenie stóp"
         },
         {
-          "time": "21:15",
-          "event": "Odbiór auta z parkingu w Lucce"
+          "time": "19:35",
+          "event": "Kolacja street food na secesyjnym deptaku Passeggiata Liberty: rożek cuoppo di mare (smażone rybki/owoce morza) i rzemieślnicze gelato"
         },
         {
-          "time": "22:00",
-          "event": "Powrót do bazy Barga"
+          "time": "19:55",
+          "event": "Spacer powrotny 1 km ulicą Via Mazzini na stację Viareggio"
+        },
+        {
+          "time": "20:10",
+          "event": "Pociąg powrotny: REG 18535 Viareggio (20:10) ➔ Lucca (20:27, 17 min) — wariant szybki (fallback: REG 18541 o 20:50)"
+        },
+        {
+          "time": "20:27",
+          "event": "Lucca — wygodna przesiadka (26 min bezpiecznego buforu) na pociąg w górę doliny Serchio"
+        },
+        {
+          "time": "20:53",
+          "event": "Pociąg powrotny: REG 19218 Lucca (20:53) ➔ Barga-Gallicano (21:42, 49 min) w górę doliny rzeki Serchio"
+        },
+        {
+          "time": "21:42",
+          "event": "Stacja Barga-Gallicano — wysiadka z pociągu i krótki 3-minutowy spacer (zaledwie 250 m) wprost pod drzwi apartamentu przy Via Nazionale 29"
+        },
+        {
+          "time": "21:45",
+          "event": "Powrót do apartamentu Casa vacanze Rosa (aż 50 minut wcześniej niż poprzedni plan z 22:35!)"
         }
       ],
-      "daily_km_estimate": 62,
+      "daily_km_estimate": 0,
       "km_lock": true,
-      "km_note": "Tylko auto Barga↔Lucca (pętla OSRM 62 km); Piza i Viareggio pociągiem — skrypt km:refresh celowo pomija.",
+      "km_note": "Dzień w 100% pieszo-kolejowy bez ruszania auta: apartament leży zaledwie 250 m (3 min pieszo) od stacji Barga-Gallicano, więc auto cały dzień stoi bezpiecznie pod domem (0 km jazdy).",
       "crowd_tip": "Piazza dei Miracoli w Pizie jest popularnym punktem — dzięki oglądaniu Krzywej Wieży z zewnątrz unikacie kolejek, sztywnych slotów i tłoku na wąskich schodach wieży. Lucca rano jest kameralna i spokojna, a wieczór w Viareggio nad morzem pozwala zrelaksować się po całym dniu.",
-      "warning": "Piazza dei Miracoli i Lucca to popularne punkty — spodziewaj się innych turystów, ale dzięki oglądaniu Krzywej Wieży z zewnątrz nie ma presji sztywnego slotu i stania w kolejce (wstęp na plac wolny, a do katedry Duomo z darmowym biletem czasowym). Dzień oparty na rozkładzie pociągów Lucca↔Pisa↔Viareggio — pociągi jeżdżą często (co 20–30 min). Ostatni bezpośredni powrót Viareggio→Lucca odjeżdża ok. 22:10 (przyjazd 22:31); planowany powrót o 20:30 daje ponad półtorej godziny buforu, ale nie wolno go przegapić, bo auto stoi w Lucce.",
-      "summary": "Świadomie „miejski\" dzień w relaksującym tempie i w optymalnej temperaturze (27,8°C). Autem jedziemy o 8:30 do Lukki — miasta otoczonego kompletnym renesansowym pierścieniem murów; w środku owalny plac na rzymskim amfiteatrze (Piazza dell'Anfiteatro) i wieża z rosnącymi dębami (Torre Guinigi). Potem pociągiem do Pizy na słynną Piazza dei Miracoli: oglądamy Krzywą Wieżę z perspektywy zielonego trawnika i zaglądamy do romańskiego Duomo. Na finał kwadrans pociągiem do Viareggio nad Morzem Tyrreńskim: deptak Liberty, moczenie stóp w wodzie i zachód słońca prosto w morze o 19:29.",
+      "warning": "Dzień w 100% kolejowy i bez auta! Stacja Barga-Gallicano leży zaledwie 250 m od apartamentu. Optymalny szybki powrót: pociąg REG 18535 z Viareggio o 20:10 ➔ przesiadka w Lucce (20:53) ➔ Barga-Gallicano (21:42), w apartamencie o 21:45. Rezerwa: kurs z Viareggio o 20:50 (z Lukki 21:46 ➔ Barga 22:30).",
+      "summary": "Świadomie „miejski\" dzień w 100% oparty na pociągach i relaksie dla kierowcy — auto cały dzień odpoczywa pod domem, bo stacja Barga-Gallicano leży 250 m od bazy. Rano o 08:50 pociąg REG 19159 dowozi grupę pod renesansowe mury Lukki (Porta San Pietro). W środku owalna Piazza dell'Anfiteatro, wieża z dębami (Torre Guinigi) i tradycyjny obiad w Da Giulio. O 15:42 pociąg do Pizy pod samą Piazza dei Miracoli: Krzywa Wieża z perspektywy trawnika i wnętrze Duomo. Finał kwadrans pociągiem do Viareggio nad Morzem Tyrreńskim: deptak Liberty, owoce morza i zachód słońca w morze o 19:29. Powrót pociągami: 20:10 z Viareggio przez Luccę (20:53) do Barga-Gallicano (21:42), spacer 250 m i w apartamencie o 21:45.",
       "weather": {
         "label": "Piza (i Lucca)",
         "coords": [
@@ -4783,7 +4875,7 @@
         "italian_name": "Olio Extra Vergine di Oliva Lucca DOP",
         "category": "olive_oil",
         "region": "base1",
-        "region_label": "Lucca (D4)",
+        "region_label": "Lucca (D5)",
         "price": "~€14–22 za butelkę 0,75L",
         "where": "Delikatesy w Lucca (np. w centrum w obrębie murów) lub tłocznie na wzgórzach lukkeńskich",
         "tip": "Historycznie uznawana za najdelikatniejszą, najbardziej maślaną i harmonijną oliwę we Włoszech. Nie piecze w gardle tak mocno jak z Chianti — genialna do ryb, sałat i delikatnych warzyw.",
@@ -4843,11 +4935,35 @@
         "italian_name": "Buccellato di Lucca",
         "category": "sweets",
         "region": "base1",
-        "region_label": "Lucca (D4)",
+        "region_label": "Lucca (D5)",
         "price": "~€6–10 za wieniec / bochenek",
         "where": "Lucca: Pasticceria Taddeucci (Piazza San Michele 34 — lokal działa od 1881 r.)",
         "tip": "'Chi viene a Lucca e non mangia il buccellato è come non ci fosse stato' (Kto przybył do Lukki i nie zjadł buccellato, jakby w niej nie był). Słodki chlebek z anyżem i rodzynkami. Pyszny na świeżo i podsuszany do kawy.",
         "transport": "Świeże pieczywo — zjeść w trasie lub w pierwszych dniach po powrocie"
+      },
+      {
+        "id": "torta-coi-becchi-lucca",
+        "name": "Torta coi Becchi di Lucca (Torta d'erbi)",
+        "italian_name": "Torta coi becchi / Torta d'erbi lucchese",
+        "category": "sweets",
+        "region": "base1",
+        "region_label": "Lucca (D5)",
+        "price": "~€4–8 za porcję / tartę",
+        "where": "Pasticceria Taddeucci (Piazza San Michele 34) lub Pasticceria Pinelli (Via Beccheria 28)",
+        "tip": "Cukierniczy unikat Toskanii: krucha tarta ze słodkim nadzieniem z liści boćwiny (bietole), orzeszków piniowych, rodzynek, kandyzowanych cytrusów i cynamonu, z charakterystycznymi wyciętymi 'dzióbkami' (becchi) na rancie. Dostępna też wersja z czekoladą.",
+        "transport": "Kruche ciasto w tekturowym pudełku cukierniczym — przewozić na płasko"
+      },
+      {
+        "id": "torta-co-bischeri-pisa",
+        "name": "Torta co' bischeri (pizański król słodkości)",
+        "italian_name": "Torta co' bischeri di Pisa",
+        "category": "sweets",
+        "region": "base1",
+        "region_label": "Piza (D5)",
+        "price": "~€5–12 za tartę / porcję",
+        "where": "Lokalne cukiernie i piekarnie w Pizie (np. wzdłuż Borgo Stretto i Borgo Largo)",
+        "tip": "Królowa pizańskiego cukiernictwa: kruche ciasto z charakterystycznymi ząbkami (bischeri — jak kołki w skrzypcach), wypełnione masą z ugotowanego ryżu, ciemnej czekolady, rodzynek, kandyzowanych cytrusów, likieru i orzeszków piniowych z parku San Rossore.",
+        "transport": "Trwałe ciasto pieczone, bezpieczne w tekturowym pudełku cukierniczym"
       },
       {
         "id": "farro-garfagnana-igp",

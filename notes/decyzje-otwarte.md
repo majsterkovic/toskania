@@ -73,12 +73,16 @@ Na podstawie aktualnych prognoz pogody (Open-Meteo) oraz zmęczenia kierowcy kr�
   - *Mama*: wysadzenie na samej górze pod Duomo, zejście w dół zabytkowymi uliczkami (zero wspinaczki).
   - *Punkty*: Duomo, panoramiczny punkt widokowy, zakupy w Macelleria Angelini, obiad w *Osteria Il Borgo dei Sapori*, most Ponte del Diavolo, zakupy zaopatrzeniowe do bazy w Conad (Fornaci di Barga), popołudnie relaks w ogrodzie w bazie (opcjonalny spacer pod stary dąb Treppignana).
 - **D4 (wt 15.09) — Pętla Monte Forato (Alpy Apuańskie)**:
-  - *Pogoda*: wtorek to najgorętszy dzień na nizinach (~30°C w Lukce/Pizie). W górach i w cieniu bukowego lasu panują idealne warunki (18–22°C, 0% deszczu).
-  - *Grupa*: wariant trekkingowy dla piechurów (pętla z Fornovolasco), a dla Mamy bezstresowy dzień odpoczynku i relaksu w ogrodzie w Ponte all'Ania.
-  - *Wieczór*: punkt widokowy Piazza Arringo w Bardze na zachód słońca nad Monte Forato.
+  - *Zrealizowana trasa*: pętla 9,3 km (+816 m / -815 m). CAI 6 z Fornovolasco (parking 491 m) przez cienisty las → przełęcz Foce di Petrosciana (1150 m) → grań CAI 110 pod łuk Monte Forato (1223–1260 m) → bezpośrednie zejście łącznikiem do CAI 130 i powrót zboczami Costa Pulita/La Carpineta do Fornovolasco. Ślad GPS w `public/gpx/monte-forato.gpx` oraz na Mapy.cz.
+  - *Weryfikacja trudności*: Mapy.cz podawały nierealistyczne ~4 h — w surowym, stromym wapiennym terenie (forsowne podejście, piargi na zejściu) rzeczywisty czas wyniósł **ok. 8 godzin**.
+  - *Pogoda*: wtorek to najgorętszy dzień na nizinach (~30°C w Lukce/Pizie). W górach i w cieniu bukowego lasu panowały idealne warunki (18–22°C, 0% deszczu).
+  - *Grupa*: wariant trekkingowy dla piechurów (pętla z Fornovolasco), a dla Mamy bezstresowy dzień odpoczynku i relaksu w ogrodzie w bazie (pozostawienie jej w bazie było kluczowe).
+  - *Jedzenie / Wieczór*: po 8 h w górach i powrocie do bazy zregenerowaliśmy się prysznicem, a na obiad/kolację była pizza w pobliskim **Barze La Stazione w Mologno** (Via della Stazione 1, ~300 m spacerem od bazy przy stacji Barga-Gallicano).
 - **D5 (śr 16.09) — Lucca + Piza + Viareggio (★ POPULARNY)**:
   - *Pogoda*: spadek temperatury do przyjemnych 27.8°C (znacznie znośniej na bruku w Lukce i na trawniku w Pizie).
-  - *Zmęczenie*: trójkąt kolejowy Lucca–Pisa–Viareggio–Lucca eliminuje jazdę autem. Obiad w otwartej w środy *Trattoria da Giulio in Pelleria*. Finał o zachodzie słońca nad morzem w Viareggio.
+  - *Zmęczenie / Transport*: decyzja grupy (2026-09-15) — po wyczerpującym trekkingu na Monte Forato całkowicie rezygnujemy z jazdy autem do Lukki. Auto zostaje na darmowym parkingu stacji Barga-Gallicano (podjazd 3 min z Ponte all'Ania). Wyjazd pociągiem **Regionale 19159: Barga-Gallicano (08:50) ➔ Lucca (09:34)**.
+  - *Ciąg kolejowy*: Barga-Gallicano ➔ Lucca (08:50–09:34) ➔ Pisa S. Rossore (16:42) ➔ Viareggio (~19:00, zachód słońca) ➔ Lucca (powrót pociągiem ok. 20:50) ➔ ostatni pociąg do Barga-Gallicano (Lucca 21:46 ➔ Barga-Gallicano 22:30). Krótki skok autem ze stacji do bazy (22:35).
+  - Obiad w otwartej w środy *Trattoria da Giulio in Pelleria*. Finał o zachodzie słońca nad morzem w Viareggio.
   - Brak kolizji z regułą „dwóch ciężkich dni pod rząd” (poprzedzony spokojnym wieczorem, a kolejny dzień z późną pobudką).
 - **D6 (czw 17.09) — Grotta del Vento & Bagni di Lucca (Dzień deszczowy)**:
   - *Pogoda*: czwartek przynosi 50–60% prawdopodobieństwa opadów rano i wczesnym popołudniem.

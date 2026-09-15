@@ -397,7 +397,7 @@
       "description": "Apeniny, dolina Serchio, kasztanowe i dębowe lasy, niemal zerowa turystyka masowa. Wariant 2-bazowy: pełne 4 dni eksploracji zamiast 3.",
       "color": "emerald",
       "accommodation": "POTWIERDZONA REZERWACJA — Casa vacanze Rosa, Via Nazionale 29, 55051 Mologno LU. Doskonała lokalizacja (9/10, 5 opinii gości). Zaledwie 250 m (3 min pieszo!) od stacji kolejowej Barga - Gallicano, ~6 min od centrum Bargi.",
-      "local_shop": "Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, Barga, tel. 0583 723112) — tradycyjny sklep z wędlinami i specjałami. Co warto kupić i zjeść: wyroby z czarnej świni (maiale nero / cinta senese), pecorino, dojrzewającą pancettę oraz toskański miód kasztanowy.",
+      "local_shop": "Lokalne punkty w Mologno (2–4 min pieszo od bazy): Bar La Stazione (Via della Stazione 1, tel. 0583 710123) — codzienny sprawdzony punkt na świeże poranne kanapki (panini) na wynos przed wyjazdem w trasę; Bella e Pronta (Via della Stazione, tel. 0583 710129) — świetna domowa pizzeria i garmażerka ~200 m od bazy (pizza na obiad/kolację). Ponadto w Bardze: Macelleria Angelini di Martinelli Davide (Via Antonio Mordini 10, tel. 0583 723112) — tradycyjne wyroby z czarnej świni (maiale nero / cinta senese), pecorino i toskański miód kasztanowy.",
       "booking_tip": "Zarezerwowane — bez dalszych działań. Lokalizacja bardzo dobrze skomunikowana z całym blokiem Bargi (patrz czasy dojazdu w poszczególnych dniach).",
       "gps_hint": "Naviguj: Via Nazionale 29, 55051 Mologno LU (coords 44.0677643, 10.4549746)",
       "address": "Via Nazionale 29, 55051 Mologno LU",
@@ -1128,6 +1128,7 @@
         "price": "~€9–15/piatto, ~€25–35/os z winem"
       },
       "practical_tips": [
+        "Poranny rytuał (kanapki na wynos): rano krótki spacer (~300 m, 3 min) do Bar La Stazione w Mologno (Via della Stazione 1) po świeże toskańskie kanapki (panini) na wynos.",
         "Harmonogram dnia: spokojny start o 9:30 (baza tuż obok, ~6 min). 10:00–12:30 Barga i Duomo, 12:30–14:00 wygodny obiad na siedząco w Osteria Il Borgo dei Sapori, 14:30 Ponte del Diavolo (tylko 12 min łatwej drogi SS12), 15:30 zakupy w supermarkecie, a od 16:15 relaks w bazie.",
         "Wskazówka dla mamy w Bardze (brak podchodzenia pod górę): wjedźcie autem pod górę w okolicę Via del Sasso / Porta Macchiaia tuż pod Duomo di San Cristoforo i wysadźcie mamę na samej górze. Zwiedzanie katedry i tarasu Giardino del Balcone oraz późniejsze zejście do centrum na kawę i obiad odbywa się wyłącznie w dół łagodnymi uliczkami.",
         "Ponte del Diavolo: parking bezpłatny tuż przy moście przy drodze SS12. Po południu słońce pięknie oświetla asymetryczny wysoki łuk mostu.",
@@ -1188,6 +1189,10 @@
       },
       "daily_km_estimate": 28,
       "eta_timeline": [
+        {
+          "time": "09:00",
+          "event": "Poranny spacer (3 min) do Bar La Stazione po świeże toskańskie kanapki (panini) na wynos"
+        },
         {
           "time": "09:30",
           "event": "Wyjazd z bazy do Barga (~6–8 min)"
@@ -1277,23 +1282,23 @@
         "gps_hint": "CAI nr 6, Fornovolasco → Foce di Petrosciana."
       },
       "food": {
-        "place": "Bar Pizzeria La Stazione (Mologno)",
-        "address": "Via della Stazione 1, 55051 Mologno LU",
-        "phone": "0583 710123",
+        "place": "Bella e Pronta (Pizzeria / Rosticceria — Mologno)",
+        "address": "Via della Stazione 1, 55051 Mologno / Barga LU",
+        "phone": "0583 710129",
         "dishes": [
-          "pizza klasyczna z pieca",
-          "pizza in teglia",
-          "focaccia toskańska, calzone"
+          "pizza z pieca (klasyczna i al taglio)",
+          "panini / kanapki na szlak (rano z Bar La Stazione)",
+          "domowe dania garmażeryjne i kuchnia toskańska"
         ],
-        "note": "Zrealizowany obiad po powrocie z górskiej trasy na Monte Forato (oraz w ciągu dnia dla Mamy odpoczywającej w bazie) — lokalna pizza w Barze La Stazione w Mologno tuż obok stacji kolejowej Barga-Gallicano, zaledwie ~300 m spacerem (4 min) od noclegu przy Via Nazionale.",
+        "note": "Zrealizowany posiłek 15.09: rano przed wyruszeniem na szlak odebraliśmy świeże kanapki (panini) z Bar La Stazione, a po powrocie z 8-godzinnej górskiej pętli Monte Forato na obiad zjedliśmy wyborną pizzę z pizzerii/garmażerki Bella e Pronta — zaledwie ~200 m spacerem (2–3 min) od bazy przy Via Nazionale.",
         "price": "~€7–12/os",
-        "gps_hint": "Via della Stazione 1, 55051 Mologno LU (~300 m pieszo od bazy)",
+        "gps_hint": "Via della Stazione 1, Mologno (~200 m pieszo od bazy)",
         "coords": [
-          44.0685,
-          10.4523
+          44.0681,
+          10.4531
         ],
-        "url": "https://www.google.com/maps/dir/Via+Nazionale,+29,+55051+Mologno+LU/Bar+La+Stazione,+Via+della+Stazione,+1,+55051+Mologno+LU/@44.0679716,10.4525434,311m/data=!3m3!1e3!4b1!5s0x12d57ab2607da81d:0xe0c5f06900567c73!4m14!4m13!1m5!1m1!1s0x12d57ab3bd304abf:0xc157d93e99e24ffe!2m2!1d10.4549746!2d44.0677643!1m5!1m1!1s0x12d57ab25c8e8551:0xbc5eb29db5165aa4!2m2!1d10.4523186!2d44.0684808!3e2",
-        "opening_hours": "Codziennie (bar od rana, pizzeria na obiad i kolację, na miejscu i na wynos)"
+        "url": "https://www.google.com/maps/place/Bella+e+Pronta/@44.0679636,10.453791,19z/data=!4m17!1m8!3m7!1s0x12d5652c1ca3cd19:0x81ca416119f9ab6b!2s55051+Barga,+Prowincja+Lukka!3b1!8m2!3d44.0755155!4d10.482399!16zL20vMDY3azht!3m7!1s0x12d57ab2577037b3:0xd01bc7a87210643b!8m2!3d44.0680866!4d10.4531167!9m1!1b1!16s%2Fg%2F11cs5tsq8w?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D",
+        "opening_hours": "Wt–Nd 10:00–21:00 (pn nieczynne; we wtorki czynne)"
       },
       "practical_tips": [
         "⚠️ UWAGA na szacunki czasowe aplikacji (Mapy.cz/Komoot): algorytmy zakładają gładki szlak i podają teoretyczne ~4 h, ale Alpy Apuańskie to bardzo stromy, kamienisty i wyczerpujący teren wapienny (duże nachylenie na CAI 6, nierówny grzbiet CAI 110 oraz śliskie, luźne piargi na zejściu CAI 130, gdzie każdy krok wymaga skupienia). Realny czas pętli z odpoczynkami to ok. 7–8 godzin!",
@@ -1304,15 +1309,22 @@
         "NIE kontynuuj grzbietem za łuk w stronę Pania della Croce — tam zaczyna się odcinek wyposażony (via ferrata), wymaga uprzęży i doświadczenia.",
         "Ucieczka przed upałem: we wtorek w miastach panuje skwar (prawie 30°C), podczas gdy szlak z Fornovolasco biegnie w orzeźwiającym cieniu lasu kasztanowego przy 0% ryzyka deszczu.",
         "Dla Mamy i odpoczywających: leniwy dzień w ogrodzie bazy (basen, leżaki, książka) okazał się doskonałą decyzją — 8 h kamienistego trekkingu byłoby dla niej zbyt forsowne.",
-        "Obiad po 8 h w górach: pizza w Bar La Stazione w Mologno (Via della Stazione 1, tuż przy stacji Barga-Gallicano) — zaledwie ~300 m (4 min spacerem) od bazy, bezstresowy wybór po wyczerpującym trekkingu bez konieczności jazdy autem.",
+        "Prowiant rano na szlak: przed wyjazdem w góry krótki spacer (3 min) do Bar La Stazione (Via della Stazione 1) po świeże toskańskie kanapki (panini) — sprawdzony poranny rytuał.",
+        "Obiad po 8 h w górach: pizza z pizzerii/garmażerki Bella e Pronta w Mologno (Via della Stazione 1) — zaledwie ~200 m spacerem (2–3 min) od bazy, idealny i bezstresowy wybór po wyczerpującym trekkingu.",
         "Wieczór po 8 h w górach: powrót do bazy, gorący prysznic, regeneracja nóg i wczesny sen przed środowym całodniowym wyjazdem kolejowym do Lukki i Pizy."
       ],
-      "narrative": "Dziś prawdziwa, wymagająca wyprawa w Alpy Apuańskie, która brutalnie zweryfikowała optymistyczne szacunki aplikacji mapowych. Podczas gdy Mapy.cz prognozowały lajtowe 4 godziny na 9,3 km, surowy teren Apuanów — strome wapienne podejście szlakiem CAI 6 przez las do Foce di Petrosciana (+660 m w pionie), kamienista graniowa ścieżka CAI 110 oraz techniczne, osypujące się pod butami zejście szlakiem CAI 130 po piargach Costa Pulita — zajął w rzeczywistości blisko 8 godzin marszu i postojów. Widoki spod 32-metrowego skalnego łuku Monte Forato na grań i lśniące w słońcu morze wynagrodziły jednak każdy wylany pot. Mama spędzająca ten czas w ciszy ogrodu przy basenie w bazie miała idealny, bezstresowy dzień — zabranie jej na ten szlak byłoby błędem. Po zejściu do Fornovolasco i powrocie do bazy zregenerowaliśmy siły pod gorącym prysznicem, a na zasłużony obiad zjedliśmy wyborną pizzę w Barze La Stazione w Mologno — zaledwie 300 metrów spacerem od noclegu, tuż przy stacji kolejowej. Wieczór mija pod znakiem odpoczynku i wczesnego snu przed jutrzejszym wyjazdem do Lukki, Pizy i nad morze.",
+      "narrative": "Dziś prawdziwa, wymagająca wyprawa w Alpy Apuańskie, która brutalnie zweryfikowała optymistyczne szacunki aplikacji mapowych. Dzień zaczynamy od naszego stałego porannego rytuału — rano skoczek 3 minuty pieszo do Baru La Stazione po świeżo przygotowane kanapki na drogę. Podczas gdy Mapy.cz prognozowały lajtowe 4 godziny na 9,3 km, surowy teren Apuanów — strome wapienne podejście szlakiem CAI 6 przez las do Foce di Petrosciana (+660 m w pionie), kamienista graniowa ścieżka CAI 110 oraz techniczne, osypujące się pod butami zejście szlakiem CAI 130 po piargach Costa Pulita — zajął w rzeczywistości blisko 8 godzin marszu i postojów. Widoki spod 32-metrowego skalnego łuku Monte Forato na grań i lśniące w słońcu morze wynagrodziły jednak każdy wylany pot. Mama spędzająca ten czas w ciszy ogrodu przy basenie w bazie miała idealny, bezstresowy dzień — zabranie jej na ten szlak byłoby błędem. Po zejściu do Fornovolasco i powrocie do bazy zregenerowaliśmy siły pod gorącym prysznicem, a na zasłużony obiad zjedliśmy wyborną pizzę z pobliskiej pizzerii Bella e Pronta w Mologno — zaledwie 200 metrów spacerem od noclegu. Wieczór mija pod znakiem odpoczynku i wczesnego snu przed jutrzejszym wyjazdem do Lukki, Pizy i nad morze.",
       "web_research": [
         {
-          "topic": "Obiad po trasie: Bar La Stazione (Mologno)",
-          "summary": "Via della Stazione 1, 55051 Mologno LU (tel. 0583 710123). Bar i pizzeria tuż obok stacji kolejowej Barga-Gallicano, zaledwie ~300 m pieszo (4 min) od naszej bazy przy Via Nazionale 29. Tradycyjna pizza z pieca, pizza in teglia i focaccia na miejscu oraz na wynos — wygodny i zasłużony posiłek regeneracyjny po 8 godzinach w Alpach Apuańskich bez konieczności wsiadania za kółko.",
-          "source": "https://www.google.com/maps/dir/Via+Nazionale,+29,+55051+Mologno+LU/Bar+La+Stazione,+Via+della+Stazione,+1,+55051+Mologno+LU/@44.0679716,10.4525434,311m/data=!3m3!1e3!4b1!5s0x12d57ab2607da81d:0xe0c5f06900567c73!4m14!4m13!1m5!1m1!1s0x12d57ab3bd304abf:0xc157d93e99e24ffe!2m2!1d10.4549746!2d44.0677643!1m5!1m1!1s0x12d57ab25c8e8551:0xbc5eb29db5165aa4!2m2!1d10.4523186!2d44.0684808!3e2",
+          "topic": "Obiad po trasie: Bella e Pronta (Mologno)",
+          "summary": "Via della Stazione 1, 55051 Mologno / Barga LU (tel. 0583 710129 / 338 5260458). Rosticceria i pizzeria z domową kuchnią toskańską tuż przy stacji Barga-Gallicano, zaledwie ~200 m pieszo (2–3 min) od naszej bazy przy Via Nazionale 29. Czynne wt–nd 10:00–21:00. Pizze z pieca, focaccia i domowe dania na wynos i na miejscu — sprawdzona, rewelacyjna pizza na obiad 15.09 po 8 godzinach trekkingu na Monte Forato.",
+          "source": "https://www.google.com/maps/place/Bella+e+Pronta/@44.0679636,10.453791,19z/data=!4m17!1m8!3m7!1s0x12d5652c1ca3cd19:0x81ca416119f9ab6b!2s55051+Barga,+Prowincja+Lukka!3b1!8m2!3d44.0755155!4d10.482399!16zL20vMDY3azht!3m7!1s0x12d57ab2577037b3:0xd01bc7a87210643b!8m2!3d44.0680866!4d10.4531167!9m1!1b1!16s%2Fg%2F11cs5tsq8w?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D",
+          "checked": "2026-09-15"
+        },
+        {
+          "topic": "Poranne kanapki na wynos: Bar La Stazione (Mologno)",
+          "summary": "Via della Stazione 1, 55051 Mologno LU (tel. 0583 710123). Bar przy stacji kolejowej Barga-Gallicano, ~300 m spacerem (3 min) od bazy przy Via Nazionale 29. Codzienny sprawdzony poranny punkt grupy: świeżo przygotowywane kanapki (panini) na wynos przed wyjazdem w góry.",
+          "source": "https://www.google.com/maps/place/Bar+La+Stazione/@44.0683182,10.4525062,19z/data=!3m1!5s0x12d57ab2607da81d:0xe0c5f06900567c73!4m15!1m8!3m7!1s0x12d5652c1ca3cd19:0x81ca416119f9ab6b!2s55051+Barga,+Prowincja+Lukka!3b1!8m2!3d44.0755155!4d10.482399!16zL20vMDY3azht!3m5!1s0x12d57ab25c8e8551:0xbc5eb29db5165aa4!8m2!3d44.0684808!4d10.4523186!16s%2Fg%2F1v2dh1p7?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D",
           "checked": "2026-09-15"
         },
         {
@@ -1335,7 +1347,8 @@
         }
       ],
       "opening_hours": {
-        "bar_la_stazione_mologno": "Codziennie (bar, przekąski, pizza z pieca na obiad i kolację).",
+        "bar_la_stazione_mologno": "Codziennie od rana (kawa, bar, świeże panini na wynos).",
+        "bella_e_pronta_mologno": "Wt–Nd 10:00–21:00 (pizzeria, garmażerka, dania na wynos i na miejscu; pn nieczynne).",
         "szlak_monte_forato": "Dostępny całą dobę, cały rok, bez opłat i rezerwacji."
       },
       "parking": {
@@ -1352,7 +1365,11 @@
       "daily_km_estimate": 31,
       "eta_timeline": [
         {
-          "time": "08:30",
+          "time": "08:15",
+          "event": "Poranny spacer (3 min) do Bar La Stazione po świeże kanapki (panini) na szlak"
+        },
+        {
+          "time": "08:35",
           "event": "Wyjazd z bazy do Fornovolasco (23 min)"
         },
         {
@@ -1365,7 +1382,7 @@
         },
         {
           "time": "13:30",
-          "event": "Naturalny łuk Monte Forato (1223–1260 m, 5,6 km) — spektakularna panorama Alp Apuańskich i morza, zdjęcia pod 32-metrowym oknem skalnym, posiłek regeneracyjny"
+          "event": "Naturalny łuk Monte Forato (1223–1260 m, 5,6 km) — spektakularna panorama Alp Apuańskich i morza, zdjęcia pod 32-metrowym oknem skalnym, posiłek regeneracyjny (kanapki z La Stazione)"
         },
         {
           "time": "14:15",
@@ -1385,7 +1402,7 @@
         },
         {
           "time": "19:00",
-          "event": "Zasłużony obiad / kolacja: pizza w Barze La Stazione w Mologno (Via della Stazione 1) — krótki spacer 300 m od bazy, regeneracyjny posiłek dla całej grupy"
+          "event": "Zasłużony obiad / kolacja: pizza z pizzerii / rosticcerii Bella e Pronta w Mologno (Via della Stazione 1) — krótki spacer ~200 m z bazy, posiłek regeneracyjny dla całej grupy"
         },
         {
           "time": "20:30",
@@ -1393,7 +1410,7 @@
         }
       ],
       "crowd_tip": "Popularny szlak wśród wprawnych turystów, ale rzadko zatłoczony — wczesny start (8:00) daje ciszę i chłodniejszą temperaturę na podejściu.",
-      "summary": "Prawdziwa, surowa górska wyprawa w Alpy Apuańskie: zrealizowana pętla z Fornovolasco (9,3 km, +816 m / -815 m) do naturalnego łuku Monte Forato (rozpiętość 32 m, wysokość ponad 1200 m n.p.m.). W przeciwieństwie do optymistycznych szacunków Mapy.cz (~4 h), wymagający wapienny teren (kamienie, stromizna CAI 6 i luźne piargi na zejściu CAI 130) sprawił, że przejście pętli z postojami zajęło realnie ok. 8 godzin. Spektakularne widoki na morze i grań, po powrocie do bazy zasłużony obiad z pizzą w Barze La Stazione w Mologno (~300 m pieszo), a wieczorem pełna regeneracja przed jutrzejszym dniem w miastach.",
+      "summary": "Prawdziwa, surowa górska wyprawa w Alpy Apuańskie: zrealizowana pętla z Fornovolasco (9,3 km, +816 m / -815 m) do naturalnego łuku Monte Forato (rozpiętość 32 m, wysokość ponad 1200 m n.p.m.). W przeciwieństwie do optymistycznych szacunków Mapy.cz (~4 h), wymagający wapienny teren (kamienie, stromizna CAI 6 i luźne piargi na zejściu CAI 130) sprawił, że przejście pętli z postojami zajęło realnie ok. 8 godzin. Rano prowiant w postaci świeżych kanapek z Baru La Stazione, spektakularne widoki na morze i grań, a po powrocie do bazy zasłużony obiad z pizzą z pizzerii Bella e Pronta w Mologno (~200 m pieszo) i regeneracja przed jutrzejszym dniem w miastach.",
       "weather": {
         "label": "Monte Forato",
         "coords": [

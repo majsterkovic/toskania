@@ -71,13 +71,13 @@ Na podstawie aktualnych prognoz pogody (Open-Meteo) oraz zmęczenia kierowcy kr�
 - **D3 (pn 14.09) — Barga & Ponte del Diavolo (Dzień regeneracyjny)**:
   - *Kierowca/trasa*: minimum jazdy (tylko 6 min do Bargi i 12 min płaską SS12 do Ponte del Diavolo).
   - *Mama*: wysadzenie na samej górze pod Duomo, zejście w dół zabytkowymi uliczkami (zero wspinaczki).
-  - *Punkty*: Duomo, panoramiczny punkt widokowy, zakupy w Macelleria Angelini, obiad w *Osteria Il Borgo dei Sapori*, most Ponte del Diavolo, zakupy zaopatrzeniowe do bazy w Conad (Fornaci di Barga), popołudnie relaks w ogrodzie w bazie (opcjonalny spacer pod stary dąb Treppignana).
+  - *Punkty*: rano świeże panini na wynos z pobliskiego Bar La Stazione (~300 m od bazy), Duomo, panoramiczny punkt widokowy, zakupy w Macelleria Angelini, obiad w *Osteria Il Borgo dei Sapori*, most Ponte del Diavolo, zakupy zaopatrzeniowe do bazy w Conad (Fornaci di Barga), popołudnie relaks w ogrodzie w bazie (opcjonalny spacer pod stary dąb Treppignana).
 - **D4 (wt 15.09) — Pętla Monte Forato (Alpy Apuańskie)**:
   - *Zrealizowana trasa*: pętla 9,3 km (+816 m / -815 m). CAI 6 z Fornovolasco (parking 491 m) przez cienisty las → przełęcz Foce di Petrosciana (1150 m) → grań CAI 110 pod łuk Monte Forato (1223–1260 m) → bezpośrednie zejście łącznikiem do CAI 130 i powrót zboczami Costa Pulita/La Carpineta do Fornovolasco. Ślad GPS w `public/gpx/monte-forato.gpx` oraz na Mapy.cz.
   - *Weryfikacja trudności*: Mapy.cz podawały nierealistyczne ~4 h — w surowym, stromym wapiennym terenie (forsowne podejście, piargi na zejściu) rzeczywisty czas wyniósł **ok. 8 godzin**.
   - *Pogoda*: wtorek to najgorętszy dzień na nizinach (~30°C w Lukce/Pizie). W górach i w cieniu bukowego lasu panowały idealne warunki (18–22°C, 0% deszczu).
   - *Grupa*: wariant trekkingowy dla piechurów (pętla z Fornovolasco), a dla Mamy bezstresowy dzień odpoczynku i relaksu w ogrodzie w bazie (pozostawienie jej w bazie było kluczowe).
-  - *Jedzenie / Wieczór*: po 8 h w górach i powrocie do bazy zregenerowaliśmy się prysznicem, a na obiad/kolację była pizza w pobliskim **Barze La Stazione w Mologno** (Via della Stazione 1, ~300 m spacerem od bazy przy stacji Barga-Gallicano).
+  - *Jedzenie / Wieczór*: rano prowiant na szlak (panini z **Bar La Stazione**), a po 8 h w górach i powrocie do bazy zregenerowaliśmy się prysznicem, a na zasłużony obiad była wyśmienita pizza z pobliskiej **Bella e Pronta w Mologno** (Via della Stazione 1, ~200 m spacerem od bazy).
 - **D5 (śr 16.09) — Lucca + Piza + Viareggio (★ POPULARNY)**:
   - *Pogoda*: spadek temperatury do przyjemnych 27.8°C (znacznie znośniej na bruku w Lukce i na trawniku w Pizie).
   - *Zmęczenie / Transport*: decyzja grupy (2026-09-15) — po wyczerpującym trekkingu na Monte Forato całkowicie rezygnujemy z jazdy autem do Lukki. Auto zostaje na darmowym parkingu stacji Barga-Gallicano (podjazd 3 min z Ponte all'Ania). Wyjazd pociągiem **Regionale 19159: Barga-Gallicano (08:50) ➔ Lucca (09:34)**.

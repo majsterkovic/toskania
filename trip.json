@@ -1929,45 +1929,58 @@
       "day_num": 7,
       "type": "tuscany_transfer",
       "label": "TOSKANIA · DZIEŃ 5 + ZMIANA BAZY",
-      "title": "Przejazd z Garfagnany do Val di Merse (Murlo)",
+      "title": "Przejazd do Val di Merse — Bagni di Lucca i Monteriggioni",
       "image": "chianti",
       "base_id": "base1",
       "next_base_id": "base2",
       "base_label": "BAZA 1 → BAZA 2",
       "transfer_km": 195,
       "transfer_h": "2 h 45 min",
-      "transfer_route": "Barga → SS12 south → Borgo a Mozzano → Capannori → A11 (Firenze-Mare) → Siena Superstrada → tangenziale Siena → SS223 Siena-Grosseto → Murlo",
-      "transfer_depart": "ok. 10:00–11:00",
+      "transfer_route": "Barga → Bagni di Lucca (SS12) → Capannori/Lucca → A11 (Firenze-Mare) → RA03 Firenze-Siena → Monteriggioni → tangenziale Siena → SR2 (Monteroni d'Arbia) → SP34 → Murlo",
+      "transfer_depart": "ok. 10:00",
       "drive_limit_min": 0,
       "attractions": [
         {
-          "name": "Pistoia — Piazza del Duomo (plac katedralny, gotycka katedra)",
-          "type": "cultural",
-          "description": "Miasteczko między Lucca a Florencją, 5 min zjazdu z A11. Piazza del Duomo: gotycka katedra z XIV w. z Capella del Tau i Srebrnym Ołtarzem Jakuba, Battistero, Palazzo del Comune. Spacer 45–60 min, bez kolejek. Obiad tuż obok.",
+          "name": "Bagni di Lucca — Ponte delle Catene i Ponte a Serraglio",
+          "type": "scenic",
+          "description": "Zabytkowe XIX-wieczne uzdrowisko nad rzeką Lima. Most wiszący Ponte delle Catene z 1840 r. projektu Lorenzo Nottoliniego oraz nadrzeczna promenada w Ponte a Serraglio z widokiem na dawne Regio Casinò i wille Belle Époque. Krótki poranny spacer 45 min i espresso przed wyruszeniem na południe.",
           "coords": [
-            43.933,
-            10.917
+            44.0065,
+            10.5873
           ],
-          "drive_min": 0,
-          "duration_h": 1.5,
-          "image_key": "pistoia"
+          "drive_min": 14,
+          "duration_h": 0.75,
+          "image_key": "bagni-lucca"
+        },
+        {
+          "name": "Monteriggioni — spacer po borgo i mury obronne",
+          "type": "medieval",
+          "description": "Średniowieczne borgo uwiecznione w „Boskiej Komedii\" Dantego, zamknięte w nienaruszonym pierścieniu murów z 1214 r. z 14 wieżami. Maleńkie miasteczko (Piazza Roma / Piazza Dante Alighieri) z kościołem Santa Maria Assunta — idealne na 30–45 minut spaceru, wejście na chodnik obronny (Camminamenti sulle Mura) oraz toskański obiad tuż obok.",
+          "coords": [
+            43.3906,
+            11.2233
+          ],
+          "drive_min": 105,
+          "duration_h": 0.75,
+          "image_key": "monteriggioni"
         }
       ],
       "oak_forest": null,
       "food": {
-        "place": "Trattoria La Limonaia — Pistoia",
-        "address": "Via di Gello 9/A, 51100 Pistoia PT",
+        "place": "Il Tagliere Medievale — Monteriggioni",
+        "address": "Piazza Dante Alighieri 13, 53035 Monteriggioni SI",
         "dishes": [
-          "ribollita",
-          "pasta al ragù",
-          "bistecca"
+          "taglieri di salumi e formaggi (cinta senese, pecorino)",
+          "crostoni toscani",
+          "panini con porchetta",
+          "cantuccini con vin santo"
         ],
-        "note": "Prosta trattoria toskańska w Pistoi — dobra na przerwę obiadową w dniu transferu. Alternatywa szybsza: Autogrill A11 Montecatini Est.",
-        "price": "~€10–18/os"
+        "note": "Klimatyczny lokal wewnątrz murów Monteriggioni na głównym placu (Piazza Dante Alighieri). Specjalność: toskańskie deski wędlin i serów, chrupiące crostoni i panini na świeżym powietrzu. Alternatywa tuż obok na ciepłe dania: Osteria Antico Travaglio, a u podnóża wzgórza: kultowy Bar dell'Orso.",
+        "price": "~€12–20/os"
       },
       "accommodation": {
         "place": "BAZA 2 — Murlo (Val di Merse)",
-        "note": "Przyjazd ok. 14:00–15:00. Check-in typowo 15:00–18:00.",
+        "note": "Przyjazd ok. 16:30 (z pełnym bakiem i zakupami). Check-in typowo 15:00–18:00.",
         "price": "€70–100/noc",
         "options": [
           {
@@ -1980,51 +1993,54 @@
       },
       "route_segments": [
         {
-          "segment": "Barga → Lucca (A11)",
-          "road": "SS12/SS445 → SS12 → A11",
-          "km": "~60",
-          "note": "Zjazd A11 Lucca Est, tankuj przed wjazdem na autostradę"
+          "segment": "Barga → Bagni di Lucca",
+          "road": "SS445/SS12",
+          "km": "~12",
+          "note": "Zjazd do Fornoli / Ponte delle Catene, krótki poranny spacer"
         },
         {
-          "segment": "A11 → Siena Superstrada",
-          "road": "A11/E70",
-          "km": "~110",
-          "note": "Superstrada Siena-Bettolle, tangenziale Siena, kierunek SS223 Grosseto"
+          "segment": "Bagni di Lucca → Monteriggioni",
+          "road": "SS12 → A11 (Lucca Est) → RA03 (Firenze-Siena)",
+          "km": "~135",
+          "note": "A11 do Florencji, zjazd na Raccordo Firenze-Siena, zjazd Monteriggioni. Obiad i mury."
         },
         {
-          "segment": "Siena (tangenziale) → BAZA 2 (Murlo)",
-          "road": "SS223 Siena-Grosseto → lokalne drogi Val di Merse",
-          "km": "~20",
-          "note": "SS223 w kierunku Grosseto, zjazd na Murlo. ETA 14:00–15:00."
+          "segment": "Monteriggioni → Monteroni d'Arbia",
+          "road": "RA03 → tangenziale Siena → SR2 Cassia",
+          "km": "~35",
+          "note": "Tankowanie na stacji Eni (Via Siena 194) + zaopatrzenie w supermarkecie Coop"
+        },
+        {
+          "segment": "Monteroni d'Arbia → BAZA 2 (Murlo)",
+          "road": "SP34 / SP33",
+          "km": "~12",
+          "note": "Dojazd pod La Nobiltà del Tempo w Murlo. Check-in z zaopatrzonym autem ~16:30."
         }
       ],
       "practical_tips": [
-        "Spokojny wyjazd ok. 10:00 — Ponte della Maddalena i Bagni di Lucca zwiedzone już w D6",
-        "Przyjazd ~14:00–15:00 — check-in od 15:00, popołudnie pierwsze poznanie Val di Merse"
+        "Spokojny wyjazd ok. 10:00 — po drodze uroczy poranny przystanek w Bagni di Lucca (Ponte delle Catene)",
+        "Obiad i krótki spacer (~30–45 min) w Monteriggioni w obrębie murów obronnych",
+        "Tankowanie i zaopatrzenie w drodze: stacja Eni (Via Siena 194, self 24/7) oraz supermarket Coop w Monteroni d'Arbia",
+        "Przyjazd do Bazy 2 w Murlo ~16:30 (z pełnym bakiem i zakupami) — relaks na miejscu bez konieczności ponownego wyjazdu wieczorem"
       ],
-      "narrative": "Baza 1 oddana przed 10:00 — ostatnie spojrzenie na dolinę Serchio z Ponte all'Ania, potem spokojny wyjazd o 10:00–10:30, bez pośpiechu: most i termy Bagni di Lucca były już wczoraj, dziś liczy się tylko droga. SS12 na południe do Borgo a Mozzano (30 min), przez Lucca i wjazd na A11 — autostradę Firenze–Mare, którą pokonaliśmy w drugą stronę pięć dni temu, tym razem w kierunku wschodnim. Przez Pistoię i Prato na zachodnią obwodnicę Florencji, gdzie w oddali majaczy kopuła Duomo, choć dziś nie mamy czasu się zatrzymywać — miasto zostawiamy na inny wyjazd. Dalej Superstrada Siena–Bettolle (SR2) prowadzi na południe, krajobraz zmienia się z równin Arno na faliste wzgórza — pierwsze zapowiedzi Toskanii sieneńskiej. Postój obiadowy w Pistoi — Trattoria La Limonaia (Via di Gello 9/A) albo, gdy czas goni, Autogrill Montecatini Est. Objeżdżamy Sienę tangenzialą, potem SS223 w kierunku Grosseto i zjazd na Murlo — lokalne drogi wiją się już wśród wzgórz Val di Merse, gdzie słońce we wrześniowe popołudnie kładzie długie cienie na rzędach krzewów. ETA do Murlo 14:00–15:00. Popołudnie należy do pierwszego poznania okolicy — Val di Merse wita nas spacerem po wzgórzach i zapachem rozgrzanej ziemi, w cichej atmosferze z dala od zgiełku.",
+      "narrative": "Baza 1 oddana przed 10:00 — ostatnie spojrzenie na dolinę Serchio z Ponte all'Ania, potem spokojny wyjazd. Zaledwie kilkanaście minut na południe zatrzymujemy się w Bagni di Lucca przy Ponte delle Catene — zabytkowym moście wiszącym Nottoliniego nad rzeką Lima, z szybką poranną kawą w klimatycznym Ponte a Serraglio. O 11:00 ruszamy SS12 w stronę Lukki i wjeżdżamy na A11 Firenze-Mare, przecinając nizinę w kierunku Florencji, by bezkolizyjnie zjechać na Raccordo Autostradale Firenze-Siena. Około 12:50 na horyzoncie wyrasta wzgórze z kamiennym wieńcem czternastu wież: to Monteriggioni. Parkujemy u stóp wzgórza i przez Porta Franca wchodzimy do ufortyfikowanego borgo. Na Piazza Dante Alighieri czeka na nas obiad w Il Tagliere Medievale — tradycyjne toskańskie deski wędlin Cinta Senese, crostoni i pecorino. Po obiedzie półgodzinny spacer po cichym borgo i wejście na Camminamenti sulle Mura z widokiem na Montagnolę Senese. Po piętnastej ruszamy w kierunku nowej bazy, ale przed samym wjazdem do Murlo zjeżdżamy do Monteroni d'Arbia na drodze SR2 Cassia. To tu załatwiamy całą logistykę: tankowanie do pełna na stacji Eni (Via Siena 194) oraz duże zakupy na weekend w supermarkecie Coop. Stąd już tylko 12 minut malowniczą SP34 do Murlo: meldujemy się w La Nobiltà del Tempo ok. 16:30 z pełnym bakiem i zaopatrzoną lodówką, by resztę popołudnia i wieczór spędzić na pełnym relaksie bez konieczności ponownego wsiadania za kółko.",
       "web_research": [
         {
-          "topic": "Trasa Barga → Murlo (Val di Merse)",
-          "summary": "SS445/SS12 → Borgo a Mozzano → Capannori → A11 (Firenze-Mare) → Siena Superstrada → tangenziale Siena → SS223 kierunek Grosseto → Murlo. ~195 km, 2h45 bez postojów (OSRM zweryfikowane 2026-07). Postój Pistoia: zjazd Pistoia Ovest.",
-          "checked": "2026-06",
+          "topic": "Trasa Barga → Bagni di Lucca → Monteriggioni → Murlo",
+          "summary": "SS445/SS12 → Bagni di Lucca (Fornoli) → SS12 do Lucca Est → A11 (Firenze-Mare) → RA03 Firenze-Siena → Monteriggioni → tangenziale Siena → SS223 kierunek Grosseto → Murlo. ~195 km, ~2h45 czystej jazdy.",
+          "checked": "2026-09",
           "source": "https://www.viamichelin.it"
         },
         {
-          "topic": "Pistoia — Cattedrale di San Zeno",
-          "summary": "Piazza del Duomo. Fasada biało-zielona (romanico-pisański). Wejście bezpłatne. Kaplica San Jacopo: relikwiarz srebrny (€3). Otwarte pn–sb 9:00–17:30, nd 12:30–17:30. Baptisterium naprzeciwko, bezpłatnie.",
-          "checked": "2026-06",
-          "source": "https://www.turismo.pistoia.it"
+          "topic": "Bagni di Lucca — Ponte delle Catene",
+          "summary": "Fornoli. Zabytkowy most wiszący na łańcuchach z 1840 r. projektu Lorenzo Nottoliniego nad rzeką Lima. Parking tuż obok, bezpłatny.",
+          "checked": "2026-09"
         },
         {
-          "topic": "Pistoia — parking i ZTL",
-          "summary": "Parcheggio Centro: Piazza San Francesco (płatny, €1,50/h) lub Piazza San Leone (gratis). ZTL w centro storico pn–sb 8:00–13:00 i 15:00–20:00. Postój 30–60 min — wystarczy Piazzale Verdi (gratis, 10 min pieszo).",
-          "checked": "2026-06"
-        },
-        {
-          "topic": "Ospedale del Ceppo — loggia malowana",
-          "summary": "Via del Ceppo 1. Loggia z 1514 — fryz terracottowy Giovanni della Robbia: 7 Dzieł Miłosierdzia. Zewnątrz bezpłatnie 24h. Muzeum wewnętrzne (sala operacyjna z XVII w.): €5, wt–nd 10–18. Idealne na 15-minutowy postój.",
-          "checked": "2026-06"
+          "topic": "Monteriggioni — borgo i mury",
+          "summary": "Średniowieczne borgo z 1214 r. z 14 wieżami obronnymi. Parking poniżej murów (Piazza Roma, płatny). Spacer 30–45 min. Camminamenti sulle Mura czynne 9:30–19:30 (€5).",
+          "checked": "2026-09",
+          "source": "https://www.monteriggioniturismo.it"
         },
         {
           "topic": "Murlo — Val di Merse (BAZA 2)",
@@ -2032,19 +2048,19 @@
           "checked": "2026-06"
         },
         {
-          "topic": "Murlo — dojazd i lokalizacja",
-          "summary": "Frazione Poggio Brucoli/Casciano, gmina Murlo (Val di Merse). Dojazd z Siena Superstrada: tangenziale Siena, dalej SS223 Siena-Grosseto (główna droga regionu), zjazd lokalny do Murlo. ~33 min / 27 km od centrum Sieny.",
-          "source": "OSRM router.project-osrm.org",
-          "checked": "2026-07"
+          "topic": "Monteroni d'Arbia — zaopatrzenie Bazy 2",
+          "summary": "Supermarket Coop (Circonvallazione Kennedy) oraz stacja Eni (Via Siena 194, self 24/7) — zaledwie 10–12 min (9 km) od bazy w Murlo.",
+          "checked": "2026-09"
         }
       ],
       "opening_hours": {
-        "pistoia_cattedrale": "Pn–Sb 9:00–17:30, Nd 12:30–17:30 (Piazza del Duomo). Kaplica San Jacopo: €3, do 16:30.",
-        "ospedale_del_ceppo": "Muzeum wewn.: wt–nd 10–18 (€5). Loggia zewnątrz: 24h.",
+        "ponte_delle_catene": "Dostępny 24h, wstęp wolny.",
+        "monteriggioni_mura": "Camminamenti sulle Mura: codz. 9:30–19:30 (sezon). Bilet €5 (mury + muzeum), samo borgo bezpłatne 24h.",
         "agriturismo_baza2_checkin": "Typowo 15:00–19:00 — zadzwoń jeśli przyjazd po 18:00"
       },
       "parking": {
-        "pistoia": "Piazzale Verdi (gratis, 10 min do centrum). Lub Piazza San Francesco (€1,50/h). ZTL 8–13 i 15–20 pn–sb.",
+        "bagni_lucca": "Parking przy Ponte delle Catene (Fornoli) — bezpłatny.",
+        "monteriggioni": "Parcheggio Monteriggioni poniżej murów (Piazza Roma) — płatny ok. €2–2,50/h, podejście 5 min pod bramę Porta Franca.",
         "base2_agriturismo": "Parkuj przy domu — bezpłatny parking prywatny na miejscu. Naviguj: Via Alcide De Gasperi 10/12, Murlo SI."
       },
       "fuel_stops": [
@@ -2054,12 +2070,59 @@
           "note": "Ostatnia stacja przed autostradą A11 Firenze-Mare."
         },
         {
+          "name": "Eni — Monteroni d'Arbia (Baza 2)",
+          "location": "Via Siena 194, 53014 Monteroni d'Arbia SI",
+          "note": "Self-service / Iperself 24/7. Główna stacja pod Bazą 2 (~10 min od Murlo), przy drodze SR2 Cassia obok Coop."
+        },
+        {
           "name": "Stacja przy SS223 (kierunek Murlo)",
           "location": "SS223 Siena-Grosseto",
           "note": "Zatankuj przy zjeździe z tangenziali Siena — stacji mało na lokalnych drogach Val di Merse."
         }
       ],
-      "summary": "Dzień przeprowadzki: wymeldowanie z Garfagnany i przejazd do drugiej bazy w Murlo (Val di Merse, na południowy zachód od Sieny). Po drodze krótki postój w mieście Pistoia — na placu katedralnym (Piazza del Duomo) z gotycką katedrą, baptysterium i średniowiecznym ratuszem, zaledwie 5 minut zjazdu od autostrady.",
+      "eta_timeline": [
+        {
+          "time": "10:00",
+          "event": "Wymeldowanie z Casa vacanze Rosa (Ponte all'Ania), wyjazd w stronę doliny rzeki Lima"
+        },
+        {
+          "time": "10:15",
+          "event": "Bagni di Lucca — most wiszący Ponte delle Catene, spacer w Ponte a Serraglio i poranna kawa"
+        },
+        {
+          "time": "11:00",
+          "event": "Wyjazd na południe (SS12 ➔ A11 Lucca Est ➔ RA03 Firenze-Siena, ~1h 50 min)"
+        },
+        {
+          "time": "12:55",
+          "event": "Przyjazd do Monteriggioni — parking pod murami, podejście przez Porta Franca"
+        },
+        {
+          "time": "13:00",
+          "event": "Obiad w Il Tagliere Medievale (Piazza Dante Alighieri) — toskańskie deski wędlin i panini"
+        },
+        {
+          "time": "14:15",
+          "event": "Krótkie zwiedzanie Monteriggioni (30–45 min): spacer po placu i wejście na mury obronne"
+        },
+        {
+          "time": "15:00",
+          "event": "Przejazd w stronę Monteroni d'Arbia (RA03 ➔ tangenziale Sieny ➔ SR2 Cassia, ~35 km)"
+        },
+        {
+          "time": "15:35",
+          "event": "Monteroni d'Arbia — tanie tankowanie na stacji Eni (Via Siena 194) i zakupy na start w supermarkecie Coop"
+        },
+        {
+          "time": "16:20",
+          "event": "Krótki podjazd drogą SP34 do Murlo (~12 km / ~12–15 min)"
+        },
+        {
+          "time": "16:35",
+          "event": "Przyjazd do Murlo (La Nobiltà del Tempo) — check-in, rozpakowanie z pełnym zaopatrzeniem i wieczorny relaks"
+        }
+      ],
+      "summary": "Dzień przeprowadzki: wymeldowanie z Garfagnany i przejazd do drugiej bazy w Murlo (Val di Merse). Rano krótki postój przy moście łańcuchowym Ponte delle Catene w Bagni di Lucca, w porze obiadowej wjazd do ufortyfikowanego Monteriggioni na obiad w Il Tagliere Medievale i spacer po murach obronnych. W drodze do Murlo zjazd do Monteroni d'Arbia na tanie tankowanie na stacji Eni i zakupy w Coop, a ok. 16:30 zameldowanie w nowym domu na spokojny wieczór.",
       "weather": {
         "label": "Murlo (baza)",
         "coords": [

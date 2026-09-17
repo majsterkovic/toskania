@@ -88,3 +88,12 @@ Na podstawie aktualnych prognoz pogody (Open-Meteo) oraz zmęczenia kierowcy kr�
   - *Pogoda*: czwartek przynosi 50–60% prawdopodobieństwa opadów rano i wczesnym popołudniem.
   - *Działanie*: rano brak pośpiechu (późna pobudka po długiej środzie). Wizyta w Grotta del Vento w czasie deszczu (pod ziemią stałe 10°C, pełna ochrona przed aurą). Gdy po południu front ustępuje, zjazd do Bagni di Lucca (Casino Reale, Ponte delle Catene, spacer wzdłuż Lima/Serchio).
 
+## 9. Dzień 7 (pt 18.09) — Transfer Barga ➔ Bagni di Lucca ➔ Monteriggioni ➔ Murlo — ✅ ZDECYDOWANE I WDROŻONE (2026-09-17)
+
+- **Przebieg dnia**:
+  - Rano (10:15–11:00): **Bagni di Lucca** (Ponte delle Catene, most wiszący Nottoliniego, spacer w Ponte a Serraglio nad rzeką Lima) — nadrobienie punktu pominiętego w D6.
+  - W południe (~12:55–15:00): **Monteriggioni** (Piazza Dante Alighieri) — obiad w *Il Tagliere Medievale* (deski toskańskich wędlin i serów, panini) oraz krótki 30–45 min spacer po borgo i murach obronnych (camminamenti). Zastąpiło wcześniejszy postój w Pistoi.
+  - W drodze do Murlo (~15:35–16:15): **Monteroni d'Arbia** — tanie tankowanie na stacji **Eni (Via Siena 194, self 24/7)** oraz zaopatrzenie w supermarkecie Coop.
+  - Popołudnie (16:35): Przyjazd do Murlo (*La Nobiltà del Tempo*, check-in od 15:00) z pełnym bakiem i zaopatrzoną lodówką na spokojny wieczór.
+
+

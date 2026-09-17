@@ -83,6 +83,7 @@ Na podstawie aktualnych prognoz pogody (Open-Meteo) oraz zmęczenia kierowcy kr�
   - *Zmęczenie / Transport*: decyzja grupy (2026-09-15) — po wyczerpującym trekkingu na Monte Forato całkowicie rezygnujemy z jazdy autem do Lukki. Auto zostaje na darmowym parkingu stacji Barga-Gallicano (podjazd 3 min z Ponte all'Ania). Wyjazd pociągiem **Regionale 19159: Barga-Gallicano (08:50) ➔ Lucca (09:34)**.
   - *Ciąg kolejowy*: Barga-Gallicano ➔ Lucca (08:50–09:34) ➔ Pisa S. Rossore (16:42) ➔ Viareggio (~19:00, zachód słońca) ➔ Lucca (powrót pociągiem ok. 20:50) ➔ ostatni pociąg do Barga-Gallicano (Lucca 21:46 ➔ Barga-Gallicano 22:30). Krótki skok autem ze stacji do bazy (22:35).
   - Obiad w otwartej w środy *Trattoria da Giulio in Pelleria*. Finał o zachodzie słońca nad morzem w Viareggio.
+  - *Realizacja (2026-09-16)*: pełny sukces planu — wspólna Lucca z obiadem, a popołudniowy ciąg kolejowy do Pizy (Piazza dei Miracoli) oraz nad morze do Viareggio na zachód słońca zrealizowany w 100% zgodnie z rozkładem pociągów.
   - Brak kolizji z regułą „dwóch ciężkich dni pod rząd” (poprzedzony spokojnym wieczorem, a kolejny dzień z późną pobudką).
 - **D6 (czw 17.09) — Grotta del Vento & Bagni di Lucca (Dzień deszczowy)**:
   - *Pogoda*: czwartek przynosi 50–60% prawdopodobieństwa opadów rano i wczesnym popołudniem.

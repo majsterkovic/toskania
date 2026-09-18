@@ -17,7 +17,7 @@ Rzeczy ustalone w rozmowie — status wdrożenia w `trip.json`.
 - **Pieve Fosciana** rozważana i odrzucona jako alternatywa bazy (201 vs 125 min sumy dojazdów) — szczegóły w [[Baza 1 - Barga]].
 
 ## 2. San Gimignano — ✅ WDROŻONE (D13, 24.09) — patrz sekcja „Już zdecydowane" niżej
-- Pierwotnie odrzucone (55 min z [[Baza 2 - Chianti]], własny dzień = cięcie w napiętym bloku Chianti), ale po skróceniu powrotu z 3 do 2 dni (2026-07-19) zwolnił się dzień — powód odrzucenia zniknął. OSRM: realnie ~77 min (nie 55), z [[Monteriggioni]] po drodze.
+- Pierwotnie odrzucone (55 min z [[Baza 2 - Chianti]], własny dzień = cięcie w napiętym bloku Chianti), ale po skróceniu powrotu z 3 do 2 dni (2026-07-19) zwolnił się dzień — powód odrzucenia zniknął. OSRM: realnie ~71 min z Murlo. Monteriggioni pierwotnie planowane na ten dzień zostało zrealizowane wcześniej podczas transferu D7 (18.09), dzięki czemu popołudnie D13 zyskało elastyczny slot na relaks w bazie, dłuższy spacer lub Colle di Val d'Elsa przed pakowaniem i drogą do Niemiec.
 
 ## 3. Relokacja bazy 2 — ✅ ZDECYDOWANE I WDROŻONE (2026-07-20): Murlo
 Research (2026-07-19) dał 3 propozycje (A. Siena SE, B. Buonconvento, C. płd. skraj Chianti — szczegóły w [[Baza 2 - kandydaci relokacji]]), ale użytkownik samodzielnie znalazł i zarezerwował **inny** obiekt: La Nobiltà del Tempo w **Murlo** (Val di Merse, coords 43.1595/11.3158). Efekt OSRM: D9/D10/D13 się POPRAWIAJĄ (Val d'Orcia -29 min!), tylko D8 (Chianti) wyraźnie się pogarsza (+54 min, teraz najdłuższy dzień jazdy bloku). D7/D14 (transfery) prawie bez zmian. Pełne dane i wdrożenie w [[Baza 2 - kandydaci relokacji]].
@@ -33,7 +33,7 @@ Feasibility potwierdzona: **ostatni pociąg Viareggio→Lucca 22:10** (przyjazd 
 **Ceny biletów — dorośli vs studenci (research 2026-08-03):** Krzywa Wieża **€20/os bez żadnej ulgi** studenckiej/młodzieżowej (OPA Pisa zniża tylko niepełnosprawnych i grupy szkolne od 10 uczniów — nasza piątka odpada); combo placu z Wieżą €27, bez Wieży ~€11. Torre Guinigi po podwyżce **€8 intero / €6,50 ridotto** (notatka [[Lucca]] miała nieaktualne €6 — poprawione). Jedyna realna zniżka dla trójki poniżej 30 lat: **Trenitalia „Promo Young X-GO" −20% na Regionale**, rejestracja darmowa, bilet trzeba kupić do 23:59 dnia przed podróżą — dodane do `todo` w planie.
 
 ## Już zdecydowane i wdrożone
-- ✅ **Powrót 3→2 dni** (2026-07-19): nocleg Kufstein (jak w drodze tam); zwolniony dzień → D13 [[San Gimignano]] + [[Monteriggioni]] (24.09).
+- ✅ **Powrót 3→2 dni** (2026-07-19): nocleg Kufstein (jak w drodze tam); zwolniony dzień → D13 [[San Gimignano]] (24.09), popołudnie elastyczne (Monteriggioni zrealizowane w D7 18.09).
 - ✅ Florencja zamiast dnia 12 (Monteriggioni/Murlo/Foresta di Tocchi) — [[Florencja]]
 - ✅ Wariant 2-bazowy jako jedyny prezentowany plan (przełącznik 2/3 bazy usunięty)
 - ✅ **Korekta czasów jazdy OSRM** (2026-07): D8 Siena 25→39 min, D10 Monte Oliveto 28→61 min — patrz [[odleglosci]]

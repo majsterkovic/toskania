@@ -2210,14 +2210,14 @@
         "opening_hours": "Trattorie: 12:00–14:30. Yogurteria: 08:30–20:30."
       },
       "practical_tips": [
-        "Wyjazd z bazy w Murlo o 8:45 — spokojny dojazd (~49 min), przyjazd pod kasy Castello di Brolio przed 10:00 (bilety od ręki w kasie za 7,50 €, zero kolejek).",
+        "Wyjazd z bazy w Murlo o 9:10 — spokojny dojazd (~50 min), przyjazd pod kasy Castello di Brolio punktualnie na otwarcie o 10:00 (bilety od ręki w kasie za 7,50 €, zero kolejek).",
         "Pamiątkowa degustacja wina w cenie biletu: kieliszek odbiera się w eleganckiej Enoteca Ricasoli u podnóża zamku.",
         "Parking w Castelnuovo Berardenga: Parcheggio Via della Vigna — bezpłatny, ok. 40 miejsc, zaledwie 3 min pieszo od Vicolo dell'Arco, bezpiecznie poza strefą ZTL.",
-        "La Morina otwiera się dopiero o 17:00 — na obiad o 12:30 wybierzcie La Taverna della Berardenga lub Enoteca Bengodi, a na deser wpadnijcie do Yogurterii (Via del Chianti 6).",
+        "La Morina otwiera się dopiero o 17:00 — na obiad o 12:20 wybierzcie La Taverna della Berardenga lub Enoteca Bengodi, a na deser wpadnijcie do Yogurterii (Via del Chianti 6).",
         "W drodze powrotnej postój przy Cippo di Montaperti — cyprysy i widok na panoramę Sieny, zaledwie 5 minut od głównej drogi.",
-        "Zjazd z Montaperti do Murlo zajmuje zaledwie ~35 min szybką i płynną trasą — powrót do bazy bez zmęczenia ok. 15:45."
+        "Zjazd z Montaperti do Murlo zajmuje zaledwie ~35 min szybką i płynną trasą — powrót do bazy bez zmęczenia ok. 16:05."
       ],
-      "narrative": "Sobotę w Chianti zaczynamy bez pośpiechu — wyjeżdżamy z naszej bazy w Murlo o 8:45 i po niecałych 50 minutach jazdy przez obrzeża Sieny i widokowe wzgórza docieramy pod Castello di Brolio tuż przed dziesiątą, gdy otwierają się kasy. Zamek rodu Ricasoli stoi tu nieprzerwanie od 1141 roku — to właśnie tutaj w XIX wieku baron Bettino Ricasoli stworzył recepturę wina Chianti Classico. W kasie kupujemy od ręki bilet za 7,50 € i wchodzimy na rozległe, potężne bastiony. Z korony murów rozciąga się jeden z najwspanialszych widoków w Toskanii: 240 hektarów winnic lśniących w przedpołudniowym słońcu. Oglądamy geometryczny ogród włoski i kaplicę San Jacopo z kryptą rodu, po czym schodzimy aleją cyprysową do Enoteca Ricasoli, by zrealizować kupon na degustację wina. O 11:30 ruszamy na południe drogą SP484 do Castelnuovo Berardenga — stolicy południowego Chianti i miasta sieci Cittaslow. Zostawiamy auto na bezpłatnym parkingu przy Via della Vigna i idziemy do centrum na obiad w La Taverna della Berardenga (domowe pici z sosem z dzika i toskańskie deski). Po obiedzie zaglądamy po mrożony jogurt i lody do lokalnej Yogurterii (Pit Stop al Bacio) przy Via del Chianti, a potem spacerujemy malowniczym, stromym zaułkiem Vicolo dell'Arco z renesansowym łukiem i po Piazza Matteotti. W drodze powrotnej zatrzymujemy się przy Cippo di Montaperti — alei cyprysowej i pamiątkowej piramidzie z 1260 roku na wzgórzu słynnej bitwy gwelfów z gibelinami, skąd widać panoramę wież Sieny. Do Murlo wracamy wygodną trasą już ok. 15:45, zyskując całe wolne popołudnie na relaks w ogrodzie i basen bez zbędnych kilometrów za kółkiem.",
+      "narrative": "Sobotę w Chianti zaczynamy bez pośpiechu — wyjeżdżamy z naszej bazy w Murlo o 9:10 i po 50 minutach jazdy przez obrzeża Sieny i widokowe wzgórza docieramy pod Castello di Brolio punktualnie o 10:00, w momencie otwarcia kas. Zamek rodu Ricasoli stoi tu nieprzerwanie od 1141 roku — to właśnie tutaj w XIX wieku baron Bettino Ricasoli stworzył recepturę wina Chianti Classico. W kasie kupujemy od ręki bilet za 7,50 € i wchodzimy na rozległe, potężne bastiony. Z korony murów rozciąga się jeden z najwspanialszych widoków w Toskanii: 240 hektarów winnic lśniących w przedpołudniowym słońcu. Oglądamy geometryczny ogród włoski i kaplicę San Jacopo z kryptą rodu, po czym schodzimy aleją cyprysową do Enoteca Ricasoli, by zrealizować kupon na degustację wina. O 11:40 ruszamy na południe drogą SP484 do Castelnuovo Berardenga — stolicy południowego Chianti i miasta sieci Cittaslow. Zostawiamy auto na bezpłatnym parkingu przy Via della Vigna i idziemy do centrum na obiad w La Taverna della Berardenga (domowe pici z sosem z dzika i toskańskie deski). Po obiedzie zaglądamy po mrożony jogurt i lody do lokalnej Yogurterii (Pit Stop al Bacio) przy Via del Chianti, a potem spacerujemy malowniczym, stromym zaułkiem Vicolo dell'Arco z renesansowym łukiem i po Piazza Matteotti. W drodze powrotnej zatrzymujemy się przy Cippo di Montaperti — alei cyprysowej i pamiątkowej piramidzie z 1260 roku na wzgórzu słynnej bitwy gwelfów z gibelinami, skąd widać panoramę wież Sieny. Do Murlo wracamy wygodną trasą ok. 16:05, zyskując całe wolne popołudnie na relaks w ogrodzie i basen bez zbędnych kilometrów za kółkiem.",
       "web_research": [
         {
           "topic": "Castello di Brolio — orari 2026",
@@ -2263,56 +2263,56 @@
       ],
       "eta_timeline": [
         {
-          "time": "08:45",
-          "event": "Wyjazd z bazy w Murlo (Poggiobrucoli) w stronę Brolio (~49 min)"
-        },
-        {
-          "time": "09:45",
-          "event": "Castello di Brolio — przyjazd pod kasy przed otwarciem o 10:00 (parking bezpłatny)"
+          "time": "09:10",
+          "event": "Wyjazd z bazy w Murlo (Poggiobrucoli) w stronę Brolio (~50 min)"
         },
         {
           "time": "10:00",
+          "event": "Castello di Brolio — przyjazd punktualnie na otwarcie kas o 10:00 (parking bezpłatny pod kasą)"
+        },
+        {
+          "time": "10:10",
           "event": "Zwiedzanie zamku: mury obronne, bastiony z panoramą 240 ha winnic, ogród włoski, kaplica San Jacopo"
         },
         {
-          "time": "11:00",
+          "time": "11:10",
           "event": "Enoteca Ricasoli u stóp zamku — odbiór darmowego kieliszka wina z biletu, odpoczynek"
         },
         {
-          "time": "11:30",
+          "time": "11:40",
           "event": "Wyjazd widokową trasą SP484 do Castelnuovo Berardenga (~27 min)"
         },
         {
-          "time": "12:00",
+          "time": "12:10",
           "event": "Castelnuovo Berardenga — bezpłatny parking przy Via della Vigna (poza ZTL)"
         },
         {
-          "time": "12:15",
+          "time": "12:20",
           "event": "Obiad toskański w centrum (La Taverna della Berardenga / Enoteca Bengodi)"
         },
         {
-          "time": "13:30",
+          "time": "13:40",
           "event": "Deser w Yogurterii (Pit Stop al Bacio) i spacer przez zaułek Vicolo dell'Arco oraz Piazza Matteotti"
         },
         {
-          "time": "14:15",
+          "time": "14:30",
           "event": "Przejazd w stronę wzgórza Montaperti (~25 min)"
         },
         {
-          "time": "14:40",
+          "time": "14:55",
           "event": "Cippo di Montaperti — pamiątkowa piramida bitwy pod Montaperti w gaju cyprysowym, widok na Sienę"
         },
         {
-          "time": "15:15",
+          "time": "15:30",
           "event": "Spokojny powrót do bazy w Murlo (~35 min przez SS73 i SS223)"
         },
         {
-          "time": "15:50",
+          "time": "16:05",
           "event": "Baza w Murlo (Poggiobrucoli) — powrót na relaks w ogrodzie i basen"
         }
       ],
       "daily_km_estimate": 109,
-      "crowd_tip": "Castello di Brolio: przyjazd na 9:45/10:00 pozwala wejść na bastiony w ciszy przed autokarami. Castelnuovo Berardenga to miasteczko Cittaslow — brak masowych wycieczek i spokojna atmosfera.",
+      "crowd_tip": "Castello di Brolio: przyjazd punktualnie na otwarcie o 10:00 pozwala wejść na bastiony w ciszy przed autokarami. Castelnuovo Berardenga to miasteczko Cittaslow — brak masowych wycieczek i spokojna atmosfera.",
       "summary": "Klasyczny i relaksujący dzień w południowym Chianti (Berardenga). Rano Castello di Brolio — rodowy zamek Ricasoli z 1141 r., gdzie narodziło się wino Chianti Classico: spacer po bastionach z widokiem na 240 ha winnic, ogrody i degustacja wina w enotece. W południe przejazd do klimatycznego miasteczka Castelnuovo Berardenga (Cittaslow) na obiad w tradycyjnej toskańskiej trattorii, deser w rzemieślniczej Yogurterii oraz spacer przez stromy zaułek Vicolo dell'Arco z renesansowym łukiem. W drodze powrotnej postój przy piramidzie upamiętniającej historyczną bitwę pod Montaperti (1260 r.) w gaju cyprysowym i wczesny, bezstresowy powrót do bazy w Murlo.",
       "weather": {
         "label": "Castelnuovo Berardenga",

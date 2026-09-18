@@ -2137,7 +2137,7 @@
       "day_num": 8,
       "type": "tuscany",
       "label": "TOSKANIA · DZIEŃ 6",
-      "title": "Zamki i wino Chianti",
+      "title": "Kolebka Chianti i kraina Berardenga — Castello di Brolio, Castelnuovo i Montaperti",
       "image": "brolio",
       "base_id": "base2",
       "base_label": "BAZA 2 — Murlo (Val di Merse)",
@@ -2146,185 +2146,179 @@
         {
           "name": "Castello di Brolio (zamek Ricasoli — kolebka Chianti Classico)",
           "drive_min": 49,
-          "description": "Zamek rodziny Ricasoli od 1141 — tu ustalono recepturę Chianti Classico. Bastioni, giardini, cappella, Collezione Ricasoli. 1200 ha własności (240 ha winnic). Bilet giardini €7,50 z degustacją 1 wina.",
+          "description": "Zamek rodziny Ricasoli od 1141 r. — tu baron Bettino Ricasoli ustalił recepturę Chianti Classico. Potężne mury obronne, bastiony z panoramą 240 ha winnic, ogród w stylu włoskim i kaplica San Jacopo. Bilet wstępu (7,50 € w kasie od ręki) obejmuje wejście na teren oraz kieliszek wina w eleganckiej Enoteca Ricasoli.",
           "type": "medieval",
           "image_key": "brolio",
-          "gps_hint": "Località Madonna a Brolio, 53013 Gaiole in Chianti SI",
+          "gps_hint": "Località Madonna a Brolio, 53013 Gaiole in Chianti SI — bezpłatny parking pod kasą",
           "coords": [
             43.3948,
             11.4791
           ],
-          "opening_hours": "20.03–12.10: codz. 10:00–19:00. 13–31.10: 10:00–18:00.",
-          "ticket_price": "Giardini + 1 degustacja: €7,50. Tylko wino: €10–15 (3 wina).",
+          "opening_hours": "20.03–12.10: codz. 10:00–19:00 (kasa do 18:00). 19.09 sob = otwarte.",
+          "ticket_price": "Giardini + bastiony + 1 degustacja wina: 7,50 € (kupowane od ręki w kasie, brak rezerwacji online). Opcja z muzeum w baszcie: 12 €.",
           "duration_h": 1.5
         },
         {
-          "name": "Badia a Coltibuono (opactwo benedyktyńskie)",
-          "drive_min": 20,
-          "description": "Opactwo benedyktyńskie z 1051 r. — jeden z najlepiej zachowanych kompleksów monastycznych Chianti. Ogród ziołowy, restauracja, degustacja win Coltibuono. Sprzedaż oliwy i wina.",
-          "type": "cultural",
+          "name": "Castelnuovo Berardenga — Vicolo dell'Arco, Cittaslow i serce Berardengi",
+          "drive_min": 27,
+          "description": "Nazywane „Południową Bramą Chianti” miasteczko sieci Cittaslow na styku wzgórz winnych i pejzaży Crete Senesi. Najbardziej urokliwy punkt to stromy, kamienny zaułek Vicolo dell'Arco ze schodami i renesansowym łukiem, a tuż obok rynek Piazza Matteotti, wieża zegarowa Torre dell'Orologio i zacieniony park Villa Chigi. Miejsce na toskański obiad i deser w słynnej Yogurterii.",
+          "type": "medieval",
           "image_key": "chianti",
-          "gps_hint": "Badia a Coltibuono, 53013 Gaiole in Chianti SI",
+          "gps_hint": "Parcheggio Via della Vigna, 53019 Castelnuovo Berardenga SI (bezpłatny, poza ZTL)",
           "coords": [
-            43.5023,
-            11.4107
+            43.3455,
+            11.5014
           ],
-          "opening_hours": "Rezerwacja online/tel. — nie ma godzin walk-in.",
-          "ticket_price": "Degustacja guidata: €25–40/os.",
+          "opening_hours": "Miasteczko dostępne całą dobę. Yogurteria Pit Stop al Bacio: codz. 08:30–20:30 (śr zamkn).",
+          "ticket_price": "Bezpłatne",
           "duration_h": 2
         },
         {
-          "name": "Radda in Chianti (średniowieczne borgo, dawna stolica Ligi Chianti)",
-          "drive_min": 22,
-          "description": "Średniowieczne borgo (530 m n.p.m.), dawna stolica Ligi Chianti (1384). Piazza Ferrucci z Palazzo del Podestà (XIV w.), Casa del Chianti Classico. Mało turystów względem Greve.",
-          "type": "medieval",
-          "image_key": "radda",
-          "gps_hint": "Radda in Chianti SI — parking Piazzale del Castello",
+          "name": "Cippo di Montaperti — wzgórze legendarnej bitwy z 1260 r.",
+          "drive_min": 28,
+          "description": "Malowniczy punkt pamięci historycznej pośród cyprysowego gaju na wzgórzu Montaperti. Upamiętnia słynną bitwę z 4 września 1260 r., w której gibelini ze Sieny rozbili florenckich gwelfów (wydarzenie uwiecznione przez Dantego w Boskiej Komedii). Z alei cyprysowej rozciąga się wspaniała panorama na wzgórza i wieże Sieny na horyzoncie.",
+          "type": "cultural",
+          "image_key": "asciano-crete",
+          "gps_hint": "Via Martiri di Montaperti 4, 53019 Castelnuovo Berardenga SI",
           "coords": [
-            43.4835,
-            11.3673
+            43.3154,
+            11.4395
           ],
-          "opening_hours": "Miasteczko dostępne całą dobę.",
+          "opening_hours": "Dostępne całą dobę, bezpłatnie.",
           "ticket_price": "Bezpłatne",
-          "duration_h": 1
+          "duration_h": 0.5
         }
       ],
       "oak_forest": {
-        "spot": "Bosco di Brolio — querceti",
+        "spot": "Bosco di Brolio i wzgórza Berardenga — lasy dębowe",
         "species": "Quercus pubescens (roverella), Q. cerris (cerro)",
-        "note": "Querceti coltivati a ceduo wokół zamku Brolio — mieszane z cyprysem i pinem. We wrześniu możliwe grzyby (porcini). Nieformalna pętla 2–3 km wokół murów zamku.",
-        "gps_hint": "Bosco intorno al Brolio — Via Brolio / SP408, Gaiole in Chianti. Sentieri tra vigneti dal parcheggio castello."
+        "note": "Wzgórza wokół Brolio i Castelnuovo porastają lasy dębowe (dąb omszały i cer) przeplatane cyprysami i winoroślami Chianti Classico. Przyjemny cień i toskańska zieleń na trasie przejazdu.",
+        "gps_hint": "Bosco intorno al Brolio — Via Brolio / SP484. Aleje cyprysowe w Montaperti."
       },
       "food": {
-        "place": "Osteria Il Rifugio del Chianti — Radda in Chianti",
-        "address": "Via Roma 6, 53017 Radda in Chianti SI",
+        "place": "Castelnuovo Berardenga — obiad toskański i rzemieślnicza Yogurteria",
+        "address": "Piazza Giovanni Citernesi / Via del Chianti, 53019 Castelnuovo Berardenga SI",
         "dishes": [
-          "pici al ragù toscano",
-          "tagliata di manzo",
-          "pappardelle al cinghiale",
-          "Chianti Classico kieliszek"
+          "pici al ragù di cinghiale (z dzikiem)",
+          "pici all'aglione",
+          "tagliere toscano (deski wędlin Cinta Senese i pecorino)",
+          "frozen yogurt / lody (Yogurteria Pit Stop al Bacio, Via del Chianti 6)",
+          "kieliszek Chianti Classico Berardenga"
         ],
-        "note": "Lokalna osteria w centrum Raddy — proste toskańskie menu, dobra relacja cena/jakość. Alternatywa w tym samym rejonie: La Bottega di Volpaia (SP112, Volpaia) — kanapki i deski serów na tarasie z widokiem.",
-        "price": "~€18–28/os",
-        "phone": "+39 0577 738055",
-        "opening_hours": "Śr–Pn 12:30–14:30, 19:30–21:30. Wt zamkn."
+        "note": "Ważna wskazówka: Pizzeria La Morina otwiera się w sobotę dopiero od 17:00 (na kolację — piece są rozpalane wieczorem). Na obiad w porze południowej (12:00–14:30) zaledwie 100–150 m dalej doskonale karmią: La Taverna della Berardenga (rodzinna trattoria z domowymi pici za ~10 € i toskańskimi klasykami) lub Enoteca Bengodi. Po obiedzie obowiązkowy deser w kultowej Yogurterii (Pit Stop al Bacio, Via del Chianti 6) otwartej non-stop!",
+        "price": "~€18–25/os (obiad), lody/jogurt ~€3",
+        "opening_hours": "Trattorie: 12:00–14:30. Yogurteria: 08:30–20:30."
       },
       "practical_tips": [
-        "Wyjazd 8:30 (nie 9:30!) — Brolio (10:00–12:00) → Badia a Coltibuono (~12:30) → lunch w Radda in Chianti → spacer po Radda popołudnie",
-        "Vendemmia (wrzesień): winiarnie mogą mieć skrócone godziny — sprawdź przed wyjazdem",
-        "Sobota — winnice bywają zajęte: degustacje w Brolio/Coltibuono rezerwuj z wyprzedzeniem.",
-        "Dzień z najdłuższym dojazdem w bloku Murlo (~2,5 h za kierownicą łącznie) — zjazd na SP408/SP484 od strony Sieny, nie licz na skróty."
+        "Wyjazd z bazy w Murlo o 8:45 — spokojny dojazd (~49 min), przyjazd pod kasy Castello di Brolio przed 10:00 (bilety od ręki w kasie za 7,50 €, zero kolejek).",
+        "Pamiątkowa degustacja wina w cenie biletu: kieliszek odbiera się w eleganckiej Enoteca Ricasoli u podnóża zamku.",
+        "Parking w Castelnuovo Berardenga: Parcheggio Via della Vigna — bezpłatny, ok. 40 miejsc, zaledwie 3 min pieszo od Vicolo dell'Arco, bezpiecznie poza strefą ZTL.",
+        "La Morina otwiera się dopiero o 17:00 — na obiad o 12:30 wybierzcie La Taverna della Berardenga lub Enoteca Bengodi, a na deser wpadnijcie do Yogurterii (Via del Chianti 6).",
+        "W drodze powrotnej postój przy Cippo di Montaperti — cyprysy i widok na panoramę Sieny, zaledwie 5 minut od głównej drogi.",
+        "Zjazd z Montaperti do Murlo zajmuje zaledwie ~35 min szybką i płynną trasą — powrót do bazy bez zmęczenia ok. 15:45."
       ],
-      "narrative": "Wyjeżdżamy o 8:30, powietrze jeszcze chłodne, cykady dopiero się rozgrzewają — 49 minut do Castello di Brolio (to najdłuższy odcinek dojazdowy w tym bloku), które otwiera podwoje o 10:00. Zamek rodu Ricasoli stoi na tym wzgórzu od 1141 roku, a to właśnie tu, w XIX wieku, baron Bettino Ricasoli ustalił recepturę Chianti Classico, którą świat zna do dziś. Bilet (€7,50) otwiera ogrody, bastiony i kaplicę, w cenie jedna degustacja wina — stoimy potem na murach z kieliszkiem sangiovese, patrząc na 240 hektarów winnic rozlanych po wzgórzach aż po horyzont. Wokół murów nieformalna pętla 2–3 km przez querceti — dęby omszałe upałem, cień i zapach rozgrzanej żywicy. Ok. 12:00 wyjazd do Badia a Coltibuono (10 minut) — benedyktyńskie opactwo z 1051 roku, jeden z najlepiej zachowanych klasztornych kompleksów Chianti: krótki spacer po ogrodzie ziołowym, sklep z winem i oliwą pachnący drewnem starych beczek; pełna degustacja (€25–35, slot 15:00) tylko dla chętnych, którzy mają jeszcze czas. Lunch w Radda in Chianti — Osteria Il Rifugio del Chianti (Via Roma 6), okno pranzo 12:30–14:30, więc nie zwlekamy z wyjazdem z opactwa. Po lunchu spacer po Piazza Ferrucci i Palazzo del Podestà — dawnej stolicy Ligi Chianti z 1384 roku, kamienne uliczki bez tłumów, jakie zalewają dziś Greve. Powrót do bazy w Murlo zajmuje ok. 67 minut z Raddy, więc na miejscu jesteśmy ok. 18:15 — słońce już zachodzi nad winnicami, gdy wjeżdżamy na podwórko.",
+      "narrative": "Sobotę w Chianti zaczynamy bez pośpiechu — wyjeżdżamy z naszej bazy w Murlo o 8:45 i po niecałych 50 minutach jazdy przez obrzeża Sieny i widokowe wzgórza docieramy pod Castello di Brolio tuż przed dziesiątą, gdy otwierają się kasy. Zamek rodu Ricasoli stoi tu nieprzerwanie od 1141 roku — to właśnie tutaj w XIX wieku baron Bettino Ricasoli stworzył recepturę wina Chianti Classico. W kasie kupujemy od ręki bilet za 7,50 € i wchodzimy na rozległe, potężne bastiony. Z korony murów rozciąga się jeden z najwspanialszych widoków w Toskanii: 240 hektarów winnic lśniących w przedpołudniowym słońcu. Oglądamy geometryczny ogród włoski i kaplicę San Jacopo z kryptą rodu, po czym schodzimy aleją cyprysową do Enoteca Ricasoli, by zrealizować kupon na degustację wina. O 11:30 ruszamy na południe drogą SP484 do Castelnuovo Berardenga — stolicy południowego Chianti i miasta sieci Cittaslow. Zostawiamy auto na bezpłatnym parkingu przy Via della Vigna i idziemy do centrum na obiad w La Taverna della Berardenga (domowe pici z sosem z dzika i toskańskie deski). Po obiedzie zaglądamy po mrożony jogurt i lody do lokalnej Yogurterii (Pit Stop al Bacio) przy Via del Chianti, a potem spacerujemy malowniczym, stromym zaułkiem Vicolo dell'Arco z renesansowym łukiem i po Piazza Matteotti. W drodze powrotnej zatrzymujemy się przy Cippo di Montaperti — alei cyprysowej i pamiątkowej piramidzie z 1260 roku na wzgórzu słynnej bitwy gwelfów z gibelinami, skąd widać panoramę wież Sieny. Do Murlo wracamy wygodną trasą już ok. 15:45, zyskując całe wolne popołudnie na relaks w ogrodzie i basen bez zbędnych kilometrów za kółkiem.",
       "web_research": [
         {
           "topic": "Castello di Brolio — orari 2026",
-          "summary": "20.03–12.10: codziennie 10–19 (biglietteria do 18). 13–31.10: 10–18. 19.09 = sobota: otwarte. Zimą (koniec XII–połowa III) zamknięte.",
+          "summary": "20.03–12.10: codziennie 10–19 (biglietteria do 18). 19.09 = sobota: otwarte. Bilet giardini + bastioni + degustacja wina w enotece: 7,50 € (bez rezerwacji, kasa na miejscu).",
           "source": "https://www.ricasoli.com/castello/",
           "checked": "2026-07"
         },
         {
-          "topic": "Castello di Brolio — prezzi i wstęp",
-          "summary": "Visita libera giardini+bastioni+cappella+1 degustazione: €7,50/os (dzieci gratis). Bez rezerwacji — biglietti all'ingresso. Classic Tour (cantina, 3 vini): €55, 2h30, prenotazione visit.ricasoli.com. Gran Cru €170, Tramonto €90.",
-          "source": "https://visit.ricasoli.com/",
-          "checked": "2026-07"
+          "topic": "Castelnuovo Berardenga — Cittaslow i atrakcje",
+          "summary": "Południowa brama Chianti na granicy z Crete Senesi. Vicolo dell'Arco (stromy zaułek ze schodami i łukiem z płaskorzeźbami), Torre dell'Orologio (wieża zamkowa z 1366 r. z zegarem z 1755 r.), Piazza Matteotti, park Villa Chigi Saracini. Bezpłatny parking Via della Vigna.",
+          "source": "https://www.to-tuscany.com/castelnuovo-berardenga/",
+          "checked": "2026-09"
         },
         {
-          "topic": "Bosco delle Querce — querceti Brolio",
-          "summary": "Okolice zamku: querceti a ceduo (cerro + roverella) z cyprysem i pinem. Bosco Inglese — park historyczny XIX w. Nieformalna pętla 2–3 km wokół murów. Anello 17 km (Brolio–Cacchiano–Monti–San Felice) dla aktywnych.",
-          "source": "https://eco.museisenesi.org/archivio/110/il-bosco/",
-          "checked": "2026-07"
+          "topic": "Yogurteria / Pit Stop al Bacio (Castelnuovo Berardenga)",
+          "summary": "Via del Chianti 6, 53019 Castelnuovo Berardenga SI. Rzemieślnicza yogurteria i gelateria: mrożone jogurty (frozen yogurt), lody, gofry, kawa. Czynne w soboty 08:30–20:30 (środy nieczynne).",
+          "source": "https://amelipasticceria.it/",
+          "checked": "2026-09"
         },
         {
-          "topic": "Radda in Chianti — borgo",
-          "summary": "Capitale Lega del Chianti (1384). Piazza Ferrucci: Palazzo del Podestà (XIV w., stemmi), Propositura di San Niccolò (neogotyk Coppedè 1926). Porte Valdarnese/Fiorentina. Casa del Chianti Classico (ex-convento Santa Maria al Prato). Ghiacciaia Granducale poza borgo.",
-          "source": "https://www.visittuscany.com/it/citta-e-borghi/radda-in-chianti/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Osteria di Passignano — orari i rezerwacja",
-          "summary": "Pn–Sb: pranzo 12:15–14:15, cena 19:30–21:30. Nd chiuso. Michelin ⭐ od 2007. Chef Matteo Lorenzini. Tel. +39 055 8071278, info@osteriadipassignano.com. Prenotazione obbligatoria.",
-          "source": "https://www.osteriadipassignano.com/en/home-en/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Dojazd z Murlo (Val di Merse)",
-          "summary": "Brolio: ~44 km, ~49 min (SS223 → tangenziale Siena → SP408). Trasa z Murlo omija centrum Sieny obwodnicą.",
-          "source": "https://www.ricasoli.com/wp-content/uploads/2018/04/RICASOLI_INDICAZIONI_STRADALI_ENG.pdf",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Badia a Coltibuono — orari i degustacje",
-          "summary": "Chianti Classico DOCG od 1051 r. (benedyktyni). Visita guidata klasztoru + degustacja: €25–35/os, codziennie 11:00 i 15:00. Sklep enologiczny: pn–nd 10–18. Restauracja Al Focolare: 12:30–14:30 (rezerwacja obowiązkowa). Tel. 0577 744832.",
-          "checked": "2026-06",
-          "source": "https://coltibuono.com"
+          "topic": "Cippo di Montaperti — pomnik bitwy z 1260 r.",
+          "summary": "Via Martiri di Montaperti 4, 53019 Castelnuovo Berardenga SI. Piramida w cieniu cyprysów upamiętniająca bitwę pod Montaperti (4 września 1260 r., zwycięstwo Sieny nad Florencją, opisane w Boskiej Komedii Dantego). Widok na Sienę.",
+          "source": "https://eco.museisenesi.org/archivio/110/montaperti/",
+          "checked": "2026-09"
         }
       ],
-      "image2": "radda-chianti",
       "opening_hours": {
-        "castello_brolio": "20.03–12.10: codz. 10–19 (biglietteria do 18). 19.09 sob = otwarte.",
-        "badia_coltibuono": "Sklep: pn–nd 10–18. Degustacje: codz. 11:00 i 15:00. Ristorante: 12:30–14:30.",
-        "radda_in_chianti": "Palazzo del Podestà: zewnątrz 24h. Enotece w Radda: 10–19."
+        "castello_brolio": "20.03–12.10: codz. 10–19 (kasa do 18:00). 19.09 sob = otwarte.",
+        "yogurteria_castelnuovo": "Sobota 08:30–20:30 (Pit Stop al Bacio, Via del Chianti 6).",
+        "cippo_montaperti": "Dostępne całą dobę (przestrzeń otwarta, bezpłatnie)."
       },
       "parking": {
-        "brolio": "Parking przy bramie Brolio (Gaiole in Chianti) — bezpłatny. Spacer do zamku 5 min.",
-        "coltibuono": "Parking Badia a Coltibuono — bezpłatny przy klasztorze.",
-        "radda": "Parcheggio Radda — przy murach miejskich, bezpłatny."
+        "brolio": "Parking przy bramie Brolio (Gaiole in Chianti) — bezpłatny. Spacer do zamku aleją 5 min.",
+        "castelnuovo_berardenga": "Parcheggio Via della Vigna — bezpłatny parking (ok. 40 miejsc), 3 min pieszo do Vicolo dell'Arco i rynku, bezpiecznie poza strefą ZTL.",
+        "montaperti": "Zatoczka parkingowa przy alei cyprysowej na wzgórzu Montaperti (Via Martiri di Montaperti)."
       },
       "fuel_stops": [
         {
-          "name": "AGIP Gaiole in Chianti",
-          "location": "SP408/SP484",
-          "note": "Zatankuj rano przed wyruszeniem — stacje w Chianti rzadkie i drogie."
+          "name": "Eni / IP Castelnuovo Berardenga (SP484)",
+          "location": "SP484 przy wjeździe do Castelnuovo",
+          "note": "Stacje przy SP484 w razie potrzeby."
         }
       ],
-      "wine_tasting": {
-        "place": "Badia a Coltibuono — degustacja (popołudnie)",
-        "address": "Localita Badia a Coltibuono, 53013 Gaiole in Chianti SI",
-        "time": "15:00 (slot drugi; 11:00 rano — opcja alternatywna). Rezerwacja online lub tel.",
-        "price": "od €25/os (4 wina Chianti Classico DOCG) do €35/os (premium + oliwa)",
-        "note": "Wino benedyktyńskie od 1051 r. Klasztor + piwnica + ogród. Chianti Classico DOCG Gran Selezione, Cultus Boni. Tel. 0577 744832 lub coltibuono.com",
-        "gps_hint": "Localita Badia a Coltibuono — 6 km na pn-wsch od Gaiole in Chianti"
-      },
       "eta_timeline": [
         {
-          "time": "08:30",
-          "event": "Wyjazd z bazy do Castello di Brolio (49 min — najdłuższy dojazd bloku Murlo)"
+          "time": "08:45",
+          "event": "Wyjazd z bazy w Murlo (Poggiobrucoli) w stronę Brolio (~49 min)"
         },
         {
-          "time": "09:19",
-          "event": "Castello di Brolio — otwiera 10:00 (park przy bramie)"
+          "time": "09:45",
+          "event": "Castello di Brolio — przyjazd pod kasy przed otwarciem o 10:00 (parking bezpłatny)"
+        },
+        {
+          "time": "10:00",
+          "event": "Zwiedzanie zamku: mury obronne, bastiony z panoramą 240 ha winnic, ogród włoski, kaplica San Jacopo"
+        },
+        {
+          "time": "11:00",
+          "event": "Enoteca Ricasoli u stóp zamku — odbiór darmowego kieliszka wina z biletu, odpoczynek"
         },
         {
           "time": "11:30",
-          "event": "Wyjazd do Badia a Coltibuono (9 km)"
+          "event": "Wyjazd widokową trasą SP484 do Castelnuovo Berardenga (~27 min)"
         },
         {
-          "time": "13:00",
-          "event": "Degustacja Badia a Coltibuono (rezerwacja wymagana)"
+          "time": "12:00",
+          "event": "Castelnuovo Berardenga — bezpłatny parking przy Via della Vigna (poza ZTL)"
         },
         {
-          "time": "14:30",
-          "event": "Obiad lub degustacja w Radda in Chianti (22 min)"
+          "time": "12:15",
+          "event": "Obiad toskański w centrum (La Taverna della Berardenga / Enoteca Bengodi)"
         },
         {
-          "time": "16:00",
-          "event": "Spacer po Radda — mury, wino enoteka lokalna"
+          "time": "13:30",
+          "event": "Deser w Yogurterii (Pit Stop al Bacio) i spacer przez zaułek Vicolo dell'Arco oraz Piazza Matteotti"
         },
         {
-          "time": "18:15",
-          "event": "Powrót do bazy (67 min z Raddy)"
+          "time": "14:15",
+          "event": "Przejazd w stronę wzgórza Montaperti (~25 min)"
+        },
+        {
+          "time": "14:40",
+          "event": "Cippo di Montaperti — pamiątkowa piramida bitwy pod Montaperti w gaju cyprysowym, widok na Sienę"
+        },
+        {
+          "time": "15:15",
+          "event": "Spokojny powrót do bazy w Murlo (~35 min przez SS73 i SS223)"
+        },
+        {
+          "time": "15:50",
+          "event": "Baza w Murlo (Poggiobrucoli) — powrót na relaks w ogrodzie i basen"
         }
       ],
-      "daily_km_estimate": 135,
-      "crowd_tip": "Castello di Brolio: otwieraj o 10:00, tłumy od 11:00. Badia a Coltibuono: wino i abbey — rezerwacja degustacji obowiązkowa. Radda in Chianti: popularna, przyjdź przed obiadem lub po 17:00.",
-      "summary": "Klasyczny dzień w krainie Chianti, wśród winnic i cyprysów. Zamek rodu Ricasoli (Castello di Brolio, istnieje od 1141 r.) — to tutaj w XIX w. spisano „recepturę\" słynnego czerwonego wina Chianti Classico. Dalej benedyktyńskie opactwo z XI w. (Badia a Coltibuono) z ogrodem ziołowym i degustacją win. Na wieczór miasteczko Radda in Chianti — średniowieczne, na wzgórzu (530 m n.p.m.), dawna stolica związku miast Chianti.",
-      "warning": "Najdłuższy dzień za kierownicą w bloku Murlo: ok. 49 min do Brolio i ok. 67 min powrotu z Raddy (łącznie ~2,5 h jazdy na całej pętli). Wyjazd zaplanowany na 8:30, aby spokojnie zdążyć na otwarcie kas Castello di Brolio o 10:00 bez pośpiechu.",
+      "daily_km_estimate": 109,
+      "crowd_tip": "Castello di Brolio: przyjazd na 9:45/10:00 pozwala wejść na bastiony w ciszy przed autokarami. Castelnuovo Berardenga to miasteczko Cittaslow — brak masowych wycieczek i spokojna atmosfera.",
+      "summary": "Klasyczny i relaksujący dzień w południowym Chianti (Berardenga). Rano Castello di Brolio — rodowy zamek Ricasoli z 1141 r., gdzie narodziło się wino Chianti Classico: spacer po bastionach z widokiem na 240 ha winnic, ogrody i degustacja wina w enotece. W południe przejazd do klimatycznego miasteczka Castelnuovo Berardenga (Cittaslow) na obiad w tradycyjnej toskańskiej trattorii, deser w rzemieślniczej Yogurterii oraz spacer przez stromy zaułek Vicolo dell'Arco z renesansowym łukiem. W drodze powrotnej postój przy piramidzie upamiętniającej historyczną bitwę pod Montaperti (1260 r.) w gaju cyprysowym i wczesny, bezstresowy powrót do bazy w Murlo.",
       "weather": {
-        "label": "Radda in Chianti",
+        "label": "Castelnuovo Berardenga",
         "coords": [
-          43.4835,
-          11.3673
+          43.3455,
+          11.5014
         ]
       }
     },
@@ -4057,10 +4051,10 @@
             "per_person_max": 18
           },
           {
-            "label": "Badia a Coltibuono — degustacja win (20.09)",
-            "detail": "€25–35/os (4 wina Chianti Classico DOCG, rezerwacja)",
-            "per_person_min": 25,
-            "per_person_max": 35
+            "label": "Castello di Brolio — bastiony i ogrody z degustacją (19.09)",
+            "detail": "7,50 €/os bilet wstępu na bastiony, ogrody i kaplicę (z wliczoną degustacją 1 wina w Enoteca Ricasoli). Castelnuovo Berardenga i Montaperti — bezpłatne.",
+            "per_person_min": 8,
+            "per_person_max": 12
           },
           {
             "label": "Inne: Grotta del Vento, parki, muzea lokalne",
@@ -4301,15 +4295,6 @@
             "priority": "medium",
             "day_num": 6,
             "url": "https://grottadelvento.com/book-now/"
-          },
-          {
-            "id": "badia-coltibuono",
-            "group": "optional",
-            "label": "Rezerwacja degustacji — Badia a Coltibuono (19.09)",
-            "detail": "Degustacja win Chianti Classico DOCG (4 wina, €25–35/os) wymaga rezerwacji z wyprzedzeniem. Restauracja Al Focolare też wymaga rezerwacji na obiad. Tel. 0577 744832.",
-            "deadline": "1–2 tygodnie przed 19.09",
-            "priority": "medium",
-            "day_num": 8
           }
         ]
       },

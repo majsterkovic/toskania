@@ -103,6 +103,21 @@
           "alt": "Crete Senesi, Asciano",
           "credit": "Wikimedia Commons · Anna.Massini"
         },
+        "palazzo-corboli": {
+          "src": "images/palazzo-corboli.jpg",
+          "alt": "Freski w Palazzo Corboli — Sala di Aristotele, Asciano",
+          "credit": "Wikimedia Commons · Sailko"
+        },
+        "buonconvento": {
+          "src": "images/buonconvento.jpg",
+          "alt": "Via Soccini w ufortyfikowanym borgo Buonconvento",
+          "credit": "Wikimedia Commons · Sailko"
+        },
+        "buonconvento-museo": {
+          "src": "images/buonconvento-museo.jpg",
+          "alt": "Museo d'Arte Sacra della Val d'Arbia — sala dzieł ołtarzowych",
+          "credit": "Wikimedia Commons · Sailko"
+        },
         "wasserburg": {
           "src": "images/wasserburg.jpg",
           "alt": "Wasserburg am Inn",
@@ -2353,7 +2368,7 @@
           "drive_min": 15,
           "description": "Senne miasteczko w centrum Crete Senesi i wybitne Museo di Palazzo Corboli (jedno z 15 najpiękniejszych małych muzeów Włoch wg The Telegraph). W środku: unikalne świeckie freski z XIV w. na ścianach pałacu (Sala di Aristotele z alegoriami filozofii i Sala delle Stagioni z pracami polowymi), arcydzieła malarstwa sieneńskiego (Trittico di Rofeno Ambrogia Lorenzettiego, Narodziny Marii Mistrza z Osservanza, drewniany krucyfiks Giovanniego Pisano) oraz fascynujący dział archeologii etruskiej ze zrekonstruowanym rydwanem (carro etrusco) i złotą biżuterią z grobowców.",
           "type": "cultural",
-          "image_key": "asciano",
+          "image_key": "palazzo-corboli",
           "gps_hint": "Asciano SI — parking przy Via Fiume 31",
           "coords": [
             43.2343,
@@ -2368,7 +2383,7 @@
           "drive_min": 20,
           "description": "Punkt opcjonalny w drodze powrotnej do bazy w Murlo. Ufortyfikowane, ceglane miasteczko otoczone XIV-wiecznymi murami (z listy I Borghi più belli d'Italia). W secesyjnym Palazzo Ricci Socini (styl Liberty) mieści się Museo d'Arte Sacra della Val d'Arbia — prawdziwy 'skarbiec' sztuki. Główne dzieła: oryginalna Madonna z Dzieciątkiem Duccia di Buoninsegna (ojca szkoły sieneńskiej), obrazy Pietra Lorenzettiego, Sano di Pietro, Mattea di Giovanni oraz płótna Brescianina i Rutilia Manettiego, obok cennych relikwiarzy i szat liturgicznych.",
           "type": "cultural",
-          "image_key": "asciano",
+          "image_key": "buonconvento",
           "gps_hint": "Buonconvento SI — Via Soccini / Viale della Libertà 30",
           "coords": [
             43.1387,

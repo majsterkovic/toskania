@@ -2349,24 +2349,24 @@
           "duration_h": 1.5
         },
         {
-          "name": "Bosco della Ragnaia (ogród filozoficzny) — San Giovanni d'Asso",
-          "drive_min": 26,
-          "description": "Giardino filosofico Sheppard Craige (od 1996) w dawnym lesie leccio z XVIII w. Altare dello Scetticismo, Centro dell'Universo. Ingresso libero mar–nov, alba–tramonto. ~15 min od Monte Oliveto.",
+          "name": "Punto panoramico Deserto di Accona (punkt widokowy Crete Senesi)",
+          "drive_min": 15,
+          "description": "Punkt widokowy na serce Crete Senesi — Deserto di Accona. Falujące, gliniaste wzgórza, białe biancane i głębokie wąwozy calanchi z samotnymi cyprysami. Idealne miejsce na fotostop w drodze z Monte Oliveto do Asciano.",
           "type": "nature",
           "image_key": "asciano",
-          "gps_hint": "Podere Bertagn, strada SP60/A, San Giovanni d'Asso SI",
+          "gps_hint": "Punto panoramico Deserto di Accona, 53041 Asciano SI",
           "coords": [
-            43.2028,
-            11.5342
+            43.1992,
+            11.5891
           ],
-          "opening_hours": "Zawsze otwarty (dawn to dusk).",
+          "opening_hours": "Zawsze otwarty (punkt widokowy).",
           "ticket_price": "Bezpłatny",
-          "duration_h": 1
+          "duration_h": 0.5
         },
         {
-          "name": "Asciano — Crete Senesi (gliniaste wzgórza, biancane)",
-          "drive_min": 18,
-          "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez biancane (białe gliniane wzgórza). Museo d'Arte Sacra w Palazzo Corboli — otwarte śr–nd (w niedzielę czynne 10:30–13, 15–18:30).",
+          "name": "Asciano — Crete Senesi (Palazzo Corboli & starówka)",
+          "drive_min": 10,
+          "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez biancane (białe gliniane wzgórza). Wybitne Museo d'Arte Sacra w Palazzo Corboli z freskami na ścianach i archeologią etruską — otwarte śr–nd (w niedzielę czynne 10:30–13, 15–18:30).",
           "type": "cultural",
           "image_key": "asciano",
           "gps_hint": "Asciano SI — parking przy Piazza del Grano",
@@ -2374,9 +2374,24 @@
             43.2343,
             11.5621
           ],
-          "opening_hours": "Museo d'Arte Sacra: 10:30–13:00, 15:30–18:00 (wt–nd).",
+          "opening_hours": "Museo d'Arte Sacra (Palazzo Corboli): 10:30–13:00, 15:00–18:30 (śr–nd).",
           "ticket_price": "Muzeum: €5. Miasteczko: bezpłatne.",
           "duration_h": 1.5
+        },
+        {
+          "name": "Buonconvento (opcjonalnie) — borgo i Museo d'Arte Sacra della Val d'Arbia",
+          "drive_min": 20,
+          "description": "Punkt opcjonalny w drodze powrotnej do bazy w Murlo. Ufortyfikowane ceglane miasteczko (I Borghi più belli d'Italia). W Palazzo Ricci Socini mieści się Museo d'Arte Sacra della Val d'Arbia z dziełami Duccia di Buoninsegna i Pietra Lorenzettiego (nd 16:00–19:00).",
+          "type": "cultural",
+          "image_key": "asciano",
+          "gps_hint": "Buonconvento SI — Via Soccini / Piazzale Garibaldi",
+          "coords": [
+            43.1387,
+            11.4820
+          ],
+          "opening_hours": "Museo: nd 10:00–13:00 i 16:00–19:00. Miasteczko: zawsze dostępne.",
+          "ticket_price": "Muzeum: €5. Spacer po borgo: bezpłatny.",
+          "duration_h": 1
         }
       ],
       "oak_forest": {
@@ -2386,24 +2401,24 @@
         "gps_hint": "SP71 tra Asciano e Rapolano Terme — bosco a ceduo sui versanti argillosi. Piedi da Asciano verso nord."
       },
       "food": {
-        "place": "Osteria La Tombolina — Asciano",
-        "address": "Via Goffredo Mameli 11, 53041 Asciano SI",
+        "place": "L'Angolo dello Sfizio — Asciano",
+        "address": "Corso Giacomo Matteotti 35/37, 53041 Asciano SI",
         "dishes": [
-          "pici alle briciole",
-          "arista di maiale",
-          "ribollita",
-          "vino Orcia DOC"
+          "pici al ragù di cinghiale",
+          "pici all'aglione",
+          "tagliere toscano (wędliny i sery pecorino)",
+          "tagliata di manzo"
         ],
-        "note": "Lokalna osteria w centrum Asciano. Tel. +39 0577 718056. Niedziela: sprawdź godziny.",
-        "price": "~€15–22/os",
-        "phone": "+39 0577 718056",
-        "opening_hours": "Codz. 12:30–14:30, 19:30–21:30."
+        "note": "Świetna, tradycyjna toskańska trattoria w samym sercu starówki przy głównym deptaku (Corso Matteotti), 2 minuty spacerem od Palazzo Corboli. Czynne w niedzielę na obiad 12:30–15:00. Tel. +39 0577 718786.",
+        "price": "~€18–28/os",
+        "phone": "+39 0577 718786",
+        "opening_hours": "Nd 12:30–15:00, 19:30–22:30."
       },
       "practical_tips": [
-        "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma, 2h) → 11:30 opcjonalnie Bosco Ragnaia (30–45 min) → 12:30 Asciano → 13:00 lunch La Tombolina → popołudnie Crete Senesi",
-        "Bilet Monte Oliveto: €7 (Vivaticket €6). Niedziela: msza z chorałem 11:00 — freski w Chiostro Grande zwiedzaj 9:30–11:00."
+        "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma w Chiostro Grande) → 11:00 msza z chorałem gregoriańskim → 12:20 Punto panoramico Deserto di Accona → 13:00 lunch La Giomella / L'Angolo dello Sfizio w Asciano → 15:00 Museo Palazzo Corboli → ok. 16:00 opcjonalnie Buonconvento (Val d'Arbia) w drodze do bazy.",
+        "Bilet Monte Oliveto: €7 (Vivaticket €6). Niedziela: msza z chorałem 11:00 — freski w Chiostro Grande zwiedzaj 9:30–10:45 przed liturgią."
       ],
-      "narrative": "Wyjeżdżamy o 8:50 w stronę zupełnie innego krajobrazu — z Murlo to zaledwie 36 minut do Abbazia Monte Oliveto Maggiore, otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5–2h; w niedzielę o 11:00 msza z chorałem gregoriańskim — freski oglądamy wcześniej). Plan dnia jest napięty, więc kolejny przystanek jest opcjonalny: jeśli starczy czasu, 26 minut dalej czeka Bosco della Ragnaia w San Giovanni d'Asso — filozoficzny ogród założony w dawnym lesie leccio, cichy i pusty, wstęp wolny; w razie poślizgu pomijamy go bez żalu. Dalej do Asciano, serca Crete Senesi, na lunch w Osteria La Tombolina (Via Mameli 11). Muzeum d'Arte Sacra w Palazzo Corboli jest dziś, w niedzielę, otwarte, więc po drodze zaglądamy do środka, a resztę popołudnia spędzamy na spacerze po biancane, białych glinianych wzgórzach pociętych erozją jak księżycowy krajobraz, gdzie nie rośnie prawie nic poza kępami traw, i po sennych uliczkach miasteczka, gdzie okiennice już się domykają na sjestę. Powrót do bazy zajmuje 49 minut z Asciano, więc jesteśmy ok. 17:15, z butami pokrytymi jasnym pyłem Crete.",
+      "narrative": "Wyjeżdżamy o 8:50 w stronę zupełnie innego krajobrazu — z Murlo to zaledwie 36 minut do Abbazia Monte Oliveto Maggiore, otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5h; w niedzielę o 11:00 msza z chorałem gregoriańskim — freski oglądamy wcześniej). Po mszy ruszamy w stronę Asciano, zatrzymując się na zdjęcia przy Punto panoramico Deserto di Accona, skąd roztacza się niesamowity, niemal księżycowy widok na gliniaste formacje Crete Senesi. W Asciano jemy obiad w Ristorante La Giomella przy Via Mameli 11 (lub w L'Angolo dello Sfizio przy głównym deptaku), spacerujemy sennymi uliczkami, a po sjeście (od 15:00) zwiedzamy wybitne Museo d'Arte Sacra i Archeologii w Palazzo Corboli (uznane przez The Telegraph za jedno z najpiękniejszych małych muzeów we Włoszech). W drodze powrotnej do bazy w Murlo mijamy ufortyfikowane Buonconvento (z listy I Borghi più belli d'Italia) — to punkt opcjonalny: jeśli starczy sił i czasu, zaglądamy do Museo d'Arte Sacra della Val d'Arbia (czynne w niedzielę 16:00–19:00, z oryginalną Madonną Duccia di Buoninsegna) lub na kawę w obrębie murów. Z Buonconvento do Murlo jest zaledwie 18 minut, więc jesteśmy w bazie ok. 17:30–18:00.",
       "web_research": [
         {
           "topic": "Monte Oliveto Maggiore — orari",
@@ -2418,10 +2433,10 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Osteria La Tombolina Asciano (korekta)",
-          "summary": "Via Goffredo Mameli 11, Asciano. Tel. 0577 718056. „Trattoria La Lupa” z planu nie istnieje w Asciano (La Lupa = Livorno). Tombolina: osteria lokalna.",
-          "source": "http://www.askmap.net/location/2184020/italy/osteria-la-tombolina",
-          "checked": "2026-07"
+          "topic": "Ristorante La Giomella Asciano",
+          "summary": "Via Goffredo Mameli 11, Asciano. Tel. 0577 592242. Czynne w nd 12:30–14:30 i 19:00–22:00. Pici, cinta senese, kuchnia toskańska. Alternatywa: L'Angolo dello Sfizio (Corso Matteotti 35/37).",
+          "source": "https://restaurantguru.it",
+          "checked": "2026-09"
         },
         {
           "topic": "Monte Oliveto Maggiore — orari wrzesień",
@@ -2442,16 +2457,10 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Bosco della Ragnaia — San Giovanni d'Asso",
-          "summary": "Giardino filosofico Sheppard Craige (od 1996) w dawnym lesie leccio. Altare dello Scetticismo, Centro dell'Universo, Oracolo di Te Stesso. Ingresso libero mar–nov, alba–tramonto. SP60/A. Cisza obowiązkowa, psy na smyczy. NIE w Asciano.",
-          "source": "http://www.laragnaia.com/IT/intro/",
-          "checked": "2026-07"
-        },
-        {
-          "topic": "Osteria La Tombolina — korekta La Lupa",
-          "summary": "Via Goffredo Mameli 11, Asciano. Tel. 0577 718056. 'Trattoria La Lupa' nie istnieje w Asciano (La Lupa = Livorno/Biella). Tombolina: lokalna osteria toscana.",
-          "source": "http://www.askmap.net/location/2184020/italy/osteria-la-tombolina",
-          "checked": "2026-07"
+          "topic": "Buonconvento — Museo d'Arte Sacra della Val d'Arbia",
+          "summary": "Palazzo Ricci Socini, Via Soccini 18. Niedziela: 10:00–13:00 i 16:00–19:00 (kasa do 18:30). Bilet €5. Arcydzieła: Madonna col Bambino (Duccio di Buoninsegna), Pietro Lorenzetti, Sano di Pietro. Punkt opcjonalny w drodze do Murlo.",
+          "source": "https://www.museibuonconvento.com/",
+          "checked": "2026-09"
         },
         {
           "topic": "Asciano i Crete Senesi — krajobraz",
@@ -2461,14 +2470,16 @@
       ],
       "image2": "asciano-crete",
       "opening_hours": {
-        "monte_oliveto_maggiore": "Codziennie 9:30–12:20 i 14:30–17:40 (ora legale). Cisza obowiązuje.",
-        "bosco_della_ragnaia": "Codz. świt–zmierzch (bezpłatny). GPS: San Giovanni d'Asso, SP146.",
-        "asciano_museo": "Museo d'Arte Sacra (Palazzo Corboli): śr–nd 10:30–13 i 15–18:30 (pn–wt zamknięte). 20.09 nd = OTWARTE."
+        "monte_oliveto_maggiore": "Codziennie 9:30–12:20 i 14:30–17:40 (ora legale). Msza z chorałem nd 11:00. Cisza obowiązuje.",
+        "accona_panoramico": "Zawsze otwarty (punkt widokowy, bezpłatny).",
+        "asciano_museo": "Museo d'Arte Sacra (Palazzo Corboli): śr–nd 10:30–13 i 15–18:30 (pn–wt zamknięte). 20.09 nd = OTWARTE.",
+        "buonconvento_museo": "Museo d'Arte Sacra della Val d'Arbia (opcjonalnie): nd 10:00–13:00 i 16:00–19:00 (kasa do 18:30)."
       },
       "parking": {
-        "monte_oliveto": "Parcheggio Monte Oliveto Maggiore — bezpłatny, przy wejściu do klasztoru.",
-        "bosco_ragnaia": "Parking SP146 San Giovanni d'Asso — przy znaku Ragnaia, bezpłatny.",
-        "asciano": "Piazza Roma Asciano — centrum, płatny (€1/h). Lub poza ZTL bezpłatny."
+        "monte_oliveto": "Parcheggio Park Abbazia (Monte Oliveto Maggiore) — bezpłatny, przy wejściu do klasztoru.",
+        "accona_panoramico": "Zatoczka postojowa przy drodze na punkcie widokowym.",
+        "asciano": "Parcheggio Via Fiume 31 (Asciano) — wygodny parking tuż przy starówce, poza ZTL, 2 minuty do L'Angolo dello Sfizio i Palazzo Corboli.",
+        "buonconvento": "Parcheggio Gratuito Buonconvento (Viale della Libertà 30) — bezpłatny parking tuż przy murach borgo, 100 m do Via Soccini i muzeum."
       },
       "eta_timeline": [
         {
@@ -2476,38 +2487,46 @@
           "event": "Wyjazd z bazy do Monte Oliveto Maggiore (36 min)"
         },
         {
-          "time": "09:46",
-          "event": "Monte Oliveto Maggiore — krużganki z freskami Signorellego i Sodomy"
+          "time": "09:30",
+          "event": "Monte Oliveto Maggiore — krużganki z freskami Signorellego i Sodomy (otwarcie 9:30)"
         },
         {
-          "time": "11:30",
-          "event": "Wyjazd do Bosco della Ragnaia (13 km, 26 min)"
+          "time": "11:00",
+          "event": "Uroczysta msza św. konwentualna z chorałem gregoriańskim"
         },
         {
-          "time": "11:56",
-          "event": "Bosco della Ragnaia — ogród filozoficzny, wstęp wolny"
-        },
-        {
-          "time": "12:40",
-          "event": "Wyjazd do Asciano (6 km, 18 min)"
+          "time": "12:20",
+          "event": "Przejazd przez Punto panoramico Deserto di Accona (fotostop na Crete Senesi)"
         },
         {
           "time": "13:00",
-          "event": "Obiad Osteria La Tombolina (Via Goffredo Mameli 11)"
+          "event": "Obiad Ristorante La Giomella (Via Mameli 11) lub L'Angolo dello Sfizio (Asciano)"
         },
         {
           "time": "14:30",
-          "event": "Asciano — biancane i spacer po Crete (muzeum pn. zamknięte)"
+          "event": "Asciano — spacer po miasteczku i biancane"
         },
         {
-          "time": "16:15",
-          "event": "Powrót do bazy (49 min z Asciano)"
+          "time": "15:00",
+          "event": "Museo di Palazzo Corboli w Asciano (otwarcie po sjeście 15:00)"
+        },
+        {
+          "time": "16:00",
+          "event": "Przejazd do Buonconvento (18 km, 20 min) — punkt opcjonalny"
+        },
+        {
+          "time": "16:20",
+          "event": "Buonconvento (opcjonalnie) — spacer po ufortyfikowanym borgo / Museo della Val d'Arbia"
+        },
+        {
+          "time": "17:30",
+          "event": "Powrót do bazy w Murlo (14 km, 18 min)"
         }
       ],
-      "daily_km_estimate": 79,
-      "crowd_tip": "Monte Oliveto Maggiore: tłumy w południe (wycieczki z Sieny). Przyjedź na 9:30 (otwarcie) — spokojnie przez pierwsze 1,5 h. Bosco della Ragnaia: wstęp wolny, nieznany — prawie bez turystów. Asciano: spokojne miasto.",
-      "warning": "Spokojny dzień ze zrównoważonym czasem jazdy (ok. 36 min dojazdu rano). Zwiedzanie Bosco della Ragnaia pozostaje opcjonalne w zależności od tempa i samopoczucia.",
-      "summary": "Zupełnie inny krajobraz — Crete Senesi, gliniaste, niemal „księżycowe\" wzgórza na południe od Sieny. Głównym punktem jest ceglane opactwo ukryte wśród cyprysów (Abbazia di Monte Oliveto Maggiore) z zachwycającym cyklem renesansowych fresków o życiu św. Benedykta. Opcjonalnie „ogród filozoficzny\" schowany w dębowym lesie (Bosco della Ragnaia). Po drodze miasteczko Asciano i charakterystyczne białe gliniane pagórki (tzw. biancane).",
+      "daily_km_estimate": 75,
+      "crowd_tip": "Monte Oliveto Maggiore: przyjedź punktualnie na 9:30 (otwarcie) — spokojnie obejrzysz freski przed mszą o 11:00. Asciano i Palazzo Corboli: mało turystów, idealny spokój. Buonconvento: kameralne borgo.",
+      "warning": "Zrównoważony dzień w pętli. Kluczowe jest dotarcie do Monte Oliveto punktualnie na 9:30, aby obejrzeć freski przed mszą o 11:00. Buonconvento na koniec dnia jest w pełni opcjonalne (w zależności od energii).",
+      "summary": "Zupełnie inny krajobraz — Crete Senesi, gliniaste, niemal „księżycowe\" wzgórza na południe od Sieny. Głównym punktem jest ceglane opactwo ukryte wśród cyprysów (Abbazia di Monte Oliveto Maggiore) z freskami Signorellego i Sodomy oraz mszą z chorałem gregoriańskim. Dalej fotogeniczny punkt Deserto di Accona, Asciano z Palazzo Corboli (jedno z najpiękniejszych małych muzeów Włoch) oraz opcjonalnie ufortyfikowane Buonconvento z kolekcją Val d'Arbia.",
       "weather": {
         "label": "Asciano / Crete Senesi",
         "coords": [
@@ -4357,13 +4376,6 @@
             "label": "Sprawdzić pogodę tydzień przed",
             "detail": "Wrzesień w Toskanii: ok. 10 dni deszczowych w miesiącu, głównie krótkie burze popołudniowe. Sprawdzić prognozę na meteo.it lub Windy.com 7 dni przed wyjazdem.",
             "deadline": "7 dni przed wyjazdem",
-            "priority": "low"
-          },
-          {
-            "id": "deby",
-            "label": "Lista do obserwacji dębów (dla Mariusza)",
-            "detail": "Gatunki do wypatrywania: Quercus cerris (dąb burgundzki — Orecchiella, Garfagnana), Quercus pubescens (dąb omszony — Crete Senesi i Chianti), Quercus ilex (ostrokrzew — zbocza Chianti). Zabrać lornetkę, notes, aparat.",
-            "deadline": "przed wyjazdem",
             "priority": "low"
           }
         ]

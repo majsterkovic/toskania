@@ -2366,10 +2366,10 @@
         {
           "name": "Asciano — Crete Senesi (Palazzo Corboli & starówka)",
           "drive_min": 10,
-          "description": "Malutkie miasto w centrum Crete Senesi. Spacer przez biancane (białe gliniane wzgórza). Wybitne Museo d'Arte Sacra w Palazzo Corboli z freskami na ścianach i archeologią etruską — otwarte śr–nd (w niedzielę czynne 10:30–13, 15–18:30).",
+          "description": "Senne miasteczko w centrum Crete Senesi i wybitne Museo di Palazzo Corboli (jedno z 15 najpiękniejszych małych muzeów Włoch wg The Telegraph). W środku: unikalne świeckie freski z XIV w. na ścianach pałacu (Sala di Aristotele z alegoriami filozofii i Sala delle Stagioni z pracami polowymi), arcydzieła malarstwa sieneńskiego (Trittico di Rofeno Ambrogia Lorenzettiego, Narodziny Marii Mistrza z Osservanza, drewniany krucyfiks Giovanniego Pisano) oraz fascynujący dział archeologii etruskiej ze zrekonstruowanym rydwanem (carro etrusco) i złotą biżuterią z grobowców.",
           "type": "cultural",
           "image_key": "asciano",
-          "gps_hint": "Asciano SI — parking przy Piazza del Grano",
+          "gps_hint": "Asciano SI — parking przy Via Fiume 31",
           "coords": [
             43.2343,
             11.5621
@@ -2381,10 +2381,10 @@
         {
           "name": "Buonconvento (opcjonalnie) — borgo i Museo d'Arte Sacra della Val d'Arbia",
           "drive_min": 20,
-          "description": "Punkt opcjonalny w drodze powrotnej do bazy w Murlo. Ufortyfikowane ceglane miasteczko (I Borghi più belli d'Italia). W Palazzo Ricci Socini mieści się Museo d'Arte Sacra della Val d'Arbia z dziełami Duccia di Buoninsegna i Pietra Lorenzettiego (nd 16:00–19:00).",
+          "description": "Punkt opcjonalny w drodze powrotnej do bazy w Murlo. Ufortyfikowane, ceglane miasteczko otoczone XIV-wiecznymi murami (z listy I Borghi più belli d'Italia). W secesyjnym Palazzo Ricci Socini (styl Liberty) mieści się Museo d'Arte Sacra della Val d'Arbia — prawdziwy 'skarbiec' sztuki. Główne dzieła: oryginalna Madonna z Dzieciątkiem Duccia di Buoninsegna (ojca szkoły sieneńskiej), obrazy Pietra Lorenzettiego, Sano di Pietro, Mattea di Giovanni oraz płótna Brescianina i Rutilia Manettiego, obok cennych relikwiarzy i szat liturgicznych.",
           "type": "cultural",
           "image_key": "asciano",
-          "gps_hint": "Buonconvento SI — Via Soccini / Piazzale Garibaldi",
+          "gps_hint": "Buonconvento SI — Via Soccini / Viale della Libertà 30",
           "coords": [
             43.1387,
             11.4820

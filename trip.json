@@ -2349,9 +2349,9 @@
       "drive_limit_min": 36,
       "attractions": [
         {
-          "name": "Abbazia di Monte Oliveto Maggiore (opactwo z freskami św. Benedykta)",
+          "name": "Abbazia di Monte Oliveto Maggiore (msza z chorałem i freski św. Benedykta)",
           "drive_min": 36,
-          "description": "Benedyktyńska abbazia z XIV w. w krajobrazie Crete Senesi. Chiostro Grande: 35 lunet z cyklem życia św. Benedykta — Luca Signorelli (8 scen) i Il Sodoma (26 scen, 1505–1508). Niedziela: otwarte (o 11:00 msza z chorałem — freski w Chiostro Grande zwiedzaj wcześniej).",
+          "description": "Benedyktyńska abbazia z XIV w. ukryta w cyprysowym lesie Crete Senesi. O 11:00 uroczysta msza konwentualna z chorałem gregoriańskim mnichów, a popołudniu (po obiedzie w Asciano) spokojne zwiedzanie Chiostro Grande w ciszy: 35 monumentalnych lunet z cyklem życia św. Benedykta namalowanych przez Luca Signorellego (8 scen) i Il Sodomę (26 scen, 1505–1508).",
           "type": "cultural",
           "image_key": "monte-oliveto",
           "gps_hint": "Abbazia Monte Oliveto Maggiore, Loc. Chiusure, 53041 Asciano SI",
@@ -2359,14 +2359,14 @@
             43.1423,
             11.4934
           ],
-          "opening_hours": "9:30–12:20 i 14:30–17:40 (ora legale). Zamkn. podczas mszy (11:00 nd).",
+          "opening_hours": "9:30–12:20 i 14:30–17:40 (ora legale). Msza z chorałem nd 11:00. Krużganki dostępne również po sjeście!",
           "ticket_price": "Biglietto unico: €7 (w-d pn–czw). Pt–nd prevendita Vivaticket €6.",
-          "duration_h": 1.5
+          "duration_h": 2
         },
         {
-          "name": "Asciano — Crete Senesi (Palazzo Corboli & starówka)",
+          "name": "Asciano — Crete Senesi (starówka & Palazzo Corboli)",
           "drive_min": 15,
-          "description": "Senne miasteczko w centrum Crete Senesi i wybitne Museo di Palazzo Corboli (jedno z 15 najpiękniejszych małych muzeów Włoch wg The Telegraph). W środku: unikalne świeckie freski z XIV w. na ścianach pałacu (Sala di Aristotele z alegoriami filozofii i Sala delle Stagioni z pracami polowymi), arcydzieła malarstwa sieneńskiego (Trittico di Rofeno Ambrogia Lorenzettiego, Narodziny Marii Mistrza z Osservanza, drewniany krucyfiks Giovanniego Pisano) oraz fascynujący dział archeologii etruskiej ze zrekonstruowanym rydwanem (carro etrusco) i złotą biżuterią z grobowców.",
+          "description": "Senne, urokliwe miasteczko w sercu Crete Senesi — spacer wzdłuż Corso Matteotti i obiad w L'Angolo dello Sfizio. W miasteczku mieści się wybitne Museo di Palazzo Corboli (jedno z 15 najpiękniejszych małych muzeów Włoch wg The Telegraph). W środku: unikalne świeckie freski z XIV w. na ścianach pałacu (Sala di Aristotele z alegoriami filozofii i cnót oraz Sala delle Stagioni z pracami polowymi), arcydzieła malarstwa sieneńskiego (Trittico di Rofeno Ambrogia Lorenzettiego, Narodziny Marii Mistrza z Osservanza, drewniany krucyfiks Giovanniego Pisano) oraz fascynujący dział archeologii etruskiej ze zrekonstruowanym rydwanem (carro etrusco) i złotą biżuterią z grobowców Poggio Pinci.",
           "type": "cultural",
           "image_key": "palazzo-corboli",
           "gps_hint": "Asciano SI — parking przy Via Fiume 31",
@@ -2374,14 +2374,14 @@
             43.2343,
             11.5621
           ],
-          "opening_hours": "Museo d'Arte Sacra (Palazzo Corboli): 10:30–13:00, 15:00–18:30 (śr–nd).",
+          "opening_hours": "Museo d'Arte Sacra (Palazzo Corboli): 10:30–13:00, 15:00–18:30 (śr–nd). Miasteczko: zawsze dostępne.",
           "ticket_price": "Muzeum: €5. Miasteczko: bezpłatne.",
           "duration_h": 1.5
         },
         {
-          "name": "Buonconvento (opcjonalnie) — borgo i Museo d'Arte Sacra della Val d'Arbia",
+          "name": "Buonconvento — borgo i Museo d'Arte Sacra della Val d'Arbia",
           "drive_min": 20,
-          "description": "Punkt opcjonalny w drodze powrotnej do bazy w Murlo. Ufortyfikowane, ceglane miasteczko otoczone XIV-wiecznymi murami (z listy I Borghi più belli d'Italia). W secesyjnym Palazzo Ricci Socini (styl Liberty) mieści się Museo d'Arte Sacra della Val d'Arbia — prawdziwy 'skarbiec' sztuki. Główne dzieła: oryginalna Madonna z Dzieciątkiem Duccia di Buoninsegna (ojca szkoły sieneńskiej), obrazy Pietra Lorenzettiego, Sano di Pietro, Mattea di Giovanni oraz płótna Brescianina i Rutilia Manettiego, obok cennych relikwiarzy i szat liturgicznych.",
+          "description": "Ufortyfikowane, ceglane miasteczko otoczone XIV-wiecznymi murami (z listy I Borghi più belli d'Italia) — popołudniowy spacer reprezentacyjną Via Soccini. W secesyjnym Palazzo Ricci Socini (styl Liberty) mieści się Museo d'Arte Sacra della Val d'Arbia — prawdziwy 'skarbiec' sztuki sieneńskiej. Główne dzieła: oryginalna Madonna z Dzieciątkiem Duccia di Buoninsegna (ojca szkoły sieneńskiej), obrazy Pietra Lorenzettiego, Sano di Pietro, Mattea di Giovanni oraz płótna Brescianina i Rutilia Manettiego, obok cennych relikwiarzy i szat liturgicznych.",
           "type": "cultural",
           "image_key": "buonconvento",
           "gps_hint": "Buonconvento SI — Via Soccini / Viale della Libertà 30",
@@ -2415,11 +2415,12 @@
         "opening_hours": "Nd 12:30–15:00, 19:30–22:30."
       },
       "practical_tips": [
-        "Timeline: 9:30 Monte Oliveto (freski Signorelli/Sodoma w Chiostro Grande) → 11:00 msza z chorałem gregoriańskim → 12:30 przejazd do Asciano → 13:00 lunch La Giomella / L'Angolo dello Sfizio w Asciano → 15:00 Museo Palazzo Corboli → ok. 16:30 opcjonalnie Buonconvento (Val d'Arbia) w drodze do bazy.",
-        "Bilet Monte Oliveto: €7 (Vivaticket €6). Niedziela: msza z chorałem 11:00 — freski w Chiostro Grande zwiedzaj 9:30–10:45 przed liturgią.",
+        "Timeline (realny przebieg): 10:15 wyjazd z bazy → 11:00 Monte Oliveto (uroczysta msza konwentualna z chorałem gregoriańskim) → 12:35 Asciano (obiad w L'Angolo dello Sfizio i spacer po borgo) → 14:45 powrót do Monte Oliveto Maggiore (zwiedzanie 35 fresków Signorellego i Sodomy w Chiostro Grande) → 16:30 spacer po ufortyfikowanym Buonconvento (Via Soccini) → 17:30 powrót do bazy w Murlo.",
+        "Warto wiedzieć (muzea na trasie): W Asciano mieści się Palazzo Corboli (€5, 15:00–18:30) z freskami cnót i rydwanem etruskim; w Buonconvento secesyjny Palazzo Ricci Socini mieści Museo della Val d'Arbia (€5, 16:00–19:00) z Madonną Duccia di Buoninsegna.",
+        "Bilet Monte Oliveto: €7 (Vivaticket €6). Krużganki otwarte również popołudniu (14:30–17:40) — genialna opcja na spokojne oglądanie fresków po obiedzie, bez porannego tłoku.",
         "Gotowa trasa Google Maps z parkingami: https://www.google.com/maps/dir/Poggiobrucoli,+53016+Prowincja+Siena/Parcheggio+Park+Abbazia,+ABBAZIA+MONTE+OLIVETO+MAGGIORE,+53041+Asciano+SI/Opactwo+terytorialne+Monte+Oliveto+Maggiore,+Monte+Oliveto+Maggiore,+53041+Asciano+SI/Parcheggio+Via+Fiume,+Via+Fiume,+31,+53041+Asciano+SI/L'Angolo+dello+Sfizio,+Corso+Giacomo+Matteotti,+35%2F37,+53041+Asciano+SI/Archaeological+Museum,+and+Sacred+Art+Palace+Corboli,+Corso+Giacomo+Matteotti,+122,+53041+Asciano+SI/Parcheggio+Gratuito+Buonconvento+(auto+e+camper),+Viale+della+Libert%C3%A0,+30,+53022+Buonconvento+SI/Museo+dArte+sacra+Della+Val+dArbia,+Via+Soccini,+18,+53022+Buonconvento+SI/Poggiobrucoli,+53016+Prowincja+Siena/@43.1818372,11.3558239,20210m/data=!3m2!1e3!4b1!4m56!4m55!1m5!1m1!1s0x1329818c3ccbf0dd:0x7c0de3369959f6ef!2m2!1d11.3158083!2d43.1589961!1m5!1m1!1s0x132962e807d0d4a1:0x23015d57fe3cb143!2m2!1d11.5478244!2d43.1773807!1m5!1m1!1s0x132962dc583d960f:0x6d79454d2f9fb5e0!2m2!1d11.5449426!2d43.175587!1m5!1m1!1s0x132bd85049a56b67:0x5bc389a70c1f09f0!2m2!1d11.5604718!2d43.2351726!1m5!1m1!1s0x132bd85024a57eeb:0xd921e5e9fcc6d277!2m2!1d11.559627!2d43.2348046!1m5!1m1!1s0x132bd84e2442f905:0x6a23987ab3fa853a!2m2!1d11.558482!2d43.236748!1m5!1m1!1s0x13297d673b2066e5:0x8cfc7cd878f79d90!2m2!1d11.4808084!2d43.1386507!1m5!1m1!1s0x13297d003862e7fb:0x2235890de41b8f3e!2m2!1d11.4819667!2d43.1386825!1m5!1m1!1s0x1329818c3ccbf0dd:0x7c0de3369959f6ef!2m2!1d11.3158083!2d43.1589961!3e0"
       ],
-      "narrative": "Wyjeżdżamy o 8:50 w stronę zupełnie innego krajobrazu — z Murlo to zaledwie 36 minut do Abbazia Monte Oliveto Maggiore, otwiera o 9:30. Ceglasta abbazia benedyktyńska wyłania się z cyprysowego lasu jak miraż pośrodku Crete Senesi. W Chiostro Grande, w ciszy obowiązkowej dla wszystkich zwiedzających, 35 lunet opowiada życie św. Benedykta — osiem scen namalował Luca Signorelli, resztę Il Sodoma w latach 1505–1508, z detalami tak żywymi, że trudno oderwać wzrok (bilet €7, ok. 1,5h; w niedzielę o 11:00 msza z chorałem gregoriańskim — freski oglądamy wcześniej). Po mszy ruszamy w stronę Asciano widokową trasą przez wzgórza Crete Senesi. W Asciano jemy obiad w Ristorante La Giomella przy Via Mameli 11 (lub w L'Angolo dello Sfizio przy głównym deptaku), spacerujemy sennymi uliczkami, a po sjeście (od 15:00) zwiedzamy wybitne Museo d'Arte Sacra i Archeologii w Palazzo Corboli (uznane przez The Telegraph za jedno z najpiękniejszych małych muzeów we Włoszech). W drodze powrotnej do bazy w Murlo mijamy ufortyfikowane Buonconvento (z listy I Borghi più belli d'Italia) — to punkt opcjonalny: jeśli starczy sił i czasu, zaglądamy do Museo d'Arte Sacra della Val d'Arbia (czynne w niedzielę 16:00–19:00, z oryginalną Madonną Duccia di Buoninsegna) lub na kawę w obrębie murów. Z Buonconvento do Murlo jest zaledwie 18 minut, więc jesteśmy w bazie ok. 17:30–18:00.",
+      "narrative": "Niedzielę w Crete Senesi rozpoczęliśmy bez porannego pośpiechu — wyjazd z bazy w Murlo ok. 10:15 prosto do Abbazia Monte Oliveto Maggiore na uroczystą mszę św. konwentualną o 11:00 z łacińskim chorałem gregoriańskim śpiewanym przez mnichów benedyktyńskich. Ceglasta abbazia wyłaniająca się z cyprysowego lasu pośrodku gliniastych wzgórz Crete Senesi tworzy niezwykłą atmosferę skupienia. Po liturgii pojechaliśmy widokową trasą SP451 do Asciano, gdzie zjedliśmy znakomity toskański obiad w trattorii L'Angolo dello Sfizio przy głównym deptaku (Corso Matteotti) i spacerowaliśmy sennymi uliczkami borgo. Choć w Asciano mieści się wybitne Museo di Palazzo Corboli (z unikalnymi XIV-wiecznymi freskami świeckimi w Sala di Aristotele, rydwanem etruskim i malarstwem Lorenzettiego), zamiast kolejnego muzeum wybraliśmy relaksujący powrót do Monte Oliveto Maggiore. Opactwo otwiera krużganki popołudniu (14:30–17:40), dzięki czemu po obiedzie, w pełnym spokoju i ciszy, mogliśmy obejrzeć 35 renesansowych lunet Luca Signorellego i Il Sodomy w Chiostro Grande. Na zakończenie dnia zrobiliśmy krótki spacer po ufortyfikowanym borgo Buonconvento wzdłuż historycznej Via Soccini (w której kryje się secesyjny Palazzo Ricci Socini i Museo d'Arte Sacra della Val d'Arbia z Madonną Duccia). Powrót do bazy w Murlo zajął zaledwie 18 minut.",
       "web_research": [
         {
           "topic": "Monte Oliveto Maggiore — orari",
@@ -2482,16 +2483,16 @@
       },
       "eta_timeline": [
         {
-          "time": "08:50",
-          "event": "Wyjazd z bazy do Monte Oliveto Maggiore (36 min)"
+          "time": "10:15",
+          "event": "Wyjazd z bazy w Murlo do Monte Oliveto Maggiore (36 min)"
         },
         {
-          "time": "09:30",
-          "event": "Monte Oliveto Maggiore — krużganki z freskami Signorellego i Sodomy (otwarcie 9:30)"
+          "time": "10:55",
+          "event": "Monte Oliveto Maggiore — przyjazd przed mszą (parking Park Abbazia)"
         },
         {
           "time": "11:00",
-          "event": "Uroczysta msza św. konwentualna z chorałem gregoriańskim"
+          "event": "Uroczysta msza św. konwentualna z chorałem gregoriańskim mnichów"
         },
         {
           "time": "12:20",
@@ -2499,27 +2500,31 @@
         },
         {
           "time": "12:35",
-          "event": "Przyjazd do Asciano (parking Via Fiume 31), krótki spacer do restauracji"
+          "event": "Przyjazd do Asciano (parking Via Fiume 31), krótki spacer na główny deptak"
         },
         {
           "time": "13:00",
-          "event": "Obiad Ristorante La Giomella (Via Mameli 11) lub L'Angolo dello Sfizio (Asciano)"
+          "event": "Obiad w trattorii L'Angolo dello Sfizio (Corso Matteotti 35/37)"
         },
         {
-          "time": "14:30",
-          "event": "Asciano — spacer po miasteczku i biancane"
+          "time": "14:15",
+          "event": "Spacer po sennym Asciano (widok na starówkę i wzgórza Crete Senesi)"
+        },
+        {
+          "time": "14:45",
+          "event": "Powrót do Monte Oliveto Maggiore na popołudniowe zwiedzanie fresków (otwarte 14:30–17:40)"
         },
         {
           "time": "15:00",
-          "event": "Museo di Palazzo Corboli w Asciano (otwarcie po sjeście 15:00)"
+          "event": "Chiostro Grande w Monte Oliveto — 35 renesansowych fresków Signorellego i Sodomy w ciszy"
         },
         {
-          "time": "16:00",
-          "event": "Przejazd do Buonconvento (18 km, 20 min) — punkt opcjonalny"
+          "time": "16:15",
+          "event": "Przejazd do Buonconvento (14 km, 15 min)"
         },
         {
-          "time": "16:20",
-          "event": "Buonconvento (opcjonalnie) — spacer po ufortyfikowanym borgo / Museo della Val d'Arbia"
+          "time": "16:30",
+          "event": "Buonconvento — popołudniowy spacer wzdłuż Via Soccini w obrębie murów borgo"
         },
         {
           "time": "17:30",
@@ -2527,9 +2532,9 @@
         }
       ],
       "daily_km_estimate": 75,
-      "crowd_tip": "Monte Oliveto Maggiore: przyjedź punktualnie na 9:30 (otwarcie) — spokojnie obejrzysz freski przed mszą o 11:00. Asciano i Palazzo Corboli: mało turystów, idealny spokój. Buonconvento: kameralne borgo.",
-      "warning": "Zrównoważony dzień w pętli. Kluczowe jest dotarcie do Monte Oliveto punktualnie na 9:30, aby obejrzeć freski przed mszą o 11:00. Buonconvento na koniec dnia jest w pełni opcjonalne (w zależności od energii).",
-      "summary": "Zupełnie inny krajobraz — Crete Senesi, gliniaste, niemal „księżycowe\" wzgórza na południe od Sieny. Głównym punktem jest ceglane opactwo ukryte wśród cyprysów (Abbazia di Monte Oliveto Maggiore) z freskami Signorellego i Sodomy oraz mszą z chorałem gregoriańskim. Dalej Asciano z Palazzo Corboli (jedno z najpiękniejszych małych muzeów Włoch) oraz opcjonalnie ufortyfikowane Buonconvento z kolekcją Val d'Arbia.",
+      "crowd_tip": "Monte Oliveto Maggiore: popołudniowe otwarcie (14:30–17:40) to doskonały czas na freski — większość autokarów i wycieczek jedzie tu rano, więc po południu w krużgankach panuje niemal zupełna cisza.",
+      "warning": "Zrównoważony, bezstresowy dzień z krótkimi dojazdami (Murlo ↔ Monte Oliveto ↔ Asciano ↔ Buonconvento). Muzea w Palazzo Corboli i Palazzo Ricci Socini opisane szczegółowo jako wiedza na przyszłość.",
+      "summary": "Rzeczywisty przebieg Dnia 9: niedziela w Crete Senesi rozpoczęta uroczystą mszą z chorałem gregoriańskim w Abbazia di Monte Oliveto Maggiore (11:00), następnie wyśmienity toskański obiad w L'Angolo dello Sfizio i spacer po sennym Asciano. Po obiedzie powrót do Monte Oliveto na popołudniowe, spokojne oglądanie arcydzieł Signorellego i Sodomy w Chiostro Grande (14:30–17:40). Dzień zwieńczył spacer wzdłuż Via Soccini w ufortyfikowanym borgo Buonconvento. W opisach zachowano pełne kompendium wiedzy o Palazzo Corboli i Museo della Val d'Arbia.",
       "weather": {
         "label": "Asciano / Crete Senesi",
         "coords": [

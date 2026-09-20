@@ -2553,12 +2553,12 @@
       "base_id": "base2",
       "base_label": "BAZA 2 — Murlo (Val di Merse)",
       "drive_limit_min": 69,
-      "warning": "Pętla po Val d'Orcia to łącznie ok. 2,9 h za kierownicą (baza → Pienza 69 min, powrót Montalcino → baza 56 min). Kolejność ułożona tak, by dotrzeć do Pienzy wcześnie rano przed autokarami. Duży atut poniedziałku: Pienza jest znacznie spokojniejsza niż w weekend, a Palazzo Piccolomini (zamknięte we wtorki) jest otwarte dla zwiedzających. Uwaga na drogi SP2/SP53: wrzesień to okres zbiorów i na trasie można spotkać wolnobieżne traktory.",
+      "warning": "Zrównoważony dzień w rytmie relaksacyjnym (Wariant A z wyjazdem o 11:00 bez porannego pośpiechu). Trzonem wycieczki są dwie unikalne perełki Val d'Orcia: Pienza (zaczynamy od obiadu o 12:30, a w poniedziałki Palazzo Piccolomini jest otwarty!) oraz Bagno Vignoni (popołudniowa kawa nad parującym basenem termalnym po 16:00, gdy autokary już odjadą). Montalcino (twierdza i Brunello) pozostaje w pełni opcjonalnym punktem na koniec dnia — decyzję podejmujecie na żywo o 17:15 w zależności od energii Mamy. Pętla bez Montalcino to ok. 95 km (~2 h jazdy, powrót na 18:00), z Montalcino ok. 118 km (~2,5 h jazdy, powrót na 19:35).",
       "attractions": [
         {
           "name": "Pienza — renesansowe miasto-utopia Piusa II",
           "drive_min": 69,
-          "description": "Renesansowe miasto-utopia zaprojektowane przez Bernarda Rosselliniego (1459–1462). Piazza Pio II — Duomo, Palazzo Piccolomini, panorama Val d'Orcia. Pecorino di Pienza DOP — kup w sklepach na Corso Rossellino.",
+          "description": "Renesansowe miasto-utopia zaprojektowane przez Bernarda Rosselliniego (1459–1462). Zaczynamy od obiadu o 12:30 (Trattoria Latte di Luna), a po obiedzie spacer: Piazza Pio II — Duomo, Palazzo Piccolomini (komnaty i wiszący ogród), panorama Val d'Orcia z murów. Pecorino di Pienza DOP — w sklepach na Corso Rossellino.",
           "type": "medieval",
           "gps_hint": "Pienza SI — parking poza centro storico (ZTL)",
           "coords": [
@@ -2573,7 +2573,7 @@
         {
           "name": "Bagno Vignoni — Piazza delle Sorgenti (plac z basenem termalnym)",
           "drive_min": 21,
-          "description": "Unikalna wioska z XVI-wiecznym basenem termalnym pośrodku placu. Kąpiel w basenie na Piazza delle Sorgenti NIEDOZWOLONA, ale Parco dei Mulini poniżej (bezpłatny). Wrzesień: woda ciepła, mało turystów.",
+          "description": "Unikalna wioska z XVI-wiecznym basenem termalnym pośrodku placu. Przyjazd po 16:00, gdy odpłyną autokary z wycieczkami. Kąpiel w basenie na Piazza delle Sorgenti niedozwolona, ale Parco dei Mulini poniżej (bezpłatny, kaskady). Popołudniowa kawa i lody nad wodą w miękkim świetle.",
           "type": "nature",
           "gps_hint": "Bagno Vignoni SI — parking poza wsią, 5 min pieszo",
           "coords": [
@@ -2588,7 +2588,7 @@
         {
           "name": "Montalcino — forteca i Brunello di Montalcino (słynne wino DOCG)",
           "drive_min": 28,
-          "description": "Forteca z XIV w. z panoramą 360°. Kolebka Brunello di Montalcino DOCG — najtańsze degustacje w winiarniach Fortezza lub na Piazza del Popolo. Enoteca La Fortezza (w fortecy).",
+          "description": "PUNKT OPCJONALNY (decyzja na żywo o 17:15 w Bagno Vignoni). Forteca z XIV w. z panoramą 360°. Kolebka Brunello di Montalcino DOCG — degustacja w Enoteca La Fortezza w murach zamku (otwarta do 20:00). Jeśli odpuścicie, wracacie z Bagno Vignoni prosto do Murlo na 18:00.",
           "type": "cultural",
           "gps_hint": "Montalcino SI — parking przy Via Aldo Moro",
           "coords": [
@@ -2616,16 +2616,19 @@
           "ribollita",
           "pasta al tartufo"
         ],
-        "note": "Klasyczna trattoria w centrum Pienzy — lokale, porządne porcje, uczciwa cena. Czynna na lunch. Rezerwacja zalecana w sezonie przez TripAdvisor lub telefon. Alternatywa: La Terrazza della Val d'Orcia (widok na dolinę z tarasu, Via Condotti 11). Osobno: Osteria Perillà to gwiazdkowe fine dining w Rocca d'Orcia (€85–130/os) — jeśli chcecie spróbować, rezerwuj tygodnie wcześniej: info@osteriaperilla.it.",
+        "note": "Klasyczna trattoria w centrum Pienzy — lokale, porządne porcje, uczciwa cena. Czynna na lunch od 12:30 (idealne wstrzelenie się po przyjeździe o 12:15). Alternatywa: La Terrazza della Val d'Orcia (widok na dolinę z tarasu, Via Condotti 11).",
         "price": "~€15–25/os",
         "phone": "+39 0578 748606",
         "opening_hours": "Śr–Pn 12:30–14:00, 19:30–21:30. Wt zamkn."
       },
       "practical_tips": [
-        "Timeline: Bagno Vignoni (9:00, 1h) → Pienza (10:30, 2h) → lunch Latte di Luna / Pienza (12:30) → Montalcino (14:30, 1,5h) → powrót ~17:00",
-        "Dojazd: z Murlo do Pienzy ~69 min (SP2/SP53, wrzesień = zbiory, traktory). Wyjazd przed 8:00."
+        "Timeline (Wariant A — start 11:00): Murlo (11:00) → Pienza lunch (12:30) & spacer/pałac (13:45–15:30) → Bagno Vignoni (16:00–17:15) → [Opcja: Montalcino 17:40–18:45 / powrót 19:35] LUB [Powrót bezpośredni: baza 18:00]",
+        "Dojazd: z Murlo do Pienzy ~69 min (SP2/SP53). Wyjazd o 11:00 — bez porannego pośpiechu, wstrzelenie się idealnie w otwarcie trattorii (12:30).",
+        "Palazzo Piccolomini w Pienzy: kasa czynna do 16:30 (pałac do 17:00). Poniedziałek to idealny dzień — we wtorki jest ZAMKNIĘTY.",
+        "Bagno Vignoni po 16:00: autokary z wycieczkami już odjechały, najpiękniejsze miękkie popołudniowe światło na parującą wodę.",
+        "Montalcino (opcja): decyzję podejmujecie na żywo w Bagno Vignoni o 17:15. Jeśli mama woli odpocząć — zjazd prosto do bazy na 18:00."
       ],
-      "narrative": "Val d'Orcia leży realnie ok. 70 minut od bazy w Murlo, więc ruszamy o 8:00 i układamy dzień tak, żeby jak najmniej kluczyć. Najpierw, po ok. 69 minutach przez Crete i SP2, docieramy do Pienzy — o tej porze miasto należy jeszcze do nas. Pienza to renesansowe marzenie papieża Piusa II, który w XV wieku kazał przebudować rodzinne Corsignano w „idealne miasto\": regularna Piazza Pio II, katedra i tarasy, z których Val d'Orcia rozlewa się aż po Monte Amiata. Mamy szczęście co do dnia tygodnia: Palazzo Piccolomini, letnia rezydencja papieża Piusa II, we wtorki jest zamknięty — ale dziś poniedziałek, więc wchodzimy do środka, na renesansowe komnaty i wiszący ogród z lodżią, z której rozciąga się widok na całą dolinę. Do tego katedra i pecorino di Pienza wprost z serowarni przy Corso Rossellino, a że to powszedni dzień, miasto jest spokojniejsze niż w weekend. Stąd tylko 21 minut do Bagno Vignoni, gdzie zamiast rynku jest wielki termalny basen — para unosi się nad wodą pośrodku placu, a my jemy obiad w trattorii tuż obok (kąpiel na samym placu jest zakazana, ale darmowe Parco dei Mulini poniżej pozwala zamoczyć nogi w ciepłych strumieniach). Po południu 28 minut na zachód do Montalcino — miasta Brunello. Wspinamy się na Fortezzę (€4) po widok 360° na całą dolinę, a potem w Enoteca La Fortezza, wbudowanej w mury twierdzy, degustujemy to, co uczyniło Montalcino sławnym: Brunello di Montalcino DOCG, wino, które dojrzewa w beczce latami. Powrót do bazy w Murlo zajmuje ok. 56 minut, więc na miejscu jesteśmy ok. 17:00 — i świadomie nie planujemy już nic na wieczór, bo to był dzień z pełnym bakiem wrażeń i pełnym licznikiem kilometrów.",
+      "narrative": "Poniedziałek w Val d'Orcia spędzamy w rytmie wakacyjnym, bez porannego budzika — wyjeżdżamy z bazy w Murlo o 11:00. Po ok. 69 minutach malowniczej jazdy przez wzgórza docieramy do Pienzy o 12:15, idealnie na otwarcie toskańskich trattorii (12:30). Zamiast spacerować w najgorętszym słońcu (28°C), zaczynamy od pysznego toskańskiego obiadu w Trattoria Latte di Luna (pici al ragù di cinta senese, pecorino). Po obiedzie, gdy upał nieco zelżeje, ruszamy na spacer po renesansowym „mieście idealnym” papieża Piusa II: Piazza Pio II, katedra oraz Palazzo Piccolomini z wiszącym ogrodem i loggią, z której roztacza się niezrównany widok na falującą dolinę i Monte Amiata (mamy szczęście — we wtorki pałac jest zamknięty, ale w poniedziałki otwarty do 17:00). Wstępujemy też do serowarni na Corso Rossellino po lokalne Pecorino di Pienza DOP. O 15:30 przejeżdżamy (20 min) do Bagno Vignoni. Trafiamy tu po 16:00, w najlepszym możliwym momencie: autokary wycieczkowe już odjechały, a nad XVI-wiecznym basenem termalnym na Piazza delle Sorgenti panuje kojący spokój. Spacerujemy wzdłuż wapiennych koryt w Parco dei Mulini i pijemy popołudniową kawę z lodami. O 17:15 podejmujemy decyzję na żywo: jeśli mamy jeszcze energię, podjeżdżamy 25 min do Montalcino na twierdzę (otwarta do 20:00) i kieliszek słynnego Brunello w Enoteca La Fortezza w blasku zachodzącego słońca (powrót na 19:35). Jeśli wygra relaks i chęć odpoczynku, wracamy z Bagno Vignoni prosto do Murlo, meldując się w bazie już o 18:00.",
       "web_research": [
         {
           "topic": "Bagno Vignoni — piazza termalna",
@@ -2687,53 +2690,57 @@
       },
       "eta_timeline": [
         {
-          "time": "08:00",
-          "event": "Wyjazd z bazy w Murlo (69 min do Pienzy)"
+          "time": "11:00",
+          "event": "Wyjazd z bazy w Murlo (ok. 69 min malowniczą trasą do Pienzy)"
         },
         {
-          "time": "09:15",
-          "event": "Pienza — puste o tej porze miasto, Piazza Pio II i tarasy nad Val d'Orcia"
+          "time": "12:15",
+          "event": "Przyjazd do Pienzy (parking Parcheggio Madonna delle Grazie), spacer do trattorii"
         },
         {
-          "time": "10:00",
-          "event": "Palazzo Piccolomini (otwarte w pon), Duomo, Corso Rossellino, pecorino di Pienza"
+          "time": "12:30",
+          "event": "Obiad w Pienzy: Trattoria Latte di Luna (Via San Carlo 2-4) lub La Terrazza"
         },
         {
-          "time": "11:15",
-          "event": "Wyjazd do Bagno Vignoni (14 km, 21 min)"
-        },
-        {
-          "time": "11:36",
-          "event": "Bagno Vignoni — Piazza delle Sorgenti, para nad termalnym basenem"
-        },
-        {
-          "time": "12:45",
-          "event": "Obiad przy placu (np. Osteria del Leone / La Parata)"
-        },
-        {
-          "time": "14:00",
-          "event": "Wyjazd do Montalcino (20 km, 28 min)"
+          "time": "13:45",
+          "event": "Pienza — spacer po renesansowym centrum, Corso Rossellino, degustacja i zakup pecorino"
         },
         {
           "time": "14:30",
-          "event": "Montalcino — Fortezza (€4), widok 360° na Val d'Orcia"
+          "event": "Palazzo Piccolomini (otwarte w poniedziałki do 17:00, kasa do 16:30) — apartamenty i wiszący ogród"
         },
         {
-          "time": "15:15",
-          "event": "Enoteca La Fortezza — degustacja Brunello di Montalcino DOCG"
+          "time": "15:30",
+          "event": "Wyjazd do Bagno Vignoni (14 km, ok. 20 min)"
         },
         {
-          "time": "16:00",
-          "event": "Wyjazd z Montalcino do bazy (35 km, ~56 min)"
+          "time": "15:50",
+          "event": "Bagno Vignoni — Piazza delle Sorgenti (basen termalny bez tłumów), Parco dei Mulini, popołudniowa kawa i lody"
         },
         {
-          "time": "17:00",
-          "event": "Powrót do bazy — spokojny wieczór i odpoczynek"
+          "time": "17:15",
+          "event": "Decyzja: powrót do bazy na 18:00 (Wariant Relax) LUB przejazd do Montalcino"
+        },
+        {
+          "time": "17:40",
+          "event": "[Opcjonalnie] Montalcino — Fortezza (otwarta do 20:00, wstęp €4), widok na dolinę w złotym świetle"
+        },
+        {
+          "time": "18:15",
+          "event": "[Opcjonalnie] Enoteca La Fortezza — kieliszek Brunello di Montalcino DOCG"
+        },
+        {
+          "time": "18:45",
+          "event": "[Opcjonalnie] Wyjazd z Montalcino do bazy w Murlo (35 km, ~50 min)"
+        },
+        {
+          "time": "18:00 / 19:35",
+          "event": "Powrót do bazy w Murlo: 18:00 (wariant bezpośredni) lub 19:35 (z Montalcino)"
         }
       ],
-      "crowd_tip": "Pienza i Bagno Vignoni są zatłoczone od 10:00–16:00. Do Bagno Vignoni przyjeżdżaj przed 9:30. Do Pienzy — przed południem. Montalcino spokojniejsze, ale parking Fortezza szybko zapełnia się po 14:00.",
+      "crowd_tip": "Pienza: przyjazd o 12:15 pozwala zacząć od obiadu, a po 13:30 zwiedzać pałac i uliczki, gdy poranne grupy zaczynają wyjeżdżać. Bagno Vignoni: godziny 11:00–15:00 to szczyt autokarowy; po 16:00 wieś pustoszeje i zyskuje cudowny klimat. Montalcino (opcja): późne popołudnie (po 17:30) to idealna pora na twierdzę i miękkie, zachodzące słońce nad Val d'Orcia.",
       "daily_km_estimate": 118,
-      "summary": "Solidny dzień za kierownicą (ok. 69 min dojazdu w jedną stronę), za to w najpiękniejszej dolinie regionu — Val d'Orcia, krajobrazie wpisanym na listę UNESCO. Pienza — renesansowe „miasto idealne\" zaprojektowane dla papieża Piusa II, słynne z sera pecorino i widoku na dolinę. Bagno Vignoni — wioska, której rynek zajmuje zabytkowy basen termalny zamiast placu. Na koniec Montalcino — twierdza z rozległą panoramą i degustacja słynnego czerwonego wina Brunello.",
+      "summary": "Val d'Orcia w spokojnym, bezstresowym rytmie (Wariant A z wyjazdem o 11:00). Dwie główne gwiazdy dnia: Pienza — renesansowe „miasto idealne” papieża Piusa II (otwarte w poniedziałek Palazzo Piccolomini, ser pecorino i toskański lunch o 12:30 w Trattoria Latte di Luna) oraz Bagno Vignoni — niezwykła wioska z basenem termalnym na rynku, odwiedzana po 16:00 bez tłumów. Na zakończenie dnia opcjonalne Montalcino (średniowieczna twierdza i Brunello) — decyzja podejmowana na żywo w zależności od energii Mamy, z powrotem o 18:00 lub 19:35.",
       "weather": {
         "label": "Pienza / Val d Orcia",
         "coords": [

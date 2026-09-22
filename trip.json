@@ -3069,11 +3069,11 @@
       "image": "firenze",
       "base_id": "base2",
       "base_label": "BAZA 2 — Murlo (Val di Merse)",
-      "drive_limit_min": 33,
+      "drive_limit_min": 75,
       "attractions": [
         {
           "name": "Piazza del Duomo — fasada Santa Maria del Fiore, kopuła Brunelleschiego, Battistero i Campanile (z zewnątrz + darmowa nawa katedry)",
-          "description": "Plac katedralny podziwiany z zewnątrz: trójkolorowe marmury fasady Santa Maria del Fiore, rewolucyjna kopuła Brunelleschiego, dzwonnica Giotta i Battistero ze słynnymi brązowymi Wrotami Raju Ghibertiego. Płatne wejście na kopułę pomijamy (brak wolnych slotów) — zamiast tego bezpłatnie wchodzimy do wnętrza nawy głównej katedry (wstęp wolny, widok na sklepienie kopuły od dołu).",
+          "description": "10:00–11:30. Plac katedralny: trójkolorowe marmury fasady Santa Maria del Fiore, rewolucyjna kopuła Brunelleschiego, dzwonnica Giotta i Battistero ze słynnymi brązowymi Wrotami Raju Ghibertiego (znajdź autoportret artysty jako łysą głowę w medalionie!). Bezpłatny wstęp do wnętrza nawy katedry (fresk Sądu Ostatecznego na kopule oraz renesansowy zegar Paolo Uccello z 1443 r. obracający się przeciwnie do wskazówek zegara). Na rogu Piazza delle Pallottole: płyta Sasso di Dante.",
           "type": "popular",
           "image_key": "firenze",
           "gps_hint": "Piazza del Duomo, Firenze",
@@ -3082,7 +3082,7 @@
             11.256
           ],
           "drive_min": null,
-          "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
+          "drive_min_reason": "auto na P+R Villa Costanza + tramwaj T1 do centrum",
           "opening_hours": "Plac i fasady: całodobowo. Nawa katedry (wstęp wolny): pn–sb 10:15–15:45 (w niedziele i święta niedostępna dla turystów). Wymagany strój zakrywający ramiona i kolana.",
           "ticket_price": "Bezpłatnie (plac, fasady, Wrota Raju i nawa katedry są darmowe; płatne wejścia na wieże/kopułę pomijamy)",
           "url": "https://duomo.firenze.it/en/home",
@@ -3090,7 +3090,7 @@
         },
         {
           "name": "Piazza della Signoria — Loggia dei Lanzi (plenerowa galeria rzeźb) i Palazzo Vecchio (ratusz)",
-          "description": "Loggia dei Lanzi to darmowa, plenerowa galeria rzeźb (m.in. Perseusz Celliniego, Porwanie Sabinek) — jedna z niewielu atrakcji Florencji bez kolejki i bez biletu. Palazzo Vecchio zwiedzamy z zewnątrz oraz wchodzimy na darmowy, renesansowy dziedziniec Michelozza.",
+          "description": "13:30–14:30. Spacer ku rzece Arno: gotycki kościół Orsanmichele z rzeźbami cechów, dzik Fontana del Porcellino (potarcie ryjka i wrzucenie monety do kratki na szczęście!), Piazza della Signoria z kopią Dawida Michała Anioła i marmurową płytą Savonaroli. Loggia dei Lanzi (bezpłatna galeria rzeźb: Perseusz Celliniego z ukrytym autoportretem z tyłu hełmu, Porwanie Sabinek Giambologny) oraz darmowy renesansowy dziedziniec Michelozza w Palazzo Vecchio.",
           "type": "cultural",
           "image_key": "firenze",
           "gps_hint": "Piazza della Signoria, Firenze",
@@ -3099,14 +3099,14 @@
             11.2558
           ],
           "drive_min": null,
-          "drive_min_reason": "pociąg Siena–Firenze (auto na parkingu w Sienie)",
+          "drive_min_reason": "auto na P+R Villa Costanza + tramwaj T1 do centrum",
           "opening_hours": "Plac i Loggia: całodobowo, bezpłatnie. Dziedziniec Michelozza (Palazzo Vecchio): bezpłatnie w godzinach otwarcia urzędu/muzeum.",
           "ticket_price": "Bezpłatne (plac, Loggia i dziedziniec)",
           "duration_h": 0.75
         },
         {
-          "name": "Galleria degli Uffizi — arcydzieła renesansu: „Narodziny Wenus” Botticellego, Leonardo, Michał Anioł",
-          "description": "Jedna z najsłynniejszych galerii sztuki na świecie. To tutaj znajdują się sale Sandro Botticellego z ikonicznym obrazem „Narodziny Wenus” (Wenus na muszli) oraz „Wiosną” (Primavera), a także arcydzieła Leonarda da Vinci, Michała Anioła (Doni Tondo), Rafaela i Caravaggia. Wymagana wcześniejsza rezerwacja slotu godzinowego online.",
+          "name": "Galleria degli Uffizi — arcydzieła renesansu: „Narodziny Wenus” Botticellego, Leonardo, Michał Anioł (wejście 14:45)",
+          "description": "14:45–17:00. Jedna z najsłynniejszych galerii sztuki na świecie. Wejście ze slotem na 14:45 (bramka Porta 3 z rezerwacją). Kluczowe sale: arcydzieła Botticellego („Narodziny Wenus”, „Wiosna”), Leonardo da Vinci („Zwiastowanie”), Michał Anioł („Tondo Doni” — jedyny ukończony obraz sztalugowy mistrza!), Rafael i Caravaggio („Meduza” na tarczy). Nie przegap: okien na 2. piętrze z widokiem na Arno i Ponte Vecchio oraz otwartego tarasu kawiarni Caffetteria Uffizi na dachu Loggii dei Lanzi z widokiem na Palazzo Vecchio!",
           "type": "cultural",
           "image_key": "firenze",
           "gps_hint": "Piazzale degli Uffizi 6, Firenze",
@@ -3115,15 +3115,15 @@
             11.2553
           ],
           "drive_min": null,
-          "drive_min_reason": "pociąg Siena–Firenze (wejście z Piazza della Signoria)",
-          "opening_hours": "Wtorek–niedziela 8:15–18:30 (ostatnie wejście 17:30, poniedziałki nieczynne). Wymagana rezerwacja slotu godzinowego online.",
-          "ticket_price": "Bilet normalny: €25 + €4 rezerwacja; bilet ulgowy dla obywateli UE 18–25 lat (trójka w grupie): tylko €2 + €4 rezerwacja; do 18 lat: bezpłatnie.",
+          "drive_min_reason": "auto na P+R Villa Costanza + tramwaj T1 do centrum",
+          "opening_hours": "Wtorek–niedziela 8:15–18:30 (ostatnie wejście 17:30, poniedziałki nieczynne). Wejście w planie na zarezerwowany slot 14:45.",
+          "ticket_price": "Bilet normalny: €25 + €4 rezerwacja online = €29 (kupiony wcześniej online).",
           "url": "https://tickets.uffizi.it/event/D43F5443-D676-F857-0904-0199CA8D9B74?lang=en",
           "duration_h": 2.25
         },
         {
           "name": "Ponte Vecchio (most złotników) i Oltrarno (dzielnica za Arno)",
-          "description": "Średniowieczny most z warsztatami złotników zawieszonymi nad Arno — tuż obok wyjścia z Uffizi. Po drugiej stronie rzeki, w Oltrarno, tłum wyraźnie rzednie; można bezpłatnie zajrzeć do kościoła Santa Felicita z Kaplicą Capponi (arcydzieło Pontorma).",
+          "description": "17:00–18:00. Średniowieczny most złotników zawieszony nad Arno w popołudniowym świetle z popiersiem Celliniego. Nad dachami sklepików biegnie Korytarz Vasariego omijający wieżę Mannelli. Po przejściu na drugą stronę rzeki: klimatyczne Oltrarno, bezpłatny kościół Santa Felicita (Kaplica Capponi z manierystycznym arcydziełem Pontorma „Zdjęcie z krzyża” i loża Medyceuszy) oraz wybitne rzemieślnicze lody (np. Gelateria Santa Trinita z czarnym sezamem lub La Carraia).",
           "type": "popular",
           "image_key": "firenze",
           "gps_hint": "Ponte Vecchio, Firenze",
@@ -3132,40 +3132,42 @@
             11.2531
           ],
           "drive_min": null,
-          "drive_min_reason": "pociąg Siena–Firenze (spacer od Uffizi nad rzeką Arno)",
+          "drive_min_reason": "auto na P+R Villa Costanza + tramwaj T1 do centrum",
           "opening_hours": "Most publiczny i ulice — całodobowo, bezpłatnie.",
           "ticket_price": "Bezpłatny (most i spacer po Oltrarno)",
           "duration_h": 1.25
         }
       ],
       "food": {
-        "place": "Mercato Centrale Firenze lub okolice Uffizi / Oltrarno",
-        "address": "Piazza del Mercato Centrale 4 lub Via dei Neri (obok Uffizi)",
+        "place": "Mercato Centrale Firenze (historyczna hala targowa San Lorenzo)",
+        "address": "Piazza del Mercato Centrale 4, 50123 Firenze",
         "dishes": [
-          "lampredotto (florencka kanapka z żołądka wołowego)",
-          "panini z toskańskimi wędlinami i pecorino (np. All'Antico Vinaio przy Uffizi)",
-          "pasta fresca na wagę z kilkunastu straganów w hali targowej",
-          "bistecca alla fiorentina (na kawałki, do podziału)",
-          "gelato artigianale na deser"
+          "świeże makarony wyrabiane na żywo na stoiskach (pici, tagliatelle z truflami / dzikiem)",
+          "bistecca alla fiorentina na kawałki lub burgery z toskańskiej wołowiny Chianina",
+          "chrupiąca pizza neapolitańska i deski wędlin (prosciutto toscano, finocchiona, pecorino)",
+          "tradycyjne toskańskie panino con bollito lub lampredotto w kultowym Da Nerbone (od 1874 r. na parterze)",
+          "kieliszek Chianti Classico z beczki oraz rzemieślnicze gelato i sycylijskie cannoli na deser"
         ],
-        "note": "Elastyczny lunch w zależności od tempa: Mercato Centrale (piano superiore, 9:00–24:00 bez rezerwacji) albo legendarne florenckie panini na Via dei Neri (tuż za rogiem Uffizi) lub klimatyczna osteria w Oltrarno zaraz za Ponte Vecchio.",
+        "note": "Kultowa hala targowa z 1874 roku: na parterze tradycyjny targ spożywczy i stoisko Da Nerbone, a na pierwszym piętrze tętniący życiem Food Hall z ponad 20 rzemieślniczymi stoiskami kulinarnymi. Idealne rozwiązanie dla 5-osobowej grupy przed wizytą w Uffizi — każdy zamawia przy swoim ulubionym stoisku i siadacie razem przy wspólnych stołach na środku. Otwarte od 10:00 do północy, bez rezerwacji.",
         "price": "~€10–20/os",
-        "gps_hint": "Piazza del Mercato Centrale 4 lub Via dei Neri 65/r"
+        "gps_hint": "Piazza del Mercato Centrale 4, 50123 Firenze"
       },
       "practical_tips": [
-        "Kup bilet kolejowy Siena→Firenze wcześniej online (Trenitalia) lub w automacie na stacji — regionale nie wymaga rezerwacji miejsca, ale sprawdź aktualny rozkład przed wyjazdem",
-        "Galeria Uffizi: kup bilet online na tickets.uffizi.it (GLI UFFIZI - INGRESSO) na 23.09 na ok. 11:30. Obywatele UE 18–25 lat płacą tylko €2 (+€4 rezerwacja), dorośli €25 (+€4). Koniecznie weź dowody tożsamości potwierdzające wiek!",
+        "Wyjazd o 8:00 z bazy w Murlo autem (trasa RA03 Siena–Firenze) prosto na autostradowy parking Parcheggio Villa Costanza (zjazd z A1) — zero ryzyka wjechania w strefę ZTL!",
+        "Tramwaj T1 (Leonardo): pętla tuż przy parkingu Villa Costanza, odjazdy co 4–5 min, czas dojazdu pod dworzec Firenze S.M.N. (przystanek Alamanni) to tylko 22 minuty. Bilet €1,70/os (płatność zbliżeniowa kartą w tramwaju lub w automacie)",
+        "Koszt parkingu Villa Costanza: zaledwie ok. €7 za cały dzień (najtańszy i najbezpieczniejszy P+R dla Florencji)",
+        "Galeria Uffizi: bilet zakupiony na slot 14:45. Przyjdź pod wejście z rezerwacją ok. 14:30. Zwiedzanie zajmuje ok. 2–2,5 h",
+        "Obiad na Mercato Centrale (San Lorenzo): po zwiedzaniu Piazza del Duomo (ok. 11:45) idziemy na obiad do hali targowej (5 min spacerem na północ od katedry). Ponad 20 stoisk na piętrze, każdy wybiera to, co lubi",
         "Piazza del Duomo bezpłatnie: z zewnątrz fasada, dzwonnica i Wrota Raju. Wstęp do wnętrza nawy katedry jest bezpłatny (pn–sb 10:15–15:45, wymagane zakryte ramiona i kolana; kolejka do bramek ~20–40 min)",
-        "Ponte Vecchio to darmowy most miejski — nie wymaga żadnych biletów, spaceruje się po nim w drodze do Oltrarno",
-        "Opcjonalne muzea (dla chętnych, zamiast lub obok Uffizi): (1) Galleria dell'Accademia (oryginalny 5-metrowy Dawid Michała Anioła, zwiedzanie 45 min) — dorośli €16+€4 rezerwacja, UE 18–25 lat: €2+€4, wymaga slotu; (2) Museo Nazionale del Bargello (rzeźba: zmysłowy Dawid Donatella, wczesny Michał Anioł, bez kolejek i tłumów, 3 min od Signorii) — €10 / UE 18–25: €2; (3) Cappelle Medicee (rzeźby Michała Anioła: Dzień i Noc w San Lorenzo) — €9 / UE 18–25: €2; (4) Museo Galileo (teleskopy Galileusza, astrolabia, tuż za Uffizi nad Arno) — €13 / studenci i młodzież: €7.",
-        "Samochód zostaje na parkingu w Sienie na cały dzień — jedyny dzień całej wyprawy bez jazdy po Toskanii",
-        "Wygodne buty — dzień to sporo chodzenia po bruku i salach muzealnych"
+        "Perełki Must-See na trasie: autoportret Ghibertiego na Wrotach Raju, zegar Uccello w nawie katedry, płyta Sasso di Dante, potarcie ryjka dzika Porcellino z monetą, ukryty autoportret Celliniego na hełmie Perseusza w Loggia dei Lanzi, taras na dachu Uffizi nad Loggią dei Lanzi oraz Kaplica Capponi z Pontormo w Santa Felicita",
+        "Ponte Vecchio i Oltrarno: idealna pora po wyjściu z Uffizi (ok. 17:00) — spacer po moście złotników w popołudniowym świetle nad Arno i rzemieślnicze lody",
+        "Wygodne buty — cały dzień to piesze odkrywanie Florencji"
       ],
-      "narrative": "Ten dzień jest inny niż wszystkie poprzednie — celowo. Cała ta podróż budowana była wokół unikania tłumów: wczesne pobudki, boczne uliczki, dni powszednie zamiast weekendów. Ale jest miejsce, którego nie da się zobaczyć bez tłumu, bo tłum jest częścią jego natury, i to miejsce jest warte tego kompromisu. Wyjeżdżamy z bazy o 6:50, 33 minuty do Sieny, zostawiamy auto na cały dzień na parkingu przy stacji i po raz jedyny w całej podróży przesiadamy się na tory — dziś prowadzi nas rozkład jazdy, nie licznik kilometrów. Pociąg regionale sunie przez Val d'Elsa, krajobraz za oknem zmienia się z tarasowych winnic w przedmieścia, aż w końcu, około 9:20, wjeżdżamy na Firenze Santa Maria Novella. Piazza del Duomo wita ścianą marmuru w trzech kolorach i tłumem, który tu jest po prostu stałym stanem rzeczy — kopuła Brunelleschiego, pierwsza taka konstrukcja od czasów antycznego Rzymu, nadal uznawana za cud inżynierii, obok Campanile di Giotto, a przy wejściu Battistero z brązowymi Wrotami Raju Ghibertiego, które podobno nawet Michał Anioł nazwał godnymi bramy do nieba. Stąd wąska Via dei Calzaiuoli, zawsze pełna, prowadzi na Piazza della Signoria — pod Loggią dei Lanzi stoją posągi, które można oglądać za darmo i bez pośpiechu (Perseusz Celliniego, Porwanie Sabinek), a wieża Palazzo Vecchio wciąż rządzi panoramą jak osiemset lat temu. Tuż obok wkraczamy do Galerii Uffizi na spotkanie z wielką sztuką renesansu — ikonicznymi „Narodzinami Wenus” i „Wiosną” Botticellego, arcydziełami Leonarda i rzeźbami Medyceuszy. Po muzeum czas na florencki lunch, a popołudnie należy do Ponte Vecchio: złotnicy w witrynach wiszących nad Arno, tłum gęstnieje z każdym krokiem na moście, ale widok na rzekę i Ponte Santa Trinita w tle wynagradza przepychanki. Po drugiej stronie, w Oltrarno, robi się nagle ciszej — kilka kroków wystarczy, by uciec z tłumu, choć dziś to tylko chwila oddechu, nie cel sam w sobie. Wieczorem ta sama droga w drugą stronę — pociąg, Siena, samochód, baza — i świadomość, że jeden dzień kompromisu wart był tego widoku na kopułę o zachodzącym słońcu.",
+      "narrative": "Florencja to jedyny dzień w całym planie, w którym świadomie rezygnujemy z zasady unikania tłumów — bo to miasto jest warte tego kompromisu. Wyjeżdżamy z bazy w Murlo o 8:00 i jedziemy dwupasmówką RA03 prosto na autostradowy parking Parcheggio Villa Costanza przy A1. Zostawiamy auto bez wjeżdżania do zakorkowanego miasta i bez stresu o strefy ZTL, wsiadając w nowoczesny tramwaj T1, który w 22 minuty dowozi nas pod sam dworzec Santa Maria Novella. Stąd krótki spacer prowadzi na Piazza del Duomo: ściana trójkolorowego marmuru Santa Maria del Fiore, rewolucyjna kopuła Brunelleschiego, dzwonnica Giotta i lśniące Wrota Raju Ghibertiego. Po podziwianiu placu i darmowej nawy katedry ruszamy na obiad do tętniącej życiem historycznej hali targowej Mercato Centrale w dzielnicy San Lorenzo. Na piętrze food hallu każdy z grupy wybiera to, na co ma ochotę — od ręcznie robionych makaronów z truflami po bisteccę i chrupiącą schiacciatę. Najedzeni spacerujemy przez Piazza della Signoria i plenerową galerię rzeźb Loggia dei Lanzi prosto pod Galerię Uffizi, gdzie o 14:45 wchodzimy na zarezerwowany slot. Popołudnie spędzamy wśród największych arcydzieł renesansu — „Narodzin Wenus” i „Wiosny” Botticellego, dzieł Leonarda, Michała Anioła i Caravaggia. Po muzeum wychodzimy prosto nad Arno: złote popołudniowe światło na Ponte Vecchio, warsztaty złotników i spacer po klimatycznym Oltrarno z rzemieślniczym gelato. Wieczorem tramwaj T1 zabiera nas z powrotem na parking Villa Costanza, skąd wracamy autem do bazy w Murlo.",
       "web_research": [
         {
           "topic": "Galleria degli Uffizi — bilety i arcydzieła Botticellego",
-          "summary": "Jedna z najważniejszych galerii sztuki na świecie. Sale Botticellego (10–14) z obrazami „Narodziny Wenus” (Nascita di Venere) i „Wiosna” (Primavera). Bilet normalny (sezon): €25 + €4 rezerwacja online. Zniżka dla obywateli UE w wieku 18–25 lat: tylko €2 + €4 opłaty rezerwacyjnej (dotyczy trójki studentów/młodych w grupie!). Młodzież <18 lat: bezpłatnie. Zakup oficjalny: tickets.uffizi.it.",
+          "summary": "Jedna z najważniejszych galerii sztuki na świecie. Sale Botticellego (10–14) z obrazami „Narodziny Wenus” (Nascita di Venere) i „Wiosna” (Primavera). Wejście ze slotem online o 14:45 omija wielogodzinną kolejkę do kasy. Bilet normalny €25 + €4 opłata rezerwacyjna online = €29.",
           "source": "https://tickets.uffizi.it/event/D43F5443-D676-F857-0904-0199CA8D9B74?lang=en",
           "checked": "2026-09"
         },
@@ -3188,94 +3190,96 @@
           "checked": "2026-07"
         },
         {
-          "topic": "Pociąg Siena → Firenze S.M.N.",
-          "summary": "Połączenie regionale, bezpośrednie, ~1h20–1h40 (linia Siena–Empoli–Firenze, nie szybka kolej). Ok. 24 kursy dziennie, częstotliwość co 60–90 minut, pierwszy ok. 5:43, ostatni ok. 21:40 (z Sieny). Bilet ok. €10/os w jedną stronę, bez obowiązkowej rezerwacji miejsca.",
-          "source": "https://www.e656.net/orario/collegamenti/siena/firenze_santa_maria_novella.html",
-          "checked": "2026-07"
+          "topic": "Parcheggio Villa Costanza i tramwaj T1 Leonardo",
+          "summary": "Oficjalny parking przesiadkowy (P+R) na autostradzie A1 (zjazd bezpośrednio z bramek autostradowych, bez wjazdu do Florencji i bez ryzyka ZTL). Bardzo tani: ok. €7/doba. Pętla tramwaju T1 tuż przy parkingu, kursy co 4–5 min, czas dojazdu pod dworzec S.M.N. (przystanek Alamanni) to 22 min. Bilet tramwajowy €1,70 / 90 min (płatność zbliżeniowa kartą w tramwaju).",
+          "source": "https://www.parcheggiovillacostanza.it/",
+          "checked": "2026-09"
         }
       ],
       "opening_hours": {
         "duomo_complex": "Plac, fasady i Wrota Raju: całodobowo. Nawa katedry (wstęp wolny): pn–sb 10:15–15:45 (w niedziele i święta niedostępna dla turystów). Wymagany strój zakrywający ramiona i kolana.",
-        "uffizi": "Wtorek–niedziela 8:15–18:30 (ostatnie wejście 17:30, poniedziałki nieczynne). Wymagana wcześniejsza rezerwacja slotu godzinowego online na tickets.uffizi.it.",
+        "uffizi": "Wtorek–niedziela 8:15–18:30 (ostatnie wejście 17:30, poniedziałki nieczynne). Wejście ze slotem na 14:45 kupionym online na tickets.uffizi.it.",
         "opcjonalne_muzea": "Accademia: wt–nd 8:15–18:50 (wymagana rezerwacja). Bargello: śr–pn 8:15–13:50. Cappelle Medicee: śr–pn 8:15–18:50. Museo Galileo: codz. 9:30–18:00 (wtorki do 13:00).",
         "palazzo_vecchio": "Zwiedzamy z zewnątrz i Loggię dei Lanzi (bezpłatna, całodobowa); pierwszy dziedziniec (Cortile di Michelozzo) bezpłatny w godzinach otwarcia ratusza.",
-        "mercato_centrale": "Piano superiore: codz. 9:00–24:00. Parter (targ spożywczy): pn–pt 7:00–15:00, sb 7:00–17:00, nd zamknięte.",
+        "mercato_centrale": "Piano superiore (Food Hall): codz. 10:00–24:00 (idealne na obiad przed Uffizi). Parter (targ spożywczy i Da Nerbone): pn–pt 7:00–15:00, sb 7:00–17:00.",
         "ponte_vecchio": "Most publiczny, dostępny całą dobę."
       },
       "parking": {
-        "siena_stacja": "Parcheggio Stazione (Piazzale Rosselli) lub Parcheggio Il Duomo — zostaw auto na cały dzień, ok. €15–20/doba. 5 min pieszo do peronów."
+        "recommended": "Parcheggio scambiatore Villa Costanza (A1 Milano-Napoli) + tramwaj T1",
+        "villa_costanza": "Zjazd bezpośrednio z autostrady A1 (węzeł Villa Costanza). Bez wjazdu do aglomeracji Florencji, zero ryzyka ZTL. Cena: ~€7/doba. Pętla tramwaju T1 tuż przy wyjściu z parkingu.",
+        "tram_t1": "Linia T1 Leonardo (Villa Costanza ↔ Alamanni-Stazione). Czas jazdy: 22 min, kursy co 4–5 min. Bilet €1,70 / 90 min (zbliżeniowo w pojeździe lub biletomat)."
       },
       "fuel_stops": [
         {
-          "name": "Stacja w Murlo lub przy SS223",
-          "location": "BAZA 2 — Murlo (Val di Merse)",
-          "note": "Krótki dzień jazdy (tylko Murlo↔Siena) — zatankuj przy okazji, jeśli bak niski."
+          "name": "Stacja przy trasie RA03 lub SS223",
+          "location": "Trasa Murlo ↔ Florencja",
+          "note": "Trasa ~180 km w obie strony — zatankuj przed wyjazdem lub na trasie ekspresowej RA03."
         }
       ],
       "eta_timeline": [
         {
-          "time": "06:50",
-          "event": "Wyjazd z bazy do Sieny (~27 km, 33 min)"
+          "time": "08:00",
+          "event": "Wyjazd z bazy w Murlo (SS223 → RA03 Siena-Firenze → A1, ~90 km, ok. 1h15)"
         },
         {
-          "time": "07:23",
-          "event": "Parking przy stacji w Sienie — auto zostaje na cały dzień"
+          "time": "09:15",
+          "event": "Przyjazd na Parcheggio Villa Costanza (P+R przy A1) — auto zostaje na parkingu (€7/doba, zero ZTL)"
         },
         {
-          "time": "07:57",
-          "event": "Pociąg regionale Siena → Firenze S.M.N. (sprawdź aktualny rozkład, ~1h20–1h40)"
+          "time": "09:25",
+          "event": "Tramwaj T1 (Leonardo) z Villa Costanza do centrum Florencji (bilet €1,70, odjazdy co 4–5 min)"
         },
         {
-          "time": "09:20",
-          "event": "Przyjazd Firenze Santa Maria Novella"
+          "time": "09:47",
+          "event": "Przyjazd pod dworzec Firenze Santa Maria Novella (przystanek Alamanni - Stazione)"
         },
         {
-          "time": "09:30",
-          "event": "Piazza del Duomo — fasady, dzwonnica Giotta, Wrota Raju i nawa katedry (wstęp wolny)"
+          "time": "10:00",
+          "event": "Piazza del Duomo — fasada Santa Maria del Fiore, kopuła Brunelleschiego, dzwonnica Giotta, Wrota Raju i nawa katedry (wstęp wolny)"
         },
         {
-          "time": "10:45",
-          "event": "Spacer Via dei Calzaiuoli → Piazza della Signoria, Loggia dei Lanzi i dziedziniec Palazzo Vecchio"
+          "time": "11:45",
+          "event": "Mercato Centrale (San Lorenzo) — florencki obiad w historycznej hali targowej (Food Hall na piętrze, stoiska z makaronem, fiorentiną, Da Nerbone)"
         },
         {
-          "time": "11:30",
-          "event": "Galleria degli Uffizi — arcydzieła renesansu: „Narodziny Wenus” i „Wiosna” Botticellego (~2–2,5 h)"
+          "time": "13:30",
+          "event": "Spacer przez centrum ku rzece Arno: Via dei Calzaiuoli, Piazza della Signoria, Loggia dei Lanzi i dziedziniec Palazzo Vecchio"
         },
         {
-          "time": "14:00",
-          "event": "Lunch: Mercato Centrale lub panini / trattoria przy Via dei Neri obok Uffizi"
+          "time": "14:30",
+          "event": "Zbiórka pod wejściem do Galerii Uffizi (Piazzale degli Uffizi, wejście z rezerwacją)"
         },
         {
-          "time": "15:00",
-          "event": "Ponte Vecchio i spacer po Oltrarno (kościół Santa Felicita — Pontormo bezpłatnie)"
+          "time": "14:45",
+          "event": "Galleria degli Uffizi — arcydzieła renesansu: sale Botticellego („Narodziny Wenus”, „Wiosna”), Leonardo, Michał Anioł (~2–2,5 h)"
         },
         {
-          "time": "16:15",
-          "event": "Powrót ku stacji — czas wolny na lody i Piazza della Repubblica"
+          "time": "17:00",
+          "event": "Ponte Vecchio (most złotników) w popołudniowym świetle nad Arno i spacer po klimatycznym Oltrarno, lody"
         },
         {
-          "time": "16:45",
-          "event": "Stacja Firenze S.M.N."
-        },
-        {
-          "time": "17:03",
-          "event": "Pociąg powrotny Firenze → Siena (sprawdź rozkład)"
+          "time": "18:00",
+          "event": "Spokojny spacer powrotny przez Piazza della Repubblica ku dworcowi Santa Maria Novella"
         },
         {
           "time": "18:30",
-          "event": "Przyjazd do Sieny, odbiór samochodu"
+          "event": "Tramwaj T1 powrotny (Alamanni - Stazione → Villa Costanza, 22 min)"
         },
         {
-          "time": "19:00",
-          "event": "Powrót do bazy Chianti"
+          "time": "18:55",
+          "event": "Odbiór auta z parkingu Villa Costanza i wyjazd w trasę powrotną (A1 → RA03 → Murlo)"
+        },
+        {
+          "time": "20:15",
+          "event": "Powrót do bazy w Murlo"
         }
       ],
-      "daily_km_estimate": 56,
+      "daily_km_estimate": 180,
       "km_lock": true,
-      "km_note": "Tylko auto Murlo↔Siena (pętla OSRM 56 km, parking + pociąg do Florencji); skrypt km:refresh celowo pomija.",
-      "crowd_tip": "To jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Duomo, Ponte Vecchio i Piazza della Signoria są zatłoczone praktycznie cały dzień w sezonie. Jedyna realna strategia: przyjechać najwcześniej jak się da (pociąg ok. 8:00), zobaczyć Piazza del Duomo przed 10:00, zanim zjadą się grupy z autokarów, i zaakceptować, że popołudnie na Ponte Vecchio i tak będzie ścisk.",
-      "warning": "Wizyta w Galerii Uffizi wymaga wcześniejszego zakupu biletu ze slotem godzinowym online (tickets.uffizi.it). Młodzież UE 18–25 lat musi mieć przy sobie dowody tożsamości do biletu ulgowego za €2. Dzień oparty na rozkładzie pociągów — sprawdź aktualne godziny Trenitalia przed wyjazdem.",
-      "summary": "Jedyny świadomie „tłumny\" dzień — Florencja, dokąd jedziemy wygodnie pociągiem z Sieny. Plac katedralny z bazyliką Santa Maria del Fiore i słynną renesansową kopułą Brunelleschiego, baptysterium ze złoconymi „Wrotami Raju\" i dzwonnica Giotta (oglądane z zewnątrz i bezpłatne wnętrze nawy). Dalej Piazza della Signoria z plenerową galerią rzeźb, wizyta w Galerii Uffizi ze słynnymi „Narodzinami Wenus” Botticellego, most złotników nad rzeką Arno (Ponte Vecchio) i spacer po rzemieślniczej dzielnicy za rzeką (Oltrarno).",
+      "km_note": "Auto Murlo↔Villa Costanza (A1 / RA03, ok. 180 km w obie strony); tramwaj T1 do centrum Florencji.",
+      "crowd_tip": "Florencja to jedyny dzień w całym planie, gdzie nie da się uniknąć tłumu — i nie próbujemy. Zamiast tego mamy optymalny rytm: poranny przyjazd tramwajem T1 pod Duomo przed południowym szczytem, obiad na tętniącym życiem Mercato Centrale, zarezerwowany slot do Uffizi na 14:45 omijający kolejki do kasy oraz popołudniowe Ponte Vecchio w pięknym świetle nad Arno.",
+      "warning": "Wizyta w Galerii Uffizi na zarezerwowany slot 14:45. Pamiętaj o dowodach tożsamości przy wejściu. Tramwaj T1 z Villa Costanza wymaga biletu (€1,70, płatność zbliżeniowa kartą w tramwaju).",
+      "summary": "Florencja — perła toskańskiego renesansu w wygodnym wariancie Park & Ride (wyjazd z Murlo o 8:00, parking Villa Costanza przy A1 i szybki tramwaj T1 do centrum). Najpierw monumentalny Piazza del Duomo z katedrą Santa Maria del Fiore i kopułą Brunelleschiego, następnie florencki obiad w tętniącej życiem hali Mercato Centrale (San Lorenzo). O 14:45 wejście do wspaniałej Galerii Uffizi ze słynnymi „Narodzinami Wenus” Botticellego i dziełami Leonarda, a po muzeum most złotników Ponte Vecchio w popołudniowym świetle nad Arno i spacer po klimatycznym Oltrarno.",
       "weather": {
         "label": "Florencja",
         "coords": [
@@ -3913,11 +3917,11 @@
       "tips": [
         "Siena (22.09, wt): wyjazd o 8:00, spacer, Piazza del Campo i kawa, Katedra o 11:00, potem obiad — wtorek znacznie luźniejszy niż weekend",
         "Pienza (21.09, pon): dzień powszedni, spokojniej niż w weekend, Palazzo Piccolomini otwarte",
-        "Florencja (23.09): jedyny dzień, gdzie świadomie rezygnujemy z zasady unikania tłumów — przyjedź najwcześniej się da, zobacz Duomo przed 10:00",
+        "Florencja (23.09): jedyny dzień z tłumem — wyjazd o 8:00, P+R Villa Costanza przy A1, tramwaj T1, obiad na Mercato Centrale i zarezerwowane Uffizi o 14:45",
         "San Gimignano (24.09, czw): wczesny przyjazd (przed 9:30), by zwiedzić miasto przed przyjazdem grup autokarowych"
       ]
     },
-    "plan_note": "Plan opiera się na dwóch bazach wypadowych (Barga i Murlo), co ogranicza częste przepakowywanie się i daje więcej czasu na spokojną eksplorację Garfagnany, Alp Apuańskich, Chianti, Val d'Orcia i Crete Senesi. Jeden dzień (23.09) świadomie łamie zasadę unikania tłumów — pociągiem ze Sieny do Florencji, by bez stresu o parking i ruch samochodowy zobaczyć serce toskańskiego renesansu."
+    "plan_note": "Plan opiera się na dwóch bazach wypadowych (Barga i Murlo), co ogranicza częste przepakowywanie się i daje więcej czasu na spokojną eksplorację Garfagnany, Alp Apuańskich, Chianti, Val d'Orcia i Crete Senesi. Jeden dzień (23.09) świadomie łamie zasadę unikania tłumów — szybki dojazd autem na P+R Villa Costanza i tramwajem T1 do centrum Florencji, by bez stresu o parking i bez ryzyka ZTL zobaczyć serce toskańskiego renesansu."
   },
   "variants": {
     "base2_options": [
@@ -4179,10 +4183,10 @@
             "per_person_max": 16
           },
           {
-            "label": "Florencja — pociąg Siena↔Firenze + Galeria Uffizi",
-            "detail": "Pociąg regionale w obie strony ~€20/os. Galeria Uffizi: dorośli €25 + €4 rezerwacja = €29/os; młodzież UE 18–25 lat (trójka w grupie) ulgowy €2 + €4 rezerwacja = €6/os (łącznie €76 na 5 osób, średnio ~€15/os). Pozostałe punkty (Duomo z zewnątrz, Signoria, Ponte Vecchio) bezpłatne.",
-            "per_person_min": 26,
-            "per_person_max": 49
+            "label": "Florencja — P+R Villa Costanza + tramwaj T1 + Galeria Uffizi",
+            "detail": "Parking Villa Costanza (~€7/auto) + tramwaj T1 w obie strony (~€3,40/os). Galeria Uffizi: bilety normalne €29/os (slot 14:45). Pozostałe punkty (Duomo z zewnątrz i darmowa nawa, Signoria, Loggia dei Lanzi, Ponte Vecchio) bezpłatne.",
+            "per_person_min": 33,
+            "per_person_max": 35
           },
           {
             "label": "Montalcino — degustacja wina (Enoteca Fortezza)",
@@ -4410,9 +4414,9 @@
           {
             "id": "uffizi-firenze",
             "group": "required",
-            "label": "Rezerwacja Galerii Uffizi — Florencja (23.09)",
-            "detail": "Kup online na tickets.uffizi.it (GLI UFFIZI - INGRESSO) na 23.09, zalecany slot ok. 11:30. To tutaj wisi słynny obraz „Narodziny Wenus” (Wenus na muszli) oraz „Wiosna” Botticellego. Wybierz odpowiednio: bilet normalny (€25 + €4) dla dorosłych oraz bilet ulgowy Ridotto (€2 + €4) dla osób w wieku 18–25 lat (obywatele UE z dowodem/paszportem).",
-            "deadline": "jak najszybciej (sloty na wrzesień szybko znikają)",
+            "label": "Bilety do Galerii Uffizi — Florencja (23.09, slot 14:45)",
+            "detail": "Kupione na tickets.uffizi.it na 23.09 na godz. 14:45. Wejście z rezerwacją ze slotem. W salach zobaczymy arcydzieła renesansu: „Narodziny Wenus” i „Wiosnę” Botticellego, Leonarda, Michała Anioła i Caravaggia.",
+            "deadline": "kupione (slot 14:45)",
             "priority": "high",
             "day_num": 12,
             "url": "https://tickets.uffizi.it/event/D43F5443-D676-F857-0904-0199CA8D9B74?lang=en"

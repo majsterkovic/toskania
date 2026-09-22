@@ -212,6 +212,26 @@
           "src": "images/viareggio.jpg",
           "alt": "Plaża w Viareggio o zachodzie słońca nad Morzem Tyrreńskim",
           "credit": "Marco Ponsi / Wikimedia Commons / CC BY-SA 4.0"
+        },
+        "siena-san-domenico": {
+          "src": "images/siena-san-domenico.jpg",
+          "alt": "Siena — panorama Duomo z tarasu przy Bazylice San Domenico",
+          "credit": "Wikimedia Commons · Sailko (CC BY 3.0)"
+        },
+        "siena-fontebranda": {
+          "src": "images/siena-fontebranda.jpg",
+          "alt": "Siena — gotyckie źródło Fontebranda w kontradzie Oca",
+          "credit": "Wikimedia Commons · LigaDue (CC BY-SA 4.0)"
+        },
+        "siena-libreria-piccolomini": {
+          "src": "images/siena-libreria-piccolomini.jpg",
+          "alt": "Duomo di Siena — freski Pinturicchia w Libreria Piccolomini",
+          "credit": "Wikimedia Commons · Sailko (CC BY-SA 3.0)"
+        },
+        "siena-orto-de-pecci": {
+          "src": "images/siena-orto-de-pecci.jpg",
+          "alt": "Siena — zielona dolina Orto de' Pecci za murami miejskimi",
+          "credit": "Wikimedia Commons · Sailko (CC BY 3.0)"
         }
       }
     },
@@ -2387,7 +2407,7 @@
           "gps_hint": "Buonconvento SI — Via Soccini / Viale della Libertà 30",
           "coords": [
             43.1387,
-            11.4820
+            11.482
           ],
           "opening_hours": "Museo: nd 10:00–13:00 i 16:00–19:00. Miasteczko: zawsze dostępne.",
           "ticket_price": "Muzeum: €5. Spacer po borgo: bezpłatny.",
@@ -2758,14 +2778,14 @@
       "image": "siena",
       "base_id": "base2",
       "base_label": "BAZA 2 — Murlo (Val di Merse)",
-      "drive_limit_min": 33,
+      "drive_limit_min": 25,
       "popular": true,
       "crowd_tip": "WTOREK 22.09 — dzień powszedni, znacznie mniej tłumów niż w sobotę. Wyjazd 7:00 (33 min z Murlo), parking Santa Caterina lub Stadio-Fortezza. Campo o 7:30 jeszcze prawie puste. Tłumy narastają od 10:00 (wycieczki), ale w powszedni dzień są wyraźnie mniejsze. Powrót do bazy przed 14:00.",
       "attractions": [
         {
           "name": "Piazza del Campo (główny plac Sieny) — o świcie",
-          "drive_min": 33,
-          "description": "7:30–9:30. Piazza del Campo prawie pusty — fotografowie, lokalni pracownicy. Palazzo Pubblico, Fonte Gaia. Najlepsze zdjęcia: górna krawędź przy Fonte Gaia, światło 7:00–8:30.",
+          "drive_min": 25,
+          "description": "7:45–9:30. Piazza del Campo o poranku jest niemal puste — fotografowie, szum Fonte Gaia i poranna kawa (Caffè Fiorella lub Pasticceria Nannini). Najlepsze zdjęcia: górna krawędź placu przy Fonte Gaia. Opcje dla chętnych: wejście na Torre del Mangia (88 m, 400 schodów, panorama 360°) lub wizyta w Museo Civico w Palazzo Pubblico (słynne freski Lorenzettiego „Alegoria Dobrych i Złych Rządów”).",
           "type": "popular",
           "image_key": "siena",
           "gps_hint": "Piazza del Campo, 53100 Siena SI",
@@ -2774,12 +2794,12 @@
             11.3318
           ],
           "opening_hours": "Plac otwarty całą dobę. Palazzo Pubblico: Pn–Sb 10:00–19:00, Nd 11:00–18:00.",
-          "ticket_price": "Plac — bezpłatny. Torre del Mangia: €10 (wejście 10:00–19:00)",
+          "ticket_price": "Plac — bezpłatny. Opcje dla chętnych: Torre del Mangia €10, Museo Civico €10 (lub bilet łączony €15).",
           "duration_h": 1.5
         },
         {
           "name": "Duomo di Siena (katedra) + Libreria Piccolomini (biblioteka z freskami)",
-          "drive_min": 33,
+          "drive_min": 25,
           "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki.",
           "type": "popular",
           "image_key": "siena",
@@ -2793,11 +2813,11 @@
           "duration_h": 2
         },
         {
-          "name": "Spacer przez kontrade (historyczne dzielnice-klany Sieny)",
-          "drive_min": 33,
-          "description": "11:00–12:00. Oca (Via dei Termini → Fontebranda) i Drago (Piazza Matteotti → Via del Paradiso). Autentyczne dzielnice zamiast turystycznych tras.",
+          "name": "Spacer przez kontrade — Oca, Drago, Fontebranda i Santuario Santa Caterina",
+          "drive_min": 25,
+          "description": "11:00–12:30. Autentyczne zaułki dzielnic-klanów rywalizujących w Palio (Oca, Drago, Torre). Po drodze: gotyckie monumentalne źródło Fontebranda (z XIII w., wspomniane w „Boskiej Komedii” Dantego), Santuario di Santa Caterina (dom rodzinny patronki z cichymi krużgankami, wstęp wolny) oraz ceramiczne herby i fontanny chrzcielne kontrad.",
           "type": "cultural",
-          "image_key": "siena",
+          "image_key": "siena-fontebranda",
           "gps_hint": "Via dei Termini (Oca) lub Piazza Matteotti 18 (Drago)",
           "coords": [
             43.3183,
@@ -2809,27 +2829,101 @@
       ],
       "oak_forest": null,
       "food": {
-        "place": "Antica Trattoria Papei — Siena",
-        "address": "Piazza del Mercato 6, 53100 Siena SI",
-        "dishes": [
-          "pici cacio e pepe",
-          "ribollita",
-          "pappardelle al cinghiale",
-          "vino sfuso (z beczki)"
-        ],
-        "note": "Kultowa trattoria za Palazzo Pubblico. Rezerwacja tel. od 10:00 (wtorek — rezerwacja i tak wskazana). Tel. +39 0577 280894.",
-        "price": "~€15–22/os",
+        "place": "Osteria degli Svitati / Il Bocconcino / La Sosta di Violante / Papei — Siena",
+        "address": "Piazza del Mercato 6 (Papei) / Banchi di Sopra 24 (Nannini)",
         "phone": "+39 0577 280894",
-        "opening_hours": "Pranzo 12:00–15:00, cena 19:00–22:30. Nd zamkn. Rezerwacja wskazana.",
-        "gps_hint": "Piazza del Mercato 6 — wejście od tyłu Piazza del Campo"
+        "opening_hours": "Pranzo 12:00–15:00, cena 19:00–22:30. Rezerwacja w Papei wskazana (tel. od 10:00).",
+        "price": "~€7–9 (schiacciata) / ~€12–16/os (obiad z coperto)",
+        "gps_hint": "Piazza del Mercato 6 — wejście od tyłu Piazza del Campo",
+        "dishes": [
+          "pici all'aglione (grube domowe spaghetti z łagodnym, słodkawym czosnkiem z Val di Chiana — bez ostrości i bez allicyny)",
+          "pici alle briciole (kuchnia uboga: pici z chrupiącymi, podsmażanymi na oliwie okruchami toskańskiego chleba, czosnkiem i pecorino)",
+          "pappardelle lub pici al ragù di cinghiale (z wolno duszonym dzikiem w czerwonym winie)",
+          "antipasto senese z wędlinami z czarnej świni Cinta Senese DOP (prosciutto, lardo, capocollo, finocchiona)",
+          "cinghiale in umido (dzik duszony po toskańsku z pomidorami, liściem laurowym, jałowcem i czarnymi oliwkami)",
+          "ribollita senese (gęsta, sycąca zupa z czarną kapustą cavolo nero, fasolą cannellini i czerstwym chlebem)",
+          "ricciarelli di Siena IGP na świeżo (miękkie, wilgotne w środku ciasteczka z pasty migdałowej z cukrem pudrem)",
+          "panforte di Siena IGP (korzenny placek bakalijny: łagodniejszy biały Margherita lub średniowieczny czarny Panpepato z pieprzem i kakao)"
+        ],
+        "note": "Siena to toskańska stolica makaronu pici oraz unikalnych w skali Włoch średniowiecznych słodyczy korzennych. Główny obiad zaplanowany jest w Antica Trattoria Papei na Piazza del Mercato (pici, dziczyzna, ribollita). W trakcie spaceru koniecznie wstąpcie do kultowej Pasticceria Nannini na świeże ricciarelli oraz do zabytkowej Drogheria Manganelli po autentyczny panforte.",
+        "options": [
+          {
+            "name": "Osteria degli Svitati (Zasiadany obiad · Ocena 4.7 ⭐ · ~€12–15 z coperto)",
+            "type": "Rekomendacja #1 · Trattoria casereccia",
+            "address": "Via della Galluzza 2 (malownicza uliczka łukowa blisko Campo)",
+            "coords": [
+              43.3198,
+              11.3302
+            ],
+            "note": "Zwycięzca deep searchu: domowe pici z ragù z Cinta Senese i pici all'aglione gotowane na bieżąco, głęboki, esencjonalny smak toskańskiej wsi bez turystycznej ściemy. Primi 10–13 €, coperto 2 €. Rezerwacja tel. rano: +39 0577 221295.",
+            "price": "€12–15"
+          },
+          {
+            "name": "Osteria La Sosta di Violante (Slow Food · Ocena 4.7 ⭐ · ~€15–16 z coperto)",
+            "type": "Dla smakoszy mięsa · Trattoria storica",
+            "address": "Via di Pantaneto 115",
+            "coords": [
+              43.3175,
+              11.3365
+            ],
+            "note": "Popisowe danie: pici z toskańską karkówką siekaną ręcznie nożem (ragù di capocollo tagliato al coltello — 15 €). Niezwykła głębia smaku, rekomendacja Slow Food. Rezerwacja: +39 0577 43774.",
+            "price": "€15–16"
+          },
+          {
+            "name": "Il Bocconcino (Ciepła schiacciata z pieca · Ocena 4.8–4.9 ⭐ · ~€7–9)",
+            "type": "Bomba smakowa · Brak coperto",
+            "address": "Via Rinaldini 8 (50 m od Piazza del Campo)",
+            "coords": [
+              43.3186,
+              11.3323
+            ],
+            "note": "Gorąca toskańska schiacciata robiona na żywo z ciepłym kremem z sera pecorino, porchettą, truflami lub wędlinami z dzika. Ponad 2600 recenzji ze średnią 4.8 — bije na głowę florenckie All'Antico Vinaio.",
+            "price": "€7–9"
+          },
+          {
+            "name": "SchiacciaMangia (Rzemieślnicza schiacciata Km 0 · Ocena 4.8 ⭐ · ~€6–9)",
+            "type": "Lokalne wędliny Rapaccini · Brak coperto",
+            "address": "Via delle Donzolle 1 (przy Campo)",
+            "coords": [
+              43.3188,
+              11.3328
+            ],
+            "note": "Kameralna schiacciateria bazująca w 100% na lokalnych produktach: wędliny ze słynnej rzeźni Rapaccini, chleb z sieneńskiej piekarni, piwa rzemieślnicze. Wybitna świeżość i zero masówki.",
+            "price": "€6–9"
+          },
+          {
+            "name": "La Piccola Ciaccineria (Sieneński piec parowy · Ocena 4.7 ⭐ · ~€4–6)",
+            "type": "Lokalny street food · Brak coperto",
+            "address": "Via San Pietro 52 (blisko Katedry)",
+            "coords": [
+              43.3158,
+              11.3292
+            ],
+            "note": "Gorące, chrupiące ciaccino faszerowane rozlewającym się serem stracchino, truflami, salsiccią i pecorino. Prawdziwy sekret sieneńczyków za ułamek ceny restauracji.",
+            "price": "€4–6"
+          },
+          {
+            "name": "Antica Trattoria Papei (Tradycyjny rynek · Ocena 4.3 ⭐ · ~€18–22)",
+            "type": "Opcja z dużym tarasem",
+            "address": "Piazza del Mercato 6",
+            "coords": [
+              43.3175,
+              11.3325
+            ],
+            "note": "Klasyczna, wielka osteria z tarasem na stary rynek targowy. Pici cacio e pepe, potrawy z dzika, domowe wino z beczki. Dobra atmosfera, ale nastawiona na większą liczbę gości.",
+            "price": "€18–22"
+          }
+        ]
       },
       "practical_tips": [
         "Wtorek (powszedni) — mniejszy tłok niż w weekend, ale wyjazd i tak 7:00: Campo o 7:30 prawie puste. Tłumy od 10:00, szczyt 11:00–15:00.",
         "Parking: Santa Caterina (schody ruchome, bliżej Duomo) — €2/h",
         "OPA SI PASS kup online wieczorem wcześniej — skip kolejki, wejdź tuż po 10:00",
-        "Bonus wtorku: tour „Il Clavigero del Duomo — per primi in Cattedrale\" (wt–pt, 7:30–9:00, maks. 18 os., rezerwacja operaduomo.siena.it) — wejście do katedry przed wszystkimi, idealne pod strategię świtu."
+        "Bonus wtorku: tour „Il Clavigero del Duomo — per primi in Cattedrale\" (wt–pt, 7:30–9:00, maks. 18 os., rezerwacja operaduomo.siena.it) — wejście do katedry przed wszystkimi, idealne pod strategię świtu.",
+        "Bazylika San Domenico i taras: tuż przy wyjściu z ruchomych schodów parkingu Santa Caterina. Wstęp wolny, najlepsze światło na Duomo ok. 7:35–7:45 rano.",
+        "Orto de' Pecci: zejście bramą tuż za Piazza del Mercato (obok Trattorii Papei). Bezpłatna, sielska dolina z widokiem na wieżę Mangia od dołu."
       ],
-      "narrative": "Wyjeżdżamy z bazy o 7:00 — wtorek, a o tej porze Chianti jeszcze śpi, a do Sieny mamy ok. 27 km i 33 minuty jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą wprost pod mury, albo przy Stadio-Fortezza. Piazza del Campo o 7:30 należy właściwie tylko do nas — słońce dopiero wschodzi, ktoś zamiata próg kawiarni, cisza, w której słychać własne kroki po charakterystycznym wachlarzowatym bruku. To ten sam plac, na którym za kilka godzin będzie tłoczno jak na Palio, ale teraz Fonte Gaia szumi tylko dla nas. Duomo otwiera o 10:00 — bilet OPA SI Pass kupiony wcześniej online (€16 w sezonie odkrytej podłogi mozaikowej) pozwala ominąć kolejkę, a w środku Libreria Piccolomini olśniewa złoconymi freskami Pinturicchia, które nie wyblakły przez pięćset lat. Ok. 11:00 spacer przez kontrady Oca i Drago — boczne uliczki z chorągiewkami bractw rywalizujących w Palio, gdy tłumy od 10:00 zaczynają zalewać Campo. Lunch w Antica Trattoria Papei (Piazza del Mercato 6, rezerwacja) — wśród sieneńczyków jedzących tu od pokoleń. Po obiedzie opcjonalnie degustacja w Enoteca Italiana (Fortezza Medicea, 12 minut pieszo, 45 minut) — narodowa enoteka z winami z całych Włoch, w tym miejscowym Chianti Classico. Z parkingu wyjeżdżamy ok. 15:00, zanim popołudniowy szczyt zamieni uliczki w korek turystów, w bazie jesteśmy ok. 15:45 — reszta popołudnia znów należy tylko do nas.",
+      "narrative": "Wyjeżdżamy z bazy w Murlo o 7:00 — wtorek, a do Sieny mamy ok. 25 km i 25 minut spokojnej jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą tuż pod Bazylikę San Domenico. Z placu przed bazyliką rozpościera się spektakularna poranna panorama Sieny i katedry na wzgórzu. Po krótkim rzucie oka do monumentalnej świątyni schodzimy na Piazza del Campo — o 7:45 plac należy właściwie tylko do nas, a Fonte Gaia szumi w ciszy. Na kawę i świeże ricciarelli wstępujemy do Caffè Fiorella lub słynnej Pasticceria Nannini. Dla chętnych opcją jest wejście na Torre del Mangia (400 schodów, panorama 360°) lub freski Lorenzettiego w Palazzo Pubblico. O 10:00 Duomo otwiera swe podwoje — z biletem OPA SI Pass omijamy kolejki do odkrytej podłogi mozaikowej i Libreria Piccolomini. Przed obiadem spacerujemy przez kontrady Oca i Drago, schodząc do gotyckiego źródła Fontebranda i Santuario di Santa Caterina. O 13:00 obiad w kultowej Antica Trattoria Papei na Piazza del Mercato (pici, dzik). Po posiłku opcjonalnie: 15-minutowy spacer w dół do Orto de' Pecci (ukryta zielona dolina tuż za rynkiem) lub podejście na wały Fortezza Medicea. Wyjazd z parkingu ok. 15:00 przed szczytem i powrót na relaks w bazie.",
       "web_research": [
         {
           "topic": "Siena o 7:30 — bez tłumów",
@@ -2866,6 +2960,18 @@
           "summary": "Oca (Terzo Camollìa): Via dei Termini, Fontebranda, Santuario Santa Caterina, siedziba Vicolo del Tiratoio 13. Drago: Piazza Matteotti 18, Via del Paradiso, Via della Sapienza. Wieczorny spacer: Via del Costone.",
           "source": "https://www.thepalio.eu/siena-tourist-guide/",
           "checked": "2026-07"
+        },
+        {
+          "topic": "Orto de' Pecci — oaza zieleni za rynkiem",
+          "summary": "Średniowieczny ogród miejski w dolinie tuż za murami i Piazza del Mercato. Wstęp wolny, zwierzęta gospodarskie, winorośle, widok na Torre del Mangia od dołu. Otwarte codziennie.",
+          "source": "https://ortodepecci.it/",
+          "checked": "2026-07"
+        },
+        {
+          "topic": "Bazylika San Domenico i relikwie św. Katarzyny",
+          "summary": "Wznosi się nad Fontebranda, obok schodów ruchomych Santa Caterina. Pn–Sb 7:30–18:30, wstęp wolny. Z tarasu przed fasadą klasyczny punkt widokowy na wzgórze Duomo.",
+          "source": "https://www.basilicacateriniana.it/",
+          "checked": "2026-07"
         }
       ],
       "image2": "siena-duomo",
@@ -2896,36 +3002,36 @@
       ],
       "eta_timeline": [
         {
-          "time": "07:33",
-          "event": "Parking Santa Caterina lub Stadio-Fortezza"
+          "time": "07:25",
+          "event": "Parking Santa Caterina (schody ruchome do centrum) lub Stadio-Fortezza"
+        },
+        {
+          "time": "07:30",
+          "event": "Taras przy Bazylice San Domenico — panorama Sieny o poranku + relikwie św. Katarzyny (wstęp wolny)"
         },
         {
           "time": "07:40",
-          "event": "Parking Santa Caterina lub Stadio-Fortezza"
-        },
-        {
-          "time": "07:45",
-          "event": "Piazza del Campo — Fontana Gaia bez tłumów"
+          "event": "Piazza del Campo — Fonte Gaia i pusty plac o świcie"
         },
         {
           "time": "09:30",
-          "event": "Caffè Fiorella — espresso + cornetto"
+          "event": "Caffè Fiorella lub Pasticceria Nannini — espresso + ricciarelli; opcjonalnie: wejście na Torre del Mangia"
         },
         {
           "time": "10:30",
-          "event": "Duomo otwiera → Libreria Piccolomini"
+          "event": "Duomo otwiera → Libreria Piccolomini i podłoga mozaikowa"
         },
         {
           "time": "12:00",
-          "event": "Spacer przez kontrade (Torre, Aquila, Chiocciola)"
+          "event": "Spacer przez kontrade: Fontebranda (źródło Dantego) i Santuario Santa Caterina (Oca, Drago)"
         },
         {
           "time": "13:00",
-          "event": "Obiad Trattoria Papei (Piazza del Mercato 6)"
+          "event": "Obiad Trattoria Papei (Piazza del Mercato 6) — pici cacio e pepe, dzik"
         },
         {
-          "time": "14:00",
-          "event": "Enoteca Italiana (Fortezza Medicea) — opcjonalna degustacja (45 min)"
+          "time": "14:15",
+          "event": "Opcjonalnie: spacer w dół do Orto de' Pecci (zielona oaza pod murami) LUB wały Fortezza Medicea"
         },
         {
           "time": "15:00",
@@ -2933,7 +3039,7 @@
         },
         {
           "time": "15:40",
-          "event": "Powrót do bazy"
+          "event": "Powrót do bazy w Murlo"
         }
       ],
       "daily_km_estimate": 57,

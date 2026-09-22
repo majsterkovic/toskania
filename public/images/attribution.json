@@ -332,6 +332,42 @@
       "author": "Marco Ponsi",
       "license": "CC BY-SA 4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Tramonto_a_Viareggio.jpg"
+    },
+    "siena-san-domenico.jpg": {
+      "place": "Siena — panorama z San Domenico",
+      "wikimedia_title": "File:Veduta del duomo di siena dall'abside di san domenico.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Veduta_del_duomo_di_siena_dall'abside_di_san_domenico.jpg",
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Panorama Sieny i katedry widziana z tarasu przy Bazylice San Domenico"
+    },
+    "siena-fontebranda.jpg": {
+      "place": "Siena — Fontebranda",
+      "wikimedia_title": "File:SienaFontebranda1.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SienaFontebranda1.jpg",
+      "author": "LigaDue",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Średniowieczne gotyckie źródło Fontebranda w kontradzie Oca"
+    },
+    "siena-libreria-piccolomini.jpg": {
+      "place": "Siena — Libreria Piccolomini",
+      "wikimedia_title": "File:Libreria piccolomini, siena, 01.JPG",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Libreria_piccolomini,_siena,_01.JPG",
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Libreria Piccolomini w katedrze w Sienie — renesansowe freski Pinturicchia"
+    },
+    "siena-orto-de-pecci.jpg": {
+      "place": "Siena — Orto de' Pecci",
+      "wikimedia_title": "File:Siena, valdimontone, orto medievale dei pecci, 01.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Siena,_valdimontone,_orto_medievale_dei_pecci,_01.jpg",
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "description": "Orto de' Pecci — średniowieczny ogród w zielonej dolinie za murami Sieny"
     }
   }
 }

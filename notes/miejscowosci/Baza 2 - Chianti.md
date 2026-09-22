@@ -11,7 +11,7 @@ Dni 7–15 (18.09–26.09.2026, wyjazd 26.09). Agriturismo w okolicach Vagliagli
 - D8 (sob 19.09): Brolio + Badia a Coltibuono + Radda in Chianti (zamki i wino Chianti)
 - D9 (nd 20.09): Monte Oliveto Maggiore + Asciano (Crete Senesi)
 - D10 (pn 21.09): Pienza + Bagno Vignoni + Montalcino (Val d'Orcia)
-- D11 (wt 22.09): [[Siena]] — o świcie przed tłumami
+- D11 (wt 22.09): [[Siena]] — spacer, Piazza del Campo i Katedra
 - D12 (śr 23.09): **[[Florencja]]** — pociągiem z Sieny (zamiast Monteriggioni/Murlo/Foresta di Tocchi)
 - D13 (czw 24.09): [[San Gimignano]] + [[Monteriggioni]] — dołożone po skróceniu powrotu do 2 dni (2026-07-19)
 

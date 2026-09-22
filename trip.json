@@ -2774,18 +2774,32 @@
       "day_num": 11,
       "type": "tuscany_popular",
       "label": "TOSKANIA · DZIEŃ 9 ★ POPULARNY",
-      "title": "Siena — o świcie przed tłumami",
+      "title": "Siena — spacer, Piazza del Campo i Katedra",
       "image": "siena",
       "base_id": "base2",
       "base_label": "BAZA 2 — Murlo (Val di Merse)",
       "drive_limit_min": 25,
       "popular": true,
-      "crowd_tip": "WTOREK 22.09 — dzień powszedni, znacznie mniej tłumów niż w sobotę. Wyjazd 7:00 (33 min z Murlo), parking Santa Caterina lub Stadio-Fortezza. Campo o 7:30 jeszcze prawie puste. Tłumy narastają od 10:00 (wycieczki), ale w powszedni dzień są wyraźnie mniejsze. Powrót do bazy przed 14:00.",
+      "crowd_tip": "WTOREK 22.09 — dzień powszedni, znacznie mniej tłumów niż w weekend. Wyjazd z bazy o 8:00 (ok. 25–30 min z Murlo), parking Santa Caterina. Najpierw spacer zaułkami i punkt widokowy San Domenico, potem Piazza del Campo i kawa na placu, wejście do Katedry o 11:00 (bilet OPA SI Pass ze slotem online), a po zwiedzaniu tradycyjny obiad ok. 13:00.",
       "attractions": [
         {
-          "name": "Piazza del Campo (główny plac Sieny) — o świcie",
+          "name": "Spacer przez kontrade — od San Domenico, przez Fontebranda do serca Sieny",
           "drive_min": 25,
-          "description": "7:45–9:30. Piazza del Campo o poranku jest niemal puste — fotografowie, szum Fonte Gaia i poranna kawa (Caffè Fiorella lub Pasticceria Nannini). Najlepsze zdjęcia: górna krawędź placu przy Fonte Gaia. Opcje dla chętnych: wejście na Torre del Mangia (88 m, 400 schodów, panorama 360°) lub wizyta w Museo Civico w Palazzo Pubblico (słynne freski Lorenzettiego „Alegoria Dobrych i Złych Rządów”).",
+          "description": "08:30–09:15. Poranny spacer po wyjściu ze schodów ruchomych parkingu Santa Caterina: taras widokowy przy Bazylice San Domenico (panorama wzgórza katedralnego i dachów Sieny), monumentalne gotyckie źródło Fontebranda oraz malownicze zaułki historycznych contrade (Oca, Drago) w drodze na Piazza del Campo.",
+          "type": "cultural",
+          "image_key": "siena-san-domenico",
+          "gps_hint": "Via dei Termini (Oca) lub Piazza Matteotti 18 (Drago)",
+          "coords": [
+            43.3183,
+            11.3318
+          ],
+          "duration_h": 0.75,
+          "opening_hours": "Ulice publiczne, brak godzin. Taras San Domenico dostępny całą dobę."
+        },
+        {
+          "name": "Piazza del Campo — muszlowy rynek i kawa na placu",
+          "drive_min": 25,
+          "description": "09:15–10:45. Najsłynniejszy ceglany plac w Europie w kształcie muszli — gotycki ratusz Palazzo Pubblico z wieżą Torre del Mangia i marmurowa Fonte Gaia. Czas na spacer po placu oraz poranną kawę ze świeżymi ricciarelli przy stoliku z widokiem na Campo przed przejściem do Katedry.",
           "type": "popular",
           "image_key": "siena",
           "gps_hint": "Piazza del Campo, 53100 Siena SI",
@@ -2794,37 +2808,23 @@
             11.3318
           ],
           "opening_hours": "Plac otwarty całą dobę. Palazzo Pubblico: Pn–Sb 10:00–19:00, Nd 11:00–18:00.",
-          "ticket_price": "Plac — bezpłatny. Opcje dla chętnych: Torre del Mangia €10, Museo Civico €10 (lub bilet łączony €15).",
+          "ticket_price": "Plac — bezpłatny. Kawa + ciastko na placu ~€3–5/os.",
           "duration_h": 1.5
         },
         {
-          "name": "Duomo di Siena (katedra) + Libreria Piccolomini (biblioteka z freskami)",
+          "name": "Duomo di Siena (Katedra o 11:00) + Libreria Piccolomini",
           "drive_min": 25,
-          "description": "10:00–11:30. Katedra + Libreria Piccolomini. Podłoga mozaikowa ODKRYTA (18.08–15.11.2026, 56 paneli). Kup OPA SI PASS online — skip kolejki.",
+          "description": "11:00–12:30. Wejście do Katedry o 11:00 z biletem OPA SI Pass (omijamy kolejki). Odkryta podłoga mozaikowa (wrzesień 2026, 56 marmurowych paneli), olśniewająca Libreria Piccolomini z barwnymi freskami Pinturicchia i arcydzieła sztuki w pasiastym wnętrzu świątyni.",
           "type": "popular",
-          "image_key": "siena",
+          "image_key": "siena-duomo",
           "gps_hint": "Piazza del Duomo, Siena SI",
           "coords": [
             43.3171,
             11.3289
           ],
           "opening_hours": "Śr–Sb 10:30–19:00, Pn–Wt 10:30–17:30, Nd 13:30–17:30.",
-          "ticket_price": "OPA SI Pass: €14 (Duomo + Libreria + Battistero). Libreria Piccolomini extra: €4–6.",
-          "duration_h": 2
-        },
-        {
-          "name": "Spacer przez kontrade — Oca, Drago, Fontebranda i Santuario Santa Caterina",
-          "drive_min": 25,
-          "description": "11:00–12:30. Autentyczne zaułki dzielnic-klanów rywalizujących w Palio (Oca, Drago, Torre). Po drodze: gotyckie monumentalne źródło Fontebranda (z XIII w., wspomniane w „Boskiej Komedii” Dantego), Santuario di Santa Caterina (dom rodzinny patronki z cichymi krużgankami, wstęp wolny) oraz ceramiczne herby i fontanny chrzcielne kontrad.",
-          "type": "cultural",
-          "image_key": "siena-fontebranda",
-          "gps_hint": "Via dei Termini (Oca) lub Piazza Matteotti 18 (Drago)",
-          "coords": [
-            43.3183,
-            11.3318
-          ],
-          "duration_h": 1,
-          "opening_hours": "Ulice publiczne, brak godzin. Muzea kontrady: na zamówienie grupowe. Osteria kont. otwarta od 12:00."
+          "ticket_price": "OPA SI Pass: €16 w sezonie odkrytej posadzki (Duomo + Libreria + Battistero).",
+          "duration_h": 1.5
         }
       ],
       "oak_forest": null,
@@ -2916,18 +2916,18 @@
         ]
       },
       "practical_tips": [
-        "Wtorek (powszedni) — mniejszy tłok niż w weekend, ale wyjazd i tak 7:00: Campo o 7:30 prawie puste. Tłumy od 10:00, szczyt 11:00–15:00.",
-        "Parking: Santa Caterina (schody ruchome, bliżej Duomo) — €2/h",
-        "OPA SI PASS kup online wieczorem wcześniej — skip kolejki, wejdź tuż po 10:00",
-        "Bonus wtorku: tour „Il Clavigero del Duomo — per primi in Cattedrale\" (wt–pt, 7:30–9:00, maks. 18 os., rezerwacja operaduomo.siena.it) — wejście do katedry przed wszystkimi, idealne pod strategię świtu.",
-        "Bazylika San Domenico i taras: tuż przy wyjściu z ruchomych schodów parkingu Santa Caterina. Wstęp wolny, najlepsze światło na Duomo ok. 7:35–7:45 rano.",
-        "Orto de' Pecci: zejście bramą tuż za Piazza del Mercato (obok Trattorii Papei). Bezpłatna, sielska dolina z widokiem na wieżę Mangia od dołu."
+        "Wtorek (powszedni) — wyjazd o 8:00 (dojazd ok. 25–30 min z Murlo). Mniejszy tłok niż w weekend: najpierw spacer zaułkami i kawa na Piazza del Campo, Katedra o 11:00, a potem obiad.",
+        "Parking: Santa Caterina (schody ruchome, wygodne dojście do centrum i San Domenico) — €2/h",
+        "OPA SI PASS kup online wieczorem wcześniej — skip kolejki do kasy, wejście do Katedry na godzinę 11:00",
+        "Kawa na Piazza del Campo: relaks przy stoliku z widokiem na ratusz i Torre del Mangia przed wejściem do Katedry",
+        "Bazylika San Domenico i taras: tuż przy wyjściu z ruchomych schodów parkingu Santa Caterina. Wstęp wolny, piękny widok na wzgórze Duomo.",
+        "Orto de' Pecci: zejście bramą tuż za Piazza del Mercato (obok Trattorii Papei). Bezpłatna, sielska dolina z widokiem na wieżę Mangia od dołu — świetne miejsce na krótki spacer po obiedzie."
       ],
-      "narrative": "Wyjeżdżamy z bazy w Murlo o 7:00 — wtorek, a do Sieny mamy ok. 25 km i 25 minut spokojnej jazdy. Parkujemy przy Santa Caterina, skąd schody ruchome wywożą tuż pod Bazylikę San Domenico. Z placu przed bazyliką rozpościera się spektakularna poranna panorama Sieny i katedry na wzgórzu. Po krótkim rzucie oka do monumentalnej świątyni schodzimy na Piazza del Campo — o 7:45 plac należy właściwie tylko do nas, a Fonte Gaia szumi w ciszy. Na kawę i świeże ricciarelli wstępujemy do Caffè Fiorella lub słynnej Pasticceria Nannini. Dla chętnych opcją jest wejście na Torre del Mangia (400 schodów, panorama 360°) lub freski Lorenzettiego w Palazzo Pubblico. O 10:00 Duomo otwiera swe podwoje — z biletem OPA SI Pass omijamy kolejki do odkrytej podłogi mozaikowej i Libreria Piccolomini. Przed obiadem spacerujemy przez kontrady Oca i Drago, schodząc do gotyckiego źródła Fontebranda i Santuario di Santa Caterina. O 13:00 obiad w kultowej Antica Trattoria Papei na Piazza del Mercato (pici, dzik). Po posiłku opcjonalnie: 15-minutowy spacer w dół do Orto de' Pecci (ukryta zielona dolina tuż za rynkiem) lub podejście na wały Fortezza Medicea. Wyjazd z parkingu ok. 15:00 przed szczytem i powrót na relaks w bazie.",
+      "narrative": "Wyjeżdżamy z bazy w Murlo o 8:00 — spokojny wtorkowy poranek, a do Sieny mamy ok. 25 km i niespełna pół godziny jazdy. Parkujemy na wygodnym parkingu Santa Caterina, skąd bezpłatne schody ruchome wywożą nas tuż pod Bazylikę San Domenico. Zaczynamy od spaceru: najpierw zachwycający taras widokowy z panoramą wzgórza Duomo i dachów miasta, a potem malownicze zaułki historycznych kontrad i Fontebranda. Stąd schodzimy prosto na monumentalny, muszlowaty Piazza del Campo. Przed południem jest czas na spacer po placu, podziwianie Torre del Mangia i Fonte Gaia oraz leniwą, włoską kawę ze świeżymi ricciarelli przy stoliku na placu. O 11:00 wkraczamy do Katedry (Duomo di Siena) — z biletem OPA SI Pass omijamy kolejki, podziwiając wyjątkowo odsłoniętą we wrześniu marmurową podłogę mozaikową oraz olśniewające freski Pinturicchia w Libreria Piccolomini. Po zwiedzaniu katedry, około 13:00, czas na obiad — tradycyjne sieneńskie pici z dzikiem lub all'aglione (np. w Antica Trattoria Papei na sąsiednim Piazza del Mercato lub kameralnej osterii). Po pysznym posiłku chwila wytchnienia (np. spacer do zielonej doliny Orto de' Pecci) i spokojny powrót autem do bazy w Murlo.",
       "web_research": [
         {
-          "topic": "Siena o 7:30 — bez tłumów",
-          "summary": "Piazza del Campo o świcie: pusty plac, fotografowie i lokalni. Kawiarnie od ~7:00. Tłumy (wycieczki z Florencji) od 10:00. W dni powszednie (jak wtorek) wyraźnie luźniej niż w weekend.",
+          "topic": "Siena we wtorek — poranek i rytm dnia",
+          "summary": "Wtorek to dzień powszedni — wyraźnie luźniej niż w weekend. Przyjazd ok. 8:30 daje czas na spokojny spacer, Piazza del Campo i kawę przed wejściem do Katedry o 11:00 (szczyt turystyczny przypada na 11:00–14:00, więc wejście ze slotem online OPA SI Pass pozwala ominąć kolejki do kasy).",
           "source": "https://www.chasinghippoz.com/travel-photo-blog/siena-italy",
           "checked": "2026-07"
         },
@@ -2976,9 +2976,9 @@
       ],
       "image2": "siena-duomo",
       "opening_hours": {
-        "piazza_campo": "Dostęp 24h. Najlepsze światło i brak tłumów: 7:00–8:30.",
+        "piazza_campo": "Dostęp 24h. Kawiarnie wokół placu czynne od rana — idealne miejsce na poranną kawę.",
         "torre_mangia": "10:00–19:00 (1.04–31.10). Ostatnie wejście ~45 min przed zamknięciem. Bilet osobny (nie w OPA SI PASS).",
-        "duomo_complex": "22.09 (wtorek, sezon odkrytej podłogi): kompleks 10:00–19:00 (pn–sb). Muzeum dell'Opera: 9:30–19:30. Ostatnie wejście 30 min przed zamknięciem.",
+        "duomo_complex": "22.09 (wtorek, sezon odkrytej podłogi): kompleks 10:00–19:00 (pn–sb). Muzeum dell'Opera: 9:30–19:30. Ostatnie wejście 30 min przed zamknięciem. Wejście w planie na 11:00.",
         "duomo_floor": "Podłoga mozaikowa ODKRYTA 18.08–15.11.2026 — OPA SI PASS €16 (vs €14 standard).",
         "opera_duomo_ticket_office": "Piazza Duomo 7 + Visitor Center Via di Città 48 (obok Campo). Online = skip kolejki do kasy.",
         "libreria_piccolomini": "W kompleksie Duomo — ten sam bilet OPA SI PASS.",
@@ -2990,55 +2990,55 @@
         "stadio_fortezza_san_domenico": "Parcheggio Stadio-Fortezza — wyjście LATO STADIO (zona San Domenico), przed bazyliką San Domenico. 709 miejsc. €2/h (7:00–20:00), €26/dzień, gratis 20:00–7:00. ~15 min pieszo do Campo.",
         "san_domenico_note": "Nie ma osobnego parkingu „San Domenico” — chodzi o wyjście Stadio-Fortezza od strony stadionu lub parking Santa Caterina (schody przy San Domenico).",
         "ztl": "Centrum Siena = ZTL z kamerami. Mandaty €80–150. Samochód zostaw na parkingu.",
-        "cost_estimate": "~€8–10 za 4h poranną wizytę (€2/h × 4h)",
-        "wyjazd_tip": "Wtorek 7:00 wyjazd → parking 7:33 → Campo 7:40 pieszo. Wyjazd z parkingu przed 14:00."
+        "cost_estimate": "~€8–12 za pobyt w Sienie (€2/h × 4–6h)",
+        "wyjazd_tip": "Wtorek: 8:00 wyjazd z Murlo → parking 8:30 → spacer przez San Domenico i kontrady → Campo ok. 9:15, kawa na placu, Katedra o 11:00, obiad ok. 13:00. Wyjazd z parkingu ok. 15:15."
       },
       "fuel_stops": [
         {
           "name": "Stacja w Murlo lub przy SS223",
           "location": "BAZA 2 — Murlo (Val di Merse)",
-          "note": "Tankuj rano przed wyjazdem 7:00 do Sieny — paliwo na powrót."
+          "note": "Tankuj rano przed wyjazdem o 8:00 do Sieny — paliwo na powrót."
         }
       ],
       "eta_timeline": [
         {
-          "time": "07:25",
-          "event": "Parking Santa Caterina (schody ruchome do centrum) lub Stadio-Fortezza"
+          "time": "08:00",
+          "event": "Wyjazd z bazy w Murlo do Sieny (SS223, ~25 km, ok. 25–30 min)"
         },
         {
-          "time": "07:30",
-          "event": "Taras przy Bazylice San Domenico — panorama Sieny o poranku + relikwie św. Katarzyny (wstęp wolny)"
+          "time": "08:30",
+          "event": "Parking Santa Caterina — bezpłatne schody ruchome do centrum"
         },
         {
-          "time": "07:40",
-          "event": "Piazza del Campo — Fonte Gaia i pusty plac o świcie"
+          "time": "08:35",
+          "event": "Poranny spacer: punkt widokowy przy Bazylice San Domenico (panorama Duomo), zejście do Fontebranda i malownicze zaułki kontrad Oca i Drago"
         },
         {
-          "time": "09:30",
-          "event": "Caffè Fiorella lub Pasticceria Nannini — espresso + ricciarelli; opcjonalnie: wejście na Torre del Mangia"
+          "time": "09:15",
+          "event": "Piazza del Campo — muszlowy plac, ratusz Palazzo Pubblico, wieża Torre del Mangia i Fonte Gaia"
         },
         {
-          "time": "10:30",
-          "event": "Duomo otwiera → Libreria Piccolomini i podłoga mozaikowa"
+          "time": "10:00",
+          "event": "Kawa na placu — espresso, cappuccino i świeże ricciarelli w kawiarni z widokiem na Piazza del Campo"
         },
         {
-          "time": "12:00",
-          "event": "Spacer przez kontrade: Fontebranda (źródło Dantego) i Santuario Santa Caterina (Oca, Drago)"
+          "time": "11:00",
+          "event": "Katedra (Duomo di Siena) + Libreria Piccolomini i odsłonięta podłoga mozaikowa (wejście z biletem OPA SI Pass)"
         },
         {
           "time": "13:00",
-          "event": "Obiad Trattoria Papei (Piazza del Mercato 6) — pici cacio e pepe, dzik"
+          "event": "Obiad w trattorii (np. Antica Trattoria Papei na Piazza del Mercato / Osteria degli Svitati — pici z dzikiem lub all'aglione)"
         },
         {
-          "time": "14:15",
-          "event": "Opcjonalnie: spacer w dół do Orto de' Pecci (zielona oaza pod murami) LUB wały Fortezza Medicea"
+          "time": "14:30",
+          "event": "Spacer po obiedzie: Orto de' Pecci (zielona oaza pod murami) lub przejście ku parkingowi"
         },
         {
-          "time": "15:00",
-          "event": "Wyjazd z parkingu — przed popołudniowym szczytem"
+          "time": "15:15",
+          "event": "Wyjazd z parkingu Santa Caterina"
         },
         {
-          "time": "15:40",
+          "time": "15:45",
           "event": "Powrót do bazy w Murlo"
         }
       ],
@@ -3046,12 +3046,12 @@
       "wine_tasting": {
         "place": "Enoteca Italiana — Fortezza Medicea",
         "address": "Piazza Libertà 1, Siena (wewnątrz Fortezzy)",
-        "time": "14:00 (po obiedzie, przed odjazdem z parkingu)",
+        "time": "14:30 (po obiedzie, alternatywa dla Orto de' Pecci)",
         "price": "od €3/kieliszek; butelki od €12",
         "note": "Narodowa enoteka włoska — 1500+ win, Brunello, Chianti Classico, Morellino, Nobile. Po obiedzie u Papei: Piazza del Mercato → Fortezza (12 min pieszo). Daj sobie 45 min. Zweryfikuj godziny przed wizytą (wt–sob 12:00–20:00 w sezonie).",
         "gps_hint": "43.3188, 11.3272 — Fortezza Medicea, wejście od Piazza Libertà"
       },
-      "summary": "Siena o świcie, zanim nadejdą tłumy (wyjazd ok. 7:00). Najpierw muszlowaty, ceglany rynek (Piazza del Campo) z ratuszem i marmurową fontanną, potem katedra (Duomo) z bogato zdobioną biblioteką i — wyjątkowo we wrześniu 2026 — odsłoniętą na ten czas mozaikową posadzką. Na koniec spacer po historycznych dzielnicach-klanach (contrade), z dala od głównego szlaku turystów.",
+      "summary": "Siena w optymalnym powszednim rytmie (wyjazd z bazy o 8:00). Najpierw spacer zaułkami kontrad i taras San Domenico, następnie serce miasta — Piazza del Campo i relaksująca kawa na placu. O 11:00 zwiedzanie Katedry (Duomo) z Libreria Piccolomini i odsłoniętą posadzką mozaikową, a po katedrze tradycyjny toskański obiad z makaronem pici.",
       "weather": {
         "label": "Siena",
         "coords": [
@@ -3911,7 +3911,7 @@
         "Florencja (23.09) — świadomy wyjątek"
       ],
       "tips": [
-        "Siena (22.09, wt): tylko poranek, wyjazd przed 14:00 — wtorek znacznie luźniejszy niż sobota",
+        "Siena (22.09, wt): wyjazd o 8:00, spacer, Piazza del Campo i kawa, Katedra o 11:00, potem obiad — wtorek znacznie luźniejszy niż weekend",
         "Pienza (21.09, pon): dzień powszedni, spokojniej niż w weekend, Palazzo Piccolomini otwarte",
         "Florencja (23.09): jedyny dzień, gdzie świadomie rezygnujemy z zasady unikania tłumów — przyjedź najwcześniej się da, zobacz Duomo przed 10:00",
         "San Gimignano (24.09, czw): wczesny przyjazd (przed 9:30), by zwiedzić miasto przed przyjazdem grup autokarowych"
@@ -4393,7 +4393,7 @@
             "id": "siena-duomo",
             "group": "optional",
             "label": "Siena — Opera del Duomo (opcja rezerwacji)",
-            "detail": "Wstęp do kompleksu Duomo di Siena (OPA SI Pass) można kupić online na operaduomo.siena.it. Cena ok. €20/os. Wrzesień — kolejki mniejsze niż latem, ale warto zarezerwować.",
+            "detail": "Wstęp do kompleksu Duomo di Siena (OPA SI Pass) można kupić online na operaduomo.siena.it. Cena ok. €16–20/os. Warto zarezerwować slot na godzinę 11:00, aby bez kolejki wejść prosto do Katedry i Libreria Piccolomini.",
             "deadline": "1–2 tygodnie przed wizytą",
             "priority": "medium",
             "day_num": 11
